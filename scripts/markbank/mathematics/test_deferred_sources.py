@@ -68,5 +68,14 @@ class DeferredSources(unittest.TestCase):
             self.assertTrue(5<drying_water(t,-.15)<drying_water(t)<25)
         self.assertAlmostEqual(drying_water(1000,-.15),5)
 
+    def test_2024_wheel_graph_uses_seconds_and_completes_two_revolutions(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import wheel_height
+        self.assertEqual([round(wheel_height(i/10)) for i in range(9)],[0,30,60,30,0,30,60,30,0])
+        for t in [.03,.15,.27,.4]:
+            self.assertAlmostEqual(wheel_height(t),wheel_height(t+.4))
+        self.assertAlmostEqual(wheel_height(.2),60)
+        self.assertAlmostEqual(wheel_height(.4),0)
+
 
 if __name__=='__main__': unittest.main()

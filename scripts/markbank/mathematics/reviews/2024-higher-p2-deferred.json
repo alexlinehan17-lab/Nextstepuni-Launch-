@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV-deferred.pdf",
+  "schemeFileid": "LC003ALP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "86a67c187032908f698ba3dd74a639dd49c5a01ce96a1dee72fd5feafc67ee78",
+  "schemeSha256": "31d908ba92708efe218e3c0a6db29625513077ebbf18fea2721cd776a07d97cd",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and scheme pages 21–40, with introduction pages 1–2. Every task reconciled against its published mark boundary; all presentation crops inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    21,
+    22
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 380 offered marks. Exam-level choice does not remove practice questions.",
+    "41 tasks. Shared allocations remain together: Q1(a)(i)–(ii), Q5(a)(i)–(ii), Q7(c)(i)–(ii), Q7(d)(i)–(ii), Q9(b)(i)–(ii), Q9(d)(i)–(ii), Q10(a)(i)–(ii).",
+    "Q2(b) is an open choice of two other points on a circle. The seven integer examples in the scheme are not the complete mathematical answer set; retain one response with all examples.",
+    "Q2(a) has y2−x1 in the generic distance formula; the correct term is y2−y1. Its substituted values and final circle equation are correct.",
+    "Q3(a) supplies no construction diagram. An attributed NextStepUni compass-and-straightedge construction supplies the missing worked example with original SEC credit notes.",
+    "Q3(c) final angle label should be AOE, not AOB. The required angle is 3x; AOB is 180−4x.",
+    "Q4 scheme labels (a),(b),(c) correspond to paper (a),(b)(i),(b)(ii). The double-angle proof omits A after a sine and ends with cos B instead of cos A; corrected proof supplied without changing marking guidance.",
+    "Q7(a)(i) concerns an individual tree, not a sample mean. The printed 0.733 uses z rounded to 1.11. Q7(a)(ii) uses the rounded normal-table value −1.64.",
+    "Q7(c)(ii) misinterprets the confidence interval as containing sample means. The proper repeated-sampling interpretation concerns intervals containing the true population proportion. A corrected explanation is supplied while preserving the original official credit criteria.",
+    "Q8(c) last dimension is length, not the repeated printed Height label: height 48 cm, width 72 cm, length 120 cm.",
+    "Q9(a)(i) retains all four correlation choices and the required justification in one card. Q9(a)(ii) supplies an attributed illustrative line of best fit on the original source scatterplot; the SEC accepts reasonable lines, not a unique exact regression.",
+    "Q10(a) printed scheme table headings 0–8 should be 0–0.8 seconds. The scheme omits its graph. An attributed complete table and smooth curve use the question’s exact domain and units."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-hl-p2-deferred-q1-a-i-ii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+      "questionText": "(i) Write down the midpoint of [PQ]. (ii) Hence, or otherwise, find the equation of the perpendicular bisector of [PQ].",
+      "solutionQuotes": [
+        "Find the midpoint",
+        "Find slope of perpendicular bisector",
+        "3 steps correct"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q1-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+      "questionText": "Hence, find the co-ordinates of the circumcentre of the triangle PQR (that is, the point where the perpendicular bisectors of the sides meet).",
+      "solutionQuotes": [
+        "effort to calculate perpendicular bisector"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q1-a-iii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q1-a-iii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line AB intersects the x-axis at A and the y-axis at B. The point (−6, 2) is the midpoint of [AB]. Find the co-ordinates of A and of B.",
+      "solutionQuotes": [
+        "Correct substitution into midpoint formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle s has centre (2, 4). The point (−1, −3) lies on the circle s. Find the equation of the circle s.",
+      "solutionQuotes": [
+        "Work of merit in calculating the radius",
+        "Calculates the radius of the circle"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q2-a-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q2-a-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle c has centre (9, −2). The point (3, −6) lies on the circle c. Using the diagram on the right, or otherwise, write down the co-ordinates of two other points that lie on the circle c.",
+      "solutionQuotes": [
+        "Any 2 of the following points",
+        "One correct point",
+        "Finds the equation of the circle"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q2-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q2-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle k has its centre in the first quadrant. The y-axis is a tangent to the circle k at the point (0, 3). The circle k intersects the x-axis at the points G and H, with |GH| = 8. Find the equation of the circle k.",
+      "solutionQuotes": [
+        "Finds the radius of the circle",
+        "Finds centre of the circle"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q2-c-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q2-c-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "The diagram below shows a circle. The centre is marked P. The point Q is on the circle. Construct the tangent to the circle at the point Q, using only a compass and straight edge. Show all of your construction lines clearly.",
+      "solutionQuotes": [
+        "Perpendicular line drawn without construction lines",
+        "equidistant"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q3-a-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q3-a-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "Another circle has a circumference of 30 cm. Work out the area of this circle. Give your answer in cm², in terms of π.",
+      "solutionQuotes": [
+        "Finds the radius",
+        "Answer not in correct form"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "O is the centre of a different circle. A and B are points on this circle, as shown in the diagram below. The chord [AB] is extended through B to C, so that |BC| is equal to the radius of the circle. CO intersects the circle at D and at E, with D ∈ [CO]. Let |∠BCO| = x. Write |∠AOE| in terms of x. Show your working out.",
+      "solutionQuotes": [
+        "marks isosceles triangles"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find the value of cos 105° without using a calculator. Give your answer in the form (1 − √a)/(b√b), where a, b ∈ ℕ. Show your working out.",
+      "solutionQuotes": [
+        "some correct substitution into relevant formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q4-a-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q4-a-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that sin 2A = 2 sin A cos A.",
+      "solutionQuotes": [
+        "Replace 𝐵 with 𝐴"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q4-b-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q4-b-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "From part (b)(i): sin 2A = 2 sin A cos A.",
+      "questionText": "The triangle ABC is shown below. |AB| = 5, |AC| = 3, |∠ABC| = W, and |∠ACB| = 2W, where 0° < W < 45°. Find the value of cos W, in the form p/q, where p, q ∈ ℕ. Use the result from part (b)(i) and the Sine Rule.",
+      "solutionQuotes": [
+        "Fully correct substitution into the Sine rule"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q4-b-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q4-b-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q5-a-i-ii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "Assume that the margin of error for a population proportion is 1/√n, where n is the sample size. (i) A survey is carried out on a random sample of 1600 people. Find the margin of error for a population proportion, based on this sample. Give your answer as a percentage. (ii) What sample size would be needed to give a margin of error of exactly 1%?",
+      "solutionQuotes": [
+        "substitutes 1600 into the formula",
+        "One part correct and work of merit in the other"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q5-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q5-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, C, D, E and F are six events.",
+      "questionText": "A and B are independent. P(A) = 0·2 and P(B) = 0·3. Find the value of P(A ∩ B).",
+      "solutionQuotes": [
+        "correct formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q5-b-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, C, D, E and F are six events.",
+      "questionText": "P(C) = 0·4, P(D) = 0·5, and P(C ∩ D) = 0·08. Find the value of P(C ∪ D).",
+      "solutionQuotes": [
+        "Correct Venn diagram"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q5-b-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, C, D, E and F are six events.",
+      "questionText": "P(E) = 0·6, P(F) = x + 0·4, and P(E ∩ F) = x, where x ∈ ℝ is a constant. Find the value of x for which P(E | F) = 1/4.",
+      "solutionQuotes": [
+        "correct formula written"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q5-b-iii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-iii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+      "questionText": "How many such codes are there?",
+      "solutionQuotes": [
+        "some arrangements shown"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q6-a-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q6-a-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+      "questionText": "In how many of these codes are the two vowels (A and E) together?",
+      "solutionQuotes": [
+        "one arrangement shown",
+        "6! calculated"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q6-a-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q6-a-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "The mode of 6 positive whole numbers is 2. The median of the 6 numbers is 5·5. Find the 6 such numbers that have the smallest possible mean.",
+      "solutionQuotes": [
+        "5.5 is the median",
+        "2,2,5,6,7,8"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q6-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q6-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+      "questionText": "One tree is picked at random from this forest. Find the probability that the height of this tree is between 330 cm and 390 cm.",
+      "solutionQuotes": [
+        "Finds z-score for 330",
+        "Finds z-score for 390"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q7-a-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q7-a-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+      "questionText": "The shortest (smallest) 5% of the trees in the forest are not sent to the factory when the forest is harvested, as they are not tall enough. What is the minimum height that a tree needs to be in order for it to be sent to the factory when the forest is harvested?",
+      "solutionQuotes": [
+        "Subs value into the z-score formula",
+        "No unit or incorrect unit"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q7-a-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q7-a-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+      "questionText": "Fiadh claims that the mean height of the trees in her forest is different to the usual height, because they have become infected with a disease. She picks 100 trees at random from her forest and measures their height. The mean height of this sample is 350 cm. Test the hypothesis, at the 5% level of significance, that the mean height of the trees in the forest is different to the usual height of 360 cm. The null hypothesis is given below. State your alternative hypothesis, state your conclusion, and give a reason for your conclusion. Null hypothesis: “The mean height of the trees in Fiadh’s forest is 360 cm.”",
+      "solutionQuotes": [
+        "States alternative hypothesis",
+        "Reason"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q7-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q7-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q7-c-i-ii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "Fiadh wants to estimate the number of trees that have become infected with the disease. She picks a random sample of 160 trees and examines them. 48 of these trees are infected with the disease. (i) Find the 95% confidence interval for the proportion of trees in the forest that are infected. Give each value in your answer correct to 3 significant figures. (ii) Explain what this 95% confidence interval means, in the context of the question.",
+      "solutionQuotes": [
+        "Find Interval",
+        "Explanation"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q7-c-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q7-c-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q7-d-i-ii",
+      "printedParts": [
+        "Q7(d)(i)",
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "(i) The diagram below shows a normal curve with a mean of 360. On the same diagram, draw a new curve that will have the same standard deviation as the given curve, but with a mean of 350. Use the same axes and scales. (ii) The diagram below shows the same normal curve as above, with a mean of 360. On the diagram below, draw a new curve that will also have a mean of 360, but that will have a smaller standard deviation than the given curve. Use the same axes and scales.",
+      "solutionQuotes": [
+        "One graph correct",
+        "Work of merit in both parts"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q7-d-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q7-d-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+      "questionText": "Find the area of the field, correct to the nearest m².",
+      "solutionQuotes": [
+        "Fully correct substitution into formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+      "questionText": "Work out the length of the side [BC], correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Fully substituted Cosine Rule formula",
+        "Calculator in incorrect mode"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "Henryk has two balers: a square baler and a round baler. These are machines that pick up straw from a field and make it into bales.",
+      "questionText": "Henryk’s square baler travels at an average speed of 8 km/hour while it is baling. For one of his fields, this baler travels 4800 m while it is baling. Work out how many minutes this will take.",
+      "solutionQuotes": [
+        "Calculates 0.6 hours"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "This baler makes bales in the shape of rectangular solids. A bale has a volume of 0·415 m³, correct to 3 decimal places. The ratio of the dimensions of this bale is: height : width : length = 2 : 3 : 5. Find the dimensions of this bale. Give each value correct to the nearest cm.",
+      "solutionQuotes": [
+        "Substantial work of merit"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-c-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-c-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "Henryk’s round baler makes bales in the shape of cylinders. The height of each cylinder is equal to its diameter. The volume of a cylindrical bale is 2·780 m³, correct to 3 decimal places. Work out the radius of a cylindrical bale. Give your answer in metres, correct to the nearest cm.",
+      "solutionQuotes": [
+        "Fully correct substitution into formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-d-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-d-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "Henryk is tiling his patio. The tiles are square, with a design made of circles. The design consists of a large circle inscribed inside the square tile. There are 4 smaller circles of equal size inside the large circle. The centres of these 4 circles form a square, and each small circle touches two other small circles and the large circle, as shown in the diagram below. The radius of each small circle is 1 cm. Work out the area of the square tile (the large square in the diagram below). Give your answer in the form (a + b√c) cm², where a, b, c ∈ ℤ.",
+      "solutionQuotes": [
+        "Finds diagonal of small square",
+        "Finds radius or diameter of big circle"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q8-e-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q8-e-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+      "questionText": "One of the numbers below is the correct correlation coefficient for the data above. Put a tick (✓) in the correct box to show which one is the correct value. Tick one box only. Justify your answer. Options: 0·4, −0·3, 0·9, −0·8.",
+      "solutionQuotes": [
+        "There is a strong positive correlation",
+        "Correct box ticked"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q9-a-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q9-a-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+      "questionText": "On the scatterplot above, draw the line of best fit for the data, by eye, and use this line to estimate the weight of a rugby player that is 1·8 m tall.",
+      "solutionQuotes": [
+        "reasonable slope",
+        "One part correct"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q9-a-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q9-a-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q9-b-i-ii",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "This particular rugby team usually miss 8% of the tackles that they attempt. Use this fact to answer parts (b)(i) and (b)(ii). Assume that all tackles are independent. Give each answer correct to 4 decimal places. (i) Find the probability that the 4th tackle in a game is the first one that is missed. (ii) Find the probability that the team miss at least 2 tackles out of the first 20 tackles that they attempt in a game.",
+      "solutionQuotes": [
+        "One part correct",
+        "Work of merit in both parts"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q9-b-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q9-b-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "At a particular stage of the game, this rugby team will score either 7 points, 5 points, or 0 points. The probability of each of these is x, y, and z, respectively, where x, y, z ∈ ℝ. The probability of getting 7 points is four times the probability of getting 5 points. The expected value of the number of points is 1·155. Work out the value of z, the probability of scoring 0 points.",
+      "solutionQuotes": [
+        "Finds 𝑥 or 𝑦"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q9-c-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q9-c-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q9-d-i-ii",
+      "printedParts": [
+        "Q9(d)(i)",
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "The coach of the rugby team must pick 3 forwards from a total of 7 possible forwards. (i) How many different combinations of 3 forwards can the coach pick? (ii) On Saturday, the coach picks 3 forwards at random from the 7 forwards. On Sunday, the coach again picks 3 forwards at random from the same 7 forwards. Find the probability that no forward is picked on both Saturday and Sunday.",
+      "solutionQuotes": [
+        "One part correct and work of merit in the other"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q9-d-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q9-d-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-a-i-ii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-functions"
+      ],
+      "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+      "questionText": "(i) Complete the table below. The value of h(0·2) is given. t: 0, 0·1, 0·2, 0·3, 0·4, 0·5, 0·6, 0·7, 0·8; h(0·2) = 60. (ii) Draw the graph of y = h(t) for 0 ≤ t ≤ 0·8, t ∈ ℝ.",
+      "solutionQuotes": [
+        "8 values in table",
+        "9 points plotted",
+        "Points joined appropriately",
+        "Correct graph without table"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-a-i-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+      "questionText": "The period of h(t) is 0·4 seconds. Explain what this means in the context of Chloë’s front wheel.",
+      "solutionQuotes": [
+        "It takes 0.4 seconds for the wheel to do 1 full rotation"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "The radius of the wheel is 30 cm. Work out the distance that Chloë travels in one full revolution (rotation) of the wheel. Give your answer correct to the nearest millimetre.",
+      "solutionQuotes": [
+        "Correct substitution into the formula"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-c-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-c-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. The radius of the wheel is 30 cm. The period is 0·4 seconds. Part (c)(i) asks for the distance travelled in one full rotation, to the nearest millimetre.",
+      "questionText": "Using your answer to (c)(i), and the period of h(t), work out the speed that Chloë is cycling at. Give your answer correct to the nearest km/hour.",
+      "solutionQuotes": [
+        "Some correct speed calculated but in incorrect unit"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-c-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-c-ii-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-d-i",
+      "printedParts": [
+        "Q10(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres.",
+      "questionText": "From B, the angle of elevation to the top of the building is 30°. Write |OB| in terms of h.",
+      "solutionQuotes": [
+        "Correct trigonometric equation"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-d-i-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-d-i-question"
+    },
+    {
+      "id": "maths-2024-hl-p2-deferred-q10-d-ii",
+      "printedParts": [
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres. From B, the angle of elevation to the top of the building is 30°.",
+      "questionText": "The distance |AB| = 120 metres and |∠AOB| = 60°. Given this information, use the triangle ABO to work out the value of h, the height of the building. Give your answer in metres, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Fully correct substitution into the cosine rule"
+      ],
+      "figureKey": "maths-2024-hl-p2-deferred-q10-d-ii-solution",
+      "questionFigureKey": "maths-2024-hl-p2-deferred-q10-d-ii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained for practice."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "two other points",
+      "classification": "open-answer",
+      "reason": "An infinite circle, not a finite candidate selection pool. All seven scheme examples retained in one response."
+    },
+    {
+      "pages": [
+        24
+      ],
+      "wording": "One of the numbers / Tick one box only",
+      "classification": "single-response-choice",
+      "reason": "One correlation-choice card with all four printed values and justification."
+    },
+    {
+      "pages": [
+        27
+      ],
+      "wording": "pick 3 forwards",
+      "classification": "counting-scenario",
+      "reason": "The team selection is problem data; it does not instruct the student to omit tasks."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained."
+    },
+    "4:5528feaf2b8e14a0": {
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained."
+    },
+    "4:c71ffbbdac178d2a": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required answer."
+    },
+    "6:69b7a5b910194452": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for one required answer."
+    },
+    "16:f6f57be4c0ad2f6a": {
+      "classification": "exam-level-selection",
+      "reason": "All ten questions retained."
+    },
+    "20:c37b2a520a06fb17": {
+      "classification": "scenario-context",
+      "reason": "One illustrated field is the compulsory problem context."
+    },
+    "21:835513656ceb6fa6": {
+      "classification": "scenario-context",
+      "reason": "One illustrated field is the compulsory problem context."
+    },
+    "24:622b0367a14b226f": {
+      "classification": "single-response-choice",
+      "reason": "All four correlation choices and justification retained in one card."
+    },
+    "26:6a979723a6e5aeb6": {
+      "classification": "scenario-outcomes",
+      "reason": "All scoring outcomes are probability data in a single required task."
+    }
+  }
+}

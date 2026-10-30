@@ -72645,4 +72645,1788 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q1-a-i-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-i-ii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q1(a)(i), Q1(a)(ii)",
+    stem: "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+    questionText: "(i) Write down the midpoint of [PQ]. (ii) Hence, or otherwise, find the equation of the perpendicular bisector of [PQ].",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-1", kind: "point", verbatim: "Find the midpoint", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-2", kind: "point", verbatim: "Find slope of perpendicular bisector", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-3", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-a-i-ii-question.png",
+          "srcHash": "13bf450b035aa66702b67ea689c64c88",
+          "alt": "The question as printed on the paper — The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3). (i) Write down the midpoint of [PQ]. (ii) Hence, or otherwise, find the equation of the perpendicular bisector of [PQ].",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-a-i-ii-solution.png",
+          "srcHash": "116f2882be47bf18029deb5ef0f854f4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q1(a)(i), Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q1-a-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-iii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q1(a)(iii)",
+    stem: "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+    questionText: "Hence, find the co-ordinates of the circumcentre of the triangle PQR (that is, the point where the perpendicular bisectors of the sides meet).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q1-a-iii-solution-1", kind: "point", verbatim: "effort to calculate perpendicular bisector", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-a-iii-question.png",
+          "srcHash": "99bd0eea5e24b03c4a75ac00e65b0642",
+          "alt": "The question as printed on the paper — The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3). Hence, find the co-ordinates of the circumcentre of the triangle PQR (that is, the point where the perpendicular bisectors of the sides meet).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-a-iii-solution.png",
+          "srcHash": "aa720d1536989a4f07d4485d24b98bb3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q1(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q1(b)",
+    questionText: "The line AB intersects the x-axis at A and the y-axis at B. The point (−6, 2) is the midpoint of [AB]. Find the co-ordinates of A and of B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Correct substitution into midpoint formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-b-question.png",
+          "srcHash": "8705b70195950795c2345b409d5af92e",
+          "alt": "The question as printed on the paper — The line AB intersects the x-axis at A and the y-axis at B. The point (−6, 2) is the midpoint of [AB]. Find the co-ordinates of A and of B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q1-b-solution.png",
+          "srcHash": "86fb9adc22b8663b092fd2778e69d5ea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q2-a", topicId: "maths-2-2", conceptId: "p2-deferred-q2-a",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q2(a)",
+    questionText: "The circle s has centre (2, 4). The point (−1, −3) lies on the circle s. Find the equation of the circle s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q2-a-solution-1", kind: "point", verbatim: "Work of merit in calculating the radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q2-a-solution-2", kind: "point", verbatim: "Calculates the radius of the circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-a-question.png",
+          "srcHash": "625f163718c60789a29d361cca555a21",
+          "alt": "The question as printed on the paper — The circle s has centre (2, 4). The point (−1, −3) lies on the circle s. Find the equation of the circle s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-a-solution.png",
+          "srcHash": "f6ed963e81a247a7ba541af81e983007",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q2(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The generic distance formula has a typographical error: use (y₂ − y₁)², not (y₂ − x₁)². The substituted values and final equation (x − 2)² + (y − 4)² = 58 are correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q2-b", topicId: "maths-2-2", conceptId: "p2-deferred-q2-b",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q2(b)",
+    questionText: "The circle c has centre (9, −2). The point (3, −6) lies on the circle c. Using the diagram on the right, or otherwise, write down the co-ordinates of two other points that lie on the circle c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q2-b-solution-1", kind: "point", verbatim: "Any 2 of the following points", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q2-b-solution-2", kind: "point", verbatim: "One correct point", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q2-b-solution-3", kind: "point", verbatim: "Finds the equation of the circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-b-question.png",
+          "srcHash": "fa58e323734ce6239eae2a6ffa6fa95c",
+          "alt": "The question as printed on the paper — The circle c has centre (9, −2). The point (3, −6) lies on the circle c. Using the diagram on the right, or otherwise, write down the co-ordinates of two other points that lie on the circle c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-b-solution.png",
+          "srcHash": "b64b5779680ede69b9cb74a472e620d6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The seven printed points are examples. Any two distinct points on (x − 9)² + (y + 2)² = 52, other than the given (3, −6), answer the question. Keep both points in one response.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q2-c", topicId: "maths-2-2", conceptId: "p2-deferred-q2-c",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q2(c)",
+    questionText: "The circle k has its centre in the first quadrant. The y-axis is a tangent to the circle k at the point (0, 3). The circle k intersects the x-axis at the points G and H, with |GH| = 8. Find the equation of the circle k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q2-c-solution-1", kind: "point", verbatim: "Finds the radius of the circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q2-c-solution-2", kind: "point", verbatim: "Finds centre of the circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-c-question.png",
+          "srcHash": "ae47eaddf92a0e90030c5499fe3060be",
+          "alt": "The question as printed on the paper — The circle k has its centre in the first quadrant. The y-axis is a tangent to the circle k at the point (0, 3). The circle k intersects the x-axis at the points G and H, with |GH| = 8. Find the equation of the circle k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q2-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q2-c-solution.png",
+          "srcHash": "b4e644ca242e18b47a980b2024b53a0f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q2(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q3-a", topicId: "maths-2-1", conceptId: "p2-deferred-q3-a",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q3(a)",
+    questionText: "The diagram below shows a circle. The centre is marked P. The point Q is on the circle. Construct the tangent to the circle at the point Q, using only a compass and straight edge. Show all of your construction lines clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q3-a-solution-1", kind: "point", verbatim: "Perpendicular line drawn without construction lines", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q3-a-solution-2", kind: "point", verbatim: "equidistant", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-a-question.png",
+          "srcHash": "04d798d5a177ba9a4d01645ac50e08bb",
+          "alt": "The question as printed on the paper — The diagram below shows a circle. The centre is marked P. The point Q is on the circle. Construct the tangent to the circle at the point Q, using only a compass and straight edge. Show all of your construction lines clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-a-solution.png",
+          "srcHash": "1d9d136e8e2f3b40069c36ec7fd29171",
+          "alt": "NextStepUni compass construction: extend PQ, mark U and V equally distant from Q, intersect equal-radius arcs centred at U and V, and draw the perpendicular tangent through those intersections and Q. Original SEC credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The scheme describes a correct tangent with construction lines but supplies no drawing. This NextStepUni example constructs the perpendicular to PQ at Q, retaining the original SEC credit notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q3-b", topicId: "maths-3-4", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q3(b)",
+    questionText: "Another circle has a circumference of 30 cm. Work out the area of this circle. Give your answer in cm², in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "Finds the radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q3-b-solution-2", kind: "point", verbatim: "Answer not in correct form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-b-question.png",
+          "srcHash": "c8cc65f6bae54c089c5c8a4097ecd9c6",
+          "alt": "The question as printed on the paper — Another circle has a circumference of 30 cm. Work out the area of this circle. Give your answer in cm², in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-b-solution.png",
+          "srcHash": "3f7dc341d4e7b0a8068c2afc4b91d14b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q3-c", topicId: "maths-2-1", conceptId: "p2-deferred-q3-c",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q3(c)",
+    questionText: "O is the centre of a different circle. A and B are points on this circle, as shown in the diagram below. The chord [AB] is extended through B to C, so that |BC| is equal to the radius of the circle. CO intersects the circle at D and at E, with D ∈ [CO]. Let |∠BCO| = x. Write |∠AOE| in terms of x. Show your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q3-c-solution-1", kind: "point", verbatim: "marks isosceles triangles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-c-question.png",
+          "srcHash": "fc885f1eb2d8d19002452757441e7a32",
+          "alt": "The question as printed on the paper — O is the centre of a different circle. A and B are points on this circle, as shown in the diagram below. The chord [AB] is extended through B to C, so that |BC| is equal to the radius of the circle. CO intersects the circle at D and at E, with D ∈ [CO]. Let |∠BCO| = x. Write |∠AOE| in terms of x. Show your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q3-c-solution.png",
+          "srcHash": "358b3d6f3797471fd76af7d3b85bbb18",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The last printed angle label should be ∠AOE, not ∠AOB. The requested angle is 3x; ∠AOB is 180° − 4x. The original working and credit notes remain below.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q4-a", topicId: "maths-2-3", conceptId: "p2-deferred-q4-a",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q4(a)",
+    questionText: "Find the value of cos 105° without using a calculator. Give your answer in the form (1 − √a)/(b√b), where a, b ∈ ℕ. Show your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q4-a-solution-1", kind: "point", verbatim: "some correct substitution into relevant formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-a-question.png",
+          "srcHash": "4b46d241e28c2ae81b2cf2bca46705b5",
+          "alt": "The question as printed on the paper — Find the value of cos 105° without using a calculator. Give your answer in the form (1 − √a)/(b√b), where a, b ∈ ℕ. Show your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-a-solution.png",
+          "srcHash": "13ea7df8d4d6525fc616377c667ad94c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q4-b-i", topicId: "maths-2-3", conceptId: "p2-deferred-q4-b-i",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q4(b)(i)",
+    questionText: "Prove that sin 2A = 2 sin A cos A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q4-b-i-solution-1", kind: "point", verbatim: "Replace 𝐵 with 𝐴", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-b-i-question.png",
+          "srcHash": "8756868b5d4ae9a17f3ba92296737cf8",
+          "alt": "The question as printed on the paper — Prove that sin 2A = 2 sin A cos A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-b-i-solution.png",
+          "srcHash": "fce39ae5b54f8513280a8baa190c2665",
+          "alt": "NextStepUni proof: sin(A+B)=sin A cos B+cos A sin B. Set B=A to obtain sin(2A)=sin A cos A+cos A sin A=2 sin A cos A. Original SEC credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "This is part (b)(i) on the paper, labelled (b) in the scheme. The scheme omits A after one sine and ends with cos B instead of cos A. The corrected NextStepUni proof appears above the unchanged SEC credit notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q4-b-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q4-b-ii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q4(b)(ii)",
+    stem: "From part (b)(i): sin 2A = 2 sin A cos A.",
+    questionText: "The triangle ABC is shown below. |AB| = 5, |AC| = 3, |∠ABC| = W, and |∠ACB| = 2W, where 0° < W < 45°. Find the value of cos W, in the form p/q, where p, q ∈ ℕ. Use the result from part (b)(i) and the Sine Rule.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "Fully correct substitution into the Sine rule", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-b-ii-question.png",
+          "srcHash": "3948391be6fca8363ff4a4d31d994d3b",
+          "alt": "The question as printed on the paper — From part (b)(i): sin 2A = 2 sin A cos A. The triangle ABC is shown below. |AB| = 5, |AC| = 3, |∠ABC| = W, and |∠ACB| = 2W, where 0° < W < 45°. Find the value of cos W, in the form p/q, where p, q ∈ ℕ. Use the result from part (b)(i) and the Sine Rule.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q4-b-ii-solution.png",
+          "srcHash": "894d19e9aa9dd4049c673ca3a0425708",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "This is part (b)(ii) on the question paper; the scheme labels it (c). Since 0° < W < 45°, sin W is non-zero and can be cancelled to obtain cos W = 5/6.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q5-a-i-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q5-a-i-ii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q5(a)(i), Q5(a)(ii)",
+    questionText: "Assume that the margin of error for a population proportion is 1/√n, where n is the sample size. (i) A survey is carried out on a random sample of 1600 people. Find the margin of error for a population proportion, based on this sample. Give your answer as a percentage. (ii) What sample size would be needed to give a margin of error of exactly 1%?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q5-a-i-ii-solution-1", kind: "point", verbatim: "substitutes 1600 into the formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q5-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-a-i-ii-question.png",
+          "srcHash": "ff51f6bfb29669ea4163ad2b74ff84b2",
+          "alt": "The question as printed on the paper — Assume that the margin of error for a population proportion is 1/√n, where n is the sample size. (i) A survey is carried out on a random sample of 1600 people. Find the margin of error for a population proportion, based on this sample. Give your answer as a percentage. (ii) What sample size would be needed to give a margin of error of exactly 1%?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-a-i-ii-solution.png",
+          "srcHash": "0b7754f9006a9571a494418502eb434c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q5(a)(i), Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q5-b-i", topicId: "maths-1-2", conceptId: "p2-deferred-q5-b-i",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q5(b)(i)",
+    stem: "A, B, C, D, E and F are six events.",
+    questionText: "A and B are independent. P(A) = 0·2 and P(B) = 0·3. Find the value of P(A ∩ B).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q5-b-i-solution-1", kind: "point", verbatim: "correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-i-question.png",
+          "srcHash": "5e70958cf731b7e0c722f3d7d2ecc7d5",
+          "alt": "The question as printed on the paper — A, B, C, D, E and F are six events. A and B are independent. P(A) = 0·2 and P(B) = 0·3. Find the value of P(A ∩ B).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-i-solution.png",
+          "srcHash": "6e009ac69dafcd2e7cd3be33321ff40b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q5(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q5-b-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q5-b-ii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q5(b)(ii)",
+    stem: "A, B, C, D, E and F are six events.",
+    questionText: "P(C) = 0·4, P(D) = 0·5, and P(C ∩ D) = 0·08. Find the value of P(C ∪ D).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q5-b-ii-solution-1", kind: "point", verbatim: "Correct Venn diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-ii-question.png",
+          "srcHash": "8d40a61dae81b370f86ded70009f76f1",
+          "alt": "The question as printed on the paper — A, B, C, D, E and F are six events. P(C) = 0·4, P(D) = 0·5, and P(C ∩ D) = 0·08. Find the value of P(C ∪ D).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-ii-solution.png",
+          "srcHash": "0c0f37beb5d8dfd21e5b72b72e808c13",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q5-b-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q5-b-iii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q5(b)(iii)",
+    stem: "A, B, C, D, E and F are six events.",
+    questionText: "P(E) = 0·6, P(F) = x + 0·4, and P(E ∩ F) = x, where x ∈ ℝ is a constant. Find the value of x for which P(E | F) = 1/4.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q5-b-iii-solution-1", kind: "point", verbatim: "correct formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-iii-question.png",
+          "srcHash": "1897ff4a043c2e8584f161118290ee43",
+          "alt": "The question as printed on the paper — A, B, C, D, E and F are six events. P(E) = 0·6, P(F) = x + 0·4, and P(E ∩ F) = x, where x ∈ ℝ is a constant. Find the value of x for which P(E | F) = 1/4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q5-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q5-b-iii-solution.png",
+          "srcHash": "c3ad8f14d016c4b62d29320b45e4b598",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q5(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q6-a-i", topicId: "maths-1-1", conceptId: "p2-deferred-q6-a-i",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q6(a)(i)",
+    stem: "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+    questionText: "How many such codes are there?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q6-a-i-solution-1", kind: "point", verbatim: "some arrangements shown", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-a-i-question.png",
+          "srcHash": "4383688b57156c29fbf1bc58be2c782b",
+          "alt": "The question as printed on the paper — A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code. How many such codes are there?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-a-i-solution.png",
+          "srcHash": "b139d10f96db1c918bfd1c2c308b9162",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q6-a-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q6-a-ii",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q6(a)(ii)",
+    stem: "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+    questionText: "In how many of these codes are the two vowels (A and E) together?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "one arrangement shown", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q6-a-ii-solution-2", kind: "point", verbatim: "6! calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-a-ii-question.png",
+          "srcHash": "8aaf67379cd2b82a30ffec0afa18e347",
+          "alt": "The question as printed on the paper — A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code. In how many of these codes are the two vowels (A and E) together?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-a-ii-solution.png",
+          "srcHash": "2f1e3edb50ace4e4ad23ca2fdf56bb09",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q6-b", topicId: "maths-1-6", conceptId: "p2-deferred-q6-b",
+    section: "A", questionRef: "2024 HL Paper 2 — Deferred Q6(b)",
+    questionText: "The mode of 6 positive whole numbers is 2. The median of the 6 numbers is 5·5. Find the 6 such numbers that have the smallest possible mean.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q6-b-solution-1", kind: "point", verbatim: "5.5 is the median", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q6-b-solution-2", kind: "point", verbatim: "2,2,5,6,7,8", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-b-question.png",
+          "srcHash": "ff5c3bc6c6fe3adaaf7c431f9807e2c6",
+          "alt": "The question as printed on the paper — The mode of 6 positive whole numbers is 2. The median of the 6 numbers is 5·5. Find the 6 such numbers that have the smallest possible mean.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q6-b-solution.png",
+          "srcHash": "b09ebb085b83ab4b5a27ce306cc48746",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q7-a-i", topicId: "maths-1-3", conceptId: "p2-deferred-q7-a-i",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q7(a)(i)",
+    stem: "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+    questionText: "One tree is picked at random from this forest. Find the probability that the height of this tree is between 330 cm and 390 cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q7-a-i-solution-1", kind: "point", verbatim: "Finds z-score for 330", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q7-a-i-solution-2", kind: "point", verbatim: "Finds z-score for 390", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-a-i-question.png",
+          "srcHash": "36e1be7e00a389ee417713914c4d8686",
+          "alt": "The question as printed on the paper — Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm. One tree is picked at random from this forest. Find the probability that the height of this tree is between 330 cm and 390 cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-a-i-solution.png",
+          "srcHash": "27448a9d17214888dc0c212d6397fcec",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "X is the height of one tree, not a sample mean as the printed subscript suggests. The scheme rounds z to ±1·11 before using the normal table, giving 0·733. Without that intermediate rounding the probability is approximately 0·73348.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q7-a-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q7-a-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q7(a)(ii)",
+    stem: "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+    questionText: "The shortest (smallest) 5% of the trees in the forest are not sent to the factory when the forest is harvested, as they are not tall enough. What is the minimum height that a tree needs to be in order for it to be sent to the factory when the forest is harvested?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "Subs value into the z-score formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q7-a-ii-solution-2", kind: "point", verbatim: "No unit or incorrect unit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-a-ii-question.png",
+          "srcHash": "229c558f8301e2cac72535c880f77921",
+          "alt": "The question as printed on the paper — Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm. The shortest (smallest) 5% of the trees in the forest are not sent to the factory when the forest is harvested, as they are not tall enough. What is the minimum height that a tree needs to be in order for it to be sent to the factory when the forest is harvested?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-a-ii-solution.png",
+          "srcHash": "29bfdfe03351d001fa807107cc103b4a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme uses the rounded table value z = −1·64 and obtains 315·72 cm. A direct inverse-normal calculation uses z ≈ −1·64485 and gives about 315·59 cm; the small difference comes from table rounding.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q7-b", topicId: "maths-1-7", conceptId: "p2-deferred-q7-b",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q7(b)",
+    stem: "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+    questionText: "Fiadh claims that the mean height of the trees in her forest is different to the usual height, because they have become infected with a disease. She picks 100 trees at random from her forest and measures their height. The mean height of this sample is 350 cm. Test the hypothesis, at the 5% level of significance, that the mean height of the trees in the forest is different to the usual height of 360 cm. The null hypothesis is given below. State your alternative hypothesis, state your conclusion, and give a reason for your conclusion. Null hypothesis: “The mean height of the trees in Fiadh’s forest is 360 cm.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q7-b-solution-1", kind: "point", verbatim: "States alternative hypothesis", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q7-b-solution-2", kind: "point", verbatim: "Reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-b-question.png",
+          "srcHash": "3bc4a7f7acc9f729823a8937c64ff7ab",
+          "alt": "The question as printed on the paper — Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm. Fiadh claims that the mean height of the trees in her forest is different to the usual height, because they have become infected with a disease. She picks 100 trees at random from her forest and measures their height. The mean height of this sample is 350 cm. Test the hypothesis, at the 5% level of significance, that the mean height of the trees in the forest is different to the usual height of 360 cm. The null hypothesis is given below. State your alternative hypothesis, state your conclusion, and give a reason for your conclusion. Null hypothesis: “The mean height of the trees in Fiadh’s forest is 360 cm.”",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-b-solution.png",
+          "srcHash": "dd8940a17579b3459dbf1093538891bd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q7-c-i-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-c-i-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii)",
+    questionText: "Fiadh wants to estimate the number of trees that have become infected with the disease. She picks a random sample of 160 trees and examines them. 48 of these trees are infected with the disease. (i) Find the 95% confidence interval for the proportion of trees in the forest that are infected. Give each value in your answer correct to 3 significant figures. (ii) Explain what this 95% confidence interval means, in the context of the question.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q7-c-i-ii-solution-1", kind: "point", verbatim: "Find Interval", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q7-c-i-ii-solution-2", kind: "point", verbatim: "Explanation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-c-i-ii-question.png",
+          "srcHash": "1ac8f645846bd3bad41f52647e390bd6",
+          "alt": "The question as printed on the paper — Fiadh wants to estimate the number of trees that have become infected with the disease. She picks a random sample of 160 trees and examines them. 48 of these trees are infected with the disease. (i) Find the 95% confidence interval for the proportion of trees in the forest that are infected. Give each value in your answer correct to 3 significant figures. (ii) Explain what this 95% confidence interval means, in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-c-i-ii-solution.png",
+          "srcHash": "6d683c6004e4bbb55cdd4274b175c2cf",
+          "alt": "NextStepUni corrected interpretation of a 95% confidence interval for the infected population proportion, followed by the original numerical calculation and unchanged SEC credit criteria.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The numerical interval is correct, but the printed explanation incorrectly refers to sample means lying inside this interval. A 95% confidence procedure means that, over repeated random samples, about 95% of the intervals constructed this way contain the true population proportion. Here the estimated infected proportion is 22·9%–37·1%. This NextStepUni clarification does not change the original SEC credit criteria.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q7-d-i-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q7-d-i-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q7(d)(i), Q7(d)(ii)",
+    questionText: "(i) The diagram below shows a normal curve with a mean of 360. On the same diagram, draw a new curve that will have the same standard deviation as the given curve, but with a mean of 350. Use the same axes and scales. (ii) The diagram below shows the same normal curve as above, with a mean of 360. On the diagram below, draw a new curve that will also have a mean of 360, but that will have a smaller standard deviation than the given curve. Use the same axes and scales.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q7-d-i-ii-solution-1", kind: "point", verbatim: "One graph correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q7-d-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-d-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-d-i-ii-question.png",
+          "srcHash": "cf73ca7cb4f03309d5266b053a85d121",
+          "alt": "The question as printed on the paper — (i) The diagram below shows a normal curve with a mean of 360. On the same diagram, draw a new curve that will have the same standard deviation as the given curve, but with a mean of 350. Use the same axes and scales. (ii) The diagram below shows the same normal curve as above, with a mean of 360. On the diagram below, draw a new curve that will also have a mean of 360, but that will have a smaller standard deviation than the given curve. Use the same axes and scales.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q7-d-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q7-d-i-ii-solution.png",
+          "srcHash": "736fdb9dcc95d126a9e273fa334402a7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q7(d)(i), Q7(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(a)(i)",
+    stem: "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+    questionText: "Find the area of the field, correct to the nearest m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Fully correct substitution into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-a-i-question.png",
+          "srcHash": "6fc95fba54f51627accda94b5930c033",
+          "alt": "The question as printed on the paper — Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown. Find the area of the field, correct to the nearest m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "6d0e988404394d9a8e4fbae9085e4a04",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+    questionText: "Work out the length of the side [BC], correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Fully substituted Cosine Rule formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Calculator in incorrect mode", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "e7025f0819f107902432cd1bee6e363a",
+          "alt": "The question as printed on the paper — Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown. Work out the length of the side [BC], correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "5e928163df6c6ff23f98c14401b73296",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-b", topicId: "maths-3-3", conceptId: "p2-deferred-q8-b",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(b)",
+    stem: "Henryk has two balers: a square baler and a round baler. These are machines that pick up straw from a field and make it into bales.",
+    questionText: "Henryk’s square baler travels at an average speed of 8 km/hour while it is baling. For one of his fields, this baler travels 4800 m while it is baling. Work out how many minutes this will take.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-b-solution-1", kind: "point", verbatim: "Calculates 0.6 hours", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-b-question.png",
+          "srcHash": "fb7dbc601e60ab54c46aa3fd73c8ee14",
+          "alt": "The question as printed on the paper — Henryk has two balers: a square baler and a round baler. These are machines that pick up straw from a field and make it into bales. Henryk’s square baler travels at an average speed of 8 km/hour while it is baling. For one of his fields, this baler travels 4800 m while it is baling. Work out how many minutes this will take.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-b-solution.png",
+          "srcHash": "69495705b9bc4a01bb009d7be6a6dbc1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-c", topicId: "maths-3-4", conceptId: "p2-deferred-q8-c",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(c)",
+    questionText: "This baler makes bales in the shape of rectangular solids. A bale has a volume of 0·415 m³, correct to 3 decimal places. The ratio of the dimensions of this bale is: height : width : length = 2 : 3 : 5. Find the dimensions of this bale. Give each value correct to the nearest cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-c-solution-1", kind: "point", verbatim: "Substantial work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-c-question.png",
+          "srcHash": "3ca430c4d1237993104b7b2a1026b080",
+          "alt": "The question as printed on the paper — This baler makes bales in the shape of rectangular solids. A bale has a volume of 0·415 m³, correct to 3 decimal places. The ratio of the dimensions of this bale is: height : width : length = 2 : 3 : 5. Find the dimensions of this bale. Give each value correct to the nearest cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-c-solution.png",
+          "srcHash": "6f4fd368a4dd21961371e394810c1c74",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The last dimension in the scheme is mislabelled Height. The dimensions are height 48 cm, width 72 cm and length 120 cm, to the nearest centimetre.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-d", topicId: "maths-3-4", conceptId: "p2-deferred-q8-d",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(d)",
+    questionText: "Henryk’s round baler makes bales in the shape of cylinders. The height of each cylinder is equal to its diameter. The volume of a cylindrical bale is 2·780 m³, correct to 3 decimal places. Work out the radius of a cylindrical bale. Give your answer in metres, correct to the nearest cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-d-solution-1", kind: "point", verbatim: "Fully correct substitution into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-d-question.png",
+          "srcHash": "de1bfa8fe916be5eb9ec0c540c910e95",
+          "alt": "The question as printed on the paper — Henryk’s round baler makes bales in the shape of cylinders. The height of each cylinder is equal to its diameter. The volume of a cylindrical bale is 2·780 m³, correct to 3 decimal places. Work out the radius of a cylindrical bale. Give your answer in metres, correct to the nearest cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-d-solution.png",
+          "srcHash": "baa02a822dba3c2ccf584e453ce97760",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q8-e", topicId: "maths-3-4", conceptId: "p2-deferred-q8-e",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q8(e)",
+    questionText: "Henryk is tiling his patio. The tiles are square, with a design made of circles. The design consists of a large circle inscribed inside the square tile. There are 4 smaller circles of equal size inside the large circle. The centres of these 4 circles form a square, and each small circle touches two other small circles and the large circle, as shown in the diagram below. The radius of each small circle is 1 cm. Work out the area of the square tile (the large square in the diagram below). Give your answer in the form (a + b√c) cm², where a, b, c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q8-e-solution-1", kind: "point", verbatim: "Finds diagonal of small square", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q8-e-solution-2", kind: "point", verbatim: "Finds radius or diameter of big circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-e-question.png",
+          "srcHash": "3d57ceddf0cc28cac4be4090014d5236",
+          "alt": "The question as printed on the paper — Henryk is tiling his patio. The tiles are square, with a design made of circles. The design consists of a large circle inscribed inside the square tile. There are 4 smaller circles of equal size inside the large circle. The centres of these 4 circles form a square, and each small circle touches two other small circles and the large circle, as shown in the diagram below. The radius of each small circle is 1 cm. Work out the area of the square tile (the large square in the diagram below). Give your answer in the form (a + b√c) cm², where a, b, c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q8-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q8-e-solution.png",
+          "srcHash": "0d9fdd5d4b5d99ca2c9bfcae69af29f0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q8(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q9-a-i", topicId: "maths-1-6", conceptId: "p2-deferred-q9-a-i",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q9(a)(i)",
+    stem: "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+    questionText: "One of the numbers below is the correct correlation coefficient for the data above. Put a tick (✓) in the correct box to show which one is the correct value. Tick one box only. Justify your answer. Options: 0·4, −0·3, 0·9, −0·8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q9-a-i-solution-1", kind: "point", verbatim: "There is a strong positive correlation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q9-a-i-solution-2", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-a-i-question.png",
+          "srcHash": "756dd113244e080356bc29f4730aa316",
+          "alt": "The question as printed on the paper — The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively. One of the numbers below is the correct correlation coefficient for the data above. Put a tick (✓) in the correct box to show which one is the correct value. Tick one box only. Justify your answer. Options: 0·4, −0·3, 0·9, −0·8.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-a-i-solution.png",
+          "srcHash": "570cb9d4eefe5ae25da0daf1d5d7ae1a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q9-a-ii", topicId: "maths-1-6", conceptId: "p2-deferred-q9-a-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q9(a)(ii)",
+    stem: "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+    questionText: "On the scatterplot above, draw the line of best fit for the data, by eye, and use this line to estimate the weight of a rugby player that is 1·8 m tall.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "reasonable slope", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q9-a-ii-solution-2", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-a-ii-question.png",
+          "srcHash": "3b56ec31d6f896b8cb600aecb14c7bf5",
+          "alt": "The question as printed on the paper — The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively. On the scatterplot above, draw the line of best fit for the data, by eye, and use this line to estimate the weight of a rugby player that is 1·8 m tall.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-a-ii-solution.png",
+          "srcHash": "1c8635a6124a4edaf5b6a137344d451a",
+          "alt": "Original SEC scatterplot with an attributed NextStepUni line of best fit and guides reading approximately 90 kg at height 1.8 m. The original axes have weight horizontally and height vertically. SEC credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The scheme supplies a verbal instruction but no drawn line. The NextStepUni example overlays a reasonable line and reading guides on the original SEC scatterplot. At height 1·8 m it gives about 90 kg. Other reasonable by-eye lines and their consistent readings are accepted by the original marking notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q9-b-i-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q9-b-i-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q9(b)(i), Q9(b)(ii)",
+    questionText: "This particular rugby team usually miss 8% of the tackles that they attempt. Use this fact to answer parts (b)(i) and (b)(ii). Assume that all tackles are independent. Give each answer correct to 4 decimal places. (i) Find the probability that the 4th tackle in a game is the first one that is missed. (ii) Find the probability that the team miss at least 2 tackles out of the first 20 tackles that they attempt in a game.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q9-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q9-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-b-i-ii-question.png",
+          "srcHash": "1af014b16b3e2aa1d0ae5899c0251ece",
+          "alt": "The question as printed on the paper — This particular rugby team usually miss 8% of the tackles that they attempt. Use this fact to answer parts (b)(i) and (b)(ii). Assume that all tackles are independent. Give each answer correct to 4 decimal places. (i) Find the probability that the 4th tackle in a game is the first one that is missed. (ii) Find the probability that the team miss at least 2 tackles out of the first 20 tackles that they attempt in a game.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-b-i-ii-solution.png",
+          "srcHash": "c6c60e329593b5b705385bd05f9f029f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q9(b)(i), Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q9-c", topicId: "maths-1-3", conceptId: "p2-deferred-q9-c",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q9(c)",
+    questionText: "At a particular stage of the game, this rugby team will score either 7 points, 5 points, or 0 points. The probability of each of these is x, y, and z, respectively, where x, y, z ∈ ℝ. The probability of getting 7 points is four times the probability of getting 5 points. The expected value of the number of points is 1·155. Work out the value of z, the probability of scoring 0 points.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q9-c-solution-1", kind: "point", verbatim: "Finds 𝑥 or 𝑦", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-c-question.png",
+          "srcHash": "2385049d4f51878072445222e3ea9b5e",
+          "alt": "The question as printed on the paper — At a particular stage of the game, this rugby team will score either 7 points, 5 points, or 0 points. The probability of each of these is x, y, and z, respectively, where x, y, z ∈ ℝ. The probability of getting 7 points is four times the probability of getting 5 points. The expected value of the number of points is 1·155. Work out the value of z, the probability of scoring 0 points.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-c-solution.png",
+          "srcHash": "7ece0f30691a134e17899444404e0bf2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q9(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q9-d-i-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q9-d-i-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q9(d)(i), Q9(d)(ii)",
+    questionText: "The coach of the rugby team must pick 3 forwards from a total of 7 possible forwards. (i) How many different combinations of 3 forwards can the coach pick? (ii) On Saturday, the coach picks 3 forwards at random from the 7 forwards. On Sunday, the coach again picks 3 forwards at random from the same 7 forwards. Find the probability that no forward is picked on both Saturday and Sunday.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q9-d-i-ii-solution-1", kind: "point", verbatim: "One part correct and work of merit in the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-d-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-d-i-ii-question.png",
+          "srcHash": "7dee407607c8c604c1a5eaa8db631739",
+          "alt": "The question as printed on the paper — The coach of the rugby team must pick 3 forwards from a total of 7 possible forwards. (i) How many different combinations of 3 forwards can the coach pick? (ii) On Saturday, the coach picks 3 forwards at random from the 7 forwards. On Sunday, the coach again picks 3 forwards at random from the same 7 forwards. Find the probability that no forward is picked on both Saturday and Sunday.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q9-d-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q9-d-i-ii-solution.png",
+          "srcHash": "09539ad03badff14d2d64421cef24a02",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q9(d)(i), Q9(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-a-i-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-i-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(a)(i), Q10(a)(ii)",
+    stem: "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+    questionText: "(i) Complete the table below. The value of h(0·2) is given. t: 0, 0·1, 0·2, 0·3, 0·4, 0·5, 0·6, 0·7, 0·8; h(0·2) = 60. (ii) Draw the graph of y = h(t) for 0 ≤ t ≤ 0·8, t ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-1", kind: "point", verbatim: "8 values in table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-2", kind: "point", verbatim: "9 points plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-3", kind: "point", verbatim: "Points joined appropriately", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-4", kind: "point", verbatim: "Correct graph without table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-a-i-ii-question.png",
+          "srcHash": "ef7e10e96eda5cd1c1e5bc9edfe5062f",
+          "alt": "The question as printed on the paper — Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. (i) Complete the table below. The value of h(0·2) is given. t: 0, 0·1, 0·2, 0·3, 0·4, 0·5, 0·6, 0·7, 0·8; h(0·2) = 60. (ii) Draw the graph of y = h(t) for 0 ≤ t ≤ 0·8, t ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-a-i-ii-solution.png",
+          "srcHash": "5a9aa78c6e0ad80ab3098d69c5e0fbb2",
+          "alt": "NextStepUni table and smooth graph of h(t)=30−30cos(5πt), from 0 to 0.8 seconds. Heights at 0.1-second intervals: 0,30,60,30,0,30,60,30,0 centimetres. Original SEC credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The printed scheme table mistakenly labels the times 0–8 instead of 0–0·8 seconds, and omits the graph. The NextStepUni worked example supplies the correct time labels, all nine heights and the smooth curve across the complete printed domain. Original SEC credit notes follow.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-b", topicId: "maths-2-3", conceptId: "p2-deferred-q10-b",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(b)",
+    stem: "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+    questionText: "The period of h(t) is 0·4 seconds. Explain what this means in the context of Chloë’s front wheel.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-b-solution-1", kind: "point", verbatim: "It takes 0.4 seconds for the wheel to do 1 full rotation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-b-question.png",
+          "srcHash": "93f58cde760cea6a0b537615b19675a8",
+          "alt": "The question as printed on the paper — Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. The period of h(t) is 0·4 seconds. Explain what this means in the context of Chloë’s front wheel.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-b-solution.png",
+          "srcHash": "add2ce2fac6e081d35717fec3ad8200f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-c-i", topicId: "maths-3-4", conceptId: "p2-deferred-q10-c-i",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(c)(i)",
+    questionText: "The radius of the wheel is 30 cm. Work out the distance that Chloë travels in one full revolution (rotation) of the wheel. Give your answer correct to the nearest millimetre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-c-i-solution-1", kind: "point", verbatim: "Correct substitution into the formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-c-i-question.png",
+          "srcHash": "0668e7eba1d9cc06b8acd3bc025813a5",
+          "alt": "The question as printed on the paper — The radius of the wheel is 30 cm. Work out the distance that Chloë travels in one full revolution (rotation) of the wheel. Give your answer correct to the nearest millimetre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-c-i-solution.png",
+          "srcHash": "bdb6dc2f8ae81b5543c622c805756ad8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q10(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-c-ii", topicId: "maths-3-3", conceptId: "p2-deferred-q10-c-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(c)(ii)",
+    stem: "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. The radius of the wheel is 30 cm. The period is 0·4 seconds. Part (c)(i) asks for the distance travelled in one full rotation, to the nearest millimetre.",
+    questionText: "Using your answer to (c)(i), and the period of h(t), work out the speed that Chloë is cycling at. Give your answer correct to the nearest km/hour.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "Some correct speed calculated but in incorrect unit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-c-ii-question.png",
+          "srcHash": "dd0dd8c915f641bbd4a268eeaa73e000",
+          "alt": "The question as printed on the paper — Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. The radius of the wheel is 30 cm. The period is 0·4 seconds. Part (c)(i) asks for the distance travelled in one full rotation, to the nearest millimetre. Using your answer to (c)(i), and the period of h(t), work out the speed that Chloë is cycling at. Give your answer correct to the nearest km/hour.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-c-ii-solution.png",
+          "srcHash": "581cbc1df6a462c0ac689653d00b5e88",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-d-i", topicId: "maths-2-3", conceptId: "p2-deferred-q10-d-i",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(d)(i)",
+    stem: "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres.",
+    questionText: "From B, the angle of elevation to the top of the building is 30°. Write |OB| in terms of h.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-d-i-solution-1", kind: "point", verbatim: "Correct trigonometric equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-d-i-question.png",
+          "srcHash": "cf7270ff5582cfbe4491c5f1d705dbd0",
+          "alt": "The question as printed on the paper — The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres. From B, the angle of elevation to the top of the building is 30°. Write |OB| in terms of h.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-d-i-solution.png",
+          "srcHash": "53c7902712d924e30b1be0fb07a2adf9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q10(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-deferred-q10-d-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q10-d-ii",
+    section: "B", questionRef: "2024 HL Paper 2 — Deferred Q10(d)(ii)",
+    stem: "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres. From B, the angle of elevation to the top of the building is 30°.",
+    questionText: "The distance |AB| = 120 metres and |∠AOB| = 60°. Given this information, use the triangle ABO to work out the value of h, the height of the building. Give your answer in metres, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-deferred-q10-d-ii-solution-1", kind: "point", verbatim: "Fully correct substitution into the cosine rule", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-d-ii-question.png",
+          "srcHash": "0ee43888fd83ff3a0d3d6deca6e6bf77",
+          "alt": "The question as printed on the paper — The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres. From B, the angle of elevation to the top of the building is 30°. The distance |AB| = 120 metres and |∠AOB| = 60°. Given this information, use the triangle ABO to work out the value of h, the height of the building. Give your answer in metres, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p2-deferred-q10-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p2-deferred-q10-d-ii-solution.png",
+          "srcHash": "97b77c3ac1831820259961c79bb4c9ca",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 2 — Deferred Q10(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

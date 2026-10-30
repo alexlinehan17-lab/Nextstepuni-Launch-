@@ -198134,5 +198134,1301 @@
   "notes": "Independently visually checked against the 2024 Higher Level Paper 1 and its scheme on 2026-10-30.",
   "figureKey": "maths-2024-hl-p1-deferred-q10-e-solution",
   "questionFigureKey": "maths-2024-hl-p1-deferred-q10-e-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q1-a-i-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q1(a)(i), Q1(a)(ii)",
+  "stem": "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+  "questionText": "(i) Write down the midpoint of [PQ]. (ii) Hence, or otherwise, find the equation of the perpendicular bisector of [PQ].",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Find the midpoint",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Find slope of perpendicular bisector",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "3 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q1-a-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q1-a-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q1-a-iii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a-iii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q1(a)(iii)",
+  "stem": "The vertices of the triangle PQR are P(6, 5), Q(4, −3), and R(10, −3).",
+  "questionText": "Hence, find the co-ordinates of the circumcentre of the triangle PQR (that is, the point where the perpendicular bisectors of the sides meet).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q1-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "effort to calculate perpendicular bisector",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q1-a-iii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q1-a-iii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q1-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q1(b)",
+  "questionText": "The line AB intersects the x-axis at A and the y-axis at B. The point (−6, 2) is the midpoint of [AB]. Find the co-ordinates of A and of B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Correct substitution into midpoint formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q2-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-a",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q2(a)",
+  "questionText": "The circle s has centre (2, 4). The point (−1, −3) lies on the circle s. Find the equation of the circle s.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit in calculating the radius",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Calculates the radius of the circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q2-a-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q2-a-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q2-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q2(b)",
+  "questionText": "The circle c has centre (9, −2). The point (3, −6) lies on the circle c. Using the diagram on the right, or otherwise, write down the co-ordinates of two other points that lie on the circle c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Any 2 of the following points",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "One correct point",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Finds the equation of the circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q2-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q2-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q2-c",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-c",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q2(c)",
+  "questionText": "The circle k has its centre in the first quadrant. The y-axis is a tangent to the circle k at the point (0, 3). The circle k intersects the x-axis at the points G and H, with |GH| = 8. Find the equation of the circle k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Finds the radius of the circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Finds centre of the circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q2-c-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q2-c-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q3-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q3-a",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q3(a)",
+  "questionText": "The diagram below shows a circle. The centre is marked P. The point Q is on the circle. Construct the tangent to the circle at the point Q, using only a compass and straight edge. Show all of your construction lines clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Perpendicular line drawn without construction lines",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "equidistant",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q3-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q3-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q3(b)",
+  "questionText": "Another circle has a circumference of 30 cm. Work out the area of this circle. Give your answer in cm², in terms of π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Finds the radius",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Answer not in correct form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q3-c",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q3-c",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q3(c)",
+  "questionText": "O is the centre of a different circle. A and B are points on this circle, as shown in the diagram below. The chord [AB] is extended through B to C, so that |BC| is equal to the radius of the circle. CO intersects the circle at D and at E, with D ∈ [CO]. Let |∠BCO| = x. Write |∠AOE| in terms of x. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "marks isosceles triangles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q4-a",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q4-a",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q4(a)",
+  "questionText": "Find the value of cos 105° without using a calculator. Give your answer in the form (1 − √a)/(b√b), where a, b ∈ ℕ. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "some correct substitution into relevant formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q4-a-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q4-a-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q4-b-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q4-b-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q4(b)(i)",
+  "questionText": "Prove that sin 2A = 2 sin A cos A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Replace 𝐵 with 𝐴",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q4-b-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q4-b-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q4-b-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q4-b-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q4(b)(ii)",
+  "stem": "From part (b)(i): sin 2A = 2 sin A cos A.",
+  "questionText": "The triangle ABC is shown below. |AB| = 5, |AC| = 3, |∠ABC| = W, and |∠ACB| = 2W, where 0° < W < 45°. Find the value of cos W, in the form p/q, where p, q ∈ ℕ. Use the result from part (b)(i) and the Sine Rule.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into the Sine rule",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q4-b-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q4-b-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q5-a-i-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q5-a-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q5(a)(i), Q5(a)(ii)",
+  "questionText": "Assume that the margin of error for a population proportion is 1/√n, where n is the sample size. (i) A survey is carried out on a random sample of 1600 people. Find the margin of error for a population proportion, based on this sample. Give your answer as a percentage. (ii) What sample size would be needed to give a margin of error of exactly 1%?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q5-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "substitutes 1600 into the formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q5-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q5-a-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q5-a-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q5-b-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-b-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q5(b)(i)",
+  "stem": "A, B, C, D, E and F are six events.",
+  "questionText": "A and B are independent. P(A) = 0·2 and P(B) = 0·3. Find the value of P(A ∩ B).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "correct formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q5-b-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q5-b-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-b-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q5(b)(ii)",
+  "stem": "A, B, C, D, E and F are six events.",
+  "questionText": "P(C) = 0·4, P(D) = 0·5, and P(C ∩ D) = 0·08. Find the value of P(C ∪ D).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Correct Venn diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q5-b-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q5-b-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-b-iii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q5(b)(iii)",
+  "stem": "A, B, C, D, E and F are six events.",
+  "questionText": "P(E) = 0·6, P(F) = x + 0·4, and P(E ∩ F) = x, where x ∈ ℝ is a constant. Find the value of x for which P(E | F) = 1/4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q5-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "correct formula written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q5-b-iii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q5-b-iii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q6-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-a-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q6(a)(i)",
+  "stem": "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+  "questionText": "How many such codes are there?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "some arrangements shown",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q6-a-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q6-a-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q6-a-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-a-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q6(a)(ii)",
+  "stem": "A 7-letter code is made using the letters A, B, C, D, E, F, and G. Each letter is used exactly once in the code.",
+  "questionText": "In how many of these codes are the two vowels (A and E) together?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q6-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "one arrangement shown",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q6-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "6! calculated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q6-a-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q6-a-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q6-b",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q6-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 HL Paper 2 — Deferred Q6(b)",
+  "questionText": "The mode of 6 positive whole numbers is 2. The median of the 6 numbers is 5·5. Find the 6 such numbers that have the smallest possible mean.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "5.5 is the median",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "2,2,5,6,7,8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q6-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q6-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q7-a-i",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q7-a-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q7(a)(i)",
+  "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+  "questionText": "One tree is picked at random from this forest. Find the probability that the height of this tree is between 330 cm and 390 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Finds z-score for 330",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Finds z-score for 390",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q7-a-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q7-a-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q7-a-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q7-a-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q7(a)(ii)",
+  "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+  "questionText": "The shortest (smallest) 5% of the trees in the forest are not sent to the factory when the forest is harvested, as they are not tall enough. What is the minimum height that a tree needs to be in order for it to be sent to the factory when the forest is harvested?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Subs value into the z-score formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "No unit or incorrect unit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q7-a-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q7-a-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q7-b",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q7(b)",
+  "stem": "Fiadh owns a forest. The heights of trees in a forest of this type are usually normally distributed, with a mean height of 360 cm and a standard deviation of 27 cm.",
+  "questionText": "Fiadh claims that the mean height of the trees in her forest is different to the usual height, because they have become infected with a disease. She picks 100 trees at random from her forest and measures their height. The mean height of this sample is 350 cm. Test the hypothesis, at the 5% level of significance, that the mean height of the trees in the forest is different to the usual height of 360 cm. The null hypothesis is given below. State your alternative hypothesis, state your conclusion, and give a reason for your conclusion. Null hypothesis: “The mean height of the trees in Fiadh’s forest is 360 cm.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "States alternative hypothesis",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Reason",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q7-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q7-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q7-c-i-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-c-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii)",
+  "questionText": "Fiadh wants to estimate the number of trees that have become infected with the disease. She picks a random sample of 160 trees and examines them. 48 of these trees are infected with the disease. (i) Find the 95% confidence interval for the proportion of trees in the forest that are infected. Give each value in your answer correct to 3 significant figures. (ii) Explain what this 95% confidence interval means, in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Find Interval",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Explanation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q7-c-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q7-c-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q7-d-i-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q7-d-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q7(d)(i), Q7(d)(ii)",
+  "questionText": "(i) The diagram below shows a normal curve with a mean of 360. On the same diagram, draw a new curve that will have the same standard deviation as the given curve, but with a mean of 350. Use the same axes and scales. (ii) The diagram below shows the same normal curve as above, with a mean of 360. On the diagram below, draw a new curve that will also have a mean of 360, but that will have a smaller standard deviation than the given curve. Use the same axes and scales.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-d-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One graph correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q7-d-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q7-d-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q7-d-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-a-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(a)(i)",
+  "stem": "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+  "questionText": "Find the area of the field, correct to the nearest m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-a-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(a)(ii)",
+  "stem": "Henryk has a farm. The diagram below shows one of Henryk’s fields. It is in the shape of a triangle ABC. |AC| = 59 m, |AB| = 47 m, and |∠CAB| = 28°, as shown.",
+  "questionText": "Work out the length of the side [BC], correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Fully substituted Cosine Rule formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Calculator in incorrect mode",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-deferred-q8-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(b)",
+  "stem": "Henryk has two balers: a square baler and a round baler. These are machines that pick up straw from a field and make it into bales.",
+  "questionText": "Henryk’s square baler travels at an average speed of 8 km/hour while it is baling. For one of his fields, this baler travels 4800 m while it is baling. Work out how many minutes this will take.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Calculates 0.6 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-c",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-c",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(c)",
+  "questionText": "This baler makes bales in the shape of rectangular solids. A bale has a volume of 0·415 m³, correct to 3 decimal places. The ratio of the dimensions of this bale is: height : width : length = 2 : 3 : 5. Find the dimensions of this bale. Give each value correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "Substantial work of merit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-c-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-c-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-d",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-d",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(d)",
+  "questionText": "Henryk’s round baler makes bales in the shape of cylinders. The height of each cylinder is equal to its diameter. The volume of a cylindrical bale is 2·780 m³, correct to 3 decimal places. Work out the radius of a cylindrical bale. Give your answer in metres, correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-d-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-d-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q8-e",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-e",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q8(e)",
+  "questionText": "Henryk is tiling his patio. The tiles are square, with a design made of circles. The design consists of a large circle inscribed inside the square tile. There are 4 smaller circles of equal size inside the large circle. The centres of these 4 circles form a square, and each small circle touches two other small circles and the large circle, as shown in the diagram below. The radius of each small circle is 1 cm. Work out the area of the square tile (the large square in the diagram below). Give your answer in the form (a + b√c) cm², where a, b, c ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-e-solution-1",
+    "kind": "point",
+    "verbatim": "Finds diagonal of small square",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q8-e-solution-2",
+    "kind": "point",
+    "verbatim": "Finds radius or diameter of big circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q8-e-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q8-e-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q9-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q9-a-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q9(a)(i)",
+  "stem": "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+  "questionText": "One of the numbers below is the correct correlation coefficient for the data above. Put a tick (✓) in the correct box to show which one is the correct value. Tick one box only. Justify your answer. Options: 0·4, −0·3, 0·9, −0·8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "There is a strong positive correlation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Correct box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q9-a-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q9-a-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q9-a-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q9-a-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q9(a)(ii)",
+  "stem": "The scatterplot below shows the height and the weight of each player on a rugby team, in metres and in kilograms, respectively.",
+  "questionText": "On the scatterplot above, draw the line of best fit for the data, by eye, and use this line to estimate the weight of a rugby player that is 1·8 m tall.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "reasonable slope",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q9-a-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q9-a-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q9-b-i-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q9-b-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q9(b)(i), Q9(b)(ii)",
+  "questionText": "This particular rugby team usually miss 8% of the tackles that they attempt. Use this fact to answer parts (b)(i) and (b)(ii). Assume that all tackles are independent. Give each answer correct to 4 decimal places. (i) Find the probability that the 4th tackle in a game is the first one that is missed. (ii) Find the probability that the team miss at least 2 tackles out of the first 20 tackles that they attempt in a game.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q9-b-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q9-b-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q9-c",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q9-c",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q9(c)",
+  "questionText": "At a particular stage of the game, this rugby team will score either 7 points, 5 points, or 0 points. The probability of each of these is x, y, and z, respectively, where x, y, z ∈ ℝ. The probability of getting 7 points is four times the probability of getting 5 points. The expected value of the number of points is 1·155. Work out the value of z, the probability of scoring 0 points.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 𝑥 or 𝑦",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q9-c-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q9-c-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q9-d-i-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q9-d-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q9(d)(i), Q9(d)(ii)",
+  "questionText": "The coach of the rugby team must pick 3 forwards from a total of 7 possible forwards. (i) How many different combinations of 3 forwards can the coach pick? (ii) On Saturday, the coach picks 3 forwards at random from the 7 forwards. On Sunday, the coach again picks 3 forwards at random from the same 7 forwards. Find the probability that no forward is picked on both Saturday and Sunday.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q9-d-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q9-d-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q9-d-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-a-i-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-i-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(a)(i), Q10(a)(ii)",
+  "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+  "questionText": "(i) Complete the table below. The value of h(0·2) is given. t: 0, 0·1, 0·2, 0·3, 0·4, 0·5, 0·6, 0·7, 0·8; h(0·2) = 60. (ii) Draw the graph of y = h(t) for 0 ≤ t ≤ 0·8, t ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "8 values in table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "9 points plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Points joined appropriately",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Correct graph without table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-a-i-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-a-i-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-b",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(b)",
+  "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians.",
+  "questionText": "The period of h(t) is 0·4 seconds. Explain what this means in the context of Chloë’s front wheel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "It takes 0.4 seconds for the wheel to do 1 full rotation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-b-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-b-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-c-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q10-c-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(c)(i)",
+  "questionText": "The radius of the wheel is 30 cm. Work out the distance that Chloë travels in one full revolution (rotation) of the wheel. Give your answer correct to the nearest millimetre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Correct substitution into the formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-c-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-c-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-deferred-q10-c-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(c)(ii)",
+  "stem": "Chloë is cycling her bike. Chloë cycles over a small nail. Afterwards, she keeps cycling at the same speed, with the nail stuck in her front wheel. As the front wheel rotates, the height of the nail increases and decreases, and is given by: h(t) = 30 − 30 cos(5πt), where h is the height of the nail, in cm, t seconds after the nail gets stuck in the wheel, t ∈ ℝ, t ≥ 0, and 5πt is in radians. The radius of the wheel is 30 cm. The period is 0·4 seconds. Part (c)(i) asks for the distance travelled in one full rotation, to the nearest millimetre.",
+  "questionText": "Using your answer to (c)(i), and the period of h(t), work out the speed that Chloë is cycling at. Give your answer correct to the nearest km/hour.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct speed calculated but in incorrect unit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-c-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-c-ii-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-d-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-d-i",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(d)(i)",
+  "stem": "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres.",
+  "questionText": "From B, the angle of elevation to the top of the building is 30°. Write |OB| in terms of h.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Correct trigonometric equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-d-i-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-d-i-question"
+ },
+ {
+  "id": "maths-2024-hl-p2-deferred-q10-d-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-d-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 — Deferred Q10(d)(ii)",
+  "stem": "The vertical height of a building is h metres. The base of the building is at the point O. A and B are two other points. O, A, and B are all on horizontal ground. From A, the angle of elevation to the top of the building is 45° (that is, the angle from O to A to the top of the building is 45°). As a result, |OA| = h metres. From B, the angle of elevation to the top of the building is 30°.",
+  "questionText": "The distance |AB| = 120 metres and |∠AOB| = 60°. Given this information, use the triangle ABO to work out the value of h, the height of the building. Give your answer in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-deferred-q10-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into the cosine rule",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Higher Level Paper 2 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2024-hl-p2-deferred-q10-d-ii-solution",
+  "questionFigureKey": "maths-2024-hl-p2-deferred-q10-d-ii-question"
  }
 ]

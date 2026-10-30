@@ -5,7 +5,7 @@ The original marking criteria remain attached separately by the publisher.
 """
 from decimal import Decimal
 from io import BytesIO
-from math import exp
+from math import exp, cos, pi, sqrt, degrees, acos
 
 import fitz
 from PIL import Image
@@ -21,6 +21,13 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    paper2 = {'tangent-2024-hl-deferred':render_tangent_2024,
+              'double-angle-2024-hl-deferred':render_double_angle_2024,
+              'confidence-2024-hl-deferred':render_confidence_2024,
+              'scatter-2024-hl-deferred':render_scatter_2024,
+              'wheel-2024-hl-deferred':render_wheel_2024}
+    if name in paper2:
+        return paper2[name](dpi)
     examples = {'argand-2024-hl-deferred':render_argand_2024, 'shed-2024-hl-deferred':render_shed_2024, 'drying-2024-hl-deferred':render_drying_2024, 'pairs-2024-hl-deferred':render_pairs_2024}
     if name in examples:
         return examples[name](dpi)
@@ -223,4 +230,112 @@ def render_pairs_2024(dpi):
         c.setFont('Times-Roman',17);c.drawString(x,109,f'y = (-7 - 4({value})) / 2')
         c.drawString(x,68,'y =');c.drawCentredString(x+61,76,numerator)
         c.line(x+43,71,x+79,71);c.drawCentredString(x+61,53,'2')
+    return _example_image(buf,c,dpi)
+
+
+def wheel_height(t):
+    return 30-30*cos(5*pi*t)
+
+
+def render_wheel_2024(dpi):
+    buf,c=_example_canvas('The height of the nail','2024 deferred Higher Paper 2 · Q10(a) · correct time scale and complete graph',490)
+    left,width=22,516
+    c.setStrokeColorRGB(.72,.72,.69);c.setLineWidth(.6)
+    for y in [412,388,364]:c.line(left,y,left+width,y)
+    for i in range(11):
+        x=left+i*width/10;c.line(x,364,x,412)
+    c.setFont('Times-Italic',12);c.drawCentredString(left+width/20,396,'t');c.drawCentredString(left+width/20,372,'h(t)')
+    c.setFont('Helvetica',11)
+    for i in range(9):
+        x=left+(i+1.5)*width/10;c.drawCentredString(x,396,f'{i/10:g}');c.drawCentredString(x,372,str(round(wheel_height(i/10))))
+    x0,y0,w,h=72,87,430,228
+    def X(t):return x0+w*t/.8
+    def Y(y):return y0+h*y/70
+    c.setFont('Helvetica',10);c.drawString(x0,337,'Height h(t) (cm)')
+    c.setStrokeColorRGB(.87,.87,.85);c.setLineWidth(.5)
+    for i in range(9):c.line(X(i/10),y0,X(i/10),y0+h)
+    for y in range(0,71,10):c.line(x0,Y(y),x0+w,Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(1);c.line(x0,y0,x0+w+6,y0);c.line(x0,y0,x0,y0+h+6)
+    c.setFont('Helvetica',10)
+    for i in range(9):c.drawCentredString(X(i/10),y0-18,f'{i/10:g}')
+    for y in range(0,71,10):c.drawRightString(x0-10,Y(y)-3,str(y))
+    c.drawRightString(x0+w,44,'Time t (seconds)')
+    path=c.beginPath();path.moveTo(X(0),Y(0))
+    for i in range(1,801):path.lineTo(X(i/1000),Y(wheel_height(i/1000)))
+    c.setLineWidth(1.7);c.drawPath(path)
+    for i in range(9):c.circle(X(i/10),Y(wheel_height(i/10)),2.3,stroke=0,fill=1)
+    return _example_image(buf,c,dpi)
+
+
+def render_double_angle_2024(dpi):
+    buf,c=_example_canvas('Proving the double-angle identity','2024 deferred Higher Paper 2 · Q4(b)(i) · corrected notation',285)
+    c.setFont('Times-Roman',17)
+    c.drawString(28,181,'sin(A + B) = sin A cos B + cos A sin B')
+    c.setFont('Helvetica',11);c.drawString(28,149,'Set B = A:')
+    c.setFont('Times-Roman',17)
+    c.drawString(28,112,'sin(2A) = sin A cos A + cos A sin A')
+    c.drawString(88,76,'= 2 sin A cos A')
+    return _example_image(buf,c,dpi)
+
+
+def render_confidence_2024(dpi):
+    buf,c=_example_canvas('Interpreting the confidence interval','2024 deferred Higher Paper 2 · Q7(c) · a population proportion',285)
+    c.setFont('Times-Bold',21);c.drawString(28,179,'Estimated infected proportion: 22.9% to 37.1%')
+    c.setFont('Helvetica',12)
+    for y,line in zip([143,124,105,74,55],[
+        'If we repeatedly took random samples of 160 trees and built an',
+        'interval in this way, about 95% of those intervals would contain',
+        'the true proportion of infected trees in the forest.',
+        'The 95% refers to the long-run success rate of this method.',
+        'It does not describe sample means falling inside this one interval.']):c.drawString(28,y,line)
+    return _example_image(buf,c,dpi)
+
+
+def render_tangent_2024(dpi):
+    buf,c=_example_canvas('Constructing the tangent at Q','2024 deferred Higher Paper 2 · Q3(a) · compass and straight edge',495)
+    # A rotation of the original configuration; no lengths or coordinates are claimed.
+    c.saveState();c.translate(260,265);c.rotate(25)
+    radius,offset,arc_radius=75,42,62
+    c.circle(-radius,0,radius,stroke=1,fill=0)
+    c.setDash(3,3);c.setStrokeColorRGB(.48,.48,.45);c.line(-170,0,90,0)
+    # Circle centred at Q marks equal distances along PQ, visible as short arcs.
+    for start in [-15,165]:c.arc(-offset,-offset,offset,offset,start,30)
+    angle=degrees(acos(offset/arc_radius))
+    for centre in [-offset,offset]:
+        for a in ([angle,-angle] if centre<0 else [180-angle,180+angle]):
+            c.arc(centre-arc_radius,-arc_radius,centre+arc_radius,arc_radius,a-22,44)
+    c.setDash();c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(1.7);c.line(0,-116,0,116)
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
+    c.line(-radius,0,0,0);c.line(-10,0,-10,10);c.line(-10,10,0,10)
+    height=sqrt(arc_radius**2-offset**2)
+    for x,y,label,dx,dy in [(-radius,0,'P',-10,-19),(0,0,'Q',8,-15),(-offset,0,'U',-7,-19),(offset,0,'V',0,-19),(0,height,'A',8,1),(0,-height,'B',8,-2)]:
+        c.circle(x,y,2.2,stroke=0,fill=1);c.saveState();c.translate(x+dx,y+dy);c.rotate(-25);c.setFont('Times-Italic',13);c.drawString(0,0,label);c.restoreState()
+    c.restoreState();c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',11)
+    for y,t in [(109,'1. Extend PQ; mark U and V at equal compass distances from Q.'),(87,'2. From U and V, draw equal-radius arcs meeting at A and B.'),(65,'3. Draw AB. It passes through Q and is perpendicular to PQ.'),(43,'The perpendicular to a radius at the circle is the tangent.')]:c.drawString(22,y,t)
+    return _example_image(buf,c,dpi)
+
+
+def render_scatter_2024(dpi):
+    """Overlay a by-eye example on the exact SEC vector plot, preserving every dot."""
+    from pathlib import Path
+    import hashlib
+    path=Path(__file__).resolve().parents[4]/'paper-trail-corpus/deferredexams/2024/LC003ALP200EV.pdf'
+    source=fitz.open(path)
+    # The same immutable source hash as the reviewed presentation plan.
+    import json
+    plan=json.loads((Path(__file__).parent/'2024-hl-p2-deferred-presentation.json').read_text())
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==plan['questionSha256']
+    copy=fitz.open();copy.insert_pdf(source,from_page=23,to_page=23);page=copy[0]
+    def X(weight):return 145.86+(419.69-145.86)*weight/140
+    def Y(height):return 272.27-(272.27-135.09)*(height-1.65)/.45
+    # A reasonable by-eye line: height = 0.006 * weight + 1.26.
+    page.draw_line((X(65),Y(1.65)),(X(140),Y(2.10)),color=(.9,.39,.15),width=1.3)
+    page.draw_polyline([(X(0),Y(1.8)),(X(90),Y(1.8)),(X(90),Y(1.65))],color=(.18,.18,.16),width=.8,dashes='[3 3]')
+    clip=fitz.Rect(88,118,510,301)
+    plot=Image.open(BytesIO(page.get_pixmap(dpi=dpi,clip=clip).tobytes('png'))).convert('RGB')
+    buf,c=_example_canvas('Reading a line of best fit','2024 deferred Higher Paper 2 · Q9(a)(ii) · one reasonable by-eye line',390)
+    from reportlab.lib.utils import ImageReader
+    c.drawImage(ImageReader(plot),22,93,width=516,height=516*clip.height/clip.width)
+    c.setFont('Helvetica',11);c.drawString(22,70,'Read across from 1.80 m to the line, then down: approximately 90 kg.')
+    c.setFont('Helvetica',9);c.drawString(22,47,'Original scatterplot: © State Examinations Commission. Line and guides: NextStepUni.')
     return _example_image(buf,c,dpi)

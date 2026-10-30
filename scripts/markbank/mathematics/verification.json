@@ -1,8 +1,8 @@
 {
   "date": "2026-10-30",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and four deferred editions; 12 indexed English deferred editions and Irish provenance review remain outstanding.",
-  "runtimeCards": 4636,
-  "reviewedTasks": 4636,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and six deferred editions; 10 indexed English deferred editions and Irish provenance review remain outstanding.",
+  "runtimeCards": 4717,
+  "reviewedTasks": 4717,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-30 through final 2010 Foundation Project Paper 2 batch.",
+  "productionBuild": "Passed on 2026-10-30 through 2024 deferred Higher Paper 2.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2024higherPaper1",
+  "latestBatch": "deferred2024higherPaper2",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2024 Higher deferred Paper 1",
-    "status": "2025 deferred English papers complete; next independent source sweep starting",
-    "remainingEnglishDeferredPapers": 12,
+    "paper": "2024 Ordinary deferred Paper 1",
+    "status": "2024 deferred Higher papers complete; independent Ordinary source sweep in progress",
+    "remainingEnglishDeferredPapers": 10,
     "irishEditionReview": "outstanding"
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -8436,6 +8436,37 @@
     ],
     "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 11,
+    "wholeSubjectComplete": false
+  },
+  "deferred2024higherPaper2": {
+    "date": "2026-10-30",
+    "runtimeCardsAdded": 41,
+    "offeredMarks": 380,
+    "runtimeCards": 4717,
+    "reviewedPaperEditions": 117,
+    "runtimeByLevel": {
+      "higher": 1734,
+      "ordinary": 1846,
+      "foundation": 1137
+    },
+    "reviewedAtlasPlacements": 1104,
+    "hostedQuestionAnswerAnchors": 10,
+    "inspectedTypesetImages": 82,
+    "targetedTests": 417,
+    "pythonAuditTests": 14,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceHashesAndSelectionAudit": "passed",
+    "previousAuthoredRecordsUnchanged": 4677,
+    "previousDeferredImagesUnchanged": 418,
+    "browser": "Desktop Q10(a): complete periodic graph, 8/15 award, enlargement and exact original deferred scheme PDF page 37 rendered. Phone 390x844 Q9(a)(ii): original scatterplot, attributed worked line, 6/10 award, enlargement and zoom verified; viewport restored.",
+    "sourceCorrections": [
+      "Missing tangent construction, double-angle proof correction, confidence-interval interpretation, line of best fit and complete wheel-height graph supplied as attributed NextStepUni examples.",
+      "Original SEC numeric awards and credit guidance retained.",
+      "Distance-formula typo, angle and question labels, rounded normal-table results, bale length label and wheel table time units explained."
+    ],
+    "reproduction": "Pending committed-generator check.",
+    "pendingEnglishDeferredPapers": 10,
     "wholeSubjectComplete": false
   }
 }

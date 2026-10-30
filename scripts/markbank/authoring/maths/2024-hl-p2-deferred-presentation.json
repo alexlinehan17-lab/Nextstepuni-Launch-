@@ -1,0 +1,1140 @@
+{
+  "questionSha256": "86a67c187032908f698ba3dd74a639dd49c5a01ce96a1dee72fd5feafc67ee78",
+  "solutionSha256": "31d908ba92708efe218e3c0a6db29625513077ebbf18fea2721cd776a07d97cd",
+  "tasks": {
+    "maths-2024-hl-p2-deferred-q1-a-i-ii": {
+      "question": [
+        [
+          4,
+          52,
+          140,
+          555,
+          362
+        ],
+        [
+          4,
+          52,
+          487,
+          555,
+          510
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          131,
+          545,
+          578
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q1-a-iii": {
+      "question": [
+        [
+          4,
+          52,
+          140,
+          555,
+          320
+        ],
+        [
+          5,
+          52,
+          53,
+          555,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          578,
+          545,
+          755
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q1-b": {
+      "question": [
+        [
+          5,
+          52,
+          413,
+          555,
+          472
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          78,
+          545,
+          328
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q2-a": {
+      "question": [
+        [
+          6,
+          52,
+          73,
+          555,
+          132
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          78,
+          545,
+          245
+        ]
+      ],
+      "sourceNote": "The generic distance formula has a typographical error: use (y₂ − y₁)², not (y₂ − x₁)². The substituted values and final equation (x − 2)² + (y − 4)² = 58 are correct."
+    },
+    "maths-2024-hl-p2-deferred-q2-b": {
+      "question": [
+        [
+          6,
+          52,
+          340,
+          555,
+          490
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          245,
+          545,
+          457
+        ]
+      ],
+      "sourceNote": "The seven printed points are examples. Any two distinct points on (x − 9)² + (y + 2)² = 52, other than the given (3, −6), answer the question. Keep both points in one response."
+    },
+    "maths-2024-hl-p2-deferred-q2-c": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          555,
+          310
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          457,
+          545,
+          679
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          52,
+          73,
+          555,
+          455
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          327,
+          81,
+          540,
+          302
+        ]
+      ],
+      "sourceNote": "The scheme describes a correct tangent with construction lines but supplies no drawing. This NextStepUni example constructs the perpendicular to PQ at Q, retaining the original SEC credit notes.",
+      "supplement": "tangent-2024-hl-deferred",
+      "supplementAlt": "NextStepUni compass construction: extend PQ, mark U and V equally distant from Q, intersect equal-radius arcs centred at U and V, and draw the perpendicular tangent through those intersections and Q. Original SEC credit notes follow."
+    },
+    "maths-2024-hl-p2-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          52,
+          487,
+          555,
+          526
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          304,
+          545,
+          528
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          52,
+          53,
+          555,
+          474
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          528,
+          545,
+          719
+        ]
+      ],
+      "sourceNote": "The last printed angle label should be ∠AOE, not ∠AOB. The requested angle is 3x; ∠AOB is 180° − 4x. The original working and credit notes remain below."
+    },
+    "maths-2024-hl-p2-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          52,
+          73,
+          555,
+          127
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          78,
+          545,
+          266
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q4-b-i": {
+      "question": [
+        [
+          10,
+          52,
+          420,
+          555,
+          444
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          327,
+          269,
+          540,
+          402
+        ]
+      ],
+      "sourceNote": "This is part (b)(i) on the paper, labelled (b) in the scheme. The scheme omits A after one sine and ends with cos B instead of cos A. The corrected NextStepUni proof appears above the unchanged SEC credit notes.",
+      "supplement": "double-angle-2024-hl-deferred",
+      "supplementAlt": "NextStepUni proof: sin(A+B)=sin A cos B+cos A sin B. Set B=A to obtain sin(2A)=sin A cos A+cos A sin A=2 sin A cos A. Original SEC credit notes follow."
+    },
+    "maths-2024-hl-p2-deferred-q4-b-ii": {
+      "question": [
+        [
+          10,
+          52,
+          420,
+          555,
+          444
+        ],
+        [
+          11,
+          52,
+          53,
+          555,
+          340
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          404,
+          545,
+          608
+        ]
+      ],
+      "sourceNote": "This is part (b)(ii) on the question paper; the scheme labels it (c). Since 0° < W < 45°, sin W is non-zero and can be cancelled to obtain cos W = 5/6."
+    },
+    "maths-2024-hl-p2-deferred-q5-a-i-ii": {
+      "question": [
+        [
+          12,
+          52,
+          75,
+          555,
+          177
+        ],
+        [
+          12,
+          52,
+          329,
+          555,
+          353
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          76,
+          545,
+          319
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q5-b-i": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          111
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          319,
+          545,
+          386
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q5-b-ii": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          74
+        ],
+        [
+          13,
+          52,
+          236,
+          555,
+          274
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          386,
+          545,
+          454
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q5-b-iii": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          555,
+          74
+        ],
+        [
+          13,
+          52,
+          426,
+          555,
+          505
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          454,
+          545,
+          620
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q6-a-i": {
+      "question": [
+        [
+          14,
+          52,
+          73,
+          555,
+          132
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          78,
+          545,
+          133
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q6-a-ii": {
+      "question": [
+        [
+          14,
+          52,
+          73,
+          555,
+          111
+        ],
+        [
+          14,
+          52,
+          257,
+          555,
+          280
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          133,
+          545,
+          256
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q6-b": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          555,
+          164
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          256,
+          545,
+          413
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          52,
+          152,
+          555,
+          266
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          78,
+          545,
+          346
+        ]
+      ],
+      "sourceNote": "X is the height of one tree, not a sample mean as the printed subscript suggests. The scheme rounds z to ±1·11 before using the normal table, giving 0·733. Without that intermediate rounding the probability is approximately 0·73348."
+    },
+    "maths-2024-hl-p2-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          52,
+          152,
+          555,
+          231
+        ],
+        [
+          16,
+          52,
+          475,
+          555,
+          549
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          346,
+          545,
+          648
+        ]
+      ],
+      "sourceNote": "The scheme uses the rounded table value z = −1·64 and obtains 315·72 cm. A direct inverse-normal calculation uses z ≈ −1·64485 and gives about 315·59 cm; the small difference comes from table rounding."
+    },
+    "maths-2024-hl-p2-deferred-q7-b": {
+      "question": [
+        [
+          16,
+          52,
+          152,
+          555,
+          231
+        ],
+        [
+          17,
+          52,
+          53,
+          555,
+          228
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          78,
+          545,
+          325
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q7-c-i-ii": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          555,
+          140
+        ],
+        [
+          18,
+          52,
+          435,
+          555,
+          459
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          325,
+          320,
+          469
+        ],
+        [
+          31,
+          327,
+          328,
+          540,
+          560
+        ]
+      ],
+      "sourceNote": "The numerical interval is correct, but the printed explanation incorrectly refers to sample means lying inside this interval. A 95% confidence procedure means that, over repeated random samples, about 95% of the intervals constructed this way contain the true population proportion. Here the estimated infected proportion is 22·9%–37·1%. This NextStepUni clarification does not change the original SEC credit criteria.",
+      "supplement": "confidence-2024-hl-deferred",
+      "supplementAlt": "NextStepUni corrected interpretation of a 95% confidence interval for the infected population proportion, followed by the original numerical calculation and unchanged SEC credit criteria."
+    },
+    "maths-2024-hl-p2-deferred-q7-d-i-ii": {
+      "question": [
+        [
+          19,
+          52,
+          53,
+          555,
+          705
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          78,
+          545,
+          405
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          52,
+          76,
+          555,
+          359
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          78,
+          545,
+          231
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          52,
+          76,
+          555,
+          322
+        ],
+        [
+          20,
+          52,
+          510,
+          555,
+          534
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          231,
+          545,
+          480
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q8-b": {
+      "question": [
+        [
+          21,
+          52,
+          53,
+          555,
+          146
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          480,
+          545,
+          591
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q8-c": {
+      "question": [
+        [
+          21,
+          52,
+          342,
+          555,
+          460
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          78,
+          545,
+          314
+        ]
+      ],
+      "sourceNote": "The last dimension in the scheme is mislabelled Height. The dimensions are height 48 cm, width 72 cm and length 120 cm, to the nearest centimetre."
+    },
+    "maths-2024-hl-p2-deferred-q8-d": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          555,
+          146
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          314,
+          545,
+          541
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q8-e": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          555,
+          382
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          541,
+          545,
+          719
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q9-a-i": {
+      "question": [
+        [
+          24,
+          52,
+          73,
+          555,
+          425
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          78,
+          545,
+          160
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q9-a-ii": {
+      "question": [
+        [
+          24,
+          52,
+          73,
+          555,
+          309
+        ],
+        [
+          24,
+          52,
+          573,
+          555,
+          610
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          327,
+          163,
+          540,
+          328
+        ]
+      ],
+      "sourceNote": "The scheme supplies a verbal instruction but no drawn line. The NextStepUni example overlays a reasonable line and reading guides on the original SEC scatterplot. At height 1·8 m it gives about 90 kg. Other reasonable by-eye lines and their consistent readings are accepted by the original marking notes.",
+      "supplement": "scatter-2024-hl-deferred",
+      "supplementAlt": "Original SEC scatterplot with an attributed NextStepUni line of best fit and guides reading approximately 90 kg at height 1.8 m. The original axes have weight horizontally and height vertically. SEC credit notes follow."
+    },
+    "maths-2024-hl-p2-deferred-q9-b-i-ii": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          555,
+          126
+        ],
+        [
+          25,
+          52,
+          278,
+          555,
+          316
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          330,
+          545,
+          576
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q9-c": {
+      "question": [
+        [
+          26,
+          52,
+          53,
+          555,
+          208
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          576,
+          545,
+          765
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q9-d-i-ii": {
+      "question": [
+        [
+          27,
+          52,
+          53,
+          555,
+          97
+        ],
+        [
+          27,
+          52,
+          221,
+          555,
+          280
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          78,
+          545,
+          258
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q10-a-i-ii": {
+      "question": [
+        [
+          28,
+          52,
+          76,
+          555,
+          302
+        ],
+        [
+          28,
+          52,
+          477,
+          555,
+          728
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          320,
+          81,
+          540,
+          377
+        ]
+      ],
+      "sourceNote": "The printed scheme table mistakenly labels the times 0–8 instead of 0–0·8 seconds, and omits the graph. The NextStepUni worked example supplies the correct time labels, all nine heights and the smooth curve across the complete printed domain. Original SEC credit notes follow.",
+      "supplement": "wheel-2024-hl-deferred",
+      "supplementAlt": "NextStepUni table and smooth graph of h(t)=30−30cos(5πt), from 0 to 0.8 seconds. Heights at 0.1-second intervals: 0,30,60,30,0,30,60,30,0 centimetres. Original SEC credit notes follow."
+    },
+    "maths-2024-hl-p2-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          76,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          53,
+          555,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          377,
+          545,
+          431
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q10-c-i": {
+      "question": [
+        [
+          29,
+          52,
+          215,
+          555,
+          274
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          431,
+          545,
+          577
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q10-c-ii": {
+      "question": [
+        [
+          28,
+          52,
+          76,
+          555,
+          216
+        ],
+        [
+          29,
+          52,
+          53,
+          555,
+          91
+        ],
+        [
+          29,
+          52,
+          215,
+          555,
+          274
+        ],
+        [
+          29,
+          52,
+          399,
+          555,
+          437
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          577,
+          545,
+          701
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q10-d-i": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          555,
+          217
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          78,
+          545,
+          242
+        ]
+      ]
+    },
+    "maths-2024-hl-p2-deferred-q10-d-ii": {
+      "question": [
+        [
+          30,
+          52,
+          53,
+          555,
+          217
+        ],
+        [
+          30,
+          52,
+          369,
+          555,
+          428
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          242,
+          545,
+          435
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        123,
+        5,
+        775
+      ],
+      "scheme": [
+        23,
+        110,
+        24,
+        330
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        775
+      ],
+      "scheme": [
+        25,
+        56,
+        25,
+        680
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        775
+      ],
+      "scheme": [
+        26,
+        56,
+        26,
+        720
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        775
+      ],
+      "scheme": [
+        27,
+        56,
+        27,
+        610
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        775
+      ],
+      "scheme": [
+        28,
+        56,
+        28,
+        622
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        775
+      ],
+      "scheme": [
+        29,
+        56,
+        29,
+        415
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        132,
+        19,
+        775
+      ],
+      "scheme": [
+        30,
+        56,
+        32,
+        410
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        775
+      ],
+      "scheme": [
+        33,
+        56,
+        34,
+        720
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        27,
+        775
+      ],
+      "scheme": [
+        35,
+        56,
+        36,
+        260
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        53,
+        30,
+        775
+      ],
+      "scheme": [
+        37,
+        56,
+        38,
+        438
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-30",
+  "inspectionNote": "All 41 question and 41 solution images visually inspected across eight QA sheets. Seven question crops and one solution crop corrected and re-inspected: complete circles, six answer boxes, full period context, no partial answer grid, and unclipped scale labels. Five NextStepUni examples separately attributed; SEC numeric calculation and credit criteria retained.",
+  "atlasInspectionNote": "All ten whole-question paper and scheme spans visually checked against the exact 2024 deferred Higher Paper 2 source. Every card source page and crop falls within its question region."
+}
