@@ -8465,7 +8465,7 @@
       "Original SEC numeric awards and credit guidance retained.",
       "Distance-formula typo, angle and question labels, rounded normal-table results, bale length label and wheel table time units explained."
     ],
-    "reproduction": "Pending committed-generator check.",
+    "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 10,
     "wholeSubjectComplete": false
   }
