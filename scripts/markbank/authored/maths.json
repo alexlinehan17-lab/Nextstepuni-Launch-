@@ -193967,5 +193967,1445 @@
   "notes": "Independently visually checked against the 2025 Ordinary Level Paper 2 and its scheme on 2026-10-30.",
   "figureKey": "maths-2025-ol-p2-deferred-q10-b-iii-solution",
   "questionFigureKey": "maths-2025-ol-p2-deferred-q10-b-iii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q1-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q1-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q1(a)",
+  "questionText": "Solve the following equation in x. Give each answer correct to 2 decimal places. 2x² − 8x − 11 = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Fully substituted quadratic formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for no rounding or incorrect rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q1-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q1-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q1-b",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-deferred-q1-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q1(b)",
+  "questionText": "Find the range of values of p ∈ ℝ for which: |2p + 7| ≥ 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "One value of p found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Both values of p found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * once if strict inequality/inequalities are used",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q1-c",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q1-c",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q1(c)",
+  "questionText": "Solve the following equation for n ∈ ℝ, where n > 0: log₂(8 − 4n) − 2 log₂ n = 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Simplifies to an equation in n with one log",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Equation written without logs",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * for incorrect solution not eliminated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q1-c-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q1-c-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q2-a",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-deferred-q2-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q2(a)",
+  "questionText": "Prove by induction that the following identity is true for all n ∈ ℕ: 1 + 2 + 3 + … + n = n(n + 1)/2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "3 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Omits part or all of conclusion but otherwise correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q2-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q2-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q2-b-i",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q2-b-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q2(b)(i)",
+  "questionText": "Solve the equation 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Sets up quadratic equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Factors found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Correctly substituted quadratic formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q2-b-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q2-b-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q2-b-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q2-b-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q2(b)(ii)",
+  "stem": "Part (b)(i) asks you to solve 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+  "questionText": "Hence, or otherwise, find the values of x ∈ ℝ for which: 4⁻ˣ + 2(4ˣ) = 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds one correct value of x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q2-b-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q2-b-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q3-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q3(a)",
+  "stem": "In this question, i² = −1. The original Argand diagram and table are included.",
+  "questionText": "The complex number z₁ is shown in the Argand diagram below. Three other complex numbers are plotted, and are labelled A, B, and C, respectively. Write A, B, and C in the appropriate spaces in the table below, to show which point represents each complex number: −z₁, the complex conjugate of z₁, and iz₁.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "One point correctly identified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q3-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q3(b)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "Use De Moivre’s theorem to solve the equation w² = 4i. Give each answer in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "3 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Roots found correctly, but one or both in polar form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q3-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-c",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q3(c)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "z = (3 − i) is a root of the equation: z³ − 2z² − 14z + 40 = 0. Find the other two roots of this equation. One should be complex and the other should be real.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Finds quadratic factor",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q4-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q4(a)",
+  "questionText": "Solve the following pair of simultaneous equations in x, y ∈ ℝ: y = 3x² − 32x + 54; y = 2x + 14.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Equation in one variable correctly established",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "x values found, but no y values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "y values found, but no x values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q4-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q4-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q4-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q4-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q4(b)",
+  "questionText": "f: ℝ → ℝ is a continuous function. The graph of y = f(x) has one local maximum point, which is at (7, 12). Is y = f(x) injective (one-to-one) on the interval x ∈ [6, 8]? Justify your answer. Hint: draw a sketch of the graph of y = f(x) near the point (7, 12). Tick one box only: Yes; No; We don’t have enough information to be sure.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Correct box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Correct box ticked with work of merit in justification",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q4-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q4-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q4-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q4-c",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q4(c)",
+  "questionText": "The diagram shows the graphs of the functions h(x) and k(x), where h(x) = −½x² + 4x + 1 and k(x) = 9 − x. Note that h(2) = k(2) and h(8) = k(8). Use integration to find the area enclosed between the graphs of h(x) and k(x), from x = 2 to x = 8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "Integration indicated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q4-c-solution-2",
+    "kind": "point",
+    "verbatim": "Integration of both functions (or combined function) fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q4-c-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q4-c-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q5-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q5-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q5(a)",
+  "questionText": "Multiply out and simplify (x − 1)³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "Binomial expanded correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "One error in binomial expansion, but otherwise correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q5-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q5-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q5-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q5(b)",
+  "questionText": "A cubic function h(x) has the following equation in x ∈ ℝ: h(x) = x³ − 6x² − 15x + 10. Find the co-ordinates of the local maximum point and the local minimum point of h(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Differentiation fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "x values found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Turning points found, but max/min not identified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q5-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q5-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q5-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-c",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q5(c)",
+  "questionText": "f is the following function, where x ∈ ℝ, x ≠ ½: f(x) = 2x + 5 + 1/(2x − 1). Find the values of x for which f′(x) = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Award Low Partial Credit at most, if chain or quotient rule is not used",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Differentiation fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Quadratic without fraction",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q5-c-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q5-c-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q6-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q6-a",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q6(a)",
+  "questionText": "The population of a region is now 6·7 million people. This population is growing at a rate of 10% per year. At this growth rate, the population will be greater than 20 million for the first time n years from now, where n ∈ ℕ. Find the value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Equation / inequality set up",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Log equation in n",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q6-a-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q6-a-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q6-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q6(b)",
+  "questionText": "f is the following function, where x ∈ ℝ is in radians: f(x) = sin 3x cos x. Use the product rule to find the value of f′(π/4).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Award LP credit at most if product rule is not used.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "One step correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Two steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q6-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q6-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q6-c-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q6-c-i-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 1 — Deferred Q6(c)(i), Q6(c)(ii)",
+  "stem": "The continuous function y = g(x) is defined for −10 ≤ x ≤ 50, x ∈ ℝ. Its graph is shown below. It has three turning points: two local minimum points and one local maximum point. All of these are shown on the graph. The two endpoints of the graph are also shown. Use the information in the graph to answer the following questions.",
+  "questionText": "(i) k ∈ ℝ is a constant. The horizontal line y = k does not cut the graph of y = g(x). Write down one possible value of k. (ii) p ∈ ℝ is a constant. The horizontal line y = p cuts the graph of y = g(x) at exactly 2 points. Write down the ranges of possible values of p.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Part (i) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q6-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Part (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q6-c-i-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q6-c-i-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q7-a-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q7-a-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q7(a), Q7(b)",
+  "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d).",
+  "questionText": "(a) The air pressure at sea level (h = 0) is 101·3 units. Show that A = 101·3. (b) Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-a-b-solution-1",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-a-b-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the 2nd part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q7-a-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q7-a-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q7-c",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q7-c",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q7(c)",
+  "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+  "questionText": "Altitude sickness is caused by low air pressure. Some people start to feel sick when the air pressure is at 80 units. At what height above sea level would these people start to feel sick? Give your answer correct to the nearest metre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Equation in ℎ with no indices (logs handled correctly)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q7-c-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q7-c-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q7-d",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q7-d",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q7(d)",
+  "stem": "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+  "questionText": "A ball, B, is at sea level, so h = 0. A second ball, C, is at a height above sea level of H metres, where H > 0. Each ball is raised up 40 m, so that the air pressure on each decreases. Which ball, if any, will have a greater decrease in air pressure? Justify your answer. Tick one box only: B; C; B and C will have the same decrease.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Correct box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Some relevant calculations",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Correct box ticked with relevant but incomplete calculations given",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q7-d-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q7-d-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q7-e-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q7-e-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q7(e)(i)",
+  "stem": "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+  "questionText": "Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-e-i-solution-1",
+    "kind": "point",
+    "verbatim": "Correct substitution for ℎ",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q7-e-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q7-e-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q7-e-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q7-e-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q7(e)(ii)",
+  "stem": "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+  "questionText": "Work out the value of h for which the air pressure is 80 units, according to this formula. Give your answer correct to the nearest metre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Equation with ℎ term to the power of 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q7-e-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for incorrect rounding or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q7-e-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q7-e-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-a-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(a)(i)",
+  "stem": "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+  "questionText": "Write the total amount of money in his pension fund at the end of the 25 years as the sum of a series. Include the first two and last two terms of the series.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "2 correct terms",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-a-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(a)(ii)",
+  "stem": "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+  "questionText": "Find the total amount of money in the pension fund at the end of the 25 years. Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "formula with fully correct substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for no rounding or incorrect rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(b)",
+  "questionText": "At the end of the 25 years, Jon also puts an additional lump sum into his pension fund. His total pension fund is now €165 646·20. At this point, Jon retires, and stops paying money into his pension fund. Instead, he is now going to take out €A per month at the end of each month, for the next 20 years. Assuming that the interest rate remains at 0·35% per month, work out the maximum value that A can be. (That is, the value of A that would mean there is no money left in the pension fund after 20 years.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Formula with some substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Fully substituted amortisation/Sn formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-b-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-c-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q8-c-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(c)(i)",
+  "stem": "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+  "questionText": "Use this to write y in terms of x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answer without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "mentions 60%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-c-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-c-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-c-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q8-c-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(c)(ii)",
+  "stem": "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+  "questionText": "In 2021, the company increased the number of Type X cameras it made by 1500, and increased the number of Type Y cameras by 900. As a result, in 2021, 50% of the cameras the company made were Type X. Work out the total number of cameras the company made in 2021.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds the value of x or y",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-c-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-c-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q8-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-d",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q8(d)",
+  "questionText": "According to a Type X speed camera, a car is travelling at 112 km/hour. The company claims that their Type X speed camera can measure speed with a maximum error of 3·5%. Use this to work out the maximum actual speed of the car. Give your answer in km/hour, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "Formula with full substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q8-d-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for incorrect rounding or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q8-d-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q8-d-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q9-a-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(a)(i)",
+  "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+  "questionText": "Use this information to write h in terms of x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "diameter = 4x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-a-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q9-a-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(a)(ii)",
+  "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+  "questionText": "Show that the volume of the cylinder can be written as: V(x) = 20πx² − 4πx³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Accept candidates expression for h from part(i)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Volume of cylinder formula fully substituted in terms of x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-a-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q9-a-iii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(a)(iii)",
+  "stem": "V(x) is the volume, in cm³, of a cylinder cut from the sheet of tin in part (a), with radius x cm.",
+  "questionText": "Use differentiation to find the maximum volume that such a cylinder can have. Give your answer correct to the nearest cm³. Remember that V(x) = 20πx² − 4πx³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "1 step correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-a-iii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-iii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-a-iv",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q9-a-iv",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(a)(iv)",
+  "stem": "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. V(x) = 20πx² − 4πx³.",
+  "questionText": "The graph on the right shows V(x) for a range of values of x ∈ ℝ. The x-axis is shown, but the y-axis is not. The graph of V(x) cuts the x-axis at the points (a, 0) and (b, 0), with a < b, as shown. By referring to the diagram on the previous page, or otherwise, find the value of a and the value of b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answers without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "One value of x given",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-a-iv-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-a-iv-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-b-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q9-b-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(b)(i)",
+  "stem": "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+  "questionText": "Find the height of the liquid in the container when the volume of liquid is 203·285 m³. Give your answer in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Equation set up",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Equation with index removed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-b-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-b-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q9-b-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q9-b-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q9(b)(ii)",
+  "stem": "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+  "questionText": "Liquid is leaking from this container. At a certain time, the height of the liquid in the container is 1 m. At this time, the height of the liquid is decreasing at a rate of 0·03 m/hour. Find the rate at which the volume of liquid in the container is decreasing at this time. Give your answer in m³/hour.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Steps can happen in different orders.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Step 2 does not need to be explicitly stated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q9-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "3 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q9-b-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q9-b-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q10-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-a-i",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q10(a)(i)",
+  "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+  "questionText": "Complete the table below and hence draw the graph of V(t) in the domain 0 ≤ t ≤ 32, t ∈ ℝ, on the grid below. Give your values correct to 1 decimal place. The table gives t = 0, 4, 8, 12, 16, 20, 24, 28, 32, with V(4) = 29·7 and V(24) = 53·6 already supplied.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "3 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "8 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "14 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "16 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q10-a-i-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-i-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q10-a-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q10-a-ii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q10(a)(ii)",
+  "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+  "questionText": "Find the acceleration (rate of change of speed) of the skydiver one second after they jump from the airplane. Give your answer, in m/s², correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Differentiation fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for incorrect rounding or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q10-a-ii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-ii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q10-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q10-a-iii",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q10(a)(iii)",
+  "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+  "questionText": "Use integration to find the average speed of the skydiver over the first 10 seconds after the jump. Give your answer correct to the nearest m/s.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Indication of integration is required to be awarded any credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answer without unit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iii-solution-4",
+    "kind": "point",
+    "verbatim": "3 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q10-a-iii-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-iii-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q10-a-iv",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-a-iv",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q10(a)(iv)",
+  "stem": "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+  "questionText": "Find the terminal velocity of the skydiver, that is, find the value of lim V(t) as t → ∞.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answers without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "substitutes 2 or more positive integers for t",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q10-a-iv-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q10-a-iv-question"
+ },
+ {
+  "id": "maths-2025-hl-p1-deferred-q10-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 — Deferred Q10(b)",
+  "questionText": "The airplane flies d km out to a jumpsite, at an average speed of x km/hour. It then flies d km back from the jumpsite. Throughout the return journey, its speed is 10% less than x km/hour. Find the percentage increase in the time it will take for the return journey. Give your answer as a percentage, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-deferred-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, return speed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Higher Level Paper 1 and its scheme on 2026-10-30.",
+  "figureKey": "maths-2025-hl-p1-deferred-q10-b-solution",
+  "questionFigureKey": "maths-2025-hl-p1-deferred-q10-b-question"
  }
 ]

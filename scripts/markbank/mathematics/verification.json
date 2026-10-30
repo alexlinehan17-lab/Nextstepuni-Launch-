@@ -1,8 +1,8 @@
 {
   "date": "2026-10-30",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and two deferred editions; 14 indexed English deferred editions and Irish provenance review remain outstanding.",
-  "runtimeCards": 4553,
-  "reviewedTasks": 4553,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and three deferred editions; 13 indexed English deferred editions and Irish provenance review remain outstanding.",
+  "runtimeCards": 4593,
+  "reviewedTasks": 4593,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2025ordinaryPaper2",
+  "latestBatch": "deferred2025higherPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -8341,6 +8341,38 @@
     ],
     "reproduction": "New generator reproduced committed cards and review ledger byte for byte; revised optional-supplement renderer also reproduced all 82 prior Paper 1 images and metadata unchanged.",
     "pendingEnglishDeferredPapers": 14,
+    "wholeSubjectComplete": false
+  },
+  "deferred2025higherPaper1": {
+    "date": "2026-10-30",
+    "runtimeCardsAdded": 40,
+    "offeredMarks": 380,
+    "reviewedPaperEditions": 114,
+    "runtimeByLevel": {
+      "higher": 1610,
+      "ordinary": 1846,
+      "foundation": 1137
+    },
+    "reviewedAtlasPlacements": 1074,
+    "hostedQuestionAnswerAnchors": 10,
+    "inspectedTypesetImages": 80,
+    "targetedTests": 407,
+    "pythonAuditTests": 11,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceHashesAndSelectionAudit": "passed",
+    "previousAuthoredRecordsUnchanged": 4554,
+    "browser": "Question and complete graph/credit notes verified on desktop and 390x844 phone viewport, including enlargement/zoom, 7/15 award, and original deferred scheme PDF page 24. Viewport restored.",
+    "sourceCorrections": [
+      "Variable and rounding label slips explained.",
+      "Conjugate-pair sum/product distinguished from all three roots.",
+      "Local horizontal-line justification clarified.",
+      "Positive decrease magnitude distinguished from signed rates.",
+      "10C row with an inconsistent Mid Partial Credit description retains its numeric awards and an explanation.",
+      "Clipped scheme graph replaced in the card presentation by a separately attributed complete NextStepUni graph; original SEC credit notes and full PDF remain accessible."
+    ],
+    "reproduction": "Pending committed generator check.",
+    "pendingEnglishDeferredPapers": 13,
     "wholeSubjectComplete": false
   }
 }

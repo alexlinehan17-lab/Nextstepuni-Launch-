@@ -67224,4 +67224,1770 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q1-a", topicId: "maths-4-2", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q1(a)",
+    questionText: "Solve the following equation in x. Give each answer correct to 2 decimal places. 2x² − 8x − 11 = 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "Fully substituted quadratic formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q1-a-solution-2", kind: "point", verbatim: "Apply a * for no rounding or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-a-question.png",
+          "srcHash": "e308517a7a6d0f112520fee5ac2b0247",
+          "alt": "The question as printed on the paper — Solve the following equation in x. Give each answer correct to 2 decimal places. 2x² − 8x − 11 = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-a-solution.png",
+          "srcHash": "e87d56f8b5df3c0673286ea144f2afa3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q1-b", topicId: "maths-4-3", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q1(b)",
+    questionText: "Find the range of values of p ∈ ℝ for which: |2p + 7| ≥ 3.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "One value of p found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q1-b-solution-2", kind: "point", verbatim: "Both values of p found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q1-b-solution-3", kind: "point", verbatim: "Apply a * once if strict inequality/inequalities are used", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-b-question.png",
+          "srcHash": "44bb8f45603da3090e77244e6c374aa9",
+          "alt": "The question as printed on the paper — Find the range of values of p ∈ ℝ for which: |2p + 7| ≥ 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-b-solution.png",
+          "srcHash": "8c6bf29b02fafb4b077d8f70044d46e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q1-c", topicId: "maths-3-2", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q1(c)",
+    questionText: "Solve the following equation for n ∈ ℝ, where n > 0: log₂(8 − 4n) − 2 log₂ n = 2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "Simplifies to an equation in n with one log", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "Equation written without logs", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q1-c-solution-3", kind: "point", verbatim: "Apply a * for incorrect solution not eliminated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-c-question.png",
+          "srcHash": "71f8e2dbdfdc3a2190c7d7e97fb53cad",
+          "alt": "The question as printed on the paper — Solve the following equation for n ∈ ℝ, where n > 0: log₂(8 − 4n) − 2 log₂ n = 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q1-c-solution.png",
+          "srcHash": "ab91688be6f99c3e5c418eceebc6c3a8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The final lines of the printed solution use x where the question uses n. Read those lines as n = 1 or n = −2; the condition n > 0 leaves n = 1.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q2-a", topicId: "maths-3-1", conceptId: "p1-deferred-q2-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q2(a)",
+    questionText: "Prove by induction that the following identity is true for all n ∈ ℕ: 1 + 2 + 3 + … + n = n(n + 1)/2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q2-a-solution-1", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q2-a-solution-2", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q2-a-solution-3", kind: "point", verbatim: "Omits part or all of conclusion but otherwise correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-a-question.png",
+          "srcHash": "232f6087353a8212b3555c30b10704aa",
+          "alt": "The question as printed on the paper — Prove by induction that the following identity is true for all n ∈ ℕ: 1 + 2 + 3 + … + n = n(n + 1)/2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-a-solution.png",
+          "srcHash": "eee14bd5f66d7393f528cd639de87a5b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q2(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q2-b-i", topicId: "maths-4-2", conceptId: "p1-deferred-q2-b-i",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q2(b)(i)",
+    questionText: "Solve the equation 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q2-b-i-solution-1", kind: "point", verbatim: "Sets up quadratic equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q2-b-i-solution-2", kind: "point", verbatim: "Factors found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q2-b-i-solution-3", kind: "point", verbatim: "Correctly substituted quadratic formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-b-i-question.png",
+          "srcHash": "0dd0aabe7362ba6bedd035a56d1983c5",
+          "alt": "The question as printed on the paper — Solve the equation 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-b-i-solution.png",
+          "srcHash": "386d0c1b87458893eb504b5ad57bbfa9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q2-b-ii", topicId: "maths-3-2", conceptId: "p1-deferred-q2-b-ii",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q2(b)(ii)",
+    stem: "Part (b)(i) asks you to solve 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0.",
+    questionText: "Hence, or otherwise, find the values of x ∈ ℝ for which: 4⁻ˣ + 2(4ˣ) = 3.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "Finds one correct value of x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-b-ii-question.png",
+          "srcHash": "ece620af3b48f5b760aa155f8be2226d",
+          "alt": "The question as printed on the paper — Part (b)(i) asks you to solve 1/y + 2y = 3, where y ∈ ℝ, y ≠ 0. Hence, or otherwise, find the values of x ∈ ℝ for which: 4⁻ˣ + 2(4ˣ) = 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q2-b-ii-solution.png",
+          "srcHash": "2f454bd82f05131eb72724770610796d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q3-a", topicId: "maths-4-4", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q3(a)",
+    stem: "In this question, i² = −1. The original Argand diagram and table are included.",
+    questionText: "The complex number z₁ is shown in the Argand diagram below. Three other complex numbers are plotted, and are labelled A, B, and C, respectively. Write A, B, and C in the appropriate spaces in the table below, to show which point represents each complex number: −z₁, the complex conjugate of z₁, and iz₁.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "One point correctly identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-a-question.png",
+          "srcHash": "9274bfa4d16c4e33d555c9a70ca6002d",
+          "alt": "The question as printed on the paper — In this question, i² = −1. The original Argand diagram and table are included. The complex number z₁ is shown in the Argand diagram below. Three other complex numbers are plotted, and are labelled A, B, and C, respectively. Write A, B, and C in the appropriate spaces in the table below, to show which point represents each complex number: −z₁, the complex conjugate of z₁, and iz₁.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-a-solution.png",
+          "srcHash": "4912fd1248d5b978f233d21441762884",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q3-b", topicId: "maths-4-4", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q3(b)",
+    stem: "In this question, i² = −1.",
+    questionText: "Use De Moivre’s theorem to solve the equation w² = 4i. Give each answer in the form a + bi, where a, b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q3-b-solution-2", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q3-b-solution-3", kind: "point", verbatim: "Roots found correctly, but one or both in polar form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-b-question.png",
+          "srcHash": "3f692b63f704379f6ee14a6990f67c16",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Use De Moivre’s theorem to solve the equation w² = 4i. Give each answer in the form a + bi, where a, b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-b-solution.png",
+          "srcHash": "01cf9719147293769ae1456efa7b08a7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q3-c", topicId: "maths-4-4", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q3(c)",
+    stem: "In this question, i² = −1.",
+    questionText: "z = (3 − i) is a root of the equation: z³ − 2z² − 14z + 40 = 0. Find the other two roots of this equation. One should be complex and the other should be real.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Finds quadratic factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-c-question.png",
+          "srcHash": "1d56b846aa72832733531e75530c9d7d",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z = (3 − i) is a root of the equation: z³ − 2z² − 14z + 40 = 0. Find the other two roots of this equation. One should be complex and the other should be real.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q3-c-solution.png",
+          "srcHash": "ff035d2d7d819f2e1a590b255e8e231c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The sum 6 and product 10 in the model answer refer to the conjugate pair 3 − i and 3 + i. The third root is −4.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q4-a", topicId: "maths-4-2", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q4(a)",
+    questionText: "Solve the following pair of simultaneous equations in x, y ∈ ℝ: y = 3x² − 32x + 54; y = 2x + 14.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Equation in one variable correctly established", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q4-a-solution-2", kind: "point", verbatim: "x values found, but no y values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q4-a-solution-3", kind: "point", verbatim: "y values found, but no x values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-a-question.png",
+          "srcHash": "c3001c5502cf43b3069efc550a36d4e5",
+          "alt": "The question as printed on the paper — Solve the following pair of simultaneous equations in x, y ∈ ℝ: y = 3x² − 32x + 54; y = 2x + 14.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-a-solution.png",
+          "srcHash": "af6951f0d648cb01855ce8ce69c2cb12",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q4-b", topicId: "maths-5-1", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q4(b)",
+    questionText: "f: ℝ → ℝ is a continuous function. The graph of y = f(x) has one local maximum point, which is at (7, 12). Is y = f(x) injective (one-to-one) on the interval x ∈ [6, 8]? Justify your answer. Hint: draw a sketch of the graph of y = f(x) near the point (7, 12). Tick one box only: Yes; No; We don’t have enough information to be sure.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q4-b-solution-2", kind: "point", verbatim: "Correct box ticked with work of merit in justification", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-b-question.png",
+          "srcHash": "84c83b6c08ce12dd9075dbef15bd548e",
+          "alt": "The question as printed on the paper — f: ℝ → ℝ is a continuous function. The graph of y = f(x) has one local maximum point, which is at (7, 12). Is y = f(x) injective (one-to-one) on the interval x ∈ [6, 8]? Justify your answer. Hint: draw a sketch of the graph of y = f(x) near the point (7, 12). Tick one box only: Yes; No; We don’t have enough information to be sure.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-b-solution.png",
+          "srcHash": "7a4fdc00590e4651480f129e44222fba",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The answer is No. A horizontal line sufficiently close to and below the local maximum meets the continuous graph on both sides of x = 7. The scheme’s wording “for all values of y < 12” is too broad; the local argument is enough to show that the function is not one-to-one.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q4-c", topicId: "maths-5-2", conceptId: "p1-deferred-q4-c",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q4(c)",
+    questionText: "The diagram shows the graphs of the functions h(x) and k(x), where h(x) = −½x² + 4x + 1 and k(x) = 9 − x. Note that h(2) = k(2) and h(8) = k(8). Use integration to find the area enclosed between the graphs of h(x) and k(x), from x = 2 to x = 8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q4-c-solution-1", kind: "point", verbatim: "Integration indicated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q4-c-solution-2", kind: "point", verbatim: "Integration of both functions (or combined function) fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-c-question.png",
+          "srcHash": "1ccbd617f4e470d9b25522695555cc35",
+          "alt": "The question as printed on the paper — The diagram shows the graphs of the functions h(x) and k(x), where h(x) = −½x² + 4x + 1 and k(x) = 9 − x. Note that h(2) = k(2) and h(8) = k(8). Use integration to find the area enclosed between the graphs of h(x) and k(x), from x = 2 to x = 8.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q4-c-solution.png",
+          "srcHash": "318f1a1a9069d4d2b8e35483e4015e64",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q5-a", topicId: "maths-4-1", conceptId: "p1-deferred-q5-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q5(a)",
+    questionText: "Multiply out and simplify (x − 1)³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q5-a-solution-1", kind: "point", verbatim: "Binomial expanded correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q5-a-solution-2", kind: "point", verbatim: "One error in binomial expansion, but otherwise correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-a-question.png",
+          "srcHash": "59a1af927e5f1459233dd4f3cf4774db",
+          "alt": "The question as printed on the paper — Multiply out and simplify (x − 1)³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-a-solution.png",
+          "srcHash": "2dc43896f66893223270d2af5332d4f0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q5-b", topicId: "maths-5-2", conceptId: "p1-deferred-q5-b",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q5(b)",
+    questionText: "A cubic function h(x) has the following equation in x ∈ ℝ: h(x) = x³ − 6x² − 15x + 10. Find the co-ordinates of the local maximum point and the local minimum point of h(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q5-b-solution-1", kind: "point", verbatim: "Differentiation fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q5-b-solution-2", kind: "point", verbatim: "x values found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q5-b-solution-3", kind: "point", verbatim: "Turning points found, but max/min not identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-b-question.png",
+          "srcHash": "0022aac8a728d2fb9c8181bd25907186",
+          "alt": "The question as printed on the paper — A cubic function h(x) has the following equation in x ∈ ℝ: h(x) = x³ − 6x² − 15x + 10. Find the co-ordinates of the local maximum point and the local minimum point of h(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-b-solution.png",
+          "srcHash": "d554deaec2b10021beb5ffb53c3e5c32",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q5-c", topicId: "maths-5-2", conceptId: "p1-deferred-q5-c",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q5(c)",
+    questionText: "f is the following function, where x ∈ ℝ, x ≠ ½: f(x) = 2x + 5 + 1/(2x − 1). Find the values of x for which f′(x) = 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q5-c-solution-1", kind: "point", verbatim: "Award Low Partial Credit at most, if chain or quotient rule is not used", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q5-c-solution-2", kind: "point", verbatim: "Differentiation fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q5-c-solution-3", kind: "point", verbatim: "Quadratic without fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-c-question.png",
+          "srcHash": "4fcd3fca50af43feacf994acabcb9c73",
+          "alt": "The question as printed on the paper — f is the following function, where x ∈ ℝ, x ≠ ½: f(x) = 2x + 5 + 1/(2x − 1). Find the values of x for which f′(x) = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q5-c-solution.png",
+          "srcHash": "e4fdda82dc7b7c58b7fc410ccd6c12da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q6-a", topicId: "maths-3-2", conceptId: "p1-deferred-q6-a",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q6(a)",
+    questionText: "The population of a region is now 6·7 million people. This population is growing at a rate of 10% per year. At this growth rate, the population will be greater than 20 million for the first time n years from now, where n ∈ ℕ. Find the value of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q6-a-solution-1", kind: "point", verbatim: "Equation / inequality set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q6-a-solution-2", kind: "point", verbatim: "Log equation in n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-a-question.png",
+          "srcHash": "44ac7eec488355e673a18a0ca1939197",
+          "alt": "The question as printed on the paper — The population of a region is now 6·7 million people. This population is growing at a rate of 10% per year. At this growth rate, the population will be greater than 20 million for the first time n years from now, where n ∈ ℕ. Find the value of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-a-solution.png",
+          "srcHash": "786fc504a6b63be943da62893ab57d97",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q6-b", topicId: "maths-5-2", conceptId: "p1-deferred-q6-b",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q6(b)",
+    questionText: "f is the following function, where x ∈ ℝ is in radians: f(x) = sin 3x cos x. Use the product rule to find the value of f′(π/4).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q6-b-solution-1", kind: "point", verbatim: "Award LP credit at most if product rule is not used.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q6-b-solution-2", kind: "point", verbatim: "One step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q6-b-solution-3", kind: "point", verbatim: "Two steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-b-question.png",
+          "srcHash": "594aaa7c9701270c3a1d5dd03606f9d8",
+          "alt": "The question as printed on the paper — f is the following function, where x ∈ ℝ is in radians: f(x) = sin 3x cos x. Use the product rule to find the value of f′(π/4).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-b-solution.png",
+          "srcHash": "9f51f23fb440519994c0206e3efa2a1f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q6-c-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q6-c-i-ii",
+    section: "A", questionRef: "2025 HL Paper 1 — Deferred Q6(c)(i), Q6(c)(ii)",
+    stem: "The continuous function y = g(x) is defined for −10 ≤ x ≤ 50, x ∈ ℝ. Its graph is shown below. It has three turning points: two local minimum points and one local maximum point. All of these are shown on the graph. The two endpoints of the graph are also shown. Use the information in the graph to answer the following questions.",
+    questionText: "(i) k ∈ ℝ is a constant. The horizontal line y = k does not cut the graph of y = g(x). Write down one possible value of k. (ii) p ∈ ℝ is a constant. The horizontal line y = p cuts the graph of y = g(x) at exactly 2 points. Write down the ranges of possible values of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q6-c-i-ii-solution-1", kind: "point", verbatim: "Part (i) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q6-c-i-ii-solution-2", kind: "point", verbatim: "Part (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-c-i-ii-question.png",
+          "srcHash": "a42b496beeb0989655aea7d970557afb",
+          "alt": "The question as printed on the paper — The continuous function y = g(x) is defined for −10 ≤ x ≤ 50, x ∈ ℝ. Its graph is shown below. It has three turning points: two local minimum points and one local maximum point. All of these are shown on the graph. The two endpoints of the graph are also shown. Use the information in the graph to answer the following questions. (i) k ∈ ℝ is a constant. The horizontal line y = k does not cut the graph of y = g(x). Write down one possible value of k. (ii) p ∈ ℝ is a constant. The horizontal line y = p cuts the graph of y = g(x) at exactly 2 points. Write down the ranges of possible values of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q6-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q6-c-i-ii-solution.png",
+          "srcHash": "6f4244dd99b5ffd447d208fcee67dc1d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q6(c)(i), Q6(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q7-a-b", topicId: "maths-5-1", conceptId: "p1-deferred-q7-a-b",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q7(a), Q7(b)",
+    stem: "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d).",
+    questionText: "(a) The air pressure at sea level (h = 0) is 101·3 units. Show that A = 101·3. (b) Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q7-a-b-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q7-a-b-solution-2", kind: "point", verbatim: "One part correct and work of merit in the 2nd part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-a-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-a-b-question.png",
+          "srcHash": "62c75199ff93a4223d6cd43bb4d792fa",
+          "alt": "The question as printed on the paper — Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). (a) The air pressure at sea level (h = 0) is 101·3 units. Show that A = 101·3. (b) Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-a-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-a-b-solution.png",
+          "srcHash": "34555db8f875b94f8091f54996dabebc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q7(a), Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "A is the constant 101·3. The model answer prints A(1) in part (a), and labels 32·68 as 1 d.p. in part (b). The question asks for two decimal places: 32·68 is the correctly rounded answer.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q7-c", topicId: "maths-3-2", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q7(c)",
+    stem: "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+    questionText: "Altitude sickness is caused by low air pressure. Some people start to feel sick when the air pressure is at 80 units. At what height above sea level would these people start to feel sick? Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "Some correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q7-c-solution-2", kind: "point", verbatim: "Equation in ℎ with no indices (logs handled correctly)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-c-question.png",
+          "srcHash": "2ddfeb0cf64551107e745f7c29580aca",
+          "alt": "The question as printed on the paper — Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3. Altitude sickness is caused by low air pressure. Some people start to feel sick when the air pressure is at 80 units. At what height above sea level would these people start to feel sick? Give your answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-c-solution.png",
+          "srcHash": "469e67d5f2aa13b16867b94ef2c1a793",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q7-d", topicId: "maths-5-1", conceptId: "p1-deferred-q7-d",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q7(d)",
+    stem: "Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3.",
+    questionText: "A ball, B, is at sea level, so h = 0. A second ball, C, is at a height above sea level of H metres, where H > 0. Each ball is raised up 40 m, so that the air pressure on each decreases. Which ball, if any, will have a greater decrease in air pressure? Justify your answer. Tick one box only: B; C; B and C will have the same decrease.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q7-d-solution-1", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q7-d-solution-2", kind: "point", verbatim: "Some relevant calculations", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q7-d-solution-3", kind: "point", verbatim: "Correct box ticked with relevant but incomplete calculations given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-d-question.png",
+          "srcHash": "9a5f4f917633b84770fc4c62cd7fa04e",
+          "alt": "The question as printed on the paper — Air pressure is the pressure caused by the weight of air pressing down on the earth. Air pressure decreases as the height above sea level increases. Air pressure, P, can be estimated using the formula P(h) = Ae^(kh), where k = (ln 0·88)/1000, A is a constant, and h is the height in metres above sea level. Use this formula to answer parts (a) to (d). Part (a) establishes A = 101·3. A ball, B, is at sea level, so h = 0. A second ball, C, is at a height above sea level of H metres, where H > 0. Each ball is raised up 40 m, so that the air pressure on each decreases. Which ball, if any, will have a greater decrease in air pressure? Justify your answer. Tick one box only: B; C; B and C will have the same decrease.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-d-solution.png",
+          "srcHash": "d88c402b14be424060e2247fc4834b11",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q7-e-i", topicId: "maths-5-1", conceptId: "p1-deferred-q7-e-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q7(e)(i)",
+    stem: "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+    questionText: "Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q7-e-i-solution-1", kind: "point", verbatim: "Correct substitution for ℎ", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-e-i-question.png",
+          "srcHash": "a6c24f73d82ae63d6496d5bd67d357e9",
+          "alt": "The question as printed on the paper — John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii). Find the air pressure at the top of Mount Everest, which is 8849 m above sea level. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-e-i-solution.png",
+          "srcHash": "2032e90d1032564ccaed338827485e70",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q7(e)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q7-e-ii", topicId: "maths-3-2", conceptId: "p1-deferred-q7-e-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q7(e)(ii)",
+    stem: "John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii).",
+    questionText: "Work out the value of h for which the air pressure is 80 units, according to this formula. Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q7-e-ii-solution-1", kind: "point", verbatim: "Equation with ℎ term to the power of 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q7-e-ii-solution-2", kind: "point", verbatim: "Apply a * for incorrect rounding or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,4,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-e-ii-question.png",
+          "srcHash": "e7ba4f0a77d2538c4f9fbe65a666e94e",
+          "alt": "The question as printed on the paper — John is researching the connection between air pressure and height above sea level. On a website, he finds a different formula to estimate air pressure, P: P(h) = 101·325(1 − 2·2557 × 10⁻⁵ × h)⁵·²⁵⁵⁸, where h ≥ 0 is the height in metres above sea level. Use this formula to answer parts (e)(i) and (e)(ii). Work out the value of h for which the air pressure is 80 units, according to this formula. Give your answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q7-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q7-e-ii-solution.png",
+          "srcHash": "8824c0d076f16a5195f5fc9e32e26980",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q7(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(a)(i)",
+    stem: "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+    questionText: "Write the total amount of money in his pension fund at the end of the 25 years as the sum of a series. Include the first two and last two terms of the series.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "2 correct terms", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-a-i-question.png",
+          "srcHash": "9a5a51359de302ef32d4f717f3ae8482",
+          "alt": "The question as printed on the paper — Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month. Write the total amount of money in his pension fund at the end of the 25 years as the sum of a series. Include the first two and last two terms of the series.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "13c609de9ec1d869710af600a63d2e62",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q8-a-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(a)(ii)",
+    stem: "Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month.",
+    questionText: "Find the total amount of money in the pension fund at the end of the 25 years. Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "formula with fully correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Apply a * for no rounding or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-a-ii-question.png",
+          "srcHash": "53e971b81cf8944df0bae2cbc237e8ce",
+          "alt": "The question as printed on the paper — Jon has decided to put money into a pension fund for the next 25 years. He puts €285 into his pension fund at the start of every month for 300 months, at an interest rate of 0·35% per month. Find the total amount of money in the pension fund at the end of the 25 years. Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-a-ii-solution.png",
+          "srcHash": "c1bfe50c200aa6fb13b504bf640493ff",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-b", topicId: "maths-3-3", conceptId: "p1-deferred-q8-b",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(b)",
+    questionText: "At the end of the 25 years, Jon also puts an additional lump sum into his pension fund. His total pension fund is now €165 646·20. At this point, Jon retires, and stops paying money into his pension fund. Instead, he is now going to take out €A per month at the end of each month, for the next 20 years. Assuming that the interest rate remains at 0·35% per month, work out the maximum value that A can be. (That is, the value of A that would mean there is no money left in the pension fund after 20 years.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-b-solution-1", kind: "point", verbatim: "Formula with some substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q8-b-solution-2", kind: "point", verbatim: "Fully substituted amortisation/Sn formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-b-question.png",
+          "srcHash": "a8874332c7838cf0a5007cc25146f57b",
+          "alt": "The question as printed on the paper — At the end of the 25 years, Jon also puts an additional lump sum into his pension fund. His total pension fund is now €165 646·20. At this point, Jon retires, and stops paying money into his pension fund. Instead, he is now going to take out €A per month at the end of each month, for the next 20 years. Assuming that the interest rate remains at 0·35% per month, work out the maximum value that A can be. (That is, the value of A that would mean there is no money left in the pension fund after 20 years.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-b-solution.png",
+          "srcHash": "029912d1b272ec21ad9719d5e8a2d4d6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-c-i", topicId: "maths-4-1", conceptId: "p1-deferred-q8-c-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(c)(i)",
+    stem: "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+    questionText: "Use this to write y in terms of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q8-c-i-solution-2", kind: "point", verbatim: "mentions 60%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-c-i-question.png",
+          "srcHash": "420229c087f1aef310876e55c468c7ab",
+          "alt": "The question as printed on the paper — Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X. Use this to write y in terms of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-c-i-solution.png",
+          "srcHash": "622e2687d92ed02de6d97cd2088967e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-c-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q8-c-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(c)(ii)",
+    stem: "Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X.",
+    questionText: "In 2021, the company increased the number of Type X cameras it made by 1500, and increased the number of Type Y cameras by 900. As a result, in 2021, 50% of the cameras the company made were Type X. Work out the total number of cameras the company made in 2021.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "Finds the value of x or y", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-c-ii-question.png",
+          "srcHash": "8c1f7eab0f1ed99e7fc7a46705662507",
+          "alt": "The question as printed on the paper — Before he retired, Jon worked for a company making two types of speed camera, X and Y. In 2020, the company made x cameras of Type X, and y cameras of Type Y. In 2020, 40% of the cameras the company made were Type X. In 2021, the company increased the number of Type X cameras it made by 1500, and increased the number of Type Y cameras by 900. As a result, in 2021, 50% of the cameras the company made were Type X. Work out the total number of cameras the company made in 2021.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-c-ii-solution.png",
+          "srcHash": "cd67ddfd74319a5b64be381f72b71f2a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q8-d", topicId: "maths-3-3", conceptId: "p1-deferred-q8-d",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q8(d)",
+    questionText: "According to a Type X speed camera, a car is travelling at 112 km/hour. The company claims that their Type X speed camera can measure speed with a maximum error of 3·5%. Use this to work out the maximum actual speed of the car. Give your answer in km/hour, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q8-d-solution-1", kind: "point", verbatim: "Formula with full substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q8-d-solution-2", kind: "point", verbatim: "Apply a * for incorrect rounding or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-d-question.png",
+          "srcHash": "5adad2a8658d28aa159a56c2d494f923",
+          "alt": "The question as printed on the paper — According to a Type X speed camera, a car is travelling at 112 km/hour. The company claims that their Type X speed camera can measure speed with a maximum error of 3·5%. Use this to work out the maximum actual speed of the car. Give your answer in km/hour, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q8-d-solution.png",
+          "srcHash": "06b32fa87f7593c7876ccabab8168ab7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-a-i", topicId: "maths-4-1", conceptId: "p1-deferred-q9-a-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(a)(i)",
+    stem: "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+    questionText: "Use this information to write h in terms of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-a-i-solution-1", kind: "point", verbatim: "diameter = 4x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-i-question.png",
+          "srcHash": "0abfa7e6dc74aa1ba0054b69e7571e6c",
+          "alt": "The question as printed on the paper — The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. Use this information to write h in terms of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-i-solution.png",
+          "srcHash": "6db8e1555109c6fcd421119a6deaa1fe",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-a-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q9-a-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(a)(ii)",
+    stem: "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram.",
+    questionText: "Show that the volume of the cylinder can be written as: V(x) = 20πx² − 4πx³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "Accept candidates expression for h from part(i)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-a-ii-solution-2", kind: "point", verbatim: "Volume of cylinder formula fully substituted in terms of x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-ii-question.png",
+          "srcHash": "f2f188d08b757e94da5b9bae0dc6a59b",
+          "alt": "The question as printed on the paper — The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. Show that the volume of the cylinder can be written as: V(x) = 20πx² − 4πx³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-ii-solution.png",
+          "srcHash": "1563f88df0b433a7428f3f4b584df450",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-a-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q9-a-iii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(a)(iii)",
+    stem: "V(x) is the volume, in cm³, of a cylinder cut from the sheet of tin in part (a), with radius x cm.",
+    questionText: "Use differentiation to find the maximum volume that such a cylinder can have. Give your answer correct to the nearest cm³. Remember that V(x) = 20πx² − 4πx³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "1 step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-a-iii-solution-2", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-iii-question.png",
+          "srcHash": "64e96a7099a58350d9ca51cccc8061b7",
+          "alt": "The question as printed on the paper — V(x) is the volume, in cm³, of a cylinder cut from the sheet of tin in part (a), with radius x cm. Use differentiation to find the maximum volume that such a cylinder can have. Give your answer correct to the nearest cm³. Remember that V(x) = 20πx² − 4πx³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-iii-solution.png",
+          "srcHash": "be078b86f1179ed27cdba3b6cf7c7b24",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-a-iv", topicId: "maths-4-2", conceptId: "p1-deferred-q9-a-iv",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(a)(iv)",
+    stem: "The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. V(x) = 20πx² − 4πx³.",
+    questionText: "The graph on the right shows V(x) for a range of values of x ∈ ℝ. The x-axis is shown, but the y-axis is not. The graph of V(x) cuts the x-axis at the points (a, 0) and (b, 0), with a < b, as shown. By referring to the diagram on the previous page, or otherwise, find the value of a and the value of b.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-a-iv-solution-1", kind: "point", verbatim: "Accept correct answers without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-a-iv-solution-2", kind: "point", verbatim: "One value of x given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-iv-question.png",
+          "srcHash": "6cce1b76944785bac432b9c57b1514ce",
+          "alt": "The question as printed on the paper — The net of a closed cylinder with a radius x cm and a height h cm is cut out from a rectangular sheet of tin. The width of the sheet is 20 cm. The diagram below shows the sheet of tin, as well as the net of the cylinder cut from this sheet (the shaded region). The net is made up of a rectangle with a width of h cm (which is the height of the cylinder), and two circles, each of radius x cm. Each circle has two tangents in the diagram. V(x) = 20πx² − 4πx³. The graph on the right shows V(x) for a range of values of x ∈ ℝ. The x-axis is shown, but the y-axis is not. The graph of V(x) cuts the x-axis at the points (a, 0) and (b, 0), with a < b, as shown. By referring to the diagram on the previous page, or otherwise, find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-a-iv-solution.png",
+          "srcHash": "4b0f3e24cd9e98016109e98034b14a76",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-b-i", topicId: "maths-3-2", conceptId: "p1-deferred-q9-b-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(b)(i)",
+    stem: "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+    questionText: "Find the height of the liquid in the container when the volume of liquid is 203·285 m³. Give your answer in metres, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-b-i-solution-1", kind: "point", verbatim: "Equation set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-b-i-solution-2", kind: "point", verbatim: "Equation with index removed", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-b-i-question.png",
+          "srcHash": "2a114fbd450d033322d3efa545046b19",
+          "alt": "The question as printed on the paper — The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³. Find the height of the liquid in the container when the volume of liquid is 203·285 m³. Give your answer in metres, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-b-i-solution.png",
+          "srcHash": "47e05147277bfa57b6edb51482e3efba",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q9-b-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q9-b-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q9(b)(ii)",
+    stem: "The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³.",
+    questionText: "Liquid is leaking from this container. At a certain time, the height of the liquid in the container is 1 m. At this time, the height of the liquid is decreasing at a rate of 0·03 m/hour. Find the rate at which the volume of liquid in the container is decreasing at this time. Give your answer in m³/hour.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q9-b-ii-solution-1", kind: "point", verbatim: "Steps can happen in different orders.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-b-ii-solution-2", kind: "point", verbatim: "Step 2 does not need to be explicitly stated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-b-ii-solution-3", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q9-b-ii-solution-4", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-b-ii-question.png",
+          "srcHash": "27bf13240d44241c97dd6d7aaa996eb0",
+          "alt": "The question as printed on the paper — The volume, V, of liquid in a different container can be calculated using the formula: V(h) = (5h² + 4)^(3/2) − 6, where h is the height of the liquid in the container, in m, and V is measured in m³. Liquid is leaking from this container. At a certain time, the height of the liquid in the container is 1 m. At this time, the height of the liquid is decreasing at a rate of 0·03 m/hour. Find the rate at which the volume of liquid in the container is decreasing at this time. Give your answer in m³/hour.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q9-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q9-b-ii-solution.png",
+          "srcHash": "4091189590d613648ed453335adb930e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The question asks how quickly the volume is decreasing, so the answer is a decrease of 1·35 m³/hour. Using signed rates, dh/dt = −0·03 and dV/dt = −1·35. The printed working uses the positive magnitudes of these decreases.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q10-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q10-a-i",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q10(a)(i)",
+    stem: "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+    questionText: "Complete the table below and hence draw the graph of V(t) in the domain 0 ≤ t ≤ 32, t ∈ ℝ, on the grid below. Give your values correct to 1 decimal place. The table gives t = 0, 4, 8, 12, 16, 20, 24, 28, 32, with V(4) = 29·7 and V(24) = 53·6 already supplied.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q10-a-i-solution-1", kind: "point", verbatim: "3 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-i-solution-2", kind: "point", verbatim: "8 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-i-solution-3", kind: "point", verbatim: "14 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-i-solution-4", kind: "point", verbatim: "16 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-i-question.png",
+          "srcHash": "fe9d907cc3d2a61e3f90922fb52db511",
+          "alt": "The question as printed on the paper — The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump. Complete the table below and hence draw the graph of V(t) in the domain 0 ≤ t ≤ 32, t ∈ ℝ, on the grid below. Give your values correct to 1 decimal place. The table gives t = 0, 4, 8, 12, 16, 20, 24, 28, 32, with V(4) = 29·7 and V(24) = 53·6 already supplied.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-i-solution.png",
+          "srcHash": "f04551dfd4b4ae4aba5db6713e43dea0",
+          "alt": "NextStepUni worked speed graph over 0 to 32 seconds, followed by original SEC credit notes. At t = 0, 4, 8, 12, 16, 20, 24, 28, 32 seconds, speeds are 0.0, 29.7, 43.1, 49.1, 51.8, 53.0, 53.6, 53.8, 53.9 m/s.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The printed SEC graph is clipped at its right edge and contains stray formatting marks. The clean graph below is a NextStepUni worked example calculated from the question’s formula over the full 0–32 second domain. The original SEC credit notes follow it.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q10-a-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q10-a-ii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q10(a)(ii)",
+    stem: "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+    questionText: "Find the acceleration (rate of change of speed) of the skydiver one second after they jump from the airplane. Give your answer, in m/s², correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Differentiation fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-ii-solution-2", kind: "point", verbatim: "Apply a * for incorrect rounding or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-ii-question.png",
+          "srcHash": "39c22b6208774956f44ae0a6c565641e",
+          "alt": "The question as printed on the paper — The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump. Find the acceleration (rate of change of speed) of the skydiver one second after they jump from the airplane. Give your answer, in m/s², correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-ii-solution.png",
+          "srcHash": "9415c21fb808c16f221a0f0210033c27",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q10-a-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q10-a-iii",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q10(a)(iii)",
+    stem: "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+    questionText: "Use integration to find the average speed of the skydiver over the first 10 seconds after the jump. Give your answer correct to the nearest m/s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "Indication of integration is required to be awarded any credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-iii-solution-2", kind: "point", verbatim: "Accept correct answer without unit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-iii-solution-3", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-iii-solution-4", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"markingNote":"The printed row gives Scale 10C (0, 4, 6, 10), but also mentions Mid Partial Credit without assigning a separate mark. The numeric scale is retained; the original notes are available below.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-iii-question.png",
+          "srcHash": "2781b354fa82b35c434344bfdfeed55d",
+          "alt": "The question as printed on the paper — The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump. Use integration to find the average speed of the skydiver over the first 10 seconds after the jump. Give your answer correct to the nearest m/s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-iii-solution.png",
+          "srcHash": "4f515bd637a6dd8b357c9631926dfcb2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme prints Scale 10C (0, 4, 6, 10), but its notes also refer to Mid Partial Credit without assigning an additional mark. The credit selector follows the printed numeric scale; the complete original notes are shown for context.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q10-a-iv", topicId: "maths-5-1", conceptId: "p1-deferred-q10-a-iv",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q10(a)(iv)",
+    stem: "The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump.",
+    questionText: "Find the terminal velocity of the skydiver, that is, find the value of lim V(t) as t → ∞.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q10-a-iv-solution-1", kind: "point", verbatim: "Accept correct answers without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p1-deferred-q10-a-iv-solution-2", kind: "point", verbatim: "substitutes 2 or more positive integers for t", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-iv-question.png",
+          "srcHash": "284e2afb4b6d52e72c1e03e2205a527b",
+          "alt": "The question as printed on the paper — The speed, in metres per second (m/s), of a skydiver who jumps from an airplane is given by: V(t) = 54(1 − e^(−0·2t)), where t is the time, in seconds, that has passed since the jump. Find the terminal velocity of the skydiver, that is, find the value of lim V(t) as t → ∞.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-a-iv-solution.png",
+          "srcHash": "8bc6304c47ba4b087099eaba64849c6d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q10(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p1-deferred-q10-b", topicId: "maths-3-3", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2025 HL Paper 1 — Deferred Q10(b)",
+    questionText: "The airplane flies d km out to a jumpsite, at an average speed of x km/hour. It then flies d km back from the jumpsite. Throughout the return journey, its speed is 10% less than x km/hour. Find the percentage increase in the time it will take for the return journey. Give your answer as a percentage, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "Work of merit, for example, return speed", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-b-question.png",
+          "srcHash": "4ac3c5bbcaf22d7bc2c82a47d3792201",
+          "alt": "The question as printed on the paper — The airplane flies d km out to a jumpsite, at an average speed of x km/hour. It then flies d km back from the jumpsite. Throughout the return journey, its speed is 10% less than x km/hour. Find the percentage increase in the time it will take for the return journey. Give your answer as a percentage, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p1-deferred-q10-b-solution.png",
+          "srcHash": "f1e61e9e1e7458915c131d0638a08366",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

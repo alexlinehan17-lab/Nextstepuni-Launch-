@@ -1,0 +1,1079 @@
+{
+  "questionSha256": "5d27ced5f822674331b23cb878b80de3ce33cf75224d3ca45b9733ebd55544ca",
+  "solutionSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
+  "tasks": {
+    "maths-2025-hl-p1-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          52,
+          131,
+          546,
+          179
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          153.22,
+          541,
+          369.13
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          52,
+          432,
+          546,
+          479
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          367.93,
+          541,
+          629.5799999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q1-c": {
+      "question": [
+        [
+          5,
+          52,
+          53,
+          546,
+          102
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          77.74,
+          541,
+          315.01
+        ]
+      ],
+      "sourceNote": "The final lines of the printed solution use x where the question uses n. Read those lines as n = 1 or n = −2; the condition n > 0 leaves n = 1."
+    },
+    "maths-2025-hl-p1-deferred-q2-a": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          546,
+          137
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          77.74,
+          541,
+          450.27000000000004
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q2-b-i": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          546,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          449.07000000000005,
+          541,
+          630.42
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q2-b-ii": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          546,
+          89
+        ],
+        [
+          7,
+          52,
+          394,
+          546,
+          435
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          77.74,
+          541,
+          268.93
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          52,
+          73,
+          546,
+          317
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          77.74,
+          541,
+          251.77
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          52,
+          73,
+          546,
+          94
+        ],
+        [
+          8,
+          52,
+          407,
+          546,
+          446
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          250.57,
+          541,
+          554.67
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          52,
+          53,
+          546,
+          142
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          77.74,
+          541,
+          350.77000000000004
+        ]
+      ],
+      "sourceNote": "The sum 6 and product 10 in the model answer refer to the conjugate pair 3 − i and 3 + i. The third root is −4."
+    },
+    "maths-2025-hl-p1-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          546,
+          148
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          77.74,
+          541,
+          422.91
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q4-b": {
+      "question": [
+        [
+          10,
+          52,
+          392,
+          546,
+          565
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          421.71000000000004,
+          541,
+          605.0999999999999
+        ]
+      ],
+      "sourceNote": "The answer is No. A horizontal line sufficiently close to and below the local maximum meets the continuous graph on both sides of x = 7. The scheme’s wording “for all values of y < 12” is too broad; the local argument is enough to show that the function is not one-to-one."
+    },
+    "maths-2025-hl-p1-deferred-q4-c": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          546,
+          248
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          77.74,
+          541,
+          494.07
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q5-a": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          546,
+          97
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          77.74,
+          541,
+          261.73
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q5-b": {
+      "question": [
+        [
+          12,
+          52,
+          335,
+          546,
+          414
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          260.53000000000003,
+          541,
+          489.15000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q5-c": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          546,
+          152
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          487.95000000000005,
+          541,
+          697.5
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          546,
+          166
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          77.74,
+          541,
+          246.25
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q6-b": {
+      "question": [
+        [
+          14,
+          52,
+          405,
+          546,
+          487
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          245.04999999999998,
+          541,
+          543.27
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q6-c-i-ii": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          546,
+          437
+        ],
+        [
+          15,
+          52,
+          563,
+          546,
+          621
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          542.07,
+          541,
+          749.7199999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q7-a-b": {
+      "question": [
+        [
+          16,
+          52,
+          142,
+          546,
+          310
+        ],
+        [
+          16,
+          52,
+          462,
+          546,
+          496
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          77.74,
+          541,
+          332.65000000000003
+        ]
+      ],
+      "sourceNote": "A is the constant 101·3. The model answer prints A(1) in part (a), and labels 32·68 as 1 d.p. in part (b). The question asks for two decimal places: 32·68 is the correctly rounded answer."
+    },
+    "maths-2025-hl-p1-deferred-q7-c": {
+      "question": [
+        [
+          16,
+          52,
+          142,
+          546,
+          310
+        ],
+        [
+          17,
+          52,
+          53,
+          546,
+          119
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          331.45000000000005,
+          541,
+          557.91
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q7-d": {
+      "question": [
+        [
+          16,
+          52,
+          142,
+          546,
+          310
+        ],
+        [
+          17,
+          52,
+          358,
+          546,
+          504
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          556.71,
+          541,
+          719.8199999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q7-e-i": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          546,
+          200
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          77.74,
+          541,
+          205.06
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q7-e-ii": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          546,
+          164
+        ],
+        [
+          18,
+          52,
+          353,
+          546,
+          405
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          203.85999999999999,
+          541,
+          526.8299999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-a-i": {
+      "question": [
+        [
+          19,
+          52,
+          74,
+          546,
+          172.5
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          77.74,
+          541,
+          219.46
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-a-ii": {
+      "question": [
+        [
+          19,
+          52,
+          74,
+          546,
+          130
+        ],
+        [
+          19,
+          52,
+          297,
+          546,
+          330
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          218.26,
+          541,
+          416.67
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-b": {
+      "question": [
+        [
+          20,
+          52,
+          53,
+          546,
+          189
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          415.47,
+          541,
+          643.8599999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-c-i": {
+      "question": [
+        [
+          20,
+          52,
+          542,
+          546,
+          620
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          77.74,
+          541,
+          281.53000000000003
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-c-ii": {
+      "question": [
+        [
+          20,
+          52,
+          542,
+          546,
+          598
+        ],
+        [
+          21,
+          52,
+          53,
+          546,
+          137.8
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          280.33000000000004,
+          541,
+          463.35
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q8-d": {
+      "question": [
+        [
+          21,
+          52,
+          427,
+          546,
+          518
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          462.15000000000003,
+          541,
+          724.74
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-a-i": {
+      "question": [
+        [
+          22,
+          52,
+          74,
+          546,
+          435
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          77.74,
+          541,
+          162.94
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-a-ii": {
+      "question": [
+        [
+          22,
+          52,
+          74,
+          546,
+          402
+        ],
+        [
+          22,
+          52,
+          517,
+          546,
+          566
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          161.73999999999998,
+          541,
+          362.05
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-a-iii": {
+      "question": [
+        [
+          23,
+          52,
+          53,
+          546,
+          111
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          360.85,
+          541,
+          654.18
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-a-iv": {
+      "question": [
+        [
+          22,
+          52,
+          74,
+          546,
+          402
+        ],
+        [
+          23,
+          52,
+          89,
+          546,
+          110
+        ],
+        [
+          23,
+          52,
+          378,
+          546,
+          542
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          77.74,
+          541,
+          213.82000000000002
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-b-i": {
+      "question": [
+        [
+          24,
+          52,
+          53,
+          546,
+          173.7
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          212.62,
+          541,
+          408.63
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q9-b-ii": {
+      "question": [
+        [
+          24,
+          52,
+          53,
+          546,
+          133
+        ],
+        [
+          25,
+          52,
+          53,
+          546,
+          140
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          55,
+          407.43,
+          541,
+          760.04
+        ]
+      ],
+      "sourceNote": "The question asks how quickly the volume is decreasing, so the answer is a decrease of 1·35 m³/hour. Using signed rates, dh/dt = −0·03 and dV/dt = −1·35. The printed working uses the positive magnitudes of these decreases."
+    },
+    "maths-2025-hl-p1-deferred-q10-a-i": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          546,
+          234
+        ],
+        [
+          26,
+          52,
+          307,
+          546,
+          524
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          304,
+          140.98,
+          541,
+          437.55
+        ]
+      ],
+      "supplement": "skydiver-graph-2025-hl-deferred",
+      "supplementAlt": "NextStepUni worked speed graph over 0 to 32 seconds, followed by original SEC credit notes. At t = 0, 4, 8, 12, 16, 20, 24, 28, 32 seconds, speeds are 0.0, 29.7, 43.1, 49.1, 51.8, 53.0, 53.6, 53.8, 53.9 m/s.",
+      "sourceNote": "The printed SEC graph is clipped at its right edge and contains stray formatting marks. The clean graph below is a NextStepUni worked example calculated from the question’s formula over the full 0–32 second domain. The original SEC credit notes follow it."
+    },
+    "maths-2025-hl-p1-deferred-q10-a-ii": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          546,
+          137
+        ],
+        [
+          26,
+          52,
+          553,
+          546,
+          589
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          436.35,
+          541,
+          599.4599999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q10-a-iii": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          546,
+          137
+        ],
+        [
+          27,
+          52,
+          181,
+          546,
+          217
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          77.74,
+          541,
+          418.11
+        ]
+      ],
+      "sourceNote": "The scheme prints Scale 10C (0, 4, 6, 10), but its notes also refer to Mid Partial Credit without assigning an additional mark. The credit selector follows the printed numeric scale; the complete original notes are shown for context."
+    },
+    "maths-2025-hl-p1-deferred-q10-a-iv": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          546,
+          137
+        ],
+        [
+          27,
+          52,
+          520,
+          546,
+          562
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          416.91,
+          541,
+          550.8299999999999
+        ]
+      ]
+    },
+    "maths-2025-hl-p1-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          53,
+          546,
+          146
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          549.63,
+          541,
+          706.74
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        110,
+        5,
+        775
+      ],
+      "scheme": [
+        8,
+        132,
+        9,
+        316
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        775
+      ],
+      "scheme": [
+        10,
+        56,
+        11,
+        270
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        775
+      ],
+      "scheme": [
+        12,
+        56,
+        13,
+        352
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        775
+      ],
+      "scheme": [
+        14,
+        56,
+        15,
+        495
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        775
+      ],
+      "scheme": [
+        16,
+        56,
+        16,
+        699
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        775
+      ],
+      "scheme": [
+        17,
+        56,
+        17,
+        751
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        120,
+        18,
+        775
+      ],
+      "scheme": [
+        18,
+        56,
+        19,
+        528
+      ]
+    },
+    "8": {
+      "paper": [
+        19,
+        53,
+        21,
+        775
+      ],
+      "scheme": [
+        20,
+        56,
+        21,
+        726
+      ]
+    },
+    "9": {
+      "paper": [
+        22,
+        53,
+        25,
+        775
+      ],
+      "scheme": [
+        22,
+        56,
+        23,
+        762
+      ]
+    },
+    "10": {
+      "paper": [
+        26,
+        53,
+        28,
+        775
+      ],
+      "scheme": [
+        24,
+        56,
+        25,
+        708
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-30",
+  "inspectionNote": "All 80 typeset question and worked-solution images visually inspected against the complete paper and scheme. Four question crop edges refined and re-inspected individually: Q8(a)(i), Q8(a)(ii), Q8(c)(ii), Q9(b)(i). Required stems, graphs, all choice options and entire credit notes retained. No task allocation inferred from numbering alone. The separately attributed complete skydiver graph and all original SEC credit notes were also visually checked.",
+  "atlasInspectionNote": "All ten whole-question spans checked against their printed starts/ends in the 32-page paper and scheme pages 8–25. Every individual question/solution crop lies inside its whole-question region."
+}

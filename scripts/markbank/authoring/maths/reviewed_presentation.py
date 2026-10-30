@@ -58,8 +58,8 @@ def main(name, publish=False):
             if kind == 'solution' and task_plan.get('sourceNote'):
                 records[key]['sourceNote'] = task_plan['sourceNote']
             if kind == 'solution' and task_plan.get('supplement'):
-                records[key]['alt'] = 'NextStepUni worked probability tree, followed by the original SEC credit notes. Rain: walk 0.4875, no walk 0.1625. Dry: walk 0.343, no walk 0.007.'
-                records[key]['attribution'] = 'Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission.'
+                records[key]['alt'] = task_plan.get('supplementAlt', 'NextStepUni worked probability tree, followed by the original SEC credit notes. Rain: walk 0.4875, no walk 0.1625. Dry: walk 0.343, no walk 0.007.')
+                records[key]['attribution'] = f'Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics {paper.year} {paper.level.title()} Level, deferred examination — © State Examinations Commission.'
             w=760; h=round(im.height*w/im.width)
             col=0 if heights[0]<=heights[1] else 1
             if heights[col]+h+35>2300 and any(columns):

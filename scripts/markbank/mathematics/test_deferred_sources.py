@@ -46,5 +46,13 @@ class DeferredSources(unittest.TestCase):
         self.assertEqual(list(map(str,outcomes)),['0.4875','0.1625','0.3430','0.0070'])
         self.assertEqual(sum(outcomes),1)
 
+    def test_skydiver_graph_reproduces_the_printed_formula_and_complete_table(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import skydiver_speed
+        speeds=[skydiver_speed(t) for t in range(0,33,4)]
+        self.assertEqual([round(v,1) for v in speeds],[0,29.7,43.1,49.1,51.8,53.0,53.6,53.8,53.9])
+        self.assertEqual(speeds,sorted(speeds))
+        self.assertTrue(all(0<=v<54 for v in speeds))
+
 
 if __name__=='__main__': unittest.main()
