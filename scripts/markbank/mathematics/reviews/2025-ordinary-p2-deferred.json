@@ -1,0 +1,1662 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV-deferred.pdf",
+  "schemeFileid": "LC003GLP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "c7c88d7e0610e5ef32278e9ebb0ffab22c64a161e47cd0c87033c9b3bf66c227",
+  "schemeSha256": "47a46a4fe30407c1e457cbe994409e8c3d51709cf7444d64c570d45840176df0",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual sweep of every page of the 32-page question paper and scheme pages 23–44, with the general source note on pages 1–2. All printed parts reconciled against their own published scales. Every typeset question and solution crop is inspected separately before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    24,
+    25,
+    26,
+    27
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 380 offered marks. Candidates choose five Section A and three Section B questions for 300 marks.",
+    "45 separately marked tasks. Q4(a)(i)–(iii), Q5(a)(i)–(ii), and Q10(a)(ii)–(iii) each share a scale and remain together.",
+    "The scheme labels printed Q2(b)(i) as (b), and printed Q2(b)(ii) as (c). Cards retain the paper labels and cite the exact scheme rows.",
+    "Q7(a)(ii) and Q7(b)(i) print Scale 10C (0,3,7,10) rather than the general Paper 2 (0,4,6,10). The task-specific awards are retained and explained.",
+    "Q5(a)(i) prints DE instead of CD and cm after the scale factor in the model answer. The ratio is CD/AB=12/8=1.5, and a scale factor has no units. A source note explains these printing errors.",
+    "Q10(b)(i) has a blank model-answer tree in the printed scheme. A separately labelled NextStepUni worked example completes all branches/outcomes from the given probabilities. The original SEC credit notes remain intact.",
+    "Q10(b)(iii) says to assume rain on all three days. Under the usual independent-day model its conditional probability is (0.25)^2(0.75)=0.046875, or 0.0469. The scheme instead multiplies 0.1625^2 by 0.4875 to obtain 0.0129, including the chance of rain again. Both source and mathematical clarification are visible; no revised SEC marking rule is invented.",
+    "The extracted scheme text at PDF page 38 corrupts the word Median into repeated mathematical M glyphs. Its sole answer line was visually transcribed as Median = 13 from the original row; the source PDF/crop is unchanged.",
+    "Q3(d) is one required choice-and-reason answer with all three options, not three cards. The spinner choice in its stem and the flag restrictions in Q7(b)(iv) are situations to analyse, not a choice of examination tasks."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-ol-p2-deferred-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line p has a slope of 3/2 and crosses the y-axis at the point (0, 4). Find the equation of p.",
+      "solutionQuotes": [
+        "Formula with partial substitution"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q1-a-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q1-a-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the area of the triangle formed by joining the following three points: O(0, 0), A(3, 4), B(5, −1).",
+      "solutionQuotes": [
+        "Correct formula fully substituted",
+        "Apply a * for no units"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The diagram below shows four lines, labelled p, q, r, and s. The slope of each of the four lines is given in the table. Identify each of the lines in the diagram by writing the appropriate label into the space in the table beside the slope. Slopes: −1/5, 2, −1, 1/2.",
+      "solutionQuotes": [
+        "Any one slope correct.",
+        "Any 2 slopes correct"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q1-c-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q1-c-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation x² + y² = 169.",
+      "questionText": "Find the centre and the radius of the circle c.",
+      "solutionQuotes": [
+        "Accept correct answers without work",
+        "Centre or Radius correct"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q2-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q2-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation x² + y² = 169.",
+      "questionText": "Is the point (1, 12) on the circle c? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Substitutes in for either x or y",
+        "Apply a * for no reason."
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q2-a-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q2-a-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0).",
+      "questionText": "Find the centre and the equation of k.",
+      "solutionQuotes": [
+        "Centre and Radius correct",
+        "Centre or radius correct"
+      ],
+      "markingNote": "The marking scheme labels this row Q2(b); it corresponds to Q2(b)(i) in the question paper.",
+      "figureKey": "maths-2025-ol-p2-deferred-q2-b-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q2-b-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0).",
+      "questionText": "PQRS is a square. S and Q are on the x-axis. PQ, QR, RS, and SP are tangents to k, as shown. Find the area of PQRS.",
+      "solutionQuotes": [
+        "Identifies square has a side of 4",
+        "Apply a * for no units"
+      ],
+      "markingNote": "The marking scheme labels this row Q2(c); it corresponds to Q2(b)(ii) in the question paper.",
+      "figureKey": "maths-2025-ol-p2-deferred-q2-b-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q2-b-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+      "questionText": "A player spins Spinner A twice and collects a total of 6 tokens. List the four possible ways this could have happened.",
+      "solutionQuotes": [
+        "Identifies one possible way",
+        "Identifies two possible ways"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q3-a-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q3-a-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+      "questionText": "A player spins Spinner A once and Spinner B once. What is the probability that the player collects a total of 0 tokens?",
+      "solutionQuotes": [
+        "Correct formula written",
+        "Equates both fractions but fails to finish"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+      "questionText": "Spinner B is spun a large number of times. Find the expected average number of tokens that a player will collect each time.",
+      "solutionQuotes": [
+        "Works out any one correct expected value",
+        "Finds all correct fractions but fails to add"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+      "questionText": "Jill is playing a board game that uses both spinners. She has calculated that the expected average number of tokens for one spin of spinner A is 3. At certain points in the game she can choose one of the three options below: Option 1: Pay 2 tokens and spin Spinner A. Option 2: Pay 2 tokens and spin Spinner B. Option 3: Do not spin either spinner. Jill decides that she will choose one option at the beginning of the game and will always use that option in the game. Based on the expected average number of tokens for one spin of each spinner, which option would you advise Jill to choose? Tick one box only. Give a reason for your answer.",
+      "solutionQuotes": [
+        "Writes expected average of B in this part.",
+        "Gives correct option but fails to give a reason"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q3-d-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q3-d-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q4-a-i-ii-iii",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)",
+        "Q4(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A sample of 1500 males is selected at random. For this sample, diastolic blood pressure is normally distributed, with a mean of 80 and a standard deviation of 10. The normal curve below shows the blood pressure of the 1500 males in this sample.",
+      "questionText": "(i) Fill in the six missing numbers on the horizontal axis on the diagram above. (ii) Using the Empirical Rule, or otherwise, find the approximate number of males in the sample who have diastolic blood pressure between 70 and 90. (iii) Use the Empirical Rule to find the approximate percentage of males in the sample who have diastolic blood pressure greater than 90.",
+      "solutionQuotes": [
+        "Indicates mean ± standard deviation",
+        "Any one part of (i), (ii) or (iii) correct",
+        "Any two parts of (i), (ii) or (iii) correct"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°.",
+      "questionText": "Find the area of the sector. Give your answer, in cm², correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correct formula fully substituted",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q4-b-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q4-b-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°.",
+      "questionText": "Find the length of the perimeter of the sector. Give your answer, in cm, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correct formula written",
+        "Arc length (16·126)",
+        "Apply a * for early rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q4-b-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q4-b-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q5-a-i-ii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm.",
+      "questionText": "(i) Show that k = 1·5. (ii) Given that |OC| = 15 cm, find |OA|, the distance from O to A.",
+      "solutionQuotes": [
+        "Either part (i) or part (ii) correct",
+        "One part correct and work of merit in the other"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q5-a-i-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q5-a-i-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm².",
+      "questionText": "Find the area of the triangle OCD. (Remember that k = 1·5.)",
+      "solutionQuotes": [
+        "Correct formula fully substituted",
+        "Apply a * for no units"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm².",
+      "questionText": "Find the value of h, the perpendicular height of triangle OAB, as shown in the diagram.",
+      "solutionQuotes": [
+        "Correct formula fully substituted",
+        "Apply a * for no units"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q5-c-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q5-c-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°.",
+      "questionText": "Find the area of the triangle XYZ. Give your answer, in cm², correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correct formula fully substituted"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q6-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q6-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°.",
+      "questionText": "Construct the triangle XYZ in the box below. Show all your construction lines clearly. The point X is shown below. Part of the line XY is also shown.",
+      "solutionQuotes": [
+        "Any one line drawn correctly to scale",
+        "Two correct elements drawn.",
+        "Tolerance of ±0·25 cm and ±5°"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q6-a-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q6-a-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "The triangle PQR is isosceles with |PQ| = |PR|, as shown in the diagram. P lies on the line QS. |∠SPR| = 122°. Find the size of the angle marked x and the size of the angle marked y, in the diagram.",
+      "solutionQuotes": [
+        "x or y found correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q6-b-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q6-b-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil.",
+      "questionText": "Write down tan θ, in the form a/b, where a, b ∈ ℝ, and hence find the value of θ. Give your angle correct to the nearest degree.",
+      "solutionQuotes": [
+        "Correct Trig Ratio Formula written",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q7-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil.",
+      "questionText": "Work out the distance from A to L. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "One error but finishes correctly",
+        "Apply a * for early rounding"
+      ],
+      "markingNote": "This task’s printed 10C row awards 3 and 7 partial-credit marks. The general Paper 2 table lists 4 and 6; the task-specific row is used here.",
+      "figureKey": "maths-2025-ol-p2-deferred-q7-a-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-a-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Some time later Aidan read a review of the Croke Park experience. He noted that the height of the abseil was given as 150 feet. Use the two measurements for the height of the abseil (150 feet and 45·7 m) to find a general multiplier which will convert feet to metres. That is, find the value of k ∈ ℝ so that: Length in feet × k = length in metres. Give your answer correct to 3 decimal places.",
+      "solutionQuotes": [
+        "Fully substitutes the given formula correctly but fails to finish or finishes incorrectly",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q7-a-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-a-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths.",
+      "questionText": "In the triangle SUV, |SU| = 3·5 km. |∠SUV| = 30°. |∠UVS| = 125°. Use the sine rule to find the length of the side marked y. Give your answer, in km, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Sine Rule Formula fully substituted",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "markingNote": "This task’s printed 10C row awards 3 and 7 partial-credit marks. The general Paper 2 table lists 4 and 6; the task-specific row is used here.",
+      "figureKey": "maths-2025-ol-p2-deferred-q7-b-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-b-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths.",
+      "questionText": "In the triangle STU, |∠UST| = 45°. |ST| = 2·5 km. |SU| = 3·5 km. Use the cosine rule to find the length of the side marked z. Give your answer, in km, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Zero Credit: Treats triangle as right angled",
+        "Cosine Rule formula fully substituted",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q7-b-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-b-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course.",
+      "questionText": "In the first race, the flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+      "solutionQuotes": [
+        "Accept correct answer without work",
+        "multiplication of two relevant numbers"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q7-b-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-b-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course.",
+      "questionText": "In the second race, the first flag must be either A or F and the last flag must be A or F. The remaining flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+      "solutionQuotes": [
+        "Accept correct answer without work",
+        "Identifies correct values to multiply for first and last value, but fails to finish correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q7-b-iv-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q7-b-iv-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below.",
+      "questionText": "Find the volume of the step. Give your answer in cm³.",
+      "solutionQuotes": [
+        "Accept correct answer without work",
+        "Multiplies any two lengths correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below.",
+      "questionText": "To reduce the weight of a step, 5 holes are bored through each step, removing 5 cylinders of concrete, as shown in the diagram below. Each cylinder of concrete that is removed has a radius of 6 cm and a height of 30 cm. Find the remaining volume of a step when the 5 cylinders of concrete are removed. Give your answer in cm³, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correctly finds the volume of one cylinder",
+        "Correctly finds volume of 5 cylinders but fails to finish"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "50 different steps are needed for a special project. The volume of concrete in each step is 0·125 m³. The cost of the concrete for the steps is €185 per m³ before VAT is added. VAT at 13·5% is then added to the cost. Find the overall cost of the 50 steps after VAT is added. Give your answer correct to the nearest euro.",
+      "solutionQuotes": [
+        "Finds 1156·25"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q8-b-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q8-b-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "A solid garden ornament consists of a cone on top of a sphere. The height of the cone is 16 cm. The radius of the cone is 6 cm. The radius of the sphere is also 6 cm. Find the volume of the garden ornament. Give your answer in cm³, in terms of π.",
+      "solutionQuotes": [
+        "Writes formula for cone or sphere.",
+        "Finds volume of cone or volume of sphere correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q8-c-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q8-c-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "The ornament is put into a closed rectangular box with dimensions 13 cm, 13 cm, and 29 cm, as shown. Find the surface area of this closed rectangular box.",
+      "solutionQuotes": [
+        "All side surfaces or top and bottom surfaces identified correctly",
+        "All surface areas identified correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q8-d-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q8-d-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+      "questionText": "In the grid below, draw a suitable chart or graph to represent the data in the table. If you use a pie chart, show all your calculations clearly.",
+      "solutionQuotes": [
+        "4 correct boxes drawn in bar chart",
+        "2 sectors in the pie chart"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+      "questionText": "Find the median age of the children in the table.",
+      "solutionQuotes": [
+        "Median = 13"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-a-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-a-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+      "questionText": "One child is picked at random from the children in the youth club. What is the probability that this child is 13 years of age?",
+      "solutionQuotes": [
+        "correct numerator or denominator"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-a-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-a-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "Three children are picked at random from the children in the youth club. What is the probability that the 3 children were born on the same day of the week? You may assume that the probability of being born on each day is the same. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Any one correct probability written",
+        "Finds three correct probabilities but fails to finish correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-a-iv-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-a-iv-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older.",
+      "questionText": "Find the percentage of members in this sample who were 14 years or older.",
+      "solutionQuotes": [
+        "160",
+        "250",
+        "0·64"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-b-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-b-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older.",
+      "questionText": "Show that, for this sample, the margin of error for a population proportion is 6·3%, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correct formula fully substituted",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-b-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-b-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older. Part (b)(i) asks for the sample percentage; part (b)(ii) gives the margin of error as 6·3%.",
+      "questionText": "In Ireland, 60% of youth club members are 14 years or older. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of youth club members in Connaught who are 14 years or older is different from the population percentage, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+      "solutionQuotes": [
+        "Correct range written",
+        "Correct range and conclusion given, but no reason written",
+        "Correct range and reason given, but incorrect conclusion written"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q9-b-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q9-b-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6.",
+      "questionText": "Complete the back to back stem and leaf diagram below to show the recorded data.",
+      "solutionQuotes": [
+        "Either Team A or Team B diagram fully correct",
+        "Up to 25 items filled in correctly"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-a-ii-iii",
+      "printedParts": [
+        "Q10(a)(ii)",
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6.",
+      "questionText": "(ii) Find the range of the sprint times for both teams. (iii) Find the median sprint time for both Team A and Team B.",
+      "solutionQuotes": [
+        "Any one Range or Median time written correctly",
+        "Either part (ii) or (iii) fully correct"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-a-ii-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-a-ii-iii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6. The preceding parts ask for a back to back stem and leaf diagram, the range for each team, and the median for each team.",
+      "questionText": "Use your answers from parts (a)(i), (a)(ii), and (a)(iii) above to write a sentence to compare the performance of Team A and Team B in the speed test.",
+      "solutionQuotes": [
+        "incomplete sentence or doesn’t compare A and B"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-a-iv-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-a-iv-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below.",
+      "questionText": "Complete the diagram below by filling in the 3 missing outcomes and the 6 missing probabilities. For example, the probability that it is raining and Kim takes the dog for a walk is 0·4875, as shown. Key: Rain R; Dry D; Walk W; No Walk N.",
+      "solutionQuotes": [
+        "Any three correct additional outcomes or probabilities added to table",
+        "Any three correct additional outcomes and probabilities added to table"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-b-i-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-b-i-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below.",
+      "questionText": "What is the probability that Kim will bring Max for a walk on Saturday?",
+      "solutionQuotes": [
+        "Identifies both probabilities/outcomes but fails to add"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-b-ii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-b-ii-question"
+    },
+    {
+      "id": "maths-2025-ol-p2-deferred-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "Assume that it will rain for the next three days. What is the probability that, during these three days, Kim will bring Max for a walk for the first time on the third day? Give your answer correct to 4 decimal places. Remember that when it is raining, the probability of Kim taking Max for a walk is 0·75.",
+      "solutionQuotes": [
+        "Identifies any one correct probability/outcome",
+        "Identifies three correct probabilities/outcomes but fails to finish correctly",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "figureKey": "maths-2025-ol-p2-deferred-q10-b-iii-solution",
+      "questionFigureKey": "maths-2025-ol-p2-deferred-q10-b-iii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Retain every question for practice, including ones not selected in the examination."
+    },
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "wording": "choose to spin one of the two / choose one of the three options / Tick one box only",
+      "classification": "answer-selection",
+      "reason": "These are a probability situation and one required advice-and-reason response. All three options remain visible in the single Q3(d) card."
+    },
+    {
+      "pages": [
+        10
+      ],
+      "wording": "Empirical Rule, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same required normal-distribution task."
+    },
+    {
+      "pages": [
+        19
+      ],
+      "wording": "first flag must be either A or F",
+      "classification": "scenario-constraint",
+      "reason": "The task asks for the total number of arrangements, not a choice of questions."
+    },
+    {
+      "pages": [
+        24
+      ],
+      "wording": "suitable chart or graph / If you use a pie chart",
+      "classification": "method-choice",
+      "reason": "One chart task with alternative valid representations, carrying one shared scale."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Candidate exam selection; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Candidate exam selection; every question is retained for practice."
+    },
+    "4:6cf665bb36640fc6": {
+      "classification": "exam-level-selection",
+      "reason": "Candidate exam selection; every question is retained for practice."
+    },
+    "8:e7720ad52a4d8d00": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "8:2db5f295d4921a01": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "9:3efc9f8fe30274c0": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "9:bac51f5830c8836c": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "9:7af514a0612f8970": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "9:d26a909fd47008ce": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "9:ac52e90243b6f6a7": {
+      "classification": "answer-selection",
+      "reason": "One probability question with the complete choice and justification prompt."
+    },
+    "10:410e2cf5fde3e770": {
+      "classification": "method-choice",
+      "reason": "Alternative mathematical methods, not alternative tasks."
+    },
+    "16:0dbcabd46c6e6088": {
+      "classification": "exam-level-selection",
+      "reason": "Candidate exam selection; every question is retained for practice."
+    },
+    "19:8635ff0ccce11956": {
+      "classification": "scenario-constraint",
+      "reason": "Restrictions within one counting problem, not a task menu."
+    }
+  }
+}

@@ -8,6 +8,7 @@ import { isAnswerMap, preferredAnswersUrl } from '../components/PaperTrail/vault
 import { paperRegionFor, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
 import review from '../scripts/markbank/mathematics/reviews/2025-ordinary-p1-deferred.json';
+import reviewP2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2-deferred.json';
 
 const prefix = 'maths-2025-ol-p1-deferred-q';
 const cards = CARDS.filter(c => c.id.startsWith(prefix));
@@ -89,6 +90,74 @@ describe('2025 Ordinary deferred Paper 1', () => {
       const q=map.q.find(q=>q.n===n)!;
       expect(paperRegionFor(map.q,n)?.map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.sourcePages));
       expect(schemeRegionFor(q).map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.schemePages));
+    }
+  });
+});
+
+describe('2025 Ordinary deferred Paper 2', () => {
+  const prefix='maths-2025-ol-p2-deferred-q';
+  const cards=CARDS.filter(c=>c.id.startsWith(prefix));
+  it('retains all 45 reviewed tasks, shared allocations, printed choices and 380 offered marks', () => {
+    expect(cards.map(c=>c.id).sort()).toEqual(reviewP2.cards.map(c=>c.id).sort());
+    expect(cards).toHaveLength(45);
+    expect(cards.reduce((sum,c)=>sum+c.totalMarks,0)).toBe(380);
+    for(const [n,marks] of Object.entries(reviewP2.printedQuestionMarks))
+      expect(cards.filter(c=>c.questionRef.match(/Q(\d+)/)?.[1]===n).reduce((s,c)=>s+c.totalMarks,0),n).toBe(marks);
+    expect(cards.find(c=>c.id===prefix+'4-a-i-ii-iii')?.totalMarks).toBe(15);
+    expect(cards.find(c=>c.id===prefix+'5-a-i-ii')?.totalMarks).toBe(10);
+    expect(cards.find(c=>c.id===prefix+'10-a-ii-iii')?.totalMarks).toBe(10);
+    const choice=cards.filter(c=>c.id.startsWith(prefix+'3-d'));
+    expect(choice).toHaveLength(1);
+    for(const option of ['Option 1','Option 2','Option 3']) expect(choice[0].questionText).toContain(option);
+  });
+
+  it('keeps task-specific marks and makes omissions or contradictions in the scheme explicit', () => {
+    for(const id of ['7-a-ii','7-b-i']) {
+      const c=cards.find(c=>c.id===prefix+id)!;
+      expect(c.mathematicsScale).toMatchObject({code:'10C',marks:[0,3,7,10]});
+      expect(c.mathematicsScale?.markingNote).toContain('general Paper 2');
+    }
+    const tree=cards.find(c=>c.id===prefix+'10-b-i')!;
+    expect('figure' in tree && tree.figure?.attribution).toContain('Worked example: NextStepUni');
+    expect('figure' in tree && tree.figure?.alt).toContain('0.1625');
+    expect('figure' in tree && tree.figure?.sourceNote).toContain('model tree blank');
+    const rain=cards.find(c=>c.id===prefix+'10-b-iii')!;
+    expect('figure' in rain && rain.figure?.sourceNote).toContain('0·0469');
+    expect('figure' in rain && rain.figure?.sourceNote).toContain('0·0129');
+    // Independent reference arithmetic: the paper conditions on rain already.
+    expect((1/4)*(1/4)*(3/4)).toBe(3/64);
+    expect((3/64).toFixed(4)).toBe('0.0469');
+  });
+
+  it('pairs every card with its inspected source images and a working Atlas question/answer link', () => {
+    const paper=topicsForPaper('mathematics',2025,'ordinary','ev',reviewP2.paperFileid)!;
+    expect(paper).toBeDefined();
+    const url=preferredAnswersUrl('mathematics',2025,reviewP2.paperFileid,'https://storage/map.json');
+    expect(url).toBe(`/paper-answers/2025/${reviewP2.paperFileid}.json`);
+    const content=readFileSync('public'+url,'utf8');
+    expect(content).toBe(readFileSync(`scripts/paper-trail/answers/2025/${reviewP2.paperFileid}.json`,'utf8'));
+    const map: PaperAnswerMap=JSON.parse(content);
+    expect(isAnswerMap(map)).toBe(true);
+    expect(map.schemeFileid).toBe(reviewP2.schemeFileid);
+    const feeds=new Map<string,ReturnType<typeof questionsForTopics>>();
+    for(const task of reviewP2.cards) {
+      const c=cards.find(c=>c.id===task.id)!;
+      expect(c.paperFileid).toBe('LC003GLP200EV-deferred');
+      expect(c.questionFigure?.solution).not.toBe(true);
+      expect('figure' in c && c.figure?.solution).toBe(true);
+      for(const f of [c.questionFigure,'figure' in c?c.figure:undefined]) {
+        expect(f,task.id).toBeDefined();
+        expect(createHash('md5').update(readFileSync('public'+f!.src)).digest('hex'),task.id).toBe(f!.srcHash);
+      }
+      const n=task.printedParts[0].match(/^Q(\d+)/)![1];
+      const q=paper.q.find(q=>q.n===n)!;
+      expect(browseTopicIdsForQuestion(paper,q),task.id).toEqual(expect.arrayContaining(task.examTopicIds));
+      expect(paperRegionFor(map.q,n)?.map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.sourcePages));
+      expect(schemeRegionFor(map.q.find(q=>q.n===n)!).map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.schemePages));
+      for(const topic of task.examTopicIds) {
+        if(!feeds.has(topic))feeds.set(topic,questionsForTopics('mathematics',[topic]));
+        expect(feeds.get(topic),task.id).toContainEqual({subjectId:'mathematics',year:2025,level:'ordinary',lang:'ev',paperKey:'p2',fileid:reviewP2.paperFileid,n});
+      }
     }
   });
 });

@@ -9,6 +9,7 @@ from pathlib import Path
 import fitz
 from PIL import Image, ImageDraw
 from legacy_presentation_figures import render
+from worked_supplements import render_supplement
 sys.path.insert(0, 'scripts/markbank/mathematics')
 from sources import source_path
 
@@ -35,6 +36,15 @@ def main(name, publish=False):
             regions = plan['tasks'][cid][kind]
             rects = [dict(page=p, x0=x0, top=y0, x1=x1, bottom=y1) for p,x0,y0,x1,y1 in regions]
             im = render(docs[kind], rects, 200)
+            task_plan = plan['tasks'][cid]
+            if kind == 'solution' and task_plan.get('supplement'):
+                example = render_supplement(task_plan['supplement'])
+                # Retain source pixel proportions. The SEC notes crop may be
+                # narrower than the authored diagram; centre it underneath.
+                combined = Image.new('RGB', (max(example.width,im.width),example.height+im.height+24),'white')
+                combined.paste(example,((combined.width-example.width)//2,0))
+                combined.paste(im,((combined.width-im.width)//2,example.height+24))
+                im = combined
             key = c['questionFigureKey' if kind == 'question' else 'figureKey']
             path = out / f'{key}.png'
             im.save(path)
@@ -45,6 +55,11 @@ def main(name, publish=False):
                 year=paper.year, level=paper.level,
                 attribution=f'SEC Leaving Certificate Mathematics {paper.year} {paper.level.title()} Level, deferred examination — © State Examinations Commission')
             if kind == 'solution': records[key]['solution'] = True
+            if kind == 'solution' and task_plan.get('sourceNote'):
+                records[key]['sourceNote'] = task_plan['sourceNote']
+            if kind == 'solution' and task_plan.get('supplement'):
+                records[key]['alt'] = 'NextStepUni worked probability tree, followed by the original SEC credit notes. Rain: walk 0.4875, no walk 0.1625. Dry: walk 0.343, no walk 0.007.'
+                records[key]['attribution'] = 'Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission.'
             w=760; h=round(im.height*w/im.width)
             col=0 if heights[0]<=heights[1] else 1
             if heights[col]+h+35>2300 and any(columns):

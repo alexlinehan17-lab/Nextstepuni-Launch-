@@ -77218,4 +77218,1983 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q1-a", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q1(a)",
+    questionText: "The line p has a slope of 3/2 and crosses the y-axis at the point (0, 4). Find the equation of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q1-a-solution-1", kind: "point", verbatim: "Formula with partial substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-a-question.png",
+          "srcHash": "602a7ffd129c0fa484a64f74213c3658",
+          "alt": "The question as printed on the paper — The line p has a slope of 3/2 and crosses the y-axis at the point (0, 4). Find the equation of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-a-solution.png",
+          "srcHash": "04a796e3610517186b101a95f0e63d83",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q1(b)",
+    questionText: "Find the area of the triangle formed by joining the following three points: O(0, 0), A(3, 4), B(5, −1).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Apply a * for no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-b-question.png",
+          "srcHash": "7e178094189f6d7a4f68b97d0f5eb316",
+          "alt": "The question as printed on the paper — Find the area of the triangle formed by joining the following three points: O(0, 0), A(3, 4), B(5, −1).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-b-solution.png",
+          "srcHash": "3b0aae6fcf7d4de49589a572ddf29a72",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q1-c", topicId: "maths-2-2", conceptId: "p2-deferred-q1-c",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q1(c)",
+    questionText: "The diagram below shows four lines, labelled p, q, r, and s. The slope of each of the four lines is given in the table. Identify each of the lines in the diagram by writing the appropriate label into the space in the table beside the slope. Slopes: −1/5, 2, −1, 1/2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q1-c-solution-1", kind: "point", verbatim: "Any one slope correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q1-c-solution-2", kind: "point", verbatim: "Any 2 slopes correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-c-question.png",
+          "srcHash": "fa10416c878b9836e825661a4a91e3d1",
+          "alt": "The question as printed on the paper — The diagram below shows four lines, labelled p, q, r, and s. The slope of each of the four lines is given in the table. Identify each of the lines in the diagram by writing the appropriate label into the space in the table beside the slope. Slopes: −1/5, 2, −1, 1/2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q1-c-solution.png",
+          "srcHash": "dcf8c5a0c811e9fc811c55a96ad1e6b6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q2-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q2-a-i",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q2(a)(i)",
+    stem: "The circle c has equation x² + y² = 169.",
+    questionText: "Find the centre and the radius of the circle c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Accept correct answers without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q2-a-i-solution-2", kind: "point", verbatim: "Centre or Radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-a-i-question.png",
+          "srcHash": "4ff1062cf062a226ce19355cba92faf2",
+          "alt": "The question as printed on the paper — The circle c has equation x² + y² = 169. Find the centre and the radius of the circle c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-a-i-solution.png",
+          "srcHash": "f03d65815fae42ab2ceede2fdc30edc3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q2-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q2-a-ii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q2(a)(ii)",
+    stem: "The circle c has equation x² + y² = 169.",
+    questionText: "Is the point (1, 12) on the circle c? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Substitutes in for either x or y", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q2-a-ii-solution-2", kind: "point", verbatim: "Apply a * for no reason.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-a-ii-question.png",
+          "srcHash": "15ba1da45919c2cb9410c2d9fe2260e1",
+          "alt": "The question as printed on the paper — The circle c has equation x² + y² = 169. Is the point (1, 12) on the circle c? Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-a-ii-solution.png",
+          "srcHash": "a518c295302719bd388509f312ee11f8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q2-b-i", topicId: "maths-2-2", conceptId: "p2-deferred-q2-b-i",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q2(b)(i)",
+    stem: "The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0).",
+    questionText: "Find the centre and the equation of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q2-b-i-solution-1", kind: "point", verbatim: "Centre and Radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q2-b-i-solution-2", kind: "point", verbatim: "Centre or radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"markingNote":"The marking scheme labels this row Q2(b); it corresponds to Q2(b)(i) in the question paper.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-b-i-question.png",
+          "srcHash": "b16bcfb7106464552d916252eaa59c73",
+          "alt": "The question as printed on the paper — The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0). Find the centre and the equation of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-b-i-solution.png",
+          "srcHash": "709021b35f1fe03d95d87110689a9398",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q2-b-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q2-b-ii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q2(b)(ii)",
+    stem: "The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0).",
+    questionText: "PQRS is a square. S and Q are on the x-axis. PQ, QR, RS, and SP are tangents to k, as shown. Find the area of PQRS.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "Identifies square has a side of 4", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q2-b-ii-solution-2", kind: "point", verbatim: "Apply a * for no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"markingNote":"The marking scheme labels this row Q2(c); it corresponds to Q2(b)(ii) in the question paper.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-b-ii-question.png",
+          "srcHash": "0ccc25394b77b027d4ce8163525c5e73",
+          "alt": "The question as printed on the paper — The circle k, shown in the diagram on the right, has its centre on the x-axis and contains the points O(0, 0) and T(4, 0). PQRS is a square. S and Q are on the x-axis. PQ, QR, RS, and SP are tangents to k, as shown. Find the area of PQRS.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q2-b-ii-solution.png",
+          "srcHash": "03ba4c2aa88b9cb79e2e05cfcb13486e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q3-a", topicId: "maths-1-1", conceptId: "p2-deferred-q3-a",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q3(a)",
+    stem: "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+    questionText: "A player spins Spinner A twice and collects a total of 6 tokens. List the four possible ways this could have happened.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q3-a-solution-1", kind: "point", verbatim: "Identifies one possible way", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q3-a-solution-2", kind: "point", verbatim: "Identifies two possible ways", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-a-question.png",
+          "srcHash": "b21ed868ab8b78923dbc3e6cc97aff06",
+          "alt": "The question as printed on the paper — Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0. A player spins Spinner A twice and collects a total of 6 tokens. List the four possible ways this could have happened.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-a-solution.png",
+          "srcHash": "61ba74fdb7e9d5eeab97d10d4e0738ff",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q3-b", topicId: "maths-1-2", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q3(b)",
+    stem: "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+    questionText: "A player spins Spinner A once and Spinner B once. What is the probability that the player collects a total of 0 tokens?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "Correct formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q3-b-solution-2", kind: "point", verbatim: "Equates both fractions but fails to finish", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-b-question.png",
+          "srcHash": "97e2226c586b35f848fbbf60fd55b9bc",
+          "alt": "The question as printed on the paper — Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0. A player spins Spinner A once and Spinner B once. What is the probability that the player collects a total of 0 tokens?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-b-solution.png",
+          "srcHash": "a9c8ed4ebe5240974de031731d8d9e50",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q3-c", topicId: "maths-1-3", conceptId: "p2-deferred-q3-c",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q3(c)",
+    stem: "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+    questionText: "Spinner B is spun a large number of times. Find the expected average number of tokens that a player will collect each time.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q3-c-solution-1", kind: "point", verbatim: "Works out any one correct expected value", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q3-c-solution-2", kind: "point", verbatim: "Finds all correct fractions but fails to add", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-c-question.png",
+          "srcHash": "fba15d231f597959fdfaa3cb9f6b866d",
+          "alt": "The question as printed on the paper — Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0. Spinner B is spun a large number of times. Find the expected average number of tokens that a player will collect each time.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-c-solution.png",
+          "srcHash": "4b7d3c486f3287eb46c0a68ad17d97a5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q3-d", topicId: "maths-1-3", conceptId: "p2-deferred-q3-d",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q3(d)",
+    stem: "Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0.",
+    questionText: "Jill is playing a board game that uses both spinners. She has calculated that the expected average number of tokens for one spin of spinner A is 3. At certain points in the game she can choose one of the three options below: Option 1: Pay 2 tokens and spin Spinner A. Option 2: Pay 2 tokens and spin Spinner B. Option 3: Do not spin either spinner. Jill decides that she will choose one option at the beginning of the game and will always use that option in the game. Based on the expected average number of tokens for one spin of each spinner, which option would you advise Jill to choose? Tick one box only. Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q3-d-solution-1", kind: "point", verbatim: "Writes expected average of B in this part.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q3-d-solution-2", kind: "point", verbatim: "Gives correct option but fails to give a reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-d-question.png",
+          "srcHash": "dfb9472faa1ee9d46f752abf7c8c48e6",
+          "alt": "The question as printed on the paper — Part of a board game involves gathering tokens. At certain points in the game a player can choose to spin one of the two fair spinners shown in the diagrams below. They will collect the number of tokens the arrow stops on. For example, on Spinner A shown below a player would collect 6 tokens. Spinner A has four equal sectors: 4, 0, 6, 2. Spinner B has six equal sectors: 4, 8, 0, 1, 3, 0. Jill is playing a board game that uses both spinners. She has calculated that the expected average number of tokens for one spin of spinner A is 3. At certain points in the game she can choose one of the three options below: Option 1: Pay 2 tokens and spin Spinner A. Option 2: Pay 2 tokens and spin Spinner B. Option 3: Do not spin either spinner. Jill decides that she will choose one option at the beginning of the game and will always use that option in the game. Based on the expected average number of tokens for one spin of each spinner, which option would you advise Jill to choose? Tick one box only. Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q3-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q3-d-solution.png",
+          "srcHash": "9325423dec808c4862743ef57b1d0bd4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q3(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q4-a-i-ii-iii", topicId: "maths-1-6", conceptId: "p2-deferred-q4-a-i-ii-iii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii), Q4(a)(iii)",
+    stem: "A sample of 1500 males is selected at random. For this sample, diastolic blood pressure is normally distributed, with a mean of 80 and a standard deviation of 10. The normal curve below shows the blood pressure of the 1500 males in this sample.",
+    questionText: "(i) Fill in the six missing numbers on the horizontal axis on the diagram above. (ii) Using the Empirical Rule, or otherwise, find the approximate number of males in the sample who have diastolic blood pressure between 70 and 90. (iii) Use the Empirical Rule to find the approximate percentage of males in the sample who have diastolic blood pressure greater than 90.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution-1", kind: "point", verbatim: "Indicates mean ± standard deviation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution-2", kind: "point", verbatim: "Any one part of (i), (ii) or (iii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution-3", kind: "point", verbatim: "Any two parts of (i), (ii) or (iii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,6,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-a-i-ii-iii-question.png",
+          "srcHash": "281efaac4d06fa0e94fabb215865ad97",
+          "alt": "The question as printed on the paper — A sample of 1500 males is selected at random. For this sample, diastolic blood pressure is normally distributed, with a mean of 80 and a standard deviation of 10. The normal curve below shows the blood pressure of the 1500 males in this sample. (i) Fill in the six missing numbers on the horizontal axis on the diagram above. (ii) Using the Empirical Rule, or otherwise, find the approximate number of males in the sample who have diastolic blood pressure between 70 and 90. (iii) Use the Empirical Rule to find the approximate percentage of males in the sample who have diastolic blood pressure greater than 90.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-a-i-ii-iii-solution.png",
+          "srcHash": "d980a3763708e10dd0fb9a929200f38a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii), Q4(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q4-b-i", topicId: "maths-3-4", conceptId: "p2-deferred-q4-b-i",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q4(b)(i)",
+    stem: "The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°.",
+    questionText: "Find the area of the sector. Give your answer, in cm², correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q4-b-i-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q4-b-i-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-b-i-question.png",
+          "srcHash": "70527e6882d71fb8536d9e8211d22eae",
+          "alt": "The question as printed on the paper — The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°. Find the area of the sector. Give your answer, in cm², correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-b-i-solution.png",
+          "srcHash": "cc75a10b561d1ee25367cf4647dcde0c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q4(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q4-b-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q4-b-ii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q4(b)(ii)",
+    stem: "The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°.",
+    questionText: "Find the length of the perimeter of the sector. Give your answer, in cm, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "Correct formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q4-b-ii-solution-2", kind: "point", verbatim: "Arc length (16·126)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q4-b-ii-solution-3", kind: "point", verbatim: "Apply a * for early rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-b-ii-question.png",
+          "srcHash": "a06f44248fa41ab51617bbd6d0a91c5d",
+          "alt": "The question as printed on the paper — The diagram shows a sector of a circle of radius 12 cm, with an angle of 77°. Find the length of the perimeter of the sector. Give your answer, in cm, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q4-b-ii-solution.png",
+          "srcHash": "d209f13e3a89ff4e645ee5d7821705b9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q5-a-i-ii", topicId: "maths-2-4", conceptId: "p2-deferred-q5-a-i-ii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q5(a)(i), Q5(a)(ii)",
+    stem: "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm.",
+    questionText: "(i) Show that k = 1·5. (ii) Given that |OC| = 15 cm, find |OA|, the distance from O to A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q5-a-i-ii-solution-1", kind: "point", verbatim: "Either part (i) or part (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q5-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-a-i-ii-question.png",
+          "srcHash": "f83a630d818bf92cc030293ad9e54033",
+          "alt": "The question as printed on the paper — The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. (i) Show that k = 1·5. (ii) Given that |OC| = 15 cm, find |OA|, the distance from O to A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-a-i-ii-solution.png",
+          "srcHash": "fc78b73335c69e0834b848bdc6a7f7dd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q5(a)(i), Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The printed scheme contains two slips: DE should read CD, and the scale factor 1·5 has no units. The correct ratio is |CD| ÷ |AB| = 12 ÷ 8 = 1·5; |OA| = 10 cm.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q5-b", topicId: "maths-2-4", conceptId: "p2-deferred-q5-b",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q5(b)",
+    stem: "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm².",
+    questionText: "Find the area of the triangle OCD. (Remember that k = 1·5.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q5-b-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q5-b-solution-2", kind: "point", verbatim: "Apply a * for no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-b-question.png",
+          "srcHash": "465072dffb2b972e9090eead92912531",
+          "alt": "The question as printed on the paper — The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm². Find the area of the triangle OCD. (Remember that k = 1·5.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-b-solution.png",
+          "srcHash": "ca9e1ab585b9fe44191fff84d46d6f6f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q5-c", topicId: "maths-3-4", conceptId: "p2-deferred-q5-c",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q5(c)",
+    stem: "The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm².",
+    questionText: "Find the value of h, the perpendicular height of triangle OAB, as shown in the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q5-c-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q5-c-solution-2", kind: "point", verbatim: "Apply a * for no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-c-question.png",
+          "srcHash": "901e3486e9bbe834458a440eebf3e61b",
+          "alt": "The question as printed on the paper — The triangles OAB and OCD are shown in the diagram. The triangle OCD is the image of the triangle OAB under an enlargement of centre O and scale factor k. |AB| = 8 cm. |CD| = 12 cm. The area of triangle OAB is 36·7 cm². Find the value of h, the perpendicular height of triangle OAB, as shown in the diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q5-c-solution.png",
+          "srcHash": "4796709cbab27855872180e750338794",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q6-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q6-a-i",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q6(a)(i)",
+    stem: "In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°.",
+    questionText: "Find the area of the triangle XYZ. Give your answer, in cm², correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q6-a-i-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-a-i-question.png",
+          "srcHash": "05d320ee7005cdcec8ca1a41c2b934d1",
+          "alt": "The question as printed on the paper — In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°. Find the area of the triangle XYZ. Give your answer, in cm², correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-a-i-solution.png",
+          "srcHash": "e7cc1d4b46e9ddcd1d4da286f0785a50",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q6-a-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q6-a-ii",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q6(a)(ii)",
+    stem: "In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°.",
+    questionText: "Construct the triangle XYZ in the box below. Show all your construction lines clearly. The point X is shown below. Part of the line XY is also shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "Any one line drawn correctly to scale", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q6-a-ii-solution-2", kind: "point", verbatim: "Two correct elements drawn.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q6-a-ii-solution-3", kind: "point", verbatim: "Tolerance of ±0·25 cm and ±5°", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-a-ii-question.png",
+          "srcHash": "118fe2f300ad3c9d8ace410f594fd277",
+          "alt": "The question as printed on the paper — In the triangle XYZ: |XY| = 10 cm, |XZ| = 8 cm, and |∠ZXY| = 50°. Construct the triangle XYZ in the box below. Show all your construction lines clearly. The point X is shown below. Part of the line XY is also shown.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-a-ii-solution.png",
+          "srcHash": "8a06c141a450bd00c2e7af33b076d884",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q6-b", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b",
+    section: "A", questionRef: "2025 OL Paper 2 — Deferred Q6(b)",
+    questionText: "The triangle PQR is isosceles with |PQ| = |PR|, as shown in the diagram. P lies on the line QS. |∠SPR| = 122°. Find the size of the angle marked x and the size of the angle marked y, in the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q6-b-solution-1", kind: "point", verbatim: "x or y found correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-b-question.png",
+          "srcHash": "bd2ef7d49a1789bffc2538212b2a8447",
+          "alt": "The question as printed on the paper — The triangle PQR is isosceles with |PQ| = |PR|, as shown in the diagram. P lies on the line QS. |∠SPR| = 122°. Find the size of the angle marked x and the size of the angle marked y, in the diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q6-b-solution.png",
+          "srcHash": "2b0700b92b17945f50f2565c7a457e5d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q7-a-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(a)(i)",
+    stem: "As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil.",
+    questionText: "Write down tan θ, in the form a/b, where a, b ∈ ℝ, and hence find the value of θ. Give your angle correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-a-i-solution-1", kind: "point", verbatim: "Correct Trig Ratio Formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-a-i-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-i-question.png",
+          "srcHash": "dfd0305c5728774c5fa4c97119d483f2",
+          "alt": "The question as printed on the paper — As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil. Write down tan θ, in the form a/b, where a, b ∈ ℝ, and hence find the value of θ. Give your angle correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-i-solution.png",
+          "srcHash": "51157786ba830d8e50212109f31f0853",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q7-a-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(a)(ii)",
+    stem: "As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil.",
+    questionText: "Work out the distance from A to L. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "One error but finishes correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-a-ii-solution-2", kind: "point", verbatim: "Apply a * for early rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"markingNote":"This task’s printed 10C row awards 3 and 7 partial-credit marks. The general Paper 2 table lists 4 and 6; the task-specific row is used here.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-ii-question.png",
+          "srcHash": "0fb728695fdd52f3016f588f2f891ae9",
+          "alt": "The question as printed on the paper — As part of the Croke Park experience, it is possible to descend by rope (abseil) from the roof of the stadium to ground level. Aidan (A) does this abseil, down a vertical height of 45·7 m. His friend Laura (L) is waiting for him on the ground. She stands 35 m directly across from where he is due to land, as shown in the diagram. The angle θ is the angle from the ground at Laura’s feet to the roof, at the place where Aidan starts his abseil. Work out the distance from A to L. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-ii-solution.png",
+          "srcHash": "9f08ecda21a7ad25357debefe1597203",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-a-iii", topicId: "maths-3-3", conceptId: "p2-deferred-q7-a-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(a)(iii)",
+    questionText: "Some time later Aidan read a review of the Croke Park experience. He noted that the height of the abseil was given as 150 feet. Use the two measurements for the height of the abseil (150 feet and 45·7 m) to find a general multiplier which will convert feet to metres. That is, find the value of k ∈ ℝ so that: Length in feet × k = length in metres. Give your answer correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "Fully substitutes the given formula correctly but fails to finish or finishes incorrectly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-a-iii-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-iii-question.png",
+          "srcHash": "178b90a0ae8b3d8f43243030c37d04c1",
+          "alt": "The question as printed on the paper — Some time later Aidan read a review of the Croke Park experience. He noted that the height of the abseil was given as 150 feet. Use the two measurements for the height of the abseil (150 feet and 45·7 m) to find a general multiplier which will convert feet to metres. That is, find the value of k ∈ ℝ so that: Length in feet × k = length in metres. Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-a-iii-solution.png",
+          "srcHash": "15fa582334fb2743e72778a01e472639",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-b-i", topicId: "maths-2-3", conceptId: "p2-deferred-q7-b-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(b)(i)",
+    stem: "Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths.",
+    questionText: "In the triangle SUV, |SU| = 3·5 km. |∠SUV| = 30°. |∠UVS| = 125°. Use the sine rule to find the length of the side marked y. Give your answer, in km, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-b-i-solution-1", kind: "point", verbatim: "Sine Rule Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-b-i-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"markingNote":"This task’s printed 10C row awards 3 and 7 partial-credit marks. The general Paper 2 table lists 4 and 6; the task-specific row is used here.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-i-question.png",
+          "srcHash": "bbd300ec0e7247a0debf984b08fa2e06",
+          "alt": "The question as printed on the paper — Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths. In the triangle SUV, |SU| = 3·5 km. |∠SUV| = 30°. |∠UVS| = 125°. Use the sine rule to find the length of the side marked y. Give your answer, in km, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-i-solution.png",
+          "srcHash": "eb43284eca7705d060554ea9d8660363",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-b-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q7-b-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(b)(ii)",
+    stem: "Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths.",
+    questionText: "In the triangle STU, |∠UST| = 45°. |ST| = 2·5 km. |SU| = 3·5 km. Use the cosine rule to find the length of the side marked z. Give your answer, in km, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-b-ii-solution-1", kind: "point", verbatim: "Zero Credit: Treats triangle as right angled", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-b-ii-solution-2", kind: "point", verbatim: "Cosine Rule formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-b-ii-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-ii-question.png",
+          "srcHash": "44b36b1a3e126b87f9098c902c0e3a00",
+          "alt": "The question as printed on the paper — Adam is mapping a course for an Adventure Race. Adam has measurements for some parts of the course. The diagram shows the lengths and the sizes of the angles that Adam knows. He needs to use these measurements to work out some of the remaining lengths. In the triangle STU, |∠UST| = 45°. |ST| = 2·5 km. |SU| = 3·5 km. Use the cosine rule to find the length of the side marked z. Give your answer, in km, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-ii-solution.png",
+          "srcHash": "fd4787aa977671407eff26c5142507f8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-b-iii", topicId: "maths-1-1", conceptId: "p2-deferred-q7-b-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(b)(iii)",
+    stem: "For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course.",
+    questionText: "In the first race, the flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-b-iii-solution-1", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-b-iii-solution-2", kind: "point", verbatim: "multiplication of two relevant numbers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-iii-question.png",
+          "srcHash": "4e46259c22d3e18a8d3febcb22c57e23",
+          "alt": "The question as printed on the paper — For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course. In the first race, the flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-iii-solution.png",
+          "srcHash": "30f3db4f63f26408c23eb1111af7be41",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q7-b-iv", topicId: "maths-1-1", conceptId: "p2-deferred-q7-b-iv",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q7(b)(iv)",
+    stem: "For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course.",
+    questionText: "In the second race, the first flag must be either A or F and the last flag must be A or F. The remaining flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q7-b-iv-solution-1", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q7-b-iv-solution-2", kind: "point", verbatim: "Identifies correct values to multiply for first and last value, but fails to finish correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-iv-question.png",
+          "srcHash": "ebaf9ccb7e8d3865cbc0707da1908a27",
+          "alt": "The question as printed on the paper — For each race, Adam must place 6 flags labelled A, B, C, D, E, and F at random locations along the course. In the second race, the first flag must be either A or F and the last flag must be A or F. The remaining flags can be arranged in any order along the course. Find the total number of arrangements of flags that are possible.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q7-b-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q7-b-iv-solution.png",
+          "srcHash": "28f1c4693a5d34225e2791c985ae3916",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q7(b)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q8-a-i", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q8(a)(i)",
+    stem: "A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below.",
+    questionText: "Find the volume of the step. Give your answer in cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q8-a-i-solution-2", kind: "point", verbatim: "Multiplies any two lengths correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-a-i-question.png",
+          "srcHash": "a5dd65c65843c29b3b4b8160c5ae326d",
+          "alt": "The question as printed on the paper — A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below. Find the volume of the step. Give your answer in cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "d57cca05131acb869794520b1f4d62b7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q8-a-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below.",
+    questionText: "To reduce the weight of a step, 5 holes are bored through each step, removing 5 cylinders of concrete, as shown in the diagram below. Each cylinder of concrete that is removed has a radius of 6 cm and a height of 30 cm. Find the remaining volume of a step when the 5 cylinders of concrete are removed. Give your answer in cm³, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Correctly finds the volume of one cylinder", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Correctly finds volume of 5 cylinders but fails to finish", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "fe4bbe4b81782408136fc6b532597a5f",
+          "alt": "The question as printed on the paper — A concrete step is 150 cm long, 20 cm high, and 30 cm wide, as shown in the diagram below. To reduce the weight of a step, 5 holes are bored through each step, removing 5 cylinders of concrete, as shown in the diagram below. Each cylinder of concrete that is removed has a radius of 6 cm and a height of 30 cm. Find the remaining volume of a step when the 5 cylinders of concrete are removed. Give your answer in cm³, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "222adc2dd27748bc903b6c9a27127b12",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q8-b", topicId: "maths-3-3", conceptId: "p2-deferred-q8-b",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q8(b)",
+    questionText: "50 different steps are needed for a special project. The volume of concrete in each step is 0·125 m³. The cost of the concrete for the steps is €185 per m³ before VAT is added. VAT at 13·5% is then added to the cost. Find the overall cost of the 50 steps after VAT is added. Give your answer correct to the nearest euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q8-b-solution-1", kind: "point", verbatim: "Finds 1156·25", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-b-question.png",
+          "srcHash": "efe2ae898a64f77e4240b9e61bc5e5ee",
+          "alt": "The question as printed on the paper — 50 different steps are needed for a special project. The volume of concrete in each step is 0·125 m³. The cost of the concrete for the steps is €185 per m³ before VAT is added. VAT at 13·5% is then added to the cost. Find the overall cost of the 50 steps after VAT is added. Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-b-solution.png",
+          "srcHash": "0685480e06fbdc5b3ca9ead5ea56714e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q8-c", topicId: "maths-3-4", conceptId: "p2-deferred-q8-c",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q8(c)",
+    questionText: "A solid garden ornament consists of a cone on top of a sphere. The height of the cone is 16 cm. The radius of the cone is 6 cm. The radius of the sphere is also 6 cm. Find the volume of the garden ornament. Give your answer in cm³, in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q8-c-solution-1", kind: "point", verbatim: "Writes formula for cone or sphere.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q8-c-solution-2", kind: "point", verbatim: "Finds volume of cone or volume of sphere correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-c-question.png",
+          "srcHash": "6f9a31d261129ff17bbcae7c44eeac03",
+          "alt": "The question as printed on the paper — A solid garden ornament consists of a cone on top of a sphere. The height of the cone is 16 cm. The radius of the cone is 6 cm. The radius of the sphere is also 6 cm. Find the volume of the garden ornament. Give your answer in cm³, in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-c-solution.png",
+          "srcHash": "e2634e8a8ffc9508ecb897cefc046dae",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q8(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q8-d", topicId: "maths-3-4", conceptId: "p2-deferred-q8-d",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q8(d)",
+    questionText: "The ornament is put into a closed rectangular box with dimensions 13 cm, 13 cm, and 29 cm, as shown. Find the surface area of this closed rectangular box.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q8-d-solution-1", kind: "point", verbatim: "All side surfaces or top and bottom surfaces identified correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q8-d-solution-2", kind: "point", verbatim: "All surface areas identified correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-d-question.png",
+          "srcHash": "90bb7b47f3abbb789f13a3951480f25e",
+          "alt": "The question as printed on the paper — The ornament is put into a closed rectangular box with dimensions 13 cm, 13 cm, and 29 cm, as shown. Find the surface area of this closed rectangular box.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q8-d-solution.png",
+          "srcHash": "4e540ee99cb82c00007574c49d1743c1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-a-i", topicId: "maths-1-5", conceptId: "p2-deferred-q9-a-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(a)(i)",
+    stem: "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+    questionText: "In the grid below, draw a suitable chart or graph to represent the data in the table. If you use a pie chart, show all your calculations clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-a-i-solution-1", kind: "point", verbatim: "4 correct boxes drawn in bar chart", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-a-i-solution-2", kind: "point", verbatim: "2 sectors in the pie chart", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-i-question.png",
+          "srcHash": "003c991fdce86b410164c85120d97741",
+          "alt": "The question as printed on the paper — In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4. In the grid below, draw a suitable chart or graph to represent the data in the table. If you use a pie chart, show all your calculations clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-i-solution.png",
+          "srcHash": "c85a7ab9688e2efe5ac04b3607fe70f4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-a-ii", topicId: "maths-1-6", conceptId: "p2-deferred-q9-a-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(a)(ii)",
+    stem: "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+    questionText: "Find the median age of the children in the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "Median = 13", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-ii-question.png",
+          "srcHash": "8cd97dfcba3c2dd8781dbceb400520af",
+          "alt": "The question as printed on the paper — In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4. Find the median age of the children in the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-ii-solution.png",
+          "srcHash": "05b73c5df5c43a902e7a085f078e5328",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-a-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(a)(iii)",
+    stem: "In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4.",
+    questionText: "One child is picked at random from the children in the youth club. What is the probability that this child is 13 years of age?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "correct numerator or denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-iii-question.png",
+          "srcHash": "b428c6c931bf1b3dfde0e42655d7a907",
+          "alt": "The question as printed on the paper — In a Youth Club, the ages of children, in years, are recorded in the following table. Age (years): 12, 13, 14, 15, 16. Number of Children: 13, 10, 8, 5, 4. One child is picked at random from the children in the youth club. What is the probability that this child is 13 years of age?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-iii-solution.png",
+          "srcHash": "dfd7a49ad82e6ffa05fa61c674167846",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-a-iv", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-iv",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(a)(iv)",
+    questionText: "Three children are picked at random from the children in the youth club. What is the probability that the 3 children were born on the same day of the week? You may assume that the probability of being born on each day is the same. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-a-iv-solution-1", kind: "point", verbatim: "Any one correct probability written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-a-iv-solution-2", kind: "point", verbatim: "Finds three correct probabilities but fails to finish correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-iv-question.png",
+          "srcHash": "a72141f0a2d3016bd8e8be06f419e45d",
+          "alt": "The question as printed on the paper — Three children are picked at random from the children in the youth club. What is the probability that the 3 children were born on the same day of the week? You may assume that the probability of being born on each day is the same. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-a-iv-solution.png",
+          "srcHash": "4c0e295d6b1fe57693332980ed26b7d2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-b-i", topicId: "maths-1-6", conceptId: "p2-deferred-q9-b-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(b)(i)",
+    stem: "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older.",
+    questionText: "Find the percentage of members in this sample who were 14 years or older.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-b-i-solution-1", kind: "point", verbatim: "160", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-b-i-solution-2", kind: "point", verbatim: "250", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-b-i-solution-3", kind: "point", verbatim: "0·64", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-i-question.png",
+          "srcHash": "548e3d23b38230303f7feec692baac8e",
+          "alt": "The question as printed on the paper — A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older. Find the percentage of members in this sample who were 14 years or older.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-i-solution.png",
+          "srcHash": "b28a1c3898f45d4b7d4159f9f043bd5c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-b-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q9-b-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(b)(ii)",
+    stem: "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older.",
+    questionText: "Show that, for this sample, the margin of error for a population proportion is 6·3%, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-b-ii-solution-1", kind: "point", verbatim: "Correct formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-b-ii-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-ii-question.png",
+          "srcHash": "cdba2208528a6c57f6a5d2fbe4e14ac0",
+          "alt": "The question as printed on the paper — A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older. Show that, for this sample, the margin of error for a population proportion is 6·3%, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-ii-solution.png",
+          "srcHash": "17fb41bfdfb430676a5a5f5c641a4ba3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q9-b-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q9-b-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q9(b)(iii)",
+    stem: "A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older. Part (b)(i) asks for the sample percentage; part (b)(ii) gives the margin of error as 6·3%.",
+    questionText: "In Ireland, 60% of youth club members are 14 years or older. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of youth club members in Connaught who are 14 years or older is different from the population percentage, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q9-b-iii-solution-1", kind: "point", verbatim: "Correct range written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-b-iii-solution-2", kind: "point", verbatim: "Correct range and conclusion given, but no reason written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q9-b-iii-solution-3", kind: "point", verbatim: "Correct range and reason given, but incorrect conclusion written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-iii-question.png",
+          "srcHash": "3b4478e9a46a24d39495607508d6b1c5",
+          "alt": "The question as printed on the paper — A random sample of 250 youth club members in Connaught were asked their age. 160 of these were 14 years or older. Part (b)(i) asks for the sample percentage; part (b)(ii) gives the margin of error as 6·3%. In Ireland, 60% of youth club members are 14 years or older. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of youth club members in Connaught who are 14 years or older is different from the population percentage, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q9-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q9-b-iii-solution.png",
+          "srcHash": "464cc987b7600a4772b011b75ead6622",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q9(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-a-i", topicId: "maths-1-5", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(a)(i)",
+    stem: "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6.",
+    questionText: "Complete the back to back stem and leaf diagram below to show the recorded data.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "Either Team A or Team B diagram fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q10-a-i-solution-2", kind: "point", verbatim: "Up to 25 items filled in correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-i-question.png",
+          "srcHash": "a5790f779ce007cb7833577f0a24c40f",
+          "alt": "The question as printed on the paper — The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6. Complete the back to back stem and leaf diagram below to show the recorded data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "95f9d6cdb57a04cb3e81b742cebe5b8e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-a-ii-iii", topicId: "maths-1-6", conceptId: "p2-deferred-q10-a-ii-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(a)(ii), Q10(a)(iii)",
+    stem: "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6.",
+    questionText: "(ii) Find the range of the sprint times for both teams. (iii) Find the median sprint time for both Team A and Team B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-a-ii-iii-solution-1", kind: "point", verbatim: "Any one Range or Median time written correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q10-a-ii-iii-solution-2", kind: "point", verbatim: "Either part (ii) or (iii) fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-ii-iii-question.png",
+          "srcHash": "e410c1ac2b348c20e234cb0513183b2d",
+          "alt": "The question as printed on the paper — The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6. (ii) Find the range of the sprint times for both teams. (iii) Find the median sprint time for both Team A and Team B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-ii-iii-solution.png",
+          "srcHash": "3be87a2dc2c1dd4e4881064f3920f88f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q10(a)(ii), Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-a-iv", topicId: "maths-1-6", conceptId: "p2-deferred-q10-a-iv",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(a)(iv)",
+    stem: "The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6. The preceding parts ask for a back to back stem and leaf diagram, the range for each team, and the median for each team.",
+    questionText: "Use your answers from parts (a)(i), (a)(ii), and (a)(iii) above to write a sentence to compare the performance of Team A and Team B in the speed test.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-a-iv-solution-1", kind: "point", verbatim: "incomplete sentence or doesn’t compare A and B", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-iv-question.png",
+          "srcHash": "f69aa16d6753c6742c04869d43f82ede",
+          "alt": "The question as printed on the paper — The students in a PE class are divided into two groups, Team A and Team B. In a speed test, the time that each student took to sprint 50 metres was recorded. The results, in seconds, are shown below. Team A: 5·9, 6·3, 6·9, 6·9, 7·1, 7·1, 7·2, 7·3, 7·5, 7·7, 7·7, 8·2, 8·4, 8·5, 9·1. Team B: 6·3, 6·5, 6·8, 6·8, 6·9, 7·6, 7·6, 8·1, 8·3, 8·4, 9·3, 9·4, 9·5, 9·6, 9·6. The preceding parts ask for a back to back stem and leaf diagram, the range for each team, and the median for each team. Use your answers from parts (a)(i), (a)(ii), and (a)(iii) above to write a sentence to compare the performance of Team A and Team B in the speed test.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-a-iv-solution.png",
+          "srcHash": "9abbd918ae0ace48ef322a7fa83a132a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q10(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-b-i", topicId: "maths-1-2", conceptId: "p2-deferred-q10-b-i",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(b)(i)",
+    stem: "Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below.",
+    questionText: "Complete the diagram below by filling in the 3 missing outcomes and the 6 missing probabilities. For example, the probability that it is raining and Kim takes the dog for a walk is 0·4875, as shown. Key: Rain R; Dry D; Walk W; No Walk N.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-b-i-solution-1", kind: "point", verbatim: "Any three correct additional outcomes or probabilities added to table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q10-b-i-solution-2", kind: "point", verbatim: "Any three correct additional outcomes and probabilities added to table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-i-question.png",
+          "srcHash": "f1aff0c3519ac82d71e55cf0193c667e",
+          "alt": "The question as printed on the paper — Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below. Complete the diagram below by filling in the 3 missing outcomes and the 6 missing probabilities. For example, the probability that it is raining and Kim takes the dog for a walk is 0·4875, as shown. Key: Rain R; Dry D; Walk W; No Walk N.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-i-solution.png",
+          "srcHash": "8be1e8943bf65a428292be3b5dfdeafa",
+          "alt": "NextStepUni worked probability tree, followed by the original SEC credit notes. Rain: walk 0.4875, no walk 0.1625. Dry: walk 0.343, no walk 0.007.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The SEC scheme leaves its model tree blank. The completed tree below is a NextStepUni worked example using the question’s probabilities; the official SEC credit notes follow it.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-b-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q10-b-ii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(b)(ii)",
+    stem: "Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below.",
+    questionText: "What is the probability that Kim will bring Max for a walk on Saturday?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-b-ii-solution-1", kind: "point", verbatim: "Identifies both probabilities/outcomes but fails to add", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-ii-question.png",
+          "srcHash": "7e6af27983c7bb13e686b4e4860ed8a3",
+          "alt": "The question as printed on the paper — Kim has a dog called Max. When it is raining, the probability of Kim taking Max for a walk is 0·75. When it is dry the probability of her taking Max for a walk is 0·98. On a particular Saturday, the weather forecast is showing a 0·65 chance of rain. This information is shown in the tree diagram below. What is the probability that Kim will bring Max for a walk on Saturday?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-ii-solution.png",
+          "srcHash": "5fd88b804d917ab45ab5d6cc08f4153e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q10(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-deferred-q10-b-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q10-b-iii",
+    section: "B", questionRef: "2025 OL Paper 2 — Deferred Q10(b)(iii)",
+    questionText: "Assume that it will rain for the next three days. What is the probability that, during these three days, Kim will bring Max for a walk for the first time on the third day? Give your answer correct to 4 decimal places. Remember that when it is raining, the probability of Kim taking Max for a walk is 0·75.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-deferred-q10-b-iii-solution-1", kind: "point", verbatim: "Identifies any one correct probability/outcome", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q10-b-iii-solution-2", kind: "point", verbatim: "Identifies three correct probabilities/outcomes but fails to finish correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p2-deferred-q10-b-iii-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,24,25,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-iii-question.png",
+          "srcHash": "8e7f0d1ae751199537976987ea774bc0",
+          "alt": "The question as printed on the paper — Assume that it will rain for the next three days. What is the probability that, during these three days, Kim will bring Max for a walk for the first time on the third day? Give your answer correct to 4 decimal places. Remember that when it is raining, the probability of Kim taking Max for a walk is 0·75.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p2-deferred-q10-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p2-deferred-q10-b-iii-solution.png",
+          "srcHash": "b9a88d7379d5555edde7e2d00e6b9a45",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 2 — Deferred Q10(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "There is an inconsistency in the printed sources. Assuming rain on all three days and independent daily decisions gives 0·25 × 0·25 × 0·75 = 0·046875, or 0·0469. The SEC working below instead includes the chance of rain again and gives 0·0129. Check your reasoning against the question’s stated assumption; a different answer from this scheme does not by itself mean your method is wrong.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

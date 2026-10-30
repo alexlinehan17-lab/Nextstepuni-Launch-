@@ -2347,7 +2347,7 @@ High Partial Credit
 40 × 360 = 36°
 (ii)
 
-𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀= 13
+Median = 13
 Scale 5B (0, 2, 5)
 Partial Credit
 • Work of merit
