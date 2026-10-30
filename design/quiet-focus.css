@@ -1,0 +1,87 @@
+/* Alex approved “Quiet white”, 30 October 2026.
+ * Load this shared policy before component styles, including lazy Kobra runtimes.
+ * Important declarations in this named layer beat legacy unlayered !important
+ * rules without a specificity contest. Only active focus is changed.
+ * data-focus-review is reserved for isolated side-by-side design experiments.
+ */
+@layer nsu-focus;
+
+:root {
+  --nsu-focus-edge: #383833;
+  --focus-ring: var(--nsu-focus-edge);
+}
+.dark {
+  --nsu-focus-edge: #e4e2db;
+  --focus-ring: var(--nsu-focus-edge);
+}
+
+@layer nsu-focus {
+  /* Links and keyboard-operated controls need a visible boundary too.
+   * Keep a small separation so light buttons on dark surfaces remain visible. */
+  :root:not([data-focus-review]) :where(button, a[href], summary, input, select, textarea, [contenteditable='true'], [tabindex]:not([tabindex='-1'])):focus-visible {
+    outline: 2px solid var(--nsu-focus-edge) !important;
+    outline-offset: 2px !important;
+    --tw-ring-color: var(--nsu-focus-edge) !important;
+    --tw-ring-offset-width: 0px !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+    --tw-inset-ring-shadow: 0 0 #0000 !important;
+    box-shadow: none !important;
+  }
+
+  /* Text-entry controls use the approved close edge, for mouse AND keyboard.
+   * A 1px border plus 1px inset makes the edge without moving the layout. */
+  :root:not([data-focus-review]) :where(
+    input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color']):not([type='file']):not([type='hidden']):not([type='button']):not([type='submit']):not([type='reset']):not([type='image']),
+    select, textarea, [contenteditable='true']
+  ):focus {
+    outline: none !important;
+    outline-offset: 0 !important;
+    box-shadow: inset 0 0 0 1px var(--nsu-focus-edge) !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+    --tw-inset-ring-shadow: 0 0 #0000 !important;
+  }
+  :root:not([data-focus-review]) :where(
+    input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color']):not([type='file']):not([type='hidden']):not([type='button']):not([type='submit']):not([type='reset']):not([type='image']),
+    select, textarea, [contenteditable='true']
+  ):focus:where(:not([aria-invalid='true']):not([data-invalid])) {
+    border-color: var(--nsu-focus-edge) !important;
+  }
+
+  /* A composed field gets ONE edge on its containing box. */
+  :root:not([data-focus-review]) :is([data-slot='input-group'], .pt-search, .wi-slot):has(:is(input, textarea):focus) {
+    outline: none !important;
+    box-shadow: inset 0 0 0 1px var(--nsu-focus-edge) !important;
+  }
+  :root:not([data-focus-review]) :is([data-slot='input-group'], .pt-search, .wi-slot):has(:is(input, textarea):focus):where(:not([aria-invalid='true']):not(:has([aria-invalid='true'], [data-invalid]))) {
+    border-color: var(--nsu-focus-edge) !important;
+  }
+  :root:not([data-focus-review]) :is([data-slot='input-group'], .pt-search, .wi-slot) :is(input, textarea):focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+  /* Existing label-owned focus boundaries, including hidden native controls. */
+  :root:not([data-focus-review]) :is(.setup-appearance-card, .account-crew-grid > label, .sps-choice, .hallpick__row, .st-switch-row):has(:focus-visible),
+  :root:not([data-focus-review]) :is(.cw-dropzone, .mb-french-choice, .wr-subject-card):focus-within,
+  :root:not([data-focus-review]) .feedback-category input:focus-visible + span,
+  :root:not([data-focus-review]) .pvc-scrub:has(.pvc-range:focus-visible) [data-slot='progress-track'] {
+    outline: 2px solid var(--nsu-focus-edge) !important;
+    outline-offset: 2px !important;
+    box-shadow: none !important;
+  }
+  :root:not([data-focus-review]) :is(.st-switch-row, .sps-choice, .cw-dropzone, .account-crew-grid > label, .setup-appearance-card, .hallpick__row) :focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* High-contrast mode can suppress box shadows. Keep a system-colour edge. */
+  @media (forced-colors: active) {
+    :root:not([data-focus-review]) :is(input, select, textarea, [contenteditable='true']):focus {
+      outline: 2px solid Highlight !important;
+      outline-offset: 1px !important;
+    }
+  }
+}
