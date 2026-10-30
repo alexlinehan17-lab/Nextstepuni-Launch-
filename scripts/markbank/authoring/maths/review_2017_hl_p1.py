@@ -27,7 +27,7 @@ ROWS = {
  'maths-2017-hl-p1-q3-b': [L(SOL, '= 0·372'),
      L(ALT, 'f(x) = ln(3x² + 2)'), L(ALT, 'g(x) = (x + 5)'), L(ALT, 'f[g(x)] = ln[3(x + 5)² + 2]'), L(ALT, '= ln(3x² + 30x + 77)'),
      L(ALT, 'f′(x) = (6x + 30)/(3x² + 30x + 77)'), L(ALT, 'x = 1/4: f′(x) = 31·5/84·6875 = 0·3719'), L(ALT, '= 0·372'),
-     L(LPC, 'Any correct differentiation'), L(LPC, 'fg(x) formulated'), 
+     L(LPC, 'Any correct differentiation'), L(LPC, 'fg(x) formulated'),
      L(NOTE, 'Work with f(x) × g(x) merits low partial credit at most')],
  'maths-2017-hl-p1-q4-a': [L(SOL, 'r = 42·75/95 = 9/20'), L(SOL, 'Tn = ar^(n−1) < 0·01'), L(SOL, '95(9/20)^(n−1) < 0·01'), L(SOL, '(9/20)^(n−1) < 0·01/95'),
      L(SOL, '(n − 1) log(9/20) < log(0.01/95)'), L(SOL, '(n − 1) > log(0.01/95)/log(9/20)'), L(SOL, '(since log(9/20) is negative)'),

@@ -2319,5 +2319,3 @@ a dhéanamh, is féidir úsáid a bhaint as an tábla thíos.
 
 
 ## Page 60
-
-

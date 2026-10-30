@@ -42,4 +42,3 @@ export function validReviewedMathematicsMarking(card, paper) {
       && card.generalNotesPages.every(page => Number.isInteger(page) && page > 0
         && paper.generalNotesPages.includes(page))));
 }
-
