@@ -21,6 +21,7 @@ import { CARDS as ordinaryMarkBankCards } from '../components/MarkBank/cards/phy
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import {
   browseTopicIdsForQuestion,
+  questionsForTopics,
   subjectAtlasStats,
   topicsForPaper,
   topicsForSubject,
@@ -364,7 +365,7 @@ describe('Physics exam-topic registry', () => {
 
   it('keeps every shipped Mark Bank card linked to the exact old-course practice map', () => {
     const cards = [...higherMarkBankCards, ...ordinaryMarkBankCards];
-    expect(cards).toHaveLength(1133);
+    expect(cards).toHaveLength(1768);
 
     for (const card of cards) {
       const parsed = /^(\d{4})\s+(HL|OL)\s+Q(\d+)/.exec(card.questionRef);
@@ -393,17 +394,39 @@ describe('Physics exam-topic registry', () => {
     }
   });
 
+  it('makes every card reachable in the actual Atlas feed under its canonical curriculum topic', () => {
+    const feeds = new Map<string, ReturnType<typeof questionsForTopics>>();
+    for (const card of [...higherMarkBankCards, ...ordinaryMarkBankCards]) {
+      const fileid = card.paperFileid.replace(/\.pdf$/i, '') + '.pdf';
+      const n = /\bQ(\d+)/.exec(card.questionRef)?.[1];
+      expect(n, card.id).toBeDefined();
+      const paper = topicsForPaper('physics', card.year, card.level, 'ev', fileid);
+      const question = paper?.q.find(q => q.n === n);
+      expect(question, `${card.id}: missing exact source question`).toBeDefined();
+      const matchingTopics = browseTopicIdsForQuestion(paper!, question!)
+        .filter(id => curriculumNodeIdsForExamTopic(id).includes(card.topicId));
+      expect(matchingTopics.length, `${card.id}: no Atlas topic for ${card.topicId}`).toBeGreaterThan(0);
+      for (const topicId of matchingTopics) {
+        if (!feeds.has(topicId)) feeds.set(topicId, questionsForTopics('physics', [topicId]));
+        expect(feeds.get(topicId), `${card.id}: missing from ${topicId}`).toContainEqual({
+          subjectId: 'physics', year: card.year, level: card.level, lang: 'ev',
+          fileid, paperKey: paper!.paperKey, n,
+        });
+      }
+    }
+  });
+
   it('pins the independently measured Mark Bank remainder instead of hiding it', () => {
     expect(markBankCoverage.physics).toMatchObject({
-      cards: 1133,
-      leaves: 1224,
-      covered: 1119,
-      excluded: 46,
-      open: 59,
-      orphans: 6,
-      coveragePct: 95.2,
+      cards: 1768,
+      leaves: 1675,
+      covered: 1675,
+      excluded: 0,
+      open: 0,
+      orphans: 0,
+      coveragePct: 100,
     });
-    expect(markBankExclusions).toHaveLength(46);
+    expect(markBankExclusions).toHaveLength(0);
     expect(markBankExclusions.every(exclusion => (
       exclusion.ref && exclusion.reason && exclusion.evidence
     ))).toBe(true);

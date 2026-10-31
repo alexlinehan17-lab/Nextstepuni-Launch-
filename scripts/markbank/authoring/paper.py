@@ -356,6 +356,30 @@ INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, 
 # empty-leaf) and a leaf "CH3COOH. (6)", where this paper's Q2(b), Q6(a), Q7(a) and Q8(b),
 # their romans in a sentence the same way, are each one ask. Joined back, as 2016 HL's.
 INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
+# The inverse: romans set INSIDE a sentence, each opening its ask in lower case,
+# that the paper prices as parts of their own. 2023 HL Physics Q4 (paper page 4,
+# lines 22-23) prints "How did the student (ii) cool the water, (iii) dry the
+# steam?" and "Why did the student (iv) cool the water, (v) dry the steam?" under
+# its (i) and before its (vi), group mark (24); the scheme (page 9) prices (ii),
+# (iii), (iv) and (v) each on its own. The lower case after each marker kept the
+# marker lookahead from splitting them, so the census read Q4(i) and Q4(vi) only
+# (flag roman-gap) and the cards for Q4(ii)-(v) were orphans. A piece holding a
+# listed text after its start is split there. Gated to the sitting: no other
+# paper's reading may move because of it.
+INLINE_SENTENCE_MARKERS = {('physics', 2023, 'hl'): ['(ii) cool the water,', '(iii) dry the steam?',
+                                                     '(iv) cool the water,', '(v) dry the steam?']}
+# 2020 HL Physics prints romans inside a sentence three times (rendered and looked at):
+# Q6 (paper page 5) "Calculate (v) how long the ball was in the air," before its (vi) and
+# (vii); Q8 (page 7) "Define (i) radioactivity, (ii) the becquerel. (9)" before its (iii);
+# Q9 (page 7) "Calculate (iv) the tension in the string, (v) the speed of sound in the
+# string. (24)" between its (iii) and (vi). The scheme (PDF pages 10, 12, 13) prices each of
+# Q6(v), Q8(i), Q8(ii), Q9(iv) and Q9(v) on its own ("6", "6", "3", "12", "6"). Each
+# reached the walker inside one block opening in a word, so the census read Q6 without
+# (v), Q8 from (iii), Q9 without (iv) and (v) (flags roman-gap).
+INLINE_SENTENCE_MARKERS[('physics', 2020, 'hl')] = [
+    '(v) how long the ball was in the air,',
+    '(i) radioactivity,', '(ii) the becquerel.',
+    '(iv) the tension in the string,', '(v) the speed of sound in the string.']
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion
@@ -375,6 +399,69 @@ PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by
 MATHS_INLINE_MARKER = re.compile(
     r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff\u0700-\u077f])')
+# 2026 HL Physics, two readings of the same kind (rendered and looked at):
+# * Q4 (paper page 5) prints its data table's units in brackets, "mass of copper
+#   calorimeter (g) | 64.6" and two rows more; each "(g) <value>" cell reached the
+#   walker as a block of its own, and the first, read as a LETTER, made Q4 letter-major:
+#   its romans (i)-(vi) filed under a phantom Q4(g), and (vi)'s "(a) the energy gained
+#   by the calorimeter," "(b) the mass of steam used," "(c) the specific latent heat"
+#   were promoted to parts Q4(a)-(c). The paper prints Q4(i)-(vi), (vi) holding (a)-(c).
+#   A unit cell is words of the lead-in (its table), not a part.
+# * Q14 (pages 16-18) is letter-major, (a)-(d), and prints letters INSIDE five romans:
+#   (a)(iii) "(a) Resolve ... (b) Calculate ...", (b)(i) "(a) angular velocity, (b)
+#   frequency.", (b)(iii) "(a) Calculate ... (b) State ...", and in (d)'s Part (a)
+#   (iv) "(a) the strong nuclear force ... (b) how many times stronger ...", Part (b)
+#   (iii) "(a) Draw a circuit diagram ... (b) Label the input voltage ...". Each was
+#   read as a top-level letter: Q14(a)(iii) and Q14(b)(iii) came out empty, (b)(i) read
+#   "Explain what is meant by Explain what is meant by a bi-polar transistor.", and
+#   (d)'s Part (b) (i), (ii), (iv) filed under Q14(b). Read as lines of the roman that
+#   is open, each stays in its own ask; (d)'s Part (b) romans then share the keys of
+#   Part (a)'s, the two printed alternatives of "Answer either part (a) or part (b)."
+#   (carded as routes of one leaf each).
+PROSE_MARKER_BLOCKS[('physics', 2026, 'hl')] = [
+    '(g) 64.6', '(g) 144.7', '(g) 145.8',
+    '(a) Resolve the velocity of the boat', '(b) Calculate the magnitude and the',
+    '(a) angular velocity,', '(b) frequency.',
+    '(a) Calculate the minimum frequency heard', '(b) State the observed frequency',
+    '(a) the strong nuclear force between the two protons,', '(b) how many ',
+    '(a) Draw a circuit diagram to show how a transistor', '(b) Label the input voltage']
+# 2025 HL Physics Q14 (paper page 18, rendered and looked at) is letter-major, (a)-(d),
+# and prints two letters INSIDE (c)(iv): "(iv) A sample of Iodine-131 contains 2 x 10^15
+# atoms. Calculate" / "(a) the rate of decay of the sample," / "(b) how long it would take
+# for 1.75 x 10^15 nuclei to decay. (11)". Each was read as a top-level letter, so the
+# walker stood at (b) when "(d) (i) State Coulomb's law." arrived; the jump from (b) to
+# (d) was taken for a table unit, and (d)'s five romans (i)-(v) filed under Q14(b)'s keys
+# (the census read Q14(b)(i) as "State which glass Y or Z ... State Coulomb's law" and
+# printed no Q14(d)). Read as lines of the roman that is open, (a) and (b) stay in
+# Q14(c)(iv), and (d)(i)-(v) are keyed as the paper prints them.
+PROSE_MARKER_BLOCKS[('physics', 2025, 'hl')] = [
+    '(a) the rate of decay of the sample,', '(b) how long it would take for 1.75']
+# 2026 OL Physics Q14 (pages 15 and 17, rendered and looked at) is letter-major, (a)-(d),
+# and prints letters INSIDE four romans: (b)(ii) "(a) Copy and complete the diagram ... (b)
+# Label a node and an antinode on your diagram.", (d)(i) "(a) the magnet is moved into the
+# coil, (b) the magnet is moved out of the coil.", (d)(iii) "(a) the magnet is moved in and
+# out of the coil more quickly, (b) a similar sized copper rod ...", (d)(iv) "(a) Suggest a
+# reason why a galvanometer ... (b) Draw the circuit symbol for a galvanometer. (28)". Each
+# was read as a top-level letter: Q14(b)(ii) took (d)(ii)'s "Calculate the magnetic flux",
+# (d)(iii) and (d)(iv) filed under Q14(b)'s (iii) and (iv), and the census printed
+# Q14(d)(i) alone. Read as lines of the roman that is open, each stays in its own ask and
+# (d)(ii)-(iv) are keyed as the paper prints them.
+PROSE_MARKER_BLOCKS[('physics', 2026, 'ol')] = [
+    '(a) Copy and complete the diagram on the right to show the fundamental frequency in a pipe closed',
+    '(b) Label a node and an antinode on your diagram.',
+    '(a) the magnet is moved into the coil,', '(b) the magnet is moved out of the coil.',
+    '(a) the magnet is moved in and out of the coil more quickly,',
+    '(b) a similar sized copper rod is moved in and out of the coil.',
+    '(a) Suggest a reason why a galvanometer may be used', '(b) Draw the circuit symbol for a galvanometer.']
+# 2024 OL Physics Q14 (paper page 13, rendered and looked at) is letter-major, (a)-(d), and
+# prints two letters INSIDE (b)(iv): "(iv) (a) Draw a circuit diagram to show a semiconductor
+# diode connected in series with a filament bulb." / "(b) Indicate if the bulb is lighting or
+# not. (10)". Each was read as a top-level letter: the (a) ask filed as words of Q14(a)'s
+# lead-in, the (b) ask as words of Q14(b)'s, and the census read Q14(b)(iv) empty (flag
+# empty-leaf). Read as lines of the roman that is open, both stay in Q14(b)(iv).
+PROSE_MARKER_BLOCKS[('physics', 2024, 'ol')] = [
+    '(a) Draw a circuit diagram to show a semiconductor diode connected in series',
+    '(b) Indicate if the bulb is lighting or not.']
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -562,6 +649,16 @@ DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small pa
 FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
     '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
     '(iii) CH3(CH2)6CH3 (l) → (l)']}
+# 2020 OL Physics Q3 (paper page 3, rendered and looked at) prints a graph between its (ii) and
+# (iii): 1/length (m-1) from 0 to 4.5 against frequency (Hz) from 0 to 600. Its vertical axis
+# labels reach the walker as blocks of their own ("4.5", "4", "3.5", ...), and the lone "4"
+# (its neighbours "4.5" and "3.5" are no bare integers, so the axis rule missed it) was read
+# as the head of Question 4: Q3(iii)-(vi) were filed under Q4's keys, the real "4." was taken
+# for words of Q4(vi), and the census read Q3(i)-(ii) and Q4(i)-(vi) where the paper prints
+# Q3(i)-(vi) and Q4(i)-(vi). The axis labels are a figure's, not words of any part. Each is
+# printed once on this paper. Gated to the sitting.
+FIGURE_BLOCKS[('physics', 2020, 'ol')] = ['4.5', '4', '3.5', '3', '1/length (m–1)', '2.5', '2', '1.5', '1',
+                                          '0.5', '0', '0 100 200 300 400 500 600', 'frequency (Hz)']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -1325,6 +1422,17 @@ class Paper:
                     at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
                     for j in reversed(at):
                         pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
+                # (2023 HL Physics Q4: romans inside a sentence; see INLINE_SENTENCE_MARKERS.)
+                for cut in INLINE_SENTENCE_MARKERS.get((self.subject, self.year, self.level), []):
+                    split = []
+                    for p in pieces:
+                        k = p.find(cut, 1)
+                        while k > 0:
+                            split.append(p[:k].strip())
+                            p = p[k:]
+                            k = p.find(cut, 1)
+                        split.append(p)
+                    pieces = [p for p in split if p]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:
