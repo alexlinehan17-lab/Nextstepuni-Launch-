@@ -3,7 +3,7 @@
   "subjectId": "physics",
   "year": 2018,
   "authority": "State Examinations Commission",
-  "scope": "2018 Higher main English sitting, independently reviewed from every paper and scheme page. Canonical card topics and source-question links are reconciled using the shared Physics curriculum crosswalk. Erroneous inherited nuclear-energy Q10 and vibration/sound Q11 tags removed; missing task topics added. Ordinary Level remains pending.",
+  "scope": "2018 Higher and Ordinary main English sittings, independently reviewed from every paper and scheme page. Canonical card topics and source-question links reconciled using the shared Physics curriculum crosswalk, with missing task topics added and erroneous inherited tags corrected.",
   "questions": {
     "higher|1": [
       "physics-higher-new-course-12-forces-acting-on-a-particle",
@@ -128,6 +128,105 @@
       "physics-higher-old-course-semiconductors",
       "physics-higher-old-course-electric-circuits",
       "physics-higher-old-course-static-electricity"
+    ],
+    "ordinary|1": [
+      "physics-ordinary-old-course-experiment-questions",
+      "physics-ordinary-old-course-pressure-gravity-moments",
+      "physics-ordinary-new-course-12-forces-acting-on-a-particle"
+    ],
+    "ordinary|2": [
+      "physics-ordinary-old-course-experiment-questions",
+      "physics-ordinary-old-course-temperature",
+      "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change"
+    ],
+    "ordinary|3": [
+      "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+      "physics-ordinary-old-course-experiment-questions",
+      "physics-ordinary-old-course-vibrations-sound"
+    ],
+    "ordinary|4": [
+      "physics-ordinary-old-course-experiment-questions",
+      "physics-ordinary-old-course-resistance",
+      "physics-ordinary-new-course-33-electric-circuits"
+    ],
+    "ordinary|5": [
+      "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+      "physics-ordinary-new-course-25-sound-energy",
+      "physics-ordinary-new-course-33-electric-circuits",
+      "physics-ordinary-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+      "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
+      "physics-ordinary-new-course-44-radioactivity",
+      "physics-ordinary-old-course-current-charge",
+      "physics-ordinary-old-course-force-mass-momentum",
+      "physics-ordinary-old-course-light",
+      "physics-ordinary-old-course-magnetics",
+      "physics-ordinary-old-course-resistance",
+      "physics-ordinary-old-course-semiconductors",
+      "physics-ordinary-old-course-the-atom-nucleus-radioactivity",
+      "physics-ordinary-old-course-the-electron",
+      "physics-ordinary-old-course-vibrations-sound",
+      "physics-ordinary-old-course-work-energy-power",
+      "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+      "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+      "physics-ordinary-new-course-24-electromagnetic-energy",
+      "physics-ordinary-new-course-32-modelling-electric-fields",
+      "physics-ordinary-old-course-refraction",
+      "physics-ordinary-old-course-potential-difference-capacitance"
+    ],
+    "ordinary|6": [
+      "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+      "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+      "physics-ordinary-old-course-force-mass-momentum",
+      "physics-ordinary-old-course-work-energy-power"
+    ],
+    "ordinary|7": [
+      "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+      "physics-ordinary-old-course-temperature",
+      "physics-ordinary-old-course-heat-heat-transfer"
+    ],
+    "ordinary|8": [
+      "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+      "physics-ordinary-old-course-waves-wave-motion",
+      "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+      "physics-ordinary-new-course-24-electromagnetic-energy",
+      "physics-ordinary-old-course-light"
+    ],
+    "ordinary|9": [
+      "physics-ordinary-new-course-33-electric-circuits",
+      "physics-ordinary-old-course-current-charge",
+      "physics-ordinary-new-course-31-charge-interactions",
+      "physics-ordinary-new-course-32-modelling-electric-fields",
+      "physics-ordinary-old-course-static-electricity",
+      "physics-ordinary-old-course-potential-difference-capacitance",
+      "physics-ordinary-old-course-resistance",
+      "physics-ordinary-old-course-electric-circuits"
+    ],
+    "ordinary|10": [
+      "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
+      "physics-ordinary-old-course-the-electron",
+      "physics-ordinary-new-course-41-the-electron",
+      "physics-ordinary-new-course-44-radioactivity",
+      "physics-ordinary-old-course-the-atom-nucleus-radioactivity"
+    ],
+    "ordinary|11": [
+      "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+      "physics-ordinary-new-course-22-travelling-waves-as-models-of-disturbances-transferring-energy-without-transferring-matter",
+      "physics-ordinary-old-course-waves-wave-motion",
+      "physics-ordinary-old-course-pressure-gravity-moments",
+      "physics-ordinary-old-course-force-mass-momentum"
+    ],
+    "ordinary|12": [
+      "physics-ordinary-new-course-11-particle-motion-in-a-straight-line",
+      "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+      "physics-ordinary-new-course-36-induced-potential-difference-and-the-generator-effect",
+      "physics-ordinary-old-course-acceleration",
+      "physics-ordinary-old-course-electromagnetic-induction",
+      "physics-ordinary-old-course-heat-heat-transfer",
+      "physics-ordinary-old-course-light",
+      "physics-ordinary-old-course-speed-displacement-velocity",
+      "physics-ordinary-new-course-24-electromagnetic-energy",
+      "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+      "physics-ordinary-old-course-work-energy-power"
     ]
   }
 }

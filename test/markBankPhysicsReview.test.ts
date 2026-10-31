@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2018-ol': [100, 100, 97, 'ee7d3000ac3604387d4a12f669cd1884fcbde930f836542b02a757d5fab4fb91',
+    '09c42866ecd6660a6bb5f93c00e6011ab92c969d7ab24b991c14283f06cf67a5'],
   '2018-hl': [109, 109, 47, '88fb4b04086dce87adf24edcb7bbf9a6c8d2334db532e9c9d798dfe0974d5eb3',
     '26dc1c8c662bbc3f05b20f629100f5adc9421cae965f2cad90bc8b4ac20be92a'],
   '2019-ol': [103, 103, 100, 'a514daf3e413fe08c8c149bf71e8ae05e964b1bb179f4eb47f0baa6887fa802e',
@@ -79,6 +81,43 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2018 Ordinary stepped marks, complete context and mathematical figures', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2018-ol-${id}`)!;
+    for (const id of ['q1-ii', 'q2-ii', 'q6-i', 'q6-iv']) {
+      expect(card(id).totalMarks).toBe(9);
+      expect(card(id).rows[0]).toMatchObject({ kind: 'anyN', group: { claimMax: 2, perOptionSteps: [6, 3] } });
+    }
+    expect(card('q4-ii').rows[0]).toMatchObject({ group: { claimMax: 3, perOptionSteps: [6, 3, 3] } });
+    expect(card('q5-c').questionText).toContain('barometer joulemeter lens ohmmeter');
+    expect(card('q5-c').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [4, 3], options: ['(i) joulemeter', '(ii) ohmmeter'] } });
+    expect(card('q6-kinetic-energy-definition').questionText).toBe('Define (ii) kinetic energy.');
+    expect(card('q12-a-ii').questionText).toBe('Define (ii) acceleration.');
+    expect(card('q6-iv').rows[0]).toMatchObject({ group: { options: ['9000 J', '0 J'] } });
+    expect(card('q6-iv').stem).toContain('500 kg');
+    expect(card('q6-iv').stem).toContain('300 kg');
+    expect(card('q6-iv').figure?.candId).toBe('physics-2018-ol-q6iv-solutions');
+    expect(card('q5-b').figure?.candId).toBe('physics-2018-ol-q5b-solution');
+    expect(card('q5-b').questionFigure?.candId).toBe('physics-2018-ol-q5b-question');
+    expect(card('q8-i').questionFigure?.candId).toBe('physics-2018-ol-q8i-question');
+    expect(card('q11-h').stem).toContain('The Physics of Surfing');
+    expect(card('q11-h').stem).toContain('University of Southern California');
+    expect(card('q11-h').figure?.candId).toBe('physics-2018-ol-q11-surfer');
+    expect(card('q11-g').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [4, 3], options: ['weight down', 'upthrust up', 'forward force'] } });
+    expect(card('q12-c-iii').stem).toContain('4200 J kg⁻¹ K⁻¹');
+    expect(card('q12-c-iii').questionFigure?.candId).toBe('physics-2018-ol-q12ciii-question');
+    expect(card('q12-c-iii').figure?.candId).toBe('physics-2018-ol-q12ciii-solution');
+    for (const part of ['a', 'b', 'c', 'd']) {
+      expect(deck.filter(c => c.id.startsWith(`phys-2018-ol-q12-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    }
+    const reviewed = deck.filter(c => c.id.startsWith('phys-2018-ol-'));
+    expect(JSON.stringify(reviewed)).not.toMatch(/[\uE000-\uF8FF]/);
+    for (const c of reviewed) for (const r of c.rows) {
+      const group = (r as { group?: { options: string[] } }).group;
+      expect(group?.options ?? []).not.toContain('etc');
+    }
+  });
+
   it('retains 2018 Higher context, optional branches, inline asks and mathematical source layouts', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2018-hl-${id}`)!;
     expect(card('q6-b-i').questionText).toContain('Calculate his velocity');

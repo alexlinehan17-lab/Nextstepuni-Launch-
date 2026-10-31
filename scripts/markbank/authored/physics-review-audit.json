@@ -128123,6 +128123,4331 @@
     },
     "excluded": []
    }
+  },
+  "2018-ol": {
+   "status": "reviewed",
+   "reviewedAt": "2026-10-31",
+   "ledger": "scripts/markbank/authoring/phys_review_2018_ol.py",
+   "method": "Physics 2018 Ordinary — independently reviewed paper/scheme ledger.",
+   "sources": {
+    "paper": {
+     "path": "examiner-reports/physics/papers/2018-ol-paper.pdf",
+     "fileid": "LC021GLP000EV.pdf",
+     "sha256": "ee7d3000ac3604387d4a12f669cd1884fcbde930f836542b02a757d5fab4fb91",
+     "bytes": 615539,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/physics/schemes/2018-ol.pdf",
+     "fileid": "LC021GLP000EV.pdf",
+     "sha256": "09c42866ecd6660a6bb5f93c00e6011ab92c969d7ab24b991c14283f06cf67a5",
+     "bytes": 601357,
+     "pages": 16,
+     "pageRoles": {
+      "1": "cover",
+      "2": "note",
+      "3": "marking",
+      "4": "marking",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 12 pages rendered and read",
+    "scheme": "all 16 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 56,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 56,
+    "11": 56,
+    "12": 112
+   },
+   "partTotals": {
+    "9a": 28,
+    "9b": 28,
+    "11a": 7,
+    "11b": 7,
+    "11c": 7,
+    "11d": 7,
+    "11e": 7,
+    "11f": 7,
+    "11g": 7,
+    "11h": 7,
+    "12a": 28,
+    "12b": 28,
+    "12c": 28,
+    "12d": 28
+   },
+   "groupTotals": {},
+   "tickChecksums": {},
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "Best eight of ten separately carded short questions; all ten retained."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "choose",
+     "disposition": "Q5(c): two required instruments from the complete four-instrument list, one stepped 7/4 card."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Passage instruction; all eight questions carry the complete passage."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "both",
+     "disposition": "Passage description of the surfboard and surfer; no choice."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "both",
+     "disposition": "Passage description of the surfboard and surfer; no choice."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "any two",
+     "disposition": "All four differently marked/topic Q12 options carded independently; no combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Same Q12 any-two directive; all four options retained."
+    }
+   ],
+   "routes": {},
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1i",
+     "id": "phys-2018-ol-q1-i",
+     "questionRef": "2018 OL Q1(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "boyle-apparatus",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1ii",
+     "id": "phys-2018-ol-q1-ii",
+     "questionRef": "2018 OL Q1(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "boyle-measurements",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The complete two-measurement response is 9; the standalone (6) is partial credit for any one measurement."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1iii",
+     "id": "phys-2018-ol-q1-iii",
+     "questionRef": "2018 OL Q1(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "phys-1-2",
+     "concept": "reciprocal-volume-table",
+     "route": null,
+     "rows": 1,
+     "figure": "q1iii-solution",
+     "questionFigure": "q1iii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": "The scheme gives one mark for each of the six reciprocal values, including the 0.25 already printed in the paper."
+    },
+    {
+     "status": "carded",
+     "key": "1iv",
+     "id": "phys-2018-ol-q1-iv",
+     "questionRef": "2018 OL Q1(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "verifying-boyle-law",
+     "route": null,
+     "rows": 4,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1v",
+     "id": "phys-2018-ol-q1-v",
+     "questionRef": "2018 OL Q1(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "boyle-precautions",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2i",
+     "id": "phys-2018-ol-q2-i",
+     "questionRef": "2018 OL Q2(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "calibration-apparatus",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2ii",
+     "id": "phys-2018-ol-q2-ii",
+     "questionRef": "2018 OL Q2(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "calibration-measurements",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The two measurements jointly earn 9; the standalone (6) is partial credit for one measurement."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2iii",
+     "id": "phys-2018-ol-q2-iii",
+     "questionRef": "2018 OL Q2(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "calibration-graph",
+     "route": null,
+     "rows": 4,
+     "figure": "q2-graph",
+     "questionFigure": "q2iii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2iv",
+     "id": "phys-2018-ol-q2-iv",
+     "questionRef": "2018 OL Q2(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-1",
+     "concept": "reading-calibration-graph",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3i",
+     "id": "phys-2018-ol-q3-i",
+     "questionRef": "2018 OL Q3(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "string-apparatus",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3ii",
+     "id": "phys-2018-ol-q3-ii",
+     "questionRef": "2018 OL Q3(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-6",
+     "concept": "string-length",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3iii",
+     "id": "phys-2018-ol-q3-iii",
+     "questionRef": "2018 OL Q3(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-6",
+     "concept": "vibrating-string",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3iv",
+     "id": "phys-2018-ol-q3-iv",
+     "questionRef": "2018 OL Q3(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-6",
+     "concept": "string-frequency",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3v",
+     "id": "phys-2018-ol-q3-v",
+     "questionRef": "2018 OL Q3(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "phys-2-6",
+     "concept": "string-frequency-graph",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-graphs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "Either complete graph is 9; graph with one error is (6), and partial labelling is (3). These are alternative scores."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4i",
+     "id": "phys-2018-ol-q4-i",
+     "questionRef": "2018 OL Q4(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistivity-apparatus",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4ii",
+     "id": "phys-2018-ol-q4-ii",
+     "questionRef": "2018 OL Q4(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistivity-measurements",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(9)",
+       "(6)"
+      ],
+      "sum": 15,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The whole three-measurement response is 12. Standalone (9), (6) and (3) are successive alternative partial scores."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4iii",
+     "id": "phys-2018-ol-q4-iii",
+     "questionRef": "2018 OL Q4(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistivity-calculation",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-formula",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The complete formula is 9. One error in the formula earns the separate partial score (6)."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4iv",
+     "id": "phys-2018-ol-q4-iv",
+     "questionRef": "2018 OL Q4(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistivity-precautions",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5a",
+     "id": "phys-2018-ol-q5-a",
+     "questionRef": "2018 OL Q5(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "newton-first-law",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5b",
+     "id": "phys-2018-ol-q5-b",
+     "questionRef": "2018 OL Q5(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-3",
+     "concept": "glass-refraction",
+     "route": null,
+     "rows": 1,
+     "figure": "q5b-solution",
+     "questionFigure": "q5b-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": "The complete official sine-fraction working is retained visibly; its final result is read by position to avoid malformed bracket extraction.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5c",
+     "id": "phys-2018-ol-q5-c",
+     "questionRef": "2018 OL Q5(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "measuring-instruments",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4,
+      "waiver": "The instrument pair earns 7. The standalone (4) is the explicitly printed partial score for one correct instrument."
+     },
+     "decision": "Two required headings under one stepped 7/4 tariff; retain the full four-instrument choice list in one card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5d",
+     "id": "phys-2018-ol-q5-d",
+     "questionRef": "2018 OL Q5(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-3",
+     "concept": "diode-use",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5e",
+     "id": "phys-2018-ol-q5-e",
+     "questionRef": "2018 OL Q5(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-4",
+     "concept": "spectrometer-use",
+     "route": null,
+     "rows": 1,
+     "figure": "q5e-spectrometer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5f",
+     "id": "phys-2018-ol-q5-f",
+     "questionRef": "2018 OL Q5(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-2",
+     "concept": "capacitance-definition",
+     "route": null,
+     "rows": 1,
+     "figure": "q5f-capacitance",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5g",
+     "id": "phys-2018-ol-q5-g",
+     "questionRef": "2018 OL Q5(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "musical-note-properties",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5h",
+     "id": "phys-2018-ol-q5-h",
+     "questionRef": "2018 OL Q5(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-4",
+     "concept": "bar-magnet-field",
+     "route": null,
+     "rows": 1,
+     "figure": "q5h-field",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5i",
+     "id": "phys-2018-ol-q5-i",
+     "questionRef": "2018 OL Q5(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "ionising-sources",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5j",
+     "id": "phys-2018-ol-q5-j",
+     "questionRef": "2018 OL Q5(j)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-4-2",
+     "concept": "photoelectric-application",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6def-momentum",
+     "id": "phys-2018-ol-q6-momentum-definition",
+     "questionRef": "2018 OL Q6 — Momentum definition",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "momentum-definition",
+     "route": null,
+     "item": "Momentum definition",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The joint reprint is 2(6 or 3); each definition has its own six-mark answer cell."
+     },
+     "pairedBy": "The scheme reprints both separately priced six-mark definitions together.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6def-kinetic-energy",
+     "id": "phys-2018-ol-q6-kinetic-energy-definition",
+     "questionRef": "2018 OL Q6 — Kinetic energy definition",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-4",
+     "concept": "kinetic-energy-definition",
+     "route": null,
+     "item": "Kinetic energy definition",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The joint reprint is 2(6 or 3); each definition has its own six-mark answer cell."
+     },
+     "pairedBy": "The scheme reprints both separately priced six-mark definitions together.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6recoil",
+     "id": "phys-2018-ol-q6-recoil",
+     "questionRef": "2018 OL Q6 — Cannon recoil",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "cannon-recoil",
+     "route": null,
+     "item": "Cannon recoil",
+     "rows": 1,
+     "figure": "q6-cannon",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.78,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6i",
+     "id": "phys-2018-ol-q6-i",
+     "questionRef": "2018 OL Q6(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "car-momenta-before",
+     "route": null,
+     "rows": 1,
+     "figure": "q6i-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6ii",
+     "id": "phys-2018-ol-q6-ii",
+     "questionRef": "2018 OL Q6(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "combined-momentum",
+     "route": null,
+     "rows": 1,
+     "figure": "q6ii-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6iii",
+     "id": "phys-2018-ol-q6-iii",
+     "questionRef": "2018 OL Q6(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "collision-speed",
+     "route": null,
+     "rows": 1,
+     "figure": "q6iii-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6iv",
+     "id": "phys-2018-ol-q6-iv",
+     "questionRef": "2018 OL Q6(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "car-energies-before",
+     "route": null,
+     "rows": 1,
+     "figure": "q6iv-solutions",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": "Two required car calculations, with either complete one earning 6 and both 9. Source working is retained visibly; final results are read by position.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6v",
+     "id": "phys-2018-ol-q6-v",
+     "questionRef": "2018 OL Q6(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-1-4",
+     "concept": "car-energy-after",
+     "route": null,
+     "rows": 1,
+     "figure": "q6v-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6vi",
+     "id": "phys-2018-ol-q6-vi",
+     "questionRef": "2018 OL Q6(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "collision-energy-change",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-cars",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7i",
+     "id": "phys-2018-ol-q7-i",
+     "questionRef": "2018 OL Q7(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "heat-definition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ii",
+     "id": "phys-2018-ol-q7-ii",
+     "questionRef": "2018 OL Q7(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "temperature-definition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7iii",
+     "id": "phys-2018-ol-q7-iii",
+     "questionRef": "2018 OL Q7(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "kelvin-unit",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7iv",
+     "id": "phys-2018-ol-q7-iv",
+     "questionRef": "2018 OL Q7(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "celsius-kelvin",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7v",
+     "id": "phys-2018-ol-q7-v",
+     "questionRef": "2018 OL Q7(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "metal-conduction",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-rods",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7vi",
+     "id": "phys-2018-ol-q7-vi",
+     "questionRef": "2018 OL Q7(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "other-heat-transfer",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-rods",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7vii",
+     "id": "phys-2018-ol-q7-vii",
+     "questionRef": "2018 OL Q7(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "best-conductor",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-rods",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7viii",
+     "id": "phys-2018-ol-q7-viii",
+     "questionRef": "2018 OL Q7(viii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      4,
+      4
+     ],
+     "topic": "phys-2-1",
+     "concept": "fair-conduction-test",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-rods",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ix",
+     "id": "phys-2018-ol-q7-ix",
+     "questionRef": "2018 OL Q7(ix)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "thermal-insulator",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-rods",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8i",
+     "id": "phys-2018-ol-q8-i",
+     "questionRef": "2018 OL Q8(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      6
+     ],
+     "topic": "phys-2-6",
+     "concept": "diffraction-interference",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": "q8i-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6,
+      "partial": [
+       "(3)",
+       "(3)"
+      ],
+      "waiver": "Each of the two definitions earns 6; the separate (6) for reversed explanations is an alternative whole-response score."
+     },
+     "decision": "Both required underlined terms share one printed roman task, 6 each; no finite choice.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8ii",
+     "id": "phys-2018-ol-q8-ii",
+     "questionRef": "2018 OL Q8(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "wave-nature-demonstration",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8iii",
+     "id": "phys-2018-ol-q8-iii",
+     "questionRef": "2018 OL Q8(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-3",
+     "concept": "polarisation-definition",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-monitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8iv",
+     "id": "phys-2018-ol-q8-iv",
+     "questionRef": "2018 OL Q8(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "polarisation-demonstration",
+     "route": null,
+     "rows": 4,
+     "figure": "q8-monitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8v",
+     "id": "phys-2018-ol-q8-v",
+     "questionRef": "2018 OL Q8(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "primary-colours",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-monitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8vi",
+     "id": "phys-2018-ol-q8-vi",
+     "questionRef": "2018 OL Q8(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-2-4",
+     "concept": "mixing-colours",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-monitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "phys-2018-ol-q9-a-i",
+     "questionRef": "2018 OL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-1",
+     "concept": "coulomb-law",
+     "route": null,
+     "rows": 2,
+     "figure": "q9ai-law",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "phys-2018-ol-q9-a-ii",
+     "questionRef": "2018 OL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "electroscope-use",
+     "route": null,
+     "rows": 1,
+     "figure": "q9a-electroscope",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aiii",
+     "id": "phys-2018-ol-q9-a-iii",
+     "questionRef": "2018 OL Q9(a)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-2",
+     "concept": "positive-electroscope",
+     "route": null,
+     "rows": 1,
+     "figure": "q9a-electroscope",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aiv",
+     "id": "phys-2018-ol-q9-a-iv",
+     "questionRef": "2018 OL Q9(a)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "earthing-observation",
+     "route": null,
+     "rows": 1,
+     "figure": "q9a-electroscope",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9av",
+     "id": "phys-2018-ol-q9-a-v",
+     "questionRef": "2018 OL Q9(a)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-2",
+     "concept": "earthing-explanation",
+     "route": null,
+     "rows": 1,
+     "figure": "q9a-electroscope",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9avi",
+     "id": "phys-2018-ol-q9-a-vi",
+     "questionRef": "2018 OL Q9(a)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-2",
+     "concept": "earthing-method",
+     "route": null,
+     "rows": 1,
+     "figure": "q9a-electroscope",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi",
+     "id": "phys-2018-ol-q9-b-i",
+     "questionRef": "2018 OL Q9(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "ohm-law",
+     "route": null,
+     "rows": 1,
+     "figure": "q9b-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "phys-2018-ol-q9-b-ii",
+     "questionRef": "2018 OL Q9(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "series-resistance",
+     "route": null,
+     "rows": 1,
+     "figure": "q9b-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "phys-2018-ol-q9-b-iii",
+     "questionRef": "2018 OL Q9(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "series-current",
+     "route": null,
+     "rows": 1,
+     "figure": "q9b-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv",
+     "id": "phys-2018-ol-q9-b-iv",
+     "questionRef": "2018 OL Q9(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistor-voltage",
+     "route": null,
+     "rows": 1,
+     "figure": "q9b-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bv",
+     "id": "phys-2018-ol-q9-b-v",
+     "questionRef": "2018 OL Q9(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "voltmeter",
+     "route": null,
+     "rows": 1,
+     "figure": "q9b-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10i-definition",
+     "id": "phys-2018-ol-q10-i-definition",
+     "questionRef": "2018 OL Q10(i) — X-ray definition",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-definition",
+     "route": null,
+     "item": "X-ray definition",
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "Scheme p12 prints separate six-mark definition and properties answers under the combined reprint."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10i-properties",
+     "id": "phys-2018-ol-q10-i-properties",
+     "questionRef": "2018 OL Q10(i) — Two X-ray properties",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-properties",
+     "route": null,
+     "item": "Two X-ray properties",
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "Scheme p12 prints any two at 3 each, independently of the six-mark definition."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ii",
+     "id": "phys-2018-ol-q10-ii",
+     "questionRef": "2018 OL Q10(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-1",
+     "concept": "thermionic-emission",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10iii",
+     "id": "phys-2018-ol-q10-iii",
+     "questionRef": "2018 OL Q10(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-target",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10iv",
+     "id": "phys-2018-ol-q10-iv",
+     "questionRef": "2018 OL Q10(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-shield",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10v",
+     "id": "phys-2018-ol-q10-v",
+     "questionRef": "2018 OL Q10(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-use",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10vi",
+     "id": "phys-2018-ol-q10-vi",
+     "questionRef": "2018 OL Q10(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-2",
+     "concept": "xray-vacuum",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10vii",
+     "id": "phys-2018-ol-q10-vii",
+     "questionRef": "2018 OL Q10(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-1",
+     "concept": "electron-beam-device",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10viii",
+     "id": "phys-2018-ol-q10-viii",
+     "questionRef": "2018 OL Q10(viii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-1",
+     "concept": "electron-beam-use",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ix",
+     "id": "phys-2018-ol-q10-ix",
+     "questionRef": "2018 OL Q10(ix)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-4",
+     "concept": "xray-gamma-difference",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tube",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11a",
+     "id": "phys-2018-ol-q11-a",
+     "questionRef": "2018 OL Q11(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-2",
+     "concept": "wave-energy",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11b",
+     "id": "phys-2018-ol-q11-b",
+     "questionRef": "2018 OL Q11(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-2",
+     "concept": "breaking-waves",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11d",
+     "id": "phys-2018-ol-q11-d",
+     "questionRef": "2018 OL Q11(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "archimedes-principle",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11e",
+     "id": "phys-2018-ol-q11-e",
+     "questionRef": "2018 OL Q11(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "buoyancy-definition",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11f",
+     "id": "phys-2018-ol-q11-f",
+     "questionRef": "2018 OL Q11(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "floating-surfer",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11h",
+     "id": "phys-2018-ol-q11-h",
+     "questionRef": "2018 OL Q11(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "surfer-balance",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11c",
+     "id": "phys-2018-ol-q11-c",
+     "questionRef": "2018 OL Q11(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-2",
+     "concept": "wave-features",
+     "route": null,
+     "rows": 1,
+     "figure": "q11c-wave",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)",
+       "(4)",
+       "(4)",
+       "(4)",
+       "(4)",
+       "(4)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11g",
+     "id": "phys-2018-ol-q11-g",
+     "questionRef": "2018 OL Q11(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "floating-force-diagram",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-surfer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(4)"
+      ]
+     },
+     "decision": "The scheme explicitly accepts any two of its three listed forces; preserve three options and the stepped 7/4 tariff.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "phys-2018-ol-q12-a-i",
+     "questionRef": "2018 OL Q12(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-1-1",
+     "concept": "velocity-definition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "Each definition is explicitly five marks in the 2(5 or 3) scheme."
+     },
+     "pairedBy": "The scheme reprints the two separately numbered and priced definitions together.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "phys-2018-ol-q12-a-ii",
+     "questionRef": "2018 OL Q12(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-1-1",
+     "concept": "acceleration-definition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "Each definition is explicitly five marks in the 2(5 or 3) scheme."
+     },
+     "pairedBy": "The scheme reprints the two separately numbered and priced definitions together.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiii",
+     "id": "phys-2018-ol-q12-a-iii",
+     "questionRef": "2018 OL Q12(a)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "train-acceleration-time",
+     "route": null,
+     "rows": 1,
+     "figure": "q12aiii-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiv",
+     "id": "phys-2018-ol-q12-a-iv",
+     "questionRef": "2018 OL Q12(a)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "train-distance",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12av",
+     "id": "phys-2018-ol-q12-a-v",
+     "questionRef": "2018 OL Q12(a)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "train-velocity-time-graph",
+     "route": null,
+     "rows": 1,
+     "figure": "q12av-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi",
+     "id": "phys-2018-ol-q12-b-i",
+     "questionRef": "2018 OL Q12(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "spectrum-demonstration",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii",
+     "id": "phys-2018-ol-q12-b-ii",
+     "questionRef": "2018 OL Q12(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-4",
+     "concept": "uv-meaning",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii",
+     "id": "phys-2018-ol-q12-b-iii",
+     "questionRef": "2018 OL Q12(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "uv-infrared-wavelength",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biv",
+     "id": "phys-2018-ol-q12-b-iv",
+     "questionRef": "2018 OL Q12(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-4",
+     "concept": "uv-detection",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bv",
+     "id": "phys-2018-ol-q12-b-v",
+     "questionRef": "2018 OL Q12(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-4",
+     "concept": "uv-use",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci",
+     "id": "phys-2018-ol-q12-c-i",
+     "questionRef": "2018 OL Q12(c)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      12
+     ],
+     "topic": "phys-2-1",
+     "concept": "boiler-heat",
+     "route": null,
+     "rows": 1,
+     "figure": "q12c-boiler",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(9)",
+       "(6)"
+      ],
+      "sum": 15,
+      "partial": [
+       "(3)"
+      ],
+      "waiver": "The correct calculation earns 12. Standalone (9), (6) and (3) are alternative partial scores for one error, two errors and a partial answer."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii",
+     "id": "phys-2018-ol-q12-c-ii",
+     "questionRef": "2018 OL Q12(c)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-4",
+     "concept": "boiler-power",
+     "route": null,
+     "rows": 1,
+     "figure": "q12c-boiler",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "phys-2018-ol-q12-c-iii",
+     "questionRef": "2018 OL Q12(c)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "boiler-heating-time",
+     "route": null,
+     "rows": 1,
+     "figure": "q12ciii-solution",
+     "questionFigure": "q12ciii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12civ",
+     "id": "phys-2018-ol-q12-c-iv",
+     "questionRef": "2018 OL Q12(c)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "boiler-element-location",
+     "route": null,
+     "rows": 2,
+     "figure": "q12c-boiler",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": "Location with its reason is one six-mark paired response, priced 3+3.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12di",
+     "id": "phys-2018-ol-q12-d-i",
+     "questionRef": "2018 OL Q12(d)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "induction-definition",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12dii",
+     "id": "phys-2018-ol-q12-d-ii",
+     "questionRef": "2018 OL Q12(d)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-6",
+     "concept": "induction-procedure",
+     "route": null,
+     "rows": 1,
+     "figure": "q12d-coil",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12diii",
+     "id": "phys-2018-ol-q12-d-iii",
+     "questionRef": "2018 OL Q12(d)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-6",
+     "concept": "induction-observation",
+     "route": null,
+     "rows": 1,
+     "figure": "q12d-coil",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12div",
+     "id": "phys-2018-ol-q12-d-iv",
+     "questionRef": "2018 OL Q12(d)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-6",
+     "concept": "stronger-induced-current",
+     "route": null,
+     "rows": 1,
+     "figure": "q12d-coil",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(3)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12dv",
+     "id": "phys-2018-ol-q12-d-v",
+     "questionRef": "2018 OL Q12(d)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-6",
+     "concept": "alternating-current",
+     "route": null,
+     "rows": 1,
+     "figure": "q12d-coil",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "partial": [
+       "(2)"
+      ]
+     },
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 100,
+   "baseTaskCount": 100,
+   "figures": [
+    "physics-2018-ol-q1-data",
+    "physics-2018-ol-q10-tube",
+    "physics-2018-ol-q11-surfer",
+    "physics-2018-ol-q11c-wave",
+    "physics-2018-ol-q12aiii-solution",
+    "physics-2018-ol-q12av-graph",
+    "physics-2018-ol-q12c-boiler",
+    "physics-2018-ol-q12ciii-question",
+    "physics-2018-ol-q12ciii-solution",
+    "physics-2018-ol-q12d-coil",
+    "physics-2018-ol-q1iii-question",
+    "physics-2018-ol-q1iii-solution",
+    "physics-2018-ol-q2-data",
+    "physics-2018-ol-q2-graph",
+    "physics-2018-ol-q2iii-question",
+    "physics-2018-ol-q3-graphs",
+    "physics-2018-ol-q4-formula",
+    "physics-2018-ol-q5b-question",
+    "physics-2018-ol-q5b-solution",
+    "physics-2018-ol-q5e-spectrometer",
+    "physics-2018-ol-q5f-capacitance",
+    "physics-2018-ol-q5h-field",
+    "physics-2018-ol-q6-cannon",
+    "physics-2018-ol-q6-cars",
+    "physics-2018-ol-q6i-solution",
+    "physics-2018-ol-q6ii-solution",
+    "physics-2018-ol-q6iii-solution",
+    "physics-2018-ol-q6iv-solutions",
+    "physics-2018-ol-q6v-solution",
+    "physics-2018-ol-q7-rods",
+    "physics-2018-ol-q8-monitor",
+    "physics-2018-ol-q8i-question",
+    "physics-2018-ol-q9a-electroscope",
+    "physics-2018-ol-q9ai-law",
+    "physics-2018-ol-q9b-circuit"
+   ],
+   "checks": {
+    "censusLeaves": 97,
+    "censusLeavesClaimed": 97,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-pressure-gravity-moments",
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle"
+      ],
+      "taskTopics": [
+       "phys-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-temperature",
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-vibrations-sound"
+      ],
+      "taskTopics": [
+       "phys-2-6"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-resistance",
+       "physics-ordinary-new-course-33-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-ordinary-new-course-25-sound-energy",
+       "physics-ordinary-new-course-33-electric-circuits",
+       "physics-ordinary-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-ordinary-new-course-44-radioactivity",
+       "physics-ordinary-old-course-current-charge",
+       "physics-ordinary-old-course-force-mass-momentum",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-old-course-magnetics",
+       "physics-ordinary-old-course-resistance",
+       "physics-ordinary-old-course-semiconductors",
+       "physics-ordinary-old-course-the-atom-nucleus-radioactivity",
+       "physics-ordinary-old-course-the-electron",
+       "physics-ordinary-old-course-vibrations-sound",
+       "physics-ordinary-old-course-work-energy-power",
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-ordinary-new-course-24-electromagnetic-energy",
+       "physics-ordinary-new-course-32-modelling-electric-fields",
+       "physics-ordinary-old-course-refraction",
+       "physics-ordinary-old-course-potential-difference-capacitance"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-2-3",
+       "phys-2-4",
+       "phys-2-5",
+       "phys-3-2",
+       "phys-3-3",
+       "phys-3-4",
+       "phys-4-2",
+       "phys-4-4"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-ordinary-old-course-force-mass-momentum",
+       "physics-ordinary-old-course-work-energy-power"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-1-4"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-ordinary-old-course-temperature",
+       "physics-ordinary-old-course-heat-heat-transfer"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-ordinary-old-course-waves-wave-motion",
+       "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+       "physics-ordinary-new-course-24-electromagnetic-energy",
+       "physics-ordinary-old-course-light"
+      ],
+      "taskTopics": [
+       "phys-2-3",
+       "phys-2-4",
+       "phys-2-6"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-33-electric-circuits",
+       "physics-ordinary-old-course-current-charge",
+       "physics-ordinary-new-course-31-charge-interactions",
+       "physics-ordinary-new-course-32-modelling-electric-fields",
+       "physics-ordinary-old-course-static-electricity",
+       "physics-ordinary-old-course-potential-difference-capacitance",
+       "physics-ordinary-old-course-resistance",
+       "physics-ordinary-old-course-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-3-1",
+       "phys-3-2",
+       "phys-3-3"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-ordinary-old-course-the-electron",
+       "physics-ordinary-new-course-41-the-electron",
+       "physics-ordinary-new-course-44-radioactivity",
+       "physics-ordinary-old-course-the-atom-nucleus-radioactivity"
+      ],
+      "taskTopics": [
+       "phys-4-1",
+       "phys-4-2",
+       "phys-4-4"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-new-course-22-travelling-waves-as-models-of-disturbances-transferring-energy-without-transferring-matter",
+       "physics-ordinary-old-course-waves-wave-motion",
+       "physics-ordinary-old-course-pressure-gravity-moments",
+       "physics-ordinary-old-course-force-mass-momentum"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-2-2"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-11-particle-motion-in-a-straight-line",
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-ordinary-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-ordinary-old-course-acceleration",
+       "physics-ordinary-old-course-electromagnetic-induction",
+       "physics-ordinary-old-course-heat-heat-transfer",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-old-course-speed-displacement-velocity",
+       "physics-ordinary-new-course-24-electromagnetic-energy",
+       "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-ordinary-old-course-work-energy-power"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-4",
+       "phys-2-1",
+       "phys-2-4",
+       "phys-3-6"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (physics-<year>-exam-topic-map.json via physics-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 0,
+    "askScan": {
+     "askLines": 100,
+     "exempt": []
+    },
+    "excluded": []
+   }
   }
  }
 }

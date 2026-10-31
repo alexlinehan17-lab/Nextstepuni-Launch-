@@ -354,6 +354,724 @@
    534
   ]
  },
+ "physics-2018-ol-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q1-data.png",
+  "md5": "10e33e978a440652ded0a3d30833c893",
+  "alt": "Boyle’s law pressure and volume table with six readings and the supplied reciprocal value.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q1(ii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   145,
+   300,
+   461,
+   352
+  ]
+ },
+ "physics-2018-ol-q10-tube": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q10-tube.png",
+  "md5": "39b643d4c81f6974837035f5a083fe9e",
+  "alt": "Complete X-ray tube with low and high voltages and parts A, B and C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q10(i) — Two X-ray properties",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   136,
+   98,
+   428,
+   240
+  ]
+ },
+ "physics-2018-ol-q11-surfer": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q11-surfer.png",
+  "md5": "ff659be99e6ae0e4b171ef65e18bc497",
+  "alt": "The surfer’s stance as shown beside the source passage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q11(a)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   419,
+   126,
+   541,
+   306
+  ]
+ },
+ "physics-2018-ol-q11c-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q11c-wave.png",
+  "md5": "1bf4588a00bdf11c4c6f0a681b7850e0",
+  "alt": "Official wave sketch indicating amplitude and wavelength.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q11(c)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   345,
+   414,
+   430,
+   486
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q12aiii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12aiii-solution.png",
+  "md5": "de229c3d66068a277717f21ab723d869",
+  "alt": "Time to reach top speed, with the velocity difference divided by acceleration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(a)(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   90,
+   223,
+   220,
+   245
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q12av-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12av-graph.png",
+  "md5": "b530358b07f4a655b67bc47ce17b1282",
+  "alt": "Official velocity–time graph: acceleration from rest followed by constant speed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(a)(v)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   256,
+   322,
+   352,
+   382
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q12c-boiler": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12c-boiler.png",
+  "md5": "aabf5648849abc09bcfe4ff25018bc43",
+  "alt": "The water boiler shown in Q12(c).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(c)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   429,
+   48,
+   541,
+   250
+  ]
+ },
+ "physics-2018-ol-q12ciii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12ciii-question.png",
+  "md5": "ef81cfd93223ea0d3a365181d6658ec4",
+  "alt": "Boiler illustration, mass, initial temperature, power, specific heat capacity and the heating-time question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(c)(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   48,
+   541,
+   267
+  ],
+  "maskedFurniture": [
+   [
+    110,
+    108,
+    429,
+    174
+   ],
+   [
+    110,
+    213,
+    429,
+    246
+   ]
+  ]
+ },
+ "physics-2018-ol-q12ciii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12ciii-solution.png",
+  "md5": "ee1a63cee26fa42e000b38cda194c015",
+  "alt": "Official heating-time calculation: energy divided by power equals 68.6 seconds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(c)(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   90,
+   241,
+   240,
+   263
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q12d-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q12d-coil.png",
+  "md5": "1ad917d9acb416a7311f6aae0119d422",
+  "alt": "Magnet, coil and galvanometer apparatus for electromagnetic induction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(d)(ii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   218,
+   376,
+   363,
+   491
+  ]
+ },
+ "physics-2018-ol-q1iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q1iii-question.png",
+  "md5": "e8b9e20910236a0d0c34b8bad5e3b5dd",
+  "alt": "Boyle’s law context, full six-reading table and instruction to copy and complete it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q1(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   82,
+   202,
+   537,
+   408
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    238,
+    537,
+    257
+   ],
+   [
+    82,
+    369,
+    537,
+    387
+   ]
+  ]
+ },
+ "physics-2018-ol-q1iii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q1iii-solution.png",
+  "md5": "a2e509d31816d139c47d7ffbad988397",
+  "alt": "Complete pressure, volume and reciprocal-volume table, including all six scheme values.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q1(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   138,
+   419,
+   456,
+   471
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q2-data.png",
+  "md5": "4df32d7d1f7248ee0a22b2576cc9d1fc",
+  "alt": "Temperature and thermometric-property readings for calibration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q2(iv)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   94,
+   650,
+   514,
+   687
+  ]
+ },
+ "physics-2018-ol-q2-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q2-graph.png",
+  "md5": "94361950a3d3ce01307a80597ad1e25c",
+  "alt": "Official calibration curve, temperature in degrees Celsius horizontally and thermometric property vertically.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q2(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   86,
+   466,
+   491,
+   731
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q2iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q2iii-question.png",
+  "md5": "805eb51cc34e29bc7e3ce90534ebc3e8",
+  "alt": "Thermometer calibration context, full data table and graph instruction with temperature on the horizontal axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q2(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   82,
+   528,
+   537,
+   735
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    569,
+    537,
+    608
+   ]
+  ]
+ },
+ "physics-2018-ol-q3-graphs": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q3-graphs.png",
+  "md5": "d35f5d2cf98a124ed8796f6434a46a25",
+  "alt": "Both accepted frequency–length graphs: frequency against reciprocal length, or frequency against length.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q3(v)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   72,
+   521,
+   455,
+   660
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q4-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q4-formula.png",
+  "md5": "481f4848cf0a6844471e5c7cc5b86c3d",
+  "alt": "Resistivity calculated using the printed resistance times area divided by length formula.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q4(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   94,
+   379,
+   112,
+   404
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q5b-question": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q5b-question.png",
+  "md5": "705be00e9694f3b5be443c4c1615dc90",
+  "alt": "The refraction question and complete glass diagram with both angles.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(b)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   82,
+   256,
+   461,
+   407
+  ]
+ },
+ "physics-2018-ol-q5b-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q5b-solution.png",
+  "md5": "9edac4905feba00ea1d8cb8ab8aa6fba",
+  "alt": "Official refractive-index calculation with the full sine fractions and result 1.52.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(b)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   91,
+   195,
+   204,
+   219
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q5e-spectrometer": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q5e-spectrometer.png",
+  "md5": "78c09069fb62d41b9988f0431447d087",
+  "alt": "The instrument shown in Q5(e).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(e)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   402,
+   495,
+   541,
+   592
+  ]
+ },
+ "physics-2018-ol-q5f-capacitance": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q5f-capacitance.png",
+  "md5": "4edcec7d0f3a7e64e86b61d7c09c7d88",
+  "alt": "Capacitance equals charge divided by voltage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(f)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   91,
+   484,
+   127,
+   504
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q5h-field": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q5h-field.png",
+  "md5": "683009c192c1bd61f9f56f2b4be2a40f",
+  "alt": "Official magnetic-field sketch around the labelled south and north poles.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(h)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   82,
+   584,
+   170,
+   653
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q6-cannon": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6-cannon.png",
+  "md5": "c8fdadfbf70c629e4a0012ca74b69266",
+  "alt": "Cannon and cannonball illustrating recoil.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6 — Cannon recoil",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   326,
+   89,
+   541,
+   174
+  ]
+ },
+ "physics-2018-ol-q6-cars": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6-cars.png",
+  "md5": "0998eafdeaa878a496b820801334fe99",
+  "alt": "The two bumper cars before collision.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(vi)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   145,
+   234,
+   450,
+   351
+  ]
+ },
+ "physics-2018-ol-q6i-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6i-solution.png",
+  "md5": "d0e7d1e86365a9b50341f5e4a510d2c9",
+  "alt": "The two official momentum calculations, with car A and B subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   90,
+   359,
+   291,
+   388
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q6ii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6ii-solution.png",
+  "md5": "abc55af72c0cb3c947eb99a130d08150",
+  "alt": "The combined momentum equation and result, with car A and B subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(ii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   90,
+   440,
+   292,
+   455
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q6iii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6iii-solution.png",
+  "md5": "b569075a656129fcdd37992e6f076d71",
+  "alt": "The complete momentum-conservation calculation leading to 3.75 metres per second.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   90,
+   494,
+   321,
+   526
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q6iv-solutions": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6iv-solutions.png",
+  "md5": "5541cab94463f5bdbebc03d5fd99c26c",
+  "alt": "Both official kinetic-energy calculations before collision, retaining fractional coefficients and powers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(iv)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   90,
+   567,
+   215,
+   615
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q6v-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q6v-solution.png",
+  "md5": "96304c758e8c0facb1f33abe7bde8675",
+  "alt": "Official calculation of the combined cars’ kinetic energy after collision.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(v)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   97,
+   658,
+   258,
+   679
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q7-rods": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q7-rods.png",
+  "md5": "b1aea8a4da6391c96fccb5c738a0212f",
+  "alt": "Hot-water apparatus with copper, aluminium, brass and iron rods, wax and pins labelled.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q7(ix)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   179,
+   185,
+   410,
+   291
+  ]
+ },
+ "physics-2018-ol-q8-monitor": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q8-monitor.png",
+  "md5": "0828105e90483a4df95259207b352b47",
+  "alt": "The liquid-crystal display monitor shown in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q8(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   214,
+   551,
+   352,
+   656
+  ]
+ },
+ "physics-2018-ol-q8i-question": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q8i-question.png",
+  "md5": "a25392173a494687f791f25816098e9f",
+  "alt": "The underlined terms diffraction and interference and the instruction to explain them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q8(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   453,
+   537,
+   492
+  ]
+ },
+ "physics-2018-ol-q9a-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q9a-electroscope.png",
+  "md5": "fadde018516075eeac70c68d79a4302a",
+  "alt": "Positively charged gold-leaf electroscope with charge signs and separated leaves.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q9(a)(ii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   238,
+   76,
+   345,
+   186
+  ]
+ },
+ "physics-2018-ol-q9ai-law": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q9ai-law.png",
+  "md5": "ec223e145cc597b7babe061fd87fd2b5",
+  "alt": "Both parts of Coulomb’s law, with the printed charge product and inverse-square fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q9(a)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   97,
+   118,
+   441,
+   176
+  ],
+  "solution": true
+ },
+ "physics-2018-ol-q9b-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2018-ol-q9b-circuit.png",
+  "md5": "17cadf7853455b55bc9e2925df15c626",
+  "alt": "Three-volt battery with six-ohm and twelve-ohm resistors connected in series.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q9(b)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   196,
+   391,
+   418,
+   521
+  ]
+ },
  "physics-2019-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2019-hl-q1-data.png",
   "md5": "b64c1e331ff5af71049ad9d415db706f",

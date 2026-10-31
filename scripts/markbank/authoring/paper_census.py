@@ -77,7 +77,7 @@ SUBJECTS = {
     # visually reviewed and carded on 2026-10-31. The next independently
     # reviewed sittings include 2019 both levels and 2018 Higher;
     # 2018 Ordinary and 2010-2017 remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2019, 'also': [(2018, 'hl')]},
+    'physics': {'mode': 'merged', 'from': 2018},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},

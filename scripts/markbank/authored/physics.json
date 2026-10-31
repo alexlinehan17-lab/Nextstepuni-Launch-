@@ -67635,5 +67635,3168 @@
   "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_hl.py.",
   "year": 2018,
   "level": "higher"
+ },
+ {
+  "id": "phys-2018-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "boyle-apparatus",
+  "section": "A",
+  "questionRef": "2018 OL Q1(i)",
+  "stem": "An experiment was set up to verify Boyle’s law.",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "enclosed volume of gas / air",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "method of measuring volume e.g. volume scale / method of measuring pressure e.g. pressure gauge / method of varying pressure / volume",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "method of measuring volume e.g. volume scale",
+      "method of measuring pressure e.g. pressure gauge",
+      "method of varying pressure / volume"
+     ]
+    },
+    "contextNote": "NOTE: no labels, deduct 2, incorrect experiment maximum mark 3× 3"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "boyle-measurements",
+  "section": "A",
+  "questionRef": "2018 OL Q1(ii)",
+  "stem": "An experiment was set up to verify Boyle’s law.",
+  "questionText": "How were the pressure and volume measured?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "measure the pressure from the pressure gauge / measure the volume of trapped air from the scale on the tube",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "measure the pressure from the pressure gauge",
+      "measure the volume of trapped air from the scale on the tube"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "partial answer Both correct: 9; one: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q1-data"
+ },
+ {
+  "id": "phys-2018-ol-q1-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "reciprocal-volume-table",
+  "section": "A",
+  "questionRef": "2018 OL Q1(iii)",
+  "stem": "An experiment was set up to verify Boyle’s law.",
+  "questionText": "Copy and complete the table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "one mark for filling in each 1/volume including value given",
+    "marks": 6,
+    "contextNote": "The scheme prints this marking criterion rather than a model answer. "
+   }
+  ],
+  "notes": "The scheme gives one mark for each of the six reciprocal values, including the 0.25 already printed in the paper. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q1iii-solution",
+  "questionFigureKey": "physics-2018-ol-q1iii-question"
+ },
+ {
+  "id": "phys-2018-ol-q1-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "verifying-boyle-law",
+  "section": "A",
+  "questionRef": "2018 OL Q1(iv)",
+  "stem": "An experiment was set up to verify Boyle’s law.",
+  "questionText": "Explain how the data can be used to verify Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "use the data to draw a graph of p versus 1/V",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative answers; do not mix partial answers from different routes.",
+    "route": "graph"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(straight) line through origin /shows that pressure ∝ 1/volume",
+    "marks": 3,
+    "route": "graph"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "pV",
+    "marks": 3,
+    "route": "product"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "=constant",
+    "marks": 3,
+    "route": "product"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q1-data"
+ },
+ {
+  "id": "phys-2018-ol-q1-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "boyle-precautions",
+  "section": "A",
+  "questionRef": "2018 OL Q1(v)",
+  "stem": "An experiment was set up to verify Boyle’s law.",
+  "questionText": "State two precautions which the student might have taken to improve the accuracy of this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "after changing pressure wait a short time / ensure constant temperature / read the volume of the oil from the bottom of the meniscus / read the volume scale at eye level/no parallax / take many readings / safety precaution e.g. do not exceed the pressure limit of the apparatus, etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "after changing pressure wait a short time",
+      "ensure constant temperature",
+      "read the volume of the oil from the bottom of the meniscus",
+      "read the volume scale at eye level/no parallax",
+      "take many readings",
+      "safety precaution e.g. do not exceed the pressure limit of the apparatus, etc."
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two: 7; any one: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "calibration-apparatus",
+  "section": "A",
+  "questionRef": "2018 OL Q2(i)",
+  "stem": "An experiment was set up to establish the calibration curve of a thermometer.",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "beaker of water / standard thermometer / uncalibrated thermometer / heat source / means of recording thermometric property / detail to improve the accuracy e.g. stirrer",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "beaker of water",
+      "standard thermometer",
+      "uncalibrated thermometer",
+      "heat source",
+      "means of recording thermometric property",
+      "detail to improve the accuracy e.g. stirrer"
+     ]
+    },
+    "contextNote": "NOTE: no labels, deduct 2, incorrect experiment maximum mark 3× 3"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "calibration-measurements",
+  "section": "A",
+  "questionRef": "2018 OL Q2(ii)",
+  "stem": "An experiment was set up to establish the calibration curve of a thermometer.",
+  "questionText": "What measurements were taken during this experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "thermometric property / temperature",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "thermometric property",
+      "temperature"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "partial answer e.g. using ohmmeter / multimeter / metre stick, etc. Both correct: 9; one: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "calibration-graph",
+  "section": "A",
+  "questionRef": "2018 OL Q2(iii)",
+  "stem": "An experiment was set up to establish the calibration curve of a thermometer.",
+  "questionText": "Use the data in the table to draw a graph, on graph paper, to establish the calibration curve. Put temperature on the horizontal (X) axis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly, (name / symbol / unit acceptable)",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a model answer. "
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a model answer. "
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "plot another three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a model answer. "
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "smooth curve",
+    "marks": 3,
+    "contextNote": "if graph paper is not used, maximum mark 3 × 3 if temperature is on the Y‐axis, maximum mark 3 × 3"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q2-graph",
+  "questionFigureKey": "physics-2018-ol-q2iii-question"
+ },
+ {
+  "id": "phys-2018-ol-q2-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "reading-calibration-graph",
+  "section": "A",
+  "questionRef": "2018 OL Q2(iv)",
+  "stem": "An experiment was set up to establish the calibration curve of a thermometer. Use the data in the table to draw a graph, on graph paper, to establish the calibration curve. Put temperature on the horizontal (X) axis.",
+  "questionText": "Use your graph to determine the temperature when the value of the thermometric property is 75.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "answer consistent with graph e.g. 48( °C )",
+    "marks": 7,
+    "contextNote": "partial e.g. evidence of using the graph (at thermometric property 75) Partial credit: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q2-data"
+ },
+ {
+  "id": "phys-2018-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "string-apparatus",
+  "section": "A",
+  "questionRef": "2018 OL Q3(i)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length l and the frequency f of the string were recorded.",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "string / means of tightening / means of changing frequency e.g. tuning forks / frequency generator / means of varying length e.g. bridge / means of measuring length / means of detecting resonance /paper rider /magnet / detail e.g. sonometer",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "string",
+      "means of tightening",
+      "means of changing frequency e.g. tuning forks / frequency generator",
+      "means of varying length e.g. bridge",
+      "means of measuring length",
+      "means of detecting resonance /paper rider /magnet",
+      "detail e.g. sonometer"
+     ]
+    },
+    "contextNote": "NOTE: no labels, deduct 2, incorrect experiment maximum mark 3× 3"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "string-length",
+  "section": "A",
+  "questionRef": "2018 OL Q3(ii)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length l and the frequency f of the string were recorded. Draw a labelled diagram of the apparatus used in this experiment.",
+  "questionText": "Indicate on your diagram the length of the string that was measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distance between bridges",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. reference to bridge (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "vibrating-string",
+  "section": "A",
+  "questionRef": "2018 OL Q3(iii)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length l and the frequency f of the string were recorded.",
+  "questionText": "Describe how the string was set vibrating.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "placed a vibrating tuning fork on the bridge / turned on frequency generator",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "placed a vibrating tuning fork on the bridge",
+      "turned on frequency generator"
+     ]
+    },
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. pluck it / using a tuning fork (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "string-frequency",
+  "section": "A",
+  "questionRef": "2018 OL Q3(iv)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length l and the frequency f of the string were recorded.",
+  "questionText": "How was the frequency of the string determined?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(read the value) from the tuning fork/ frequency generator",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "string-frequency-graph",
+  "section": "A",
+  "questionRef": "2018 OL Q3(v)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length l and the frequency f of the string were recorded.",
+  "questionText": "Sketch a graph to show the relationship between l and f that you would expect to obtain.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "f versus 1/l / f versus l",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "f versus 1/l",
+      "f versus l"
+     ]
+    },
+    "contextNote": "graph with one error partial answer e.g. graph with one axis correctly labelled Either correctly shaped and labelled graph: 9; one error: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q3-graphs"
+ },
+ {
+  "id": "phys-2018-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-apparatus",
+  "section": "A",
+  "questionRef": "2018 OL Q4(i)",
+  "stem": "An experiment was set up to find the resistivity of the material of a wire.",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "length of wire",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "means of measuring resistance",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "means of measuring length/diameter/cross‐sectional area",
+    "marks": 3,
+    "contextNote": "NOTE: no labels, deduct 2, incorrect experiment maximum mark 3× 3"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-measurements",
+  "section": "A",
+  "questionRef": "2018 OL Q4(ii)",
+  "stem": "An experiment was set up to find the resistivity of the material of a wire.",
+  "questionText": "What measurements were taken during this experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "length / resistance / diameter /cross‐sectional area",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "length",
+      "resistance",
+      "diameter /cross‐sectional area"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "partial answer e.g. ohmmeter / micrometer Three correct: 12; two: 9; one: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-calculation",
+  "section": "A",
+  "questionRef": "2018 OL Q4(iii)",
+  "stem": "An experiment was set up to find the resistivity of the material of a wire. What measurements were taken during this experiment?",
+  "questionText": "How were these measurements used to calculate the resistivity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "RA/l",
+    "marks": 9,
+    "contextNote": "one error in formula partial answer e.g. substitute the measurements into the formula Correct formula: 9; one error: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q4-formula"
+ },
+ {
+  "id": "phys-2018-ol-q4-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-precautions",
+  "section": "A",
+  "questionRef": "2018 OL Q4(iv)",
+  "stem": "An experiment was set up to find the resistivity of the material of a wire.",
+  "questionText": "State two precautions which the student might have taken to improve the accuracy of this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "remove kinks from wire / repeat the diameter measurement / take many readings (and get an average) / use a long length / ensure the resistance of the leads connecting to the ohmmeter is low / check for zero error in micrometer, etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "remove kinks from wire",
+      "repeat the diameter measurement / take many readings (and get an average)",
+      "use a long length",
+      "ensure the resistance of the leads connecting to the ohmmeter is low",
+      "check for zero error in micrometer, etc."
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two: 7; one: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newton-first-law",
+  "section": "B",
+  "questionRef": "2018 OL Q5(a)",
+  "questionText": "State Newton’s first law of motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a body will remain at rest or moving at a constant velocity unless an external force acts on it.",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "glass-refraction",
+  "section": "B",
+  "questionRef": "2018 OL Q5(b)",
+  "questionText": "Calculate the refractive index of the glass block shown in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1.52",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "The complete official sine-fraction working is retained visibly; its final result is read by position to avoid malformed bracket extraction. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q5b-solution",
+  "questionFigureKey": "physics-2018-ol-q5b-question"
+ },
+ {
+  "id": "phys-2018-ol-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "measuring-instruments",
+  "section": "B",
+  "questionRef": "2018 OL Q5(c)",
+  "questionText": "Choose from the list below the instrument used to measure (i) energy and (ii) resistance. barometer joulemeter lens ohmmeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(i) joulemeter / (ii) ohmmeter",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(i) joulemeter",
+      "(ii) ohmmeter"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "one correct. Both correct: 7; one: 4."
+   }
+  ],
+  "notes": "Two required headings under one stepped 7/4 tariff; retain the full four-instrument choice list in one card. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diode-use",
+  "section": "B",
+  "questionRef": "2018 OL Q5(d)",
+  "questionText": "State one use for a semiconductor diode.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "allows current flow in one direction / rectifier / LED / switches / p.s.u.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "allows current flow in one direction",
+      "rectifier",
+      "LED",
+      "switches",
+      "p.s.u."
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "spectrometer-use",
+  "section": "B",
+  "questionRef": "2018 OL Q5(e)",
+  "questionText": "State one use for the instrument shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "measure angles / measure wavelength of light / demonstrate interference / demonstrate diffraction / demonstrate spectra / demonstrate monochromatic light , etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "measure angles",
+      "measure wavelength of light",
+      "demonstrate interference",
+      "demonstrate diffraction",
+      "demonstrate spectra",
+      "demonstrate monochromatic light , etc."
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q5e-spectrometer"
+ },
+ {
+  "id": "phys-2018-ol-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitance-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q5(f)",
+  "questionText": "Define capacitance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C= q/V",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q5f-capacitance"
+ },
+ {
+  "id": "phys-2018-ol-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "musical-note-properties",
+  "section": "B",
+  "questionRef": "2018 OL Q5(g)",
+  "questionText": "State two characteristics of a musical note.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "loudness / amplitude / pitch / frequency / overtone / timbre/quality",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "loudness",
+      "amplitude",
+      "pitch",
+      "frequency",
+      "overtone",
+      "timbre/quality"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Any two: 7; one: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "bar-magnet-field",
+  "section": "B",
+  "questionRef": "2018 OL Q5(h)",
+  "questionText": "Sketch the magnetic field around a bar magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "magnet, two field lines, correct direction on lines",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. incomplete diagram The scheme prints this marking criterion rather than a model answer. (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q5h-field"
+ },
+ {
+  "id": "phys-2018-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "ionising-sources",
+  "section": "B",
+  "questionRef": "2018 OL Q5(i)",
+  "questionText": "Name two sources of ionising radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "sun / cosmic / named radioactive element / nuclear weapons / nuclear power plants",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "sun",
+      "cosmic",
+      "named radioactive element",
+      "nuclear weapons",
+      "nuclear power plants"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two: 7; one: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q5-j",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photoelectric-application",
+  "section": "B",
+  "questionRef": "2018 OL Q5(j)",
+  "questionText": "State one application of the photoelectric effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "solar panels / burglar alarms / automatic doors / control of burners in central heating / soundtrack in films",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "solar panels",
+      "burglar alarms",
+      "automatic doors",
+      "control of burners in central heating",
+      "soundtrack in films"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. definition (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q6-momentum-definition",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "momentum-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q6 — Momentum definition",
+  "questionText": "Define (i) momentum",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass(multiplied) by velocity / p = mv",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q6-kinetic-energy-definition",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "kinetic-energy-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q6 — Kinetic energy definition",
+  "questionText": "Define (ii) kinetic energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kinetic energy: energy due to motion //½mv²",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q6-recoil",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "cannon-recoil",
+  "section": "B",
+  "questionRef": "2018 OL Q6 — Cannon recoil",
+  "stem": "The cannon recoils when a cannon ball is shot from it.",
+  "questionText": "Use the principle of conservation of momentum to explain why the cannon recoils.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cannon recoils to ensure the momentum after is zero / to conserve momentum /momentum before collision = momentum after collision",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "cannon recoils to ensure the momentum after is zero",
+      "to conserve momentum /momentum before collision = momentum after collision"
+     ]
+    },
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6-cannon"
+ },
+ {
+  "id": "phys-2018-ol-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "car-momenta-before",
+  "section": "B",
+  "questionRef": "2018 OL Q6(i)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together.",
+  "questionText": "Calculate the momentum of each car before the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "pA= mAvA= (500)(6) = 3000 kg m s⁻¹ / pB= mBvB= (300)(0) = 0 kg m s⁻¹",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "pA= mAvA= (500)(6) = 3000 kg m s⁻¹",
+      "pB= mBvB= (300)(0) = 0 kg m s⁻¹"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "The scheme also allows partial credit: partial answer (3). Either complete car calculation earns 6; both earn 9."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6i-solution"
+ },
+ {
+  "id": "phys-2018-ol-q6-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "combined-momentum",
+  "section": "B",
+  "questionRef": "2018 OL Q6(ii)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together.",
+  "questionText": "What is the momentum of the combined cars after the collision?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(mA + mB)V = mAvA + mBvB = 3000 kg m s⁻¹",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. momentum before = momentum after (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6ii-solution"
+ },
+ {
+  "id": "phys-2018-ol-q6-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "collision-speed",
+  "section": "B",
+  "questionRef": "2018 OL Q6(iii)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together.",
+  "questionText": "Calculate the speed of the two cars after the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(mA + mB)V = mAvA + mBvB = 3000 kg m s⁻¹ (500+300) V = 3000 ⇒ V = 3.75 m s⁻¹",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6iii-solution"
+ },
+ {
+  "id": "phys-2018-ol-q6-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "car-energies-before",
+  "section": "B",
+  "questionRef": "2018 OL Q6(iv)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together.",
+  "questionText": "Calculate the kinetic energy of each car before the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "9000 J / 0 J",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "9000 J",
+      "0 J"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "The scheme also allows partial credit: partial answer (3). Either complete car calculation earns 6; both earn 9."
+   }
+  ],
+  "notes": "Two required car calculations, with either complete one earning 6 and both 9. Source working is retained visibly; final results are read by position. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6iv-solutions"
+ },
+ {
+  "id": "phys-2018-ol-q6-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "car-energy-after",
+  "section": "B",
+  "questionRef": "2018 OL Q6(v)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together.",
+  "questionText": "Calculate the kinetic energy of the cars after the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "½ MV² = ½ (500+300)(3.75)² = 5625 J",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer e.g. 3516 J, 2109 J (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6v-solution"
+ },
+ {
+  "id": "phys-2018-ol-q6-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "collision-energy-change",
+  "section": "B",
+  "questionRef": "2018 OL Q6(vi)",
+  "stem": "Bumper car A of mass 500 kg is moving with a speed of 6 m s⁻¹ when it collides with stationary bumper car B of mass 300 kg. After the collision the cars move together. Calculate the kinetic energy of each car before the collision. Calculate the kinetic energy of the cars after the collision.",
+  "questionText": "What conclusion can be drawn from the change in kinetic energy that happens during the collision?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kinetic energy is not conserved / kinetic energy is lost // answer consistent with (iv) and (v)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q6-cars"
+ },
+ {
+  "id": "phys-2018-ol-q7-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q7(i)",
+  "stem": "The temperature of an object can be measured using a thermometer.",
+  "questionText": "What is heat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a form of) energy / mcΔθ /ml",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. it is measured in joules (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q7-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q7(ii)",
+  "stem": "The temperature of an object can be measured using a thermometer.",
+  "questionText": "What is meant by the temperature of an object?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "degree of hotness // measurement of hotness/coldness",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. it is measured in °C (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q7-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "kelvin-unit",
+  "section": "B",
+  "questionRef": "2018 OL Q7(iii)",
+  "stem": "The temperature of an object can be measured using a thermometer.",
+  "questionText": "What is the unit of temperature on the SI scale?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kelvin / K",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. °C / F (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q7-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "celsius-kelvin",
+  "section": "B",
+  "questionRef": "2018 OL Q7(iv)",
+  "stem": "The temperature of an object can be measured using a thermometer. What is the unit of temperature on the SI scale?",
+  "questionText": "Express 20 °C in the units you have named in part (iii).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "273+20 = 293 K",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. refers to 273 (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q7-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "metal-conduction",
+  "section": "B",
+  "questionRef": "2018 OL Q7(v)",
+  "stem": "The diagram shows an apparatus used to compare heat transfer in different metals.",
+  "questionText": "Name the method by which heat is transferred in metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conduction // vibrating atoms (transfer energy)",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. example (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q7-rods"
+ },
+ {
+  "id": "phys-2018-ol-q7-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "other-heat-transfer",
+  "section": "B",
+  "questionRef": "2018 OL Q7(vi)",
+  "stem": "The diagram shows an apparatus used to compare heat transfer in different metals. Name the method by which heat is transferred in metals.",
+  "questionText": "Name the two other methods of heat transfer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "convection",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "radiation",
+    "marks": 3,
+    "contextNote": "partial answer e.g. example Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q7-rods"
+ },
+ {
+  "id": "phys-2018-ol-q7-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "best-conductor",
+  "section": "B",
+  "questionRef": "2018 OL Q7(vii)",
+  "stem": "The diagram shows an apparatus used to compare heat transfer in different metals.",
+  "questionText": "How can this experiment be used to find out which metal is the best at allowing heat transfer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the pin which falls first indicates the best conductor",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. incomplete answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q7-rods"
+ },
+ {
+  "id": "phys-2018-ol-q7-viii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "fair-conduction-test",
+  "section": "B",
+  "questionRef": "2018 OL Q7(viii)",
+  "stem": "The diagram shows an apparatus used to compare heat transfer in different metals.",
+  "questionText": "State two ways of making sure that this investigation is fair.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "ensure that there is only one independent variable / ensure there is an equal amount of heat for each metal / ensure that the metal strips are the same length / diameter / ensure to have the same amount of wax, etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "ensure that there is only one independent variable",
+      "ensure there is an equal amount of heat for each metal",
+      "ensure that the metal strips are the same length / diameter",
+      "ensure to have the same amount of wax, etc."
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q7-rods"
+ },
+ {
+  "id": "phys-2018-ol-q7-ix",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermal-insulator",
+  "section": "B",
+  "questionRef": "2018 OL Q7(ix)",
+  "stem": "The diagram shows an apparatus used to compare heat transfer in different metals.",
+  "questionText": "Metals are good conductors. Name a good insulator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "any named insulator e.g. paper, plastic, wood, etc.",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. non metal (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q7-rods"
+ },
+ {
+  "id": "phys-2018-ol-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "diffraction-interference",
+  "section": "B",
+  "questionRef": "2018 OL Q8(i)",
+  "stem": "Diffraction and interference are properties associated with waves.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "diffraction is the bending/spreading out of waves around a barrier / the edges of an opening // correct diagram",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. light spreads out, bending (3). "
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "interference occurs when two waves meet and add // correct diagram",
+    "marks": 6,
+    "contextNote": "reversed explanations Reversed explanations: 6 for this task."
+   }
+  ],
+  "notes": "Both required underlined terms share one printed roman task, 6 each; no finite choice. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2018-ol-q8i-question"
+ },
+ {
+  "id": "phys-2018-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wave-nature-demonstration",
+  "section": "B",
+  "questionRef": "2018 OL Q8(ii)",
+  "stem": "Diffraction and interference are properties associated with waves.",
+  "questionText": "Describe an experiment to demonstrate the wave nature of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: (diffraction) grating / Young’s slits / CD",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: shine the light through the grating /Young’s slits / CD",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion; pattern on screen / pattern observed",
+    "marks": 3,
+    "contextNote": "incorrect experiment maximum mark 2 × 3 marks may be obtained from a diagram accept valid alternatives"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q8-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "polarisation-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q8(iii)",
+  "stem": "The photograph shows a liquid crystal display (LCD) monitor, which may require a polaroid panel to allow the image on the screen to be seen clearly.",
+  "questionText": "What is meant by polarisation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "polarisation is the restriction of (vibrating electromagnetic) waves to a single plane",
+    "marks": 6,
+    "contextNote": "marks may be obtained from a diagram partial answer Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q8-monitor"
+ },
+ {
+  "id": "phys-2018-ol-q8-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "polarisation-demonstration",
+  "section": "B",
+  "questionRef": "2018 OL Q8(iv)",
+  "stem": "The photograph shows a liquid crystal display (LCD) monitor, which may require a polaroid panel to allow the image on the screen to be seen clearly.",
+  "questionText": "Describe an experiment to demonstrate the polarisation of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: (two pieces of a) polaroid sheet",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: look at the light through the two pieces of polaroid",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "rotate one of the polaroid pieces",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "observation/conclusion; the crossed pieces stop the light",
+    "marks": 3,
+    "contextNote": "marks may be obtained from a diagram accept valid alternatives"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q8-monitor"
+ },
+ {
+  "id": "phys-2018-ol-q8-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "primary-colours",
+  "section": "B",
+  "questionRef": "2018 OL Q8(v)",
+  "stem": "The photograph shows a liquid crystal display (LCD) monitor, which may require a polaroid panel to allow the image on the screen to be seen clearly. Monitors of the kind shown use only three colours to form any image.",
+  "questionText": "What three colours are used?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "red / green / blue",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "red",
+      "green",
+      "blue"
+     ]
+    },
+    "contextNote": "partial answer e.g. the primary colours Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q8-monitor"
+ },
+ {
+  "id": "phys-2018-ol-q8-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "mixing-colours",
+  "section": "B",
+  "questionRef": "2018 OL Q8(vi)",
+  "stem": "The photograph shows a liquid crystal display (LCD) monitor, which may require a polaroid panel to allow the image on the screen to be seen clearly. Monitors of the kind shown use only three colours to form any image. What three colours are used?",
+  "questionText": "Describe how these colours can be used to create any image.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "these colours may be mixed (to give white light/ other colours)",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q8-monitor"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "coulomb-law",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(i)",
+  "questionText": "State Coulomb’s law of force between charges.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force proportional to the product of charges / F ∝ Q₁Q₂",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "inversely proportional to the distance between the charges squared",
+    "marks": 3,
+    "contextNote": "partial answer Partial credit: 3. The source equation is shown with the complete inverse-square relation."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9ai-law"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "electroscope-use",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(ii)",
+  "stem": "The diagram shows a positively charged gold leaf electroscope.",
+  "questionText": "State one use of an electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "test for charge / identify charge / measure potential",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "test for charge",
+      "identify charge",
+      "measure potential"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9a-electroscope"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "positive-electroscope",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(iii)",
+  "stem": "The diagram shows a positively charged gold leaf electroscope.",
+  "questionText": "How can an electroscope be given a positive charge?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "touch the cap with a positively charged conductor / bring the( negatively) charged rod close to the cap and earth remove the earth before removing the rod",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "touch the cap with a positively charged conductor",
+      "bring the( negatively) charged rod close to the cap and earth remove the earth before removing the rod"
+     ]
+    },
+    "contextNote": "accept valid alternatives e.g. Van De Graaff labelled diagrams may merit full marks partial answer Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9a-electroscope"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "earthing-observation",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(iv)",
+  "stem": "The diagram shows a positively charged gold leaf electroscope.",
+  "questionText": "What is observed when the cap of a charged electroscope is earthed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the leaves collapse/converge / fall",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9a-electroscope"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "earthing-explanation",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(v)",
+  "stem": "The diagram shows a positively charged gold leaf electroscope. What is observed when the cap of a charged electroscope is earthed?",
+  "questionText": "Explain this observation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charges move ( between the earth and the cap) // no (excess) charge",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9a-electroscope"
+ },
+ {
+  "id": "phys-2018-ol-q9-a-vi",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "earthing-method",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(vi)",
+  "stem": "The diagram shows a positively charged gold leaf electroscope.",
+  "questionText": "How could the cap of the electroscope be earthed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "by touching with a conductor / finger",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9a-electroscope"
+ },
+ {
+  "id": "phys-2018-ol-q9-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "ohm-law",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(i)",
+  "stem": "The circuit diagram shows two resistors connected in series with a 3 V battery.",
+  "questionText": "State Ohm’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the current through a conductor is directly proportional to the voltage / V=IR",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9b-circuit"
+ },
+ {
+  "id": "phys-2018-ol-q9-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "series-resistance",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(ii)",
+  "stem": "The circuit diagram shows two resistors connected in series with a 3 V battery.",
+  "questionText": "Calculate the total resistance of the circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(6 + 12 = ) 18 Ω",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9b-circuit"
+ },
+ {
+  "id": "phys-2018-ol-q9-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "series-current",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(iii)",
+  "stem": "The circuit diagram shows two resistors connected in series with a 3 V battery.",
+  "questionText": "Calculate the current in the circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I = V/R = 0.166 A",
+    "marks": 6,
+    "contextNote": "The printed scheme gives 6 for the complete calculation and 3 for the partial formula I = V/R."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9b-circuit"
+ },
+ {
+  "id": "phys-2018-ol-q9-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistor-voltage",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(iv)",
+  "stem": "The circuit diagram shows two resistors connected in series with a 3 V battery.",
+  "questionText": "Calculate the potential difference across the 6 Ω resistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( V = IR = (0.166)(6) = ) 1 V",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. V = IR (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9b-circuit"
+ },
+ {
+  "id": "phys-2018-ol-q9-b-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltmeter",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(v)",
+  "stem": "The circuit diagram shows two resistors connected in series with a 3 V battery.",
+  "questionText": "Name an instrument used to measure potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "voltmeter /multimeter",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q9b-circuit"
+ },
+ {
+  "id": "phys-2018-ol-q10-i-definition",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q10(i) — X-ray definition",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "What are X‐rays?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnetic waves // high energy radiation",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. stated property such as ionisation / radiation (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-i-properties",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-properties",
+  "section": "B",
+  "questionRef": "2018 OL Q10(i) — Two X-ray properties",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "State two properties of X‐rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "short wavelength / cause ionisation / affect photographic plates / absorbed by bone/metal / no charge",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "short wavelength",
+      "cause ionisation",
+      "affect photographic plates",
+      "absorbed by bone/metal",
+      "no charge"
+     ]
+    },
+    "openList": true,
+    "contextNote": "partial answer e.g. reference to photograph / medicine / industry, etc. Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "thermionic-emission",
+  "section": "B",
+  "questionRef": "2018 OL Q10(ii)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "What process occurs at part A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "thermionic emission / release of electrons / heating",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "thermionic emission",
+      "release of electrons",
+      "heating"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-target",
+  "section": "B",
+  "questionRef": "2018 OL Q10(iii)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "Name a substance used in part B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "tungsten / molybydenium / named metal",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "tungsten",
+      "molybydenium",
+      "named metal"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-shield",
+  "section": "B",
+  "questionRef": "2018 OL Q10(iv)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "State the function of part C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "prevent escape of X‐rays / shielding / protect (from X‐rays)",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "prevent escape of X‐rays",
+      "shielding",
+      "protect (from X‐rays)"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. maintain a vacuum (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-use",
+  "section": "B",
+  "questionRef": "2018 OL Q10(v)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "State one use of X‐rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "to photograph bones/ internal organs / to treat cancer / to detect flaws in materials / to determine the thickness of materials",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "to photograph bones/ internal organs",
+      "to treat cancer",
+      "to detect flaws in materials",
+      "to determine the thickness of materials"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer e.g. reference to photograph / medicine / industry, etc. (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-vacuum",
+  "section": "B",
+  "questionRef": "2018 OL Q10(vi)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "Why is a vacuum needed inside an X‐ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "so the electrons won’t collide and lose energy / allow electrons to speed up more efficiently",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "so the electrons won’t collide and lose energy",
+      "allow electrons to speed up more efficiently"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "electron-beam-device",
+  "section": "B",
+  "questionRef": "2018 OL Q10(vii)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "Name another device that uses a beam of high speed electrons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cathode ray tube / fluorescent light",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "cathode ray tube",
+      "fluorescent light"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-viii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "electron-beam-use",
+  "section": "B",
+  "questionRef": "2018 OL Q10(viii)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown. Name another device that uses a beam of high speed electrons.",
+  "questionText": "State one use for the device you have named in part (vii).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "CRO / medical devices / (old) TVs/screens",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "CRO",
+      "medical devices",
+      "(old) TVs/screens"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q10-ix",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "xray-gamma-difference",
+  "section": "B",
+  "questionRef": "2018 OL Q10(ix)",
+  "stem": "X‐rays are produced when a beam of high speed electrons collides with a target in a tube like the one shown.",
+  "questionText": "State one difference between X‐rays and gamma‐rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "different ways of production, different energy / wavelength /frequency / penetration / ionising/ etc.",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q10-tube"
+ },
+ {
+  "id": "phys-2018-ol-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "wave-energy",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "What physical quantity is transmitted in a wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "breaking-waves",
+  "section": "B",
+  "questionRef": "2018 OL Q11(b)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "Why do waves break close to the shore?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the wavelength decreases and the wave height (amplitude) increases // waves move into shallow water until the wave becomes unstable and breaks",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. as waves move into shallow water they slow down (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "archimedes-principle",
+  "section": "B",
+  "questionRef": "2018 OL Q11(d)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "State Archimedes' principle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "when a body is immersed in a fluid , the upthrust it experiences is equal to the weight of the fluid displaced //when a body is floating in a fluid it displaces its own weight of the fluid",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "buoyancy-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q11(e)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "What is meant by the term buoyancy (upthrust)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "an upward force exerted by a fluid",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "floating-surfer",
+  "section": "B",
+  "questionRef": "2018 OL Q11(f)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "How does buoyancy help the surfer to stay afloat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "counterbalances the weight",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "surfer-balance",
+  "section": "B",
+  "questionRef": "2018 OL Q11(h)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "Explain how the stance of the surfer shown helps her to balance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "low centre of gravity // wide stance",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "wave-features",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "Draw a diagram to show the main features of a wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "diagram to include wave shape wavelength /amplitude /crest /trough etc.",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer The scheme prints this marking criterion rather than a model answer. (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11c-wave"
+ },
+ {
+  "id": "phys-2018-ol-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "floating-force-diagram",
+  "section": "B",
+  "questionRef": "2018 OL Q11(g)",
+  "stem": "The Physics of Surfing Many people are surprised to learn that there is a lot of physics involved in riding a wave. Consider the principle of the wave itself: the energy of offshore storms is transmitted in ocean waves. As the ocean waves move into shallow water they slow down, the wavelength decreases and the wave height (amplitude) increases until the wave becomes unstable and breaks. A vital physical principle behind surfing is Archimedes' principle, which keeps the board floating and allows the surfer to ride the wave. Archimedes' principle states that when a body is floating in a fluid it displaces its own weight of the fluid. The buoyancy (upthrust) counterbalances the weight of both the surfboard and the surfer and prevents both from sinking. Since the weight of the surfer is distributed evenly by the surfboard and is counterbalanced by the board's buoyancy, the surfer can stand on the top of the water. The weight of the surfer on the board produces a force that is straight down. At the same time, buoyancy produces a force that acts on the board. This force, together with forces due to the wave, pushes the surfer forward. The sum of these forces results in a forward force that propels the surfer in the same direction as the wave. Adapted from http://illumin.usc.edu/index/article/193/the‐engineering‐behind‐surfing/ (University of Southern California)",
+  "questionText": "Draw a labelled diagram to show the forces acting on a floating object.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "weight down / upthrust up / forward force",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "weight down",
+      "upthrust up",
+      "forward force"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "partial answer e.g. one force shown Draw and label any two forces: 7; one: 4."
+   }
+  ],
+  "notes": "The scheme explicitly accepts any two of its three listed forces; preserve three options and the stepped 7/4 tariff. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q11-surfer"
+ },
+ {
+  "id": "phys-2018-ol-q12-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "velocity-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q12(a)(i)",
+  "questionText": "Define (i) velocity",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "displacement per second / v = s/t",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "acceleration-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q12(a)(ii)",
+  "questionText": "Define (ii) acceleration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change in velocity per unit time /a = (v−u)/t",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "train-acceleration-time",
+  "section": "B",
+  "questionRef": "2018 OL Q12(a)(iii)",
+  "stem": "A train left a station and accelerated from rest at 0.4 m s⁻² to reach its top speed of 55 m s⁻¹. The train then travelled for 300 seconds at this speed.",
+  "questionText": "Calculate how long it took the train to reach its top speed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( t = (v−u)/a = (55−0)/0.4 = ) 137.5 s",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. v = u + at (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12aiii-solution"
+ },
+ {
+  "id": "phys-2018-ol-q12-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "train-distance",
+  "section": "B",
+  "questionRef": "2018 OL Q12(a)(iv)",
+  "stem": "A train left a station and accelerated from rest at 0.4 m s⁻² to reach its top speed of 55 m s⁻¹. The train then travelled for 300 seconds at this speed.",
+  "questionText": "How far did the train travel while at its top speed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "[ s=vt =(300)(55) =] 16500 m",
+    "marks": 6,
+    "contextNote": "partial mark e.g. s= vt Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "train-velocity-time-graph",
+  "section": "B",
+  "questionRef": "2018 OL Q12(a)(v)",
+  "stem": "A train left a station and accelerated from rest at 0.4 m s⁻² to reach its top speed of 55 m s⁻¹. The train then travelled for 300 seconds at this speed.",
+  "questionText": "Draw a velocity‐time graph of the train’s journey.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct shape with axes",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer The scheme prints this marking criterion rather than a model answer. (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12av-graph"
+ },
+ {
+  "id": "phys-2018-ol-q12-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "spectrum-demonstration",
+  "section": "B",
+  "questionRef": "2018 OL Q12(b)(i)",
+  "stem": "Sunlight is made up of visible light of different colours as well as many types of invisible radiation.",
+  "questionText": "How could you show the different colours present in visible light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: (white light source, screen), prism/CD/grating",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "shine the light through the prism/CD/grating",
+    "marks": 3,
+    "contextNote": "partial answer marks may be obtained from a diagram accept valid alternatives Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "uv-meaning",
+  "section": "B",
+  "questionRef": "2018 OL Q12(b)(ii)",
+  "stem": "Sunlight is made up of visible light of different colours as well as many types of invisible radiation.",
+  "questionText": "UV radiation is also present in sunlight. What do the letters U and V stand for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ultraviolet",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "uv-infrared-wavelength",
+  "section": "B",
+  "questionRef": "2018 OL Q12(b)(iii)",
+  "stem": "Sunlight is made up of visible light of different colours as well as many types of invisible radiation.",
+  "questionText": "Compare the wavelength of UV radiation to the wavelength of infra‐red (IR) radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ultraviolet has a shorter wavelength",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "uv-detection",
+  "section": "B",
+  "questionRef": "2018 OL Q12(b)(iv)",
+  "stem": "Sunlight is made up of visible light of different colours as well as many types of invisible radiation.",
+  "questionText": "Describe how to detect UV radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "florescent material will fluoresce/glow",
+    "marks": 6,
+    "contextNote": "partial answer accept valid alternatives a labelled diagram may merit full marks Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-b-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "uv-use",
+  "section": "B",
+  "questionRef": "2018 OL Q12(b)(v)",
+  "stem": "Sunlight is made up of visible light of different colours as well as many types of invisible radiation.",
+  "questionText": "State one use of UV radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "detect forged currency / disco lights / used in insect removal device / sterilisation / suntan / forensics",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "detect forged currency",
+      "disco lights",
+      "used in insect removal device",
+      "sterilisation",
+      "suntan",
+      "forensics"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "boiler-heat",
+  "section": "B",
+  "questionRef": "2018 OL Q12(c)(i)",
+  "stem": "The diagram shows a water boiler which is filled with 0.7 kg of water which is initially at 20 °C. The boiler has a power rating of 3 kW. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹)",
+  "questionText": "Calculate the energy needed to raise the temperature of the water from 20 °C to 90 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = mcΔθ = (0.7)(4200)(90‐20) = 205800 J",
+    "marks": 12,
+    "contextNote": "one error two errors partial answer e.g. correct formula One error: 9; two errors: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12c-boiler"
+ },
+ {
+  "id": "phys-2018-ol-q12-c-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "boiler-power",
+  "section": "B",
+  "questionRef": "2018 OL Q12(c)(ii)",
+  "stem": "The diagram shows a water boiler which is filled with 0.7 kg of water which is initially at 20 °C. The boiler has a power rating of 3 kW.",
+  "questionText": "How many joules of energy are supplied per second by the boiler?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3000",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer e.g. 3 (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12c-boiler"
+ },
+ {
+  "id": "phys-2018-ol-q12-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "boiler-heating-time",
+  "section": "B",
+  "questionRef": "2018 OL Q12(c)(iii)",
+  "stem": "The diagram shows a water boiler which is filled with 0.7 kg of water which is initially at 20 °C. The boiler has a power rating of 3 kW. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹)",
+  "questionText": "Calculate how long it will take the boiler to heat the water to 90 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = Pt ⇒ t = E/P = 205800/3000 = 68.6 s",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12ciii-solution",
+  "questionFigureKey": "physics-2018-ol-q12ciii-question"
+ },
+ {
+  "id": "phys-2018-ol-q12-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "boiler-element-location",
+  "section": "B",
+  "questionRef": "2018 OL Q12(c)(iv)",
+  "stem": "The diagram shows a water boiler which is filled with 0.7 kg of water which is initially at 20 °C. The boiler has a power rating of 3 kW.",
+  "questionText": "Where should the manufacturer place the heating element of the boiler? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "at the bottom",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "hot water (is less dense and) rises",
+    "marks": 3,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Location with its reason is one six-mark paired response, priced 3+3. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12c-boiler"
+ },
+ {
+  "id": "phys-2018-ol-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induction-definition",
+  "section": "B",
+  "questionRef": "2018 OL Q12(d)(i)",
+  "questionText": "What is electromagnetic induction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emf / voltage / potential difference / current is induced",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(due to)changing (magnetic) flux / field // moving magnet",
+    "marks": 3,
+    "contextNote": "partial answer a diagram or example may merit full marks Partial credit: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2018-ol-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induction-procedure",
+  "section": "B",
+  "questionRef": "2018 OL Q12(d)(ii)",
+  "questionText": "Explain how you would use a magnet and a coil, as shown above, to produce electricity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "move the magnet into/out of the coil",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12d-coil"
+ },
+ {
+  "id": "phys-2018-ol-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induction-observation",
+  "section": "B",
+  "questionRef": "2018 OL Q12(d)(iii)",
+  "stem": "Explain how you would use a magnet and a coil, as shown above, to produce electricity.",
+  "questionText": "How would you know that electricity is being produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "deflection /pointer moves / from the meter",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12d-coil"
+ },
+ {
+  "id": "phys-2018-ol-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "stronger-induced-current",
+  "section": "B",
+  "questionRef": "2018 OL Q12(d)(iv)",
+  "stem": "Explain how you would use a magnet and a coil, as shown above, to produce electricity.",
+  "questionText": "How could you increase the magnitude of the electricity produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "move faster / use a stronger magnet / use more coils",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "move faster",
+      "use a stronger magnet",
+      "use more coils"
+     ]
+    },
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12d-coil"
+ },
+ {
+  "id": "phys-2018-ol-q12-d-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "alternating-current",
+  "section": "B",
+  "questionRef": "2018 OL Q12(d)(v)",
+  "questionText": "The apparatus in the diagram can be used to produce a.c. electricity. What is meant by a.c.?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "alternating current",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "physics-2018-ol-q12d-coil"
  }
 ]

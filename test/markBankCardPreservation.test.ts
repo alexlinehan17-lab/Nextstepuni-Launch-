@@ -1966,9 +1966,9 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
     expect(PHYS_HIGHER).toHaveLength(1117);
     expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('64099ecb7164d26bae4155944098c357b4777a2c60e93f6db88d8a67508abe89');
-    expect(PHYS_ORDINARY).toHaveLength(975);
-    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('e624f92d0983188a3409490225f4ff333543495abf44b1c6377fc201080447a9');
-    expect(physicsAdditionIds.size).toBe(1117 + 975 - 570 - 563 + physicsAliasIds.length);
+    expect(PHYS_ORDINARY).toHaveLength(1075);
+    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('7bdd1808bb1c651a0341ec6724ad76b07b6a04a5a9fbd436cc3c84318dbfb6e2');
+    expect(physicsAdditionIds.size).toBe(1117 + 1075 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
