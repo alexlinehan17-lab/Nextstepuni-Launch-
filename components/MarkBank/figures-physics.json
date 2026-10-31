@@ -581,6 +581,825 @@
    572
   ]
  },
+ "physics-2017-ol-q1-equations": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q1-equations.png",
+  "md5": "a3705c15aa444f480d5fa1d26e899e59",
+  "alt": "Both official gravity equations with complete fractions, radical and partial-credit examples.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q1(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   91,
+   470,
+   370,
+   553
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q10-reactor": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q10-reactor.png",
+  "md5": "5d7b6f7a012377bf41e69508344d8cea",
+  "alt": "Full labelled reactor: control rods, shielding, moderator, fuel, steam, heat exchanger and cold water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q10(ix)(a)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   130,
+   265,
+   513,
+   464
+  ]
+ },
+ "physics-2017-ol-q11-plug": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q11-plug.png",
+  "md5": "87f6e95a70bf7ce724435eb0d388dd6d",
+  "alt": "The three-pin plug photograph with all A, B and C markers.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q11(a)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   379,
+   210,
+   572,
+   378
+  ]
+ },
+ "physics-2017-ol-q12a-forces": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12a-forces.png",
+  "md5": "dcd66af0b67bceb2b5f73908f5b00678",
+  "alt": "Official car-force diagram with weight, reaction, engine force and friction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(a)(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   218,
+   246,
+   386,
+   323
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12a-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12a-graph.png",
+  "md5": "c9e243d0fec1369936790ef3187b62db",
+  "alt": "Official velocity–time graph with acceleration, constant speed and braking to rest.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(a)(v)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   264,
+   429,
+   421,
+   493
+  ],
+  "maskedFurniture": [
+   [
+    264,
+    429,
+    277,
+    432
+   ],
+   [
+    286,
+    429,
+    339,
+    432
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12a-time": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12a-time.png",
+  "md5": "008e7222f21c152ab68d2b0e16e263e5",
+  "alt": "Acceleration-time working, including the velocity difference divided by acceleration and seventy-second result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(a)(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   120,
+   371,
+   351,
+   400
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12b-power": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12b-power.png",
+  "md5": "571244d68f461ebd9c4da20335871f1a",
+  "alt": "Official power calculation, energy over time, giving 250 watts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(b)(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   106,
+   737,
+   371,
+   764
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12bi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12bi-question.png",
+  "md5": "019786a99e3450f3c292e8274acb8b2a",
+  "alt": "The underlined heat-pump and specific-latent-heat terms, fridge illustration and instruction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(b)(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   471,
+   524,
+   629
+  ]
+ },
+ "physics-2017-ol-q12c-volume": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12c-volume.png",
+  "md5": "a1eddf47df8598e99ad6a8fc317369a6",
+  "alt": "Complete Boyle’s-law substitution and balloon volume 6.7 litres.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(c)(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   96,
+   340,
+   433,
+   364
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12d-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12d-circuit.png",
+  "md5": "93b65e2f6199a31223167766bd0c9c9f",
+  "alt": "Capacitor, bulb, switch and twelve-volt direct-current supply circuit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(d)(ii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   180,
+   550,
+   380,
+   640
+  ]
+ },
+ "physics-2017-ol-q12d-law": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12d-law.png",
+  "md5": "2601d6b7c610dba4dd14b82bb793d155",
+  "alt": "Both parts of Coulomb’s law, retaining the product and inverse-square formulae.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(d)(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   90,
+   437,
+   451,
+   485
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q12div-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12div-question.png",
+  "md5": "7a076bcfe4e71340bd8f663f5f2dc0f5",
+  "alt": "Complete capacitor context, capacitance and circuit with the charge calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(d)(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   109,
+   485,
+   524,
+   727
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    644,
+    524,
+    694
+   ]
+  ]
+ },
+ "physics-2017-ol-q12div-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q12div-solution.png",
+  "md5": "d074f4db5cdfafc420a804615ca7cd0f",
+  "alt": "Charge calculation with capacitance fraction, power of ten and 0.72-coulomb result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(d)(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   95,
+   668,
+   293,
+   696
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q2-equations": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q2-equations.png",
+  "md5": "3bf4c1e4f658067272be5610dff7c65e",
+  "alt": "The two accepted specific-heat-capacity equations, including every subscript and temperature change.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q2(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   106,
+   498,
+   441,
+   515
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q3-data.png",
+  "md5": "4099489ff49a7c31157356e2440f6b37",
+  "alt": "All three object-distance and image-distance pairs, with centimetre headings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q3(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   133,
+   95,
+   454,
+   153
+  ]
+ },
+ "physics-2017-ol-q3iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q3iv-question.png",
+  "md5": "52e49b2eddc7c86f8fa6f37fa336e615",
+  "alt": "Concave-mirror experiment, complete data table and focal-length calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q3(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   82,
+   55,
+   523,
+   278
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    171,
+    523,
+    255
+   ]
+  ]
+ },
+ "physics-2017-ol-q3iv-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q3iv-solution.png",
+  "md5": "b3ce4b93a5949febde039a4e26f4c424",
+  "alt": "Full mirror calculation: formula, all three focal lengths, reciprocal working and average.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q3(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   110,
+   440,
+   419,
+   638
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q4-data.png",
+  "md5": "253e7aaa607e3497633e775b3350eaa0",
+  "alt": "All seven temperature and resistance pairs, with degree Celsius and ohm units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q4(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   106,
+   566,
+   513,
+   630
+  ]
+ },
+ "physics-2017-ol-q4-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q4-graph.png",
+  "md5": "80e19c0df5fea9acfe11791b56964be7",
+  "alt": "Official resistance-versus-temperature graph with axes, units, points and graph-reading guides.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q4(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   68,
+   420,
+   487,
+   652
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q4iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q4iii-question.png",
+  "md5": "a8eab3390e57ea936f2bc5eee837aa75",
+  "alt": "Metallic conductor experiment, seven readings and graph question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q4(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   82,
+   435,
+   523,
+   679
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    473,
+    523,
+    517
+   ]
+  ]
+ },
+ "physics-2017-ol-q5b-handle": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q5b-handle.png",
+  "md5": "07ea3d9722d25c2b70169cc6d8eb352c",
+  "alt": "Door handle with force forty newtons and perpendicular distance 0.12 metres.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q5(b)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   219,
+   331,
+   390,
+   416
+  ]
+ },
+ "physics-2017-ol-q5e-micrometer": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q5e-micrometer.png",
+  "md5": "76e8ff8f9486c947eed97748cf6bbee8",
+  "alt": "The measuring instrument shown in Q5(e).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q5(e)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   269,
+   531,
+   396,
+   581
+  ]
+ },
+ "physics-2017-ol-q6-sling": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q6-sling.png",
+  "md5": "52efbbc37b92371398bffe85f0101cdf",
+  "alt": "The fairground sling-shot pictured in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q6(ii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   146,
+   172,
+   429,
+   363
+  ]
+ },
+ "physics-2017-ol-q6i-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q6i-question.png",
+  "md5": "5650544cb74fde0881632dacbdfffa36",
+  "alt": "Complete sling-shot paragraph, the three underlined terms, photograph and instruction to explain them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q6(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   82,
+   55,
+   523,
+   393
+  ]
+ },
+ "physics-2017-ol-q6i-solutions": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q6i-solutions.png",
+  "md5": "1a6b4071314c15c4360eb06a82a8c815",
+  "alt": "Official definitions of force, acceleration and gravity with all three alternative mathematical expressions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q6(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   90,
+   202,
+   392,
+   303
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q7-ambulance": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7-ambulance.png",
+  "md5": "d77a922d3fc92a808146806dc8f6e3c9",
+  "alt": "Ambulance photograph showing its mirror-reversed lettering.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   429,
+   169,
+   519,
+   237
+  ]
+ },
+ "physics-2017-ol-q7iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7iii-question.png",
+  "md5": "75bd8aa36576bcef6401a25a72af468f",
+  "alt": "Periscope context, illustration and diagram question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   53,
+   524,
+   169
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    53,
+    433,
+    115
+   ],
+   [
+    504,
+    53,
+    524,
+    115
+   ]
+  ]
+ },
+ "physics-2017-ol-q7iii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7iii-solution.png",
+  "md5": "7b78f3980cff7fb99016a042e903f4d6",
+  "alt": "Official periscope ray path with both mirrors and tubing labelled.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   238,
+   264,
+   354,
+   386
+  ],
+  "maskedFurniture": [
+   [
+    238,
+    282,
+    259,
+    296
+   ],
+   [
+    238,
+    308,
+    250,
+    323
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q7v-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7v-solution.png",
+  "md5": "bc91ec374340d772309e56aa4b1ed9fe",
+  "alt": "Total internal reflection at the glass–air boundary, with normal, rays and angle condition.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(v)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   274,
+   539,
+   416,
+   585
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q7vi-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7vi-solution.png",
+  "md5": "9a0157861a46dcdc30ccf6f30d4dc062",
+  "alt": "Light ray undergoing repeated internal reflections along an optical fibre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(vi)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   206,
+   643,
+   450,
+   698
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q7vii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q7vii-solution.png",
+  "md5": "83e3c2063e88f8f45b21e3564dd523e3",
+  "alt": "Critical-angle calculation with the sine fraction, inverse calculation and 41.8-degree result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(vii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   98,
+   722,
+   329,
+   751
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q8-ambulance": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q8-ambulance.png",
+  "md5": "7540588910a303fffec5fcd4c6fbac9b",
+  "alt": "Ambulance approaching the person, with sound wavefronts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   406,
+   478,
+   542,
+   560
+  ]
+ },
+ "physics-2017-ol-q8ii-equations": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q8ii-equations.png",
+  "md5": "65569b7842511c26bef667dabd5e5c39",
+  "alt": "The three accepted frequency–wavelength equations with lambda and fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(ii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   86,
+   149,
+   218,
+   177
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q8iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q8iv-question.png",
+  "md5": "4cf5df0cc715077129b181d25d80bdf1",
+  "alt": "Complete moving-ambulance context and Doppler-explanation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   478,
+   543,
+   575
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    537,
+    409,
+    555
+   ]
+  ]
+ },
+ "physics-2017-ol-q8iv-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q8iv-solution.png",
+  "md5": "eebe1799664fe7f1d088edffca26b3ec",
+  "alt": "Official moving-source Doppler diagram, with direction and both wavelengths.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   25,
+   308,
+   193,
+   470
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q8viii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q8viii-solution.png",
+  "md5": "94ab3aa1aee0c8b058956f32c0f90d9b",
+  "alt": "Time-delay calculation showing distance divided by sound speed and 0.3 seconds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(viii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   84,
+   730,
+   176,
+   758
+  ],
+  "solution": true
+ },
+ "physics-2017-ol-q9-battery": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q9-battery.png",
+  "md5": "600e62c1b548dc5bddd07c13191ee8b3",
+  "alt": "Complete wire, U-shaped magnet and battery circuit with component labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q9(iv)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   159,
+   195,
+   394,
+   288
+  ]
+ },
+ "physics-2017-ol-q9-voltmeter": {
+  "src": "/exam-figures/physics/markbank/physics-2017-ol-q9-voltmeter.png",
+  "md5": "ca36aa1bc89da03c4e237fb25ee6fdbe",
+  "alt": "Wire and U-shaped magnet connected to a sensitive voltmeter.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q9(ix)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   159,
+   397,
+   425,
+   493
+  ]
+ },
  "physics-2018-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2018-hl-q1-data.png",
   "md5": "7dd155a74858e87cd0a7b28dcdf9d209",

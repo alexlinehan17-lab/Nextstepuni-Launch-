@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2017-ol': [97, 97, 96, '918a5a2b1d6ce774cc40a9b0452a7ce11dc2ff4ffb271e1a05cb4d37a761e962',
+    '52edb2df4e641d707e1270c131c685bbf5efd3a7258b09625cb543c505579720'],
   '2017-hl': [103, 103, 37, '4a3e69eebd86b3bed98fb557715fdc21511fbfa18895e1728da2a0e519be88de',
     '58265ccb8247b42ff911290cb7fc6c908c033d81490b9400fa0718b5d4b3bbfe'],
   '2018-ol': [100, 100, 97, 'ee7d3000ac3604387d4a12f669cd1884fcbde930f836542b02a757d5fab4fb91',
@@ -83,6 +85,44 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2017 Ordinary context, every labelled pin, and the published stepped responses', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2017-ol-${id}`)!;
+    expect(deck.filter(c => c.id.startsWith('phys-2017-ol-'))).toHaveLength(97);
+    expect(card('q3-iv').questionFigure?.candId).toBe('physics-2017-ol-q3iv-question');
+    expect(card('q3-iv').figure?.candId).toBe('physics-2017-ol-q3iv-solution');
+    expect(card('q4-iii').questionFigure?.candId).toBe('physics-2017-ol-q4iii-question');
+    expect(card('q5-c').questionText).toContain('ammeter protractor metre stick barometer');
+    expect(card('q5-c').rows[0]).toMatchObject({ group: {
+      claimMax: 2, perOptionSteps: [4, 3], options: ['ammeter', 'metre stick'],
+    } });
+    expect(card('q6-i').totalMarks).toBe(18);
+    expect(card('q6-i').questionFigure?.candId).toBe('physics-2017-ol-q6i-question');
+    expect(card('q6-v').stem).toContain('400 kg');
+    expect(card('q6-v').stem).toContain('9.8 m s⁻²');
+    expect(card('q6-vii').questionText).toContain('8 m s⁻¹');
+    expect(card('q8-viii').stem).toContain('330 m s⁻¹');
+    expect(card('q8-viii').figure?.candId).toBe('physics-2017-ol-q8viii-solution');
+    for (const id of ['q10-ix-a', 'q10-ix-b']) expect(card(id).totalMarks).toBe(6);
+    for (const part of 'abcdefgh') {
+      expect(card(`q11-${part}`).stem).toContain('Making the Connection – Plugs and Cable Colours');
+      expect(card(`q11-${part}`).stem).toContain('well maintained');
+    }
+    expect(card('q11-f').kind).toBe('diagram');
+    expect(card('q11-f').labelKey).toEqual([
+      { letter: 'A', meaning: 'neutral', askedInThisQuestion: true },
+      { letter: 'B', meaning: 'live', askedInThisQuestion: true },
+      { letter: 'C', meaning: 'earth', askedInThisQuestion: true },
+    ]);
+    expect(card('q11-f').rows[0]).toMatchObject({ group: { claimMax: 3, perOptionSteps: [3, 2, 2] } });
+    expect(card('q12-a-definitions').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [6, 3] } });
+    for (const part of 'abcd') expect(deck.filter(c => c.id.startsWith(`phys-2017-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    expect(card('q12-b-iii').stem).toContain('4200 J kg⁻¹ K⁻¹');
+    expect(card('q12-c-iii').stem).toContain('10.1 × 10⁴ Pa');
+    expect(card('q12-d-iv').questionFigure?.candId).toBe('physics-2017-ol-q12div-question');
+    expect(card('q12-d-iv').figure?.candId).toBe('physics-2017-ol-q12div-solution');
+  });
+
   it('retains 2017 Higher optional branches, experimental data, circuit cases and equation layouts', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2017-hl-${id}`)!;
     expect(card('q1-graph').figure?.candId).toBe('physics-2017-hl-q1-data');
