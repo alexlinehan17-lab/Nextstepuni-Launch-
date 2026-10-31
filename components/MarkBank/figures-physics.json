@@ -1,4 +1,359 @@
 {
+ "physics-2018-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q1-data.png",
+  "md5": "7dd155a74858e87cd0a7b28dcdf9d209",
+  "alt": "Both masses and the distances travelled in 0.12 seconds, before and after the collision.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q1 — Apparatus",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   245,
+   462,
+   326
+  ]
+ },
+ "physics-2018-hl-q10a-annihilation": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q10a-annihilation.png",
+  "md5": "94d65c72b29b5d51d2139fb0e839d35a",
+  "alt": "The printed electron–positron annihilation equation producing two gamma-ray photons.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q10(a) — Conservation of charge",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   259,
+   347,
+   337,
+   367
+  ]
+ },
+ "physics-2018-hl-q10a-beta-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q10a-beta-solution.png",
+  "md5": "809336dab234ee4bd8023950dc831d72",
+  "alt": "Official beta-decay equation with neutron, hydrogen nucleus, electron and neutrino.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q10(a) — Beta-decay equation",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   77,
+   267,
+   182,
+   287
+  ],
+  "solution": true
+ },
+ "physics-2018-hl-q12a-underlined": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q12a-underlined.png",
+  "md5": "4a8f1c9213ed9d18c9df0826b06ab4a7",
+  "alt": "The source underlines simple harmonic motion and asks for its meaning.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q12(a) — Simple harmonic motion",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   83,
+   103,
+   372,
+   136
+  ]
+ },
+ "physics-2018-hl-q12b-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q12b-data.png",
+  "md5": "6d2005c005b76bda7dd4eabad7cfdd50",
+  "alt": "All eight daily radon activity readings, with activity in megabecquerels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q12(b) — Decay curve",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   550,
+   484,
+   605
+  ]
+ },
+ "physics-2018-hl-q12c-defibrillator": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q12c-defibrillator.png",
+  "md5": "c7881e5e2fd1994cd373b58752eb4f10",
+  "alt": "The source defibrillator circuit, including the charged capacitor, switch and coil.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q12(c) — Discharge current",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   360,
+   65,
+   555,
+   169
+  ],
+  "maskedFurniture": [
+   [
+    523,
+    64,
+    555,
+    75
+   ]
+  ]
+ },
+ "physics-2018-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q2-data.png",
+  "md5": "d7054beb272bf2193da4b59fb61eb97c",
+  "alt": "Six measured incidence and refraction angle pairs, in degrees.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q2 — Measuring refraction",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   148,
+   597,
+   439,
+   652
+  ]
+ },
+ "physics-2018-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q3-data.png",
+  "md5": "acb7745766e5f8158d1211d52a7fa845",
+  "alt": "Angle between first-order images 34.1 degrees; 500 grating lines per millimetre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q3 — Choosing the more accurate grating",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   94,
+   462,
+   138
+  ]
+ },
+ "physics-2018-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q4-data.png",
+  "md5": "42c316c7f9b0d9d6c9679da429dfd847",
+  "alt": "All seven current and final-temperature readings for the Joule’s law experiment.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q4 — Finding the coil resistance",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   128,
+   480,
+   461,
+   536
+  ]
+ },
+ "physics-2018-hl-q5b-metre-stick": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q5b-metre-stick.png",
+  "md5": "9c86fa7956a81ec470e0b8ea0c2451c0",
+  "alt": "Metre stick supported at 50 cm with 8 N at 10 cm, 12 N at 60 cm, and X at 82 cm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q5(b)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   96,
+   311,
+   530,
+   384
+  ]
+ },
+ "physics-2018-hl-q5g-charge": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q5g-charge.png",
+  "md5": "719887418193c4cd9c033b4ccc1a37ea",
+  "alt": "Charge Q and a point at distance d.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q5(g)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   445,
+   550,
+   526,
+   626
+  ]
+ },
+ "physics-2018-hl-q5i-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q5i-solution.png",
+  "md5": "daa662db8bd8ee20a5f63153ed3b57a9",
+  "alt": "Official parallel-resistance working, with the total-resistance subscript and stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q5(i)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   97,
+   594,
+   166,
+   658
+  ],
+  "solution": true
+ },
+ "physics-2018-hl-q6b-jump": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q6b-jump.png",
+  "md5": "0f0994ac3e0ea970a45b4bf91305cf59",
+  "alt": "Long-jump photograph and the 43-degree launch angle.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q6(b)(ii)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   191,
+   314,
+   540,
+   414
+  ]
+ },
+ "physics-2018-hl-q6bi-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q6bi-solution.png",
+  "md5": "cd2e4a50ab9e812cb59825516dfc4404",
+  "alt": "Official horizontal-velocity calculation, with the H subscript and cosine component.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q6(b)(i)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   73,
+   379,
+   264,
+   415
+  ],
+  "solution": true
+ },
+ "physics-2018-hl-q6c-vault": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q6c-vault.png",
+  "md5": "04a0cb8d4a8f72805b1d9b866fc8c033",
+  "alt": "Pole vaulter at the highest point above the bar.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q6(c)(iv)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   370,
+   521,
+   541,
+   637
+  ]
+ },
+ "physics-2018-hl-q7i-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q7i-solution.png",
+  "md5": "8f89577e08d2fd6e2e4e74e3a304d3e1",
+  "alt": "Official mass-per-unit-length, string-frequency and tension working with the square root and stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q7(i)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   83,
+   240,
+   244,
+   314
+  ],
+  "solution": true
+ },
+ "physics-2018-hl-q8-fission-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q8-fission-solution.png",
+  "md5": "d501d3fec4ccd3524805cbdb8d91d2b1",
+  "alt": "Official uranium-235 fission equation with all mass and atomic numbers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q8 — Fission equation",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   83,
+   412,
+   266,
+   434
+  ],
+  "solution": true
+ },
+ "physics-2018-hl-q9-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2018-hl-q9-coil.png",
+  "md5": "a988a14ea67974ce03f096cf1aff73c1",
+  "alt": "Square coil rotating about an axis through midpoints of opposite sides.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q9 — Induced emf in the coil",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   433,
+   353,
+   541,
+   534
+  ]
+ },
  "physics-2019-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2019-hl-q1-data.png",
   "md5": "b64c1e331ff5af71049ad9d415db706f",

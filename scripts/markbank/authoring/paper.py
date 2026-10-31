@@ -391,6 +391,13 @@ INLINE_SENTENCE_MARKERS[('physics', 2019, 'hl')] = [
     '(i) its radius of orbit,', '(ii) its angular velocity.',
     '(i) point A,', '(ii) the slope of the graph?',
     '(i) the wavelength of the sound wave,', '(ii) the speed of sound in air.']
+# 2018 HL Q9, paper p7 and scheme p12: inline lower-case romans are
+# separately priced (3, 6, 6, 3), not one holistic prose answer.
+INLINE_SENTENCE_MARKERS[('physics', 2018, 'hl')] = [
+    '(i) list the primary colours of light,',
+    '(ii) name a pair of complementary colours of light.',
+    '(iii) a long straight current‐carrying wire,',
+    '(iv) a current‐carrying solenoid.']
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion

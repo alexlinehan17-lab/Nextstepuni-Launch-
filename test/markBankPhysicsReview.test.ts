@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2018-hl': [109, 109, 47, '88fb4b04086dce87adf24edcb7bbf9a6c8d2334db532e9c9d798dfe0974d5eb3',
+    '26dc1c8c662bbc3f05b20f629100f5adc9421cae965f2cad90bc8b4ac20be92a'],
   '2019-ol': [103, 103, 100, 'a514daf3e413fe08c8c149bf71e8ae05e964b1bb179f4eb47f0baa6887fa802e',
     '1956ce2b3c7370135b8156ca4e5f6c860258dbc5da692ca1457b14eeb76b3697'],
   '2019-hl': [112, 112, 42, '8c3dc1203ad17cc96558b9911695a8c921656745c1fdf0cb27828a7d0a90295f',
@@ -77,6 +79,36 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2018 Higher context, optional branches, inline asks and mathematical source layouts', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2018-hl-${id}`)!;
+    expect(card('q6-b-i').questionText).toContain('Calculate his velocity');
+    expect(card('q6-b-i').stem).toContain('10.9 m s⁻¹');
+    expect(card('q6-b-i').stem).toContain('43°');
+    expect(card('q6-b-i').figure?.candId).toBe('physics-2018-hl-q6bi-solution');
+    expect(card('q7-i').figure?.candId).toBe('physics-2018-hl-q7i-solution');
+    expect(card('q6-c-i').rows[0]).toMatchObject({ kind: 'point', verbatim: 'energy cannot be created or destroyed' });
+    expect(card('q4-graph').figure?.candId).toBe('physics-2018-hl-q4-data');
+    expect(card('q4-graph').totalMarks).toBe(15);
+    expect(card('q5-j-quarks').totalMarks).toBe(7);
+    expect(card('q5-j-and-gate').totalMarks).toBe(7);
+    for (const [part, marks] of [['i', 3], ['ii', 6], ['iii', 6], ['iv', 3]] as const) {
+      expect(card(`q9-${part}`).totalMarks).toBe(marks);
+    }
+    expect(card('q9-invisible-spectrum').rows[0]).toMatchObject({
+      kind: 'anyN', group: { claimMax: 2, perOption: 3, options: ['ultraviolet', 'X‐rays', 'gamma rays'] },
+    });
+    expect(card('q10-a-forces').questionText).not.toContain('(12)');
+    for (const part of ['a', 'b']) {
+      expect(deck.filter(c => c.id.startsWith(`phys-2018-hl-q10-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(56);
+    }
+    expect(card('q11-g').stem).toContain('570 km');
+    expect(card('q11-g').stem).toContain('15.1 orbits per day');
+    expect(card('q11-g').stem).toContain('6400 km');
+    expect(card('q12-a-shm').questionFigure?.candId).toBe('physics-2018-hl-q12a-underlined');
+    expect(card('q12-b-nuclei').figure?.candId).toBe('physics-2018-hl-q12b-data');
+  });
+
   it('retains 2019 Ordinary context, printed choices and separately priced sub-asks', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2019-ol-${id}`)!;
     expect(card('q6-viii').stem).toContain('90 kg');
