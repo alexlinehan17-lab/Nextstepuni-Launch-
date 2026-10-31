@@ -94,6 +94,10 @@ import { frenchAudioForPaper } from './frenchAudio';
 import FrenchPaperAudio from './FrenchPaperAudio';
 // The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
 import './viewer-chrome.css';
+import AnswerDesk from './AnswerDesk';
+import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
+import {useAnswerBook} from './useAnswerBook';
+import {loadAttemptFirst,saveAttemptFirst,loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
 
 /** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
 const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
@@ -224,14 +228,27 @@ const Viewer: React.FC<ViewerProps> = ({
   onPosition,
 }) => {
   const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
+  const deskNs = storageNs ?? `anon|${paper.url}`;
+  const book = useAnswerBook(deskNs);
+  const [attemptFirst,setAttemptFirst] = useState(() => loadAttemptFirst(deskNs));
+  const [deskId,setDeskId] = useState(() => focusQuestion ?? loadDeskQuestion(deskNs) ?? `page:${initialPaperPage}`);
+  const [deskCollapsed,setDeskCollapsed] = useState(false);
+  const [inkTool,setInkTool] = useState<InkTool>('move');
+  const [inkView,setInkView] = useState<'first'|'retry'>('retry');
+  const [preferenceProblem,setPreferenceProblem] = useState(false);
+  const inkHistory = useRef<Record<string,InkStroke[][]>>({});
+  const deskRecord = book.get(deskId);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
+  const activeSideRef = useRef(side);
+  activeSideRef.current = side;
+  const readingPoint = useRef<{side: Side; anchor: ZoomAnchor} | null>(null);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
   const [, forceRender] = useState(0);
   const bump = useCallback(() => forceRender(n => n + 1), []);
 
   // ── answers (per-question marking-scheme crops) ──
-  const [answersOn, setAnswersOn] = useState(initialAnswersOn);
+  const [answersOn, setAnswersOn] = useState(() => !loadAttemptFirst(deskNs) && initialAnswersOn);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
@@ -411,12 +428,22 @@ const Viewer: React.FC<ViewerProps> = ({
   const onCloseRef = useRef(onClose);
   const onPositionRef = useRef(onPosition);
   useEffect(() => {
-    onCloseRef.current = onClose;
+    onCloseRef.current = () => {
+      if (book.hasProblems() && !window.confirm('This browser has not saved your latest work. Download a copy from the answer desk before leaving. Leave anyway?')) return;
+      onClose();
+    };
     onPositionRef.current = onPosition;
   });
 
   const activeDoc = side === 'paper' ? paper : scheme!;
   const session = sessions.current[side];
+
+  useEffect(() => {
+    const protect = (event: BeforeUnloadEvent) => { if (book.hasProblems()) {event.preventDefault();event.returnValue='';} };
+    window.addEventListener('beforeunload',protect);
+    return () => window.removeEventListener('beforeunload',protect);
+  // The book methods read stable refs for this mounted paper.
+  }, []);
 
   // ── shared IntersectionObserver (rooted on the scroller) ──
   const ioRef = useRef<IntersectionObserver | null>(null);
@@ -536,11 +563,13 @@ const Viewer: React.FC<ViewerProps> = ({
 
   const initialAnswersStarted = useRef(false);
   useEffect(() => {
-    if (!initialAnswersOn || initialAnswersStarted.current) return;
+    if (attemptFirst || !initialAnswersOn || initialAnswersStarted.current) return;
     initialAnswersStarted.current = true;
     ensureAnswerMap();
     if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
-  }, [initialAnswersOn, ensureAnswerMap, scheme, load]);
+  }, [initialAnswersOn, attemptFirst, ensureAnswerMap, scheme, load]);
+
+  useEffect(() => { if (attemptFirst) ensureAnswerMap(); }, [attemptFirst, ensureAnswerMap]);
 
   // Topics overlay: reuses the answer-map anchors for positions; tags themselves
   // are committed in-bundle, so no extra fetch beyond the anchor map.
@@ -571,6 +600,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // Self-mark (Tier 3): scoring control appears inside the answer reveal. Turning
   // it on ensures the answer chips are available to open a reveal from.
   const toggleSelfMark = useCallback(() => {
+    setAttemptFirst(false); // Explicitly entering the existing marking workflow.
     setSelfMarkOn(on => {
       const next = !on;
       if (next) {
@@ -645,6 +675,7 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   const startLoop = useCallback(() => {
+    setAttemptFirst(false); // Keep the student's default preference for next time.
     ensureAnswerMap();
     setSelfMarkOn(true);
     setAnswersOn(true);
@@ -663,6 +694,7 @@ const Viewer: React.FC<ViewerProps> = ({
   /** Resume a saved loop place — same warm-up as startLoop, but the index and
    *  the wall clock pick up where the student left off. */
   const resumeLoop = useCallback(() => {
+    setAttemptFirst(false);
     const place = resumePlace;
     if (!place) return;
     ensureAnswerMap();
@@ -967,9 +999,20 @@ const Viewer: React.FC<ViewerProps> = ({
     };
     window.addEventListener('keydown', onKey);
     let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    let beforeResize: {side: Side; anchor: ZoomAnchor} | null = null;
     const onResize = () => {
+      if (!resizeTimer) beforeResize = readingPoint.current;
       if (resizeTimer) clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => setEpoch(n => n + 1), 250);
+      resizeTimer = setTimeout(() => {
+        resizeTimer = null;
+        const place = beforeResize;
+        setEpoch(n => n + 1);
+        requestAnimationFrame(() => {
+          if (place && place.side === activeSideRef.current && scrollerRef.current) {
+            restoreZoomAnchor(scrollerRef.current, place.anchor);
+          }
+        });
+      }, 250);
     };
     window.addEventListener('resize', onResize);
     return () => {
@@ -988,7 +1031,9 @@ const Viewer: React.FC<ViewerProps> = ({
     const s = sessions.current[side];
     if (!el || s.state !== 'ready') return;
     s.scrollTop = el.scrollTop;
-    if (side === 'paper') layoutAnchor.current = captureZoomAnchor(el);
+    const anchor = captureZoomAnchor(el);
+    if (anchor) readingPoint.current = {side, anchor};
+    if (side === 'paper') layoutAnchor.current = anchor;
     const kids = el.querySelectorAll<HTMLElement>('[data-page]');
     const mid = el.scrollTop + el.clientHeight / 2;
     let current = 1;
@@ -1102,7 +1147,71 @@ const Viewer: React.FC<ViewerProps> = ({
     onScroll();
   }, [zoom, onScroll]);
 
-  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
+  const deskQuestions = useMemo(() => {
+    const list = answerMap ? printedQuestionAnchors(answerMap.q) : [];
+    const focused = focusQuestion && answerMap?.q.find(q => q.n === focusQuestion);
+    return focused && !list.some(q => q.n === focused.n) ? [focused,...list] : list;
+  },[answerMap,focusQuestion]);
+  const deskQuestion = deskQuestions.find(q => q.n === deskId);
+  const pickDeskQuestion = (id:string) => {
+    setDeskId(id);saveDeskQuestion(deskNs,id);setReveal(null);
+    const q = deskQuestions.find(q => q.n === id);
+    if(q)scrollToQuestion(q);
+    else if(id.startsWith('page:'))jumpToPage(Number(id.slice(5)));
+  };
+  const deskInitialised = useRef(false);
+  useEffect(() => {
+    if(!attemptFirst || deskInitialised.current || session.state!=='ready' || !deskQuestions.length)return;
+    deskInitialised.current=true;
+    // Never move an attempt begun while the question map was loading.
+    if(deskId.startsWith('page:') && hasResponse(deskRecord.draft))return;
+    const selected=deskQuestions.find(q=>q.n===deskId)
+      ?? [...deskQuestions].reverse().find(q=>q.pP<=session.page) ?? deskQuestions[0];
+    setDeskId(selected.n);saveDeskQuestion(deskNs,selected.n);
+    if(session.page<selected.pP || (focusQuestion && selected.n===focusQuestion))scrollToQuestion(selected);
+  },[attemptFirst,deskQuestions,deskId,deskNs,deskRecord.draft,session.state,session.page,focusQuestion,scrollToQuestion]);
+  const toggleAttemptFirst = (on:boolean) => {
+    if(scrollerRef.current)layoutAnchor.current=captureZoomAnchor(scrollerRef.current);
+    if(loop)persistLoopPlace();
+    setLoop(null);setLoopDone(false);setReveal(null);setAnswersOn(false);setToolsOpen(false);
+    if(on)setSelfMarkOn(false);
+    setAttemptFirst(on);setPreferenceProblem(!saveAttemptFirst(deskNs,on));
+  };
+  useLayoutEffect(() => {
+    const el=scrollerRef.current;
+    if(el && layoutAnchor.current)restoreZoomAnchor(el,layoutAnchor.current);
+    setEpoch(n=>n+1);
+  },[attemptFirst,deskCollapsed]);
+  const revealDesk = () => {
+    book.change(deskId,keepFirstAttempt);
+    if(deskQuestion)onReveal(deskQuestion);
+    else if(scheme)setSide('scheme');
+  };
+  const deskSide = (next:Side) => {
+    if(next==='scheme' && attemptFirst)book.change(deskId,keepFirstAttempt);
+    setSide(next);
+  };
+  const editableInk = (r:AnswerRecord) => r.phase==='compare'?r.correctionInk:r.phase==='retry'||r.phase==='done'?r.retry.ink:r.draft.ink;
+  const replaceInk = (r:AnswerRecord,page:number,strokes:InkStroke[]):AnswerRecord => r.phase==='compare'
+    ? {...r,correctionInk:{...r.correctionInk,[page]:strokes}}
+    : {...r,[r.phase==='retry'?'retry':'draft']:{...(r.phase==='retry'?r.retry:r.draft),ink:{...editableInk(r),[page]:strokes}}};
+  const inkHistoryKey = (page:number) => `${deskId}|${deskRecord.phase}|${page}`;
+  const pageInk = (page:number):AnswerInkProps => ({
+    strokes:(deskRecord.phase==='done'&&inkView==='first'?deskRecord.first?.ink[page]:editableInk(deskRecord)[page])??[],
+    base:deskRecord.phase==='compare'?deskRecord.first?.ink[page]:undefined,
+    tool:inkTool, enabled:deskRecord.mode==='ink'&&deskRecord.phase!=='done',correction:deskRecord.phase==='compare',
+    onChange:strokes=>{
+      const key=inkHistoryKey(page);
+      inkHistory.current[key]=[...(inkHistory.current[key]??[]).slice(-29),editableInk(deskRecord)[page]??[]];
+      book.change(deskId,r=>replaceInk(r,page,strokes));
+    },
+  });
+  const undoInk = () => {
+    const previous=inkHistory.current[inkHistoryKey(session.page)]?.pop();
+    if(previous)book.change(deskId,r=>replaceInk(r,session.page,previous));
+  };
+
+  const inlineScheme = !attemptFirst && isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
   // The scheme reads at panel width, so beside the paper it gets half the
   // screen (Oct 2026: a 360px panel set the answers at about 7px).
   const schemeBeside = inlineScheme && isRoomy && Boolean(reveal);
@@ -1204,17 +1313,18 @@ const Viewer: React.FC<ViewerProps> = ({
             </div>
             <div className="pvc-controls">
               {scheme && (
-                <Tabs className="pvc-document" value={side} onValueChange={next => setSide(next as Side)}>
+                <Tabs className="pvc-document" value={side} onValueChange={next => deskSide(next as Side)}>
                   <TabsList aria-label="Paper or marking scheme">
                     <TabsTrigger value="paper">Paper</TabsTrigger>
                     <TabsTrigger value="scheme">Scheme</TabsTrigger>
                   </TabsList>
                 </Tabs>
               )}
+              <label className="pvc-attempt-toggle"><span>Attempt first</span><Switch checked={attemptFirst} onCheckedChange={toggleAttemptFirst} aria-label="Attempt first" /></label>
               {/* Answers — the flagship per-question marking-scheme reveal. A
                   standalone one-tap toggle (not buried in the Tools menu), shown
                   whenever this paper has a verified answer map. */}
-              {side === 'paper' && answersUrl && (
+              {!attemptFirst && side === 'paper' && answersUrl && (
                 <Button
                   className="pvc-answers"
                   onClick={toggleAnswers}
@@ -1254,6 +1364,7 @@ const Viewer: React.FC<ViewerProps> = ({
                           sub="Marking scheme beside each question"
                           on={answersOn}
                           onClick={() => {
+                            setAttemptFirst(false);
                             toggleAnswers();
                             setToolsOpen(false);
                           }}
@@ -1282,10 +1393,10 @@ const Viewer: React.FC<ViewerProps> = ({
                         <ToolRow
                           icon={<Repeat2 />}
                           title="The Full Loop"
-                          sub="Work the paper question by question — attempt, reveal, mark"
+                          sub={resumePlace ? `Resume at question ${resumePlace.idx+1}` : 'Work the paper question by question — attempt, reveal, mark'}
                           on={!!loop}
                           busy={!!loop && answerState === 'loading'}
-                          onClick={startLoop}
+                          onClick={resumePlace ? resumeLoop : startLoop}
                         />
                       )}
                       <ToolRow
@@ -1359,7 +1470,8 @@ const Viewer: React.FC<ViewerProps> = ({
       {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
       </div>}
-      <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
+      {preferenceProblem && <p role="alert" className="px-4 py-2 text-sm">Your choice works for this visit, but this browser could not remember it.</p>}
+      <div className="pt-reader-workspace" data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (
         <div
@@ -1382,7 +1494,8 @@ const Viewer: React.FC<ViewerProps> = ({
                 epoch={epoch}
                 observe={observe}
                 anchors={isWide && (answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
-                showAnswerChip={answersOn}
+                showAnswerChip={!attemptFirst && answersOn}
+                answerInk={attemptFirst && side==='paper' ? pageInk(i+1) : undefined}
                 onReveal={onReveal}
                 topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
                 onTopic={onTopic}
@@ -1448,7 +1561,7 @@ const Viewer: React.FC<ViewerProps> = ({
         </div>
       )}
 
-      {!isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
+      {(!attemptFirst || topicsOn) && !isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
         <MobileQuestionTools
           page={session.page}
           initialQuestion={focusQuestion}
@@ -1459,6 +1572,8 @@ const Viewer: React.FC<ViewerProps> = ({
           onTopic={onTopic}
         />
       )}
+
+      {attemptFirst && side==='paper' && <AnswerDesk title={title} id={deskId} questions={deskQuestions} page={session.page} record={deskRecord} problem={book.problem(deskId)} onChange={update=>book.change(deskId,update)} onQuestion={pickDeskQuestion} onReveal={revealDesk} onHide={()=>setReveal(null)} schemeVisible={reveal?.n===deskId} hasScheme={!!scheme} schemePdf={sessions.current.scheme.pdf} schemeErrored={sessions.current.scheme.state==='error'||sessions.current.scheme.state==='unsupported'} onRetryScheme={()=>load('scheme')} onFullScheme={()=>jumpSchemeToPage(deskQuestion?schemeRegionFor(deskQuestion)[0]?.p??1:1)} inkView={inkView} onInkView={setInkView} tool={inkTool} onTool={setInkTool} onUndo={undoInk} canUndo={!!inkHistory.current[inkHistoryKey(session.page)]?.length} collapsed={deskCollapsed && !isWide} onCollapse={()=>setDeskCollapsed(v=>!v)} />}
 
       {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
         {/* Hidden, not unmounted, while a scheme is open, so the question
@@ -1660,7 +1775,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && !schemeBeside && (
+        {!attemptFirst && reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1740,7 +1855,7 @@ const Viewer: React.FC<ViewerProps> = ({
       })()}
 
       {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
-      {resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
+      {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
         <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
           <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3">
             <div className="flex items-start gap-3">
@@ -2013,6 +2128,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 onJump={n => {
                   const q = answerMap?.q.find(x => x.n === n);
                   setTriageOpen(false);
+                  if (attemptFirst && q) {setDeskId(n);saveDeskQuestion(deskNs,n);setReveal(null);}
                   if (q) requestAnimationFrame(() => {
                     const el = scrollerRef.current;
                     const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
@@ -2793,6 +2909,7 @@ const Page: React.FC<{
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
   anchors?: PaperAnswerQuestion[];
   showAnswerChip?: boolean;
+  answerInk?: AnswerInkProps;
   onReveal?: (q: PaperAnswerQuestion) => void;
   topicInfo?: Map<string, { subtopicId: string; label: string; yearsWith: number; totalYears: number }> | null;
   onTopic?: (n: string) => void;
@@ -2800,7 +2917,7 @@ const Page: React.FC<{
   paceInfo?: { minsPerMark: number | null; totalMarks: number };
   commands?: CommandToken[];
   onCommand?: (c: CommandToken) => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, answerInk, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -2882,6 +2999,7 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {answerInk && <AnswerInk {...answerInk} aspect={aspect??1.414} />}
       {/* Per-question rails — fractional top rides zoom + virtualisation. The
           marking-scheme action rides the right edge; topic context the left. */}
       {anchors?.map(q => {
@@ -2999,4 +3117,6 @@ const Page: React.FC<{
 });
 Page.displayName = 'PaperTrailPage';
 
-export default Viewer;
+// A changed paper/account is a new document session, with isolated authored work.
+const PaperViewer:React.FC<ViewerProps> = props => <Viewer key={`${props.storageNs??props.paper.url}|${props.scheme?.url??''}`} {...props}/>;
+export default PaperViewer;

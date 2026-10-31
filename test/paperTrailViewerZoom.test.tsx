@@ -14,12 +14,12 @@
 
 import React from 'react';
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
-import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
+import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import Viewer from '../components/PaperTrail/Viewer';
 import type * as PdfjsLoader from '../components/PaperTrail/pdfjsLoader';
 
 const PAGES = 40;
-const VIEW_W = 1000;
+let VIEW_W = 1000;
 const VIEW_H = 800;
 const PAD_Y = 12; // py-3 on the content wrapper
 const PAD_X = 8; // px-2
@@ -130,6 +130,7 @@ afterAll(() => {
     else delete (proto as Record<string, unknown>)[key];
   }
 });
+beforeEach(() => { VIEW_W = 1000; localStorage.clear(); });
 afterEach(cleanup);
 
 /** The page a student sees in the middle of the reader, from the model. */
@@ -145,6 +146,19 @@ const pageInMiddle = (reader: HTMLElement) => {
 const settle = () => act(() => new Promise(resolve => setTimeout(resolve, 20)));
 
 describe('Paper Trail viewer zoom', () => {
+  it('keeps the reading point when the viewport changes to phone width', async () => {
+    render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
+    const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
+    await waitFor(() => expect(position(reader).top).toBeGreaterThan(0));
+    await settle();
+    VIEW_W = 390;
+    fireEvent(window, new Event('resize'));
+    await act(() => new Promise(resolve => setTimeout(resolve, 350)));
+    await settle();
+    expect(pageInMiddle(reader)).toBe(14);
+    expect(reader).toHaveAttribute('aria-label', `Paper, page 14 of ${PAGES}`);
+  });
+
   it('keeps the page being read, and the counter, through every zoom step', async () => {
     render(<Viewer title="Agricultural Science" paper={{ url: '/paper.pdf', label: 'Paper', bytes: 0 }} initialPaperPage={14} onClose={() => {}} />);
     const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
