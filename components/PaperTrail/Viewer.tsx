@@ -56,8 +56,6 @@ import KobraScope, {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  Progress,
-  ProgressLabel,
   Spinner,
   Switch,
   Tabs,
@@ -94,6 +92,10 @@ import { frenchAudioForPaper } from './frenchAudio';
 import FrenchPaperAudio from './FrenchPaperAudio';
 // The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
 import './viewer-chrome.css';
+import AnswerDesk from './AnswerDesk';
+import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
+import {useAnswerBook} from './useAnswerBook';
+import {loadAttemptFirst,saveAttemptFirst,loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
 
 /** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
 const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
@@ -224,14 +226,33 @@ const Viewer: React.FC<ViewerProps> = ({
   onPosition,
 }) => {
   const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
+  const deskNs = storageNs ?? `anon|${paper.url}`;
+  const book = useAnswerBook(deskNs);
+  const [attemptFirst,setAttemptFirst] = useState(() => loadAttemptFirst(deskNs));
+  const [deskId,setDeskId] = useState(() => focusQuestion ?? loadDeskQuestion(deskNs) ?? `page:${initialPaperPage}`);
+  const [deskCollapsed,setDeskCollapsed] = useState(false);
+  const [deskWidth,setDeskWidth] = useState(43);
+  const [deskHeight,setDeskHeight] = useState(49);
+  const [deskResizing,setDeskResizing] = useState(false);
+  const workspaceRef = useRef<HTMLDivElement | null>(null);
+  const deskResizeAnchor = useRef<ZoomAnchor | null>(null);
+  const deskDrag = useRef<{pointer:number;end:number;extent:number;wide:boolean} | null>(null);
+  const [inkTool,setInkTool] = useState<InkTool>('move');
+  const [inkView,setInkView] = useState<'first'|'retry'>('retry');
+  const [preferenceProblem,setPreferenceProblem] = useState(false);
+  const inkHistory = useRef<Record<string,InkStroke[][]>>({});
+  const deskRecord = book.get(deskId);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
+  const activeSideRef = useRef(side);
+  activeSideRef.current = side;
+  const readingPoint = useRef<{side: Side; anchor: ZoomAnchor} | null>(null);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
   const [, forceRender] = useState(0);
   const bump = useCallback(() => forceRender(n => n + 1), []);
 
   // ── answers (per-question marking-scheme crops) ──
-  const [answersOn, setAnswersOn] = useState(initialAnswersOn);
+  const [answersOn, setAnswersOn] = useState(() => !loadAttemptFirst(deskNs) && initialAnswersOn);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
@@ -411,12 +432,22 @@ const Viewer: React.FC<ViewerProps> = ({
   const onCloseRef = useRef(onClose);
   const onPositionRef = useRef(onPosition);
   useEffect(() => {
-    onCloseRef.current = onClose;
+    onCloseRef.current = () => {
+      if (book.hasProblems() && !window.confirm('This browser has not saved your latest work. Download a copy from the answer desk before leaving. Leave anyway?')) return;
+      onClose();
+    };
     onPositionRef.current = onPosition;
   });
 
   const activeDoc = side === 'paper' ? paper : scheme!;
   const session = sessions.current[side];
+
+  useEffect(() => {
+    const protect = (event: BeforeUnloadEvent) => { if (book.hasProblems()) {event.preventDefault();event.returnValue='';} };
+    window.addEventListener('beforeunload',protect);
+    return () => window.removeEventListener('beforeunload',protect);
+  // The book methods read stable refs for this mounted paper.
+  }, []);
 
   // ── shared IntersectionObserver (rooted on the scroller) ──
   const ioRef = useRef<IntersectionObserver | null>(null);
@@ -536,11 +567,13 @@ const Viewer: React.FC<ViewerProps> = ({
 
   const initialAnswersStarted = useRef(false);
   useEffect(() => {
-    if (!initialAnswersOn || initialAnswersStarted.current) return;
+    if (attemptFirst || !initialAnswersOn || initialAnswersStarted.current) return;
     initialAnswersStarted.current = true;
     ensureAnswerMap();
     if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
-  }, [initialAnswersOn, ensureAnswerMap, scheme, load]);
+  }, [initialAnswersOn, attemptFirst, ensureAnswerMap, scheme, load]);
+
+  useEffect(() => { if (attemptFirst) ensureAnswerMap(); }, [attemptFirst, ensureAnswerMap]);
 
   // Topics overlay: reuses the answer-map anchors for positions; tags themselves
   // are committed in-bundle, so no extra fetch beyond the anchor map.
@@ -571,6 +604,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // Self-mark (Tier 3): scoring control appears inside the answer reveal. Turning
   // it on ensures the answer chips are available to open a reveal from.
   const toggleSelfMark = useCallback(() => {
+    setAttemptFirst(false); // Explicitly entering the existing marking workflow.
     setSelfMarkOn(on => {
       const next = !on;
       if (next) {
@@ -645,6 +679,7 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   const startLoop = useCallback(() => {
+    setAttemptFirst(false); // Keep the student's default preference for next time.
     ensureAnswerMap();
     setSelfMarkOn(true);
     setAnswersOn(true);
@@ -663,6 +698,7 @@ const Viewer: React.FC<ViewerProps> = ({
   /** Resume a saved loop place — same warm-up as startLoop, but the index and
    *  the wall clock pick up where the student left off. */
   const resumeLoop = useCallback(() => {
+    setAttemptFirst(false);
     const place = resumePlace;
     if (!place) return;
     ensureAnswerMap();
@@ -950,9 +986,9 @@ const Viewer: React.FC<ViewerProps> = ({
         onCloseRef.current();
       }
       if (e.key === 'Tab' && rootRef.current) {
-        const focusables = rootRef.current.querySelectorAll<HTMLElement>(
-          'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])',
-        );
+        const focusables = Array.from(rootRef.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])',
+        )).filter(el=>!el.closest('[hidden]') && el.getClientRects().length>0);
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -967,9 +1003,20 @@ const Viewer: React.FC<ViewerProps> = ({
     };
     window.addEventListener('keydown', onKey);
     let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    let beforeResize: {side: Side; anchor: ZoomAnchor} | null = null;
     const onResize = () => {
+      if (!resizeTimer) beforeResize = readingPoint.current;
       if (resizeTimer) clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => setEpoch(n => n + 1), 250);
+      resizeTimer = setTimeout(() => {
+        resizeTimer = null;
+        const place = beforeResize;
+        setEpoch(n => n + 1);
+        requestAnimationFrame(() => {
+          if (place && place.side === activeSideRef.current && scrollerRef.current) {
+            restoreZoomAnchor(scrollerRef.current, place.anchor);
+          }
+        });
+      }, 250);
     };
     window.addEventListener('resize', onResize);
     return () => {
@@ -988,7 +1035,9 @@ const Viewer: React.FC<ViewerProps> = ({
     const s = sessions.current[side];
     if (!el || s.state !== 'ready') return;
     s.scrollTop = el.scrollTop;
-    if (side === 'paper') layoutAnchor.current = captureZoomAnchor(el);
+    const anchor = captureZoomAnchor(el);
+    if (anchor) readingPoint.current = {side, anchor};
+    if (side === 'paper') layoutAnchor.current = anchor;
     const kids = el.querySelectorAll<HTMLElement>('[data-page]');
     const mid = el.scrollTop + el.clientHeight / 2;
     let current = 1;
@@ -1102,7 +1151,125 @@ const Viewer: React.FC<ViewerProps> = ({
     onScroll();
   }, [zoom, onScroll]);
 
-  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
+  const deskQuestions = useMemo(() => {
+    const list = answerMap ? printedQuestionAnchors(answerMap.q) : [];
+    const focused = focusQuestion && answerMap?.q.find(q => q.n === focusQuestion);
+    if(!focused || list.some(q=>q.n===focused.n))return list;
+    // A focused sub-question belongs in its physical place, so Next never
+    // sends a student back to the first question of the paper.
+    const after=list.findIndex(q=>q.pP>focused.pP || (q.pP===focused.pP && q.pY[0]>focused.pY[0]));
+    const at=after<0 ? list.length : after;
+    return [...list.slice(0,at),focused,...list.slice(at)];
+  },[answerMap,focusQuestion]);
+  const deskQuestion = deskQuestions.find(q => q.n === deskId);
+  const pickDeskQuestion = (id:string) => {
+    setDeskId(id);saveDeskQuestion(deskNs,id);setReveal(null);
+    const q = deskQuestions.find(q => q.n === id);
+    if(q)scrollToQuestion(q);
+    else if(id.startsWith('page:'))jumpToPage(Number(id.slice(5)));
+    requestAnimationFrame(()=>{
+      const drawer=workspaceRef.current?.querySelector<HTMLElement>('.ad-pane');
+      drawer?.scrollTo({top:0});
+      drawer?.querySelector<HTMLSelectElement>('#answer-desk-question')?.focus({preventScroll:true});
+    });
+  };
+  const deskInitialised = useRef(false);
+  useEffect(() => {
+    if(!attemptFirst || deskInitialised.current || session.state!=='ready' || !deskQuestions.length)return;
+    deskInitialised.current=true;
+    // Never move an attempt begun while the question map was loading.
+    if(deskId.startsWith('page:') && hasResponse(deskRecord.draft))return;
+    const selected=deskQuestions.find(q=>q.n===deskId)
+      ?? deskQuestions.find(q=>q.pP===session.page)
+      ?? [...deskQuestions].reverse().find(q=>q.pP<session.page) ?? deskQuestions[0];
+    setDeskId(selected.n);saveDeskQuestion(deskNs,selected.n);
+    if(session.page<selected.pP || (focusQuestion && selected.n===focusQuestion))scrollToQuestion(selected);
+  },[attemptFirst,deskQuestions,deskId,deskNs,deskRecord.draft,session.state,session.page,focusQuestion,scrollToQuestion]);
+  const toggleAttemptFirst = (on:boolean) => {
+    if(scrollerRef.current)layoutAnchor.current=captureZoomAnchor(scrollerRef.current);
+    if(loop)persistLoopPlace();
+    setLoop(null);setLoopDone(false);setReveal(null);setAnswersOn(false);setToolsOpen(false);
+    if(on)setSelfMarkOn(false);
+    setAttemptFirst(on);setPreferenceProblem(!saveAttemptFirst(deskNs,on));
+  };
+  // Keep the same point on the paper while changing the drawer's footprint.
+  const captureDeskPlace = () => {
+    deskResizeAnchor.current=scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+  };
+  const deskExtent = () => {
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    return (isWide ? rect?.width : rect?.height) || (isWide ? window.innerWidth : window.innerHeight);
+  };
+  const deskBounds = (extent:number,wide:boolean) => ({
+    min: Math.min(wide ? 320 : 160,extent*.45)/extent*100,
+    max: Math.max(50,Math.min(wide ? 70 : 75,(extent-(wide ? 290 : 150))/extent*100)),
+  });
+  const resizeDesk = (percent:number,extent=deskExtent(),wide=isWide) => {
+    const {min,max}=deskBounds(extent,wide);
+    (wide ? setDeskWidth : setDeskHeight)(Math.max(min,Math.min(max,percent)));
+  };
+  const startDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    if(e.button!==0)return;
+    e.preventDefault();captureDeskPlace();
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    if(!rect)return;
+    deskDrag.current={pointer:e.pointerId,end:isWide ? rect.right : rect.bottom,extent:isWide ? rect.width : rect.height,wide:isWide};
+    e.currentTarget.setPointerCapture(e.pointerId);setDeskResizing(true);
+  };
+  const moveDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    const drag=deskDrag.current;
+    if(!drag || drag.pointer!==e.pointerId || !drag.extent)return;
+    resizeDesk((drag.end-(drag.wide ? e.clientX : e.clientY))/drag.extent*100,drag.extent,drag.wide);
+  };
+  const endDeskResize = () => {deskDrag.current=null;setDeskResizing(false);};
+  const keyDeskResize = (e:React.KeyboardEvent<HTMLDivElement>) => {
+    const grow=isWide ? 'ArrowLeft' : 'ArrowUp';
+    const shrink=isWide ? 'ArrowRight' : 'ArrowDown';
+    if(![grow,shrink,'Home','End','Enter'].includes(e.key))return;
+    e.preventDefault();captureDeskPlace();
+    if(e.key==='Enter'){setDeskCollapsed(true);requestAnimationFrame(()=>workspaceRef.current?.querySelector<HTMLButtonElement>('.ad-collapse')?.focus());return;}
+    const extent=deskExtent(),bounds=deskBounds(extent,isWide);
+    const value=deskSizePercent;
+    resizeDesk(e.key==='Home' ? bounds.min : e.key==='End' ? bounds.max : value+(e.key===grow ? 1 : -1)*(e.shiftKey ? 50 : 20)/extent*100);
+  };
+  useLayoutEffect(() => {
+    const el=scrollerRef.current;
+    const anchor=deskResizeAnchor.current??layoutAnchor.current;
+    if(el && anchor)restoreZoomAnchor(el,anchor);
+    if(!deskResizing){deskResizeAnchor.current=null;setEpoch(n=>n+1);}
+  },[attemptFirst,deskCollapsed,deskWidth,deskHeight,deskResizing]);
+  const revealDesk = () => {
+    book.change(deskId,keepFirstAttempt);
+    if(deskQuestion)onReveal(deskQuestion);
+    else if(scheme)setSide('scheme');
+  };
+  const deskSide = (next:Side) => {
+    if(next==='scheme' && attemptFirst)book.change(deskId,keepFirstAttempt);
+    setSide(next);
+  };
+  const editableInk = (r:AnswerRecord) => r.phase==='compare'?r.correctionInk:r.phase==='retry'||r.phase==='done'?r.retry.ink:r.draft.ink;
+  const replaceInk = (r:AnswerRecord,page:number,strokes:InkStroke[]):AnswerRecord => r.phase==='compare'
+    ? {...r,correctionInk:{...r.correctionInk,[page]:strokes}}
+    : {...r,[r.phase==='retry'?'retry':'draft']:{...(r.phase==='retry'?r.retry:r.draft),ink:{...editableInk(r),[page]:strokes}}};
+  const inkHistoryKey = (page:number) => `${deskId}|${deskRecord.phase}|${page}`;
+  const pageInk = (page:number):AnswerInkProps => ({
+    strokes:(deskRecord.phase==='done'&&inkView==='first'?deskRecord.first?.ink[page]:editableInk(deskRecord)[page])??[],
+    base:deskRecord.phase==='compare'?deskRecord.first?.ink[page]:undefined,
+    tool:inkTool, enabled:deskRecord.mode==='ink'&&deskRecord.phase!=='done',correction:deskRecord.phase==='compare',
+    onChange:strokes=>{
+      const key=inkHistoryKey(page);
+      inkHistory.current[key]=[...(inkHistory.current[key]??[]).slice(-29),editableInk(deskRecord)[page]??[]];
+      book.change(deskId,r=>replaceInk(r,page,strokes));
+    },
+  });
+  const undoInk = () => {
+    const previous=inkHistory.current[inkHistoryKey(session.page)]?.pop();
+    if(previous)book.change(deskId,r=>replaceInk(r,session.page,previous));
+  };
+
+  const deskSizeBounds=deskBounds(deskExtent(),isWide);
+  const deskSizePercent=Math.max(deskSizeBounds.min,Math.min(deskSizeBounds.max,isWide ? deskWidth : deskHeight));
+  const inlineScheme = !attemptFirst && isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
   // The scheme reads at panel width, so beside the paper it gets half the
   // screen (Oct 2026: a 360px panel set the answers at about 7px).
   const schemeBeside = inlineScheme && isRoomy && Boolean(reveal);
@@ -1189,6 +1356,7 @@ const Viewer: React.FC<ViewerProps> = ({
       <KobraScope className="nsu-paper-viewer">
         <div ref={headerRef} tabIndex={-1} className="pvc-top">
           <div className="pvc-bar">
+            <div className="pvc-left">
             <Button
               variant="outline"
               size="icon"
@@ -1202,19 +1370,21 @@ const Viewer: React.FC<ViewerProps> = ({
               <p className="pvc-title">{title}</p>
               {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
             </div>
-            <div className="pvc-controls">
               {scheme && (
-                <Tabs className="pvc-document" value={side} onValueChange={next => setSide(next as Side)}>
+                <Tabs className="pvc-document" value={side} onValueChange={next => deskSide(next as Side)}>
                   <TabsList aria-label="Paper or marking scheme">
                     <TabsTrigger value="paper">Paper</TabsTrigger>
                     <TabsTrigger value="scheme">Scheme</TabsTrigger>
                   </TabsList>
                 </Tabs>
               )}
+            </div>
+            <div className="pvc-controls">
+              <label className="pvc-attempt-toggle"><span>Attempt first</span><Switch checked={attemptFirst} onCheckedChange={toggleAttemptFirst} aria-label="Attempt first" /></label>
               {/* Answers — the flagship per-question marking-scheme reveal. A
                   standalone one-tap toggle (not buried in the Tools menu), shown
                   whenever this paper has a verified answer map. */}
-              {side === 'paper' && answersUrl && (
+              {!attemptFirst && side === 'paper' && answersUrl && (
                 <Button
                   className="pvc-answers"
                   onClick={toggleAnswers}
@@ -1224,6 +1394,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   <span className="pvc-answers-mark" aria-hidden="true" />Answers
                 </Button>
               )}
+              <div className="pvc-actions">
               {/* The Kobra menu dismisses itself on an outside tap and on
                   Escape; it stays controlled so every tool can still close it. */}
               {side === 'paper' && (
@@ -1254,6 +1425,7 @@ const Viewer: React.FC<ViewerProps> = ({
                           sub="Marking scheme beside each question"
                           on={answersOn}
                           onClick={() => {
+                            setAttemptFirst(false);
                             toggleAnswers();
                             setToolsOpen(false);
                           }}
@@ -1282,10 +1454,10 @@ const Viewer: React.FC<ViewerProps> = ({
                         <ToolRow
                           icon={<Repeat2 />}
                           title="The Full Loop"
-                          sub="Work the paper question by question — attempt, reveal, mark"
+                          sub={resumePlace ? `Resume at question ${resumePlace.idx+1}` : 'Work the paper question by question — attempt, reveal, mark'}
                           on={!!loop}
                           busy={!!loop && answerState === 'loading'}
-                          onClick={startLoop}
+                          onClick={resumePlace ? resumeLoop : startLoop}
                         />
                       )}
                       <ToolRow
@@ -1333,6 +1505,51 @@ const Viewer: React.FC<ViewerProps> = ({
                           onClick={openFormulae}
                         />
                       )}
+          {/* Minute targets are writing-speed sensitive — say whose speed they
+              assume, with the one-line route into the 2-min calibration. */}
+          {paceOn && side === 'paper' && timing && hasAnyTokens && (
+            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
+              {wpmCal ? (
+                <>
+                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Redo
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span>Minute targets assume a typical writing speed</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Personalise in 2 min
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
+          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
+            <div className="max-w-3xl mx-auto mb-2">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
+                <span className="text-[9px] text-zinc-400">tap a page</span>
+              </div>
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+                {Array.from({ length: session.numPages }, (_, i) => {
+                  const v = marksByPage.map.get(i + 1) ?? 0;
+                  const intensity = v / marksByPage.max;
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => jumpToPage(i + 1)}
+                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
+                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          )}
                       {scanState === 'error' && (
                         <p className="pvc-menu-note">
                           Couldn’t read this paper’s text layer — overlays unavailable.
@@ -1342,7 +1559,33 @@ const Viewer: React.FC<ViewerProps> = ({
                   </DropdownMenuContent>
                 </DropdownMenu>
               )}
+            <div className="pvc-zoom">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(-1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[0]}
+                aria-label="Zoom out"
+              >
+                <ZoomOut aria-hidden="true" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
+                aria-label="Zoom in"
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
             </div>
+            <form className="pvc-page-jump" aria-label="Page navigation" onSubmit={e=>{e.preventDefault();if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}}>
+              <input type="number" min={1} max={session.numPages||1} disabled={session.state!=='ready'} value={scrubbing??session.page} aria-label="Go to page" onChange={e=>setScrubbing(e.target.value ? Number(e.target.value) : 1)} onBlur={()=>{if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}} />
+              <span aria-hidden="true">/ {session.numPages||'—'}</span>
+              <span className="pvc-sr" role="status">Page {session.page} of {session.numPages}</span>
+            </form>
             <a
               href={activeDoc.url}
               target="_blank"
@@ -1352,6 +1595,8 @@ const Viewer: React.FC<ViewerProps> = ({
             >
               <Download aria-hidden="true" />
             </a>
+            </div>
+            </div>
           </div>
         </div>
       </KobraScope>
@@ -1359,7 +1604,8 @@ const Viewer: React.FC<ViewerProps> = ({
       {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
       </div>}
-      <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
+      {preferenceProblem && <p role="alert" className="px-4 py-2 text-sm">Your choice works for this visit, but this browser could not remember it.</p>}
+      <div ref={workspaceRef} className="pt-reader-workspace" style={{'--ad-size':`${deskSizePercent}%`} as React.CSSProperties} data-resizing={deskResizing||undefined} data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (
         <div
@@ -1382,7 +1628,8 @@ const Viewer: React.FC<ViewerProps> = ({
                 epoch={epoch}
                 observe={observe}
                 anchors={isWide && (answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
-                showAnswerChip={answersOn}
+                showAnswerChip={!attemptFirst && answersOn}
+                answerInk={attemptFirst && side==='paper' ? pageInk(i+1) : undefined}
                 onReveal={onReveal}
                 topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
                 onTopic={onTopic}
@@ -1448,7 +1695,7 @@ const Viewer: React.FC<ViewerProps> = ({
         </div>
       )}
 
-      {!isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
+      {(!attemptFirst || topicsOn) && !isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
         <MobileQuestionTools
           page={session.page}
           initialQuestion={focusQuestion}
@@ -1460,6 +1707,18 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
+      {attemptFirst && side==='paper' && !deskCollapsed && <div
+        className="ad-resize" role="separator" tabIndex={0} aria-label="Resize answer desk"
+        aria-orientation={isWide ? 'vertical' : 'horizontal'} aria-controls="paper-answer-drawer"
+        aria-valuenow={Math.round(deskSizePercent)}
+        aria-valuemin={Math.round(deskSizeBounds.min)} aria-valuemax={Math.round(deskSizeBounds.max)}
+        aria-valuetext={`${Math.round(deskSizePercent)} percent of the workspace`}
+        title="Drag to resize. Use arrow keys for smaller adjustments, or double-click to reset."
+        onPointerDown={startDeskResize} onPointerMove={moveDeskResize} onPointerUp={endDeskResize} onPointerCancel={endDeskResize}
+        onKeyDown={keyDeskResize} onDoubleClick={()=>{captureDeskPlace();resizeDesk(isWide ? 43 : 49);}}
+      ><span/></div>}
+      {attemptFirst && side==='paper' && <AnswerDesk title={title} id={deskId} questions={deskQuestions} page={session.page} record={deskRecord} problem={book.problem(deskId)} onChange={update=>book.change(deskId,update)} onQuestion={pickDeskQuestion} onReveal={revealDesk} onHide={()=>setReveal(null)} schemeVisible={reveal?.n===deskId} hasScheme={!!scheme} schemePdf={sessions.current.scheme.pdf} schemeErrored={sessions.current.scheme.state==='error'||sessions.current.scheme.state==='unsupported'} onRetryScheme={()=>load('scheme')} onFullScheme={()=>jumpSchemeToPage(deskQuestion?schemeRegionFor(deskQuestion)[0]?.p??1:1)} inkView={inkView} onInkView={setInkView} tool={inkTool} onTool={setInkTool} onUndo={undoInk} canUndo={!!inkHistory.current[inkHistoryKey(session.page)]?.length} wide={isWide} collapsed={deskCollapsed} onCollapse={()=>{captureDeskPlace();setDeskCollapsed(v=>!v);}} />}
+
       {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
         {/* Hidden, not unmounted, while a scheme is open, so the question
             picker keeps its place for when the scheme closes. */}
@@ -1470,132 +1729,6 @@ const Viewer: React.FC<ViewerProps> = ({
         {schemeBeside && schemeContent}
       </aside>}
       </div>
-      {/* Footer: zoom + page position, Kobra chrome (viewer-chrome.css). */}
-      {session.state === 'ready' && (
-        <KobraScope className="nsu-paper-viewer">
-        <div className="pvc-bottom">
-          {/* Minute targets are writing-speed sensitive — say whose speed they
-              assume, with the one-line route into the 2-min calibration. */}
-          {paceOn && side === 'paper' && timing && hasAnyTokens && (
-            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
-              {wpmCal ? (
-                <>
-                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
-                    Redo
-                  </button>
-                </>
-              ) : (
-                <>
-                  <span>Minute targets assume a typical writing speed</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
-                    Personalise in 2 min
-                  </button>
-                </>
-              )}
-            </div>
-          )}
-          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
-          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
-            <div className="max-w-3xl mx-auto mb-2">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
-                <span className="text-[9px] text-zinc-400">tap a page</span>
-              </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-                {Array.from({ length: session.numPages }, (_, i) => {
-                  const v = marksByPage.map.get(i + 1) ?? 0;
-                  const intensity = v / marksByPage.max;
-                  return (
-                    <button
-                      key={i}
-                      onClick={() => jumpToPage(i + 1)}
-                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
-                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
-                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
-          <div className="pvc-pagebar">
-            <div className="pvc-zoom">
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(-1)}
-                disabled={zoom === ZOOM_STEPS[0]}
-                aria-label="Zoom out"
-              >
-                <ZoomOut aria-hidden="true" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(1)}
-                disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
-                aria-label="Zoom in"
-              >
-                <ZoomIn aria-hidden="true" />
-              </Button>
-            </div>
-            <div className="pvc-position">
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => jumpToPage(session.page - 1)}
-                disabled={session.page <= 1}
-                aria-label="Previous page"
-              >
-                <ChevronLeft aria-hidden="true" />
-              </Button>
-              <PagePosition
-                page={scrubbing ?? session.page}
-                numPages={session.numPages}
-                scrubber={
-                  // More than three pages: drag (or arrow-key) to any page,
-                  // landing on release, as the range always did.
-                  session.numPages > 3 ? (
-                    <input
-                      type="range"
-                      min={1}
-                      max={session.numPages}
-                      value={scrubbing ?? session.page}
-                      onChange={e => setScrubbing(Number(e.target.value))}
-                      onPointerUp={() => {
-                        if (scrubbing != null) jumpToPage(scrubbing);
-                        setScrubbing(null);
-                      }}
-                      onKeyUp={() => {
-                        if (scrubbing != null) jumpToPage(scrubbing);
-                        setScrubbing(null);
-                      }}
-                      aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
-                      className="pvc-range"
-                    />
-                  ) : null
-                }
-              />
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => jumpToPage(session.page + 1)}
-                disabled={session.page >= session.numPages}
-                aria-label="Next page"
-              >
-                <ChevronRight aria-hidden="true" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        </KobraScope>
-      )}
-
       {/* Status toasts and notices, where the floating status pills sat. */}
       <KobraScope className="nsu-paper-viewer">
         <div className="pvc-toasts">
@@ -1660,7 +1793,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && !schemeBeside && (
+        {!attemptFirst && reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1740,7 +1873,7 @@ const Viewer: React.FC<ViewerProps> = ({
       })()}
 
       {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
-      {resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
+      {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
         <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
           <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3">
             <div className="flex items-start gap-3">
@@ -2013,6 +2146,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 onJump={n => {
                   const q = answerMap?.q.find(x => x.n === n);
                   setTriageOpen(false);
+                  if (attemptFirst && q) {setDeskId(n);saveDeskQuestion(deskNs,n);setReveal(null);}
                   if (q) requestAnimationFrame(() => {
                     const el = scrollerRef.current;
                     const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
@@ -2345,33 +2479,6 @@ const ToolRow: React.FC<{
     </DropdownMenuItem>
   );
 };
-
-// ─── page position ──────────────────────────────────────────
-
-/** Where the reader is: a serif page count over a Kobra Progress (the runtime
- *  ships no Slider). When a page range input comes with it, that input is the
- *  control, laid over the bar, and the progress is its picture. */
-const PagePosition: React.FC<{ page: number; numPages: number; scrubber: React.ReactNode }> = ({
-  page,
-  numPages,
-  scrubber,
-}) => (
-  <div className="pvc-scrub">
-    <Progress
-      className="pvc-progress"
-      // The fill ends under the range thumb: page 1 at the start, the last page at the end.
-      value={numPages > 1 ? ((page - 1) / (numPages - 1)) * 100 : 100}
-      getAriaValueText={() => `Page ${page} of ${numPages}`}
-      aria-hidden={scrubber ? true : undefined}
-    >
-      <ProgressLabel className="pvc-page-count">
-        <span className="pvc-sr">Page </span>
-        {page} <span className="pvc-of">of</span> {numPages}
-      </ProgressLabel>
-    </Progress>
-    {scrubber}
-  </div>
-);
 
 // ─── status toasts ──────────────────────────────────────────
 
@@ -2793,6 +2900,7 @@ const Page: React.FC<{
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
   anchors?: PaperAnswerQuestion[];
   showAnswerChip?: boolean;
+  answerInk?: AnswerInkProps;
   onReveal?: (q: PaperAnswerQuestion) => void;
   topicInfo?: Map<string, { subtopicId: string; label: string; yearsWith: number; totalYears: number }> | null;
   onTopic?: (n: string) => void;
@@ -2800,7 +2908,7 @@ const Page: React.FC<{
   paceInfo?: { minsPerMark: number | null; totalMarks: number };
   commands?: CommandToken[];
   onCommand?: (c: CommandToken) => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, answerInk, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -2882,6 +2990,7 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {answerInk && <AnswerInk {...answerInk} aspect={aspect??1.414} />}
       {/* Per-question rails — fractional top rides zoom + virtualisation. The
           marking-scheme action rides the right edge; topic context the left. */}
       {anchors?.map(q => {
@@ -2999,4 +3108,6 @@ const Page: React.FC<{
 });
 Page.displayName = 'PaperTrailPage';
 
-export default Viewer;
+// A changed paper/account is a new document session, with isolated authored work.
+const PaperViewer:React.FC<ViewerProps> = props => <Viewer key={`${props.storageNs??props.paper.url}|${props.scheme?.url??''}`} {...props}/>;
+export default PaperViewer;
