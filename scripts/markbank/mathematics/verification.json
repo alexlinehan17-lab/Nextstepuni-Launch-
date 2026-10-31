@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and nine deferred editions; seven indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 4853,
-  "reviewedTasks": 4853,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and ten deferred editions; six indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 4898,
+  "reviewedTasks": 4898,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2023 deferred Higher Paper 1.",
+  "productionBuild": "Passed on 2026-10-31 through 2023 deferred Higher Paper 2.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2023 Higher deferred Paper 2",
-    "status": "2023 Higher deferred Paper 1 complete and verified; next is the independent visual review of 2023 Higher Paper 2.",
-    "remainingEnglishDeferredPapers": 7,
+    "paper": "2023 Ordinary deferred Paper 1",
+    "status": "2023 Higher deferred Paper 2 complete and verified; next is the independent visual review of 2023 Ordinary Paper 1.",
+    "remainingEnglishDeferredPapers": 6,
     "irishEditionReview": "Deferred by Alex on 2026-10-31; not part of the current completion scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -8713,5 +8713,102 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 44 cards byte for byte."
+  },
+  "deferred2023higherPaper2": {
+    "date": "2026-10-31",
+    "paper": "2023 Higher deferred Paper 2",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "reviewedTasks": 45,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "runtimeCards": 4898,
+    "runtimeByLevel": {
+      "higher": 1823,
+      "ordinary": 1938,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 121,
+    "previousAuthoredCardsUnchanged": 4854,
+    "previousDeferredImagesUnchanged": 772,
+    "inspectedImages": 90,
+    "workedSupplements": [
+      "Q4(a)(i): complete sine addition proof",
+      "Q9(d): five-share proportion bar and final 3/5 answer",
+      "Q10(c): properly typeset hypothesis test with critical values and precise conclusion"
+    ],
+    "sourceCorrections": [
+      "Q9(c)(i)\u2013(ii) retained as one 20D task; erroneous extra summary allocation excluded in favour of the detailed scheme and printed question total.",
+      "Paper 2 bands 15C (0,5,10,15) and 20D (0,6,12,17,20) retained.",
+      "Sign, logarithmic inequality, discarded root and repeated-branch errors explained; official source remains visible.",
+      "The 11:00 equal-distance answer states its after-both-cars-pass-O assumption; the earlier solution is explained conditionally."
+    ],
+    "reviewedAtlasQuestionPlacements": 1144,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 6,
+    "irishEditionReview": "Deferred at user request; not part of the current completion scope.",
+    "tests": {
+      "javascriptPassed": 426,
+      "pythonPassed": 20,
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0,
+      "independentNumericalCrossChecks": "passed"
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2023-hl-p2-deferred-q9-c-i-ii",
+      "phoneCard": "maths-2023-hl-p2-deferred-q10-c",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        17,
+        5
+      ],
+      "enlarge": true,
+      "phoneZoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePdfPage": 48,
+      "viewportReset": true,
+      "pageErrors": []
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }

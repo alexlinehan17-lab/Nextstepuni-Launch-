@@ -1,0 +1,1379 @@
+{
+  "questionSha256": "79a36341a542a55e386009942f5b4e0b9bd95b84b03819c2e06b634cf0a9fbca",
+  "solutionSha256": "71e49ca02f643ab56422044abfb1985a827f209bc490bf7775d374af91246666",
+  "tasks": {
+    "maths-2023-hl-p2-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          140,
+          280,
+          207
+        ],
+        [
+          4,
+          290,
+          140,
+          540,
+          432
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          189,
+          555,
+          353
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          140,
+          280,
+          178
+        ],
+        [
+          4,
+          290,
+          140,
+          540,
+          432
+        ],
+        [
+          4,
+          50,
+          435,
+          565,
+          470
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          353,
+          555,
+          518
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q1-c": {
+      "question": [
+        [
+          4,
+          50,
+          140,
+          280,
+          178
+        ],
+        [
+          4,
+          290,
+          140,
+          540,
+          432
+        ],
+        [
+          4,
+          50,
+          435,
+          565,
+          470
+        ],
+        [
+          5,
+          50,
+          54,
+          565,
+          76
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          56,
+          555,
+          442
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          50,
+          78,
+          565,
+          122
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          72,
+          555,
+          206
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          50,
+          78,
+          565,
+          99
+        ],
+        [
+          6,
+          50,
+          214,
+          565,
+          256
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          206,
+          555,
+          518
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          50,
+          54,
+          565,
+          113
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          56,
+          555,
+          288
+        ]
+      ],
+      "sourceNote": "The printed intermediate line 4k = 8 is a sign error: 15 + 4k = 7 gives 4k = −8 and k = −2. The final centre (5, −2), radius 3 and circle equation are correct."
+    },
+    "maths-2023-hl-p2-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          50,
+          83,
+          565,
+          137
+        ],
+        [
+          8,
+          320,
+          160,
+          545,
+          392
+        ],
+        [
+          8,
+          50,
+          140,
+          280,
+          162
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          72,
+          555,
+          236
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          50,
+          83,
+          565,
+          137
+        ],
+        [
+          8,
+          320,
+          160,
+          545,
+          392
+        ],
+        [
+          8,
+          50,
+          396,
+          565,
+          434
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          236,
+          555,
+          727
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q3-c": {
+      "question": [
+        [
+          8,
+          50,
+          83,
+          565,
+          137
+        ],
+        [
+          8,
+          320,
+          160,
+          545,
+          392
+        ],
+        [
+          9,
+          50,
+          53,
+          565,
+          100
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          56,
+          555,
+          293
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q3-d": {
+      "question": [
+        [
+          8,
+          50,
+          83,
+          565,
+          137
+        ],
+        [
+          8,
+          320,
+          160,
+          545,
+          392
+        ],
+        [
+          9,
+          50,
+          53,
+          565,
+          100
+        ],
+        [
+          9,
+          50,
+          337,
+          565,
+          365
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          293,
+          555,
+          720
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q4-a-i-ii": {
+      "question": [
+        [
+          10,
+          50,
+          76,
+          565,
+          94
+        ],
+        [
+          10,
+          50,
+          325,
+          565,
+          380
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          72,
+          555,
+          524
+        ]
+      ],
+      "supplement": "sine-proof-2023-hl-deferred",
+      "supplementAlt": "NextStepUni completes the addition proof: sin(A+B)=cos[90°−(A+B)]=cos[(90°−A)−B]=cos(90°−A)cos B+sin(90°−A)sin B=sin A cos B+cos A sin B. The original SEC solution for both parts, including sin 2A=4/5 and cos 2A=−3/5, and joint 20D criteria follow.",
+      "sourceNote": "Parts (i) and (ii) share 20D. The printed proof stops after the cofunction identities; the NextStepUni example supplies the final substitution and conclusion. The original solution remains below."
+    },
+    "maths-2023-hl-p2-deferred-q4-b-i": {
+      "question": [
+        [
+          11,
+          50,
+          54,
+          565,
+          327
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          56,
+          555,
+          195
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q4-b-ii": {
+      "question": [
+        [
+          11,
+          50,
+          54,
+          565,
+          317
+        ],
+        [
+          11,
+          50,
+          476,
+          565,
+          511
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          195,
+          555,
+          375
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q5-a-i": {
+      "question": [
+        [
+          12,
+          50,
+          78,
+          565,
+          192
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          72,
+          555,
+          234
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q5-a-ii": {
+      "question": [
+        [
+          12,
+          50,
+          78,
+          565,
+          140
+        ],
+        [
+          12,
+          50,
+          427,
+          565,
+          491
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          234,
+          555,
+          423
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          50,
+          54,
+          565,
+          313
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          56,
+          555,
+          200
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q5-c": {
+      "question": [
+        [
+          13,
+          50,
+          463,
+          565,
+          498
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          200,
+          555,
+          460
+        ]
+      ],
+      "sourceNote": "The source’s “A and B are independent” refers to C and D in this question. Use P(C ∩ D) = P(C)P(D) = 0.5P(D). Then 0.85 = 0.5 + P(D) − 0.5P(D), so P(D) = 0.7."
+    },
+    "maths-2023-hl-p2-deferred-q6-a-i": {
+      "question": [
+        [
+          14,
+          50,
+          78,
+          565,
+          111
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          72,
+          555,
+          147
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q6-a-ii": {
+      "question": [
+        [
+          14,
+          50,
+          78,
+          565,
+          111
+        ],
+        [
+          14,
+          50,
+          346,
+          565,
+          380
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          147,
+          555,
+          281
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q6-a-iii": {
+      "question": [
+        [
+          14,
+          50,
+          78,
+          565,
+          111
+        ],
+        [
+          14,
+          50,
+          536,
+          565,
+          574
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          281,
+          555,
+          415
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          50,
+          55,
+          565,
+          87
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          56,
+          555,
+          146
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          50,
+          55,
+          565,
+          87
+        ],
+        [
+          15,
+          50,
+          238,
+          565,
+          273
+        ]
+      ],
+      "solution": [
+        [
+          39,
+          55,
+          146,
+          555,
+          355
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          438
+        ],
+        [
+          16,
+          50,
+          454,
+          565,
+          476
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          72,
+          555,
+          185
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          438
+        ],
+        [
+          16,
+          50,
+          454,
+          565,
+          476
+        ],
+        [
+          17,
+          50,
+          54,
+          565,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          185,
+          555,
+          325
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q7-a-iii": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          438
+        ],
+        [
+          17,
+          50,
+          238,
+          565,
+          263
+        ]
+      ],
+      "solution": [
+        [
+          40,
+          55,
+          325,
+          555,
+          595
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q7-a-iv": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          438
+        ],
+        [
+          17,
+          50,
+          414,
+          565,
+          465
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          56,
+          555,
+          307
+        ]
+      ],
+      "sourceNote": "The source reuses the rounded side 29.9 cm, giving h ≈ 4.95 cm. Keeping the exact side 16 + 8√3 cm until the end also gives 5 cm to the nearest centimetre."
+    },
+    "maths-2023-hl-p2-deferred-q7-a-v": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          240
+        ],
+        [
+          18,
+          50,
+          54,
+          565,
+          308
+        ],
+        [
+          18,
+          50,
+          322,
+          565,
+          345
+        ]
+      ],
+      "solution": [
+        [
+          41,
+          55,
+          307,
+          555,
+          520
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q7-a-vi": {
+      "question": [
+        [
+          16,
+          50,
+          138,
+          565,
+          240
+        ],
+        [
+          18,
+          50,
+          54,
+          565,
+          308
+        ],
+        [
+          19,
+          50,
+          54,
+          565,
+          76
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          56,
+          555,
+          385
+        ]
+      ],
+      "sourceNote": "The source repeats the same absolute-value branch twice. The other branch gives b = 20 + 8√3, outside the prism. The interior top-circle centre is (4√3 + 8, 4 + 8√3), with radius 4, as in the final equation."
+    },
+    "maths-2023-hl-p2-deferred-q7-b": {
+      "question": [
+        [
+          19,
+          50,
+          316,
+          565,
+          389
+        ]
+      ],
+      "solution": [
+        [
+          42,
+          55,
+          385,
+          555,
+          530
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          565,
+          170
+        ],
+        [
+          20,
+          50,
+          173,
+          565,
+          194
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          72,
+          555,
+          191
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          565,
+          170
+        ],
+        [
+          20,
+          50,
+          324,
+          565,
+          646
+        ]
+      ],
+      "solution": [
+        [
+          43,
+          55,
+          191,
+          555,
+          585
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q8-a-iii": {
+      "question": [
+        [
+          20,
+          50,
+          78,
+          565,
+          170
+        ],
+        [
+          21,
+          50,
+          54,
+          565,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          44,
+          55,
+          56,
+          555,
+          334
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q8-b-i": {
+      "question": [
+        [
+          22,
+          50,
+          68,
+          565,
+          215
+        ],
+        [
+          22,
+          50,
+          222,
+          565,
+          245
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          56,
+          555,
+          233
+        ]
+      ],
+      "sourceNote": "The official answer 11:00 assumes both cars have passed O: 100t = 120t − 40 gives t = 2 hours. If B’s constant motion is also assumed before it passes O, distance is |120t − 40| and t = 2/11 hour (about 9:10:55) is an earlier solution. The question does not explicitly exclude that interval."
+    },
+    "maths-2023-hl-p2-deferred-q8-b-ii": {
+      "question": [
+        [
+          22,
+          50,
+          68,
+          565,
+          215
+        ],
+        [
+          22,
+          50,
+          542,
+          565,
+          578
+        ]
+      ],
+      "solution": [
+        [
+          45,
+          55,
+          233,
+          555,
+          584
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q8-b-iii": {
+      "question": [
+        [
+          22,
+          50,
+          68,
+          565,
+          215
+        ],
+        [
+          23,
+          50,
+          260,
+          565,
+          283
+        ]
+      ],
+      "solution": [
+        [
+          46,
+          55,
+          56,
+          555,
+          553
+        ]
+      ],
+      "sourceNote": "From (5t − 3)(155t + 23) = 0, the negative root is −23/155, not the printed −23/115. Discard it because the time must be after 9:00. The valid t = 3/5 hour gives 9:36."
+    },
+    "maths-2023-hl-p2-deferred-q9-a": {
+      "question": [
+        [
+          24,
+          50,
+          78,
+          565,
+          190
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          55,
+          72,
+          555,
+          289
+        ]
+      ],
+      "sourceNote": "Use the class midpoints 10, 30, 50, 70, 90 and frequencies 4, 8, 10, 6, 2. The weighted sum Σxf is 1380, giving an estimated mean of 1380/30 = 46%."
+    },
+    "maths-2023-hl-p2-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          50,
+          404,
+          565,
+          534
+        ]
+      ],
+      "solution": [
+        [
+          47,
+          55,
+          289,
+          555,
+          464
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q9-c-i-ii": {
+      "question": [
+        [
+          25,
+          50,
+          53,
+          565,
+          220
+        ],
+        [
+          25,
+          50,
+          460,
+          565,
+          499
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          56,
+          555,
+          399
+        ]
+      ],
+      "sourceNote": "The detailed scheme awards 20D jointly to the table and expected value. The summary’s extra 10C is inconsistent with both the detailed criteria and Q9’s printed 50 marks. Expected goals = 10/3; an average need not be a whole number."
+    },
+    "maths-2023-hl-p2-deferred-q9-d": {
+      "question": [
+        [
+          26,
+          50,
+          55,
+          565,
+          135
+        ]
+      ],
+      "solution": [
+        [
+          48,
+          55,
+          399,
+          555,
+          620
+        ]
+      ],
+      "supplement": "male-proportion-2023-hl-deferred",
+      "supplementAlt": "NextStepUni completes the requested proportion. Male:female=3:2 means three male shares out of five total: 3/(3+2)=3/5=0.6=60%. A five-section bar shows three male shares and two female shares. Check: 71(0.6)+73(0.4)=71.8. Original SEC solution and criteria follow.",
+      "sourceNote": "The printed solution ends at male:female = 3:2. The question asks for the proportion of all candidates who were male: 3/(3+2) = 3/5 = 60%."
+    },
+    "maths-2023-hl-p2-deferred-q10-a-i": {
+      "question": [
+        [
+          27,
+          50,
+          84,
+          565,
+          121
+        ],
+        [
+          27,
+          50,
+          123,
+          565,
+          161
+        ]
+      ],
+      "solution": [
+        [
+          49,
+          55,
+          72,
+          555,
+          215
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q10-a-ii": {
+      "question": [
+        [
+          27,
+          50,
+          84,
+          565,
+          121
+        ],
+        [
+          27,
+          50,
+          313,
+          565,
+          346
+        ]
+      ],
+      "solution": [
+        [
+          49,
+          55,
+          215,
+          555,
+          492
+        ]
+      ]
+    },
+    "maths-2023-hl-p2-deferred-q10-a-iii": {
+      "question": [
+        [
+          27,
+          50,
+          84,
+          565,
+          121
+        ],
+        [
+          27,
+          50,
+          494,
+          565,
+          529
+        ]
+      ],
+      "solution": [
+        [
+          49,
+          55,
+          492,
+          555,
+          713
+        ]
+      ],
+      "sourceNote": "The logarithmic step must read n ln(0.92) ≤ ln(0.1). Since ln(0.92) is negative, division reverses the inequality: n ≥ ln(0.1)/ln(0.92) ≈ 27.615. The least whole number is 28, as in the source’s final answer."
+    },
+    "maths-2023-hl-p2-deferred-q10-b-i": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          565,
+          103
+        ],
+        [
+          28,
+          50,
+          111,
+          565,
+          144
+        ]
+      ],
+      "solution": [
+        [
+          50,
+          55,
+          56,
+          555,
+          186
+        ]
+      ],
+      "sourceNote": "The source rounds z to −0.83 for the tables. With unrounded z = −0.8333…, the probability is about 0.2023; either method gives 20% to the requested nearest percentage."
+    },
+    "maths-2023-hl-p2-deferred-q10-b-ii": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          565,
+          103
+        ],
+        [
+          28,
+          50,
+          353,
+          565,
+          408
+        ]
+      ],
+      "solution": [
+        [
+          50,
+          55,
+          186,
+          555,
+          448
+        ]
+      ],
+      "sourceNote": "The source uses the rounded 20% from part (i), giving P(X < k) ≈ 0.75. Using the unrounded probability gives about 0.7523 instead. Both produce k = 10.12 ml to two decimal places."
+    },
+    "maths-2023-hl-p2-deferred-q10-c": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          565,
+          103
+        ],
+        [
+          29,
+          50,
+          55,
+          565,
+          171
+        ]
+      ],
+      "solution": [
+        [
+          51,
+          55,
+          56,
+          555,
+          414
+        ]
+      ],
+      "supplement": "eyedrops-test-2023-hl-deferred",
+      "supplementAlt": "NextStepUni hypothesis test: null population mean 10 ml, alternative mean differs from 10 ml. z=(9.96−10)/(0.18/√50)=−1.5713 lies between −1.96 and +1.96. Fail to reject the null at 5%; insufficient evidence of a change, not proof of an unchanged mean. A number line marks z and both critical values. Original SEC calculation and credit notes follow.",
+      "sourceNote": "The original calculation z ≈ −1.57 is correct. “Accept H0” and “has not changed” are too strong: fail to reject H0 at 5%, because there is insufficient evidence of a change. This test does not establish that the mean is unchanged."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        116,
+        5,
+        760
+      ],
+      "scheme": [
+        28,
+        173,
+        29,
+        442
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        760
+      ],
+      "scheme": [
+        30,
+        55,
+        31,
+        288
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        760
+      ],
+      "scheme": [
+        32,
+        55,
+        33,
+        720
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        760
+      ],
+      "scheme": [
+        34,
+        55,
+        35,
+        375
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        760
+      ],
+      "scheme": [
+        36,
+        55,
+        37,
+        460
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        760
+      ],
+      "scheme": [
+        38,
+        55,
+        39,
+        355
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        116,
+        19,
+        760
+      ],
+      "scheme": [
+        40,
+        55,
+        42,
+        530
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        760
+      ],
+      "scheme": [
+        43,
+        55,
+        46,
+        553
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        26,
+        760
+      ],
+      "scheme": [
+        47,
+        55,
+        48,
+        620
+      ]
+    },
+    "10": {
+      "paper": [
+        27,
+        53,
+        29,
+        760
+      ],
+      "scheme": [
+        49,
+        55,
+        51,
+        414
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 90 question and solution images inspected across nine contact sheets. Clipped neighbouring text on Q2(a)(ii) and Q4(b)(ii) corrected; all revised crops re-inspected across four sheets. The three new NextStepUni supplements were inspected at full resolution; the final nested standard-error fraction and the five-share proportion bar were checked again after refinement. Original diagrams, formulae, tables, proof markings, alternative routes and numeric scales are retained.",
+  "atlasInspectionNote": "Independent sweep of all 32 paper pages and scheme pages 25–52, with general notes on pages 1–2. Every task and its shared context fits the ten reviewed whole-question paper/scheme spans; Q9 uses the detailed joint 20D allocation."
+}

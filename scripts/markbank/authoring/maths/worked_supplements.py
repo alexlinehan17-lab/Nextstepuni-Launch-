@@ -21,6 +21,11 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    higher_2023 = {'sine-proof-2023-hl-deferred':render_sine_proof_2023,
+                   'male-proportion-2023-hl-deferred':render_male_proportion_2023,
+                   'eyedrops-test-2023-hl-deferred':render_eyedrops_test_2023}
+    if name in higher_2023:
+        return higher_2023[name](dpi)
     if name in ['trout-2023-hl-deferred','trout-context-2023-hl-deferred']:
         return render_trout_2023(dpi,comparison=name=='trout-2023-hl-deferred')
     ordinary2 = {'parallelogram-2024-ol-deferred':render_parallelogram_2024,
@@ -154,6 +159,77 @@ def _example_canvas(title,subtitle,height,footer='NextStepUni worked example. Or
 def _example_image(buf,c,dpi):
     c.save();doc=fitz.open(stream=buf.getvalue(),filetype='pdf')
     return Image.open(BytesIO(doc[0].get_pixmap(dpi=dpi).tobytes('png'))).convert('RGB')
+
+
+def render_sine_proof_2023(dpi):
+    buf,c=_example_canvas('Completing the sine addition proof',
+        '2023 deferred Higher Paper 2 · Q4(a)(i) · using the cosine difference identity',336)
+    c.setFont('Times-Roman',16)
+    c.drawString(28,237,'sin(A + B) = cos[90° - (A + B)]')
+    c.drawString(108,201,'= cos[(90° - A) - B]')
+    c.drawString(108,165,'= cos(90° - A) cos B + sin(90° - A) sin B')
+    c.setFont('Helvetica',10)
+    c.drawString(28,125,'Use cos(90° - A) = sin A and sin(90° - A) = cos A:')
+    c.setFont('Times-Bold',18)
+    c.drawString(28,87,'sin(A + B) = sin A cos B + cos A sin B')
+    c.setFont('Helvetica',10)
+    c.drawString(28,47,'This supplies the final substitution and conclusion omitted in the printed solution.')
+    return _example_image(buf,c,dpi)
+
+
+def render_male_proportion_2023(dpi):
+    buf,c=_example_canvas('From the ratio to the proportion',
+        '2023 deferred Higher Paper 2 · Q9(d) · the share of all candidates',350)
+    c.setFont('Times-Roman',18);c.drawString(28,249,'Male : female = 3 : 2')
+    c.setFont('Helvetica',11);c.drawString(28,222,'Five equal shares in total. Three of those shares are male.')
+    for i in range(5):
+        c.setFillColorRGB(*((.16,.16,.15) if i<3 else (.93,.93,.91)))
+        c.setStrokeColorRGB(.16,.16,.15);c.rect(28+i*100,160,100,36,stroke=1,fill=1)
+    c.setStrokeColorRGB(1,1,1)
+    for x in [128,228]:c.line(x,161,x,195)
+    c.setStrokeColorRGB(.18,.18,.16)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',10)
+    c.drawCentredString(178,143,'Male: 3 shares');c.drawCentredString(428,143,'Female: 2 shares')
+    c.setFont('Times-Roman',19);c.drawString(28,94,'Proportion male =')
+    for x,num,den in [(195,'3','3 + 2'),(294,'3','5')]:
+        c.drawCentredString(x,104,num);c.line(x-24,99,x+24,99);c.drawCentredString(x,79,den)
+    c.drawString(239,94,'=');c.drawString(335,94,'= 0.6 = 60%')
+    c.setFont('Helvetica',10);c.drawString(28,45,'Check: 71 × 0.6 + 73 × 0.4 = 71.8, the overall mean given in the question.')
+    return _example_image(buf,c,dpi)
+
+
+def render_eyedrops_test_2023(dpi):
+    z=(9.96-10)/(.18/sqrt(50))
+    buf,c=_example_canvas('What the hypothesis test tells us',
+        '2023 deferred Higher Paper 2 · Q10(c) · a two-sided test at 5%',440)
+    c.setFont('Helvetica',12)
+    c.drawString(28,346,'Null hypothesis: population mean = 10 ml.')
+    c.drawString(28,323,'Alternative hypothesis: population mean differs from 10 ml.')
+    c.setFont('Times-Italic',20);c.drawString(28,269,'z =')
+    c.setFont('Times-Roman',18)
+    c.drawCentredString(136,290,'9.96 - 10');c.line(76,282,196,282)
+    c.drawCentredString(136,265,'0.18');c.line(112,259,160,259)
+    c.drawString(130,240,'50')
+    # A nested standard-error fraction, with a separate radical over 50.
+    c.line(116,247,121,240);c.line(121,240,125,255);c.line(125,255,150,255)
+    c.drawString(218,269,'= -1.5713')
+    x0,x1,y=65,495,211
+    def X(value):return x0+(value+3)*(x1-x0)/6
+    c.line(x0,y,x1,y)
+    c.setFont('Helvetica',10)
+    for value in [-1.96,0,1.96]:
+        c.line(X(value),y-4,X(value),y+4);c.drawCentredString(X(value),y-20,str(value))
+    c.setFillColorRGB(.90,.39,.15);c.circle(X(z),y,3.5,stroke=0,fill=1)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica-Bold',10)
+    c.drawCentredString(X(z),y+15,'z = -1.57')
+    c.setFont('Helvetica',10)
+    c.drawCentredString((X(-1.96)+X(1.96))/2,166,'Between the critical values -1.96 and +1.96')
+    c.setFont('Times-Bold',18);c.drawString(28,126,'Fail to reject the null hypothesis.')
+    c.setFont('Helvetica',12)
+    c.drawString(28,97,'There is insufficient evidence of a change in the mean at the 5% level.')
+    c.drawString(28,72,'This does not prove that the mean has stayed at 10 ml.')
+    c.setFont('Helvetica',10);c.drawString(28,42,'The original scheme’s calculation is correct; its final claim is too strong.')
+    return _example_image(buf,c,dpi)
 
 
 def render_argand_2024(dpi):

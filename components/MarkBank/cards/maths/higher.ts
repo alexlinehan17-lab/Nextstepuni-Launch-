@@ -76372,4 +76372,1972 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q1-a", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q1(a)",
+    stem: "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram.",
+    questionText: "Find the midpoint and slope of [AB].",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q1-a-solution-1", kind: "point", verbatim: "Midpoint or slope correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-a-question.png",
+          "srcHash": "7fac737da825c3d7b1fe0f0dfe9a9ff7",
+          "alt": "The question as printed on the paper — The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram. Find the midpoint and slope of [AB].",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-a-solution.png",
+          "srcHash": "f96d669fc5ab9f806dce50709597abad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q1(b)",
+    stem: "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram.",
+    questionText: "Find the equation of the perpendicular bisector of [AB]. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Slope of perpendicular", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-b-question.png",
+          "srcHash": "5a42ac1309cf93e8c36d659a60e144ab",
+          "alt": "The question as printed on the paper — The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram. Find the equation of the perpendicular bisector of [AB]. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-b-solution.png",
+          "srcHash": "37a401854713b39ea8b67331bc6dec62",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q1-c", topicId: "maths-2-2", conceptId: "p2-deferred-q1-c",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q1(c)",
+    stem: "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram. Part (b) asks for the perpendicular bisector of [AB].",
+    questionText: "Use your answer from part (b) to find the co-ordinates of O, the circumcentre of ∆ABC.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q1-c-solution-1", kind: "point", verbatim: "Equation of perpendicular bisector", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q1-c-solution-2", kind: "point", verbatim: "System reduced to 1 variable.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-c-question.png",
+          "srcHash": "d337e51ba14038ebe5ba31fbbb02d545",
+          "alt": "The question as printed on the paper — The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram. Part (b) asks for the perpendicular bisector of [AB]. Use your answer from part (b) to find the co-ordinates of O, the circumcentre of ∆ABC.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q1-c-solution.png",
+          "srcHash": "8d41e3727263b87208429499846275e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q2-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q2-a-i",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q2(a)(i)",
+    stem: "The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0.",
+    questionText: "Find the centre and radius of s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Centre or radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-a-i-question.png",
+          "srcHash": "fe27a4ac8952d39ad4e1268881079a03",
+          "alt": "The question as printed on the paper — The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0. Find the centre and radius of s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-a-i-solution.png",
+          "srcHash": "f6ed0c53d3666a983b333400ca3dec15",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q2-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q2-a-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q2(a)(ii)",
+    stem: "The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0.",
+    questionText: "The line 2x − 3y + c = 0 is a tangent to circle s. Find the two possible values of c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Find values of c", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q2-a-ii-solution-2", kind: "point", verbatim: "2 steps correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-a-ii-question.png",
+          "srcHash": "92e3888af04eba5a1446009398fe80f0",
+          "alt": "The question as printed on the paper — The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0. The line 2x − 3y + c = 0 is a tangent to circle s. Find the two possible values of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-a-ii-solution.png",
+          "srcHash": "f9ba027e8de3a18a69c4873873bfb28e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q2-b", topicId: "maths-2-2", conceptId: "p2-deferred-q2-b",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q2(b)",
+    questionText: "The lines x = 2 and x = 8 are tangents to circle k. The centre of k is on the line 3x + 4y − 7 = 0. Find the equation of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q2-b-solution-1", kind: "point", verbatim: "radius or centre of circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-b-question.png",
+          "srcHash": "f59a0e788956b601dd88d4fd912ef18d",
+          "alt": "The question as printed on the paper — The lines x = 2 and x = 8 are tangents to circle k. The centre of k is on the line 3x + 4y − 7 = 0. Find the equation of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q2-b-solution.png",
+          "srcHash": "7db82f525b94529e51282ba38f5298de",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The printed intermediate line 4k = 8 is a sign error: 15 + 4k = 7 gives 4k = −8 and k = −2. The final centre (5, −2), radius 3 and circle equation are correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q3-a", topicId: "maths-2-1", conceptId: "p2-deferred-q3-a",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q3(a)",
+    stem: "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+    questionText: "Find |EF|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q3-a-solution-1", kind: "point", verbatim: "Pythagoras fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-a-question.png",
+          "srcHash": "646de030f826b94b4f562e2a3f5dbe65",
+          "alt": "The question as printed on the paper — In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Find |EF|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-a-solution.png",
+          "srcHash": "2d8a0609ad5617127dd8fbfafa867ec8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q3-b", topicId: "maths-2-1", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q3(b)",
+    stem: "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+    questionText: "Prove that ∆AED and ∆EFC are similar (equiangular). Give a reason for any statement you make use of in your proof.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "3 correct statements for", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q3-b-solution-2", kind: "point", verbatim: "3 correct steps with at least one", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-b-question.png",
+          "srcHash": "75f52545d52e7263627efdd2e7aaa961",
+          "alt": "The question as printed on the paper — In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Prove that ∆AED and ∆EFC are similar (equiangular). Give a reason for any statement you make use of in your proof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-b-solution.png",
+          "srcHash": "0f6351b6efa4659195eee5cf877c8cae",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q3-c", topicId: "maths-2-1", conceptId: "p2-deferred-q3-c",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q3(c)",
+    stem: "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+    questionText: "Given that |ED| = (1/4)|AD|, find |AD|. Give your answer in the form p/√q cm, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q3-c-solution-1", kind: "point", verbatim: "No units or incorrect units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-c-question.png",
+          "srcHash": "bbdd439b3fe68bfd6530d0a5344211f5",
+          "alt": "The question as printed on the paper — In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Given that |ED| = (1/4)|AD|, find |AD|. Give your answer in the form p/√q cm, where p, q ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-c-solution.png",
+          "srcHash": "e21fc5b53dfd244912c1806689764b95",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q3-d", topicId: "maths-3-4", conceptId: "p2-deferred-q3-d",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q3(d)",
+    stem: "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Given in part (c): |ED| = (1/4)|AD|.",
+    questionText: "Find the area of ∆ABF. Give your answer in the form m/n cm², where m, n ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q3-d-solution-1", kind: "point", verbatim: "Area of 1 relevant shape found.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q3-d-solution-2", kind: "point", verbatim: "Area of 3 relevant shapes found.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-d-question.png",
+          "srcHash": "e1a7fc4e19b0a71faa66affa14105b85",
+          "alt": "The question as printed on the paper — In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Given in part (c): |ED| = (1/4)|AD|. Find the area of ∆ABF. Give your answer in the form m/n cm², where m, n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q3-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q3-d-solution.png",
+          "srcHash": "20ae19b48c990e303074924d0625d8a6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q3(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q4-a-i-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q4-a-i-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii)",
+    questionText: "(i) Prove that sin(A + B) = sin A cos B + cos A sin B. (ii) sin A = 2/√5, where 0 < A < π/2. Without using your calculator, find sin 2A and cos 2A in the form p/q where p, q ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q4-a-i-ii-solution-1", kind: "point", verbatim: "Proof of trig identity", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q4-a-i-ii-solution-2", kind: "point", verbatim: "Any 2 elements completed", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,6,12,17,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-a-i-ii-question.png",
+          "srcHash": "e922b14f66a68534c80e924a99a05b8a",
+          "alt": "The question as printed on the paper — (i) Prove that sin(A + B) = sin A cos B + cos A sin B. (ii) sin A = 2/√5, where 0 < A < π/2. Without using your calculator, find sin 2A and cos 2A in the form p/q where p, q ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-a-i-ii-solution.png",
+          "srcHash": "df172efcec3c4df5f6e26f286e57675a",
+          "alt": "NextStepUni completes the addition proof: sin(A+B)=cos[90°−(A+B)]=cos[(90°−A)−B]=cos(90°−A)cos B+sin(90°−A)sin B=sin A cos B+cos A sin B. The original SEC solution for both parts, including sin 2A=4/5 and cos 2A=−3/5, and joint 20D criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Parts (i) and (ii) share 20D. The printed proof stops after the cofunction identities; the NextStepUni example supplies the final substitution and conclusion. The original solution remains below.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q4-b-i", topicId: "maths-2-3", conceptId: "p2-deferred-q4-b-i",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q4(b)(i)",
+    stem: "A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown.",
+    questionText: "Find the measure of the angle α.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q4-b-i-solution-1", kind: "point", verbatim: "Adjacent or hypotenuse", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-b-i-question.png",
+          "srcHash": "a9084d9324853e74354c787f0a6a82fd",
+          "alt": "The question as printed on the paper — A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown. Find the measure of the angle α.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-b-i-solution.png",
+          "srcHash": "0eb02437d275badc52967c8450d78877",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q4(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q4-b-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q4-b-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q4(b)(ii)",
+    stem: "A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown.",
+    questionText: "Find the area of the shaded section in the diagram. Give your answer in the form (a − bπ) cm², where a, b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "Area of sector found.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-b-ii-question.png",
+          "srcHash": "cb2dd6a61f5da59c2cbbf961d1346742",
+          "alt": "The question as printed on the paper — A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown. Find the area of the shaded section in the diagram. Give your answer in the form (a − bπ) cm², where a, b ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q4-b-ii-solution.png",
+          "srcHash": "0c8c9688a0b1170de0621a15bc34b827",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q5-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q5-a-i",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q5(a)(i)",
+    stem: "In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered.",
+    questionText: "In a particular school, four students enter their data. What is the probability that all four students entered the same month? Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q5-a-i-solution-1", kind: "point", verbatim: "P(All born in same month)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-a-i-question.png",
+          "srcHash": "6b88e863dad8c6272f6037e72090a204",
+          "alt": "The question as printed on the paper — In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered. In a particular school, four students enter their data. What is the probability that all four students entered the same month? Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-a-i-solution.png",
+          "srcHash": "39c8c1c775312aaec3f7ff66f8137d08",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q5-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q5-a-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q5(a)(ii)",
+    stem: "In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered.",
+    questionText: "In a particular centre, five students were born during the month of April. What is the probability that at least two of them have entered the same day? You may assume that all of the 30 days in April are equally likely to be entered. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "1 – P (all on different days)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-a-ii-question.png",
+          "srcHash": "cd3d847438ba463ede8b42ddca25507a",
+          "alt": "The question as printed on the paper — In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered. In a particular centre, five students were born during the month of April. What is the probability that at least two of them have entered the same day? You may assume that all of the 30 days in April are equally likely to be entered. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-a-ii-solution.png",
+          "srcHash": "6168a42050a58e45499ab9ed3c818223",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q5-b", topicId: "maths-1-2", conceptId: "p2-deferred-q5-b",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q5(b)",
+    stem: "A and B are two events. In the Venn diagram below, the probability of each event is written in the appropriate region. For example, from the diagram, the probability that neither A nor B happens is P((A ∪ B)′) = 0·27. A only: 0·18; A ∩ B: 0·22; B only: 0·33; neither: 0·27.",
+    questionText: "Find the value of P(A′ | B), where A′ is the complement of A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q5-b-solution-1", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-b-question.png",
+          "srcHash": "986e5231ae2d8350794a648c1bde5204",
+          "alt": "The question as printed on the paper — A and B are two events. In the Venn diagram below, the probability of each event is written in the appropriate region. For example, from the diagram, the probability that neither A nor B happens is P((A ∪ B)′) = 0·27. A only: 0·18; A ∩ B: 0·22; B only: 0·33; neither: 0·27. Find the value of P(A′ | B), where A′ is the complement of A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-b-solution.png",
+          "srcHash": "85cd32379346f7ed96ee3117c8bfd9ea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q5-c", topicId: "maths-1-2", conceptId: "p2-deferred-q5-c",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q5(c)",
+    questionText: "C and D are independent events such that P(C) = 0·5, and P(C ∪ D) = 0·85. Find P(D), the probability that D occurs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q5-c-solution-1", kind: "point", verbatim: "A and B are independent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"markingNote":"The source’s line “A and B are independent” means C and D here. Use P(C ∩ D)=P(C)P(D); the final P(D)=0.7 is correct.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-c-question.png",
+          "srcHash": "849094bb927dbcefde1a61325274f369",
+          "alt": "The question as printed on the paper — C and D are independent events such that P(C) = 0·5, and P(C ∪ D) = 0·85. Find P(D), the probability that D occurs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q5-c-solution.png",
+          "srcHash": "031c88effa30170e2bc4ee84327848ae",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source’s “A and B are independent” refers to C and D in this question. Use P(C ∩ D) = P(C)P(D) = 0.5P(D). Then 0.85 = 0.5 + P(D) − 0.5P(D), so P(D) = 0.7.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q6-a-i", topicId: "maths-1-1", conceptId: "p2-deferred-q6-a-i",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q6(a)(i)",
+    questionText: "In how many ways can the letters E, D, U, C, A, T, I, O, N be arranged if each letter is used exactly once in each arrangement?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q6-a-i-solution-1", kind: "point", verbatim: "EDUCATION – 9 letters in total.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-i-question.png",
+          "srcHash": "c0abddad7b8326e367278873e7198db5",
+          "alt": "The question as printed on the paper — In how many ways can the letters E, D, U, C, A, T, I, O, N be arranged if each letter is used exactly once in each arrangement?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-i-solution.png",
+          "srcHash": "94b3abbdb336faf1c5a80219b324beb3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q6-a-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q6-a-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q6(a)(ii)",
+    stem: "The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement.",
+    questionText: "In how many of these arrangements do all the vowels (A, E, I, O, and U) come together?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "Vowels together", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q6-a-ii-solution-2", kind: "point", verbatim: "5! calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-ii-question.png",
+          "srcHash": "0bb3bfa4335773c7499b1aa3af29a4d6",
+          "alt": "The question as printed on the paper — The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement. In how many of these arrangements do all the vowels (A, E, I, O, and U) come together?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-ii-solution.png",
+          "srcHash": "989cb139a306512e2c2c9742a2f9e58b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q6-a-iii", topicId: "maths-1-1", conceptId: "p2-deferred-q6-a-iii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q6(a)(iii)",
+    stem: "The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement.",
+    questionText: "In how many of these arrangements will the letters A, C, T, I, O, N be together and in that order?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q6-a-iii-solution-1", kind: "point", verbatim: "4 arrangements shown", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-iii-question.png",
+          "srcHash": "8ac045283dda7eba752c27544845f526",
+          "alt": "The question as printed on the paper — The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement. In how many of these arrangements will the letters A, C, T, I, O, N be together and in that order?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-a-iii-solution.png",
+          "srcHash": "8a9ff83ee37b69f5146e3981cde30935",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q6(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q6-b-i", topicId: "maths-1-1", conceptId: "p2-deferred-q6-b-i",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q6(b)(i)",
+    questionText: "In how many ways can a jury of 12 people be selected from a panel of 8 men and 8 women?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q6-b-i-solution-1", kind: "point", verbatim: "reference to 16", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-b-i-question.png",
+          "srcHash": "d4e13752daa96bd0e6ca33a736bf362c",
+          "alt": "The question as printed on the paper — In how many ways can a jury of 12 people be selected from a panel of 8 men and 8 women?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-b-i-solution.png",
+          "srcHash": "2416d3595846819064d1079b42a222d7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q6-b-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q6-b-ii",
+    section: "A", questionRef: "2023 HL Paper 2 — Deferred Q6(b)(ii)",
+    stem: "A jury of 12 people is selected from a panel of 8 men and 8 women.",
+    questionText: "Find the probability that one such jury, selected at random, will contain more women than men.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "indicates 8W & 4M or 7W & 5M", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-b-ii-question.png",
+          "srcHash": "4e7b18794260a06b55e67f1fa929da1c",
+          "alt": "The question as printed on the paper — A jury of 12 people is selected from a panel of 8 men and 8 women. Find the probability that one such jury, selected at random, will contain more women than men.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q6-b-ii-solution.png",
+          "srcHash": "e508f6a258b38ee653968757ed3303c9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-i", topicId: "maths-2-1", conceptId: "p2-deferred-q7-a-i",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(i)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism.",
+    questionText: "Explain why |∠OAY| = 30°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-i-solution-1", kind: "point", verbatim: "correct sides or angles indicated.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-i-question.png",
+          "srcHash": "1d8ae1930a5dea7325cf38270cbc7b30",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Explain why |∠OAY| = 30°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-i-solution.png",
+          "srcHash": "47b20e593df5c657f3823760b9dc28e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q7-a-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(ii)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°.",
+    questionText: "Find |AY|. Give your answer in the form p√q cm, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "trigonometric formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-ii-question.png",
+          "srcHash": "947072b01fa8c5a3bac51a52f137da13",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°. Find |AY|. Give your answer in the form p√q cm, where p, q ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-ii-solution.png",
+          "srcHash": "76e476ee8350936b602cac6eee699ad8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q7-a-iii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(iii)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°.",
+    questionText: "Find |AB|, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "some of the components of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-iii-question.png",
+          "srcHash": "edb200ec9ea43a7e7d21d2498d1a6623",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°. Find |AB|, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-iii-solution.png",
+          "srcHash": "b5862afc8e37d2903bd7495ccbd26d4f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-iv", topicId: "maths-3-4", conceptId: "p2-deferred-q7-a-iv",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(iv)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism.",
+    questionText: "The volume of the empty space in the prism is 422·5 cm³, correct to 1 decimal place. Find the height of each cylinder. Give your answer correct to the nearest cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-iv-solution-1", kind: "point", verbatim: "Volume of one cylinder", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-iv-question.png",
+          "srcHash": "d5b8efe41d78f4e867e970d8bb54f8a3",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The volume of the empty space in the prism is 422·5 cm³, correct to 1 decimal place. Find the height of each cylinder. Give your answer correct to the nearest cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-iv-solution.png",
+          "srcHash": "143e4a54a864bc30e21152510aba26db",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source reuses the rounded side 29.9 cm, giving h ≈ 4.95 cm. Keeping the exact side 16 + 8√3 cm until the end also gives 5 cm to the nearest centimetre.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-v", topicId: "maths-2-2", conceptId: "p2-deferred-q7-a-v",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(v)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k.",
+    questionText: "Write down the equation of each of the lines AB, AC, and BC.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-v-solution-1", kind: "point", verbatim: "1 correct equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q7-a-v-solution-2", kind: "point", verbatim: "2 correct equations", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-v-question.png",
+          "srcHash": "1e0c1f57ecad62e30400b5988260d23e",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k. Write down the equation of each of the lines AB, AC, and BC.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-v-solution.png",
+          "srcHash": "10232dffd9b07a2114844c6f52b7e4be",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(v).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-a-vi", topicId: "maths-2-2", conceptId: "p2-deferred-q7-a-vi",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(a)(vi)",
+    stem: "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k.",
+    questionText: "Find the equation of the circle k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-a-vi-solution-1", kind: "point", verbatim: "midpoint of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-vi-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-vi-question.png",
+          "srcHash": "f9a785342c11ca2b7121321640cd7871",
+          "alt": "The question as printed on the paper — The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k. Find the equation of the circle k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-a-vi-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-a-vi-solution.png",
+          "srcHash": "7782fe48579080f076145b72ccb2a7d1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(a)(vi).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source repeats the same absolute-value branch twice. The other branch gives b = 20 + 8√3, outside the prism. The interior top-circle centre is (4√3 + 8, 4 + 8√3), with radius 4, as in the final equation.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q7-b", topicId: "maths-3-4", conceptId: "p2-deferred-q7-b",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q7(b)",
+    questionText: "A solid metal sphere, of radius r, is melted down and recast into a right-circular cylinder. You may assume that no material was lost in this process. The resulting cylinder has a height of 3r. Find, in terms of r, the radius of the cylinder.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q7-b-solution-1", kind: "point", verbatim: "with some substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-b-question.png",
+          "srcHash": "e62af690c0b34f12c447ce180107120c",
+          "alt": "The question as printed on the paper — A solid metal sphere, of radius r, is melted down and recast into a right-circular cylinder. You may assume that no material was lost in this process. The resulting cylinder has a height of 3r. Find, in terms of r, the radius of the cylinder.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q7-b-solution.png",
+          "srcHash": "84bcce54a6a624a0667dc79d2e6a3486",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(a)(i)",
+    stem: "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+    questionText: "Write down the range of f(t).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Use of 19 or 6", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-i-question.png",
+          "srcHash": "5a07c60aaada599da91c9150ee4022bc",
+          "alt": "The question as printed on the paper — In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians. Write down the range of f(t).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "c837e1dd96804a7847040b2a283101e6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+    questionText: "The period of f(t) is 24 hours. Draw the graph of f(t) on the axes below, in the domain 0 ≤ t ≤ 24, t ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "1 correct plot", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "3 correct plots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "e06338fcec24b7bd2c7a40fa85dd7fc0",
+          "alt": "The question as printed on the paper — In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians. The period of f(t) is 24 hours. Draw the graph of f(t) on the axes below, in the domain 0 ≤ t ≤ 24, t ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "025ad1fc120891cdecdad6c56790c31e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-a-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-iii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(a)(iii)",
+    stem: "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+    questionText: "Find the first time during the 24-hour period when the temperature was exactly 21°C. Give your answer correct to the nearest minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "Non trig equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-iii-question.png",
+          "srcHash": "fbade79dd10dc232e2a8e523815d03ff",
+          "alt": "The question as printed on the paper — In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians. Find the first time during the 24-hour period when the temperature was exactly 21°C. Give your answer correct to the nearest minute.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-a-iii-solution.png",
+          "srcHash": "d86c38db0c5a2964dd2b4092af361af2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-b-i", topicId: "maths-4-2", conceptId: "p2-deferred-q8-b-i",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(b)(i)",
+    stem: "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+    questionText: "Find the time, after 9:00 a.m., when both cars will be the same distance from O.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-b-i-solution-1", kind: "point", verbatim: "Equidistant from O", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"markingNote":"The official 11:00 answer assumes both cars have already passed O. If the stated constant motion is extended before B passes O, an earlier equal-distance time is t=2/11 hour after 9:00; the question does not explicitly exclude this interval.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-i-question.png",
+          "srcHash": "5faa9faaeac0d6454506cf0cd7d5b7a9",
+          "alt": "The question as printed on the paper — A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram. Find the time, after 9:00 a.m., when both cars will be the same distance from O.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-i-solution.png",
+          "srcHash": "0f70e7b036f8d02f81bb5e786c25635b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The official answer 11:00 assumes both cars have passed O: 100t = 120t − 40 gives t = 2 hours. If B’s constant motion is also assumed before it passes O, distance is |120t − 40| and t = 2/11 hour (about 9:10:55) is an earlier solution. The question does not explicitly exclude that interval.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-b-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-b-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(b)(ii)",
+    stem: "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+    questionText: "Find how far apart the cars will be at 10:15 a.m. Give your answer, in km, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-b-ii-solution-1", kind: "point", verbatim: "Cosine rule fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-ii-question.png",
+          "srcHash": "95815b8e45473eb6796d215fe2b76064",
+          "alt": "The question as printed on the paper — A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram. Find how far apart the cars will be at 10:15 a.m. Give your answer, in km, correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-ii-solution.png",
+          "srcHash": "919d6f75ca848ecc01c31902eca3c399",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q8-b-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-b-iii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q8(b)(iii)",
+    stem: "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+    questionText: "Find the exact time, after 9:00 a.m., when car A and car B will be 52 km apart.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q8-b-iii-solution-1", kind: "point", verbatim: "Cosine rule fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q8-b-iii-solution-2", kind: "point", verbatim: "2nd solution is not", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[46],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-iii-question.png",
+          "srcHash": "aef9ffce88f291ca1a1c40fd0ac31494",
+          "alt": "The question as printed on the paper — A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram. Find the exact time, after 9:00 a.m., when car A and car B will be 52 km apart.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q8-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q8-b-iii-solution.png",
+          "srcHash": "391590b02bf2c07c4225c32d68d80e0b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q8(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "From (5t − 3)(155t + 23) = 0, the negative root is −23/155, not the printed −23/115. Discard it because the time must be after 9:00. The valid t = 3/5 hour gives 9:36.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q9-a", topicId: "maths-1-6", conceptId: "p2-deferred-q9-a",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q9(a)",
+    questionText: "30 students in a class took a test. The table below gives a summary of their marks. Use mid-interval values to estimate the mean mark of the students in the test. Mark (%): 0–20, 20–40, 40–60, 60–80, 80–100. Number of students: 4, 8, 10, 6, 2. (Note: 20–40 means greater than 20 and up to and including 40.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q9-a-solution-1", kind: "point", verbatim: "1 mid", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q9-a-solution-2", kind: "point", verbatim: "values found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,6,12,17,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-a-question.png",
+          "srcHash": "3d3d5f96b41ec0d10a32e9ff86985da3",
+          "alt": "The question as printed on the paper — 30 students in a class took a test. The table below gives a summary of their marks. Use mid-interval values to estimate the mean mark of the students in the test. Mark (%): 0–20, 20–40, 40–60, 60–80, 80–100. Number of students: 4, 8, 10, 6, 2. (Note: 20–40 means greater than 20 and up to and including 40.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-a-solution.png",
+          "srcHash": "68115ece4d677c59064049f67c34708f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q9(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use the class midpoints 10, 30, 50, 70, 90 and frequencies 4, 8, 10, 6, 2. The weighted sum Σxf is 1380, giving an estimated mean of 1380/30 = 46%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q9-b", topicId: "maths-1-3", conceptId: "p2-deferred-q9-b",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q9(b)",
+    stem: "A multiple choice test has 15 questions. For each question, 5 possible answers are given, only 1 of which is the correct answer. If a candidate picks the correct answer, they get 10 points. If a candidate picks an incorrect answer, they lose 2 points. Candidates must answer all questions. Candidates can get a positive or negative score on the test.",
+    questionText: "Find the expected score on the test of a candidate who randomly selects an answer to each of the 15 questions.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q9-b-solution-1", kind: "point", verbatim: "Expected value fully formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-b-question.png",
+          "srcHash": "0a27add8f3970ecbfa363c1d40f3fa9c",
+          "alt": "The question as printed on the paper — A multiple choice test has 15 questions. For each question, 5 possible answers are given, only 1 of which is the correct answer. If a candidate picks the correct answer, they get 10 points. If a candidate picks an incorrect answer, they lose 2 points. Candidates must answer all questions. Candidates can get a positive or negative score on the test. Find the expected score on the test of a candidate who randomly selects an answer to each of the 15 questions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-b-solution.png",
+          "srcHash": "298e9151ccebf64fc011124cabef371c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q9-c-i-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q9-c-i-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q9(c)(i), Q9(c)(ii)",
+    stem: "The probability that any player on a particular team will score a goal from a penalty is 2/3. In a penalty shoot-out, at the end of a game, 5 players from the team each take a penalty.",
+    questionText: "(i) Complete the table below to show the probability of scoring from 0 to 5 goals from these penalties. Give each answer in the form a/b, where a, b ∈ ℕ. Goals scored: 0, 1, 2, 3, 4, 5. Probability P(x): 1/243, blank, 40/243, blank, 80/243, blank. (ii) If this team were involved in a lot of 5 player penalty shoot-outs, on average, how many goals would you expect this team to score per penalty shoot-out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q9-c-i-ii-solution-1", kind: "point", verbatim: "Two correct new entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q9-c-i-ii-solution-2", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,6,12,17,20],"markingNote":"Both printed parts share the detailed 20D allocation on scheme page 48. The summary’s extra 10C entry would incorrectly raise Q9 from 50 to 60 marks. Keep the table and expectation as one 20-mark task.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-c-i-ii-question.png",
+          "srcHash": "ba1af1345c7f607b84d41c1e99cdd4de",
+          "alt": "The question as printed on the paper — The probability that any player on a particular team will score a goal from a penalty is 2/3. In a penalty shoot-out, at the end of a game, 5 players from the team each take a penalty. (i) Complete the table below to show the probability of scoring from 0 to 5 goals from these penalties. Give each answer in the form a/b, where a, b ∈ ℕ. Goals scored: 0, 1, 2, 3, 4, 5. Probability P(x): 1/243, blank, 40/243, blank, 80/243, blank. (ii) If this team were involved in a lot of 5 player penalty shoot-outs, on average, how many goals would you expect this team to score per penalty shoot-out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-c-i-ii-solution.png",
+          "srcHash": "a6ea73efffd1840f680167c2ba71f9ab",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q9(c)(i), Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The detailed scheme awards 20D jointly to the table and expected value. The summary’s extra 10C is inconsistent with both the detailed criteria and Q9’s printed 50 marks. Expected goals = 10/3; an average need not be a whole number.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q9-d", topicId: "maths-1-6", conceptId: "p2-deferred-q9-d",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q9(d)",
+    questionText: "A number of candidates (male and female) completed an examination. The mean score of the male candidates in the examination was 71. The mean score of the female candidates in the examination was 73. The mean score of all the candidates in the examination was 71·8. Find the proportion of candidates who were male.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q9-d-solution-1", kind: "point", verbatim: "ratio Males to Females is", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"markingNote":"The original solution ends at the male:female ratio 3:2. The requested proportion is 3/(3+2)=3/5=60%; the attributed NextStepUni example completes the answer.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-d-question.png",
+          "srcHash": "d26b1468ef5c2f057492b013fe9a9010",
+          "alt": "The question as printed on the paper — A number of candidates (male and female) completed an examination. The mean score of the male candidates in the examination was 71. The mean score of the female candidates in the examination was 73. The mean score of all the candidates in the examination was 71·8. Find the proportion of candidates who were male.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q9-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q9-d-solution.png",
+          "srcHash": "9bca54c1ff05ff59e5913428fdfca898",
+          "alt": "NextStepUni completes the requested proportion. Male:female=3:2 means three male shares out of five total: 3/(3+2)=3/5=0.6=60%. A five-section bar shows three male shares and two female shares. Check: 71(0.6)+73(0.4)=71.8. Original SEC solution and criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The printed solution ends at male:female = 3:2. The question asks for the proportion of all candidates who were male: 3/(3+2) = 3/5 = 60%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-a-i", topicId: "maths-1-3", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(a)(i)",
+    stem: "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+    questionText: "If 10 people are chosen at random, find the probability that exactly two of them wear contact lenses. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "P(2 Contacts)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[49],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-i-question.png",
+          "srcHash": "c04b2369f695cea2d8c2891ac3154bea",
+          "alt": "The question as printed on the paper — People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25. If 10 people are chosen at random, find the probability that exactly two of them wear contact lenses. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "78d4b6c94c0a04d686c4dff91446d63f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-a-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q10-a-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(a)(ii)",
+    stem: "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+    questionText: "Find the probability that the 7th person chosen is the second person who wears contact lenses. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "product of four terms", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q10-a-ii-solution-2", kind: "point", verbatim: "Product of three correct terms", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[49],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-ii-question.png",
+          "srcHash": "81e5f7f2390d949fc1a66faf070a6fd2",
+          "alt": "The question as printed on the paper — People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25. Find the probability that the 7th person chosen is the second person who wears contact lenses. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-ii-solution.png",
+          "srcHash": "1193fa472c8403f187f659ae7f1e8781",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-a-iii", topicId: "maths-1-3", conceptId: "p2-deferred-q10-a-iii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(a)(iii)",
+    stem: "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+    questionText: "Find the minimum number of people who would need to be chosen, in order to be at least 90% certain of including at least one person who wears contact lenses.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "1 person wearing contacts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q10-a-iii-solution-2", kind: "point", verbatim: "none wear contacts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[49],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-iii-question.png",
+          "srcHash": "4d383654ef37b8bdc3bb357496cdf671",
+          "alt": "The question as printed on the paper — People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25. Find the minimum number of people who would need to be chosen, in order to be at least 90% certain of including at least one person who wears contact lenses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-a-iii-solution.png",
+          "srcHash": "9553e623771216623de48de35d8e08c0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The logarithmic step must read n ln(0.92) ≤ ln(0.1). Since ln(0.92) is negative, division reverses the inequality: n ≥ ln(0.1)/ln(0.92) ≈ 27.615. The least whole number is 28, as in the source’s final answer.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-b-i", topicId: "maths-1-3", conceptId: "p2-deferred-q10-b-i",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(b)(i)",
+    stem: "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+    questionText: "Find the percentage of bottles that contain less than 9·85 ml of liquid. Give your answer correct to the nearest percentage.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-b-i-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[50],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-b-i-question.png",
+          "srcHash": "d2b9d106bc1f85226930da6c02978884",
+          "alt": "The question as printed on the paper — A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml. Find the percentage of bottles that contain less than 9·85 ml of liquid. Give your answer correct to the nearest percentage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-b-i-solution.png",
+          "srcHash": "bcee03aaf9f41edb7797c59233e968bb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q10(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source rounds z to −0.83 for the tables. With unrounded z = −0.8333…, the probability is about 0.2023; either method gives 20% to the requested nearest percentage.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-b-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q10-b-ii",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(b)(ii)",
+    stem: "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+    questionText: "It is known that 55% of the bottles contain between 9·85 ml and k ml of liquid, where k ∈ ℝ and k > 9·85. Find the value of k. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-b-ii-solution-1", kind: "point", verbatim: "Use of 0·2 or 0·55", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[50],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-b-ii-question.png",
+          "srcHash": "0cee05261c023db95ceddc474e6473cf",
+          "alt": "The question as printed on the paper — A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml. It is known that 55% of the bottles contain between 9·85 ml and k ml of liquid, where k ∈ ℝ and k > 9·85. Find the value of k. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-b-ii-solution.png",
+          "srcHash": "ebcbecc77ef5bd983d6c99b894b09e5d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 2 — Deferred Q10(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source uses the rounded 20% from part (i), giving P(X < k) ≈ 0.75. Using the unrounded probability gives about 0.7523 instead. Both produce k = 10.12 ml to two decimal places.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-deferred-q10-c", topicId: "maths-1-7", conceptId: "p2-deferred-q10-c",
+    section: "B", questionRef: "2023 HL Paper 2 — Deferred Q10(c)",
+    stem: "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+    questionText: "The machine used by the company to fill the bottles is serviced and adjusted. The company want to check if the mean amount of liquid in the bottles is still 10 ml. They take a random sample of 50 bottles and find the mean amount of liquid is 9·96 ml. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean amount of liquid in the bottles. State clearly your null hypothesis, your alternative hypothesis, your conclusion, and a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-deferred-q10-c-solution-1", kind: "point", verbatim: "Hypotheses", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-deferred-q10-c-solution-2", kind: "point", verbatim: "Calculations correct and one other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"markingNote":"At z≈−1.57, fail to reject H0 at 5%: there is insufficient evidence of a change. This does not prove that the mean has stayed at 10 ml. The original wording overstates the conclusion; NextStepUni supplies the precise interpretation.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[51],"generalNotesPages":[2,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-c-question.png",
+          "srcHash": "b900e7ba499b23bad74b80d4159dbaef",
+          "alt": "The question as printed on the paper — A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml. The machine used by the company to fill the bottles is serviced and adjusted. The company want to check if the mean amount of liquid in the bottles is still 10 ml. They take a random sample of 50 bottles and find the mean amount of liquid is 9·96 ml. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean amount of liquid in the bottles. State clearly your null hypothesis, your alternative hypothesis, your conclusion, and a reason for your conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p2-deferred-q10-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p2-deferred-q10-c-solution.png",
+          "srcHash": "8e40c6e6caa406b02ba5f1789b062190",
+          "alt": "NextStepUni hypothesis test: null population mean 10 ml, alternative mean differs from 10 ml. z=(9.96−10)/(0.18/√50)=−1.5713 lies between −1.96 and +1.96. Fail to reject the null at 5%; insufficient evidence of a change, not proof of an unchanged mean. A number line marks z and both critical values. Original SEC calculation and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The original calculation z ≈ −1.57 is correct. “Accept H0” and “has not changed” are too strong: fail to reject H0 at 5%, because there is insufficient evidence of a change. This test does not establish that the mean is unchanged.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

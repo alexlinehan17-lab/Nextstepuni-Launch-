@@ -203900,5 +203900,1362 @@
   "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
   "figureKey": "maths-2023-hl-p1-deferred-q10-c-ii-solution",
   "questionFigureKey": "maths-2023-hl-p1-deferred-q10-c-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q1-a",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q1(a)",
+  "stem": "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram.",
+  "questionText": "Find the midpoint and slope of [AB].",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Midpoint or slope correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q1-a-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q1-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q1-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q1(b)",
+  "stem": "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram.",
+  "questionText": "Find the equation of the perpendicular bisector of [AB]. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Slope of perpendicular",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q1-c",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q1(c)",
+  "stem": "The points A(7, 3), B(0, 2), and C(4, −6) are shown in the diagram. Part (b) asks for the perpendicular bisector of [AB].",
+  "questionText": "Use your answer from part (b) to find the co-ordinates of O, the circumcentre of ∆ABC.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Equation of perpendicular bisector",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "System reduced to 1 variable.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q1-c-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q1-c-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q2-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q2(a)(i)",
+  "stem": "The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0.",
+  "questionText": "Find the centre and radius of s.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Centre or radius correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q2-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q2-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q2-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q2(a)(ii)",
+  "stem": "The equation of a circle, s, is: x² + y² − 10x + 2y − 26 = 0.",
+  "questionText": "The line 2x − 3y + c = 0 is a tangent to circle s. Find the two possible values of c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Find values of c",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q2-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "2 steps correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q2-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q2-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q2-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q2-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q2(b)",
+  "questionText": "The lines x = 2 and x = 8 are tangents to circle k. The centre of k is on the line 3x + 4y − 7 = 0. Find the equation of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "radius or centre of circle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q2-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q2-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q3-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q3-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q3(a)",
+  "stem": "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+  "questionText": "Find |EF|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Pythagoras fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q3-b",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q3-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q3(b)",
+  "stem": "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+  "questionText": "Prove that ∆AED and ∆EFC are similar (equiangular). Give a reason for any statement you make use of in your proof.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "3 correct statements for",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "3 correct steps with at least one",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q3-c",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q3-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q3(c)",
+  "stem": "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°.",
+  "questionText": "Given that |ED| = (1/4)|AD|, find |AD|. Give your answer in the form p/√q cm, where p, q ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "No units or incorrect units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q3-d",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q3-d",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q3(d)",
+  "stem": "In the diagram below, ABCD is a square. ∆AFE is a right-angled triangle. The points E and F lie on [DC] and [BC], respectively. |AE| = 20 cm, |AF| = 25 cm and |∠FEA| = 90°. Given in part (c): |ED| = (1/4)|AD|.",
+  "questionText": "Find the area of ∆ABF. Give your answer in the form m/n cm², where m, n ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-d-solution-1",
+    "kind": "point",
+    "verbatim": "Area of 1 relevant shape found.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q3-d-solution-2",
+    "kind": "point",
+    "verbatim": "Area of 3 relevant shapes found.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q3-d-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q3-d-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q4-a-i-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q4-a-i-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii)",
+  "questionText": "(i) Prove that sin(A + B) = sin A cos B + cos A sin B. (ii) sin A = 2/√5, where 0 < A < π/2. Without using your calculator, find sin 2A and cos 2A in the form p/q where p, q ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q4-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Proof of trig identity",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q4-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Any 2 elements completed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q4-a-i-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q4-a-i-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q4-b-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q4-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q4(b)(i)",
+  "stem": "A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown.",
+  "questionText": "Find the measure of the angle α.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Adjacent or hypotenuse",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q4-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q4-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q4-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q4-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q4(b)(ii)",
+  "stem": "A sector of a circle of centre O and radius 6 cm lies inside a rectangle of length 9 cm and height 6 cm, as shown in the diagram. O lies on one side of the rectangle, as shown.",
+  "questionText": "Find the area of the shaded section in the diagram. Give your answer in the form (a − bπ) cm², where a, b ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Area of sector found.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q4-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q4-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q5-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q5(a)(i)",
+  "stem": "In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered.",
+  "questionText": "In a particular school, four students enter their data. What is the probability that all four students entered the same month? Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "P(All born in same month)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q5-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q5-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q5-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q5(a)(ii)",
+  "stem": "In an examination, students are asked to enter the day and month of their birth on the cover of their answer books (for example, 3rd February is entered as 03 02). You may assume that all months are equally likely to be entered and all days in a given month are equally likely to be entered.",
+  "questionText": "In a particular centre, five students were born during the month of April. What is the probability that at least two of them have entered the same day? You may assume that all of the 30 days in April are equally likely to be entered. Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1 – P (all on different days)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q5-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q5-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q5-b",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q5(b)",
+  "stem": "A and B are two events. In the Venn diagram below, the probability of each event is written in the appropriate region. For example, from the diagram, the probability that neither A nor B happens is P((A ∪ B)′) = 0·27. A only: 0·18; A ∩ B: 0·22; B only: 0·33; neither: 0·27.",
+  "questionText": "Find the value of P(A′ | B), where A′ is the complement of A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q5-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q5-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q5-c",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q5-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q5(c)",
+  "questionText": "C and D are independent events such that P(C) = 0·5, and P(C ∪ D) = 0·85. Find P(D), the probability that D occurs.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "A and B are independent",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q5-c-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q5-c-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q6-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q6(a)(i)",
+  "questionText": "In how many ways can the letters E, D, U, C, A, T, I, O, N be arranged if each letter is used exactly once in each arrangement?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "EDUCATION – 9 letters in total.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q6-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q6-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q6-a-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q6(a)(ii)",
+  "stem": "The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement.",
+  "questionText": "In how many of these arrangements do all the vowels (A, E, I, O, and U) come together?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Vowels together",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "5! calculated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q6-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q6-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q6-a-iii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q6(a)(iii)",
+  "stem": "The letters are E, D, U, C, A, T, I, O, N. Each letter is used exactly once in each arrangement.",
+  "questionText": "In how many of these arrangements will the letters A, C, T, I, O, N be together and in that order?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "4 arrangements shown",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q6-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q6-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q6-b-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q6(b)(i)",
+  "questionText": "In how many ways can a jury of 12 people be selected from a panel of 8 men and 8 women?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "reference to 16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q6-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q6-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q6-b-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q6-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 2 — Deferred Q6(b)(ii)",
+  "stem": "A jury of 12 people is selected from a panel of 8 men and 8 women.",
+  "questionText": "Find the probability that one such jury, selected at random, will contain more women than men.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "indicates 8W & 4M or 7W & 5M",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q6-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q6-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q7-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(i)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism.",
+  "questionText": "Explain why |∠OAY| = 30°.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "correct sides or angles indicated.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q7-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(ii)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°.",
+  "questionText": "Find |AY|. Give your answer in the form p√q cm, where p, q ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "trigonometric formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q7-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(iii)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. Part (i) establishes |∠OAY| = 30°.",
+  "questionText": "Find |AB|, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "some of the components of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q7-a-iv",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(iv)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism.",
+  "questionText": "The volume of the empty space in the prism is 422·5 cm³, correct to 1 decimal place. Find the height of each cylinder. Give your answer correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Volume of one cylinder",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-iv-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-iv-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-v",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q7-a-v",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(v)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k.",
+  "questionText": "Write down the equation of each of the lines AB, AC, and BC.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "1 correct equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-v-solution-2",
+    "kind": "point",
+    "verbatim": "2 correct equations",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-v-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-v-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-a-vi",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q7-a-vi",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(a)(vi)",
+  "stem": "The diagrams below show a triangular-based prism containing six identical cylindrical tubes, each of radius 4 cm. The cylinders all touch the sides of the prism and each other, as shown. The prism and the cylinders all have the same height. The cylinder with the centre of its base at O touches [AC] at X and [AB] at Y, where ABC is the base of the prism. The base of the prism is shown again below, on a co-ordinate plane. A is the point (0, 0), and B lies on the x-axis. One of the circles is labelled k.",
+  "questionText": "Find the equation of the circle k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-a-vi-solution-1",
+    "kind": "point",
+    "verbatim": "midpoint of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-a-vi-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-a-vi-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q7-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q7-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q7(b)",
+  "questionText": "A solid metal sphere, of radius r, is melted down and recast into a right-circular cylinder. You may assume that no material was lost in this process. The resulting cylinder has a height of 3r. Find, in terms of r, the radius of the cylinder.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "with some substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q7-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q7-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(a)(i)",
+  "stem": "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+  "questionText": "Write down the range of f(t).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Use of 19 or 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(a)(ii)",
+  "stem": "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+  "questionText": "The period of f(t) is 24 hours. Draw the graph of f(t) on the axes below, in the domain 0 ≤ t ≤ 24, t ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1 correct plot",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "3 correct plots",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-a-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(a)(iii)",
+  "stem": "In a particular city, the temperature during a 24-hour period in the month of July, measured in degrees centigrade, could be modelled by f(t) = 19 + 6 sin(πt/12), where t ∈ ℝ was the time, in hours, after 9:00 a.m., and πt/12 was measured in radians.",
+  "questionText": "Find the first time during the 24-hour period when the temperature was exactly 21°C. Give your answer correct to the nearest minute.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Non trig equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-b-i",
+  "topicId": "maths-4-2",
+  "conceptId": "p2-deferred-q8-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(b)(i)",
+  "stem": "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+  "questionText": "Find the time, after 9:00 a.m., when both cars will be the same distance from O.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Equidistant from O",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-b-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(b)(ii)",
+  "stem": "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+  "questionText": "Find how far apart the cars will be at 10:15 a.m. Give your answer, in km, correct to one decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Cosine rule fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q8-b-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q8-b-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q8(b)(iii)",
+  "stem": "A straight motorway, M1, crosses over another straight motorway, M2, at the point O. At the point where they cross, the motorways are at an angle of 60° to each other, as shown in the diagram. At 9:00 a.m., car A on M1 passes O at a constant speed of 100 km/hr. Twenty minutes later, car B on M2 passes O at a constant speed of 120 km/hr. Each car is travelling in the direction shown in the diagram.",
+  "questionText": "Find the exact time, after 9:00 a.m., when car A and car B will be 52 km apart.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Cosine rule fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q8-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "2nd solution is not",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q8-b-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q8-b-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q9-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q9-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q9(a)",
+  "questionText": "30 students in a class took a test. The table below gives a summary of their marks. Use mid-interval values to estimate the mean mark of the students in the test. Mark (%): 0–20, 20–40, 40–60, 60–80, 80–100. Number of students: 4, 8, 10, 6, 2. (Note: 20–40 means greater than 20 and up to and including 40.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "1 mid",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "values found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q9-a-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q9-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q9-b",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q9-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q9(b)",
+  "stem": "A multiple choice test has 15 questions. For each question, 5 possible answers are given, only 1 of which is the correct answer. If a candidate picks the correct answer, they get 10 points. If a candidate picks an incorrect answer, they lose 2 points. Candidates must answer all questions. Candidates can get a positive or negative score on the test.",
+  "questionText": "Find the expected score on the test of a candidate who randomly selects an answer to each of the 15 questions.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Expected value fully formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q9-b-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q9-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q9-c-i-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q9-c-i-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q9(c)(i), Q9(c)(ii)",
+  "stem": "The probability that any player on a particular team will score a goal from a penalty is 2/3. In a penalty shoot-out, at the end of a game, 5 players from the team each take a penalty.",
+  "questionText": "(i) Complete the table below to show the probability of scoring from 0 to 5 goals from these penalties. Give each answer in the form a/b, where a, b ∈ ℕ. Goals scored: 0, 1, 2, 3, 4, 5. Probability P(x): 1/243, blank, 40/243, blank, 80/243, blank. (ii) If this team were involved in a lot of 5 player penalty shoot-outs, on average, how many goals would you expect this team to score per penalty shoot-out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Two correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q9-c-i-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q9-c-i-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q9-d",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q9-d",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q9(d)",
+  "questionText": "A number of candidates (male and female) completed an examination. The mean score of the male candidates in the examination was 71. The mean score of the female candidates in the examination was 73. The mean score of all the candidates in the examination was 71·8. Find the proportion of candidates who were male.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "ratio Males to Females is",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q9-d-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q9-d-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-a-i",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q10-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(a)(i)",
+  "stem": "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+  "questionText": "If 10 people are chosen at random, find the probability that exactly two of them wear contact lenses. Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "P(2 Contacts)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-a-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q10-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(a)(ii)",
+  "stem": "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+  "questionText": "Find the probability that the 7th person chosen is the second person who wears contact lenses. Give your answer correct to 4 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "product of four terms",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Product of three correct terms",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-a-iii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q10-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(a)(iii)",
+  "stem": "People are chosen at random from the population in Ireland. The probability that a person in Ireland wears contact lenses is 2/25.",
+  "questionText": "Find the minimum number of people who would need to be chosen, in order to be at least 90% certain of including at least one person who wears contact lenses.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "1 person wearing contacts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "none wear contacts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-b-i",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q10-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(b)(i)",
+  "stem": "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+  "questionText": "Find the percentage of bottles that contain less than 9·85 ml of liquid. Give your answer correct to the nearest percentage.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-b-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q10-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(b)(ii)",
+  "stem": "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+  "questionText": "It is known that 55% of the bottles contain between 9·85 ml and k ml of liquid, where k ∈ ℝ and k > 9·85. Find the value of k. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Use of 0·2 or 0·55",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p2-deferred-q10-c",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q10-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 — Deferred Q10(c)",
+  "stem": "A company produces eye drops. The eye drops are sold in small bottles. The amount of liquid in the bottles follows a normal distribution with mean 10 ml and standard deviation 0·18 ml.",
+  "questionText": "The machine used by the company to fill the bottles is serviced and adjusted. The company want to check if the mean amount of liquid in the bottles is still 10 ml. They take a random sample of 50 bottles and find the mean amount of liquid is 9·96 ml. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean amount of liquid in the bottles. State clearly your null hypothesis, your alternative hypothesis, your conclusion, and a reason for your conclusion.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "Hypotheses",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p2-deferred-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "Calculations correct and one other",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p2-deferred-q10-c-solution",
+  "questionFigureKey": "maths-2023-hl-p2-deferred-q10-c-question"
  }
 ]
