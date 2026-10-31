@@ -380,6 +380,17 @@ INLINE_SENTENCE_MARKERS[('physics', 2020, 'hl')] = [
     '(v) how long the ball was in the air,',
     '(i) radioactivity,', '(ii) the becquerel.',
     '(iv) the tension in the string,', '(v) the speed of sound in the string.']
+# 2019 HL, independently checked against paper pp3/5/6/8 and scheme pp8/11/13/15:
+# these inline lower-case romans are separately marked tasks. Q3 has six
+# method questions; Q6, Q8 and Q10 each contain a two-part calculation/readout.
+# Keep this repair specific to the reviewed sitting.
+INLINE_SENTENCE_MARKERS[('physics', 2019, 'hl')] = [
+    '(i) crush the ice,', '(ii) dry the ice?',
+    '(iii) crushed,', '(iv) dried?',
+    '(v) use warm water,', '(vi) use melting ice?',
+    '(i) its radius of orbit,', '(ii) its angular velocity.',
+    '(i) point A,', '(ii) the slope of the graph?',
+    '(i) the wavelength of the sound wave,', '(ii) the speed of sound in air.']
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion

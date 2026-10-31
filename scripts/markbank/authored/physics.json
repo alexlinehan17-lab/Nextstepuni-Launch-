@@ -56917,5 +56917,3668 @@
   "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2020_ol.py.",
   "year": 2020,
   "level": "ordinary"
+ },
+ {
+  "id": "phys-2019-hl-q1-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Apparatus",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "timer",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ball and release mechanism",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "pressure plate",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-data"
+ },
+ {
+  "id": "phys-2019-hl-q1-distance",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "distance",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Measuring distance",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded.",
+  "questionText": "Between which points was the distance s measured?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "bottom of ball and (top of) pressure plate",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-data"
+ },
+ {
+  "id": "phys-2019-hl-q1-time",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "time",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Measuring time",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded.",
+  "questionText": "Describe how the time t was measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "timer started when ball released and stopped when it hit plate",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-data"
+ },
+ {
+  "id": "phys-2019-hl-q1-graph",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Graph",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded.",
+  "questionText": "Draw a suitable graph that can be used to determine the acceleration due to gravity g.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "values for t² (–1 for each incorrect value)",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "points plotted (–1 for each incorrect point)",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line of good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-squared-times",
+  "questionFigureKey": "physics-2019-hl-q1-graph-question"
+ },
+ {
+  "id": "phys-2019-hl-q1-gravity",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "gravity",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Acceleration due to gravity",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded. Draw a suitable graph that can be used to determine the acceleration due to gravity g.",
+  "questionText": "Hence determine g.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "slope formula: (m=) (y₂−y₁)/(x₂−x₁) / correct substitution into slope formula",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "slope calculated: m≈5",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "acceleration due to gravity calculated: g≈10 m s⁻²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-data"
+ },
+ {
+  "id": "phys-2019-hl-q1-dense-ball",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "dense-ball",
+  "section": "A",
+  "questionRef": "2019 HL Q1 — Small dense ball",
+  "stem": "In an experiment to determine the acceleration due to gravity, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded.",
+  "questionText": "A small, dense ball was used as the object in this experiment. State an advantage of using this type of ball.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "less air resistance",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q1-data"
+ },
+ {
+  "id": "phys-2019-hl-q2-approximation",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "approximation",
+  "section": "A",
+  "questionRef": "2019 HL Q2 — Approximate focal length",
+  "stem": "In an experiment to determine the focal length of a concave mirror a student first found the approximate focal length of the mirror. He then placed an object in front of the mirror and measured the object distance u and the corresponding image distance v. He repeated this procedure for different values of u. The following data were recorded.",
+  "questionText": "How did the student find the approximate focal length?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "found image of a distant object",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q2-data"
+ },
+ {
+  "id": "phys-2019-hl-q2-starting-distance",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "starting-distance",
+  "section": "A",
+  "questionRef": "2019 HL Q2 — Why find it first?",
+  "stem": "In an experiment to determine the focal length of a concave mirror a student first found the approximate focal length of the mirror. He then placed an object in front of the mirror and measured the object distance u and the corresponding image distance v. He repeated this procedure for different values of u. The following data were recorded.",
+  "questionText": "Why did the student find the approximate focal length at the start of the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure object was placed outside of focal point / so a real image could be formed / image formed on a screen / to compare with later answer",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q2-data"
+ },
+ {
+  "id": "phys-2019-hl-q2-image-position",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "image-position",
+  "section": "A",
+  "questionRef": "2019 HL Q2 — Finding the image",
+  "stem": "In an experiment to determine the focal length of a concave mirror a student first found the approximate focal length of the mirror. He then placed an object in front of the mirror and measured the object distance u and the corresponding image distance v. He repeated this procedure for different values of u. The following data were recorded.",
+  "questionText": "Describe, with the aid of a labelled diagram, how the position of the image was found.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "concave mirror, screen and object",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "move screen (and/or object and/or mirror) until (sharpest) image is formed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q2-data"
+ },
+ {
+  "id": "phys-2019-hl-q2-precautions",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "precautions",
+  "section": "A",
+  "questionRef": "2019 HL Q2 — Two precautions",
+  "stem": "In an experiment to determine the focal length of a concave mirror a student first found the approximate focal length of the mirror. He then placed an object in front of the mirror and measured the object distance u and the corresponding image distance v. He repeated this procedure for different values of u. The following data were recorded.",
+  "questionText": "State two precautions that should be taken when measuring v.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "error of parallax / measure to back of mirror / measure to centre of mirror / sharp image formed",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": null,
+     "options": [
+      "error of parallax",
+      "measure to back of mirror",
+      "measure to centre of mirror",
+      "sharp image formed"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q2-data"
+ },
+ {
+  "id": "phys-2019-hl-q2-focal-length",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "focal-length",
+  "section": "A",
+  "questionRef": "2019 HL Q2 — Calculating focal length",
+  "stem": "In an experiment to determine the focal length of a concave mirror a student first found the approximate focal length of the mirror. He then placed an object in front of the mirror and measured the object distance u and the corresponding image distance v. He repeated this procedure for different values of u. The following data were recorded.",
+  "questionText": "Use all of the data to calculate the focal length of the mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "one correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "15.1 / 14.9 / 15.0 / 14.5 (cm)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "15.1",
+      "14.9",
+      "15.0",
+      "14.5 (cm)"
+     ]
+    }
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "correct average: 14.9 cm",
+    "marks": 1
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q2-data"
+ },
+ {
+  "id": "phys-2019-hl-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-i",
+  "section": "A",
+  "questionRef": "2019 HL Q3(i)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "Why did the student crush the ice",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure it was all at the same temperature / to ensure it was all at 0°C / so that it would melt faster / to give a greater surface area",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-ii",
+  "section": "A",
+  "questionRef": "2019 HL Q3(ii)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "Why did the student dry the ice?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure that only ice was added to the calorimeter",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-iii",
+  "section": "A",
+  "questionRef": "2019 HL Q3(iii)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "How was the ice crushed",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g ice crusher",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-iv",
+  "section": "A",
+  "questionRef": "2019 HL Q3(iv)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "How was the ice dried?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "using a towel",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-v",
+  "section": "A",
+  "questionRef": "2019 HL Q3(v)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "Why did she use warm water",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ice would melt more quickly / so that energy lost = energy gained",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-method-vi",
+  "section": "A",
+  "questionRef": "2019 HL Q3(vi)",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "Why did she use melting ice?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure that the ice was at 0°C",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q3-latent-heat",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat",
+  "section": "A",
+  "questionRef": "2019 HL Q3 — Specific latent heat",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter. (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹, specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
+  "questionText": "Use the data to calculate the specific latent heat of fusion of ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "∆θi=8",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "∆θw=21.5",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "mw=52.2",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "(∆E=)ml and (∆E=)mc∆θ",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "(14.4)li+(14.4)(4180)(8)=(56.3)(390)(21.5)+(52.2)(4180)(21.5)",
+    "marks": 3
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "l =3.25 ×10⁵ J Kg⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q3-data"
+ },
+ {
+  "id": "phys-2019-hl-q3-water-mass",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "water-mass",
+  "section": "A",
+  "questionRef": "2019 HL Q3 — Large mass of water",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, a student first crushed some ice. She then dried the melting ice before adding it to warm water in an insulated copper calorimeter.",
+  "questionText": "Why could using a very large mass of water lead to a less accurate result in this experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "smaller change in temperature / greater percentage error",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q4-circuit",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Circuit diagram",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded.",
+  "questionText": "Draw a circuit diagram for this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "source of varying voltage",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "diode",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ammeter",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "voltmeter",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Current–voltage graph",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded.",
+  "questionText": "Use the data to draw a graph of current against potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "curve of good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q4-junction-voltage",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "junction-voltage",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Junction voltage",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded. Use the data to draw a graph of current against potential difference.",
+  "questionText": "Use your graph to determine the junction voltage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "≈ 0.2 V",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q4-conduction",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "conduction",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Exceeding the junction voltage",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded.",
+  "questionText": "What happened in the diode when the junction voltage was exceeded?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "depletion layer broke down / low resistance / current flows",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q4-ohms-law",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "ohms-law",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Ohm’s law",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded.",
+  "questionText": "Is Ohm’s law obeyed for the diode? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "not a straight line through the origin",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q4-reverse-bias",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "reverse-bias",
+  "section": "A",
+  "questionRef": "2019 HL Q4 — Reverse-bias changes",
+  "stem": "In an experiment to investigate the variation of current I with potential difference V for a semiconductor diode the following data were recorded.",
+  "questionText": "The diode is now reversed and data is recorded. State two other changes that are made to the circuit before recording data for a diode in reverse bias.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "replace ammeter with a microammeter / place voltmeter across diode and (micro)ammeter / remove (protective) resistor if already included [any two]",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "replace ammeter with a microammeter",
+      "place voltmeter across diode and (micro)ammeter",
+      "remove (protective) resistor if already included [any two]"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q4-data"
+ },
+ {
+  "id": "phys-2019-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "q5-a",
+  "section": "B",
+  "questionRef": "2019 HL Q5(a)",
+  "stem": "A light‐year is the distance travelled by light in a vacuum in one year.",
+  "questionText": "Calculate this distance in metres.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "s=vt",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "s=(3.00×10⁸)(3.15×10⁷)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "s=9.45×10¹⁵ (m)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "q5-b",
+  "section": "B",
+  "questionRef": "2019 HL Q5(b)",
+  "stem": "An apple has a weight of 1 N and its volume is 121 cm³. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate the density of the apple.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W=mg / m = 0.102",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ρ= m/V",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ρ=843 kg m⁻³",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "q5-c",
+  "section": "B",
+  "questionRef": "2019 HL Q5(c)",
+  "stem": "A book is decelerating as it moves to the right on a horizontal table.",
+  "questionText": "Draw a labelled diagram to show the forces acting on the book as it moves on the table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force up",
+    "marks": 3,
+    "contextNote": "(–1 for each incorrect force)"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(equal) force down",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "net horizontal force to the left",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "q5-d",
+  "section": "B",
+  "questionRef": "2019 HL Q5(d)",
+  "questionText": "What is meant by polarisation of light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "vibrating",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in one plane",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "q5-e",
+  "section": "B",
+  "questionRef": "2019 HL Q5(e)",
+  "questionText": "What is the thermometric property of (i) a mercury thermometer, (ii) a thermocouple?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "length/height/volume",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "emf/voltage",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "q5-f",
+  "section": "B",
+  "questionRef": "2019 HL Q5(f)",
+  "questionText": "Sketch a graph to show the relationship between resistance R and temperature T (in °C) for a metallic conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 4,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "straight line (–1 if through origin)",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "q5-g",
+  "section": "B",
+  "questionRef": "2019 HL Q5(g)",
+  "questionText": "Power P is generated in a resistor of resistance R when a potential difference V is applied across it. Write P in terms of R and V.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "V²/R",
+    "marks": 7,
+    "contextNote": "(allow 4 marks for VI or I²R or V=IR)"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "q5-h",
+  "section": "B",
+  "questionRef": "2019 HL Q5(h)",
+  "stem": "Polonium was discovered by Marie and Pierre Curie in 1898.",
+  "questionText": "Polonium–218 has a half‐life of 3 minutes. Calculate the activity of a sample of polonium–218 that contains 75000 nuclei.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ= ln2/(T1/2) / λ=0.00385",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "A=λN / A=(0.00385)(75000)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "A=289 Bq",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "q5-i",
+  "section": "B",
+  "questionRef": "2019 HL Q5(i)",
+  "questionText": "Polonium–218 is produced as the daughter nucleus in the alpha‐decay of radon–222. Write a nuclear equation for this reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Rn²²²₈₆ → Po²¹⁸₈₄ + He⁴₂",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-j-neutrinos",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "neutrino-detection",
+  "section": "B",
+  "questionRef": "2019 HL Q5(j) — neutrinos",
+  "questionText": "Neutrinos are sometimes called ghost particles. Why are they very hard to detect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "very small mass",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "no charge",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q5-j-ammeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "galvanometer-to-ammeter",
+  "section": "B",
+  "questionRef": "2019 HL Q5(j) — ammeter",
+  "questionText": "Describe how a galvanometer can be converted into an ammeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "small resistance",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in parallel",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-gravitation",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "gravitation",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Law of gravitation",
+  "stem": "Satellites, which play an increasing role in the information age, are controlled by the gravitational force. Weather satellites, communications satellites and global positioning satellites (GPS) are used by millions of people every day. Different satellites have different periods and different radii of orbit.",
+  "questionText": "State Newton’s law of universal gravitation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force is proportional to product of masses",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "force is inversely proportional to distance squared",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "// F=G m₁m₂/d²",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "notation",
+    "marks": 3,
+    "route": "formula"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-period-radius",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "period-radius",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Period and radius",
+  "stem": "Satellites, which play an increasing role in the information age, are controlled by the gravitational force. Weather satellites, communications satellites and global positioning satellites (GPS) are used by millions of people every day. Different satellites have different periods and different radii of orbit.",
+  "questionText": "What is the relationship between the period T and radius of orbit r of a satellite?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T²∝ r³",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-infrared-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "infrared-wavelength",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Infrared wavelength",
+  "stem": "The METEOSAT 11 weather satellite provides MET Éireann with both visible and infrared images. It is in geostationary orbit above the equator.",
+  "questionText": "Which has a longer wavelength, visible or infrared radiation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "infrared",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-infrared-detection",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "infrared-detection",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Detecting infrared",
+  "stem": "The METEOSAT 11 weather satellite provides MET Éireann with both visible and infrared images. It is in geostationary orbit above the equator.",
+  "questionText": "Describe how infrared radiation can be detected in the school laboratory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heating effect / thermometer",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-geostationary-period",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "geostationary-period",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Geostationary period",
+  "stem": "The METEOSAT 11 weather satellite provides MET Éireann with both visible and infrared images. It is in geostationary orbit above the equator.",
+  "questionText": "What is the period of METEOSAT 11?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "24 hours",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-satellite-height",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "satellite-height",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Satellite height",
+  "stem": "The METEOSAT 11 weather satellite provides MET Éireann with both visible and infrared images. It is in geostationary orbit above the equator. (mass of Earth = 6.0 × 10²⁴ kg, radius of Earth = 6400 km)",
+  "questionText": "Calculate its height above the surface of the Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T²= 4π²R³/(Gm) / (86400)²= 4π²R³/((6.67×10⁻¹¹)(6.0×10²⁴))",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "h= 3.596 × 10⁷ m / 36000 km",
+    "marks": 3,
+    "contextNote": "(–1 if answer left as R= 4.236 × 10⁷ m / 42360 km)"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "gps-radius",
+  "section": "B",
+  "questionRef": "2019 HL Q6(i)",
+  "stem": "A global positioning satellite is not in geostationary orbit. It orbits the Earth with a speed of 14000 km hr⁻¹. (mass of Earth = 6.0 × 10²⁴ kg, radius of Earth = 6400 km)",
+  "questionText": "Calculate (i) its radius of orbit",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = 3889 (m s⁻¹)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v²= Gm/R / 3889²= ((6.67×10⁻¹¹)(6.0×10²⁴))/R / F=G m₁m₂/d² / F= mv²/R",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "R= 2.65 × 10⁷ m / 26500 km",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "gps-angular-velocity",
+  "section": "B",
+  "questionRef": "2019 HL Q6(ii)",
+  "stem": "A global positioning satellite is not in geostationary orbit. It orbits the Earth with a speed of 14000 km hr⁻¹. (mass of Earth = 6.0 × 10²⁴ kg, radius of Earth = 6400 km)",
+  "questionText": "Calculate its angular velocity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v=rω / 3889=(2.65 × 10⁷)ω",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ω= 1.47 × 10⁻⁴ (rad) s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-signal-time",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "signal-time",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Signal travel time",
+  "stem": "A global positioning satellite is not in geostationary orbit. It orbits the Earth with a speed of 14000 km hr⁻¹. (mass of Earth = 6.0 × 10²⁴ kg, radius of Earth = 6400 km)",
+  "questionText": "Calculate the minimum time it takes a signal to travel from the global positioning satellite to the Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v= s/t / (3.00 ×10⁸)= (2.65 × 10⁷−6.4 × 10⁶)/t",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "t= 0.067 s",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q6-remaining-in-orbit",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "remaining-in-orbit",
+  "section": "B",
+  "questionRef": "2019 HL Q6 — Remaining in orbit",
+  "stem": "Satellites, which play an increasing role in the information age, are controlled by the gravitational force. Weather satellites, communications satellites and global positioning satellites (GPS) are used by millions of people every day. Different satellites have different periods and different radii of orbit.",
+  "questionText": "Explain why satellites remain in orbit and do not fall to Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(horizontal) velocity",
+    "marks": 5
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q7-potential-difference",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "potential-difference",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Potential difference and unit",
+  "stem": "In a thunderstorm different parts of a cloud become positively and negatively charged. There is a large electric field and a large potential difference between different parts of the cloud and between the cloud and the ground.",
+  "questionText": "What is meant by potential difference? State its unit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "work done",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "per unit charge",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "W/Q",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "notation",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "volt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q7-field-strength",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-strength",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Electric field strength",
+  "stem": "In a thunderstorm different parts of a cloud become positively and negatively charged. There is a large electric field and a large potential difference between different parts of the cloud and between the cloud and the ground.",
+  "questionText": "Define electric field strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "per unit charge",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F/Q",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "notation",
+    "marks": 3,
+    "route": "formula"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q7-induction",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "induction",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Charging by induction",
+  "questionText": "Describe how an insulated spherical conductor can be charged positively by induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(negatively) charged rod close to it",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "earth sphere",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "remove earth",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q7-field-pattern",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-pattern",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Electric field pattern",
+  "stem": "A spherical conductor has a diameter of 12 cm. It is charged positively by induction.",
+  "questionText": "Draw the electric field around the charged conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "radial field lines",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "away from positive charge",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q7-sphere"
+ },
+ {
+  "id": "phys-2019-hl-q7-charge",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "charge",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Charge on the conductor",
+  "stem": "A spherical conductor has a diameter of 12 cm. It is charged positively by induction.",
+  "questionText": "There is an electric field strength of 2.3 N C⁻¹ at a distance of 5 cm from the surface of this spherical conductor. Calculate the charge on the conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= Q/(4π∈d²) / 2.3= Q/(4π(8.9 × 10⁻¹²)(0.11)²) / E= F/Q / F= q₁q₂/(4π∈d²)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q= 3.1 × 10⁻¹² C",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q7-sphere"
+ },
+ {
+  "id": "phys-2019-hl-q7-point-discharge",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "point-discharge",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Point discharge",
+  "questionText": "Explain how point discharge occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charge accumulates at a point",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "air around point is ionised",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "opposite charges attracted / like charges repelled",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q7-point-discharge-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "point-discharge-experiment",
+  "section": "B",
+  "questionRef": "2019 HL Q7 — Demonstrating point discharge",
+  "questionText": "Describe how point discharge can be demonstrated in the laboratory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charged point",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "candle at point",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "flame is blown away from the point",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-emission-types",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "emission-types",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Photoelectric and thermionic emission",
+  "questionText": "Electrons are emitted from metals during photoelectric emission, thermionic emission and radioactive decay. Distinguish between photoelectric and thermionic emission.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "photoelectric: light",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "thermionic: heat",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-beta",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "beta",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Radioactive electrons",
+  "questionText": "What name is given to electrons emitted during radioactive decay?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "beta",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-line-spectrum",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "line-spectrum",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Line emission spectrum",
+  "stem": "When current is passed through the vapour in a sodium lamp, light is emitted as a line spectrum.",
+  "questionText": "What is a line emission spectrum?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(specific) frequencies/colours (of e.m. radiation) emitted by a material",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-atomic-levels",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "atomic-levels",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Producing the spectrum",
+  "stem": "When current is passed through the vapour in a sodium lamp, light is emitted as a line spectrum.",
+  "questionText": "Explain, in terms of the structure of the atom, how this spectrum is produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy given to electron",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "electron changes energy levels",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "photon emitted / light emitted / (e.m.) radiation emitted",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-einstein",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "einstein",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Einstein’s equation",
+  "stem": "The graph shows the relationship between the kinetic energy Eₖ of the electrons emitted during photoemission and the frequency f of the incident radiation.",
+  "questionText": "Write down Einstein’s photoelectric equation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "hf=∅+ ½ mv²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q8-graph"
+ },
+ {
+  "id": "phys-2019-hl-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "threshold-frequency",
+  "section": "B",
+  "questionRef": "2019 HL Q8(i)",
+  "stem": "The graph shows the relationship between the kinetic energy Eₖ of the electrons emitted during photoemission and the frequency f of the incident radiation.",
+  "questionText": "What physical quantity is represented by (i) point A",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "threshold frequency",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q8-graph"
+ },
+ {
+  "id": "phys-2019-hl-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "planck-constant",
+  "section": "B",
+  "questionRef": "2019 HL Q8(ii)",
+  "stem": "The graph shows the relationship between the kinetic energy Eₖ of the electrons emitted during photoemission and the frequency f of the incident radiation.",
+  "questionText": "What physical quantity is represented by the slope of the graph?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Planck constant",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q8-graph"
+ },
+ {
+  "id": "phys-2019-hl-q8-electron-speed",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "electron-speed",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Maximum electron velocity",
+  "questionText": "The work function of magnesium is 3.68 eV. Calculate the maximum velocity of the emitted electrons when photons of energy 4.15 eV are incident on magnesium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Eₖ=0.47 (eV) / 7.5×10⁻²⁰ (J)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Eₖ= ½ mv² / 7.5×10⁻²⁰ = ½ (9.1×10⁻³¹) v²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v=4.1×10⁵ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-xray-electrons",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-electrons",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Electron source in an X-ray tube",
+  "questionText": "Electrons are produced in an X‐ray tube by thermionic emission. Where in the tube are the electrons produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "cathode",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-xray-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-wavelength",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Minimum X-ray wavelength",
+  "questionText": "The electrons are then accelerated to high velocities. Some of the electrons have their energy converted into X‐rays. What is the minimum wavelength of an X‐ray produced in a 50 kV tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "eV / hf",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "eV=hf / (1.6×10⁻¹⁹)(50×10³)=(6.6×10⁻³⁴)f",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "λ= 2.5×10⁻¹¹ m",
+    "marks": 3,
+    "contextNote": "(–1 if answer left as f = 1.2×10¹⁹ Hz)"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q8-xray-cooling",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-cooling",
+  "section": "B",
+  "questionRef": "2019 HL Q8 — Managing heat in an X-ray tube",
+  "questionText": "The kinetic energy of each of the other electrons is converted into heat energy. State two design features of an X‐ray tube that take account of this.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "tungsten target / cooling fluid",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": null,
+     "options": [
+      "tungsten target",
+      "cooling fluid"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q9-a-terms",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "terms",
+  "section": "B",
+  "questionRef": "2019 HL Q9(a) — Force and magnetic field",
+  "stem": "Both a moving charge and a conductor carrying an electric current experience a force in a magnetic field.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force is what causes acceleration",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "magnetic field is a region where magnetic forces are felt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q9-underlined-terms"
+ },
+ {
+  "id": "phys-2019-hl-q9-a-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2019 HL Q9(a) — Force on a conductor",
+  "stem": "Both a moving charge and a conductor carrying an electric current experience a force in a magnetic field.",
+  "questionText": "Describe an experiment to demonstrate that a current‐carrying conductor experiences a force in a magnetic field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "power supply, aluminium foil, magnets",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "foil moves",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q9-a-no-force",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "no-force",
+  "section": "B",
+  "questionRef": "2019 HL Q9(a) — When there is no force",
+  "questionText": "When would a current‐carrying conductor in a magnetic field not experience a force?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "it is parallel to the field",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q9-b-force-expression",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "force-expression",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b) — Force expression",
+  "stem": "A straight wire of length 3 cm was placed perpendicular to a magnetic field of uniform magnetic flux density B. The force F on the wire was measured for a series of values of current I flowing in the wire. The following data were recorded.",
+  "questionText": "Write down an expression for the force F on the current‐carrying wire in terms of I, B and the length l of the wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(F=)BIl",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q9-data"
+ },
+ {
+  "id": "phys-2019-hl-q9-b-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "graph",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b) — Force–current graph",
+  "stem": "A straight wire of length 3 cm was placed perpendicular to a magnetic field of uniform magnetic flux density B. The force F on the wire was measured for a series of values of current I flowing in the wire. The following data were recorded.",
+  "questionText": "Plot a graph on graph paper of force against current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "line of good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q9-data"
+ },
+ {
+  "id": "phys-2019-hl-q9-b-flux-density",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "flux-density",
+  "section": "B",
+  "questionRef": "2019 HL Q9(b) — Magnetic flux density",
+  "stem": "A straight wire of length 3 cm was placed perpendicular to a magnetic field of uniform magnetic flux density B. The force F on the wire was measured for a series of values of current I flowing in the wire. The following data were recorded. Plot a graph on graph paper of force against current.",
+  "questionText": "Calculate the slope of the graph and use it to calculate the magnetic flux density of the field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "slope: (m= (y₂−y₁)/(x₂−x₁) ) = 0.02",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m=Bl / 0.02=B(0.03)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "B= 0.67 T",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q9-data"
+ },
+ {
+  "id": "phys-2019-hl-q9-c-derivation",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "derivation",
+  "section": "B",
+  "questionRef": "2019 HL Q9(c) — Force on a moving charge",
+  "stem": "A straight wire of length 3 cm was placed perpendicular to a magnetic field of uniform magnetic flux density B. The force F on the wire was measured for a series of values of current I flowing in the wire. The following data were recorded. Write down an expression for the force F on the current‐carrying wire in terms of I, B and the length l of the wire.",
+  "questionText": "Starting with the expression for the force that you wrote in part (b), derive the expression F = qvB for the force F acting on a charge q travelling at a velocity v perpendicular to a magnetic field of flux density B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I= q/t and v= l/t",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F=B( q/t )(vt)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F=qvB",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q9-data"
+ },
+ {
+  "id": "phys-2019-hl-q9-c-proton-speed",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "proton-speed",
+  "section": "B",
+  "questionRef": "2019 HL Q9(c) — Proton speed",
+  "questionText": "In a nuclear detector a proton enters a magnetic field of flux density 0.5 T at right angles to the field. The proton initially follows a circular path of radius 2.3 mm. Calculate the speed of the proton as it enters the field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F=qvB / F= mv²/r",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "qvB= mv²/r / (1.60×10⁻¹⁹)(0.5)= ((1.67×10⁻²⁷)v)/(2.3×10⁻³)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v= 1.1×10⁵ m s⁻¹",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-wave-terms",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wave-terms",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Diffraction and interference",
+  "questionText": "Explain the terms diffraction and interference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "diffraction — the spreading out of a wave",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "after it passes an obstacle/gap",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "interference — occurs when two waves meet",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-fringes",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fringes",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Producing fringes",
+  "stem": "In 1801 Thomas Young performed an experiment to demonstrate that light is a wave. He passed monochromatic light through two narrow slits and observed a series of bright and dark fringes on a screen.",
+  "questionText": "Explain, with the aid of a labelled diagram, how a series of bright and dark fringes were produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "slits",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "diffraction at slits",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "interference",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-wave-evidence",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wave-evidence",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Evidence that light is a wave",
+  "stem": "In 1801 Thomas Young performed an experiment to demonstrate that light is a wave. He passed monochromatic light through two narrow slits and observed a series of bright and dark fringes on a screen.",
+  "questionText": "How does this experiment demonstrate that light is a wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "result can only be explained using interference",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-light-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "light-wavelength",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Wavelength of light",
+  "stem": "In 1801 Thomas Young performed an experiment to demonstrate that light is a wave. He passed monochromatic light through two narrow slits and observed a series of bright and dark fringes on a screen. The experiment was repeated in the school laboratory. The slits were 0.5 mm apart and were placed at a distance of 1.25 m from the screen. The distance across 13 bright fringes on the screen was found to be 1.65 cm.",
+  "questionText": "Calculate the wavelength of the monochromatic light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distance between n equals zero and n equals six = 0.825 cm",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tanθ= O/A / tanθ= 0.825/125 / θ=0.378",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "nλ=dsinθ / 6λ=(0.5 × 10⁻³)sin(0.378)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "λ= 5.5 × 10 ⁻⁷m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q10-fringes"
+ },
+ {
+  "id": "phys-2019-hl-q10-fringe-spacing",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fringe-spacing",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Increasing fringe spacing",
+  "stem": "In 1801 Thomas Young performed an experiment to demonstrate that light is a wave. He passed monochromatic light through two narrow slits and observed a series of bright and dark fringes on a screen. The experiment was repeated in the school laboratory. The slits were 0.5 mm apart and were placed at a distance of 1.25 m from the screen. The distance across 13 bright fringes on the screen was found to be 1.65 cm.",
+  "questionText": "List two adjustment to the apparatus that could be made to increase the distance between the bright fringes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "move screen from slits / decrease distance between slits / increase λ",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "move screen from slits",
+      "decrease distance between slits",
+      "increase λ"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-lens-power",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "lens-power",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — Lens power",
+  "questionText": "When the ciliary muscles contract the lens in the eye becomes thinner. What effect does this have on the power of the lens?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "decreases power",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper’s stated contraction/thinner premise is retained verbatim; the scheme answers the consequence of a thinner lens. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-harmonics",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "harmonics",
+  "section": "B",
+  "questionRef": "2019 HL Q10 — First two resonances",
+  "stem": "A certain musical instrument can be modelled as a cylindrical pipe that is closed at one end and whose length can be changed. The air column in the pipe vibrates at a frequency of 512 Hz.",
+  "questionText": "Draw diagrams to show the first two harmonics of this instrument.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct diagram for first harmonic",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct diagram for third harmonic",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "The paper says first two harmonics; the official scheme explicitly prices first and third harmonics of a closed pipe. Both rows are retained. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "sound-wavelength",
+  "section": "B",
+  "questionRef": "2019 HL Q10(i)",
+  "stem": "A certain musical instrument can be modelled as a cylindrical pipe that is closed at one end and whose length can be changed. The air column in the pipe vibrates at a frequency of 512 Hz. The lengths of the pipe at the first two positions of resonance are 16.7 cm and 49.8 cm.",
+  "questionText": "Calculate (i) the wavelength of the sound wave",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ=2×(0.498−0.167)=0.66 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "speed-of-sound",
+  "section": "B",
+  "questionRef": "2019 HL Q10(ii)",
+  "stem": "A certain musical instrument can be modelled as a cylindrical pipe that is closed at one end and whose length can be changed. The air column in the pipe vibrates at a frequency of 512 Hz. The lengths of the pipe at the first two positions of resonance are 16.7 cm and 49.8 cm.",
+  "questionText": "Calculate the speed of sound in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c=fλ / c=(512)(0.66)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "c=339 m s⁻¹",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "q11-a",
+  "section": "B",
+  "questionRef": "2019 HL Q11(a)",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein)",
+  "questionText": "Explain why the transmission of electricity using low voltage is not economical.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high current",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "heat/energy loss",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "q11-b",
+  "section": "B",
+  "questionRef": "2019 HL Q11(b)",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein)",
+  "questionText": "Name the device used to (i) reduce a.c. voltage, (ii) convert current from a.c. to d.c.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transformer",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "rectifier/diode",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "q11-c",
+  "section": "B",
+  "questionRef": "2019 HL Q11(c)",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein)",
+  "questionText": "State Hooke’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(restoring) force is proportional to",
+    "marks": 4,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "displacement",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F=−ks",
+    "marks": 4,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct notation",
+    "marks": 3,
+    "route": "formula"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "q11-d",
+  "section": "B",
+  "questionRef": "2019 HL Q11(d)",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein)",
+  "questionText": "A ball of mass 110 g is travelling at a speed of 4 m s⁻¹. It rebounds from a wall and travels in the opposite direction at the same speed. The ball was in contact with the wall for 0.2 seconds. Use Newton’s laws of motion to calculate the force exerted by the wall on the ball.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F= ∆(mv)/(∆t)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F= ((0.11)(4)−(0.11)(−4))/0.2",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F=4.4 N",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "q11-e",
+  "section": "B",
+  "questionRef": "2019 HL Q11(e)",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein)",
+  "questionText": "A magnifying glass is a basic microscope. Draw a ray diagram to show the formation of an upright image in a magnifying glass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "object inside focal point of converging lens",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "two correct rays through lens",
+    "marks": 2,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct image",
+    "marks": 2,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-f-equation",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "equation",
+  "section": "B",
+  "questionRef": "2019 HL Q11(f) — Fission equation",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein) A plutonium–239 nucleus undergoes fission when a neutron collides with it. Xenon–134 and zirconium–103 are produced together with some neutrons.",
+  "questionText": "Write a nuclear equation for this fission reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pu²³⁹₉₄ + n¹₀ → Xe¹³⁴₅₄ + Zr¹⁰³₄₀ + 3n¹₀",
+    "marks": 5
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-f-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2019 HL Q11(f) — Energy released",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein) A plutonium–239 nucleus undergoes fission when a neutron collides with it. Xenon–134 and zirconium–103 are produced together with some neutrons. (masses of: Pu–239 = 239.052163 u, Xe–134 = 133.905395 u, Zr–103 = 102.926599 u)",
+  "questionText": "Calculate the energy released in this reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "loss in mass = 3.3682×10⁻²⁸ kg",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E=mc²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E=(3.3682×10⁻²⁸)(2.9979×10⁸)²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "E= 3.0271×10⁻¹¹ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q11-f-energy-form",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "energy-form",
+  "section": "B",
+  "questionRef": "2019 HL Q11(f) — Form of released energy",
+  "stem": "Physics Rivalries We tend to think of scientists as toiling away in their laboratories, not looking to bother anyone, but that’s not always the case. Great minds often come with powerful personalities. The rivalry between Nikola Tesla and Thomas Edison is the most famous example, but it’s far from the only one. Edison’s greatest conflict with Tesla was called the current war. It centred around whether a.c. or d.c. should be used to transmit electricity. Edison insisted his d.c. system was superior because it maintained a lower voltage in transmission and was therefore safer. Tesla’s a.c. eventually won out but it is still converted to d.c. for use in the home. In the seventeenth century Robert Hooke was known as Isaac Newton’s most enthusiastic antagonist, claiming that much of Newton’s work was built on his own. The biggest disagreement involved Newton’s law of gravitation. Hooke always maintained that Newton took the idea of an inverse law from him. Hooke also discovered the plant cell using an early microscope. In 1938 Lise Meitner, using the result of an experiment of Otto Hahn, explained how nuclear fission occurs. This discovery led to a great injustice in science. Hahn was awarded a Nobel Prize for the discovery of nuclear fission. Hahn never fully acknowledged the contribution of Meitner to the understanding of fission. This deeply hurt Meitner, as did the fact that she was not given a share of the Nobel Prize. Adapted from Rivals: Conflict as the Fuel of Science (Michael White); Plutonium, A History of the World’s most Dangerous Element (Jeremy Bernstein) A plutonium–239 nucleus undergoes fission when a neutron collides with it. Xenon–134 and zirconium–103 are produced together with some neutrons.",
+  "questionText": "In what form is this energy released?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kinetic energy / heat",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-a-conservation",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "conservation",
+  "section": "B",
+  "questionRef": "2019 HL Q12(a) — Conservation of energy",
+  "questionText": "State the principle of conversation of energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "energy cannot be created or destroyed",
+    "marks": 3,
+    "contextNote": "(Due to typographical error, award 3 marks to all candidates who attempt Q12 (a))"
+   }
+  ],
+  "notes": "The paper’s conversation typo and the scheme’s automatic three-mark instruction are retained visibly. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-a-i-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "velocity",
+  "section": "B",
+  "questionRef": "2019 HL Q12(a)(i) — Velocity at B",
+  "stem": "A mass hanging at the end of a string of length 80 cm is given an initial horizontal velocity of 4 m s⁻¹. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate the velocity of the mass at position B,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "h=0.8−0.8cos35 / 0.145",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mgh / ½ mv²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "mgh+ ½ mv²=mgh+ ½ mv² / ½ (4)²=(9.8)(0.145)+ ½ v²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "v= 3.63 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q12a-pendulum"
+ },
+ {
+  "id": "phys-2019-hl-q12-a-ii-centripetal-acceleration",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "centripetal-acceleration",
+  "section": "B",
+  "questionRef": "2019 HL Q12(a)(ii) — Centripetal acceleration",
+  "stem": "A mass hanging at the end of a string of length 80 cm is given an initial horizontal velocity of 4 m s⁻¹. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate its centripetal acceleration at position B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a= v²/r",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "a= 3.63²/0.8",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "a=16.5 m s⁻² (towards the centre)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q12a-pendulum"
+ },
+ {
+  "id": "phys-2019-hl-q12-a-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "forces",
+  "section": "B",
+  "questionRef": "2019 HL Q12(a) — Forces at B",
+  "stem": "A mass hanging at the end of a string of length 80 cm is given an initial horizontal velocity of 4 m s⁻¹. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Draw a labelled diagram to show the forces acting on the mass when it is at position B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weight",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tension (–1 for each incorrect force)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q12a-pendulum"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-semiconductor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "semiconductor",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b) — Semiconductor",
+  "stem": "A RAM (random access memory) integrated chip contains transistors, in which there are doped semiconductors, and capacitors.",
+  "questionText": "What is a semiconductor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "material with a resistivity between that of a conductor and an insulator",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-doping",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "doping",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b) — Doping",
+  "stem": "A RAM (random access memory) integrated chip contains transistors, in which there are doped semiconductors, and capacitors.",
+  "questionText": "What is meant by doping a semiconductor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "adding an impurity (to change its conductivity)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-i-n-type",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "n-type",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b)(i) — Electron majority carriers",
+  "stem": "A RAM (random access memory) integrated chip contains transistors, in which there are doped semiconductors, and capacitors.",
+  "questionText": "How can a semiconductor be doped so that (i) its majority charge carriers are electrons",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "add an element with more outer electrons / add e.g. phosphorus",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-ii-p-type",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "p-type",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b)(ii) — Hole majority carriers",
+  "stem": "A RAM (random access memory) integrated chip contains transistors, in which there are doped semiconductors, and capacitors.",
+  "questionText": "How can a semiconductor be doped so that its majority charge carriers are holes?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "add an element with fewer outer electrons/ add e.g. boron",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-i-capacitor-energy",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitor-energy",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b)(i) — Stored energy",
+  "stem": "The capacitance of a capacitor in a RAM chip is 90 fF. It operates at a voltage of 1.2 V.",
+  "questionText": "Calculate the energy stored in the capacitor when it is fully charged,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= ½ CV²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E= ½ (90×10⁻¹⁵)(1.2)²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E=6.5×10⁻¹⁴ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-b-ii-capacitor-electrons",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitor-electrons",
+  "section": "B",
+  "questionRef": "2019 HL Q12(b)(ii) — Additional electrons",
+  "stem": "The capacitance of a capacitor in a RAM chip is 90 fF. It operates at a voltage of 1.2 V.",
+  "questionText": "Calculate the number of additional electrons that are on the negative plate of the capacitor as a result of it being fully charged.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Q=CV / Q=(90×10⁻¹⁵)(1.2)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q=1.08×10⁻¹³ (C)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "number of additional electrons = (1.08×10⁻¹³)/(1.6×10⁻¹⁹) =675000",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-c-terms",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "terms",
+  "section": "B",
+  "questionRef": "2019 HL Q12(c) — Critical angle and total internal reflection",
+  "stem": "As light passes from water into air the critical angle may be exceeded and total internal reflection may occur.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "critical angle: angle of incidence",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "corresponding to an angle of refraction of 90°",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "t.i.r. — angle of incidence > critical angle (and all light is reflected)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q12c-underlined-terms"
+ },
+ {
+  "id": "phys-2019-hl-q12-c-disc-area",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "disc-area",
+  "section": "B",
+  "questionRef": "2019 HL Q12(c) — Area of the disc of light",
+  "stem": "A diver is 12 m below the surface in a pool of water. When he looks up he can see a circular window of light on the surface of the water. (refractive index of water = 1.33)",
+  "questionText": "Calculate the area of this disc of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n= 1/(sinC) / 1.33= 1/(sinC) / C=48.8°",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tanθ= r/d / tan48.8° = r/12 / r=13.7 (m)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "A=πr²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "A=590 m²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher",
+  "figureKey": "physics-2019-hl-q12c-diver"
+ },
+ {
+  "id": "phys-2019-hl-q12-c-apparent-depth",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "apparent-depth",
+  "section": "B",
+  "questionRef": "2019 HL Q12(c) — Apparent depth",
+  "stem": "A diver is 12 m below the surface in a pool of water. When he looks up he can see a circular window of light on the surface of the water. (refractive index of water = 1.33)",
+  "questionText": "Use a labelled diagram to explain why the diver does not appear to be at a depth of 12 m when viewed by an observer outside the pool.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct refracted ray",
+    "marks": 4,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct apparent ray / correct position of image",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-i-hadrons",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "hadrons",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(i) — Hadron families",
+  "stem": "The new Swiss 200‐franc note honours proton‐proton collisions in the Large Hadron Collider (LHC) at CERN.",
+  "questionText": "There are two families of hadrons. Name the two families and distinguish between them.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "baryon and meson",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "baryon has three quarks and meson has a quark and an antiquark",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-i-pion-charge",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "pion-charge",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(i) — Neutral pion",
+  "stem": "The new Swiss 200‐franc note honours proton‐proton collisions in the Large Hadron Collider (LHC) at CERN. Two protons, each with a velocity of 0.9c, travelling in opposite directions collide. A neutral pion (π⁰) and two protons remain after the collision.",
+  "questionText": "The single pion produced must be neutral. Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conservation of charge",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-i-collision-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "collision-energy",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(i) — Energy after the collision",
+  "stem": "The new Swiss 200‐franc note honours proton‐proton collisions in the Large Hadron Collider (LHC) at CERN. Two protons, each with a velocity of 0.9c, travelling in opposite directions collide. A neutral pion (π⁰) and two protons remain after the collision.",
+  "questionText": "Calculate the total kinetic energy of the three particles after the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= ½ mv²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Eb=(1.6726 ×10⁻²⁷)((0.9)(2.9979×10⁸))²/ Eb=1.2176×10⁻¹⁰",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E=mc² / Eₐ=Eb−mπc² / Eₐ=1.2176×10⁻¹⁰−(264)(9.1094×10⁻³¹)(2.9979×10⁸)²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Eₐ=1.00×10⁻¹⁰ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-i-circular-path",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "circular-path",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(i) — Maintaining circular motion",
+  "stem": "The new Swiss 200‐franc note honours proton‐proton collisions in the Large Hadron Collider (LHC) at CERN. The large hadron collider is a circular accelerator.",
+  "questionText": "How are the protons maintained in circular motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "magnetic fields (provide the centripetal force)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-i-accelerator-advantage",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "accelerator-advantage",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(i) — Circular accelerator advantage",
+  "stem": "The new Swiss 200‐franc note honours proton‐proton collisions in the Large Hadron Collider (LHC) at CERN. The large hadron collider is a circular accelerator.",
+  "questionText": "State the principal advantage of a circular accelerator over a linear accelerator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "greater energy can be created / longer path available for particles / more compact",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-ii-transistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "transistor",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(ii) — Transistor symbol and structure",
+  "questionText": "Draw the symbol for a transistor and a diagram of its structure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "symbol",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct diagram of structure",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "fully labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-ii-amplifier",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "amplifier",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(ii) — Voltage amplifier circuit",
+  "stem": "Transistors and resistors can be used to construct voltage amplifier circuits.",
+  "questionText": "Draw a circuit diagram of a voltage amplifier circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transistor, bias resistor, load resistor",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-ii-amplifier-labels",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "amplifier-labels",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(ii) — Labelling the amplifier",
+  "stem": "Transistors and resistors can be used to construct voltage amplifier circuits. Draw a circuit diagram of a voltage amplifier circuit.",
+  "questionText": "Label the bias resistor, the load resistor and the input and output voltages.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled bias resistor and labelled load resistor",
+    "marks": 3,
+    "contextNote": "The scheme prints the marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "labelled input voltage between base and emitter",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "labelled output voltage across load resistor or between collector, emitter",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-ii-bias-resistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "bias-resistor",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(ii) — Purpose of the bias resistor",
+  "stem": "Transistors and resistors can be used to construct voltage amplifier circuits. Draw a circuit diagram of a voltage amplifier circuit.",
+  "questionText": "What is the purpose of the bias resistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ensures base emitter junction is always forward biased",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2019-hl-q12-d-ii-load-resistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "load-resistor",
+  "section": "B",
+  "questionRef": "2019 HL Q12(d)(ii) — Purpose of the load resistor",
+  "stem": "Transistors and resistors can be used to construct voltage amplifier circuits. Draw a circuit diagram of a voltage amplifier circuit.",
+  "questionText": "What is the purpose of the load resistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "converts changes in collector current to changes in voltage across load",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2019_hl.py.",
+  "year": 2019,
+  "level": "higher"
  }
 ]

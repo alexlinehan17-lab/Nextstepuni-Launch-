@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2019-hl': [112, 112, 42, '8c3dc1203ad17cc96558b9911695a8c921656745c1fdf0cb27828a7d0a90295f',
+    '9f966f25ff366a276b7281bfda2b2e93231fb7a6d1abc9a831c26715355bf0b3'],
   '2026-ol': [125, 125, 120, 'ea4a0664bb1f14de76db44a5ef8095d76f98baef5266856ce949e29d8c99579e',
     'c7f984734a202b0fa5ef413b805d208c52cdb6bd3239a8513d4e8a6a6129f302'],
   '2026-hl': [136, 136, 107, 'fd1ff3286d201f396a282c38d4bf0f40adf71a1fca80d9111e763a4141a200d5',
@@ -73,6 +75,22 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('keeps adjacent unnumbered 2019 asks separate and retains their necessary context', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2019-hl-${id}`)!;
+    expect(card('q8-line-spectrum').questionText).toBe('What is a line emission spectrum?');
+    expect(card('q9-b-graph').questionText).toBe('Plot a graph on graph paper of force against current.');
+    expect(card('q12-b-semiconductor').questionText).toBe('What is a semiconductor?');
+    expect(card('q12-c-disc-area').stem).toContain('circular window of light on the surface of the water');
+    expect(card('q12-d-ii-amplifier').stem).not.toContain('Draw a');
+    expect(card('q12-a-conservation').rows[0].contextNote)
+      .toContain('award 3 marks to all candidates who attempt Q12 (a)');
+    // The paper reuses (i)/(ii) for semiconductor doping and capacitor calculations.
+    expect(card('q12-b-i-n-type').totalMarks).toBe(3);
+    expect(card('q12-b-i-capacitor-energy').totalMarks).toBe(9);
+    expect(card('q12-b-ii-p-type').totalMarks).toBe(3);
+    expect(card('q12-b-ii-capacitor-electrons').totalMarks).toBe(7);
+  });
+
   it('explains the 2021 Ordinary source graph’s reversed axes without changing the published marks', () => {
     const card = deck.find(c => c.id === 'phys-2021-ol-q2-v')!;
     expect(card.totalMarks).toBe(12);

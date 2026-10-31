@@ -1,4 +1,271 @@
 {
+ "physics-2019-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q1-data.png",
+  "md5": "b64c1e331ff5af71049ad9d415db706f",
+  "alt": "Recorded distances s in cm and fall times t in ms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q1 — Acceleration due to gravity",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   138,
+   252,
+   457,
+   303
+  ]
+ },
+ "physics-2019-hl-q1-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q1-graph-question.png",
+  "md5": "1531ac7a4e155e3cdb560a4e4c0dd04a",
+  "alt": "The falling-ball experiment, recorded data and graph task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q1 — Graph",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   188,
+   543,
+   403
+  ]
+ },
+ "physics-2019-hl-q1-squared-times": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q1-squared-times.png",
+  "md5": "4e4a67f4159b5f93c9d5c33ed5303814",
+  "alt": "Scheme table: s in m and t squared in square seconds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q1 — Graph",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   127,
+   338,
+   468,
+   388
+  ],
+  "solution": true
+ },
+ "physics-2019-hl-q10-fringes": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q10-fringes.png",
+  "md5": "5c779ca18ab96746b3fdad24533e1e77",
+  "alt": "The bright and dark fringes shown in the question paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q10 — Wavelength of light",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   317,
+   265,
+   540,
+   363
+  ]
+ },
+ "physics-2019-hl-q12a-pendulum": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q12a-pendulum.png",
+  "md5": "3d98cf5e128aceecae54fc5abca88a87",
+  "alt": "String of length 80 cm, with position B at 35 degrees from the downward vertical.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q12(a) — Forces at B",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   451,
+   109,
+   539,
+   231
+  ]
+ },
+ "physics-2019-hl-q12c-diver": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q12c-diver.png",
+  "md5": "72232247893872429714a241f58a921e",
+  "alt": "Photograph of a diver looking towards the light at the water surface.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q12(c) — Area of the disc of light",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   419,
+   612,
+   541,
+   695
+  ]
+ },
+ "physics-2019-hl-q12c-underlined-terms": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q12c-underlined-terms.png",
+  "md5": "97df37555ba2dc304590cac6505c28de",
+  "alt": "Critical angle and total internal reflection underlined in the original paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q12(c) — Critical angle and total internal reflection",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   550,
+   452,
+   610
+  ]
+ },
+ "physics-2019-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q2-data.png",
+  "md5": "08170e45a9bb5c19f16230c0341e2e6a",
+  "alt": "Recorded object distances u and image distances v in cm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q2 — Approximate focal length",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   190,
+   587,
+   405,
+   639
+  ]
+ },
+ "physics-2019-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q3-data.png",
+  "md5": "49bab5900180869b38abca3cba7b7ba1",
+  "alt": "Calorimeter masses and temperatures before and after adding ice.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q3 — Specific latent heat",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   133,
+   478,
+   248
+  ]
+ },
+ "physics-2019-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q4-data.png",
+  "md5": "ec5a2edea78a22b6ed7925eed8a0acfc",
+  "alt": "Diode potential difference V in mV and current I in mA.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q4 — Circuit diagram",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   138,
+   477,
+   458,
+   529
+  ]
+ },
+ "physics-2019-hl-q7-sphere": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q7-sphere.png",
+  "md5": "123037abd24c56b24b547633d627592a",
+  "alt": "A spherical metal conductor mounted on an insulating stand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q7 — Charge on the conductor",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   484,
+   154,
+   551,
+   271
+  ]
+ },
+ "physics-2019-hl-q8-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q8-graph.png",
+  "md5": "f10cbfbcbbf261af2b9a5a1a6d9a9822",
+  "alt": "Kinetic energy Eₖ versus frequency f, with horizontal intercept A.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q8 — Einstein’s equation",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   368,
+   502,
+   497,
+   619
+  ]
+ },
+ "physics-2019-hl-q9-data": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q9-data.png",
+  "md5": "e1a78cd3e7e1ad7034991040a83b1a66",
+  "alt": "Current I in A and magnetic force F in mN.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q9(b) — Force expression",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   149,
+   265,
+   446,
+   317
+  ]
+ },
+ "physics-2019-hl-q9-underlined-terms": {
+  "src": "/exam-figures/physics/markbank/physics-2019-hl-q9-underlined-terms.png",
+  "md5": "4482df47f0802c8871e23de274b57b31",
+  "alt": "The paper underlines force and magnetic field and asks for explanations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Q9(a) — Force and magnetic field",
+  "year": 2019,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2019 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   54,
+   530,
+   115
+  ]
+ },
  "physics-2020-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2020-hl-q1-data.png",
   "md5": "bf751902bcb7a11f2bb22793fa7efc5c",
