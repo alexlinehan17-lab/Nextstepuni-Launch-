@@ -118,5 +118,37 @@ class DeferredSources(unittest.TestCase):
         self.assertTrue(0<low<high<.30)
         self.assertTrue(0<low_full<high_full<.30)
 
+    def test_2023_trout_graph_matches_the_printed_functions_and_table(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import trout_2023
+        self.assertEqual([round(trout_2023(t)[1]) for t in range(9)],
+                         [400,1312,1904,2289,2538,2700,2805,2874,2918])
+        self.assertAlmostEqual(trout_2023(0)[0],400)
+        self.assertAlmostEqual(trout_2023(0)[1],400)
+        self.assertEqual(round(trout_2023(10)[0]),2994)
+        self.assertTrue(trout_2023(4)[0]<2650<trout_2023(5)[0])
+        for j in [0,1]:
+            values=[trout_2023(t)[j] for t in range(9)]
+            self.assertEqual(values,sorted(values))
+            self.assertTrue(all(0<n<3000 for n in values))
+            self.assertAlmostEqual(trout_2023(100)[j],3000)
+
+    def test_2023_trout_comparison_does_not_confuse_height_with_growth_rate(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import trout_2023, trout_2023_rates
+        # Counterexamples to both intervals claimed in the original model answer.
+        self.assertGreater(trout_2023(2)[1],trout_2023(2)[0])
+        self.assertLess(trout_2023_rates(2)[1],trout_2023_rates(2)[0])
+        self.assertGreater(trout_2023(8)[0],trout_2023(8)[1])
+        self.assertLess(trout_2023_rates(8)[0],trout_2023_rates(8)[1])
+        self.assertLess(trout_2023_rates(0)[0],trout_2023_rates(2)[0])
+        self.assertGreater(trout_2023_rates(3)[0],trout_2023_rates(4)[0])
+        self.assertEqual([trout_2023_rates(t)[1] for t in range(9)],
+                         sorted([trout_2023_rates(t)[1] for t in range(9)],reverse=True))
+        for t in [0,2,5,8]:
+            for j in [0,1]:
+                approximate=(trout_2023(t+.0001)[j]-trout_2023(t-.0001)[j])/.0002
+                self.assertAlmostEqual(approximate,trout_2023_rates(t)[j],places=4)
+
 
 if __name__=='__main__': unittest.main()

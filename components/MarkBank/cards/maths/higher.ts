@@ -74429,4 +74429,1947 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q1-a", topicId: "maths-4-2", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q1(a)",
+    questionText: "Solve the simultaneous equations x + y = 2, y + 2z = 12, 5x + 7y + z = 13.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "Effort to eliminate one variable", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q1-a-solution-2", kind: "point", verbatim: "2 equations in 2 unknowns", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q1-a-solution-3", kind: "point", verbatim: "2 unknowns found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-a-question.png",
+          "srcHash": "11da2e2250de48b4691786df36f20e34",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations x + y = 2, y + 2z = 12, 5x + 7y + z = 13.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-a-solution.png",
+          "srcHash": "59608804f82c2cf8202503f536bae685",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q1-b-i", topicId: "maths-4-1", conceptId: "p1-deferred-q1-b-i",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q1(b)(i)",
+    stem: "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+    questionText: "Find, in terms of k and x, the third term in this expansion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q1-b-i-solution-1", kind: "point", verbatim: "Effort at binomial term", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q1-b-i-solution-2", kind: "point", verbatim: "3rd term found but in decreasing powers of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-b-i-question.png",
+          "srcHash": "88209268d39819516d8f83de186b948c",
+          "alt": "The question as printed on the paper — The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant. Find, in terms of k and x, the third term in this expansion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-b-i-solution.png",
+          "srcHash": "2bae0ad21c8714ca61604b60a47a42ea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q1(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q1-b-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q1-b-ii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q1(b)(ii)",
+    stem: "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+    questionText: "The coefficient of x⁴ in this expansion is 7680. Find the value of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q1-b-ii-solution-1", kind: "point", verbatim: "Effort at binomial term", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-b-ii-question.png",
+          "srcHash": "268da7d910ce5d02cbe18da2378ef413",
+          "alt": "The question as printed on the paper — The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant. The coefficient of x⁴ in this expansion is 7680. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q1-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q1-b-ii-solution.png",
+          "srcHash": "dbb869b322a2735577c1301659311ab6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q1(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The x⁴ term is the eighth term in ascending order, with coefficient 120k³. The scheme refers to T₇ in its credit notes; irrespective of that label, 120k³ = 7680 gives k = 4.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q2-a", topicId: "maths-4-3", conceptId: "p1-deferred-q2-a",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q2(a)",
+    questionText: "Solve the following inequality, for x ∈ ℝ, x ≠ 1: (3x + 1)/(x − 1) ≤ 6.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q2-a-solution-1", kind: "point", verbatim: "One correct linear inequality", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q2-a-solution-2", kind: "point", verbatim: "Multiplication completed correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q2-a-solution-3", kind: "point", verbatim: "2 correct linear inequalities", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-a-question.png",
+          "srcHash": "977cbbca2b486e02890a7156bbf5f98a",
+          "alt": "The question as printed on the paper — Solve the following inequality, for x ∈ ℝ, x ≠ 1: (3x + 1)/(x − 1) ≤ 6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-a-solution.png",
+          "srcHash": "4068db93f88ed44fbbf57da518f5d86e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q2(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q2-b-i", topicId: "maths-3-2", conceptId: "p1-deferred-q2-b-i",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q2(b)(i)",
+    questionText: "Write down a pair of real values of a and b, if log₃4 = (log₂a)/(log₂b).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q2-b-i-solution-1", kind: "point", verbatim: "Partial Credit:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"markingNote":"The detailed scheme labels this row (b)(ii); the paper and summary identify it as (b)(i). Its allocation is 10B (0,5,10).","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-i-question.png",
+          "srcHash": "122b882acdff5c425ea504e6428c5919",
+          "alt": "The question as printed on the paper — Write down a pair of real values of a and b, if log₃4 = (log₂a)/(log₂b).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-i-solution.png",
+          "srcHash": "cf9540b850350f9c430a976128a53de4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "This is Q2(b)(i). The detailed scheme repeats the label (b)(ii); the paper and summary confirm the 10B allocation. One suitable pair is a = 4, b = 3.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q2-b-ii", topicId: "maths-3-2", conceptId: "p1-deferred-q2-b-ii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q2(b)(ii)",
+    questionText: "Show that (log₂3)(log₃4) = 2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "some work with logs", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-ii-question.png",
+          "srcHash": "fd3d9005328c020905cf19d3a93fdc76",
+          "alt": "The question as printed on the paper — Show that (log₂3)(log₃4) = 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-ii-solution.png",
+          "srcHash": "9711725aaa0bfb292c652218546e4d94",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q2-b-iii", topicId: "maths-3-2", conceptId: "p1-deferred-q2-b-iii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q2(b)(iii)",
+    stem: "(log₂3)(log₃4) = 2.",
+    questionText: "Hence, or otherwise, solve for n ∈ ℕ, the equation (log₂3)(log₃4)(log₄5) … (logₙ₋₁n)(logₙ(n + 1)) = 11.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q2-b-iii-solution-1", kind: "point", verbatim: "One term written in terms of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q2-b-iii-solution-2", kind: "point", verbatim: "LHS of expression written in terms of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-iii-question.png",
+          "srcHash": "4ec3527e7b6d1c0f29650a48229bb489",
+          "alt": "The question as printed on the paper — (log₂3)(log₃4) = 2. Hence, or otherwise, solve for n ∈ ℕ, the equation (log₂3)(log₃4)(log₄5) … (logₙ₋₁n)(logₙ(n + 1)) = 11.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q2-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q2-b-iii-solution.png",
+          "srcHash": "c3f2b12251a011bc842cb4061a78c895",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q2(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The product telescopes to log₂(n + 1), with n + 1 entirely inside the logarithm. Thus n + 1 = 2¹¹ and n = 2047.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q3-a", topicId: "maths-4-4", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q3(a)",
+    stem: "In this question, i² = −1.",
+    questionText: "z₁ = 25(3 − i)/(7 − i). Write z₁ in the form a + bi, where a, b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "Some correct multiplication", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-a-question.png",
+          "srcHash": "a97f0e1c56c702a73c8cc9b0e0aff442",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = 25(3 − i)/(7 − i). Write z₁ in the form a + bi, where a, b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-a-solution.png",
+          "srcHash": "38e939cc5b9a055ee82d3cba19819c6c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q3-b", topicId: "maths-4-4", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q3(b)",
+    stem: "In this question, i² = −1.",
+    questionText: "2 − i is a root of the equation z² + az + b = 0, where a, b ∈ ℤ. Find the value of a and the value of b.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "Mention of sum of roots or product", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q3-b-solution-2", kind: "point", verbatim: "Mentions conjugate", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q3-b-solution-3", kind: "point", verbatim: "A factor written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-b-question.png",
+          "srcHash": "cc4826b059af2f27acabf6e10c0c699e",
+          "alt": "The question as printed on the paper — In this question, i² = −1. 2 − i is a root of the equation z² + az + b = 0, where a, b ∈ ℤ. Find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-b-solution.png",
+          "srcHash": "e8a1b47a9dcf8cd942eba28e744a5b40",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "In this part the roots are 2 − i and 2 + i. The scheme reuses z₁ in its working, but it does not mean the 11 − 2i found in part (a). Their sum is 4 and product is 5, so a = −4 and b = 5.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q3-c", topicId: "maths-4-4", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q3(c)",
+    stem: "In this question, i² = −1.",
+    questionText: "Use De Moivre’s theorem to solve the equation z³ = 4 + 4√3i. Give each of your solutions in the form r(cos θ + i sin θ), where r ∈ ℕ and 0 ≤ θ ≤ 2π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Relevant diagram drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "One solution in required form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-c-question.png",
+          "srcHash": "ff699178e495a800c4a7b33d298af7b5",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Use De Moivre’s theorem to solve the equation z³ = 4 + 4√3i. Give each of your solutions in the form r(cos θ + i sin θ), where r ∈ ℕ and 0 ≤ θ ≤ 2π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q3-c-solution.png",
+          "srcHash": "b8844cdbb9e734cc28dd0af7576dc1ab",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The intermediate line has two printing errors. The original number is 4 + 4√3i, with modulus 8 and argument π/3. Each cube-root angle is (π/3 + 2nπ)/3. The three final roots printed below are correct: modulus 2, with angles π/9, 7π/9 and 13π/9.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q4-a", topicId: "maths-3-1", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q4(a)",
+    questionText: "Prove by induction that 13ⁿ − 1 is divisible by 12 for all n ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Omits conclusion but otherwise", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-a-question.png",
+          "srcHash": "ecf73d79a79972d3ee8b450abb34074b",
+          "alt": "The question as printed on the paper — Prove by induction that 13ⁿ − 1 is divisible by 12 for all n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-a-solution.png",
+          "srcHash": "3b69d418b57271d45649dbfe49b66697",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q4-b-i", topicId: "maths-5-1", conceptId: "p1-deferred-q4-b-i",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q4(b)(i)",
+    stem: "f(x) = x³ − (k² + 1)x + k, where x, k ∈ ℝ.",
+    questionText: "Show that f(k) = 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q4-b-i-solution-1", kind: "point", verbatim: "Fully correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-b-i-question.png",
+          "srcHash": "68734e41aeaa461e032b7b2c1af5c658",
+          "alt": "The question as printed on the paper — f(x) = x³ − (k² + 1)x + k, where x, k ∈ ℝ. Show that f(k) = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-b-i-solution.png",
+          "srcHash": "7ce3c562c7c0c7c3ee4bc214bf228505",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q4(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The expanded line should read k³ − k³ − k + k = 0. Multiplying −(k² + 1) by k gives −k³ − k, not −k² − k. The substitution and conclusion are otherwise correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q4-b-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q4-b-ii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q4(b)(ii)",
+    questionText: "Show that x = 10 is a root of the following equation, where x ∈ ℝ, and hence find the other two roots, in the form p ± √q, where p, q ∈ ℤ: x³ − 101x + 10 = 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "First cycle of long division correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q4-b-ii-solution-2", kind: "point", verbatim: "Only 1 of the irrational roots listed", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-b-ii-question.png",
+          "srcHash": "9b2fba428302563769d963f130f38fbd",
+          "alt": "The question as printed on the paper — Show that x = 10 is a root of the following equation, where x ∈ ℝ, and hence find the other two roots, in the form p ± √q, where p, q ∈ ℤ: x³ − 101x + 10 = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q4-b-ii-solution.png",
+          "srcHash": "d5e351bbffc7c231bb5a799af51b088d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q5-a-i-ii", topicId: "maths-3-1", conceptId: "p1-deferred-q5-a-i-ii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q5(a)(i), Q5(a)(ii)",
+    stem: "In this question part, p and q ∈ ℚ.",
+    questionText: "(i) The following three terms are in arithmetic sequence: p, q, and 1/4. Write q in terms of p. (ii) The following three terms are in geometric sequence: p, 1/4, and q. Write q in terms of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q5-a-i-ii-solution-1", kind: "point", verbatim: "(i) or (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-a-i-ii-question.png",
+          "srcHash": "ef577a53408dec01df064a244a1a2815",
+          "alt": "The question as printed on the paper — In this question part, p and q ∈ ℚ. (i) The following three terms are in arithmetic sequence: p, q, and 1/4. Write q in terms of p. (ii) The following three terms are in geometric sequence: p, 1/4, and q. Write q in terms of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-a-i-ii-solution.png",
+          "srcHash": "8f798c0603963138f68e3864a7647f81",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q5(a)(i), Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q5-a-iii", topicId: "maths-3-1", conceptId: "p1-deferred-q5-a-iii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q5(a)(iii)",
+    stem: "In this question part, p and q ∈ ℚ. The terms p, q, 1/4 are in arithmetic sequence; the terms p, 1/4, q are in geometric sequence.",
+    questionText: "Using your results from part (i) and part (ii), find the values of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q5-a-iii-solution-1", kind: "point", verbatim: "Some use of previous answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-a-iii-question.png",
+          "srcHash": "3c290534da7fdb91ef2bc6530c20d701",
+          "alt": "The question as printed on the paper — In this question part, p and q ∈ ℚ. The terms p, q, 1/4 are in arithmetic sequence; the terms p, 1/4, q are in geometric sequence. Using your results from part (i) and part (ii), find the values of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-a-iii-solution.png",
+          "srcHash": "b58180d3b78cf5100dd6d347f4daa006",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q5(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q5-b", topicId: "maths-3-1", conceptId: "p1-deferred-q5-b",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q5(b)",
+    questionText: "The general term of another sequence is uₙ = n[(n − 2)!] for all n ≥ 2, n ∈ ℕ. Show that uₙ₊₁ = (n − 1)uₙ + (n − 1)!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q5-b-solution-1", kind: "point", verbatim: "Proves true for a particular case", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-b-question.png",
+          "srcHash": "f60a91131a915e6917be09924922a546",
+          "alt": "The question as printed on the paper — The general term of another sequence is uₙ = n[(n − 2)!] for all n ≥ 2, n ∈ ℕ. Show that uₙ₊₁ = (n − 1)uₙ + (n − 1)!",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q5-b-solution.png",
+          "srcHash": "d3f5d419848968d52355487eedfddf54",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The (a) and (b) labels in the solution below identify two sides of the proof. They are not separately marked question parts.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q6-a", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q6(a)",
+    questionText: "The function g is defined as follows, for x ∈ ℝ: g: x ↦ 4x³ − 40x² + 77x. Use calculus to find the co-ordinates of the local minimum point of g and the point of inflection of g.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q6-a-solution-1", kind: "point", verbatim: "Minimum Point or inflection point", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,8,12,15],"markingNote":"This task explicitly prints 15D (0,5,8,12,15). Its 5-mark low-partial band overrides the general table’s 4-mark band; every published numeric award is retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-a-question.png",
+          "srcHash": "88b3471f8509d627bb0e52a54576c6f6",
+          "alt": "The question as printed on the paper — The function g is defined as follows, for x ∈ ℝ: g: x ↦ 4x³ − 40x² + 77x. Use calculus to find the co-ordinates of the local minimum point of g and the point of inflection of g.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-a-solution.png",
+          "srcHash": "305632326c9109fe5428f8a80a4a1ec0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "This task uses the printed bands 0, 5, 8, 12, 15; the general 15D table uses 4 instead of 5. Also, g″(11/2) = 52 > 0 confirms the local minimum. At x = 10/3, g″ changes sign, giving the point of inflection.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q6-b-i", topicId: "maths-5-2", conceptId: "p1-deferred-q6-b-i",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q6(b)(i)",
+    stem: "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+    questionText: "Find f(5).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Fully correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q6-b-i-solution-2", kind: "point", verbatim: "Fully correct integration", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-b-i-question.png",
+          "srcHash": "0159960fc3b718fbb73effa594efc766",
+          "alt": "The question as printed on the paper — The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx. Find f(5).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-b-i-solution.png",
+          "srcHash": "bc062cb69fb178bf394202a786847002",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q6-b-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-b-ii",
+    section: "A", questionRef: "2023 HL Paper 1 — Deferred Q6(b)(ii)",
+    stem: "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+    questionText: "Find the minimum value of f(a).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "Some correct integration", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q6-b-ii-solution-2", kind: "point", verbatim: "Some correct substitution of both limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q6-b-ii-solution-3", kind: "point", verbatim: "Fully correct integration", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-b-ii-question.png",
+          "srcHash": "505a1b77f281a335f03b5acd02a2bf89",
+          "alt": "The question as printed on the paper — The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx. Find the minimum value of f(a).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q6-b-ii-solution.png",
+          "srcHash": "ccac15f10d7b9bb0c74d0e2aae1846a4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "After integration, f(a) = a² − a + 1/3 = (a − 1/2)² + 1/12. The squared term is non-negative, confirming a minimum value of 1/12 at a = 1/2.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-a", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(a)",
+    stem: "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+    questionText: "The table below shows some details on how the balance of the debt of €20 000 is reduced over the first four months. At the end of each month, interest of 0·526% on the previous month’s balance is calculated – for example, the interest at the end of month 1 is €105·20. This interest is paid out of Caoimhe’s €389·56 monthly payment; the remainder of the €389·56 is then paid off the outstanding balance. Complete the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-a-solution-1", kind: "point", verbatim: "3 correct new entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q7-a-solution-2", kind: "point", verbatim: "6 correct new entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-a-question.png",
+          "srcHash": "65a476d33b55c8133b1d4527df8e186e",
+          "alt": "The question as printed on the paper — Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%. The table below shows some details on how the balance of the debt of €20 000 is reduced over the first four months. At the end of each month, interest of 0·526% on the previous month’s balance is calculated – for example, the interest at the end of month 1 is €105·20. This interest is paid out of Caoimhe’s €389·56 monthly payment; the remainder of the €389·56 is then paid off the outstanding balance. Complete the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-a-solution.png",
+          "srcHash": "109397e14b6d554d2f716ec29df0800f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-b", topicId: "maths-3-3", conceptId: "p1-deferred-q7-b",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(b)",
+    stem: "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+    questionText: "Find the amount that Caoimhe still owes at the end of the first two years of making repayments by finding the sum of the present values of the remaining 36 payments on the loan.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-b-solution-1", kind: "point", verbatim: "Series correctly formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-b-question.png",
+          "srcHash": "b3c1b3e20a1765eddf226d69c717f003",
+          "alt": "The question as printed on the paper — Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%. Find the amount that Caoimhe still owes at the end of the first two years of making repayments by finding the sum of the present values of the remaining 36 payments on the loan.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-b-solution.png",
+          "srcHash": "26378021772316c4dad04d871f261c85",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-c", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(c)",
+    questionText: "Find, correct to 1 decimal place, the annual percentage rate (APR) that is equivalent to a monthly interest rate of 0·526%.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-c-question.png",
+          "srcHash": "71af39ab8c5cd7478ea0f57bf8500807",
+          "alt": "The question as printed on the paper — Find, correct to 1 decimal place, the annual percentage rate (APR) that is equivalent to a monthly interest rate of 0·526%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-c-solution.png",
+          "srcHash": "0d9a0e207cc284f4a2cbd687a1ba85ad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-d-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-d-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(d)(i)",
+    stem: "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+    questionText: "Find the monthly interest rate that is equivalent to an APR of 5·53%. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-d-i-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-d-i-question.png",
+          "srcHash": "f0aedcf74d241efa4b991025a187818f",
+          "alt": "The question as printed on the paper — After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%. Find the monthly interest rate that is equivalent to an APR of 5·53%. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-d-i-solution.png",
+          "srcHash": "777d382d29a136575083f21334d0e3b8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The twelfth root of 1.0553 is the monthly growth factor 1 + i. Subtract 1 to obtain i ≈ 0.004495498, or 0.45% per month to two decimal places. The scheme omits this subtraction in an intermediate line.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-d-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-d-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(d)(ii)",
+    stem: "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+    questionText: "Find the amount that Caoimhe repays each month on the new 1-year loan.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-d-ii-solution-1", kind: "point", verbatim: "Some relevant substitution into", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q7-d-ii-solution-2", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-d-ii-question.png",
+          "srcHash": "60f8daa4f7712b0439dd91233516bd19",
+          "alt": "The question as printed on the paper — After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%. Find the amount that Caoimhe repays each month on the new 1-year loan.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-d-ii-solution.png",
+          "srcHash": "b10512e6eec6181c6b6f8e26ed288a4d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The model solution uses the rounded monthly rate 0.45% from part (i), giving €751.68 per month.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q7-e", topicId: "maths-3-3", conceptId: "p1-deferred-q7-e",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q7(e)",
+    questionText: "A sum of money, €A, is invested in a fund and is withdrawn after t years, where t ∈ ℕ. The money is invested at a fixed APR of 6·75%. Find the least value of t needed so that the investment will amount to more than €2A when it is withdrawn from the fund.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q7-e-solution-1", kind: "point", verbatim: "Accept correct answer verified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q7-e-solution-2", kind: "point", verbatim: "Formula in", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"markingNote":"The threshold is about 10.61164 years; because t is a whole number and the investment must exceed €2A, the least valid t is 11.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-e-question.png",
+          "srcHash": "bacfe9f69484c6a8660c23def78b1129",
+          "alt": "The question as printed on the paper — A sum of money, €A, is invested in a fund and is withdrawn after t years, where t ∈ ℕ. The money is invested at a fixed APR of 6·75%. Find the least value of t needed so that the investment will amount to more than €2A when it is withdrawn from the fund.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q7-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q7-e-solution.png",
+          "srcHash": "925593eb1b951ebb80b0ff910d19a768",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q7(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The investment exceeds €2A when t > log(2)/log(1.0675) ≈ 10.61164. Since t is a whole number, the least possible value is 11 years. The scheme’s final equals sign should be read as choosing that next whole year.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-a-i", topicId: "maths-3-4", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(a)(i)",
+    stem: "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+    questionText: "Find A, the area of triangle XYZ, in terms of l and m.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Some correct substitution into a", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-a-i-solution-2", kind: "point", verbatim: "Recognition of 90° angle in semi-", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-i-question.png",
+          "srcHash": "a7640c7849d9556ae8fe5ed0b78e3b86",
+          "alt": "The question as printed on the paper — A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Find A, the area of triangle XYZ, in terms of l and m.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "7e12f49065fccecf6b42a004d16f3977",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-a-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q8-a-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(a)(ii)",
+    stem: "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+    questionText: "Express l + m in terms of P and d.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Some understanding of perimeter", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Some relevant substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-ii-question.png",
+          "srcHash": "a8f9e30bf9967c61c8ffaaeac6304272",
+          "alt": "The question as printed on the paper — A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Express l + m in terms of P and d.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-ii-solution.png",
+          "srcHash": "59bfac7c70073ec0e1af7ff2beab0b66",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-a-iii", topicId: "maths-4-1", conceptId: "p1-deferred-q8-a-iii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(a)(iii)",
+    stem: "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+    questionText: "Using the identity l² + m² = (l + m)² − 2lm, or otherwise, show that d = (P² − 4A)/(2P).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "Some use of Pythagoras", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-a-iii-solution-2", kind: "point", verbatim: "Some use of given identity", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-iii-question.png",
+          "srcHash": "437641cd3856b85df0b66f62e0b87e3d",
+          "alt": "The question as printed on the paper — A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Using the identity l² + m² = (l + m)² − 2lm, or otherwise, show that d = (P² − 4A)/(2P).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-iii-solution.png",
+          "srcHash": "e0e8853679e1fb83acdace8b305899e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-a-iv", topicId: "maths-3-4", conceptId: "p1-deferred-q8-a-iv",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(a)(iv)",
+    stem: "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Part (a)(iii): d = (P² − 4A)/(2P).",
+    questionText: "Given that A = 120 cm² and P = 60 cm, use the result from part (a)(iii) to find the radius of the semi-circle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-a-iv-solution-1", kind: "point", verbatim: "Any relevant substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-a-iv-solution-2", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-iv-question.png",
+          "srcHash": "14f1236ff94d7a8c93c151adbdf83ec7",
+          "alt": "The question as printed on the paper — A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Part (a)(iii): d = (P² − 4A)/(2P). Given that A = 120 cm² and P = 60 cm, use the result from part (a)(iii) to find the radius of the semi-circle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-a-iv-solution.png",
+          "srcHash": "31f4ba0a17b6c29e9783c9ecc1e853ea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-b-i", topicId: "maths-3-4", conceptId: "p1-deferred-q8-b-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(b)(i)",
+    stem: "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm.",
+    questionText: "Show that r satisfies the equation r² − 10r + 16 = 0, and find the roots of this equation.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-b-i-solution-1", kind: "point", verbatim: "Relevant substitution into area of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-b-i-solution-2", kind: "point", verbatim: "Relevant substitution into perimeter", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-b-i-solution-3", kind: "point", verbatim: "Any two from the MPC list", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-b-i-question.png",
+          "srcHash": "8b65672653f1fa87fb2bfef46d3e8d11",
+          "alt": "The question as printed on the paper — The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm. Show that r satisfies the equation r² − 10r + 16 = 0, and find the roots of this equation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-b-i-solution.png",
+          "srcHash": "6bfcd5a55e7fe46ccef5868d4087b505",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q8-b-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q8-b-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q8(b)(ii)",
+    stem: "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm. From part (i), r satisfies r² − 10r + 16 = 0.",
+    questionText: "Find the corresponding values of β and explain why only one value is valid in the context of the question.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q8-b-ii-solution-1", kind: "point", verbatim: "8 radians is not valid as it is more than 1 full", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q8-b-ii-solution-2", kind: "point", verbatim: "reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-b-ii-question.png",
+          "srcHash": "250866f7bf87f32b45c628c32fe3a390",
+          "alt": "The question as printed on the paper — The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm. From part (i), r satisfies r² − 10r + 16 = 0. Find the corresponding values of β and explain why only one value is valid in the context of the question.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q8-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q8-b-ii-solution.png",
+          "srcHash": "70796798f157424b07ee7b3fd023df22",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-a-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-i-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(a)(i), Q9(a)(ii)",
+    stem: "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+    questionText: "(i) Find the number of trout in the lake when it was first stocked. (ii) Find the approximate number of trout in the lake at the end of month 10.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-a-i-ii-solution-1", kind: "point", verbatim: "Some correct substitution into", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q9-a-i-ii-solution-2", kind: "point", verbatim: "(i) or (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,6,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-i-ii-question.png",
+          "srcHash": "74b98d6a9d9caab28c0c50cd6defc5f8",
+          "alt": "The question as printed on the paper — A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). (i) Find the number of trout in the lake when it was first stocked. (ii) Find the approximate number of trout in the lake at the end of month 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-i-ii-solution.png",
+          "srcHash": "6e7ad9f34801049fe2e0c90db0c0e630",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q9(a)(i), Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "For N(10), the exponent is −0.814 × 10 = −8.14. The scheme’s −8.14 × 10 is a printing error; its final value of approximately 2994 trout is correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-a-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-iii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(a)(iii)",
+    stem: "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+    questionText: "Show that the number of trout in the lake has a limiting value of 3000.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "Attempts at showing the limit by", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-iii-question.png",
+          "srcHash": "8854a2d31964aadce61c08dd623c0f77",
+          "alt": "The question as printed on the paper — A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). Show that the number of trout in the lake has a limiting value of 3000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-iii-solution.png",
+          "srcHash": "af3f704a5553a75f9d2fe7fe6d17262c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-a-iv", topicId: "maths-3-2", conceptId: "p1-deferred-q9-a-iv",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(a)(iv)",
+    stem: "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+    questionText: "Month n is the first month when the number of trout in the lake had risen above 2650. Find the value of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-a-iv-solution-1", kind: "point", verbatim: "Full Credit -1:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"markingNote":"The source prints 5C (0,2,3,5) but lists Low, Mid and High Partial Credit descriptions. Its numeric awards are preserved. The extra Mid description has no distinct numeric award; no substitute official allocation is invented.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-iv-question.png",
+          "srcHash": "e3f1f06f2706c48e444c8aa130c78c7c",
+          "alt": "The question as printed on the paper — A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). Month n is the first month when the number of trout in the lake had risen above 2650. Find the value of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-iv-solution.png",
+          "srcHash": "95e295dc13f92e63e4deade9ab89ac3e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q9(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source prints 5C (0,2,3,5) but lists Low, Mid and High Partial Credit. All numeric awards are retained; its extra Mid description has no distinct numeric award. The first whole month above the threshold is n = 5.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-a-v", topicId: "maths-5-2", conceptId: "p1-deferred-q9-a-v",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(a)(v)",
+    stem: "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+    questionText: "Find in terms of t, the rate at which the number of trout in the lake is increasing.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-a-v-solution-1", kind: "point", verbatim: "Quotient rule correctly applied", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q9-a-v-solution-2", kind: "point", verbatim: "Chain rule correctly applied but", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-v-question.png",
+          "srcHash": "eee178103752339965681a79f62579ff",
+          "alt": "The question as printed on the paper — A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). Find in terms of t, the rate at which the number of trout in the lake is increasing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-a-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-a-v-solution.png",
+          "srcHash": "b5a4bc35fa34626e156d0a444b7961bb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q9(a)(v).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-b-i", topicId: "maths-5-1", conceptId: "p1-deferred-q9-b-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(b)(i)",
+    stem: "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+    questionText: "Complete the table below (round each value to the nearest whole number). t: 0, 1, 2, 3, 4, 5, 6, 7, 8. P(t): 400, blank, blank, blank, blank, 2700, blank, blank, blank.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-b-i-solution-1", kind: "point", verbatim: "One correct new entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q9-b-i-solution-2", kind: "point", verbatim: "4 correct new entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-i-question.png",
+          "srcHash": "96bff35bd3f25760149b4ddc0517f93d",
+          "alt": "The question as printed on the paper — A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked. Complete the table below (round each value to the nearest whole number). t: 0, 1, 2, 3, 4, 5, 6, 7, 8. P(t): 400, blank, blank, blank, blank, 2700, blank, blank, blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-i-solution.png",
+          "srcHash": "b118d2177e432b731ed2a7879d1efa08",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q9(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-b-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-b-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(b)(ii)",
+    stem: "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked. N(t) = 3000/(1 + 6·5e^(−0·814t)).",
+    questionText: "Draw the graph of P(t) in the domain 0 ≤ t ≤ 8, t ∈ ℝ on the grid below. Note: The graph of N(t) is already plotted on the grid.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-b-ii-solution-1", kind: "point", verbatim: "One correct new plot", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q9-b-ii-solution-2", kind: "point", verbatim: "4 correct new plots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-ii-question.png",
+          "srcHash": "8814c99e2f6f91e18fdc95b452038322",
+          "alt": "The question as printed on the paper — A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked. N(t) = 3000/(1 + 6·5e^(−0·814t)). Draw the graph of P(t) in the domain 0 ≤ t ≤ 8, t ∈ ℝ on the grid below. Note: The graph of N(t) is already plotted on the grid.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-ii-solution.png",
+          "srcHash": "1689f4781cbea27b089f07b2ad6683a7",
+          "alt": "NextStepUni graph of both printed trout models over 0 to 8 months, with P values 400, 1312, 1904, 2289, 2538, 2700, 2805, 2874 and 2918. Both populations increase towards 3000; N initially gets steeper then flattens, whereas P flattens throughout. Original SEC worked graph and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The labelled graph above is a NextStepUni reconstruction from the two printed functions. The orange points are the P(t) table values; the original SEC graph and marking guidance are retained below.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q9-b-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-b-iii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q9(b)(iii)",
+    stem: "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+    questionText: "By referencing the graphs, describe one similarity and one difference between the two models.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q9-b-iii-solution-1", kind: "point", verbatim: "One correct similarity or difference", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"markingNote":"Use a mathematically valid comparison. The source’s t=5 comparison confuses population size with growth rate. Both models increase towards 3000; N initially becomes steeper then flattens, while P flattens throughout. This explanation is NextStepUni’s correction; the original SEC credit notes are retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-iii-question.png",
+          "srcHash": "26d9d2c19eafd90148c7e92c9205cf2b",
+          "alt": "NextStepUni reconstruction of the two printed trout models over 0 to 8 months, followed by the original model definitions and comparison question. The vertical axis is the number of trout and the horizontal axis is months since stocking.",
+          "lettersVisible": [],
+          "attribution": "Context diagram: NextStepUni, reconstructed from the printed functions. Original question: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission."
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q9-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q9-b-iii-solution.png",
+          "srcHash": "89ea8bcce8cf42d5061bc87d1ad54c61",
+          "alt": "NextStepUni graph of both printed trout models over 0 to 8 months, with P values 400, 1312, 1904, 2289, 2538, 2700, 2805, 2874 and 2918. Both populations increase towards 3000; N initially gets steeper then flattens, whereas P flattens throughout. Original SEC worked graph and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The original model answer below confuses population size with growth rate around t = 5. A valid difference is that N initially gets steeper then flattens, while P flattens throughout. Both models increase towards 3000 trout. The NextStepUni graph and explanation correct the comparison while preserving the original SEC credit notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-a-i", topicId: "maths-2-1", conceptId: "p1-deferred-q10-a-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(a)(i)",
+    stem: "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+    questionText: "Find the distance |BD|, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-a-i-solution-1", kind: "point", verbatim: "Recognises Pythagoras", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q10-a-i-solution-2", kind: "point", verbatim: "Pythagoras fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-i-question.png",
+          "srcHash": "ca1a027605779a148478cd9f3fbcb96d",
+          "alt": "The question as printed on the paper — [AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ. Find the distance |BD|, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-i-solution.png",
+          "srcHash": "a0e5befd97b3173d01ad973ced06ecb2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-a-ii", topicId: "maths-2-1", conceptId: "p1-deferred-q10-a-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(a)(ii)",
+    stem: "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+    questionText: "Show that the total length of the wire (from B to E to D) is √(x² + 49) + √(x² − 50x + 794).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Some correct substitution into", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-ii-question.png",
+          "srcHash": "96c11fdc7f904fc7f21206fcdc7fd49a",
+          "alt": "The question as printed on the paper — [AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ. Show that the total length of the wire (from B to E to D) is √(x² + 49) + √(x² − 50x + 794).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-ii-solution.png",
+          "srcHash": "e14b5d999f702852f83f519dc35ee871",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-a-iii", topicId: "maths-4-2", conceptId: "p1-deferred-q10-a-iii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(a)(iii)",
+    stem: "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+    questionText: "Find the two possible values of x for which ∠BED is a right angle. Give each answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "Mid Partial Credit:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q10-a-iii-solution-2", kind: "point", verbatim: "High Partial Credit:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-iii-question.png",
+          "srcHash": "3a5b2140d5c3f5dd54729e08956159d0",
+          "alt": "The question as printed on the paper — [AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ. Find the two possible values of x for which ∠BED is a right angle. Give each answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-a-iii-solution.png",
+          "srcHash": "8da08a873dfc5c2460bdc6d053549590",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-b", topicId: "maths-5-2", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(b)",
+    stem: "In the right-angled triangle ABE, |AB| = 7 m and |AE| = x m. The right angle is at A.",
+    questionText: "Part of the same diagram is shown on the right. As the distance x increases, so does the distance |BE|. x is increasing at a rate of 4 m per second. Find the rate at which the distance |BE| is increasing at the instant when the triangle ABE is isosceles. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "Any relevant derivative", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-deferred-q10-b-solution-2", kind: "point", verbatim: "2∙8 m/s", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-b-question.png",
+          "srcHash": "7978685f5f4aa3338b401f389835a417",
+          "alt": "The question as printed on the paper — In the right-angled triangle ABE, |AB| = 7 m and |AE| = x m. The right angle is at A. Part of the same diagram is shown on the right. As the distance x increases, so does the distance |BE|. x is increasing at a rate of 4 m per second. Find the rate at which the distance |BE| is increasing at the instant when the triangle ABE is isosceles. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-b-solution.png",
+          "srcHash": "8e4125ca748f95d97af2a9ced2b4e140",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Here y in the model working denotes |BE|. When the right-angled triangle is isosceles, x = 7, so the wire length increases at 28/√98 ≈ 2.8 m/s.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-c-i", topicId: "maths-2-1", conceptId: "p1-deferred-q10-c-i",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(c)(i)",
+    stem: "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y.",
+    questionText: "Show that x² = 144 − y².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-c-i-solution-1", kind: "point", verbatim: "Recognises Pythagoras", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-c-i-question.png",
+          "srcHash": "b1d3058ff57905ee853107aa4c526caf",
+          "alt": "The question as printed on the paper — The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y. Show that x² = 144 − y².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-c-i-solution.png",
+          "srcHash": "c42b7b051b077a7dd574a990ef82830b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-deferred-q10-c-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q10-c-ii",
+    section: "B", questionRef: "2023 HL Paper 1 — Deferred Q10(c)(ii)",
+    stem: "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y. Part (i): x² = 144 − y².",
+    questionText: "Write the volume of the cylinder in terms of y and hence find the volume of the largest right circular cylinder that fits inside a sphere of radius 12 cm. Give your answer correct to the nearest cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "Some correct substitution into", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-c-ii-question.png",
+          "srcHash": "2291cafc95792c5a9f96456fe52feb7f",
+          "alt": "The question as printed on the paper — The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y. Part (i): x² = 144 − y². Write the volume of the cylinder in terms of y and hence find the volume of the largest right circular cylinder that fits inside a sphere of radius 12 cm. Give your answer correct to the nearest cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-hl-p1-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-hl-p1-deferred-q10-c-ii-solution.png",
+          "srcHash": "6085e2b6ee9413bca42db09fb9e32c7d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 HL Paper 1 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "V(y) = π(288y − 2y³), for 0 ≤ y ≤ 12. At y = 4√3, V″(y) = −12πy < 0; the endpoint volumes are zero. This confirms the largest volume, 768π√3 ≈ 4179 cm³.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

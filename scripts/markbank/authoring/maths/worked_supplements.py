@@ -21,6 +21,8 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    if name in ['trout-2023-hl-deferred','trout-context-2023-hl-deferred']:
+        return render_trout_2023(dpi,comparison=name=='trout-2023-hl-deferred')
     ordinary2 = {'parallelogram-2024-ol-deferred':render_parallelogram_2024,
                  'vanilla-test-2024-ol-deferred':render_vanilla_test_2024,
                  'icecream-points-2024-ol-deferred':lambda dpi:render_icecream_2024(dpi,False),
@@ -137,7 +139,7 @@ def drying_water(t,k=-0.079):
     return 5+20*exp(k*t)
 
 
-def _example_canvas(title,subtitle,height):
+def _example_canvas(title,subtitle,height,footer='NextStepUni worked example. Original SEC credit notes follow below.'):
     buf=BytesIO(); c=canvas.Canvas(buf,pagesize=(560,height),invariant=1)
     c.setTitle('NextStepUni worked example — '+title)
     c.setFillColorRGB(.12,.12,.11)
@@ -145,7 +147,7 @@ def _example_canvas(title,subtitle,height):
     c.setFont('Helvetica',10);c.drawString(22,height-51,subtitle)
     c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(2);c.line(22,height-65,538,height-65)
     c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
-    c.setFont('Helvetica',9);c.drawString(22,17,'NextStepUni worked example. Original SEC credit notes follow below.')
+    c.setFont('Helvetica',9);c.drawString(22,17,footer)
     return buf,c
 
 
@@ -504,4 +506,50 @@ def render_icecream_2024(dpi,outlier):
     c.setFont('Helvetica',9)
     c.drawString(22,44,'Complete graph extracted unchanged from the SEC scheme; its PDF table clips the right edge.')
     c.drawString(22,29,'Graph: © State Examinations Commission. Explanatory captions: NextStepUni.')
+    return _example_image(buf,c,dpi)
+
+
+def trout_2023(t):
+    return 3000/(1+6.5*exp(-.814*t)),2600*(15/13-exp(-.432*t))
+
+
+def trout_2023_rates(t):
+    return 15873*exp(-.814*t)/(1+6.5*exp(-.814*t))**2,1123.2*exp(-.432*t)
+
+
+def render_trout_2023(dpi,comparison=True):
+    height=610 if comparison else 470
+    footer=('NextStepUni worked example. Original SEC credit notes follow below.' if comparison else
+            'NextStepUni reconstruction from the printed functions. Original question follows below.')
+    buf,c=_example_canvas('Two models for the trout population','2023 deferred Higher Paper 1 · Q9(b) · 0 to 8 months',height,footer)
+    x0,y0,w,h=66,height-405,462,280
+    X=lambda t:x0+t*w/8
+    Y=lambda n:y0+n*h/3000
+    c.setFont('Helvetica',10);c.setFillColorRGB(.12,.12,.11)
+    for j,(label,color) in enumerate([('N(t)',(.12,.12,.11)),('P(t)',(.90,.39,.15))]):
+        x=362+j*91;c.setStrokeColorRGB(*color);c.setLineWidth(1.8)
+        c.line(x,height-89,x+24,height-89);c.drawString(x+30,height-93,label)
+    c.drawString(22,height-93,'Number of trout')
+    c.setLineWidth(.5);c.setStrokeColorRGB(.86,.86,.84)
+    for n in range(0,3001,500):
+        c.line(X(0),Y(n),X(8),Y(n));c.drawRightString(x0-10,Y(n)-3,str(n))
+    for t in range(9):
+        c.line(X(t),Y(0),X(t),Y(3000));c.drawCentredString(X(t),y0-17,str(t))
+    c.setStrokeColorRGB(.2,.2,.18);c.setLineWidth(.8)
+    c.line(X(0),Y(0),X(8)+5,Y(0));c.line(X(0),Y(0),X(0),Y(3000)+5)
+    c.drawRightString(X(8),y0-37,'Time since stocking (months)')
+    for j,color in enumerate([(.12,.12,.11),(.90,.39,.15)]):
+        c.setStrokeColorRGB(*color);c.setLineWidth(1.8)
+        path=c.beginPath();path.moveTo(X(0),Y(trout_2023(0)[j]))
+        for i in range(1,801):path.lineTo(X(i/100),Y(trout_2023(i/100)[j]))
+        c.drawPath(path)
+    if comparison:
+        c.setFillColorRGB(.90,.39,.15)
+        for t in range(9):c.circle(X(t),Y(trout_2023(t)[1]),2.6,stroke=0,fill=1)
+        c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica-Bold',11)
+        c.drawString(22,142,'Similarity: both populations increase and approach 3000 trout.')
+        c.drawString(22,119,'Difference: N initially gets steeper, then flattens.')
+        c.setFont('Helvetica',11);c.drawString(22,99,'P flattens throughout: its growth rate decreases from the start.')
+        c.setFont('Helvetica',10);c.drawString(22,66,'Height tells us the population. Slope tells us how quickly it is increasing.')
+        c.drawString(22,46,'The orange points show the P(t) table values, including the two given values.')
     return _example_image(buf,c,dpi)

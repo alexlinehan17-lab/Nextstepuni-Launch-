@@ -202468,5 +202468,1437 @@
   "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
   "figureKey": "maths-2024-ol-p2-deferred-q10-b-solution",
   "questionFigureKey": "maths-2024-ol-p2-deferred-q10-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q1-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q1-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q1(a)",
+  "questionText": "Solve the simultaneous equations x + y = 2, y + 2z = 12, 5x + 7y + z = 13.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Effort to eliminate one variable",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "2 equations in 2 unknowns",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "2 unknowns found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q1-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q1-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q1-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q1-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q1(b)(i)",
+  "stem": "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+  "questionText": "Find, in terms of k and x, the third term in this expansion.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Effort at binomial term",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "3rd term found but in decreasing powers of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q1-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q1-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q1-b-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q1-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q1(b)(ii)",
+  "stem": "The terms of the binomial expansion of (x + k/x)¹⁰ are written in ascending powers of x, where x, k ∈ ℝ, and k is a constant.",
+  "questionText": "The coefficient of x⁴ in this expansion is 7680. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q1-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Effort at binomial term",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q1-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q1-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q2-a",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-deferred-q2-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q2(a)",
+  "questionText": "Solve the following inequality, for x ∈ ℝ, x ≠ 1: (3x + 1)/(x − 1) ≤ 6.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "One correct linear inequality",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Multiplication completed correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "2 correct linear inequalities",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q2-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q2-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q2-b-i",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q2-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q2(b)(i)",
+  "questionText": "Write down a pair of real values of a and b, if log₃4 = (log₂a)/(log₂b).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Partial Credit:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q2-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q2-b-ii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q2-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q2(b)(ii)",
+  "questionText": "Show that (log₂3)(log₃4) = 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "some work with logs",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q2-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q2-b-iii",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q2-b-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q2(b)(iii)",
+  "stem": "(log₂3)(log₃4) = 2.",
+  "questionText": "Hence, or otherwise, solve for n ∈ ℕ, the equation (log₂3)(log₃4)(log₄5) … (logₙ₋₁n)(logₙ(n + 1)) = 11.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "One term written in terms of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q2-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "LHS of expression written in terms of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q2-b-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q2-b-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q3-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q3(a)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "z₁ = 25(3 − i)/(7 − i). Write z₁ in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct multiplication",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q3-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q3(b)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "2 − i is a root of the equation z² + az + b = 0, where a, b ∈ ℤ. Find the value of a and the value of b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Mention of sum of roots or product",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Mentions conjugate",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "A factor written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q3-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q3(c)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "Use De Moivre’s theorem to solve the equation z³ = 4 + 4√3i. Give each of your solutions in the form r(cos θ + i sin θ), where r ∈ ℕ and 0 ≤ θ ≤ 2π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant diagram drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "One solution in required form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q4-a",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-deferred-q4-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q4(a)",
+  "questionText": "Prove by induction that 13ⁿ − 1 is divisible by 12 for all n ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Omits conclusion but otherwise",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q4-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q4-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q4-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q4-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q4(b)(i)",
+  "stem": "f(x) = x³ − (k² + 1)x + k, where x, k ∈ ℝ.",
+  "questionText": "Show that f(k) = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q4-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q4-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q4-b-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q4-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q4(b)(ii)",
+  "questionText": "Show that x = 10 is a root of the following equation, where x ∈ ℝ, and hence find the other two roots, in the form p ± √q, where p, q ∈ ℤ: x³ − 101x + 10 = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "First cycle of long division correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q4-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Only 1 of the irrational roots listed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q4-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q4-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q5-a-i-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-deferred-q5-a-i-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q5(a)(i), Q5(a)(ii)",
+  "stem": "In this question part, p and q ∈ ℚ.",
+  "questionText": "(i) The following three terms are in arithmetic sequence: p, q, and 1/4. Write q in terms of p. (ii) The following three terms are in geometric sequence: p, 1/4, and q. Write q in terms of p.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q5-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(i) or (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q5-a-i-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q5-a-i-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q5-a-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-deferred-q5-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q5(a)(iii)",
+  "stem": "In this question part, p and q ∈ ℚ. The terms p, q, 1/4 are in arithmetic sequence; the terms p, 1/4, q are in geometric sequence.",
+  "questionText": "Using your results from part (i) and part (ii), find the values of p.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q5-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Some use of previous answers",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q5-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q5-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q5-b",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-deferred-q5-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q5(b)",
+  "questionText": "The general term of another sequence is uₙ = n[(n − 2)!] for all n ≥ 2, n ∈ ℕ. Show that uₙ₊₁ = (n − 1)uₙ + (n − 1)!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Proves true for a particular case",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q5-b-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q5-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q6-a",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q6(a)",
+  "questionText": "The function g is defined as follows, for x ∈ ℝ: g: x ↦ 4x³ − 40x² + 77x. Use calculus to find the co-ordinates of the local minimum point of g and the point of inflection of g.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Minimum Point or inflection point",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q6-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q6-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q6-b-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q6(b)(i)",
+  "stem": "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+  "questionText": "Find f(5).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Fully correct integration",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q6-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q6-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q6-b-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 HL Paper 1 — Deferred Q6(b)(ii)",
+  "stem": "The function f(a), where a and x ∈ ℝ, is defined as f(a) = ∫₀¹ (x² − 2ax + a²) dx.",
+  "questionText": "Find the minimum value of f(a).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct integration",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Some correct substitution of both limits",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q6-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Fully correct integration",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q6-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q6-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-a",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(a)",
+  "stem": "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+  "questionText": "The table below shows some details on how the balance of the debt of €20 000 is reduced over the first four months. At the end of each month, interest of 0·526% on the previous month’s balance is calculated – for example, the interest at the end of month 1 is €105·20. This interest is paid out of Caoimhe’s €389·56 monthly payment; the remainder of the €389·56 is then paid off the outstanding balance. Complete the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "3 correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "6 correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-a-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-a-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(b)",
+  "stem": "Caoimhe is repaying a loan of €20 000 over 5 years. She makes equal monthly repayments of €389·56. The first payment was made one month after the loan was issued. The bank charges a fixed monthly interest rate of 0·526%.",
+  "questionText": "Find the amount that Caoimhe still owes at the end of the first two years of making repayments by finding the sum of the present values of the remaining 36 payments on the loan.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Series correctly formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-b-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(c)",
+  "questionText": "Find, correct to 1 decimal place, the annual percentage rate (APR) that is equivalent to a monthly interest rate of 0·526%.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-c-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-c-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-d-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(d)(i)",
+  "stem": "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+  "questionText": "Find the monthly interest rate that is equivalent to an APR of 5·53%. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-d-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-d-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-d-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-d-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(d)(ii)",
+  "stem": "After making monthly payments for three years, Caoimhe wants to finish repaying her 5-year loan in one more year. The bank advises her to take out a new 1-year loan to repay the outstanding €8761·77, making equal repayments at the end of each month, at an annual interest rate (APR) of 5·53%.",
+  "questionText": "Find the amount that Caoimhe repays each month on the new 1-year loan.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some relevant substitution into",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-d-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-d-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q7-e",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-e",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q7(e)",
+  "questionText": "A sum of money, €A, is invested in a fund and is withdrawn after t years, where t ∈ ℕ. The money is invested at a fixed APR of 6·75%. Find the least value of t needed so that the investment will amount to more than €2A when it is withdrawn from the fund.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-e-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answer verified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q7-e-solution-2",
+    "kind": "point",
+    "verbatim": "Formula in",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q7-e-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q7-e-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(a)(i)",
+  "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+  "questionText": "Find A, the area of triangle XYZ, in terms of l and m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct substitution into a",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Recognition of 90° angle in semi-",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(a)(ii)",
+  "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+  "questionText": "Express l + m in terms of P and d.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some understanding of perimeter",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Some relevant substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-a-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q8-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(a)(iii)",
+  "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle.",
+  "questionText": "Using the identity l² + m² = (l + m)² − 2lm, or otherwise, show that d = (P² − 4A)/(2P).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Some use of Pythagoras",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Some use of given identity",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-a-iv",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(a)(iv)",
+  "stem": "A triangle, XYZ is inscribed in a semi-circle of diameter d, as shown below. |XZ| = l and |XY| = m. P is the length of the perimeter of the triangle. A is the area of the triangle. Part (a)(iii): d = (P² − 4A)/(2P).",
+  "questionText": "Given that A = 120 cm² and P = 60 cm, use the result from part (a)(iii) to find the radius of the semi-circle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Any relevant substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-a-iv-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-a-iv-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(b)(i)",
+  "stem": "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm.",
+  "questionText": "Show that r satisfies the equation r² − 10r + 16 = 0, and find the roots of this equation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant substitution into area of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Relevant substitution into perimeter",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Any two from the MPC list",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q8-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q8(b)(ii)",
+  "stem": "The diagram below (not drawn to scale) shows a sector POQ of a circle with centre O and radius r cm. The angle POQ is β radians. The area of the sector is 16 cm². The perimeter of the sector is 20 cm. From part (i), r satisfies r² − 10r + 16 = 0.",
+  "questionText": "Find the corresponding values of β and explain why only one value is valid in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "8 radians is not valid as it is more than 1 full",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "reason",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q8-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q8-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-a-i-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(a)(i), Q9(a)(ii)",
+  "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+  "questionText": "(i) Find the number of trout in the lake when it was first stocked. (ii) Find the approximate number of trout in the lake at the end of month 10.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct substitution into",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "(i) or (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-a-i-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-i-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-a-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(a)(iii)",
+  "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+  "questionText": "Show that the number of trout in the lake has a limiting value of 3000.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Attempts at showing the limit by",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-a-iv",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q9-a-iv",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(a)(iv)",
+  "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+  "questionText": "Month n is the first month when the number of trout in the lake had risen above 2650. Find the value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Full Credit -1:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-a-iv-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-iv-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-a-v",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q9-a-v",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(a)(v)",
+  "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v).",
+  "questionText": "Find in terms of t, the rate at which the number of trout in the lake is increasing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "Quotient rule correctly applied",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-a-v-solution-2",
+    "kind": "point",
+    "verbatim": "Chain rule correctly applied but",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-a-v-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-a-v-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-b-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(b)(i)",
+  "stem": "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+  "questionText": "Complete the table below (round each value to the nearest whole number). t: 0, 1, 2, 3, 4, 5, 6, 7, 8. P(t): 400, blank, blank, blank, blank, 2700, blank, blank, blank.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct new entry",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "4 correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-b-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-b-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(b)(ii)",
+  "stem": "A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked. N(t) = 3000/(1 + 6·5e^(−0·814t)).",
+  "questionText": "Draw the graph of P(t) in the domain 0 ≤ t ≤ 8, t ∈ ℝ on the grid below. Note: The graph of N(t) is already plotted on the grid.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One correct new plot",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "4 correct new plots",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-b-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q9-b-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-b-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q9(b)(iii)",
+  "stem": "A lake was stocked with trout. The number of trout in the lake after time t can be approximated by N(t) = 3000/(1 + 6·5e^(−0·814t)), where t is the number of months since the lake was first stocked. Use N(t) to answer parts (i) to (v). A different model to approximate the number of trout in the same lake uses P(t) = 2600(15/13 − e^(−0·432t)), where t ∈ ℝ is the number of months since the lake was first stocked.",
+  "questionText": "By referencing the graphs, describe one similarity and one difference between the two models.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "One correct similarity or difference",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q9-b-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q9-b-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-a-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-deferred-q10-a-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(a)(i)",
+  "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+  "questionText": "Find the distance |BD|, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Recognises Pythagoras",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Pythagoras fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-a-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-a-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-deferred-q10-a-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(a)(ii)",
+  "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+  "questionText": "Show that the total length of the wire (from B to E to D) is √(x² + 49) + √(x² − 50x + 794).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct substitution into",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-a-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-ii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-a-iii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q10-a-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(a)(iii)",
+  "stem": "[AB] and [CD] are two vertical poles of height 7 m and 13 m, respectively. They are 25 m apart on level ground, as shown on the diagram below. The poles are held in place by a taut wire which is attached to the top of each pole (B and D) and also to the ground at a point E directly between the poles. The point E is x m from the pole [AB], where x ∈ ℝ.",
+  "questionText": "Find the two possible values of x for which ∠BED is a right angle. Give each answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "High Partial Credit:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-a-iii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-a-iii-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q10-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(b)",
+  "stem": "In the right-angled triangle ABE, |AB| = 7 m and |AE| = x m. The right angle is at A.",
+  "questionText": "Part of the same diagram is shown on the right. As the distance x increases, so does the distance |BE|. x is increasing at a rate of 4 m per second. Find the rate at which the distance |BE| is increasing at the instant when the triangle ABE is isosceles. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "Any relevant derivative",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-b-solution-2",
+    "kind": "point",
+    "verbatim": "2∙8 m/s",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-b-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-b-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-c-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-deferred-q10-c-i",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(c)(i)",
+  "stem": "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y.",
+  "questionText": "Show that x² = 144 − y².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Recognises Pythagoras",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-c-i-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-c-i-question"
+ },
+ {
+  "id": "maths-2023-hl-p1-deferred-q10-c-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q10-c-ii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 — Deferred Q10(c)(ii)",
+  "stem": "The diagram on the right shows a right circular cylinder that just fits inside a sphere of radius 12 cm. The diameter of the cylinder is 2x and its height is 2y. Part (i): x² = 144 − y².",
+  "questionText": "Write the volume of the cylinder in terms of y and hence find the volume of the largest right circular cylinder that fits inside a sphere of radius 12 cm. Give your answer correct to the nearest cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-deferred-q10-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct substitution into",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Higher Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-hl-p1-deferred-q10-c-ii-solution",
+  "questionFigureKey": "maths-2023-hl-p1-deferred-q10-c-ii-question"
  }
 ]

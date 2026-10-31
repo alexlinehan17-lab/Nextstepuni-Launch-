@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and eight deferred editions; eight indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 4809,
-  "reviewedTasks": 4809,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and nine deferred editions; seven indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 4853,
+  "reviewedTasks": 4853,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2024 deferred Ordinary Paper 2.",
+  "productionBuild": "Passed on 2026-10-31 through 2023 deferred Higher Paper 1.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2023 Higher deferred Paper 1",
-    "status": "All 2024 English deferred papers complete and verified; next is the independent visual review of 2023 Higher Paper 1.",
-    "remainingEnglishDeferredPapers": 8,
+    "paper": "2023 Higher deferred Paper 2",
+    "status": "2023 Higher deferred Paper 1 complete and verified; next is the independent visual review of 2023 Higher Paper 2.",
+    "remainingEnglishDeferredPapers": 7,
     "irishEditionReview": "Deferred by Alex on 2026-10-31; not part of the current completion scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -8623,5 +8623,94 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 50 cards byte for byte."
+  },
+  "deferred2023higherPaper1": {
+    "date": "2026-10-31",
+    "paper": "2023 Higher deferred Paper 1",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "reviewedTasks": 44,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "runtimeCards": 4853,
+    "runtimeByLevel": {
+      "higher": 1778,
+      "ordinary": 1938,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 120,
+    "previousAuthoredCardsUnchanged": 4810,
+    "previousDeferredImagesUnchanged": 684,
+    "previousImagesReproducedByUpdatedRenderer": 684,
+    "inspectedImages": 88,
+    "workedSupplements": [
+      "Q9(b)(ii)\u2013(iii): full, labelled graph of both printed trout models with correct comparison",
+      "Q9(b)(iii) question: independently practicable context graph without a written answer"
+    ],
+    "sourceCorrections": [
+      "Task-specific Q6(a) 15D award of 5 retained, while the general 4-mark band stays unchanged on other cards.",
+      "Trout-model population height distinguished from growth rate; original SEC wording retained with a correction.",
+      "Complex cube-root formula, polynomial expansion, exponential substitution and interest-rate factor errors explained.",
+      "Two clipped question crops corrected and re-inspected."
+    ],
+    "reviewedAtlasQuestionPlacements": 1134,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 7,
+    "irishEditionReview": "Deferred at user request; not part of the current completion scope.",
+    "tests": {
+      "javascriptPassed": 426,
+      "pythonPassed": 20,
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2023-hl-p1-deferred-q9-b-iii",
+      "phoneCard": "maths-2023-hl-p1-deferred-q6-a",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        2,
+        5
+      ],
+      "enlarge": true,
+      "phoneZoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePdfPage": 22,
+      "viewportReset": true
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }
