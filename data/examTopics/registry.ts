@@ -3604,6 +3604,21 @@ registerBrowserQuestionRuntime(geographyReviewedQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime);
+// The 2011 legacy Ordinary/Foundation first booklets are indexed as "Exam
+// Paper" (slot "single"), although the independent review calls them Paper 1.
+// Keep both exact-booklet lookup slots so the preserved Atlas rows receive the
+// reviewed topics too. No alias may cross a year, level or physical booklet.
+const mathematicsLegacySlotAliases = (mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime)
+  .questionMappings.filter(row => row[2] === 2011 && row[3] === 'p1'
+    && ['LC003BLP000EV.pdf', 'LC003GLP000EV.pdf'].includes(row[4]));
+registerBrowserQuestionRuntime({
+  ...(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime),
+  questionMappings: mathematicsLegacySlotAliases.map(row => {
+    const alias = [...row] as typeof row;
+    alias[3] = 'single';
+    return alias;
+  }),
+});
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
 
 // Exact SEC-task evidence supplements the preserved historical reference map.

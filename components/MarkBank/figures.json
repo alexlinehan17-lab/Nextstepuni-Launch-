@@ -119716,5 +119716,914 @@
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
   "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q1-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-a-question.png",
+  "md5": "b2bdf05f4dbb08820690a5e5f683feef",
+  "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Write down the co-ordinates of A and of B.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q1-b-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-b-question.png",
+  "md5": "9488ccb38282c7cbb3a66b834a4b9764",
+  "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Find the area of the triangle APB.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q1-c-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-c-question.png",
+  "md5": "be34b7908d375989bad77c1658b89a27",
+  "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Find the length |AB|.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q1-d-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-d-question.png",
+  "md5": "1367b0be2be3c3e6d849cf460091e3d5",
+  "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Part (b) asks for the area of APB and part (c) for |AB|. Using your answers to part (b) and part (c), find the length of the shortest line segment from P to the line AB. Give your answer correct to 2 decimal places.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q2-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-a-question.png",
+  "md5": "55707e1df28d6ef3adbebf29857e6d23",
+  "alt": "The question as printed on the paper — The diagram below shows a parallelogram ABCD. It has sides of length 9 cm and 5 cm, and a perpendicular height of h (taking the base to be 9 cm), where h ∈ ℝ. The point E lies on the side [AB], so that ∠AED is a right angle. |AE|=3 cm, as shown. Find the value of h, and hence find area of the parallelogram.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q2-b-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-b-question.png",
+  "md5": "74e5c799332e877dbb535d9dbcf4410d",
+  "alt": "The question as printed on the paper — The diagram below shows a different quadrilateral (not to scale). Two of the sides are parallel. The other two sides are not parallel. The vertical lines on the diagram are a distance of 1 cm apart. Use the Trapezoidal Rule to find the area of this quadrilateral. Show all of your working out.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q3-a-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-i-question.png",
+  "md5": "a39bf6af63e397618aa2e3230bfd90bc",
+  "alt": "The question as printed on the paper — A circle has equation x²+y²=10, where x,y ∈ ℝ. Verify that the point (3,−1) is on the circle.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q3-a-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-ii-question.png",
+  "md5": "39597ac2f0724837a2ff7ce473dd8655",
+  "alt": "The question as printed on the paper — A circle has equation x²+y²=10, where x,y ∈ ℝ. Find the slope of the tangent to the circle at the point (3,−1).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q3-b-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-i-question.png",
+  "md5": "682e69eaa0a493bee4ac5e9c0fdb5f37",
+  "alt": "The question as printed on the paper — A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown. Find the equation of the circle c.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q3-b-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-ii-question.png",
+  "md5": "ab66053434d9cca50e3cb2cc888d604c",
+  "alt": "The question as printed on the paper — A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown. Find the equation of the circle which has the same centre as the circle c, and which passes through the point (0,0).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q4-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-a-question.png",
+  "md5": "4a7166a49c2e14bc5a284096e607872e",
+  "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. How many students are in the group?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q4-b-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-b-question.png",
+  "md5": "538b1b8b74f666968c2a34538aa544c6",
+  "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. Find the range of the heights of this group of students.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q4-c-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-c-question.png",
+  "md5": "d3b034d546d8877af22ca7002098de57",
+  "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. Find the interquartile range of the heights of this group of students.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q4-d-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-d-question.png",
+  "md5": "68527d95ece0a0c931b8e19050481b5b",
+  "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height of the students in the group is 149.5 cm. Use the mean height to work out the sum of the heights of all the students in the group. Show your working out.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q4-e-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-e-question.png",
+  "md5": "ac726a33ec9f55849b54d5e11d75d171",
+  "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height is 149.5 cm. The standard deviation of the heights of the students is 7.3 cm, correct to 1 decimal place. Find the percentage of the students whose height is within 1 standard deviation of the mean height of the group.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q5-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-a-question.png",
+  "md5": "3e3c3dee4b95a3457361b538ca195fc3",
+  "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel plays one game. Write down the probability that he wins the game.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q5-b-i-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-b-i-ii-question.png",
+  "md5": "fd83972d750d0177220dc7d85879229a",
+  "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel plays the game three times. In this set of three games: (i) what is the probability that Noel does not draw the short straw (that is, he loses all three games)? (ii) what is the probability that Noel wins the first two games and loses the third game?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q5-c-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-c-question.png",
+  "md5": "a9d283a96b82eb4d4df9dd924c947fcb",
+  "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel decides to continue playing the game until he wins for the first time. What is the probability that Noel wins for the first time on the fifth game he plays?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q5-d-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-d-question.png",
+  "md5": "32624a9da96402b2f4680a6122c10d77",
+  "alt": "The question as printed on the paper — Noel bets €2 on each game. If he loses the game, he loses the €2. If he wins the game, he gets his €2 back, and also another €3. Noel starts with €7. How much money will he have if he plays 3 games and wins exactly 1 of them?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q6-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-a-question.png",
+  "md5": "ddb7754d24862e4cdf64585a4b9f815c",
+  "alt": "The question as printed on the paper — Construct the centroid of the triangle below. Show clearly any construction lines. (Note: all instruments are permitted. If you are using measurements, show your measurements and calculations.)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q6-b-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-i-question.png",
+  "md5": "f4da652e77bf729610e60163f900f8d1",
+  "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Give a reason why |∠XYW|=90°.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q6-b-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-ii-question.png",
+  "md5": "ebf3d36ef6e2c2e98504dd2525ff182c",
+  "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Find the value of α and the value of β.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q6-b-iii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-iii-question.png",
+  "md5": "803dabaf70361d13c60a61104b06701e",
+  "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Which point in the diagram is the circumcentre of the triangle WXY?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-a-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-i-question.png",
+  "md5": "6665840f422f8ceffc267d444dfc8712",
+  "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Write down the probability that Billy will not win the prize for Task 1.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-a-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-ii-question.png",
+  "md5": "c2ffb7fe7321ec84fa600e339a52750f",
+  "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Complete the table above by writing in the probability neither Ann nor Billy will win the prize for each task.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-a-iii-iv-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-iii-iv-question.png",
+  "md5": "678b575a3d91fa9a4e2f971f9ae20a81",
+  "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. The tree diagram shows possible winners of the two tasks. Each outcome is written as the winner of Task 1, followed by the winner of Task 2. A stands for Ann, B for Billy, and N for neither. For example, (A,N) means Ann wins Task 1 and neither Ann nor Billy wins Task 2. (iii) Complete the list of outcomes in the table above. (iv) Write the probability of each outcome in the space beside it in the table above.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-a-v-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-v-question.png",
+  "md5": "64968888c535dce3f04bfdacbb8de980",
+  "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Work out the probability that Ann wins one prize and that Billy wins the other prize.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-b-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-i-question.png",
+  "md5": "90ec9e10978ee60ceca67c815b596fd2",
+  "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Fill in the two-way table below to show the result (the product) for each possible pair of numbers. One is already done for you.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-b-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-ii-question.png",
+  "md5": "5665d4104694f3fbefa74705afcd495b",
+  "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Use the two-way table to decide whether or not this game is fair (that is, if Eric and Chidalu are equally likely to win). Justify your answer.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q7-b-iii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-iii-question.png",
+  "md5": "2656321a7c47f0bd7e27aa0007d8c961",
+  "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Eric and Chidalu play the game a number of times. Find the probability that the first three results of the game are 4, 3, and 16, in that order. Give your answer correct to 4 decimal places.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-a-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-i-question.png",
+  "md5": "9b5a5e98f6db82b56c5bde4594578958",
+  "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Work out the margin of error (1/√n) for this sample. Give your answer as a percentage.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-a-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-ii-question.png",
+  "md5": "0ed6824675bbf1fe711de4e61fb7b69f",
+  "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Part (a)(i) asks for the margin of error 1/√n. In the survey, 230 people said that they would buy a souvenir t-shirt at the festival. Using the margin of error from part (a)(i), create a 95% confidence interval for the percentage of people who will buy a t-shirt at the festival.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-a-iii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-iii-question.png",
+  "md5": "88d2a6d9360aad721129cc9d94ef4150",
+  "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. In the survey, 230 people said they would buy a t-shirt. Construct the 95% confidence interval using margin of error 1/√n as in part (a)(ii). A music journalist claims that 34% of people who will attend the festival will buy a t-shirt. Use your answer to part (a)(ii) to conduct a hypothesis test, at the 5% level of significance, to test the journalist’s claim. Give your conclusion, and a reason for this conclusion.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-i-question.png",
+  "md5": "2caac85f755448486e8ae829aaa6a892",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. The four shaded heights in the table above have not been included on the scatter plot. Draw four points on the scatter plot to show these.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-ii-question.png",
+  "md5": "e96671c68e083c08f54abb90d8df43d8",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Describe the relationship between shoe size and height, based on the scatter plot.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-iii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iii-question.png",
+  "md5": "9c1caade0afa1c2bd4ccf893d0040244",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Which of the following values is closest to the correlation coefficient between shoe size and height, based on the data in the table and the graph? Tick one box only: −1, −0.5, 0, 0.5, 1.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-iv-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iv-question.png",
+  "md5": "c75e1ab68b56592ea58b2fa5351c17bd",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Calculate the mean height of the 20 boys.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-v-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-v-question.png",
+  "md5": "91b442340f16eb73668337d20aa1e4d1",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel. He has height of 178 cm. Use the information in the scatter plot to estimate this boy’s shoe size. Show your work on the diagram.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q8-b-vi-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-vi-question.png",
+  "md5": "fa39c17ae03d83ebb480327a3c80af3d",
+  "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel with height 178 cm. Which will have a bigger increase, the mean or the median, if we include the new player in the data? Justify your answer.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-a-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-a-question.png",
+  "md5": "ebab7506a8bda2848842be8c63fde7ce",
+  "alt": "The question as printed on the paper — Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale). Work out the value of x, and hence work out the value of h, the height of the cylindrical part of the tower. Give each distance in metres, correct to 1 decimal place.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-b-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-b-question.png",
+  "md5": "bd7b1741988cd4d08b41cd699fb2b7b8",
+  "alt": "The question as printed on the paper — Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale). Later, Jane and Alan read on the internet that the actual height of the cylindrical part of the tower is approximately 34 m. Using 34 m as the actual height of the cylindrical part of the tower, find the percentage error in the answer from part (a). Give your answer correct to the nearest percent.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-c-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-i-question.png",
+  "md5": "6416140db44acc1de976e1aec4faecc3",
+  "alt": "The question as printed on the paper — Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. The actual height of the cylindrical part of the tower is approximately 34 m. Use the fact that this is a scale model to work out the actual diameter of the round tower at Kilmacduagh. Use the approximate actual height given in part (b). Give your answer in metres.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-c-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-ii-question.png",
+  "md5": "d823c5d79351b2157aa171e9c7000a77",
+  "alt": "The question as printed on the paper — Work out the curved surface area of Alan’s model, excluding the roof. Give your answer correct to the nearest cm². Remember that it will be in the shape of a cylinder, with a diameter of 28 centimetres and a height of 1.7 metres.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-c-iii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-iii-question.png",
+  "md5": "efa1e1281c2aaf7ca462ab4a14c5683e",
+  "alt": "The question as printed on the paper — Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. Alan makes this from a rectangular sheet of card of length a cm and width b cm. An extra 3 cm of card along one edge overlaps the other edge when he makes the cylinder, as shown. Find the value of a and the value of b. Give b correct to the nearest cm.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q9-d-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-d-question.png",
+  "md5": "7d9dcca0da4f1369164b6bb57473973f",
+  "alt": "The question as printed on the paper — The roof of Alan’s model will be a cone with diameter 28 cm and vertical height 22 cm. Find l, the slant height of the cone, and hence find the curved surface area of the cone. Give each answer correct to 1 decimal place.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-a-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-i-question.png",
+  "md5": "482cfa7a0bc234db55bc121759e846ea",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Show that the slope of AC is equal to the slope of DF.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-a-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-ii-question.png",
+  "md5": "1d8df08b93038229b4f42a5e3eda28ee",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Part (a)(i) asks you to show that their slopes are equal. What does this tell you about the lines AC and DF?",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-b-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-b-question.png",
+  "md5": "23bb7257862d8ed15ba6943a8a614e4e",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Find the value of k, the scale factor of this enlargement.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-c-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-c-question.png",
+  "md5": "3e5a69728dc981e6fd154bf87fe4846d",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. The area of the triangle ABC is 8 square units. Hence, or otherwise, find the area of the triangle DEF.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-d-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-d-question.png",
+  "md5": "3ff3bdb091b58a7bcf296a14c7c7cc34",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Find the equation of the line BE. Give your answer in the form y=mx+c, where m,c ∈ ℝ.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-e-i-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-i-question.png",
+  "md5": "6d750dd6986d62dbe02b8d6466f984c7",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. By drawing suitable lines on the diagram, construct the centre of this enlargement, and write down the co-ordinates of this centre.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-e-ii-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-ii-question.png",
+  "md5": "e23af6f5565ac5445b079c28398a0681",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Part (d) asks for the equation of BE; part (e)(i) asks for the centre of enlargement. Using your answers to part (d) and part (e)(i), show, by substitution, that the centre of enlargement lies on the line BE.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q10-f-question": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-f-question.png",
+  "md5": "ef6a25302852c0ee903ee5fca13599a1",
+  "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Use trigonometry to find the size of ∠DFE. Give your answer correct to 1 decimal place.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+ },
+ "maths-2022-ol-p2-deferred-q1-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-a-solution.png",
+  "md5": "1efb25175671e4d9b1bb36cd3110c93a",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(a).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q1-b-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-b-solution.png",
+  "md5": "09d16c4864ed6c3e3b45f377cf8df4e3",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(b).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q1-c-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-c-solution.png",
+  "md5": "ce1cc5e63e4e63469fc758269cca7575",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(c).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q1-d-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-d-solution.png",
+  "md5": "010acb4f69dd5aa7567b5e0d30233389",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(d).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q2-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-a-solution.png",
+  "md5": "66e358ed64b19e44d3c784df219587e2",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q2(a).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "The line h²=25 in the original solution is a typo. From 3²+h²=5², h²=25−9=16, so h=4 cm and the area is 9×4=36 cm²."
+ },
+ "maths-2022-ol-p2-deferred-q2-b-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-b-solution.png",
+  "md5": "4e03e344883ee55aa993f047e427411d",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q2(b).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q3-a-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-i-solution.png",
+  "md5": "e43bbadaab7f5d51739f01fced2e3679",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(a)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q3-a-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-ii-solution.png",
+  "md5": "5a4c78e5833ec52607d2b77c3f7d4f40",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(a)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q3-b-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-i-solution.png",
+  "md5": "940d22bef7b808c96565af44b0630076",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(b)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q3-b-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-ii-solution.png",
+  "md5": "ffff8b126926ff21d6a006b460a60799",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(b)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q4-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-a-solution.png",
+  "md5": "7f4a5d63bde9c76942246f0539cfdfa9",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(a).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q4-b-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-b-solution.png",
+  "md5": "eb470bd7aa5e801fadce6bc42c597103",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(b).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q4-c-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-c-solution.png",
+  "md5": "785dd54085a316e86c9054dfa63ca2c8",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(c).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "The SEC accepts either quartile convention shown: Q₁=144.5, Q₃=155.5 gives IQR=11 cm; Q₁=143, Q₃=155 gives IQR=12 cm. Use one convention consistently."
+ },
+ "maths-2022-ol-p2-deferred-q4-d-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-d-solution.png",
+  "md5": "e0cf262874e0ab24d63cfd4926bd51a3",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(d).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q4-e-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-e-solution.png",
+  "md5": "79d7475e858007efb6e8177da4eac11f",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(e).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q5-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-a-solution.png",
+  "md5": "7d431702f1a2e506620e116b51ff99d9",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(a).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q5-b-i-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-b-i-ii-solution.png",
+  "md5": "f21cfa935995360735fa571d286bbfe8",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q5-c-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-c-solution.png",
+  "md5": "6c0eae5f4640f53312fac8ed4d498940",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(c).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q5-d-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-d-solution.png",
+  "md5": "5b46adb75827fed05d333d753488d9f3",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(d).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "Two losses cost €4 and one win adds €3 to the starting €7: €7−€4+€3=€6. The returned €2 stake is not an additional profit."
+ },
+ "maths-2022-ol-p2-deferred-q6-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-a-solution.png",
+  "md5": "790daae123edbe22ab27f987cb2e1718",
+  "alt": "NextStepUni compass-and-straightedge centroid construction using the exact proportions of the printed triangle: construct two side midpoints M and N, then join opposite vertices to them. The medians intersect at G. Construction arcs, bisectors and original SEC notes are retained.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q6-b-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-i-solution.png",
+  "md5": "76b2d20c89f5c91010ef28876c55c6b9",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q6-b-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-ii-solution.png",
+  "md5": "252bbfd56f04866c2476d7ed1165b40e",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q6-b-iii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-iii-solution.png",
+  "md5": "1d1dd0f3aaf30a2c709eb41972d8d079",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(iii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-a-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-i-solution.png",
+  "md5": "47ca6062be770a0cbb56ddf991c91756",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-a-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-ii-solution.png",
+  "md5": "b6c3fc4c7de528714e8570022dcce23f",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-a-iii-iv-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-iii-iv-solution.png",
+  "md5": "d9ee7425cfdb6cf100593285c856dc94",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(iii), Q7(a)(iv).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-a-v-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-v-solution.png",
+  "md5": "70d9b1a150270824c07b145173d53584",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(v).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-b-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-i-solution.png",
+  "md5": "61afa3c281ceab60fde025a93cf0f558",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-b-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-ii-solution.png",
+  "md5": "9e0cc0e44c614111d9a6513b9712326e",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q7-b-iii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-iii-solution.png",
+  "md5": "10350b8f1ff6525e472cc86f38875fea",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(iii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-a-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-i-solution.png",
+  "md5": "9a26682cba9a8f37fe3223c98c78221f",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-a-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-ii-solution.png",
+  "md5": "524b54866a5ce0eafcd8294d9caac58f",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-a-iii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-iii-solution.png",
+  "md5": "407d95e4c09d5e2ba3dd9c85953c2481",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(iii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "The interval is 32.8%–40.8%, which contains 34%. Fail to reject the journalist’s claim at the 5% level: the sample does not provide sufficient evidence against it. This does not prove that 34% is the true population percentage."
+ },
+ "maths-2022-ol-p2-deferred-q8-b-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-i-solution.png",
+  "md5": "5528251ba6c900468627261efedf988d",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-b-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-ii-solution.png",
+  "md5": "264f77df20f9c78f3d0a0c996ad9fd1b",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-b-iii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iii-solution.png",
+  "md5": "11b4a067d45e135b0ce0dffe9c796998",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(iii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "Choose 1: it is the closest of the five offered values to the strong positive correlation in these data. The actual correlation is not exactly 1."
+ },
+ "maths-2022-ol-p2-deferred-q8-b-iv-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iv-solution.png",
+  "md5": "c4480eda79a294d82d1cbbf0a491f1bb",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(iv).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-b-v-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-v-solution.png",
+  "md5": "962a267c623fcec4e017efc91a4318b1",
+  "alt": "NextStepUni reconstructed scatter plot with all 20 shoe-size and height pairs. A reasonable by-eye line gives shoe size about 9.3 at 178 cm, within the original example of 9–9.5. Dashed reading lines, labels and original SEC notes are included.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q8-b-vi-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-vi-solution.png",
+  "md5": "83268d922cc16b87aff014c1165a7996",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(vi).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "The mean rises from 3410/20=170.5 cm to (3410+178)/21≈170.857 cm. The median remains 172 cm, so the mean has the bigger increase."
+ },
+ "maths-2022-ol-p2-deferred-q9-a-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-a-solution.png",
+  "md5": "2ab7a23d3a6d2909c5125e564d58b486",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(a).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q9-b-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-b-solution.png",
+  "md5": "6b29340bad0cada2884b5af6977c6766",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(b).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q9-c-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-i-solution.png",
+  "md5": "552617cd02f11b981d1d175b59e194a3",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q9-c-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-ii-solution.png",
+  "md5": "9440145fe262b788ed3c80c024127f04",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q9-c-iii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-iii-solution.png",
+  "md5": "affbb9fcc005562d00bb7e09340c2ae8",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(iii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "The full width includes the 3 cm overlap: a=170 cm and b=28π+3≈90.96 cm, rounded to 91 cm."
+ },
+ "maths-2022-ol-p2-deferred-q9-d-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-d-solution.png",
+  "md5": "6c8b3375c13b2c1dd6a29cf1c3851492",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(d).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true,
+  "sourceNote": "Keep full precision between steps: l=√(14²+22²)=√680≈26.1 cm, and curved area=14π√680≈1146.9 cm². The original scheme uses the already-rounded 26.1 cm to obtain 1147.9 cm²; its route and marking guidance are retained below."
+ },
+ "maths-2022-ol-p2-deferred-q10-a-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-i-solution.png",
+  "md5": "bb2d3ee56f09612d444a8d78a243abe5",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(a)(i).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-a-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-ii-solution.png",
+  "md5": "e38e258b3e595c294311f7f8022cd55d",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(a)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-b-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-b-solution.png",
+  "md5": "b0c60689e4d4bf5e72255a7a91137d50",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(b).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-c-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-c-solution.png",
+  "md5": "29715dd74da2302f8afc37c24420afb0",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(c).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-d-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-d-solution.png",
+  "md5": "9c698b614fd437217ea210157b28fee5",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(d).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-e-i-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-i-solution.png",
+  "md5": "c9534ed4a9914e00e8efcfdd1d009789",
+  "alt": "NextStepUni reconstruction of the original labelled triangles. Extend AD, BE and CF backwards to their common point (0,6), the centre of enlargement. All six original co-ordinates, axes and SEC credit notes remain included.",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-e-ii-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-ii-solution.png",
+  "md5": "030f1f1ecccbf28ad6702a5bb9ce38ca",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(e)(ii).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
+ },
+ "maths-2022-ol-p2-deferred-q10-f-solution": {
+  "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-f-solution.png",
+  "md5": "cc8757ec9918dd2a6dd7da817729ed1c",
+  "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(f).",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+  "solution": true
  }
 }

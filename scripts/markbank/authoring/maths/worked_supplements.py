@@ -22,6 +22,9 @@ def probability_tree_values():
 
 def render_supplement(name, dpi=200):
     ordinary_2022 = {
+        'centroid-2022-ol-deferred':render_centroid_2022_ol,
+        'shoe-estimate-2022-ol-deferred':render_shoe_estimate_2022_ol,
+        'enlargement-2022-ol-deferred':render_enlargement_2022_ol,
         'balls-plot-2022-ol-deferred':lambda dpi:render_balls_2022_ol(dpi,False),
         'balls-readings-2022-ol-deferred':lambda dpi:render_balls_2022_ol(dpi,True),
         'brendan-2022-ol-deferred':lambda dpi:render_cyclists_2022_ol(dpi,'brendan'),
@@ -902,4 +905,93 @@ def render_cyclists_2022_ol(dpi,mode):
     else:lines=['Join (10:00, 64 km) to (15:00, 0) with one straight line.','The distance from P decreases as Colin travels towards P.','Label the line Colin.']
     c.setFont('Helvetica',10);c.drawRightString(x0+w,112,'Time of day')
     for yy,txt in zip([85,63,41],lines):c.drawString(22,yy,txt)
+    return _example_image(buf,c,dpi)
+
+
+def render_centroid_2022_ol(dpi):
+    from math import atan2
+    buf,c=_example_canvas('Constructing the centroid',
+        '2022 deferred Ordinary Paper 2 · Q6(a) · original triangle proportions',585)
+    # Exact vertices of the printed triangle, translated and vertically flipped.
+    A=(135,450); B=(389.22,309); C=(251.58,168)
+    G=tuple(sum(p[i] for p in [A,B,C])/3 for i in [0,1])
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1.2)
+    for a,b in [(A,B),(B,C),(C,A)]:c.line(*a,*b)
+    mids=[]
+    for u,v,opposite,label in [(A,B,C,'M'),(A,C,B,'N')]:
+        dx,dy=v[0]-u[0],v[1]-u[1];length=sqrt(dx*dx+dy*dy)
+        mid=((u[0]+v[0])/2,(u[1]+v[1])/2);perp=(-dy/length,dx/length)
+        radius=.55*length;offset=sqrt(radius*radius-length*length/4)
+        intersections=[(mid[0]+sgn*perp[0]*offset,mid[1]+sgn*perp[1]*offset) for sgn in [-1,1]]
+        c.setStrokeColorRGB(.61,.61,.58);c.setLineWidth(.7)
+        for centre in [u,v]:
+            for ip in intersections:
+                angle=degrees(atan2(ip[1]-centre[1],ip[0]-centre[0]))
+                c.arc(centre[0]-radius,centre[1]-radius,centre[0]+radius,centre[1]+radius,angle-7,14)
+        c.setDash(3,3);c.line(*intersections[0],*intersections[1]);c.setDash()
+        c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(1.5);c.line(*opposite,*mid)
+        mids.append((label,mid))
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Times-Italic',14)
+    for label,pt,dx,dy in [('A',A,-17,8),('B',B,9,0),('C',C,-5,-21),('M',mids[0][1],5,12),('N',mids[1][1],-21,-6)]:
+        c.circle(*pt,2.1,fill=1,stroke=0);c.drawString(pt[0]+dx,pt[1]+dy,label)
+    c.circle(*G,3.4,fill=1,stroke=0);c.setFont('Helvetica-Bold',11);c.drawString(G[0]+10,G[1]-12,'G: centroid')
+    c.setFont('Helvetica',10)
+    for y,line in [(117,'1. Use equal-radius compass arcs from A and B; join their intersections.'),
+                   (96,'    This perpendicular bisector locates M, the midpoint of AB.'),
+                   (75,'2. Repeat on AC to locate its midpoint N.'),
+                   (54,'3. Draw medians CM and BN. Their intersection G is the centroid.'),
+                   (33,'Keep the construction arcs and lines visible. Vertex labels are added for this example.')]:c.drawString(22,y,line)
+    return _example_image(buf,c,dpi)
+
+
+def render_shoe_estimate_2022_ol(dpi):
+    data={6:[161,163,165],6.5:[167,164,169],7:[168,169],7.5:[172,173,170],8:[174,172,173],8.5:[176,173,174,175],9:[175,177]}
+    assert sum(map(len,data.values()))==20 and sum(sum(v) for v in data.values())==3410
+    buf,c=_example_canvas('Estimating a shoe size from height',
+        '2022 deferred Ordinary Paper 2 · Q8(b)(v) · one reasonable by-eye line',485)
+    x0,y0,w,h=65,150,440,235
+    def P(x,y):return x0+w*(x-5.5)/4,y0+h*(y-160)/20
+    c.setFont('Helvetica',10);c.drawString(x0,401,'Height (cm)')
+    c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for i in range(12,20):
+        x=i/2;xx,_=P(x,160);c.line(xx,y0,xx,y0+h);c.drawCentredString(xx,y0-16,str(x).removesuffix('.0'))
+    for y in range(160,181,5):
+        _,yy=P(5.5,y);c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(y))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1);c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h)
+    for x,ys in data.items():
+        for y in ys:c.circle(*P(x,y),2.5,fill=1,stroke=0)
+    c.setLineWidth(1.5);c.line(*P(5.5,4.4*5.5+137),*P(9.5,4.4*9.5+137))
+    reading=(178-137)/4.4
+    c.setStrokeColorRGB(.90,.39,.15);c.setDash(4,3);c.line(*P(5.5,178),*P(reading,178));c.line(*P(reading,178),*P(reading,160));c.setDash()
+    c.setFont('Helvetica',10);c.drawRightString(x0+w,111,'Shoe size')
+    c.setFont('Helvetica-Bold',11);c.drawString(22,85,'At 178 cm, this line gives a shoe size of about 9.3.')
+    c.setFont('Helvetica',10);c.drawString(22,62,'Draw a reasonable line through the pattern, then read across and down from 178 cm.')
+    c.drawString(22,40,'The SEC example is about 9–9.5. A different reasonable line can give a different estimate.')
+    return _example_image(buf,c,dpi)
+
+
+def render_enlargement_2022_ol(dpi):
+    buf,c=_example_canvas('Finding the centre of enlargement',
+        '2022 deferred Ordinary Paper 2 · Q10(e)(i) · join corresponding vertices',475)
+    x0,y0,w,h=65,135,440,240
+    def P(x,y):return x0+w*x/20,y0+h*y/10
+    pts={'A':(5,3),'B':(9,3),'C':(8,7),'D':(10,0),'E':(18,0),'F':(16,8)}
+    c.setFont('Helvetica',10);c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for x in range(0,21,2):
+        xx,_=P(x,0);c.line(xx,y0,xx,y0+h);c.drawCentredString(xx,y0-16,str(x))
+    for y in range(0,11,2):
+        _,yy=P(0,y);c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(y))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1);c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h)
+    c.drawString(x0+w+10,y0-3,'x');c.drawString(x0-4,y0+h+12,'y')
+    for labels in ['ABC','DEF']:
+        for a,b in zip(labels,labels[1:]+labels[:1]):c.line(*P(*pts[a]),*P(*pts[b]))
+    c.setStrokeColorRGB(.90,.39,.15);c.setDash(4,3)
+    for name in ['D','E','F']:c.line(*P(0,6),*P(*pts[name]))
+    c.setDash();c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',10)
+    offsets={'A':(-31,-15),'B':(6,-15),'C':(-24,10),'D':(-16,-32),'E':(0,-32),'F':(-4,10)}
+    for name,(x,y) in pts.items():
+        xx,yy=P(x,y);dx,dy=offsets[name];c.circle(xx,yy,2.3,fill=1,stroke=0);c.drawString(xx+dx,yy+dy,f'{name}({x},{y})')
+    c.circle(*P(0,6),3.5,fill=1,stroke=0);c.setFont('Helvetica-Bold',11);c.drawString(*P(.45,6.5),'Centre (0, 6)')
+    c.setFont('Helvetica',11);c.drawString(22,68,'Extend AD and BE backwards until they meet. CF passes through the same point.')
+    c.drawString(22,43,'The centre is (0, 6). Show the construction lines as well as the co-ordinates.')
     return _example_image(buf,c,dpi)

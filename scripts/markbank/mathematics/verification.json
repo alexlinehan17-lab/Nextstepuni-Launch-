@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and fifteen deferred editions; one indexed English deferred edition remains. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 5135,
-  "reviewedTasks": 5135,
+  "scope": "2010–2026 Mathematics: all 127 indexed English editions reviewed and carded (111 main/Project and 16 deferred). Irish-language editions deferred at Alex’s request on 2026-10-31.",
+  "runtimeCards": 5188,
+  "reviewedTasks": 5188,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 718,
+  "targetedRegressionTests": 993,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2022 deferred Ordinary Paper 1.",
+  "productionBuild": "Passed on 2026-10-31 after the final English deferred booklet and historical Topic Atlas repairs.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2022ordinaryPaper1",
+  "latestBatch": "deferred2022ordinaryPaper2",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -1002,7 +1002,7 @@
       "ol5B": 2,
       "ol10C_measured": 7
     },
-    "sixCategoryScalePanel": "15E shows No / Low / Low mid / High mid / High partial / Full credit \u22121 / Full credit (0, 3, 6, 9, 12, 14, 15)",
+    "sixCategoryScalePanel": "15E shows No / Low / Low mid / High mid / High partial / Full credit −1 / Full credit (0, 3, 6, 9, 12, 14, 15)",
     "rulerKnownPrintedLengthCm": 3.998,
     "rulerReadings": {
       "desktop": [
@@ -1225,7 +1225,7 @@
       "ol20D": 15,
       "ol15C_2019": 9
     },
-    "scalesShown": "15D shows No / Low / Mid / High partial / Full credit \u22121 / Full credit (0, 4, 7, 11, 14, 15); 2020 HL P2 Q4(a) follows the 15D printed beside the solution",
+    "scalesShown": "15D shows No / Low / Mid / High partial / Full credit −1 / Full credit (0, 4, 7, 11, 14, 15); 2020 HL P2 Q4(a) follows the 15D printed beside the solution",
     "schemeReaderRenders": true,
     "escapeAndFocusReturn": true,
     "pageErrors": []
@@ -1237,7 +1237,7 @@
     "paper2": 26,
     "figure": "A crop of the part's whole printed scheme row (part label, model solution, marking notes with every credit band), CardFigure.solution = true, shown only after the reveal.",
     "tool": "scripts/markbank/authoring/maths/scheme_row_figures.py (rows found from the scheme table's own rules and label column; every crop opened and checked)",
-    "alsoLifted": "2019 OL P1 Q9(c)(ii) high partial credit bullet '1285\u00b737 \u00d7 0\u00b70012 or equivalent = 1\u00b75'",
+    "alsoLifted": "2019 OL P1 Q9(c)(ii) high partial credit bullet '1285·37 × 0·0012 or equivalent = 1·5'",
     "browser": "Chrome desktop and mobile: crop absent before reveal, loaded after reveal, no page errors (Q2(a)(iii) P1, Q8(b)(i) P2)",
     "validation": "Deck 1,870 built, 0 dropped; ten regression files 350/350; typecheck; markBankStore + markBankAuthoringToolkit 46/46; Atlas --check; audit --check-reviewed; diff check."
   },
@@ -1511,7 +1511,7 @@
     "candidateMarks": 300,
     "paperPagesInspected": 20,
     "schemePagesInspected": 26,
-    "scaleNote": "2016 Paper 2 ladders: 5B 0,2,5; 5C 0,2,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15. The scale table on scheme page 28 is misheaded \u201cPaper 1\u201d. Q3(b)'s mid partial credit prints 132\u00b72\u00b0 where its high partial credit prints 138\u00b72\u00b0; both quoted as printed.",
+    "scaleNote": "2016 Paper 2 ladders: 5B 0,2,5; 5C 0,2,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15. The scale table on scheme page 28 is misheaded “Paper 1”. Q3(b)'s mid partial credit prints 132·2° where its high partial credit prints 138·2°; both quoted as printed.",
     "questionFigures": "All 34 cards carry a crop of the printed question, each opened and checked; 16 use visually verified explicit regions (the Q7 lantern stem and diagram for every (a) part; the Q9(b)-(d) farm surveys without the unrelated earnings stem).",
     "schemeRowFigures": "9 parts carry the scheme-row crop after the reveal (Q3(a), Q3(b) across pages 32-33, Q4(a)(ii), Q4(b) construction, Q5(a)(i) table, Q6(b) expected-value table, Q8(d)(i) table, Q8(d)(ii) graph, Q9(a)(iii) across pages 45-46).",
     "coverageBaseline": "1818/3476 asks covered, 0 orphans, 0 excluded, 1658 open",
@@ -1556,7 +1556,7 @@
     "candidateMarks": 300,
     "paperPagesInspected": 20,
     "schemePagesInspected": 24,
-    "scaleNote": "2016 Ordinary Paper 2 ladders, printed beside each part: 5A 0,5; 5B 0,1,5; 5C 0,1,2,5; 5D 0,2,3,4,5; 10C 0,2,4,10; 15B 0,4,15; 15C 0,3,5,15; 15D 0,2,4,8,15; 20C 0,5,10,20; 20D 0,5,10,15,20. The scale table on scheme page 22 is misheaded \u201cPaper 1\u201d. Q6(a)(i)+(ii) share one printed scale.",
+    "scaleNote": "2016 Ordinary Paper 2 ladders, printed beside each part: 5A 0,5; 5B 0,1,5; 5C 0,1,2,5; 5D 0,2,3,4,5; 10C 0,2,4,10; 15B 0,4,15; 15C 0,3,5,15; 15D 0,2,4,8,15; 20C 0,5,10,20; 20D 0,5,10,15,20. The scale table on scheme page 22 is misheaded “Paper 1”. Q6(a)(i)+(ii) share one printed scale.",
     "questionFigures": "All 39 cards carry a crop of the printed question, each opened and checked; 24 use visually verified explicit regions (the Q1(a) Venn diagram whose 64 and 48 every part needs, the Q3 circle definition for (b)-(d), John's own table for Q8(c), the farm grid with the barn B for Q9(b)-(e), work grids beside diagrams erased).",
     "schemeRowFigures": "17 parts carry the scheme-row crop after the reveal (Venn diagram, tree diagram, circle, line graphs, stem-and-leaf plot, construction, pie chart, tables, the parallelogram plot, and bands with mixed numbers or an italic Q the text layer mangles).",
     "coverageBaseline": "1899/3476 asks covered, 0 orphans, 0 excluded, 1577 open",
@@ -1704,7 +1704,7 @@
     "questionFigures": "All 35 opened and checked; 17 explicit region overrides restore context, full diagrams and dependencies. Q6(b) retains every printed proof heading, including in its accessible description.",
     "solutionFigures": "All 35 model-solution plus credit-note crops opened and checked; corrected shared setups, fraction boundaries, box edges and the continued alternative solution on scheme page 51.",
     "scaleBoundaries": "Q1(b)(i)+(ii), Q3(c)(i)+(ii), Q8(f)(i)+(ii) each share a scale. Q6(b) remains one 20-mark proof with Diagram/Given 5B, Construction 5B and Proof 10C. Paper 2 uses 15C [0,5,12,15].",
-    "presentation": "Three independent credit selectors for a component-scale task. Its summed award is persisted with the existing card identity; one conditional whole-part Full Credit \u22121 deduction, reset if a component changes. Existing single-scale behavior preserved.",
+    "presentation": "Three independent credit selectors for a component-scale task. Its summed award is persisted with the existing card identity; one conditional whole-part Full Credit −1 deduction, reset if a component changes. Existing single-scale behavior preserved.",
     "browser": {
       "engine": "Chrome via cua_repl",
       "card": "maths-2015-hl-p2-q6-b",
@@ -1759,11 +1759,11 @@
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 593,
     "paperPagesInspected": 16,
-    "schemePdfPagesInspected": "1\u201328",
+    "schemePdfPagesInspected": "1–28",
     "questionFigures": "All 35 opened and checked; explicit regions preserve full diagrams, sequences, tables, graphs and preceding task dependencies.",
     "solutionFigures": "All 35 typeset worked-solution and credit-note crops opened and checked. All 67 existing 2015 Higher crops reproduce unchanged.",
     "scaleBoundaries": "Q2(b)(i)+(ii), Q5(b)(i)+(ii), Q6(a)(i)+(ii), Q7(d)(i)+(ii)+(iii), Q8(c)(i)+(ii) each retain one shared scale. All 300 marks reconcile.",
-    "sourceCorrection": "Q5(a): original factorisation has a sign error; separately labelled clarification gives (x\u22121)(x\u22123)=0 while preserving the official image and its correct answers. Hidden until reveal; shown in enlarged view too.",
+    "sourceCorrection": "Q5(a): original factorisation has a sign error; separately labelled clarification gives (x−1)(x−3)=0 while preserving the official image and its correct answers. Hidden until reveal; shown in enlarged view too.",
     "parserCorrection": "2015 OL P1 Q3(c) begins g(x) on its own printed line within the preceding PDF block. Maths-only function-line splitting adds exactly that leaf across the entire census; no removed leaves.",
     "coverageBaseline": {
       "covered": 2013,
@@ -1814,11 +1814,11 @@
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 602,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "29\u201360",
+    "schemePdfPagesInspected": "29–60",
     "questionFigures": "All 37 opened and checked. 27 explicit overrides preserve diagrams, grids, tables, measurements and earlier task dependencies.",
     "solutionFigures": "All 37 model-solution and credit-note crops opened and checked. Complete enlargement construction and histogram comparisons included. All existing 2015 Ordinary published images unchanged.",
     "scaleBoundaries": "Shared scales retained for Q1(b)(i)+(ii), Q2(a)(i)+(ii), Q4(b)(i)+(ii), Q6(a)(i)+(ii)+(iii), Q6(b)(i)+(ii), Q7(a)(ii)+(iii), Q7(c)(i)+(ii)+(iii). All 300 marks reconcile.",
-    "sourceCorrections": "Original images retained. Separately labelled clarifications: Q4(a) 110\u00b0 rather than printed 100\u00b0; Q4(b)(ii) quarter rather than half the parallelogram area; Q8(b)(iii) rounded versus unrounded litres, both requiring six tins at \u20ac1080.",
+    "sourceCorrections": "Original images retained. Separately labelled clarifications: Q4(a) 110° rather than printed 100°; Q4(b)(ii) quarter rather than half the parallelogram area; Q8(b)(iii) rounded versus unrounded litres, both requiring six tins at €1080.",
     "coverageBaseline": {
       "covered": 2059,
       "asks": 3477,
@@ -1873,7 +1873,7 @@
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 611,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "1\u201341",
+    "schemePdfPagesInspected": "1–41",
     "questionFigures": "All 34 opened and checked; 23 explicit overrides preserve full diagrams, data, grids and earlier prompts.",
     "solutionFigures": "All 34 opened and checked; full model working, alternative methods and every credit note retained. Q1(b)(ii) and Q9(e) include the completed graph; Q7(b)(i) includes the construction. Q6 global restrictions and Q7 shared instructions retained on each affected card.",
     "scaleBoundaries": "34 boundaries total 300 marks; Q9(e)(i)+(ii) one 5C scale. Explicit 2014 ladders.",
@@ -1923,13 +1923,13 @@
     "tasks": 41,
     "offeredMarks": 325,
     "candidateMarks": 300,
-    "questions": "1\u20139, including both 6A and 6B",
+    "questions": "1–9, including both 6A and 6B",
     "runtimeCardsAfterBatch": 2518,
     "reviewedEnglishPapers": 64,
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 621,
     "paperPagesInspected": 24,
-    "schemePdfPagesInspected": "41\u201380",
+    "schemePdfPagesInspected": "41–80",
     "questionFigures": "All 41 opened and checked; 21 explicit overrides preserve full diagrams, probability-tree boxes, data, grids and earlier prompts.",
     "solutionFigures": "All 41 opened and checked; full models, alternative methods, diagrams and every credit note retained.",
     "scaleBoundaries": "Both Q6 alternatives offer 25 marks. Q6A(a) retains 5B diagram/given, 5B construction and 10C proof. Q4 roman pairs stay together at their published scales.",
@@ -1985,13 +1985,13 @@
     "tasks": 39,
     "offeredMarks": 300,
     "candidateMarks": 300,
-    "questions": "1\u20139",
+    "questions": "1–9",
     "runtimeCardsAfterBatch": 2557,
     "reviewedEnglishPapers": 65,
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 630,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "1\u201332",
+    "schemePdfPagesInspected": "1–32",
     "questionFigures": "All 39 opened and checked; 19 region overrides retain complete diagrams, axes, data and dependencies. All 39 accessible descriptions use independently authored prompts.",
     "solutionFigures": "All 39 opened and checked; full models and detailed notes. Shared Q9(c) graph tolerance retained on each card.",
     "scaleBoundaries": "Q4(c)(i)+(ii), Q5(a)(i)+(ii), Q9(d)(i)+(ii) each remain one scale unit. Ordinary 10D uses 0,3,5,8,10.",
@@ -2047,17 +2047,17 @@
     "tasks": 41,
     "offeredMarks": 325,
     "candidateMarks": 300,
-    "questions": "1\u20139, including both 6A and 6B",
+    "questions": "1–9, including both 6A and 6B",
     "runtimeCardsAfterBatch": 2598,
     "reviewedEnglishPapers": 66,
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 640,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "33\u201368",
+    "schemePdfPagesInspected": "33–68",
     "questionFigures": "All 41 opened and checked; 24 region overrides preserve complete diagrams, shared data and dependencies. All 41 have authored accessible descriptions.",
     "solutionFigures": "All 41 opened and checked. Explicit regions preserve congruent triangles, sector diagrams, complete pie chart, turbine photograph and every credit note.",
     "scaleBoundaries": "Q1(a), Q3(a), Q4(b), Q7(a) remain joint-scale cards. Both Q6 alternatives retained; Q6B is an unlettered 25E proof (0,5,10,15,20,25). Q7(b) and Q7(c)(i) use independent scoring components. Ordinary P2 10C is 0,4,7,10; 15B is 0,7,15.",
-    "sourceNotes": "Q7(b) model typo 37\u00b744\u00b0 \u2248 90\u00b0 is preserved with labelled clarification to 37\u00b0. Q7(a) model 1\u00b771 clarified as 1,710,000 properties.",
+    "sourceNotes": "Q7(b) model typo 37·44° ≈ 90° is preserved with labelled clarification to 37°. Q7(a) model 1·71 clarified as 1,710,000 properties.",
     "coverageBaseline": {
       "covered": 2225,
       "asks": 3480,
@@ -2113,17 +2113,17 @@
     "tasks": 34,
     "offeredMarks": 300,
     "candidateMarks": 300,
-    "questions": "1\u20139",
+    "questions": "1–9",
     "runtimeCardsAfterBatch": 2632,
     "reviewedEnglishPapers": 67,
     "totalEnglishPapers": 111,
     "reviewedAtlasQuestionPlacements": 649,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "1\u201338",
+    "schemePdfPagesInspected": "1–38",
     "questionFigures": "All 34 opened and checked; 15 region overrides preserve diagrams, tables, alternatives and dependencies. All 34 have authored accessible descriptions.",
     "solutionFigures": "All 34 opened and checked, including every alternative model and detailed credit note. Q6(a) graph and table retained completely.",
     "scaleBoundaries": "All 34 separately marked units retained. Full Credit minus one permitted on the ten starred parts only; false for all other tasks. Q5(b) offers any one row as an example within one task, with all four rows and twelve graphs retained.",
-    "sourceNotes": "Q4(a)(ii) explains the two official deposit conventions (\u20ac392/\u20ac393); Q6(d) corrects cross-reference to (b); Q8(d) explains omitted 80m offset; Q9(e) corrects printed 4234 to 4134. Original images unchanged. Q1(b) rechecked and correct: no source note.",
+    "sourceNotes": "Q4(a)(ii) explains the two official deposit conventions (€392/€393); Q6(d) corrects cross-reference to (b); Q8(d) explains omitted 80m offset; Q9(e) corrects printed 4234 to 4134. Original images unchanged. Q1(b) rechecked and correct: no source note.",
     "coverageBaseline": {
       "covered": 2259,
       "asks": 3480,
@@ -2476,7 +2476,7 @@
     "offeredMarks": 325,
     "candidateMarks": 300,
     "paperPagesInspected": 20,
-    "schemePdfPagesInspected": "33\u201368",
+    "schemePdfPagesInspected": "33–68",
     "targetedRegressionTests": 467,
     "previousRuntimeIdsRetained": 2735,
     "questionCropsVisuallyReviewed": 40,
@@ -2629,7 +2629,7 @@
       "Complete Q10(a) solution table and diagrams",
       "Complete Q10(h) graph and answer",
       "Full Q3(b) radius context",
-      "Shared carry-forward notes on Q9(a)(ii\u2013iv) and Q10(d)"
+      "Shared carry-forward notes on Q9(a)(ii–iv) and Q10(d)"
     ],
     "preservation": {
       "scripts/markbank/authored/maths.json": 2776,
@@ -2665,7 +2665,7 @@
     },
     "browser": {
       "desktop": "Q10(b,c) row 5 instruction before reveal, shared 5B, partial 2/5 selected",
-      "mobile": "360\u00d7800 Q1 whole 25D task, 24/25 starred deduction selected, solution enlargement/zoom/Escape and focus return",
+      "mobile": "360×800 Q1 whole 25D task, 24/25 starred deduction selected, solution enlargement/zoom/Escape and focus return",
       "documentWidth": 360,
       "documentScrollWidth": 360,
       "originalQuestion": "LC003BLP130EV.pdf page 3 visibly rendered",
@@ -2690,7 +2690,7 @@
     "finiteRoutes": [
       {
         "question": "Q3(a)",
-        "pool": "4 starters \u00d7 3 mains \u00d7 5 desserts",
+        "pool": "4 starters × 3 mains × 5 desserts",
         "routes": 60,
         "marksEach": 15
       },
@@ -2834,7 +2834,7 @@
     },
     "browser": {
       "desktop": "Menu route 60 visible before reveal; shared example-source note and 15C 0/5/13/15; 13/15 selected.",
-      "mobile": "360\u00d7800 complete axial reflection solution; enlarge, zoom, Escape and focus return.",
+      "mobile": "360×800 complete axial reflection solution; enlarge, zoom, Escape and focus return.",
       "documentWidth": 360,
       "documentScrollWidth": 360,
       "originalQuestion": "LC003BLP230EV.pdf page 13 visibly rendered.",
@@ -2925,9 +2925,9 @@
     "reusedIdenticalQuestionImages": 3,
     "newSolutionImages": 34,
     "explicitQuestionRegions": 17,
-    "markingRules": "All eight questions required. Sections A Q1\u20134, B Q5\u20136, C Q7\u20138 (old syllabus). Only Q3(b), Q4(a)(i), Q4(a)(ii), Q4(b) starred.",
+    "markingRules": "All eight questions required. Sections A Q1–4, B Q5–6, C Q7–8 (old syllabus). Only Q3(b), Q4(a)(i), Q4(a)(ii), Q4(b) starred.",
     "sourceClarifications": [
-      "Q4(a)(ii): printed beginning-of-month (\u20ac392) and end-of-month (\u20ac393) model conventions both retained with a labelled note."
+      "Q4(a)(ii): printed beginning-of-month (€392) and end-of-month (€393) model conventions both retained with a labelled note."
     ],
     "preservation": {
       "scripts/markbank/authored/maths.json": {
@@ -2994,7 +2994,7 @@
     },
     "browser": {
       "desktop": "Q7(c)(ii) original typeset proof, full solution/credit notes and 15D 11/15 selection verified.",
-      "mobile": "360\u00d7800 whole Q7(c)(i) triangle; solution enlargement and zoom; Escape restores focus; no document overflow.",
+      "mobile": "360×800 whole Q7(c)(i) triangle; solution enlargement and zoom; Escape restores focus; no document overflow.",
       "documentWidth": 360,
       "documentScrollWidth": 360,
       "originalQuestion": "LC003ALP100EV.pdf page 13 visibly rendered.",
@@ -3396,8 +3396,8 @@
     "reusedIdenticalQuestionImages": 40,
     "newSolutionImages": 14,
     "reusedIdenticalSolutionImages": 26,
-    "markingRules": "Both Q6A and Q6B routes retained. Q2(a)(i)+(ii) shares 10C. Q7(c) median/IQR and Q8(b)(iii) angle/theorem share their published scales. Required lists and open reasons are not finite answer-selection pools. Ten starred tasks; exact Paper 2 ladders retained. Additional Phase 2 credit conditions in Q3\u20135 preserved.",
-    "sourceTranscription": "One separately labelled, visually verified superscript repair for Q4(a)/(b), scheme PDF page 59: Calculates r\u00b2 incorrectly. No added criteria.",
+    "markingRules": "Both Q6A and Q6B routes retained. Q2(a)(i)+(ii) shares 10C. Q7(c) median/IQR and Q8(b)(iii) angle/theorem share their published scales. Required lists and open reasons are not finite answer-selection pools. Ten starred tasks; exact Paper 2 ladders retained. Additional Phase 2 credit conditions in Q3–5 preserved.",
+    "sourceTranscription": "One separately labelled, visually verified superscript repair for Q4(a)/(b), scheme PDF page 59: Calculates r² incorrectly. No added criteria.",
     "cropReview": "All 40 question and 40 solution images opened and inspected. Exact-image reuse requires byte equality; every card retains Phase 2 source provenance. Four explicit construction and flight-path solution crops preserve complete diagrams and both proof models.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3060,
@@ -3711,7 +3711,7 @@
     "newQuestionImages": 6,
     "reusedIdenticalQuestionImages": 41,
     "newSolutionImages": 47,
-    "markingRules": "All 60 Cartesian meal choices and both parallel-pair choices. Joint Q2(b), Q2(c)(i\u2013iii) and Q3(c) remain at their printed boundaries. Seven starred tasks; Paper 2-specific ladders. Four additional printed Phase 2 partial-credit criteria preserved. Five geometry tasks carry original-scale measurement guidance.",
+    "markingRules": "All 60 Cartesian meal choices and both parallel-pair choices. Joint Q2(b), Q2(c)(i–iii) and Q3(c) remain at their printed boundaries. Seven starred tasks; Paper 2-specific ladders. Four additional printed Phase 2 partial-credit criteria preserved. Five geometry tasks carry original-scale measurement guidance.",
     "cropReview": "All 47 question and 47 solution images inspected. Repaired protractor prompt fragment, full degree symbol in Q8B stems and adjacent diagram punctuation. Extended reflection crop to retain full primed labels and all linework. Phase 2 age list has one 55 and correctly has no Phase 3 typo warning. Menu source note explains any valid combination is acceptable.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3133,
@@ -3776,10 +3776,11 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2022 Ordinary deferred Paper 2",
-    "status": "2022 Ordinary deferred Paper 1 reviewed and carded; Ordinary Paper 2 is the final indexed English edition outstanding.",
-    "remainingEnglishDeferredPapers": 1,
-    "irishEditionReview": "Deferred at user request; not a blocker for current English-edition scope."
+    "subject": "Physics",
+    "status": "English Mathematics content and Atlas reconciliation complete locally. Physics 2021 Ordinary and both 2020 review drafts pass source/mark/selection/census checks; reconcile existing work before integration.",
+    "remainingEnglishMathsPapers": 0,
+    "irishEditionReview": "Deferred at user request; not a blocker for current English-edition scope.",
+    "mathsBrowserFollowUp": "Final 2022 Ordinary deferred Paper 2 interaction check outstanding: CUA browser/native bridge unavailable. All 106 card images visually inspected; shared component interaction regressions passed."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
     "status": "Completed by higher2012Paper1; retained here as historical infrastructure evidence.",
@@ -4363,7 +4364,7 @@
       "atlasCheck": true,
       "sourceQuoteCheck": "All quotes found; 3404 built, zero dropped.",
       "audit": "Seven previously known missing Irish sources; no new source failures.",
-      "reconciliation": "2718/3490 diagnostic asks covered; 772 open; 2573 non-Foundation cards; zero orphans/exclusions/unparsed; 65 census flags. This paper 43/43. The parser now distinguishes this paper\u2019s Q5A/Q5B; only this paper census and coverage changed. Counts do not establish completeness.",
+      "reconciliation": "2718/3490 diagnostic asks covered; 772 open; 2573 non-Foundation cards; zero orphans/exclusions/unparsed; 65 census flags. This paper 43/43. The parser now distinguishes this paper’s Q5A/Q5B; only this paper census and coverage changed. Counts do not establish completeness.",
       "coverageBaseline": "Unchanged; baseline_check returns []. CLI exit 120 reflects unfinished whole-subject coverage."
     },
     "browser": {
@@ -4441,7 +4442,7 @@
     "newQuestionImages": 45,
     "newSolutionImages": 41,
     "markingRules": "All seven questions retained. Q1(v) and Q1(ix) only 0/4/10. Older deductions and exact attempt floors; Q4(b) first/second variable 15+5 and Q7 evaluation/graph 20+10 remain independent. Fully correct graph without work earns 30. All required multiples, roots, years and integer solutions retained; no finite task-internal selection.",
-    "cropReview": "All 45 question and 45 solution presentations inspected; 41 distinct solution images because five-mark parts share original notes panels. All formulas, full graph boundaries, compound-interest alternatives and graph evaluation methods preserved. Clipped headings, final guidance lines and neighbouring fragments repaired. Q2(b)(iii) incorrect carry-forward reference disclosed. Q1(v) correctly prints 1%=\u20ac1.20, so no false arithmetic correction published.",
+    "cropReview": "All 45 question and 45 solution presentations inspected; 41 distinct solution images because five-mark parts share original notes panels. All formulas, full graph boundaries, compound-interest alternatives and graph evaluation methods preserved. Clipped headings, final guidance lines and neighbouring fragments repaired. Q2(b)(iii) incorrect carry-forward reference disclosed. Q1(v) correctly prints 1%=€1.20, so no false arithmetic correction published.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3405,
       "newAuthoredCards": 45,
@@ -4614,7 +4615,7 @@
       "atlasCheck": true,
       "sourceQuoteCheck": "All quotes found; 3492 built, zero dropped.",
       "audit": "Seven previously known missing Irish sources; no new source failures.",
-      "reconciliation": "Parsed JSON exactly equals the previous Foundation P1 checkpoint: 2718/3490 diagnostic asks covered, 772 open, 2573 non-Foundation cards, zero orphans/exclusions/unparsed, 65 census flags. Foundation is outside this parser; original-source inspection establishes this paper\u2019s completeness.",
+      "reconciliation": "Parsed JSON exactly equals the previous Foundation P1 checkpoint: 2718/3490 diagnostic asks covered, 772 open, 2573 non-Foundation cards, zero orphans/exclusions/unparsed, 65 census flags. Foundation is outside this parser; original-source inspection establishes this paper’s completeness.",
       "coverageBaseline": "Unchanged; whole subject incomplete."
     },
     "browser": {
@@ -4702,7 +4703,7 @@
     "newQuestionImages": 32,
     "newSolutionImages": 32,
     "markingRules": "All 32 printed tasks retained. Q9(b)(i) mechanically expands all five nonzero table altitudes at 5B each. Q6(a) retains independent first/second derivative 10B scales. Q7(e,f) and Q9(c)(i,ii) retain their joint 5-mark scales. Twelve whole-task stars. Q7(d), Q9(e,f) detailed/summary printing conflicts explicitly disclosed; no invented scoring band.",
-    "cropReview": "All 20 original paper pages and scheme pages 1\u201336 independently inspected. All 32 distinct question and solution presentations inspected, including final crop repairs. Original formulas, complete diagrams, tables, models, credit notes and dependent context retained. Unused horizontal solution margins trimmed for mobile readability. No prose-source repairs required.",
+    "cropReview": "All 20 original paper pages and scheme pages 1–36 independently inspected. All 32 distinct question and solution presentations inspected, including final crop repairs. Original formulas, complete diagrams, tables, models, credit notes and dependent context retained. Unused horizontal solution margins trimmed for mobile readability. No prose-source repairs required.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3493,
       "newAuthoredCards": 36,
@@ -4838,7 +4839,7 @@
     "sharedQuestionImages": 27,
     "newSolutionImages": 29,
     "markingRules": "All 29 printed tasks retained including both Q6A and Q6B routes. Q1(a) has three independent 5B method descriptions; open response, not finite selection. Q2(a) retains two 5B circles. Q8(a) retains independent 10B length, starred 20C beta and starred 25D alpha; no minus-one on unstarred length. Q6B retains the complete 25E six-band scale and all four proofs. Five whole-task stars and construction measurement tolerance retained.",
-    "cropReview": "All 20 paper pages and scheme pages 37\u201372 independently visually inspected. All 29 question and solution presentations inspected; final clipped headings and neighbouring fragments repaired. Complete diagrams, formulas, models, alternatives and notes retained. Scheme cover label inconsistency and three printed calculation/label inconsistencies explicitly recorded.",
+    "cropReview": "All 20 paper pages and scheme pages 37–72 independently visually inspected. All 29 question and solution presentations inspected; final clipped headings and neighbouring fragments repaired. Complete diagrams, formulas, models, alternatives and notes retained. Scheme cover label inconsistency and three printed calculation/label inconsistencies explicitly recorded.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3529,
       "newAuthoredCards": 29,
@@ -4973,8 +4974,8 @@
     "solutionCardsInspected": 35,
     "newQuestionImages": 35,
     "newSolutionImages": 35,
-    "markingRules": "All 35 published units. Q3(b,c,d), Q4(a,b), Q8(c)(i,ii), Q8(f,g) and Q9(b)(i\u2013iv) remain holistic. Q4 uses 25D [0,6,13,20,25]; Q9(a)(iii) uses the printed 25C [0,8,20,25]. Only Q7(a,d,f,g) and Q9(a)(i) starred. Original once-only units penalty across Q7(a,d,f) and definitions across Q7(b) retained. No finite task-internal choice pool.",
-    "cropReview": "All 20 original paper pages and scheme pages 1\u201336 independently visually inspected, followed by all 35 question/solution crops. Repaired cropped graph label, chart weight labels, notes headings and stray grid fragments. Full models, alternatives, diagram context and original overprinted BSA heading retained.",
+    "markingRules": "All 35 published units. Q3(b,c,d), Q4(a,b), Q8(c)(i,ii), Q8(f,g) and Q9(b)(i–iv) remain holistic. Q4 uses 25D [0,6,13,20,25]; Q9(a)(iii) uses the printed 25C [0,8,20,25]. Only Q7(a,d,f,g) and Q9(a)(i) starred. Original once-only units penalty across Q7(a,d,f) and definitions across Q7(b) retained. No finite task-internal choice pool.",
+    "cropReview": "All 20 original paper pages and scheme pages 1–36 independently visually inspected, followed by all 35 question/solution crops. Repaired cropped graph label, chart weight labels, notes headings and stray grid fragments. Full models, alternatives, diagram context and original overprinted BSA heading retained.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3558,
       "newAuthoredCards": 35,
@@ -5109,8 +5110,8 @@
     "solutionCardsInspected": 43,
     "newQuestionImages": 26,
     "newSolutionImages": 43,
-    "markingRules": "All 43 marked tasks, including both complete 25-mark Q6A/Q6B alternatives. Q3(b) is one 5B response with two open methods; Q7(c)(ii) is one MCQ, not five question routes. Detailed Q8 scales take precedence over the inconsistent summary table, with source notes on all five Q8(a) cards. Only ten starred tasks allow minus-one. This edition uses trapezoidal rule, not the parallel edition\u2019s Simpson\u2019s rule.",
-    "cropReview": "All 20 original paper pages and scheme pages 37\u201372 independently visually inspected, followed by all 43 question/solution crops. Restored translation working, clipped numerator and answer-box border; trimmed stray grid fragments. All models, alternatives, diagrams and notes retained. Q6A(a)(i) original tangent typo preserved with a correction note.",
+    "markingRules": "All 43 marked tasks, including both complete 25-mark Q6A/Q6B alternatives. Q3(b) is one 5B response with two open methods; Q7(c)(ii) is one MCQ, not five question routes. Detailed Q8 scales take precedence over the inconsistent summary table, with source notes on all five Q8(a) cards. Only ten starred tasks allow minus-one. This edition uses trapezoidal rule, not the parallel edition’s Simpson’s rule.",
+    "cropReview": "All 20 original paper pages and scheme pages 37–72 independently visually inspected, followed by all 43 question/solution crops. Restored translation working, clipped numerator and answer-box border; trimmed stray grid fragments. All models, alternatives, diagrams and notes retained. Q6A(a)(i) original tangent typo preserved with a correction note.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3593,
       "newAuthoredCards": 43,
@@ -5240,8 +5241,8 @@
     "solutionCardsInspected": 27,
     "newQuestionImages": 27,
     "newSolutionImages": 27,
-    "markingRules": "All 35 printed asks in 27 mark units. Q1(a\u2013c), Q2(a)(i,ii), Q6(a\u2013e) and Q7(a)(i,ii) retain single published scales. Distinct Foundation ladders retained; no task starred, so no minus-one award. Graph tolerances, follow-through, unjoined-correct-points full credit and the published graphical 14:34 model retained.",
-    "cropReview": "All 20 original paper pages and scheme pages 1\u201330 independently inspected, followed by all 27 question/solution crops. Repaired beam diagram crop and mapped sequences to canonical Foundation algebra. Original diagrams, tables, number lines, models and credit notes retained.",
+    "markingRules": "All 35 printed asks in 27 mark units. Q1(a–c), Q2(a)(i,ii), Q6(a–e) and Q7(a)(i,ii) retain single published scales. Distinct Foundation ladders retained; no task starred, so no minus-one award. Graph tolerances, follow-through, unjoined-correct-points full credit and the published graphical 14:34 model retained.",
+    "cropReview": "All 20 original paper pages and scheme pages 1–30 independently inspected, followed by all 27 question/solution crops. Repaired beam diagram crop and mapped sequences to canonical Foundation algebra. Original diagrams, tables, number lines, models and credit notes retained.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3636,
       "newAuthoredCards": 27,
@@ -5289,13 +5290,13 @@
       "atlasCheck": true,
       "sourceQuoteCheck": "All quotes found; 3662 built, zero dropped.",
       "audit": "Seven previously known missing Irish sources; no new source failures.",
-      "reconciliation": "2867/3492 diagnostic asks covered, 625 open; 2716 non-Foundation cards; zero orphans/exclusions/unparsed, 65 census flags. Foundation is outside this parser; independent source inspection establishes this paper\u2019s completeness.",
+      "reconciliation": "2867/3492 diagnostic asks covered, 625 open; 2716 non-Foundation cards; zero orphans/exclusions/unparsed, 65 census flags. Foundation is outside this parser; independent source inspection establishes this paper’s completeness.",
       "coverageBaseline": "Unchanged; whole subject incomplete.",
-      "testCorrection": "Made graph-tolerance assertion accept source whitespace after \u00b1; all 298 corpus tests passed on rerun, other nine suites already passed."
+      "testCorrection": "Made graph-tolerance assertion accept source whitespace after ±; all 298 corpus tests passed on rerun, other nine suites already passed."
     },
     "browser": {
       "desktop": "Q1 has one 25D scale [0,15,19,22,25]; 19/25 selects correctly, no minus-one control. All three typeset sequence answers and marking notes inspected in enlargement.",
-      "mobile": "At 360x800 Q6 opens original pages 8\u20139 and page 9 at 125% zoom. All five answer values and graph/credit notes readable through fit/zoom and horizontal/vertical pan. documentWidth=innerWidth=360. Escape restores both source and solution triggers.",
+      "mobile": "At 360x800 Q6 opens original pages 8–9 and page 9 at 125% zoom. All five answer values and graph/credit notes readable through fit/zoom and horizontal/vertical pan. documentWidth=innerWidth=360. Escape restores both source and solution triggers.",
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2012-fl-p1-project-q6"
     },
@@ -5369,7 +5370,7 @@
     "newSolutionImages": 39,
     "markingRules": "Both complete Q6 geometry routes retained. Q5(a,b,c) stays on one 25D award. Three Q7(b)(ii) bullets each get a 5C card. Distinct Paper 2 Foundation ladders and six starred tasks retained. Q8(a)(iv) follows the star in detailed notes, absent from summary. Q3(a) accepts a keyless plot, unordered leaves and either stem direction.",
     "sourceCorrections": "Q5(b) original model substitutes x=2 for B(6,8); a clear note explains that the point is on the line, since both sides equal 16, while preserving original working. Page-56 inverse-sine formula manually transcribed for the quote verifier from the unchanged PDF.",
-    "cropReview": "All 16 paper pages and scheme pages 31\u201360 independently inspected, followed by all 39 question/solution crops. Repaired fragment boundaries, histogram top, Q8(b) blank grids and overlapping note boxes. Original construction lines, both angle methods and all graphs retained.",
+    "cropReview": "All 16 paper pages and scheme pages 31–60 independently inspected, followed by all 39 question/solution crops. Repaired fragment boundaries, histogram top, Q8(b) blank grids and overlapping note boxes. Original construction lines, both angle methods and all graphs retained.",
     "generatorFix": "Numeric bullet references now produce distinct image names. Initially colliding three Q7(b)(ii) figures regenerated and individually inspected; Python naming and application content/asset regressions added.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3663,
@@ -5423,7 +5424,7 @@
     },
     "browser": {
       "desktop": "Q5 correction is visible both inline and in enlarged solution; original working clean, joint 25D [0,15,18,22,25] selects 18/25. Escape restores the trigger.",
-      "mobile": "At 360x800 Q8(b)(ii) opens original pages 14\u201315 and page 15 at 125% zoom. Original inverse-sine working and credit formula support fit/zoom/pan. 4/5 selects correctly with the starred deduction note. documentWidth=innerWidth=360. Escape restores source and solution triggers.",
+      "mobile": "At 360x800 Q8(b)(ii) opens original pages 14–15 and page 15 at 125% zoom. Original inverse-sine working and credit formula support fit/zoom/pan. 4/5 selects correctly with the starred deduction note. documentWidth=innerWidth=360. Escape restores source and solution triggers.",
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2012-fl-p2-project-q8-b-ii"
     },
@@ -5489,7 +5490,7 @@
     "newSolutionImages": 41,
     "markingRules": "Original deduction awards and attempt floors; every step and alternative method retained. Q3(c)(ii) has two five-mark components and the diagonal-matrix cap. Q7(b)(i) retains both ten-mark derivative components. Q7(c)(ii) is a graph-identification task requiring reasons for all three diagrams, not a choose-one practice route. Q5 induction base-case proof and Q8 substitution cap retained.",
     "sourceDiscrepancy": "Q6(c)(ii) is five marks, attempt two in both allocations. A later note mentions second five marks; the card explains the inconsistency while preserving the original note and five-mark maximum.",
-    "cropReview": "All eight paper pages, scheme pages 1\u201332 and all 41 question/solution presentations inspected. Repaired derivative allocation fractions, final deduction lines and fragment boundaries. Original proofs, matrices, graphs and alternative methods retained.",
+    "cropReview": "All eight paper pages, scheme pages 1–32 and all 41 question/solution presentations inspected. Repaired derivative allocation fractions, final deduction lines and fragment boundaries. Original proofs, matrices, graphs and alternative methods retained.",
     "sourceReaderFix": "Browser exposed cached HTTP-200 HTML for a previously missing local PDF. PDF cache now rejects non-PDF bytes on hits, misses and fallback, and recovers old invalid entries. Four new regressions cover recovery, invalid responses, fallback and prefixed PDF headers. Local 2011 paper/scheme mirror symlinks added; original sources open normally.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3702,
@@ -5548,7 +5549,7 @@
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-hl-p1-q6-c-ii"
     },
     "generatorReproduction": "73/73 authoring scripts reproduce committed deck and ledger bytes",
-    "nextPaper": "2011 Higher legacy Paper 2 (LC003ALP200EV.pdf; scheme LC003ALP000EV.pdf, pages 33\u201376)",
+    "nextPaper": "2011 Higher legacy Paper 2 (LC003ALP200EV.pdf; scheme LC003ALP000EV.pdf, pages 33–76)",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged/deployed."
   },
   "higher2011Paper2": {
@@ -5621,7 +5622,7 @@
     "newSolutionImages": 60,
     "markingRules": "Every optional question retained. Original step/deduction awards, attempt floors, alternative methods and prior-work caps retained. Q2(c)(i) and Q10(b)(i/ii) have separate component controls. Q3(a) retains its exception to best-of-attempts; Q8(a) omitting C loses one mark.",
     "sourceDiscrepancies": "Clear notes explain original misprints in Q2(b)(ii) denominator, Q8(a) integration-by-parts notation, Q9(c)(i) interval bound, Q10(b)(v) part reference and Q11(b)(ii) radical. Original source and marks preserved.",
-    "cropReview": "All eight paper pages, scheme pages 33\u201376 and all 120 question/solution presentations visually inspected; original graphs, geometry, matrices and alternative methods retained.",
+    "cropReview": "All eight paper pages, scheme pages 33–76 and all 120 question/solution presentations visually inspected; original graphs, geometry, matrices and alternative methods retained.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3743,
       "newAuthoredCards": 60,
@@ -5682,7 +5683,7 @@
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-hl-p2-q11-b-ii"
     },
     "generatorReproduction": "74/74 authoring scripts reproduce committed deck and ledger bytes",
-    "nextPaper": "2011 Ordinary legacy Paper 1 (paper and scheme LC003GLP000EV.pdf; scheme pages 1\u201344)",
+    "nextPaper": "2011 Ordinary legacy Paper 1 (paper and scheme LC003GLP000EV.pdf; scheme pages 1–44)",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged/deployed."
   },
   "ordinary2011Paper1": {
@@ -5812,7 +5813,7 @@
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-ol-p1-q8-iv"
     },
     "generatorReproduction": "75/75 authoring scripts reproduce committed deck and ledger bytes",
-    "nextPaper": "2011 Ordinary legacy Paper 2 (paper LC003GLP200EV.pdf; scheme LC003GLP000EV.pdf pages 45\u2013104)",
+    "nextPaper": "2011 Ordinary legacy Paper 2 (paper LC003GLP200EV.pdf; scheme LC003GLP000EV.pdf pages 45–104)",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged/deployed."
   },
   "ordinary2011Paper2": {
@@ -5903,7 +5904,7 @@
     "newQuestionImages": 74,
     "newSolutionImages": 74,
     "markingRules": "All eleven questions retained. Exact restricted award lists, eight hit-or-miss tasks, independent component awards, proof caps, no-working rules and required prior context. Full original alternatives and marking notes.",
-    "sourceDiscrepancies": "Q2(b)(ii) explicit 0/4/5 list conflicts with the shared Att 2 note; disclosed with both originals retained. Q7(c)(ii) sample standard deviation corrected to sqrt(44600/91) \u2248 22.138 in a separate note. Q11 parking-space constraint labelled Time in the source is explained.",
+    "sourceDiscrepancies": "Q2(b)(ii) explicit 0/4/5 list conflicts with the shared Att 2 note; disclosed with both originals retained. Q7(c)(ii) sample standard deviation corrected to sqrt(44600/91) ≈ 22.138 in a separate note. Q11 parking-space constraint labelled Time in the source is explained.",
     "preservation": {
       "previousAuthoredObjectsUnchanged": 3852,
       "newAuthoredCards": 74,
@@ -5963,7 +5964,7 @@
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-ol-p2-q9-b-iii"
     },
     "generatorReproduction": "76/76 authoring generators reproduce committed deck and review bytes",
-    "nextPaper": "2011 Higher Project Maths Phase 2 Paper 1: LC003ALP130EV.pdf, combined scheme LC003ALP030EV.pdf pages 1\u201342.",
+    "nextPaper": "2011 Higher Project Maths Phase 2 Paper 1: LC003ALP130EV.pdf, combined scheme LC003ALP030EV.pdf pages 1–42.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed."
   },
   "higher2011ProjectPaper1": {
@@ -6082,7 +6083,7 @@
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-hl-p1-project-q4-b-times-2-3-check-4"
     },
-    "nextPaper": "2011 Higher Project Maths Phase 2 Paper 2: LC003ALP230EV.pdf, combined scheme LC003ALP030EV.pdf pages 43\u201376.",
+    "nextPaper": "2011 Higher Project Maths Phase 2 Paper 2: LC003ALP230EV.pdf, combined scheme LC003ALP030EV.pdf pages 43–76.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed.",
     "generatorReproduction": "77/77 authoring generators reproduce committed deck and review bytes",
     "implementationCommit": "c3d844bb7"
@@ -6199,7 +6200,7 @@
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-hl-p2-project-q8-b-ii"
     },
-    "nextPaper": "2011 Ordinary Project Maths Phase 2 Paper 1: LC003GLP130EV.pdf; combined scheme LC003GLP030EV.pdf pages 1\u201342.",
+    "nextPaper": "2011 Ordinary Project Maths Phase 2 Paper 1: LC003GLP130EV.pdf; combined scheme LC003GLP030EV.pdf pages 1–42.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed."
   },
   "ordinary2011ProjectPaper1": {
@@ -6256,13 +6257,13 @@
       41,
       42
     ],
-    "presentation": "All 20 paper pages, scheme pages 1\u201342, 43 question crops, 43 complete model-solution crops and all 43 published question images visually inspected. Original equations, graphs, tables, NASA photo/credit, alternative methods and detailed credit notes retained.",
+    "presentation": "All 20 paper pages, scheme pages 1–42, 43 question crops, 43 complete model-solution crops and all 43 published question images visually inspected. Original equations, graphs, tables, NASA photo/credit, alternative methods and detailed credit notes retained.",
     "finiteRoutes": "No finite task-internal selection. Whole-exam choice is not duplicated. Required table entries, plotted points and powers remain together at published boundaries; open methods remain one task.",
     "markingRules": "26 scale tasks and 17 deduction tasks. Q5(d,e,f) share one 5C scale. Q7(c)(i) has two five-mark steps within one task. Only Q1(c), Q6(c), Q6(d), Q6(g) have starred one-mark deductions. Exact Ordinary Level scales, graph-reading tolerances, prior-plot prerequisite, carried-value rules and deduction caps retained.",
     "sourceDiscrepancies": {
-      "7-b-ii": "The original quotient-rule working misprints dv/dx as \u22124x; for v = x\u00b2 \u2212 3x, dv/dx = 2x \u2212 3, as correctly used in the next line. The paper omits x \u2260 0 from its domain; both 0 and 3 are excluded. The final answer x > 1.5 must retain x \u2260 3, giving (1.5, 3) \u222a (3, \u221e). The original SEC working and marks are preserved.",
-      "8-b-ii": "In the second method, the initial definition of u is misprinted with an extra power 4. It should read u = x\u00b2 \u2212 2x \u2212 9, with y = u\u2074, consistent with the derivatives and final answer 24 that follow.",
-      "9-iv": "The printed solution gives x \u2265 \u22121 with no upper bound. On the plotted domain \u22125 \u2264 x \u2264 1 requested in the question, that branch is \u22121 \u2264 x \u2264 1. Thus the graph-based answer is [\u22123, \u22122) \u222a [\u22121, 1]. The original five-mark allocation is unchanged."
+      "7-b-ii": "The original quotient-rule working misprints dv/dx as −4x; for v = x² − 3x, dv/dx = 2x − 3, as correctly used in the next line. The paper omits x ≠ 0 from its domain; both 0 and 3 are excluded. The final answer x > 1.5 must retain x ≠ 3, giving (1.5, 3) ∪ (3, ∞). The original SEC working and marks are preserved.",
+      "8-b-ii": "In the second method, the initial definition of u is misprinted with an extra power 4. It should read u = x² − 2x − 9, with y = u⁴, consistent with the derivatives and final answer 24 that follow.",
+      "9-iv": "The printed solution gives x ≥ −1 with no upper bound. On the plotted domain −5 ≤ x ≤ 1 requested in the question, that branch is −1 ≤ x ≤ 1. Thus the graph-based answer is [−3, −2) ∪ [−1, 1]. The original five-mark allocation is unchanged."
     },
     "preservation": {
       "authored": {
@@ -6328,7 +6329,7 @@
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-ol-p1-project-q5-a-iv"
     },
-    "nextPaper": "2011 Ordinary Project Maths Phase 2 Paper 2: LC003GLP230EV.pdf; combined scheme LC003GLP030EV.pdf pages 43\u201376.",
+    "nextPaper": "2011 Ordinary Project Maths Phase 2 Paper 2: LC003GLP230EV.pdf; combined scheme LC003GLP030EV.pdf pages 43–76.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed.",
     "implementationCommit": "0a80845b4"
   },
@@ -6378,15 +6379,15 @@
       75,
       76
     ],
-    "presentation": "All 20 paper pages, scheme pages 43\u201376, 37 question crops, 37 complete model-solution crops and all 37 published question images visually inspected. Original equations, diagrams, charts, census table/CSO credit, alternative methods and detailed notes retained.",
+    "presentation": "All 20 paper pages, scheme pages 43–76, 37 question crops, 37 complete model-solution crops and all 37 published question images visually inspected. Original equations, diagrams, charts, census table/CSO credit, alternative methods and detailed notes retained.",
     "finiteRoutes": "Both complete Q6 alternatives retained. No finite internal choice pools; required word pairs, three slides, both point positions and complete proof stay at published boundaries.",
-    "markingRules": "Seven starred tasks only; detailed Q7(b) 5C* retained despite unstarred summary. Q2(d) uses published 0,3,4,5 despite omitted C. Q6A construction tolerance \u00b13 mm; Q7 mean and probability no-work exceptions; candidate-answer follow-through retained.",
+    "markingRules": "Seven starred tasks only; detailed Q7(b) 5C* retained despite unstarred summary. Q2(d) uses published 0,3,4,5 despite omitted C. Q6A construction tolerance ±3 mm; Q7 mean and probability no-work exceptions; candidate-answer follow-through retained.",
     "sourceDiscrepancies": {
-      "2-a": "For part (a), only c\u2081 is required. The official shared diagram also shows the two possible circles c\u2082 used in part (d).",
-      "2-d": "Both a circle of radius 3 and a circle of radius 5 satisfy the question; the original scheme accepts either. The detailed notes omit the letter C after \u201cScale 5\u201d, but publish 0, 3, 4, 5, consistent with the 5C summary.",
+      "2-a": "For part (a), only c₁ is required. The official shared diagram also shows the two possible circles c₂ used in part (d).",
+      "2-d": "Both a circle of radius 3 and a circle of radius 5 satisfy the question; the original scheme accepts either. The detailed notes omit the letter C after “Scale 5”, but publish 0, 3, 4, 5, consistent with the 5C summary.",
       "7-b": "All three slide explanations are assessed together on one five-mark scale. The detailed notes on scheme PDF page 69 mark this 5C*, although the summary on page 62 omits the star; this card follows the detailed notes.",
-      "7-e-i": "The last model bullet describes the size-9 and size-10+ Dublin City bars as \u201cno households\u201d. At this graph scale they are negligible; the graph alone does not establish that the exact counts are zero. The original model is reproduced unchanged.",
-      "8-b": "The printed trigonometric method has a missing factor of 1/2: 70 sin 60\u00b0 = 35\u221a3 \u2248 60.6 cm, not 70\u221a3. The Pythagoras method and the final numerical answer are correct. The original scheme is reproduced unchanged."
+      "7-e-i": "The last model bullet describes the size-9 and size-10+ Dublin City bars as “no households”. At this graph scale they are negligible; the graph alone does not establish that the exact counts are zero. The original model is reproduced unchanged.",
+      "8-b": "The printed trigonometric method has a missing factor of 1/2: 70 sin 60° = 35√3 ≈ 60.6 cm, not 70√3. The Pythagoras method and the final numerical answer are correct. The original scheme is reproduced unchanged."
     },
     "preservation": {
       "authored": {
@@ -6506,11 +6507,11 @@
       37,
       38
     ],
-    "presentation": "All eight paper pages and scheme pages 1\u201338 independently visually inspected. All 46 question crops, 46 complete solution crops and 46 published question presentations inspected; 138 hashes verified. Original typeset fractions, powers, graphs, illustrations, alternative methods and detailed notes retained. Identical panels share one image; the marked part is explicit.",
+    "presentation": "All eight paper pages and scheme pages 1–38 independently visually inspected. All 46 question crops, 46 complete solution crops and 46 published question presentations inspected; 138 hashes verified. Original typeset fractions, powers, graphs, illustrations, alternative methods and detailed notes retained. Identical panels share one image; the marked part is explicit.",
     "finiteRoutes": "Attempt Q1 and four other whole questions is an examination selection. All seven questions retained. Complete factors, multiples, roots, integer intersections, both days and graph intersections are required lists, not optional choice pools.",
     "markingRules": "Q1(ix,x) permit only 0,4,10; Q2(c)(iii), Q3(c)(i), Q5(c)(ii) permit only 0 or 10. Simultaneous equations have 15+5 steps; the graph has 20+10. Alternatives do not add marks. Q5(c)(i) follows the repeated attempt allocation of 2; original conflicting Attempts (4 marks) is retained and disclosed. Graph-reading tolerances and algebra-only attempt restriction retained.",
     "sourceDiscrepancies": {
-      "5-c-i": "The original \u201cAttempts (4 marks)\u201d heading conflicts with the 2-mark attempt allocation in both the question summary and this part\u2019s heading. The scoring control uses 2, with the original page retained unchanged."
+      "5-c-i": "The original “Attempts (4 marks)” heading conflicts with the 2-mark attempt allocation in both the question summary and this part’s heading. The scoring control uses 2, with the original page retained unchanged."
     },
     "preservation": {
       "authored": {
@@ -6565,7 +6566,7 @@
       "atlasCheck": true,
       "sourceQuoteCheck": "4153 built, zero dropped; every quotation found.",
       "audit": "Reviewed sources and selection decisions agree; seven known missing Irish sources remain.",
-      "reconciliation": "Whole diagnostic unchanged: 3243/3534 asks covered, 291 open; 3122 non-Foundation cards; zero orphans/exclusions/unparsed, 62 flags. This diagnostic excludes Foundation; independent paper/scheme sweep establishes this batch\u2019s coverage.",
+      "reconciliation": "Whole diagnostic unchanged: 3243/3534 asks covered, 291 open; 3122 non-Foundation cards; zero orphans/exclusions/unparsed, 62 flags. This diagnostic excludes Foundation; independent paper/scheme sweep establishes this batch’s coverage.",
       "coverageBaseline": "Unchanged. All new task IDs and mark boundaries pinned separately. Whole subject incomplete.",
       "reproducibility": "81/81 generators reproduce committed authored-card and review-ledger bytes."
     },
@@ -6576,7 +6577,7 @@
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-fl-p1-q1-ix"
     },
     "extractionFix": "make_scheme_md.py now selects the Foundation B source code explicitly, rather than falling through to Ordinary G. Existing Higher/Ordinary paths unchanged.",
-    "nextPaper": "2011 Foundation legacy Paper 2: LC003BLP200EV.pdf; combined scheme LC003BLP000EV.pdf pages 37\u201360.",
+    "nextPaper": "2011 Foundation legacy Paper 2: LC003BLP200EV.pdf; combined scheme LC003BLP000EV.pdf pages 37–60.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed.",
     "implementationCommit": "ca41d787a"
   },
@@ -6616,12 +6617,12 @@
       59,
       60
     ],
-    "presentation": "All eight paper pages and scheme pages 37\u201360 independently visually inspected. All 49 question crops, 49 complete solution crops and 49 published question presentations inspected; 147 hashes verified. Original typeset working, diagrams, cumulative-frequency curve, illustrations, alternative methods and full marking notes retained. Identical solution panels share one image; only the named task earns marks.",
+    "presentation": "All eight paper pages and scheme pages 37–60 independently visually inspected. All 49 question crops, 49 complete solution crops and 49 published question presentations inspected; 147 hashes verified. Original typeset working, diagrams, cumulative-frequency curve, illustrations, alternative methods and full marking notes retained. Identical solution panels share one image; only the named task earns marks.",
     "finiteRoutes": "Attempt SIX QUESTIONS is whole-examination selection; all eight questions retained. Both requested angles, both plotted points, all cumulative-table entries and construction criteria are required. Car configurations are counting data, not candidate choices. No finite answer pools.",
-    "markingRules": "Q3(a) remains one 10-mark task with independent 5+5 angle controls. Q7(c) retains 15 marks for mean and 5 for standard deviation. Q6 sample-space error is deducted once across the complete set; shared 17/20 examples do not change individual five-mark tariffs. Q8 construction tolerances are the published \u00b15 degrees and \u00b11 cm. No invented hit-or-miss or full-credit-minus-one rules.",
+    "markingRules": "Q3(a) remains one 10-mark task with independent 5+5 angle controls. Q7(c) retains 15 marks for mean and 5 for standard deviation. Q6 sample-space error is deducted once across the complete set; shared 17/20 examples do not change individual five-mark tariffs. Q8 construction tolerances are the published ±5 degrees and ±1 cm. No invented hit-or-miss or full-credit-minus-one rules.",
     "sourceDiscrepancies": {
-      "5-a-i": "The shared slip note gives B as approximately 61\u00b0. The actual angle is about 61.93\u00b0 (62\u00b0 to the nearest degree); the required answer to part (ii) is the fraction 8/17. The original scheme is retained unchanged.",
-      "5-a-ii": "The shared slip note gives B as approximately 61\u00b0. The actual angle is about 61.93\u00b0 (62\u00b0 to the nearest degree); the required answer to part (ii) is the fraction 8/17. The original scheme is retained unchanged."
+      "5-a-i": "The shared slip note gives B as approximately 61°. The actual angle is about 61.93° (62° to the nearest degree); the required answer to part (ii) is the fraction 8/17. The original scheme is retained unchanged.",
+      "5-a-ii": "The shared slip note gives B as approximately 61°. The actual angle is about 61.93° (62° to the nearest degree); the required answer to part (ii) is the fraction 8/17. The original scheme is retained unchanged."
     },
     "preservation": {
       "authored": {
@@ -6730,11 +6731,11 @@
       27,
       28
     ],
-    "presentation": "All 16 paper pages and scheme pages 1\u201328 independently visually inspected. All 29 question crops, 29 complete solution crops and 29 actual published question images inspected; 87 hashes retained. Typeset fractions, powers, original diagrams, complete graphs, alternative methods and detailed marking notes retained.",
+    "presentation": "All 16 paper pages and scheme pages 1–28 independently visually inspected. All 29 question crops, 29 complete solution crops and 29 actual published question images inspected; 87 hashes retained. Typeset fractions, powers, original diagrams, complete graphs, alternative methods and detailed marking notes retained.",
     "finiteRoutes": "All eight questions required. Q7 formula options are evaluated, not optional routes. All three expressions and both explanations retained together. All six rationality classifications and required table entries retain holistic scales.",
     "markingRules": "Q6(b)(i,ii) share 15C, Q7(e,f) share 5C. Exact Foundation bands retained, including 10B [0,8,10], 15C [0,9,13,15], 20C [0,12,17,20]. Only Q3(a), Q3(b) and Q5(b) starred. Q8 graph retains 20+10 deduction components and four separate five-mark readings with original tolerances.",
     "sourceDiscrepancies": {
-      "5-b": "The model solution labels the unknown x, although the question uses y. Its values are the required y-solutions: \u22120.61 and 4.11. The original scheme is retained unchanged."
+      "5-b": "The model solution labels the unknown x, although the question uses y. Its values are the required y-solutions: −0.61 and 4.11. The original scheme is retained unchanged."
     },
     "preservation": {
       "authored": {
@@ -6799,7 +6800,7 @@
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2011-fl-p1-project-q7-e-f"
     },
-    "nextPaper": "2011 Foundation Project Maths Phase 2 Paper 2: LC003BLP230EV.pdf; combined scheme LC003BLP030EV.pdf pages 29\u201352.",
+    "nextPaper": "2011 Foundation Project Maths Phase 2 Paper 2: LC003BLP230EV.pdf; combined scheme LC003BLP030EV.pdf pages 29–52.",
     "status": "Paper complete locally; whole Mathematics subject incomplete; not merged or deployed.",
     "implementationCommit": "a66891f24"
   },
@@ -6840,13 +6841,13 @@
       51,
       52
     ],
-    "presentation": "All 16 paper pages and scheme pages 29\u201352 independently visually inspected. All 31 question crops, 31 complete solution crops and 31 actual published question images inspected; 93 hashes retained. Original typeset mathematics, all graphs, geometry constructions, statistical tables, alternatives and full marking notes retained.",
+    "presentation": "All 16 paper pages and scheme pages 29–52 independently visually inspected. All 31 question crops, 31 complete solution crops and 31 actual published question images inspected; 93 hashes retained. Original typeset mathematics, all graphs, geometry constructions, statistical tables, alternatives and full marking notes retained.",
     "finiteRoutes": "Both 6A and 6B retained. Q2(a) asks for three examples within a numerical experiment, not selection from a printed menu. Original examples remain together on one holistic scale. All required lists, tables, explanations and both shared trigonometry asks retained.",
     "markingRules": "Shared scales Q2(b,c,d), Q3(c,d), Q4(b,c), Q7(g,h) and Q8(b)(i,ii) remain intact. Exact Foundation bands retained. Only Q8(a)(ii), Q8(a)(iii) and Q8(b)(i,ii) starred. Unusual 25B allocation for Q8(a)(ii) verified in both source locations. Histogram, candidate-consistent population estimates and all alternative methods retained.",
     "sourceDiscrepancies": {
-      "3-b": "The partial-credit note prints the mean as 67.69\u2026 without applying the stem-and-leaf key. In millimetres it is 6.769\u2026 . This task asks for the median, which is 7.2 mm. The original marking note is retained.",
+      "3-b": "The partial-credit note prints the mean as 67.69… without applying the stem-and-leaf key. In millimetres it is 6.769… . This task asks for the median, which is 7.2 mm. The original marking note is retained.",
       "7-b": "The model histogram uses vertical heights 3, 10, 16, 14, 6 and 1: each vertical unit represents four babies. The actual frequencies remain 12, 40, 64, 56, 24 and 4. The original graph is retained.",
-      "8-b-i-ii": "Using the exact lengths gives \u03b1 = arctan(4) \u2248 75.96\u00b0, so 76\u00b0 is the nearest-degree answer. The model\u2019s sine method first rounds d to 4.1 cm and therefore gives 77\u00b0. This is a premature-rounding difference; the original alternatives are retained."
+      "8-b-i-ii": "Using the exact lengths gives α = arctan(4) ≈ 75.96°, so 76° is the nearest-degree answer. The model’s sine method first rounds d to 4.1 cm and therefore gives 77°. This is a premature-rounding difference; the original alternatives are retained."
     },
     "preservation": {
       "authored": {
@@ -6967,13 +6968,13 @@
       39,
       40
     ],
-    "presentation": "All six paper pages and scheme pages 1\u201340 independently visually inspected. All 40 original question crops, 40 complete SEC solution crops, four exact fifth-root supplements and 40 actual published question images inspected; 128 image hashes retained. 40 question images and 42 unique solution images published. Shared polynomial alternatives reuse one inspected image; no original typesetting rewritten.",
+    "presentation": "All six paper pages and scheme pages 1–40 independently visually inspected. All 40 original question crops, 40 complete SEC solution crops, four exact fifth-root supplements and 40 actual published question images inspected; 128 image hashes retained. 40 question images and 42 unique solution images published. Shared polynomial alternatives reuse one inspected image; no original typesetting rewritten.",
     "finiteRoutes": "Q3(c)(ii): every non-unit fifth root n=1,2,3,4 mechanically expanded; four distinct ten-mark routes with exact working and original SEC example/notes. Required pairs, all five roots in (i), both expansions and both shaded areas stay together. Five raw selection hits classified and pinned to source.",
     "markingRules": "All original deduction methods retained. Q6(c)(ii) keeps its 5+5 tangent method and distinct single ten-mark three-slope method. Attempt floors and all original alternative methods/notes retained; no full-credit-minus-one shortcut.",
     "sourceDiscrepancies": {
       "2-c-ii": "In the second method, cancelling a + b is valid when a + b > 0. If a + b = 0, both sides of the required inequality are zero, so equality holds. The first and third methods cover this case without cancellation.",
-      "4-c-ii": "In the induction alternative, 2k\u00b2 + 7k + 6 factorises as (k + 2)(2k + 3), not (k + 2)(k + 3) as printed in the last factorisation. The stated sum-of-squares formula and telescoping method are correct.",
-      "6-a": "The first displayed Newton\u2013Raphson formula should start with x\u2081 = 3/2, not f(3/2). The subsequent substitution uses the correct formula and gives x\u2082 = 4/3.",
+      "4-c-ii": "In the induction alternative, 2k² + 7k + 6 factorises as (k + 2)(2k + 3), not (k + 2)(k + 3) as printed in the last factorisation. The stated sum-of-squares formula and telescoping method are correct.",
+      "6-a": "The first displayed Newton–Raphson formula should start with x₁ = 3/2, not f(3/2). The subsequent substitution uses the correct formula and gives x₂ = 4/3.",
       "8-b": "The source is inconsistent: the question summary gives four five-mark steps; the detailed heading gives 20 marks as 10 + 5 + 5 (attempts 3, 2, 2); the three named rows each say 5, totalling only 15. This card follows the detailed 20-mark heading and its three-component allocation. The original conflicting entries remain visible.",
       "8-c-iii": "The question summary on page 35 and part heading on page 37 both give the final 10-mark part an attempt award of 3. Its detailed row says Att 2. This card uses the repeated 3-mark allocation, with both source entries retained."
     },
@@ -7099,7 +7100,7 @@
       81,
       82
     ],
-    "presentation": "All eight paper pages and scheme pages 39\u201382 independently visually inspected. All 57 question crops, 57 complete SEC solution crops and 57 actual published question images inspected; 171 hashes retained. Original diagrams, permutations, equations, alternative proofs and all marking notes preserved.",
+    "presentation": "All eight paper pages and scheme pages 39–82 independently visually inspected. All 57 question crops, 57 complete SEC solution crops and 57 actual published question images inspected; 171 hashes retained. Original diagrams, permutations, equations, alternative proofs and all marking notes preserved.",
     "finiteRoutes": [
       "Whole-examination choice of five Section A questions and one Section B question does not remove any of the eleven offered questions from practice. All are retained.",
       "Q7(b): one novel, one play and one poem are random scenario outcomes, not a finite candidate answer menu. Each requested probability is one task.",
@@ -7110,17 +7111,17 @@
     ],
     "markingRules": "Exact fixed awards for centre/radius, vector pairs, circle finish, six-angle solution set and likelihood comparison; four hit-or-miss tasks. Named scoring steps stay within the complete task. All proof, derivation and prior-work caps retained.",
     "sourceDiscrepancies": {
-      "1-c": "The two printed radius calculations contain \u221a(16 + 2). This should be \u221a(16 + 4) = \u221a20. The final circle (x \u2212 6)\u00b2 + (y \u2212 2)\u00b2 = 20 is correct. The mediator line should read 3y \u2212 3 = x \u2212 3, hence x \u2212 3y = 0; the next simultaneous equations use this correct relation.",
-      "4-a": "The worked answer changes the label to PQR in its last line. The angle requested and calculated is QPR, at P: 30\u00b0 or 150\u00b0.",
-      "7-c-i": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are \u221a2 |a| in (i) and 3\u221a2 |a| in (ii). The scheme\u2019s expressions are correct only when a \u2265 0.",
-      "7-c-ii": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are \u221a2 |a| in (i) and 3\u221a2 |a| in (ii). The scheme\u2019s expressions are correct only when a \u2265 0.",
+      "1-c": "The two printed radius calculations contain √(16 + 2). This should be √(16 + 4) = √20. The final circle (x − 6)² + (y − 2)² = 20 is correct. The mediator line should read 3y − 3 = x − 3, hence x − 3y = 0; the next simultaneous equations use this correct relation.",
+      "4-a": "The worked answer changes the label to PQR in its last line. The angle requested and calculated is QPR, at P: 30° or 150°.",
+      "7-c-i": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
+      "7-c-ii": "The paper allows any real a. The printed standard deviations omit the absolute value: the correct results are √2 |a| in (i) and 3√2 |a| in (ii). The scheme’s expressions are correct only when a ≥ 0.",
       "9-b-i": "The slip note says two decimal places, but the paper and model answer require three. Use three decimal places.",
-      "9-c": "The exact interval is 80 \u00b1 1.96(6/\u221a50) grams, approximately [78.3369, 81.6631]. To one decimal place this is [78.3, 81.7], not the printed [78.3, 81.6].",
-      "10-a-i": "The paper prints \u211d \u2216 {\u22121}. For the intended group and inverse rule, the domain should be \u211d \u2216 {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x \u2260 1 the inverse is x/(x \u2212 1).",
-      "10-a-ii": "The paper prints \u211d \u2216 {\u22121}. For the intended group and inverse rule, the domain should be \u211d \u2216 {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x \u2260 1 the inverse is x/(x \u2212 1).",
+      "9-c": "The exact interval is 80 ± 1.96(6/√50) grams, approximately [78.3369, 81.6631]. To one decimal place this is [78.3, 81.7], not the printed [78.3, 81.6].",
+      "10-a-i": "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
+      "10-a-ii": "The paper prints ℝ ∖ {−1}. For the intended group and inverse rule, the domain should be ℝ ∖ {1}: 1 has no inverse, and the printed domain is not closed under the operation. The identity is 0; for x ≠ 1 the inverse is x/(x − 1).",
       "11-a": "The model assumes that the major axis lies along the x-axis. The question does not state its orientation; rotated ellipses with the same axes also meet the stated conditions.",
       "11-b-i": "The source page mislabels this task as (c)(i) and 11(b)(ii); it is Q11(b)(i). Both the geometric and coordinate proofs below address the requested midpoint result.",
-      "11-c-i": "The first displayed transformation prints y\u2032 = y/10. It should be y\u2032 = y/5, consistent with the subsequent inverse transformation and image coordinates."
+      "11-c-i": "The first displayed transformation prints y′ = y/10. It should be y′ = y/5, consistent with the subsequent inverse transformation and image coordinates."
     },
     "preservation": {
       "authored": {
@@ -7233,7 +7234,7 @@
       69,
       70
     ],
-    "presentation": "All 20 paper pages and scheme PDF pages 3\u20134 and 41\u201370 independently visually inspected. All 35 question crops, 35 complete SEC solution crops and 35 actual published question images inspected; 105 hashes retained. Original diagrams, graph labels and attribution, alternative methods, full solutions and detailed credit notes preserved.",
+    "presentation": "All 20 paper pages and scheme PDF pages 3–4 and 41–70 independently visually inspected. All 35 question crops, 35 complete SEC solution crops and 35 actual published question images inspected; 105 hashes retained. Original diagrams, graph labels and attribution, alternative methods, full solutions and detailed credit notes preserved.",
     "finiteRoutes": [
       {
         "scope": "whole paper / Q9",
@@ -7384,7 +7385,7 @@
       42,
       43
     ],
-    "presentation": "All eight paper pages and scheme PDF pages 1\u201343 independently visually inspected. All 40 question crops, 40 complete SEC solution crops and 40 actual published question images inspected; 120 image hashes retained. Complete graphs, tables, typeset equations, required earlier parts, alternative methods and full marking notes retained. Crops corrected to include all mark headings and final notes.",
+    "presentation": "All eight paper pages and scheme PDF pages 1–43 independently visually inspected. All 40 question crops, 40 complete SEC solution crops and 40 actual published question images inspected; 120 image hashes retained. Complete graphs, tables, typeset equations, required earlier parts, alternative methods and full marking notes retained. Crops corrected to include all mark headings and final notes.",
     "finiteRoutes": [
       {
         "pages": [
@@ -7408,7 +7409,7 @@
         ],
         "wording": "Write down a value of x for which h(x) = 50.",
         "classification": "open-answer-construction",
-        "reason": "No finite candidate answer menu is printed. One task accepts either of the derived values 7 and \u22127; both are shown in the official solution."
+        "reason": "No finite candidate answer menu is printed. One task accepts either of the derived values 7 and −7; both are shown in the official solution."
       }
     ],
     "markingRules": "Original deductions and attempt floors. Q1(c)(ii) restricted to 0/2/5. Five-value answer-only routes preserve exact award lists. All 48 scoring components remain within their complete tasks. Q3(c)(ii) attempt-heading conflict, Q7(b)(i) delta typo and Q8(v) repeated-root distinction explained.",
@@ -7546,7 +7547,7 @@
       95,
       96
     ],
-    "presentation": "All twelve paper pages, including two blank pages, and scheme PDF pages 42\u201396 independently inspected. All 74 question crops, 74 solution crops and 74 published question images inspected; 222 hashes verified. Original typeset working, complete diagrams, alternative methods and full marking notes retained. Eleven duplicate solution images share their inspected reference.",
+    "presentation": "All twelve paper pages, including two blank pages, and scheme PDF pages 42–96 independently inspected. All 74 question crops, 74 solution crops and 74 published question images inspected; 222 hashes verified. Original typeset working, complete diagrams, alternative methods and full marking notes retained. Eleven duplicate solution images share their inspected reference.",
     "finiteRoutes": [
       {
         "pages": [
@@ -7691,7 +7692,7 @@
       77,
       78
     ],
-    "presentation": "All twenty paper pages and scheme PDF pages 3\u20134 and 45\u201378 visually inspected. All 44 raw question crops, 44 raw solution crops and 44 published question images inspected; 132 hashes verified. Complete typeset working, diagrams, alternative methods and full credit notes retained. One shared solution extract reuses the same image.",
+    "presentation": "All twenty paper pages and scheme PDF pages 3–4 and 45–78 visually inspected. All 44 raw question crops, 44 raw solution crops and 44 published question images inspected; 132 hashes verified. Complete typeset working, diagrams, alternative methods and full credit notes retained. One shared solution extract reuses the same image.",
     "finiteRoutes": [
       {
         "pages": [
@@ -7747,7 +7748,7 @@
         "reason": "Required values are not answer choices. Preserve every requested value within the single published scale, with separate components only where the scheme publishes them."
       }
     ],
-    "markingRules": "Q1 uses original deductions with guidance pages61\u201362; Q2\u20139 use historical credit bands with guidance pages67\u201368. Fourteen specific starred allowances; Q2(a) slope/equation and Q9B(b) theorem/construction score separately. Both Q9 alternatives retained. Official 277/2777 typo explained beside the preserved original.",
+    "markingRules": "Q1 uses original deductions with guidance pages61–62; Q2–9 use historical credit bands with guidance pages67–68. Fourteen specific starred allowances; Q2(a) slope/equation and Q9B(b) theorem/construction score separately. Both Q9 alternatives retained. Official 277/2777 typo explained beside the preserved original.",
     "preservation": {
       "authored": {
         "previousUnchanged": 4512,
@@ -7806,7 +7807,7 @@
       "reproducibility": "90 of 90 generators reproduced committed cards and ledgers byte for byte."
     },
     "browser": {
-      "desktop": "Q2(a):12+4 totals16/20; original full graph/working, enlargement/zoom and Escape/focus return verified. Scheme page48 renders and correct general guidance67\u201368 is linked.",
+      "desktop": "Q2(a):12+4 totals16/20; original full graph/working, enlargement/zoom and Escape/focus return verified. Scheme page48 renders and correct general guidance67–68 is linked.",
       "mobile": "390x844 Q9B(b):5+3 totals8/10; complete tangent figure, original question page17 and ruler controls render. Q4(b)(i) offers0/8/9/10, special9selected. No overflow or broken images.",
       "viewportReset": true,
       "preview": "http://127.0.0.1:5187/tmp/mathematics-ui/index.html?session&card=maths-2010-ol-p2-project-q4-b-i"
@@ -7866,7 +7867,7 @@
       38,
       39
     ],
-    "presentation": "All eight paper pages and scheme PDF pages 1\u201339 visually inspected. All 45 raw question crops, 45 raw solution crops and 45 published question images inspected; 135 hashes retained. Original formula sheet, bar chart, equations, graph, alternative methods and all credit notes preserved in 40 unique solution images.",
+    "presentation": "All eight paper pages and scheme PDF pages 1–39 visually inspected. All 45 raw question crops, 45 raw solution crops and 45 published question images inspected; 135 hashes retained. Original formula sheet, bar chart, equations, graph, alternative methods and all credit notes preserved in 40 unique solution images.",
     "finiteRoutes": [
       {
         "pages": [
@@ -7999,7 +8000,7 @@
       63,
       64
     ],
-    "presentation": "All eight paper pages and scheme PDF pages 40\u201364 visually inspected. All 51 raw question crops, 51 raw solution crops and 51 actual published question images inspected; 153 hashes retained. Full diagrams, tables, original working and credit notes preserved in 23 unique solution images. Clipped Q6(c) and Q8(b) attempt notes corrected and re-inspected.",
+    "presentation": "All eight paper pages and scheme PDF pages 40–64 visually inspected. All 51 raw question crops, 51 raw solution crops and 51 actual published question images inspected; 153 hashes retained. Full diagrams, tables, original working and credit notes preserved in 23 unique solution images. Clipped Q6(c) and Q8(b) attempt notes corrected and re-inspected.",
     "finiteRoutes": [
       {
         "pages": [
@@ -8145,7 +8146,7 @@
       65,
       66
     ],
-    "presentation": "All sixteen paper pages and scheme PDF pages 3\u20134 and 40\u201366 visually inspected. All 34 raw question crops, 34 raw solution crops and 34 actual published question images inspected; 102 hashes retained. Full diagrams, tables, original working, alternatives and credit notes preserved in 30 unique solution images. Clipped circle/cylinder, duplicated painter and partial headers corrected and re-inspected.",
+    "presentation": "All sixteen paper pages and scheme PDF pages 3–4 and 40–66 visually inspected. All 34 raw question crops, 34 raw solution crops and 34 actual published question images inspected; 102 hashes retained. Full diagrams, tables, original working, alternatives and credit notes preserved in 30 unique solution images. Clipped circle/cylinder, duplicated painter and partial headers corrected and re-inspected.",
     "finiteRoutes": [
       {
         "pages": [
@@ -8171,7 +8172,7 @@
           9,
           13
         ],
-        "wording": "greater than, less than, or the same as; Which one of Mary\u2019s marks; mean or median",
+        "wording": "greater than, less than, or the same as; Which one of Mary’s marks; mean or median",
         "classification": "evaluation-response",
         "reason": "These prompts require identifying or justifying an answer. They do not direct the candidate to choose among independent optional questions. Both justified mean/median answers remain within Q7(b)(iv)."
       },
@@ -8185,7 +8186,7 @@
         "reason": "Required paired angles, coordinate pairs and distance comparisons remain whole at the single published scale boundary."
       }
     ],
-    "markingRules": "Section 0 uses deduction rules; Sections A/B use exact 2010 Foundation bands. Four starred allowances, Q8(a)\u2013(d). Q5(a), Q6(a), Q6(c) retain whole shared responses. Q8(d) detailed 10B* rule takes precedence over conflicting summary 10C*, with visible explanation. Section 0 added to the section type to preserve its actual printed identity.",
+    "markingRules": "Section 0 uses deduction rules; Sections A/B use exact 2010 Foundation bands. Four starred allowances, Q8(a)–(d). Q5(a), Q6(a), Q6(c) retain whole shared responses. Q8(d) detailed 10B* rule takes precedence over conflicting summary 10C*, with visible explanation. Section 0 added to the section type to preserve its actual printed identity.",
     "preservation": {
       "authored": {
         "previousUnchanged": 4652,
@@ -8265,7 +8266,7 @@
     "parserTests": 31,
     "cardAndAssetChanges": 0,
     "evidence": "scripts/markbank/mathematics/reconciliation-review.json",
-    "next": "Main/Project choice reconciliation and local launch integration completed. Deferred sittings and Irish edition provenance remain in progress."
+    "next": "English main/Project and deferred coverage complete; Irish editions explicitly deferred. Physics follows."
   },
   "launchIntegration": {
     "date": "2026-10-30",
@@ -8504,7 +8505,7 @@
     "inspectedImages": 84,
     "workedSupplements": [
       "Q8(a)(iv) continued firework graph",
-      "Q9(d)(ii)\u2013(iii) world-data graph with reading guides"
+      "Q9(d)(ii)–(iii) world-data graph with reading guides"
     ],
     "reviewedAtlasQuestionPlacements": 1114,
     "allCardsInAtlas": true,
@@ -8669,7 +8670,7 @@
     "previousImagesReproducedByUpdatedRenderer": 684,
     "inspectedImages": 88,
     "workedSupplements": [
-      "Q9(b)(ii)\u2013(iii): full, labelled graph of both printed trout models with correct comparison",
+      "Q9(b)(ii)–(iii): full, labelled graph of both printed trout models with correct comparison",
       "Q9(b)(iii) question: independently practicable context graph without a written answer"
     ],
     "sourceCorrections": [
@@ -8769,7 +8770,7 @@
       "Q10(c): properly typeset hypothesis test with critical values and precise conclusion"
     ],
     "sourceCorrections": [
-      "Q9(c)(i)\u2013(ii) retained as one 20D task; erroneous extra summary allocation excluded in favour of the detailed scheme and printed question total.",
+      "Q9(c)(i)–(ii) retained as one 20D task; erroneous extra summary allocation excluded in favour of the detailed scheme and printed question total.",
       "Paper 2 bands 15C (0,5,10,15) and 20D (0,6,12,17,20) retained.",
       "Sign, logarithmic inequality, discarded root and repeated-branch errors explained; official source remains visible.",
       "The 11:00 equal-distance answer states its after-both-cars-pass-O assumption; the earlier solution is explained conditionally."
@@ -8855,11 +8856,11 @@
     "previousDeferredImagesUnchanged": 862,
     "inspectedImages": 88,
     "workedSupplements": [
-      "Q2(a): continuous real-number solution ray with closed endpoint at \u22122"
+      "Q2(a): continuous real-number solution ray with closed endpoint at −2"
     ],
     "sourceCorrections": [
       "Q10(a)(iii) uses detailed 5C, part (iv) detailed 5D; summary swaps these scales.",
-      "Q2(c)(i\u2013ii), Q4(c)(i\u2013iii) and Q8(c)(i\u2013iii) stay together at their shared mark boundaries.",
+      "Q2(c)(i–ii), Q4(c)(i–iii) and Q8(c)(i–iii) stay together at their shared mark boundaries.",
       "Source variable typo, missing rational-function domain restriction, incomplete graph-credit bullet, mixed time units and VAT shorthand explained alongside the unchanged SEC source."
     ],
     "reviewedAtlasQuestionPlacements": 1154,
@@ -8953,10 +8954,10 @@
       "Q10(b)(ii): confidence interval retaining full precision, with formatted fractions and interval diagram."
     ],
     "sourceCorrections": [
-      "Q4(a)(ii\u2013iii) stays together on its shared 5C allocation.",
-      "Q7(b) detailed 15D scale awards low partial credit at 5, overriding the general table\u2019s 4.",
+      "Q4(a)(ii–iii) stays together on its shared 5C allocation.",
+      "Q7(b) detailed 15D scale awards low partial credit at 5, overriding the general table’s 4.",
       "Q8(a)(iii) distinguishes distance moved from the remaining distance called x in the scheme.",
-      "Q10(a)(i) explains the model\u2019s min-to-max interpretation of range and the credit given for differences.",
+      "Q10(a)(i) explains the model’s min-to-max interpretation of range and the credit given for differences.",
       "Q10(b)(ii) explains early rounding; precise limits are 55.194% and 60.793%. Original SEC working and criteria retained."
     ],
     "reviewedAtlasQuestionPlacements": 1164,
@@ -9049,7 +9050,7 @@
       "Q9(a)(ii): worked quadratic example and full family of valid models"
     ],
     "sourceCorrections": [
-      "Q6(a)(i\u2013iii), Q9(c)(i\u2013ii) and Q10(f)(i\u2013ii) retain their shared allocations.",
+      "Q6(a)(i–iii), Q9(c)(i–ii) and Q10(f)(i–ii) retain their shared allocations.",
       "Corrected source year labels, 288/228 coefficient typo and radius-change units while retaining original SEC guidance.",
       "Domain restrictions, rounding thresholds, physical limits and complete proof context clarified."
     ],
@@ -9143,13 +9144,13 @@
     "inspectedImages": 92,
     "workedSupplements": [
       "Q1(a): labelled frequency chart",
-      "Q6(a): compass-and-straightedge construction of a length \u221a3",
-      "Q7(c)(i\u2013ii): reasonable by-eye line and consistent estimate using all ten score pairs"
+      "Q6(a): compass-and-straightedge construction of a length √3",
+      "Q7(c)(i–ii): reasonable by-eye line and consistent estimate using all ten score pairs"
     ],
     "sourceCorrections": [
-      "Q7(a\u2013b) and Q7(c)(i\u2013ii) retain their shared allocations.",
+      "Q7(a–b) and Q7(c)(i–ii) retain their shared allocations.",
       "Q10(d)(iii) uses 5B and (iv) uses 5C to match the printed numeric awards; incorrect scale labels do not alter marks.",
-      "Q8(c) corrects 1.19 to 0.19 in the final product while retaining the original source; its \u20ac1.80 answer is unchanged.",
+      "Q8(c) corrects 1.19 to 0.19 in the final product while retaining the original source; its €1.80 answer is unchanged.",
       "Rounding, conditional probability and relative-error denominators clarified; no unnecessary correction to the valid tabulated z=0.88."
     ],
     "reviewedAtlasQuestionPlacements": 1184,
@@ -9238,17 +9239,17 @@
     "previousDeferredImagesUnchanged": 1246,
     "inspectedImages": 90,
     "workedSupplements": [
-      "Q8(a)(i\u2013ii): complete height table and plotted curve",
-      "Q8(b)(i\u2013iii): three graph readings with working",
-      "Q10(c)(ii): Brendan\u2019s journey ending at 14:40",
-      "Q10(d)(i): Colin\u2019s return journey",
+      "Q8(a)(i–ii): complete height table and plotted curve",
+      "Q8(b)(i–iii): three graph readings with working",
+      "Q10(c)(i): Brendan’s journey ending at 14:40",
+      "Q10(d)(i): Colin’s return journey",
       "Q10(d)(ii): reconstructed intersection of the two journeys"
     ],
     "sourceCorrections": [
-      "Q4(a)(i\u2013ii), Q8(a)(i\u2013ii) and Q8(b)(i\u2013iii) retain shared 15D allocations.",
+      "Q4(a)(i–ii), Q8(a)(i–ii) and Q8(b)(i–iii) retain shared 15D allocations.",
       "Q2(b) clarifies the correct unit as metres per second; the source first-line km/s label is wrong.",
       "Q8(c)(i) restores the omitted factor 1.5 after 10 in the source substitution.",
-      "Q10(c)(ii) ends Brendan\u2019s graph at 64 km, 14:40; Q10(d)(ii) explains the reconstructed meeting time of about 13:03 while retaining the original accepted graph-reading tolerance."
+      "Q10(c)(i) ends Brendan’s graph at 64 km, 14:40; Q10(d)(ii) explains the reconstructed meeting time of about 13:03 while retaining the original accepted graph-reading tolerance."
     ],
     "reviewedAtlasQuestionPlacements": 1194,
     "allCardsInAtlas": true,
@@ -9291,5 +9292,106 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 45 cards byte for byte."
-  }
+  },
+  "englishScopeComplete": true,
+  "deferred2022ordinaryPaper2": {
+    "date": "2026-10-31",
+    "paper": "2022 Ordinary deferred Paper 2",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "reviewedTasks": 53,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "runtimeCards": 5188,
+    "runtimeByLevel": {
+      "higher": 1917,
+      "ordinary": 2134,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 127,
+    "previousAuthoredCardsUnchanged": 5136,
+    "previousFigureEntriesUnchanged": 10533,
+    "previousDeferredImagesUnchanged": 1336,
+    "addedAuthoredCards": 53,
+    "inspectedImages": 106,
+    "workedSupplements": [
+      "Q6(a): centroid construction on the exact original triangle",
+      "Q8(b)(v): reasonable line of best fit and shoe-size estimate",
+      "Q10(e)(i): enlargement centre reconstructed with the original diagram"
+    ],
+    "sourceCorrections": [
+      "All ten questions retained: 53 separately marked tasks and 380 offered marks, despite 220 candidate marks. Q5(b)(i–ii) shares 10D; Q7(a)(iii–iv) shares 15D.",
+      "Paper 2 uses 5B (0,3,5), unlike Paper 1 (0,2,5). Detailed Q4(a) and Q5(a) use 10B (0,5,10), even though the general table omits that scale. Q6(b)(iii) is 5A, hit or miss.",
+      "Q1(a) keeps both points together. Q1(d) retains the original diagram and references to the area and hypotenuse tasks, so the perpendicular distance is independently recoverable.",
+      "Q2(a): the source intermediate line h²=25 is a typo; h²=25−9=16 gives h=4 cm and area 36 cm². Q2(b) specifically requires the trapezoidal rule, with ordinates 0,2,4,6,6,6,6,6 at 1 cm intervals.",
+      "Q3(b)(ii) retains the original tangencies; the common centre is (−2,2) and the new squared radius is 8. Both source alternative methods remain available.",
+      "Q4(c) retains both accepted quartile conventions: IQR 11 or 12 cm. Q4(e) counts 13 of 20 heights between 142.2 and 156.8 cm, giving 65%.",
+      "Q5 draws are repeated independent games. The two identical long straws remain two equally likely physical outcomes. Q5(d) is a fixed winnings calculation, not a choice of order; €7−€2−€2+€3=€6.",
+      "Q6(a) keeps the exact original triangle and construction area. The reconstructed worked example uses that triangle, two side midpoints and two medians; the original scheme is also retained. Q6(b)(ii) requires both alpha and beta under one 10D award.",
+      "Q7(a)(iii–iv) is one shared table-completion task, with all nine ordered outcomes and probabilities retained. The tree is context, not an additional separately marked task. Q7(a)(v) includes both AB and BA.",
+      "Q7(b)(i) requires all 15 missing products in the 4×4 table, not a selection. Q7(b)(ii) is one fairness decision with justification. Q7(b)(iii) fixes the order 4,3,16, so do not multiply by permutations.",
+      "Q8(a)(iii) retains the survey data and confidence-interval instruction. Failing to reject 34% does not prove it true; the source phrase has not changed is too strong.",
+      "Q8(b)(i) adds all four shaded points (6,161),(6,163),(6.5,167),(6.5,164). Q8(b)(iii) is one answer-selection card containing all five coefficients; 1 is the closest listed value, not the actual coefficient.",
+      "Q8(b)(v) retains the full data and plot. A reconstructed reasonable by-eye line and reading demonstrates a shoe size around 9–9.5; the original marking guidance remains attached. Q8(b)(vi): median stays 172 cm; mean rises from 170.5 to 3588/21≈170.857 cm.",
+      "Q9(b) divides the absolute height error by the actual 34 m, not the measured height. Q9(c)(i) uses actual height 34 m and model height 1.7 m. Q9(c)(iii) includes the 3 cm overlap, so b=28π+3≈91 cm.",
+      "Q9(d) source rounds slant height to 26.1 before multiplying, giving 1147.9 cm². Keeping full precision gives 14π√680=1146.917989… cm², or 1146.9 cm². Both the source route and the precise route are explained; official credit notes stay intact.",
+      "Q10(e)(i) requires construction lines as well as (0,6). Q10(e)(ii) retains the original diagram and line/construction instructions without revealing their answers. Q10(f) retains both trig routes to 50.9 degrees."
+    ],
+    "reviewedAtlasQuestionPlacements": 1204,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 0,
+    "irishEditionReview": "Deferred at user request; not part of current completion scope.",
+    "tests": {
+      "javascriptPassed": 993,
+      "pythonMathsParserPassed": 27,
+      "typecheck": "passed",
+      "sourceAudit": "passed for reviewed papers; 13 remaining source-association warnings belong only to deferred Irish scope",
+      "deckDroppedCards": 0,
+      "productionBuild": "passed"
+    },
+    "browser": {
+      "status": "interaction review pending",
+      "reason": "CUA returned no browsers/apps and Sky Computer Use native pipe startup failed on repeated attempts.",
+      "allQuestionAndSolutionAssetsVisuallyInspected": true,
+      "sharedComponentRegressionTests": "passed"
+    },
+    "englishScopeComplete": true,
+    "wholeSubjectComplete": false,
+    "status": "English content complete locally; final booklet interaction review pending browser connection; no push or deployment."
+  },
+  "englishScopeCompletionEvidence": "scripts/markbank/mathematics/english-scope-completion.json"
 }

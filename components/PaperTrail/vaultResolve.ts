@@ -46,10 +46,31 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  // Historical questions and alternatives reconstructed from inspected crops.
+  'mathematics|2010|LC003ALP230EV.pdf',
+  'mathematics|2010|LC003GLP230EV.pdf',
+  'mathematics|2011|LC003BLP230EV.pdf',
+  'mathematics|2011|LC003ALP230EV.pdf',
+  'mathematics|2011|LC003GLP230EV.pdf',
+  'mathematics|2012|LC003BLP200EV.pdf',
+  'mathematics|2012|LC003ALP230EV.pdf',
+  'mathematics|2012|LC003ALP200EV.pdf',
+  'mathematics|2012|LC003GLP230EV.pdf',
+  'mathematics|2013|LC003BLP230EV.pdf',
+  'mathematics|2013|LC003BLP200EV.pdf',
+  'mathematics|2013|LC003ALP230EV.pdf',
+  'mathematics|2013|LC003ALP200EV.pdf',
+  'mathematics|2013|LC003GLP230EV.pdf',
+  'mathematics|2013|LC003GLP200EV.pdf',
+  'mathematics|2014|LC003ALP230EV.pdf',
+  'mathematics|2014|LC003GLP230EV.pdf',
+  'mathematics|2012|LC003GLP200EV.pdf',
+  'mathematics|2012|LC003BLP230EV.pdf',
   // Visually reviewed deferred questions have distinct June/deferred identities.
   'mathematics|2022|LC003ALP100EV-deferred.pdf',
   'mathematics|2022|LC003ALP200EV-deferred.pdf',
   'mathematics|2022|LC003GLP100EV-deferred.pdf',
+  'mathematics|2022|LC003GLP200EV-deferred.pdf',
   'mathematics|2023|LC003ALP100EV-deferred.pdf',
   'mathematics|2023|LC003ALP200EV-deferred.pdf',
   'mathematics|2023|LC003GLP100EV-deferred.pdf',

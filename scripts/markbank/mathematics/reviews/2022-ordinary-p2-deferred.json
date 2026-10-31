@@ -1,0 +1,1900 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV-deferred.pdf",
+  "schemeFileid": "LC003GLP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "b8bca6279ae95456b7894ffd952de5651efbbb2113db99175e784f05df2da020",
+  "schemeSha256": "fca7c725b02521ffb8463ad1b29f518b1d3905839d5ca50ab5a065cae42ee1f7",
+  "reviewedAt": "2026-10-31",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and scheme pages 1–2 and 25–55. Every task matched to its detailed allocation, including shared parts, dependencies, diagrams and answer selections. Final images inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    26,
+    27
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 53 separately marked tasks and 380 offered marks, despite 220 candidate marks. Q5(b)(i–ii) shares 10D; Q7(a)(iii–iv) shares 15D.",
+    "Paper 2 uses 5B (0,3,5), unlike Paper 1 (0,2,5). Detailed Q4(a) and Q5(a) use 10B (0,5,10), even though the general table omits that scale. Q6(b)(iii) is 5A, hit or miss.",
+    "Q1(a) keeps both points together. Q1(d) retains the original diagram and references to the area and hypotenuse tasks, so the perpendicular distance is independently recoverable.",
+    "Q2(a): the source intermediate line h²=25 is a typo; h²=25−9=16 gives h=4 cm and area 36 cm². Q2(b) specifically requires the trapezoidal rule, with ordinates 0,2,4,6,6,6,6,6 at 1 cm intervals.",
+    "Q3(b)(ii) retains the original tangencies; the common centre is (−2,2) and the new squared radius is 8. Both source alternative methods remain available.",
+    "Q4(c) retains both accepted quartile conventions: IQR 11 or 12 cm. Q4(e) counts 13 of 20 heights between 142.2 and 156.8 cm, giving 65%.",
+    "Q5 draws are repeated independent games. The two identical long straws remain two equally likely physical outcomes. Q5(d) is a fixed winnings calculation, not a choice of order; €7−€2−€2+€3=€6.",
+    "Q6(a) keeps the exact original triangle and construction area. The reconstructed worked example uses that triangle, two side midpoints and two medians; the original scheme is also retained. Q6(b)(ii) requires both alpha and beta under one 10D award.",
+    "Q7(a)(iii–iv) is one shared table-completion task, with all nine ordered outcomes and probabilities retained. The tree is context, not an additional separately marked task. Q7(a)(v) includes both AB and BA.",
+    "Q7(b)(i) requires all 15 missing products in the 4×4 table, not a selection. Q7(b)(ii) is one fairness decision with justification. Q7(b)(iii) fixes the order 4,3,16, so do not multiply by permutations.",
+    "Q8(a)(iii) retains the survey data and confidence-interval instruction. Failing to reject 34% does not prove it true; the source phrase has not changed is too strong.",
+    "Q8(b)(i) adds all four shaded points (6,161),(6,163),(6.5,167),(6.5,164). Q8(b)(iii) is one answer-selection card containing all five coefficients; 1 is the closest listed value, not the actual coefficient.",
+    "Q8(b)(v) retains the full data and plot. A reconstructed reasonable by-eye line and reading demonstrates a shoe size around 9–9.5; the original marking guidance remains attached. Q8(b)(vi): median stays 172 cm; mean rises from 170.5 to 3588/21≈170.857 cm.",
+    "Q9(b) divides the absolute height error by the actual 34 m, not the measured height. Q9(c)(i) uses actual height 34 m and model height 1.7 m. Q9(c)(iii) includes the 3 cm overlap, so b=28π+3≈91 cm.",
+    "Q9(d) source rounds slant height to 26.1 before multiplying, giving 1147.9 cm². Keeping full precision gives 14π√680=1146.917989… cm², or 1146.9 cm². Both the source route and the precise route are explained; official credit notes stay intact.",
+    "Q10(e)(i) requires construction lines as well as (0,6). Q10(e)(ii) retains the original diagram and line/construction instructions without revealing their answers. Q10(f) retains both trig routes to 50.9 degrees."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-ol-p2-deferred-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+      "questionText": "Write down the co-ordinates of A and of B.",
+      "solutionQuotes": [
+        "One correct set of coordinates"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q1-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q1-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+      "questionText": "Find the area of the triangle APB.",
+      "solutionQuotes": [
+        "Fully correct substitution into a correct relevant formula"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+      "questionText": "Find the length |AB|.",
+      "solutionQuotes": [
+        "Relevant formula correctly substituted"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q1-c-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q1-c-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Part (b) asks for the area of APB and part (c) for |AB|.",
+      "questionText": "Using your answers to part (b) and part (c), find the length of the shortest line segment from P to the line AB. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Equation correctly substituted"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q1-d-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q1-d-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows a parallelogram ABCD. It has sides of length 9 cm and 5 cm, and a perpendicular height of h (taking the base to be 9 cm), where h ∈ ℝ. The point E lies on the side [AB], so that ∠AED is a right angle. |AE|=3 cm, as shown.",
+      "questionText": "Find the value of h, and hence find area of the parallelogram.",
+      "solutionQuotes": [
+        "Pythagoras’s formula fully substituted",
+        "Correct answer, no units"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q2-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q2-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows a different quadrilateral (not to scale). Two of the sides are parallel. The other two sides are not parallel. The vertical lines on the diagram are a distance of 1 cm apart.",
+      "questionText": "Use the Trapezoidal Rule to find the area of this quadrilateral. Show all of your working out.",
+      "solutionQuotes": [
+        "Identifies h = 1",
+        "Fully correct substitution into the Trapezoidal Rule Formula"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q2-b-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q2-b-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A circle has equation x²+y²=10, where x,y ∈ ℝ.",
+      "questionText": "Verify that the point (3,−1) is on the circle.",
+      "solutionQuotes": [
+        "Incorrect or no conclusion given"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q3-a-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q3-a-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A circle has equation x²+y²=10, where x,y ∈ ℝ.",
+      "questionText": "Find the slope of the tangent to the circle at the point (3,−1).",
+      "solutionQuotes": [
+        "Calculates slope of radius"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q3-a-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q3-a-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown.",
+      "questionText": "Find the equation of the circle c.",
+      "solutionQuotes": [
+        "Formula substituted with both centre and radius"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q3-b-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q3-b-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown.",
+      "questionText": "Find the equation of the circle which has the same centre as the circle c, and which passes through the point (0,0).",
+      "solutionQuotes": [
+        "Circle formula substituted with both centre and radius"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q3-b-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q3-b-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+      "questionText": "How many students are in the group?",
+      "solutionQuotes": [
+        "Attempt at counting entries"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q4-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q4-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+      "questionText": "Find the range of the heights of this group of students.",
+      "solutionQuotes": [
+        "Maximum or Minimum values identified"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q4-b-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q4-b-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+      "questionText": "Find the interquartile range of the heights of this group of students.",
+      "solutionQuotes": [
+        "Identifies Q1 and Q3"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q4-c-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q4-c-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height of the students in the group is 149.5 cm.",
+      "questionText": "Use the mean height to work out the sum of the heights of all the students in the group. Show your working out.",
+      "solutionQuotes": [
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q4-d-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q4-d-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q4-e",
+      "printedParts": [
+        "Q4(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height is 149.5 cm.",
+      "questionText": "The standard deviation of the heights of the students is 7.3 cm, correct to 1 decimal place. Find the percentage of the students whose height is within 1 standard deviation of the mean height of the group.",
+      "solutionQuotes": [
+        "Both boundaries indicated"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q4-e-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q4-e-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+      "questionText": "Noel plays one game. Write down the probability that he wins the game.",
+      "solutionQuotes": [
+        "Correct numerator or denominator"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q5-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q5-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q5-b-i-ii",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+      "questionText": "Noel plays the game three times. In this set of three games: (i) what is the probability that Noel does not draw the short straw (that is, he loses all three games)? (ii) what is the probability that Noel wins the first two games and loses the third game?",
+      "solutionQuotes": [
+        "Part (i) or (ii) correct",
+        "Incorrect order in (ii)"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q5-b-i-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q5-b-i-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+      "questionText": "Noel decides to continue playing the game until he wins for the first time. What is the probability that Noel wins for the first time on the fifth game he plays?",
+      "solutionQuotes": [
+        "Correct answer without supporting work."
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q5-c-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q5-c-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Noel bets €2 on each game. If he loses the game, he loses the €2. If he wins the game, he gets his €2 back, and also another €3.",
+      "questionText": "Noel starts with €7. How much money will he have if he plays 3 games and wins exactly 1 of them?",
+      "solutionQuotes": [
+        "3 possible outcomes with same result"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q5-d-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q5-d-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the centroid of the triangle below. Show clearly any construction lines. (Note: all instruments are permitted. If you are using measurements, show your measurements and calculations.)",
+      "solutionQuotes": [
+        "One midpoint constructed correctly",
+        "No construction lines award Mid Partial Credit at most"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q6-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q6-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+      "questionText": "Give a reason why |∠XYW|=90°.",
+      "solutionQuotes": [
+        "Mentions [WX] is a diameter or equivalent"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q6-b-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q6-b-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+      "questionText": "Find the value of α and the value of β.",
+      "solutionQuotes": [
+        "Writes a correct relationship for either",
+        "α or β calculated"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q6-b-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q6-b-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+      "questionText": "Which point in the diagram is the circumcentre of the triangle WXY?",
+      "solutionQuotes": [
+        "Point O",
+        "Hit or Miss"
+      ],
+      "fullCreditMinusOne": false,
+      "figureKey": "maths-2022-ol-p2-deferred-q6-b-iii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q6-b-iii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+      "questionText": "Write down the probability that Billy will not win the prize for Task 1.",
+      "solutionQuotes": [
+        "Mentions total probability = 1"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-a-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-a-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+      "questionText": "Complete the table above by writing in the probability neither Ann nor Billy will win the prize for each task.",
+      "solutionQuotes": [
+        "One correct answer written"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-a-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-a-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-a-iii-iv",
+      "printedParts": [
+        "Q7(a)(iii)",
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. The tree diagram shows possible winners of the two tasks. Each outcome is written as the winner of Task 1, followed by the winner of Task 2. A stands for Ann, B for Billy, and N for neither. For example, (A,N) means Ann wins Task 1 and neither Ann nor Billy wins Task 2.",
+      "questionText": "(iii) Complete the list of outcomes in the table above. (iv) Write the probability of each outcome in the space beside it in the table above.",
+      "solutionQuotes": [
+        "6 correct values",
+        "11 correct values"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-a-iii-iv-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-a-iii-iv-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+      "questionText": "Work out the probability that Ann wins one prize and that Billy wins the other prize.",
+      "solutionQuotes": [
+        "Both relevant probabilities identified"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-a-v-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-a-v-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+      "questionText": "Fill in the two-way table below to show the result (the product) for each possible pair of numbers. One is already done for you.",
+      "solutionQuotes": [
+        "4 correct values",
+        "12 correct values"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-b-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-b-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+      "questionText": "Use the two-way table to decide whether or not this game is fair (that is, if Eric and Chidalu are equally likely to win). Justify your answer.",
+      "solutionQuotes": [
+        "Answer: Game is not fair",
+        "Both relevant probabilities identified"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-b-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-b-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+      "questionText": "Eric and Chidalu play the game a number of times. Find the probability that the first three results of the game are 4, 3, and 16, in that order. Give your answer correct to 4 decimal places.",
+      "solutionQuotes": [
+        "Incorrect rounding",
+        "Incorrect order"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q7-b-iii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q7-b-iii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival.",
+      "questionText": "Work out the margin of error (1/√n) for this sample. Give your answer as a percentage.",
+      "solutionQuotes": [
+        "Identifies n=625"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Part (a)(i) asks for the margin of error 1/√n.",
+      "questionText": "In the survey, 230 people said that they would buy a souvenir t-shirt at the festival. Using the margin of error from part (a)(i), create a 95% confidence interval for the percentage of people who will buy a t-shirt at the festival.",
+      "solutionQuotes": [
+        "One boundary formed",
+        "Answers in decimal or fraction form"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. In the survey, 230 people said they would buy a t-shirt. Construct the 95% confidence interval using margin of error 1/√n as in part (a)(ii).",
+      "questionText": "A music journalist claims that 34% of people who will attend the festival will buy a t-shirt. Use your answer to part (a)(ii) to conduct a hypothesis test, at the 5% level of significance, to test the journalist’s claim. Give your conclusion, and a reason for this conclusion.",
+      "solutionQuotes": [
+        "Fail to reject the claim.",
+        "unless some interval in part (ii) is given"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-a-iii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-a-iii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+      "questionText": "The four shaded heights in the table above have not been included on the scatter plot. Draw four points on the scatter plot to show these.",
+      "solutionQuotes": [
+        "One point plotted correctly",
+        "More than one point plotted correctly"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+      "questionText": "Describe the relationship between shoe size and height, based on the scatter plot.",
+      "solutionQuotes": [
+        "There is a strong positive correlation"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+      "questionText": "Which of the following values is closest to the correlation coefficient between shoe size and height, based on the data in the table and the graph? Tick one box only: −1, −0.5, 0, 0.5, 1.",
+      "solutionQuotes": [
+        "Correct box ticked",
+        "All other Answers"
+      ],
+      "fullCreditMinusOne": false,
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-iii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-iii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+      "questionText": "Calculate the mean height of the 20 boys.",
+      "solutionQuotes": [
+        "Correct Addition (Ans = 3410)"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-iv-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-iv-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-v",
+      "printedParts": [
+        "Q8(b)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+      "questionText": "A new player joins the hurling panel. He has height of 178 cm. Use the information in the scatter plot to estimate this boy’s shoe size. Show your work on the diagram.",
+      "solutionQuotes": [
+        "Draws a best fit line on the scatter plot."
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-v-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-v-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q8-b-vi",
+      "printedParts": [
+        "Q8(b)(vi)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel with height 178 cm.",
+      "questionText": "Which will have a bigger increase, the mean or the median, if we include the new player in the data? Justify your answer.",
+      "solutionQuotes": [
+        "The Median doesn’t change at all (172 cm)"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q8-b-vi-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q8-b-vi-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale).",
+      "questionText": "Work out the value of x, and hence work out the value of h, the height of the cylindrical part of the tower. Give each distance in metres, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Establishes correct equation for x or h",
+        "Calculates the length of the base (x)"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-a-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-a-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale).",
+      "questionText": "Later, Jane and Alan read on the internet that the actual height of the cylindrical part of the tower is approximately 34 m. Using 34 m as the actual height of the cylindrical part of the tower, find the percentage error in the answer from part (a). Give your answer correct to the nearest percent.",
+      "solutionQuotes": [
+        "% error formula substituted correctly"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-b-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-b-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. The actual height of the cylindrical part of the tower is approximately 34 m.",
+      "questionText": "Use the fact that this is a scale model to work out the actual diameter of the round tower at Kilmacduagh. Use the approximate actual height given in part (b). Give your answer in metres.",
+      "solutionQuotes": [
+        "Finds Scale factor"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-c-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-c-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Work out the curved surface area of Alan’s model, excluding the roof. Give your answer correct to the nearest cm². Remember that it will be in the shape of a cylinder, with a diameter of 28 centimetres and a height of 1.7 metres.",
+      "solutionQuotes": [
+        "Fully correctly-substituted C.S.A. formula"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-c-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-c-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23,
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. Alan makes this from a rectangular sheet of card of length a cm and width b cm. An extra 3 cm of card along one edge overlaps the other edge when he makes the cylinder, as shown.",
+      "questionText": "Find the value of a and the value of b. Give b correct to the nearest cm.",
+      "solutionQuotes": [
+        "One correct dimension indicated"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-c-iii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-c-iii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The roof of Alan’s model will be a cone with diameter 28 cm and vertical height 22 cm.",
+      "questionText": "Find l, the slant height of the cone, and hence find the curved surface area of the cone. Give each answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Correct answer, no units",
+        "Not rounding as required"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q9-d-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q9-d-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+      "questionText": "Show that the slope of AC is equal to the slope of DF.",
+      "solutionQuotes": [
+        "slope formula written down"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Part (a)(i) asks you to show that their slopes are equal.",
+      "questionText": "What does this tell you about the lines AC and DF?",
+      "solutionQuotes": [
+        "Mentions that the slopes are equal with no inference"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-a-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-a-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+      "questionText": "Find the value of k, the scale factor of this enlargement.",
+      "solutionQuotes": [
+        "Corresponding lengths or areas calculated"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+      "questionText": "The area of the triangle ABC is 8 square units. Hence, or otherwise, find the area of the triangle DEF.",
+      "solutionQuotes": [
+        "Relevant formula written"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-c-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-c-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+      "questionText": "Find the equation of the line BE. Give your answer in the form y=mx+c, where m,c ∈ ℝ.",
+      "solutionQuotes": [
+        "Answer not in the required format"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-d-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-d-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-e-i",
+      "printedParts": [
+        "Q10(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+      "questionText": "By drawing suitable lines on the diagram, construct the centre of this enlargement, and write down the co-ordinates of this centre.",
+      "solutionQuotes": [
+        "One correct construction line drawn"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-e-i-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-e-i-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-e-ii",
+      "printedParts": [
+        "Q10(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Part (d) asks for the equation of BE; part (e)(i) asks for the centre of enlargement.",
+      "questionText": "Using your answers to part (d) and part (e)(i), show, by substitution, that the centre of enlargement lies on the line BE.",
+      "solutionQuotes": [
+        "Fully correct substitution into equation of line"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-e-ii-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-e-ii-question"
+    },
+    {
+      "id": "maths-2022-ol-p2-deferred-q10-f",
+      "printedParts": [
+        "Q10(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+      "questionText": "Use trigonometry to find the size of ∠DFE. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Formula substituted correctly or consistently"
+      ],
+      "figureKey": "maths-2022-ol-p2-deferred-q10-f-solution",
+      "questionFigureKey": "maths-2022-ol-p2-deferred-q10-f-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Retain every offered question, for 380 offered marks."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "picks one of the three straws",
+      "classification": "scenario-random-selection",
+      "reason": "One random draw within a probability problem; both long straws and the short straw remain in the sample space."
+    },
+    {
+      "pages": [
+        14
+      ],
+      "wording": "all instruments are permitted",
+      "classification": "method-choice",
+      "reason": "Permitted construction methods for one centroid task, with working required."
+    },
+    {
+      "pages": [
+        17,
+        18
+      ],
+      "wording": "Complete the list / each outcome / each possible pair",
+      "classification": "required-answers",
+      "reason": "All missing table entries are required, not a chosen subset."
+    },
+    {
+      "pages": [
+        18
+      ],
+      "wording": "whether or not this game is fair",
+      "classification": "decision-with-justification",
+      "reason": "One required conclusion with supporting probability calculation."
+    },
+    {
+      "pages": [
+        20
+      ],
+      "wording": "Which of the following / Tick one box only",
+      "classification": "answer-selection",
+      "reason": "All five correlation choices remain on one card."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "mean or the median",
+      "classification": "answer-selection",
+      "reason": "One comparison with a required justification, not two alternative tasks."
+    },
+    {
+      "pages": [
+        27
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative routes to the same area, not a choice pool."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:cad25a1c54cc0ee0": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "3:688b98295e32f0af": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "4:4ed4c914fdd02da6": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "12:f121192f9a039cbb": {
+      "classification": "scenario-random-selection",
+      "reason": "Random draw in the probability scenario, not a question choice."
+    },
+    "16:bd43c5b18b4603ad": {
+      "classification": "exam-level-selection",
+      "reason": "All ten offered questions retained."
+    },
+    "27:995b8ea301af9e5c": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same required task."
+    }
+  }
+}

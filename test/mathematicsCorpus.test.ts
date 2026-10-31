@@ -237,7 +237,7 @@ describe('Mathematics booklet identities', () => {
 });
 
 describe('2025 Higher Mathematics Paper 2 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2025 && card.questionRef.includes('Paper 2'));
+  const cards = HIGHER.filter(card => card.year === 2025 && card.sourceMaterial?.sourceFileid === paper2.paperFileid);
 
   it('has no open or orphaned scale units against the visually transcribed census', () => {
     expect(cards.map(card => card.id).sort()).toEqual(paper2.cards.map(card => card.id).sort());
@@ -270,7 +270,7 @@ describe('2025 Higher Mathematics Paper 2 independent source review', () => {
 });
 
 describe('2025 Higher Mathematics Paper 1 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2025 && card.questionRef.includes('Paper 1'));
+  const cards = HIGHER.filter(card => card.year === 2025 && card.sourceMaterial?.sourceFileid === review.paperFileid);
 
   it('retains all 42 published scale units and all 380 available marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(review.cards.map(card => card.id).sort());
@@ -592,7 +592,7 @@ describe('Foundation Mathematics marking boundaries and source context', () => {
 
 describe.each([{ number: 1, count: 41, review: ordinary1 }, { number: 2, count: 42, review: ordinary2 }])(
   '2025 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
-    const cards = ORDINARY.filter(card => card.year === 2025 && card.questionRef.includes(`Paper ${number}`));
+    const cards = ORDINARY.filter(card => card.year === 2025 && card.sourceMaterial?.sourceFileid === census.paperFileid);
     it('retains every independently marked task and all 380 offered marks', () => {
       expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
       expect(cards).toHaveLength(count);
@@ -738,7 +738,7 @@ it('keeps the 2026 Ordinary Paper 2 bands, measurement ruler and all-or-nothing 
 });
 
 describe('2024 Higher Mathematics Paper 1 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2024 && card.questionRef.includes('Paper 1'));
+  const cards = HIGHER.filter(card => card.year === 2024 && card.sourceMaterial?.sourceFileid === higher2024p1.paperFileid);
   const added = new Set(['maths-2024-hl-p1-q8-a-i-ii', 'maths-2024-hl-p1-q9-b-i']);
 
   it('retains all 41 published scale units and all 380 offered marks', () => {
@@ -779,7 +779,7 @@ describe('2024 Higher Mathematics Paper 1 independent source review', () => {
 });
 
 describe('2024 Higher Mathematics Paper 2 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2024 && card.questionRef.includes('Paper 2'));
+  const cards = HIGHER.filter(card => card.year === 2024 && card.sourceMaterial?.sourceFileid === higher2024p2.paperFileid);
 
   it('retains all 40 published scale units and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(higher2024p2.cards.map(card => card.id).sort());
@@ -829,7 +829,7 @@ describe.each([
   { number: 1, count: 39, review: ordinary2024p1 },
   { number: 2, count: 43, review: ordinary2024p2 },
 ])('2024 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
-  const cards = ORDINARY.filter(card => card.year === 2024 && card.questionRef.includes(`Paper ${number}`));
+  const cards = ORDINARY.filter(card => card.year === 2024 && card.sourceMaterial?.sourceFileid === census.paperFileid);
 
   it('retains every published unit and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -883,7 +883,7 @@ it('keeps 2024 Ordinary Paper 2 deductions out of the credit bands and re-cites 
 });
 
 describe('2023 Higher Mathematics Paper 1 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2023 && card.questionRef.includes('Paper 1'));
+  const cards = HIGHER.filter(card => card.year === 2023 && card.sourceMaterial?.sourceFileid === higher2023p1.paperFileid);
 
   it('retains all 41 published scale units and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(higher2023p1.cards.map(card => card.id).sort());
@@ -918,7 +918,7 @@ describe('2023 Higher Mathematics Paper 1 independent source review', () => {
 });
 
 describe('2023 Higher Mathematics Paper 2 independent source review', () => {
-  const cards = HIGHER.filter(card => card.year === 2023 && card.questionRef.includes('Paper 2'));
+  const cards = HIGHER.filter(card => card.year === 2023 && card.sourceMaterial?.sourceFileid === higher2023p2.paperFileid);
 
   it('retains all 41 published scale units and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(higher2023p2.cards.map(card => card.id).sort());
@@ -953,7 +953,7 @@ describe.each([
   { number: 1, count: 48, review: ordinary2023p1 },
   { number: 2, count: 46, review: ordinary2023p2 },
 ])('2023 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
-  const cards = ORDINARY.filter(card => card.year === 2023 && card.questionRef.includes(`Paper ${number}`));
+  const cards = ORDINARY.filter(card => card.year === 2023 && card.sourceMaterial?.sourceFileid === census.paperFileid);
 
   it('retains every published unit and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -1024,7 +1024,7 @@ describe.each([
   { year: 2021, level: 'ordinary' as const, number: 2, count: 48, review: ordinary2021p2 },
 ])('$year $level Mathematics Paper $number independent source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
-  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
+  const cards = deck.filter(card => card.year === year && card.sourceMaterial?.sourceFileid === census.paperFileid);
 
   it('retains every published scale unit and all 380 offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -1147,7 +1147,7 @@ describe.each([
   { year: 2016, level: 'ordinary' as const, number: 2, count: 39, review: ordinary2016p2 },
 ])('$year $level Mathematics Paper $number new-paper source review', ({ year, level, number, count, review: census }) => {
   const deck = level === 'higher' ? HIGHER : ORDINARY;
-  const cards = deck.filter(card => card.year === year && card.questionRef.includes(`Paper ${number}`));
+  const cards = deck.filter(card => card.year === year && card.sourceMaterial?.sourceFileid === census.paperFileid);
 
   it('ships every published scale unit and all 300 marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());

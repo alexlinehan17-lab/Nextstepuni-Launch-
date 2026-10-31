@@ -89530,4 +89530,2320 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q1-a", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q1(a)",
+    stem: "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+    questionText: "Write down the co-ordinates of A and of B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q1-a-solution-1", kind: "point", verbatim: "One correct set of coordinates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-a-question.png",
+          "srcHash": "b2bdf05f4dbb08820690a5e5f683feef",
+          "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Write down the co-ordinates of A and of B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-a-solution.png",
+          "srcHash": "1efb25175671e4d9b1bb36cd3110c93a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q1(b)",
+    stem: "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+    questionText: "Find the area of the triangle APB.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Fully correct substitution into a correct relevant formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-b-question.png",
+          "srcHash": "9488ccb38282c7cbb3a66b834a4b9764",
+          "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Find the area of the triangle APB.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-b-solution.png",
+          "srcHash": "09d16c4864ed6c3e3b45f377cf8df4e3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q1-c", topicId: "maths-2-2", conceptId: "p2-deferred-q1-c",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q1(c)",
+    stem: "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P.",
+    questionText: "Find the length |AB|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q1-c-solution-1", kind: "point", verbatim: "Relevant formula correctly substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-c-question.png",
+          "srcHash": "be34b7908d375989bad77c1658b89a27",
+          "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Find the length |AB|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-c-solution.png",
+          "srcHash": "ce1cc5e63e4e63469fc758269cca7575",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q1-d", topicId: "maths-2-2", conceptId: "p2-deferred-q1-d",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q1(d)",
+    stem: "In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Part (b) asks for the area of APB and part (c) for |AB|.",
+    questionText: "Using your answers to part (b) and part (c), find the length of the shortest line segment from P to the line AB. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q1-d-solution-1", kind: "point", verbatim: "Equation correctly substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-d-question.png",
+          "srcHash": "1367b0be2be3c3e6d849cf460091e3d5",
+          "alt": "The question as printed on the paper — In the co-ordinate diagram below, the point P has co-ordinates (12,5). A is the point on the x-axis vertically below P. B is the point on the y-axis horizontally across from P. Part (b) asks for the area of APB and part (c) for |AB|. Using your answers to part (b) and part (c), find the length of the shortest line segment from P to the line AB. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q1-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q1-d-solution.png",
+          "srcHash": "010acb4f69dd5aa7567b5e0d30233389",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q1(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q2-a", topicId: "maths-3-4", conceptId: "p2-deferred-q2-a",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q2(a)",
+    stem: "The diagram below shows a parallelogram ABCD. It has sides of length 9 cm and 5 cm, and a perpendicular height of h (taking the base to be 9 cm), where h ∈ ℝ. The point E lies on the side [AB], so that ∠AED is a right angle. |AE|=3 cm, as shown.",
+    questionText: "Find the value of h, and hence find area of the parallelogram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q2-a-solution-1", kind: "point", verbatim: "Pythagoras’s formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q2-a-solution-2", kind: "point", verbatim: "Correct answer, no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q2-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-a-question.png",
+          "srcHash": "55707e1df28d6ef3adbebf29857e6d23",
+          "alt": "The question as printed on the paper — The diagram below shows a parallelogram ABCD. It has sides of length 9 cm and 5 cm, and a perpendicular height of h (taking the base to be 9 cm), where h ∈ ℝ. The point E lies on the side [AB], so that ∠AED is a right angle. |AE|=3 cm, as shown. Find the value of h, and hence find area of the parallelogram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q2-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-a-solution.png",
+          "srcHash": "66e358ed64b19e44d3c784df219587e2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q2(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The line h²=25 in the original solution is a typo. From 3²+h²=5², h²=25−9=16, so h=4 cm and the area is 9×4=36 cm².",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q2-b", topicId: "maths-3-4", conceptId: "p2-deferred-q2-b",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q2(b)",
+    stem: "The diagram below shows a different quadrilateral (not to scale). Two of the sides are parallel. The other two sides are not parallel. The vertical lines on the diagram are a distance of 1 cm apart.",
+    questionText: "Use the Trapezoidal Rule to find the area of this quadrilateral. Show all of your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q2-b-solution-1", kind: "point", verbatim: "Identifies h = 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q2-b-solution-2", kind: "point", verbatim: "Fully correct substitution into the Trapezoidal Rule Formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-b-question.png",
+          "srcHash": "74e5c799332e877dbb535d9dbcf4410d",
+          "alt": "The question as printed on the paper — The diagram below shows a different quadrilateral (not to scale). Two of the sides are parallel. The other two sides are not parallel. The vertical lines on the diagram are a distance of 1 cm apart. Use the Trapezoidal Rule to find the area of this quadrilateral. Show all of your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q2-b-solution.png",
+          "srcHash": "4e03e344883ee55aa993f047e427411d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q3-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-i",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q3(a)(i)",
+    stem: "A circle has equation x²+y²=10, where x,y ∈ ℝ.",
+    questionText: "Verify that the point (3,−1) is on the circle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q3-a-i-solution-1", kind: "point", verbatim: "Incorrect or no conclusion given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-i-question.png",
+          "srcHash": "a39bf6af63e397618aa2e3230bfd90bc",
+          "alt": "The question as printed on the paper — A circle has equation x²+y²=10, where x,y ∈ ℝ. Verify that the point (3,−1) is on the circle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-i-solution.png",
+          "srcHash": "e43bbadaab7f5d51739f01fced2e3679",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q3-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-ii",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q3(a)(ii)",
+    stem: "A circle has equation x²+y²=10, where x,y ∈ ℝ.",
+    questionText: "Find the slope of the tangent to the circle at the point (3,−1).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q3-a-ii-solution-1", kind: "point", verbatim: "Calculates slope of radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-ii-question.png",
+          "srcHash": "39597ac2f0724837a2ff7ce473dd8655",
+          "alt": "The question as printed on the paper — A circle has equation x²+y²=10, where x,y ∈ ℝ. Find the slope of the tangent to the circle at the point (3,−1).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-a-ii-solution.png",
+          "srcHash": "5a4c78e5833ec52607d2b77c3f7d4f40",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q3-b-i", topicId: "maths-2-2", conceptId: "p2-deferred-q3-b-i",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q3(b)(i)",
+    stem: "A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown.",
+    questionText: "Find the equation of the circle c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q3-b-i-solution-1", kind: "point", verbatim: "Formula substituted with both centre and radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-i-question.png",
+          "srcHash": "682e69eaa0a493bee4ac5e9c0fdb5f37",
+          "alt": "The question as printed on the paper — A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown. Find the equation of the circle c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-i-solution.png",
+          "srcHash": "940d22bef7b808c96565af44b0630076",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q3-b-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-b-ii",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q3(b)(ii)",
+    stem: "A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown.",
+    questionText: "Find the equation of the circle which has the same centre as the circle c, and which passes through the point (0,0).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q3-b-ii-solution-1", kind: "point", verbatim: "Circle formula substituted with both centre and radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-ii-question.png",
+          "srcHash": "ab66053434d9cca50e3cb2cc888d604c",
+          "alt": "The question as printed on the paper — A circle c touches the x-axis at (−2,0) and touches the y-axis at (0,2), as shown. Find the equation of the circle which has the same centre as the circle c, and which passes through the point (0,0).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q3-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q3-b-ii-solution.png",
+          "srcHash": "ffff8b126926ff21d6a006b460a60799",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q3(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q4-a", topicId: "maths-1-7", conceptId: "p2-deferred-q4-a",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q4(a)",
+    stem: "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+    questionText: "How many students are in the group?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q4-a-solution-1", kind: "point", verbatim: "Attempt at counting entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-a-question.png",
+          "srcHash": "4a7166a49c2e14bc5a284096e607872e",
+          "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. How many students are in the group?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-a-solution.png",
+          "srcHash": "7f4a5d63bde9c76942246f0539cfdfa9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q4-b", topicId: "maths-1-7", conceptId: "p2-deferred-q4-b",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q4(b)",
+    stem: "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+    questionText: "Find the range of the heights of this group of students.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q4-b-solution-1", kind: "point", verbatim: "Maximum or Minimum values identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-b-question.png",
+          "srcHash": "538b1b8b74f666968c2a34538aa544c6",
+          "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. Find the range of the heights of this group of students.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-b-solution.png",
+          "srcHash": "eb470bd7aa5e801fadce6bc42c597103",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q4-c", topicId: "maths-1-7", conceptId: "p2-deferred-q4-c",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q4(c)",
+    stem: "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm.",
+    questionText: "Find the interquartile range of the heights of this group of students.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q4-c-solution-1", kind: "point", verbatim: "Identifies Q1 and Q3", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-c-question.png",
+          "srcHash": "d3b034d546d8877af22ca7002098de57",
+          "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. Find the interquartile range of the heights of this group of students.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-c-solution.png",
+          "srcHash": "785dd54085a316e86c9054dfa63ca2c8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The SEC accepts either quartile convention shown: Q₁=144.5, Q₃=155.5 gives IQR=11 cm; Q₁=143, Q₃=155 gives IQR=12 cm. Use one convention consistently.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q4-d", topicId: "maths-1-7", conceptId: "p2-deferred-q4-d",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q4(d)",
+    stem: "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height of the students in the group is 149.5 cm.",
+    questionText: "Use the mean height to work out the sum of the heights of all the students in the group. Show your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q4-d-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-d-question.png",
+          "srcHash": "68527d95ece0a0c931b8e19050481b5b",
+          "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height of the students in the group is 149.5 cm. Use the mean height to work out the sum of the heights of all the students in the group. Show your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-d-solution.png",
+          "srcHash": "e0cf262874e0ab24d63cfd4926bd51a3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q4-e", topicId: "maths-1-7", conceptId: "p2-deferred-q4-e",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q4(e)",
+    stem: "Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height is 149.5 cm.",
+    questionText: "The standard deviation of the heights of the students is 7.3 cm, correct to 1 decimal place. Find the percentage of the students whose height is within 1 standard deviation of the mean height of the group.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q4-e-solution-1", kind: "point", verbatim: "Both boundaries indicated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-e-question.png",
+          "srcHash": "ac726a33ec9f55849b54d5e11d75d171",
+          "alt": "The question as printed on the paper — Below is a stem-and-leaf plot of the heights of a group of students, in centimetres. Split stems: 13|5 7; 14|0 1 3; 14|6 7 7 9; 15|0 1 2 3 3; 15|5 6 6 8; 16|0 1. Key: 13|5 means 135 cm. The mean height is 149.5 cm. The standard deviation of the heights of the students is 7.3 cm, correct to 1 decimal place. Find the percentage of the students whose height is within 1 standard deviation of the mean height of the group.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q4-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q4-e-solution.png",
+          "srcHash": "79d7475e858007efb6e8177da4eac11f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q4(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q5-a", topicId: "maths-1-2", conceptId: "p2-deferred-q5-a",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q5(a)",
+    stem: "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+    questionText: "Noel plays one game. Write down the probability that he wins the game.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q5-a-solution-1", kind: "point", verbatim: "Correct numerator or denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-a-question.png",
+          "srcHash": "3e3c3dee4b95a3457361b538ca195fc3",
+          "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel plays one game. Write down the probability that he wins the game.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-a-solution.png",
+          "srcHash": "7d431702f1a2e506620e116b51ff99d9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q5-b-i-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q5-b-i-ii",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii)",
+    stem: "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+    questionText: "Noel plays the game three times. In this set of three games: (i) what is the probability that Noel does not draw the short straw (that is, he loses all three games)? (ii) what is the probability that Noel wins the first two games and loses the third game?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q5-b-i-ii-solution-1", kind: "point", verbatim: "Part (i) or (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q5-b-i-ii-solution-2", kind: "point", verbatim: "Incorrect order in (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-b-i-ii-question.png",
+          "srcHash": "fd83972d750d0177220dc7d85879229a",
+          "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel plays the game three times. In this set of three games: (i) what is the probability that Noel does not draw the short straw (that is, he loses all three games)? (ii) what is the probability that Noel wins the first two games and loses the third game?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-b-i-ii-solution.png",
+          "srcHash": "f21cfa935995360735fa571d286bbfe8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q5-c", topicId: "maths-1-2", conceptId: "p2-deferred-q5-c",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q5(c)",
+    stem: "A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw.",
+    questionText: "Noel decides to continue playing the game until he wins for the first time. What is the probability that Noel wins for the first time on the fifth game he plays?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q5-c-solution-1", kind: "point", verbatim: "Correct answer without supporting work.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-c-question.png",
+          "srcHash": "a9d283a96b82eb4d4df9dd924c947fcb",
+          "alt": "The question as printed on the paper — A game is played using three straws: two identical long straws (L and L) and one short straw (S). In the game, a player picks one of the three straws at random. The player wins the game if they pick the short straw. Noel decides to continue playing the game until he wins for the first time. What is the probability that Noel wins for the first time on the fifth game he plays?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-c-solution.png",
+          "srcHash": "6c0eae5f4640f53312fac8ed4d498940",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q5-d", topicId: "maths-3-3", conceptId: "p2-deferred-q5-d",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q5(d)",
+    stem: "Noel bets €2 on each game. If he loses the game, he loses the €2. If he wins the game, he gets his €2 back, and also another €3.",
+    questionText: "Noel starts with €7. How much money will he have if he plays 3 games and wins exactly 1 of them?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q5-d-solution-1", kind: "point", verbatim: "3 possible outcomes with same result", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-d-question.png",
+          "srcHash": "32624a9da96402b2f4680a6122c10d77",
+          "alt": "The question as printed on the paper — Noel bets €2 on each game. If he loses the game, he loses the €2. If he wins the game, he gets his €2 back, and also another €3. Noel starts with €7. How much money will he have if he plays 3 games and wins exactly 1 of them?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q5-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q5-d-solution.png",
+          "srcHash": "5b46adb75827fed05d333d753488d9f3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q5(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Two losses cost €4 and one win adds €3 to the starting €7: €7−€4+€3=€6. The returned €2 stake is not an additional profit.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q6-a", topicId: "maths-2-1", conceptId: "p2-deferred-q6-a",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q6(a)",
+    questionText: "Construct the centroid of the triangle below. Show clearly any construction lines. (Note: all instruments are permitted. If you are using measurements, show your measurements and calculations.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q6-a-solution-1", kind: "point", verbatim: "One midpoint constructed correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q6-a-solution-2", kind: "point", verbatim: "No construction lines award Mid Partial Credit at most", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-a-question.png",
+          "srcHash": "ddb7754d24862e4cdf64585a4b9f815c",
+          "alt": "The question as printed on the paper — Construct the centroid of the triangle below. Show clearly any construction lines. (Note: all instruments are permitted. If you are using measurements, show your measurements and calculations.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-a-solution.png",
+          "srcHash": "790daae123edbe22ab27f987cb2e1718",
+          "alt": "NextStepUni compass-and-straightedge centroid construction using the exact proportions of the printed triangle: construct two side midpoints M and N, then join opposite vertices to them. The medians intersect at G. Construction arcs, bisectors and original SEC notes are retained.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q6-b-i", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-i",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q6(b)(i)",
+    stem: "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+    questionText: "Give a reason why |∠XYW|=90°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Mentions [WX] is a diameter or equivalent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-i-question.png",
+          "srcHash": "f4da652e77bf729610e60163f900f8d1",
+          "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Give a reason why |∠XYW|=90°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-i-solution.png",
+          "srcHash": "76b2d20c89f5c91010ef28876c55c6b9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q6-b-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-ii",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q6(b)(ii)",
+    stem: "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+    questionText: "Find the value of α and the value of β.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "Writes a correct relationship for either", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q6-b-ii-solution-2", kind: "point", verbatim: "α or β calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-ii-question.png",
+          "srcHash": "ebf3d36ef6e2c2e98504dd2525ff182c",
+          "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Find the value of α and the value of β.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-ii-solution.png",
+          "srcHash": "252bbfd56f04866c2476d7ed1165b40e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q6-b-iii", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-iii",
+    section: "A", questionRef: "2022 OL Paper 2 — Deferred Q6(b)(iii)",
+    stem: "In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ.",
+    questionText: "Which point in the diagram is the circumcentre of the triangle WXY?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q6-b-iii-solution-1", kind: "point", verbatim: "Point O", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q6-b-iii-solution-2", kind: "point", verbatim: "Hit or Miss", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":false,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-iii-question.png",
+          "srcHash": "803dabaf70361d13c60a61104b06701e",
+          "alt": "The question as printed on the paper — In the diagram below, O is the centre of the circle s. The points W, X, and Y lie on s, and α,β ∈ ℝ. Which point in the diagram is the circumcentre of the triangle WXY?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q6-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q6-b-iii-solution.png",
+          "srcHash": "1d1dd0f3aaf30a2c709eb41972d8d079",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q6(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q7-a-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(a)(i)",
+    stem: "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+    questionText: "Write down the probability that Billy will not win the prize for Task 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-a-i-solution-1", kind: "point", verbatim: "Mentions total probability = 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-i-question.png",
+          "srcHash": "6665840f422f8ceffc267d444dfc8712",
+          "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Write down the probability that Billy will not win the prize for Task 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-i-solution.png",
+          "srcHash": "47ca6062be770a0cbb56ddf991c91756",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q7-a-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(a)(ii)",
+    stem: "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+    questionText: "Complete the table above by writing in the probability neither Ann nor Billy will win the prize for each task.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "One correct answer written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-ii-question.png",
+          "srcHash": "c2ffb7fe7321ec84fa600e339a52750f",
+          "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Complete the table above by writing in the probability neither Ann nor Billy will win the prize for each task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-ii-solution.png",
+          "srcHash": "b6c3fc4c7de528714e8570022dcce23f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-a-iii-iv", topicId: "maths-1-2", conceptId: "p2-deferred-q7-a-iii-iv",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(a)(iii), Q7(a)(iv)",
+    stem: "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. The tree diagram shows possible winners of the two tasks. Each outcome is written as the winner of Task 1, followed by the winner of Task 2. A stands for Ann, B for Billy, and N for neither. For example, (A,N) means Ann wins Task 1 and neither Ann nor Billy wins Task 2.",
+    questionText: "(iii) Complete the list of outcomes in the table above. (iv) Write the probability of each outcome in the space beside it in the table above.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-a-iii-iv-solution-1", kind: "point", verbatim: "6 correct values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q7-a-iii-iv-solution-2", kind: "point", verbatim: "11 correct values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-iii-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-iii-iv-question.png",
+          "srcHash": "678b575a3d91fa9a4e2f971f9ae20a81",
+          "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. The tree diagram shows possible winners of the two tasks. Each outcome is written as the winner of Task 1, followed by the winner of Task 2. A stands for Ann, B for Billy, and N for neither. For example, (A,N) means Ann wins Task 1 and neither Ann nor Billy wins Task 2. (iii) Complete the list of outcomes in the table above. (iv) Write the probability of each outcome in the space beside it in the table above.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-iii-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-iii-iv-solution.png",
+          "srcHash": "d9ee7425cfdb6cf100593285c856dc94",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(iii), Q7(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-a-v", topicId: "maths-1-2", conceptId: "p2-deferred-q7-a-v",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(a)(v)",
+    stem: "A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy.",
+    questionText: "Work out the probability that Ann wins one prize and that Billy wins the other prize.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-a-v-solution-1", kind: "point", verbatim: "Both relevant probabilities identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-v-question.png",
+          "srcHash": "64968888c535dce3f04bfdacbb8de980",
+          "alt": "The question as printed on the paper — A teacher sets two tasks for a class. Task 1 is to solve a maths problem; Task 2 is to complete a physics experiment. Each task ends when one student completes it, and its winner gets a prize. Winning Task 1 and winning Task 2 are independent events. Probabilities: Task 1, Ann 0.5 and Billy 0.2; Task 2, Ann 0.1 and Billy 0.25. The table includes a blank column for neither Ann nor Billy. Work out the probability that Ann wins one prize and that Billy wins the other prize.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-a-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-a-v-solution.png",
+          "srcHash": "70d9b1a150270824c07b145173d53584",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(a)(v).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-b-i", topicId: "maths-1-2", conceptId: "p2-deferred-q7-b-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(b)(i)",
+    stem: "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+    questionText: "Fill in the two-way table below to show the result (the product) for each possible pair of numbers. One is already done for you.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-b-i-solution-1", kind: "point", verbatim: "4 correct values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q7-b-i-solution-2", kind: "point", verbatim: "12 correct values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-i-question.png",
+          "srcHash": "90ec9e10978ee60ceca67c815b596fd2",
+          "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Fill in the two-way table below to show the result (the product) for each possible pair of numbers. One is already done for you.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-i-solution.png",
+          "srcHash": "61afa3c281ceab60fde025a93cf0f558",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-b-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q7-b-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(b)(ii)",
+    stem: "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+    questionText: "Use the two-way table to decide whether or not this game is fair (that is, if Eric and Chidalu are equally likely to win). Justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-b-ii-solution-1", kind: "point", verbatim: "Answer: Game is not fair", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q7-b-ii-solution-2", kind: "point", verbatim: "Both relevant probabilities identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-ii-question.png",
+          "srcHash": "5665d4104694f3fbefa74705afcd495b",
+          "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Use the two-way table to decide whether or not this game is fair (that is, if Eric and Chidalu are equally likely to win). Justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-ii-solution.png",
+          "srcHash": "9e0cc0e44c614111d9a6513b9712326e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q7-b-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q7-b-iii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q7(b)(iii)",
+    stem: "Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8.",
+    questionText: "Eric and Chidalu play the game a number of times. Find the probability that the first three results of the game are 4, 3, and 16, in that order. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q7-b-iii-solution-1", kind: "point", verbatim: "Incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q7-b-iii-solution-2", kind: "point", verbatim: "Incorrect order", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-iii-question.png",
+          "srcHash": "2656321a7c47f0bd7e27aa0007d8c961",
+          "alt": "The question as printed on the paper — Eric and Chidalu play a game involving multiplying numbers. Each picks a number at random from {1,2,3,4}. The two numbers are multiplied and the product is recorded as the result. Eric wins if the result is less than 8; Chidalu wins if the result is greater than or equal to 8. Eric and Chidalu play the game a number of times. Find the probability that the first three results of the game are 4, 3, and 16, in that order. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q7-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q7-b-iii-solution.png",
+          "srcHash": "10350b8f1ff6525e472cc86f38875fea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q7(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-a-i", topicId: "maths-1-7", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(a)(i)",
+    stem: "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival.",
+    questionText: "Work out the margin of error (1/√n) for this sample. Give your answer as a percentage.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Identifies n=625", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-i-question.png",
+          "srcHash": "9b5a5e98f6db82b56c5bde4594578958",
+          "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Work out the margin of error (1/√n) for this sample. Give your answer as a percentage.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "9a26682cba9a8f37fe3223c98c78221f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-a-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Part (a)(i) asks for the margin of error 1/√n.",
+    questionText: "In the survey, 230 people said that they would buy a souvenir t-shirt at the festival. Using the margin of error from part (a)(i), create a 95% confidence interval for the percentage of people who will buy a t-shirt at the festival.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "One boundary formed", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Answers in decimal or fraction form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "0ed6824675bbf1fe711de4e61fb7b69f",
+          "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. Part (a)(i) asks for the margin of error 1/√n. In the survey, 230 people said that they would buy a souvenir t-shirt at the festival. Using the margin of error from part (a)(i), create a 95% confidence interval for the percentage of people who will buy a t-shirt at the festival.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "524b54866a5ce0eafcd8294d9caac58f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-a-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q8-a-iii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(a)(iii)",
+    stem: "A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. In the survey, 230 people said they would buy a t-shirt. Construct the 95% confidence interval using margin of error 1/√n as in part (a)(ii).",
+    questionText: "A music journalist claims that 34% of people who will attend the festival will buy a t-shirt. Use your answer to part (a)(ii) to conduct a hypothesis test, at the 5% level of significance, to test the journalist’s claim. Give your conclusion, and a reason for this conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "Fail to reject the claim.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q8-a-iii-solution-2", kind: "point", verbatim: "unless some interval in part (ii) is given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-iii-question.png",
+          "srcHash": "88d2a6d9360aad721129cc9d94ef4150",
+          "alt": "The question as printed on the paper — A polling company carried out a survey on 625 people, selected at random from those who bought tickets for a music festival. In the survey, 230 people said they would buy a t-shirt. Construct the 95% confidence interval using margin of error 1/√n as in part (a)(ii). A music journalist claims that 34% of people who will attend the festival will buy a t-shirt. Use your answer to part (a)(ii) to conduct a hypothesis test, at the 5% level of significance, to test the journalist’s claim. Give your conclusion, and a reason for this conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-a-iii-solution.png",
+          "srcHash": "407d95e4c09d5e2ba3dd9c85953c2481",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The interval is 32.8%–40.8%, which contains 34%. Fail to reject the journalist’s claim at the 5% level: the sample does not provide sufficient evidence against it. This does not prove that 34% is the true population percentage.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-i", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(i)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+    questionText: "The four shaded heights in the table above have not been included on the scatter plot. Draw four points on the scatter plot to show these.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-i-solution-1", kind: "point", verbatim: "One point plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q8-b-i-solution-2", kind: "point", verbatim: "More than one point plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-i-question.png",
+          "srcHash": "2caac85f755448486e8ae829aaa6a892",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. The four shaded heights in the table above have not been included on the scatter plot. Draw four points on the scatter plot to show these.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-i-solution.png",
+          "srcHash": "5528251ba6c900468627261efedf988d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(ii)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+    questionText: "Describe the relationship between shoe size and height, based on the scatter plot.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-ii-solution-1", kind: "point", verbatim: "There is a strong positive correlation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-ii-question.png",
+          "srcHash": "e96671c68e083c08f54abb90d8df43d8",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Describe the relationship between shoe size and height, based on the scatter plot.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-ii-solution.png",
+          "srcHash": "264f77df20f9c78f3d0a0c996ad9fd1b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-iii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(iii)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+    questionText: "Which of the following values is closest to the correlation coefficient between shoe size and height, based on the data in the table and the graph? Tick one box only: −1, −0.5, 0, 0.5, 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-iii-solution-1", kind: "point", verbatim: "Correct box ticked", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q8-b-iii-solution-2", kind: "point", verbatim: "All other Answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":false,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iii-question.png",
+          "srcHash": "9c1caade0afa1c2bd4ccf893d0040244",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Which of the following values is closest to the correlation coefficient between shoe size and height, based on the data in the table and the graph? Tick one box only: −1, −0.5, 0, 0.5, 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iii-solution.png",
+          "srcHash": "11b4a067d45e135b0ce0dffe9c796998",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Choose 1: it is the closest of the five offered values to the strong positive correlation in these data. The actual correlation is not exactly 1.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-iv", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-iv",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(iv)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+    questionText: "Calculate the mean height of the 20 boys.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-iv-solution-1", kind: "point", verbatim: "Correct Addition (Ans = 3410)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iv-question.png",
+          "srcHash": "c75e1ab68b56592ea58b2fa5351c17bd",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. Calculate the mean height of the 20 boys.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-iv-solution.png",
+          "srcHash": "c4480eda79a294d82d1cbbf0a491f1bb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-v", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-v",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(v)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown.",
+    questionText: "A new player joins the hurling panel. He has height of 178 cm. Use the information in the scatter plot to estimate this boy’s shoe size. Show your work on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-v-solution-1", kind: "point", verbatim: "Draws a best fit line on the scatter plot.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-v-question.png",
+          "srcHash": "91b442340f16eb73668337d20aa1e4d1",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel. He has height of 178 cm. Use the information in the scatter plot to estimate this boy’s shoe size. Show your work on the diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-v-solution.png",
+          "srcHash": "962a267c623fcec4e017efc91a4318b1",
+          "alt": "NextStepUni reconstructed scatter plot with all 20 shoe-size and height pairs. A reasonable by-eye line gives shoe size about 9.3 at 178 cm, within the original example of 9–9.5. Dashed reading lines, labels and original SEC notes are included.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q8-b-vi", topicId: "maths-1-7", conceptId: "p2-deferred-q8-b-vi",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q8(b)(vi)",
+    stem: "A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel with height 178 cm.",
+    questionText: "Which will have a bigger increase, the mean or the median, if we include the new player in the data? Justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q8-b-vi-solution-1", kind: "point", verbatim: "The Median doesn’t change at all (172 cm)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[46],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-vi-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-vi-question.png",
+          "srcHash": "fa39c17ae03d83ebb480327a3c80af3d",
+          "alt": "The question as printed on the paper — A student asks 20 boys on a hurling panel to state their shoe size and their height (to the nearest centimetre). The table records heights under each shoe size: 6:161,163,165; 6.5:167,164,169; 7:168,169; 7.5:172,173,170; 8:174,172,173; 8.5:176,173,174,175; 9:175,177. A partially completed scatter plot is shown. A new player joins the hurling panel with height 178 cm. Which will have a bigger increase, the mean or the median, if we include the new player in the data? Justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q8-b-vi-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q8-b-vi-solution.png",
+          "srcHash": "83268d922cc16b87aff014c1165a7996",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q8(b)(vi).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The mean rises from 3410/20=170.5 cm to (3410+178)/21≈170.857 cm. The median remains 172 cm, so the mean has the bigger increase.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-a", topicId: "maths-2-3", conceptId: "p2-deferred-q9-a",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(a)",
+    stem: "Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale).",
+    questionText: "Work out the value of x, and hence work out the value of h, the height of the cylindrical part of the tower. Give each distance in metres, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-a-solution-1", kind: "point", verbatim: "Establishes correct equation for x or h", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q9-a-solution-2", kind: "point", verbatim: "Calculates the length of the base (x)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-a-question.png",
+          "srcHash": "ebab7506a8bda2848842be8c63fde7ce",
+          "alt": "The question as printed on the paper — Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale). Work out the value of x, and hence work out the value of h, the height of the cylindrical part of the tower. Give each distance in metres, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-a-solution.png",
+          "srcHash": "2ab7a23d3a6d2909c5125e564d58b486",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-b", topicId: "maths-3-3", conceptId: "p2-deferred-q9-b",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(b)",
+    stem: "Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale).",
+    questionText: "Later, Jane and Alan read on the internet that the actual height of the cylindrical part of the tower is approximately 34 m. Using 34 m as the actual height of the cylindrical part of the tower, find the percentage error in the answer from part (a). Give your answer correct to the nearest percent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-b-solution-1", kind: "point", verbatim: "% error formula substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-b-question.png",
+          "srcHash": "bd7b1741988cd4d08b41cd699fb2b7b8",
+          "alt": "The question as printed on the paper — Jane and Alan visit the round tower at Kilmacduagh, Co. Galway. The tower is roughly a cylinder with a conical roof. Its entrance is 8 m above the ground. Standing x m from the base on level ground, they measure an elevation angle of 20° to the bottom of the entrance and 56° to the top of the cylindrical part. The two diagrams show these measurements (not to scale). Later, Jane and Alan read on the internet that the actual height of the cylindrical part of the tower is approximately 34 m. Using 34 m as the actual height of the cylindrical part of the tower, find the percentage error in the answer from part (a). Give your answer correct to the nearest percent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-b-solution.png",
+          "srcHash": "6b29340bad0cada2884b5af6977c6766",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-c-i", topicId: "maths-2-1", conceptId: "p2-deferred-q9-c-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(c)(i)",
+    stem: "Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. The actual height of the cylindrical part of the tower is approximately 34 m.",
+    questionText: "Use the fact that this is a scale model to work out the actual diameter of the round tower at Kilmacduagh. Use the approximate actual height given in part (b). Give your answer in metres.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-c-i-solution-1", kind: "point", verbatim: "Finds Scale factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-i-question.png",
+          "srcHash": "6416140db44acc1de976e1aec4faecc3",
+          "alt": "The question as printed on the paper — Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. The actual height of the cylindrical part of the tower is approximately 34 m. Use the fact that this is a scale model to work out the actual diameter of the round tower at Kilmacduagh. Use the approximate actual height given in part (b). Give your answer in metres.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-i-solution.png",
+          "srcHash": "552617cd02f11b981d1d175b59e194a3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-c-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q9-c-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(c)(ii)",
+    questionText: "Work out the curved surface area of Alan’s model, excluding the roof. Give your answer correct to the nearest cm². Remember that it will be in the shape of a cylinder, with a diameter of 28 centimetres and a height of 1.7 metres.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Fully correctly-substituted C.S.A. formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[49],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-ii-question.png",
+          "srcHash": "d823c5d79351b2157aa171e9c7000a77",
+          "alt": "The question as printed on the paper — Work out the curved surface area of Alan’s model, excluding the roof. Give your answer correct to the nearest cm². Remember that it will be in the shape of a cylinder, with a diameter of 28 centimetres and a height of 1.7 metres.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-ii-solution.png",
+          "srcHash": "9440145fe262b788ed3c80c024127f04",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-c-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q9-c-iii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(c)(iii)",
+    stem: "Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. Alan makes this from a rectangular sheet of card of length a cm and width b cm. An extra 3 cm of card along one edge overlaps the other edge when he makes the cylinder, as shown.",
+    questionText: "Find the value of a and the value of b. Give b correct to the nearest cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-c-iii-solution-1", kind: "point", verbatim: "One correct dimension indicated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[49],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23,
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-iii-question.png",
+          "srcHash": "efa1e1281c2aaf7ca462ab4a14c5683e",
+          "alt": "The question as printed on the paper — Alan wants to make a scale model of the round tower. Excluding the roof, the model is a cylinder with diameter 28 centimetres and height 1.7 metres. Alan makes this from a rectangular sheet of card of length a cm and width b cm. An extra 3 cm of card along one edge overlaps the other edge when he makes the cylinder, as shown. Find the value of a and the value of b. Give b correct to the nearest cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-c-iii-solution.png",
+          "srcHash": "affbb9fcc005562d00bb7e09340c2ae8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The full width includes the 3 cm overlap: a=170 cm and b=28π+3≈90.96 cm, rounded to 91 cm.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q9-d", topicId: "maths-3-4", conceptId: "p2-deferred-q9-d",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q9(d)",
+    stem: "The roof of Alan’s model will be a cone with diameter 28 cm and vertical height 22 cm.",
+    questionText: "Find l, the slant height of the cone, and hence find the curved surface area of the cone. Give each answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q9-d-solution-1", kind: "point", verbatim: "Correct answer, no units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p2-deferred-q9-d-solution-2", kind: "point", verbatim: "Not rounding as required", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[50],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-d-question.png",
+          "srcHash": "7d9dcca0da4f1369164b6bb57473973f",
+          "alt": "The question as printed on the paper — The roof of Alan’s model will be a cone with diameter 28 cm and vertical height 22 cm. Find l, the slant height of the cone, and hence find the curved surface area of the cone. Give each answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q9-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q9-d-solution.png",
+          "srcHash": "6c8b3375c13b2c1dd6a29cf1c3851492",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q9(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Keep full precision between steps: l=√(14²+22²)=√680≈26.1 cm, and curved area=14π√680≈1146.9 cm². The original scheme uses the already-rounded 26.1 cm to obtain 1147.9 cm²; its route and marking guidance are retained below.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(a)(i)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+    questionText: "Show that the slope of AC is equal to the slope of DF.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "slope formula written down", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[51],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-i-question.png",
+          "srcHash": "482cfa7a0bc234db55bc121759e846ea",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Show that the slope of AC is equal to the slope of DF.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "bb2d3ee56f09612d444a8d78a243abe5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q10-a-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(a)(ii)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Part (a)(i) asks you to show that their slopes are equal.",
+    questionText: "What does this tell you about the lines AC and DF?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Mentions that the slopes are equal with no inference", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[51],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-ii-question.png",
+          "srcHash": "1d8df08b93038229b4f42a5e3eda28ee",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Part (a)(i) asks you to show that their slopes are equal. What does this tell you about the lines AC and DF?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-a-ii-solution.png",
+          "srcHash": "e38e258b3e595c294311f7f8022cd55d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-b", topicId: "maths-2-1", conceptId: "p2-deferred-q10-b",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(b)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+    questionText: "Find the value of k, the scale factor of this enlargement.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-b-solution-1", kind: "point", verbatim: "Corresponding lengths or areas calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[51],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-b-question.png",
+          "srcHash": "23bb7257862d8ed15ba6943a8a614e4e",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Find the value of k, the scale factor of this enlargement.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-b-solution.png",
+          "srcHash": "b0c60689e4d4bf5e72255a7a91137d50",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-c", topicId: "maths-2-1", conceptId: "p2-deferred-q10-c",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(c)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+    questionText: "The area of the triangle ABC is 8 square units. Hence, or otherwise, find the area of the triangle DEF.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-c-solution-1", kind: "point", verbatim: "Relevant formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[51],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-c-question.png",
+          "srcHash": "3e5a69728dc981e6fd154bf87fe4846d",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. The area of the triangle ABC is 8 square units. Hence, or otherwise, find the area of the triangle DEF.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-c-solution.png",
+          "srcHash": "29715dd74da2302f8afc37c24420afb0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-d", topicId: "maths-2-2", conceptId: "p2-deferred-q10-d",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(d)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+    questionText: "Find the equation of the line BE. Give your answer in the form y=mx+c, where m,c ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-d-solution-1", kind: "point", verbatim: "Answer not in the required format", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[52],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-d-question.png",
+          "srcHash": "3ff3bdb091b58a7bcf296a14c7c7cc34",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Find the equation of the line BE. Give your answer in the form y=mx+c, where m,c ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-d-solution.png",
+          "srcHash": "9c698b614fd437217ea210157b28fee5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-e-i", topicId: "maths-2-1", conceptId: "p2-deferred-q10-e-i",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(e)(i)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k.",
+    questionText: "By drawing suitable lines on the diagram, construct the centre of this enlargement, and write down the co-ordinates of this centre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-e-i-solution-1", kind: "point", verbatim: "One correct construction line drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[52],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-i-question.png",
+          "srcHash": "6d750dd6986d62dbe02b8d6466f984c7",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. By drawing suitable lines on the diagram, construct the centre of this enlargement, and write down the co-ordinates of this centre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-i-solution.png",
+          "srcHash": "c9534ed4a9914e00e8efcfdd1d009789",
+          "alt": "NextStepUni reconstruction of the original labelled triangles. Extend AD, BE and CF backwards to their common point (0,6), the centre of enlargement. All six original co-ordinates, axes and SEC credit notes remain included.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-e-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q10-e-ii",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(e)(ii)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Part (d) asks for the equation of BE; part (e)(i) asks for the centre of enlargement.",
+    questionText: "Using your answers to part (d) and part (e)(i), show, by substitution, that the centre of enlargement lies on the line BE.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-e-ii-solution-1", kind: "point", verbatim: "Fully correct substitution into equation of line", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[52],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-ii-question.png",
+          "srcHash": "e23af6f5565ac5445b079c28398a0681",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). DEF is the image of ABC under an enlargement with scale factor k. Part (d) asks for the equation of BE; part (e)(i) asks for the centre of enlargement. Using your answers to part (d) and part (e)(i), show, by substitution, that the centre of enlargement lies on the line BE.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-e-ii-solution.png",
+          "srcHash": "030f1f1ecccbf28ad6702a5bb9ce38ca",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p2-deferred-q10-f", topicId: "maths-2-3", conceptId: "p2-deferred-q10-f",
+    section: "B", questionRef: "2022 OL Paper 2 — Deferred Q10(f)",
+    stem: "The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8).",
+    questionText: "Use trigonometry to find the size of ∠DFE. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p2-deferred-q10-f-solution-1", kind: "point", verbatim: "Formula substituted correctly or consistently", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[53],"generalNotesPages":[2,26,27]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-f-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-f-question.png",
+          "srcHash": "ef6a25302852c0ee903ee5fca13599a1",
+          "alt": "The question as printed on the paper — The co-ordinate diagram shows triangles ABC and DEF: A(5,3), B(9,3), C(8,7), D(10,0), E(18,0), F(16,8). Use trigonometry to find the size of ∠DFE. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p2-deferred-q10-f-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p2-deferred-q10-f-solution.png",
+          "srcHash": "cc8757ec9918dd2a6dd7da817729ed1c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 2 — Deferred Q10(f).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-31",
+  "scope": "All indexed English Mathematics booklets, 2010–2026. Irish editions excluded by explicit user direction.",
+  "englishContentComplete": true,
+  "runtimeCards": 5188,
+  "runtimeByLevel": {
+    "higher": 1917,
+    "ordinary": 2134,
+    "foundation": 1137
+  },
+  "independentlyReviewedBooklets": 127,
+  "mainOrProjectBooklets": 111,
+  "deferredBooklets": 16,
+  "reviewedAtlasQuestionPlacements": 1204,
+  "exactReviewedIdsEqualRuntimeIds": true,
+  "allReviewedTopicsInAtlasBrowseAndReverseFeed": true,
+  "allReviewedQuestionsHaveExactAtlasAnchor": true,
+  "mainProjectIndependentParserReconciliation": {
+    "covered": 3568,
+    "leaves": 3568,
+    "open": 0,
+    "orphans": 0,
+    "unparsed": 0,
+    "excluded": 0,
+    "scope": "Main/Project Higher and Ordinary; deferred identities excluded from this older year/level/paper-slot parser and reconciled by exact fileid in the full-scope test.",
+    "genericDiagnosticsIndependentlyReviewed": 60
+  },
+  "historicalAtlasRepairs": {
+    "missingWholePaperMaps": [
+      "2012/LC003GLP200EV.pdf",
+      "2012/LC003BLP230EV.pdf"
+    ],
+    "2011SingleSlotAliases": [
+      "LC003GLP000EV.pdf",
+      "LC003BLP000EV.pdf"
+    ],
+    "alternativeBooklets": 17,
+    "exactAlternativeAnchorsAdded": 34,
+    "missingUmbrellaAnchorAdded": "2010/LC003GLP230EV.pdf/Q9",
+    "previousQuestionObjectsUnchanged": 146,
+    "visualPlan": "scripts/markbank/mathematics/historical-alternative-anchors.json",
+    "uniqueRegionsInspected": 114,
+    "correctedRegionsReinspected": 5
+  },
+  "finalBatchPreservation": {
+    "previousAuthoredCardsUnchanged": 5136,
+    "previousFigureEntriesUnchanged": 10533,
+    "previousDeferredImagesUnchanged": 1336,
+    "addedAuthoredCards": 53
+  },
+  "tests": {
+    "javascriptPassed": 993,
+    "javascriptFailed": 0,
+    "pythonMathsParserPassed": 27,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "historicalMapGenerators": "both rerun successfully; pre-existing question objects unchanged"
+  },
+  "browserFollowUp": "Final 2022 Ordinary deferred Paper 2 interaction check outstanding: CUA browser/native bridge unavailable. All 106 card images visually inspected; shared component interaction regressions passed.",
+  "deferredIrishBooklets": 123,
+  "remainingEnglishBooklets": 0,
+  "remainingSourceWarnings": {
+    "count": 13,
+    "allIrish": true
+  },
+  "evidenceFiles": [
+    "scripts/markbank/mathematics/reviews",
+    "scripts/markbank/mathematics/audit.json",
+    "scripts/markbank/mathematics/reconciliation-review.json",
+    "test/mathematicsEnglishScope.test.ts"
+  ]
+}
