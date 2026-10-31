@@ -1171,6 +1171,9 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --mb-success: #3A8D5F;
   --mb-success-tint: #E8F2EC;
   --mb-success-text: #1F5F3E;
+  /* Claimed marks use charcoal independently of success/status colours. */
+  --mb-claim: #292925;
+  --mb-on-claim: #FFFFFF;
   --mb-shadow: 0 20px 60px rgba(26, 26, 26, .18);
 }
 
@@ -1213,6 +1216,8 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --mb-success: #76C295;
   --mb-success-tint: #20372A;
   --mb-success-text: #AEE1BF;
+  --mb-claim: #E4E2DB;
+  --mb-on-claim: #292925;
   --mb-shadow: 0 24px 70px rgba(0, 0, 0, .55);
 }
 
