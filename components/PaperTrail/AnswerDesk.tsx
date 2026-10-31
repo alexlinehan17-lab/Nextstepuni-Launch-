@@ -114,7 +114,8 @@ export default function AnswerDesk(p: Props) {
       )}
     </section>
   );
-  const next = p.questions[p.questions.findIndex((q) => q.n === p.id) + 1];
+  const currentIndex = p.questions.findIndex((q) => q.n === p.id);
+  const next = currentIndex < 0 ? undefined : p.questions[currentIndex + 1];
   return (
     <aside
       className="ad-pane"
@@ -462,6 +463,11 @@ export default function AnswerDesk(p: Props) {
                 >
                   Try again without the scheme <ArrowRight size={16} />
                 </Button>
+                {next && (
+                  <Button variant="outline" onClick={() => p.onQuestion(next.n)}>
+                    Move to next question <ArrowRight size={16} />
+                  </Button>
+                )}
               </div>
             </>
           )}

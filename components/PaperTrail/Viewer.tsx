@@ -1154,7 +1154,12 @@ const Viewer: React.FC<ViewerProps> = ({
   const deskQuestions = useMemo(() => {
     const list = answerMap ? printedQuestionAnchors(answerMap.q) : [];
     const focused = focusQuestion && answerMap?.q.find(q => q.n === focusQuestion);
-    return focused && !list.some(q => q.n === focused.n) ? [focused,...list] : list;
+    if(!focused || list.some(q=>q.n===focused.n))return list;
+    // A focused sub-question belongs in its physical place, so Next never
+    // sends a student back to the first question of the paper.
+    const after=list.findIndex(q=>q.pP>focused.pP || (q.pP===focused.pP && q.pY[0]>focused.pY[0]));
+    const at=after<0 ? list.length : after;
+    return [...list.slice(0,at),focused,...list.slice(at)];
   },[answerMap,focusQuestion]);
   const deskQuestion = deskQuestions.find(q => q.n === deskId);
   const pickDeskQuestion = (id:string) => {
@@ -1162,6 +1167,11 @@ const Viewer: React.FC<ViewerProps> = ({
     const q = deskQuestions.find(q => q.n === id);
     if(q)scrollToQuestion(q);
     else if(id.startsWith('page:'))jumpToPage(Number(id.slice(5)));
+    requestAnimationFrame(()=>{
+      const drawer=workspaceRef.current?.querySelector<HTMLElement>('.ad-pane');
+      drawer?.scrollTo({top:0});
+      drawer?.querySelector<HTMLSelectElement>('#answer-desk-question')?.focus({preventScroll:true});
+    });
   };
   const deskInitialised = useRef(false);
   useEffect(() => {
@@ -1170,7 +1180,8 @@ const Viewer: React.FC<ViewerProps> = ({
     // Never move an attempt begun while the question map was loading.
     if(deskId.startsWith('page:') && hasResponse(deskRecord.draft))return;
     const selected=deskQuestions.find(q=>q.n===deskId)
-      ?? [...deskQuestions].reverse().find(q=>q.pP<=session.page) ?? deskQuestions[0];
+      ?? deskQuestions.find(q=>q.pP===session.page)
+      ?? [...deskQuestions].reverse().find(q=>q.pP<session.page) ?? deskQuestions[0];
     setDeskId(selected.n);saveDeskQuestion(deskNs,selected.n);
     if(session.page<selected.pP || (focusQuestion && selected.n===focusQuestion))scrollToQuestion(selected);
   },[attemptFirst,deskQuestions,deskId,deskNs,deskRecord.draft,session.state,session.page,focusQuestion,scrollToQuestion]);
