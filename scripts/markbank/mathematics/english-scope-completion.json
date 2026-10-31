@@ -54,7 +54,9 @@
     "pythonMathsParserPassed": 27,
     "typecheck": "passed",
     "productionBuild": "passed",
-    "historicalMapGenerators": "both rerun successfully; pre-existing question objects unchanged"
+    "historicalMapGenerators": "both rerun successfully; pre-existing question objects unchanged",
+    "testOnlyTypecheck": "Broader test-only TypeScript check fails on missing firebase-admin/firebase-functions dependencies and existing SecCard union accesses in mathematicsCorpus/mathematicsDeferred tests. No errors in the new mathematicsEnglishScope test; application typecheck and all 993 runtime regressions pass.",
+    "finalBookletGeneratorReproduction": "53 cards and review ledger reproduced byte for byte"
   },
   "browserFollowUp": "Final 2022 Ordinary deferred Paper 2 interaction check outstanding: CUA browser/native bridge unavailable. All 106 card images visually inspected; shared component interaction regressions passed.",
   "deferredIrishBooklets": 123,

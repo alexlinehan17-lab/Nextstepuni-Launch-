@@ -1562,7 +1562,7 @@
     "coverageBaseline": "1899/3476 asks covered, 0 orphans, 0 excluded, 1577 open",
     "validation": "Deck generation (2,304 built, 0 dropped), Atlas generation and --check (566 placements), audit --check-reviewed, scheme quote check of all 39 cards against the glyph-repaired scheme, ten regression files (398/398), typecheck and diff whitespace check passed."
   },
-  "testTypecheck": "20 pre-existing errors on unchanged lines in mathematicsCorpus.test.ts, programmeAnalyticsClient.test.ts and utils/programmeAnalytics.ts; checked against e03f1284d. No new errors.",
+  "testTypecheck": "Broader test-only TypeScript check fails on missing firebase-admin/firebase-functions dependencies and existing SecCard union accesses in mathematicsCorpus/mathematicsDeferred tests. No errors in the new mathematicsEnglishScope test; application typecheck and all 993 runtime regressions pass.",
   "higher2015Paper1": {
     "reviewDate": "2026-10-28",
     "tasks": 32,
@@ -9381,7 +9381,8 @@
       "typecheck": "passed",
       "sourceAudit": "passed for reviewed papers; 13 remaining source-association warnings belong only to deferred Irish scope",
       "deckDroppedCards": 0,
-      "productionBuild": "passed"
+      "productionBuild": "passed",
+      "testOnlyTypecheck": "Broader test-only TypeScript check fails on missing firebase-admin/firebase-functions dependencies and existing SecCard union accesses in mathematicsCorpus/mathematicsDeferred tests. No errors in the new mathematicsEnglishScope test; application typecheck and all 993 runtime regressions pass."
     },
     "browser": {
       "status": "interaction review pending",
@@ -9391,7 +9392,8 @@
     },
     "englishScopeComplete": true,
     "wholeSubjectComplete": false,
-    "status": "English content complete locally; final booklet interaction review pending browser connection; no push or deployment."
+    "status": "English content complete locally; final booklet interaction review pending browser connection; no push or deployment.",
+    "generatorReproduction": "Passed: all 53 cards and the review ledger reproduced byte for byte after commit."
   },
   "englishScopeCompletionEvidence": "scripts/markbank/mathematics/english-scope-completion.json"
 }
