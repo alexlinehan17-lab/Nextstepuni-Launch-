@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2019-ol': [103, 103, 100, 'a514daf3e413fe08c8c149bf71e8ae05e964b1bb179f4eb47f0baa6887fa802e',
+    '1956ce2b3c7370135b8156ca4e5f6c860258dbc5da692ca1457b14eeb76b3697'],
   '2019-hl': [112, 112, 42, '8c3dc1203ad17cc96558b9911695a8c921656745c1fdf0cb27828a7d0a90295f',
     '9f966f25ff366a276b7281bfda2b2e93231fb7a6d1abc9a831c26715355bf0b3'],
   '2026-ol': [125, 125, 120, 'ea4a0664bb1f14de76db44a5ef8095d76f98baef5266856ce949e29d8c99579e',
@@ -75,6 +77,32 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2019 Ordinary context, printed choices and separately priced sub-asks', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2019-ol-${id}`)!;
+    expect(card('q6-viii').stem).toContain('90 kg');
+    expect(card('q6-viii').stem).toContain('17%');
+    expect(card('q6-viii').stem).toContain('0.03 m²');
+    expect(card('q6-viii').stem).toContain('9.8 m s⁻²');
+    expect(card('q5-c').questionText).toContain('ampere coulomb farad volt');
+    expect(card('q7-vii').stem).toContain('reflection, refraction, diffraction, interference and polarisation');
+    expect(card('q2-iii-a').totalMarks).toBe(6);
+    expect(card('q2-iii-b').totalMarks).toBe(6);
+    expect(card('q2-iii-b').questionText).toBe('Name (b) one temperature measured.');
+    expect(card('q3-iii-measurements').totalMarks).toBe(6);
+    expect(card('q3-iii-instrument').totalMarks).toBe(6);
+    expect(card('q12-d-i-protons').totalMarks).toBe(4);
+    expect(card('q12-d-i-neutrons').totalMarks).toBe(4);
+    expect(card('q11-g').totalMarks).toBe(7);
+    expect(card('q11-g').questionText).toContain('What is the focal length of this lens?');
+    expect(card('q11-f').questionFigure?.candId).toBe('physics-2019-ol-q11f-question');
+    expect(card('q11-f').figure?.candId).toBe('physics-2019-ol-q11f-solution');
+    expect(card('q9-b-i').figure?.candId).toBe('physics-2019-ol-q9b-parallel');
+    expect(card('q9-c-i').figure?.candId).toBe('physics-2019-ol-q9c-plug');
+    const plotting = card('q12-c-iii');
+    expect(plotting.rows).toHaveLength(3);
+    expect(plotting.rows.filter(row => 'route' in row).map(row => row.route).sort()).toEqual(['compass', 'filings']);
+  });
+
   it('keeps adjacent unnumbered 2019 asks separate and retains their necessary context', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2019-hl-${id}`)!;
     expect(card('q8-line-spectrum').questionText).toBe('What is a line emission spectrum?');
