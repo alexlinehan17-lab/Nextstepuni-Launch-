@@ -207,3 +207,23 @@ describe('Existing study tools alongside Attempt first',()=>{
   expect(screen.getByLabelText('Your attempt')).toHaveValue('My kept work');
  });
 });
+
+describe('Resizable answer desk',()=>{
+ it('supports keyboard resizing and collapse without changing the attempt or mode preference',()=>{
+  const matchMedia=vi.spyOn(window,'matchMedia').mockImplementation(query=>({matches:query==='(min-width: 768px)',media:query,onchange:null,addListener:vi.fn(),removeListener:vi.fn(),addEventListener:vi.fn(),removeEventListener:vi.fn(),dispatchEvent:vi.fn()}));
+  render(<Viewer title="Test" paper={paper} scheme={scheme} storageNs="student|resize" onClose={()=>{}}/>);
+  fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Keep this answer while I resize.'}});
+  const handle=screen.getByRole('separator',{name:'Resize answer desk'});
+  expect(handle).toHaveAttribute('aria-orientation','vertical');
+  const original=Number(handle.getAttribute('aria-valuenow'));
+  fireEvent.keyDown(handle,{key:'ArrowLeft'});
+  expect(Number(handle.getAttribute('aria-valuenow'))).toBeGreaterThan(original);
+  fireEvent.click(screen.getByRole('button',{name:'Minimise answer desk'}));
+  expect(screen.queryByLabelText('Your attempt')).not.toBeVisible();
+  expect(screen.getByRole('switch',{name:'Attempt first'})).toBeChecked();
+  fireEvent.click(screen.getByRole('button',{name:'Expand answer desk'}));
+  expect(screen.getByLabelText('Your attempt')).toHaveValue('Keep this answer while I resize.');
+  expect(Number(screen.getByRole('separator',{name:'Resize answer desk'}).getAttribute('aria-valuenow'))).toBeGreaterThan(original);
+  matchMedia.mockRestore();
+ });
+});

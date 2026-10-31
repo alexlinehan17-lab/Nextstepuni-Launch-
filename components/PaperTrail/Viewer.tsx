@@ -56,8 +56,6 @@ import KobraScope, {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  Progress,
-  ProgressLabel,
   Spinner,
   Switch,
   Tabs,
@@ -233,6 +231,12 @@ const Viewer: React.FC<ViewerProps> = ({
   const [attemptFirst,setAttemptFirst] = useState(() => loadAttemptFirst(deskNs));
   const [deskId,setDeskId] = useState(() => focusQuestion ?? loadDeskQuestion(deskNs) ?? `page:${initialPaperPage}`);
   const [deskCollapsed,setDeskCollapsed] = useState(false);
+  const [deskWidth,setDeskWidth] = useState(43);
+  const [deskHeight,setDeskHeight] = useState(49);
+  const [deskResizing,setDeskResizing] = useState(false);
+  const workspaceRef = useRef<HTMLDivElement | null>(null);
+  const deskResizeAnchor = useRef<ZoomAnchor | null>(null);
+  const deskDrag = useRef<{pointer:number;end:number;extent:number;wide:boolean} | null>(null);
   const [inkTool,setInkTool] = useState<InkTool>('move');
   const [inkView,setInkView] = useState<'first'|'retry'>('retry');
   const [preferenceProblem,setPreferenceProblem] = useState(false);
@@ -982,9 +986,9 @@ const Viewer: React.FC<ViewerProps> = ({
         onCloseRef.current();
       }
       if (e.key === 'Tab' && rootRef.current) {
-        const focusables = rootRef.current.querySelectorAll<HTMLElement>(
-          'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])',
-        );
+        const focusables = Array.from(rootRef.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])',
+        )).filter(el=>!el.closest('[hidden]') && el.getClientRects().length>0);
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -1177,11 +1181,52 @@ const Viewer: React.FC<ViewerProps> = ({
     if(on)setSelfMarkOn(false);
     setAttemptFirst(on);setPreferenceProblem(!saveAttemptFirst(deskNs,on));
   };
+  // Keep the same point on the paper while changing the drawer's footprint.
+  const captureDeskPlace = () => {
+    deskResizeAnchor.current=scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+  };
+  const deskExtent = () => {
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    return (isWide ? rect?.width : rect?.height) || (isWide ? window.innerWidth : window.innerHeight);
+  };
+  const deskBounds = (extent:number,wide:boolean) => ({
+    min: Math.min(wide ? 320 : 160,extent*.45)/extent*100,
+    max: Math.max(50,Math.min(wide ? 70 : 75,(extent-(wide ? 290 : 150))/extent*100)),
+  });
+  const resizeDesk = (percent:number,extent=deskExtent(),wide=isWide) => {
+    const {min,max}=deskBounds(extent,wide);
+    (wide ? setDeskWidth : setDeskHeight)(Math.max(min,Math.min(max,percent)));
+  };
+  const startDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    if(e.button!==0)return;
+    e.preventDefault();captureDeskPlace();
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    if(!rect)return;
+    deskDrag.current={pointer:e.pointerId,end:isWide ? rect.right : rect.bottom,extent:isWide ? rect.width : rect.height,wide:isWide};
+    e.currentTarget.setPointerCapture(e.pointerId);setDeskResizing(true);
+  };
+  const moveDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    const drag=deskDrag.current;
+    if(!drag || drag.pointer!==e.pointerId || !drag.extent)return;
+    resizeDesk((drag.end-(drag.wide ? e.clientX : e.clientY))/drag.extent*100,drag.extent,drag.wide);
+  };
+  const endDeskResize = () => {deskDrag.current=null;setDeskResizing(false);};
+  const keyDeskResize = (e:React.KeyboardEvent<HTMLDivElement>) => {
+    const grow=isWide ? 'ArrowLeft' : 'ArrowUp';
+    const shrink=isWide ? 'ArrowRight' : 'ArrowDown';
+    if(![grow,shrink,'Home','End','Enter'].includes(e.key))return;
+    e.preventDefault();captureDeskPlace();
+    if(e.key==='Enter'){setDeskCollapsed(true);requestAnimationFrame(()=>workspaceRef.current?.querySelector<HTMLButtonElement>('.ad-collapse')?.focus());return;}
+    const extent=deskExtent(),bounds=deskBounds(extent,isWide);
+    const value=deskSizePercent;
+    resizeDesk(e.key==='Home' ? bounds.min : e.key==='End' ? bounds.max : value+(e.key===grow ? 1 : -1)*(e.shiftKey ? 50 : 20)/extent*100);
+  };
   useLayoutEffect(() => {
     const el=scrollerRef.current;
-    if(el && layoutAnchor.current)restoreZoomAnchor(el,layoutAnchor.current);
-    setEpoch(n=>n+1);
-  },[attemptFirst,deskCollapsed]);
+    const anchor=deskResizeAnchor.current??layoutAnchor.current;
+    if(el && anchor)restoreZoomAnchor(el,anchor);
+    if(!deskResizing){deskResizeAnchor.current=null;setEpoch(n=>n+1);}
+  },[attemptFirst,deskCollapsed,deskWidth,deskHeight,deskResizing]);
   const revealDesk = () => {
     book.change(deskId,keepFirstAttempt);
     if(deskQuestion)onReveal(deskQuestion);
@@ -1211,6 +1256,8 @@ const Viewer: React.FC<ViewerProps> = ({
     if(previous)book.change(deskId,r=>replaceInk(r,session.page,previous));
   };
 
+  const deskSizeBounds=deskBounds(deskExtent(),isWide);
+  const deskSizePercent=Math.max(deskSizeBounds.min,Math.min(deskSizeBounds.max,isWide ? deskWidth : deskHeight));
   const inlineScheme = !attemptFirst && isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
   // The scheme reads at panel width, so beside the paper it gets half the
   // screen (Oct 2026: a 360px panel set the answers at about 7px).
@@ -1298,6 +1345,7 @@ const Viewer: React.FC<ViewerProps> = ({
       <KobraScope className="nsu-paper-viewer">
         <div ref={headerRef} tabIndex={-1} className="pvc-top">
           <div className="pvc-bar">
+            <div className="pvc-left">
             <Button
               variant="outline"
               size="icon"
@@ -1311,7 +1359,6 @@ const Viewer: React.FC<ViewerProps> = ({
               <p className="pvc-title">{title}</p>
               {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
             </div>
-            <div className="pvc-controls">
               {scheme && (
                 <Tabs className="pvc-document" value={side} onValueChange={next => deskSide(next as Side)}>
                   <TabsList aria-label="Paper or marking scheme">
@@ -1320,6 +1367,8 @@ const Viewer: React.FC<ViewerProps> = ({
                   </TabsList>
                 </Tabs>
               )}
+            </div>
+            <div className="pvc-controls">
               <label className="pvc-attempt-toggle"><span>Attempt first</span><Switch checked={attemptFirst} onCheckedChange={toggleAttemptFirst} aria-label="Attempt first" /></label>
               {/* Answers — the flagship per-question marking-scheme reveal. A
                   standalone one-tap toggle (not buried in the Tools menu), shown
@@ -1334,6 +1383,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   <span className="pvc-answers-mark" aria-hidden="true" />Answers
                 </Button>
               )}
+              <div className="pvc-actions">
               {/* The Kobra menu dismisses itself on an outside tap and on
                   Escape; it stays controlled so every tool can still close it. */}
               {side === 'paper' && (
@@ -1444,6 +1494,51 @@ const Viewer: React.FC<ViewerProps> = ({
                           onClick={openFormulae}
                         />
                       )}
+          {/* Minute targets are writing-speed sensitive — say whose speed they
+              assume, with the one-line route into the 2-min calibration. */}
+          {paceOn && side === 'paper' && timing && hasAnyTokens && (
+            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
+              {wpmCal ? (
+                <>
+                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Redo
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span>Minute targets assume a typical writing speed</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Personalise in 2 min
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
+          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
+            <div className="max-w-3xl mx-auto mb-2">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
+                <span className="text-[9px] text-zinc-400">tap a page</span>
+              </div>
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+                {Array.from({ length: session.numPages }, (_, i) => {
+                  const v = marksByPage.map.get(i + 1) ?? 0;
+                  const intensity = v / marksByPage.max;
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => jumpToPage(i + 1)}
+                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
+                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          )}
                       {scanState === 'error' && (
                         <p className="pvc-menu-note">
                           Couldn’t read this paper’s text layer — overlays unavailable.
@@ -1453,7 +1548,33 @@ const Viewer: React.FC<ViewerProps> = ({
                   </DropdownMenuContent>
                 </DropdownMenu>
               )}
+            <div className="pvc-zoom">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(-1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[0]}
+                aria-label="Zoom out"
+              >
+                <ZoomOut aria-hidden="true" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
+                aria-label="Zoom in"
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
             </div>
+            <form className="pvc-page-jump" aria-label="Page navigation" onSubmit={e=>{e.preventDefault();if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}}>
+              <input type="number" min={1} max={session.numPages||1} disabled={session.state!=='ready'} value={scrubbing??session.page} aria-label="Go to page" onChange={e=>setScrubbing(e.target.value ? Number(e.target.value) : 1)} onBlur={()=>{if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}} />
+              <span aria-hidden="true">/ {session.numPages||'—'}</span>
+              <span className="pvc-sr" role="status">Page {session.page} of {session.numPages}</span>
+            </form>
             <a
               href={activeDoc.url}
               target="_blank"
@@ -1463,6 +1584,8 @@ const Viewer: React.FC<ViewerProps> = ({
             >
               <Download aria-hidden="true" />
             </a>
+            </div>
+            </div>
           </div>
         </div>
       </KobraScope>
@@ -1471,7 +1594,7 @@ const Viewer: React.FC<ViewerProps> = ({
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
       </div>}
       {preferenceProblem && <p role="alert" className="px-4 py-2 text-sm">Your choice works for this visit, but this browser could not remember it.</p>}
-      <div className="pt-reader-workspace" data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
+      <div ref={workspaceRef} className="pt-reader-workspace" style={{'--ad-size':`${deskSizePercent}%`} as React.CSSProperties} data-resizing={deskResizing||undefined} data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (
         <div
@@ -1573,7 +1696,17 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
-      {attemptFirst && side==='paper' && <AnswerDesk title={title} id={deskId} questions={deskQuestions} page={session.page} record={deskRecord} problem={book.problem(deskId)} onChange={update=>book.change(deskId,update)} onQuestion={pickDeskQuestion} onReveal={revealDesk} onHide={()=>setReveal(null)} schemeVisible={reveal?.n===deskId} hasScheme={!!scheme} schemePdf={sessions.current.scheme.pdf} schemeErrored={sessions.current.scheme.state==='error'||sessions.current.scheme.state==='unsupported'} onRetryScheme={()=>load('scheme')} onFullScheme={()=>jumpSchemeToPage(deskQuestion?schemeRegionFor(deskQuestion)[0]?.p??1:1)} inkView={inkView} onInkView={setInkView} tool={inkTool} onTool={setInkTool} onUndo={undoInk} canUndo={!!inkHistory.current[inkHistoryKey(session.page)]?.length} collapsed={deskCollapsed && !isWide} onCollapse={()=>setDeskCollapsed(v=>!v)} />}
+      {attemptFirst && side==='paper' && !deskCollapsed && <div
+        className="ad-resize" role="separator" tabIndex={0} aria-label="Resize answer desk"
+        aria-orientation={isWide ? 'vertical' : 'horizontal'} aria-controls="paper-answer-drawer"
+        aria-valuenow={Math.round(deskSizePercent)}
+        aria-valuemin={Math.round(deskSizeBounds.min)} aria-valuemax={Math.round(deskSizeBounds.max)}
+        aria-valuetext={`${Math.round(deskSizePercent)} percent of the workspace`}
+        title="Drag to resize. Use arrow keys for smaller adjustments, or double-click to reset."
+        onPointerDown={startDeskResize} onPointerMove={moveDeskResize} onPointerUp={endDeskResize} onPointerCancel={endDeskResize}
+        onKeyDown={keyDeskResize} onDoubleClick={()=>{captureDeskPlace();resizeDesk(isWide ? 43 : 49);}}
+      ><span/></div>}
+      {attemptFirst && side==='paper' && <AnswerDesk title={title} id={deskId} questions={deskQuestions} page={session.page} record={deskRecord} problem={book.problem(deskId)} onChange={update=>book.change(deskId,update)} onQuestion={pickDeskQuestion} onReveal={revealDesk} onHide={()=>setReveal(null)} schemeVisible={reveal?.n===deskId} hasScheme={!!scheme} schemePdf={sessions.current.scheme.pdf} schemeErrored={sessions.current.scheme.state==='error'||sessions.current.scheme.state==='unsupported'} onRetryScheme={()=>load('scheme')} onFullScheme={()=>jumpSchemeToPage(deskQuestion?schemeRegionFor(deskQuestion)[0]?.p??1:1)} inkView={inkView} onInkView={setInkView} tool={inkTool} onTool={setInkTool} onUndo={undoInk} canUndo={!!inkHistory.current[inkHistoryKey(session.page)]?.length} wide={isWide} collapsed={deskCollapsed} onCollapse={()=>{captureDeskPlace();setDeskCollapsed(v=>!v);}} />}
 
       {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
         {/* Hidden, not unmounted, while a scheme is open, so the question
@@ -1585,132 +1718,6 @@ const Viewer: React.FC<ViewerProps> = ({
         {schemeBeside && schemeContent}
       </aside>}
       </div>
-      {/* Footer: zoom + page position, Kobra chrome (viewer-chrome.css). */}
-      {session.state === 'ready' && (
-        <KobraScope className="nsu-paper-viewer">
-        <div className="pvc-bottom">
-          {/* Minute targets are writing-speed sensitive — say whose speed they
-              assume, with the one-line route into the 2-min calibration. */}
-          {paceOn && side === 'paper' && timing && hasAnyTokens && (
-            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
-              {wpmCal ? (
-                <>
-                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
-                    Redo
-                  </button>
-                </>
-              ) : (
-                <>
-                  <span>Minute targets assume a typical writing speed</span>
-                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
-                    Personalise in 2 min
-                  </button>
-                </>
-              )}
-            </div>
-          )}
-          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
-          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
-            <div className="max-w-3xl mx-auto mb-2">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
-                <span className="text-[9px] text-zinc-400">tap a page</span>
-              </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-                {Array.from({ length: session.numPages }, (_, i) => {
-                  const v = marksByPage.map.get(i + 1) ?? 0;
-                  const intensity = v / marksByPage.max;
-                  return (
-                    <button
-                      key={i}
-                      onClick={() => jumpToPage(i + 1)}
-                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
-                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
-                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
-          <div className="pvc-pagebar">
-            <div className="pvc-zoom">
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(-1)}
-                disabled={zoom === ZOOM_STEPS[0]}
-                aria-label="Zoom out"
-              >
-                <ZoomOut aria-hidden="true" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => zoomBy(1)}
-                disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
-                aria-label="Zoom in"
-              >
-                <ZoomIn aria-hidden="true" />
-              </Button>
-            </div>
-            <div className="pvc-position">
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => jumpToPage(session.page - 1)}
-                disabled={session.page <= 1}
-                aria-label="Previous page"
-              >
-                <ChevronLeft aria-hidden="true" />
-              </Button>
-              <PagePosition
-                page={scrubbing ?? session.page}
-                numPages={session.numPages}
-                scrubber={
-                  // More than three pages: drag (or arrow-key) to any page,
-                  // landing on release, as the range always did.
-                  session.numPages > 3 ? (
-                    <input
-                      type="range"
-                      min={1}
-                      max={session.numPages}
-                      value={scrubbing ?? session.page}
-                      onChange={e => setScrubbing(Number(e.target.value))}
-                      onPointerUp={() => {
-                        if (scrubbing != null) jumpToPage(scrubbing);
-                        setScrubbing(null);
-                      }}
-                      onKeyUp={() => {
-                        if (scrubbing != null) jumpToPage(scrubbing);
-                        setScrubbing(null);
-                      }}
-                      aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
-                      className="pvc-range"
-                    />
-                  ) : null
-                }
-              />
-              <Button
-                variant="outline"
-                size="icon"
-                className="nsu-ink-outline pvc-icon"
-                onClick={() => jumpToPage(session.page + 1)}
-                disabled={session.page >= session.numPages}
-                aria-label="Next page"
-              >
-                <ChevronRight aria-hidden="true" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        </KobraScope>
-      )}
-
       {/* Status toasts and notices, where the floating status pills sat. */}
       <KobraScope className="nsu-paper-viewer">
         <div className="pvc-toasts">
@@ -2461,33 +2468,6 @@ const ToolRow: React.FC<{
     </DropdownMenuItem>
   );
 };
-
-// ─── page position ──────────────────────────────────────────
-
-/** Where the reader is: a serif page count over a Kobra Progress (the runtime
- *  ships no Slider). When a page range input comes with it, that input is the
- *  control, laid over the bar, and the progress is its picture. */
-const PagePosition: React.FC<{ page: number; numPages: number; scrubber: React.ReactNode }> = ({
-  page,
-  numPages,
-  scrubber,
-}) => (
-  <div className="pvc-scrub">
-    <Progress
-      className="pvc-progress"
-      // The fill ends under the range thumb: page 1 at the start, the last page at the end.
-      value={numPages > 1 ? ((page - 1) / (numPages - 1)) * 100 : 100}
-      getAriaValueText={() => `Page ${page} of ${numPages}`}
-      aria-hidden={scrubber ? true : undefined}
-    >
-      <ProgressLabel className="pvc-page-count">
-        <span className="pvc-sr">Page </span>
-        {page} <span className="pvc-of">of</span> {numPages}
-      </ProgressLabel>
-    </Progress>
-    {scrubber}
-  </div>
-);
 
 // ─── status toasts ──────────────────────────────────────────
 

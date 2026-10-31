@@ -3,6 +3,8 @@ import {
   ArrowRight,
   Check,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Download,
   Eye,
   EyeOff,
@@ -50,6 +52,7 @@ interface Props {
   onUndo: () => void;
   canUndo: boolean;
   collapsed: boolean;
+  wide: boolean;
   onCollapse: () => void;
   inkView: "first" | "retry";
   onInkView: (view: "first" | "retry") => void;
@@ -115,6 +118,7 @@ export default function AnswerDesk(p: Props) {
   return (
     <aside
       className="ad-pane"
+      id="paper-answer-drawer"
       data-collapsed={p.collapsed || undefined}
       aria-label="Your answer desk"
     >
@@ -143,9 +147,18 @@ export default function AnswerDesk(p: Props) {
             aria-expanded={!p.collapsed}
             onClick={p.onCollapse}
           >
-            <ChevronDown size={17} />
+            {p.wide ? (
+              p.collapsed ? (
+                <ChevronLeft size={17} />
+              ) : (
+                <ChevronRight size={17} />
+              )
+            ) : (
+              <ChevronDown size={17} />
+            )}
           </Button>
         </header>
+        {p.collapsed && <span className="ad-rail-label">Answer desk</span>}
         <div className="ad-content" hidden={p.collapsed}>
           <div className="ad-question">
             <label htmlFor="answer-desk-question">Working on</label>

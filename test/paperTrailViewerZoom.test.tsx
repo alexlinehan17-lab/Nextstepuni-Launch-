@@ -146,6 +146,22 @@ const pageInMiddle = (reader: HTMLElement) => {
 const settle = () => act(() => new Promise(resolve => setTimeout(resolve, 20)));
 
 describe('Paper Trail viewer zoom', () => {
+  it('jumps to an entered page from the header and bounds the destination to the document', async () => {
+    render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
+    const reader=await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
+    await waitFor(()=>expect(position(reader).top).toBeGreaterThan(0));
+    const pageInput=screen.getByRole('spinbutton',{name:'Go to page'});
+    fireEvent.change(pageInput,{target:{value:'23'}});
+    fireEvent.submit(screen.getByRole('form',{name:'Page navigation'}));
+    await settle();
+    expect(pageInMiddle(reader)).toBe(23);
+    fireEvent.change(pageInput,{target:{value:'999'}});
+    fireEvent.blur(pageInput);
+    await settle();
+    expect(pageInMiddle(reader)).toBe(PAGES);
+    expect(pageInput).toHaveValue(PAGES);
+  });
+
   it('keeps the reading point when the viewport changes to phone width', async () => {
     render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
     const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
