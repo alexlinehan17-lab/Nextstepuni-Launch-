@@ -104,9 +104,10 @@ const MUTED = 'var(--mb-muted)';
 const LABEL = 'var(--mb-label)';
 const MUTED_BORDER = 'var(--mb-border)';
 const PLATE = 'var(--mb-plate)';
-const SUCCESS = 'var(--mb-success)';
 const SUCCESS_TINT = 'var(--mb-success-tint)';
 const SUCCESS_TEXT = 'var(--mb-success-text)';
+const CLAIM = 'var(--mb-claim)';
+const ON_CLAIM = 'var(--mb-on-claim)';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
 /** How far the frame layers sit off the card, and the stroke's weight. */
@@ -636,9 +637,9 @@ const MarkRowView: React.FC<{
                     <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
                       aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
                       onClick={() => onClaim(partClaimId(id, part.id), mark)}
-                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? SUCCESS : MUTED_BORDER}`,
-                        background: selected === mark ? SUCCESS : 'var(--mb-paper)',
-                        color: selected === mark ? '#fff' : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
+                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? CLAIM : MUTED_BORDER}`,
+                        background: selected === mark ? CLAIM : 'var(--mb-paper)',
+                        color: selected === mark ? ON_CLAIM : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
                       {mark}
                     </button>
                   ))}
@@ -697,12 +698,12 @@ const MarkRowView: React.FC<{
         transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
-          border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
-          background: chosen ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${MUTED_BORDER}`,
+          background: 'var(--mb-paper)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
-          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
+          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
                 each" of a 6-then-4 split is wrong for both halves. A menu the
                 scheme prices only as a whole (an orderedSplit or questionTotal
@@ -717,8 +718,8 @@ const MarkRowView: React.FC<{
             <span style={{
               font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
               fontVariantNumeric: 'tabular-nums',
-              background: chosen ? SUCCESS_TINT : 'var(--mb-raised)',
-              color: chosen ? SUCCESS_TEXT : MUTED,
+              background: 'var(--mb-raised)',
+              color: INK_2,
             }}>
               {chosen} of {g.claimMax}
             </span>
@@ -744,24 +745,24 @@ const MarkRowView: React.FC<{
                 aria-pressed={on}
                 style={{
                   width: '100%', textAlign: 'left', display: 'grid',
-                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'start',
+                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'center',
                   padding: '7px 9px', borderRadius: 9,
-                  border: `1px solid ${on ? SUCCESS : '#e4e0da'}`,
-                  background: on ? 'var(--mb-paper)' : 'transparent',
+                  border: `1px solid ${on ? CLAIM : MUTED_BORDER}`,
+                  background: on ? CLAIM : 'transparent',
                   cursor: disabled ? 'not-allowed' : 'pointer',
                   opacity: disabled ? 0.45 : 1,
-                  font: `500 12.5px/1.4 ${SANS}`, color: on ? SUCCESS_TEXT : INK_2,
+                  font: `500 12.5px/1.4 ${SANS}`, color: on ? ON_CLAIM : INK_2,
                 }}
               >
                 <span style={{
-                  width: 14, height: 14, borderRadius: 4, marginTop: 2, flex: 'none',
-                  background: on ? SUCCESS : 'transparent',
+                  width: 14, height: 14, borderRadius: 4, flex: 'none',
+                  background: on ? ON_CLAIM : 'transparent', color: CLAIM,
                   border: on ? 'none' : `1.5px solid ${MUTED_BORDER}`,
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   {on && (
                     <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   )}
                 </span>
@@ -773,7 +774,7 @@ const MarkRowView: React.FC<{
                   {option.includes('\n')
                     ? option.split('\n').map((line, li) => (
                         <span key={li} style={{ display: 'grid', gridTemplateColumns: '10px 1fr', gap: 6, marginTop: li ? 3 : 0 }}>
-                          <span aria-hidden="true" style={{ color: MUTED }}>&middot;</span>
+                          <span aria-hidden="true" style={{ color: on ? ON_CLAIM : MUTED }}>&middot;</span>
                           <span>{line}</span>
                         </span>
                       ))
@@ -827,13 +828,13 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'center',
           padding: '11px 12px', borderRadius: 12,
-          border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
-          background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${claimed ? CLAIM : MUTED_BORDER}`,
+          background: claimed ? CLAIM : 'var(--mb-paper)',
           cursor: blocked ? 'not-allowed' : 'pointer',
           opacity: blocked ? 0.5 : 1,
-          font: `500 13.5px/1.42 ${SANS}`, color: INK_2,
+          font: `500 13.5px/1.42 ${SANS}`, color: claimed ? ON_CLAIM : INK_2,
           transition: reduced ? 'none' : 'background 160ms, border-color 160ms',
         }}
       >
@@ -844,8 +845,8 @@ const MarkRowView: React.FC<{
             // A circle is a RADIO — one of many. Every marking point here is
             // claimed independently, so the control is a checkbox: rounded
             // square, not round.
-            width: 18, height: 18, borderRadius: 5, marginTop: 1,
-            background: claimed ? SUCCESS : 'transparent',
+            width: 18, height: 18, borderRadius: 5,
+            background: claimed ? ON_CLAIM : 'transparent', color: CLAIM,
             border: claimed ? 'none' : `1.5px solid ${MUTED_BORDER}`,
             display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: 'none',
           }}
@@ -854,31 +855,31 @@ const MarkRowView: React.FC<{
               on some platforms, and this app bans emoji as UI furniture. */}
           {claimed && (
             <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           )}
         </MotionSpan>
 
         <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
               {row.contextNote}
             </span>
           )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
             {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
-              <span style={{ color: MUTED }}>
+              <span style={{ color: claimed ? ON_CLAIM : MUTED }}>
                 {' or '}{row.accepts.join(' or ')}
               </span>
             ) : null}
           </span>
           {!wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
               {row.contextNote}
             </span>
           )}
@@ -893,8 +894,8 @@ const MarkRowView: React.FC<{
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
-            background: claimed ? SUCCESS_TINT : 'var(--mb-raised)',
-            color: claimed ? SUCCESS_TEXT : MUTED,
+            background: claimed ? CLAIM : 'var(--mb-raised)',
+            color: claimed ? ON_CLAIM : MUTED,
           }}>
             {claimed ? `${marks}m` : `${marks}m`}
           </span>
@@ -988,16 +989,16 @@ const PclmRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)', color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)', color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   font: `800 12px/1 ${SANS}`,
                 }}>
                   {checked ? (
@@ -1345,17 +1346,17 @@ const IrishRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                  color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)',
+                  color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                 }}>
                   {checked ? <span style={{
                     width: 6, height: 10, borderRight: '2px solid currentColor',
@@ -1538,17 +1539,17 @@ const GeographyRubricPanel: React.FC<{
                   onClick={() => onRequirement(index)}
                   style={{
                     display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                    alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                    borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                    color: checked ? SUCCESS_TEXT : INK_2,
+                    alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                    borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                    background: checked ? CLAIM : 'var(--mb-paper)',
+                    color: checked ? ON_CLAIM : INK_2,
                     font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                   }}
                 >
                   <span aria-hidden style={{
                     display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                    border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS : 'transparent', color: '#fff',
+                    border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                    background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   }}>
                     {checked ? <span style={{
                       width: 6, height: 10, borderRight: '2px solid currentColor',
