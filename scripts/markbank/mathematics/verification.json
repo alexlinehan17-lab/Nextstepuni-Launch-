@@ -8711,6 +8711,7 @@
     },
     "wholeSubjectComplete": false,
     "englishScopeComplete": false,
-    "status": "Complete locally and verified; no push or deployment."
+    "status": "Complete locally and verified; no push or deployment.",
+    "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 44 cards byte for byte."
   }
 }
