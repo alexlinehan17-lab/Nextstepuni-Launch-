@@ -77,5 +77,24 @@ class DeferredSources(unittest.TestCase):
         self.assertAlmostEqual(wheel_height(.2),60)
         self.assertAlmostEqual(wheel_height(.4),0)
 
+    def test_2024_firework_curve_continues_to_the_correct_positive_zero(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import firework_height, firework_sea_time
+        self.assertEqual([round(firework_height(t)) for t in range(9)],[20,57,84,102,110,108,97,76,46])
+        t=firework_sea_time()
+        self.assertTrue(9.1<t<9.2)
+        self.assertAlmostEqual(firework_height(t),0)
+        self.assertTrue(firework_height(8)>0)
+
+    def test_2024_data_graph_reads_the_calendar_year_and_doubling_time(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import world_data, world_data_time
+        self.assertEqual(world_data(0),64)
+        self.assertEqual(round(world_data(5),1),152.7)
+        self.assertTrue(world_data(6)<200<world_data(7))
+        self.assertTrue(2027<2021+world_data_time(200)<2028)
+        self.assertEqual(round(world_data_time(150)-world_data_time(75)),4)
+        self.assertAlmostEqual(world_data(world_data_time(200)),200)
+
 
 if __name__=='__main__': unittest.main()

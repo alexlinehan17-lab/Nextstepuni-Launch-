@@ -79197,4 +79197,1862 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q1-a-i-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q1-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q1(a)(i), Q1(a)(ii)",
+    stem: "Fiadh has €1500 saved. She put this money in a savings account with a rate of 3% per annum compound interest.",
+    questionText: "(i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 2 years.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q1-a-i-ii-solution-1", kind: "point", verbatim: "At least one correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q1-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q1-a-i-ii-question.png",
+          "srcHash": "3d70b88a93323a2168364ba7f0f91efc",
+          "alt": "The question as printed on the paper — Fiadh has €1500 saved. She put this money in a savings account with a rate of 3% per annum compound interest. (i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 2 years.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q1-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q1-a-i-ii-solution.png",
+          "srcHash": "47b5052b75aa20c8c0e9986f9e0643e2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q1(a)(i), Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The exponent in the first line of part (ii) is a printing error. Use 1545 × 1.03, or 1500 × (1.03)², to obtain €1591.35. The alternative working and final answer are correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q1-b-i-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q1-b-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q1(b)(i), Q1(b)(ii)",
+    stem: "The table gives the 2024 USC rates: first €12 012 at 0·5%; next €13 748 at 2%; next €44 284 at 4%; balance at the top rate.",
+    questionText: "(i) At what annual income does a worker start paying the top rate of USC? (ii) Mike’s annual income for 2024 is €65 000. Work out how much he will pay in USC for 2024.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q1-b-i-ii-solution-1", kind: "point", verbatim: "Correct formulation of any two USC rates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q1-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q1-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q1-b-i-ii-question.png",
+          "srcHash": "34a654cd0b2848eaa86ed9de786886fd",
+          "alt": "The question as printed on the paper — The table gives the 2024 USC rates: first €12 012 at 0·5%; next €13 748 at 2%; next €44 284 at 4%; balance at the top rate. (i) At what annual income does a worker start paying the top rate of USC? (ii) Mike’s annual income for 2024 is €65 000. Work out how much he will pay in USC for 2024.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q1-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q1-b-i-ii-solution.png",
+          "srcHash": "12b0ff9a96bb363d717fec1b91a54764",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q1(b)(i), Q1(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q2-a-i-ii", topicId: "maths-4-4", conceptId: "p1-deferred-q2-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q2(a)(i), Q2(a)(ii)",
+    stem: "In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers.",
+    questionText: "(i) Plot and label z₁ and z₂ on the Argand Diagram below. (ii) Write down the complex conjugate of z₁.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q2-a-i-ii-solution-1", kind: "point", verbatim: "One item correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q2-a-i-ii-solution-2", kind: "point", verbatim: "Two items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-a-i-ii-question.png",
+          "srcHash": "ca213b3a883f85d3ebf4a13d1647ae7b",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers. (i) Plot and label z₁ and z₂ on the Argand Diagram below. (ii) Write down the complex conjugate of z₁.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-a-i-ii-solution.png",
+          "srcHash": "36e64ec1740e68d4645bb8a546d10ac0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q2(a)(i), Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme says “four items” but lists three: plotting z₁, plotting z₂ and finding the conjugate of z₁. The listed credit criteria and numeric awards are preserved.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q2-a-iii", topicId: "maths-4-4", conceptId: "p1-deferred-q2-a-iii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q2(a)(iii)",
+    stem: "In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers.",
+    questionText: "Work out the modulus of z₁. That is, find |z₁|. Give your answer in the form a√b.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q2-a-iii-solution-1", kind: "point", verbatim: "Modulus formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q2-a-iii-solution-2", kind: "point", verbatim: "Fully correct substitution into modulus formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-a-iii-question.png",
+          "srcHash": "3b649b5494b80a85f600d4b1f0296520",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = −4 + 2i and z₂ = 2 − i are two complex numbers. Work out the modulus of z₁. That is, find |z₁|. Give your answer in the form a√b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-a-iii-solution.png",
+          "srcHash": "a5627be11057cb21e8271ac0e240ac50",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q2(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q2-b", topicId: "maths-4-4", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q2(b)",
+    questionText: "u = 1 + 4i and v = a + bi are two complex numbers, where a, b ∈ ℤ. Given that u − 2v = −3 + 10i, find the value of a and the value of b.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "Any relevant substitution in the given equation.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-b-question.png",
+          "srcHash": "2d0052516b7f5ddf1311b069c9e83270",
+          "alt": "The question as printed on the paper — u = 1 + 4i and v = a + bi are two complex numbers, where a, b ∈ ℤ. Given that u − 2v = −3 + 10i, find the value of a and the value of b.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q2-b-solution.png",
+          "srcHash": "b353b16f3ba8bcbad0b49e3b997e98fb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q3-a", topicId: "maths-4-3", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q3(a)",
+    questionText: "Solve the following inequality in x ∈ ℕ: 5(x − 3) + 2 < 11. List your solutions. Remember that x ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "but solution set not listed.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-a-question.png",
+          "srcHash": "2c3ef1be877aeee3b02b9964e5a1c349",
+          "alt": "The question as printed on the paper — Solve the following inequality in x ∈ ℕ: 5(x − 3) + 2 < 11. List your solutions. Remember that x ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-a-solution.png",
+          "srcHash": "11c7859b0afc9a4b6edb2fca9ace7c31",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q3-b", topicId: "maths-4-1", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q3(b)",
+    questionText: "Write the following expression as a single fraction, where x ≠ 0, x ≠ −1, x ∈ ℝ: 1/x − 2/(x + 1). Give your answer in its simplest form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "identified as the lowest common denominator.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q3-b-solution-2", kind: "point", verbatim: "Some relevant multiplication.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-b-question.png",
+          "srcHash": "36607d37d89ee83d9e2eecb3c29e6fd3",
+          "alt": "The question as printed on the paper — Write the following expression as a single fraction, where x ≠ 0, x ≠ −1, x ∈ ℝ: 1/x − 2/(x + 1). Give your answer in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-b-solution.png",
+          "srcHash": "0311d16373ea7d1f8bd218d44750da6e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q3-c", topicId: "maths-4-2", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q3(c)",
+    questionText: "Use algebra to solve the simultaneous equations: xy = 6; x − y = 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Writes one variable in terms of the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "Finds the two co-ordinate sets", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q3-c-solution-3", kind: "point", verbatim: "Three steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-c-question.png",
+          "srcHash": "af3990b9ad4fa7fcfcd25c24a0eb2123",
+          "alt": "The question as printed on the paper — Use algebra to solve the simultaneous equations: xy = 6; x − y = 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q3-c-solution.png",
+          "srcHash": "baa342881dd189467a0eef5467cebfc6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q4-a-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q4-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q4(a)(i), Q4(a)(ii)",
+    stem: "f(x) = (x + 3)² + 5, where x ∈ ℝ.",
+    questionText: "(i) Find the value of f(0). (ii) Write f(x) in the form ax² + bx + c, where a, b, c ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q4-a-i-ii-solution-1", kind: "point", verbatim: "some correct substitution in (i) or some correct expansion in (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q4-a-i-ii-solution-2", kind: "point", verbatim: "(i) correct and work of merit in (ii).", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-a-i-ii-question.png",
+          "srcHash": "08b7060d286f0ac2499646663a8398ab",
+          "alt": "The question as printed on the paper — f(x) = (x + 3)² + 5, where x ∈ ℝ. (i) Find the value of f(0). (ii) Write f(x) in the form ax² + bx + c, where a, b, c ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-a-i-ii-solution.png",
+          "srcHash": "74fdda01a9607a967e2ff3483ae7e44f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q4(a)(i), Q4(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The mid-partial note has a typographical error: it should refer to expanding (x + 3)². The model solution x² + 6x + 14 is correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q4-b", topicId: "maths-4-2", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q4(b)",
+    questionText: "Solve the following equation in x: 3x² − 4x − 9 = 0. Give each answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "Quadratic formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q4-b-solution-2", kind: "point", verbatim: "Formula fully correctly substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q4-b-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-b-question.png",
+          "srcHash": "15a79675f0a882c4d10af14889d3c3a2",
+          "alt": "The question as printed on the paper — Solve the following equation in x: 3x² − 4x − 9 = 0. Give each answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-b-solution.png",
+          "srcHash": "1999ebd89b8b2168089d47c2a9374402",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q4-c", topicId: "maths-5-1", conceptId: "p1-deferred-q4-c",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q4(c)",
+    questionText: "The graph of the quadratic function g(x) is shown below, drawn to scale. The y-axis is not shown. Using the information below, draw the y-axis into the diagram. The roots are x = −2 and x = 3; g(0) = −6. Label the y-axis and the points where g(x) cuts both axes.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q4-c-solution-1", kind: "point", verbatim: "axis drawn but no labels", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q4-c-solution-2", kind: "point", verbatim: "axis not labelled", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-c-question.png",
+          "srcHash": "49fb143b5c08f054bbbe0bcd293f7b83",
+          "alt": "The question as printed on the paper — The graph of the quadratic function g(x) is shown below, drawn to scale. The y-axis is not shown. Using the information below, draw the y-axis into the diagram. The roots are x = −2 and x = 3; g(0) = −6. Label the y-axis and the points where g(x) cuts both axes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q4-c-solution.png",
+          "srcHash": "23ac703e9f9d0f7679c49d361f5f72ac",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q5-a-i-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q5-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q5(a)(i), Q5(a)(ii)",
+    stem: "In Caoimhe’s gas bill the volume of gas used is converted to kilowatt-hours. Her current gas-meter reading is 12 518 m³ and her previous reading was 12 398 m³.",
+    questionText: "(i) The conversion rate is 1 m³ = 11·5452 kilowatt-hours. Find the volume of gas used since the previous reading, in m³, and hence show this is equal to 1385·424 kilowatt-hours. (ii) Gas costs 13·46 cent per kilowatt-hour. Find the cost of the gas used during this period, in euro, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q5-a-i-ii-solution-1", kind: "point", verbatim: "Volume of gas used:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q5-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-a-i-ii-question.png",
+          "srcHash": "755a295a0e4df9f858fb470df9860674",
+          "alt": "The question as printed on the paper — In Caoimhe’s gas bill the volume of gas used is converted to kilowatt-hours. Her current gas-meter reading is 12 518 m³ and her previous reading was 12 398 m³. (i) The conversion rate is 1 m³ = 11·5452 kilowatt-hours. Find the volume of gas used since the previous reading, in m³, and hence show this is equal to 1385·424 kilowatt-hours. (ii) Gas costs 13·46 cent per kilowatt-hour. Find the cost of the gas used during this period, in euro, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-a-i-ii-solution.png",
+          "srcHash": "6fa90c5e6ce26e1dcb6506c86ee75468",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q5(a)(i), Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Keep 1385.424 kWh until the final rounding. Multiplying by €0.1346 per kWh gives €186.4780704, rounded to €186.48. The scheme’s displayed intermediate 1385.42 is rounded prematurely; its final answer is correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q5-a-iii", topicId: "maths-3-3", conceptId: "p1-deferred-q5-a-iii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q5(a)(iii)",
+    questionText: "Caoimhe’s total gas bill is €227·47 before VAT. Work out her total gas bill after VAT at 9% has been added. Give your answer in euro, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q5-a-iii-solution-1", kind: "point", verbatim: "some relevant use of 9%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q5-a-iii-solution-2", kind: "point", verbatim: "Finds the total VAT", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-a-iii-question.png",
+          "srcHash": "ee9d5bfe5ca2e8f6d8ac8fb966f6212f",
+          "alt": "The question as printed on the paper — Caoimhe’s total gas bill is €227·47 before VAT. Work out her total gas bill after VAT at 9% has been added. Give your answer in euro, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-a-iii-solution.png",
+          "srcHash": "c83486b8b72aa60d15aeff43a2fb6001",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q5(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The summary table labels this 5D, but the detailed marking notes explicitly give 5C with awards 0, 2, 3 and 5. This card follows the detailed allocation.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q5-b", topicId: "maths-3-4", conceptId: "p1-deferred-q5-b",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q5(b)",
+    questionText: "Caoimhe wants to estimate the area of her farm, in m². She measures at intervals of 200 m, starting at the right-hand edge. The measurements are shown on the diagram, correct to the nearest metre. Use the Trapezoidal Rule and the measurements to estimate the area of the farm, in m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q5-b-solution-1", kind: "point", verbatim: "Trapezoidal rule written.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q5-b-solution-2", kind: "point", verbatim: "Fully correct substitution.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-b-question.png",
+          "srcHash": "7587385e582335ca8a56715d7dfee980",
+          "alt": "The question as printed on the paper — Caoimhe wants to estimate the area of her farm, in m². She measures at intervals of 200 m, starting at the right-hand edge. The measurements are shown on the diagram, correct to the nearest metre. Use the Trapezoidal Rule and the measurements to estimate the area of the farm, in m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q5-b-solution.png",
+          "srcHash": "c82871755ee950b00dbde275f92a3499",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q6-a-i-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q6(a)(i), Q6(a)(ii)",
+    stem: "h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ.",
+    questionText: "(i) Find h′(x), the derivative of h(x). (ii) Hence, find the slope of the tangent when x = 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q6-a-i-ii-solution-1", kind: "point", verbatim: "some correct differentiation in (i) or some correct substitution in (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q6-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-a-i-ii-question.png",
+          "srcHash": "699085ec6a12f5e1d1e6793e827bcb20",
+          "alt": "The question as printed on the paper — h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ. (i) Find h′(x), the derivative of h(x). (ii) Hence, find the slope of the tangent when x = 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-a-i-ii-solution.png",
+          "srcHash": "edf764c892eb75c7789031e97c6c1315",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q6(a)(i), Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q6-a-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a-iii",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q6(a)(iii)",
+    stem: "h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ.",
+    questionText: "The graph of h(x) is shown for −0·5 ≤ x ≤ 4·5, x ∈ ℝ. Draw the tangent to the graph at the point where x = 1. Use the same axes and scales.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q6-a-iii-solution-1", kind: "point", verbatim: "The point (1, 8) indicated on the diagram.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q6-a-iii-solution-2", kind: "point", verbatim: "A line with a consistent slope with (a)(ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-a-iii-question.png",
+          "srcHash": "85eb79c9880a8c157c4ebce5cdbffdff",
+          "alt": "The question as printed on the paper — h(x) = x³ − 6x² + 7x + 6, where x ∈ ℝ. The graph of h(x) is shown for −0·5 ≤ x ≤ 4·5, x ∈ ℝ. Draw the tangent to the graph at the point where x = 1. Use the same axes and scales.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-a-iii-solution.png",
+          "srcHash": "0244d191ea254401bd945da79b4ef07c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q6(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q6-b", topicId: "maths-5-2", conceptId: "p1-deferred-q6-b",
+    section: "A", questionRef: "2024 OL Paper 1 — Deferred Q6(b)",
+    questionText: "The first three diagrams show the graphs of a, b and c, which are cubic, quadratic and linear respectively. The next three show d, e and f, each a slope function (derivative) of a, b or c. Write d, e and f in the correct place in the table to match every function to its slope function.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q6-b-solution-1", kind: "point", verbatim: "some relevant work on diagrams", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q6-b-solution-2", kind: "point", verbatim: "One correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-b-question.png",
+          "srcHash": "ce14cd887fa23be04a9ba821df741e45",
+          "alt": "The question as printed on the paper — The first three diagrams show the graphs of a, b and c, which are cubic, quadratic and linear respectively. The next three show d, e and f, each a slope function (derivative) of a, b or c. Write d, e and f in the correct place in the table to match every function to its slope function.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q6-b-solution.png",
+          "srcHash": "0d21bda0b5dad19cb969ff26584b64e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q7-a-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(a)(i)",
+    stem: "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+    questionText: "How long does Lillian stop for? Give your answer in seconds.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-a-i-solution-1", kind: "point", verbatim: "Indicates the period on the diagram.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-i-question.png",
+          "srcHash": "5f99d7ef4e966bfa3481bad0031d3cac",
+          "alt": "The question as printed on the paper — Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds. How long does Lillian stop for? Give your answer in seconds.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-i-solution.png",
+          "srcHash": "f90df2a43c65e23b4220c0ed6876da6d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Lillian rests from 40 to 50 seconds on the question graph, for 10 seconds. The partial-credit example saying 45 to 55 seconds is a printing error.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(a)(ii)",
+    stem: "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+    questionText: "Find Lillian’s speed for the first 50 m. Give your answer in metres per second.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "Time = 40", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-a-ii-solution-2", kind: "point", verbatim: "or equivalent fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-ii-question.png",
+          "srcHash": "b8fcf1a028b329ee0229d72d5d248d3c",
+          "alt": "The question as printed on the paper — Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds. Find Lillian’s speed for the first 50 m. Give your answer in metres per second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-ii-solution.png",
+          "srcHash": "1522d6555da424c057919183f49f7793",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-a-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q7-a-iii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(a)(iii)",
+    stem: "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+    questionText: "Does Lillian’s speed increase, decrease or stay the same for the second 50 m? Tick one box only: Increases / Decreases / Stays the same. Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "Decreases", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-a-iii-solution-2", kind: "point", verbatim: "The slope is steeper for the first 50 m", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-a-iii-solution-3", kind: "point", verbatim: "Correct answer with no reason or incorrect reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-iii-question.png",
+          "srcHash": "c1d8afed2f4bec6d9c8f69b6528f4c6a",
+          "alt": "The question as printed on the paper — Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds. Does Lillian’s speed increase, decrease or stay the same for the second 50 m? Tick one box only: Increases / Decreases / Stays the same. Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-a-iii-solution.png",
+          "srcHash": "65679cd8fa167e2c72097f36146bbe96",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-b-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q7-b-i-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(b)(i), Q7(b)(ii)",
+    stem: "Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds.",
+    questionText: "Darragh swims at a constant speed of 10 m every 7 seconds. (i) How many seconds does it take him to swim 50 m? (ii) Darragh starts swimming 10 seconds after Lillian. He swims 50 m, stops for 5 seconds, then swims a second 50 m at the same constant speed. Graph the distance Darragh swims on the diagram and label it D. Use the same axes and scales.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-b-i-ii-solution-1", kind: "point", verbatim: "Any relevant point on the graph.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-b-i-ii-solution-2", kind: "point", verbatim: "(i) correct and one section of the graph correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-b-i-ii-question.png",
+          "srcHash": "ea4baf6c4b367566bd99c60fb096c1ed",
+          "alt": "The question as printed on the paper — Lillian and Darragh visit a 50 m swimming pool. Lillian swims 50 m at a constant speed, rests, then swims a second 50 m at a different constant speed. The graph L shows her distance for the first 110 seconds. Darragh swims at a constant speed of 10 m every 7 seconds. (i) How many seconds does it take him to swim 50 m? (ii) Darragh starts swimming 10 seconds after Lillian. He swims 50 m, stops for 5 seconds, then swims a second 50 m at the same constant speed. Graph the distance Darragh swims on the diagram and label it D. Use the same axes and scales.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-b-i-ii-solution.png",
+          "srcHash": "7e20a96663fa93d76296542644ce318e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(b)(i), Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-c", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(c)",
+    questionText: "The average speed for the world record of the women’s 100 m freestyle is 1·934 metres per second. Work out how long it took her to swim the 100 m, in seconds. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "Some use of given values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-c-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-c-question.png",
+          "srcHash": "ad2f1132f06dd0f29bd9c25d91ceeffb",
+          "alt": "The question as printed on the paper — The average speed for the world record of the women’s 100 m freestyle is 1·934 metres per second. Work out how long it took her to swim the 100 m, in seconds. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-c-solution.png",
+          "srcHash": "5a60d73f64d932eee39c51761ace2d3a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q7-d-i-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q7-d-i-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q7(d)(i), Q7(d)(ii)",
+    stem: "C = 1·163 P V (T₂ − T₁), where P is the electricity cost per kWh, V is the pool volume in m³, T₁ is the average air temperature in °C, and T₂ is the heated pool temperature in °C.",
+    questionText: "Mike’s pool has volume 9 m³ and he wants to heat it to 25°C. Electricity costs €0·431 per kWh. (i) Work out the heating cost when the average air temperature is 13°C, in euro to 2 decimal places. (ii) Find the average air temperature T₁ when the heating cost is €21·20, in degrees Celsius to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q7-d-i-ii-solution-1", kind: "point", verbatim: "some correct substitution into the given formula in (i) or (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q7-d-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-d-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-d-i-ii-question.png",
+          "srcHash": "298b5d11b85d2ae0dfc5ac557030c6b7",
+          "alt": "The question as printed on the paper — C = 1·163 P V (T₂ − T₁), where P is the electricity cost per kWh, V is the pool volume in m³, T₁ is the average air temperature in °C, and T₂ is the heated pool temperature in °C. Mike’s pool has volume 9 m³ and he wants to heat it to 25°C. Electricity costs €0·431 per kWh. (i) Work out the heating cost when the average air temperature is 13°C, in euro to 2 decimal places. (ii) Find the average air temperature T₁ when the heating cost is €21·20, in degrees Celsius to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q7-d-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q7-d-i-ii-solution.png",
+          "srcHash": "5b5e2f6977a23af08dbb9996794ffe28",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q7(d)(i), Q7(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "In part (ii), 25 − 4.6993 is approximately 20.3007, not the printed intermediate 20.27. The final answer of 20.3°C is correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(a)(i)",
+    stem: "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+    questionText: "Show that the firework is set off from a height of 20 metres above sea level.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "some correct substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-i-question.png",
+          "srcHash": "a47c4bf5d9fff2f6bb7cbd5fe8d1e571",
+          "alt": "The question as printed on the paper — A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0. Show that the firework is set off from a height of 20 metres above sea level.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "912c36295bf6798f886c74ee9e914c2d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-a-ii-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-a-ii-iii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(a)(ii), Q8(a)(iii)",
+    stem: "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+    questionText: "(ii) Complete the table of h(t) for t = 0, 1, 2, 3, 4, 5, 6, 7, 8, to the nearest whole number. The table supplies h(0) = 20, h(3) = 102 and h(8) = 46. (iii) Draw the graph of h(t) for 0 ≤ t ≤ 8, t ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-a-ii-iii-solution-1", kind: "point", verbatim: "Solution requires 16 items, 6 values in table, 9 points plotted and the curve", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q8-a-ii-iii-solution-2", kind: "point", verbatim: "Apply a * if 15 items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-ii-iii-question.png",
+          "srcHash": "7f3d5db3a3513d032d0b2c95145020fc",
+          "alt": "The question as printed on the paper — A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0. (ii) Complete the table of h(t) for t = 0, 1, 2, 3, 4, 5, 6, 7, 8, to the nearest whole number. The table supplies h(0) = 20, h(3) = 102 and h(8) = 46. (iii) Draw the graph of h(t) for 0 ≤ t ≤ 8, t ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-ii-iii-solution.png",
+          "srcHash": "dd9acae2cd3d69b7a0da3c7489c3209f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q8(a)(ii), Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The SEC descriptors overlap at twelve correct items: mid partial says 6–12 and high partial says 12–14. Both original descriptors are retained; the source does not resolve that boundary.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-a-iv", topicId: "maths-5-1", conceptId: "p1-deferred-q8-a-iv",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(a)(iv)",
+    stem: "A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0.",
+    questionText: "The firework fails to explode. Continue your graph from part (a)(iii) to find how long it takes from set off to reach sea level: find t for which h(t) = 0. Show your work on the graph and give your answer in seconds.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-a-iv-solution-1", kind: "point", verbatim: "9.1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q8-a-iv-solution-2", kind: "point", verbatim: "continues the graph.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-iv-question.png",
+          "srcHash": "3f6cc9f4566d82f5a16ef1132f421850",
+          "alt": "The question as printed on the paper — A firework is set off from a harbour. Its height above sea level is h(t) = −4·8t² + 41·65t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and h(t) > 0. The firework fails to explode. Continue your graph from part (a)(iii) to find how long it takes from set off to reach sea level: find t for which h(t) = 0. Show your work on the graph and give your answer in seconds.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-a-iv-solution.png",
+          "srcHash": "ed59a560773a195411dd1c82c4bbf16b",
+          "alt": "NextStepUni graph of h(t)=−4.8t²+41.65t+20, extending the curve beyond t=8 to its positive zero at approximately 9.13 seconds. Read about 9.1 seconds at sea level. Original SEC answer and criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The scheme supplies a time but no continued graph. This NextStepUni worked graph extends the printed function from 8 seconds to sea level and reads about 9.1 seconds. The original SEC answer and credit notes follow.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-b-i-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q8-b-i-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(b)(i), Q8(b)(ii)",
+    stem: "A second firework’s height above sea level is g(t) = −5t² + 45t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and g(t) > 0.",
+    questionText: "The firework is designed to explode at its maximum height. (i) Use calculus to find t when it is at its maximum height. (ii) Use your answer to find its maximum height.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-b-i-ii-solution-1", kind: "point", verbatim: "some correct differentiation in (i) or some relevant substitution in (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q8-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q8-b-i-ii-solution-3", kind: "point", verbatim: "No units or incorrect units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-b-i-ii-question.png",
+          "srcHash": "cb46d8929d0c6b44a36761b313d61038",
+          "alt": "The question as printed on the paper — A second firework’s height above sea level is g(t) = −5t² + 45t + 20 metres, where t is seconds since set off, t ≥ 0, t ∈ ℝ and g(t) > 0. The firework is designed to explode at its maximum height. (i) Use calculus to find t when it is at its maximum height. (ii) Use your answer to find its maximum height.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-b-i-ii-solution.png",
+          "srcHash": "22dd2bd609c56370ccd999e6e152abfd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q8(b)(i), Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-c-i", topicId: "maths-3-3", conceptId: "p1-deferred-q8-c-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(c)(i)",
+    stem: "In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur.",
+    questionText: "Express potassium nitrate : charcoal : sulphur in the ratio a : b : c in its simplest form, where a, b, c ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Correct common denominator identified.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q8-c-i-solution-2", kind: "point", verbatim: "but ratio not in simplest form.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-c-i-question.png",
+          "srcHash": "c8870acc5cc8b6aff8b313268fbad6df",
+          "alt": "The question as printed on the paper — In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur. Express potassium nitrate : charcoal : sulphur in the ratio a : b : c in its simplest form, where a, b, c ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-c-i-solution.png",
+          "srcHash": "53f8d79181236100f61f91f2edc8b617",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q8-c-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q8-c-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q8(c)(ii)",
+    stem: "In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur.",
+    questionText: "There are 25 grams of charcoal in the mixture. Work out how many grams of potassium nitrate are in this mixture.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "125 g of potassium nitrate in the mixture.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-c-ii-question.png",
+          "srcHash": "10da54dfbe12862be6216fbc34672353",
+          "alt": "The question as printed on the paper — In this exam question, a pyrotechnician’s mixture contains 3/4 potassium nitrate, 3/20 charcoal and 1/10 sulphur. There are 25 grams of charcoal in the mixture. Work out how many grams of potassium nitrate are in this mixture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q8-c-ii-solution.png",
+          "srcHash": "fbb6ed3236dadbcf98a4428708ad882e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-a-i-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q9-a-i-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(a)(i), Q9(a)(ii)",
+    questionText: "A company sells memory sticks. (i) A memory stick costs €19·99, reduced to €16·99 in a sale. Find the percentage discount, to the nearest percent. (ii) The company buys 10 000 memory sticks from the USA at $9·50 each. Use €1 = $1·09 to find the total cost in euro, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-a-i-ii-solution-1", kind: "point", verbatim: "Finds the discount.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-a-i-ii-solution-2", kind: "point", verbatim: "Finds the cost of 10000 units in dollars.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-a-i-ii-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-a-i-ii-question.png",
+          "srcHash": "6396ffb677a4c13aac563077a2c8cca8",
+          "alt": "The question as printed on the paper — A company sells memory sticks. (i) A memory stick costs €19·99, reduced to €16·99 in a sale. Find the percentage discount, to the nearest percent. (ii) The company buys 10 000 memory sticks from the USA at $9·50 each. Use €1 = $1·09 to find the total cost in euro, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-a-i-ii-solution.png",
+          "srcHash": "50868ec9ef86904eaab091282d36720c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q9(a)(i), Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-b", topicId: "maths-3-3", conceptId: "p1-deferred-q9-b",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(b)",
+    questionText: "Seán’s flight from Shannon to New York took off at 09:45. New York is 5 hours behind Ireland. The flight time is 7 hours 35 minutes. What is the local time when his flight is due to land?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-b-solution-1", kind: "point", verbatim: "some relevant addition or subtraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-b-solution-2", kind: "point", verbatim: "17:20 or 5.20 found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-b-question.png",
+          "srcHash": "c52726b19252d23080e0f748c742aabc",
+          "alt": "The question as printed on the paper — Seán’s flight from Shannon to New York took off at 09:45. New York is 5 hours behind Ireland. The flight time is 7 hours 35 minutes. What is the local time when his flight is due to land?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-b-solution.png",
+          "srcHash": "bbbc7d672722ed28d2b695f8cc327ea4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-c-i", topicId: "maths-3-2", conceptId: "p1-deferred-q9-c-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(c)(i)",
+    stem: "Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes.",
+    questionText: "Write the number of bytes in one gigabyte in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ. Give a correct to 3 significant figures.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-c-i-solution-1", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-c-i-question.png",
+          "srcHash": "31c8170e206a7474f697887dbf61ba01",
+          "alt": "The question as printed on the paper — Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes. Write the number of bytes in one gigabyte in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ. Give a correct to 3 significant figures.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-c-i-solution.png",
+          "srcHash": "7a825a56df656d3385d7fe7926592da0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use the byte values supplied in this examination table. They are the data for this question, rather than a statement of standard storage-unit definitions.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-c-ii", topicId: "maths-3-2", conceptId: "p1-deferred-q9-c-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(c)(ii)",
+    stem: "Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes.",
+    questionText: "A desktop computer has 1 terabyte of storage. A NASA super computer has 7·6 petabytes. Work out how many desktop computers are needed to equal the NASA computer’s storage. Give your answer correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Converts either 1 terabyte or 7 ∙6 petabytes to bytes.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-c-ii-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-c-ii-question.png",
+          "srcHash": "c0eb656973e63f0e935189e9626554ee",
+          "alt": "The question as printed on the paper — Use the examination table: 1 gigabyte = 2³⁰ bytes; 1 terabyte = 2⁴⁰ bytes; 1 petabyte = 2⁶⁰ bytes. A desktop computer has 1 terabyte of storage. A NASA super computer has 7·6 petabytes. Work out how many desktop computers are needed to equal the NASA computer’s storage. Give your answer correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-c-ii-solution.png",
+          "srcHash": "a79795b25b19db9cc4d8e02bbef643f5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use the byte values supplied in this examination table, including 1 petabyte = 2⁶⁰ bytes. With these exam values, 7.6 × 2⁶⁰ ÷ 2⁴⁰ = 7,969,177.6, so the required rounded answer is 7,969,178.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-d-i", topicId: "maths-5-1", conceptId: "p1-deferred-q9-d-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(d)(i)",
+    stem: "At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ.",
+    questionText: "Use d(t) to find the predicted amount of data in the world by the start of 2026, in zettabytes to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-d-i-solution-1", kind: "point", verbatim: "in the given function.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-d-i-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-d-i-question.png",
+          "srcHash": "fc867cfc29b3fdb7906e7f8402eb5abe",
+          "alt": "The question as printed on the paper — At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ. Use d(t) to find the predicted amount of data in the world by the start of 2026, in zettabytes to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-d-i-solution.png",
+          "srcHash": "020e1af4c848afa3c10ba0cf7542c53d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q9(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q9-d-ii-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-d-ii-iii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q9(d)(ii), Q9(d)(iii)",
+    stem: "At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ.",
+    questionText: "(ii) In which year will the predicted amount of data first reach 200 zettabytes? (iii) Use suitable values from the graph to estimate the number of years it takes for the amount of data to double, to the nearest whole number. Show your work for both parts on the graph.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q9-d-ii-iii-solution-1", kind: "point", verbatim: "2027", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-d-ii-iii-solution-2", kind: "point", verbatim: "approximately 4 years for data to double", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q9-d-ii-iii-solution-3", kind: "point", verbatim: "Or similar", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-d-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-d-ii-iii-question.png",
+          "srcHash": "7a4e7eda951d5d23e6ffcf315d5a537b",
+          "alt": "The question as printed on the paper — At the start of 2021 the world had approximately 64 zettabytes of data. The predicted growth up to the start of 2029 is d(t) = 64(1·19)^t, where t is years since the start of 2021, 0 ≤ t ≤ 8, t ∈ ℝ. (ii) In which year will the predicted amount of data first reach 200 zettabytes? (iii) Use suitable values from the graph to estimate the number of years it takes for the amount of data to double, to the nearest whole number. Show your work for both parts on the graph.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q9-d-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q9-d-ii-iii-solution.png",
+          "srcHash": "3de1b29c07432edebcea2b0321de5120",
+          "alt": "NextStepUni graph of 64(1.19)^t over 2021–2029. Reading guides show 200 zettabytes crossed during 2027 and growth from about 75 in 2022 to about 150 in 2026, a doubling time of approximately four years. Original SEC answer and marking notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The NextStepUni graph supplies the graphical working omitted from the scheme. The curve reaches 200 during 2027. Its doubling time is about four years. The scheme’s criteria call these subparts (i) and (ii); they correspond to paper (ii) and (iii).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-a", topicId: "maths-4-1", conceptId: "p1-deferred-q10-a",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(a)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Draw the fourth pattern in the sequence into the box below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-a-solution-1", kind: "point", verbatim: "correct number of grey tiles.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-a-solution-2", kind: "point", verbatim: "No shading", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-a-solution-3", kind: "point", verbatim: "One tile missing", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-a-question.png",
+          "srcHash": "17045ced97400965e92baed6867e9460",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Draw the fourth pattern in the sequence into the box below.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-a-solution.png",
+          "srcHash": "fef034169ccba4c6bdd6bf69b984795b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-b", topicId: "maths-4-1", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(b)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Complete the table to show the number of grey tiles, white tiles and total tiles in the first four patterns. Given entries: pattern 1 has 3 grey, 2 white, total 5; pattern 2 total 10; pattern 3 has 5 grey; pattern 4 has 20 white.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "Solution consists of 6 table entries:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-b-solution-2", kind: "point", verbatim: "1 correct table entry.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-b-solution-3", kind: "point", verbatim: "4 correct table entries.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-b-question.png",
+          "srcHash": "586f9eb1683822920fe0b16b76a32b00",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Complete the table to show the number of grey tiles, white tiles and total tiles in the first four patterns. Given entries: pattern 1 has 3 grey, 2 white, total 5; pattern 2 total 10; pattern 3 has 5 grey; pattern 4 has 20 white.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-b-solution.png",
+          "srcHash": "2b15c13136bfb7e37894c56e52362406",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-c-i", topicId: "maths-4-1", conceptId: "p1-deferred-q10-c-i",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(c)(i)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Find a formula in terms of n for the number of grey tiles in pattern n, where n ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-c-i-solution-1", kind: "point", verbatim: "Correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-i-question.png",
+          "srcHash": "16972432a0afd8f93b2fda07ce90405c",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Find a formula in terms of n for the number of grey tiles in pattern n, where n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-i-solution.png",
+          "srcHash": "0cdd935a73a0002e734d53973e4eb237",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Here the formula n + 2 counts grey tiles. The Tₙ notation used in this scheme row must not be confused with Tₙ for total tiles in part (d).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-c-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q10-c-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(c)(ii)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Using your formula from part (c)(i), or otherwise, work out the number of grey tiles in the 25th pattern.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "some correct substitution into formula derived in (i).", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-c-ii-solution-2", kind: "point", verbatim: "Finds a new term in the pattern", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-ii-question.png",
+          "srcHash": "72f540c24d72512feed59dc9151d9d67",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Using your formula from part (c)(i), or otherwise, work out the number of grey tiles in the 25th pattern.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-ii-solution.png",
+          "srcHash": "b6695c4aedcde412c91dd4a6a497a995",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "This counts grey tiles: 25 + 2 = 27. The later part (d) uses Tₙ for total tiles, which is a different count.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-c-iii", topicId: "maths-4-1", conceptId: "p1-deferred-q10-c-iii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(c)(iii)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Find the total number of grey tiles in the first 25 patterns of the sequence.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-c-iii-solution-1", kind: "point", verbatim: "375 tiles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-c-iii-solution-2", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-iii-question.png",
+          "srcHash": "1a2fcec30a84fcb2ded894b6c766fb6a",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Find the total number of grey tiles in the first 25 patterns of the sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-iii-solution.png",
+          "srcHash": "1001d8eef352f70f4c1daf6659f6eecb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-c-iv", topicId: "maths-4-1", conceptId: "p1-deferred-q10-c-iv",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(c)(iv)",
+    stem: "The first three patterns shown contain grey tiles and white tiles.",
+    questionText: "Find how many white tiles are in the 8th pattern of the sequence.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-c-iv-solution-1", kind: "point", verbatim: "72 tiles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-c-iv-solution-2", kind: "point", verbatim: "finding Pattern 5.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-iv-question.png",
+          "srcHash": "6d40024d2460d222be43428b27100900",
+          "alt": "The question as printed on the paper — The first three patterns shown contain grey tiles and white tiles. Find how many white tiles are in the 8th pattern of the sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-c-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-c-iv-solution.png",
+          "srcHash": "f51b6d2b018268b47d474e8f03351b99",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(c)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-deferred-q10-d-i-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q10-d-i-ii",
+    section: "B", questionRef: "2024 OL Paper 1 — Deferred Q10(d)(i), Q10(d)(ii)",
+    stem: "The total number of tiles in pattern n is Tₙ = n² + bn + c, where b, c ∈ ℝ are constants.",
+    questionText: "(i) Remember T₂ = 10. Substitute in the formula to show that 2b + c = 6. (ii) Solve b + c = 4 and 2b + c = 6 to find b and c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p1-deferred-q10-d-i-ii-solution-1", kind: "point", verbatim: "Some work of merit in forming equation.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p1-deferred-q10-d-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,7,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-d-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-d-i-ii-question.png",
+          "srcHash": "6df183a913ca113ed462a7a592a3eff7",
+          "alt": "The question as printed on the paper — The total number of tiles in pattern n is Tₙ = n² + bn + c, where b, c ∈ ℝ are constants. (i) Remember T₂ = 10. Substitute in the formula to show that 2b + c = 6. (ii) Solve b + c = 4 and 2b + c = 6 to find b and c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p1-deferred-q10-d-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p1-deferred-q10-d-i-ii-solution.png",
+          "srcHash": "969e49cc3f1dd51d98bfd9d9cdbb1fde",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 1 — Deferred Q10(d)(i), Q10(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

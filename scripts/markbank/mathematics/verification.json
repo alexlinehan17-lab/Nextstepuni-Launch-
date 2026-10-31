@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-30",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and six deferred editions; 10 indexed English deferred editions and Irish provenance review remain outstanding.",
-  "runtimeCards": 4717,
-  "reviewedTasks": 4717,
+  "date": "2026-10-31",
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and seven deferred editions; nine indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 4759,
+  "reviewedTasks": 4759,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-30 through 2024 deferred Higher Paper 2.",
+  "productionBuild": "Passed on 2026-10-31 through 2024 deferred Ordinary Paper 1.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2024higherPaper2",
+  "latestBatch": "deferred2024ordinaryPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,10 +3776,10 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2024 Ordinary deferred Paper 1",
-    "status": "2024 deferred Higher papers complete; independent Ordinary source sweep in progress",
-    "remainingEnglishDeferredPapers": 10,
-    "irishEditionReview": "outstanding"
+    "paper": "2024 Ordinary deferred Paper 2",
+    "status": "Paper 1 complete and verified; Paper 2 is next for independent visual review.",
+    "remainingEnglishDeferredPapers": 9,
+    "irishEditionReview": "Deferred by Alex on 2026-10-31; not part of the current completion scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
     "status": "Completed by higher2012Paper1; retained here as historical infrastructure evidence.",
@@ -8468,5 +8468,77 @@
     "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 10,
     "wholeSubjectComplete": false
+  },
+  "deferred2024ordinaryPaper1": {
+    "date": "2026-10-31",
+    "paper": "2024 Ordinary deferred Paper 1",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reviewedTasks": 42,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "runtimeCards": 4759,
+    "previousAuthoredCardsUnchanged": 4718,
+    "previousDeferredImagesUnchanged": 500,
+    "inspectedImages": 84,
+    "workedSupplements": [
+      "Q8(a)(iv) continued firework graph",
+      "Q9(d)(ii)\u2013(iii) world-data graph with reading guides"
+    ],
+    "reviewedAtlasQuestionPlacements": 1114,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 9,
+    "irishEditionReview": "Deferred at user request; outstanding provenance is recorded, not treated as a current blocker.",
+    "tests": {
+      "javascriptPassed": 420,
+      "pythonPassed": 16,
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2024-ol-p1-deferred-q8-a-iv",
+      "phoneCard": "maths-2024-ol-p1-deferred-q9-d-ii-iii",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        2,
+        6
+      ],
+      "enlarge": true,
+      "phoneZoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePdfPage": 15,
+      "viewportReset": true
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }

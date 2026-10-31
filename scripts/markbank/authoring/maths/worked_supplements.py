@@ -5,7 +5,7 @@ The original marking criteria remain attached separately by the publisher.
 """
 from decimal import Decimal
 from io import BytesIO
-from math import exp, cos, pi, sqrt, degrees, acos
+from math import exp, cos, pi, sqrt, degrees, acos, log
 
 import fitz
 from PIL import Image
@@ -21,6 +21,9 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    ordinary = {'firework-2024-ol-deferred':render_firework_2024, 'data-growth-2024-ol-deferred':render_data_growth_2024}
+    if name in ordinary:
+        return ordinary[name](dpi)
     paper2 = {'tangent-2024-hl-deferred':render_tangent_2024,
               'double-angle-2024-hl-deferred':render_double_angle_2024,
               'confidence-2024-hl-deferred':render_confidence_2024,
@@ -338,4 +341,80 @@ def render_scatter_2024(dpi):
     c.drawImage(ImageReader(plot),22,93,width=516,height=516*clip.height/clip.width)
     c.setFont('Helvetica',11);c.drawString(22,70,'Read across from 1.80 m to the line, then down: approximately 90 kg.')
     c.setFont('Helvetica',9);c.drawString(22,47,'Original scatterplot: © State Examinations Commission. Line and guides: NextStepUni.')
+    return _example_image(buf,c,dpi)
+
+
+def firework_height(t):
+    return -4.8*t*t+41.65*t+20
+
+
+def firework_sea_time():
+    return (41.65+sqrt(41.65**2+4*4.8*20))/(2*4.8)
+
+
+def world_data(t):
+    return 64*1.19**t
+
+
+def world_data_time(amount):
+    return log(amount/64)/log(1.19)
+
+
+def render_firework_2024(dpi):
+    buf,c=_example_canvas('Continuing the curve to sea level','2024 deferred Ordinary Paper 1 · Q8(a)(iv)',465)
+    x0,y0,w,h=65,95,445,245
+    X=lambda t:x0+w*t/10
+    Y=lambda height:y0+h*height/120
+    c.setFont('Helvetica',10);c.drawString(x0,358,'Height above sea level, h(t) (metres)')
+    c.setStrokeColorRGB(.87,.87,.85);c.setLineWidth(.5)
+    for t in range(11):c.line(X(t),y0,X(t),y0+h)
+    for y in range(0,121,20):c.line(x0,Y(y),x0+w,Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(1)
+    c.line(x0,y0,x0+w+5,y0);c.line(x0,y0,x0,y0+h+5)
+    for t in range(11):c.drawCentredString(X(t),y0-17,str(t))
+    for y in range(0,121,20):c.drawRightString(x0-9,Y(y)-3,str(y))
+    c.drawRightString(x0+w,55,'Time t (seconds)')
+    root=firework_sea_time()
+    for a,b,col in [(0,8,(.15,.15,.14)),(8,root,(.90,.39,.15))]:
+        c.setStrokeColorRGB(*col);c.setLineWidth(1.8)
+        path=c.beginPath();path.moveTo(X(a),Y(firework_height(a)))
+        for i in range(1,241):
+            t=a+(b-a)*i/240;path.lineTo(X(t),Y(max(0,firework_height(t))))
+        c.drawPath(path)
+    c.setFillColorRGB(.90,.39,.15);c.circle(X(root),Y(0),3,stroke=0,fill=1)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica-Bold',12)
+    c.setFont('Helvetica',11);c.drawString(22,382,'Extend beyond t = 8 and read the horizontal intercept: about 9.1 seconds.')
+    c.setFont('Helvetica',10);c.drawString(22,35,'The orange section extends the curve until h(t) = 0; the flight model ends there.')
+    return _example_image(buf,c,dpi)
+
+
+def render_data_growth_2024(dpi):
+    buf,c=_example_canvas('Reading growth from the graph','2024 deferred Ordinary Paper 1 · Q9(d)(ii)–(iii)',510)
+    x0,y0,w,h=65,147,445,235
+    X=lambda t:x0+w*t/8
+    Y=lambda amount:y0+h*amount/280
+    c.setFont('Helvetica',10);c.drawString(x0,401,'Amount of data (zettabytes)')
+    c.setStrokeColorRGB(.87,.87,.85);c.setLineWidth(.5)
+    for t in range(9):c.line(X(t),y0,X(t),y0+h)
+    for y in range(0,251,50):c.line(x0,Y(y),x0+w,Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(1)
+    c.line(x0,y0,x0+w+5,y0);c.line(x0,y0,x0,y0+h+5)
+    for t in range(9):c.drawCentredString(X(t),y0-17,str(2021+t))
+    for y in range(0,251,50):c.drawRightString(x0-9,Y(y)-3,str(y))
+    c.drawRightString(x0+w,110,'Year (ticks show the start of each year)')
+    curve=c.beginPath();curve.moveTo(X(0),Y(world_data(0)))
+    for i in range(1,801):curve.lineTo(X(i/100),Y(world_data(i/100)))
+    c.setLineWidth(1.7);c.drawPath(curve)
+    # Exact 200 crossing; the doubling example uses rounded graph readings, as the SEC does.
+    for amount in [75,150,200]:
+        t=world_data_time(amount)
+        c.setStrokeColorRGB(*((.90,.39,.15) if amount==200 else (.43,.43,.40)))
+        c.setLineWidth(1);c.setDash(4,3)
+        c.lines([(x0,Y(amount),X(t),Y(amount)),(X(t),Y(amount),X(t),y0)])
+        c.setDash();c.setFillColorRGB(.12,.12,.11);c.circle(X(t),Y(amount),2.4,stroke=0,fill=1)
+        if amount in [75,150]:
+            c.setFont('Helvetica',10);c.drawString(X(t)+8,Y(amount)-4,str(amount))
+    c.setFont('Helvetica-Bold',12);c.drawString(22,82,'(ii) The curve first reaches 200 during 2027.')
+    c.setFont('Helvetica',11);c.drawString(22,61,'(iii) About 75 in 2022 grows to about 150 in 2026: approximately 4 years.')
+    c.drawString(22,42,'Both answers are graph readings; the dashed lines show the working.')
     return _example_image(buf,c,dpi)

@@ -431,3 +431,76 @@ describe('2025 Ordinary deferred Paper 2', () => {
     }
   });
 });
+
+describe('2024 Ordinary deferred Paper 1', () => {
+  const review=JSON.parse(readFileSync('scripts/markbank/mathematics/reviews/2024-ordinary-p1-deferred.json','utf8')) as typeof reviewP2;
+  const prefix='maths-2024-ol-p1-deferred-q';
+  const cards=CARDS.filter(c=>c.id.startsWith(prefix));
+  it('covers every question, shared mark allocation and printed response choice', () => {
+    expect(cards).toHaveLength(42);
+    expect(cards.map(c=>c.id).sort()).toEqual(review.cards.map(c=>c.id).sort());
+    expect(cards.reduce((s,c)=>s+c.totalMarks,0)).toBe(380);
+    for(const [n,marks] of Object.entries(review.printedQuestionMarks))
+      expect(cards.filter(c=>c.questionRef.match(/Q(\d+)/)?.[1]===n).reduce((s,c)=>s+c.totalMarks,0),n).toBe(marks);
+    for(const id of ['1-a-i-ii','1-b-i-ii','4-a-i-ii','5-a-i-ii','6-a-i-ii','7-b-i-ii','7-d-i-ii','8-a-ii-iii','9-a-i-ii','10-d-i-ii'])
+      expect(cards.find(c=>c.id===prefix+id)?.totalMarks,id).toBe(15);
+    for(const id of ['2-a-i-ii','8-b-i-ii','9-d-ii-iii'])
+      expect(cards.find(c=>c.id===prefix+id)?.totalMarks,id).toBe(10);
+    const choice=cards.filter(c=>c.id.startsWith(prefix+'7-a-iii'));
+    expect(choice).toHaveLength(1);
+    for(const word of ['Increases','Decreases','Stays the same','reason'])expect(choice[0].questionText).toContain(word);
+    expect(cards.filter(c=>c.id.startsWith(prefix+'6-b'))).toHaveLength(1);
+    expect(cards.find(c=>c.id===prefix+'6-b')?.questionText).toContain('match every function');
+  });
+
+  it('preserves detailed awards, explains source errors and supplies the missing graphical working', () => {
+    expect(cards.find(c=>c.id===prefix+'5-a-iii')?.mathematicsScale).toMatchObject({code:'5C',marks:[0,2,3,5]});
+    for(const [id,word] of [['5-a-iii','summary'],['1-a-i-ii','exponent'],['7-a-i','40 to 50'],['7-d-i-ii','20.3007'],['9-c-ii','2⁶⁰'],['8-a-ii-iii','overlap']]) {
+      const c=cards.find(c=>c.id===prefix+id)!;
+      expect('figure' in c && c.figure?.sourceNote,id).toContain(word);
+    }
+    for(const [id,word] of [['8-a-iv','9.1 seconds'],['9-d-ii-iii','during 2027']]) {
+      const c=cards.find(c=>c.id===prefix+id)!;
+      expect('figure' in c && c.figure?.sourceNote,id).toContain(word);
+      expect('figure' in c && c.figure?.attribution,id).toContain('Worked example: NextStepUni');
+      expect('figure' in c && c.figure?.attribution,id).toContain('Original credit notes: SEC');
+    }
+  });
+
+  it('puts every card into the real Atlas feed with exact deferred sources and complete inspected images', () => {
+    const paper=topicsForPaper('mathematics',2024,'ordinary','ev',review.paperFileid)!;
+    expect(paper).toBeDefined();
+    const url=preferredAnswersUrl('mathematics',2024,review.paperFileid,'https://storage/map.json');
+    expect(url).toBe(`/paper-answers/2024/${review.paperFileid}.json`);
+    const hosted=readFileSync('public'+url,'utf8');
+    expect(hosted).toBe(readFileSync(`scripts/paper-trail/answers/2024/${review.paperFileid}.json`,'utf8'));
+    const map:PaperAnswerMap=JSON.parse(hosted);
+    expect(isAnswerMap(map)).toBe(true);
+    expect(map.schemeFileid).toBe(review.schemeFileid);
+    expect(map.q.map(q=>q.n)).toEqual(Object.keys(review.printedQuestionMarks));
+    const feeds=new Map<string,ReturnType<typeof questionsForTopics>>();
+    for(const task of review.cards) {
+      const c=cards.find(c=>c.id===task.id)!;
+      expect(c.paperFileid).toBe('LC003GLP100EV-deferred');
+      expect(c.sourceMaterial?.sourceFileid).toBe(review.paperFileid);
+      expect(c.mathematicsScale?.schemeFileid).toBe(review.schemeFileid);
+      expect(c.questionFigure?.solution).not.toBe(true);
+      expect('figure' in c && c.figure?.solution).toBe(true);
+      for(const f of [c.questionFigure,'figure' in c?c.figure:undefined]) {
+        expect(f,task.id).toBeDefined();
+        expect(createHash('md5').update(readFileSync('public'+f!.src)).digest('hex'),task.id).toBe(f!.srcHash);
+      }
+      const n=task.printedParts[0].match(/^Q(\d+)/)![1];
+      const q=paper.q.find(q=>q.n===n)!;
+      expect(browseTopicIdsForQuestion(paper,q),task.id).toEqual(expect.arrayContaining(task.examTopicIds));
+      expect(examTopicIdsForQuestion('mathematics','ordinary',2024,'deferred',n,'p1','ev',review.paperFileid),task.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+      expect(paperRegionFor(map.q,n)?.map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.sourcePages));
+      expect(schemeRegionFor(map.q.find(q=>q.n===n)!).map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.schemePages));
+      for(const topic of task.examTopicIds) {
+        if(!feeds.has(topic))feeds.set(topic,questionsForTopics('mathematics',[topic]));
+        expect(feeds.get(topic),task.id).toContainEqual({subjectId:'mathematics',year:2024,level:'ordinary',lang:'ev',paperKey:'p1',fileid:review.paperFileid,n});
+      }
+    }
+  });
+});
