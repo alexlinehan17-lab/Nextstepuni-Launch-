@@ -59,13 +59,20 @@ export function resolveQuizDeck(
   return { subjectId: subject.id, level, title: subject.title, deckId: `${subject.id}-${level}` };
 }
 
-/** Short questions, including native rubric allocations and source readers. */
+/** Questions with native numeric marking controls, including full rubric tasks. */
 export function isQuizCard(card: SecCard): boolean {
-  if (card.totalMarks <= 0 || card.totalMarks > QUIZ_MAX_MARKS || card.audioMaterial) return false;
+  if (card.totalMarks <= 0 || card.audioMaterial) return false;
   // Long listening exercises do not fit a quick check. All other question,
   // source and scoring formats are handled by the native Mark Bank screen.
   return !isPointCard(card) || (card.tariffModel.kind === 'fixed' && card.rows.length > 0
-    && card.rows.length <= QUIZ_MAX_ROWS && card.rows.every(row => row.marks !== null || Boolean(row.group)));
+    && card.rows.every(row => row.marks !== null || Boolean(row.group)));
+}
+
+/** Prefer quick questions, but keep a full task when that is what a topic offers. */
+export function preferShortQuestions(pool: SecCard[]): SecCard[] {
+  const short = pool.filter(card => card.totalMarks <= QUIZ_MAX_MARKS
+    && (!isPointCard(card) || card.rows.length <= QUIZ_MAX_ROWS));
+  return short.length ? short : pool;
 }
 
 function dedupe(cards: SecCard[]): SecCard[] {
@@ -160,11 +167,15 @@ export async function loadQuiz(input: {
   const deck = resolveQuizDeck(input.subjectName, input.topicSelection?.subjectId, input.profileSubjects);
   if (!deck) return null;
   const cards = await loadCards(deck.subjectId, deck.level);
-  const topicPools = topicIds.map(id => quizPool(cards, [id], spec));
+  const topicPools = topicIds.map(id => preferShortQuestions(quizPool(cards, [id], spec)));
   const pool = dedupe(topicPools.flat());
   const local = readLocal(input.uid, deck.deckId);
   const examTs = input.examDate ? new Date(input.examDate).getTime() : local.examTs;
-  const picked = planQuiz(pool, local.cards, input.now, Number.isFinite(examTs) ? examTs : undefined, QUIZ_SIZE, topicPools);
+  // A full essay/rubric task deserves room: one question per available topic,
+  // still capped at four. Short-only checks can fill the usual small queue.
+  const hasLongTask = pool.some(card => card.totalMarks > QUIZ_MAX_MARKS);
+  const size = hasLongTask ? Math.min(QUIZ_SIZE, topicPools.filter(topic => topic.length).length) : QUIZ_SIZE;
+  const picked = planQuiz(pool, local.cards, input.now, Number.isFinite(examTs) ? examTs : undefined, size, topicPools);
   if (!picked.length) return null;
   return { deck, cards: picked, poolTotal: pool.length, topicLabel: quizTopicLabel(input.topicSelection) };
 }

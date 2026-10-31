@@ -7,7 +7,7 @@
  */
 
 import { describe, expect, test } from 'vitest';
-import { QUIZ_SIZE, isQuizCard, planQuiz, quizPool, quizTopicLabel, resolveQuizDeck, loadQuiz } from '@/components/study/quiz/studyQuizPlan';
+import { QUIZ_SIZE, isQuizCard, planQuiz, quizPool, quizTopicLabel, resolveQuizDeck, loadQuiz, preferShortQuestions } from '@/components/study/quiz/studyQuizPlan';
 import { loadCards } from '@/components/MarkBank/deck';
 import { cardsForCurriculumNode } from '@/components/MarkBank/curriculumMenu';
 import { CURRICULUM_SPECIFICATIONS, type CanonicalCurriculumSpecification } from '@/curriculumRegistry';
@@ -84,15 +84,15 @@ const spec = {
 } as unknown as CanonicalCurriculumSpecification;
 
 describe('which questions qualify', () => {
-  test('native short point and rubric cards qualify, including source material and answer routes', () => {
-    expect(all.filter(isQuizCard).map(card => card.id)).toEqual(['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'x3', 'x4', 'x6']);
+  test('native point and rubric cards qualify, including long tasks, sources and answer routes', () => {
+    expect(all.filter(isQuizCard).map(card => card.id)).toEqual(['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'x1', 'x3', 'x4', 'x6']);
   });
 
   test('topics narrow the pool, a whole area expands to its topics, and cross-listed cards count once', () => {
-    expect(quizPool(all, ['chem-2-2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x3', 'x4', 'x6']);
+    expect(quizPool(all, ['chem-2-2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x1', 'x3', 'x4', 'x6']);
     expect(quizPool(all, ['chemistry:cs3'], spec).map(card => card.id)).toEqual(['q3', 'q4', 'q5']);
-    expect(quizPool(all, ['chem-2-2', 'chemistry:cs2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x3', 'x4', 'x6']);
-    expect(quizPool(all, []).length).toBe(9);
+    expect(quizPool(all, ['chem-2-2', 'chemistry:cs2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x1', 'x3', 'x4', 'x6']);
+    expect(quizPool(all, []).length).toBe(10);
   });
 
   test('one or two matches are enough; queues remain bounded and stable', () => {
@@ -162,4 +162,22 @@ describe('saved session topics', () => {
     expect(new Set(picked.map(card => card.id)).size).toBe(4);
     expect(planQuiz([simple], {}, 1_000, undefined, 4, [[simple], [simple]])).toEqual([simple]);
   });
+});
+
+
+test('a full response remains available when the topic has no short question', async () => {
+  expect(preferShortQuestions([tooLong])).toEqual([tooLong]);
+  expect(preferShortQuestions([tooLong, simple])).toEqual([simple]);
+  const english = CURRICULUM_SPECIFICATIONS.find(spec => spec.subjectId === 'english' && spec.status === 'verified')!;
+  const deck = await loadCards('english', 'higher');
+  const longTopic = english.groups.flatMap(group => group.topics).find(topic => {
+    const pool = quizPool(deck, [topic.id], english);
+    return pool.length > 0 && pool.every(card => card.totalMarks > 10);
+  })!;
+  expect(longTopic).toBeDefined();
+  const loaded = await loadQuiz({ uid: 'demo-student', subjectName: 'English', now: 1_000,
+    topicSelection: { subjectId: english.subjectId, specificationId: english.id, topicIds: [longTopic.id] } });
+  expect(loaded?.cards).toHaveLength(1);
+  expect(loaded?.cards[0].totalMarks).toBeGreaterThan(10);
+  expect(cardsForCurriculumNode(longTopic.id, loaded!.cards, english)).toHaveLength(1);
 });
