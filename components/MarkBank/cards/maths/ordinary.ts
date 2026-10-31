@@ -85169,4 +85169,2388 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q1-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q1-a-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q1(a)(i)",
+    stem: "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+    questionText: "Complete the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q1-a-i-solution-1", kind: "point", verbatim: "Any 1 correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q1-a-i-solution-2", kind: "point", verbatim: "5 rows or columns correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-i-question.png",
+          "srcHash": "fbc21f8594c0674ba940e58ff8593867",
+          "alt": "The question as printed on the paper — In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below. Complete the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-i-solution.png",
+          "srcHash": "666b459338e0e02764aa9c1cae3d22ab",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q1(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q1-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q1-a-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q1(a)(ii)",
+    stem: "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+    questionText: "The game is won if the product of the numbers is a multiple of 3. What is the probability of winning the game on one throw of the two dice? Give your answer in the form p/q, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q1-a-ii-solution-1", kind: "point", verbatim: "Correct numerator or denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-ii-question.png",
+          "srcHash": "a0f36fb20c6d5d0bcf50a845663b1337",
+          "alt": "The question as printed on the paper — In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below. The game is won if the product of the numbers is a multiple of 3. What is the probability of winning the game on one throw of the two dice? Give your answer in the form p/q, where p, q ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-ii-solution.png",
+          "srcHash": "ce1373e46dbded40a6afbf71cc7bf772",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q1-a-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q1-a-iii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q1(a)(iii)",
+    stem: "In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below.",
+    questionText: "The rule for winning the game is changed. The game is now won if the product of the numbers, recorded in the table, from one throw of the two dice is n, where n ∈ ℕ. The probability of winning the game is now 1/36. List the possible values of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q1-a-iii-solution-1", kind: "point", verbatim: "Possible values of n are:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q1-a-iii-solution-2", kind: "point", verbatim: "One correct value of n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-iii-question.png",
+          "srcHash": "b6a51f3f3599b7679d542115465d0a99",
+          "alt": "The question as printed on the paper — In a game, two fair standard six-sided dice are thrown. The numbers are multiplied and this product of the two numbers is recorded. Some of the possible outcomes are shown in the table below. The rule for winning the game is changed. The game is now won if the product of the numbers, recorded in the table, from one throw of the two dice is n, where n ∈ ℕ. The probability of winning the game is now 1/36. List the possible values of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-a-iii-solution.png",
+          "srcHash": "9bd96c056dc16ac63586ca3325bbe79e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q1(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "A win probability of 1/36 means exactly one ordered dice pair gives that product. The complete list is 1,9,16,25,36. Products such as 4 also occur as 1×4 and 4×1, so they do not qualify.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q1-b", topicId: "maths-1-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q1(b)",
+    questionText: "There are 25 students in a class. There are 15 male students of which 3 wear glasses. In total 7 students in this class wear glasses. If a student is selected at random from this class find the probability that the student is a female who does not wear glasses.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Finds 4 or 10 or has 25 as denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Numerator correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-b-question.png",
+          "srcHash": "3b322efc0eae6655b95dd183b35ee4c0",
+          "alt": "The question as printed on the paper — There are 25 students in a class. There are 15 male students of which 3 wear glasses. In total 7 students in this class wear glasses. If a student is selected at random from this class find the probability that the student is a female who does not wear glasses.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q1-b-solution.png",
+          "srcHash": "d2268ad4bfe383b969041ad471f45af0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q2-a-i", topicId: "maths-1-1", conceptId: "p2-deferred-q2-a-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q2(a)(i)",
+    questionText: "In how many ways can the letters of the word ACTION be arranged, using all 6 letters?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Writes any correct arrangement", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-a-i-question.png",
+          "srcHash": "a880bd5a4c49073c6cc74c59a458cba0",
+          "alt": "The question as printed on the paper — In how many ways can the letters of the word ACTION be arranged, using all 6 letters?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-a-i-solution.png",
+          "srcHash": "37595b1bb770ccb21944ab6b90560c2b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q2-a-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q2-a-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q2(a)(ii)",
+    stem: "The six letters of ACTION are arranged using all 6 letters.",
+    questionText: "In how many of these arrangements are the three vowels (A, I, and O) together?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Finds 24", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-a-ii-question.png",
+          "srcHash": "c0ab5d268e918a6dc43bf99271da8f98",
+          "alt": "The question as printed on the paper — The six letters of ACTION are arranged using all 6 letters. In how many of these arrangements are the three vowels (A, I, and O) together?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-a-ii-solution.png",
+          "srcHash": "a59657154b06d98c2d67c66b17190e77",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q2-b-i", topicId: "maths-1-2", conceptId: "p2-deferred-q2-b-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q2(b)(i)",
+    stem: "In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is:",
+    questionText: "the most popular male name or the most popular female name? Give your answer as a percentage correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q2-b-i-solution-1", kind: "point", verbatim: "finds 1007", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q2-b-i-solution-2", kind: "point", verbatim: "Both numerator and denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-b-i-question.png",
+          "srcHash": "6f0c79b5da74194319aa63a3f1b1fa6f",
+          "alt": "The question as printed on the paper — In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is: the most popular male name or the most popular female name? Give your answer as a percentage correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-b-i-solution.png",
+          "srcHash": "5a28245a27b0f78a112123a7a52ae988",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q2-b-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q2-b-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q2(b)(ii)",
+    stem: "In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is:",
+    questionText: "one of the 5 female names that appears in the table above? Give your answer as a percentage correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "Finds 1730", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q2-b-ii-solution-2", kind: "point", verbatim: "Correct numerator and denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-b-ii-question.png",
+          "srcHash": "3de20c2d84e06294fcf54374e32f7edc",
+          "alt": "The question as printed on the paper — In 2020, in Ireland, according to the Central Statistics Office, a total of 55 959 live births were registered. Of those 27 057 were female. The 5 most popular male first names and 5 most popular female first names were listed as: Jack 597, James 495, Noah 447, Daniel 359, Conor 345; Grace 410, Fiadh 366, Emily 329, Sophie 328, Ava 297. If a baby name was selected at random from the register for that year, what is the probability that the name selected is: one of the 5 female names that appears in the table above? Give your answer as a percentage correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q2-b-ii-solution.png",
+          "srcHash": "98eb8cc9d99b965df3b7abbed6152e25",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The random name is chosen from all 55,959 registered births, not just girls. Add the five female-name counts to get 1,730, then use 1730/55959×100≈3.1%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q3-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q3(a)(i)",
+    stem: "The equation of line t is: 2x − 3y + 7 = 0.",
+    questionText: "Write down the slope of t.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q3-a-i-solution-1", kind: "point", verbatim: "Attempts to isolate", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-i-question.png",
+          "srcHash": "120bd9f0a0958c5c75f4992851837f63",
+          "alt": "The question as printed on the paper — The equation of line t is: 2x − 3y + 7 = 0. Write down the slope of t.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-i-solution.png",
+          "srcHash": "13d6c1f55c8c8a4ec9b2ee094469b657",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q3(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q3-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q3(a)(ii)",
+    stem: "The equation of line t is: 2x − 3y + 7 = 0.",
+    questionText: "The equation of line v is: ax − 6y + 1 = 0, where a ∈ ℝ. Line t is parallel to line v. Find the value of a.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q3-a-ii-solution-1", kind: "point", verbatim: "Equates both fractions but fails to finish", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-ii-question.png",
+          "srcHash": "774e1585094575013f727b2b33edd398",
+          "alt": "The question as printed on the paper — The equation of line t is: 2x − 3y + 7 = 0. The equation of line v is: ax − 6y + 1 = 0, where a ∈ ℝ. Line t is parallel to line v. Find the value of a.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-ii-solution.png",
+          "srcHash": "259c1013acb38c6db1eba8b63934c38b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q3(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q3-a-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-iii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q3(a)(iii)",
+    stem: "The equation of line t is: 2x − 3y + 7 = 0.",
+    questionText: "The equation of line w is: 3x + 2y − 9 = 0. Solve simultaneous equations to find the point of intersection of t and w.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q3-a-iii-solution-1", kind: "point", verbatim: "Point of intersection is (1, 3)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q3-a-iii-solution-2", kind: "point", verbatim: "Answers not given as a pair of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-iii-question.png",
+          "srcHash": "b9fbe009723f66d999a6122e8e124897",
+          "alt": "The question as printed on the paper — The equation of line t is: 2x − 3y + 7 = 0. The equation of line w is: 3x + 2y − 9 = 0. Solve simultaneous equations to find the point of intersection of t and w.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-a-iii-solution.png",
+          "srcHash": "60cd41047778d035c11ba227fdbd34c6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q3(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q3-b", topicId: "maths-2-2", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q3(b)",
+    questionText: "A(−2,3), B(2,4), and C(0,0) are the 3 vertices of a triangle. Find, in square units, the area of triangle ACB.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "area formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q3-b-solution-2", kind: "point", verbatim: "Formula fully substituted correctly.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-b-question.png",
+          "srcHash": "caa4a734c6fd62f0d25c8496fadc3978",
+          "alt": "The question as printed on the paper — A(−2,3), B(2,4), and C(0,0) are the 3 vertices of a triangle. Find, in square units, the area of triangle ACB.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q3-b-solution.png",
+          "srcHash": "5df902a82c745efac6a5fd7fc1814940",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q4-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q4-a-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q4(a)(i)",
+    stem: "A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s.",
+    questionText: "Find the centre and the radius of s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q4-a-i-solution-1", kind: "point", verbatim: "Centre or Radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-a-i-question.png",
+          "srcHash": "6cc6ba16a04179a09c8b2ed1f250a0a1",
+          "alt": "The question as printed on the paper — A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s. Find the centre and the radius of s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-a-i-solution.png",
+          "srcHash": "3db93655dc577a6787f7e98cc9525da6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q4(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q4-a-ii-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q4-a-ii-iii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q4(a)(ii), Q4(a)(iii)",
+    stem: "A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s.",
+    questionText: "(ii) Write down the equation of the circle s. (iii) Show, by calculation, that the point p(−1,−3) lies inside the circle s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q4-a-ii-iii-solution-1", kind: "point", verbatim: "Equation of circle found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q4-a-ii-iii-solution-2", kind: "point", verbatim: "No conclusion in (iii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-a-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-a-ii-iii-question.png",
+          "srcHash": "0d9f1da985e82c85417d8dc10b5080e5",
+          "alt": "The question as printed on the paper — A(−4,3) and B(4,−3) are the two end points of a diameter of a circle, s. (ii) Write down the equation of the circle s. (iii) Show, by calculation, that the point p(−1,−3) lies inside the circle s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-a-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-a-ii-iii-solution.png",
+          "srcHash": "99a331f5f20533f3923dd05af8404bd6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q4(a)(ii), Q4(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Parts (ii) and (iii) share one 5C award. The circle is x²+y²=25. For p(−1,−3), x²+y²=10<25, so p lies inside; state that conclusion.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q4-b-i", topicId: "maths-2-2", conceptId: "p2-deferred-q4-b-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q4(b)(i)",
+    stem: "The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9.",
+    questionText: "Write down the centre and the radius of each of the following circles.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q4-b-i-solution-1", kind: "point", verbatim: "4 parts to solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q4-b-i-solution-2", kind: "point", verbatim: "Any 3 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-b-i-question.png",
+          "srcHash": "44e73d7392e4d5936e4ddc293826b0d0",
+          "alt": "The question as printed on the paper — The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9. Write down the centre and the radius of each of the following circles.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-b-i-solution.png",
+          "srcHash": "a5385a0540b8db0254ad9d33d0748e8f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q4(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q4-b-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q4-b-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q4(b)(ii)",
+    stem: "The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9.",
+    questionText: "Hence, or otherwise, write down the co-ordinates of two points on the circle k and two points on the circle p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "4 points to solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q4-b-ii-solution-2", kind: "point", verbatim: "One correct point given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-b-ii-question.png",
+          "srcHash": "d1186bacfa4930494850aa12d73c6650",
+          "alt": "The question as printed on the paper — The circles are k: x² + y² = 49 and p: (x − 8)² + (y + 6)² = 9. Hence, or otherwise, write down the co-ordinates of two points on the circle k and two points on the circle p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q4-b-ii-solution.png",
+          "srcHash": "fa3f995704f56cebd049e3ee5322c85f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Give two valid points on each circle: four ordered pairs altogether. The scheme’s points are examples; other points satisfying the respective equations also work.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q5-a", topicId: "maths-1-7", conceptId: "p2-deferred-q5-a",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q5(a)",
+    stem: "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+    questionText: "Complete the scatter plot of the data on the grid below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q5-a-solution-1", kind: "point", verbatim: "7 correct plots required", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q5-a-solution-2", kind: "point", verbatim: "Up to 6 correct plots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-a-question.png",
+          "srcHash": "abc11c3032a2a3860911875485defdd9",
+          "alt": "The question as printed on the paper — The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. Complete the scatter plot of the data on the grid below.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-a-solution.png",
+          "srcHash": "917162f29a140bcc9e48e109bde7e2a4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Two points were already supplied on the paper, so seven new plots are required. The original scheme graph also shows the line and reading used later in parts (c) and (d).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q5-b", topicId: "maths-1-7", conceptId: "p2-deferred-q5-b",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q5(b)",
+    stem: "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+    questionText: "The sales at 22° seems out of line with the other data. State what name is given to a point that seems out of line with other data and suggest a reason why this might have happened in the case of the data in the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q5-b-solution-1", kind: "point", verbatim: "Name: Outlier", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q5-b-solution-2", kind: "point", verbatim: "shop closed at midday.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-b-question.png",
+          "srcHash": "5d472424fa2d7348ef266504a748bf05",
+          "alt": "The question as printed on the paper — The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. The sales at 22° seems out of line with the other data. State what name is given to a point that seems out of line with other data and suggest a reason why this might have happened in the case of the data in the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-b-solution.png",
+          "srcHash": "8c349cfc5787535b6f3c737564bf2348",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q5-c", topicId: "maths-1-7", conceptId: "p2-deferred-q5-c",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q5(c)",
+    stem: "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+    questionText: "Ignoring the point (22,140), draw the line of best fit on the scatter plot, by eye.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q5-c-solution-1", kind: "point", verbatim: "Work on graph", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q5-c-solution-2", kind: "point", verbatim: "Joins the data points", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34,35],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-c-question.png",
+          "srcHash": "abe50d0e5eb6d6a6ba5568ef02cd1316",
+          "alt": "The question as printed on the paper — The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. Ignoring the point (22,140), draw the line of best fit on the scatter plot, by eye.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-c-solution.png",
+          "srcHash": "744340e54833bcbed1a0638ae0b54f5e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q5-d", topicId: "maths-1-7", conceptId: "p2-deferred-q5-d",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q5(d)",
+    stem: "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. Draw the line of best fit by eye, ignoring (22,140).",
+    questionText: "Use your line of best fit to estimate the sales of units of ice cream on a day with a mean daily temperature of 18·5 degrees. Show your work clearly on the grid in part (a).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q5-d-solution-1", kind: "point", verbatim: "From the diagram, sales of 290", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q5-d-solution-2", kind: "point", verbatim: "or similar from candidates line", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34,35],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-d-question.png",
+          "srcHash": "ec7ff832c809a38ae927e277470dac4e",
+          "alt": "The question as printed on the paper — The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. Draw the line of best fit by eye, ignoring (22,140). Use your line of best fit to estimate the sales of units of ice cream on a day with a mean daily temperature of 18·5 degrees. Show your work clearly on the grid in part (a).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-d-solution.png",
+          "srcHash": "45c9ac43ce48e148175efd4f53ee7a1e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q5(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Read up from 18.5°C to your line of best fit, then across to the sales axis. The official example gives about 290 units; a similar reading consistent with the candidate’s line is allowed.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q5-e", topicId: "maths-1-7", conceptId: "p2-deferred-q5-e",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q5(e)",
+    stem: "The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140.",
+    questionText: "You may ignore the point (22,140) in answering this part. From the list of values below, select the one which you believe best represents the correlation coefficient of the first 8 data points in the table and give a reason for your choice. 0·25, −0·9, 0·7, 0·95, 0·1, −0·55.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q5-e-solution-1", kind: "point", verbatim: "Answer: 0·95", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q5-e-solution-2", kind: "point", verbatim: "perfect correlation of 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-e-question.png",
+          "srcHash": "b7bcfdb6ff75ec9f4c0ef2cd709b91b2",
+          "alt": "The question as printed on the paper — The table below shows data on the mean daily temperature (°C) during nine days in the month of July and the sales of units of ice-cream on those days, in a local shop. Temperatures: 14,15,16,17,18,19,20,21,22. Sales (units): 50,90,160,240,260,320,340,380,140. You may ignore the point (22,140) in answering this part. From the list of values below, select the one which you believe best represents the correlation coefficient of the first 8 data points in the table and give a reason for your choice. 0·25, −0·9, 0·7, 0·95, 0·1, −0·55.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q5-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q5-e-solution.png",
+          "srcHash": "e26eec1480ff763d7044799e6b46beb7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q5(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q6-a-i", topicId: "maths-2-1", conceptId: "p2-deferred-q6-a-i",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q6(a)(i)",
+    stem: "The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors.",
+    questionText: "What is |∠BOC|?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q6-a-i-solution-1", kind: "point", verbatim: "writes 360", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-a-i-question.png",
+          "srcHash": "778cd0aaa71876874668d0a0ab18ab51",
+          "alt": "The question as printed on the paper — The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors. What is |∠BOC|?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-a-i-solution.png",
+          "srcHash": "510671821e4ad7480922903ad9aaabd3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q6-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q6-a-ii",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q6(a)(ii)",
+    stem: "The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors.",
+    questionText: "Hence, or otherwise, find |FE|. Give your answer, in cm, in surd form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "Theorem of Pythagoras written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-a-ii-question.png",
+          "srcHash": "661c622e8b92355bb96c1539b8d505a8",
+          "alt": "The question as printed on the paper — The circle m, shown below, has centre O and a radius of 5 cm. Two diameters labelled [BE] and [FC] divide the circle into 4 equal sectors. Hence, or otherwise, find |FE|. Give your answer, in cm, in surd form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-a-ii-solution.png",
+          "srcHash": "b0848be3e0e4d8411390db7772692cf1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q6-b", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q6(b)",
+    questionText: "Construct a triangle PQR where |PQ| = 8 cm, |QR| = 8 cm, and |PR| = 6 cm. Show all construction lines clearly. The point P is given below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q6-b-solution-1", kind: "point", verbatim: "Two correct lengths drawn.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q6-b-solution-2", kind: "point", verbatim: "Construction correct without arcs", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-b-question.png",
+          "srcHash": "479dff351af73910cae63789216c5464",
+          "alt": "The question as printed on the paper — Construct a triangle PQR where |PQ| = 8 cm, |QR| = 8 cm, and |PR| = 6 cm. Show all construction lines clearly. The point P is given below.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-b-solution.png",
+          "srcHash": "c6aaed6b9f5d29edd750115c3f4494e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Draw PQ=8 cm. Draw an arc centred at P with radius 6 cm and an arc centred at Q with radius 8 cm; label an intersection R. Join PR and QR and keep the construction arcs visible. The printed tolerance is ±0.25 cm; screen scaling is not a physical ruler.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q6-c", topicId: "maths-2-3", conceptId: "p2-deferred-q6-c",
+    section: "A", questionRef: "2023 OL Paper 2 — Deferred Q6(c)",
+    questionText: "The right-angled triangle shown below has sides: x − 7, x, and x + 1. Find the value of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q6-c-solution-1", kind: "point", verbatim: "Fully expands brackets correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q6-c-solution-2", kind: "point", verbatim: "Fails to eliminate 4 as a solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-c-question.png",
+          "srcHash": "2e2a3f651106abd74bd1cb78d4eefd14",
+          "alt": "The question as printed on the paper — The right-angled triangle shown below has sides: x − 7, x, and x + 1. Find the value of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q6-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q6-c-solution.png",
+          "srcHash": "88c3ca3248c9a8aae17ca8d60fa89823",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q6(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-a", topicId: "maths-3-4", conceptId: "p2-deferred-q7-a",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(a)",
+    stem: "Kobe got a new puppy. The puppy must be kept indoors at night. Kobe bought a six-sided cage in the shape of a cuboid for his puppy. The cage has a length of 1·2 metres, a width of 80 cm, and a height of 70 cm.",
+    questionText: "Find the volume of the space that the cage will occupy. Give your answer in cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-a-solution-1", kind: "point", verbatim: "Writes 120 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q7-a-solution-2", kind: "point", verbatim: "Multiplies any two lengths correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-a-question.png",
+          "srcHash": "fdc85c77bbbeb1231ba8d39b24c671d3",
+          "alt": "The question as printed on the paper — Kobe got a new puppy. The puppy must be kept indoors at night. Kobe bought a six-sided cage in the shape of a cuboid for his puppy. The cage has a length of 1·2 metres, a width of 80 cm, and a height of 70 cm. Find the volume of the space that the cage will occupy. Give your answer in cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-a-solution.png",
+          "srcHash": "aa15faeed429e5c21739941fb87feb5e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-b", topicId: "maths-3-4", conceptId: "p2-deferred-q7-b",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(b)",
+    stem: "The diagram below shows the plan of a field behind Kobe’s house where the puppy can play. The horizontal line AB represents a wooden fence. At equal intervals of 20 m along this fence perpendicular measurements (in metres) are taken to the opposite side of the field.",
+    questionText: "Use the Trapezoidal Rule to estimate the area of this field in m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-b-solution-1", kind: "point", verbatim: "235 found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q7-b-solution-2", kind: "point", verbatim: "Trapezoidal Rule formula with full", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,5,8,12,15],"markingNote":"The detailed task-specific scale is 15D (0,5,8,12,15). It explicitly uses 5 marks for low partial credit, unlike the general table’s 4-mark band.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-b-question.png",
+          "srcHash": "b383c2415a0c2ca26685cefeab8a81f5",
+          "alt": "The question as printed on the paper — The diagram below shows the plan of a field behind Kobe’s house where the puppy can play. The horizontal line AB represents a wooden fence. At equal intervals of 20 m along this fence perpendicular measurements (in metres) are taken to the opposite side of the field. Use the Trapezoidal Rule to estimate the area of this field in m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-b-solution.png",
+          "srcHash": "64b6f3445051055e0b00d4f2071804f1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use nine ordinates at 20 m spacing: 0,30,35,40,45,30,25,30,40. The seven interior ordinates sum to 235. Area = 20/2×[0+40+2×235] = 5100 m². The detailed scale explicitly awards low partial credit at 5 marks; the general table shows 4.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-c", topicId: "maths-3-4", conceptId: "p2-deferred-q7-c",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(c)",
+    stem: "Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m.",
+    questionText: "Find the distance they will walk in one full lap of this path. Give your answer in metres, correct to two decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-c-solution-1", kind: "point", verbatim: "Finds length of curved path", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-c-question.png",
+          "srcHash": "bef2be507b31474bab528f21e70caee3",
+          "alt": "The question as printed on the paper — Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m. Find the distance they will walk in one full lap of this path. Give your answer in metres, correct to two decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-c-solution.png",
+          "srcHash": "f80d14988b8011d3ba6db30bc2c65646",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-d", topicId: "maths-3-4", conceptId: "p2-deferred-q7-d",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(d)",
+    stem: "Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m.",
+    questionText: "Kobe would like to walk his puppy at least 5 km each day. How many complete laps of the path will he need to finish each day?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-d-solution-1", kind: "point", verbatim: "Answer as 19 laps from correct work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-d-question.png",
+          "srcHash": "dce01a413e5c804ce07f49edd8f59338",
+          "alt": "The question as printed on the paper — Kobe decides to mark out a path to walk his puppy in this field. His path contains two straight sides and two semi-circular ends, as shown in the diagram. The length of each straight side is 100 m and the distance between the sides is 18 m. Kobe would like to walk his puppy at least 5 km each day. How many complete laps of the path will he need to finish each day?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-d-solution.png",
+          "srcHash": "a00a18749f271576c6b36b7f78c63722",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "One lap is 200+18π≈256.55 m. To reach at least 5000 m, round the quotient upwards: 19 laps fall short, so 20 complete laps are needed.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-e-i", topicId: "maths-3-4", conceptId: "p2-deferred-q7-e-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(e)(i)",
+    stem: "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown.",
+    questionText: "Find the volume of this toy (in cm³) in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-e-i-solution-1", kind: "point", verbatim: "Total volume", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q7-e-i-solution-2", kind: "point", verbatim: "One error in substitution and finishes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-i-question.png",
+          "srcHash": "f982a4754a97b6bc0e00caff7fcdb2c4",
+          "alt": "The question as printed on the paper — Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown. Find the volume of this toy (in cm³) in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-i-solution.png",
+          "srcHash": "736e9cba14f00959f25a71bf913c6dc9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(e)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-e-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q7-e-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(e)(ii)",
+    stem: "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown.",
+    questionText: "The inside of this toy is filled with spherical foam beads each of radius 2 mm. Find the volume of one bead. Give your answer (in cm³) in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-e-ii-solution-1", kind: "point", verbatim: "Writes 2 mm = 0·2 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q7-e-ii-solution-2", kind: "point", verbatim: "Formula for sphere fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-ii-question.png",
+          "srcHash": "52b68b6a7ea85610c45f555d4889f833",
+          "alt": "The question as printed on the paper — Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown. The inside of this toy is filled with spherical foam beads each of radius 2 mm. Find the volume of one bead. Give your answer (in cm³) in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-ii-solution.png",
+          "srcHash": "4edc94908b8d35daf80501a8057a8c21",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q7-e-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q7-e-iii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q7(e)(iii)",
+    stem: "Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown. The inside of this toy is filled with spherical foam beads each of radius 2 mm.",
+    questionText: "1500 of the beads are used to stuff the toy. Find the percentage of empty space inside the toy.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q7-e-iii-solution-1", kind: "point", verbatim: "Finds volume of 1500 beads", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q7-e-iii-solution-2", kind: "point", verbatim: "Finds volume of empty space", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-iii-question.png",
+          "srcHash": "dd4a6d5d81183260687323e66b00e68e",
+          "alt": "The question as printed on the paper — Kobe bought his puppy a toy. This toy is in the shape of a cone on top of a hemisphere. The vertical height of the conical part is 4 cm. The diameter of the hemisphere is 6 cm, as shown. The inside of this toy is filled with spherical foam beads each of radius 2 mm. 1500 of the beads are used to stuff the toy. Find the percentage of empty space inside the toy.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q7-e-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q7-e-iii-solution.png",
+          "srcHash": "aef8eb415011ee3667ce235e375e240c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q7(e)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The toy volume is 30π cm³. Each bead has radius 0.2 cm and volume 4π/375 cm³. The 1500 beads occupy 16π cm³, leaving 14π cm³: 14/30×100 = 46⅔%, or about 46.7%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(a)(i)",
+    stem: "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+    questionText: "Find the distance between the boat and the top of the lighthouse. Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "writes Pythagoras theorem", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-i-question.png",
+          "srcHash": "aee5797e76b00ac565f4a1c601ad1a65",
+          "alt": "The question as printed on the paper — A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale. Find the distance between the boat and the top of the lighthouse. Give your answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "a057b9123bfa63af165b95cde71c00da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+    questionText: "Find the size of the angle A, the angle of elevation of the top of the lighthouse from the boat. Give your answer, in degrees, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Finds 0·0634", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "b314504390005310a0f3b08d2e41ceab",
+          "alt": "The question as printed on the paper — A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale. Find the size of the angle A, the angle of elevation of the top of the lighthouse from the boat. Give your answer, in degrees, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "2a8ad3afefbfbcc10c74f39b3ccf7cb8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-a-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-iii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(a)(iii)",
+    stem: "A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale.",
+    questionText: "The boat moves x metres closer to the lighthouse, so that the angle of elevation doubles in size (2A). Find the value of x, correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "The boat moves 251 m closer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q8-a-iii-solution-2", kind: "point", verbatim: "Sets up equation correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-iii-question.png",
+          "srcHash": "885b1cc2e3767df9c4e2c21b8dd9a9de",
+          "alt": "The question as printed on the paper — A lighthouse is situated, with its base at sea level, on a small island. A boat is anchored at sea. The boat is 0·5 km from the centre of the base of the lighthouse. The height of the lighthouse is 31·7 m from its base to its top. The angle of elevation from the boat to the top of the lighthouse is A. The diagram below, showing this information, is not drawn to scale. The boat moves x metres closer to the lighthouse, so that the angle of elevation doubles in size (2A). Find the value of x, correct to the nearest whole number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-a-iii-solution.png",
+          "srcHash": "89790b14a4b95cc4327c75883c2c9c49",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "In the question, x is the distance moved towards the lighthouse. Let d be the distance still remaining: d=31.7/tan(2A)≈249 m. Therefore x=500−d≈251 m. The scheme uses x temporarily for d, but its final 251 m answer is the distance moved.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-b-i", topicId: "maths-2-3", conceptId: "p2-deferred-q8-b-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(b)(i)",
+    stem: "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+    questionText: "Write down the size of the angle BPL and hence find the area of the triangle BPL. Give your answer for the area correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-b-i-solution-1", kind: "point", verbatim: "Finds 135", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q8-b-i-solution-2", kind: "point", verbatim: "area formula fully", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-i-question.png",
+          "srcHash": "07fcf058c1123d96d56f0053ca15e6d8",
+          "alt": "The question as printed on the paper — The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below. Write down the size of the angle BPL and hence find the area of the triangle BPL. Give your answer for the area correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-i-solution.png",
+          "srcHash": "3dfa292cf504cd613fc28d0debf8c2c3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-b-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-b-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(b)(ii)",
+    stem: "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+    questionText: "Use the Cosine Rule to find how far the point B is from L. Give your answer correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-b-ii-solution-1", kind: "point", verbatim: "Cosine Rule Formula correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q8-b-ii-solution-2", kind: "point", verbatim: "Treats triangle as right angled", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-ii-question.png",
+          "srcHash": "ce9eb4cba81454759dc0e8621e5a8bda",
+          "alt": "The question as printed on the paper — The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below. Use the Cosine Rule to find how far the point B is from L. Give your answer correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-ii-solution.png",
+          "srcHash": "8c1b7181a6cb820fb3ed7b768cb38ce5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q8-b-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-b-iii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q8(b)(iii)",
+    stem: "The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below.",
+    questionText: "Use the Sine Rule to find |∠PLB|. Give your answer, in degrees, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q8-b-iii-solution-1", kind: "point", verbatim: "Sine Rule Formula correctly substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-iii-question.png",
+          "srcHash": "9869d054cc84a63079c533dcb2daccf7",
+          "alt": "The question as printed on the paper — The diagram below shows the path of another boat which starts from the point L and sails due east for 21 km to the point P. The boat then changes course. From P, it sails South East and travels a further 16 km to B as shown in the diagram below. Use the Sine Rule to find |∠PLB|. Give your answer, in degrees, correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q8-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q8-b-iii-solution.png",
+          "srcHash": "3585dfb9f0b83518453b3f1a626af656",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q8(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-a", topicId: "maths-2-2", conceptId: "p2-deferred-q9-a",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(a)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Write down the co-ordinates of the position of each person’s house. One is already given: Alice, A(0,4).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-a-solution-1", kind: "point", verbatim: "Any one coordinate/point correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q9-a-solution-2", kind: "point", verbatim: "Any two points correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-a-question.png",
+          "srcHash": "2093638c441b2ad276a510a2f9d6162a",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Write down the co-ordinates of the position of each person’s house. One is already given: Alice, A(0,4).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-a-solution.png",
+          "srcHash": "0f02d1ed5584d6e2f74d9747433f399a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-b", topicId: "maths-2-2", conceptId: "p2-deferred-q9-b",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(b)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Ciara says that the distance from her house to Brian’s house is the same as the distance from her house to Dave’s house. Show that |CB| = |CD|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-b-solution-1", kind: "point", verbatim: "Finds |𝐶𝐵| or |𝐶𝐷|", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-b-question.png",
+          "srcHash": "b29547005686fd38260311c42d425f0c",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Ciara says that the distance from her house to Brian’s house is the same as the distance from her house to Dave’s house. Show that |CB| = |CD|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-b-solution.png",
+          "srcHash": "0a374ca33a5fdb23f7953789b930687e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-c", topicId: "maths-2-2", conceptId: "p2-deferred-q9-c",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(c)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Dave says that the path from his house to Brian’s house is perpendicular to the path from Alice to Ciara’s. Based on Alice’s co-ordinate diagram, explain why this is true.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-c-solution-1", kind: "point", verbatim: "perpendicular to AC", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-c-question.png",
+          "srcHash": "86f7e4f8108f57d03c3996bad201d22c",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Dave says that the path from his house to Brian’s house is perpendicular to the path from Alice to Ciara’s. Based on Alice’s co-ordinate diagram, explain why this is true.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-c-solution.png",
+          "srcHash": "fc91650ad51921350d88fd16e66d2d20",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-d", topicId: "maths-2-2", conceptId: "p2-deferred-q9-d",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(d)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Is the path from Brian’s house to Ciara’s house perpendicular to the path from Dave’s house to Ciara’s house? Justify your answer, using slopes or distances.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-d-solution-1", kind: "point", verbatim: "Finds both slopes correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q9-d-solution-2", kind: "point", verbatim: "Slope Formula or relevant work on one", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-d-question.png",
+          "srcHash": "e6f4bbf2f505f189075132ac5fc52adf",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Is the path from Brian’s house to Ciara’s house perpendicular to the path from Dave’s house to Ciara’s house? Justify your answer, using slopes or distances.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-d-solution.png",
+          "srcHash": "69de1aca2d7be279eb90867c941119cc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-e", topicId: "maths-2-2", conceptId: "p2-deferred-q9-e",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(e)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Alice and Ciara both leave their houses and walk towards each other. Brian and Dave do the same. Write down the co-ordinates of the points where Brian and Dave will be when Alice and Ciara meet. (Assume they all leave their houses at the same time and walk at the same pace.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-e-solution-1", kind: "point", verbatim: "Brian will be at (2, 3)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q9-e-solution-2", kind: "point", verbatim: "Dave will be at (2, 5)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-e-question.png",
+          "srcHash": "bd1454bdd47342c2e21bbdd01f120222",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Alice and Ciara both leave their houses and walk towards each other. Brian and Dave do the same. Write down the co-ordinates of the points where Brian and Dave will be when Alice and Ciara meet. (Assume they all leave their houses at the same time and walk at the same pace.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-e-solution.png",
+          "srcHash": "cc3f0392f87a094f9d316245d08b00db",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Alice and Ciara are 4 km apart, so each has walked 2 km when they meet. At the same pace and time, Brian has moved from (2,1) to (2,3), and Dave from (2,7) to (2,5). Both positions are required.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-f", topicId: "maths-2-2", conceptId: "p2-deferred-q9-f",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(f)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Is ABCD a square? Justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-f-solution-1", kind: "point", verbatim: "Answer: NO", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q9-f-solution-2", kind: "point", verbatim: "Correct answer and some relevant work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-f-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-f-question.png",
+          "srcHash": "cc8b8be465c818a67fb7eeba0051f327",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Is ABCD a square? Justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-f-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-f-solution.png",
+          "srcHash": "73c5069bd153937bbe52d833105d0569",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(f).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-g-i", topicId: "maths-2-2", conceptId: "p2-deferred-q9-g-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(g)(i)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "The local shop is situated at O(0,0). Find the distance from Ciara’s house to the shop. Give your answer, in km, in surd form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-g-i-solution-1", kind: "point", verbatim: "Some substitution into distance formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-g-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-g-i-question.png",
+          "srcHash": "936501f83f8d8fd8fa2328a39e96b19d",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. The local shop is situated at O(0,0). Find the distance from Ciara’s house to the shop. Give your answer, in km, in surd form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-g-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-g-i-solution.png",
+          "srcHash": "76d185391cc25abe5f4cce9ed4574b6c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(g)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-g-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q9-g-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(g)(ii)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. The local shop is situated at O(0,0).",
+    questionText: "Find the angle between Dave’s house, the shop, and Ciara’s house (i.e. |∠DOC|). Give your answer correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-g-ii-solution-1", kind: "point", verbatim: "Drop perpendicular from D", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q9-g-ii-solution-2", kind: "point", verbatim: "Drop perpendicular from C", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-g-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-g-ii-question.png",
+          "srcHash": "9c22b473565f8d6abb7172f4e3479560",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. The local shop is situated at O(0,0). Find the angle between Dave’s house, the shop, and Ciara’s house (i.e. |∠DOC|). Give your answer correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-g-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-g-ii-solution.png",
+          "srcHash": "8e40cfa20d5bdfb46f779e4e2831510f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(g)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q9-h", topicId: "maths-2-2", conceptId: "p2-deferred-q9-h",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q9(h)",
+    stem: "Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km.",
+    questionText: "Find, in km², the area enclosed between the four houses (i.e. the area of ABCD).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q9-h-solution-1", kind: "point", verbatim: "Area of half shape found correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[46],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-h-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-h-question.png",
+          "srcHash": "93153aad89da9f5de93f6f374704d654",
+          "alt": "The question as printed on the paper — Alice, Brian, Ciara, and Dave all live in the same town. Alice draws the co-ordinate diagram on the right to show the positions of each of their houses. The diagram is to scale. There are paths that connect each of the houses to each other by the shortest line segment. The side of each small square on her grid represents 1 km. Find, in km², the area enclosed between the four houses (i.e. the area of ABCD).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q9-h-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q9-h-solution.png",
+          "srcHash": "e505c25bfe34b8f3ea42dda6dcfbb210",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q9(h).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-a-i", topicId: "maths-1-7", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(a)(i)",
+    stem: "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+    questionText: "Write down the range for the price of both petrol and diesel.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "Petrol 156 to 213", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q10-a-i-solution-2", kind: "point", verbatim: "Diesel 145 to 205", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-i-question.png",
+          "srcHash": "65f61f4c7835b3a57cabd22a107012ac",
+          "alt": "The question as printed on the paper — The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190. Write down the range for the price of both petrol and diesel.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "e6c41287fd6253f44a58a7fda25a7afb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Here the SEC model expects the minimum-to-maximum intervals: petrol 156–213 cents and diesel 145–205 cents. Their statistical ranges (maximum minus minimum) are 57 and 60 cents. The scheme gives those two differences high partial credit, so include the endpoints to match its full-credit response.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-a-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q10-a-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(a)(ii)",
+    stem: "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+    questionText: "Find the mean and the standard deviation of the price of diesel during the period. Give each answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Finds Mean or Standard Deviation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-ii-question.png",
+          "srcHash": "d637b404ddc6395449a32b7f6c24883c",
+          "alt": "The question as printed on the paper — The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190. Find the mean and the standard deviation of the price of diesel during the period. Give each answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-ii-solution.png",
+          "srcHash": "273a78058ef1449e9964eb704f54ebef",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "For the 12 diesel prices, mean = 177.9167 cents and population standard deviation = 18.9976 cents. Rounded to the nearest cent: 178 cents and 19 cents.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-a-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q10-a-iii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(a)(iii)",
+    stem: "The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190.",
+    questionText: "List the months in which the price of diesel was within one standard deviation of the mean price for diesel.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "November, December, January, February,", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q10-a-iii-solution-2", kind: "point", verbatim: "March, April, May, August", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[47],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-iii-question.png",
+          "srcHash": "922a655a313c43a759b5b85f80edb370",
+          "alt": "The question as printed on the paper — The table below shows the average monthly price of diesel and petrol (per litre) in Ireland during the period between September 2021 and August 2022 (source: AA Ireland). Months: Sept, Oct, Nov, Dec 2021; Jan, Feb, March, April, May, June, July, Aug 2022. Petrol (cent): 156,165,173,173,176,177,182,181,192,213,200,187. Diesel (cent): 145,157,163,162,166,168,191,191,195,205,202,190. List the months in which the price of diesel was within one standard deviation of the mean price for diesel.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-iii-solution.png",
+          "srcHash": "9783f155b737cb1da6b18feae5421de1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-a-iv", topicId: "maths-3-3", conceptId: "p2-deferred-q10-a-iv",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(a)(iv)",
+    stem: "Sean drives a diesel car, Jenny drives a petrol car. At the start of one week in April 2022, both Sean and Jenny had a full tank of fuel. Both drove 340 km, and then filled their tank to capacity again. Sean’s car: diesel, 191 cent per litre, uses an average of 5·4 litres per 100 km driven. Jenny’s car: petrol, 181 cent per litre, uses an average of 6·2 litres per 100 km driven.",
+    questionText: "Which car was cheaper to fill after the 340 km of driving, and by how much? Give your second answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-a-iv-solution-1", kind: "point", verbatim: "Finds correct number of litres for both", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q10-a-iv-solution-2", kind: "point", verbatim: "Finds total cost of fuel for both", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-iv-question.png",
+          "srcHash": "fa6a27a1f6eef747868e06a562db4c28",
+          "alt": "The question as printed on the paper — Sean drives a diesel car, Jenny drives a petrol car. At the start of one week in April 2022, both Sean and Jenny had a full tank of fuel. Both drove 340 km, and then filled their tank to capacity again. Sean’s car: diesel, 191 cent per litre, uses an average of 5·4 litres per 100 km driven. Jenny’s car: petrol, 181 cent per litre, uses an average of 6·2 litres per 100 km driven. Which car was cheaper to fill after the 340 km of driving, and by how much? Give your second answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-a-iv-solution.png",
+          "srcHash": "2bb73991c3f78904938c25d2bf0a5555",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-b-i", topicId: "maths-1-7", conceptId: "p2-deferred-q10-b-i",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(b)(i)",
+    questionText: "Find the margin of error associated with a survey of 1276 people. Give your answer correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-b-i-solution-1", kind: "point", verbatim: "Writes correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q10-b-i-solution-2", kind: "point", verbatim: "Formula substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-i-question.png",
+          "srcHash": "7e5f979e77fcf0fe394617be46153b71",
+          "alt": "The question as printed on the paper — Find the margin of error associated with a survey of 1276 people. Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-i-solution.png",
+          "srcHash": "dc40701f4a427ee9ce12bfb6e26c118f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The margin is 1/√1276≈0.0279946 as a proportion, or 2.79946 percentage points. To three decimal places, report 0.028 as a proportion or 2.799% as in the SEC example; keep the units clear.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-b-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q10-b-ii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(b)(ii)",
+    questionText: "In a particular survey, 1276 people were selected at random in a particular area. Of those surveyed, 740 of them said they were satisfied with the level of public transport in their area. Create a 95% confidence interval for the level of satisfaction amongst the population in this area. Give your answer correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-b-ii-solution-1", kind: "point", verbatim: "Finds 57·99", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p2-deferred-q10-b-ii-solution-2", kind: "point", verbatim: "One boundary found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-ii-question.png",
+          "srcHash": "a668a0551d980b2fa7a343c6aa706ced",
+          "alt": "The question as printed on the paper — In a particular survey, 1276 people were selected at random in a particular area. Of those surveyed, 740 of them said they were satisfied with the level of public transport in their area. Create a 95% confidence interval for the level of satisfaction amongst the population in this area. Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-ii-solution.png",
+          "srcHash": "b79790109b9854c1c20404956d3f1fb6",
+          "alt": "NextStepUni worked confidence interval: 740/1276 ± 1/√1276 gives proportion limits 0.552 and 0.608 to three decimal places, or percentage limits 55.194% and 60.793%. The original scheme rounds early and shows 55.191% to 60.789%; its credit notes are reproduced below.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Keeping full precision until the final step gives 740/1276 ± 1/√1276 = (0.55194268,0.60793193), or (55.194%,60.793%) to three decimal places. The printed scheme uses the rounded 57.99% and 2.799%, giving (55.191%,60.789%). Both the original example and its official award criteria are retained.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p2-deferred-q10-b-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q10-b-iii",
+    section: "B", questionRef: "2023 OL Paper 2 — Deferred Q10(b)(iii)",
+    stem: "In a survey, 1276 people were selected at random in a particular area; 740 said they were satisfied with public transport.",
+    questionText: "What change could be made to decrease the margin of error in this survey?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p2-deferred-q10-b-iii-solution-1", kind: "point", verbatim: "Increase number of people", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[48],"generalNotesPages":[2,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-iii-question.png",
+          "srcHash": "63f431e92f758a5d4821e239fe8be7d3",
+          "alt": "The question as printed on the paper — In a survey, 1276 people were selected at random in a particular area; 740 said they were satisfied with public transport. What change could be made to decrease the margin of error in this survey?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p2-deferred-q10-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p2-deferred-q10-b-iii-solution.png",
+          "srcHash": "9d6d8bd026f6151ddf48f346b7e63d2b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 2 — Deferred Q10(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

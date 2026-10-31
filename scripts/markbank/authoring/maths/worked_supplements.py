@@ -21,6 +21,8 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    if name == 'confidence-2023-ol-deferred':
+        return render_confidence_2023_ol(dpi)
     if name == 'inequality-2023-ol-deferred':
         return render_inequality_2023(dpi)
     higher_2023 = {'sine-proof-2023-hl-deferred':render_sine_proof_2023,
@@ -194,6 +196,35 @@ def render_inequality_2023(dpi):
     c.line(right+8,base+20,right,base+25);c.line(right+8,base+20,right,base+15)
     c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',11)
     c.drawString(28,55,'Closed endpoint: -2 is included. The continuous ray includes non-integers too.')
+    return _example_image(buf,c,dpi)
+
+
+def render_confidence_2023_ol(dpi):
+    proportion=740/1276
+    error=1/sqrt(1276)
+    low,high=100*(proportion-error),100*(proportion+error)
+    buf,c=_example_canvas('A confidence interval, with precision',
+        '2023 deferred Ordinary Paper 2 · Q10(b)(ii) · round only the final limits',420)
+    c.setFont('Helvetica',11);c.drawString(28,326,'Sample proportion')
+    c.drawString(300,326,'Margin of error')
+    c.setFont('Times-Roman',18)
+    c.drawCentredString(63,298,'740');c.line(35,290,91,290);c.drawCentredString(63,270,'1276')
+    c.drawString(104,284,'= 0.5799373...')
+    c.drawCentredString(338,298,'1');c.line(305,290,371,290)
+    c.drawString(323,270,'1276')
+    c.line(307,277,312,269);c.line(312,269,317,285);c.line(317,285,366,285)
+    c.drawString(382,284,'= 0.0279946...')
+    c.setFont('Helvetica',12);c.drawString(28,239,'95% interval = sample proportion ± margin of error')
+    c.setFont('Helvetica-Bold',15);c.drawString(28,210,'0.552 to 0.608  (proportions, to 3 decimal places)')
+    X=lambda value:58+(value-54)*444/8
+    c.setStrokeColorRGB(.6,.6,.57);c.setLineWidth(.7);c.line(X(54),159,X(62),159)
+    c.setStrokeColorRGB(.9,.39,.15);c.setLineWidth(4);c.line(X(low),159,X(high),159)
+    c.setStrokeColorRGB(.2,.2,.18);c.setLineWidth(1);c.setFont('Helvetica',10)
+    for value,label in [(low,f'{low:.3f}%'),(100*proportion,f'{100*proportion:.3f}%'),(high,f'{high:.3f}%')]:
+        c.line(X(value),153,X(value),165);c.drawCentredString(X(value),138,label)
+    c.setFont('Helvetica',11);c.drawString(28,102,'As percentages: 55.194% to 60.793%, to 3 decimal places.')
+    c.setFont('Helvetica',10);c.drawString(28,73,'The SEC example rounds the sample percentage early to 57.99%.')
+    c.drawString(28,55,'Its printed interval is 55.191% to 60.789%. The official credit notes follow.')
     return _example_image(buf,c,dpi)
 
 
