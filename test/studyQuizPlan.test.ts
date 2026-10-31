@@ -7,22 +7,9 @@
  */
 
 import { describe, expect, test } from 'vitest';
-import {
-  EMPTY_ANSWER,
-  QUIZ_MIN,
-  QUIZ_SIZE,
-  cardMarks,
-  isQuizCard,
-  marksEarned,
-  planQuiz,
-  quizGrade,
-  quizPool,
-  quizTopicLabel,
-  resolveQuizDeck,
-  rowKey,
-  type QuizAnswer,
-} from '@/components/study/quiz/studyQuizPlan';
-import { claimableTotal, marksClaimed, suggestGrade } from '@/components/MarkBank/SessionScreen';
+import { QUIZ_SIZE, isQuizCard, planQuiz, quizPool, quizTopicLabel, resolveQuizDeck, loadQuiz, preferShortQuestions } from '@/components/study/quiz/studyQuizPlan';
+import { loadCards } from '@/components/MarkBank/deck';
+import { cardsForCurriculumNode } from '@/components/MarkBank/curriculumMenu';
 import { CURRICULUM_SPECIFICATIONS, type CanonicalCurriculumSpecification } from '@/curriculumRegistry';
 import type { SecCard, SecQuestionCard } from '@/types/markBank';
 
@@ -97,20 +84,22 @@ const spec = {
 } as unknown as CanonicalCurriculumSpecification;
 
 describe('which questions qualify', () => {
-  test('short fixed-tariff point cards qualify; booklets, splits, routes, long and unpriced ones do not', () => {
-    expect(all.filter(isQuizCard).map(card => card.id)).toEqual(['q1', 'q2', 'q3', 'q4', 'q5', 'q6']);
+  test('native point and rubric cards qualify, including long tasks, sources and answer routes', () => {
+    expect(all.filter(isQuizCard).map(card => card.id)).toEqual(['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'x1', 'x3', 'x4', 'x6']);
   });
 
   test('topics narrow the pool, a whole area expands to its topics, and cross-listed cards count once', () => {
-    expect(quizPool(all, ['chem-2-2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6']);
+    expect(quizPool(all, ['chem-2-2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x1', 'x3', 'x4', 'x6']);
     expect(quizPool(all, ['chemistry:cs3'], spec).map(card => card.id)).toEqual(['q3', 'q4', 'q5']);
-    expect(quizPool(all, ['chem-2-2', 'chemistry:cs2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6']);
-    expect(quizPool(all, []).length).toBe(6);
+    expect(quizPool(all, ['chem-2-2', 'chemistry:cs2'], spec).map(card => card.id)).toEqual(['q1', 'q2', 'q6', 'x1', 'x3', 'x4', 'x6']);
+    expect(quizPool(all, []).length).toBe(10);
   });
 
-  test('fewer than the minimum means no quiz; otherwise at most a quiz’s worth, in a stable order', () => {
+  test('one or two matches are enough; queues remain bounded and stable', () => {
     const pool = quizPool(all, [], undefined);
-    expect(planQuiz(pool.slice(0, QUIZ_MIN - 1), {}, 1_000)).toEqual([]);
+    expect(planQuiz([], {}, 1_000)).toEqual([]);
+    expect(planQuiz(pool.slice(0, 1), {}, 1_000)).toHaveLength(1);
+    expect(planQuiz(pool.slice(0, 2), {}, 1_000)).toHaveLength(2);
     const first = planQuiz(pool, {}, 1_000);
     expect(first.length).toBe(QUIZ_SIZE);
     expect(planQuiz(pool, {}, 1_000).map(card => card.id)).toEqual(first.map(card => card.id));
@@ -132,37 +121,6 @@ describe('which deck', () => {
   });
 });
 
-describe('scoring matches Mark Bank', () => {
-  const answers: Array<[SecQuestionCard, QuizAnswer]> = [
-    [simple, EMPTY_ANSWER],
-    [simple, { claims: { 'q1-r1': 'yes' }, picks: {} }],
-    [grouped, { claims: { 'q2-r2': 'yes' }, picks: { 'q2-r1': [0] } }],
-    [grouped, { claims: {}, picks: { 'q2-r1': [0, 1, 2] } }],
-    [stepped, { claims: { 'q3-r1': 3 }, picks: {} }],
-    [stepped, { claims: { 'q3-r1': 4 }, picks: {} }],
-    [descending, { claims: {}, picks: { 'q4-r1': [2] } }],
-    [descending, { claims: {}, picks: { 'q4-r1': [1, 2] } }],
-    [dependent, { claims: { 'q5-r1': 'yes', 'q5-r2': 'yes' }, picks: {} }],
-  ];
-
-  test.each(answers)('%#: marks and grade agree with SessionScreen', (card, answer) => {
-    expect(cardMarks(card)).toBe(claimableTotal(card));
-    expect(marksEarned(card, answer)).toBe(marksClaimed(card, answer.claims, answer.picks));
-    expect(quizGrade(card, answer)).toBe(suggestGrade(card, answer.claims, answer.picks));
-  });
-
-  test('a bounded group caps at its claimMax and pays a descending tariff as printed', () => {
-    expect(marksEarned(grouped, { claims: {}, picks: { 'q2-r1': [0, 1, 2, 3] } })).toBe(6);
-    expect(marksEarned(descending, { claims: {}, picks: { 'q4-r1': [0] } })).toBe(6);
-    expect(marksEarned(descending, { claims: {}, picks: { 'q4-r1': [0, 1] } })).toBe(10);
-  });
-
-  test('rows are keyed the way Mark Bank keys them', () => {
-    expect(rowKey(simple.rows[0], 0)).toBe('q1-r1');
-    expect(rowKey({ id: '' }, 2)).toBe('r2');
-  });
-});
-
 describe('the topic label', () => {
   test('names the studied topics from the registry, or says nothing when it cannot', () => {
     const real = CURRICULUM_SPECIFICATIONS.find(item => item.groups.length > 0 && item.groups[0].topics.length > 1)!;
@@ -173,4 +131,53 @@ describe('the topic label', () => {
     expect(quizTopicLabel({ subjectId: real.subjectId, specificationId: 'no-such-spec', topicIds: [first.id] })).toBeNull();
     expect(quizTopicLabel(undefined)).toBeNull();
   });
+});
+
+
+describe('saved session topics', () => {
+  const politics = CURRICULUM_SPECIFICATIONS.find(spec => spec.id === 'politics-and-society:current')!;
+  const selection = { subjectId: politics.subjectId, specificationId: politics.id, topicIds: ['politics-and-society-0-0'] };
+  test('the real school topic returns native rubric cards only from that topic', async () => {
+    const loaded = await loadQuiz({ uid: 'demo-student', subjectName: 'Politics and Society', topicSelection: selection, now: 1_000 });
+    expect(loaded?.cards.length).toBeGreaterThan(0);
+    const deck = await loadCards('politics-and-society', 'higher');
+    const matching = new Set(cardsForCurriculumNode(selection.topicIds[0], deck, politics).map(card => card.id));
+    expect(loaded?.cards.every(card => matching.has(card.id))).toBe(true);
+    expect(loaded?.cards.some(card => card.kind === 'rubric')).toBe(true);
+    expect(isQuizCard(deck.find(card => card.id === 'politics-2019-hl-q1-d')!)).toBe(true);
+    expect(isQuizCard(deck.find(card => card.id === 'politics-2025-hl-q1-a')!)).toBe(true);
+  });
+  test('unmatched, missing and mismatched selections never widen to the whole subject', async () => {
+    const input = { uid: 'demo-student', subjectName: 'Politics and Society', now: 1_000 };
+    expect(await loadQuiz(input)).toBeNull();
+    expect(await loadQuiz({ ...input, topicSelection: { ...selection, topicIds: ['unknown-topic'] } })).toBeNull();
+    expect(await loadQuiz({ ...input, subjectName: 'Chemistry', topicSelection: selection })).toBeNull();
+  });
+  test('each selected topic gets a question before a busy topic fills the queue', () => {
+    const busy = Array.from({ length: 8 }, (_, i) => point(`busy${i}`, 'chem-2-2'));
+    const rare = [point('rare', 'chem-3-1')];
+    const picked = planQuiz([...busy, ...rare], {}, 1_000, undefined, 4, [busy, rare]);
+    expect(picked).toHaveLength(4);
+    expect(picked.slice(0, 2).map(card => card.topicId)).toEqual(['chem-2-2', 'chem-3-1']);
+    expect(new Set(picked.map(card => card.id)).size).toBe(4);
+    expect(planQuiz([simple], {}, 1_000, undefined, 4, [[simple], [simple]])).toEqual([simple]);
+  });
+});
+
+
+test('a full response remains available when the topic has no short question', async () => {
+  expect(preferShortQuestions([tooLong])).toEqual([tooLong]);
+  expect(preferShortQuestions([tooLong, simple])).toEqual([simple]);
+  const english = CURRICULUM_SPECIFICATIONS.find(spec => spec.subjectId === 'english' && spec.status === 'verified')!;
+  const deck = await loadCards('english', 'higher');
+  const longTopic = english.groups.flatMap(group => group.topics).find(topic => {
+    const pool = quizPool(deck, [topic.id], english);
+    return pool.length > 0 && pool.every(card => card.totalMarks > 10);
+  })!;
+  expect(longTopic).toBeDefined();
+  const loaded = await loadQuiz({ uid: 'demo-student', subjectName: 'English', now: 1_000,
+    topicSelection: { subjectId: english.subjectId, specificationId: english.id, topicIds: [longTopic.id] } });
+  expect(loaded?.cards).toHaveLength(1);
+  expect(loaded?.cards[0].totalMarks).toBeGreaterThan(10);
+  expect(cardsForCurriculumNode(longTopic.id, loaded!.cards, english)).toHaveLength(1);
 });

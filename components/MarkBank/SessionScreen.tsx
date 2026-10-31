@@ -182,9 +182,29 @@ export interface SessionCardResult {
   marksAvailable: number;
 }
 
+/** In-memory work retained while checking the post-study recap. */
+export interface SessionResponse {
+  claims: Record<string, RowClaim>;
+  picks: Record<string, number[]>;
+  rubricScores: RubricScores;
+  draft: string;
+  requirementChecks: Record<number, boolean>;
+  answerVariantId: string | null;
+  waysInWork: WaysInWork;
+}
+
 export interface SessionScreenProps {
   /** Approved compact paper surface with a state-preserving full-screen view. */
   paperLayout?: boolean;
+  /** A finite post-study check using this same question and scoring surface. */
+  studyReview?: {
+    banner: React.ReactNode;
+    topicTitle: (card: SecCard) => string;
+    onCue: (cue: 'tap' | 'swipe' | 'skip' | 'complete') => void;
+    onResponse: (cardId: string, response: SessionResponse) => void;
+    responses?: Record<string, SessionResponse>;
+    revisit?: boolean;
+  };
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
@@ -2214,10 +2234,12 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
   const [expanded, setExpanded] = useState(false);
+  const advancedStudyCard = useRef<string | null>(null);
+  const studyTitleRef = useRef<HTMLHeadingElement>(null);
   const [drafts, setDrafts] = useState<Record<string,string>>({});
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
@@ -2269,6 +2291,23 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
 
   const card = byId.get(queue[position]);
+  const isStudyReview = Boolean(studyReview);
+  useEffect(() => {
+    if (!isStudyReview) return;
+    studyTitleRef.current?.focus({ preventScroll: true });
+  }, [card?.id, isStudyReview]);
+  const savedResponse = card && studyReview?.responses?.[card.id];
+  const revisit = Boolean(studyReview?.revisit);
+  useEffect(() => {
+    if (!revisit || !card) return;
+    setClaims(savedResponse?.claims ?? {});
+    setPicks(savedResponse?.picks ?? {});
+    setRubricScores(savedResponse?.rubricScores ?? {});
+    setRequirementChecks(savedResponse?.requirementChecks ?? {});
+    setDrafts(previous => ({ ...previous, [card.id]: savedResponse?.draft ?? '' }));
+    setWaysInWork(savedResponse?.waysInWork ?? emptyWaysInWork());
+    setRevealed(true);
+  }, [card, revisit, savedResponse]);
   const listeningKey = card ? listeningExerciseKey(card) : null;
   const listeningCards = useMemo(() => listeningKey
     ? cards.filter((candidate): candidate is SecCard & { audioMaterial: CardAudioMaterial } =>
@@ -2302,8 +2341,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
   useEffect(() => {
-    setAnswerVariantId(null);
-  }, [baseAssessmentCard?.id]);
+    setAnswerVariantId(revisit ? savedResponse?.answerVariantId ?? null : null);
+  }, [baseAssessmentCard?.id, revisit, savedResponse]);
   const exerciseTotal = visibleSessionExercises(cards).length;
   const distinctDone = new Set(results.map(result => {
     const resultCard = byId.get(result.cardId);
@@ -2378,11 +2417,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setClaims(prev => ({ ...prev, [id]: next }));
-  }, []);
+  }, [studyReview]);
 
   const setRubricScore = useCallback((id: RubricScoreId, marks: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
@@ -2395,7 +2436,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       }
       return next;
     });
-  }, []);
+  }, [studyReview]);
 
   const toggleRequirement = useCallback((index: number) => {
     setRequirementChecks(prev => ({ ...prev, [index]: !prev[index] }));
@@ -2427,6 +2468,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   /** Toggle one option inside a bounded "Any N" group. */
   const togglePick = useCallback((id: string, optionIndex: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setPicks(prev => {
       const current = prev[id] ?? [];
@@ -2435,10 +2477,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         : [...current, optionIndex];
       return { ...prev, [id]: next };
     });
-  }, []);
+  }, [studyReview]);
 
   const claimAll = useCallback(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     const all: Record<string, RowClaim> = {};
     const allPicks: Record<string, number[]> = {};
@@ -2452,10 +2495,31 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
-  }, [assessmentCard]);
+  }, [assessmentCard, studyReview]);
+
+  const advanceStudy = useCallback((result?: SessionCardResult) => {
+    if (!card || !studyReview || advancedStudyCard.current === card.id) return;
+    advancedStudyCard.current = card.id;
+    if (!revisit) {
+      studyReview.onResponse(card.id, { claims, picks, rubricScores, requirementChecks, answerVariantId, draft: drafts[card.id] ?? '', waysInWork });
+      if (result) onGrade(result);
+    }
+    const nextResults = result ? [...results, result] : results;
+    setResults(nextResults);
+    studyReview.onCue(result || revisit ? 'swipe' : 'skip');
+    if (position + 1 >= queue.length) { onFinish(nextResults); return; }
+    setClaims({}); setPicks({}); setRubricScores({}); setRequirementChecks({});
+    setAnswerVariantId(null); setRevealed(false); setWaysInOpen(false);
+    setWaysInFocusMode(false); setWaysInWork(emptyWaysInWork()); setSchemeInteracted(false);
+    setPosition(position + 1);
+  }, [card, studyReview, revisit, claims, picks, rubricScores, requirementChecks, answerVariantId, drafts, waysInWork, onGrade, results, position, queue.length, onFinish]);
 
   const commit = useCallback((grade: MarkBankGrade) => {
     if (!card) return;
+    if (studyReview) {
+      advanceStudy({ cardId: card.id, grade, marksClaimed: got, marksAvailable: total });
+      return;
+    }
     const gradedCards: SecCard[] = hasCombinedListeningAssessment
       ? listeningAssessmentCards
       : [card];
@@ -2522,7 +2586,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     else setPosition(position + 1);
   }, [
     card, got, hasCombinedListeningAssessment, listeningAssessmentCards,
-    rubricScores, onGrade, results, queue, position, onFinish,
+    rubricScores, onGrade, results, queue, position, onFinish, studyReview, advanceStudy, total,
   ]);
 
   useEffect(() => {
@@ -2542,8 +2606,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     // Do not send focus back to the background entry while the modal is open.
     setWaysInOpen(false);
     setWaysInFocusMode(false);
+    if (studyReview) { onExit(); return; }
     setConfirmExit(true);
-  }, []);
+  }, [studyReview, onExit]);
 
   const closeExitConfirmation = useCallback(() => {
     setConfirmExit(false);
@@ -2597,8 +2662,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
+      {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle>{reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -2959,7 +3025,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
-          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
+          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" readOnly={revisit} value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
           {!revealed && !waysInOpen && (
             <div className="mb-wi-entry">
               <span>Before the scheme</span>
@@ -3001,7 +3067,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 exit={{ opacity: 0 }}
                 transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
-                <div style={{ padding: '4px 18px 18px' }}>
+                <fieldset disabled={revisit} style={{ padding: '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
                   <WaysInAttemptReview work={waysInWork} card={assessmentCard} subjectLabel={subjectLabel} />
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -3037,6 +3103,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
                           {wholeResponseAssessment
                             ? 'Compare your answer with the guidance and examples below. Tick each part you completed, then choose your grade for the full response.'
+                            : studyReview ? 'Tap every point that appeared in your answer, then continue to the next question.'
                             : 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'}
                         </p>
                       </div>
@@ -3128,7 +3195,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
                     {assessmentCard.schemeCitation}
                   </p>
-                </div>
+                </fieldset>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -3184,6 +3251,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   setWaysInOpen(false);
                   setWaysInFocusMode(false);
                   setSchemeInteracted(false);
+                  studyReview?.onCue('complete');
                   setRevealed(true);
                 }}
                 style={{
@@ -3203,9 +3271,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         )}
 
+      {studyReview && <div className="sq-question-actions">
+        <span aria-live="polite">{revisit ? 'Reviewing your answers' : revealed ? `${got} / ${total} self-assessed marks` : 'Try the question before revealing the scheme.'}</span>
+        <div>
+          {!revisit && <Button variant="outline" onClick={() => advanceStudy()}>Skip question</Button>}
+          {revealed && <Button className="sq-primary" onClick={() => revisit ? advanceStudy() : commit(suggested)}>
+            {position + 1 < queue.length ? 'Next question' : revisit ? 'Back to summary' : 'See review summary'}
+          </Button>}
+        </div>
+      </div>}
+
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
-      {revealed && (
+      {revealed && !studyReview && (
         <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
           <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
             {showsRowMarks(assessmentCard) && (
