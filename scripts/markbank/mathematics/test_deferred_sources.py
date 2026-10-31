@@ -97,4 +97,26 @@ class DeferredSources(unittest.TestCase):
         self.assertAlmostEqual(world_data(world_data_time(200)),200)
 
 
+    def test_2024_parallelogram_completes_the_printed_vertices(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import parallelogram_2024_vertices
+        o,p,q,r=parallelogram_2024_vertices()
+        self.assertEqual((o,p,q),((0,0),(2,0),(0,4)))
+        self.assertEqual(r,(-2,4))
+        # Diagonals share a midpoint, and Q/P satisfy the given line.
+        self.assertEqual(tuple(a+b for a,b in zip(o,q)),tuple(a+b for a,b in zip(p,r)))
+        self.assertTrue(all(2*x+y-4==0 for x,y in [p,q]))
+
+    def test_2024_vanilla_interval_distinguishes_rounding_and_rejects_the_null(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import vanilla_2024_interval
+        low,high=vanilla_2024_interval()
+        self.assertAlmostEqual(low,.174)
+        self.assertAlmostEqual(high,.286)
+        low_full,high_full=vanilla_2024_interval(False)
+        self.assertEqual([round(low_full,3),round(high_full,3)],[.175,.287])
+        self.assertTrue(0<low<high<.30)
+        self.assertTrue(0<low_full<high_full<.30)
+
+
 if __name__=='__main__': unittest.main()

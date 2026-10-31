@@ -81055,4 +81055,2191 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q1-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q1(a)(i)",
+    stem: "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+    questionText: "Use the equation to find the co-ordinates of point Q.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q1-a-i-solution-1", kind: "point", verbatim: "Some correct transposition.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-i-question.png",
+          "srcHash": "60b847a4fa6c65fc7d2ed82034970f0a",
+          "alt": "The question as printed on the paper — A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0). Use the equation to find the co-ordinates of point Q.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-i-solution.png",
+          "srcHash": "15bac5c08f7ffb16705a245eef58dd6a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q1(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q1-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q1(a)(ii)",
+    stem: "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+    questionText: "Plot and label the points P and Q on the co-ordinate diagram below. Hence, draw the line k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q1-a-ii-solution-1", kind: "point", verbatim: "coordinates swapped.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q1-a-ii-solution-2", kind: "point", verbatim: "Label/s missing", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-ii-question.png",
+          "srcHash": "0ab958661983b77f6f72ee9b2523e719",
+          "alt": "The question as printed on the paper — A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0). Plot and label the points P and Q on the co-ordinate diagram below. Hence, draw the line k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-ii-solution.png",
+          "srcHash": "d4d9f952542743d22623f3de00a6d664",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source graph also shows R, which belongs to part (iii). Here plot P(2,0), Q(0,4) and the straight line k through them.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q1-a-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-iii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q1(a)(iii)",
+    stem: "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+    questionText: "O is the point (0,0). R is the point that makes OPQR a parallelogram. Draw the parallelogram OPQR on the diagram and write down the co-ordinates of the point R.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q1-a-iii-solution-1", kind: "point", verbatim: "Pilot Diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q1-a-iii-solution-2", kind: "point", verbatim: "Correct coordinates based on an", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-iii-question.png",
+          "srcHash": "117a9d6ddad55a22c7572f6b05f9f00c",
+          "alt": "The question as printed on the paper — A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0). O is the point (0,0). R is the point that makes OPQR a parallelogram. Draw the parallelogram OPQR on the diagram and write down the co-ordinates of the point R.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-a-iii-solution.png",
+          "srcHash": "2a480b8bd829aba5f7fe4d563d0e4140",
+          "alt": "NextStepUni completed parallelogram O(0,0), P(2,0), Q(0,4), R(−2,4), followed by the original SEC credit notes.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The official answer gives R(−2,4) but omits the completed parallelogram. The NextStepUni drawing shows all four sides and labelled vertices.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q1(b)",
+    questionText: "Find the area of the triangle with vertices A(2,0), B(2,4) and C(−3,3).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Base or height identified.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[25],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-b-question.png",
+          "srcHash": "e924ecfcc426075f0c2b3f8622bb7d0a",
+          "alt": "The question as printed on the paper — Find the area of the triangle with vertices A(2,0), B(2,4) and C(−3,3).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q1-b-solution.png",
+          "srcHash": "6d021d52e0511f11fbb408324c2bed4e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q2-a-i", topicId: "maths-1-7", conceptId: "p2-deferred-q2-a-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q2(a)(i)",
+    stem: "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+    questionText: "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q2-a-i-solution-1", kind: "point", verbatim: "One correct entry.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q2-a-i-solution-2", kind: "point", verbatim: "Two correct entries.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-i-question.png",
+          "srcHash": "a421e7ffde397a2a5118a87d19e75b47",
+          "alt": "The question as printed on the paper — The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram. Use the mean and standard deviation to fill in the missing numbers along the horizontal axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-i-solution.png",
+          "srcHash": "74ab8072a305d3240a57bbd345ba1188",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q2-a-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q2-a-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q2(a)(ii)",
+    stem: "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+    questionText: "What percentage of the runners who finished the race had a finishing time between 11.5 and 14.5 minutes?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "68%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q2-a-ii-solution-2", kind: "point", verbatim: "empirical rule", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-ii-question.png",
+          "srcHash": "b60882dedecd07e5ac3b9154b6a132de",
+          "alt": "The question as printed on the paper — The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram. What percentage of the runners who finished the race had a finishing time between 11.5 and 14.5 minutes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-ii-solution.png",
+          "srcHash": "5aeb276c77d918cd4fddedb745051918",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q2-a-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q2-a-iii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q2(a)(iii)",
+    stem: "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+    questionText: "120 runners finished the race. Find the number of runners who finished the race in less than 10 minutes.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q2-a-iii-solution-1", kind: "point", verbatim: "Multiplies 120 by some probability.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-iii-question.png",
+          "srcHash": "bf069555f92bf50b3bd5e5ca388d9960",
+          "alt": "The question as printed on the paper — The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram. 120 runners finished the race. Find the number of runners who finished the race in less than 10 minutes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-a-iii-solution.png",
+          "srcHash": "616e5ef8dad784a07031c066b6dbe150",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q2(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q2-b-i", topicId: "maths-1-1", conceptId: "p2-deferred-q2-b-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q2(b)(i)",
+    stem: "In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane.",
+    questionText: "Find the number of possible ways the finalists could be arranged at the start line of the race.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q2-b-i-solution-1", kind: "point", verbatim: "All terms listed but not multiplied.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-b-i-question.png",
+          "srcHash": "5f360116f24583e202f0d498a2b82471",
+          "alt": "The question as printed on the paper — In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane. Find the number of possible ways the finalists could be arranged at the start line of the race.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-b-i-solution.png",
+          "srcHash": "379006d9f6797044db1c00ddf735ca02",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q2-b-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q2-b-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q2(b)(ii)",
+    stem: "In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane.",
+    questionText: "Find the number of possible ways that the top three places can be filled if only one person can finish first, one person can finish second, and one person can finish third.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "Terms listed but not multiplied.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-b-ii-question.png",
+          "srcHash": "2b8a584ad963beddebcd25fb91714766",
+          "alt": "The question as printed on the paper — In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane. Find the number of possible ways that the top three places can be filled if only one person can finish first, one person can finish second, and one person can finish third.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q2-b-ii-solution.png",
+          "srcHash": "055ba8dcd41064d6ac85a52b7cf13c4d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q3-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q3(a)(i)",
+    stem: "A circle c has centre (3,−1) and radius 2.",
+    questionText: "Write down the equation of c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q3-a-i-solution-1", kind: "point", verbatim: "Equation with just one error.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-a-i-question.png",
+          "srcHash": "3e612bd424bbca6a827d665de97b3b71",
+          "alt": "The question as printed on the paper — A circle c has centre (3,−1) and radius 2. Write down the equation of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-a-i-solution.png",
+          "srcHash": "ecd1bcc2b0735c32e29ecff3bc83cd89",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q3(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q3-a-ii-iii", topicId: "maths-2-4", conceptId: "p2-deferred-q3-a-ii-iii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q3(a)(ii), Q3(a)(iii)",
+    stem: "A circle c has centre (3,−1) and radius 2.",
+    questionText: "The circle c and O(0,0) are shown. (ii) Circle s is the image of c by central symmetry through O. Work out the centre and radius of s and fill them into the table. (iii) Hence, construct s on the co-ordinate diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution-1", kind: "point", verbatim: "Centre or radius found.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution-2", kind: "point", verbatim: "Either (ii) or (iii) correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-a-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-a-ii-iii-question.png",
+          "srcHash": "77c2902d0e75f527d14b8226cbb045b3",
+          "alt": "The question as printed on the paper — A circle c has centre (3,−1) and radius 2. The circle c and O(0,0) are shown. (ii) Circle s is the image of c by central symmetry through O. Work out the centre and radius of s and fill them into the table. (iii) Hence, construct s on the co-ordinate diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-a-ii-iii-solution.png",
+          "srcHash": "1e82ca993f75cff69f14ebd6224114cf",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q3(a)(ii), Q3(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q3-b", topicId: "maths-2-2", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q3(b)",
+    stem: "Circle k has centre A(4,−2). B(7,2) is on the circle and is the point of contact for tangent l, as shown.",
+    questionText: "Find the slope of [AB], and hence work out the slope of the tangent line l.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "Finds the slope of the radius.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-b-question.png",
+          "srcHash": "718571c681007988ba19796f28bca8ca",
+          "alt": "The question as printed on the paper — Circle k has centre A(4,−2). B(7,2) is on the circle and is the point of contact for tangent l, as shown. Find the slope of [AB], and hence work out the slope of the tangent line l.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q3-b-solution.png",
+          "srcHash": "07e0dedf4208c0678acc547d20da6629",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q4-a-i-ii", topicId: "maths-1-6", conceptId: "p2-deferred-q4-a-i-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii)",
+    stem: "Aoife surveyed 80 students. Phone hours in the last week: 0–10, 10–20, 20–30, 30–40, 40–50; frequencies 12, 14, 26, 12, 16. Intervals include the lower bound but exclude the upper bound.",
+    questionText: "(i) Draw a histogram to represent the data. (ii) What is the greatest number of students that could have spent less than 15 hours on their phone in the last week?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q4-a-i-ii-solution-1", kind: "point", verbatim: "Three correct bars", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q4-a-i-ii-solution-2", kind: "point", verbatim: "Correct histogram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-a-i-ii-question.png",
+          "srcHash": "be57bfda4674b8241489de6bbaaef4a1",
+          "alt": "The question as printed on the paper — Aoife surveyed 80 students. Phone hours in the last week: 0–10, 10–20, 20–30, 30–40, 40–50; frequencies 12, 14, 26, 12, 16. Intervals include the lower bound but exclude the upper bound. (i) Draw a histogram to represent the data. (ii) What is the greatest number of students that could have spent less than 15 hours on their phone in the last week?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-a-i-ii-solution.png",
+          "srcHash": "0a23bd05d8d28ab965daad58eb103950",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q4-b-i-ii", topicId: "maths-3-1", conceptId: "p2-deferred-q4-b-i-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q4(b)(i), Q4(b)(ii)",
+    stem: "Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B.",
+    questionText: "(i) Work out p, the number who have A only. (ii) 30 students have an account on A or B only. Hence, or otherwise, find q, the number who have both.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q4-b-i-ii-solution-1", kind: "point", verbatim: "Work of merit in (i) AND (ii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q4-b-i-ii-solution-2", kind: "point", verbatim: "(i) OR (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-b-i-ii-question.png",
+          "srcHash": "c98a9d315faf9a10bc5b5587cdd32576",
+          "alt": "The question as printed on the paper — Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B. (i) Work out p, the number who have A only. (ii) 30 students have an account on A or B only. Hence, or otherwise, find q, the number who have both.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-b-i-ii-solution.png",
+          "srcHash": "a472141d8104c0ee1056147714e4e123",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q4(b)(i), Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The diagram defines p as A only (A \\ B). The partial-credit example prints B \\ A = p in error. The worked solution correctly gives p = 16 and q = 29.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q4-b-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q4-b-iii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q4(b)(iii)",
+    stem: "Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B.",
+    questionText: "A student is chosen at random. What is the probability that the student has neither an account on A nor B?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q4-b-iii-solution-1", kind: "point", verbatim: "Either numerator or denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-b-iii-question.png",
+          "srcHash": "f2c3c068aa51d004ba712e82094df8f1",
+          "alt": "The question as printed on the paper — Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B. A student is chosen at random. What is the probability that the student has neither an account on A nor B?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q4-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q4-b-iii-solution.png",
+          "srcHash": "87af543cc4a607a4457df1dcc3b38a53",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q4(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q5-a-i", topicId: "maths-3-4", conceptId: "p2-deferred-q5-a-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q5(a)(i)",
+    stem: "A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown.",
+    questionText: "Show that the volume of the rectangular block of chocolate is 4536 cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q5-a-i-solution-1", kind: "point", verbatim: "Formula with some substitution.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q5-a-i-solution-2", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-a-i-question.png",
+          "srcHash": "e7fcd3782fb2b3a03849af5c77f94808",
+          "alt": "The question as printed on the paper — A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown. Show that the volume of the rectangular block of chocolate is 4536 cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-a-i-solution.png",
+          "srcHash": "ef1a3764a33afe7b2d482cd6c5f11d37",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q5-a-ii", topicId: "maths-3-3", conceptId: "p2-deferred-q5-a-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q5(a)(ii)",
+    stem: "A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown.",
+    questionText: "The weight of the block is 5 kg. Find the weight, in grams, of 1 cm³ of chocolate, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "Converts 5 kg to grams.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-a-ii-question.png",
+          "srcHash": "2c331bef2c3ac84af0b0da9f900a715f",
+          "alt": "The question as printed on the paper — A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown. The weight of the block is 5 kg. Find the weight, in grams, of 1 cm³ of chocolate, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-a-ii-solution.png",
+          "srcHash": "5ef785033eb2e2cea85fea5140e526cf",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q5-b-i-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q5-b-i-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii)",
+    questionText: "The chocolatier makes chocolate spheres of radius 1.6 cm. (i) Find the volume of one sphere, correct to 1 decimal place. (ii) Work out the number of complete spheres that can be made from the block of volume 4536 cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q5-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q5-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-b-i-ii-question.png",
+          "srcHash": "bb8d2c843e4c4bed8104c06703ca2da6",
+          "alt": "The question as printed on the paper — The chocolatier makes chocolate spheres of radius 1.6 cm. (i) Find the volume of one sphere, correct to 1 decimal place. (ii) Work out the number of complete spheres that can be made from the block of volume 4536 cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-b-i-ii-solution.png",
+          "srcHash": "fb636f7f694b85e9f742797af689c571",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q5-b-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q5-b-iii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q5(b)(iii)",
+    questionText: "Edible paint covers the total surface area of a chocolate sphere of radius 1.6 cm. Work out its surface area, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q5-b-iii-solution-1", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-b-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-b-iii-question.png",
+          "srcHash": "4bde43f729a4df10560038ec897260fc",
+          "alt": "The question as printed on the paper — Edible paint covers the total surface area of a chocolate sphere of radius 1.6 cm. Work out its surface area, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q5-b-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q5-b-iii-solution.png",
+          "srcHash": "1ca221aedd4ad046ed37ef63f100e638",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q5(b)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q6-a", topicId: "maths-2-1", conceptId: "p2-deferred-q6-a",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q6(a)",
+    questionText: "Construct the triangle ABC, where |BC| = 11 cm, |AB| = 7 cm and |AC| = 9 cm. [BC] is given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q6-a-solution-1", kind: "point", verbatim: "Correct triangle without arcs.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q6-a-solution-2", kind: "point", verbatim: "Pilot Diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-a-question.png",
+          "srcHash": "fb1ef26c02890c8f95a8c07f8bbde501",
+          "alt": "The question as printed on the paper — Construct the triangle ABC, where |BC| = 11 cm, |AB| = 7 cm and |AC| = 9 cm. [BC] is given.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-a-solution.png",
+          "srcHash": "1c29a553d30906b0aa25ae171559f2d3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q6-b-i", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-i",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q6(b)(i)",
+    stem: "In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4.",
+    questionText: "Find |XV|, the distance from X to V.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q6-b-i-solution-1", kind: "point", verbatim: "some relevant ratio stated.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-b-i-question.png",
+          "srcHash": "3b02975bc4017e99f0e946340742efcb",
+          "alt": "The question as printed on the paper — In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4. Find |XV|, the distance from X to V.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-b-i-solution.png",
+          "srcHash": "c4ce960503bf86f0f0f25239c5170ea2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q6-b-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-ii",
+    section: "A", questionRef: "2024 OL Paper 2 — Deferred Q6(b)(ii)",
+    stem: "In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4.",
+    questionText: "Show that triangles XYZ and XUV are similar. Give a reason for each statement you make.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "One equal pair of angles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q6-b-ii-solution-2", kind: "point", verbatim: "Two equal pairs of angles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q6-b-ii-solution-3", kind: "point", verbatim: "Reasons ignored", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-b-ii-question.png",
+          "srcHash": "ce95b0e4f58bd942918b61d861b10a21",
+          "alt": "The question as printed on the paper — In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4. Show that triangles XYZ and XUV are similar. Give a reason for each statement you make.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q6-b-ii-solution.png",
+          "srcHash": "4b820dd0daaff0f2f47ae0aa60e4b448",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "This is part (b)(ii) on the paper. The summary’s (ii)(iii) label is a printing error; the full similarity proof earns one 10-mark allocation.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-a-i", topicId: "maths-1-7", conceptId: "p2-deferred-q7-a-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(a)(i)",
+    stem: "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+    questionText: "Data for Day 1 and Day 2 are not plotted. Plot and label these points on the scatterplot: Day 1, 23°C and €500; Day 2, 17°C and €400.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-a-i-solution-1", kind: "point", verbatim: "One point plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-i-question.png",
+          "srcHash": "30cbbbec5bb960ae5e30b7f60be9efac",
+          "alt": "The question as printed on the paper — Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days. Data for Day 1 and Day 2 are not plotted. Plot and label these points on the scatterplot: Day 1, 23°C and €500; Day 2, 17°C and €400.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-i-solution.png",
+          "srcHash": "85dd0cc2cfba84c2960fe430daff1d71",
+          "alt": "Complete original SEC scatterplot with Day 1 at (23,500) and Day 2 at (17,400), followed by official marking guidance.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The PDF table clips the graph’s right edge. The complete embedded SEC graph is reproduced above, unchanged, with NextStepUni captions identifying Day 1 and Day 2. The circle is for part (iv).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-a-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-a-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(a)(ii)",
+    stem: "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+    questionText: "Describe the relationship between daily temperature and daily ice cream sales.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "In general, as temperatures increase,", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q7-a-ii-solution-2", kind: "point", verbatim: "the daily ice cream sales increase.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-ii-question.png",
+          "srcHash": "cd8d4a3c39e2a24198998a5444c7633e",
+          "alt": "The question as printed on the paper — Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days. Describe the relationship between daily temperature and daily ice cream sales.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-ii-solution.png",
+          "srcHash": "2c489aae8eb5fd49fbfdc0d0331572ed",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The detailed scheme label “5B” is a typo: its printed awards are 0, 4 and 10, and the summary confirms 10B. This task is worth 10 marks.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-a-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-a-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(a)(iii)",
+    stem: "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+    questionText: "Estimate which correlation coefficient best describes the relationship. Tick one box only: 0.2 / −0.8 / 0.8 / −0.2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "Estimate of correlation coefficient:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-iii-question.png",
+          "srcHash": "4db6f4ca18e916945b83f98953cd9ce4",
+          "alt": "The question as printed on the paper — Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days. Estimate which correlation coefficient best describes the relationship. Tick one box only: 0.2 / −0.8 / 0.8 / −0.2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-iii-solution.png",
+          "srcHash": "e0a62ccbb23abd0d294513c83a9dfa58",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-a-iv", topicId: "maths-1-7", conceptId: "p2-deferred-q7-a-iv",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(a)(iv)",
+    stem: "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+    questionText: "Circle the outlier on the scatter graph and give a possible reason for this outlier.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-a-iv-solution-1", kind: "point", verbatim: "Circle outlier.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q7-a-iv-solution-2", kind: "point", verbatim: "trend of the data.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-iv-question.png",
+          "srcHash": "7b9982db960a17f8836dec6b38722dd1",
+          "alt": "The question as printed on the paper — Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days. Circle the outlier on the scatter graph and give a possible reason for this outlier.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-a-iv-solution.png",
+          "srcHash": "1151fb0375d52d123b206ec0cf6eddee",
+          "alt": "Complete original SEC scatterplot with the low point at about (19,147) circled; a possible early closure is offered as an illustrative explanation. Original credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The circled point is about 19°C and €147, far below the main trend. A possible contextual reason is that the stall closed early that day; this is an illustrative explanation, not a fact supplied by the paper. The two extra crosses belong to part (i).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-b-i", topicId: "maths-1-7", conceptId: "p2-deferred-q7-b-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(b)(i)",
+    stem: "Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147.",
+    questionText: "Work out the mean and standard deviation for these 7 days. Give your answer in euro, correct to 2 decimal places where necessary.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-b-i-solution-1", kind: "point", verbatim: "Either mean or standard deviation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-b-i-question.png",
+          "srcHash": "74b2d34af2b98d9dbcb31db5827836fb",
+          "alt": "The question as printed on the paper — Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147. Work out the mean and standard deviation for these 7 days. Give your answer in euro, correct to 2 decimal places where necessary.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-b-i-solution.png",
+          "srcHash": "f0cb6384c1a68ac75dabdc3b164e40e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q7(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-b-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-b-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(b)(ii)",
+    stem: "Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147.",
+    questionText: "What would happen to the standard deviation if Sunday’s value, 147, was omitted? Tick one box only: Increase / Decrease / Stay the same. Give a reason without calculating the new standard deviation.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-b-ii-solution-1", kind: "point", verbatim: "The data would be closer together", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q7-b-ii-solution-2", kind: "point", verbatim: "Mentions some measure of spread.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-b-ii-question.png",
+          "srcHash": "5edde149da85387a34e38e632765e5a0",
+          "alt": "The question as printed on the paper — Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147. What would happen to the standard deviation if Sunday’s value, 147, was omitted? Tick one box only: Increase / Decrease / Stay the same. Give a reason without calculating the new standard deviation.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-b-ii-solution.png",
+          "srcHash": "fa1575bd228ccf6487a153730ab1db89",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-c-i-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-c-i-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii)",
+    stem: "An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour.",
+    questionText: "(i) Work out the percentage who said vanilla was their favourite, to the nearest percent. (ii) Show that the margin of error for a population proportion is 5.6%, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-c-i-ii-solution-1", kind: "point", verbatim: "a fraction of 320.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q7-c-i-ii-solution-2", kind: "point", verbatim: "Either (i) or (ii) correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-c-i-ii-question.png",
+          "srcHash": "cf75a176acc58b1b223f2adfcf123d60",
+          "alt": "The question as printed on the paper — An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour. (i) Work out the percentage who said vanilla was their favourite, to the nearest percent. (ii) Show that the margin of error for a population proportion is 5.6%, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-c-i-ii-solution.png",
+          "srcHash": "6f0e041c8c74eaed8ca91a6293e143b8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q7-c-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-c-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q7(c)(iii)",
+    stem: "An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour.",
+    questionText: "In 2020 vanilla was the favourite flavour of 30% of customers. Use your answers to (c)(i) and (c)(ii) to test the claim that this percentage has changed since 2020, at the 5% level of significance. Show relevant calculations, state your conclusion and give a reason.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q7-c-iii-solution-1", kind: "point", verbatim: "Conclusion from correct work not in", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q7-c-iii-solution-2", kind: "point", verbatim: "context.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-c-iii-question.png",
+          "srcHash": "78ffaa199098d5af4e1181c79b3c9fe3",
+          "alt": "The question as printed on the paper — An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour. In 2020 vanilla was the favourite flavour of 30% of customers. Use your answers to (c)(i) and (c)(ii) to test the claim that this percentage has changed since 2020, at the 5% level of significance. Show relevant calculations, state your conclusion and give a reason.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q7-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q7-c-iii-solution.png",
+          "srcHash": "d4344b86cbc934adaaadfc700bf8b71b",
+          "alt": "NextStepUni hypothesis test: H0 p=0.30, H1 p≠0.30; rounded interval 17.4% to 28.6% excludes 30%, so reject H0. Original SEC solution and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Using the requested rounded answers gives 23% ± 5.6% = (17.4%, 28.6%). The scheme’s (17.5%, 28.7%) comes from unrounded values, despite its rounded first line. Both exclude 30% and give the same conclusion. The worked example supplies the hypotheses explicitly.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-a-i", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(a)(i)",
+    stem: "A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown.",
+    questionText: "Find |BD|, the total depth of the water at the deeper end of the pool.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "down one of the relevant measurements", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-i-question.png",
+          "srcHash": "132e007fcff0b389838e41dd2783eee9",
+          "alt": "The question as printed on the paper — A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown. Find |BD|, the total depth of the water at the deeper end of the pool.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "bacb472948688d15f049272482ac1b00",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-a-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown.",
+    questionText: "Show that the area of the vertical side wall of the pool is 22.5 m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "One relevant area calculated.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Both formulas substituted correctly.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "97fff6ade526f6f248ba3f5a616061c5",
+          "alt": "The question as printed on the paper — A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown. Show that the area of the vertical side wall of the pool is 22.5 m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "e05974d90f7b2ba53580ff4f8770de7c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-a-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(a)(iii)",
+    questionText: "The pool is 10 m wide and its vertical side-wall area is 22.5 m². Use the answer to (a)(ii) to find the volume of water in litres (1 m³ = 1000 litres).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "Volume correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q8-a-iii-solution-2", kind: "point", verbatim: "Convert to litres:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-iii-question.png",
+          "srcHash": "0fcc1afa736fb81f99efaef3bbeb116f",
+          "alt": "The question as printed on the paper — The pool is 10 m wide and its vertical side-wall area is 22.5 m². Use the answer to (a)(ii) to find the volume of water in litres (1 m³ = 1000 litres).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-a-iii-solution.png",
+          "srcHash": "89882611a445e3bb764ad9dfe491f2aa",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-b-i-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-b-i-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(b)(i), Q8(b)(ii)",
+    questionText: "The floor of the swimming pool is to be tiled. (i) Each square tile has side 45 cm. Find its area in m². (ii) The floor area is 201 m². Work out the minimum number of tiles needed if 10% wastage is expected.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-b-i-ii-solution-1", kind: "point", verbatim: "One area correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q8-b-i-ii-solution-2", kind: "point", verbatim: "Both areas correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-b-i-ii-question.png",
+          "srcHash": "ee99c604a90a6420444ce6f929865a64",
+          "alt": "The question as printed on the paper — The floor of the swimming pool is to be tiled. (i) Each square tile has side 45 cm. Find its area in m². (ii) The floor area is 201 m². Work out the minimum number of tiles needed if 10% wastage is expected.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-b-i-ii-solution.png",
+          "srcHash": "b8e262beccfce602ef1325d1b3898f0f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(b)(i), Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-c-i", topicId: "maths-3-4", conceptId: "p2-deferred-q8-c-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(c)(i)",
+    stem: "A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm.",
+    questionText: "Show that the volume of the top cylinder is 5324π cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-c-i-question.png",
+          "srcHash": "e3a9e7fbf129365b1b478e45c9a9c499",
+          "alt": "The question as printed on the paper — A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm. Show that the volume of the top cylinder is 5324π cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-c-i-solution.png",
+          "srcHash": "738c1a110d84b88a1e9992a26296b623",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q8-c-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-c-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q8(c)(ii)",
+    stem: "A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm.",
+    questionText: "The bottom cylinder has three times the volume of the top cylinder and height 50 cm. Find its radius, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "Finds the volume of the bottom cylinder.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-c-ii-question.png",
+          "srcHash": "9b99dcb045882f9b57f6ab4ae8a6e7b4",
+          "alt": "The question as printed on the paper — A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm. The bottom cylinder has three times the volume of the top cylinder and height 50 cm. Find its radius, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q8-c-ii-solution.png",
+          "srcHash": "db8e2cb8c4261cbd93edd5ec7c661410",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(a)(i)",
+    stem: "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+    questionText: "Find the probability Susan does not hit the bullseye on a single throw.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-a-i-solution-1", kind: "point", verbatim: "mention of 1.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-i-question.png",
+          "srcHash": "6db38d6f56d065c1d0cd74a1e808fcec",
+          "alt": "The question as printed on the paper — Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws. Find the probability Susan does not hit the bullseye on a single throw.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-i-solution.png",
+          "srcHash": "e8905c2c186b86af0ae62aafe6498cb4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(a)(ii)",
+    stem: "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+    questionText: "Find the probability Susan hits the bullseye with her first dart and does not hit the bullseye with the other two darts.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "two relevant probabilities.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-ii-question.png",
+          "srcHash": "7a40b79888ce2e10231ad1fba25a950b",
+          "alt": "The question as printed on the paper — Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws. Find the probability Susan hits the bullseye with her first dart and does not hit the bullseye with the other two darts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-ii-solution.png",
+          "srcHash": "9cbd98a6f7fdf45c83f17955bcffe84f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-a-iii", topicId: "maths-1-3", conceptId: "p2-deferred-q9-a-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(a)(iii)",
+    stem: "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+    questionText: "Susan gets 50 for each hit. The table gives scores 150, 100, 50, 0 with probabilities 0.008, 0.096, 0.384, 0.512. Work out her expected score for throwing 3 darts.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "correct but not evaluated.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-iii-question.png",
+          "srcHash": "9ec6154bfff318b06ac7069367bc31bf",
+          "alt": "The question as printed on the paper — Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws. Susan gets 50 for each hit. The table gives scores 150, 100, 50, 0 with probabilities 0.008, 0.096, 0.384, 0.512. Work out her expected score for throwing 3 darts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-a-iii-solution.png",
+          "srcHash": "39310c2294b59a5cb6f44f93550be9d5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-b-i", topicId: "maths-2-1", conceptId: "p2-deferred-q9-b-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(b)(i)",
+    questionText: "A circular dartboard is divided into 20 equal sectors as shown. Show that the measure of the angle of each sector is 18°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-b-i-solution-1", kind: "point", verbatim: "number of degrees in a full angle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-b-i-question.png",
+          "srcHash": "3309f58546950da7ebd7276261ec25ce",
+          "alt": "The question as printed on the paper — A circular dartboard is divided into 20 equal sectors as shown. Show that the measure of the angle of each sector is 18°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-b-i-solution.png",
+          "srcHash": "15bc609ca788afc31f48c7838945af95",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-b-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q9-b-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(b)(ii)",
+    questionText: "Two sectors have angle 18° and radii 99 mm and 107 mm. Work out the shaded area, the part of the larger sector not in the smaller sector, correct to the nearest mm².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-b-ii-solution-1", kind: "point", verbatim: "One error and finishes correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-b-ii-question.png",
+          "srcHash": "2c4f2ce5bde99ddcaf40180c0521d0a3",
+          "alt": "The question as printed on the paper — Two sectors have angle 18° and radii 99 mm and 107 mm. Work out the shaded area, the part of the larger sector not in the smaller sector, correct to the nearest mm².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-b-ii-solution.png",
+          "srcHash": "72a74772604759be118dcb1ed7df54a0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-c-i", topicId: "maths-3-1", conceptId: "p2-deferred-q9-c-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(c)(i)",
+    stem: "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+    questionText: "List the elements of P′, the set of integers on the dartboard that are not prime.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-c-i-solution-1", kind: "point", verbatim: "12 items required.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q9-c-i-solution-2", kind: "point", verbatim: "3 correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q9-c-i-solution-3", kind: "point", verbatim: "6 correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q9-c-i-solution-4", kind: "point", verbatim: "9 correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-i-question.png",
+          "srcHash": "6ae8e1314eeaa51f24d44511088dc003",
+          "alt": "The question as printed on the paper — U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}. List the elements of P′, the set of integers on the dartboard that are not prime.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-i-solution.png",
+          "srcHash": "dd0bf21357a8f31388be97c8e980de97",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The published 5C scale gives 0, 2, 3 and 5 marks, but its notes also include an extra “Mid Partial Credit” descriptor (6 correct). That descriptor has no separate numeric award. The original wording and available awards are preserved; no additional mark has been invented.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-c-ii", topicId: "maths-3-1", conceptId: "p2-deferred-q9-c-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(c)(ii)",
+    stem: "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+    questionText: "There are four solutions to the equation a + b = 20, where a, b ∈ P. List two solutions.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Any two of:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q9-c-ii-solution-2", kind: "point", verbatim: "One solution found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-ii-question.png",
+          "srcHash": "ee96dc2be90f72e4c70cec0b33ae3358",
+          "alt": "The question as printed on the paper — U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}. There are four solutions to the equation a + b = 20, where a, b ∈ P. List two solutions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-ii-solution.png",
+          "srcHash": "a1b1b5bfbfb59cbb32dd104dad5ab946",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q9-c-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q9-c-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q9(c)(iii)",
+    stem: "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+    questionText: "M is the median of P. Is M ∈ P or M ∈ P′? Tick one box only and use calculations to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q9-c-iii-solution-1", kind: "point", verbatim: "Correct answer and one correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-iii-question.png",
+          "srcHash": "14e810f699b9679f693de4bbd00303e6",
+          "alt": "The question as printed on the paper — U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}. M is the median of P. Is M ∈ P or M ∈ P′? Tick one box only and use calculations to support your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q9-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q9-c-iii-solution.png",
+          "srcHash": "43e9da298357e3950fa74f529d6d0522",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q9(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "For the set P asked about, the two middle values are 7 and 11. M = (7 + 11)/2 = 9, so M belongs to P′. The scheme’s additional median reference does not create another required task.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(a)(i)",
+    stem: "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+    questionText: "Use triangle CEB and the Theorem of Pythagoras to work out |BC|, the distance from B to C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "theorem of Pythagoras.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q10-a-i-solution-2", kind: "point", verbatim: "Correct answer without supporting work.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-i-question.png",
+          "srcHash": "0f6ebdb30bcf6d1a190593db2bbc444c",
+          "alt": "The question as printed on the paper — The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles. Use triangle CEB and the Theorem of Pythagoras to work out |BC|, the distance from B to C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "63bccb2e919c523111467799e30bd7e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-ii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(a)(ii)",
+    stem: "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+    questionText: "Use triangle CEB to show that angle CEB = 77°, correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Demonstrates some understanding of sin,", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-ii-question.png",
+          "srcHash": "652584bad35758d8c6c284ddbe99830d",
+          "alt": "The question as printed on the paper — The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles. Use triangle CEB to show that angle CEB = 77°, correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-ii-solution.png",
+          "srcHash": "f0030c75497175cdd9ff2c8cfd00bcbf",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-a-iii", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-iii",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(a)(iii)",
+    stem: "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+    questionText: "Use angle CEB = 77° to work out |AD|, the distance from A to D, correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "Note: Accept candidates answer from part (ii).", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-iii-question.png",
+          "srcHash": "cefdc460cc903f69fd9cd23e87f8ed85",
+          "alt": "The question as printed on the paper — The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles. Use angle CEB = 77° to work out |AD|, the distance from A to D, correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-iii-solution.png",
+          "srcHash": "9443ac197ad76a9c2d00d18b30785f8e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Bring forward the 77° angle from part (ii), not part (iv) as one credit note says. Angle DEA = 180° − 37° − 77° = 66°; AD = 80 sin 66° ≈ 73 m.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-a-iv", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-iv",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(a)(iv)",
+    stem: "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+    questionText: "Calculate the area of triangle CDE, correct to the nearest m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-a-iv-solution-1", kind: "point", verbatim: "Area formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-iv-question.png",
+          "srcHash": "6c2d9eb1516d5eede50e92383c4fcff2",
+          "alt": "The question as printed on the paper — The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles. Calculate the area of triangle CDE, correct to the nearest m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-iv-solution.png",
+          "srcHash": "c28008e0d7c1bbafd41585bebbc710c0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-a-v", topicId: "maths-2-3", conceptId: "p2-deferred-q10-a-v",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(a)(v)",
+    stem: "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+    questionText: "Use the cosine rule to work out |DC|, the distance from D to C, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-a-v-solution-1", kind: "point", verbatim: "Cosine formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-v-question.png",
+          "srcHash": "3a33e1f4f552905ee29b8a5bda33d552",
+          "alt": "The question as printed on the paper — The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles. Use the cosine rule to work out |DC|, the distance from D to C, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-a-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-a-v-solution.png",
+          "srcHash": "fe451c2c870536bb84d166129236fbf9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(a)(v).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC003GLP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-deferred-q10-b", topicId: "maths-2-3", conceptId: "p2-deferred-q10-b",
+    section: "B", questionRef: "2024 OL Paper 2 — Deferred Q10(b)",
+    questionText: "A university has a triangular flag as shown (not to scale). Use the sine rule to find angle θ, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-deferred-q10-b-solution-1", kind: "point", verbatim: "Correct formula fully substituted.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-deferred-q10-b-solution-2", kind: "point", verbatim: "Incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-b-question.png",
+          "srcHash": "d98e600d200045060c7cfb9bf4a464ae",
+          "alt": "The question as printed on the paper — A university has a triangular flag as shown (not to scale). Use the sine rule to find angle θ, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-ol-p2-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-ol-p2-deferred-q10-b-solution.png",
+          "srcHash": "8ada1a4eafd347e964db4c0af2785578",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 OL Paper 2 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The published answer takes the acute angle shown: θ ≈ 42.5°. The sine equation alone also permits 137.5°; the sketch suggests the acute configuration but is labelled not to scale. The original SEC answer and marking guidance are retained.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

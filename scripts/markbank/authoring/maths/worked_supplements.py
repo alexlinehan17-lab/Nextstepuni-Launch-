@@ -21,6 +21,12 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    ordinary2 = {'parallelogram-2024-ol-deferred':render_parallelogram_2024,
+                 'vanilla-test-2024-ol-deferred':render_vanilla_test_2024,
+                 'icecream-points-2024-ol-deferred':lambda dpi:render_icecream_2024(dpi,False),
+                 'icecream-outlier-2024-ol-deferred':lambda dpi:render_icecream_2024(dpi,True)}
+    if name in ordinary2:
+        return ordinary2[name](dpi)
     ordinary = {'firework-2024-ol-deferred':render_firework_2024, 'data-growth-2024-ol-deferred':render_data_growth_2024}
     if name in ordinary:
         return ordinary[name](dpi)
@@ -417,4 +423,85 @@ def render_data_growth_2024(dpi):
     c.setFont('Helvetica-Bold',12);c.drawString(22,82,'(ii) The curve first reaches 200 during 2027.')
     c.setFont('Helvetica',11);c.drawString(22,61,'(iii) About 75 in 2022 grows to about 150 in 2026: approximately 4 years.')
     c.drawString(22,42,'Both answers are graph readings; the dashed lines show the working.')
+    return _example_image(buf,c,dpi)
+
+
+def parallelogram_2024_vertices():
+    return [(0,0),(2,0),(0,4),(-2,4)]
+
+
+def vanilla_2024_interval(rounded=True):
+    proportion,margin=(.23,.056) if rounded else (74/320,1/sqrt(320))
+    return proportion-margin,proportion+margin
+
+
+def render_parallelogram_2024(dpi):
+    buf,c=_example_canvas('Completing the parallelogram','2024 deferred Ordinary Paper 2 · Q1(a)(iii)',460)
+    X=lambda x:280+45*x
+    Y=lambda y:125+45*y
+    c.setFont('Helvetica',10);c.setStrokeColorRGB(.86,.86,.84);c.setLineWidth(.5)
+    for x in range(-4,5):c.line(X(x),Y(-1),X(x),Y(5))
+    for y in range(-1,6):c.line(X(-4),Y(y),X(4),Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(.9)
+    c.line(X(-4),Y(0),X(4)+10,Y(0));c.line(X(0),Y(-1),X(0),Y(5)+10)
+    for x in [-4,-3,-2,-1,1,3,4]:c.drawCentredString(X(x),Y(0)-15,str(x))
+    for y in [-1,1,2,3,5]:c.drawRightString(X(0)-8,Y(y)-3,str(y))
+    c.drawString(X(4)+14,Y(0)-4,'x');c.drawString(X(0)+10,Y(5)+10,'y')
+    vertices=parallelogram_2024_vertices();path=c.beginPath();path.moveTo(X(0),Y(0))
+    for x,y in vertices[1:]:path.lineTo(X(x),Y(y))
+    path.close();c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(2);c.drawPath(path)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica-Bold',11)
+    for (x,y),label,dx,dy in zip(vertices,['O (0, 0)','P (2, 0)','Q (0, 4)','R (-2, 4)'],[8,8,8,-65],[-32,-32,10,10]):
+        c.circle(X(x),Y(y),2.7,stroke=0,fill=1);c.drawString(X(x)+dx,Y(y)+dy,label)
+    c.setFont('Helvetica',11);c.drawString(22,60,'OP and RQ are horizontal and equal; OR is parallel and equal to PQ.')
+    c.drawString(22,40,'Therefore R = (-2, 4). The four orange sides complete OPQR.')
+    return _example_image(buf,c,dpi)
+
+
+def render_vanilla_test_2024(dpi):
+    buf,c=_example_canvas('Testing whether the proportion changed','2024 deferred Ordinary Paper 2 · Q7(c)(iii)',365)
+    c.setFont('Helvetica',11);c.drawString(22,280,'Let p be the proportion of customers whose favourite flavour is vanilla.')
+    c.setFont('Helvetica-Bold',13);c.drawString(22,252,'H0: p = 0.30');c.drawString(240,252,'H1: p is not 0.30')
+    c.setFont('Helvetica',11);c.drawString(22,224,'Use the rounded answers from (i) and (ii): 23% ± 5.6%.')
+    c.setFont('Helvetica-Bold',14);c.drawString(22,197,'95% confidence interval: 17.4% to 28.6%')
+    X=lambda value:65+(value-.15)*430/.18
+    c.setStrokeColorRGB(.55,.55,.52);c.setLineWidth(1);c.line(X(.15),147,X(.33),147)
+    lo,hi=vanilla_2024_interval();c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(4);c.line(X(lo),147,X(hi),147)
+    c.setLineWidth(1);c.setFont('Helvetica',10)
+    for value,label in [(lo,'17.4%'),(hi,'28.6%'),(.30,'30%')]:
+        c.setStrokeColorRGB(.15,.15,.14);c.line(X(value),141,X(value),153);c.drawCentredString(X(value),127,label)
+    c.setFillColorRGB(.12,.12,.11);c.circle(X(.30),147,3,stroke=0,fill=1)
+    c.setFont('Helvetica-Bold',12);c.drawString(22,99,'30% is outside the interval. Reject H0 at the 5% level.')
+    c.setFont('Helvetica',11);c.drawString(22,77,'There is evidence that the proportion has changed since 2020.')
+    c.setFont('Helvetica',10);c.drawString(22,49,'Keeping unrounded values gives approximately 17.5% to 28.7%, as in the scheme.')
+    c.drawString(22,31,'Either calculation excludes 30%. Original SEC working and credit notes follow.')
+    return _example_image(buf,c,dpi)
+
+
+def render_icecream_2024(dpi,outlier):
+    """Recover the complete embedded SEC plot, clipped by its PDF table cell."""
+    import hashlib,json
+    from pathlib import Path
+    from reportlab.lib.utils import ImageReader
+    path=Path(__file__).resolve().parents[4]/'paper-trail-corpus/deferredmarkingschemes/2024/LC003GLP000EV.pdf'
+    plan=json.loads((Path(__file__).parent/'2024-ol-p2-deferred-presentation.json').read_text())
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==plan['solutionSha256']
+    source=fitz.open(path)
+    images=source[30].get_images(full=True)
+    assert len(images)==1 and images[0][2:4]==(1196,669)
+    im=Image.open(BytesIO(source.extract_image(images[0][0])['image'])).convert('RGB')
+    title='Recognising the outlier' if outlier else 'Completing the scatterplot'
+    part='iv' if outlier else 'i'
+    buf,c=_example_canvas(title,f'2024 deferred Ordinary Paper 2 · Q7(a)({part})',475)
+    c.drawImage(ImageReader(im),35,115,width=490,height=490*im.height/im.width)
+    c.setFont('Helvetica',11)
+    if outlier:
+        c.drawString(22,91,'The circled point is about 19°C and €147, far below the main trend.')
+        c.drawString(22,70,'One possible reason: the stall closed early. This is an illustration, not a fact.')
+    else:
+        c.drawString(22,91,'Day 1 is the cross at (23, 500); Day 2 is the cross at (17, 400).')
+        c.drawString(22,70,'The red circle belongs to part (iv). The graph retains all 14 days.')
+    c.setFont('Helvetica',9)
+    c.drawString(22,44,'Complete graph extracted unchanged from the SEC scheme; its PDF table clips the right edge.')
+    c.drawString(22,29,'Graph: © State Examinations Commission. Explanatory captions: NextStepUni.')
     return _example_image(buf,c,dpi)

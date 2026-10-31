@@ -1,0 +1,1388 @@
+{
+  "questionSha256": "016e2611958b0e83494d2b320f141ac81ac58694796b884a1795ad462331518b",
+  "solutionSha256": "34c9b0f4c918270f949fa811f2a2d92ddf146703c3003106f1304a228bac8ce3",
+  "tasks": {
+    "maths-2024-ol-p2-deferred-q1-a-i": {
+      "question": [
+        [
+          4,
+          52,
+          136,
+          545,
+          232
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          189,
+          545,
+          398
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q1-a-ii": {
+      "question": [
+        [
+          4,
+          52,
+          136,
+          545,
+          210
+        ],
+        [
+          4,
+          52,
+          385,
+          545,
+          647
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          398,
+          545,
+          595
+        ]
+      ],
+      "sourceNote": "The source graph also shows R, which belongs to part (iii). Here plot P(2,0), Q(0,4) and the straight line k through them."
+    },
+    "maths-2024-ol-p2-deferred-q1-a-iii": {
+      "question": [
+        [
+          4,
+          52,
+          136,
+          545,
+          210
+        ],
+        [
+          4,
+          52,
+          385,
+          545,
+          647
+        ],
+        [
+          5,
+          52,
+          53,
+          545,
+          220
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          55,
+          595,
+          545,
+          746
+        ]
+      ],
+      "supplement": "parallelogram-2024-ol-deferred",
+      "supplementAlt": "NextStepUni completed parallelogram O(0,0), P(2,0), Q(0,4), R(−2,4), followed by the original SEC credit notes.",
+      "sourceNote": "The official answer gives R(−2,4) but omits the completed parallelogram. The NextStepUni drawing shows all four sides and labelled vertices."
+    },
+    "maths-2024-ol-p2-deferred-q1-b": {
+      "question": [
+        [
+          5,
+          52,
+          223,
+          545,
+          272
+        ]
+      ],
+      "solution": [
+        [
+          25,
+          55,
+          77,
+          545,
+          366
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          545,
+          404
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          77,
+          545,
+          215
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          545,
+          358
+        ],
+        [
+          6,
+          52,
+          474,
+          545,
+          510
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          215,
+          545,
+          325
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q2-a-iii": {
+      "question": [
+        [
+          6,
+          52,
+          74,
+          545,
+          358
+        ],
+        [
+          6,
+          52,
+          580,
+          545,
+          623
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          325,
+          545,
+          454
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q2-b-i": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          545,
+          126
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          454,
+          545,
+          618
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q2-b-ii": {
+      "question": [
+        [
+          7,
+          52,
+          53,
+          545,
+          89
+        ],
+        [
+          7,
+          52,
+          279,
+          545,
+          315
+        ]
+      ],
+      "solution": [
+        [
+          26,
+          55,
+          618,
+          545,
+          740
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q3-a-i": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          545,
+          118
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          77,
+          545,
+          240
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q3-a-ii-iii": {
+      "question": [
+        [
+          8,
+          52,
+          74,
+          545,
+          95
+        ],
+        [
+          8,
+          52,
+          229,
+          545,
+          654
+        ],
+        [
+          8,
+          52,
+          657,
+          545,
+          679
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          240,
+          545,
+          478
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q3-b": {
+      "question": [
+        [
+          9,
+          52,
+          53,
+          545,
+          432
+        ]
+      ],
+      "solution": [
+        [
+          27,
+          55,
+          478,
+          545,
+          638
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q4-a-i-ii": {
+      "question": [
+        [
+          10,
+          52,
+          74,
+          545,
+          544
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          77,
+          545,
+          273
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q4-b-i-ii": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          545,
+          367
+        ],
+        [
+          11,
+          52,
+          494,
+          545,
+          545
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          273,
+          545,
+          494
+        ]
+      ],
+      "sourceNote": "The diagram defines p as A only (A \\ B). The partial-credit example prints B \\ A = p in error. The worked solution correctly gives p = 16 and q = 29."
+    },
+    "maths-2024-ol-p2-deferred-q4-b-iii": {
+      "question": [
+        [
+          11,
+          52,
+          53,
+          545,
+          342
+        ],
+        [
+          11,
+          52,
+          643,
+          545,
+          680
+        ]
+      ],
+      "solution": [
+        [
+          28,
+          55,
+          494,
+          545,
+          635
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q5-a-i": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          545,
+          273
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          77,
+          545,
+          204
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q5-a-ii": {
+      "question": [
+        [
+          12,
+          52,
+          74,
+          545,
+          246
+        ],
+        [
+          12,
+          52,
+          385,
+          545,
+          428
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          204,
+          545,
+          279
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q5-b-i-ii": {
+      "question": [
+        [
+          13,
+          52,
+          53,
+          545,
+          126
+        ],
+        [
+          13,
+          52,
+          252,
+          545,
+          309
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          279,
+          545,
+          530
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q5-b-iii": {
+      "question": [
+        [
+          13,
+          52,
+          435,
+          545,
+          501
+        ]
+      ],
+      "solution": [
+        [
+          29,
+          55,
+          571,
+          545,
+          697
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          52,
+          74,
+          545,
+          409
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          77,
+          545,
+          240
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q6-b-i": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          545,
+          293
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          240,
+          545,
+          485
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q6-b-ii": {
+      "question": [
+        [
+          15,
+          52,
+          53,
+          545,
+          268
+        ],
+        [
+          15,
+          52,
+          403,
+          545,
+          440
+        ]
+      ],
+      "solution": [
+        [
+          30,
+          55,
+          485,
+          545,
+          715
+        ]
+      ],
+      "sourceNote": "This is part (b)(ii) on the paper. The summary’s (ii)(iii) label is a printing error; the full similarity proof earns one 10-mark allocation."
+    },
+    "maths-2024-ol-p2-deferred-q7-a-i": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          545,
+          638
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          308,
+          77,
+          545,
+          143
+        ]
+      ],
+      "supplement": "icecream-points-2024-ol-deferred",
+      "supplementAlt": "Complete original SEC scatterplot with Day 1 at (23,500) and Day 2 at (17,400), followed by official marking guidance.",
+      "sourceNote": "The PDF table clips the graph’s right edge. The complete embedded SEC graph is reproduced above, unchanged, with NextStepUni captions identifying Day 1 and Day 2. The circle is for part (iv)."
+    },
+    "maths-2024-ol-p2-deferred-q7-a-ii": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          545,
+          526
+        ],
+        [
+          17,
+          52,
+          53,
+          545,
+          76
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          251,
+          545,
+          334
+        ]
+      ],
+      "sourceNote": "The detailed scheme label “5B” is a typo: its printed awards are 0, 4 and 10, and the summary confirms 10B. This task is worth 10 marks."
+    },
+    "maths-2024-ol-p2-deferred-q7-a-iii": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          545,
+          526
+        ],
+        [
+          17,
+          52,
+          187,
+          545,
+          265
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          385,
+          545,
+          430
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q7-a-iv": {
+      "question": [
+        [
+          16,
+          52,
+          136,
+          545,
+          526
+        ],
+        [
+          17,
+          52,
+          292,
+          545,
+          314
+        ]
+      ],
+      "solution": [
+        [
+          31,
+          55,
+          456,
+          545,
+          595
+        ]
+      ],
+      "sourceNote": "The circled point is about 19°C and €147, far below the main trend. A possible contextual reason is that the stall closed early that day; this is an illustrative explanation, not a fact supplied by the paper. The two extra crosses belong to part (i).",
+      "supplement": "icecream-outlier-2024-ol-deferred",
+      "supplementAlt": "Complete original SEC scatterplot with the low point at about (19,147) circled; a possible early closure is offered as an illustrative explanation. Original credit notes follow."
+    },
+    "maths-2024-ol-p2-deferred-q7-b-i": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          545,
+          188
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          77,
+          545,
+          224
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q7-b-ii": {
+      "question": [
+        [
+          18,
+          52,
+          53,
+          545,
+          129
+        ],
+        [
+          18,
+          52,
+          369,
+          545,
+          462
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          224,
+          545,
+          321
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q7-c-i-ii": {
+      "question": [
+        [
+          19,
+          52,
+          53,
+          545,
+          126
+        ],
+        [
+          19,
+          52,
+          238,
+          545,
+          274
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          321,
+          545,
+          439
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q7-c-iii": {
+      "question": [
+        [
+          19,
+          52,
+          53,
+          545,
+          126
+        ],
+        [
+          19,
+          52,
+          238,
+          545,
+          274
+        ],
+        [
+          19,
+          52,
+          386,
+          545,
+          472
+        ]
+      ],
+      "solution": [
+        [
+          32,
+          55,
+          458,
+          545,
+          684
+        ]
+      ],
+      "supplement": "vanilla-test-2024-ol-deferred",
+      "supplementAlt": "NextStepUni hypothesis test: H0 p=0.30, H1 p≠0.30; rounded interval 17.4% to 28.6% excludes 30%, so reject H0. Original SEC solution and credit notes follow.",
+      "sourceNote": "Using the requested rounded answers gives 23% ± 5.6% = (17.4%, 28.6%). The scheme’s (17.5%, 28.7%) comes from unrounded values, despite its rounded first line. Both exclude 30% and give the same conclusion. The worked example supplies the hypotheses explicitly."
+    },
+    "maths-2024-ol-p2-deferred-q8-a-i": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          545,
+          390
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          77,
+          545,
+          190
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q8-a-ii": {
+      "question": [
+        [
+          20,
+          52,
+          74,
+          545,
+          367
+        ],
+        [
+          20,
+          52,
+          459,
+          545,
+          480
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          250,
+          545,
+          410
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q8-a-iii": {
+      "question": [
+        [
+          21,
+          52,
+          53,
+          545,
+          206
+        ]
+      ],
+      "solution": [
+        [
+          33,
+          55,
+          425,
+          545,
+          575
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q8-b-i-ii": {
+      "question": [
+        [
+          21,
+          52,
+          332,
+          545,
+          389
+        ],
+        [
+          21,
+          52,
+          487,
+          545,
+          538
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          77,
+          545,
+          289
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q8-c-i": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          545,
+          287
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          289,
+          545,
+          446
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q8-c-ii": {
+      "question": [
+        [
+          22,
+          52,
+          53,
+          545,
+          265
+        ],
+        [
+          22,
+          52,
+          439,
+          545,
+          497
+        ]
+      ],
+      "solution": [
+        [
+          34,
+          55,
+          462,
+          545,
+          642
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-a-i": {
+      "question": [
+        [
+          23,
+          52,
+          74,
+          545,
+          176
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          77,
+          545,
+          217
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-a-ii": {
+      "question": [
+        [
+          23,
+          52,
+          74,
+          545,
+          153
+        ],
+        [
+          23,
+          52,
+          245,
+          545,
+          282
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          217,
+          545,
+          372
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-a-iii": {
+      "question": [
+        [
+          23,
+          52,
+          74,
+          545,
+          153
+        ],
+        [
+          23,
+          52,
+          407,
+          545,
+          530
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          372,
+          545,
+          512
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-b-i": {
+      "question": [
+        [
+          24,
+          52,
+          53,
+          545,
+          277
+        ]
+      ],
+      "solution": [
+        [
+          35,
+          55,
+          512,
+          545,
+          660
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-b-ii": {
+      "question": [
+        [
+          24,
+          52,
+          345,
+          545,
+          447
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          77,
+          545,
+          301
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-c-i": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          545,
+          176
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          301,
+          545,
+          483
+        ]
+      ],
+      "sourceNote": "The published 5C scale gives 0, 2, 3 and 5 marks, but its notes also include an extra “Mid Partial Credit” descriptor (6 correct). That descriptor has no separate numeric award. The original wording and available awards are preserved; no additional mark has been invented."
+    },
+    "maths-2024-ol-p2-deferred-q9-c-ii": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          545,
+          150
+        ],
+        [
+          25,
+          52,
+          273,
+          545,
+          311
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          483,
+          545,
+          591
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q9-c-iii": {
+      "question": [
+        [
+          25,
+          52,
+          53,
+          545,
+          150
+        ],
+        [
+          25,
+          52,
+          463,
+          545,
+          562
+        ]
+      ],
+      "solution": [
+        [
+          36,
+          55,
+          591,
+          545,
+          758
+        ]
+      ],
+      "sourceNote": "For the set P asked about, the two middle values are 7 and 11. M = (7 + 11)/2 = 9, so M belongs to P′. The scheme’s additional median reference does not create another required task."
+    },
+    "maths-2024-ol-p2-deferred-q10-a-i": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          545,
+          399
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          77,
+          545,
+          313
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q10-a-ii": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          545,
+          376
+        ],
+        [
+          26,
+          52,
+          552,
+          545,
+          574
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          313,
+          545,
+          489
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q10-a-iii": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          545,
+          351
+        ],
+        [
+          27,
+          52,
+          53,
+          545,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          37,
+          55,
+          501,
+          545,
+          733
+        ]
+      ],
+      "sourceNote": "Bring forward the 77° angle from part (ii), not part (iv) as one credit note says. Angle DEA = 180° − 37° − 77° = 66°; AD = 80 sin 66° ≈ 73 m."
+    },
+    "maths-2024-ol-p2-deferred-q10-a-iv": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          545,
+          351
+        ],
+        [
+          27,
+          52,
+          300,
+          545,
+          358
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          77,
+          545,
+          200
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q10-a-v": {
+      "question": [
+        [
+          26,
+          52,
+          74,
+          545,
+          351
+        ],
+        [
+          27,
+          52,
+          484,
+          545,
+          521
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          224,
+          545,
+          359
+        ]
+      ]
+    },
+    "maths-2024-ol-p2-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          52,
+          53,
+          545,
+          295
+        ]
+      ],
+      "solution": [
+        [
+          38,
+          55,
+          408,
+          545,
+          574
+        ]
+      ],
+      "sourceNote": "The published answer takes the acute angle shown: θ ≈ 42.5°. The sine equation alone also permits 137.5°; the sketch suggests the acute configuration but is labelled not to scale. The original SEC answer and marking guidance are retained."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        118,
+        5,
+        573
+      ],
+      "scheme": [
+        24,
+        170,
+        25,
+        370
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        56,
+        7,
+        468
+      ],
+      "scheme": [
+        26,
+        59,
+        26,
+        740
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        56,
+        9,
+        750
+      ],
+      "scheme": [
+        27,
+        59,
+        27,
+        640
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        56,
+        11,
+        748
+      ],
+      "scheme": [
+        28,
+        59,
+        28,
+        635
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        56,
+        13,
+        627
+      ],
+      "scheme": [
+        29,
+        59,
+        29,
+        700
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        56,
+        15,
+        616
+      ],
+      "scheme": [
+        30,
+        59,
+        30,
+        715
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        118,
+        19,
+        710
+      ],
+      "scheme": [
+        31,
+        59,
+        32,
+        690
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        56,
+        22,
+        735
+      ],
+      "scheme": [
+        33,
+        59,
+        34,
+        645
+      ]
+    },
+    "9": {
+      "paper": [
+        23,
+        56,
+        25,
+        715
+      ],
+      "scheme": [
+        35,
+        59,
+        36,
+        758
+      ]
+    },
+    "10": {
+      "paper": [
+        26,
+        56,
+        28,
+        505
+      ],
+      "scheme": [
+        37,
+        59,
+        38,
+        580
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 100 question/solution images visually inspected across five question and four solution contact sheets. Seven question crops corrected and reinspected for complete text, response tables, Venn boundary and construction canvas. Parallelogram labels/footer corrected and reinspected. Both scatterplot solutions restore the complete embedded SEC image clipped by the source table; full-size final images inspected. Published numeric bands, every alternative solution and all credit notes retained.",
+  "atlasInspectionNote": "All ten whole-question paper/scheme spans checked against the independent visual page sweep. Every task crop fits inside its question anchor; multi-page stems, diagrams and credit notes remain available through exact deferred-edition source links."
+}

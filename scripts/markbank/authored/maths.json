@@ -200888,5 +200888,1585 @@
   "notes": "Independently visually checked against the 2024 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
   "figureKey": "maths-2024-ol-p1-deferred-q10-d-i-ii-solution",
   "questionFigureKey": "maths-2024-ol-p1-deferred-q10-d-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q1-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q1(a)(i)",
+  "stem": "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+  "questionText": "Use the equation to find the co-ordinates of point Q.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct transposition.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q1-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q1-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q1-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q1(a)(ii)",
+  "stem": "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+  "questionText": "Plot and label the points P and Q on the co-ordinate diagram below. Hence, draw the line k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "coordinates swapped.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Label/s missing",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q1-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q1-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q1-a-iii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q1(a)(iii)",
+  "stem": "A line k has equation 2x + y − 4 = 0, where x, y ∈ ℝ. It intersects the y-axis at Q, where x = 0, and the x-axis at P(2, 0).",
+  "questionText": "O is the point (0,0). R is the point that makes OPQR a parallelogram. Draw the parallelogram OPQR on the diagram and write down the co-ordinates of the point R.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Pilot Diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Correct coordinates based on an",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q1-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q1-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q1-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q1-b",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q1(b)",
+  "questionText": "Find the area of the triangle with vertices A(2,0), B(2,4) and C(−3,3).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Base or height identified.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q2-a-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q2-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q2(a)(i)",
+  "stem": "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+  "questionText": "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct entry.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Two correct entries.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q2-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q2-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q2-a-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q2-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q2(a)(ii)",
+  "stem": "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+  "questionText": "What percentage of the runners who finished the race had a finishing time between 11.5 and 14.5 minutes?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "68%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "empirical rule",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q2-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q2-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q2-a-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q2-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q2(a)(iii)",
+  "stem": "The finishing times for a cross country race were normally distributed with mean 13 minutes and standard deviation 1.5 minutes. Use the empirical rule and the diagram.",
+  "questionText": "120 runners finished the race. Find the number of runners who finished the race in less than 10 minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Multiplies 120 by some probability.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q2-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q2-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q2-b-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q2-b-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q2(b)(i)",
+  "stem": "In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane.",
+  "questionText": "Find the number of possible ways the finalists could be arranged at the start line of the race.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "All terms listed but not multiplied.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q2-b-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q2-b-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q2-b-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-deferred-q2-b-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q2(b)(ii)",
+  "stem": "In a sprint final there are 8 finalists and 8 lanes. Each finalist is put in a different lane.",
+  "questionText": "Find the number of possible ways that the top three places can be filled if only one person can finish first, one person can finish second, and one person can finish third.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Terms listed but not multiplied.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q2-b-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q2-b-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q3-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q3-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q3(a)(i)",
+  "stem": "A circle c has centre (3,−1) and radius 2.",
+  "questionText": "Write down the equation of c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q3-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Equation with just one error.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q3-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q3-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q3-a-ii-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "p2-deferred-q3-a-ii-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q3(a)(ii), Q3(a)(iii)",
+  "stem": "A circle c has centre (3,−1) and radius 2.",
+  "questionText": "The circle c and O(0,0) are shown. (ii) Circle s is the image of c by central symmetry through O. Work out the centre and radius of s and fill them into the table. (iii) Hence, construct s on the co-ordinate diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Centre or radius found.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Either (ii) or (iii) correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q3-a-ii-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q3-a-ii-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q3-b",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-deferred-q3-b",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q3(b)",
+  "stem": "Circle k has centre A(4,−2). B(7,2) is on the circle and is the point of contact for tangent l, as shown.",
+  "questionText": "Find the slope of [AB], and hence work out the slope of the tangent line l.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Finds the slope of the radius.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q4-a-i-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-deferred-q4-a-i-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q4(a)(i), Q4(a)(ii)",
+  "stem": "Aoife surveyed 80 students. Phone hours in the last week: 0–10, 10–20, 20–30, 30–40, 40–50; frequencies 12, 14, 26, 12, 16. Intervals include the lower bound but exclude the upper bound.",
+  "questionText": "(i) Draw a histogram to represent the data. (ii) What is the greatest number of students that could have spent less than 15 hours on their phone in the last week?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q4-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Three correct bars",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q4-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Correct histogram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q4-a-i-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q4-a-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q4-b-i-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p2-deferred-q4-b-i-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q4(b)(i), Q4(b)(ii)",
+  "stem": "Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B.",
+  "questionText": "(i) Work out p, the number who have A only. (ii) 30 students have an account on A or B only. Hence, or otherwise, find q, the number who have both.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q4-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit in (i) AND (ii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q4-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "(i) OR (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q4-b-i-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q4-b-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q4-b-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q4-b-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q4(b)(iii)",
+  "stem": "Aoife surveyed 80 students: 21 have neither social media account A nor B, and 43 have B. In the Venn diagram, p is A only and q is both A and B.",
+  "questionText": "A student is chosen at random. What is the probability that the student has neither an account on A nor B?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q4-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Either numerator or denominator",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q4-b-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q4-b-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q5-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q5-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q5(a)(i)",
+  "stem": "A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown.",
+  "questionText": "Show that the volume of the rectangular block of chocolate is 4536 cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Formula with some substitution.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q5-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q5-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q5-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-deferred-q5-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q5(a)(ii)",
+  "stem": "A chocolatier uses large rectangular blocks of chocolate. One block has dimensions 70 cm, 36 cm and 1.8 cm, as shown.",
+  "questionText": "The weight of the block is 5 kg. Find the weight, in grams, of 1 cm³ of chocolate, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Converts 5 kg to grams.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q5-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q5-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q5-b-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q5-b-i-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q5(b)(i), Q5(b)(ii)",
+  "questionText": "The chocolatier makes chocolate spheres of radius 1.6 cm. (i) Find the volume of one sphere, correct to 1 decimal place. (ii) Work out the number of complete spheres that can be made from the block of volume 4536 cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q5-b-i-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q5-b-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q5-b-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q5-b-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q5(b)(iii)",
+  "questionText": "Edible paint covers the total surface area of a chocolate sphere of radius 1.6 cm. Work out its surface area, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q5-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q5-b-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q5-b-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q6-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q6-a",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q6(a)",
+  "questionText": "Construct the triangle ABC, where |BC| = 11 cm, |AB| = 7 cm and |AC| = 9 cm. [BC] is given.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Correct triangle without arcs.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Pilot Diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q6-a-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q6-a-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q6-b-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q6-b-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q6(b)(i)",
+  "stem": "In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4.",
+  "questionText": "Find |XV|, the distance from X to V.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "some relevant ratio stated.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q6-b-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q6-b-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q6-b-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q6-b-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 OL Paper 2 — Deferred Q6(b)(ii)",
+  "stem": "In the triangle XYZ shown, [UV] is parallel to [YZ]. |XU| = 4, |UY| = 7 and |VZ| = 8.4.",
+  "questionText": "Show that triangles XYZ and XUV are similar. Give a reason for each statement you make.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One equal pair of angles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Two equal pairs of angles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q6-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Reasons ignored",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q6-b-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q6-b-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-a-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(a)(i)",
+  "stem": "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+  "questionText": "Data for Day 1 and Day 2 are not plotted. Plot and label these points on the scatterplot: Day 1, 23°C and €500; Day 2, 17°C and €400.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "One point plotted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-a-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(a)(ii)",
+  "stem": "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+  "questionText": "Describe the relationship between daily temperature and daily ice cream sales.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "In general, as temperatures increase,",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "the daily ice cream sales increase.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-a-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(a)(iii)",
+  "stem": "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+  "questionText": "Estimate which correlation coefficient best describes the relationship. Tick one box only: 0.2 / −0.8 / 0.8 / −0.2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Estimate of correlation coefficient:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-a-iv",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-a-iv",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(a)(iv)",
+  "stem": "Liam and Ava sell ice cream. Ava records daily temperature (°C) and daily ice cream sales (€) for 14 days. The scatterplot shows 12 days.",
+  "questionText": "Circle the outlier on the scatter graph and give a possible reason for this outlier.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Circle outlier.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "trend of the data.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-a-iv-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-a-iv-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-b-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-b-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(b)(i)",
+  "stem": "Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147.",
+  "questionText": "Work out the mean and standard deviation for these 7 days. Give your answer in euro, correct to 2 decimal places where necessary.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Either mean or standard deviation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-b-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-b-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-b-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-b-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(b)(ii)",
+  "stem": "Daily ice cream sales (€) for Monday to Sunday are 618, 530, 446, 500, 400, 369 and 147.",
+  "questionText": "What would happen to the standard deviation if Sunday’s value, 147, was omitted? Tick one box only: Increase / Decrease / Stay the same. Give a reason without calculating the new standard deviation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "The data would be closer together",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Mentions some measure of spread.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-b-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-b-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-c-i-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-c-i-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii)",
+  "stem": "An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour.",
+  "questionText": "(i) Work out the percentage who said vanilla was their favourite, to the nearest percent. (ii) Show that the margin of error for a population proportion is 5.6%, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "a fraction of 320.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Either (i) or (ii) correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-c-i-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-c-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q7-c-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q7-c-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q7(c)(iii)",
+  "stem": "An ice cream company surveyed 320 randomly selected customers in 2024. 74 said vanilla was their favourite flavour.",
+  "questionText": "In 2020 vanilla was the favourite flavour of 30% of customers. Use your answers to (c)(i) and (c)(ii) to test the claim that this percentage has changed since 2020, at the 5% level of significance. Show relevant calculations, state your conclusion and give a reason.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Conclusion from correct work not in",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q7-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "context.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q7-c-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q7-c-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(a)(i)",
+  "stem": "A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown.",
+  "questionText": "Find |BD|, the total depth of the water at the deeper end of the pool.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "down one of the relevant measurements",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(a)(ii)",
+  "stem": "A swimming pool is a prism. Its side wall is rectangle ABCF joined to triangle CDE, with C on BD and E on CF. AB = 20 m, EF = 8 m, AF = 0.75 m and CD = 1.25 m, as shown.",
+  "questionText": "Show that the area of the vertical side wall of the pool is 22.5 m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One relevant area calculated.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Both formulas substituted correctly.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-a-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(a)(iii)",
+  "questionText": "The pool is 10 m wide and its vertical side-wall area is 22.5 m². Use the answer to (a)(ii) to find the volume of water in litres (1 m³ = 1000 litres).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Volume correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Convert to litres:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-b-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-b-i-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(b)(i), Q8(b)(ii)",
+  "questionText": "The floor of the swimming pool is to be tiled. (i) Each square tile has side 45 cm. Find its area in m². (ii) The floor area is 201 m². Work out the minimum number of tiles needed if 10% wastage is expected.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One area correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Both areas correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-b-i-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-b-i-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-c-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-c-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(c)(i)",
+  "stem": "A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm.",
+  "questionText": "Show that the volume of the top cylinder is 5324π cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-c-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-c-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q8-c-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q8-c-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q8(c)(ii)",
+  "stem": "A pump is a cylinder on top of another cylinder, as shown. The top cylinder has radius 22 cm and height 11 cm.",
+  "questionText": "The bottom cylinder has three times the volume of the top cylinder and height 50 cm. Find its radius, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds the volume of the bottom cylinder.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q8-c-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q8-c-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q9-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(a)(i)",
+  "stem": "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+  "questionText": "Find the probability Susan does not hit the bullseye on a single throw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "mention of 1.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-deferred-q9-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(a)(ii)",
+  "stem": "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+  "questionText": "Find the probability Susan hits the bullseye with her first dart and does not hit the bullseye with the other two darts.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "two relevant probabilities.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-a-iii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-deferred-q9-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(a)(iii)",
+  "stem": "Susan plays “Hit the bull”: she throws 3 darts at the bullseye. The probability of a hit with a single dart is 0.2, independently of previous throws.",
+  "questionText": "Susan gets 50 for each hit. The table gives scores 150, 100, 50, 0 with probabilities 0.008, 0.096, 0.384, 0.512. Work out her expected score for throwing 3 darts.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "correct but not evaluated.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-b-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-deferred-q9-b-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(b)(i)",
+  "questionText": "A circular dartboard is divided into 20 equal sectors as shown. Show that the measure of the angle of each sector is 18°.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "number of degrees in a full angle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-b-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-b-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-deferred-q9-b-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(b)(ii)",
+  "questionText": "Two sectors have angle 18° and radii 99 mm and 107 mm. Work out the shaded area, the part of the larger sector not in the smaller sector, correct to the nearest mm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One error and finishes correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-b-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-b-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-c-i",
+  "topicId": "maths-3-1",
+  "conceptId": "p2-deferred-q9-c-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(c)(i)",
+  "stem": "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+  "questionText": "List the elements of P′, the set of integers on the dartboard that are not prime.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "12 items required.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "3 correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "6 correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "9 correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-c-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-c-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-c-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p2-deferred-q9-c-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(c)(ii)",
+  "stem": "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+  "questionText": "There are four solutions to the equation a + b = 20, where a, b ∈ P. List two solutions.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any two of:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One solution found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-c-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-c-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q9-c-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-deferred-q9-c-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q9(c)(iii)",
+  "stem": "U is the integers 1 to 20 on the dartboard. P is the set of prime numbers on the dartboard: P = {2, 3, 5, 7, 11, 13, 17, 19}.",
+  "questionText": "M is the median of P. Is M ∈ P or M ∈ P′? Tick one box only and use calculations to support your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q9-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Correct answer and one correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q9-c-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q9-c-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-i",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(a)(i)",
+  "stem": "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+  "questionText": "Use triangle CEB and the Theorem of Pythagoras to work out |BC|, the distance from B to C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "theorem of Pythagoras.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Correct answer without supporting work.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-a-i-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-a-i-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-ii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(a)(ii)",
+  "stem": "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+  "questionText": "Use triangle CEB to show that angle CEB = 77°, correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Demonstrates some understanding of sin,",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-a-ii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-a-ii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-a-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-iii",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(a)(iii)",
+  "stem": "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+  "questionText": "Use angle CEB = 77° to work out |AD|, the distance from A to D, correct to the nearest metre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Note: Accept candidates answer from part (ii).",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-a-iii-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-a-iii-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-a-iv",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-iv",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(a)(iv)",
+  "stem": "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+  "questionText": "Calculate the area of triangle CDE, correct to the nearest m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Area formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-a-iv-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-a-iv-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-a-v",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-a-v",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(a)(v)",
+  "stem": "The diagram (not to scale) shows a university campus ABCD. C, D and E are main doors; DC, DE and EC are pathways. DE = 80 m, EC = 41 m, EB = 9 m and angle DEC = 37°. A and B are right angles.",
+  "questionText": "Use the cosine rule to work out |DC|, the distance from D to C, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "Cosine formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-a-v-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-a-v-question"
+ },
+ {
+  "id": "maths-2024-ol-p2-deferred-q10-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-deferred-q10-b",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 2 — Deferred Q10(b)",
+  "questionText": "A university has a triangular flag as shown (not to scale). Use the sine rule to find angle θ, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "Correct formula fully substituted.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-ol-p2-deferred-q10-b-solution-2",
+    "kind": "point",
+    "verbatim": "Incorrect rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Ordinary Level Paper 2 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2024-ol-p2-deferred-q10-b-solution",
+  "questionFigureKey": "maths-2024-ol-p2-deferred-q10-b-question"
  }
 ]

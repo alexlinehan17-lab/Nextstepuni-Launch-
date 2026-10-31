@@ -50,6 +50,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'mathematics|2024|LC003ALP100EV-deferred.pdf',
   'mathematics|2024|LC003ALP200EV-deferred.pdf',
   'mathematics|2024|LC003GLP100EV-deferred.pdf',
+  'mathematics|2024|LC003GLP200EV-deferred.pdf',
   'mathematics|2025|LC003GLP100EV-deferred.pdf',
   'mathematics|2025|LC003GLP200EV-deferred.pdf',
   'mathematics|2025|LC003ALP100EV-deferred.pdf',

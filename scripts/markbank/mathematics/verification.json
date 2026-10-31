@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and seven deferred editions; nine indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 4759,
-  "reviewedTasks": 4759,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and eight deferred editions; eight indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 4809,
+  "reviewedTasks": 4809,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2024 deferred Ordinary Paper 1.",
+  "productionBuild": "Passed on 2026-10-31 through 2024 deferred Ordinary Paper 2.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2024 Ordinary deferred Paper 2",
-    "status": "Paper 1 complete and verified; Paper 2 is next for independent visual review.",
-    "remainingEnglishDeferredPapers": 9,
+    "paper": "2023 Higher deferred Paper 1",
+    "status": "All 2024 English deferred papers complete and verified; next is the independent visual review of 2023 Higher Paper 1.",
+    "remainingEnglishDeferredPapers": 8,
     "irishEditionReview": "Deferred by Alex on 2026-10-31; not part of the current completion scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -8541,5 +8541,86 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 42 cards byte for byte."
+  },
+  "deferred2024ordinaryPaper2": {
+    "date": "2026-10-31",
+    "paper": "2024 Ordinary deferred Paper 2",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "reviewedTasks": 50,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "runtimeCards": 4809,
+    "runtimeByLevel": {
+      "higher": 1734,
+      "ordinary": 1938,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 119,
+    "previousAuthoredCardsUnchanged": 4760,
+    "previousDeferredImagesUnchanged": 584,
+    "inspectedImages": 100,
+    "workedSupplements": [
+      "Q1(a)(iii) completed parallelogram",
+      "Q7(a)(i) and (iv) complete embedded SEC scatterplot with explanatory captions",
+      "Q7(c)(iii) hypothesis test with consistent rounding"
+    ],
+    "reviewedAtlasQuestionPlacements": 1124,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 8,
+    "irishEditionReview": "Deferred at user request; outstanding provenance is recorded, not treated as a current blocker.",
+    "tests": {
+      "javascriptPassed": 423,
+      "pythonPassed": 18,
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2024-ol-p2-deferred-q7-a-i",
+      "phoneCard": "maths-2024-ol-p2-deferred-q7-c-iii",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        4,
+        3
+      ],
+      "enlarge": true,
+      "phoneZoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePdfPage": 31,
+      "viewportReset": true
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }
