@@ -21,6 +21,14 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    ordinary_2022 = {
+        'balls-plot-2022-ol-deferred':lambda dpi:render_balls_2022_ol(dpi,False),
+        'balls-readings-2022-ol-deferred':lambda dpi:render_balls_2022_ol(dpi,True),
+        'brendan-2022-ol-deferred':lambda dpi:render_cyclists_2022_ol(dpi,'brendan'),
+        'colin-2022-ol-deferred':lambda dpi:render_cyclists_2022_ol(dpi,'colin'),
+        'cyclists-meeting-2022-ol-deferred':lambda dpi:render_cyclists_2022_ol(dpi,'meeting')}
+    if name in ordinary_2022:
+        return ordinary_2022[name](dpi)
     higher_2022 = {'matches-chart-2022-hl-deferred':render_matches_2022,
                    'root-three-construction-2022-hl-deferred':render_root_three_2022,
                    'judges-best-fit-2022-hl-deferred':render_judges_2022,
@@ -819,4 +827,79 @@ def render_judges_2022(dpi):
     c.setFont('Helvetica-Bold',11);c.drawString(22,81,'At Mike’s score of 35, this line gives Nuala’s score of about 37.')
     c.setFont('Helvetica',10);c.drawString(22,58,'The example uses y = 0.3x + 24. A different reasonable line can give a different estimate.')
     c.drawString(22,38,'Use points on both sides of your line, and show the reading from your own line.')
+    return _example_image(buf,c,dpi)
+
+
+def render_balls_2022_ol(dpi,readings):
+    buf,c=_example_canvas('Reading two height graphs' if readings else 'Plotting Gina’s height graph',
+        '2022 deferred Ordinary Paper 1 · Q8(b)' if readings else '2022 deferred Ordinary Paper 1 · Q8(a)(i–ii)',580)
+    x0,y0,w,h=65,170,440,300
+    def P(t,y):return x0+w*t/4,y0+h*y/25
+    c.setFont('Helvetica',10);c.drawString(x0,484,'Height above ground (m)')
+    c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for t in range(9):
+        xx,_=P(t/2,0);c.line(xx,y0,xx,y0+h);c.drawCentredString(xx,y0-16,str(t/2).removesuffix('.0'))
+    for y in range(0,26,5):
+        _,yy=P(0,y);c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(y))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1);c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h)
+    hf=lambda t:1+18*t-5*t*t
+    gf=lambda t:18+10*t-5*t*t
+    for fn,lo,hi,color in [(hf,0,(18+sqrt(344))/10,(.34,.34,.32)),(gf,1,(10+sqrt(460))/10,(.90,.39,.15))]:
+        c.setStrokeColorRGB(*color);c.setLineWidth(1.6);path=c.beginPath();path.moveTo(*P(lo,fn(lo)))
+        for i in range(1,201):
+            t=lo+(hi-lo)*i/200;path.lineTo(*P(t,max(0,fn(t))))
+        c.drawPath(path)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica-Bold',10)
+    c.drawString(*P(1.30,23.8),'Gina: g(t)');c.drawString(*P(2.55,18),'Harry: h(t)')
+    c.setFont('Helvetica',10);c.drawRightString(x0+w,135,'Time t (seconds, from Harry’s throw)')
+    if not readings:
+        for t in [1,1.5,2,2.5,3,3.1]:c.circle(*P(t,gf(t)),2.4,fill=1,stroke=0)
+        c.setFont('Helvetica-Bold',11);c.drawString(22,105,'Completed table')
+        c.setFont('Helvetica',11)
+        for i,(t,v) in enumerate(zip(['t','1','1.5','2','2.5','3','3.1'],['g(t)','23','21.75','18','11.75','3','0.95'])):
+            xx=46+73*i;c.drawCentredString(xx,82,t);c.drawCentredString(xx,61,v)
+        c.setFont('Helvetica',10);c.drawString(22,37,'Plot all six pairs and join with a smooth curve, starting at t = 1.')
+    else:
+        c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1);c.setDash(3,3)
+        c.line(*P(1.5,hf(1.5)),*P(1.5,gf(1.5)))
+        c.line(*P(1.8,0),*P(1.8,hf(1.8)))
+        t=17/8;c.line(*P(0,hf(t)),*P(t,hf(t)));c.setDash()
+        c.setFont('Helvetica',10);c.drawString(*P(.15,19.2),'gap ≈ 5 m')
+        for t,fn in [(1.5,hf),(1.5,gf),(1.8,hf),(17/8,hf)]:c.circle(*P(t,fn(t)),2.2,fill=1,stroke=0)
+        c.setFont('Helvetica',11)
+        for yy,txt in [(105,'(i) At t = 1.5, the vertical gap is about 5 m.'),(83,'(ii) Harry’s maximum occurs at about 1.8 seconds.'),(61,'(iii) The curves cross at a height of about 16.7 m.')]:c.drawString(22,yy,txt)
+        c.setFont('Helvetica',10);c.drawString(22,37,'Readings are estimates. The original SEC tolerance ranges follow below.')
+    return _example_image(buf,c,dpi)
+
+
+def render_cyclists_2022_ol(dpi,mode):
+    title={'brendan':'Plotting Brendan’s journey','colin':'Plotting Colin’s journey','meeting':'Where the two cyclists pass'}[mode]
+    part={'brendan':'Q10(c)(i)','colin':'Q10(d)(i)','meeting':'Q10(d)(ii)'}[mode]
+    buf,c=_example_canvas(title,'2022 deferred Ordinary Paper 1 · '+part+' · reconstructed from the question',485)
+    x0,y0,w,h=65,150,440,230
+    def P(t,d):return x0+w*t/5,y0+h*d/64
+    c.setFont('Helvetica',10);c.drawString(x0,395,'Distance from P (km)')
+    c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for i in range(11):
+        xx,_=P(i/2,0);c.line(xx,y0,xx,y0+h)
+        if i%2==0:c.drawCentredString(xx,y0-17,f'{10+i//2}:00')
+    for d in range(0,65,8):
+        _,yy=P(0,d);c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(d))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1);c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h)
+    c.setStrokeColorRGB(.60,.60,.57);path=c.beginPath();path.moveTo(*P(0,0))
+    for pt in [(1.5,24),(2.5,24),(5,64)]:path.lineTo(*P(*pt))
+    c.drawPath(path);c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',10);c.drawString(*P(3.2,44),'Alan')
+    if mode in ['brendan','meeting']:
+        c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1.7);c.line(*P(2,0),*P(14/3,64));c.drawString(*P(3.8,57),'Brendan')
+        c.circle(*P(4,48),2,fill=1,stroke=0)
+    if mode in ['colin','meeting']:
+        c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(1.7);c.line(*P(0,64),*P(5,0));c.drawString(*P(3.8,18),'Colin')
+    if mode=='meeting':
+        t=112/36.8;d=24*(t-2);c.setStrokeColorRGB(.18,.18,.16);c.setDash(3,3);c.setLineWidth(1);c.line(*P(t,d),*P(t,0));c.setDash();c.circle(*P(t,d),2.5,fill=1,stroke=0)
+        lines=['The intersection is just after 13:00: about 13:03.','The source example is about 13:05; accepted range 13:00–13:20.','Show the reading from the two lines on your graph.']
+    elif mode=='brendan':
+        lines=['Start at (12:00, 0). Pass Alan at (14:00, 48 km).','Join with a straight line and stop at Q: (14:40, 64 km).','Label the line Brendan. His speed is 48 ÷ 2 = 24 km/h.']
+    else:lines=['Join (10:00, 64 km) to (15:00, 0) with one straight line.','The distance from P decreases as Colin travels towards P.','Label the line Colin.']
+    c.setFont('Helvetica',10);c.drawRightString(x0+w,112,'Time of day')
+    for yy,txt in zip([85,63,41],lines):c.drawString(22,yy,txt)
     return _example_image(buf,c,dpi)

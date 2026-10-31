@@ -211114,5 +211114,1407 @@
   "notes": "Independently visually checked against the 2022 Higher Level Paper 2 and its scheme on 2026-10-31.",
   "figureKey": "maths-2022-hl-p2-deferred-q10-d-iv-solution",
   "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-iv-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q1-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q1-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q1(a)",
+  "questionText": "Write 5^(−3) and 4^(3/2) without using indices.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant work with indices in either part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "One correct solution together with relevant work with indices in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q1-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q1-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q1-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q1-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q1(b)",
+  "questionText": "Given that (√8)⁶/8⁵ = 8^t where t ∈ ℤ, find the value of t.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant work with indices",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q1-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q1-c",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q1(c)",
+  "questionText": "Write the following as a single fraction in its simplest form: 2/(7x−5) − 4/(3x+1).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "writes the LCM",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Full 2nd Line of the solution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q1-c-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q1-c-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q2-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q2-a-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q2(a)(i)",
+  "stem": "Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year.",
+  "questionText": "Work out how much it will be worth exactly 2 years after Gina buys it.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Correct relevant formula written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q2-a-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q2-a-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q2-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q2-a-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q2(a)(ii)",
+  "stem": "Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year.",
+  "questionText": "On 1 January 2025, the value of this car will be €10 000. Work out its value exactly 1 year earlier, on 1 January 2024.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "P(0.8) = 10000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q2-a-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q2-a-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q2-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q2-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q2(b)",
+  "stem": "Two students are looking on the internet to find the value of the speed of light. One website gives it as 3×10⁸ metres per second. Another says that light travels approximately 9·5 trillion kilometres in a year.",
+  "questionText": "Given that a trillion is a million million, find out whether or not these two answers are consistent with each other.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Effort at converting km to m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Either expression fully formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q2-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q2-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q3-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q3(a)",
+  "stem": "Two complex numbers, u and v, are shown on the Argand diagram below.",
+  "questionText": "Write u and v in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "4 items",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "2 correct items",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q3-b-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-b-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q3(b)(i)",
+  "stem": "Two complex numbers, u and v, are shown on the Argand diagram below.",
+  "questionText": "Verify, by calculation, that |u|=|v|. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Modulus formula written with or without some substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Either modulus found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q3-b-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q3-b-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q3-b-ii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-b-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q3(b)(ii)",
+  "stem": "Two complex numbers, u and v, are shown on the Argand diagram below.",
+  "questionText": "Draw a complex number w on the diagram above, so that |w|=|u|=|v|, and write w in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "correct complex number OR a correct plot",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q3-b-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q3-b-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q3-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q3-c",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q3(c)",
+  "stem": "Two complex numbers, u and v, are shown on the Argand diagram below.",
+  "questionText": "z is a complex number, so that u×z=v. Find z. Give your answer in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Conjugate identified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "2 relevant equations found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q4-a-i-ii",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-deferred-q4-a-i-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q4(a)(i), Q4(a)(ii)",
+  "questionText": "(i) Solve the following inequality, for x ∈ ℝ: 5−2x≤11. (ii) Show the solution set on the number line below. Remember that x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q4-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any relevant step towards solving inequality",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q4-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Treats as equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q4-a-i-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q4-a-i-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q4-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q4-b-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q4(b)(i)",
+  "stem": "The graph of the quadratic function d(x) is shown on the co-ordinate diagram below.",
+  "questionText": "Use the graph to write down the two solutions of the equation d(x)=0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "indicates value(s) on the diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q4-b-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q4-b-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q4-b-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q4-b-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q4(b)(ii)",
+  "stem": "The graph of the quadratic function d(x) is shown on the co-ordinate diagram below. Part (i) asks for the two solutions of d(x)=0.",
+  "questionText": "Hence, write d(x) in the form d(x)=ax²+bx−12, where a,b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "an answer from part (i) written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q4-b-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q4-b-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q5-a-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-a-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q5(a)(i)",
+  "stem": "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+  "questionText": "Find f′(x), the derivative of f.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "1 term correctly differentiated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "2 terms correctly differentiated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q5-a-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q5-a-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q5-a-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-a-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q5(a)(ii)",
+  "stem": "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+  "questionText": "Find the value of f′(x) when x=1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any substitution into candidates",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q5-a-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q5-a-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q5-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-a-iii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q5(a)(iii)",
+  "stem": "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+  "questionText": "Find the equation of the tangent to the curve y=f(x) at x=1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "m=7 AND (1,6)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q5-a-iii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q5-a-iii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q5-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q5-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q5(b)",
+  "stem": "The graph of y=g(x) is shown on the co-ordinate diagram below, for a particular range of x ∈ ℝ.",
+  "questionText": "On the graph, mark the three points for which g′(x)=0, where g′(x) is the derivative of g. Label these points A, B, and C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "one correct point plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "2 correct points plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q5-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q5-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q6-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q6-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q6(a)",
+  "stem": "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1.",
+  "questionText": "Find p(5).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answer without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q6-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q6-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q6-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q6-b-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q6(b)(i)",
+  "stem": "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1.",
+  "questionText": "Show that p(h(x))=4x²−12x+8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Finds h(p(x))",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q6-b-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q6-b-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q6-b-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q6-b-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 OL Paper 1 — Deferred Q6(b)(ii)",
+  "stem": "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1. Part (i) gives p(h(x))=4x²−12x+8.",
+  "questionText": "Solve p(h(x))=4. Give each answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Fully substituted -b formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q6-b-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q6-b-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q7-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(a)",
+  "stem": "Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work.",
+  "questionText": "Using the pattern above, draw a diagram to show the tiles that have been laid up to the end of Day 4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "One line or column missing",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q7-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(b)",
+  "stem": "Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work.",
+  "questionText": "Complete the table below to show the total number of square tiles that have been laid up to the end of each of the first 7 days. The first two have already been done for you. Day 1: 8; Day 2: 14; Days 3–7: blank.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "3 correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "4 correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-c-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q7-c-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(c)(i)",
+  "stem": "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n. The table gives 14 tiles at the end of Day 2.",
+  "questionText": "Show that this formula gives the correct value for the total number of tiles that have been laid up to the end of Day 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "substitutes 2 for n",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-c-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-c-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-c-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q7-c-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(c)(ii)",
+  "stem": "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n.",
+  "questionText": "Write the formula for Tₙ above in the form Tₙ=an²+bn+c, where a,b,c ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "brings down the Tn formula from the question",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-c-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-c-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-d",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q7-d",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(d)",
+  "stem": "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n.",
+  "questionText": "Work out how many tiles Darragh laid on the 15th day.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Finds BOTH T14 AND T15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-d-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-d-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-e-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q7-e-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(e)(i)",
+  "stem": "When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm.",
+  "questionText": "Work out the total area of the patio, in m², once it is completed.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-e-i-solution-1",
+    "kind": "point",
+    "verbatim": "0.6 or area formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-e-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-e-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q7-e-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-e-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q7(e)(ii)",
+  "stem": "When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm.",
+  "questionText": "Darragh charges €700 for each 20 m² of patio, plus VAT at 23%. Work out how much Darragh charges, in total, for the patio. Give your answer correct to the nearest euro.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q7-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "answer from (e)(i) written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q7-e-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q7-e-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q8-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q8-a-i-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q8(a)(i), Q8(a)(ii)",
+  "stem": "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1.",
+  "questionText": "(i) Complete the table below to show the values of g(t) for the given values of t. t: 1, 1·5, 2, 2·5, 3, 3·1; g(t): blank, 21·75, blank, blank, blank, 0·95. (ii) Draw the graph of y=g(t) on the co-ordinate diagram on the next page, using the same axes and scales. Note: t≥1 for g(t).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "4 values in the table, and 6 points plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "8 correct elements",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q8-a-i-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q8-a-i-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q8-b-i-ii-iii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q8(b)(i), Q8(b)(ii), Q8(b)(iii)",
+  "stem": "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. Plot g(t) on the supplied axes as required in part (a).",
+  "questionText": "Use the graphs of h(t) and g(t) to estimate each answer. In each case, show your work on the diagram. (i) How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (at t=1·5)? (ii) How long does it take Harry’s ball to reach its maximum height? (iii) At what height does Gina’s ball pass Harry’s ball?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "2 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "incomplete graph work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q8-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q8-c-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q8(c)(i)",
+  "stem": "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+  "questionText": "How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (t=1·5)? Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Finds BOTH h(1.5) AND g(1.5)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q8-c-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q8-c-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q8-c-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q8-c-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q8(c)(ii)",
+  "stem": "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+  "questionText": "Use calculus to find how long it takes Harry’s ball to reach its maximum height.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct differentiation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Equates h’(t) = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q8-c-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q8-c-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q8-c-iii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q8-c-iii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q8(c)(iii)",
+  "stem": "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+  "questionText": "By solving an equation, find the height at which Gina’s ball passes Harry’s ball. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q8-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "either expression for h(t) or g(t) written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q8-c-iii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q8-c-iii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q9-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q9-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q9(a)",
+  "stem": "Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins.",
+  "questionText": "Use this information to complete the table below, showing the total number of coins and the total amount of money that Mary has saved as the weeks pass. Each answer in the last row should be an expression in terms of n. Rows: Start (136 coins, €51), after 1 week, 2 weeks, 3 weeks, 4 weeks, and n weeks (n ∈ ℕ).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "5 correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "8 correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q9-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q9-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q9-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q9-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q9(b)",
+  "stem": "Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins.",
+  "questionText": "Will there ever be a time at which the total number of coins that Mary has is equal to the total amount of money (in euro) that she has saved? If so, find when that happens; if not, explain why not.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "not equal initially and coins increasing by 8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q9-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q9-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q9-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q9-c",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q9(c)",
+  "stem": "Mary keeps her money in three different money boxes. Box 1 has only €1 coins, Box 2 has only 50-cent coins, and Box 3 has only 20-cent coins. Each box contains the same amount of money. Mary starts with 136 coins in total in her three money boxes, worth a total of €51.",
+  "questionText": "Work out the number of coins in each money box at this time.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "One correct value",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "2 correct values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q9-c-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q9-c-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q9-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q9-d-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q9(d)(i)",
+  "stem": "Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%.",
+  "questionText": "Work out the USC that Mary’s mother pays at the 0·5% rate and the 2% rate.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 60.06 OR 8472",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 60.06 AND 8472",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q9-d-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q9-d-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q9-d-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q9-d-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q9(d)(ii)",
+  "stem": "Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%.",
+  "questionText": "Mary’s mother pays a total of €822·72 in USC. Work out her gross income.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 593.22",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q9-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 13182.67",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q9-d-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q9-d-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-a",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(a)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00.",
+  "questionText": "At what time of the day did Alan stop for a break?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-a-solution-1",
+    "kind": "point",
+    "verbatim": "Indication on the graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-a-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-a-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-b",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(b)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00.",
+  "questionText": "Work out Alan’s constant speed when he was cycling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-b-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-b-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-c-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(c)(i)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00.",
+  "questionText": "Draw the graph of Brendan’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Any use of 12:00 or any straight line drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Indicates point of intersection",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-c-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-c-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-c-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(c)(ii)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00.",
+  "questionText": "Work out Brendan’s constant speed when he was cycling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, formula written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-c-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-c-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-d-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-d-i",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(d)(i)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00.",
+  "questionText": "Draw the graph of Colin’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct point plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-d-i-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-d-i-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-d-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-d-ii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(d)(ii)",
+  "stem": "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00. Plot both riders’ journeys on the supplied axes as in parts (c)(i) and (d)(i).",
+  "questionText": "Use your graphs to estimate the time of the day at which Colin and Brendan passed each other.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Some indication on the graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "13:00 – 13:20",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-d-ii-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-d-ii-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-e",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q10-e",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(e)",
+  "questionText": "Write a formula to represent Colin’s distance from P at any given time during his journey. Your formula should be written in terms of t, where t ∈ ℝ is the time in hours from 10:00. Remember that Colin left Q at 10:00 and arrived at P, 64 km away, at 15:00.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-e-solution-1",
+    "kind": "point",
+    "verbatim": "Correct formula written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-e-solution-2",
+    "kind": "point",
+    "verbatim": "12.8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-e-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-e-question"
+ },
+ {
+  "id": "maths-2022-ol-p1-deferred-q10-f",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q10-f",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 — Deferred Q10(f)",
+  "stem": "On a different day, Alan cycles in a race. This time, his speed changes throughout the race. The distance, in km, he has travelled from the starting line during the race is given by d(t)=6t³−12t²+40t, where t is the time in hours from the start of the race, and t ∈ ℝ, 0≤t≤1.",
+  "questionText": "Alan’s speed during the race is given by d′(t), the derivative of d(t). Use this to find Alan’s speed 30 minutes after the start of the race.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-f-solution-1",
+    "kind": "point",
+    "verbatim": "one correct term differentiated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-ol-p1-deferred-q10-f-solution-2",
+    "kind": "point",
+    "verbatim": "Fully correct differentiation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2022-ol-p1-deferred-q10-f-solution",
+  "questionFigureKey": "maths-2022-ol-p1-deferred-q10-f-question"
  }
 ]

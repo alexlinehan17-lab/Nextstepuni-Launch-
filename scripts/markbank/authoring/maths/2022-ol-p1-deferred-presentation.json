@@ -1,0 +1,1400 @@
+{
+  "questionSha256": "0df193e6bc45b8e0d7bda3418eb7c340cd3e477dfd53159a471a8e902efd4bdc",
+  "solutionSha256": "fca7c725b02521ffb8463ad1b29f518b1d3905839d5ca50ab5a065cae42ee1f7",
+  "tasks": {
+    "maths-2022-ol-p1-deferred-q1-a": {
+      "question": [
+        [
+          4,
+          50,
+          140,
+          548,
+          166
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          50,
+          191.34,
+          548,
+          495
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          405,
+          548,
+          448
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          50,
+          495,
+          548,
+          649
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q1-c": {
+      "question": [
+        [
+          5,
+          50,
+          55,
+          548,
+          116
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          50,
+          78.12,
+          548,
+          315
+        ]
+      ],
+      "sourceNote": "The simplified fraction is (22−22x)/[(7x−5)(3x+1)], on the original domain x≠5/7 and x≠−1/3."
+    },
+    "maths-2022-ol-p1-deferred-q2-a-i": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          112
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          50,
+          78.12,
+          548,
+          277.14
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q2-a-ii": {
+      "question": [
+        [
+          6,
+          50,
+          75,
+          548,
+          93
+        ],
+        [
+          6,
+          50,
+          352,
+          548,
+          387
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          50,
+          277.14,
+          548,
+          466
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q2-b": {
+      "question": [
+        [
+          7,
+          50,
+          55,
+          548,
+          139
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          50,
+          78.12,
+          548,
+          440
+        ]
+      ],
+      "sourceNote": "The first source route converts to metres per second: 9.5×10¹²×10³ ÷ (365×24×60×60) ≈ 3.01×10⁸ m/s. Its printed “km/s” is a unit typo. The two stated speeds agree to the precision given."
+    },
+    "maths-2022-ol-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          330
+        ],
+        [
+          8,
+          50,
+          340,
+          548,
+          408
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          50,
+          78.12,
+          548,
+          314.04
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q3-b-i": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          330
+        ],
+        [
+          8,
+          50,
+          420,
+          548,
+          441
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          50,
+          314.04,
+          548,
+          459.24
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q3-b-ii": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          330
+        ],
+        [
+          8,
+          50,
+          626,
+          548,
+          703
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          50,
+          459.24,
+          548,
+          626
+        ]
+      ],
+      "sourceNote": "The two plotted values in the SEC solution are examples. One valid plotted point and its matching complex-number expression are required. Any appropriate point a+bi with a²+b²=5 has the required modulus."
+    },
+    "maths-2022-ol-p1-deferred-q3-c": {
+      "question": [
+        [
+          8,
+          50,
+          75,
+          548,
+          330
+        ],
+        [
+          9,
+          50,
+          53,
+          548,
+          112
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          50,
+          78.12,
+          548,
+          515
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q4-a-i-ii": {
+      "question": [
+        [
+          10,
+          50,
+          75,
+          548,
+          121
+        ],
+        [
+          10,
+          50,
+          345,
+          548,
+          517
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          50,
+          78.12,
+          548,
+          280.56
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q4-b-i": {
+      "question": [
+        [
+          11,
+          50,
+          53,
+          548,
+          215
+        ],
+        [
+          11,
+          50,
+          223,
+          548,
+          287
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          50,
+          280.56,
+          548,
+          448.38
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q4-b-ii": {
+      "question": [
+        [
+          11,
+          50,
+          53,
+          548,
+          215
+        ],
+        [
+          11,
+          50,
+          304,
+          548,
+          325
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          50,
+          448.38,
+          548,
+          538
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q5-a-i": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          548,
+          116
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          50,
+          78.12,
+          548,
+          240.48
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q5-a-ii": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          548,
+          94
+        ],
+        [
+          12,
+          50,
+          243,
+          548,
+          264
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          50,
+          240.48,
+          548,
+          441.78
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q5-a-iii": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          548,
+          94
+        ],
+        [
+          12,
+          50,
+          392,
+          548,
+          412
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          50,
+          441.78,
+          548,
+          571.14
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q5-b": {
+      "question": [
+        [
+          13,
+          50,
+          53,
+          548,
+          341
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          50,
+          571.14,
+          548,
+          754
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          50,
+          75,
+          548,
+          142
+        ],
+        [
+          14,
+          50,
+          148,
+          548,
+          168
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          50,
+          78.12,
+          548,
+          222.96
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q6-b-i": {
+      "question": [
+        [
+          14,
+          50,
+          75,
+          548,
+          142
+        ],
+        [
+          14,
+          50,
+          296,
+          548,
+          318
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          50,
+          222.96,
+          548,
+          411.06
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q6-b-ii": {
+      "question": [
+        [
+          14,
+          50,
+          75,
+          548,
+          142
+        ],
+        [
+          14,
+          50,
+          296,
+          548,
+          318
+        ],
+        [
+          15,
+          50,
+          53,
+          548,
+          91
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          50,
+          411.06,
+          548,
+          594
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-a": {
+      "question": [
+        [
+          16,
+          50,
+          145,
+          548,
+          376
+        ],
+        [
+          16,
+          50,
+          385,
+          548,
+          420
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          50,
+          78.12,
+          548,
+          274.8
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-b": {
+      "question": [
+        [
+          16,
+          50,
+          145,
+          548,
+          376
+        ],
+        [
+          17,
+          50,
+          55,
+          548,
+          157
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          50,
+          274.8,
+          548,
+          477.96
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-c-i": {
+      "question": [
+        [
+          17,
+          50,
+          90,
+          548,
+          157
+        ],
+        [
+          17,
+          50,
+          291,
+          548,
+          355
+        ],
+        [
+          17,
+          50,
+          361,
+          548,
+          393
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          50,
+          477.96,
+          548,
+          576.24
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-c-ii": {
+      "question": [
+        [
+          17,
+          50,
+          291,
+          548,
+          355
+        ],
+        [
+          17,
+          50,
+          521,
+          548,
+          594
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          50,
+          576.24,
+          548,
+          676
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-d": {
+      "question": [
+        [
+          17,
+          50,
+          291,
+          548,
+          355
+        ],
+        [
+          18,
+          50,
+          53,
+          548,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          50,
+          78.12,
+          548,
+          327.78
+        ]
+      ],
+      "sourceNote": "The question asks for tiles laid on day 15, not the total laid by then. T₁₅−T₁₄=274−242=32 tiles."
+    },
+    "maths-2022-ol-p1-deferred-q7-e-i": {
+      "question": [
+        [
+          19,
+          50,
+          53,
+          548,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          50,
+          327.78,
+          548,
+          426.06
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q7-e-ii": {
+      "question": [
+        [
+          19,
+          50,
+          53,
+          548,
+          110
+        ],
+        [
+          19,
+          50,
+          293,
+          548,
+          343
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          50,
+          426.06,
+          548,
+          529
+        ]
+      ],
+      "sourceNote": "Price the actual 199.44 m² proportionally: (199.44/20)×€700×1.23=€8585.892, rounded to €8586. The question does not require billing whole blocks of 20 m²."
+    },
+    "maths-2022-ol-p1-deferred-q8-a-i-ii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          548,
+          346
+        ],
+        [
+          20,
+          50,
+          430,
+          548,
+          466
+        ],
+        [
+          21,
+          95,
+          55,
+          515,
+          696
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          50,
+          78.12,
+          548,
+          471
+        ]
+      ],
+      "supplement": "balls-plot-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstructed height graphs. Gina starts at t=1 with height 23 m. Her six plotted values are 23,21.75,18,11.75,3,0.95. Both curves retain labelled time and height axes. The original SEC solution and shared 15D notes follow."
+    },
+    "maths-2022-ol-p1-deferred-q8-b-i-ii-iii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          548,
+          346
+        ],
+        [
+          20,
+          50,
+          508,
+          548,
+          725
+        ],
+        [
+          21,
+          95,
+          55,
+          515,
+          696
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          50,
+          78.12,
+          548,
+          417.06
+        ]
+      ],
+      "supplement": "balls-readings-2022-ol-deferred",
+      "supplementAlt": "NextStepUni worked graph readings: at t=1.5 the height gap is about 5 m, Harry reaches his maximum at about 1.8 seconds, and the graphs cross at about 16.7 m. All three readings share 15D. Original SEC accepted ranges and credit notes follow.",
+      "sourceNote": "The diagram is reconstructed from the two given functions. Graph readings are estimates: the SEC accepts 4.6–5.4 m for the gap, 1.5–2 seconds for the time of maximum height, and 16–17.5 m for the crossing height. Show working on your graph."
+    },
+    "maths-2022-ol-p1-deferred-q8-c-i": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          445,
+          244
+        ],
+        [
+          20,
+          450,
+          76,
+          548,
+          273
+        ],
+        [
+          22,
+          50,
+          53,
+          548,
+          142
+        ],
+        [
+          22,
+          50,
+          145,
+          548,
+          178
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          50,
+          417.06,
+          548,
+          652.08
+        ]
+      ],
+      "sourceNote": "The substituted g(1.5) line in the source omits a factor: it should read 18+10(1.5)−5(1.5)²=21.75 m. Harry’s height is 16.75 m, so the difference is 5 m. The source’s final values are correct."
+    },
+    "maths-2022-ol-p1-deferred-q8-c-ii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          445,
+          244
+        ],
+        [
+          20,
+          450,
+          76,
+          548,
+          273
+        ],
+        [
+          22,
+          50,
+          53,
+          548,
+          142
+        ],
+        [
+          22,
+          50,
+          363,
+          548,
+          381
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          50,
+          652.08,
+          548,
+          738
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q8-c-iii": {
+      "question": [
+        [
+          20,
+          50,
+          76,
+          445,
+          244
+        ],
+        [
+          20,
+          450,
+          76,
+          548,
+          273
+        ],
+        [
+          22,
+          50,
+          53,
+          548,
+          142
+        ],
+        [
+          23,
+          50,
+          55,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          50,
+          78.12,
+          548,
+          215
+        ]
+      ],
+      "sourceNote": "Equal heights occur at t=17/8=2.125 seconds; h(2.125)=16.671875 m, or 16.7 m to one decimal place. The balls are at the same height, but do not collide."
+    },
+    "maths-2022-ol-p1-deferred-q9-a": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          548,
+          450
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          50,
+          78.12,
+          548,
+          385.2
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q9-b": {
+      "question": [
+        [
+          24,
+          50,
+          76,
+          548,
+          145
+        ],
+        [
+          25,
+          50,
+          55,
+          548,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          50,
+          385.2,
+          548,
+          511.8
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q9-c": {
+      "question": [
+        [
+          25,
+          50,
+          323,
+          548,
+          471
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          50,
+          511.8,
+          548,
+          630
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q9-d-i": {
+      "question": [
+        [
+          26,
+          50,
+          55,
+          548,
+          202
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          50,
+          78.12,
+          548,
+          250.92
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q9-d-ii": {
+      "question": [
+        [
+          26,
+          50,
+          55,
+          548,
+          171
+        ],
+        [
+          27,
+          50,
+          53,
+          548,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          50,
+          250.92,
+          548,
+          411
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q10-a": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          28,
+          50,
+          532,
+          548,
+          579
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          78.12,
+          548,
+          132.42
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q10-b": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          28,
+          50,
+          590,
+          548,
+          609
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          132.42,
+          548,
+          263.64
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q10-c-i": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          29,
+          50,
+          53,
+          548,
+          104
+        ],
+        [
+          29,
+          50,
+          107,
+          548,
+          139
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          263.64,
+          548,
+          417.42
+        ]
+      ],
+      "supplement": "brendan-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstructed graph of Brendan’s journey: start at noon and 0 km, pass Alan at 14:00 and 48 km, and arrive at Q at 14:40 and 64 km. Full labelled axes and Alan’s original journey are retained; SEC guidance follows.",
+      "sourceNote": "Brendan’s speed is 48 km/2 h=24 km/h. His straight line reaches the 64 km destination at 14:40, so the reconstructed journey stops there."
+    },
+    "maths-2022-ol-p1-deferred-q10-c-ii": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          29,
+          50,
+          53,
+          548,
+          104
+        ],
+        [
+          29,
+          50,
+          183,
+          548,
+          202
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          417.42,
+          548,
+          486.36
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q10-d-i": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          29,
+          50,
+          329,
+          548,
+          379
+        ],
+        [
+          29,
+          50,
+          382,
+          548,
+          415
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          486.36,
+          548,
+          632.64
+        ]
+      ],
+      "supplement": "colin-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstructed graph of Colin’s journey: a straight line from 10:00 and 64 km from P to 15:00 and 0 km from P. Axes and Alan’s journey retained; original SEC guidance follows."
+    },
+    "maths-2022-ol-p1-deferred-q10-d-ii": {
+      "question": [
+        [
+          28,
+          50,
+          75,
+          548,
+          506
+        ],
+        [
+          29,
+          50,
+          53,
+          548,
+          104
+        ],
+        [
+          29,
+          50,
+          329,
+          548,
+          379
+        ],
+        [
+          29,
+          50,
+          459,
+          548,
+          492
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          632.64,
+          548,
+          701.64
+        ]
+      ],
+      "supplement": "cyclists-meeting-2022-ol-deferred",
+      "supplementAlt": "NextStepUni reconstructed journey graphs and intersection reading. Brendan and Colin pass just after 13:00, approximately 13:03. Original accepted tolerance of 13:00–13:20 is retained.",
+      "sourceNote": "The reconstructed intersection is at about 13:02:37, so a graph reading of about 13:03 is appropriate. The source example says about 13:05 and accepts 13:00–13:20. Marks depend on a reasonable graph reading."
+    },
+    "maths-2022-ol-p1-deferred-q10-e": {
+      "question": [
+        [
+          30,
+          50,
+          53,
+          548,
+          110
+        ]
+      ],
+      "solution": [
+        [
+          23,
+          50,
+          701.64,
+          548,
+          773
+        ]
+      ]
+    },
+    "maths-2022-ol-p1-deferred-q10-f": {
+      "question": [
+        [
+          30,
+          50,
+          323,
+          548,
+          445
+        ]
+      ],
+      "solution": [
+        [
+          24,
+          50,
+          78.12,
+          548,
+          211
+        ]
+      ]
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        118,
+        5,
+        490
+      ],
+      "scheme": [
+        7,
+        169.92,
+        8,
+        315
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        490
+      ],
+      "scheme": [
+        9,
+        56.7,
+        10,
+        440
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        407
+      ],
+      "scheme": [
+        11,
+        56.7,
+        12,
+        515
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        620
+      ],
+      "scheme": [
+        13,
+        56.7,
+        13,
+        538
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        383
+      ],
+      "scheme": [
+        14,
+        56.7,
+        14,
+        754
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        441
+      ],
+      "scheme": [
+        15,
+        56.7,
+        15,
+        594
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        120,
+        19,
+        524
+      ],
+      "scheme": [
+        16,
+        56.7,
+        17,
+        529
+      ]
+    },
+    "8": {
+      "paper": [
+        20,
+        53,
+        23,
+        383
+      ],
+      "scheme": [
+        18,
+        56.7,
+        20,
+        215
+      ]
+    },
+    "9": {
+      "paper": [
+        24,
+        53,
+        27,
+        383
+      ],
+      "scheme": [
+        21,
+        56.7,
+        22,
+        411
+      ]
+    },
+    "10": {
+      "paper": [
+        28,
+        53,
+        30,
+        654
+      ],
+      "scheme": [
+        23,
+        56.7,
+        24,
+        211
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "Visually inspected all 90 question and solution images and all five worked graph supplements. Corrected and individually re-inspected nine question images: Q1(a), Q4(a), Q5(b), all five Q8 tasks and Q10(a), restoring complete diagrams, tables and answer boxes while removing partial working grids. All original SEC credit notes retained.",
+  "atlasInspectionNote": "Visually swept all 32 paper pages and scheme pages 1–24; cross-checked all ten whole-question boundaries including multi-page context. All 45 separately marked tasks and 380 offered marks reconcile; three groups retain shared 15D allocations. No optional route is counted as an extra task."
+}

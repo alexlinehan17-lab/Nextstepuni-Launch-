@@ -87553,4 +87553,1981 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q1-a", topicId: "maths-3-2", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q1(a)",
+    questionText: "Write 5^(−3) and 4^(3/2) without using indices.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "Relevant work with indices in either part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q1-a-solution-2", kind: "point", verbatim: "One correct solution together with relevant work with indices in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-a-question.png",
+          "srcHash": "09a1e2a2a3048aedd74319667f8fa9f2",
+          "alt": "The question as printed on the paper — Write 5^(−3) and 4^(3/2) without using indices.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-a-solution.png",
+          "srcHash": "bb50808a54fef2485cf2475f3454f500",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q1-b", topicId: "maths-3-2", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q1(b)",
+    questionText: "Given that (√8)⁶/8⁵ = 8^t where t ∈ ℤ, find the value of t.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "Relevant work with indices", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-b-question.png",
+          "srcHash": "78993e188f14695e1c42ee4201528a70",
+          "alt": "The question as printed on the paper — Given that (√8)⁶/8⁵ = 8^t where t ∈ ℤ, find the value of t.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-b-solution.png",
+          "srcHash": "a48bae6c6d319be317c59e941fa6567c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q1-c", topicId: "maths-4-1", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q1(c)",
+    questionText: "Write the following as a single fraction in its simplest form: 2/(7x−5) − 4/(3x+1).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "writes the LCM", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "Full 2nd Line of the solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-c-question.png",
+          "srcHash": "aad3b7d715c2b779107b93cffa8471b6",
+          "alt": "The question as printed on the paper — Write the following as a single fraction in its simplest form: 2/(7x−5) − 4/(3x+1).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q1-c-solution.png",
+          "srcHash": "02da850484b36d96a26c3608507efa00",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The simplified fraction is (22−22x)/[(7x−5)(3x+1)], on the original domain x≠5/7 and x≠−1/3.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q2-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q2-a-i",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q2(a)(i)",
+    stem: "Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year.",
+    questionText: "Work out how much it will be worth exactly 2 years after Gina buys it.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Correct relevant formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-a-i-question.png",
+          "srcHash": "2d14c55817e644164bb7100bdcebf8b3",
+          "alt": "The question as printed on the paper — Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year. Work out how much it will be worth exactly 2 years after Gina buys it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-a-i-solution.png",
+          "srcHash": "c4023c77eefac37d089d7bd6bc5b95a8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q2-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q2-a-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q2(a)(ii)",
+    stem: "Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year.",
+    questionText: "On 1 January 2025, the value of this car will be €10 000. Work out its value exactly 1 year earlier, on 1 January 2024.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "P(0.8) = 10000", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-a-ii-question.png",
+          "srcHash": "4dad030b544999ab77297217ad6f6199",
+          "alt": "The question as printed on the paper — Gina buys a car for €22 000. It depreciates (decreases in value) by 20% each year. On 1 January 2025, the value of this car will be €10 000. Work out its value exactly 1 year earlier, on 1 January 2024.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-a-ii-solution.png",
+          "srcHash": "d83281c9b50ef3f8f3d4fb432b0333d1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q2-b", topicId: "maths-3-3", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q2(b)",
+    stem: "Two students are looking on the internet to find the value of the speed of light. One website gives it as 3×10⁸ metres per second. Another says that light travels approximately 9·5 trillion kilometres in a year.",
+    questionText: "Given that a trillion is a million million, find out whether or not these two answers are consistent with each other.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "Effort at converting km to m", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q2-b-solution-2", kind: "point", verbatim: "Either expression fully formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-b-question.png",
+          "srcHash": "705b35ffd1d779206757732358fbb644",
+          "alt": "The question as printed on the paper — Two students are looking on the internet to find the value of the speed of light. One website gives it as 3×10⁸ metres per second. Another says that light travels approximately 9·5 trillion kilometres in a year. Given that a trillion is a million million, find out whether or not these two answers are consistent with each other.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q2-b-solution.png",
+          "srcHash": "8dcf80b8d4017e1ad48aa5610264bae8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The first source route converts to metres per second: 9.5×10¹²×10³ ÷ (365×24×60×60) ≈ 3.01×10⁸ m/s. Its printed “km/s” is a unit typo. The two stated speeds agree to the precision given.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q3-a", topicId: "maths-4-4", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q3(a)",
+    stem: "Two complex numbers, u and v, are shown on the Argand diagram below.",
+    questionText: "Write u and v in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "4 items", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q3-a-solution-2", kind: "point", verbatim: "2 correct items", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-a-question.png",
+          "srcHash": "57fafb3558b12ef224016248be0414e2",
+          "alt": "The question as printed on the paper — Two complex numbers, u and v, are shown on the Argand diagram below. Write u and v in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-a-solution.png",
+          "srcHash": "ff8b48e6383e39b4f7643da19e5d8aa2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q3-b-i", topicId: "maths-4-4", conceptId: "p1-deferred-q3-b-i",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q3(b)(i)",
+    stem: "Two complex numbers, u and v, are shown on the Argand diagram below.",
+    questionText: "Verify, by calculation, that |u|=|v|. Show your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q3-b-i-solution-1", kind: "point", verbatim: "Modulus formula written with or without some substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q3-b-i-solution-2", kind: "point", verbatim: "Either modulus found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-b-i-question.png",
+          "srcHash": "d096dbd830497391e8b7ceb117fa1d88",
+          "alt": "The question as printed on the paper — Two complex numbers, u and v, are shown on the Argand diagram below. Verify, by calculation, that |u|=|v|. Show your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-b-i-solution.png",
+          "srcHash": "d26fec0b2f2c729c28e19c3efa1652da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q3(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q3-b-ii", topicId: "maths-4-4", conceptId: "p1-deferred-q3-b-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q3(b)(ii)",
+    stem: "Two complex numbers, u and v, are shown on the Argand diagram below.",
+    questionText: "Draw a complex number w on the diagram above, so that |w|=|u|=|v|, and write w in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q3-b-ii-solution-1", kind: "point", verbatim: "correct complex number OR a correct plot", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-b-ii-question.png",
+          "srcHash": "8ba32536d1c145b92b91aefa8c53b170",
+          "alt": "The question as printed on the paper — Two complex numbers, u and v, are shown on the Argand diagram below. Draw a complex number w on the diagram above, so that |w|=|u|=|v|, and write w in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-b-ii-solution.png",
+          "srcHash": "5a4ded1330338634167baf068a8301e5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q3(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The two plotted values in the SEC solution are examples. One valid plotted point and its matching complex-number expression are required. Any appropriate point a+bi with a²+b²=5 has the required modulus.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q3-c", topicId: "maths-4-4", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q3(c)",
+    stem: "Two complex numbers, u and v, are shown on the Argand diagram below.",
+    questionText: "z is a complex number, so that u×z=v. Find z. Give your answer in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Conjugate identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "2 relevant equations found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-c-question.png",
+          "srcHash": "b6076e0e53af9f69dafc0a74a97139c9",
+          "alt": "The question as printed on the paper — Two complex numbers, u and v, are shown on the Argand diagram below. z is a complex number, so that u×z=v. Find z. Give your answer in the form a+bi, where a,b ∈ ℝ and i²=−1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q3-c-solution.png",
+          "srcHash": "a0bb60a4d0a1b512128c06af7e43b16c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q4-a-i-ii", topicId: "maths-4-3", conceptId: "p1-deferred-q4-a-i-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q4(a)(i), Q4(a)(ii)",
+    questionText: "(i) Solve the following inequality, for x ∈ ℝ: 5−2x≤11. (ii) Show the solution set on the number line below. Remember that x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q4-a-i-ii-solution-1", kind: "point", verbatim: "Any relevant step towards solving inequality", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q4-a-i-ii-solution-2", kind: "point", verbatim: "Treats as equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-a-i-ii-question.png",
+          "srcHash": "d9dab2ccb1442f5ea4248ab8c7e7ace2",
+          "alt": "The question as printed on the paper — (i) Solve the following inequality, for x ∈ ℝ: 5−2x≤11. (ii) Show the solution set on the number line below. Remember that x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-a-i-ii-solution.png",
+          "srcHash": "897f80c78f69b286cb62595ac2134aa6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q4(a)(i), Q4(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q4-b-i", topicId: "maths-5-1", conceptId: "p1-deferred-q4-b-i",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q4(b)(i)",
+    stem: "The graph of the quadratic function d(x) is shown on the co-ordinate diagram below.",
+    questionText: "Use the graph to write down the two solutions of the equation d(x)=0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q4-b-i-solution-1", kind: "point", verbatim: "indicates value(s) on the diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-b-i-question.png",
+          "srcHash": "36b7212b635b02d887d702f882ed53a9",
+          "alt": "The question as printed on the paper — The graph of the quadratic function d(x) is shown on the co-ordinate diagram below. Use the graph to write down the two solutions of the equation d(x)=0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-b-i-solution.png",
+          "srcHash": "4655a8219054d542505d7a0c46ea7ad9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q4(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q4-b-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q4-b-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q4(b)(ii)",
+    stem: "The graph of the quadratic function d(x) is shown on the co-ordinate diagram below. Part (i) asks for the two solutions of d(x)=0.",
+    questionText: "Hence, write d(x) in the form d(x)=ax²+bx−12, where a,b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q4-b-ii-solution-1", kind: "point", verbatim: "an answer from part (i) written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-b-ii-question.png",
+          "srcHash": "b6bb911d2fff86aa9c7d880e5e8c9cb8",
+          "alt": "The question as printed on the paper — The graph of the quadratic function d(x) is shown on the co-ordinate diagram below. Part (i) asks for the two solutions of d(x)=0. Hence, write d(x) in the form d(x)=ax²+bx−12, where a,b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q4-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q4-b-ii-solution.png",
+          "srcHash": "e1769ce4264ff0a1c050ce609a79898a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q4(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q5-a-i", topicId: "maths-5-2", conceptId: "p1-deferred-q5-a-i",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q5(a)(i)",
+    stem: "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+    questionText: "Find f′(x), the derivative of f.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q5-a-i-solution-1", kind: "point", verbatim: "1 term correctly differentiated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q5-a-i-solution-2", kind: "point", verbatim: "2 terms correctly differentiated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-i-question.png",
+          "srcHash": "63464f4d0068784b3a370bbd4ba7b713",
+          "alt": "The question as printed on the paper — Let f(x)=2x³−3x²+7x, where x ∈ ℝ. Find f′(x), the derivative of f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-i-solution.png",
+          "srcHash": "5458662b429ec77549710a4f347bfdfd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q5-a-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q5-a-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q5(a)(ii)",
+    stem: "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+    questionText: "Find the value of f′(x) when x=1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "Any substitution into candidates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-ii-question.png",
+          "srcHash": "09c609e48b97f94940486ed5a1de11f5",
+          "alt": "The question as printed on the paper — Let f(x)=2x³−3x²+7x, where x ∈ ℝ. Find the value of f′(x) when x=1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-ii-solution.png",
+          "srcHash": "6b410907c287841fa885ca7807aeecf1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q5-a-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q5-a-iii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q5(a)(iii)",
+    stem: "Let f(x)=2x³−3x²+7x, where x ∈ ℝ.",
+    questionText: "Find the equation of the tangent to the curve y=f(x) at x=1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q5-a-iii-solution-1", kind: "point", verbatim: "m=7 AND (1,6)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-iii-question.png",
+          "srcHash": "c44f4062d18e88b3bfea453cddba95fd",
+          "alt": "The question as printed on the paper — Let f(x)=2x³−3x²+7x, where x ∈ ℝ. Find the equation of the tangent to the curve y=f(x) at x=1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-a-iii-solution.png",
+          "srcHash": "b19597e45c94792689ab3296e87e2ed0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q5(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q5-b", topicId: "maths-5-2", conceptId: "p1-deferred-q5-b",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q5(b)",
+    stem: "The graph of y=g(x) is shown on the co-ordinate diagram below, for a particular range of x ∈ ℝ.",
+    questionText: "On the graph, mark the three points for which g′(x)=0, where g′(x) is the derivative of g. Label these points A, B, and C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q5-b-solution-1", kind: "point", verbatim: "one correct point plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q5-b-solution-2", kind: "point", verbatim: "2 correct points plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-b-question.png",
+          "srcHash": "058c15521cfdf87c761768c98991c440",
+          "alt": "The question as printed on the paper — The graph of y=g(x) is shown on the co-ordinate diagram below, for a particular range of x ∈ ℝ. On the graph, mark the three points for which g′(x)=0, where g′(x) is the derivative of g. Label these points A, B, and C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q5-b-solution.png",
+          "srcHash": "47eb7e60a4d00e11892ae1dbe653245d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q6-a", topicId: "maths-5-1", conceptId: "p1-deferred-q6-a",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q6(a)",
+    stem: "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1.",
+    questionText: "Find p(5).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q6-a-solution-1", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-a-question.png",
+          "srcHash": "94f242c5aa1d95b01a4d69c0fadfc0df",
+          "alt": "The question as printed on the paper — The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1. Find p(5).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-a-solution.png",
+          "srcHash": "3e71387d92ea154132c8787afd725d3b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q6-b-i", topicId: "maths-5-1", conceptId: "p1-deferred-q6-b-i",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q6(b)(i)",
+    stem: "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1.",
+    questionText: "Show that p(h(x))=4x²−12x+8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Finds h(p(x))", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-b-i-question.png",
+          "srcHash": "c46373a5934be2a427a7be7b517de160",
+          "alt": "The question as printed on the paper — The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1. Show that p(h(x))=4x²−12x+8.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-b-i-solution.png",
+          "srcHash": "2358dde9112570cf3a21e0428667f079",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q6-b-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q6-b-ii",
+    section: "A", questionRef: "2022 OL Paper 1 — Deferred Q6(b)(ii)",
+    stem: "The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1. Part (i) gives p(h(x))=4x²−12x+8.",
+    questionText: "Solve p(h(x))=4. Give each answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "Fully substituted -b formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-b-ii-question.png",
+          "srcHash": "a38dd567587c845d7b9cd8fef9f4d240",
+          "alt": "The question as printed on the paper — The functions h and p are defined for x ∈ ℝ as follows: h: x↦2x−3; p: x↦x²−1. Part (i) gives p(h(x))=4x²−12x+8. Solve p(h(x))=4. Give each answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q6-b-ii-solution.png",
+          "srcHash": "e34043d18f94c2bf4afdaada79397b80",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-a", topicId: "maths-4-1", conceptId: "p1-deferred-q7-a",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(a)",
+    stem: "Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work.",
+    questionText: "Using the pattern above, draw a diagram to show the tiles that have been laid up to the end of Day 4.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-a-solution-1", kind: "point", verbatim: "One line or column missing", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-a-question.png",
+          "srcHash": "4aeb50bd9b9ab2aa418bbf7350d85f14",
+          "alt": "The question as printed on the paper — Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work. Using the pattern above, draw a diagram to show the tiles that have been laid up to the end of Day 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-a-solution.png",
+          "srcHash": "5ec2a47b961a6209683e781558a18be8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-b", topicId: "maths-4-1", conceptId: "p1-deferred-q7-b",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(b)",
+    stem: "Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work.",
+    questionText: "Complete the table below to show the total number of square tiles that have been laid up to the end of each of the first 7 days. The first two have already been done for you. Day 1: 8; Day 2: 14; Days 3–7: blank.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-b-solution-1", kind: "point", verbatim: "3 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q7-b-solution-2", kind: "point", verbatim: "4 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-b-question.png",
+          "srcHash": "bfdf12ef3fb168e322ec6983b013283a",
+          "alt": "The question as printed on the paper — Darragh is laying square tiles to make a large patio. He draws a diagram at the end of each day to record his progress. The diagrams below show the tiles that have been laid up to the end of each of the first 3 days. Darragh expects to follow the pattern shown below for several weeks in order to complete the work. Complete the table below to show the total number of square tiles that have been laid up to the end of each of the first 7 days. The first two have already been done for you. Day 1: 8; Day 2: 14; Days 3–7: blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-b-solution.png",
+          "srcHash": "344cce387cff8da781ad02d4c93f64f1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-c-i", topicId: "maths-4-1", conceptId: "p1-deferred-q7-c-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(c)(i)",
+    stem: "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n. The table gives 14 tiles at the end of Day 2.",
+    questionText: "Show that this formula gives the correct value for the total number of tiles that have been laid up to the end of Day 2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-c-i-solution-1", kind: "point", verbatim: "substitutes 2 for n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-c-i-question.png",
+          "srcHash": "d842ae4448475a3564453e4f7f9a58db",
+          "alt": "The question as printed on the paper — Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n. The table gives 14 tiles at the end of Day 2. Show that this formula gives the correct value for the total number of tiles that have been laid up to the end of Day 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-c-i-solution.png",
+          "srcHash": "360140d18c0f6daf578c25a3d1d59cd3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-c-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q7-c-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(c)(ii)",
+    stem: "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n.",
+    questionText: "Write the formula for Tₙ above in the form Tₙ=an²+bn+c, where a,b,c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-c-ii-solution-1", kind: "point", verbatim: "brings down the Tn formula from the question", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-c-ii-question.png",
+          "srcHash": "8ad06572941c19bf5b63973cd74f2fce",
+          "alt": "The question as printed on the paper — Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n. Write the formula for Tₙ above in the form Tₙ=an²+bn+c, where a,b,c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-c-ii-solution.png",
+          "srcHash": "719b1d321fa6307d51950f7d0040b810",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-d", topicId: "maths-4-1", conceptId: "p1-deferred-q7-d",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(d)",
+    stem: "Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n.",
+    questionText: "Work out how many tiles Darragh laid on the 15th day.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-d-solution-1", kind: "point", verbatim: "Finds BOTH T14 AND T15", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17,
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-d-question.png",
+          "srcHash": "e9b2ef3ddca3026a4486dceac8942be3",
+          "alt": "The question as printed on the paper — Darragh works out that Tₙ, the total number of tiles laid up to the end of day n, is given by the following formula, as long as Darragh is still laying tiles on day n ∈ ℕ: Tₙ=(n+2)²−n. Work out how many tiles Darragh laid on the 15th day.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-d-solution.png",
+          "srcHash": "2f4415f2f5a454e9075d7ae41704d135",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The question asks for tiles laid on day 15, not the total laid by then. T₁₅−T₁₄=274−242=32 tiles.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-e-i", topicId: "maths-3-4", conceptId: "p1-deferred-q7-e-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(e)(i)",
+    stem: "When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm.",
+    questionText: "Work out the total area of the patio, in m², once it is completed.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-e-i-solution-1", kind: "point", verbatim: "0.6 or area formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-e-i-question.png",
+          "srcHash": "f9705891c971f03a685a687f1984cabc",
+          "alt": "The question as printed on the paper — When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm. Work out the total area of the patio, in m², once it is completed.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-e-i-solution.png",
+          "srcHash": "3445a8707d32f193da34c6c36b792219",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(e)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q7-e-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-e-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q7(e)(ii)",
+    stem: "When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm.",
+    questionText: "Darragh charges €700 for each 20 m² of patio, plus VAT at 23%. Work out how much Darragh charges, in total, for the patio. Give your answer correct to the nearest euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q7-e-ii-solution-1", kind: "point", verbatim: "answer from (e)(i) written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-e-ii-question.png",
+          "srcHash": "6d205e8cfca65453caaa730e3098e662",
+          "alt": "The question as printed on the paper — When the patio is completed, it will be made up of 554 square tiles. Each square tile measures 60 cm by 60 cm. Darragh charges €700 for each 20 m² of patio, plus VAT at 23%. Work out how much Darragh charges, in total, for the patio. Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q7-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q7-e-ii-solution.png",
+          "srcHash": "8c53ae580c700fc36fc163e6e4875a7f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q7(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Price the actual 199.44 m² proportionally: (199.44/20)×€700×1.23=€8585.892, rounded to €8586. The question does not require billing whole blocks of 20 m².",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q8-a-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-a-i-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q8(a)(i), Q8(a)(ii)",
+    stem: "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1.",
+    questionText: "(i) Complete the table below to show the values of g(t) for the given values of t. t: 1, 1·5, 2, 2·5, 3, 3·1; g(t): blank, 21·75, blank, blank, blank, 0·95. (ii) Draw the graph of y=g(t) on the co-ordinate diagram on the next page, using the same axes and scales. Note: t≥1 for g(t).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q8-a-i-ii-solution-1", kind: "point", verbatim: "4 values in the table, and 6 points plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q8-a-i-ii-solution-2", kind: "point", verbatim: "8 correct elements", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-a-i-ii-question.png",
+          "srcHash": "cad4dadf7445dc5b4799ce8ec168d7f5",
+          "alt": "The question as printed on the paper — Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. (i) Complete the table below to show the values of g(t) for the given values of t. t: 1, 1·5, 2, 2·5, 3, 3·1; g(t): blank, 21·75, blank, blank, blank, 0·95. (ii) Draw the graph of y=g(t) on the co-ordinate diagram on the next page, using the same axes and scales. Note: t≥1 for g(t).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-a-i-ii-solution.png",
+          "srcHash": "cb08dd9abd3b9b075f9d750e1f8a57d8",
+          "alt": "NextStepUni reconstructed height graphs. Gina starts at t=1 with height 23 m. Her six plotted values are 23,21.75,18,11.75,3,0.95. Both curves retain labelled time and height axes. The original SEC solution and shared 15D notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q8-b-i-ii-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-b-i-ii-iii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q8(b)(i), Q8(b)(ii), Q8(b)(iii)",
+    stem: "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. Plot g(t) on the supplied axes as required in part (a).",
+    questionText: "Use the graphs of h(t) and g(t) to estimate each answer. In each case, show your work on the diagram. (i) How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (at t=1·5)? (ii) How long does it take Harry’s ball to reach its maximum height? (iii) At what height does Gina’s ball pass Harry’s ball?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution-1", kind: "point", verbatim: "2 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution-2", kind: "point", verbatim: "incomplete graph work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-b-i-ii-iii-question.png",
+          "srcHash": "3e33bbead80c69ff2548a3b4afd622d5",
+          "alt": "The question as printed on the paper — Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. Plot g(t) on the supplied axes as required in part (a). Use the graphs of h(t) and g(t) to estimate each answer. In each case, show your work on the diagram. (i) How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (at t=1·5)? (ii) How long does it take Harry’s ball to reach its maximum height? (iii) At what height does Gina’s ball pass Harry’s ball?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-b-i-ii-iii-solution.png",
+          "srcHash": "3ad3361668fa152c177e67bd8bcb9dd5",
+          "alt": "NextStepUni worked graph readings: at t=1.5 the height gap is about 5 m, Harry reaches his maximum at about 1.8 seconds, and the graphs cross at about 16.7 m. All three readings share 15D. Original SEC accepted ranges and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The diagram is reconstructed from the two given functions. Graph readings are estimates: the SEC accepts 4.6–5.4 m for the gap, 1.5–2 seconds for the time of maximum height, and 16–17.5 m for the crossing height. Show working on your graph.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q8-c-i", topicId: "maths-5-1", conceptId: "p1-deferred-q8-c-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q8(c)(i)",
+    stem: "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+    questionText: "How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (t=1·5)? Show your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Finds BOTH h(1.5) AND g(1.5)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-i-question.png",
+          "srcHash": "b61588e95b5594e074ff9595c209373b",
+          "alt": "The question as printed on the paper — Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them. How much higher than Harry’s ball is Gina’s ball, half a second after Gina drops her ball (t=1·5)? Show your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-i-solution.png",
+          "srcHash": "2b8454fe1d9c070b6d5de2d2c492bd1f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The substituted g(1.5) line in the source omits a factor: it should read 18+10(1.5)−5(1.5)²=21.75 m. Harry’s height is 16.75 m, so the difference is 5 m. The source’s final values are correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q8-c-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q8-c-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q8(c)(ii)",
+    stem: "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+    questionText: "Use calculus to find how long it takes Harry’s ball to reach its maximum height.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "Some correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q8-c-ii-solution-2", kind: "point", verbatim: "Equates h’(t) = 0", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-ii-question.png",
+          "srcHash": "9afbc95f00e825db5f691f076103c994",
+          "alt": "The question as printed on the paper — Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them. Use calculus to find how long it takes Harry’s ball to reach its maximum height.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-ii-solution.png",
+          "srcHash": "fad577d25b15b150329fc87a380f0a10",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q8-c-iii", topicId: "maths-4-2", conceptId: "p1-deferred-q8-c-iii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q8(c)(iii)",
+    stem: "Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them.",
+    questionText: "By solving an equation, find the height at which Gina’s ball passes Harry’s ball. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q8-c-iii-solution-1", kind: "point", verbatim: "either expression for h(t) or g(t) written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-iii-question.png",
+          "srcHash": "a55b2548913a57c9486314a5b6e6e4dd",
+          "alt": "The question as printed on the paper — Gina is on the roof of a building and Harry is at the bottom of the building. Harry throws a ball upwards when t=0. Its height above the ground is h(t), with time t in seconds and height in metres; its graph is shown. When t=1, Gina throws her ball downwards. The balls do not collide. Gina’s ball has height g(t)=18+10t−5t², for t≥1. The height of Harry’s ball is given by h(t)=1+18t−5t². These are the same questions as in part (b), but here you will need to use algebra to answer them. By solving an equation, find the height at which Gina’s ball passes Harry’s ball. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q8-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q8-c-iii-solution.png",
+          "srcHash": "de85ff3177a96d9c40c90bfe9d976d87",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q8(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Equal heights occur at t=17/8=2.125 seconds; h(2.125)=16.671875 m, or 16.7 m to one decimal place. The balls are at the same height, but do not collide.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q9-a", topicId: "maths-4-1", conceptId: "p1-deferred-q9-a",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q9(a)",
+    stem: "Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins.",
+    questionText: "Use this information to complete the table below, showing the total number of coins and the total amount of money that Mary has saved as the weeks pass. Each answer in the last row should be an expression in terms of n. Rows: Start (136 coins, €51), after 1 week, 2 weeks, 3 weeks, 4 weeks, and n weeks (n ∈ ℕ).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q9-a-solution-1", kind: "point", verbatim: "5 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q9-a-solution-2", kind: "point", verbatim: "8 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-a-question.png",
+          "srcHash": "3162338df053454f79cd0e5c680775e4",
+          "alt": "The question as printed on the paper — Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins. Use this information to complete the table below, showing the total number of coins and the total amount of money that Mary has saved as the weeks pass. Each answer in the last row should be an expression in terms of n. Rows: Start (136 coins, €51), after 1 week, 2 weeks, 3 weeks, 4 weeks, and n weeks (n ∈ ℕ).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-a-solution.png",
+          "srcHash": "f03955b1c3260cfe0470da9e16623318",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q9(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q9-b", topicId: "maths-4-2", conceptId: "p1-deferred-q9-b",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q9(b)",
+    stem: "Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins.",
+    questionText: "Will there ever be a time at which the total number of coins that Mary has is equal to the total amount of money (in euro) that she has saved? If so, find when that happens; if not, explain why not.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q9-b-solution-1", kind: "point", verbatim: "not equal initially and coins increasing by 8", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-b-question.png",
+          "srcHash": "cc4c5a239eab9027b602580b03df6c10",
+          "alt": "The question as printed on the paper — Mary is saving money. She starts saving with 136 coins, worth a total of €51. Each week, Mary’s mother gives her €3 to add to her savings, as follows: she gives Mary one €1 coin, two 50-cent coins, and five 20-cent coins. Will there ever be a time at which the total number of coins that Mary has is equal to the total amount of money (in euro) that she has saved? If so, find when that happens; if not, explain why not.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-b-solution.png",
+          "srcHash": "139e4a3332fd9a8c94a28abc54902e50",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q9-c", topicId: "maths-3-3", conceptId: "p1-deferred-q9-c",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q9(c)",
+    stem: "Mary keeps her money in three different money boxes. Box 1 has only €1 coins, Box 2 has only 50-cent coins, and Box 3 has only 20-cent coins. Each box contains the same amount of money. Mary starts with 136 coins in total in her three money boxes, worth a total of €51.",
+    questionText: "Work out the number of coins in each money box at this time.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q9-c-solution-1", kind: "point", verbatim: "One correct value", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q9-c-solution-2", kind: "point", verbatim: "2 correct values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-c-question.png",
+          "srcHash": "d3a74f9e2f63129c777ebaa549530032",
+          "alt": "The question as printed on the paper — Mary keeps her money in three different money boxes. Box 1 has only €1 coins, Box 2 has only 50-cent coins, and Box 3 has only 20-cent coins. Each box contains the same amount of money. Mary starts with 136 coins in total in her three money boxes, worth a total of €51. Work out the number of coins in each money box at this time.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-c-solution.png",
+          "srcHash": "59cbfffe34e94e81db542b94d570d832",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q9(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q9-d-i", topicId: "maths-3-3", conceptId: "p1-deferred-q9-d-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q9(d)(i)",
+    stem: "Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%.",
+    questionText: "Work out the USC that Mary’s mother pays at the 0·5% rate and the 2% rate.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q9-d-i-solution-1", kind: "point", verbatim: "Finds 60.06 OR 8472", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q9-d-i-solution-2", kind: "point", verbatim: "Finds 60.06 AND 8472", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-d-i-question.png",
+          "srcHash": "e3f7875980d0eaa658f5febee8755b0c",
+          "alt": "The question as printed on the paper — Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%. Work out the USC that Mary’s mother pays at the 0·5% rate and the 2% rate.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-d-i-solution.png",
+          "srcHash": "4a0c5372d0e0fdc967365504c6c52a1c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q9(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q9-d-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q9-d-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q9(d)(ii)",
+    stem: "Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%.",
+    questionText: "Mary’s mother pays a total of €822·72 in USC. Work out her gross income.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q9-d-ii-solution-1", kind: "point", verbatim: "Finds 593.22", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q9-d-ii-solution-2", kind: "point", verbatim: "Finds 13182.67", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-d-ii-question.png",
+          "srcHash": "c3b912297fc6b515e336b59ed10a09e7",
+          "alt": "The question as printed on the paper — Mary’s mother pays USC at each of the three rates shown in the following table: first €12 012 at 0·5%; €12 012 to €20 484 at 2%; above €20 484 at 4·5%. Mary’s mother pays a total of €822·72 in USC. Work out her gross income.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q9-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q9-d-ii-solution.png",
+          "srcHash": "a66258c16727f6f7a3d1284fa9a18f30",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q9(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-a", topicId: "maths-5-1", conceptId: "p1-deferred-q10-a",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(a)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00.",
+    questionText: "At what time of the day did Alan stop for a break?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-a-solution-1", kind: "point", verbatim: "Indication on the graph", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-a-question.png",
+          "srcHash": "51d59464b8f311c08122709bfe9bb197",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. At what time of the day did Alan stop for a break?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-a-solution.png",
+          "srcHash": "8920e671499eb6ead7c22c3e6be4dec1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q10(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-b", topicId: "maths-3-3", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(b)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00.",
+    questionText: "Work out Alan’s constant speed when he was cycling.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-b-question.png",
+          "srcHash": "56239e80be3e990d0bdf2c12e7b0bb3c",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Work out Alan’s constant speed when he was cycling.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-b-solution.png",
+          "srcHash": "fcf02f546e315028c85ca6028b33f4cb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-c-i", topicId: "maths-5-1", conceptId: "p1-deferred-q10-c-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(c)(i)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00.",
+    questionText: "Draw the graph of Brendan’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-c-i-solution-1", kind: "point", verbatim: "Any use of 12:00 or any straight line drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q10-c-i-solution-2", kind: "point", verbatim: "Indicates point of intersection", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-c-i-question.png",
+          "srcHash": "2e9235bf642145484d71feee343b637d",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00. Draw the graph of Brendan’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-c-i-solution.png",
+          "srcHash": "cc5b14838162c8f4e2c814e1d94cc1e3",
+          "alt": "NextStepUni reconstructed graph of Brendan’s journey: start at noon and 0 km, pass Alan at 14:00 and 48 km, and arrive at Q at 14:40 and 64 km. Full labelled axes and Alan’s original journey are retained; SEC guidance follows.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Brendan’s speed is 48 km/2 h=24 km/h. His straight line reaches the 64 km destination at 14:40, so the reconstructed journey stops there.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-c-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q10-c-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(c)(ii)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00.",
+    questionText: "Work out Brendan’s constant speed when he was cycling.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "Work of merit, for example, formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-c-ii-question.png",
+          "srcHash": "473d237bb8d5aed590aa3b1b5c4c36c5",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00. Work out Brendan’s constant speed when he was cycling.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-c-ii-solution.png",
+          "srcHash": "cadbaf696d2aea969524bd73db8f3503",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-d-i", topicId: "maths-5-1", conceptId: "p1-deferred-q10-d-i",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(d)(i)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00.",
+    questionText: "Draw the graph of Colin’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-d-i-solution-1", kind: "point", verbatim: "One correct point plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-d-i-question.png",
+          "srcHash": "5810a29949223d94201f0fc4a66bda01",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00. Draw the graph of Colin’s journey on the diagram on the previous page, using the same axes and scales. Label the graph clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-d-i-solution.png",
+          "srcHash": "7e3f234ef2bec1e23a898ef780026b4a",
+          "alt": "NextStepUni reconstructed graph of Colin’s journey: a straight line from 10:00 and 64 km from P to 15:00 and 0 km from P. Axes and Alan’s journey retained; original SEC guidance follows.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-d-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q10-d-ii",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(d)(ii)",
+    stem: "Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00. Plot both riders’ journeys on the supplied axes as in parts (c)(i) and (d)(i).",
+    questionText: "Use your graphs to estimate the time of the day at which Colin and Brendan passed each other.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-d-ii-solution-1", kind: "point", verbatim: "Some indication on the graph", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q10-d-ii-solution-2", kind: "point", verbatim: "13:00 – 13:20", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-d-ii-question.png",
+          "srcHash": "d13c62230dd0bcf9cbe103edbf75fff1",
+          "alt": "The question as printed on the paper — Two friends, Alan and Brendan, separately cycled a 64 km journey from P to Q. A third friend, Colin, cycled from Q to P on the same day. The diagram shows Alan’s journey. Time is measured in hours, starting at 10:00; distance is measured in kilometres from P along the route. Alan left P at 10:00, cycled at a constant speed, stopped for an hour, then continued at the same speed to Q. He arrived at 15:00. Brendan left P at 12:00. He cycled at a constant speed, without stopping, until he reached Q. He passed Alan at 14:00. Colin cycled in the opposite direction, from Q to P along the same road. Colin left Q at 10:00 and cycled at a constant speed, without stopping, until he reached P. He arrived at P at 15:00. Plot both riders’ journeys on the supplied axes as in parts (c)(i) and (d)(i). Use your graphs to estimate the time of the day at which Colin and Brendan passed each other.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-d-ii-solution.png",
+          "srcHash": "7ced4c106564f8456d797f36e9724e51",
+          "alt": "NextStepUni reconstructed journey graphs and intersection reading. Brendan and Colin pass just after 13:00, approximately 13:03. Original accepted tolerance of 13:00–13:20 is retained.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The reconstructed intersection is at about 13:02:37, so a graph reading of about 13:03 is appropriate. The source example says about 13:05 and accepts 13:00–13:20. Marks depend on a reasonable graph reading.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-e", topicId: "maths-5-1", conceptId: "p1-deferred-q10-e",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(e)",
+    questionText: "Write a formula to represent Colin’s distance from P at any given time during his journey. Your formula should be written in terms of t, where t ∈ ℝ is the time in hours from 10:00. Remember that Colin left Q at 10:00 and arrived at P, 64 km away, at 15:00.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-e-solution-1", kind: "point", verbatim: "Correct formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q10-e-solution-2", kind: "point", verbatim: "12.8", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[23],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-e-question.png",
+          "srcHash": "022e7fba588076f3ee682590754cb136",
+          "alt": "The question as printed on the paper — Write a formula to represent Colin’s distance from P at any given time during his journey. Your formula should be written in terms of t, where t ∈ ℝ is the time in hours from 10:00. Remember that Colin left Q at 10:00 and arrived at P, 64 km away, at 15:00.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-e-solution.png",
+          "srcHash": "c01b54c767182fb2c85c2caef7ee2931",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q10(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-deferred-q10-f", topicId: "maths-5-2", conceptId: "p1-deferred-q10-f",
+    section: "B", questionRef: "2022 OL Paper 1 — Deferred Q10(f)",
+    stem: "On a different day, Alan cycles in a race. This time, his speed changes throughout the race. The distance, in km, he has travelled from the starting line during the race is given by d(t)=6t³−12t²+40t, where t is the time in hours from the start of the race, and t ∈ ℝ, 0≤t≤1.",
+    questionText: "Alan’s speed during the race is given by d′(t), the derivative of d(t). Use this to find Alan’s speed 30 minutes after the start of the race.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-deferred-q10-f-solution-1", kind: "point", verbatim: "one correct term differentiated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-ol-p1-deferred-q10-f-solution-2", kind: "point", verbatim: "Fully correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[24],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-f-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-f-question.png",
+          "srcHash": "5cff1b9a8fe27f6fa59e3b108819f606",
+          "alt": "The question as printed on the paper — On a different day, Alan cycles in a race. This time, his speed changes throughout the race. The distance, in km, he has travelled from the starting line during the race is given by d(t)=6t³−12t²+40t, where t is the time in hours from the start of the race, and t ∈ ℝ, 0≤t≤1. Alan’s speed during the race is given by d′(t), the derivative of d(t). Use this to find Alan’s speed 30 minutes after the start of the race.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-ol-p1-deferred-q10-f-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-ol-p1-deferred-q10-f-solution.png",
+          "srcHash": "e2ea9f7aa813539128a8cfcc774753e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 OL Paper 1 — Deferred Q10(f).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and fourteen deferred editions; two indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 5090,
-  "reviewedTasks": 5090,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and fifteen deferred editions; one indexed English deferred edition remains. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 5135,
+  "reviewedTasks": 5135,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2022 deferred Higher Paper 2.",
+  "productionBuild": "Passed on 2026-10-31 through 2022 deferred Ordinary Paper 1.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2022higherPaper2",
+  "latestBatch": "deferred2022ordinaryPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2022 Ordinary deferred Paper 1",
-    "status": "2022 Higher deferred Paper 2 reviewed and carded; independent visual review of Ordinary Paper 1 has started.",
-    "remainingEnglishDeferredPapers": 2,
+    "paper": "2022 Ordinary deferred Paper 2",
+    "status": "2022 Ordinary deferred Paper 1 reviewed and carded; Ordinary Paper 2 is the final indexed English edition outstanding.",
+    "remainingEnglishDeferredPapers": 1,
     "irishEditionReview": "Deferred at user request; not a blocker for current English-edition scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -9192,5 +9192,103 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 46 cards byte for byte."
+  },
+  "deferred2022ordinaryPaper1": {
+    "date": "2026-10-31",
+    "paper": "2022 Ordinary deferred Paper 1",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "reviewedTasks": 45,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "runtimeCards": 5135,
+    "runtimeByLevel": {
+      "higher": 1917,
+      "ordinary": 2081,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 126,
+    "previousAuthoredCardsUnchanged": 5091,
+    "previousFigureEntriesUnchanged": 10443,
+    "previousDeferredImagesUnchanged": 1246,
+    "inspectedImages": 90,
+    "workedSupplements": [
+      "Q8(a)(i\u2013ii): complete height table and plotted curve",
+      "Q8(b)(i\u2013iii): three graph readings with working",
+      "Q10(c)(ii): Brendan\u2019s journey ending at 14:40",
+      "Q10(d)(i): Colin\u2019s return journey",
+      "Q10(d)(ii): reconstructed intersection of the two journeys"
+    ],
+    "sourceCorrections": [
+      "Q4(a)(i\u2013ii), Q8(a)(i\u2013ii) and Q8(b)(i\u2013iii) retain shared 15D allocations.",
+      "Q2(b) clarifies the correct unit as metres per second; the source first-line km/s label is wrong.",
+      "Q8(c)(i) restores the omitted factor 1.5 after 10 in the source substitution.",
+      "Q10(c)(ii) ends Brendan\u2019s graph at 64 km, 14:40; Q10(d)(ii) explains the reconstructed meeting time of about 13:03 while retaining the original accepted graph-reading tolerance."
+    ],
+    "reviewedAtlasQuestionPlacements": 1194,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 1,
+    "irishEditionReview": "Deferred at user request; not part of current completion scope.",
+    "tests": {
+      "javascriptPassed": 426,
+      "pythonPassed": 20,
+      "typecheck": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0,
+      "productionBuild": "passed"
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2022-ol-p1-deferred-q8-b-i-ii-iii",
+      "phoneCard": "maths-2022-ol-p1-deferred-q10-d-ii",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        12,
+        2
+      ],
+      "enlarge": true,
+      "zoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePagesRendered": [
+        23,
+        2,
+        4,
+        5
+      ],
+      "viewportReset": true,
+      "pageErrors": []
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }

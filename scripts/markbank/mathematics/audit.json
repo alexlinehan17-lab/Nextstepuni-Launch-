@@ -35,11 +35,11 @@
       "higher",
       "ordinary"
     ],
-    "runtimeCards": 5090,
-    "authoredCards": 5091,
+    "runtimeCards": 5135,
+    "authoredCards": 5136,
     "authoredNotInRuntime": 1,
-    "reviewedPaperEditions": 125,
-    "reviewedMarkedTasks": 5090
+    "reviewedPaperEditions": 126,
+    "reviewedMarkedTasks": 5135
   },
   "authoredNotInRuntime": [
     "maths-2021-ol-p2-q3"
@@ -2660,9 +2660,9 @@
       "paperAvailable": true,
       "schemeAvailable": true,
       "paperPages": 32,
-      "answerSidecarAvailable": false,
-      "reviewed": false,
-      "reviewedTaskCount": 0,
+      "answerSidecarAvailable": true,
+      "reviewed": true,
+      "reviewedTaskCount": 45,
       "selectionCandidates": [
         {
           "id": "3:cad25a1c54cc0ee0",
