@@ -205257,5 +205257,1381 @@
   "notes": "Independently visually checked against the 2023 Higher Level Paper 2 and its scheme on 2026-10-31.",
   "figureKey": "maths-2023-hl-p2-deferred-q10-c-solution",
   "questionFigureKey": "maths-2023-hl-p2-deferred-q10-c-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q1-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q1-a-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q1(a)(i)",
+  "stem": "Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i.",
+  "questionText": "Plot and label z₁, z₂, and the complex conjugate of z₂ on the Argand Diagram below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "3 parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Apply F* if labels omitted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q1-a-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q1-a-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q1-a-ii",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q1-a-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q1(a)(ii)",
+  "stem": "Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i.",
+  "questionText": "Find |z₁ − z₂|. Give your answer in surd form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "formula for Modulus",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q1-a-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q1-a-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q1-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q1-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q1(b)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "Write 3(2 − i) + i(5 + 2i) in the form x + yi, where x, y ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "expansion of brackets",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Multiplication fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q1-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q1-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q1-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-deferred-q1-c",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q1(c)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "The real numbers p and k are such that 2 − 3pi − 9 − ki = 4k + 1 − i. Find the value of p and the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "identifies reals or",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Correctly finds",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q1-c-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q1-c-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q2-a",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-deferred-q2-a",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q2(a)",
+  "questionText": "Solve the inequality (2x − 5)/3 ≥ (x − 4)/2, where x ∈ ℝ, and show the solution set on a number line.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Carries out some relevant correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "transposing but finishes correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q2-a-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q2-a-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q2-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q2-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q2(b)",
+  "questionText": "Write q in terms of p and t when 3(2p + q) = t.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "multiplying brackets but finishes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q2-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q2-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q2-c-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q2-c-i-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q2(c)(i), Q2(c)(ii)",
+  "stem": "The function f is as follows for x ∈ ℝ: f(x) = 3x² − 8x − 35. The function g is as follows for x ∈ ℝ: g(x) = 2x − 7.",
+  "questionText": "(i) Find f(6). (ii) Find f(g(2)).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q2-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3 steps in the solution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q2-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q2-c-i-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q2-c-i-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q3-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q3-a",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q3(a)",
+  "questionText": "Given that 5x − 4y = 1, find the value of y when x = −7.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Error in transposing but finishes correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q3-a-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q3-a-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q3-b",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-deferred-q3-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q3(b)",
+  "questionText": "Find the value of x for which 2ˣ = √32, where x ∈ ℚ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q3-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q3-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q3-c",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q3-c",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q3(c)",
+  "questionText": "Solve the simultaneous equations: x − y = 2; x² + y² = 10.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Finds correct quadratic equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Finds values of",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q3-c-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q3-c-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q4-a",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q4(a)",
+  "questionText": "Solve the equation x² − 6x + 3 = 0. Give each solution correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Identifies a, b, and c",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Fully substituted formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q4-a-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q4-a-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q4-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q4-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q4(b)",
+  "questionText": "The function h is as follows for x ∈ ℝ: h(x) = (6x² − 23x + 20)/(2x − 5). Express h(x) in the form ax + b, where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Correct factors of quadratic found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q4-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q4-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q4-c-i-ii-iii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q4(c)(i), Q4(c)(ii), Q4(c)(iii)",
+  "stem": "The graph of a cubic function g(x) is shown below.",
+  "questionText": "Use the graph to estimate each of the following: (i) the 3 roots of g(x). Note: In the case of the next two parts, show your work clearly on the graph. (ii) g(3·5). (iii) The values of x for which g(x) = −8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Any 1 correct section",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Correct solutions but no work on graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q5-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q5-a-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q5(a)(i)",
+  "stem": "Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ.",
+  "questionText": "Write down the first three terms of the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Any one term correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Any two terms correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q5-a-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q5-a-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q5-a-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q5-a-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q5(a)(ii)",
+  "stem": "Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ.",
+  "questionText": "Term k of the sequence is 101. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Writes Tn formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q5-a-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q5-a-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q5-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-deferred-q5-b-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q5(b)(i)",
+  "stem": "The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2.",
+  "questionText": "Use the expression n(n + 1)/2 to find the sum of the natural numbers from 1 to 12 inclusive.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "substitutes 12",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q5-b-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q5-b-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q5-b-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q5-b-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q5(b)(ii)",
+  "stem": "The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2.",
+  "questionText": "The sequence of numbers 1, 2, 3, 4, …, n add to 325. Solve the equation n(n + 1)/2 = 325, to find the value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds correct quadratic",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q5-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "fails to eliminate answer",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q5-b-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q5-b-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q6-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q6-a",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q6(a)",
+  "stem": "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+  "questionText": "Complete the table below to show the value of f(x) for each of the given values of x. x: −2, −1, 0, 1, 2, 3, 4. f(x): blank, blank, blank, blank, blank, blank, −20.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Any one correct value",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "4 correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q6-a-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q6-a-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q6-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q6-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q6(b)",
+  "stem": "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+  "questionText": "Draw the graph of f(x) in the domain −2 ≤ x ≤ 4 where x ∈ ℝ, on the grid below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "4/5 points plotted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "failure to join or joined",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q6-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q6-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q6-c-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-c-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q6(c)(i)",
+  "stem": "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+  "questionText": "Find f′(x), the derivative of f(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Any two parts differentiated correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q6-c-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q6-c-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q6-c-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q6-c-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 — Deferred Q6(c)(ii)",
+  "stem": "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+  "questionText": "Use your derivative to find the co-ordinates of the local maximum point and the local minimum point of f(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds x values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q6-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "fails to identify Max and",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q6-c-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q6-c-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q7-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-a",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q7(a)",
+  "stem": "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m.",
+  "questionText": "The average time taken to finish the run is 34 minutes 30 seconds. Find the average time it takes to complete 1 km of the run. Give your answer in minutes and seconds.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Finds total number of seconds",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q7-a-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q7-a-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q7-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-b-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q7(b)(i)",
+  "stem": "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m.",
+  "questionText": "How long did it take her to run the last km?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Finds how long final two kilometres take",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q7-b-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q7-b-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q7-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-b-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q7(b)(ii)",
+  "stem": "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m.",
+  "questionText": "Find Aoife’s average speed over the 5 km run. Give your answer, in km/hr, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "5km in 35 minutes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Ans: 8·6 km/hr",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q7-b-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q7-b-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q7-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q7-c",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q7(c)",
+  "stem": "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m.",
+  "questionText": "One Saturday Brian arrived late and started his run 3 minutes later than everyone else (at 9:33 a.m.). His average speed, while he was running, was 15 km/hr. Shane, who started on time (9:30 a.m.), ran at an average speed of 12·5 km/hr. Which of the two finished the run first and by how many minutes?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Finds finish time of Brian or Shane",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Brian finishes first by 1 minute",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q7-c-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q7-c-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q7-d",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q7-d",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q7(d)",
+  "stem": "Shane is training for the run. One of his training sessions is as follows, where n ∈ ℕ: Warm up: 10 minutes. Sprints: n sprints for 10 seconds each; jog for 60 seconds between each pair of sprints. Warm down: 9 minutes.",
+  "questionText": "It takes Shane exactly 32 minutes to complete this session. Work out the value of n, the number of 10-second sprints he does during this session.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Fully correct equation set up",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q7-d-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q7-d-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q8-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-a-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q8(a)(i)",
+  "stem": "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres.",
+  "questionText": "One litre of oil costs €0·6168. Find the cost of the heating oil that was delivered to John’s home.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "number of litres 1200",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q8-a-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q8-a-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q8-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-a-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q8(a)(ii)",
+  "stem": "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. One litre of oil costs €0·6168 before VAT.",
+  "questionText": "The cost in part (a)(i) does not include VAT. Find the total cost of the heating oil after VAT at 13·5% is included.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Total Cost = €840·08",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q8-a-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q8-a-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q8-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q8-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q8(b)",
+  "stem": "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. The VAT rate is 13·5%.",
+  "questionText": "Six months later the same amount of oil, including VAT at the same rate, cost €1157·70. What was the price per litre of this oil excluding VAT? Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 0·96475 or 1020",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q8-b-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q8-b-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q8-c-i-ii-iii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q8(c)(i), Q8(c)(ii), Q8(c)(iii)",
+  "stem": "John discovered a leak in his oil tank. He contacted two companies and asked for quotes to repair the tank. Each company included a call out charge and a rate per hour, or part of an hour, for the repair work. They emailed the following quotes for the repair work: Company A: €100 call out charge plus €60 per hour (or part thereof). Company B: €80 call out charge plus €70 per hour (or part thereof).",
+  "questionText": "(i) If the repair will take 4 hours 15 minutes to complete, how much would each company charge? (ii) Write a formula to show the total amount that each company charges for n hours of repair work, where n ∈ ℕ. (iii) After how many hours would the cost be the same for both companies?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Any one section correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Any 2 sections correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q8-d",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-deferred-q8-d",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q8(d)",
+  "questionText": "John’s oil tank is in the shape of a cylinder. It is 2 m long and can hold 1500 litres of oil. Find the radius of the oil tank. Give your answer correct to the nearest cm. (Note: 1 Litre = 1000 cm³.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "correct formula for cylinder",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q8-d-solution-2",
+    "kind": "point",
+    "verbatim": "correctly and fails to finish",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q8-d-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q8-d-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-a-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(a)(i)",
+  "stem": "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+  "questionText": "Find the height of the cliff, in metres.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "substitutes 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-a-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-a-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-a-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-deferred-q9-a-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(a)(ii)",
+  "stem": "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+  "questionText": "What was the height of the ball above the ground after 1·5 seconds?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Substitutes 1·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-a-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-a-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-deferred-q9-a-iii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(a)(iii)",
+  "stem": "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+  "questionText": "Find the maximum height of the ball above the ground.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds t = 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Max Height = 45 m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-a-iii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-a-iii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-a-iv",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-deferred-q9-a-iv",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(a)(iv)",
+  "stem": "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+  "questionText": "How long was the ball in the air before it hit the ground?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Ans: After 4 seconds",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "fails to eliminate",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-a-iv-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-a-iv-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-a-v",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-deferred-q9-a-v",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(a)(v)",
+  "stem": "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+  "questionText": "The ball landed 240 m from the foot of the cliff. Find the distance between the ball and the top edge of the cliff when it landed. Give your answer, in metres, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "Pythagoras or sets up equation correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-a-v-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-a-v-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q9-b-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(b)(i)",
+  "questionText": "Florence bought a golf club online from a company in Britain. The cost was £138·75 sterling. The exchange rate was €1 = £0·8338. How much did the golf club cost in euro? Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Sets up division correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-b-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-b-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q9-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q9-b-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q9(b)(ii)",
+  "questionText": "Florence also bought a golf bag at her local golf club during a sale. The original cost was €125, including VAT at 23%. She got a discount of 15% in the sale. Work out how much VAT Florence paid. Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "price without VAT",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "€19·87 VAT",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q9-b-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q9-b-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-a-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(a)(i)",
+  "stem": "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits.",
+  "questionText": "How much tax did she pay each week while she was on emergency tax?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "0·4 = 40%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-a-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-a-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-a-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(a)(ii)",
+  "stem": "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week.",
+  "questionText": "How much does Mary now pay in tax each week?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 271·15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds Gross Tax",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-a-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-a-ii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-a-iii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(a)(iii)",
+  "stem": "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week.",
+  "questionText": "Mary was on emergency tax for a total of six weeks. At the end of that time she got a refund of the tax that she had overpaid while she was on the emergency tax rate. Find the total amount of the refund she got for these six weeks.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 2280 and 1073·10",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-a-iii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-a-iii-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-a-iv",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-a-iv",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(a)(iv)",
+  "stem": "Mary was earning €950 per week before the pay increase.",
+  "questionText": "Mary gets a pay increase of €x per week. She continues to pay tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She still had tax credits of €65·38 each week. She now pays €218·85 in tax each week. Find the value of x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Finds new tax @ 40% after pay increase",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Finds new taxable income after pay",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-a-iv-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-a-iv-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-b-i",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(b)(i)",
+  "stem": "Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%.",
+  "questionText": "Find the value of the annual compound interest rate, r, in Option 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-b-i-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-b-i-question"
+ },
+ {
+  "id": "maths-2023-ol-p1-deferred-q10-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-deferred-q10-b-ii",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 — Deferred Q10(b)(ii)",
+  "stem": "Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%.",
+  "questionText": "Mary chooses Option 2. She will invest €5000 at the beginning of year 1, another €5000 at the beginning of year 2, and another €5000 at the beginning of year 3. Find how much money Mary will receive at the end of the 3 year period. Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-deferred-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 10210",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2023 Ordinary Level Paper 1 and its scheme on 2026-10-31.",
+  "figureKey": "maths-2023-ol-p1-deferred-q10-b-ii-solution",
+  "questionFigureKey": "maths-2023-ol-p1-deferred-q10-b-ii-question"
  }
 ]

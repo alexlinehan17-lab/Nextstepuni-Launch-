@@ -1,0 +1,1262 @@
+{
+  "questionSha256": "9262fb1ba9abc922770885e9c2957414a9a36086adb04eea102f08f00a0787aa",
+  "solutionSha256": "a26b1052de619384b1623938a6b37ee9b00a095244fd450b0f6617b4806eaeb0",
+  "tasks": {
+    "maths-2023-ol-p1-deferred-q1-a-i": {
+      "question": [
+        [
+          4,
+          50,
+          134,
+          555,
+          451
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          176,
+          550,
+          473
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q1-a-ii": {
+      "question": [
+        [
+          4,
+          50,
+          134,
+          555,
+          178
+        ],
+        [
+          4,
+          50,
+          503,
+          555,
+          525
+        ]
+      ],
+      "solution": [
+        [
+          6,
+          55,
+          473,
+          550,
+          700
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q1-b": {
+      "question": [
+        [
+          4,
+          50,
+          134,
+          555,
+          154
+        ],
+        [
+          5,
+          50,
+          54,
+          555,
+          74
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          56,
+          550,
+          190
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q1-c": {
+      "question": [
+        [
+          4,
+          50,
+          134,
+          555,
+          154
+        ],
+        [
+          5,
+          50,
+          282,
+          555,
+          317
+        ]
+      ],
+      "solution": [
+        [
+          7,
+          55,
+          190,
+          550,
+          335
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q2-a": {
+      "question": [
+        [
+          6,
+          50,
+          74,
+          555,
+          122
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          78,
+          550,
+          261
+        ]
+      ],
+      "supplement": "inequality-2023-ol-deferred",
+      "supplementAlt": "NextStepUni shows x≥−2 as a continuous ray to the right from a closed dot at −2. It includes every real value at least −2, not just integers. Original SEC algebra and credit notes follow.",
+      "sourceNote": "The question specifies real numbers. The solution set is every real x≥−2. The NextStepUni diagram makes the complete continuous ray explicit; the dots in the source should not be read as an integers-only solution."
+    },
+    "maths-2023-ol-p1-deferred-q2-b": {
+      "question": [
+        [
+          6,
+          50,
+          416,
+          555,
+          436
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          261,
+          550,
+          425
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q2-c-i-ii": {
+      "question": [
+        [
+          7,
+          50,
+          53,
+          555,
+          111
+        ],
+        [
+          7,
+          50,
+          262,
+          555,
+          284
+        ]
+      ],
+      "solution": [
+        [
+          8,
+          55,
+          425,
+          550,
+          677
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q3-a": {
+      "question": [
+        [
+          8,
+          50,
+          74,
+          555,
+          95
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          78,
+          550,
+          215
+        ]
+      ],
+      "sourceNote": "The low-credit example’s “−7 for y” is a variable-name error: the question gives x = −7. Substituting for x yields −35 − 4y = 1, so y = −9, as in the model solution."
+    },
+    "maths-2023-ol-p1-deferred-q3-b": {
+      "question": [
+        [
+          8,
+          50,
+          247,
+          555,
+          270
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          215,
+          550,
+          341
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q3-c": {
+      "question": [
+        [
+          9,
+          50,
+          54,
+          555,
+          111
+        ]
+      ],
+      "solution": [
+        [
+          9,
+          55,
+          341,
+          550,
+          588
+        ]
+      ],
+      "sourceNote": "Keep each x with its matching y: the two solutions are (x,y) = (−1,−3) and (3,1). Both satisfy x−y=2 and x²+y²=10."
+    },
+    "maths-2023-ol-p1-deferred-q4-a": {
+      "question": [
+        [
+          10,
+          50,
+          74,
+          555,
+          109
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          81,
+          550,
+          332
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q4-b": {
+      "question": [
+        [
+          10,
+          50,
+          346,
+          555,
+          423
+        ]
+      ],
+      "solution": [
+        [
+          10,
+          55,
+          332,
+          550,
+          507
+        ]
+      ],
+      "sourceNote": "Factor the numerator as (3x−4)(2x−5), then cancel for x≠5/2. The answer is h(x)=3x−4 on that original domain. The printed statement x∈ℝ omits the denominator restriction; x=5/2 remains undefined."
+    },
+    "maths-2023-ol-p1-deferred-q4-c-i-ii-iii": {
+      "question": [
+        [
+          11,
+          50,
+          53,
+          555,
+          360
+        ],
+        [
+          11,
+          50,
+          433,
+          555,
+          473
+        ],
+        [
+          11,
+          50,
+          543,
+          555,
+          564
+        ]
+      ],
+      "solution": [
+        [
+          11,
+          55,
+          56,
+          550,
+          434
+        ]
+      ],
+      "sourceNote": "All three printed parts share 10D. The source’s “Work of Merit in” mid-credit bullet is incomplete. Its explicit complete mid-credit alternative is “Any 1 correct section”; the original wording and numeric scale remain unchanged."
+    },
+    "maths-2023-ol-p1-deferred-q5-a-i": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          118
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          78,
+          550,
+          242
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q5-a-ii": {
+      "question": [
+        [
+          12,
+          50,
+          74,
+          555,
+          96
+        ],
+        [
+          12,
+          50,
+          302,
+          555,
+          322
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          242,
+          550,
+          422
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q5-b-i": {
+      "question": [
+        [
+          13,
+          50,
+          54,
+          555,
+          168
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          422,
+          550,
+          531
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q5-b-ii": {
+      "question": [
+        [
+          13,
+          50,
+          54,
+          555,
+          116
+        ],
+        [
+          13,
+          50,
+          296,
+          555,
+          408
+        ]
+      ],
+      "solution": [
+        [
+          12,
+          55,
+          531,
+          550,
+          726
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q6-a": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          181
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          78,
+          550,
+          204
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q6-b": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          95
+        ],
+        [
+          14,
+          50,
+          253,
+          555,
+          537
+        ]
+      ],
+      "solution": [
+        [
+          13,
+          55,
+          204,
+          550,
+          475
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q6-c-i": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          95
+        ],
+        [
+          15,
+          50,
+          54,
+          555,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          56,
+          550,
+          208
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q6-c-ii": {
+      "question": [
+        [
+          14,
+          50,
+          74,
+          555,
+          95
+        ],
+        [
+          15,
+          50,
+          145,
+          555,
+          177
+        ]
+      ],
+      "solution": [
+        [
+          14,
+          55,
+          208,
+          550,
+          412
+        ]
+      ],
+      "sourceNote": "f′(x)=3(x−3)(x+1). It changes from positive to negative at x=−1 (local maximum (−1,5)) and from negative to positive at x=3 (local minimum (3,−27)). Both labelled points belong to this single 5C response."
+    },
+    "maths-2023-ol-p1-deferred-q7-a": {
+      "question": [
+        [
+          16,
+          50,
+          135,
+          555,
+          205
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          128,
+          550,
+          301
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q7-b-i": {
+      "question": [
+        [
+          16,
+          50,
+          135,
+          555,
+          153
+        ],
+        [
+          16,
+          50,
+          287,
+          555,
+          409
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          301,
+          550,
+          459
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q7-b-ii": {
+      "question": [
+        [
+          16,
+          50,
+          135,
+          555,
+          153
+        ],
+        [
+          16,
+          50,
+          287,
+          555,
+          387
+        ],
+        [
+          17,
+          50,
+          55,
+          555,
+          89
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          459,
+          550,
+          586
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q7-c": {
+      "question": [
+        [
+          16,
+          50,
+          135,
+          555,
+          153
+        ],
+        [
+          17,
+          50,
+          297,
+          555,
+          374
+        ]
+      ],
+      "solution": [
+        [
+          15,
+          55,
+          586,
+          550,
+          750
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q7-d": {
+      "question": [
+        [
+          18,
+          50,
+          54,
+          555,
+          205
+        ]
+      ],
+      "solution": [
+        [
+          16,
+          55,
+          56,
+          550,
+          199
+        ]
+      ],
+      "sourceNote": "Keep the units consistent: 32−10−9 = 13 minutes = 780 seconds remain for sprints and jogs. There are n−1 jogs between n sprints, so 10n+60(n−1)=780. Thus 70n=840 and n=12. The source’s first line mixes minutes and seconds; its subsequent equation and final answer are correct."
+    },
+    "maths-2023-ol-p1-deferred-q8-a-i": {
+      "question": [
+        [
+          19,
+          50,
+          77,
+          555,
+          161
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          78,
+          550,
+          233
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q8-a-ii": {
+      "question": [
+        [
+          19,
+          50,
+          77,
+          555,
+          161
+        ],
+        [
+          19,
+          50,
+          313,
+          555,
+          347
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          233,
+          550,
+          372
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q8-b": {
+      "question": [
+        [
+          19,
+          50,
+          77,
+          555,
+          124
+        ],
+        [
+          19,
+          50,
+          313,
+          555,
+          347
+        ],
+        [
+          19,
+          50,
+          495,
+          555,
+          546
+        ]
+      ],
+      "solution": [
+        [
+          17,
+          55,
+          372,
+          550,
+          618
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q8-c-i-ii-iii": {
+      "question": [
+        [
+          20,
+          50,
+          54,
+          555,
+          206
+        ],
+        [
+          20,
+          50,
+          398,
+          555,
+          434
+        ],
+        [
+          20,
+          50,
+          561,
+          555,
+          580
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          56,
+          550,
+          279
+        ]
+      ],
+      "sourceNote": "A part-hour is charged as a full hour: 4 hours 15 minutes means five billed hours. A charges €100+5×€60=€400 and B €80+5×€70=€430. The equal-cost result n=2 refers to the whole billed-hour count in the question."
+    },
+    "maths-2023-ol-p1-deferred-q8-d": {
+      "question": [
+        [
+          21,
+          50,
+          55,
+          555,
+          180
+        ]
+      ],
+      "solution": [
+        [
+          18,
+          55,
+          279,
+          550,
+          433
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-a-i": {
+      "question": [
+        [
+          22,
+          50,
+          78,
+          555,
+          382
+        ],
+        [
+          22,
+          50,
+          398,
+          555,
+          417
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          78,
+          550,
+          222
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-a-ii": {
+      "question": [
+        [
+          22,
+          50,
+          78,
+          555,
+          382
+        ],
+        [
+          22,
+          50,
+          497,
+          555,
+          518
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          222,
+          550,
+          341
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-a-iii": {
+      "question": [
+        [
+          22,
+          50,
+          78,
+          555,
+          382
+        ],
+        [
+          23,
+          50,
+          55,
+          555,
+          75
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          341,
+          550,
+          471
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-a-iv": {
+      "question": [
+        [
+          22,
+          50,
+          78,
+          555,
+          382
+        ],
+        [
+          23,
+          50,
+          284,
+          555,
+          303
+        ]
+      ],
+      "solution": [
+        [
+          19,
+          55,
+          471,
+          550,
+          651
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-a-v": {
+      "question": [
+        [
+          22,
+          50,
+          78,
+          555,
+          382
+        ],
+        [
+          23,
+          50,
+          460,
+          555,
+          508
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          56,
+          550,
+          197
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-b-i": {
+      "question": [
+        [
+          24,
+          50,
+          55,
+          555,
+          141
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          197,
+          550,
+          331
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q9-b-ii": {
+      "question": [
+        [
+          25,
+          50,
+          55,
+          555,
+          134
+        ]
+      ],
+      "solution": [
+        [
+          20,
+          55,
+          331,
+          550,
+          470
+        ]
+      ],
+      "sourceNote": "Apply the discount to the VAT-inclusive price first: €125×0.85=€106.25. The VAT portion is €106.25×23/123≈€19.87. The source’s “€125−15%” is shorthand for reducing €125 by 15%."
+    },
+    "maths-2023-ol-p1-deferred-q10-a-i": {
+      "question": [
+        [
+          26,
+          50,
+          77,
+          555,
+          147
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          78,
+          550,
+          198
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q10-a-ii": {
+      "question": [
+        [
+          26,
+          50,
+          77,
+          555,
+          124
+        ],
+        [
+          26,
+          50,
+          300,
+          555,
+          385
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          198,
+          550,
+          340
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q10-a-iii": {
+      "question": [
+        [
+          26,
+          50,
+          77,
+          555,
+          124
+        ],
+        [
+          26,
+          50,
+          300,
+          555,
+          363
+        ],
+        [
+          27,
+          50,
+          55,
+          555,
+          126
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          340,
+          550,
+          491
+        ]
+      ],
+      "sourceNote": "The detailed scheme awards this refund calculation 5C (0,2,3,5). The summary swaps its scale with part (iv); the task-specific allocation and matching low/high credit notes are followed here."
+    },
+    "maths-2023-ol-p1-deferred-q10-a-iv": {
+      "question": [
+        [
+          26,
+          50,
+          77,
+          555,
+          124
+        ],
+        [
+          27,
+          50,
+          357,
+          555,
+          452
+        ]
+      ],
+      "solution": [
+        [
+          21,
+          55,
+          491,
+          550,
+          692
+        ]
+      ],
+      "sourceNote": "The detailed scheme awards this pay-increase calculation 5D (0,2,3,4,5). The summary swaps its scale with part (iii). The 3-mark mid-partial award belongs here. The increase is (€218.85−€178.85)/0.40=€100."
+    },
+    "maths-2023-ol-p1-deferred-q10-b-i": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          555,
+          190
+        ],
+        [
+          28,
+          50,
+          193,
+          555,
+          214
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          56,
+          550,
+          266
+        ]
+      ]
+    },
+    "maths-2023-ol-p1-deferred-q10-b-ii": {
+      "question": [
+        [
+          28,
+          50,
+          55,
+          555,
+          190
+        ],
+        [
+          28,
+          50,
+          430,
+          555,
+          508
+        ]
+      ],
+      "solution": [
+        [
+          22,
+          55,
+          266,
+          550,
+          400
+        ]
+      ],
+      "sourceNote": "The deposits are made at the start of each year, so they grow for three, two and one years: €5000(1.042³+1.042²+1.042)=€16,295.65044, or €16,295.65 to the nearest cent."
+    }
+  },
+  "atlasQuestions": {
+    "1": {
+      "paper": [
+        4,
+        114,
+        5,
+        760
+      ],
+      "scheme": [
+        6,
+        155,
+        7,
+        335
+      ]
+    },
+    "2": {
+      "paper": [
+        6,
+        53,
+        7,
+        760
+      ],
+      "scheme": [
+        8,
+        55,
+        8,
+        677
+      ]
+    },
+    "3": {
+      "paper": [
+        8,
+        53,
+        9,
+        760
+      ],
+      "scheme": [
+        9,
+        55,
+        9,
+        588
+      ]
+    },
+    "4": {
+      "paper": [
+        10,
+        53,
+        11,
+        760
+      ],
+      "scheme": [
+        10,
+        55,
+        11,
+        434
+      ]
+    },
+    "5": {
+      "paper": [
+        12,
+        53,
+        13,
+        760
+      ],
+      "scheme": [
+        12,
+        55,
+        12,
+        726
+      ]
+    },
+    "6": {
+      "paper": [
+        14,
+        53,
+        15,
+        760
+      ],
+      "scheme": [
+        13,
+        55,
+        14,
+        412
+      ]
+    },
+    "7": {
+      "paper": [
+        16,
+        114,
+        18,
+        760
+      ],
+      "scheme": [
+        15,
+        106,
+        16,
+        199
+      ]
+    },
+    "8": {
+      "paper": [
+        19,
+        53,
+        21,
+        760
+      ],
+      "scheme": [
+        17,
+        55,
+        18,
+        433
+      ]
+    },
+    "9": {
+      "paper": [
+        22,
+        53,
+        25,
+        760
+      ],
+      "scheme": [
+        19,
+        55,
+        20,
+        470
+      ]
+    },
+    "10": {
+      "paper": [
+        26,
+        53,
+        28,
+        760
+      ],
+      "scheme": [
+        21,
+        55,
+        22,
+        400
+      ]
+    }
+  },
+  "inspectedAt": "2026-10-31",
+  "inspectionNote": "All 44 question and 44 solution images visually inspected in seven contact sheets; revised Q7(d) question crop separately inspected at full size. Equations, full graphs, Argand labels, tables, source credit notes, all three shared allocations and continuous real-number inequality ray checked. No clipped content.",
+  "atlasInspectionNote": "All 32 paper pages and scheme pages 1–23 independently swept. Ten whole-question paper/answer spans checked against the original page boundaries, including all continuation pages. Q1 starts after exam instructions; Q7 starts at Section B; no neighbouring question included."
+}

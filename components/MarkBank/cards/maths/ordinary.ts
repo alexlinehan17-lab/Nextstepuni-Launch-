@@ -83242,4 +83242,1931 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q1-a-i", topicId: "maths-4-4", conceptId: "p1-deferred-q1-a-i",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q1(a)(i)",
+    stem: "Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i.",
+    questionText: "Plot and label z₁, z₂, and the complex conjugate of z₂ on the Argand Diagram below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q1-a-i-solution-1", kind: "point", verbatim: "3 parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q1-a-i-solution-2", kind: "point", verbatim: "Apply F* if labels omitted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-a-i-question.png",
+          "srcHash": "38a28e4c0d5208c5a57a9d10051e77df",
+          "alt": "The question as printed on the paper — Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i. Plot and label z₁, z₂, and z̄₂ on an Argand Diagram below, where z̄₂ is the complex conjugate of z₂.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-a-i-solution.png",
+          "srcHash": "e0a98680eabcb4d63161cda834e4fc91",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q1(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q1-a-ii", topicId: "maths-4-4", conceptId: "p1-deferred-q1-a-ii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q1(a)(ii)",
+    stem: "Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i.",
+    questionText: "Find |z₁ − z₂|. Give your answer in surd form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q1-a-ii-solution-1", kind: "point", verbatim: "formula for Modulus", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-a-ii-question.png",
+          "srcHash": "77f7cad898219e948a3f2f4508079873",
+          "alt": "The question as printed on the paper — Note: In this question, i² = −1. Let z₁ = 3 − 2i and z₂ = −2 + 3i. Find |z₁ − z₂|. Give your answer in surd form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-a-ii-solution.png",
+          "srcHash": "49b43b93c73d9098f146dc2adbda9ffd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q1-b", topicId: "maths-4-4", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q1(b)",
+    stem: "In this question, i² = −1.",
+    questionText: "Write 3(2 − i) + i(5 + 2i) in the form x + yi, where x, y ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "expansion of brackets", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q1-b-solution-2", kind: "point", verbatim: "Multiplication fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-b-question.png",
+          "srcHash": "e005c497fc763ccb2eecb134f1ec606f",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Write 3(2 − i) + i(5 + 2i) in the form x + yi, where x, y ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-b-solution.png",
+          "srcHash": "57c8a121cec243c031c1b9ca99c5e0b0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q1-c", topicId: "maths-4-4", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q1(c)",
+    stem: "In this question, i² = −1.",
+    questionText: "The real numbers p and k are such that 2 − 3pi − 9 − ki = 4k + 1 − i. Find the value of p and the value of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "identifies reals or", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "Correctly finds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-c-question.png",
+          "srcHash": "9d1e58b5b6ff1d26990aa48f16a83f41",
+          "alt": "The question as printed on the paper — In this question, i² = −1. The real numbers p and k are such that 2 − 3pi − 9 − ki = 4k + 1 − i. Find the value of p and the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q1-c-solution.png",
+          "srcHash": "a5eb1c60f07e6363b53b48443c18747d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q2-a", topicId: "maths-4-3", conceptId: "p1-deferred-q2-a",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q2(a)",
+    questionText: "Solve the inequality (2x − 5)/3 ≥ (x − 4)/2, where x ∈ ℝ, and show the solution set on a number line.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q2-a-solution-1", kind: "point", verbatim: "Carries out some relevant correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q2-a-solution-2", kind: "point", verbatim: "transposing but finishes correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-a-question.png",
+          "srcHash": "1b92476e547940579fa5921957f0a1ba",
+          "alt": "The question as printed on the paper — Solve the inequality (2x − 5)/3 ≥ (x − 4)/2, where x ∈ ℝ, and show the solution set on a number line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-a-solution.png",
+          "srcHash": "09d97063f96214257cdfbe6c8ca71329",
+          "alt": "NextStepUni shows x≥−2 as a continuous ray to the right from a closed dot at −2. It includes every real value at least −2, not just integers. Original SEC algebra and credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The question specifies real numbers. The solution set is every real x≥−2. The NextStepUni diagram makes the complete continuous ray explicit; the dots in the source should not be read as an integers-only solution.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q2-b", topicId: "maths-4-1", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q2(b)",
+    questionText: "Write q in terms of p and t when 3(2p + q) = t.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "multiplying brackets but finishes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-b-question.png",
+          "srcHash": "819414042da95937285803c2484c5dc0",
+          "alt": "The question as printed on the paper — Write q in terms of p and t when 3(2p + q) = t.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-b-solution.png",
+          "srcHash": "2d786a94c043e7c924a9e093595d3173",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q2-c-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q2-c-i-ii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q2(c)(i), Q2(c)(ii)",
+    stem: "The function f is as follows for x ∈ ℝ: f(x) = 3x² − 8x − 35. The function g is as follows for x ∈ ℝ: g(x) = 2x − 7.",
+    questionText: "(i) Find f(6). (ii) Find f(g(2)).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q2-c-i-ii-solution-1", kind: "point", verbatim: "3 steps in the solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q2-c-i-ii-solution-2", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-c-i-ii-question.png",
+          "srcHash": "253a38a905197844aff70fd2f997924a",
+          "alt": "The question as printed on the paper — The function f is as follows for x ∈ ℝ: f(x) = 3x² − 8x − 35. The function g is as follows for x ∈ ℝ: g(x) = 2x − 7. (i) Find f(6). (ii) Find f(g(2)).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q2-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q2-c-i-ii-solution.png",
+          "srcHash": "0457d1465a415e16a8d2ea628fb548fc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q2(c)(i), Q2(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q3-a", topicId: "maths-4-2", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q3(a)",
+    questionText: "Given that 5x − 4y = 1, find the value of y when x = −7.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "Error in transposing but finishes correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-a-question.png",
+          "srcHash": "1e049518d3eae34f095840025c1db03d",
+          "alt": "The question as printed on the paper — Given that 5x − 4y = 1, find the value of y when x = −7.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-a-solution.png",
+          "srcHash": "c59683896a0f5327c0a1cefb5f75c013",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The low-credit example’s “−7 for y” is a variable-name error: the question gives x = −7. Substituting for x yields −35 − 4y = 1, so y = −9, as in the model solution.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q3-b", topicId: "maths-3-2", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q3(b)",
+    questionText: "Find the value of x for which 2ˣ = √32, where x ∈ ℚ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-b-question.png",
+          "srcHash": "b9db7045f273c43043e62379fbe17578",
+          "alt": "The question as printed on the paper — Find the value of x for which 2ˣ = √32, where x ∈ ℚ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-b-solution.png",
+          "srcHash": "ada203125c9c64e47b17909679e3fa1e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q3-c", topicId: "maths-4-2", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q3(c)",
+    questionText: "Solve the simultaneous equations: x − y = 2; x² + y² = 10.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Finds correct quadratic equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "Finds values of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-c-question.png",
+          "srcHash": "c930b6e25f97eadc0f9fe3f882453482",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations: x − y = 2; x² + y² = 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q3-c-solution.png",
+          "srcHash": "7b3fb05b2c4690b0e1a228aa09ac8f03",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Keep each x with its matching y: the two solutions are (x,y) = (−1,−3) and (3,1). Both satisfy x−y=2 and x²+y²=10.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q4-a", topicId: "maths-4-2", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q4(a)",
+    questionText: "Solve the equation x² − 6x + 3 = 0. Give each solution correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Identifies a, b, and c", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q4-a-solution-2", kind: "point", verbatim: "Fully substituted formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-a-question.png",
+          "srcHash": "fca0218412e1514e55e0c4987b86ac97",
+          "alt": "The question as printed on the paper — Solve the equation x² − 6x + 3 = 0. Give each solution correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-a-solution.png",
+          "srcHash": "da3fc087f3bf1149f6c91ae7d0ec1d67",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q4-b", topicId: "maths-4-1", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q4(b)",
+    questionText: "The function h is as follows for x ∈ ℝ: h(x) = (6x² − 23x + 20)/(2x − 5). Express h(x) in the form ax + b, where a, b ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "Correct factors of quadratic found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"markingNote":"The original denominator is zero at x=5/2. The simplified formula 3x−4 is valid for x≠5/2; cancellation does not restore that missing input.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-b-question.png",
+          "srcHash": "dd5bc3a415884eb9b8d0c620c9801ad8",
+          "alt": "The question as printed on the paper — The function h is as follows for x ∈ ℝ: h(x) = (6x² − 23x + 20)/(2x − 5). Express h(x) in the form ax + b, where a, b ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-b-solution.png",
+          "srcHash": "b39a7668bf5cca530787ec40e0ad97c3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Factor the numerator as (3x−4)(2x−5), then cancel for x≠5/2. The answer is h(x)=3x−4 on that original domain. The printed statement x∈ℝ omits the denominator restriction; x=5/2 remains undefined.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q4-c-i-ii-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q4-c-i-ii-iii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q4(c)(i), Q4(c)(ii), Q4(c)(iii)",
+    stem: "The graph of a cubic function g(x) is shown below.",
+    questionText: "Use the graph to estimate each of the following: (i) the 3 roots of g(x). Note: In the case of the next two parts, show your work clearly on the graph. (ii) g(3·5). (iii) The values of x for which g(x) = −8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution-1", kind: "point", verbatim: "Any 1 correct section", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution-2", kind: "point", verbatim: "Correct solutions but no work on graph", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"markingNote":"All three printed parts share 10D. One mid-credit bullet is incomplete in the source (“Work of Merit in”). Its numeric bands and original wording are retained; no missing official criterion is invented.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-c-i-ii-iii-question.png",
+          "srcHash": "f20d831824cc7e7feec043e2204c4d29",
+          "alt": "The question as printed on the paper — The graph of a cubic function g(x) is shown below. Use the graph to estimate each of the following: (i) the 3 roots of g(x). Note: In the case of the next two parts, show your work clearly on the graph. (ii) g(3·5). (iii) The values of x for which g(x) = −8.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q4-c-i-ii-iii-solution.png",
+          "srcHash": "cbef53cfcbe04eed29958f8d56e8bc5b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q4(c)(i), Q4(c)(ii), Q4(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "All three printed parts share 10D. The source’s “Work of Merit in” mid-credit bullet is incomplete. Its explicit complete mid-credit alternative is “Any 1 correct section”; the original wording and numeric scale remain unchanged.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q5-a-i", topicId: "maths-4-1", conceptId: "p1-deferred-q5-a-i",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q5(a)(i)",
+    stem: "Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ.",
+    questionText: "Write down the first three terms of the sequence.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q5-a-i-solution-1", kind: "point", verbatim: "Any one term correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q5-a-i-solution-2", kind: "point", verbatim: "Any two terms correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-a-i-question.png",
+          "srcHash": "dc56791a3906940ca8980b7d04dd9750",
+          "alt": "The question as printed on the paper — Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ. Write down the first three terms of the sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-a-i-solution.png",
+          "srcHash": "ec9941b4895e5d919b0baf62d4e383fa",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q5-a-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q5-a-ii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q5(a)(ii)",
+    stem: "Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ.",
+    questionText: "Term k of the sequence is 101. Find the value of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "Writes Tn formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-a-ii-question.png",
+          "srcHash": "7e02efb2cd50e7b64e629952bb400297",
+          "alt": "The question as printed on the paper — Term n of an arithmetic sequence is given by Tₙ = 4n + 1, for n ∈ ℕ. Term k of the sequence is 101. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-a-ii-solution.png",
+          "srcHash": "483acc51074e0a4fcbcb11f7ad17b297",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q5-b-i", topicId: "maths-4-1", conceptId: "p1-deferred-q5-b-i",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q5(b)(i)",
+    stem: "The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2.",
+    questionText: "Use the expression n(n + 1)/2 to find the sum of the natural numbers from 1 to 12 inclusive.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q5-b-i-solution-1", kind: "point", verbatim: "substitutes 12", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-b-i-question.png",
+          "srcHash": "2f066a353fd81c4872a9f54f800fd9ea",
+          "alt": "The question as printed on the paper — The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2. Use the expression n(n + 1)/2 to find the sum of the natural numbers from 1 to 12 inclusive.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-b-i-solution.png",
+          "srcHash": "9c91ac921423740a765f1f2cc8e09b74",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q5(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q5-b-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q5-b-ii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q5(b)(ii)",
+    stem: "The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2.",
+    questionText: "The sequence of numbers 1, 2, 3, 4, …, n add to 325. Solve the equation n(n + 1)/2 = 325, to find the value of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q5-b-ii-solution-1", kind: "point", verbatim: "Finds correct quadratic", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q5-b-ii-solution-2", kind: "point", verbatim: "fails to eliminate answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-b-ii-question.png",
+          "srcHash": "405b6d769a610d3575956509020808be",
+          "alt": "The question as printed on the paper — The following identity is true for all n ∈ ℕ: 1 + 2 + 3 + 4 + … + n = n(n + 1)/2. The sequence of numbers 1, 2, 3, 4, …, n add to 325. Solve the equation n(n + 1)/2 = 325, to find the value of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q5-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q5-b-ii-solution.png",
+          "srcHash": "3827c73ea107466da7fc8ff0a88d9d28",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q6-a", topicId: "maths-5-1", conceptId: "p1-deferred-q6-a",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q6(a)",
+    stem: "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+    questionText: "Complete the table below to show the value of f(x) for each of the given values of x. x: −2, −1, 0, 1, 2, 3, 4. f(x): blank, blank, blank, blank, blank, blank, −20.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q6-a-solution-1", kind: "point", verbatim: "Any one correct value", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q6-a-solution-2", kind: "point", verbatim: "4 correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-a-question.png",
+          "srcHash": "bbb7e85c504b2759dbe3fbb806d89b92",
+          "alt": "The question as printed on the paper — Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ. Complete the table below to show the value of f(x) for each of the given values of x. x: −2, −1, 0, 1, 2, 3, 4. f(x): blank, blank, blank, blank, blank, blank, −20.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-a-solution.png",
+          "srcHash": "2a05d67dfc7940160835568ab41bfcb6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q6-b", topicId: "maths-5-1", conceptId: "p1-deferred-q6-b",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q6(b)",
+    stem: "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+    questionText: "Draw the graph of f(x) in the domain −2 ≤ x ≤ 4 where x ∈ ℝ, on the grid below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q6-b-solution-1", kind: "point", verbatim: "4/5 points plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q6-b-solution-2", kind: "point", verbatim: "failure to join or joined", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-b-question.png",
+          "srcHash": "bab48ea14a23037def889aa25027d014",
+          "alt": "The question as printed on the paper — Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ. Draw the graph of f(x) in the domain −2 ≤ x ≤ 4 where x ∈ ℝ, on the grid below.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-b-solution.png",
+          "srcHash": "623e36b8492c686ce40d65b06dde314b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q6-c-i", topicId: "maths-5-2", conceptId: "p1-deferred-q6-c-i",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q6(c)(i)",
+    stem: "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+    questionText: "Find f′(x), the derivative of f(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q6-c-i-solution-1", kind: "point", verbatim: "Any two parts differentiated correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-c-i-question.png",
+          "srcHash": "e79edd46dcaa5f32093431244e7d8d5c",
+          "alt": "The question as printed on the paper — Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ. Find f′(x), the derivative of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-c-i-solution.png",
+          "srcHash": "caea47d9f8f356198b42fb281dd12d2b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q6(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q6-c-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-c-ii",
+    section: "A", questionRef: "2023 OL Paper 1 — Deferred Q6(c)(ii)",
+    stem: "Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ.",
+    questionText: "Use your derivative to find the co-ordinates of the local maximum point and the local minimum point of f(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q6-c-ii-solution-1", kind: "point", verbatim: "Finds x values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q6-c-ii-solution-2", kind: "point", verbatim: "fails to identify Max and", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-c-ii-question.png",
+          "srcHash": "e55e50edb26e6d06a2a21aa376f4205e",
+          "alt": "The question as printed on the paper — Let f(x) = x³ − 3x² − 9x, where x ∈ ℝ. Use your derivative to find the co-ordinates of the local maximum point and the local minimum point of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q6-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q6-c-ii-solution.png",
+          "srcHash": "72fc3f249383a1481c3b3c3a1f588944",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q6(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "f′(x)=3(x−3)(x+1). It changes from positive to negative at x=−1 (local maximum (−1,5)) and from negative to positive at x=3 (local minimum (3,−27)). Both labelled points belong to this single 5C response.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q7-a", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q7(a)",
+    stem: "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m.",
+    questionText: "The average time taken to finish the run is 34 minutes 30 seconds. Find the average time it takes to complete 1 km of the run. Give your answer in minutes and seconds.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q7-a-solution-1", kind: "point", verbatim: "Finds total number of seconds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-a-question.png",
+          "srcHash": "fb02112ef549e3147211fc0649807869",
+          "alt": "The question as printed on the paper — A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. The average time taken to finish the run is 34 minutes 30 seconds. Find the average time it takes to complete 1 km of the run. Give your answer in minutes and seconds.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-a-solution.png",
+          "srcHash": "afbb6cdfd3c11fdcc7b53da2e560b515",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q7(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q7-b-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-b-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q7(b)(i)",
+    stem: "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m.",
+    questionText: "How long did it take her to run the last km?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q7-b-i-solution-1", kind: "point", verbatim: "Finds how long final two kilometres take", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-b-i-question.png",
+          "srcHash": "a05c1f32d1fe7a5fe8709aa601351eb2",
+          "alt": "The question as printed on the paper — A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m. How long did it take her to run the last km?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-b-i-solution.png",
+          "srcHash": "fd9aed396d8d54139296d036023c99b9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q7(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q7-b-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-b-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q7(b)(ii)",
+    stem: "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m.",
+    questionText: "Find Aoife’s average speed over the 5 km run. Give your answer, in km/hr, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q7-b-ii-solution-1", kind: "point", verbatim: "5km in 35 minutes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q7-b-ii-solution-2", kind: "point", verbatim: "Ans: 8·6 km/hr", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-b-ii-question.png",
+          "srcHash": "c60808dc44a7574fd2aaad074644e597",
+          "alt": "The question as printed on the paper — A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday morning Aoife ran as follows: First km: 5 minutes 10 seconds. Second km: 5 minutes 45 seconds. Third km: 6 minutes 25 seconds. Fourth and fifth km: constant speed. She finished the race at 10:05 a.m. Find Aoife’s average speed over the 5 km run. Give your answer, in km/hr, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-b-ii-solution.png",
+          "srcHash": "0f5e1c6c533a22748ca05dfa5d825c3b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q7-c", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q7(c)",
+    stem: "A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m.",
+    questionText: "One Saturday Brian arrived late and started his run 3 minutes later than everyone else (at 9:33 a.m.). His average speed, while he was running, was 15 km/hr. Shane, who started on time (9:30 a.m.), ran at an average speed of 12·5 km/hr. Which of the two finished the run first and by how many minutes?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "Finds finish time of Brian or Shane", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q7-c-solution-2", kind: "point", verbatim: "Brian finishes first by 1 minute", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-c-question.png",
+          "srcHash": "f5b8100f96e0b64782b01712f06fc060",
+          "alt": "The question as printed on the paper — A 5 km run takes place every Saturday morning over the same course, starting at 9:30 a.m. One Saturday Brian arrived late and started his run 3 minutes later than everyone else (at 9:33 a.m.). His average speed, while he was running, was 15 km/hr. Shane, who started on time (9:30 a.m.), ran at an average speed of 12·5 km/hr. Which of the two finished the run first and by how many minutes?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-c-solution.png",
+          "srcHash": "572ead349e03ae364584f9524c8db0cb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q7-d", topicId: "maths-4-2", conceptId: "p1-deferred-q7-d",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q7(d)",
+    stem: "Shane is training for the run. One of his training sessions is as follows, where n ∈ ℕ: Warm up: 10 minutes. Sprints: n sprints for 10 seconds each; jog for 60 seconds between each pair of sprints. Warm down: 9 minutes.",
+    questionText: "It takes Shane exactly 32 minutes to complete this session. Work out the value of n, the number of 10-second sprints he does during this session.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q7-d-solution-1", kind: "point", verbatim: "Fully correct equation set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-d-question.png",
+          "srcHash": "948d16c75f1cf1612f5537a0e23e8db9",
+          "alt": "The question as printed on the paper — Shane is training for the run. One of his training sessions is as follows, where n ∈ ℕ: Warm up: 10 minutes. Sprints: n sprints for 10 seconds each; jog for 60 seconds between each pair of sprints. Warm down: 9 minutes. It takes Shane exactly 32 minutes to complete this session. Work out the value of n, the number of 10-second sprints he does during this session.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q7-d-solution.png",
+          "srcHash": "246857fe7dee7dbb01a38644f9cdb293",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Keep the units consistent: 32−10−9 = 13 minutes = 780 seconds remain for sprints and jogs. There are n−1 jogs between n sprints, so 10n+60(n−1)=780. Thus 70n=840 and n=12. The source’s first line mixes minutes and seconds; its subsequent equation and final answer are correct.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q8-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q8(a)(i)",
+    stem: "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres.",
+    questionText: "One litre of oil costs €0·6168. Find the cost of the heating oil that was delivered to John’s home.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "number of litres 1200", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-a-i-question.png",
+          "srcHash": "dcad7ce8c548b0ef333330710938bd14",
+          "alt": "The question as printed on the paper — An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. One litre of oil costs €0·6168. Find the cost of the heating oil that was delivered to John’s home.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "3622402facefb7d74dd8025b69942ec0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q8-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q8-a-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q8(a)(ii)",
+    stem: "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. One litre of oil costs €0·6168 before VAT.",
+    questionText: "The cost in part (a)(i) does not include VAT. Find the total cost of the heating oil after VAT at 13·5% is included.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Total Cost = €840·08", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-a-ii-question.png",
+          "srcHash": "9531e92c7ab077046bd1843884d6ddab",
+          "alt": "The question as printed on the paper — An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. One litre of oil costs €0·6168 before VAT. The cost in part (a)(i) does not include VAT. Find the total cost of the heating oil after VAT at 13·5% is included.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-a-ii-solution.png",
+          "srcHash": "27f44b0e30d2af76890651a0d8756ad3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q8-b", topicId: "maths-3-3", conceptId: "p1-deferred-q8-b",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q8(b)",
+    stem: "An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. The VAT rate is 13·5%.",
+    questionText: "Six months later the same amount of oil, including VAT at the same rate, cost €1157·70. What was the price per litre of this oil excluding VAT? Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q8-b-solution-1", kind: "point", verbatim: "Finds 0·96475 or 1020", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-b-question.png",
+          "srcHash": "a0d4e44b7b20c65f9496ceb995e279d1",
+          "alt": "The question as printed on the paper — An oil lorry delivered heating oil to John’s home. Before the delivery the meter reading in the lorry showed that it contained 10 360 litres of oil. After the delivery the meter reading was 9160 litres. The VAT rate is 13·5%. Six months later the same amount of oil, including VAT at the same rate, cost €1157·70. What was the price per litre of this oil excluding VAT? Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-b-solution.png",
+          "srcHash": "d155f7586beb09ab33253fc62e24b9bc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q8-c-i-ii-iii", topicId: "maths-4-2", conceptId: "p1-deferred-q8-c-i-ii-iii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q8(c)(i), Q8(c)(ii), Q8(c)(iii)",
+    stem: "John discovered a leak in his oil tank. He contacted two companies and asked for quotes to repair the tank. Each company included a call out charge and a rate per hour, or part of an hour, for the repair work. They emailed the following quotes for the repair work: Company A: €100 call out charge plus €60 per hour (or part thereof). Company B: €80 call out charge plus €70 per hour (or part thereof).",
+    questionText: "(i) If the repair will take 4 hours 15 minutes to complete, how much would each company charge? (ii) Write a formula to show the total amount that each company charges for n hours of repair work, where n ∈ ℕ. (iii) After how many hours would the cost be the same for both companies?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution-1", kind: "point", verbatim: "Any one section correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution-2", kind: "point", verbatim: "Any 2 sections correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-c-i-ii-iii-question.png",
+          "srcHash": "1a5f6bfdfd6d4c472fa7c9106b4c584a",
+          "alt": "The question as printed on the paper — John discovered a leak in his oil tank. He contacted two companies and asked for quotes to repair the tank. Each company included a call out charge and a rate per hour, or part of an hour, for the repair work. They emailed the following quotes for the repair work: Company A: €100 call out charge plus €60 per hour (or part thereof). Company B: €80 call out charge plus €70 per hour (or part thereof). (i) If the repair will take 4 hours 15 minutes to complete, how much would each company charge? (ii) Write a formula to show the total amount that each company charges for n hours of repair work, where n ∈ ℕ. (iii) After how many hours would the cost be the same for both companies?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-c-i-ii-iii-solution.png",
+          "srcHash": "4fd0dd69aa5f3aca50e34223e8e7c885",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q8(c)(i), Q8(c)(ii), Q8(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "A part-hour is charged as a full hour: 4 hours 15 minutes means five billed hours. A charges €100+5×€60=€400 and B €80+5×€70=€430. The equal-cost result n=2 refers to the whole billed-hour count in the question.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q8-d", topicId: "maths-3-4", conceptId: "p1-deferred-q8-d",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q8(d)",
+    questionText: "John’s oil tank is in the shape of a cylinder. It is 2 m long and can hold 1500 litres of oil. Find the radius of the oil tank. Give your answer correct to the nearest cm. (Note: 1 Litre = 1000 cm³.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q8-d-solution-1", kind: "point", verbatim: "correct formula for cylinder", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q8-d-solution-2", kind: "point", verbatim: "correctly and fails to finish", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-d-question.png",
+          "srcHash": "03c35f39386aa0bccf67c13ccb4b5936",
+          "alt": "The question as printed on the paper — John’s oil tank is in the shape of a cylinder. It is 2 m long and can hold 1500 litres of oil. Find the radius of the oil tank. Give your answer correct to the nearest cm. (Note: 1 Litre = 1000 cm³.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q8-d-solution.png",
+          "srcHash": "f2d449317fdec80267b7d80f2b019c08",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(a)(i)",
+    stem: "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+    questionText: "Find the height of the cliff, in metres.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-a-i-solution-1", kind: "point", verbatim: "substitutes 0", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-i-question.png",
+          "srcHash": "9dbbffaa04b2fb0b2a8705548970e2a9",
+          "alt": "The question as printed on the paper — A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit. Find the height of the cliff, in metres.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-i-solution.png",
+          "srcHash": "e2d5024869759cde9ad1fc68a709c6a4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-a-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(a)(ii)",
+    stem: "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+    questionText: "What was the height of the ball above the ground after 1·5 seconds?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "Substitutes 1·5", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-ii-question.png",
+          "srcHash": "bf75fad1a708a2121141156d14288810",
+          "alt": "The question as printed on the paper — A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit. What was the height of the ball above the ground after 1·5 seconds?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-ii-solution.png",
+          "srcHash": "c527ed03b512b543bfadfa8cfd46eb0a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-a-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q9-a-iii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(a)(iii)",
+    stem: "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+    questionText: "Find the maximum height of the ball above the ground.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "Finds t = 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q9-a-iii-solution-2", kind: "point", verbatim: "Max Height = 45 m", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-iii-question.png",
+          "srcHash": "75bea7b04450458fcfb6957338f2ae8b",
+          "alt": "The question as printed on the paper — A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit. Find the maximum height of the ball above the ground.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-iii-solution.png",
+          "srcHash": "ef4b5c1c87ab4cb23300faea94dbc5fc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-a-iv", topicId: "maths-4-2", conceptId: "p1-deferred-q9-a-iv",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(a)(iv)",
+    stem: "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+    questionText: "How long was the ball in the air before it hit the ground?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-a-iv-solution-1", kind: "point", verbatim: "Ans: After 4 seconds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q9-a-iv-solution-2", kind: "point", verbatim: "fails to eliminate", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-iv-question.png",
+          "srcHash": "b4185b6138f71b78f1c517bb836435a8",
+          "alt": "The question as printed on the paper — A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit. How long was the ball in the air before it hit the ground?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-iv-solution.png",
+          "srcHash": "ccd41781ee3068abec9fcf5ba0a520d2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-a-v", topicId: "maths-2-1", conceptId: "p1-deferred-q9-a-v",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(a)(v)",
+    stem: "A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit.",
+    questionText: "The ball landed 240 m from the foot of the cliff. Find the distance between the ball and the top edge of the cliff when it landed. Give your answer, in metres, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-a-v-solution-1", kind: "point", verbatim: "Pythagoras or sets up equation correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-v-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-v-question.png",
+          "srcHash": "f2caaa2ee7b6284b9371a690974123a8",
+          "alt": "The question as printed on the paper — A golf ball was placed on top of a vertical cliff above some level ground. Florence, standing on the edge of the cliff hit the ball with a golf club, off the cliff and into the air. While it was travelling through the air, the height of the ball above the ground was given by h(t) = 40 + 10t − 5t², where h is the height in metres and t is the time in seconds after the ball was hit. The ball landed 240 m from the foot of the cliff. Find the distance between the ball and the top edge of the cliff when it landed. Give your answer, in metres, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-a-v-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-a-v-solution.png",
+          "srcHash": "94402f8cbd3c14ec8d268573407735c4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(a)(v).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-b-i", topicId: "maths-3-3", conceptId: "p1-deferred-q9-b-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(b)(i)",
+    questionText: "Florence bought a golf club online from a company in Britain. The cost was £138·75 sterling. The exchange rate was €1 = £0·8338. How much did the golf club cost in euro? Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-b-i-solution-1", kind: "point", verbatim: "Sets up division correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-b-i-question.png",
+          "srcHash": "7653ba27a5fb7b4be8a8a2e253a43149",
+          "alt": "The question as printed on the paper — Florence bought a golf club online from a company in Britain. The cost was £138·75 sterling. The exchange rate was €1 = £0·8338. How much did the golf club cost in euro? Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-b-i-solution.png",
+          "srcHash": "e7c18b18374eb6b5acd42edfe410e322",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q9-b-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q9-b-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q9(b)(ii)",
+    questionText: "Florence also bought a golf bag at her local golf club during a sale. The original cost was €125, including VAT at 23%. She got a discount of 15% in the sale. Work out how much VAT Florence paid. Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q9-b-ii-solution-1", kind: "point", verbatim: "price without VAT", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q9-b-ii-solution-2", kind: "point", verbatim: "€19·87 VAT", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-b-ii-question.png",
+          "srcHash": "8149e6af095db3440908a848e6e972ff",
+          "alt": "The question as printed on the paper — Florence also bought a golf bag at her local golf club during a sale. The original cost was €125, including VAT at 23%. She got a discount of 15% in the sale. Work out how much VAT Florence paid. Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q9-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q9-b-ii-solution.png",
+          "srcHash": "08efc2733d3132011e522a4b9f4025b5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Apply the discount to the VAT-inclusive price first: €125×0.85=€106.25. The VAT portion is €106.25×23/123≈€19.87. The source’s “€125−15%” is shorthand for reducing €125 by 15%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q10-a-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(a)(i)",
+    stem: "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits.",
+    questionText: "How much tax did she pay each week while she was on emergency tax?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-a-i-solution-1", kind: "point", verbatim: "0·4 = 40%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-i-question.png",
+          "srcHash": "f9600785d18affdbb380019d5f4361be",
+          "alt": "The question as printed on the paper — Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. How much tax did she pay each week while she was on emergency tax?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-i-solution.png",
+          "srcHash": "6338844f9462a86469f6708833f02bff",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q10-a-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(a)(ii)",
+    stem: "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week.",
+    questionText: "How much does Mary now pay in tax each week?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Finds 271·15", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q10-a-ii-solution-2", kind: "point", verbatim: "Finds Gross Tax", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-ii-question.png",
+          "srcHash": "de367f63e899ba91db694e8d0d4e9b32",
+          "alt": "The question as printed on the paper — Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week. How much does Mary now pay in tax each week?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-ii-solution.png",
+          "srcHash": "fa16fa9d5d73b45db5f9f0827e6a8e77",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-a-iii", topicId: "maths-3-3", conceptId: "p1-deferred-q10-a-iii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(a)(iii)",
+    stem: "Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week.",
+    questionText: "Mary was on emergency tax for a total of six weeks. At the end of that time she got a refund of the tax that she had overpaid while she was on the emergency tax rate. Find the total amount of the refund she got for these six weeks.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-a-iii-solution-1", kind: "point", verbatim: "Finds 2280 and 1073·10", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"markingNote":"The detailed task-specific allocation is 5C (0,2,3,5). The summary mistakenly lists 5D for this part and swaps it with part (iv).","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-iii-question.png",
+          "srcHash": "fa918927e9cc9cd73f523c3600bcf742",
+          "alt": "The question as printed on the paper — Mary got a new job where she was earning €950 per week. When she started the job, Mary had to pay emergency tax as she did not have a tax credit certificate. Emergency tax meant that all of her income was taxed at 40% and she had no tax credits. When Mary got her tax credit certificate, she started to pay tax at the correct rate. Now, each week she pays tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She also had tax credits of €65·38 each week. Mary was on emergency tax for a total of six weeks. At the end of that time she got a refund of the tax that she had overpaid while she was on the emergency tax rate. Find the total amount of the refund she got for these six weeks.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-iii-solution.png",
+          "srcHash": "ab40c877d54c2a323406017f67010e80",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The detailed scheme awards this refund calculation 5C (0,2,3,5). The summary swaps its scale with part (iv); the task-specific allocation and matching low/high credit notes are followed here.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-a-iv", topicId: "maths-3-3", conceptId: "p1-deferred-q10-a-iv",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(a)(iv)",
+    stem: "Mary was earning €950 per week before the pay increase.",
+    questionText: "Mary gets a pay increase of €x per week. She continues to pay tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She still had tax credits of €65·38 each week. She now pays €218·85 in tax each week. Find the value of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-a-iv-solution-1", kind: "point", verbatim: "Finds new tax @ 40% after pay increase", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-deferred-q10-a-iv-solution-2", kind: "point", verbatim: "Finds new taxable income after pay", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"markingNote":"The detailed task-specific allocation is 5D (0,2,3,4,5), including a 3-mark mid-partial band. The summary mistakenly lists 5C for this part and swaps it with part (iii).","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-iv-question.png",
+          "srcHash": "ab3c332a376088f8aecd5a7003f29301",
+          "alt": "The question as printed on the paper — Mary was earning €950 per week before the pay increase. Mary gets a pay increase of €x per week. She continues to pay tax at the standard rate of 20% on the first €678·85 of her income and 40% on the remainder. She still had tax credits of €65·38 each week. She now pays €218·85 in tax each week. Find the value of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-a-iv-solution.png",
+          "srcHash": "00dda78d6eb8436d8dd40ef2a0641b07",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The detailed scheme awards this pay-increase calculation 5D (0,2,3,4,5). The summary swaps its scale with part (iii). The 3-mark mid-partial award belongs here. The increase is (€218.85−€178.85)/0.40=€100.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-b-i", topicId: "maths-3-3", conceptId: "p1-deferred-q10-b-i",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(b)(i)",
+    stem: "Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%.",
+    questionText: "Find the value of the annual compound interest rate, r, in Option 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-b-i-solution-1", kind: "point", verbatim: "Formula fully substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-b-i-question.png",
+          "srcHash": "704dc3568a4e010f2217263df470ff46",
+          "alt": "The question as printed on the paper — Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%. Find the value of the annual compound interest rate, r, in Option 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-b-i-solution.png",
+          "srcHash": "e0d5c50bbc74472feb9740558df44ec7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-deferred-q10-b-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q10-b-ii",
+    section: "B", questionRef: "2023 OL Paper 1 — Deferred Q10(b)(ii)",
+    stem: "Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%.",
+    questionText: "Mary chooses Option 2. She will invest €5000 at the beginning of year 1, another €5000 at the beginning of year 2, and another €5000 at the beginning of year 3. Find how much money Mary will receive at the end of the 3 year period. Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-deferred-q10-b-ii-solution-1", kind: "point", verbatim: "Finds 10210", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-b-ii-question.png",
+          "srcHash": "b945b441ab3d9a55bcab8fac123f1d62",
+          "alt": "The question as printed on the paper — Mary has €15 000 in a savings account and would like to invest the money for a maximum of 3 years. An investment broker is offering two investment options, Option 1 and Option 2, as shown in the table below. Option 1: Invest €15 000 at an annual compound rate of r% and receive €16 153·36 at the end of 3 years. Option 2: Invest €5000 at the beginning of each year for 3 years at an annual compound rate of 4·2%. Mary chooses Option 2. She will invest €5000 at the beginning of year 1, another €5000 at the beginning of year 2, and another €5000 at the beginning of year 3. Find how much money Mary will receive at the end of the 3 year period. Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-ol-p1-deferred-q10-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2023-ol-p1-deferred-q10-b-ii-solution.png",
+          "srcHash": "8fe4f7710c431170b4739f9a7e73a61b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2023 OL Paper 1 — Deferred Q10(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The deposits are made at the start of each year, so they grow for three, two and one years: €5000(1.042³+1.042²+1.042)=€16,295.65044, or €16,295.65 to the nearest cent.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

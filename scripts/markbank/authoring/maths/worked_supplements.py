@@ -21,6 +21,8 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    if name == 'inequality-2023-ol-deferred':
+        return render_inequality_2023(dpi)
     higher_2023 = {'sine-proof-2023-hl-deferred':render_sine_proof_2023,
                    'male-proportion-2023-hl-deferred':render_male_proportion_2023,
                    'eyedrops-test-2023-hl-deferred':render_eyedrops_test_2023}
@@ -174,6 +176,24 @@ def render_sine_proof_2023(dpi):
     c.drawString(28,87,'sin(A + B) = sin A cos B + cos A sin B')
     c.setFont('Helvetica',10)
     c.drawString(28,47,'This supplies the final substitution and conclusion omitted in the printed solution.')
+    return _example_image(buf,c,dpi)
+
+
+def render_inequality_2023(dpi):
+    buf,c=_example_canvas('All real solutions on a number line',
+        '2023 deferred Ordinary Paper 1 · Q2(a) · include every value from -2 upwards',290)
+    c.setFont('Times-Italic',23);c.drawString(28,181,'x ≥ -2')
+    left,right,base=58,510,110
+    def X(value):return left+(value+4)*(right-left)/7
+    c.setStrokeColorRGB(.45,.45,.42);c.setLineWidth(.8);c.line(left-10,base,right+10,base)
+    c.setFont('Helvetica',10)
+    for value in range(-4,4):
+        c.line(X(value),base-4,X(value),base+4);c.drawCentredString(X(value),base-21,str(value))
+    c.setStrokeColorRGB(.90,.39,.15);c.setFillColorRGB(.90,.39,.15);c.setLineWidth(2.6)
+    c.line(X(-2),base+20,right+8,base+20);c.circle(X(-2),base+20,4.5,stroke=0,fill=1)
+    c.line(right+8,base+20,right,base+25);c.line(right+8,base+20,right,base+15)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',11)
+    c.drawString(28,55,'Closed endpoint: -2 is included. The continuous ray includes non-integers too.')
     return _example_image(buf,c,dpi)
 
 
