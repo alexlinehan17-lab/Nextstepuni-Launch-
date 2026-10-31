@@ -48,6 +48,7 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
 export const HOSTED_ANSWER_OVERRIDES = new Set([
   // Visually reviewed deferred questions have distinct June/deferred identities.
   'mathematics|2022|LC003ALP100EV-deferred.pdf',
+  'mathematics|2022|LC003ALP200EV-deferred.pdf',
   'mathematics|2023|LC003ALP100EV-deferred.pdf',
   'mathematics|2023|LC003ALP200EV-deferred.pdf',
   'mathematics|2023|LC003GLP100EV-deferred.pdf',

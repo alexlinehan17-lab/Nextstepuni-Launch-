@@ -1,0 +1,1666 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV-deferred.pdf",
+  "schemeFileid": "LC003ALP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "6091b2af30aa83f86af4543db1a7564767949a7f014470ef5bbbeb3371827005",
+  "schemeSha256": "c3915e6641f6ee152fa5efb0836d9dd5bbe697ca071131cdea55a6306295cba3",
+  "reviewedAt": "2026-10-31",
+  "reviewMethod": "Independent visual sweep of all 32 paper pages and all Paper 2 scheme pages 22–47, with source cover. Every printed task cross-checked against the detailed mark allocation and required diagrams/context. Final crops inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    23,
+    24
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 46 tasks and 380 offered marks, despite 220 candidate marks. Q1(b) retains all three statistics together; Q7(a–b) shares 10C, and Q7(c)(i–ii) shares 5C.",
+    "Q1(a) accepts any suitable labelled chart. A labelled bar-chart example fills the scheme’s missing drawing. Q1(c) requires the third success on pick seven: exactly two successes among the first six, followed by a success, with replacement.",
+    "Q2(b) retains both scheme pages, including the complete Venn diagram and continuation of low/mid/high credit notes. All four probabilities are required, not a choice.",
+    "Q3(a)(i) is a statement for every real k, not a choice. Q3(a)(ii) slope formula excludes k=−1, where AP is vertical; Q3(a)(iii) gives k=−2.",
+    "Q4(b) asks for one horizontal and one vertical tangent, all under one 10C award. Any permissible pair is accepted; the four possible combinations are not separate cards.",
+    "Q5(b) requires all four angles between 0° and 720°. Q6(a) is one construction task. A clearly labelled NextStepUni construction supplies the missing diagram and construction lines; the official criteria follow unchanged.",
+    "Q7(a–b) retains the complete original scatterplot answer and correlation. Q7(c)(i–ii) gets an attributed worked line and estimate; reasonable by-eye lines remain acceptable. Full source table and graph accompany the question.",
+    "Q7(e)(i) uses the standard error 3.2/√12. Q7(e)(ii–iii) uses the first-season standard deviation as the scheme does; the two-tailed p-value is about 0.0078 using the scheme’s rounded z-score, or about 0.0079 at full precision. There is evidence of a change, not proof of the website’s claim.",
+    "Q8(a) asks to count groups, not choose a group. Q8(b) asks to count all codes; vowels and odd digits are data, not an option pool. Repeated digits are allowed. Q8(c) scheme prints 1.19 instead of 0.19 in the final product; its final €1.80 is correct.",
+    "Q8(d)(ii) the scheme uses the tabulated z=0.88 for cumulative probability 0.8093; the unrounded quantile is about 0.875 and the requested answer remains 73 g. Q8(d)(iii) conditions on large or extra-large, using 19/42, and includes both five and six extra-large eggs.",
+    "Q9(a)(iii) squares the map scale and converts cm² to km². Q9(c)(ii) compares relative errors using each possible true height as denominator; the largest is at 5.5°, giving 9.2%.",
+    "Q10(d)(iii) prints 5C beside three numeric bands 0,2,5; card uses 5B. Q10(d)(iv) prints 5D beside four bands 0,2,3,5; card uses 5C. No numeric awards changed.",
+    "Q10(d)(ii) is one congruence proof, not a choice of triangle combinations. Q10(d)(iv) offers two solution routes under one allocation; both retained. Its card includes the preceding requested results as context without supplying an answer."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-hl-p2-deferred-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+      "questionText": "Draw a suitable chart to show this data. Label your chart clearly.",
+      "solutionQuotes": [
+        "Any suitable labelled graphical display."
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q1-a-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q1-a-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+      "questionText": "Find the mean, mode, and median number of matches per box. Give the mean correct to 1 decimal place.",
+      "solutionQuotes": [
+        "median is 27th box",
+        "Mode correct"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+      "questionText": "A box is picked at random, the number of matches noted, and the box is replaced. This process is then repeated a number of times. Find the probability that the seventh box picked is the third box with exactly 42 matches. Give your answer correct to 4 decimal places.",
+      "solutionQuotes": [
+        "there are 4 in the first 6 that do not contain 42 matches"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q1-c-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q1-c-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+      "questionText": "Show that P(C)=1/4.",
+      "solutionQuotes": [
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q2-a-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+      "questionText": "Find P(A∩B).",
+      "solutionQuotes": [
+        "Formula fully substituted"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q2-a-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q2-a-iii",
+      "printedParts": [
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+      "questionText": "State whether B and C are mutually exclusive events, and justify your answer.",
+      "solutionQuotes": [
+        "Not mutually exclusive"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q2-a-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q2-a-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        28,
+        29
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events G and K are such that P(G)=0·56, P(K)=0·48, and P(G|K)=0·25.",
+      "questionText": "In the Venn diagram below, write into each of the four regions the probability that the event represented by that region occurs. Note: U is the universal set.",
+      "solutionQuotes": [
+        "writes the probability of the event in one of the other regions"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q2-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q2-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ.",
+      "questionText": "Show that, for all values of k, the point P lies on l.",
+      "solutionQuotes": [
+        "correct substitution into l"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q3-a-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ.",
+      "questionText": "Another line passes through the point P and the point A (−1,1). Find the slope of the line AP in terms of k.",
+      "solutionQuotes": [
+        "Slope formula fully substituted"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q3-a-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ. A is (−1,1).",
+      "questionText": "The point B is at (3,3). Find the value of k such that |∠BAP|=90°.",
+      "solutionQuotes": [
+        "Fully correct substituted equation"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q3-a-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q3-a-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the area of the triangle with vertices (−2,5), (4,11), and (7,−5).",
+      "solutionQuotes": [
+        "Two vertices translated or length of two sides calculated"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q3-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q3-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2).",
+      "questionText": "Show that the circumcentre of the triangle ABC is the mid-point of [AC].",
+      "solutionQuotes": [
+        "Finds point of intersection of two perpendicular bisectors"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q4-a-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q4-a-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2).",
+      "questionText": "Find the equation of the circumcircle of the triangle ABC. Give your answer in the form x²+y²+ax+by+c=0, where a,b,c ∈ ℝ.",
+      "solutionQuotes": [
+        "Finds radius and centre"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q4-a-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q4-a-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "A different circle, c, has a radius of 5 and a centre at (−3,1). j is a horizontal line and k is a vertical line. The lines j and k are both tangents to the circle c.",
+      "questionText": "Find one possible equation of the line j and one possible equation of the line k.",
+      "solutionQuotes": [
+        "Plots centre and indicates radius on a set of axes"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q4-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q4-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown.",
+      "questionText": "Show that cos(∠RSQ)=2/7.",
+      "solutionQuotes": [
+        "Fully substituted Cosine formula"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q5-a-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q5-a-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown.",
+      "questionText": "Find |PR|.",
+      "solutionQuotes": [
+        "Some correct substitution into Cosine formula"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q5-a-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q5-a-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find all the values of A for which tan A=−√3, where 0≤A≤720°.",
+      "solutionQuotes": [
+        "Quadrants 2 and 4"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "The diagram below shows a line segment [XY] of length 1 unit. Use this to construct a line segment of length √3 units in the space below. Label this line segment clearly. Show all of your construction lines.",
+      "solutionQuotes": [
+        "Equilateral triangle of side length"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q6-a-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q6-a-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm.",
+      "questionText": "From the diagram above, write down another angle that is equal in size to ∠DCB, and another angle that is equal in size to ∠ACD.",
+      "solutionQuotes": [
+        "Accept for Full Credit if labelled correctly on diagram"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q6-b-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q6-b-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm.",
+      "questionText": "The ratio of |AD|:|DB| is 2:5. |CD|=8 cm. Using similar triangles, find |AB|. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "indicates two similar triangles"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q6-b-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q6-b-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-a-b",
+      "printedParts": [
+        "Q7(a)",
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32).",
+      "questionText": "(a) The points for acts B, D, and J have not been included on the scatter plot. Plot a point to represent each of these acts on the scatter plot, and label each one clearly. (b) Using a calculator, find the correlation coefficient between the scores of the two judges, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "1 correct plot and labelled",
+        "Points and correlation correct"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-a-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-a-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-c-i-ii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32).",
+      "questionText": "(i) On the scatter plot, draw the line of best fit, by eye. (ii) There was one more act, which is not in the table above. Mike gave this act a score of 35. Use your line of best fit on the scatter plot to estimate the score that Nuala gave this act. Show your work on the scatter plot.",
+      "solutionQuotes": [
+        "Correct score estimated from line of best fit"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-c-i-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-c-i-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points.",
+      "questionText": "Using the diagram above, work out the equation of this line of best fit, taking x to be Nuala’s score and y to be Mike’s score.",
+      "solutionQuotes": [
+        "Correct slope and further work towards finding equation of line"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-d-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-d-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points.",
+      "questionText": "Explain the meaning of the slope of this line, in the context of how Nuala and Mike scored the acts.",
+      "solutionQuotes": [
+        "how much Mike’s score increases for an act, for a 1-point increase in Nuala’s score"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-d-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-d-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2.",
+      "questionText": "Twelve acts were picked at random from the first season of shows, and the scores given by Mike were recorded. Work out the probability that the mean of these twelve scores is between 30 and 32.",
+      "solutionQuotes": [
+        "Finds z-score for x=30",
+        "Finds z-score for x=32"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-e-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5.",
+      "questionText": "Calculate the p-value for this sample mean, based on a two-tailed test.",
+      "solutionQuotes": [
+        "Finds z-score and further work"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-e-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q7-e-iii",
+      "printedParts": [
+        "Q7(e)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5. Part (ii) asks to calculate the p-value for this sample mean in a two-tailed test.",
+      "questionText": "Comment on what can be concluded from this p-value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the website’s claim. Give a reason for your answer.",
+      "solutionQuotes": [
+        "there is enough evidence to support the claim"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q7-e-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q7-e-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A farmer employs 14 workers to sort, pack, and load egg boxes for delivery. They work in groups of 5 at any one time. Find how many different groups of 5 workers it is possible to form.",
+      "solutionQuotes": [
+        "Accept 2002 without work shown"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-a-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-a-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The farmer has a coded lock on his office. He has forgotten the code. The code consists of one letter followed by a 4-digit number, for example, A6465. The farmer knows that the letter is a vowel (A, E, I, O, or U). He also remembers that the 4-digit number begins with a 6, and is an odd number.",
+      "questionText": "Find how many different possibilities there are for the farmer’s code, given this information.",
+      "solutionQuotes": [
+        "A listing of 3 possible codes"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The farm shop sells boxes of eggs. Sizes small, medium, large, extra large have respective prices €1·20, €1·60, €1·95, €2·35 and probabilities of selling 0·16, 0·31, 0·34, 0·19.",
+      "questionText": "Find the expected value of the shop’s income from the sale of one box of eggs. Give your answer in euro, correct to the nearest cent.",
+      "solutionQuotes": [
+        "All individual operations completed but sum not found"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-c-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-c-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g.",
+      "questionText": "An egg is small if it weighs less than 53 g. Work out the percentage of the farmer’s eggs that are small. Give your answer correct to the nearest percent.",
+      "solutionQuotes": [
+        "Finds z-score and further work"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-d-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g.",
+      "questionText": "An egg is large if it weighs between 63 grams and N grams, for N ∈ ℝ. 23% of the farmer’s eggs are large. Work out the value of N, using the mean and standard deviation of the weights. Give your answer correct to the nearest gram.",
+      "solutionQuotes": [
+        "Finds z score"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-d-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q8-d-iii",
+      "printedParts": [
+        "Q8(d)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "19% of the farmer’s eggs are extra large. 23% are large. Due to a fault with a sorting machine, all of the large and extra large eggs in one batch are mixed up (at random) and boxed together. It is too expensive to remove all of these eggs from their boxes and sort them again, so the farmer instead labels all these boxes as large.",
+      "questionText": "In such a box with 6 eggs, find the probability that at least 5 of the eggs will be extra large. Give your answer correct to 3 decimal places.",
+      "solutionQuotes": [
+        "One correct probability"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q8-d-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q8-d-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below.",
+      "questionText": "Using only the information above, work out |∠DEF|. Give your answer in degrees, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Fully substituted Cosine Rule formula"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-a-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below.",
+      "questionText": "The surveyors measure the map and find that |∠FDE|=85°. Using this value, or your answer from part (a)(i), find the area of the triangle DEF on the map. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Area formula fully substituted"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-a-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "The scale on the map is 1:50 000. Three other peaks form a triangle XYZ on the map of area 152 cm². Find the actual area of the triangle formed by joining the peaks of the mountains X, Y, and Z. Give your answer in the form a×10ⁿ km², where 1≤a<10 and n ∈ ℕ.",
+      "solutionQuotes": [
+        "indicates a connection between scale and given area"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-a-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-a-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The surveyors are estimating the heights of unmapped mountains, taking measurements from mapped mountains. They measure angles to mountain C from A and B: ∠BAC=42°, ∠ABC=88°. They estimate |AC| is 8 km more than |BC|. Let x km be |BC|, so |AC|=x+8 km.",
+      "questionText": "Find the value of x, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Eliminates fractions and expands linear equation in x"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°.",
+      "questionText": "Use θ=6° to work out the surveyors’ estimate for the value of h. Give your answer in metres, correct to the nearest metre.",
+      "solutionQuotes": [
+        "identifies opposite or adjacent side in relation to given angle"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-c-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-c-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°.",
+      "questionText": "Find the maximum percentage error in the surveyors’ estimate of the height h. Give your answer as a percentage, correct to 1 decimal place. Remember that the surveyors round the value of θ to the nearest degree.",
+      "solutionQuotes": [
+        "Percentage error for one extreme error value found"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q9-c-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q9-c-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis.",
+      "questionText": "The point (31,16) lies on two of Marc’s gridlines. Work out the y-intercept of each of these two gridlines (that is, the y-value for which each of these lines crosses the y-axis).",
+      "solutionQuotes": [
+        "One y intercept correct"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-a-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-a-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis.",
+      "questionText": "l is one of the gridlines. It has the following equation, where x,y ∈ ℝ: x+y=12. Find the equation of the image of l under axial symmetry in the x-axis.",
+      "solutionQuotes": [
+        "Finds y in terms of x"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis. k is a circle. The two gridlines that have a positive slope and go through A(−1,0) and B(5,0), respectively, are tangents to k. The centre of k lies on the horizontal line y=22.",
+      "questionText": "Find the equation of the circle k. (Note that neither A nor B lie on the circle k.)",
+      "solutionQuotes": [
+        "Finds centre of circle",
+        "Finds diameter or radius"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-c-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-c-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-d-i",
+      "printedParts": [
+        "Q10(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1.",
+      "questionText": "What percentage of this square is shaded?",
+      "solutionQuotes": [
+        "Finds area of square or area of any triangle"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-d-i-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-i-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-d-ii",
+      "printedParts": [
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC.",
+      "questionText": "There is one triangle in this diagram that must be congruent to the triangle T. State what triangle this is, and prove that this triangle is congruent to T.",
+      "solutionQuotes": [
+        "Congruent by ASA"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-d-ii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-ii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-d-iii",
+      "printedParts": [
+        "Q10(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC.",
+      "questionText": "Find the co-ordinates of the point C. Give your answer in terms of k.",
+      "solutionQuotes": [
+        "attempt to find equation of line slope -1"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-d-iii-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-iii-question"
+    },
+    {
+      "id": "maths-2022-hl-p2-deferred-q10-d-iv",
+      "printedParts": [
+        "Q10(d)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC. Part (ii) asks to identify and prove a triangle congruent to T. Part (iii) asks for C in terms of k.",
+      "questionText": "Show that, within this square, exactly half of the line x=k passes through shaded triangles. Use your answer to part (ii) or your answer to part (iii) in your solution.",
+      "solutionQuotes": [
+        "as triangles are congruent"
+      ],
+      "figureKey": "maths-2022-hl-p2-deferred-q10-d-iv-solution",
+      "questionFigureKey": "maths-2022-hl-p2-deferred-q10-d-iv-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two / two questions",
+      "classification": "exam-level-selection",
+      "reason": "Retain every offered question and all 380 offered marks."
+    },
+    {
+      "pages": [
+        4
+      ],
+      "wording": "suitable chart",
+      "classification": "open-answer",
+      "reason": "Any valid labelled chart; one task, not multiple chart-type cards."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "each of the four regions",
+      "classification": "required-answers",
+      "reason": "All four probabilities required on one Venn task."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "for all values of k",
+      "classification": "universal-proof",
+      "reason": "A universal substitution statement, not a finite choice."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "wording": "one possible equation of j and one possible equation of k",
+      "classification": "open-answer",
+      "reason": "One horizontal and one vertical tangent required together under one scale; alternative valid pairs are not expanded."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "all the values of A",
+      "classification": "required-answers",
+      "reason": "All four angle solutions required."
+    },
+    {
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "wording": "groups of 5 / vowel / either small, medium, large, or extra large / at least 5",
+      "classification": "problem-data",
+      "reason": "Counting and probability data, not a student option pool."
+    },
+    {
+      "pages": [
+        23,
+        29
+      ],
+      "wording": "using this value or your answer / part (ii) or part (iii)",
+      "classification": "alternative-method",
+      "reason": "Permitted solution routes share one task and tariff."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "All offered questions retained."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "All offered questions retained."
+    },
+    "4:e9fd8e8aa89de77d": {
+      "classification": "exam-level-selection",
+      "reason": "All offered questions retained."
+    },
+    "16:f79dd3eea8e6846d": {
+      "classification": "exam-level-selection",
+      "reason": "All offered questions retained."
+    },
+    "19:ead5b9648ec1f395": {
+      "classification": "problem-data",
+      "reason": "Work group size is data for a counting problem."
+    },
+    "20:3b02dacf8f4b09d7": {
+      "classification": "problem-data",
+      "reason": "Egg size categories are data, not a choice."
+    },
+    "27:1eebb8757ce2ba1a": {
+      "classification": "problem-data",
+      "reason": "The given line is one grid member, not an option to choose."
+    }
+  }
+}

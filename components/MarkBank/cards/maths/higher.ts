@@ -79064,7 +79064,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-hl-p1-deferred-q5-d-question",
           "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-d-question.png",
           "srcHash": "3d04f64e97048b8970fcaec5a3f67070",
-          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Find the value of the integral ∫₀⁵ g(x) dx. Give your answer in the form a + e⁻ᵇ, where a,b ∈ ℕ.",
+          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Find the value of the integral ∫₀⁵ g(x) dx. Give your answer in the form a + e^(−b), where a,b ∈ ℕ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
     },
@@ -80436,6 +80436,2009 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
           "solution": true,
           "sourceNote": "Both parts share one 10 Caward. The slant height is 4√10 cm. The sector’s arc is the cone’s base circumference 8π, so θ=360/√10≈114°.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q1-a", topicId: "maths-1-6", conceptId: "p2-deferred-q1-a",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q1(a)",
+    stem: "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+    questionText: "Draw a suitable chart to show this data. Label your chart clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q1-a-solution-1", kind: "point", verbatim: "Any suitable labelled graphical display.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[26],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-a-question.png",
+          "srcHash": "0227b7084cdb197f086e08fcbeaeff83",
+          "alt": "The question as printed on the paper — The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1. Draw a suitable chart to show this data. Label your chart clearly.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-a-solution.png",
+          "srcHash": "955f553581d7b9375a97cba0f99de554",
+          "alt": "NextStepUni bar chart with number of matches 41–46 and frequencies 3,8,16,17,8,1. Both axes labelled and every bar value shown; original SEC criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q1-b", topicId: "maths-1-6", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q1(b)",
+    stem: "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+    questionText: "Find the mean, mode, and median number of matches per box. Give the mean correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "median is 27th box", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Mode correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-b-question.png",
+          "srcHash": "50e8f38a8f70b8a6ebab521a30c22f7e",
+          "alt": "The question as printed on the paper — The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1. Find the mean, mode, and median number of matches per box. Give the mean correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-b-solution.png",
+          "srcHash": "3b1e66dcad70322f4467c3f778afa609",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q1-c", topicId: "maths-1-3", conceptId: "p2-deferred-q1-c",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q1(c)",
+    stem: "The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1.",
+    questionText: "A box is picked at random, the number of matches noted, and the box is replaced. This process is then repeated a number of times. Find the probability that the seventh box picked is the third box with exactly 42 matches. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q1-c-solution-1", kind: "point", verbatim: "there are 4 in the first 6 that do not contain 42 matches", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[27],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-c-question.png",
+          "srcHash": "a998fe3276f6135ab6cb84ad8f7f5741",
+          "alt": "The question as printed on the paper — The number of matches in each of 53 boxes of matches was counted. Number of matches: 41, 42, 43, 44, 45, 46. Corresponding number of boxes: 3, 8, 16, 17, 8, 1. A box is picked at random, the number of matches noted, and the box is replaced. This process is then repeated a number of times. Find the probability that the seventh box picked is the third box with exactly 42 matches. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q1-c-solution.png",
+          "srcHash": "b026792c9d7e4394c943355280ab0604",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The seventh pick must be a success. Choose the positions of the other two successes among the first six: C(6,2)(8/53)³(45/53)⁴ = 0.0268089…, giving 0.0268. Replacement makes the trials independent.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q2-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q2-a-i",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q2(a)(i)",
+    stem: "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+    questionText: "Show that P(C)=1/4.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-i-question.png",
+          "srcHash": "9e2fb247173e448890ad716a817d40a8",
+          "alt": "The question as printed on the paper — A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8. Show that P(C)=1/4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-i-solution.png",
+          "srcHash": "6336ace010e8b1f8f1dca1b9262684df",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q2-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q2-a-ii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q2(a)(ii)",
+    stem: "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+    questionText: "Find P(A∩B).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-ii-question.png",
+          "srcHash": "706375fa83e595365e7e0287203d34d7",
+          "alt": "The question as printed on the paper — A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8. Find P(A∩B).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-ii-solution.png",
+          "srcHash": "34c79840e561d6c6f20bbbd7ab1344d4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q2-a-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q2-a-iii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q2(a)(iii)",
+    stem: "A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8.",
+    questionText: "State whether B and C are mutually exclusive events, and justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q2-a-iii-solution-1", kind: "point", verbatim: "Not mutually exclusive", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-iii-question.png",
+          "srcHash": "287cfcf4e0267a5fc7f020f1366f0d1e",
+          "alt": "The question as printed on the paper — A, B, and C are three events. A and C are independent. P(A)=1/5, P(B)=1/6, P(A∩C)=1/20, P(A∪B)=1/3, and P(B∪C)=3/8. State whether B and C are mutually exclusive events, and justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-a-iii-solution.png",
+          "srcHash": "7f1bc203f3718e7ca299cdc23804c2d5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q2(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q2-b", topicId: "maths-1-2", conceptId: "p2-deferred-q2-b",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q2(b)",
+    stem: "Two events G and K are such that P(G)=0·56, P(K)=0·48, and P(G|K)=0·25.",
+    questionText: "In the Venn diagram below, write into each of the four regions the probability that the event represented by that region occurs. Note: U is the universal set.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q2-b-solution-1", kind: "point", verbatim: "writes the probability of the event in one of the other regions", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[28,29],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-b-question.png",
+          "srcHash": "797345f584be0ce27dd7827aef8d99c8",
+          "alt": "The question as printed on the paper — Two events G and K are such that P(G)=0·56, P(K)=0·48, and P(G|K)=0·25. In the Venn diagram below, write into each of the four regions the probability that the event represented by that region occurs. Note: U is the universal set.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q2-b-solution.png",
+          "srcHash": "51e390de7a7bc138b507cb04f9df8dd2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q3-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-i",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q3(a)(i)",
+    stem: "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ.",
+    questionText: "Show that, for all values of k, the point P lies on l.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q3-a-i-solution-1", kind: "point", verbatim: "correct substitution into l", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-i-question.png",
+          "srcHash": "b4f4a401c712510fa4a2a783f311e918",
+          "alt": "The question as printed on the paper — The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ. Show that, for all values of k, the point P lies on l.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-i-solution.png",
+          "srcHash": "1d614f4f6eb6363d2357d1c6f03cb4bf",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q3(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q3-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-ii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q3(a)(ii)",
+    stem: "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ.",
+    questionText: "Another line passes through the point P and the point A (−1,1). Find the slope of the line AP in terms of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q3-a-ii-solution-1", kind: "point", verbatim: "Slope formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[29],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-ii-question.png",
+          "srcHash": "7b91b79bb40376d8df54411c7128b2fe",
+          "alt": "The question as printed on the paper — The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ. Another line passes through the point P and the point A (−1,1). Find the slope of the line AP in terms of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-ii-solution.png",
+          "srcHash": "d6c0fde68a3f79a0d6bbe662f0cedf23",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q3(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The slope is (k+6)/(2k+2) for k≠−1. When k=−1 the line AP is vertical, so its slope is undefined.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q3-a-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q3-a-iii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q3(a)(iii)",
+    stem: "The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ. A is (−1,1).",
+    questionText: "The point B is at (3,3). Find the value of k such that |∠BAP|=90°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q3-a-iii-solution-1", kind: "point", verbatim: "Fully correct substituted equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-iii-question.png",
+          "srcHash": "16c16b8c20964afcc22d25865b5d8fda",
+          "alt": "The question as printed on the paper — The line l has equation x−2y+8=0. The point P has co-ordinates (k,(k+8)/2), where k ∈ ℝ. A is (−1,1). The point B is at (3,3). Find the value of k such that |∠BAP|=90°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-a-iii-solution.png",
+          "srcHash": "a9bd32aa2be1669aff89c061d14ee8ec",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q3(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q3-b", topicId: "maths-2-2", conceptId: "p2-deferred-q3-b",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q3(b)",
+    questionText: "Find the area of the triangle with vertices (−2,5), (4,11), and (7,−5).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q3-b-solution-1", kind: "point", verbatim: "Two vertices translated or length of two sides calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[30],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-b-question.png",
+          "srcHash": "e025ed72ca2029638639f86b53a6e69f",
+          "alt": "The question as printed on the paper — Find the area of the triangle with vertices (−2,5), (4,11), and (7,−5).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q3-b-solution.png",
+          "srcHash": "9efbabe49d599f448d51c0c5e50fdbb7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q4-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q4-a-i",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q4(a)(i)",
+    stem: "The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2).",
+    questionText: "Show that the circumcentre of the triangle ABC is the mid-point of [AC].",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q4-a-i-solution-1", kind: "point", verbatim: "Finds point of intersection of two perpendicular bisectors", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-a-i-question.png",
+          "srcHash": "b0345a5e1e1d8aa3bac965dc0f25e586",
+          "alt": "The question as printed on the paper — The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2). Show that the circumcentre of the triangle ABC is the mid-point of [AC].",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-a-i-solution.png",
+          "srcHash": "8ef795ba047996e3a7e68d95d6e1768d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q4(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q4-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q4-a-ii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q4(a)(ii)",
+    stem: "The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2).",
+    questionText: "Find the equation of the circumcircle of the triangle ABC. Give your answer in the form x²+y²+ax+by+c=0, where a,b,c ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q4-a-ii-solution-1", kind: "point", verbatim: "Finds radius and centre", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-a-ii-question.png",
+          "srcHash": "1abab1abea16b86def0ec156b13b1558",
+          "alt": "The question as printed on the paper — The diagram below shows a triangle ABC (not to scale). The co-ordinates of each point are given: A(8,4), B(5,8), C(−3,2). Find the equation of the circumcircle of the triangle ABC. Give your answer in the form x²+y²+ax+by+c=0, where a,b,c ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-a-ii-solution.png",
+          "srcHash": "d40deac171aad0fb4bbe76c5124ab6da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q4(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q4-b", topicId: "maths-2-2", conceptId: "p2-deferred-q4-b",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q4(b)",
+    stem: "A different circle, c, has a radius of 5 and a centre at (−3,1). j is a horizontal line and k is a vertical line. The lines j and k are both tangents to the circle c.",
+    questionText: "Find one possible equation of the line j and one possible equation of the line k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q4-b-solution-1", kind: "point", verbatim: "Plots centre and indicates radius on a set of axes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-b-question.png",
+          "srcHash": "4101485928b9e854862d868171ce4961",
+          "alt": "The question as printed on the paper — A different circle, c, has a radius of 5 and a centre at (−3,1). j is a horizontal line and k is a vertical line. The lines j and k are both tangents to the circle c. Find one possible equation of the line j and one possible equation of the line k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q4-b-solution.png",
+          "srcHash": "23f0f869d7be525d45d12f561d6bc971",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Choose one horizontal tangent, y=6 or y=−4, and one vertical tangent, x=−8 or x=2. One valid pair earns the single overall award; there is no requirement to give all four lines.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q5-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q5-a-i",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q5(a)(i)",
+    stem: "PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown.",
+    questionText: "Show that cos(∠RSQ)=2/7.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q5-a-i-solution-1", kind: "point", verbatim: "Fully substituted Cosine formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-a-i-question.png",
+          "srcHash": "c6ee17f665cea9e44ab324656432fd80",
+          "alt": "The question as printed on the paper — PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown. Show that cos(∠RSQ)=2/7.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-a-i-solution.png",
+          "srcHash": "1eabfd7ad0c83842a8122eeab59934ba",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q5-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q5-a-ii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q5(a)(ii)",
+    stem: "PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown.",
+    questionText: "Find |PR|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "Some correct substitution into Cosine formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-a-ii-question.png",
+          "srcHash": "106b7d2dbd5857fd49dfb65c4d9a8a9b",
+          "alt": "The question as printed on the paper — PQRS is a parallelogram, as shown in the diagram below (not to scale). PR and QS intersect at O. |PQ|=4 cm, |QR|=7 cm, and |QO|=3·5 cm, as shown. Find |PR|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-a-ii-solution.png",
+          "srcHash": "6da936b33f270b8ed22609639abc77b0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q5-b", topicId: "maths-2-3", conceptId: "p2-deferred-q5-b",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q5(b)",
+    questionText: "Find all the values of A for which tan A=−√3, where 0≤A≤720°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q5-b-solution-1", kind: "point", verbatim: "Quadrants 2 and 4", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-b-question.png",
+          "srcHash": "c1252b95848e64bf282b2fea19be1013",
+          "alt": "The question as printed on the paper — Find all the values of A for which tan A=−√3, where 0≤A≤720°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q5-b-solution.png",
+          "srcHash": "24811eed6ec8c281786ac729fc1c1412",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q6-a", topicId: "maths-2-1", conceptId: "p2-deferred-q6-a",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q6(a)",
+    questionText: "The diagram below shows a line segment [XY] of length 1 unit. Use this to construct a line segment of length √3 units in the space below. Label this line segment clearly. Show all of your construction lines.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q6-a-solution-1", kind: "point", verbatim: "Equilateral triangle of side length", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-a-question.png",
+          "srcHash": "bc0c1068f42e7a8d46b253f329c8e419",
+          "alt": "The question as printed on the paper — The diagram below shows a line segment [XY] of length 1 unit. Use this to construct a line segment of length √3 units in the space below. Label this line segment clearly. Show all of your construction lines.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-a-solution.png",
+          "srcHash": "552f5bca06964acfd7382f3151b90c1a",
+          "alt": "NextStepUni compass-and-straightedge example. Draw circles centred at X and Y, each with radius XY=1, meeting at Z. Extend YX to W, with WX=1. The highlighted WZ has length √3. Circles, baseline, equilateral triangle, lengths and proof are shown; original SEC guidance follows.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q6-b-i", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-i",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q6(b)(i)",
+    stem: "In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm.",
+    questionText: "From the diagram above, write down another angle that is equal in size to ∠DCB, and another angle that is equal in size to ∠ACD.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Accept for Full Credit if labelled correctly on diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-b-i-question.png",
+          "srcHash": "fb079e66edde4b12932035b2d6ffc526",
+          "alt": "The question as printed on the paper — In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm. From the diagram above, write down another angle that is equal in size to ∠DCB, and another angle that is equal in size to ∠ACD.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-b-i-solution.png",
+          "srcHash": "fa0b9d3460f7330e0a5ade6b9cfa8f64",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q6-b-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-ii",
+    section: "A", questionRef: "2022 HL Paper 2 — Deferred Q6(b)(ii)",
+    stem: "In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm.",
+    questionText: "The ratio of |AD|:|DB| is 2:5. |CD|=8 cm. Using similar triangles, find |AB|. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "indicates two similar triangles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-b-ii-question.png",
+          "srcHash": "567721d1e671a62f3716894879f8192a",
+          "alt": "The question as printed on the paper — In the diagram below, the point D is on [AB], and CD is perpendicular to AB. The angle ∠ACB is a right angle. The diagram is not to scale. |CD|=8 cm. The ratio of |AD|:|DB| is 2:5. |CD|=8 cm. Using similar triangles, find |AB|. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q6-b-ii-solution.png",
+          "srcHash": "f066821a458c91618bd1862ebb17c4ad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-a-b", topicId: "maths-1-6", conceptId: "p2-deferred-q7-a-b",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(a), Q7(b)",
+    stem: "Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32).",
+    questionText: "(a) The points for acts B, D, and J have not been included on the scatter plot. Plot a point to represent each of these acts on the scatter plot, and label each one clearly. (b) Using a calculator, find the correlation coefficient between the scores of the two judges, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-a-b-solution-1", kind: "point", verbatim: "1 correct plot and labelled", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p2-deferred-q7-a-b-solution-2", kind: "point", verbatim: "Points and correlation correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-a-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-a-b-question.png",
+          "srcHash": "14212e65d8f577b83d629f803c5a9e53",
+          "alt": "The question as printed on the paper — Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32). (a) The points for acts B, D, and J have not been included on the scatter plot. Plot a point to represent each of these acts on the scatter plot, and label each one clearly. (b) Using a calculator, find the correlation coefficient between the scores of the two judges, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-a-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-a-b-solution.png",
+          "srcHash": "5f52ba2041734227ee97b3be8e19ab5a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(a), Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-c-i-ii", topicId: "maths-1-6", conceptId: "p2-deferred-q7-c-i-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(c)(i), Q7(c)(ii)",
+    stem: "Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32).",
+    questionText: "(i) On the scatter plot, draw the line of best fit, by eye. (ii) There was one more act, which is not in the table above. Mike gave this act a score of 35. Use your line of best fit on the scatter plot to estimate the score that Nuala gave this act. Show your work on the scatter plot.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-c-i-ii-solution-1", kind: "point", verbatim: "Correct score estimated from line of best fit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-c-i-ii-question.png",
+          "srcHash": "df0f2fdbb52824fbb21f5318f9001ee2",
+          "alt": "The question as printed on the paper — Nuala and Mike are judges on a weekly talent show. There are ten acts in the competition each week. The table below shows the judges’ scores for each of the ten acts on a particular week. A scatter plot of some of the scores is also shown. (Nuala, Mike) scores: A(20,34), B(35,34), C(6,27), D(49,38), E(11,23), F(19,33), G(15,25), H(9,28), I(14,30), J(32,32). (i) On the scatter plot, draw the line of best fit, by eye. (ii) There was one more act, which is not in the table above. Mike gave this act a score of 35. Use your line of best fit on the scatter plot to estimate the score that Nuala gave this act. Show your work on the scatter plot.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-c-i-ii-solution.png",
+          "srcHash": "6f4391a3ada98aa67d9ffafadb972818",
+          "alt": "NextStepUni example using all ten score pairs. A reasonable line y=0.3x+24 passes through the scatter, with points on both sides. At Mike’s score 35, the reading is Nuala’s score about 37. Other reasonable by-eye lines and consistent readings are accepted; original SEC criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Use all ten pairs in the table when fitting the line, including B, D and J. This example line is one reasonable by-eye choice. The SEC accepts a reasonable slope, points on both sides, and an estimate consistent with the student’s line; there is no unique exact estimate.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-d-i", topicId: "maths-2-2", conceptId: "p2-deferred-q7-d-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(d)(i)",
+    stem: "On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points.",
+    questionText: "Using the diagram above, work out the equation of this line of best fit, taking x to be Nuala’s score and y to be Mike’s score.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-d-i-solution-1", kind: "point", verbatim: "Correct slope and further work towards finding equation of line", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-d-i-question.png",
+          "srcHash": "c9245c863a743319e0d71a2ea500fbfc",
+          "alt": "The question as printed on the paper — On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points. Using the diagram above, work out the equation of this line of best fit, taking x to be Nuala’s score and y to be Mike’s score.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-d-i-solution.png",
+          "srcHash": "a7a9659519173660fd9396bb71e3bead",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-d-ii", topicId: "maths-1-6", conceptId: "p2-deferred-q7-d-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(d)(ii)",
+    stem: "On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points.",
+    questionText: "Explain the meaning of the slope of this line, in the context of how Nuala and Mike scored the acts.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-d-ii-solution-1", kind: "point", verbatim: "how much Mike’s score increases for an act, for a 1-point increase in Nuala’s score", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-d-ii-question.png",
+          "srcHash": "10b80706772b5a2a37bac95db160403f",
+          "alt": "The question as printed on the paper — On a different week, the judges scored ten other acts, as shown on the scatter plot below. A line of best fit is also shown for these ten points. Explain the meaning of the slope of this line, in the context of how Nuala and Mike scored the acts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-d-ii-solution.png",
+          "srcHash": "702c9f1c0df7e1643f8118b9a0bfa308",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The plotted line is y=0.5x+10. Its slope means Mike’s predicted score rises by 0.5 points for each extra point in Nuala’s score. This describes an association between their scores.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-e-i", topicId: "maths-1-7", conceptId: "p2-deferred-q7-e-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(e)(i)",
+    stem: "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2.",
+    questionText: "Twelve acts were picked at random from the first season of shows, and the scores given by Mike were recorded. Work out the probability that the mean of these twelve scores is between 30 and 32.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-e-i-solution-1", kind: "point", verbatim: "Finds z-score for x=30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p2-deferred-q7-e-i-solution-2", kind: "point", verbatim: "Finds z-score for x=32", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-i-question.png",
+          "srcHash": "04bfbe0eb80f92033342039cd9947334",
+          "alt": "The question as printed on the paper — Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. Twelve acts were picked at random from the first season of shows, and the scores given by Mike were recorded. Work out the probability that the mean of these twelve scores is between 30 and 32.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-i-solution.png",
+          "srcHash": "f3aaf06a343f4596fb4f74a22e969e3b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(e)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "For a sample mean, use standard error 3.2/√12. The SEC’s normal-table calculation rounds the z-scores and gives 0.6246; keeping full precision gives about 0.6259. The scheme explicitly accepts rounding z up or down.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-e-ii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-e-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(e)(ii)",
+    stem: "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5.",
+    questionText: "Calculate the p-value for this sample mean, based on a two-tailed test.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-e-ii-solution-1", kind: "point", verbatim: "Finds z-score and further work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-ii-question.png",
+          "srcHash": "81ccdaca59dc5544f02a7ee12cb0716e",
+          "alt": "The question as printed on the paper — Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5. Calculate the p-value for this sample mean, based on a two-tailed test.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-ii-solution.png",
+          "srcHash": "674f61f47f1a2e943fedf884774bb8e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Following the SEC model, use the first-season standard deviation 3.2: z=(33.5−31.6)/(3.2/√20)≈2.655. Doubling the upper-tail probability gives p≈0.0078 (normal-table rounding).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q7-e-iii", topicId: "maths-1-7", conceptId: "p2-deferred-q7-e-iii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q7(e)(iii)",
+    stem: "Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5. Part (ii) asks to calculate the p-value for this sample mean in a two-tailed test.",
+    questionText: "Comment on what can be concluded from this p-value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the website’s claim. Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q7-e-iii-solution-1", kind: "point", verbatim: "there is enough evidence to support the claim", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-iii-question.png",
+          "srcHash": "8885ba04936fc66d837effcc727bd9ee",
+          "alt": "The question as printed on the paper — Over the first season of shows, Mike’s scores were approximately normally distributed, with a mean of 31·6 and a standard deviation of 3·2. After the second season of shows, a website claims that Mike’s scores in the second season have changed relative to the first season. A random sample of twenty of Mike’s scores from the second season has a mean of 33·5. Part (ii) asks to calculate the p-value for this sample mean in a two-tailed test. Comment on what can be concluded from this p-value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the website’s claim. Give a reason for your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q7-e-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q7-e-iii-solution.png",
+          "srcHash": "586eff055b05232a79849f4520891b4a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q7(e)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The two-tailed p-value is below 0.05, so reject H₀: μ=31.6. The sample provides evidence that the mean score changed; this supports the website’s claim at the 5% level, rather than proving it.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-a", topicId: "maths-1-1", conceptId: "p2-deferred-q8-a",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(a)",
+    questionText: "A farmer employs 14 workers to sort, pack, and load egg boxes for delivery. They work in groups of 5 at any one time. Find how many different groups of 5 workers it is possible to form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-a-solution-1", kind: "point", verbatim: "Accept 2002 without work shown", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-a-question.png",
+          "srcHash": "e659ff2306c4c51a8c3007b0a09694db",
+          "alt": "The question as printed on the paper — A farmer employs 14 workers to sort, pack, and load egg boxes for delivery. They work in groups of 5 at any one time. Find how many different groups of 5 workers it is possible to form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-a-solution.png",
+          "srcHash": "3796d6b5e0c8b3a1f7d15e5288d4d25a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-b", topicId: "maths-1-1", conceptId: "p2-deferred-q8-b",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(b)",
+    stem: "The farmer has a coded lock on his office. He has forgotten the code. The code consists of one letter followed by a 4-digit number, for example, A6465. The farmer knows that the letter is a vowel (A, E, I, O, or U). He also remembers that the 4-digit number begins with a 6, and is an odd number.",
+    questionText: "Find how many different possibilities there are for the farmer’s code, given this information.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-b-solution-1", kind: "point", verbatim: "A listing of 3 possible codes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-b-question.png",
+          "srcHash": "c60ebf45e474c44b4e29576441f24d18",
+          "alt": "The question as printed on the paper — The farmer has a coded lock on his office. He has forgotten the code. The code consists of one letter followed by a 4-digit number, for example, A6465. The farmer knows that the letter is a vowel (A, E, I, O, or U). He also remembers that the 4-digit number begins with a 6, and is an odd number. Find how many different possibilities there are for the farmer’s code, given this information.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-b-solution.png",
+          "srcHash": "fca6890f3ca76e5564d67cfd4296d408",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "There are 5 vowels, 1 fixed first digit, 10 choices for each middle digit, and 5 odd final digits: 5×1×10×10×5=2500. Digits may repeat.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-c", topicId: "maths-1-3", conceptId: "p2-deferred-q8-c",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(c)",
+    stem: "The farm shop sells boxes of eggs. Sizes small, medium, large, extra large have respective prices €1·20, €1·60, €1·95, €2·35 and probabilities of selling 0·16, 0·31, 0·34, 0·19.",
+    questionText: "Find the expected value of the shop’s income from the sale of one box of eggs. Give your answer in euro, correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-c-solution-1", kind: "point", verbatim: "All individual operations completed but sum not found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-c-question.png",
+          "srcHash": "b0a6081a9d40692134e257fddaa0c4a8",
+          "alt": "The question as printed on the paper — The farm shop sells boxes of eggs. Sizes small, medium, large, extra large have respective prices €1·20, €1·60, €1·95, €2·35 and probabilities of selling 0·16, 0·31, 0·34, 0·19. Find the expected value of the shop’s income from the sale of one box of eggs. Give your answer in euro, correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-c-solution.png",
+          "srcHash": "8fa60e55725f6fee00f8c50b287d4e83",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The final product in the source should use 0.19, not 1.19. The expected income is 1.20(0.16)+1.60(0.31)+1.95(0.34)+2.35(0.19)=€1.7975, which rounds to €1.80.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-d-i", topicId: "maths-1-3", conceptId: "p2-deferred-q8-d-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(d)(i)",
+    stem: "The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g.",
+    questionText: "An egg is small if it weighs less than 53 g. Work out the percentage of the farmer’s eggs that are small. Give your answer correct to the nearest percent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-d-i-solution-1", kind: "point", verbatim: "Finds z-score and further work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-i-question.png",
+          "srcHash": "427a9b4d4702948f591330328acae032",
+          "alt": "The question as printed on the paper — The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g. An egg is small if it weighs less than 53 g. Work out the percentage of the farmer’s eggs that are small. Give your answer correct to the nearest percent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-i-solution.png",
+          "srcHash": "f1624c9ecf6c4e5cbea1350ded8a52e4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-d-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q8-d-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(d)(ii)",
+    stem: "The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g.",
+    questionText: "An egg is large if it weighs between 63 grams and N grams, for N ∈ ℝ. 23% of the farmer’s eggs are large. Work out the value of N, using the mean and standard deviation of the weights. Give your answer correct to the nearest gram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-d-ii-solution-1", kind: "point", verbatim: "Finds z score", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-ii-question.png",
+          "srcHash": "04c64c194309e8f2dee67f0f3bb7b1b5",
+          "alt": "The question as printed on the paper — The farmer’s eggs are classified for sale into different sizes according to their weight. Each egg is either small, medium, large, or extra large. The weights of the eggs are normally distributed, with a mean weight of 60 g and a standard deviation of 15 g. An egg is large if it weighs between 63 grams and N grams, for N ∈ ℝ. 23% of the farmer’s eggs are large. Work out the value of N, using the mean and standard deviation of the weights. Give your answer correct to the nearest gram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-ii-solution.png",
+          "srcHash": "4fb8354f40274433d2103d248c6c0130",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The required cumulative probability is approximately 0.8093. The corresponding z-value is about 0.875, giving N≈73.1 g and hence 73 g. The source uses 0.88 and obtains 73.2 g; the final rounded answer is unchanged.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q8-d-iii", topicId: "maths-1-3", conceptId: "p2-deferred-q8-d-iii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q8(d)(iii)",
+    stem: "19% of the farmer’s eggs are extra large. 23% are large. Due to a fault with a sorting machine, all of the large and extra large eggs in one batch are mixed up (at random) and boxed together. It is too expensive to remove all of these eggs from their boxes and sort them again, so the farmer instead labels all these boxes as large.",
+    questionText: "In such a box with 6 eggs, find the probability that at least 5 of the eggs will be extra large. Give your answer correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q8-d-iii-solution-1", kind: "point", verbatim: "One correct probability", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-iii-question.png",
+          "srcHash": "e39f1b13c8e9702ea846cb8bd548809f",
+          "alt": "The question as printed on the paper — 19% of the farmer’s eggs are extra large. 23% are large. Due to a fault with a sorting machine, all of the large and extra large eggs in one batch are mixed up (at random) and boxed together. It is too expensive to remove all of these eggs from their boxes and sort them again, so the farmer instead labels all these boxes as large. In such a box with 6 eggs, find the probability that at least 5 of the eggs will be extra large. Give your answer correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q8-d-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q8-d-iii-solution.png",
+          "srcHash": "aa86862a262dfd5a4f8bf7765280b02a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q8(d)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Condition on the mixed large/extra-large group: P(extra large)=19/(19+23)=19/42. At least five means exactly five or exactly six: C(6,5)(19/42)⁵(23/42)+(19/42)⁶≈0.071.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q9-a-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(a)(i)",
+    stem: "A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below.",
+    questionText: "Using only the information above, work out |∠DEF|. Give your answer in degrees, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-a-i-solution-1", kind: "point", verbatim: "Fully substituted Cosine Rule formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-i-question.png",
+          "srcHash": "4e3c0d778c1d181babb307fd76e519a2",
+          "alt": "The question as printed on the paper — A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below. Using only the information above, work out |∠DEF|. Give your answer in degrees, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-i-solution.png",
+          "srcHash": "bb7fa6779b26ac7d1870bc48fb78f6a6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q9-a-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(a)(ii)",
+    stem: "A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below.",
+    questionText: "The surveyors measure the map and find that |∠FDE|=85°. Using this value, or your answer from part (a)(i), find the area of the triangle DEF on the map. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "Area formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-ii-question.png",
+          "srcHash": "0ff926b8db5573c687252757b38fd74b",
+          "alt": "The question as printed on the paper — A team of surveyors is mapping mountains. The surveyors have a map showing the peaks of mountains D, E, and F. On the map, |DE|=7·6 cm, |EF|=8·2 cm, and |DF|=3·8 cm, as shown below. The surveyors measure the map and find that |∠FDE|=85°. Using this value, or your answer from part (a)(i), find the area of the triangle DEF on the map. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-ii-solution.png",
+          "srcHash": "fa8486c8c0e5f7310fcf75914d082e8f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-a-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q9-a-iii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(a)(iii)",
+    questionText: "The scale on the map is 1:50 000. Three other peaks form a triangle XYZ on the map of area 152 cm². Find the actual area of the triangle formed by joining the peaks of the mountains X, Y, and Z. Give your answer in the form a×10ⁿ km², where 1≤a<10 and n ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "indicates a connection between scale and given area", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-iii-question.png",
+          "srcHash": "7ade2e9e2501d14a9f4af8dbf41d4729",
+          "alt": "The question as printed on the paper — The scale on the map is 1:50 000. Three other peaks form a triangle XYZ on the map of area 152 cm². Find the actual area of the triangle formed by joining the peaks of the mountains X, Y, and Z. Give your answer in the form a×10ⁿ km², where 1≤a<10 and n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-a-iii-solution.png",
+          "srcHash": "7143a5cdded9a98a1fc30fbd95d217b7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-b", topicId: "maths-2-3", conceptId: "p2-deferred-q9-b",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(b)",
+    stem: "The surveyors are estimating the heights of unmapped mountains, taking measurements from mapped mountains. They measure angles to mountain C from A and B: ∠BAC=42°, ∠ABC=88°. They estimate |AC| is 8 km more than |BC|. Let x km be |BC|, so |AC|=x+8 km.",
+    questionText: "Find the value of x, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-b-solution-1", kind: "point", verbatim: "Eliminates fractions and expands linear equation in x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-b-question.png",
+          "srcHash": "b4d81ae5525710e0c7ae1d7ee82b05a6",
+          "alt": "The question as printed on the paper — The surveyors are estimating the heights of unmapped mountains, taking measurements from mapped mountains. They measure angles to mountain C from A and B: ∠BAC=42°, ∠ABC=88°. They estimate |AC| is 8 km more than |BC|. Let x km be |BC|, so |AC|=x+8 km. Find the value of x, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-b-solution.png",
+          "srcHash": "4748d5b58928fb7e03fcfafbbc8611a7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-c-i", topicId: "maths-2-3", conceptId: "p2-deferred-q9-c-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(c)(i)",
+    stem: "The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°.",
+    questionText: "Use θ=6° to work out the surveyors’ estimate for the value of h. Give your answer in metres, correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-c-i-solution-1", kind: "point", verbatim: "identifies opposite or adjacent side in relation to given angle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-c-i-question.png",
+          "srcHash": "c99f3e9f5f540d49c0412100f9eb1604",
+          "alt": "The question as printed on the paper — The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°. Use θ=6° to work out the surveyors’ estimate for the value of h. Give your answer in metres, correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-c-i-solution.png",
+          "srcHash": "cd6581dc868028f029fe1be9484d6c6f",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q9-c-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q9-c-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q9(c)(ii)",
+    stem: "The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°.",
+    questionText: "Find the maximum percentage error in the surveyors’ estimate of the height h. Give your answer as a percentage, correct to 1 decimal place. Remember that the surveyors round the value of θ to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Percentage error for one extreme error value found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-c-ii-question.png",
+          "srcHash": "81662ce1ba141cdfc74e9f198444e5cb",
+          "alt": "The question as printed on the paper — The surveyors know that the horizontal distance between mountains G and P is 8·3 km. They measure the angle of elevation of G from P, marked θ in the diagram below (not to scale). They use this to work out the vertical distance h. For their calculations, the surveyors round the value of θ to the nearest degree, giving 6°. Find the maximum percentage error in the surveyors’ estimate of the height h. Give your answer as a percentage, correct to 1 decimal place. Remember that the surveyors round the value of θ to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q9-c-ii-solution.png",
+          "srcHash": "8ea4ac3d64aa8778fd3ed1d9441f96f0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "A rounded angle of 6° allows true angles from 5.5° up to 6.5°. Compare the error relative to each true height, not relative to the estimated height. The lower endpoint gives the larger relative error: about 9.15%, rounding to 9.2%.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-a", topicId: "maths-2-2", conceptId: "p2-deferred-q10-a",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(a)",
+    stem: "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis.",
+    questionText: "The point (31,16) lies on two of Marc’s gridlines. Work out the y-intercept of each of these two gridlines (that is, the y-value for which each of these lines crosses the y-axis).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-a-solution-1", kind: "point", verbatim: "One y intercept correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-a-question.png",
+          "srcHash": "c6f431cd485614120cc299fa0d768881",
+          "alt": "The question as printed on the paper — Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis. The point (31,16) lies on two of Marc’s gridlines. Work out the y-intercept of each of these two gridlines (that is, the y-value for which each of these lines crosses the y-axis).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-a-solution.png",
+          "srcHash": "a2778cb9a0679d9bfb08d53bdd837f23",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-b", topicId: "maths-2-2", conceptId: "p2-deferred-q10-b",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(b)",
+    stem: "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis.",
+    questionText: "l is one of the gridlines. It has the following equation, where x,y ∈ ℝ: x+y=12. Find the equation of the image of l under axial symmetry in the x-axis.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-b-solution-1", kind: "point", verbatim: "Finds y in terms of x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-b-question.png",
+          "srcHash": "4a5c84c74f37c1e47b27b6746bed3865",
+          "alt": "The question as printed on the paper — Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis. l is one of the gridlines. It has the following equation, where x,y ∈ ℝ: x+y=12. Find the equation of the image of l under axial symmetry in the x-axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-b-solution.png",
+          "srcHash": "a652fdcca74c48c0c5493ba12b11cc9d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-c", topicId: "maths-2-2", conceptId: "p2-deferred-q10-c",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(c)",
+    stem: "Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis. k is a circle. The two gridlines that have a positive slope and go through A(−1,0) and B(5,0), respectively, are tangents to k. The centre of k lies on the horizontal line y=22.",
+    questionText: "Find the equation of the circle k. (Note that neither A nor B lie on the circle k.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-c-solution-1", kind: "point", verbatim: "Finds centre of circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p2-deferred-q10-c-solution-2", kind: "point", verbatim: "Finds diameter or radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-c-question.png",
+          "srcHash": "3c6bea0d6dc0359aae9687f51f5e8c83",
+          "alt": "The question as printed on the paper — Marc makes a grid on the co-ordinate plane, by drawing the following gridlines, for all integers k: he draws a line of slope 1 through each point of the form (k,0); he also draws a line of slope −1 through each point of the form (k,0). The diagram shows some of these gridlines with the x-axis and y-axis. k is a circle. The two gridlines that have a positive slope and go through A(−1,0) and B(5,0), respectively, are tangents to k. The centre of k lies on the horizontal line y=22. Find the equation of the circle k. (Note that neither A nor B lie on the circle k.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-c-solution.png",
+          "srcHash": "3915fc273262f137708f0525a167a49c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-d-i", topicId: "maths-3-4", conceptId: "p2-deferred-q10-d-i",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(d)(i)",
+    stem: "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1.",
+    questionText: "What percentage of this square is shaded?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-d-i-solution-1", kind: "point", verbatim: "Finds area of square or area of any triangle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-i-question.png",
+          "srcHash": "e5cb5b1ded097f8f110b5dea03e946af",
+          "alt": "The question as printed on the paper — Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. What percentage of this square is shaded?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-i-solution.png",
+          "srcHash": "5fa2ff13b1e7761fae32e0ca3ca11538",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-d-ii", topicId: "maths-2-1", conceptId: "p2-deferred-q10-d-ii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(d)(ii)",
+    stem: "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC.",
+    questionText: "There is one triangle in this diagram that must be congruent to the triangle T. State what triangle this is, and prove that this triangle is congruent to T.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-d-ii-solution-1", kind: "point", verbatim: "Congruent by ASA", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-ii-question.png",
+          "srcHash": "fc34a42a3753a27d01402f3cf77c3d30",
+          "alt": "The question as printed on the paper — Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC. There is one triangle in this diagram that must be congruent to the triangle T. State what triangle this is, and prove that this triangle is congruent to T.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-ii-solution.png",
+          "srcHash": "0c6cce0114ced48651cdf889cd052628",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-d-iii", topicId: "maths-2-2", conceptId: "p2-deferred-q10-d-iii",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(d)(iii)",
+    stem: "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC.",
+    questionText: "Find the co-ordinates of the point C. Give your answer in terms of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-d-iii-solution-1", kind: "point", verbatim: "attempt to find equation of line slope -1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-iii-question.png",
+          "srcHash": "554aa5978e695f8de32e53b978c38807",
+          "alt": "The question as printed on the paper — Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC. Find the co-ordinates of the point C. Give your answer in terms of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-iii-solution.png",
+          "srcHash": "1fb490069254c6af3dbff1480573ebcc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(d)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "C lies on y=1−x and on x=k, so its co-ordinates are (k,1−k). The source labels the scale 5C but prints the three awards 0,2,5; the card uses those exact awards as scale 5B.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-deferred-q10-d-iv", topicId: "maths-2-1", conceptId: "p2-deferred-q10-d-iv",
+    section: "B", questionRef: "2022 HL Paper 2 — Deferred Q10(d)(iv)",
+    stem: "Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC. Part (ii) asks to identify and prove a triangle congruent to T. Part (iii) asks for C in terms of k.",
+    questionText: "Show that, within this square, exactly half of the line x=k passes through shaded triangles. Use your answer to part (ii) or your answer to part (iii) in your solution.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-deferred-q10-d-iv-solution-1", kind: "point", verbatim: "as triangles are congruent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[45],"generalNotesPages":[23,24]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-iv-question.png",
+          "srcHash": "417302d975c20d044de5277be9a387fc",
+          "alt": "The question as printed on the paper — Marc adds some horizontal and vertical gridlines, and shades in some of the resulting triangles. The diagram shows the pattern in the square 0≤x≤1, 0≤y≤1. The second diagram shows the same square. Marc draws a vertical line x=k, where 0·5<k<1 and k ∈ ℝ. He marks points A to H. T is the shaded triangle ABC. Part (ii) asks to identify and prove a triangle congruent to T. Part (iii) asks for C in terms of k. Show that, within this square, exactly half of the line x=k passes through shaded triangles. Use your answer to part (ii) or your answer to part (iii) in your solution.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p2-deferred-q10-d-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p2-deferred-q10-d-iv-solution.png",
+          "srcHash": "fab4d8a8ab5ed80d7fae2a9a7c3b8290",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 2 — Deferred Q10(d)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source labels this 5D but prints the four awards 0,2,3,5; these are retained as scale 5C. Either the congruent-triangle argument or the co-ordinate calculation establishes a shaded length of 1/2.",
           "lettersVisible": []
     },
   } as SecCard,

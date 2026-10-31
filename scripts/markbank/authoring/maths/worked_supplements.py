@@ -21,7 +21,10 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
-    higher_2022 = {'venn-2022-hl-deferred':render_venn_2022,
+    higher_2022 = {'matches-chart-2022-hl-deferred':render_matches_2022,
+                   'root-three-construction-2022-hl-deferred':render_root_three_2022,
+                   'judges-best-fit-2022-hl-deferred':render_judges_2022,
+                   'venn-2022-hl-deferred':render_venn_2022,
                    'car-table-2022-hl-deferred':render_car_table_2022,
                    'linear-model-2022-hl-deferred':lambda dpi:render_visitors_2022(dpi,False),
                    'quadratic-model-2022-hl-deferred':lambda dpi:render_visitors_2022(dpi,True)}
@@ -747,4 +750,73 @@ def render_visitors_2022(dpi,quadratic):
         c.drawString(28,127,'Check: V(1) = 228 + 2506 = 2734.')
         c.drawString(28,95,'The source correctly finds a = 228, but its final line prints 288x.')
         c.drawString(28,66,'Use 228x. The original SEC working and credit notes follow.')
+    return _example_image(buf,c,dpi)
+
+
+def render_matches_2022(dpi):
+    buf,c=_example_canvas('A labelled frequency chart',
+        '2022 deferred Higher Paper 2 · Q1(a) · all 53 boxes',430)
+    x0,y0,w,h=70,90,440,235
+    c.setFont('Helvetica',10);c.drawString(x0,341,'Number of boxes')
+    c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for v in range(0,19,3):
+        yy=y0+h*v/18;c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(v))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
+    c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h+4)
+    for i,(n,freq) in enumerate(zip(range(41,47),[3,8,16,17,8,1])):
+        xx=x0+(i+.5)*w/6;hh=h*freq/18
+        c.setFillColorRGB(.92,.92,.90);c.rect(xx-18,y0,36,hh,fill=1,stroke=1)
+        c.setFillColorRGB(.12,.12,.11);c.drawCentredString(xx,y0-18,str(n));c.drawCentredString(xx,y0+hh+8,str(freq))
+    c.drawRightString(x0+w,48,'Number of matches per box')
+    return _example_image(buf,c,dpi)
+
+
+def render_root_three_2022(dpi):
+    buf,c=_example_canvas('Constructing a length of √3',
+        '2022 deferred Higher Paper 2 · Q6(a) · compass and straightedge example',560)
+    u=130;W=(100,300);X=(230,300);Y=(360,300);Z=(295,300+u*sqrt(3)/2)
+    c.setStrokeColorRGB(.64,.64,.61);c.setLineWidth(.65);c.setDash(3,3)
+    for pt in [X,Y]:c.circle(*pt,u,fill=0,stroke=1)
+    c.setDash();c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
+    c.line(78,300,490,300)
+    for pt in [X,Y]:c.line(*pt,*Z)
+    c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(2);c.line(*W,*Z)
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Times-Italic',15)
+    for label,pt,dx,dy in [('W',W,-16,-20),('X',X,-7,-20),('Y',Y,5,-20),('Z',Z,4,10)]:
+        c.circle(*pt,2,fill=1,stroke=0);c.drawString(pt[0]+dx,pt[1]+dy,label)
+    c.setFont('Times-Roman',14)
+    c.drawCentredString(165,312,'1');c.drawCentredString(295,312,'1');c.drawString(328,360,'1')
+    c.setFont('Times-Bold',18);c.drawString(170,374,'√3')
+    c.setFont('Helvetica',11)
+    for yy,txt in [(142,'1. Draw circles centred at X and Y, each with radius XY = 1.'),
+                   (121,'2. Mark an intersection Z. Extend YX to meet the X-circle at W.'),
+                   (100,'3. Join W to Z and clearly label WZ as the required length.')]:c.drawString(22,yy,txt)
+    c.setFont('Times-Roman',14)
+    c.drawString(22,64,'XYZ is equilateral, so angle WXZ = 120°.')
+    c.drawString(22,42,'WZ² = 1² + 1² - 2(1)(1) cos 120° = 3. Therefore WZ = √3.')
+    return _example_image(buf,c,dpi)
+
+
+def render_judges_2022(dpi):
+    buf,c=_example_canvas('A line of best fit and a reading',
+        '2022 deferred Higher Paper 2 · Q7(c)(i–ii) · one reasonable by-eye example',480)
+    xs=[20,35,6,49,11,19,15,9,14,32];ys=[34,34,27,38,23,33,25,28,30,32]
+    x0,y0,w,h=70,145,430,235
+    def P(x,y):return x0+w*x/50,y0+h*(y-20)/20
+    c.setFont('Helvetica',10);c.drawString(x0,395,'Mike’s score')
+    c.setStrokeColorRGB(.85,.85,.83);c.setLineWidth(.5)
+    for x in range(0,51,10):
+        xx,_=P(x,20);c.line(xx,y0,xx,y0+h);c.drawCentredString(xx,y0-16,str(x))
+    for y in range(20,41,5):
+        _,yy=P(0,y);c.line(x0,yy,x0+w,yy);c.drawRightString(x0-10,yy-3,str(y))
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
+    c.line(x0,y0,x0+w,y0);c.line(x0,y0,x0,y0+h)
+    for x,y in zip(xs,ys):c.circle(*P(x,y),2.6,fill=1,stroke=0)
+    c.setLineWidth(1.4);c.line(*P(0,24),*P(50,39))
+    reading=(35-24)/.3
+    c.setStrokeColorRGB(.90,.39,.15);c.setDash(4,3);c.line(*P(0,35),*P(reading,35));c.line(*P(reading,35),*P(reading,20));c.setDash()
+    c.setFont('Helvetica',10);c.drawRightString(x0+w,108,'Nuala’s score')
+    c.setFont('Helvetica-Bold',11);c.drawString(22,81,'At Mike’s score of 35, this line gives Nuala’s score of about 37.')
+    c.setFont('Helvetica',10);c.drawString(22,58,'The example uses y = 0.3x + 24. A different reasonable line can give a different estimate.')
+    c.drawString(22,38,'Use points on both sides of your line, and show the reading from your own line.')
     return _example_image(buf,c,dpi)
