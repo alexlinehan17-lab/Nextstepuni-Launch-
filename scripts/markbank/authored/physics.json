@@ -70798,5 +70798,3477 @@
   "year": 2018,
   "level": "ordinary",
   "figureKey": "physics-2018-ol-q12d-coil"
+ },
+ {
+  "id": "phys-2017-hl-q1-small-angle",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "small-angle",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Small angle",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded.",
+  "questionText": "Why did the student use a small angle?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "formula is valid only for a small angle / SHM occurs only for a small angle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q1-fixed-point",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "fixed-point",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Fixed point",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded.",
+  "questionText": "How did the student ensure that the pendulum was suspended from a fixed point?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "split cork / two coins",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q1-length",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "length",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Pendulum length",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded.",
+  "questionText": "Between which points was the length of the pendulum measured?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "bottom of cork/coins",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "middle of bob",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q1-accuracy",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "accuracy",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Most accurate time",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded.",
+  "questionText": "Which t value is most accurate? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "77.3 s",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "smallest percentage error",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q1-graph",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Pendulum graph",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded.",
+  "questionText": "Draw a suitable graph to show the relationship between the length of a pendulum and its period.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "divide t values by 40 and square them",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "axes labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for each incorrectly plotted point."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line through origin",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "criterion",
+    "verbatim": "good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q1-gravity",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "gravity",
+  "section": "A",
+  "questionRef": "2017 HL Q1 — Acceleration due to gravity",
+  "stem": "A student investigated the relationship between the period and the length of a simple pendulum. The student measured the length l of the pendulum which was then allowed to swing about a fixed point and through a small angle. The time t for 40 oscillations was measured. This procedure was repeated for different lengths of the pendulum. The following data were recorded. Draw a suitable graph to show the relationship between the length of a pendulum and its period.",
+  "questionText": "Use your graph to calculate g, the acceleration due to gravity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "slope calculated using two points on line",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "substitute into formula T²= 4π²l/g",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "g ≈ 9.8 m s⁻²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q1-data"
+ },
+ {
+  "id": "phys-2017-hl-q2-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Stretched-string apparatus",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant.",
+  "questionText": "Draw a labelled diagram of the apparatus used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "string",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "bridge(s)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "tuning fork/signal generator",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "paper rider",
+    "marks": 2
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "tension key/pan with weights",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme deducts three marks if none of the apparatus is labelled. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q2-measurements",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "measurements",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Tension and length measurements",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant. Draw a labelled diagram of the apparatus used.",
+  "questionText": "Show on your diagram how (i) the tension and (ii) the length were measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "newton balance/pan with weights",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "indication of where length is measured",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "One diagram-based measurement task with both required labels; both three-mark criteria retained. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q2-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "frequency",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Determining the fundamental frequency",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant.",
+  "questionText": "How was the fundamental frequency determined?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change tuning fork / adjust signal generator / adjust tension",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "until resonance observed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q2-graph-axes",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "graph-axes",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Choosing the graph axes",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant.",
+  "questionText": "How would a student use the measurements taken in this experiment to draw a graph showing the relationship between frequency and tension?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "graph of f",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "square-root"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "against √T",
+    "marks": 3,
+    "route": "square-root"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "graph of f²",
+    "marks": 3,
+    "route": "squared-frequency"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "against T",
+    "marks": 3,
+    "route": "squared-frequency"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q2-graph-proof",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "graph-proof",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Verifying the relationship",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant. How would a student use the measurements taken in this experiment to draw a graph showing the relationship between frequency and tension?",
+  "questionText": "Explain how the graph verifies this relationship.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "straight line",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "through origin",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q2-linear-density",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "linear-density",
+  "section": "A",
+  "questionRef": "2017 HL Q2 — Mass per unit length",
+  "stem": "The variation of the fundamental frequency of a stretched string with its tension was investigated. The length of the string and its mass per unit length were kept constant.",
+  "questionText": "For a string of constant length l, the mass per unit length μ can be determined using the slope m of the graph. Write an expression for μ in terms of l and m.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f= 1/(2l) √(T/μ)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "μ= 1/(4l²m²) or equivalent",
+    "marks": 3
+   }
+  ],
+  "notes": "The printed expression uses the graph of frequency against √tension. The scheme deducts one mark if μ is not the subject. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q2-density-solution"
+ },
+ {
+  "id": "phys-2017-hl-q3-i-ice-mass",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "ice-mass",
+  "section": "A",
+  "questionRef": "2017 HL Q3(i) — Mass of added ice",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, warm water and ice were mixed in a copper calorimeter. The following data were recorded.",
+  "questionText": "Describe how the mass of added ice was measured",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass of calorimeter + water + melted ice",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "– mass of calorimeter + water",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q3-data"
+ },
+ {
+  "id": "phys-2017-hl-q3-ii-ice-temperature",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "ice-temperature",
+  "section": "A",
+  "questionRef": "2017 HL Q3(ii) — Temperature of the added ice",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, warm water and ice were mixed in a copper calorimeter. The following data were recorded.",
+  "questionText": "Describe how it was ensured that the temperature of all the added ice was at 0.0 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "crushed",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "melting",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q3-data"
+ },
+ {
+  "id": "phys-2017-hl-q3-insulation",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "insulation",
+  "section": "A",
+  "questionRef": "2017 HL Q3 — Insulating the calorimeter",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, warm water and ice were mixed in a copper calorimeter. The following data were recorded.",
+  "questionText": "State two ways in which the calorimeter could have been insulated during this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "named insulator wrapped around calorimeter",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "lid",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q3-data"
+ },
+ {
+  "id": "phys-2017-hl-q3-latent-heat",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat",
+  "section": "A",
+  "questionRef": "2017 HL Q3 — Specific latent heat of fusion",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, warm water and ice were mixed in a copper calorimeter. The following data were recorded. (specific heat capacity of copper = 390 J kg⁻¹ K⁻¹; specific heat capacity of water = 4180 J kg⁻¹ K⁻¹)",
+  "questionText": "Calculate the specific latent heat of fusion of ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mw= 48.4",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "∆θw= 14.5",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "∆θi= 12.0",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "mil+ micw∆θi= mwcw∆θw+ mccc∆θc",
+    "marks": 6,
+    "contextNote": "The scheme deducts three marks for each omitted or incorrect Δθ block; it allows three of the six marks for any one block if no equation marks were already awarded."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "(8.2)l+ (8.2)(4180)(12) = (48.4)(4180)(14.5) + (61.8)(390)(14.5)",
+    "marks": 3
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "l= 3.5× 10⁵ J kg⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q3-latent-solution",
+  "questionFigureKey": "physics-2017-hl-q3-latent-question"
+ },
+ {
+  "id": "phys-2017-hl-q3-thermometer",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermometer",
+  "section": "A",
+  "questionRef": "2017 HL Q3 — Thermometer characteristics",
+  "stem": "In an experiment to determine the specific latent heat of fusion of ice, warm water and ice were mixed in a copper calorimeter. The following data were recorded.",
+  "questionText": "State two characteristics of a thermometer suitable for use in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "small heat capacity / graduated to 0.1 °C / suitable range / reacts quickly",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "small heat capacity",
+      "graduated to 0.1 °C",
+      "suitable range",
+      "reacts quickly"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q3-data"
+ },
+ {
+  "id": "phys-2017-hl-q4-circuit",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit",
+  "section": "A",
+  "questionRef": "2017 HL Q4 — Filament-bulb circuit",
+  "stem": "A student investigated the relationship between current I and potential difference V for a filament bulb.",
+  "questionText": "Draw a circuit diagram for the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "power supply, bulb, ammeter, voltmeter",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for each missing component."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "power supply, bulb and ammeter in series",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "voltmeter in parallel with bulb",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "means of varying voltage",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q4-data"
+ },
+ {
+  "id": "phys-2017-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2017 HL Q4 — Current–voltage graph",
+  "stem": "A student investigated the relationship between current I and potential difference V for a filament bulb.",
+  "questionText": "Draw a suitable graph to illustrate the relationship between current and potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for each incorrectly plotted point."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q4-data"
+ },
+ {
+  "id": "phys-2017-hl-q4-resistances",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistances",
+  "section": "A",
+  "questionRef": "2017 HL Q4 — Two resistance readings",
+  "stem": "A student investigated the relationship between current I and potential difference V for a filament bulb. Draw a suitable graph to illustrate the relationship between current and potential difference.",
+  "questionText": "Use your graph to calculate the resistance of the filament (i) at 0.5 V and (ii) at 8.5 V.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I = 5.5 mA at 0.5 V or I = 70 mA at 8.5 V (from graph)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "R= V/I",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(i) R = 90.9 Ω and (ii) R = 121.4 Ω",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices the two final resistances together at three marks, so both remain one nine-mark graph task. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q4-data"
+ },
+ {
+  "id": "phys-2017-hl-q4-change-voltage",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "change-voltage",
+  "section": "A",
+  "questionRef": "2017 HL Q4 — Onset of resistance change",
+  "stem": "A student investigated the relationship between current I and potential difference V for a filament bulb.",
+  "questionText": "As the potential difference was increased, at what point did the resistance of the filament begin to change significantly?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "4.0 V to 6.0 V",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q4-data"
+ },
+ {
+  "id": "phys-2017-hl-q4-change-reason",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "change-reason",
+  "section": "A",
+  "questionRef": "2017 HL Q4 — Explaining resistance change",
+  "stem": "A student investigated the relationship between current I and potential difference V for a filament bulb.",
+  "questionText": "Why does the resistance of a filament change with its potential difference?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "as potential difference increases current increases / as current increases temperature increases / as temperature increases resistance increases",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "as potential difference increases current increases",
+      "as current increases temperature increases",
+      "as temperature increases resistance increases"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q4-data"
+ },
+ {
+  "id": "phys-2017-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2017 HL Q5(a)",
+  "questionText": "State Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pressure is inversely proportional to volume",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "at constant temperature / for a fixed mass of gas",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2017 HL Q5(b)",
+  "questionText": "Sphere A of mass 400 g is travelling horizontally with a speed of 6 m s⁻¹ when it collides with sphere B of mass 150 g travelling in the opposite direction with a speed of 9 m s⁻¹. Sphere A comes to rest as a result of the collision. Calculate the new velocity of sphere B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "m₁u₁+ m₂u₂= m₁v₁+ m₂v₂",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(0.4)(6) + (0.15)(−9) = (0.15)v",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v= 7 m s⁻¹",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q5b-spheres"
+ },
+ {
+  "id": "phys-2017-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2017 HL Q5(c)",
+  "questionText": "What is the thermometric property (i) of a thermocouple and (ii) of a mercury thermometer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emf",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "length/volume",
+    "marks": 3
+   }
+  ],
+  "notes": "Two required thermometers, not a choose-one list; printed four-plus-three retained. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2017 HL Q5(d)",
+  "questionText": "The diffraction effects of sound waves are noticeable in everyday life, whereas the diffraction effects of light waves are not. Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sound has a long wavelength / light has a short wavelength",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2017 HL Q5(e)",
+  "questionText": "Explain how point discharge occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charge accumulates at a point",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "air is ionised around the point / like charges are repelled / unlike charges are attracted",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2017 HL Q5(f)",
+  "questionText": "What is the electric field strength 53 pm from a proton?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= F/q , F= Q₁Q₂/(4πεd²)",
+    "marks": 5
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E= 5.1× 10¹¹ N C⁻¹",
+    "marks": 2,
+    "contextNote": "The scheme also accepts V m⁻¹ as the unit."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q5f-field-solution"
+ },
+ {
+  "id": "phys-2017-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2017 HL Q5(g)",
+  "questionText": "What is meant by sound intensity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "power",
+    "marks": 4,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "per unit area",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "I= P/A",
+    "marks": 4,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct notation",
+    "marks": 3,
+    "route": "formula"
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2017 HL Q5(h)",
+  "questionText": "A certain RCD has a rating of 30 mA. What is the significance of this number?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current is cut off",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "if the difference between live and neutral currents is greater than 30 mA",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if no reference is made to current. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2017 HL Q5(i)",
+  "questionText": "What is the function of the moderator in a fission reactor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "slows down neutrons / increase fission",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-j-gravity",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "5j-gravity",
+  "section": "B",
+  "questionRef": "2017 HL Q5(j) — gravity",
+  "questionText": "Explain why the gravitational force can be ignored for sub-atomic particles.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "masses are very small / force is proportional to mass /gravitational force is the weakest",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q5-j-voltmeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5j-voltmeter",
+  "section": "B",
+  "questionRef": "2017 HL Q5(j) — voltmeter",
+  "questionText": "How can a galvanometer be converted into a voltmeter?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "large resistance",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in series",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-energy",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Conservation of energy",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy.",
+  "questionText": "State the principle of conservation of energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy cannot be created or destroyed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-motion-equation",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "motion-equation",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Deriving the equation of motion",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy.",
+  "questionText": "Derive the expression v²=u²+2as for uniform accelerated motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v= u+ at",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v²= (u+ at)²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v²= u²+ 2uat+ a²t²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "v²= u²+ 2a(ut+ ½ at²) , therefore v²= u²+ 2as",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if the final expression is not stated. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q6-derivation-solution"
+ },
+ {
+  "id": "phys-2017-hl-q6-fall-speed",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "fall-speed",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Speed during the fall",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "The cord is 32 m long and Henry, of mass 60 kg, falls from rest while attached. Calculate his speed when he has fallen 16 m.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v²= u²+ 2as / v²= 0+ 2(9.8)(16)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v= 17.7 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-hooke-law",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "hooke-law",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Hooke’s law",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. A stretched elastic cord obeys Hooke’s law and the weight attached to the cord oscillates with simple harmonic motion.",
+  "questionText": "State Hooke’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(restoring) force proportional to displacement",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-shm",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "shm",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Simple harmonic motion",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. A stretched elastic cord obeys Hooke’s law and the weight attached to the cord oscillates with simple harmonic motion.",
+  "questionText": "What is meant by simple harmonic motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "acceleration proportional to displacement",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-rest-length",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "rest-length",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Cord length at rest",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. The cord is 32 m long and Henry, of mass 60 kg, falls from rest while attached. Calculate his speed when he has fallen 16 m. A stretched elastic cord obeys Hooke’s law and the weight attached to the cord oscillates with simple harmonic motion. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "The elastic constant of the cord is 250 N m⁻¹. Calculate the length the cord would have if Henry was suspended at rest.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F= ks",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(9.8)(60) = (250)s",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "length of cord = 34.35 m",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if the answer is left as the extension s = 2.35 m. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q6-maximum-acceleration",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "maximum-acceleration",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Maximum acceleration",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. The cord is 32 m long and Henry, of mass 60 kg, falls from rest while attached. Calculate his speed when he has fallen 16 m. The elastic constant of the cord is 250 N m⁻¹. Calculate the length the cord would have if Henry was suspended at rest. After the end of the fall, Henry oscillates with simple harmonic motion. The maximum displacement from his rest position is 1.2 metres. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate his maximum acceleration as he oscillates",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ω²= k/m",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "a= −ω²s",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "a= −(4.17)(1.2) = −5.00 m s⁻²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q6-acceleration-solution"
+ },
+ {
+  "id": "phys-2017-hl-q6-period",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "period",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Period of oscillation",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. The cord is 32 m long and Henry, of mass 60 kg, falls from rest while attached. Calculate his speed when he has fallen 16 m. The elastic constant of the cord is 250 N m⁻¹. Calculate the length the cord would have if Henry was suspended at rest. After the end of the fall, Henry oscillates with simple harmonic motion. The maximum displacement from his rest position is 1.2 metres. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate his period of oscillation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T= 2π/ω",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "= 3.08 s",
+    "marks": 3,
+    "contextNote": "The full substituted expression is retained in the official solution image."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q6-period-solution"
+ },
+ {
+  "id": "phys-2017-hl-q6-lowest-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "lowest-forces",
+  "section": "B",
+  "questionRef": "2017 HL Q6 — Forces at the lowest point",
+  "stem": "In a bungee jump, Henry falls while attached to an elastic cord. When the cord stops Henry’s fall, he then oscillates up and down. During the bungee jump, gravitational potential energy is converted into kinetic energy and then into elastic potential energy. After the end of the fall, Henry oscillates with simple harmonic motion. The maximum displacement from his rest position is 1.2 metres.",
+  "questionText": "Draw a diagram to show the forces acting on Henry when he is at his lowest point.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "arrow showing force down",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "arrow showing larger force up",
+    "marks": 2,
+    "contextNote": "The scheme deducts one mark for each incorrect arrow."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-reflection",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "reflection",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Reflection",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "We see objects because light reflects from them. What is reflection?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rebounding (of light) from an object",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-absorbed-reflected",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "absorbed-reflected",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Absorbed and reflected colours",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "What primary colours of light (i) are absorbed and (ii) are reflected when white light shines on a red book?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "green and blue",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "red",
+    "marks": 3
+   }
+  ],
+  "notes": "Required comparison of absorbed and reflected primary colours, with both three-mark rows. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-filtered-colours",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "filtered-colours",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Appearance under coloured light",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "What colour would the red book appear to be if colour filters were used so that the book was illuminated (iii) with green light and (iv) with red light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "black",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "red",
+    "marks": 3
+   }
+  ],
+  "notes": "Required comparison of the same red book under two lights; both three-mark rows. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-polarisation",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "polarisation",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Polarisation",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "What is polarisation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "wave vibrations",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in one plane only",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-polarisation-demo",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "polarisation-demo",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Demonstrating polarisation",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "Describe how polarisation can be demonstrated in the laboratory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "two parallel polarising plates and a source of light",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "rotate one plate",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "until no light passes through the plates",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-stress-polarisation",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "stress-polarisation",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Stress polarisation",
+  "stem": "Colour filters and polarising filters can be used to enhance photographs.",
+  "questionText": "Give an application of stress polarisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "checking for defects",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-doppler-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "doppler-diagram",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Explaining the Doppler effect",
+  "stem": "Speed cameras use the Doppler effect to calculate the speed of vehicles.",
+  "questionText": "Describe, with the aid of a labelled diagram, how the Doppler effect occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "source, observer and labelled non-concentric circular wavefronts",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "source moving towards observer",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "wavelength is shorter",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "frequency is higher",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q7-source-speed",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "source-speed",
+  "section": "B",
+  "questionRef": "2017 HL Q7 — Speed of the approaching source",
+  "stem": "A source that is emitting a sound wave of a certain frequency is approaching an observer. The frequency observed is 15% more than the frequency of the sound wave emitted. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "What is the speed of the source?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f′ = fc/(c−u)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1.15f= f(340)/(340−u)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "cancel f",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "u= 44.3 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q7-doppler-solution"
+ },
+ {
+  "id": "phys-2017-hl-q8-resistance-resistivity",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-resistivity",
+  "section": "B",
+  "questionRef": "2017 HL Q8 — Resistance and resistivity",
+  "questionText": "Distinguish between resistance and resistivity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R= V/I and notation",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ρ= RA/l and notation",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-definitions-solution"
+ },
+ {
+  "id": "phys-2017-hl-q8-diameter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diameter",
+  "section": "B",
+  "questionRef": "2017 HL Q8 — Increasing the wire diameter",
+  "questionText": "What is the effect on the resistance of a length of wire if the diameter of the wire is increased by a factor of three?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "decreases",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "by a factor of 9",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q8-rms",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "rms",
+  "section": "B",
+  "questionRef": "2017 HL Q8 — Meaning of rms",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is set at 500 Ω.",
+  "questionText": "What is meant by rms?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "average voltage / root mean squared",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-circuit"
+ },
+ {
+  "id": "phys-2017-hl-q8-ac",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "ac",
+  "section": "B",
+  "questionRef": "2017 HL Q8 — Alternating current",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is set at 500 Ω.",
+  "questionText": "What is meant by a.c.?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current that changes direction / alternating current",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-circuit"
+ },
+ {
+  "id": "phys-2017-hl-q8-i-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance",
+  "section": "B",
+  "questionRef": "2017 HL Q8(i) — Effective circuit resistance",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is set at 500 Ω.",
+  "questionText": "Calculate the effective resistance of the circuit",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/Rₚ = 1/R₁ + 1/R₂",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Rₚ= 143",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "RT= 193 Ω",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-circuit"
+ },
+ {
+  "id": "phys-2017-hl-q8-ii-current",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "current",
+  "section": "B",
+  "questionRef": "2017 HL Q8(ii) — Current in the 200 Ω resistor",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is set at 500 Ω.",
+  "questionText": "Calculate the current flowing in the 200 Ω resistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "IT= V/R",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "IT= 0.062",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "I= 5/7 (0.062) = 0.044 A",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-current-solution",
+  "questionFigureKey": "physics-2017-hl-q8-current-question"
+ },
+ {
+  "id": "phys-2017-hl-q8-remove-resistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "remove-resistor",
+  "section": "B",
+  "questionRef": "2017 HL Q8 — Removing the variable resistor",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is set at 500 Ω. The variable resistor is then removed.",
+  "questionText": "What effect will this have on the current flowing in the 50 Ω resistor? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current will reduce",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "resistance of circuit is larger / appropriate calculations",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-circuit"
+ },
+ {
+  "id": "phys-2017-hl-q8-i-coil",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "coil",
+  "section": "B",
+  "questionRef": "2017 HL Q8(i) — Replacing the resistor with a coil",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is then removed. In further investigations, the 50 Ω resistor was then replaced with (i) a coil of resistance 50 Ω",
+  "questionText": "what effect did the replacement have on the current flowing? Justify your answer in each case.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current reduces",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "back emf",
+    "marks": 3
+   }
+  ],
+  "notes": "Printed investigations (i) and (ii) each carry six marks. Each card keeps its own replacement and circuit with the shared 12 V supply and removal of the variable resistor. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-coil"
+ },
+ {
+  "id": "phys-2017-hl-q8-ii-diode",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diode",
+  "section": "B",
+  "questionRef": "2017 HL Q8(ii) — Replacing the resistor with a diode",
+  "stem": "In the circuit diagram shown, the a.c. supply has an rms voltage of 12 V. The variable resistor is then removed. In further investigations, the 50 Ω resistor was then replaced with a diode, as shown.",
+  "questionText": "what effect did the replacement have on the current flowing? Justify your answer in each case.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current flows",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in one direction only",
+    "marks": 3
+   }
+  ],
+  "notes": "Printed investigations (i) and (ii) each carry six marks. Each card keeps its own replacement and circuit with the shared 12 V supply and removal of the variable resistor. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q8-diode"
+ },
+ {
+  "id": "phys-2017-hl-q9-rutherford-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "rutherford-experiment",
+  "section": "B",
+  "questionRef": "2017 HL Q9 — Rutherford’s experiment",
+  "questionText": "Describe Rutherford’s experiment to investigate the structure of the atom.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "alpha particle, gold foil, zinc sulfide / screen",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "alpha particles fired at foil",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "some passed straight through, some deflected, some rebounded (state/imply)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q9-rutherford-conclusions",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "rutherford-conclusions",
+  "section": "B",
+  "questionRef": "2017 HL Q9 — Rutherford’s conclusions",
+  "questionText": "What conclusions about the nature of the atom did Rutherford make?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mostly empty space",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "small/dense/positive core",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q9-line-spectra",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "line-spectra",
+  "section": "B",
+  "questionRef": "2017 HL Q9 — Formation of line spectra",
+  "stem": "One of his students, Niels Bohr, further developed Rutherford’s model of the atom. The Bohr model helps us identify different elements using emission line spectra.",
+  "questionText": "Explain, using the Bohr model, how line spectra are formed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy supplied",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "electrons move to a higher/excited energy level",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "electrons fall down",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "emitting light",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q9-spectrometer",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "spectrometer",
+  "section": "B",
+  "questionRef": "2017 HL Q9 — Observing two types of spectrum",
+  "questionText": "Draw a labelled diagram of a spectrometer and describe how a spectrometer and diffraction grating can be used to observe (i) a line spectrum and (ii) a continuous spectrum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "collimator (labelled)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "table",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "telescope (labelled)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "vapour lamp",
+    "marks": 3
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "filament bulb / white light",
+    "marks": 3
+   }
+  ],
+  "notes": "One complete spectrometer task, including the four diagram criteria and both required light sources. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q9-angular-separation",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "angular-separation",
+  "section": "B",
+  "questionRef": "2017 HL Q9 — Angular separation of the first-order images",
+  "questionText": "Sodium emits visible light with a wavelength of 589 nm. This light is passed through a diffraction grating of 300 lines per mm. Calculate the angular separation between the first line to the left of the central image and the first line to the right of the central image.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "d= 3.33 × 10⁻⁶",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "nλ= dsinθ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "θ= 10.2°",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "angular separation = 20.4°",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-x-rays",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "x-rays",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — X-rays",
+  "questionText": "What are X-rays?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "photons / electromagnetic radiation",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with high energy / short wavelength / high frequency",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-electron-production",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "electron-production",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — Producing electrons",
+  "stem": "Electrons are produced and used in an X-ray tube.",
+  "questionText": "How are the electrons produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermionic emission",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-electron-location",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "electron-location",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — Location of electron production",
+  "stem": "Electrons are produced and used in an X-ray tube. How are the electrons produced?",
+  "questionText": "Where in the tube does this take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "cathode/filament",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-i-photon-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photon-energy",
+  "section": "B",
+  "questionRef": "2017 HL Q10(i) — Energy of an X-ray photon",
+  "stem": "Electrons are produced and used in an X-ray tube. A certain X-ray tube is designed to emit X-rays with wavelengths as small as 0.02 nm.",
+  "questionText": "Calculate the energy of an X-ray photon of wavelength 0.02 nm",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= hf",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "c= fλ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E= 9.9× 10⁻¹⁵ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-ii-electron-speed",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "electron-speed",
+  "section": "B",
+  "questionRef": "2017 HL Q10(ii) — Maximum electron velocity",
+  "stem": "Electrons are produced and used in an X-ray tube. A certain X-ray tube is designed to emit X-rays with wavelengths as small as 0.02 nm.",
+  "questionText": "Calculate the maximum velocity of an electron in the tube",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E= ½ mv²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v= 1.48× 10⁸ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-iii-voltage",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "voltage",
+  "section": "B",
+  "questionRef": "2017 HL Q10(iii) — Accelerating voltage",
+  "stem": "Electrons are produced and used in an X-ray tube. A certain X-ray tube is designed to emit X-rays with wavelengths as small as 0.02 nm.",
+  "questionText": "Calculate the voltage applied to the electrons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "V= W/q",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "V= 62000 V",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-photocell-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photocell-diagram",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — Photocell diagram",
+  "stem": "Electrons are also produced and used in a photocell.",
+  "questionText": "Draw a labelled diagram of a photocell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "anode",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "semi-cylindrical cathode",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "case and vacuum",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts three marks if neither cathode nor anode is labelled. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-photocell-current",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photocell-current",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — How a photocell conducts",
+  "stem": "Electrons are also produced and used in a photocell.",
+  "questionText": "Describe how a photocell conducts current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light (of suitable frequency) falls on cathode",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "electrons are emitted",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q10-electron-count",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "electron-count",
+  "section": "B",
+  "questionRef": "2017 HL Q10 — Electrons per minute",
+  "stem": "Electrons are also produced and used in a photocell.",
+  "questionText": "A current of 2 μA is flowing in a photocell. How many electrons are generated in the photocell during each minute?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Q= It= (2× 10⁻⁶)(60)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q= 1.2× 10⁻⁴",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "number of electrons = 7.5× 10¹⁴",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2017 HL Q11(a)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "Draw a labelled diagram of an arrangement of apparatus that could be used to demonstrate the principle that a current-carrying conductor experiences a force in a magnetic field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "power supply",
+    "marks": 1
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "magnet",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "conductor",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "Explain how this principle is used in the definition of the ampere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current flows in two (parallel) conductors",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1 metre apart (in a vacuum)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "force of 2 × 10⁻⁷ N per metre",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme deducts one mark if “per metre” is missing. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "Draw a circuit diagram of a Wheatstone bridge.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "four resistors in correct arrangement",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "galvanometer/ammeter in correct position",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2017 HL Q11(d)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "Why did Telstar not allow transatlantic signals to be transmitted constantly?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "period of Telstar different to period of Earth / not in geostationary orbit / not always above the same place",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2017 HL Q11(e)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn) (mass of the Earth = 6.0 × 10²⁴ kg)",
+  "questionText": "Calculate the radius of orbit of Telstar.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T²= 4π²r³/(GM)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(2.6× 60× 60)²= 4π²r³/((6.7×10⁻¹¹)(6×10²⁴))",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "r= 9.6× 10⁶ m",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q11e-orbit-solution"
+ },
+ {
+  "id": "phys-2017-hl-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2017 HL Q11(f)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "With the aid of a labelled diagram, explain how light is transmitted through optical fibres.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "angle of incidence greater than critical angle",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "total internal reflection occurs",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if no diagram is drawn. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2017 HL Q11(g)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "Light travels a distance of 5500 km along the Hibernia Express between London and New York. Calculate the refractive index of the glass used in the cable.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v= s/t , n= v₁/v₂",
+    "marks": 5
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "n= 1.58",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q11g-index-solution"
+ },
+ {
+  "id": "phys-2017-hl-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2017 HL Q11(h)",
+  "stem": "Telecommunications have been among the most influential technologies in history. Communications across the Atlantic demonstrate the progress that has been made in this field. The invention of the telegraph in 1837 enabled the first transmission of signals using electrical methods. The telegraph made use of the principle that a current-carrying conductor experiences a force in a magnetic field and it used intermittent currents to transfer signals. The first successful transatlantic cable connected Valentia Island, Kerry with Newfoundland, Canada in 1866. Many new electrical devices were used in the enterprise, including the Wheatstone bridge, which measured variations of resistance to locate breaks in the cable. The time taken to transmit messages across the Atlantic had been reduced from weeks to seconds. In 1962 the first television signal was transmitted via the Telstar communications satellite, using microwaves. The satellite was in Medium Earth orbit and it allowed signals to be transmitted from Maine, USA to Brittany, France for 20 minutes during each 2.6 hour orbit. In the late 20th century, communication of signals using optical fibres became a reality, with several cables laid across the Atlantic. In 2015 the Hibernia Express optical cable was completed. It connects Cork and London to Halifax and New York and carries a signal from London to New York in 29 milliseconds. The movement of data across the Atlantic has never been quicker. (Adapted from Telecommunications History and Highlights, Robert Colburn)",
+  "questionText": "What particles are used for transatlantic communication (i) in telegraph cables, (ii) in satellite signals and (iii) in optical fibres?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrons",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "photons",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "photons",
+    "marks": 2
+   }
+  ],
+  "notes": "All three named communication media are required, at the printed three-plus-two-plus-two tariff. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-a-equilibrium",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "equilibrium",
+  "section": "B",
+  "questionRef": "2017 HL Q12(a) — Laws of equilibrium",
+  "questionText": "State the laws of equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "sum of forces = 0 / sum of moments = 0 / (net) clockwise moment = (net) anti-clockwise moment",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "sum of forces = 0",
+      "sum of moments = 0 / (net) clockwise moment = (net) anti-clockwise moment"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Both laws are required. The scheme awards six marks to the first correct law and three to the second; not a choice expansion. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-a-moment",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moment",
+  "section": "B",
+  "questionRef": "2017 HL Q12(a) — Clockwise moment",
+  "stem": "A sign weighing 400 N is suspended at the end of a uniform horizontal rod. The rod touches the wall at position X. The rod weighs 330 N and is 1.2 m long. A support cable makes an angle of 35° with the rod, as shown in the diagram.",
+  "questionText": "Calculate the clockwise moment acting on the rod (due to the weight of the sign and the weight of the rod) about X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "m= Fd",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m= (400)(1.2) + (330)(0.6)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "m= 678 N m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12a-sign"
+ },
+ {
+  "id": "phys-2017-hl-q12-a-tension",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "tension",
+  "section": "B",
+  "questionRef": "2017 HL Q12(a) — Cable tension",
+  "stem": "A sign weighing 400 N is suspended at the end of a uniform horizontal rod. The rod touches the wall at position X. The rod weighs 330 N and is 1.2 m long. A support cable makes an angle of 35° with the rod, as shown in the diagram. Calculate the clockwise moment acting on the rod (due to the weight of the sign and the weight of the rod) about X.",
+  "questionText": "Hence calculate the tension in the cable.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "678= Fu(1.2) / Fu= 565 N",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "T= Fu/(sin35) = 565/(sin35) = 985 N",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12a-sign"
+ },
+ {
+  "id": "phys-2017-hl-q12-a-rotating-equilibrium",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "rotating-equilibrium",
+  "section": "B",
+  "questionRef": "2017 HL Q12(a) — A rotating object in equilibrium",
+  "questionText": "A rotating object can be in equilibrium. Explain how this can happen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "constant angular velocity",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-b-radioactivity",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "radioactivity",
+  "section": "B",
+  "questionRef": "2017 HL Q12(b) — Radioactivity",
+  "stem": "Potassium–40 is a significant source of radioactivity in the human body. Bananas are a principle source of potassium in our diet. Potassium–40 has a half-life of 1.25 × 10⁹ years and it is a beta-emitter.",
+  "questionText": "What is meant by radioactivity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(spontaneous) disintegration of a nucleus",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with the emission of (alpha, beta and/or gamma) radiation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-b-detector",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "detector",
+  "section": "B",
+  "questionRef": "2017 HL Q12(b) — Detecting beta radiation",
+  "stem": "Potassium–40 is a significant source of radioactivity in the human body. Bananas are a principle source of potassium in our diet. Potassium–40 has a half-life of 1.25 × 10⁹ years and it is a beta-emitter.",
+  "questionText": "Name a device used to detect beta-radiation and explain its principle of operation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Geiger-Müller tube / solid-state detector",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ionisation /current flows",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-b-nuclear-equation",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "nuclear-equation",
+  "section": "B",
+  "questionRef": "2017 HL Q12(b) — Potassium-40 decay",
+  "stem": "Potassium–40 is a significant source of radioactivity in the human body. Bananas are a principle source of potassium in our diet. Potassium–40 has a half-life of 1.25 × 10⁹ years and it is a beta-emitter. The activity of a human body due to potassium–40 is 5400 Bq.",
+  "questionText": "Write the nuclear equation for this decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "K⁴⁰₁₉ → Ca⁴⁰₂₀ + e⁰₋₁",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme deducts three marks for extra incorrect species. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12b-decay-solution"
+ },
+ {
+  "id": "phys-2017-hl-q12-b-nuclei",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "nuclei",
+  "section": "B",
+  "questionRef": "2017 HL Q12(b) — Number of potassium-40 nuclei",
+  "stem": "Potassium–40 is a significant source of radioactivity in the human body. Bananas are a principle source of potassium in our diet. Potassium–40 has a half-life of 1.25 × 10⁹ years and it is a beta-emitter. The activity of a human body due to potassium–40 is 5400 Bq.",
+  "questionText": "Calculate the number of potassium–40 nuclei in this person.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ= ln2/(T½)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "A= −λN",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "N= 3.07× 10²⁰",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12b-number-solution"
+ },
+ {
+  "id": "phys-2017-hl-q12-c-ray-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "ray-diagram",
+  "section": "B",
+  "questionRef": "2017 HL Q12(c) — Rembrandt’s mirror",
+  "stem": "It has been recently suggested that the 17th century Dutch artist Rembrandt used a concave mirror to help him etch self-portraits by projecting an inverted image of himself onto a copper sheet.",
+  "questionText": "Draw a ray diagram to illustrate how Rembrandt used a concave mirror in this way.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "concave mirror",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "object outside focal point",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "two correct rays",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct image at intersection of rays",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-c-i-image-distance",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "image-distance",
+  "section": "B",
+  "questionRef": "2017 HL Q12(c)(i) — Distance from sheet to mirror",
+  "stem": "It has been recently suggested that the 17th century Dutch artist Rembrandt used a concave mirror to help him etch self-portraits by projecting an inverted image of himself onto a copper sheet. Rembrandt used a concave mirror of focal length 60 cm so that the image on the copper sheet was only half the size of the object.",
+  "questionText": "Calculate the distance from the sheet to the mirror",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m= v/u / m= ½",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v= 90 cm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12c-image-solution"
+ },
+ {
+  "id": "phys-2017-hl-q12-c-ii-object-distance",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "object-distance",
+  "section": "B",
+  "questionRef": "2017 HL Q12(c)(ii) — Distance from object to mirror",
+  "stem": "It has been recently suggested that the 17th century Dutch artist Rembrandt used a concave mirror to help him etch self-portraits by projecting an inverted image of himself onto a copper sheet. Rembrandt used a concave mirror of focal length 60 cm so that the image on the copper sheet was only half the size of the object. Calculate the distance from the sheet to the mirror",
+  "questionText": "Calculate the distance from the object to the mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "u= v× 2= 180 cm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-c-upright-image",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "upright-image",
+  "section": "B",
+  "questionRef": "2017 HL Q12(c) — Why the upright image was unsuitable",
+  "stem": "It has been recently suggested that the 17th century Dutch artist Rembrandt used a concave mirror to help him etch self-portraits by projecting an inverted image of himself onto a copper sheet. A concave mirror can also be used to produce an upright image.",
+  "questionText": "Explain why this image was not of use to Rembrandt.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "virtual image",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "cannot be formed on a sheet",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-protons",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "protons",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Producing protons",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "Explain how the protons were produced,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ionisation / discharge tube",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-coin"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-acceleration",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "acceleration",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Accelerating protons",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "Explain how the protons were accelerated",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high voltage",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-coin"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-alpha-detection",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "alpha-detection",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Detecting alpha particles",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "Explain how the alpha-particles were detected.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flashes / zinc sulphide / screen",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-coin"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-reaction",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "reaction",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Cockcroft–Walton reaction",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "Write the nuclear equation for this reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Li⁷₃ + H¹₁ → 2He⁴₂",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme deducts three marks for each extra species and one mark if only one alpha-particle is produced. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-reaction-solution"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-mass-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "mass-energy",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Mass loss and energy released",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "For this reaction, calculate the loss in mass and hence the energy released (in MeV).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass of lithium nucleus = 1.165× 10⁻²⁶ kg / 7.016005 u",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "loss in mass = 3.09× 10⁻²⁹ kg",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E= mc²",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "energy released = 2.78× 10⁻¹² J= 17.35 MeV",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if energy is not converted to MeV and one if 7 is used for the Li–7 mass. It applies no penalty if electron masses are not subtracted from the lithium mass. Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-coin"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-i-significance",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "significance",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(i) — Historical significance",
+  "stem": "In the Cockcroft and Walton experiment, accelerated protons collided with lithium nuclei. In each collision a proton collided with a lithium nucleus to produce two alpha-particles, as shown in this commemorative coin.",
+  "questionText": "Explain the historical significance of this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "verified E= mc²/ first transmutation by an artificially accelerated particle / important step in development of the particle accelerator / Nobel prize",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-ii-structure",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "structure",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(ii) — Bipolar transistor structure",
+  "questionText": "Draw a diagram to show the basic structure of the bi-polar transistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n, p, n layers; c, b, e connections",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-ii-currents",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "currents",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(ii) — Relationship between the transistor currents",
+  "questionText": "State the relationship between the three currents flowing in a transistor circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "IE",
+    "marks": 1
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "IB",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "IC",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "IE= IB+ IC",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-currents-solution"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-ii-inverter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "inverter",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(ii) — Voltage inverter circuit",
+  "questionText": "Draw the circuit diagram for a transistor circuit that can be used as a voltage inverter (NOT gate).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transistor and resistor in series",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "collector connected to positive, emitter connected to earth",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct input indicated",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct output indicated",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-not-symbol"
+ },
+ {
+  "id": "phys-2017-hl-q12-d-ii-truth-table",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "truth-table",
+  "section": "B",
+  "questionRef": "2017 HL Q12(d)(ii) — NOT gate truth table",
+  "questionText": "Draw the truth table for a NOT gate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "input = 0, output = 1",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "input = 1, output = 0",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "physics-2017-hl-q12d-not-symbol"
  }
 ]

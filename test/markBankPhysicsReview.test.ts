@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2017-hl': [103, 103, 37, '4a3e69eebd86b3bed98fb557715fdc21511fbfa18895e1728da2a0e519be88de',
+    '58265ccb8247b42ff911290cb7fc6c908c033d81490b9400fa0718b5d4b3bbfe'],
   '2018-ol': [100, 100, 97, 'ee7d3000ac3604387d4a12f669cd1884fcbde930f836542b02a757d5fab4fb91',
     '09c42866ecd6660a6bb5f93c00e6011ab92c969d7ab24b991c14283f06cf67a5'],
   '2018-hl': [109, 109, 47, '88fb4b04086dce87adf24edcb7bbf9a6c8d2334db532e9c9d798dfe0974d5eb3',
@@ -81,6 +83,36 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2017 Higher optional branches, experimental data, circuit cases and equation layouts', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2017-hl-${id}`)!;
+    expect(card('q1-graph').figure?.candId).toBe('physics-2017-hl-q1-data');
+    expect(card('q3-latent-heat').questionFigure?.candId).toBe('physics-2017-hl-q3-latent-question');
+    expect(card('q3-latent-heat').figure?.candId).toBe('physics-2017-hl-q3-latent-solution');
+    expect(card('q3-thermometer').rows[0]).toMatchObject({ group: { claimMax: 2, options: [
+      'small heat capacity', 'graduated to 0.1 °C', 'suitable range', 'reacts quickly',
+    ] } });
+    expect(card('q4-resistances').totalMarks).toBe(9);
+    expect(card('q4-resistances').questionText).toContain('0.5 V and (ii) at 8.5 V');
+    expect(card('q5-j-gravity').totalMarks).toBe(7);
+    expect(card('q5-j-voltmeter').totalMarks).toBe(7);
+    expect(card('q6-period').stem).toContain('250 N m⁻¹');
+    expect(card('q6-period').stem).toContain('60 kg');
+    expect(card('q6-period').figure?.candId).toBe('physics-2017-hl-q6-period-solution');
+    expect(card('q8-i-coil').figure?.candId).toBe('physics-2017-hl-q8-coil');
+    expect(card('q8-ii-diode').figure?.candId).toBe('physics-2017-hl-q8-diode');
+    expect(card('q8-ii-current').questionFigure?.candId).toBe('physics-2017-hl-q8-current-question');
+    expect(card('q11-e').stem).toContain('2.6 hour orbit');
+    expect(card('q11-g').stem).toContain('29 milliseconds');
+    expect(card('q12-a-equilibrium').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [6, 3] } });
+    for (const branch of ['i', 'ii']) {
+      expect(deck.filter(c => c.id.startsWith(`phys-2017-hl-q12-d-${branch}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    }
+    expect(card('q12-b-nuclear-equation').rows[0].verbatim).toContain('K⁴⁰₁₉ → Ca⁴⁰₂₀ + e⁰₋₁');
+    expect(card('q12-d-i-reaction').rows[0].verbatim).toContain('Li⁷₃ + H¹₁ → 2He⁴₂');
+    expect(card('q12-d-ii-currents').figure?.candId).toBe('physics-2017-hl-q12d-currents-solution');
+  });
+
   it('retains 2018 Ordinary stepped marks, complete context and mathematical figures', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2018-ol-${id}`)!;
     for (const id of ['q1-ii', 'q2-ii', 'q6-i', 'q6-iv']) {

@@ -1,4 +1,586 @@
 {
+ "physics-2017-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q1-data.png",
+  "md5": "4a35d77f4dc1206411ee8ac774ed135e",
+  "alt": "All eight pendulum lengths and corresponding times for forty oscillations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q1 — Acceleration due to gravity",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   122,
+   328,
+   473,
+   381
+  ]
+ },
+ "physics-2017-hl-q11e-orbit-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q11e-orbit-solution.png",
+  "md5": "2b02746cc58b7841afa4a2f9b81f7f18",
+  "alt": "Official Telstar orbital-radius calculation with period conversion and Earth mass.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q11(e)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   80,
+   378,
+   285,
+   454
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q11g-index-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q11g-index-solution.png",
+  "md5": "e9a67d0563c4781d23b42ed9f3ef3ee6",
+  "alt": "Official speed and refractive-index formulae and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q11(g)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   80,
+   579,
+   158,
+   626
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q12a-sign": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12a-sign.png",
+  "md5": "f9aa69931c4d1492ed754767e73e164e",
+  "alt": "Horizontal rod meets the wall at X, supported by a cable at 35°, with a 400 N sign at the far end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(a) — Cable tension",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   385,
+   139,
+   544,
+   290
+  ]
+ },
+ "physics-2017-hl-q12b-decay-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12b-decay-solution.png",
+  "md5": "7a38ad8ef5ba3480efb3e830f65aaf25",
+  "alt": "Official potassium-40 beta-decay equation, preserving atomic and mass numbers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(b) — Potassium-40 decay",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   80,
+   260,
+   195,
+   283
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q12b-number-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12b-number-solution.png",
+  "md5": "ba65b2419044b9eb4d44aa8bff355774",
+  "alt": "Official decay-constant and activity equations and potassium-40 nucleus count.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(b) — Number of potassium-40 nuclei",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   80,
+   306,
+   239,
+   383
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q12c-image-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12c-image-solution.png",
+  "md5": "f15d6ea2cca34486bf1de8c820ea510d",
+  "alt": "Official mirror and magnification equations with the 90 cm image-distance result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(c)(i) — Distance from sheet to mirror",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   80,
+   273,
+   170,
+   345
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q12d-coin": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12d-coin.png",
+  "md5": "297b1a01c9006b3a31c9d0c7343c2550",
+  "alt": "The commemorative coin illustrates proton–lithium fusion into two alpha particles.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(d)(i) — Accelerating protons",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   442,
+   385,
+   542,
+   484
+  ]
+ },
+ "physics-2017-hl-q12d-currents-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12d-currents-solution.png",
+  "md5": "83d2cdb176763dfeee08cce465c6f1ad",
+  "alt": "Official transistor current symbols and IE = IB + IC, preserving subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(d)(ii) — Relationship between the transistor currents",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   109,
+   109,
+   208,
+   151
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q12d-not-symbol": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12d-not-symbol.png",
+  "md5": "20f9b429eebc779e06ce8436cf21a1b3",
+  "alt": "The printed NOT gate symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(d)(ii) — NOT gate truth table",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   433,
+   610,
+   523,
+   663
+  ]
+ },
+ "physics-2017-hl-q12d-reaction-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q12d-reaction-solution.png",
+  "md5": "c281a8f1ff8362bd5024535733cd7f05",
+  "alt": "Official Cockcroft–Walton nuclear equation with all atomic and mass numbers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q12(d)(i) — Cockcroft–Walton reaction",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   108,
+   278,
+   213,
+   300
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q2-density-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q2-density-solution.png",
+  "md5": "3b9e84e8b84b74ffa1a01a8a3bd3bfb4",
+  "alt": "Official stretched-string frequency formula and mass-per-unit-length expression with fractions and square root.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q2 — Mass per unit length",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   52,
+   490,
+   537,
+   546
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q3-data.png",
+  "md5": "8a629a008a74c34c6e891fbdee76411f",
+  "alt": "All six mass and temperature measurements for the copper calorimeter and ice experiment.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q3 — Insulating the calorimeter",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   418,
+   451,
+   560
+  ]
+ },
+ "physics-2017-hl-q3-latent-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q3-latent-question.png",
+  "md5": "cacd5910a11abdd47e4072c1e556ab7c",
+  "alt": "Complete calorimeter context, all six measurements, latent-heat calculation and both specific heat capacities.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q3 — Specific latent heat of fusion",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   54,
+   378,
+   545,
+   756
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    584,
+    547,
+    683
+   ],
+   [
+    54,
+    706,
+    547,
+    730
+   ]
+  ]
+ },
+ "physics-2017-hl-q3-latent-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q3-latent-solution.png",
+  "md5": "a85c21bf55a7ef038e6be071b60799da",
+  "alt": "Official heat-balance equation, substitutions and result, preserving all subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q3 — Specific latent heat of fusion",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   437,
+   537,
+   566
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q4-data.png",
+  "md5": "26317a61f761c9a7a07a4cfd67a27b6a",
+  "alt": "All ten voltage readings, 0 to 9 V, and current readings, 0 to 72 mA.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q4 — Current–voltage graph",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   87,
+   178,
+   508,
+   230
+  ]
+ },
+ "physics-2017-hl-q5b-spheres": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q5b-spheres.png",
+  "md5": "9099302b35ba63356a77594474c50f9e",
+  "alt": "Spheres A and B initially travel towards each other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q5(b)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   112,
+   310,
+   500,
+   367
+  ]
+ },
+ "physics-2017-hl-q5f-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q5f-field-solution.png",
+  "md5": "a3743b3c702c63c700977f1b3510bb3e",
+  "alt": "Official electric-field and Coulomb-force equations and field-strength result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q5(f)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   347,
+   204,
+   393
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q6-acceleration-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q6-acceleration-solution.png",
+  "md5": "3782506b7f2210d422b8565474247297",
+  "alt": "Official maximum-acceleration working, including ω² = k/m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q6 — Maximum acceleration",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   585,
+   245,
+   644
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q6-derivation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q6-derivation-solution.png",
+  "md5": "5d8e15620cbfb924c15a8067002d731a",
+  "alt": "Complete four-step derivation of v² = u² + 2as, with its stacked half.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q6 — Deriving the equation of motion",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   122,
+   537,
+   209
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q6-period-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q6-period-solution.png",
+  "md5": "2a7ef6167e507ba0f8f54befc4551853",
+  "alt": "Official period calculation with the square-root denominator.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q6 — Period of oscillation",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   659,
+   162,
+   708
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q7-doppler-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q7-doppler-solution.png",
+  "md5": "3b44ef7ff345e1995cc6c679f537dc08",
+  "alt": "Official Doppler speed calculation, retaining both fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q7 — Speed of the approaching source",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   52,
+   645,
+   148,
+   728
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q8-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-circuit.png",
+  "md5": "77626a2b63479a456fa451201c7ef107",
+  "alt": "12 V a.c. circuit: 200 Ω and 500 Ω variable resistors in parallel, followed by 50 Ω.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8 — Alternating current",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   48,
+   191,
+   276,
+   369
+  ]
+ },
+ "physics-2017-hl-q8-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-coil.png",
+  "md5": "743a1e71dca082d51b351b9e886c5edb",
+  "alt": "Investigation (i): 12 V a.c. supply, 200 Ω resistor and 50 Ω coil in series.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8(i) — Replacing the resistor with a coil",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   70,
+   429,
+   218,
+   572
+  ]
+ },
+ "physics-2017-hl-q8-current-question": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-current-question.png",
+  "md5": "a83cc65aa956ac395123d3dbda75d6a3",
+  "alt": "Complete 12 V circuit, variable-resistor setting and the request for the current in the 200 Ω resistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8(ii) — Current in the 200 Ω resistor",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   48,
+   133,
+   545,
+   374
+  ],
+  "maskedFurniture": [
+   [
+    273,
+    193,
+    544,
+    234
+   ],
+   [
+    301,
+    252,
+    545,
+    273
+   ],
+   [
+    273,
+    294,
+    545,
+    374
+   ]
+  ]
+ },
+ "physics-2017-hl-q8-current-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-current-solution.png",
+  "md5": "129dc9deb02a1c51f23a149ee03ae6ca",
+  "alt": "Official total current and current-divider working for the 200 Ω resistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8(ii) — Current in the 200 Ω resistor",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   102,
+   456,
+   244,
+   522
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q8-definitions-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-definitions-solution.png",
+  "md5": "81c1a27e83c1e15d9e8172e70f13dfd4",
+  "alt": "Resistance and resistivity definitions with their required notation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8 — Resistance and resistivity",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   52,
+   71,
+   165,
+   121
+  ],
+  "solution": true
+ },
+ "physics-2017-hl-q8-diode": {
+  "src": "/exam-figures/physics/markbank/physics-2017-hl-q8-diode.png",
+  "md5": "43dce29d4426258163d57f645988cea9",
+  "alt": "Investigation (ii): 12 V a.c. supply, 200 Ω resistor and diode in series.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8(ii) — Replacing the resistor with a diode",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   318,
+   429,
+   470,
+   572
+  ]
+ },
  "physics-2018-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2018-hl-q1-data.png",
   "md5": "7dd155a74858e87cd0a7b28dcdf9d209",
