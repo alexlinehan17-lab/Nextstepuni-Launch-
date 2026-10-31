@@ -21,6 +21,12 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    higher_2022 = {'venn-2022-hl-deferred':render_venn_2022,
+                   'car-table-2022-hl-deferred':render_car_table_2022,
+                   'linear-model-2022-hl-deferred':lambda dpi:render_visitors_2022(dpi,False),
+                   'quadratic-model-2022-hl-deferred':lambda dpi:render_visitors_2022(dpi,True)}
+    if name in higher_2022:
+        return higher_2022[name](dpi)
     if name == 'confidence-2023-ol-deferred':
         return render_confidence_2023_ol(dpi)
     if name == 'inequality-2023-ol-deferred':
@@ -679,4 +685,66 @@ def render_trout_2023(dpi,comparison=True):
         c.setFont('Helvetica',11);c.drawString(22,99,'P flattens throughout: its growth rate decreases from the start.')
         c.setFont('Helvetica',10);c.drawString(22,66,'Height tells us the population. Slope tells us how quickly it is increasing.')
         c.drawString(22,46,'The orange points show the P(t) table values, including the two given values.')
+    return _example_image(buf,c,dpi)
+
+
+def render_venn_2022(dpi):
+    buf,c=_example_canvas('Placing all six complex numbers',
+        '2022 deferred Higher Paper 1 · Q1(c) · the real and rational-component sets',430)
+    c.rect(40,72,480,265,stroke=1,fill=0)
+    c.ellipse(68,125,352,305,stroke=1,fill=0)
+    c.ellipse(208,125,492,305,stroke=1,fill=0)
+    c.setFont('Times-Bold',16)
+    c.drawString(65,311,'R');c.drawString(475,311,'X');c.drawString(498,344,'C')
+    c.setFont('Times-Roman',18)
+    c.drawCentredString(139,207,'√17')
+    c.drawCentredString(280,252,'2.5')
+    c.setFont('Times-Roman',14)
+    c.drawCentredString(280,210,'cos 180° +')
+    c.drawCentredString(280,189,'i sin 180°')
+    c.setFont('Times-Roman',18)
+    c.drawCentredString(417,239,'3i');c.drawCentredString(417,193,'3 + 2i')
+    c.drawString(66,90,'π + 5i')
+    c.setFont('Helvetica',10)
+    c.drawString(22,49,'R = real numbers. X = real and imaginary components both rational. C = complex numbers.')
+    return _example_image(buf,c,dpi)
+
+
+def render_car_table_2022(dpi):
+    buf,c=_example_canvas('The first five years start at Year 0',
+        '2022 deferred Higher Paper 1 · Q7(a)(i) · multiply each price by 0.75',260)
+    labels=['Year','0','1','2','3','4']
+    values=['Price (€)','24,000','18,000','13,500','10,125','7,593.75']
+    xs=[28,130,218,306,394,482]
+    c.setFont('Helvetica-Bold',12)
+    for x,label in zip(xs,labels):c.drawString(x,162,label)
+    c.line(22,149,538,149)
+    c.setFont('Helvetica',12)
+    for x,value in zip(xs,values):c.drawString(x,125,value)
+    c.setFont('Helvetica',10)
+    c.drawString(22,79,'The original scheme shifts the year labels to 1–5. The prices belong to years 0–4.')
+    c.drawString(22,56,'The completed values follow the question paper; official credit notes are unchanged.')
+    return _example_image(buf,c,dpi)
+
+
+def render_visitors_2022(dpi,quadratic):
+    title='One valid quadratic model' if quadratic else 'A linear model through both weeks'
+    part='Q9(a)(ii)' if quadratic else 'Q9(a)(i)'
+    buf,c=_example_canvas(title,'2022 deferred Higher Paper 1 · '+part+' · use both observed values',340)
+    c.setFont('Times-Roman',18)
+    c.drawString(28,243,'V(0) = 2506                 V(1) = 2734')
+    if quadratic:
+        c.drawString(28,204,'Choose c = 1. Then f = 2506 and d = 227.')
+        c.setFont('Times-Bold',23);c.drawString(28,163,'V(x) = x² + 227x + 2506')
+        c.setFont('Helvetica',11)
+        c.drawString(28,127,'Check: V(1) = 1 + 227 + 2506 = 2734.')
+        c.drawString(28,95,'All valid quadratic models have f = 2506 and d = 228 - c, with c ≠ 0.')
+        c.drawString(28,66,'The SEC accepts any valid quadratic; this is one worked example.')
+    else:
+        c.drawString(28,204,'b = 2506                 a = 2734 - 2506 = 228')
+        c.setFont('Times-Bold',23);c.drawString(28,163,'V(x) = 228x + 2506')
+        c.setFont('Helvetica',11)
+        c.drawString(28,127,'Check: V(1) = 228 + 2506 = 2734.')
+        c.drawString(28,95,'The source correctly finds a = 228, but its final line prints 288x.')
+        c.drawString(28,66,'Use 228x. The original SEC working and credit notes follow.')
     return _example_image(buf,c,dpi)

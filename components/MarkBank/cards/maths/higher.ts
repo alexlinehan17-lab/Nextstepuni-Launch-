@@ -78340,4 +78340,2103 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q1-a", topicId: "maths-4-4", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q1(a)",
+    questionText: "Write the following complex number in the form m + ni, where m,n ∈ ℝ and i² = −1: (3 − 5i)(2 + 4i).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "Correct expansion (second line of solution)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[5],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-a-question.png",
+          "srcHash": "b89a35f9fe29560155c954ca6634ee2c",
+          "alt": "The question as printed on the paper — Write the following complex number in the form m + ni, where m,n ∈ ℝ and i² = −1: (3 − 5i)(2 + 4i).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-a-solution.png",
+          "srcHash": "724796f3331ae78312a9e5970ff205c3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q1-b", topicId: "maths-4-4", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q1(b)",
+    questionText: "Use De Moivre’s theorem to write the following complex number in the form p + qi, where p,q ∈ ℝ and i² = −1: (3 − 3i)⁶.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "polar form must be used", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q1-b-solution-2", kind: "point", verbatim: "Subs into de Moivre’s Theorem", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[5],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-b-question.png",
+          "srcHash": "57a054d9a7c6cf68b93f7dba5acfe624",
+          "alt": "The question as printed on the paper — Use De Moivre’s theorem to write the following complex number in the form p + qi, where p,q ∈ ℝ and i² = −1: (3 − 3i)⁶.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-b-solution.png",
+          "srcHash": "e1496ebe10bd3ee57f1a4e7cecab4cf0",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The question requires De Moivre’s theorem. The SEC notes require polar form for any credit and the full requested form 0+5832 i; writing only 5832 i is listed under Full Credit −1.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q1-c", topicId: "maths-4-4", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q1(c)",
+    stem: "ℝ is the set of real numbers. ℂ is the set of complex numbers. X is the set of complex numbers whose real and imaginary parts are both rational. These sets are shown in the Venn diagram below; i²=−1.",
+    questionText: "Write each number in the correct region on the Venn diagram above, to show which region each number lies in. Six numbers: √17; 3i; 3+2i; π+5i; 2·5; cos180° + i sin180°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "One value in correct region", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "4 values in correct region", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-c-question.png",
+          "srcHash": "fc51447e44a3c9f3b631bdd071053be7",
+          "alt": "The question as printed on the paper — ℝ is the set of real numbers. ℂ is the set of complex numbers. X is the set of complex numbers whose real and imaginary parts are both rational. These sets are shown in the Venn diagram below; i²=−1. Write each number in the correct region on the Venn diagram above, to show which region each number lies in. Six numbers: √17; 3i; 3+2i; π+5i; 2·5; cos180° + i sin180°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q1-c-solution.png",
+          "srcHash": "666f5e29a0e01cb63c6160b67d72ec65",
+          "alt": "NextStepUni completed Venn diagram. Real only: √17. Intersection of real numbers and rational-component complex numbers: 2.5 and cos 180°+i sin 180° (=−1). X only: 3 i and 3+2 i. Outside both: π+5 i. All six placements and the original SEC criteria are retained.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q2-a-i", topicId: "maths-4-1", conceptId: "p1-deferred-q2-a-i",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q2(a)(i)",
+    questionText: "Multiply out and simplify (2m + 1)².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q2-a-i-solution-1", kind: "point", verbatim: "Multiplied out correctly but not simplified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-i-question.png",
+          "srcHash": "763f845b3a6f57e34cd4ff4ef361059b",
+          "alt": "The question as printed on the paper — Multiply out and simplify (2m + 1)².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-i-solution.png",
+          "srcHash": "bb762e234dde37f64cd347d9c5e43165",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q2-a-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q2-a-ii",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q2(a)(ii)",
+    stem: "Any positive odd number can be written in the form 2k + 1, where k ∈ ℤ and k ≥ 0, and any number in this form must be odd. Part (a)(i) asks to multiply out and simplify (2m+1)².",
+    questionText: "Using your answer to part (a)(i), show that the square of any odd number is also an odd number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Tests two or more particular cases", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-ii-question.png",
+          "srcHash": "535675b2736ffacc35a56c622e10007a",
+          "alt": "The question as printed on the paper — Any positive odd number can be written in the form 2k + 1, where k ∈ ℤ and k ≥ 0, and any number in this form must be odd. Part (a)(i) asks to multiply out and simplify (2m+1)². Using your answer to part (a)(i), show that the square of any odd number is also an odd number.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-ii-solution.png",
+          "srcHash": "2c8d906540c6dd48251f5fe14fd13be2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q2-a-iii", topicId: "maths-3-1", conceptId: "p1-deferred-q2-a-iii",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q2(a)(iii)",
+    stem: "Any positive odd number can be written in the form 2k + 1, where k ∈ ℤ and k ≥ 0, and any number in this form must be odd.",
+    questionText: "Assume that t is a positive odd number. Prove by induction that tⁿ is odd, for all n ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q2-a-iii-solution-1", kind: "point", verbatim: "Shows some knowledge of proof by induction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-iii-question.png",
+          "srcHash": "5825382a5ebb11299d7447ca69a12684",
+          "alt": "The question as printed on the paper — Any positive odd number can be written in the form 2k + 1, where k ∈ ℤ and k ≥ 0, and any number in this form must be odd. Assume that t is a positive odd number. Prove by induction that tⁿ is odd, for all n ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-a-iii-solution.png",
+          "srcHash": "929d61dd3395a571e3f13b811295f599",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q2(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use non-negative integer witnesses for t=2 m+1 and tᵏ=2 h+1, so the case t=1 is included. The inductive product is 2(2 hm+h+m)+1, which is odd. The three proof stages form one 10D task.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q2-b", topicId: "maths-4-1", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q2(b)",
+    questionText: "Write the following expression as a single fraction in its simplest form, where x ∈ ℝ: 2/(3x − 5) − 6/x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "Finds common denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-b-question.png",
+          "srcHash": "7fa3ac9585f7029a4bc02b77e0e3a733",
+          "alt": "The question as printed on the paper — Write the following expression as a single fraction in its simplest form, where x ∈ ℝ: 2/(3x − 5) − 6/x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q2-b-solution.png",
+          "srcHash": "331229277e5f2debfe1113fad44189e9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Combine over x(3 x−5) to get (30−16 x)/[x(3 x−5)]. The original expression is defined only for x≠0 and x≠5/3.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q3-a", topicId: "maths-4-2", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q3(a)",
+    questionText: "−5 and 3/2 are the solutions of the following equation, where x ∈ ℝ and b,c ∈ ℚ: x² + bx + c = 0. Find the value of b and the value of c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "Sum and product of roots found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-a-question.png",
+          "srcHash": "70c28b4237da1402a1bc40e34105beca",
+          "alt": "The question as printed on the paper — −5 and 3/2 are the solutions of the following equation, where x ∈ ℝ and b,c ∈ ℚ: x² + bx + c = 0. Find the value of b and the value of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-a-solution.png",
+          "srcHash": "847cd7904028209dcbafb04771dc23dd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q3-b", topicId: "maths-4-1", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q3(b)",
+    questionText: "Divide −6x³ − 4x² + 44x + 56 by 2x + 4.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "Division set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q3-b-solution-2", kind: "point", verbatim: "Two coefficients correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-b-question.png",
+          "srcHash": "c4a373beb04c8b30b1877ce590e7ece0",
+          "alt": "The question as printed on the paper — Divide −6x³ − 4x² + 44x + 56 by 2x + 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-b-solution.png",
+          "srcHash": "dc8daec72ab7b515379872a7be999ca6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q3-c", topicId: "maths-4-3", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q3(c)",
+    questionText: "Solve the following inequality for x ∈ ℝ, x ≠ 3/2: −4 ≤ (3x + 5)/(2x − 3).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Quadratic inequality involving 0", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "Roots of quadratic found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-c-question.png",
+          "srcHash": "0353cc133609a576cd1f2d8274eed45e",
+          "alt": "The question as printed on the paper — Solve the following inequality for x ∈ ℝ, x ≠ 3/2: −4 ≤ (3x + 5)/(2x − 3).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q3-c-solution.png",
+          "srcHash": "a62eb1ecabb21d831254601f00237e8c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The complete solution is x≤7/11 or x>3/2. Include 7/11, where equality holds, and exclude 3/2, where the denominator is zero.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q4-a", topicId: "maths-4-2", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q4(a)",
+    stem: "A line l and a curve c have equations, where x,y ∈ ℝ: l: x − 3y − 1 = 0; c: x² + 4y² = 1.",
+    questionText: "Find the co-ordinates of the points of intersection of l and c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Equation in one variable", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q4-a-solution-2", kind: "point", verbatim: "Finds both", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-a-question.png",
+          "srcHash": "87422d6be2d32b9a5b43b82dfe4e121d",
+          "alt": "The question as printed on the paper — A line l and a curve c have equations, where x,y ∈ ℝ: l: x − 3y − 1 = 0; c: x² + 4y² = 1. Find the co-ordinates of the points of intersection of l and c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-a-solution.png",
+          "srcHash": "16330149d38831584ee2e4b425403274",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q4-b", topicId: "maths-5-1", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q4(b)",
+    stem: "The functions are g(x)=x(2x−1)+3 and h(x)=5x+7, for x ∈ ℝ.",
+    questionText: "Write the composite function h(g(x)) in the form ax² + bx + c, where a,b,c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "Some correct substitution of", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-b-question.png",
+          "srcHash": "870a526b7dfab2490a09f73b67fdb7d1",
+          "alt": "The question as printed on the paper — The functions are g(x)=x(2x−1)+3 and h(x)=5x+7, for x ∈ ℝ. Write the composite function h(g(x)) in the form ax² + bx + c, where a,b,c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-b-solution.png",
+          "srcHash": "8ca2ca3bb1dfb175c6fa2874761e02c9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The full-credit composition is h(g(x))=10 x²−5 x+22. The source’s reference to g(h(x)) appears only in its high-partial-credit notes; it is not the requested composition.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q4-c", topicId: "maths-5-1", conceptId: "p1-deferred-q4-c",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q4(c)",
+    stem: "The graphs of j(x) and k(x) are shown below for −1≤x≤5, x ∈ ℝ.",
+    questionText: "Use the graphs to estimate the value of k(j(2)). Show your work on the graphs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q4-c-solution-1", kind: "point", verbatim: "indicated on the diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-c-question.png",
+          "srcHash": "3f558df6e9308e69bb2dd5f7b85ea06e",
+          "alt": "The question as printed on the paper — The graphs of j(x) and k(x) are shown below for −1≤x≤5, x ∈ ℝ. Use the graphs to estimate the value of k(j(2)). Show your work on the graphs.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q4-c-solution.png",
+          "srcHash": "f065b5b20d4a79351558a6b653067b02",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q5-a", topicId: "maths-5-1", conceptId: "p1-deferred-q5-a",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q5(a)",
+    stem: "The function g(x)=2−1/eˣ is defined for x ∈ ℝ.",
+    questionText: "Find the value of g(4). Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q5-a-solution-1", kind: "point", verbatim: "1∙9817", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-a-question.png",
+          "srcHash": "abfeb62fb6aa0488be89feaa6fe164b8",
+          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Find the value of g(4). Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-a-solution.png",
+          "srcHash": "8014ea88d03b39765e85603ebb321fad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q5-b", topicId: "maths-5-1", conceptId: "p1-deferred-q5-b",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q5(b)",
+    stem: "The function g(x)=2−1/eˣ is defined for x ∈ ℝ.",
+    questionText: "Find the value of lim(x→∞) g(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q5-b-solution-1", kind: "point", verbatim: "Limit formulated with some substitution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-b-question.png",
+          "srcHash": "49af6c0c66cab7b21512325e8c86087d",
+          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Find the value of lim(x→∞) g(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-b-solution.png",
+          "srcHash": "e730aa82a9e30bd4e4e5d758dff4edfd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q5-c", topicId: "maths-3-2", conceptId: "p1-deferred-q5-c",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q5(c)",
+    stem: "The function g(x)=2−1/eˣ is defined for x ∈ ℝ.",
+    questionText: "Solve the following equation in x: g(x)=1/4. Give your answer in the form ln a − ln b, where a,b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q5-c-solution-1", kind: "point", verbatim: "Isolates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-c-question.png",
+          "srcHash": "7ce38d6fda6345027b3082f6f82d24a4",
+          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Solve the following equation in x: g(x)=1/4. Give your answer in the form ln a − ln b, where a,b ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-c-solution.png",
+          "srcHash": "d3a802ab298d5523e2df9fbbaeea9205",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q5(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme uses k in its working, but the requested variable is x. Solving gives eˣ=4/7 and x=ln 4−ln 7.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q5-d", topicId: "maths-5-2", conceptId: "p1-deferred-q5-d",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q5(d)",
+    stem: "The function g(x)=2−1/eˣ is defined for x ∈ ℝ.",
+    questionText: "Find the value of the integral ∫₀⁵ g(x) dx. Give your answer in the form a + e^(−b), where a,b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q5-d-solution-1", kind: "point", verbatim: "Subs in limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q5-d-solution-2", kind: "point", verbatim: "Evaluates in the required form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-d-question.png",
+          "srcHash": "3d04f64e97048b8970fcaec5a3f67070",
+          "alt": "The question as printed on the paper — The function g(x)=2−1/eˣ is defined for x ∈ ℝ. Find the value of the integral ∫₀⁵ g(x) dx. Give your answer in the form a + e⁻ᵇ, where a,b ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q5-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q5-d-solution.png",
+          "srcHash": "1cd6c6d6ee4bdc0422cd93941b5ea276",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q5(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q6-a-i-ii-iii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a-i-ii-iii",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q6(a)(i), Q6(a)(ii), Q6(a)(iii)",
+    stem: "The function f is defined for x ∈ ℝ by f: x ↦ x³−6x²+3.",
+    questionText: "Use calculus to find the co-ordinates of each of the following points: (i) the local minimum point of f; (ii) the local maximum point of f; (iii) the point of inflection of f.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q6-a-i-ii-iii-solution-1", kind: "point", verbatim: "Finds the coordinates of the 3 points", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-a-i-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-a-i-ii-iii-question.png",
+          "srcHash": "9eed0e949b841c423d161f70531aa4bc",
+          "alt": "The question as printed on the paper — The function f is defined for x ∈ ℝ by f: x ↦ x³−6x²+3. Use calculus to find the co-ordinates of each of the following points: (i) the local minimum point of f; (ii) the local maximum point of f; (iii) the point of inflection of f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-a-i-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-a-i-ii-iii-solution.png",
+          "srcHash": "c103b77d125198a1a75f05c59658abe8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q6(a)(i), Q6(a)(ii), Q6(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "All three points share one 20D award: local minimum (4,−29), local maximum (0,3), and point of inflection (2,−13). Keep the complete calculus working and select one overall award.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q6-b-i", topicId: "maths-5-1", conceptId: "p1-deferred-q6-b-i",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q6(b)(i)",
+    stem: "The diagram below shows the cubic function g(x) for −2≤x≤2·5, x ∈ ℝ. There is a local minimum at (−1,2) and a local maximum at (1,6).",
+    questionText: "Write down the range of values of x for which g(x) is increasing.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Mentions -1 or 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-b-i-question.png",
+          "srcHash": "0564af9bf28d90fa023349e476bf47b8",
+          "alt": "The question as printed on the paper — The diagram below shows the cubic function g(x) for −2≤x≤2·5, x ∈ ℝ. There is a local minimum at (−1,2) and a local maximum at (1,6). Write down the range of values of x for which g(x) is increasing.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-b-i-solution.png",
+          "srcHash": "1bc12538a98691a2b7866fe574b3c2ab",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q6-b-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q6-b-ii",
+    section: "A", questionRef: "2022 HL Paper 1 — Deferred Q6(b)(ii)",
+    stem: "The diagram below shows the cubic function g(x) for −2≤x≤2·5, x ∈ ℝ. There is a local minimum at (−1,2) and a local maximum at (1,6).",
+    questionText: "Explain why the function g(x) does not have an inverse, for −2≤x≤2·5, x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "Mentions injective or surjective", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-b-ii-question.png",
+          "srcHash": "ea1aa4929f8f6cac0a8e0559482daa5a",
+          "alt": "The question as printed on the paper — The diagram below shows the cubic function g(x) for −2≤x≤2·5, x ∈ ℝ. There is a local minimum at (−1,2) and a local maximum at (1,6). Explain why the function g(x) does not have an inverse, for −2≤x≤2·5, x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q6-b-ii-solution.png",
+          "srcHash": "c9ffaa2d571167d0a6051865eb1847fd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The graph is not one-to-one: a horizontal line, for example y=3, meets it at three different x-values. Consequently its inverse relation is not a function on the stated domain.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-i",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(a)(i)",
+    stem: "The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price.",
+    questionText: "Complete the table below to show the price of the car in the first 5 years of the model. Years: 0,1,2,3,4. Prices (€): 24 000, blank, 13 500, blank, blank.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-a-i-solution-1", kind: "point", verbatim: "1 table entry correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q7-a-i-solution-2", kind: "point", verbatim: "2 table entries correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-i-question.png",
+          "srcHash": "57de937bfbcc36ec59c8382218904cd2",
+          "alt": "The question as printed on the paper — The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price. Complete the table below to show the price of the car in the first 5 years of the model. Years: 0,1,2,3,4. Prices (€): 24 000, blank, 13 500, blank, blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-i-solution.png",
+          "srcHash": "96b2deea43d5b8b247cea06f13d7e996",
+          "alt": "NextStepUni corrected table. Years 0,1,2,3,4 have prices €24,000, €18,000, €13,500, €10,125 and €7,593.75. The original SEC table mistakenly labels them 1–5; its price values and official credit notes are retained.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The paper starts at Year 0. The scheme’s table has shifted year headings; use years 0–4 for the five prices shown in the worked example.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(a)(ii)",
+    stem: "The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price.",
+    questionText: "Ignoring rounding, write the price of the car at the beginning of Year 10 of the model in the form a×(bⁿ), where a,b,n ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "1351.52 without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-ii-question.png",
+          "srcHash": "817d148e907ab0f9a9db200dd0da4d27",
+          "alt": "The question as printed on the paper — The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price. Ignoring rounding, write the price of the car at the beginning of Year 10 of the model in the form a×(bⁿ), where a,b,n ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-ii-solution.png",
+          "srcHash": "8e81da6b2e897d0331d45717cca1ad58",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-a-iii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-iii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(a)(iii)",
+    stem: "The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price.",
+    questionText: "Year p is the first year of the model for which the price of the car at the beginning of the year is less than €1000, where p ∈ ℕ. Find the value of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "Sets up the inequality", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-iii-question.png",
+          "srcHash": "6cdba42be085152e9c4b6a867c832dc8",
+          "alt": "The question as printed on the paper — The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price. Year p is the first year of the model for which the price of the car at the beginning of the year is less than €1000, where p ∈ ℕ. Find the value of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-iii-solution.png",
+          "srcHash": "096274a5137df0ff8be28689519784f3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Solve 24000(0.75)ᵖ<1000. The threshold is p>11.047…, so the first whole year is 12.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-a-iv", topicId: "maths-3-1", conceptId: "p1-deferred-q7-a-iv",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(a)(iv)",
+    stem: "The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price.",
+    questionText: "Use the formula for the sum of a geometric series to find the total amount of money paid for the car over the first 20 years of the model. Do not include the price for Year 20 in your solution. Give your answer correct to the nearest ten euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-a-iv-solution-1", kind: "point", verbatim: "nearest multiple of 10", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-iv-question.png",
+          "srcHash": "30b9f6496bd75406aa4f03aad0059544",
+          "alt": "The question as printed on the paper — The sale and resale of a car follows this model: it is sold at the beginning of each year. Its initial price, at the beginning of Year 0, is €24 000. Each resale price is 75% of the previous year’s price. Use the formula for the sum of a geometric series to find the total amount of money paid for the car over the first 20 years of the model. Do not include the price for Year 20 in your solution. Give your answer correct to the nearest ten euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-a-iv-solution.png",
+          "srcHash": "4270eb81b6504d0c00169cd963ee3258",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Sum 20 prices, from Year 0 through Year 19. The sum is about €95,695.56, which rounds to €95,700 to the nearest ten euro.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-b", topicId: "maths-5-2", conceptId: "p1-deferred-q7-b",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(b)",
+    stem: "The price of a different car, x years after it was initially sold, is P(x)=25 000×(0·8ˣ), where P(x) is the price in euro and x ∈ ℝ.",
+    questionText: "Use integration to work out the average price of this car over the first 10 years after it was initially sold. Give your answer correct to the nearest euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-b-solution-1", kind: "point", verbatim: "Integrates correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q7-b-solution-2", kind: "point", verbatim: "Subs in limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-b-question.png",
+          "srcHash": "ea6f4078211583f1b50a7fd89fa1f104",
+          "alt": "The question as printed on the paper — The price of a different car, x years after it was initially sold, is P(x)=25 000×(0·8ˣ), where P(x) is the price in euro and x ∈ ℝ. Use integration to work out the average price of this car over the first 10 years after it was initially sold. Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-b-solution.png",
+          "srcHash": "9381d10bd0464d0c96189612387efc1a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "An average value over ten years is one tenth of the area under P(x), so use (1/10)∫₀¹⁰P(x)dx. The result is about €10,000.58, rounding to €10,001.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-c", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(c)",
+    questionText: "Explain what is meant by the present value, P, of a payment of F euro to be received in t years’ time, where the annual rate of interest is i (and P,F,t,i ∈ ℝ).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "The amount of money that would be equal to", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-c-question.png",
+          "srcHash": "2d9b7dfe0589815e72edd0e996677e9f",
+          "alt": "The question as printed on the paper — Explain what is meant by the present value, P, of a payment of F euro to be received in t years’ time, where the annual rate of interest is i (and P,F,t,i ∈ ℝ).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-c-solution.png",
+          "srcHash": "b14ffd9daa393f4197a8ac4773dbde29",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-d-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-d-i",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(d)(i)",
+    stem: "Mark and Aisha buy a house for €280 000. They pay 15% from savings and take out a mortgage for the remainder. The mortgage is for 25 years at 0·36% interest per month.",
+    questionText: "Work out their monthly repayments, given that they will make an equal repayment at the end of each month. Give your answer in euro, correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-d-i-solution-1", kind: "point", verbatim: "25 years = 300 months", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q7-d-i-solution-2", kind: "point", verbatim: "Finds €238,000", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-d-i-question.png",
+          "srcHash": "b173999d9b6de66339aa52436b3fb95e",
+          "alt": "The question as printed on the paper — Mark and Aisha buy a house for €280 000. They pay 15% from savings and take out a mortgage for the remainder. The mortgage is for 25 years at 0·36% interest per month. Work out their monthly repayments, given that they will make an equal repayment at the end of each month. Give your answer in euro, correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-d-i-solution.png",
+          "srcHash": "19e803f8d07de80673346188f4483688",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q7-d-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-d-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q7(d)(ii)",
+    stem: "The house value increases at r% each year, r ∈ ℝ. Ten years after Mark and Aisha buy it for €280 000, its value is estimated to be €350 000.",
+    questionText: "Use this to work out the value of r. Give your answer as a percentage, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q7-d-ii-solution-1", kind: "point", verbatim: "Formula fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-d-ii-question.png",
+          "srcHash": "79236b57e0b461b7c7650dfb95fc43d1",
+          "alt": "The question as printed on the paper — The house value increases at r% each year, r ∈ ℝ. Ten years after Mark and Aisha buy it for €280 000, its value is estimated to be €350 000. Use this to work out the value of r. Give your answer as a percentage, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q7-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q7-d-ii-solution.png",
+          "srcHash": "e710a5d30c7f7d2987a138b3bc19d7ab",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q7(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-a-i", topicId: "maths-3-4", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(a)(i)",
+    stem: "A factory makes open rectangular boxes with no lid. Each is made by removing a square of side x cm from each corner of a rectangular sheet of cardboard and folding along the dotted lines. The diagram shows a 20cm×30cm sheet and the resulting box with height h, width w and length l.",
+    questionText: "Fill in the boxes below to show the height h, width w and length l of this box, in terms of x. The width is already done: w=20−2x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Either", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-a-i-question.png",
+          "srcHash": "a59197b300f4cfc1135042757dccb674",
+          "alt": "The question as printed on the paper — A factory makes open rectangular boxes with no lid. Each is made by removing a square of side x cm from each corner of a rectangular sheet of cardboard and folding along the dotted lines. The diagram shows a 20cm×30cm sheet and the resulting box with height h, width w and length l. Fill in the boxes below to show the height h, width w and length l of this box, in terms of x. The width is already done: w=20−2x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "2a0f700ec31bce7db9266c61f664e7bd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-a-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q8-a-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(a)(ii)",
+    stem: "A factory makes open rectangular boxes with no lid. Each is made by removing a square of side x cm from each corner of a rectangular sheet of cardboard and folding along the dotted lines. The diagram shows a 20cm×30cm sheet and the resulting box with height h, width w and length l.",
+    questionText: "Write the volume V(x) of this box in the form V(x)=ax³+bx²+cx, where a,b,c ∈ ℤ, 0<x<10, and V(x) is in cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Some correct multiplication", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-a-ii-question.png",
+          "srcHash": "12ee5d93beec516bcce49bfbe3f95398",
+          "alt": "The question as printed on the paper — A factory makes open rectangular boxes with no lid. Each is made by removing a square of side x cm from each corner of a rectangular sheet of cardboard and folding along the dotted lines. The diagram shows a 20cm×30cm sheet and the resulting box with height h, width w and length l. Write the volume V(x) of this box in the form V(x)=ax³+bx²+cx, where a,b,c ∈ ℤ, 0<x<10, and V(x) is in cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-a-ii-solution.png",
+          "srcHash": "9fd549389640df4629ccd66373a353f4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-b", topicId: "maths-5-2", conceptId: "p1-deferred-q8-b",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(b)",
+    stem: "A second box is made by cutting x-cm squares from the corners of a different rectangular sheet. Its volume is W(x)=4x³−64x²+240x cm³, where 0<x<6.",
+    questionText: "Use calculus to find the value of x that gives a maximum value of W(x). Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-b-solution-1", kind: "point", verbatim: "Finds two roots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-b-question.png",
+          "srcHash": "cf26d48f6d26e8075f7999e69d3eaae4",
+          "alt": "The question as printed on the paper — A second box is made by cutting x-cm squares from the corners of a different rectangular sheet. Its volume is W(x)=4x³−64x²+240x cm³, where 0<x<6. Use calculus to find the value of x that gives a maximum value of W(x). Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-b-solution.png",
+          "srcHash": "5272af9bd06b67d49278c63ea5733dc4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The stationary values are approximately 2.4274 and 8.2393; only the first lies in 0<x<6. Its second derivative is negative, so the maximum occurs at x=2.4 cm to one decimal place. The SEC accepts this without endpoint checking.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-c-i", topicId: "maths-4-2", conceptId: "p1-deferred-q8-c-i",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(c)(i)",
+    stem: "A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ.",
+    questionText: "Write down the three roots of U(x)=0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Finds one root", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q8-c-i-solution-2", kind: "point", verbatim: "Finds two roots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-i-question.png",
+          "srcHash": "e5e199c46a5d2410bd9bb769ad968d7c",
+          "alt": "The question as printed on the paper — A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ. Write down the three roots of U(x)=0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-i-solution.png",
+          "srcHash": "1f0090e53e76357ca67bce86533f5f67",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-c-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-c-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(c)(ii)",
+    stem: "A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ.",
+    questionText: "Sketch the graph of y=U(x) on the axes below. On your sketch, show all three roots of U(x)=0 and mark in the value of each root.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "Correct graph, but roots not indicated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-ii-question.png",
+          "srcHash": "99902f411dc101c468f06d8d388106e1",
+          "alt": "The question as printed on the paper — A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ. Sketch the graph of y=U(x) on the axes below. On your sketch, show all three roots of U(x)=0 and mark in the value of each root.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-ii-solution.png",
+          "srcHash": "ecf8e30593f90532f6e028ad953d6aa5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-c-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-c-iii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(c)(iii)",
+    stem: "A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ.",
+    questionText: "The function U(x) gives the volume of this third box for a particular range of values of x ∈ ℝ. Write down this range of values of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-c-iii-solution-1", kind: "point", verbatim: "States one or more values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-iii-question.png",
+          "srcHash": "be7cc010ec6f146c5b80cb43ac958cf6",
+          "alt": "The question as printed on the paper — A third open box is made by removing x-cm squares from each corner of a rectangular sheet and folding. Its volume is U(x)=x(42−2x)(30−2x) cm³ for an appropriate range of x ∈ ℝ. The function U(x) gives the volume of this third box for a particular range of values of x ∈ ℝ. Write down this range of values of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-c-iii-solution.png",
+          "srcHash": "6fc0844ab87e827bca6e688b137dbe4e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The polynomial roots are 0,15 and 21, but a real box needs positive height and both base lengths positive. Thus 0<x<15; the endpoints would flatten the box.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q8-d", topicId: "maths-5-2", conceptId: "p1-deferred-q8-d",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q8(d)",
+    stem: "A fourth open box is made from a square sheet by removing x-cm squares from its corners. Its volume is T(x)=x(A−2x)(A−2x) cm³, where 0<x<A/2 and A ∈ ℕ.",
+    questionText: "Use calculus to show that the maximum value of T(x) is at x=A/6.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q8-d-solution-1", kind: "point", verbatim: "Accept without checking endpoints of given domain", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-d-question.png",
+          "srcHash": "8df697a60ba69b60c51703141ccd50d1",
+          "alt": "The question as printed on the paper — A fourth open box is made from a square sheet by removing x-cm squares from its corners. Its volume is T(x)=x(A−2x)(A−2x) cm³, where 0<x<A/2 and A ∈ ℕ. Use calculus to show that the maximum value of T(x) is at x=A/6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q8-d-solution.png",
+          "srcHash": "8a825af602de38609c5a390e3f3815bd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-i",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(a)(i)",
+    stem: "Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1.",
+    questionText: "Use a linear function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=ax+b, where a,b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-a-i-solution-1", kind: "point", verbatim: "Finds b", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-i-question.png",
+          "srcHash": "c975067ff57cbd01e8dc70ac4ab3f9a9",
+          "alt": "The question as printed on the paper — Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1. Use a linear function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=ax+b, where a,b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-i-solution.png",
+          "srcHash": "0c1ef6c2b59fc403d8cf03563e6e1198",
+          "alt": "NextStepUni correction: V(0)=2506 gives b=2506; V(1)=2734 gives a=228. Therefore V(x)=228 x+2506. The source finds 228 but prints 288 in its final expression; original SEC criteria follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The correct increase is 2734−2506=228. The scheme’s final 288 x is a typo; its preceding calculation correctly gives 228.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-a-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(a)(ii)",
+    stem: "Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1.",
+    questionText: "Use a quadratic function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=cx²+dx+f, where c,d,f ∈ ℝ. (Note that there are an infinite number of different possible quadratic functions.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "Any valid quadratic", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-ii-question.png",
+          "srcHash": "b64f1067c204eb89206eeb89cb5ac50e",
+          "alt": "The question as printed on the paper — Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1. Use a quadratic function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=cx²+dx+f, where c,d,f ∈ ℝ. (Note that there are an infinite number of different possible quadratic functions.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-ii-solution.png",
+          "srcHash": "b583015a03a474f0dd92de275c2b05cf",
+          "alt": "NextStepUni example: V(x)=x²+227 x+2506 gives 2506 at x=0 and 2734 at x=1. The complete family is cx²+(228−c)x+2506 with c≠0. The SEC accepts any valid quadratic; its original credit notes follow.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-a-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-iii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(a)(iii)",
+    stem: "Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1.",
+    questionText: "Use an exponential function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=k×e^(px), where k,p ∈ ℝ. Give the value of p correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "Isolates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-iii-question.png",
+          "srcHash": "58989bb323f7760c41b17b522526d863",
+          "alt": "The question as printed on the paper — Fred monitors a website with 2506 unique visitors in Week 0 and 2734 in Week 1. Different functions model V(x), the unique visitors in Week x, x ∈ ℤ, x>0. Each uses V(0)=2506 and V(1)=2734; their values usually differ for weeks other than 0 or 1. Use an exponential function to model the number of unique visitors per week to this website. That is, write V(x) in the form V(x)=k×e^(px), where k,p ∈ ℝ. Give the value of p correct to 3 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-a-iii-solution.png",
+          "srcHash": "b2c045e9ef3953304d7160cca8c344b8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-b", topicId: "maths-3-4", conceptId: "p1-deferred-q9-b",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(b)",
+    stem: "It is 12 km from Fred’s home to work. His average speed to work is 40 km/h; his speed home is lower because of traffic. His overall average speed for both journeys is 25 km/h.",
+    questionText: "Work out Fred’s average speed on the way home from work. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-b-solution-1", kind: "point", verbatim: "Finds the time to work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q9-b-solution-2", kind: "point", verbatim: "Finds the total time", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-b-question.png",
+          "srcHash": "427abb992e65aca34414883772b3a8e0",
+          "alt": "The question as printed on the paper — It is 12 km from Fred’s home to work. His average speed to work is 40 km/h; his speed home is lower because of traffic. His overall average speed for both journeys is 25 km/h. Work out Fred’s average speed on the way home from work. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-b-solution.png",
+          "srcHash": "28b591d92e5eb404ad106e6cdc921d93",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-c-i-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q9-c-i-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(c)(i), Q9(c)(ii)",
+    stem: "Fred’s car displays average speed for the journey so far in km/h, rounded to the nearest whole number, resetting to 0 at the start of each journey.",
+    questionText: "(i) What is Fred’s average speed at the instant when the display changes from 47 km/h to 48 km/h? (ii) Fred starts a long journey. After initially varying speeds, he joins a motorway at a constant 120 km/h. When the display changes from 115 km/h to 116 km/h he has travelled for T hours and a total distance D kilometres. Write D in terms of T.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-c-i-ii-solution-1", kind: "point", verbatim: "Distance, Speed & Time formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-i-ii-question.png",
+          "srcHash": "8cd5566fd4603fcfd30e2c9b6040368e",
+          "alt": "The question as printed on the paper — Fred’s car displays average speed for the journey so far in km/h, rounded to the nearest whole number, resetting to 0 at the start of each journey. (i) What is Fred’s average speed at the instant when the display changes from 47 km/h to 48 km/h? (ii) Fred starts a long journey. After initially varying speeds, he joins a motorway at a constant 120 km/h. When the display changes from 115 km/h to 116 km/h he has travelled for T hours and a total distance D kilometres. Write D in terms of T.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-i-ii-solution.png",
+          "srcHash": "51321ecfe6d0129e237022afee0a04c7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q9(c)(i), Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "These two parts share one 5C allocation. The display first changes from 47 to 48 at an average 47.5 km/h. Similarly, 115 to 116 means 115.5 km/h, so D=115.5 T.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-c-iii", topicId: "maths-3-4", conceptId: "p1-deferred-q9-c-iii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(c)(iii)",
+    stem: "Fred’s car displays average speed for the journey so far in km/h, rounded to the nearest whole number, resetting to 0 at the start of each journey. Fred joins a motorway and travels at 120 km/h. When the display changes from 115 to 116 km/h he has travelled for T hours over D kilometres.",
+    questionText: "Exactly 20 minutes later, the display changes from 116 km/h to 117 km/h. Fred is still travelling at 120 km/h. Use this information to write another equation linking D and T.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-c-iii-solution-1", kind: "point", verbatim: "Total distance and total time written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-iii-question.png",
+          "srcHash": "7aa93c7190db89cf451b7fb4c914d0ef",
+          "alt": "The question as printed on the paper — Fred’s car displays average speed for the journey so far in km/h, rounded to the nearest whole number, resetting to 0 at the start of each journey. Fred joins a motorway and travels at 120 km/h. When the display changes from 115 to 116 km/h he has travelled for T hours over D kilometres. Exactly 20 minutes later, the display changes from 116 km/h to 117 km/h. Fred is still travelling at 120 km/h. Use this information to write another equation linking D and T.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-iii-solution.png",
+          "srcHash": "e3c0b30e8ca4a150e38d4465550f7b47",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q9(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "In 20 minutes at 120 km/h, Fred travels 40 km. The new average is 116.5 km/h, so 116.5=(D+40)/(T+1/3).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q9-c-iv", topicId: "maths-4-2", conceptId: "p1-deferred-q9-c-iv",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q9(c)(iv)",
+    stem: "Fred continues at 120 km/h. When the display changes from 116 to 117 km/h he has travelled 174·75 km in 1·5 hours. x minutes later it changes to 118 km/h: 1·5+x/60=[174·75+120(x/60)]/117·5, where x ∈ ℝ.",
+    questionText: "Solve this equation to find the value of x, and hence find the total distance travelled by Fred when the display changes to 118 km/h.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q9-c-iv-solution-1", kind: "point", verbatim: "An equation in x without denominators", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-iv-question.png",
+          "srcHash": "e1eaf8cac2bcfb0c603d897233cafea4",
+          "alt": "The question as printed on the paper — Fred continues at 120 km/h. When the display changes from 116 to 117 km/h he has travelled 174·75 km in 1·5 hours. x minutes later it changes to 118 km/h: 1·5+x/60=[174·75+120(x/60)]/117·5, where x ∈ ℝ. Solve this equation to find the value of x, and hence find the total distance travelled by Fred when the display changes to 118 km/h.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q9-c-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q9-c-iv-solution.png",
+          "srcHash": "8c591e74443a43c17b36067f1b38e057",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q9(c)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-a", topicId: "maths-3-4", conceptId: "p1-deferred-q10-a",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(a)",
+    stem: "A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm.",
+    questionText: "The funnel is full of sand. Find the volume of sand in the funnel, correct to the nearest cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-a-solution-1", kind: "point", verbatim: "Fully substituted formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-a-question.png",
+          "srcHash": "fd938da479faf37693a1b09d29a55ab2",
+          "alt": "The question as printed on the paper — A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. The funnel is full of sand. Find the volume of sand in the funnel, correct to the nearest cm³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-a-solution.png",
+          "srcHash": "bbdcc2cdb472b533ccd57deb998214b9",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-b", topicId: "maths-3-4", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(b)",
+    stem: "A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. Sand drains out and forms a right circular cone on a level surface. The fallen cone’s height equals its diameter.",
+    questionText: "Find the height of the cone of fallen sand, when there are 150 cm³ of sand left in the funnel. Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "the volume of the fallen sand", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-b-question.png",
+          "srcHash": "f127b367a1f1331fcd53577b37998b18",
+          "alt": "The question as printed on the paper — A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. Sand drains out and forms a right circular cone on a level surface. The fallen cone’s height equals its diameter. Find the height of the cone of fallen sand, when there are 150 cm³ of sand left in the funnel. Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-b-solution.png",
+          "srcHash": "ac7e9cb0fa162c4cf1d370ff067d5c67",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The source uses the rounded 201 cm³ from part(a), giving 51 cm³ of fallen sand. Using the exact initial 64πcm³ still gives h=5.80 cm to two decimal places.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-c", topicId: "maths-5-2", conceptId: "p1-deferred-q10-c",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(c)",
+    stem: "The curved surface area of the cone of fallen sand is A=πr²√5 cm², where r ∈ ℝ is its radius in cm.",
+    questionText: "Find the rate at which this curved surface area is increasing with respect to r, when r=3cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-c-solution-1", kind: "point", verbatim: "Mentions the relevant derivative", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-c-question.png",
+          "srcHash": "6e687740a648cbb19e90b4e3bfe501c5",
+          "alt": "The question as printed on the paper — The curved surface area of the cone of fallen sand is A=πr²√5 cm², where r ∈ ℝ is its radius in cm. Find the rate at which this curved surface area is increasing with respect to r, when r=3cm.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-c-solution.png",
+          "srcHash": "e34cea09e80fe4a10a2d048ff6a8cb6b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-d", topicId: "maths-2-1", conceptId: "p1-deferred-q10-d",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(d)",
+    stem: "A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. After a certain time the remaining sand is a cone of height H cm and radius R cm.",
+    questionText: "Write H in terms of R.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-d-solution-1", kind: "point", verbatim: "Mentions a relevant ratio", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-d-question.png",
+          "srcHash": "1023e563e2b4615406fddd365152d0af",
+          "alt": "The question as printed on the paper — A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. After a certain time the remaining sand is a cone of height H cm and radius R cm. Write H in terms of R.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-d-solution.png",
+          "srcHash": "0d5e18cacc2fe95b1b0af7afae631c5e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-e", topicId: "maths-5-2", conceptId: "p1-deferred-q10-e",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(e)",
+    stem: "A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. The remaining sand forms a similar cone of height H and radius R.",
+    questionText: "The sand drains from the funnel at a steady rate of 3 cm³ per second. Find the rate at which the radius of the remaining sand in the funnel is decreasing when there are 8π cm³ of sand left in the funnel. Give your answer in cm³ per second.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-e-solution-1", kind: "point", verbatim: "States relevant derivative", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"markingNote":"The question’s final unit cm³ per second is a typo. Radius changes in cm per second, as correctly used by the scheme. The derivative is −1/(4π) cm/s, a decrease of 1/(4π) cm/s.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-e-question.png",
+          "srcHash": "80646e71ba5b2daf35c765de8410992d",
+          "alt": "The question as printed on the paper — A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. The remaining sand forms a similar cone of height H and radius R. The sand drains from the funnel at a steady rate of 3 cm³ per second. Find the rate at which the radius of the remaining sand in the funnel is decreasing when there are 8π cm³ of sand left in the funnel. Give your answer in cm³ per second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-e-solution.png",
+          "srcHash": "8c12e589a51ce39c381ceb55a2136d1e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The final unit printed on the paper is a typo: radius changes in cm/s, not cm³/s. Here H=3 R and V=πR³; at V=8π, R=2. Therefore dR/dt=−1/(4π)cm/s, a decrease of 1/(4π)cm/s.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-31"}, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-deferred-q10-f-i-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q10-f-i-ii",
+    section: "B", questionRef: "2022 HL Paper 1 — Deferred Q10(f)(i), Q10(f)(ii)",
+    stem: "A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. Its curved surface is cut from a circular piece of metal of radius l, with sector angle θ.",
+    questionText: "(i) Find l, the slant height of the funnel. Give your answer in cm, in surd form. (ii) Using your value for l, work out the size of the angle marked θ in the diagram above. Give your answer correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-deferred-q10-f-i-ii-solution-1", kind: "point", verbatim: "Circumference of cone", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2022-hl-p1-deferred-q10-f-i-ii-solution-2", kind: "point", verbatim: "Circumference of disc", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-f-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-f-i-ii-question.png",
+          "srcHash": "05aaa69763a8440ee3e5cb2f650fc40c",
+          "alt": "The question as printed on the paper — A funnel in the shape of an inverted right circular cone has a height of 12 cm and radius 4 cm. Its curved surface is cut from a circular piece of metal of radius l, with sector angle θ. (i) Find l, the slant height of the funnel. Give your answer in cm, in surd form. (ii) Using your value for l, work out the size of the angle marked θ in the diagram above. Give your answer correct to the nearest degree.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2022-hl-p1-deferred-q10-f-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2022-hl-p1-deferred-q10-f-i-ii-solution.png",
+          "srcHash": "96c2c89e6e2c81b5441a59cf7afec695",
+          "alt": "Original SEC worked solution and complete marking guidance for 2022 HL Paper 1 — Deferred Q10(f)(i), Q10(f)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Both parts share one 10 Caward. The slant height is 4√10 cm. The sector’s arc is the cone’s base circumference 8π, so θ=360/√10≈114°.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

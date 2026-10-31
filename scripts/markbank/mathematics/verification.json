@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and twelve deferred editions; four indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
-  "runtimeCards": 4996,
-  "reviewedTasks": 4996,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and thirteen deferred editions; three indexed English deferred editions remain. Irish-language editions deferred at Alex\u2019s request on 2026-10-31.",
+  "runtimeCards": 5044,
+  "reviewedTasks": 5044,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "Passed on 2026-10-31 through 2023 deferred Ordinary Paper 2.",
+  "productionBuild": "Passed on 2026-10-31 through 2022 deferred Higher Paper 1.",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2023ordinaryPaper2",
+  "latestBatch": "deferred2022higherPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2022 Higher deferred Paper 1",
-    "status": "All 2023\u20132025 English deferred papers complete and verified; next is the independent visual review of 2022 Higher Paper 1.",
-    "remainingEnglishDeferredPapers": 4,
+    "paper": "2022 Higher deferred Paper 2",
+    "status": "2022 Higher deferred Paper 1 reviewed and carded; next is the independent visual review of Paper 2.",
+    "remainingEnglishDeferredPapers": 3,
     "irishEditionReview": "Deferred at user request; not a blocker for current English-edition scope."
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -9000,5 +9000,97 @@
     "englishScopeComplete": false,
     "status": "Complete locally and verified; no push or deployment.",
     "generatorReproduction": "Passed: authoring generator reproduces committed review ledger and all 54 cards byte for byte."
+  },
+  "deferred2022higherPaper1": {
+    "date": "2026-10-31",
+    "paper": "2022 Higher deferred Paper 1",
+    "paperPagesInspected": 32,
+    "schemePagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "reviewedTasks": 48,
+    "offeredMarks": 380,
+    "candidateMarks": 220,
+    "runtimeCards": 5044,
+    "runtimeByLevel": {
+      "higher": 1871,
+      "ordinary": 2036,
+      "foundation": 1137
+    },
+    "reviewedPaperEditions": 124,
+    "previousAuthoredCardsUnchanged": 4997,
+    "previousFigureEntriesUnchanged": 10255,
+    "previousDeferredImagesUnchanged": 1058,
+    "inspectedImages": 96,
+    "workedSupplements": [
+      "Q1(c): completed Venn diagram with all six numbers",
+      "Q7(a)(i): corrected year headings in the depreciation table",
+      "Q9(a)(i): correct linear model and calculation",
+      "Q9(a)(ii): worked quadratic example and full family of valid models"
+    ],
+    "sourceCorrections": [
+      "Q6(a)(i\u2013iii), Q9(c)(i\u2013ii) and Q10(f)(i\u2013ii) retain their shared allocations.",
+      "Corrected source year labels, 288/228 coefficient typo and radius-change units while retaining original SEC guidance.",
+      "Domain restrictions, rounding thresholds, physical limits and complete proof context clarified."
+    ],
+    "reviewedAtlasQuestionPlacements": 1174,
+    "allCardsInAtlas": true,
+    "remainingEnglishDeferredPapers": 3,
+    "irishEditionReview": "Deferred at user request; not part of current completion scope.",
+    "tests": {
+      "javascriptPassed": 426,
+      "pythonPassed": 20,
+      "typecheck": "passed",
+      "sourceAudit": "passed",
+      "deckDroppedCards": 0,
+      "productionBuild": "passed"
+    },
+    "browser": {
+      "engine": "Chrome via CUA",
+      "desktopCard": "maths-2022-hl-p1-deferred-q1-c",
+      "phoneCard": "maths-2022-hl-p1-deferred-q6-a-i-ii-iii",
+      "phoneViewport": [
+        390,
+        844
+      ],
+      "hiddenBeforeReveal": true,
+      "awardsTested": [
+        8,
+        10
+      ],
+      "enlarge": true,
+      "phoneZoom": true,
+      "escapeAndFocusReturn": true,
+      "originalSchemePagesRendered": [
+        13,
+        2,
+        4
+      ],
+      "viewportReset": true,
+      "pageErrors": []
+    },
+    "wholeSubjectComplete": false,
+    "englishScopeComplete": false,
+    "status": "Complete locally and verified; no push or deployment."
   }
 }
