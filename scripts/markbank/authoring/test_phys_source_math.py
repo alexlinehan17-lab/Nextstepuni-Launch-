@@ -146,5 +146,71 @@ class PhysicsSourceMathTest(unittest.TestCase):
         self.assertAlmostEqual((.0675*4180+.0734*390)*9, 2796.984)
         self.assertAlmostEqual(.00103*4180*(100-19), 348.7374)
 
+    def test_2010_shared_spans_preserve_radius_powers_and_negative_unit_exponents(self):
+        from phys_review_2010_hl import GLYPHS, SOURCES
+        with fitz.open(ROOT / SOURCES['scheme']['path']) as scheme:
+            options=dict(baseline=True, dedupe=True, glyph_order=True, segments=True, glyph_baselines=True)
+            self.assertEqual(fraction_text(scheme[8], (122,496,190,526), GLYPHS['scheme'], **options),
+                             'GMEm/R₁² = GMₘm/R₂²')
+            self.assertEqual(fraction_text(scheme[8], (122,525,181,553), GLYPHS['scheme'], **options),
+                             'ME/Mₘ (=81)= R₁²/R₂²')
+            self.assertEqual(equation_text(scheme[8], (247,679,377,698), GLYPHS['scheme'],
+                                          baseline=True, dedupe=True, degrees=True, glyph_baselines=True),
+                             'v=1022.9ms⁻¹(≈1.02×10³ms⁻¹)')
+
+    def test_2010_bracket_only_groups_and_padding_keep_doppler_and_energy_equations(self):
+        from phys_review_2010_hl import GLYPHS, SOURCES
+        with fitz.open(ROOT / SOURCES['scheme']['path']) as scheme:
+            options=dict(baseline=True, dedupe=True, glyph_order=True, segments=True, glyph_baselines=True)
+            self.assertEqual(fraction_text(scheme[9], (215,546,280,584), GLYPHS['scheme'], **options),
+                             'λ′=λ( (c+u)/c )')
+            self.assertEqual(equation_text(scheme[12], (212,395,452,421), GLYPHS['scheme'],
+                                          baseline=True, dedupe=True, degrees=True, glyph_baselines=True),
+                             'E=hf/E=(6.6×10⁻³⁴)[3.6×10²⁰]/2.376×10⁻¹³(J )')
+            self.assertEqual(fraction_text(scheme[16], (232,606,337,639), GLYPHS['scheme'], **options),
+                             '1/(4πε) [ (2×10⁻⁶)/(0.1)² + (5×10⁻⁶)/(0.15)² ]')
+
+    def test_2010_calculations_independently_follow_the_supplied_data(self):
+        import math
+        self.assertAlmostEqual(9.8/9, 1.09, delta=.005)
+        self.assertAlmostEqual(2*math.pi*3.84e8/(27.3*24*3600),1022.9,delta=.1)
+        self.assertAlmostEqual(3e8*(590/587-1),1.5333e6,delta=100)
+        self.assertAlmostEqual((6.6e-34*3.6e20-2*9.1e-31*(3e8)**2)/2,3.69e-14,delta=1e-18)
+        latent=((.0618*4180+.0346*390)*11.8-.0012*4180*80)/.0012
+        self.assertAlmostEqual(latent,2.34e6,delta=5000)
+        self.assertAlmostEqual(2000/230,8.7,delta=.01)
+        self.assertAlmostEqual(230**2/2000,26.4,delta=.1)
+        self.assertAlmostEqual(202.5e6*1.6e-19/(3e8)**2,3.6e-28,delta=1e-31)
+        self.assertAlmostEqual((2e-6/.1**2+5e-6/.15**2)/(4*math.pi*8.9e-12),3.77e6,delta=6000)
+        self.assertEqual(150*6+300*8+150*5,4050)
+        self.assertAlmostEqual(4050/(19*60),3.55,delta=.01)
+
+    def test_2010_ordinary_experimental_data_and_unit_conversions(self):
+        import math
+        focal_lengths=[u*v/(u+v) for u,v in [(20,65),(30,32),(50,23)]]
+        self.assertAlmostEqual(sum(focal_lengths)/3,15.5,delta=.02)
+        diameter=(.21+.20+.18)/3*1e-3
+        area=math.pi*(diameter/2)**2
+        self.assertGreaterEqual(area,3.03e-8)
+        self.assertLessEqual(area,3.14e-8)
+        resistivity=20.2*area/.488
+        self.assertGreaterEqual(resistivity,1.25e-6)
+        self.assertLessEqual(resistivity,1.29e-6)
+        for force,acceleration in [(0.20,.4),(.25,.5),(.30,.6),(.35,.7),(.40,.8),(.45,.9),(.50,1)]:
+            self.assertEqual(acceleration,2*force)
+
+    def test_2010_ordinary_collision_circuit_and_two_stage_journey(self):
+        speed=(50*6+70*0)/(50+70)
+        self.assertEqual(speed,2.5)
+        self.assertEqual(.5*50*6**2,900)
+        self.assertEqual(.5*(50+70)*speed**2,375)
+        parallel=1/(1/15+1/30)
+        self.assertEqual(parallel,10)
+        self.assertEqual(12/(10+parallel+4),.5)
+        acceleration=60/120
+        end_speed=acceleration*15
+        self.assertEqual(.5*acceleration*15**2,56.25)
+        self.assertAlmostEqual(80/((end_speed+0)/2),21.33,delta=.005)
+
 if __name__ == '__main__':
     unittest.main()

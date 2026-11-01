@@ -220,7 +220,10 @@ def _dominant_baseline(spans):
         if text and not all(c in '⎛⎜⎝⎞⎟⎠' for c in text):
             y = round(sp['origin'][1], 1)
             weights[y] = weights.get(y, 0) + len(text)
-    return max(weights, key=weights.get)
+    # A region beside a fraction can contain only the pieces of its tall
+    # bracket. It still has a baseline even though none of those pieces should
+    # outweigh the mathematical expression when ordinary glyphs are present.
+    return max(weights, key=weights.get) if weights else spans[0]['origin'][1]
 
 
 def _line_text(ln, baseline=False):
@@ -249,7 +252,7 @@ def _line_text(ln, baseline=False):
     out = []
     for i, (s, k) in enumerate(zip(spans, kinds)):
         t = _span_text(spans, i)
-        if k and not stacked and t != '°':
+        if k and (not stacked or s.get('glyph_baselines')) and t != '°':
             t = _script(t, SUP_MAP if k == 'sup' else SUB_MAP) or t
         out.append(t)
     return ''.join(out)
@@ -264,7 +267,7 @@ def _line_text(ln, baseline=False):
 # GLYPHS = {'CambriaMath': {2204: 'v', 2203: 'u', 2183: 'a'}}. The glyph's id is
 # taken from the page's text trace at the glyph's own origin (the duplicate a
 # maths font draws at the same origin with id -1 never overrides a real id).
-def _page_dict(page, glyphs=None, clip=None, dedupe=False):
+def _page_dict(page, glyphs=None, clip=None, dedupe=False, glyph_baselines=False):
     """page.get_text('dict') (optionally clipped), every span's text rebuilt from
     its characters: a maths font draws each glyph TWICE, the copy a zero-width
     character at the real one's advance or gathered at the line's end (2023
@@ -283,7 +286,7 @@ def _page_dict(page, glyphs=None, clip=None, dedupe=False):
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 fix = next((m for f, m in (glyphs or {}).items() if f in sp['font']), None)
-                out, prev, glyphs_at = [], None, []
+                out, prev, glyphs_at, positioned = [], None, [], []
                 for ch in sp['chars']:
                     c = ch['c']
                     if (c.strip() and ch['bbox'][2] - ch['bbox'][0] < 0.05
@@ -305,8 +308,30 @@ def _page_dict(page, glyphs=None, clip=None, dedupe=False):
                         c = fix.get(gid, c)
                     out.append(c)
                     glyphs_at.append((ch['bbox'][0], c))
+                    positioned.append((ch, c))
                 sp['text'] = ''.join(out)
                 sp['glyphs'] = glyphs_at   # each kept glyph with its x, for equation_text
+                if glyph_baselines:
+                    sp['positioned'] = positioned
+            if glyph_baselines:
+                # Some legacy equation objects put an upper power and lower
+                # index in ONE span (R²₁), or store a raised minus after its
+                # digit. Use each original glyph's baseline and horizontal
+                # position rather than the span's aggregate origin/order.
+                split = []
+                for sp in ln['spans']:
+                    groups = {}
+                    for ch, c in sp['positioned']:
+                        groups.setdefault(round(ch['origin'][1], 2), []).append((ch, c))
+                    for group in groups.values():
+                        group.sort(key=lambda pair: pair[0]['bbox'][0])
+                        boxes = [ch['bbox'] for ch, _ in group]
+                        split.append(dict(sp, text=''.join(c for _, c in group),
+                            origin=group[0][0]['origin'], glyph_baselines=True,
+                            bbox=(min(b[0] for b in boxes), min(b[1] for b in boxes),
+                                  max(b[2] for b in boxes), max(b[3] for b in boxes)),
+                            glyphs=[(ch['bbox'][0], c) for ch, c in group]))
+                ln['spans'] = split
     return raw
 
 
@@ -936,6 +961,8 @@ def _region_text(spans, glyph_order=False, baseline=False):
     out = _line_text({'spans': spans}, baseline=baseline)
     if baseline:
         out = out.translate(str.maketrans({'⎛': '(', '⎜': '', '⎝': '', '⎞': ')', '⎟': '', '⎠': ''}))
+        if any(sp.get('glyph_baselines') for sp in spans):
+            out = out.translate(str.maketrans({'⎡': '[', '⎢': '', '⎣': '', '⎤': ']', '⎥': '', '⎦': ''}))
     if glyph_order:
         out = re.sub(r'(?<=[A-Za-z0-9)])\s+(?=[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺])', '', out)
     return _norm(out)
@@ -991,7 +1018,8 @@ def _items_text(items, sep='', glyph_order=False, baseline=False):
     return _norm(sep.join(out))
 
 
-def fraction_text(page, clip, glyphs=None, glyph_order=False, baseline=False, dedupe=False, segments=False):
+def fraction_text(page, clip, glyphs=None, glyph_order=False, baseline=False, dedupe=False, segments=False,
+                  glyph_baselines=False):
     """The text inside `clip` with every stacked fraction written on one line.
 
     Bars are read innermost first, so a fraction inside another's numerator or
@@ -1022,7 +1050,7 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False, baseline=False, de
                     bars.append(r)
         bars = list({tuple(round(v, 3) for v in bar): bar for bar in bars}.values())
     items = []
-    for b in _page_dict(page, glyphs, clip, dedupe=dedupe)['blocks']:
+    for b in _page_dict(page, glyphs, clip, dedupe=dedupe, glyph_baselines=glyph_baselines)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
@@ -1131,10 +1159,10 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False, baseline=False, de
 # a postscript of the symbol before it (a charge, "β⁻"). Every glyph is the
 # SEC's; the Unicode super/subscripts only say where it was printed.
 
-def equation_text(page, clip, glyphs=None, degrees=False, dedupe=False, baseline=False):
+def equation_text(page, clip, glyphs=None, degrees=False, dedupe=False, baseline=False, glyph_baselines=False):
     clip = fitz.Rect(*clip)
     spans = []
-    for b in _page_dict(page, glyphs, clip, dedupe=dedupe)['blocks']:
+    for b in _page_dict(page, glyphs, clip, dedupe=dedupe, glyph_baselines=glyph_baselines)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
@@ -1179,6 +1207,8 @@ def equation_text(page, clip, glyphs=None, degrees=False, dedupe=False, baseline
     # span's start it would land after the whole span.
     tokens = []
     for sp in main:
+        if glyph_baselines and not sp['text'].strip():
+            continue  # layout padding printed underneath a separate equation
         for x, c in sp.get('glyphs') or [(sp['bbox'][0], sp['text'])]:
             tokens.append((x, _GLYPHMAP.get(_decode_symbol(c, sp['font']), _decode_symbol(c, sp['font'])), 'main'))
     glyphs = [t for t in tokens if t[1].strip()]
@@ -1201,5 +1231,7 @@ def equation_text(page, clip, glyphs=None, degrees=False, dedupe=False, baseline
     out = re.sub(r'([₊₋])([⁰¹²³⁴⁵⁶⁷⁸⁹]+)([₀₁₂₃₄₅₆₇₈₉]+)', r'\2\1\3', out)
     if baseline:
         out = out.translate(str.maketrans({'⎛': '(', '⎜': '', '⎝': '', '⎞': ')', '⎟': '', '⎠': ''}))
+        if glyph_baselines:
+            out = out.translate(str.maketrans({'⎡': '[', '⎢': '', '⎣': '', '⎤': ']', '⎥': '', '⎦': ''}))
         out = re.sub(r'([₀₁₂₃₄₅₆₇₈₉]+)([₊₋])(?=[A-Za-z])', r'\2\1', out)
     return _norm(out)

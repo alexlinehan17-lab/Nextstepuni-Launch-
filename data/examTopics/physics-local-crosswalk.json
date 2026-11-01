@@ -55984,10 +55984,14 @@
         "physics-higher-old-course-applied-electricity",
         "physics-higher-old-course-the-atom-nucleus-radioactivity",
         "physics-higher-old-course-particle-physics",
-        "physics-higher-old-course-magnets-magnetic-fields"
+        "physics-higher-old-course-magnets-magnetic-fields",
+        "physics-higher-new-course-12-forces-acting-on-a-particle",
+        "physics-higher-new-course-26-principle-of-superposition-of-waves",
+        "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+        "physics-higher-new-course-35-the-force-experienced-by-a-current-carrying-conductor-in-a-magnetic-field"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2010 task retained from direct paper review (phys_review_2010); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
@@ -56015,10 +56019,14 @@
         "physics-ordinary-old-course-magnetics",
         "physics-ordinary-old-course-potential-difference-capacitance",
         "physics-ordinary-old-course-semiconductors",
-        "physics-ordinary-old-course-nuclear-energy"
+        "physics-ordinary-old-course-nuclear-energy",
+        "physics-ordinary-old-course-heat-heat-transfer",
+        "physics-ordinary-old-course-light",
+        "physics-ordinary-new-course-15-forces-acting-in-a-gravitational-field",
+        "physics-ordinary-new-course-33-electric-circuits"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2010 task retained from direct paper review (phys_review_2010); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
@@ -56037,10 +56045,11 @@
         "physics-ordinary-new-course-36-induced-potential-difference-and-the-generator-effect",
         "physics-ordinary-old-course-current-charge",
         "physics-ordinary-old-course-magnetics",
-        "physics-ordinary-old-course-electromagnetic-induction"
+        "physics-ordinary-old-course-electromagnetic-induction",
+        "physics-ordinary-old-course-work-energy-power"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2010 task retained from direct paper review (phys_review_2010); the factual reference snapshot has no association for this independently selectable question."
     }
   ]
 }

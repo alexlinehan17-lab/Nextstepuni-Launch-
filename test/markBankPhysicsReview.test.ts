@@ -34,6 +34,10 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2010-hl': [97, 97, 48, '38b88551b2ffac2d7c906e4e50c6f825475b00d1e273c17c827777bb9d1140ea',
+    '331781327a9392fdf2ae092f61c5b238f15862dc4f753bc5ccb97c9214e3c099'],
+  '2010-ol': [104, 104, 87, 'cd7e3171188036792f19a4799691011fd7d7f0725bf748512ad1bde1de8adf5d',
+    '28eb1fb20674f042065f9626b1cfe02fd7faeff204bcbcdf358997bc370fe9bc'],
   '2011-ol': [98, 98, 86, '4c550d82994eb92fa024c95a135f227ce760f66c4e1be964876efd1b256abaa6',
     '189ada90ad67a87f023b0b62b109746b270eed4ef5e732d8a45f11d041a3d62f'],
   '2011-hl': [102, 102, 47, '512d1f598e4399dee6c2f95d8babee9dcca6beed4a7135e5397e89b6cd3f977f',
@@ -109,6 +113,58 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('keeps 2010 Higher choices, shared calculations and original mathematical workings intact', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2010-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2010-hl-${suffix}`)!;
+    expect(cards).toHaveLength(97);
+    expect(card('q1-acceleration').totalMarks).toBe(12);
+    expect(card('q1-acceleration').rows).toMatchObject([
+      { route: 'timing', group: { claimMax: 4, perOption: 3, options: expect.any(Array) } },
+      { route: 'data-logger', group: { claimMax: 4, perOption: 3, options: expect.any(Array) } },
+    ]);
+    for (const row of card('q1-acceleration').rows) expect(row.group?.options).toHaveLength(4);
+    expect(cards.filter(c => c.id.startsWith('phys-2010-hl-q5-'))).toHaveLength(11);
+    expect(card('q8-ii').totalMarks).toBe(9);
+    expect(card('q8-ii').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('q6-iii').rows[1].verbatim).toContain('R₁²');
+    expect(card('q6-iv').rows[2].verbatim).toContain('ms⁻¹');
+    expect(card('q10-a-iii-mesons').figure?.candId).toBe('physics-2010-hl-q10-mesons-solution');
+    expect(card('q11-a').rows[0]).toMatchObject({group: {claimMax: 2, perOptionSteps: [4, 3]}});
+    expect(card('q11-a').rows[0].verbatim).not.toContain('etc.');
+    expect(card('q12-a-ii').rows[1]).toMatchObject({group: {claimMax: 3, perOption: 2}});
+    expect(card('q12-c-characteristics').totalMarks).toBe(9);
+    expect(card('q12-c-characteristics').rows[0]).toMatchObject({group: {claimMax: 2, perOption: 3}});
+    for (const c of cards.filter(c => c.id.startsWith('phys-2010-hl-q11-'))) {
+      expect(c.figure || c.questionFigure, c.id).toBeDefined();
+      expect(c.stem, c.id).toContain('SAR');
+    }
+  });
+
+  it('retains 2010 Ordinary data, all choice options and independent calculation context', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2010-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2010-ol-${suffix}`)!;
+    expect(cards).toHaveLength(104);
+    expect(cards.every(c => !/\(\d{1,2}\)/.test(c.questionText))).toBe(true);
+    for (const option of ['Rutherford', 'Snell', 'Joule', 'Einstein']) expect(card('q5-d').questionText).toContain(option);
+    expect(card('q3-iv').rows[0].contextNote).toContain('all three pairs');
+    expect(card('q4-v').rows[0].contextNote).toContain('0.488 m');
+    expect(card('q6-iv').rows.map(r => r.verbatim)).toEqual(['900 (J)', '0 (J)']);
+    expect(card('q7-experiment').figure?.candId).toBe('physics-2010-ol-q7-resonance-solution');
+    expect(card('q10-iii').rows[0]).toMatchObject({group: {claimMax: 3, perOption: 3}});
+    expect(card('q10-iv').rows[0]).toMatchObject({group: {claimMax: 2, options: ['X-ray photo', 'photo organs', 'destroy cancerous cells', 'detect cracks in metals', 'determine thickness of materials']}});
+    expect(card('q12-a-v').rows[0].verbatim).toBe('21.33 (s)');
+    expect(card('q12-a-v').stem).toContain('120 kg');
+    expect(card('q12-a-v').stem).toContain('80 m');
+    expect(card('q12-d-ii').rows[0]).toMatchObject({group: {claimMax: 2, perOption: 3}});
+    expect(card('q12-d-ii').rows[0].contextNote).toContain('all three matches');
+    const passage = cards.filter(c => c.id.startsWith('phys-2010-ol-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.stem, c.id).toContain('Manjit Kumar');
+      expect(c.figure || c.questionFigure, c.id).toBeDefined();
+    }
+  });
+
   it('retains 2011 Ordinary data, signed calculations, open choices and full alternative methods', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2011-ol-'));
     const card = (suffix: string) => cards.find(c => c.id === `phys-2011-ol-${suffix}`)!;

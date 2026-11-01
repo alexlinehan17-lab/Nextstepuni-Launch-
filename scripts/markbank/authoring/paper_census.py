@@ -69,15 +69,10 @@ SUBJECTS = {
     # its levels are.
     'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
-    # Physics's carded corpus started at 2021 (the 2021-2025 pre-audit cards);
-    # the papers folder also holds 2010-2020 and 2026, fetched for Paper Trail.
-    # The window is a DECISION, as Biology's was: it starts at 2021, takes in
-    # 2026 once carded, and 'also' admits each earlier sitting as its
-    # phys_review_<year>_<level>.py ledger is written. Both 2020 sittings were
-    # visually reviewed and carded on 2026-10-31. The next independently
-    # reviewed sittings include 2013–2026 both levels.
-    # 2010–2012 and deferred sittings remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2011},
+    # Main English Physics sittings from 2010 through 2026 have now been
+    # independently reviewed against every paper and marking-scheme page.
+    # Deferred sittings are a separate remaining inventory/review workstream.
+    'physics': {'mode': 'merged', 'from': 2010},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},

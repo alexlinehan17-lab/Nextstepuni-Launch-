@@ -1,4 +1,2601 @@
 {
+ "physics-2010-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-data.png",
+  "md5": "ee781c264cf9ce92005df58c45092c51",
+  "alt": "All seven force/acceleration pairs, with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Correcting an offset graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   100,
+   223,
+   467,
+   266
+  ]
+ },
+ "physics-2010-hl-q1-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-graph-question.png",
+  "md5": "721907986e50f9924824081037eacfa4",
+  "alt": "Full context and seven pairs with graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Acceleration–force graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   182,
+   530,
+   334
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    274,
+    530,
+    298
+   ]
+  ]
+ },
+ "physics-2010-hl-q1-mass-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-mass-question.png",
+  "md5": "e25bd11da5817f61de2ebada54c1018d",
+  "alt": "Full context and all seven pairs with mass-from-graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Mass from the graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   182,
+   530,
+   378
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    274,
+    530,
+    355
+   ],
+   [
+    508,
+    359,
+    530,
+    378
+   ]
+  ]
+ },
+ "physics-2010-hl-q1-method-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-method-question.png",
+  "md5": "d591d4d1899f07559fca87cd37e51fca",
+  "alt": "Full experimental context, all seven data pairs and acceleration-method request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Measuring acceleration",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   182,
+   530,
+   295
+  ],
+  "maskedFurniture": [
+   [
+    501,
+    275,
+    530,
+    295
+   ]
+  ]
+ },
+ "physics-2010-hl-q1-method-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-method-solution.png",
+  "md5": "bb323d2b1528a81cecf9e62369ffc9d0",
+  "alt": "Both complete four-stage acceleration methods, including equations and data-logging choices.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Measuring acceleration",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   82,
+   253,
+   543,
+   404
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q1-relationship-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q1-relationship-question.png",
+  "md5": "a9131c4e03f6d006982263cb7ad14d3f",
+  "alt": "Full context and seven pairs with graph and relationship request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q1 — Interpreting acceleration and force",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   182,
+   530,
+   351
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    274,
+    530,
+    298
+   ],
+   [
+    501,
+    333,
+    530,
+    351
+   ]
+  ]
+ },
+ "physics-2010-hl-q10-bridge": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q10-bridge.png",
+  "md5": "96907d74fc93e4466d876ff02150ef8a",
+  "alt": "Original6V LED bridge with all four diode labels, resistorR and output terminals.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q10(b)(i) — Explaining alternating LED pairs",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   220,
+   466,
+   490,
+   588
+  ]
+ },
+ "physics-2010-hl-q10-kinetic-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q10-kinetic-solution.png",
+  "md5": "18aff11844a9818adeaba1fb4a6cc838",
+  "alt": "All five pair-production kinetic-energy stages with source brackets and allocations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q10(a)(ii) — Kinetic energy per produced particle",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   155,
+   394,
+   545,
+   519
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    495,
+    548,
+    520
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q10-mesons-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q10-mesons-solution.png",
+  "md5": "72666e4bb8ecf506a045381d47e6dcae",
+  "alt": "Complete four-row quark/antiquark composition,charge and pion table with all overbars and allocations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q10(a)(iii) — Quark combinations, charges and names",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   184,
+   606,
+   545,
+   696
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q10-positron-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q10-positron-solution.png",
+  "md5": "b2e2602f0196c0b6b51f202aa3f36895",
+  "alt": "All accepted positron names and symbols, including the barred-electron alternative.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q10(a)(i) — The first anti-particle",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   139,
+   176.7,
+   545,
+   212
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q11-antenna-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q11-antenna-question.png",
+  "md5": "49a9c4033093d6d1e23c1c9e8522d3f5",
+  "alt": "Full historical passage/photo/attribution, antenna question and speed of light.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q11(g)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   110,
+   556,
+   580
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    290,
+    556,
+    475
+   ],
+   [
+    80,
+    532,
+    556,
+    554
+   ],
+   [
+    505,
+    508,
+    556,
+    530
+   ]
+  ]
+ },
+ "physics-2010-hl-q11-antenna-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q11-antenna-solution.png",
+  "md5": "215f5e9e8e9d61ef5bfebedad248f491",
+  "alt": "Original wavelength and quarter-wavelength antenna calculations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q11(g)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   166,
+   479,
+   545,
+   528
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q11-passage.png",
+  "md5": "c9535a0f6108933b80d5891d9f793b0f",
+  "alt": "Full historical SAR passage, mobile-phone photograph and2007 attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q11(a)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   110,
+   556,
+   285
+  ]
+ },
+ "physics-2010-hl-q11-sar-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q11-sar-question.png",
+  "md5": "96980ce279b7511318be5c2a7a882e1c",
+  "alt": "Full historical passage/photo/attribution and complete SAR calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q11(b)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   110,
+   556,
+   351
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    290,
+    556,
+    314
+   ],
+   [
+    505,
+    333,
+    556,
+    351
+   ]
+  ]
+ },
+ "physics-2010-hl-q11-sar-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q11-sar-solution.png",
+  "md5": "fb0d15b9e5476fcb4ac1b29eeecf1797",
+  "alt": "Original power and SAR calculations, units and two-stage tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q11(b)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   170,
+   168,
+   545,
+   232
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-characteristics-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-characteristics-solution.png",
+  "md5": "e21921a29f48f177609211e556b79f07",
+  "alt": "All three musical characteristics with matching properties and exact two-characteristic/shared-property tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(c) — Musical characteristics and their properties",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   82,
+   207,
+   552,
+   277.2
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-charge": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-charge.png",
+  "md5": "1cd6da41efd402c3fe87f2cf1841e8c9",
+  "alt": "Original two-charge diagram, pointP, both signs and10cm/15cm distances.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(d) — Point discharge",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   94,
+   555,
+   413,
+   606
+  ]
+ },
+ "physics-2010-hl-q12-cyclist-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-cyclist-question.png",
+  "md5": "8165dfab599099725d51f814736970cb",
+  "alt": "Complete cyclist context, velocity–time graph, units,axis timings and both calculation requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(a)(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   108,
+   437,
+   577,
+   717
+  ],
+  "maskedFurniture": [
+   [
+    502,
+    699,
+    533,
+    717
+   ]
+  ]
+ },
+ "physics-2010-hl-q12-cyclist-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-cyclist-solution.png",
+  "md5": "ee0244e4a085391d459d9b9148921bf9",
+  "alt": "All graph areas, total distance, complete journey-average calculation and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(a)(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   95,
+   243,
+   545,
+   408
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    385,
+    548,
+    411
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-direction-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-direction-question.png",
+  "md5": "251287d14bb394a56a445b54752333d9",
+  "alt": "Full charge context and diagram, field-direction request and permittivity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(d) — Direction of the field at P",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   94,
+   497,
+   532,
+   728
+  ],
+  "maskedFurniture": [
+   [
+    108,
+    657,
+    532,
+    697
+   ]
+  ]
+ },
+ "physics-2010-hl-q12-direction-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-direction-solution.png",
+  "md5": "57e4a2517a7e69e0dbb566deacccfb0b",
+  "alt": "Original left-pointing field arrow atP and its3-mark award.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(d) — Direction of the field at P",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   236,
+   499,
+   545,
+   523
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-field-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-field-question.png",
+  "md5": "5b43c8c13b259b1dcabff1157e743c75",
+  "alt": "Full charge context and diagram, field-strength request and permittivity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(d) — Field strength at P",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   94,
+   497,
+   532,
+   728
+  ],
+  "maskedFurniture": [
+   [
+    108,
+    622,
+    532,
+    655
+   ],
+   [
+    108,
+    676,
+    532,
+    697
+   ],
+   [
+    501,
+    657,
+    532,
+    675
+   ]
+  ]
+ },
+ "physics-2010-hl-q12-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-field-solution.png",
+  "md5": "55fddd9864a897f2c234f662631c1f8b",
+  "alt": "Original field equation, vector-direction sum, both substitutions and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(d) — Field strength at P",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   135,
+   544,
+   548,
+   670
+  ],
+  "maskedFurniture": [
+   [
+    514,
+    648,
+    550,
+    672
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-mass-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-mass-question.png",
+  "md5": "d7681c7d7cd654ec7177e95a6c05e881",
+  "alt": "Full nuclear reaction,202.5MeV energy,mass-difference request and both constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(b)(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   101,
+   532,
+   290
+  ],
+  "maskedFurniture": [
+   [
+    108,
+    153,
+    532,
+    173
+   ],
+   [
+    108,
+    207,
+    532,
+    259
+   ],
+   [
+    502,
+    189,
+    532,
+    206
+   ]
+  ]
+ },
+ "physics-2010-hl-q12-mass-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-mass-solution.png",
+  "md5": "34b2b714903639b06594f04c77595ae4",
+  "alt": "Original mass–energy equation, MeV-to-joule substitution and mass defect.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(b)(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   219,
+   527,
+   545,
+   619
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    597,
+    548,
+    622
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q12-nuclear": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-nuclear.png",
+  "md5": "7ded3c875e1724bd56d28a7e3a166a3c",
+  "alt": "Original uranium-fission equation with all nuclear indices and202.5MeV energy.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(b)(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   184,
+   128,
+   411,
+   150
+  ]
+ },
+ "physics-2010-hl-q12-position": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q12-position.png",
+  "md5": "11bbee6b4a804a1dec8e9719acf554a0",
+  "alt": "Complete position–time graph, grid, axes,units,1m starting distance and all timings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(a)(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   130,
+   171,
+   577,
+   382
+  ]
+ },
+ "physics-2010-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q2-data.png",
+  "md5": "247cb091da8877e4e75c10b0c3375103",
+  "alt": "All five calorimetry measurements.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q2 — Cooling the water",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   107,
+   524,
+   419,
+   609
+  ]
+ },
+ "physics-2010-hl-q2-latent-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q2-latent-question.png",
+  "md5": "3b31c1c2a3c382b5ab7af4d034bbe0ce",
+  "alt": "Complete calorimetry context, data, calculation request and both specific heat capacities.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q2 — Specific latent heat of vaporisation",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   453,
+   536,
+   742
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    614,
+    536,
+    702
+   ],
+   [
+    500,
+    704,
+    536,
+    723
+   ]
+  ]
+ },
+ "physics-2010-hl-q2-latent-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q2-latent-solution.png",
+  "md5": "982415393adc843fb862f06fd260b5b5",
+  "alt": "Complete five-stage latent-heat solution, energy balance, substitutions and deductions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q2 — Specific latent heat of vaporisation",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   91,
+   398,
+   544,
+   640
+  ],
+  "maskedFurniture": [
+   [
+    510,
+    612,
+    548,
+    643
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q3-data.png",
+  "md5": "b5633402b53e1594f0ef0c497000a6a4",
+  "alt": "All seven incidence/refraction angle pairs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q3 — Avoiding small angles",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   107,
+   141,
+   453,
+   183
+  ]
+ },
+ "physics-2010-hl-q3-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q3-graph-question.png",
+  "md5": "3142fc27f1aae5451905db2d3c422c90",
+  "alt": "Snell’s law context, complete table and graph/verification request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q3 — Snell’s law graph and verification",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   101,
+   531,
+   289
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    205,
+    531,
+    245
+   ]
+  ]
+ },
+ "physics-2010-hl-q3-index-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q3-index-question.png",
+  "md5": "fdbb6f93c6e3f2c8118639c730d2d5b4",
+  "alt": "Snell’s law context, complete table, graph and slope requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q3 — Refractive index from the graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   101,
+   531,
+   314
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    205,
+    531,
+    245
+   ],
+   [
+    503,
+    294,
+    531,
+    314
+   ]
+  ]
+ },
+ "physics-2010-hl-q3-sines-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q3-sines-solution.png",
+  "md5": "245392e4fe9e425fefbb661819b41b08",
+  "alt": "All seven sine pairs calculated in the original marking scheme.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q3 — Refractive index from the graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   96,
+   158,
+   471,
+   198
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q4-data.png",
+  "md5": "62048246f3aca2217d4d341f47a5f569",
+  "alt": "All seven thermistor resistance/temperature pairs with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q4 — Measuring resistance",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   107,
+   447,
+   463,
+   491
+  ]
+ },
+ "physics-2010-hl-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q4-graph-question.png",
+  "md5": "2f377f758875c48988bc5553421defa8",
+  "alt": "Full thermistor context, seven pairs and graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q4 — Resistance–temperature graph",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   388,
+   532,
+   613
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    498,
+    532,
+    575
+   ]
+  ]
+ },
+ "physics-2010-hl-q4-variation-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q4-variation-question.png",
+  "md5": "9bf9934ab48e311766d0214d7a35b61b",
+  "alt": "Full thermistor context, seven pairs and graph/average-gradient requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q4 — Average variation of resistance",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   388,
+   532,
+   653
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    498,
+    532,
+    575
+   ],
+   [
+    501,
+    634,
+    532,
+    653
+   ]
+  ]
+ },
+ "physics-2010-hl-q5-angle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q5-angle-solution.png",
+  "md5": "26d5048c709bf1af8e757f18d528610a",
+  "alt": "Original critical-angle equation,43.2degree result and partial-credit allocation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q5(b)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   110,
+   198,
+   543,
+   244
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q5-rms-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q5-rms-solution.png",
+  "md5": "488647275adf0c27edc99d1f2ef18e43",
+  "alt": "Original300/√2 calculation and212V result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q5(h)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   122,
+   525,
+   543,
+   551
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q5-spectrometer": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q5-spectrometer.png",
+  "md5": "bb85005639036ad3d52bdee6287387a2",
+  "alt": "Original spectrometer diagram with labelsA andB.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q5(c)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   195,
+   299,
+   359,
+   379
+  ]
+ },
+ "physics-2010-hl-q6-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-gravity-solution.png",
+  "md5": "51ac9b37db3045d3ce1d3587e27349f7",
+  "alt": "Full inverse-square derivation at height twice Earth’s radius.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6 — Gravity above Earth",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   190,
+   544,
+   307
+  ],
+  "maskedFurniture": [
+   [
+    510,
+    282,
+    548,
+    309
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q6-orbit-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-orbit-question.png",
+  "md5": "af026300977fbd9d063009e9e85384d7",
+  "alt": "Spacecraft diagram, full context,27.3-day orbital-speed request and all constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(iv)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   161,
+   530,
+   635
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    414,
+    530,
+    500
+   ],
+   [
+    80,
+    531,
+    530,
+    552
+   ],
+   [
+    501,
+    514,
+    530,
+    531
+   ]
+  ]
+ },
+ "physics-2010-hl-q6-orbit-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-orbit-solution.png",
+  "md5": "dbb79d3b5cdc54c799106b39fde77d3e",
+  "alt": "Original orbital-speed formula, seconds conversion, substitution and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(iv)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   111,
+   630,
+   544,
+   716
+  ],
+  "maskedFurniture": [
+   [
+    510,
+    694,
+    548,
+    719
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q6-spacecraft": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-spacecraft.png",
+  "md5": "f91cf252f5316c968caaa95cc33e5d85",
+  "alt": "Original Earth–spacecraft–Moon diagram and labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   142,
+   161,
+   524,
+   372
+  ]
+ },
+ "physics-2010-hl-q6-weightless-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-weightless-question.png",
+  "md5": "280927d6223ffe31a95b6431440fdce1",
+  "alt": "Spacecraft diagram, full context, cancellation-height request and all gravitational constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(iii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   161,
+   530,
+   635
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    414,
+    530,
+    465
+   ],
+   [
+    80,
+    500,
+    530,
+    552
+   ],
+   [
+    501,
+    482,
+    530,
+    500
+   ]
+  ]
+ },
+ "physics-2010-hl-q6-weightless-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q6-weightless-solution.png",
+  "md5": "adc413892a323fda4fef1953080e7356",
+  "alt": "Original force balance, squared-radius ratio and surface-height result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(iii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   469,
+   544,
+   589
+  ],
+  "maskedFurniture": [
+   [
+    510,
+    568,
+    548,
+    592
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q7-spectrum": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q7-spectrum.png",
+  "md5": "d176d9e5587dc8ad4aba1aaef1f3837c",
+  "alt": "Full original helium spectrum, wavelength labels and nanometre scale.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q7 — Another Doppler application",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   110,
+   365,
+   485,
+   482
+  ]
+ },
+ "physics-2010-hl-q7-speed-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q7-speed-question.png",
+  "md5": "744c8395d8dade07986a739802b4f900",
+  "alt": "Helium spectrum, both wavelengths, stellar-speed request and speed of light.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q7 — Speed from the wavelength shift",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   365,
+   531,
+   645
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    554,
+    531,
+    574
+   ],
+   [
+    80,
+    592,
+    531,
+    614
+   ],
+   [
+    501,
+    575,
+    531,
+    593
+   ]
+  ]
+ },
+ "physics-2010-hl-q7-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q7-speed-solution.png",
+  "md5": "c31e5ca4f3e1ad51c4e9cc443bc2990c",
+  "alt": "Both wavelength and frequency Doppler calculation routes and published allocations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q7 — Speed from the wavelength shift",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   210,
+   544,
+   545,
+   675
+  ],
+  "maskedFurniture": [
+   [
+    513,
+    653,
+    548,
+    678
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q8-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q8-circuit.png",
+  "md5": "c8f916cafbaf280e465edb5736aae455",
+  "alt": "Full230V hair-dryer circuit, fuse, switchesA/B, motorM, rheostat and heating coil.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q8(i)(a)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   400,
+   219,
+   574,
+   401
+  ]
+ },
+ "physics-2010-hl-q8-length-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q8-length-question.png",
+  "md5": "208a71bdbdf7302529d765e6baaaef09",
+  "alt": "Complete dryer context, circuit,2kW power,0.17mm diameter, resistivity and wire-length question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q8(iii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   88,
+   574,
+   422
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    141,
+    440,
+    195
+   ],
+   [
+    80,
+    220,
+    400,
+    273
+   ],
+   [
+    80,
+    290,
+    400,
+    337
+   ],
+   [
+    80,
+    372,
+    400,
+    403
+   ],
+   [
+    377,
+    354,
+    402,
+    372
+   ]
+  ]
+ },
+ "physics-2010-hl-q8-length-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q8-length-solution.png",
+  "md5": "57a7a6ab566c82431f87367f9db19224",
+  "alt": "All six wire-length calculation stages, including diameter-to-radius conversion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q8(iii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   220,
+   504,
+   545,
+   671
+  ],
+  "maskedFurniture": [
+   [
+    514,
+    651,
+    548,
+    674
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q8-values-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q8-values-question.png",
+  "md5": "6d1566dab4a52fbf198d7df547996082",
+  "alt": "Complete dryer context,230V circuit and2kW resistance/current questions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q8(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   88,
+   574,
+   422
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    141,
+    440,
+    195
+   ],
+   [
+    80,
+    220,
+    400,
+    273
+   ],
+   [
+    80,
+    337,
+    400,
+    403
+   ],
+   [
+    377,
+    319,
+    402,
+    336
+   ]
+  ]
+ },
+ "physics-2010-hl-q8-values-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q8-values-solution.png",
+  "md5": "344217075b34ea53a3c417a9fa7c4381",
+  "alt": "Shared P=IV formula and complete current/resistance calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q8(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   139,
+   402,
+   545,
+   475
+  ],
+  "maskedFurniture": [
+   [
+    514,
+    455,
+    548,
+    478
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q9-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q9-energy-solution.png",
+  "md5": "83ab8890dc559fae20c6417451e10723",
+  "alt": "Original electron-energy equation,40kV substitution and6.4×10⁻¹⁵J result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q9(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   139,
+   547,
+   545,
+   593
+  ],
+  "solution": true
+ },
+ "physics-2010-hl-q9-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-hl-q9-frequency-solution.png",
+  "md5": "bd757b402bf2a258299b571ce11ebea9",
+  "alt": "Original photon-energy equation and frequency calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q9(ii)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2010 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   139,
+   620,
+   545,
+   691
+  ],
+  "maskedFurniture": [
+   [
+    513,
+    666,
+    548,
+    695
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q1-data.png",
+  "md5": "50e2783eff0fbd7e1a663d66df79330a",
+  "alt": "All seven acceleration–force measurements and their units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q1(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   98,
+   273,
+   506,
+   321
+  ]
+ },
+ "physics-2010-ol-q1-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q1-graph-question.png",
+  "md5": "c20d8074154289321e6512683419ca21",
+  "alt": "Complete experiment, seven data pairs and acceleration-against-force graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q1(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   81,
+   204,
+   518,
+   440
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    346,
+    518,
+    406
+   ],
+   [
+    490,
+    423,
+    518,
+    440
+   ]
+  ]
+ },
+ "physics-2010-ol-q1-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q1-graph-solution.png",
+  "md5": "7eaf9b94e6b5c869a4e39cb24711d62a",
+  "alt": "Original acceleration–force graph with full axes, units, scale and all seven points.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q1(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   70,
+   446,
+   502,
+   725
+  ],
+  "maskedFurniture": [
+   [
+    70,
+    713,
+    405,
+    725
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q1-relationship-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q1-relationship-question.png",
+  "md5": "6f29c5edc01cc42f89d0dd13c037347c",
+  "alt": "Complete experiment, seven data pairs, graph instruction and relationship request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q1(v)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   81,
+   204,
+   518,
+   475
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    346,
+    518,
+    406
+   ],
+   [
+    490,
+    423,
+    518,
+    475
+   ]
+  ]
+ },
+ "physics-2010-ol-q10-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q10-xray.png",
+  "md5": "9c6b49726323fafc86bf99e26c1a8b46",
+  "alt": "Full X-ray tube, high/low voltage supplies, filament A, target B, shielding C and emitted rays.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q10(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   110,
+   137,
+   442,
+   314
+  ]
+ },
+ "physics-2010-ol-q11-apparatus-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q11-apparatus-question.png",
+  "md5": "fbe779eda2b4ba6e7a7c047110071908",
+  "alt": "Full historical passage/photo/attribution and Faraday-apparatus request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q11(e)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   120,
+   547,
+   598
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    448,
+    547,
+    576
+   ],
+   [
+    490,
+    580,
+    547,
+    598
+   ]
+  ]
+ },
+ "physics-2010-ol-q11-induction-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q11-induction-solution.png",
+  "md5": "88aba0026b21a91c4148988313ed78c8",
+  "alt": "Original magnet, coil and meter diagram with complete and partial award.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q11(e)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   70,
+   473,
+   531,
+   566
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q11-passage.png",
+  "md5": "3f80ad8dde21dc3f13f38ecd2391cefd",
+  "alt": "Full Oersted–Arago–Ampère–Faraday passage, photograph, caption and attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q11(a)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   120,
+   547,
+   425
+  ]
+ },
+ "physics-2010-ol-q12-i-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-i-question.png",
+  "md5": "c4d926caab3021a2d6d10706ca46f9d2",
+  "alt": "Full cyclist context, mass/force, relevant timing, target task and all supplied motion formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   124,
+   520,
+   464
+  ],
+  "maskedFurniture": [
+   [
+    490,
+    294,
+    520,
+    417
+   ],
+   [
+    110,
+    310,
+    520,
+    417
+   ]
+  ]
+ },
+ "physics-2010-ol-q12-i-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-i-solution.png",
+  "md5": "458bff0a5fac317be91ae2515070c7cc",
+  "alt": "Original acceleration formula, substitution, result and partial credit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   85,
+   141.2,
+   532,
+   208
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q12-ii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-ii-question.png",
+  "md5": "ead45a94446ef865c27579b48196154a",
+  "alt": "Full cyclist context, mass/force, relevant timing, target task and all supplied motion formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(ii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   124,
+   520,
+   464
+  ],
+  "maskedFurniture": [
+   [
+    490,
+    294,
+    520,
+    417
+   ],
+   [
+    110,
+    294,
+    520,
+    310
+   ],
+   [
+    110,
+    328,
+    520,
+    417
+   ]
+  ]
+ },
+ "physics-2010-ol-q12-ii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-ii-solution.png",
+  "md5": "60e0355243710f22be4ec8253a502b2c",
+  "alt": "Original velocity calculation and follow-through/partial credit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(ii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   83,
+   212,
+   532,
+   260
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q12-iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-iii-question.png",
+  "md5": "ef7eebfd0fd11363039c3d121ba64815",
+  "alt": "Full cyclist context, mass/force, relevant timing, target task and all supplied motion formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(iii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   124,
+   520,
+   464
+  ],
+  "maskedFurniture": [
+   [
+    490,
+    294,
+    520,
+    417
+   ],
+   [
+    110,
+    294,
+    520,
+    328
+   ],
+   [
+    110,
+    346,
+    520,
+    417
+   ]
+  ]
+ },
+ "physics-2010-ol-q12-iii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-iii-solution.png",
+  "md5": "26af03e965e261ba60b137e18ab325c9",
+  "alt": "Original distance calculation with squared time and follow-through.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(iii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   70,
+   264,
+   532,
+   299
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q12-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-iv-question.png",
+  "md5": "e9ed5eead7acd34a326cf03a0c8d985d",
+  "alt": "Full cyclist context, mass/force, relevant timing, target task and all supplied motion formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   124,
+   520,
+   464
+  ],
+  "maskedFurniture": [
+   [
+    490,
+    294,
+    520,
+    417
+   ],
+   [
+    110,
+    276,
+    520,
+    346
+   ],
+   [
+    110,
+    397,
+    520,
+    417
+   ]
+  ]
+ },
+ "physics-2010-ol-q12-radiation": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-radiation.png",
+  "md5": "c5778425651ba8ce9c39ca44e945af27",
+  "alt": "Complete radioactive source, lead shielding, all three barriers, radiation paths and labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(d)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   133,
+   484,
+   482,
+   628
+  ]
+ },
+ "physics-2010-ol-q12-safety": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-safety.png",
+  "md5": "62c40f023a35670f099e4e34a0f70653",
+  "alt": "Full fused plug with labels, MCB and RCD photographs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(c)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   113,
+   132,
+   520,
+   288
+  ]
+ },
+ "physics-2010-ol-q12-stage": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-stage.png",
+  "md5": "1994a90a9978777d2b791c27402ff87c",
+  "alt": "Original stage-lighting illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(b) — Mixing stage-light colours",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   450,
+   580,
+   533,
+   713
+  ]
+ },
+ "physics-2010-ol-q12-time-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-time-solution.png",
+  "md5": "078f0bd5ebc41e9cbbcd4ddf12f0ef0d",
+  "alt": "Original final-80-metre time calculation with mean speed and follow-through.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(v)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   92,
+   403,
+   532,
+   460
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q12-v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q12-v-question.png",
+  "md5": "c91925afd5166f6ff87e472ed70ad20c",
+  "alt": "Full cyclist context, mass/force, relevant timing, target task and all supplied motion formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q12(a)(v)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   124,
+   520,
+   464
+  ],
+  "maskedFurniture": [
+   [
+    490,
+    294,
+    520,
+    417
+   ],
+   [
+    110,
+    276,
+    520,
+    346
+   ],
+   [
+    110,
+    379,
+    520,
+    397
+   ]
+  ]
+ },
+ "physics-2010-ol-q2-formula-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q2-formula-solution.png",
+  "md5": "3b6d361279f6796f3f768801ac5dce1e",
+  "alt": "Both accepted specific-heat equations and their published complete/partial awards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q2(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   92,
+   524,
+   528,
+   563
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q3-calculation-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q3-calculation-question.png",
+  "md5": "b4db1675d89f91b167a8fcf029162f46",
+  "alt": "Complete mirror experiment, all three pairs and focal-length calculation request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q3(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   82,
+   518,
+   312
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    232,
+    518,
+    291
+   ],
+   [
+    490,
+    293,
+    518,
+    312
+   ]
+  ]
+ },
+ "physics-2010-ol-q3-calculation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q3-calculation-solution.png",
+  "md5": "fb47641b52959d807150eae085858f1a",
+  "alt": "All three source calculations, their mean focal length and partial-credit guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q3(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   90,
+   447,
+   532,
+   632
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q3-data.png",
+  "md5": "5b9f42c544ae5f9bfc7d3d57a42a555e",
+  "alt": "All three object/image-distance pairs with centimetre units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q3(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   152,
+   171,
+   374,
+   217
+  ]
+ },
+ "physics-2010-ol-q4-area-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q4-area-question.png",
+  "md5": "7b1329c63ca482a52c4beb5a477767a5",
+  "alt": "Complete wire data, area request and both supplied formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   400,
+   518,
+   712
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    559,
+    518,
+    636
+   ],
+   [
+    81,
+    657,
+    518,
+    675
+   ],
+   [
+    490,
+    638,
+    518,
+    655
+   ]
+  ]
+ },
+ "physics-2010-ol-q4-area-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q4-area-solution.png",
+  "md5": "2fab17e82a66e3c9753cf7e67e76f84b",
+  "alt": "Accepted area range, radius substitution, mean diameter and partial awards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   70,
+   399,
+   532,
+   460
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q4-data.png",
+  "md5": "a3c19a9281254bc45694d48cbae4b744",
+  "alt": "Resistance, wire length and all three diameter readings with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   202,
+   471,
+   392,
+   539
+  ]
+ },
+ "physics-2010-ol-q4-resistivity-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q4-resistivity-question.png",
+  "md5": "db94f0ba7da582384ac7b3435873b1cb",
+  "alt": "Complete wire data, resistivity request and both supplied formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(v)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   400,
+   518,
+   712
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    559,
+    518,
+    656
+   ],
+   [
+    490,
+    657,
+    518,
+    675
+   ]
+  ]
+ },
+ "physics-2010-ol-q4-resistivity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q4-resistivity-solution.png",
+  "md5": "ff6a38d254d0b5357dd1ebd5b2d70148",
+  "alt": "Original resistivity range, substitution with metre conversion and partial awards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(v)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   70,
+   484,
+   532,
+   563
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q5-concrete-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q5-concrete-question.png",
+  "md5": "9b74f144ad16f625165a0363c2d0979f",
+  "alt": "Full concrete-mixer context, volume, density and mass formula.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q5(b)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   109,
+   269,
+   558,
+   365
+  ],
+  "maskedFurniture": [
+   [
+    353,
+    312,
+    370,
+    331
+   ]
+  ]
+ },
+ "physics-2010-ol-q5-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q5-field-solution.png",
+  "md5": "8d2741bd4e11cc2db9ca177d2994e53e",
+  "alt": "Original bar magnet, field lines and direction arrows with diagram criterion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q5(g)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   70,
+   528,
+   532,
+   615
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q6-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q6-energy-solution.png",
+  "md5": "8d7776f80795e9a82667702f13edcad3",
+  "alt": "Both skaters’ original kinetic-energy workings, including halves, squared speeds and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q6(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   70,
+   548,
+   532,
+   614
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q6-rocket": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q6-rocket.png",
+  "md5": "bd6bbeb154d6e3ecd34d067b6df31a27",
+  "alt": "Original spacecraft-launch photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q6 — Spacecraft launch",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   441,
+   81,
+   510,
+   204
+  ]
+ },
+ "physics-2010-ol-q6-skaters": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q6-skaters.png",
+  "md5": "26f6507698db1b5475f7a1b21e211de2",
+  "alt": "Original pair of ice skaters.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q6(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   183,
+   145,
+   265,
+   251
+  ]
+ },
+ "physics-2010-ol-q7-glass": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q7-glass.png",
+  "md5": "3a842ae2e9cc7139d5b7d7ea0af567a6",
+  "alt": "Original glass-shattering photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q7 — Why the glass can shatter",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   450,
+   677,
+   532,
+   782
+  ]
+ },
+ "physics-2010-ol-q7-resonance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q7-resonance-solution.png",
+  "md5": "aa876e24ae4364f96df984006775d864",
+  "alt": "Both complete resonance demonstrations with apparatus, procedure, observation and conclusion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q7 — Demonstrating resonance",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   91,
+   623,
+   529,
+   756
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q7-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q7-wave.png",
+  "md5": "093415a4146a76d74896d4971b4e7243",
+  "alt": "Full waveform with wavelength X and amplitude Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q7(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   230,
+   465,
+   495,
+   548
+  ]
+ },
+ "physics-2010-ol-q7-wavelength-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q7-wavelength-solution.png",
+  "md5": "5ad378c775d536a8c112dc3b73a80e71",
+  "alt": "Original wavelength answer, substitution and partial-credit equation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q7(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   70,
+   340,
+   532,
+   423
+  ],
+  "solution": true
+ },
+ "physics-2010-ol-q8-solar": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q8-solar.png",
+  "md5": "67a178ea2ac4e4ca71d4d6fa5ff5e611",
+  "alt": "Complete solar collector, pump, tank, heating coil, cold supply and hot outlet.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q8(b)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   327,
+   197,
+   531,
+   318
+  ]
+ },
+ "physics-2010-ol-q9-i-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q9-i-question.png",
+  "md5": "6abe333dc01cfbbe5b2c0a4fc1a8f79e",
+  "alt": "Complete circuit with 12 V supply, 4 Ω bulb, all resistors, target calculation and supplied formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q9(b)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   590,
+   538,
+   785
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    588,
+    320,
+    622
+   ],
+   [
+    490,
+    700,
+    538,
+    751
+   ],
+   [
+    109,
+    717,
+    531,
+    750
+   ]
+  ]
+ },
+ "physics-2010-ol-q9-ii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q9-ii-question.png",
+  "md5": "f06e14ac460c7106315d64ea24de23bb",
+  "alt": "Complete circuit with 12 V supply, 4 Ω bulb, all resistors, target calculation and supplied formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q9(b)(ii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   590,
+   538,
+   785
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    588,
+    320,
+    622
+   ],
+   [
+    490,
+    700,
+    538,
+    751
+   ],
+   [
+    109,
+    700,
+    531,
+    716
+   ],
+   [
+    109,
+    734,
+    531,
+    750
+   ]
+  ]
+ },
+ "physics-2010-ol-q9-iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q9-iii-question.png",
+  "md5": "767cb343c7711a5716705ffb2ae396b2",
+  "alt": "Complete circuit with 12 V supply, 4 Ω bulb, all resistors, target calculation and supplied formulas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q9(b)(iii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   590,
+   538,
+   785
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    588,
+    320,
+    622
+   ],
+   [
+    490,
+    700,
+    538,
+    751
+   ],
+   [
+    109,
+    700,
+    531,
+    733
+   ]
+  ]
+ },
+ "physics-2010-ol-q9-lightning": {
+  "src": "/exam-figures/physics/markbank/physics-2010-ol-q9-lightning.png",
+  "md5": "504597616f1a76c130f086a4d1b4e53f",
+  "alt": "Original lightning-conductor photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q9(a)(iii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   453,
+   470,
+   512,
+   558
+  ]
+ },
  "physics-2011-hl-q1-velocity-solution": {
   "src": "/exam-figures/physics/markbank/physics-2011-hl-q1-velocity-solution.png",
   "md5": "7331d717c46f31a879a3bdb7de9842d3",

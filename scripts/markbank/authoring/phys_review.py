@@ -238,7 +238,8 @@ def read_geo(lifter, spec, sp):
         try:
             value = B.fraction_text(src.doc[page - 1], clip, src.glyphs,
                                     glyph_order=spec.get('glyph_order', False), baseline=spec.get('baseline', False),
-                                    dedupe=spec.get('dedupe', False), segments=spec.get('segments', False))
+                                    dedupe=spec.get('dedupe', False), segments=spec.get('segments', False),
+                                    glyph_baselines=spec.get('glyph_baselines', False))
         except LookupError as e:
             raise Refusal(f'fraction p{page}: {e}')
     elif kind == 'equation':
@@ -246,7 +247,8 @@ def read_geo(lifter, spec, sp):
         # atomic numbers put back where they are printed (equation_text).
         try:
             value = B.equation_text(src.doc[page - 1], clip, src.glyphs,
-                                    degrees=spec.get('degrees', False), dedupe=spec.get('dedupe', False), baseline=spec.get('baseline', False))
+                                    degrees=spec.get('degrees', False), dedupe=spec.get('dedupe', False), baseline=spec.get('baseline', False),
+                                    glyph_baselines=spec.get('glyph_baselines', False))
         except LookupError as e:
             raise Refusal(f'equation p{page}: {e}')
     elif kind == 'tokens':

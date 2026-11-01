@@ -194565,6 +194565,8969 @@
     },
     "excluded": []
    }
+  },
+  "2010-hl": {
+   "status": "reviewed",
+   "reviewedAt": "2026-11-01",
+   "ledger": "scripts/markbank/authoring/phys_review_2010_hl.py",
+   "method": "2010 Higher Physics: independent visual review of all 12 paper and 18 scheme pages.\nPreserve every task at its published tariff, including all optional branches and complete source context.",
+   "sources": {
+    "paper": {
+     "path": "examiner-reports/physics/papers/2010-hl-paper.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "38b88551b2ffac2d7c906e4e50c6f825475b00d1e273c17c827777bb9d1140ea",
+     "bytes": 363656,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "blank"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/physics/schemes/2010-hl.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "331781327a9392fdf2ae092f61c5b238f15862dc4f753bc5ccb97c9214e3c099",
+     "bytes": 301503,
+     "pages": 18,
+     "pageRoles": {
+      "1": "cover",
+      "2": "blank",
+      "3": "conventions",
+      "4": "marking",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "back-cover"
+     },
+     "pagesLifted": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 12 pages rendered and read",
+    "scheme": "all 18 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 56,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 112,
+    "11": 56,
+    "12": 112
+   },
+   "partTotals": {
+    "10a": 56,
+    "10b": 56,
+    "11a": 7,
+    "11b": 7,
+    "11c": 7,
+    "11d": 7,
+    "11e": 7,
+    "11f": 7,
+    "11g": 7,
+    "11h": 7,
+    "12a": 28,
+    "12b": 28,
+    "12c": 28,
+    "12d": 28
+   },
+   "groupTotals": {},
+   "tickChecksums": {},
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "All seven force/acceleration pairs retained."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "All five calorimetry measurements retained."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "All seven incidence/refraction pairs retained."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "All ten Q5 parts and both different-topic (j) alternatives retained; no best-eight combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "one of the following",
+     "disposition": "One multiple-choice radio-tuning task with all four printed devices."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "or",
+     "disposition": "Both distinct-topic Q5(j) choices retained."
+    },
+    {
+     "doc": "paper",
+     "page": 8,
+     "directive": "either",
+     "disposition": "Both full Q10 branches retained."
+    },
+    {
+     "doc": "paper",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Same Q10 branch choice."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Entire historical passage and photograph retained on all eight cards."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "any two",
+     "disposition": "All four28-mark Q12 options retained without choose-two combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Same Q12 branch choice."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "the following",
+     "disposition": "Full original nuclear equation retained; not a response selection."
+    }
+   ],
+   "routes": {
+    "Q5(j)": [
+     "accelerator",
+     "galvanometer"
+    ]
+   },
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "Q1:acceleration",
+     "id": "phys-2010-hl-q1-acceleration",
+     "questionRef": "2010 HL Q1 — Measuring acceleration",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "acceleration",
+     "route": null,
+     "item": "Measuring acceleration",
+     "rows": 2,
+     "figure": "q1-method-solution",
+     "questionFigure": "q1-method-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "(3)",
+       "(3)",
+       "(3)"
+      ],
+      "sum": 18,
+      "waiver": "Two complete alternative four-step methods, each 4 × 3; do not add route totals."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q1:graph",
+     "id": "phys-2010-hl-q1-graph",
+     "questionRef": "2010 HL Q1 — Acceleration–force graph",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "graph",
+     "route": null,
+     "item": "Acceleration–force graph",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": "q1-graph-question",
+     "sourcePages": null,
+     "pairingScore": 0.88,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12,
+      "waiver": "The first four graph criteria are 3 each; the separately asked conclusion is 4."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q1:relationship",
+     "id": "phys-2010-hl-q1-relationship",
+     "questionRef": "2010 HL Q1 — Interpreting acceleration and force",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-2",
+     "concept": "relationship",
+     "route": null,
+     "item": "Interpreting acceleration and force",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q1-relationship-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4,
+      "waiver": "Separate 4-mark conclusion after four 3-mark graph criteria."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q1:mass",
+     "id": "phys-2010-hl-q1-mass",
+     "questionRef": "2010 HL Q1 — Mass from the graph",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "mass",
+     "route": null,
+     "item": "Mass from the graph",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": "q1-mass-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q1:origin",
+     "id": "phys-2010-hl-q1-origin",
+     "questionRef": "2010 HL Q1 — Correcting an offset graph",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "origin",
+     "route": null,
+     "item": "Correcting an offset graph",
+     "rows": 2,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "12",
+       "16",
+       "6",
+       "6"
+      ],
+      "sum": 46,
+      "waiver": "Reason3 and adjustment3. The four boxed totals belong to all preceding Q1 tasks, not this6-mark response."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q2:cool",
+     "id": "phys-2010-hl-q2-cool",
+     "questionRef": "2010 HL Q2 — Cooling the water",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "cool",
+     "route": null,
+     "item": "Cooling the water",
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q2:dry",
+     "id": "phys-2010-hl-q2-dry",
+     "questionRef": "2010 HL Q2 — Drying the steam",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "dry",
+     "route": null,
+     "item": "Drying the steam",
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q2:mass",
+     "id": "phys-2010-hl-q2-mass",
+     "questionRef": "2010 HL Q2 — Measuring steam mass",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "mass",
+     "route": null,
+     "item": "Measuring steam mass",
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q2:thermometer",
+     "id": "phys-2010-hl-q2-thermometer",
+     "questionRef": "2010 HL Q2 — Using a sensitive thermometer",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "thermometer",
+     "route": null,
+     "item": "Using a sensitive thermometer",
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q2:latent",
+     "id": "phys-2010-hl-q2-latent",
+     "questionRef": "2010 HL Q2 — Specific latent heat of vaporisation",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      3,
+      3,
+      4,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "latent",
+     "route": null,
+     "item": "Specific latent heat of vaporisation",
+     "rows": 5,
+     "figure": "q2-latent-solution",
+     "questionFigure": "q2-latent-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6",
+       "6",
+       "6",
+       "6",
+       "3",
+       "24",
+       "16"
+      ],
+      "sum": 67,
+      "waiver": "Original five calculation stages carry 3, 3, 4, 3, 3."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q3:apparatus",
+     "id": "phys-2010-hl-q3-apparatus",
+     "questionRef": "2010 HL Q3 — Snell’s law apparatus",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "apparatus",
+     "route": null,
+     "item": "Snell’s law apparatus",
+     "rows": 4,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q3:graph",
+     "id": "phys-2010-hl-q3-graph",
+     "questionRef": "2010 HL Q3 — Snell’s law graph and verification",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 16,
+     "markUnits": [
+      4,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "graph",
+     "route": null,
+     "item": "Snell’s law graph and verification",
+     "rows": 5,
+     "figure": "q3-sines-solution",
+     "questionFigure": "q3-graph-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 16,
+      "waiver": "Graph and its verification form one printed task: 4+3+3+3+3; separate slope task is 6."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q3:index",
+     "id": "phys-2010-hl-q3-index",
+     "questionRef": "2010 HL Q3 — Refractive index from the graph",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "index",
+     "route": null,
+     "item": "Refractive index from the graph",
+     "rows": 2,
+     "figure": "q3-sines-solution",
+     "questionFigure": "q3-index-question",
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme abbreviates the same graph-slope question.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q3:small",
+     "id": "phys-2010-hl-q3-small",
+     "questionRef": "2010 HL Q3 — Avoiding small angles",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "small",
+     "route": null,
+     "item": "Avoiding small angles",
+     "rows": 2,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "12",
+       "6",
+       "22"
+      ],
+      "sum": 46,
+      "waiver": "Reason3 and elaboration3; detached12/22/6 boxes summarise the preceding Q3 tasks."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:apparatus",
+     "id": "phys-2010-hl-q4-apparatus",
+     "questionRef": "2010 HL Q4 — Thermistor apparatus",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "apparatus",
+     "route": null,
+     "item": "Thermistor apparatus",
+     "rows": 3,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:resistance",
+     "id": "phys-2010-hl-q4-resistance",
+     "questionRef": "2010 HL Q4 — Measuring resistance",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistance",
+     "route": null,
+     "item": "Measuring resistance",
+     "rows": 2,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:temperature",
+     "id": "phys-2010-hl-q4-temperature",
+     "questionRef": "2010 HL Q4 — Varying temperature",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "temperature",
+     "route": null,
+     "item": "Varying temperature",
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:graph",
+     "id": "phys-2010-hl-q4-graph",
+     "questionRef": "2010 HL Q4 — Resistance–temperature graph",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "graph",
+     "route": null,
+     "item": "Resistance–temperature graph",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": "q4-graph-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:variation",
+     "id": "phys-2010-hl-q4-variation",
+     "questionRef": "2010 HL Q4 — Average variation of resistance",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "variation",
+     "route": null,
+     "item": "Average variation of resistance",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-variation-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4:oil",
+     "id": "phys-2010-hl-q4-oil",
+     "questionRef": "2010 HL Q4 — Why use oil?",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "oil",
+     "route": null,
+     "item": "Why use oil?",
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "15",
+       "9",
+       "6",
+       "6",
+       "4"
+      ],
+      "sum": 44,
+      "waiver": "Single4-mark explanation. Detached15/9/6/6/4 boxes summarise all Q4 tasks."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5a",
+     "id": "phys-2010-hl-q5-a",
+     "questionRef": "2010 HL Q5(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q5a",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "3"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5b",
+     "id": "phys-2010-hl-q5-b",
+     "questionRef": "2010 HL Q5(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-3",
+     "concept": "q5b",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-angle-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7,
+      "waiver": "Published holistic answer 7; equation-only partial credit 4, not an extra award."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5c",
+     "id": "phys-2010-hl-q5-c",
+     "questionRef": "2010 HL Q5(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q5c",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-spectrometer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4 + 3"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5d",
+     "id": "phys-2010-hl-q5-d",
+     "questionRef": "2010 HL Q5(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q5d",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.73,
+     "cells": {
+      "printed": [
+       "4",
+       "3"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5e",
+     "id": "phys-2010-hl-q5-e",
+     "questionRef": "2010 HL Q5(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-2",
+     "concept": "q5e",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7,
+      "waiver": "7 total; parenthesised formula-only award 4 is partial credit."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5f",
+     "id": "phys-2010-hl-q5-f",
+     "questionRef": "2010 HL Q5(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-2",
+     "concept": "q5f",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5g",
+     "id": "phys-2010-hl-q5-g",
+     "questionRef": "2010 HL Q5(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q5g",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "3"
+      ],
+      "sum": 7,
+      "waiver": "Verbal route 4+3; equivalent complete mathematical route in original scheme."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5h",
+     "id": "phys-2010-hl-q5-h",
+     "questionRef": "2010 HL Q5(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-6",
+     "concept": "q5h",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-rms-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5i",
+     "id": "phys-2010-hl-q5-i",
+     "questionRef": "2010 HL Q5(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-4-4",
+     "concept": "q5i",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5j-accelerator",
+     "id": "phys-2010-hl-q5-j-accelerator",
+     "questionRef": "2010 HL Q5(j) — accelerator",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "q5j-accelerator",
+     "route": "accelerator",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5j-galvanometer",
+     "id": "phys-2010-hl-q5-j-galvanometer",
+     "questionRef": "2010 HL Q5(j) — galvanometer",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q5j-galvanometer",
+     "route": "galvanometer",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "3"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:law",
+     "id": "phys-2010-hl-q6-law",
+     "questionRef": "2010 HL Q6 — Universal gravitation",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-5",
+     "concept": "law",
+     "route": null,
+     "item": "Universal gravitation",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6,
+      "waiver": "Verbal route 3+3; an equivalent complete formula with correct notation earns the same 6."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:acceleration",
+     "id": "phys-2010-hl-q6-acceleration",
+     "questionRef": "2010 HL Q6 — Gravity above Earth",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-5",
+     "concept": "acceleration",
+     "route": null,
+     "item": "Gravity above Earth",
+     "rows": 4,
+     "figure": "q6-gravity-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "18",
+       "6",
+       "3",
+       "3",
+       "3",
+       "9",
+       "5",
+       "3",
+       "3"
+      ],
+      "sum": 56,
+      "waiver": "Four calculation stages 3 each; law definition is separately 6 of the printed 18."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6i",
+     "id": "phys-2010-hl-q6-i",
+     "questionRef": "2010 HL Q6(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "q6i",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-spacecraft",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6ii",
+     "id": "phys-2010-hl-q6-ii",
+     "questionRef": "2010 HL Q6(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-5",
+     "concept": "q6ii",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-spacecraft",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": "Here the historical question uses “weight” for the resultant gravitational pull along the Earth–Moon line. Apparent weight in a freely falling spacecraft is a different concept."
+    },
+    {
+     "status": "carded",
+     "key": "q6iii",
+     "id": "phys-2010-hl-q6-iii",
+     "questionRef": "2010 HL Q6(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-5",
+     "concept": "q6iii",
+     "route": null,
+     "rows": 4,
+     "figure": "q6-weightless-solution",
+     "questionFigure": "q6-weightless-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "9",
+       "5",
+       "3",
+       "3",
+       "12",
+       "12",
+       "5"
+      ],
+      "sum": 52,
+      "waiver": "Four3-mark stages: equal forces, inverse-square equation, mass/radius ratio, height above surface. Detached cells belong to other Q6 tasks."
+     },
+     "decision": null,
+     "notes": "The calculation asks for the point where the two gravitational pulls cancel. Astronauts can experience apparent weightlessness elsewhere when freely falling."
+    },
+    {
+     "status": "carded",
+     "key": "q6iv",
+     "id": "phys-2010-hl-q6-iv",
+     "questionRef": "2010 HL Q6(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-6",
+     "concept": "q6iv",
+     "route": null,
+     "rows": 3,
+     "figure": "q6-orbit-solution",
+     "questionFigure": "q6-orbit-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3",
+       "3",
+       "18",
+       "6",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 48,
+      "waiver": "Three3-mark stages: orbital-speed equation, SI-period substitution, numerical answer; boxed9 confirms."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6v",
+     "id": "phys-2010-hl-q6-v",
+     "questionRef": "2010 HL Q6(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-1-5",
+     "concept": "q6v",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-spacecraft",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "5"
+      ],
+      "sum": 5
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:definition",
+     "id": "phys-2010-hl-q7-definition",
+     "questionRef": "2010 HL Q7 — Doppler effect",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "definition",
+     "route": null,
+     "item": "Doppler effect",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:diagram",
+     "id": "phys-2010-hl-q7-diagram",
+     "questionRef": "2010 HL Q7 — Explaining the Doppler effect",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "diagram",
+     "route": null,
+     "item": "Explaining the Doppler effect",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:experiment",
+     "id": "phys-2010-hl-q7-experiment",
+     "questionRef": "2010 HL Q7 — Demonstrating the Doppler effect",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "experiment",
+     "route": null,
+     "item": "Demonstrating the Doppler effect",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:redshift",
+     "id": "phys-2010-hl-q7-redshift",
+     "questionRef": "2010 HL Q7 — Red shift",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "redshift",
+     "route": null,
+     "item": "Red shift",
+     "rows": 2,
+     "figure": "q7-spectrum",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:motion",
+     "id": "phys-2010-hl-q7-motion",
+     "questionRef": "2010 HL Q7 — Motion of the star",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "motion",
+     "route": null,
+     "item": "Motion of the star",
+     "rows": 1,
+     "figure": "q7-spectrum",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:speed",
+     "id": "phys-2010-hl-q7-speed",
+     "questionRef": "2010 HL Q7 — Speed from the wavelength shift",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      6,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "speed",
+     "route": null,
+     "item": "Speed from the wavelength shift",
+     "rows": 4,
+     "figure": "q7-speed-solution",
+     "questionFigure": "q7-speed-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6,
+      "waiver": "Calculation 6+3+3+3=15; separate direction deduction 3 makes printed 18."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:application",
+     "id": "phys-2010-hl-q7-application",
+     "questionRef": "2010 HL Q7 — Another Doppler application",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-2-7",
+     "concept": "application",
+     "route": null,
+     "item": "Another Doppler application",
+     "rows": 1,
+     "figure": "q7-spectrum",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "5",
+       "18",
+       "6",
+       "5"
+      ],
+      "sum": 34,
+      "waiver": "One5-mark application. Detached18/6/5 boxes summarise earlier Q7 tasks."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8:current",
+     "id": "phys-2010-hl-q8-current",
+     "questionRef": "2010 HL Q8 — Electric current",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "current",
+     "route": null,
+     "item": "Electric current",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8:effects",
+     "id": "phys-2010-hl-q8-effects",
+     "questionRef": "2010 HL Q8 — Other current effects",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "effects",
+     "route": null,
+     "item": "Other current effects",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8ia",
+     "id": "phys-2010-hl-q8-i-a",
+     "questionRef": "2010 HL Q8(i)(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q8ia",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8ib",
+     "id": "phys-2010-hl-q8-i-b",
+     "questionRef": "2010 HL Q8(i)(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q8ib",
+     "route": null,
+     "rows": 2,
+     "figure": "q8-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3,
+      "waiver": "Coil gets hot3 and fan blows hot air3; the second3 is a detached object. Part(i)(a) is separately3; printed group9."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8ii",
+     "id": "phys-2010-hl-q8-ii",
+     "questionRef": "2010 HL Q8(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q8ii",
+     "route": null,
+     "rows": 3,
+     "figure": "q8-values-solution",
+     "questionFigure": "q8-values-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "9"
+      ],
+      "sum": 12,
+      "waiver": "Shared P=IV3, current3 and resistance3; boxed9 is the total, not another row."
+     },
+     "decision": "The resistance and current calculations share one 9-mark allocation: formula 3, current 3, resistance 3.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iii",
+     "id": "phys-2010-hl-q8-iii",
+     "questionRef": "2010 HL Q8(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q8iii",
+     "route": null,
+     "rows": 6,
+     "figure": "q8-length-solution",
+     "questionFigure": "q8-length-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "4",
+       "9",
+       "3",
+       "9",
+       "18",
+       "8",
+       "12"
+      ],
+      "sum": 67,
+      "waiver": "Six3-mark stages visible in the original calculation: area equation, radius substitution, area, resistivity equation, length substitution, length answer; total18."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iv",
+     "id": "phys-2010-hl-q8-iv",
+     "questionRef": "2010 HL Q8(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      4,
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "q8iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q8-circuit",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "4"
+      ],
+      "sum": 8
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9:thermionic",
+     "id": "phys-2010-hl-q9-thermionic",
+     "questionRef": "2010 HL Q9 — Thermionic emission",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-1",
+     "concept": "thermionic",
+     "route": null,
+     "item": "Thermionic emission",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9:tube",
+     "id": "phys-2010-hl-q9-tube",
+     "questionRef": "2010 HL Q9 — X-ray tube diagram",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "tube",
+     "route": null,
+     "item": "X-ray tube diagram",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9:nature",
+     "id": "phys-2010-hl-q9-nature",
+     "questionRef": "2010 HL Q9 — X-rays and visible light",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "nature",
+     "route": null,
+     "item": "X-rays and visible light",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": "The comparison earns 6 for electromagnetic radiation, 3 for high frequency/short wavelength/high energy, and 3 for a comparative property.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9:uses",
+     "id": "phys-2010-hl-q9-uses",
+     "questionRef": "2010 HL Q9 — Uses of X-rays",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "uses",
+     "route": null,
+     "item": "Uses of X-rays",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9:target",
+     "id": "phys-2010-hl-q9-target",
+     "questionRef": "2010 HL Q9 — Energy transfer to the target",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "target",
+     "route": null,
+     "item": "Energy transfer to the target",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9i",
+     "id": "phys-2010-hl-q9-i",
+     "questionRef": "2010 HL Q9(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q9i",
+     "route": null,
+     "rows": 2,
+     "figure": "q9-energy-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3,
+      "waiver": "W=qV3 and substitution/result3; standalone3 cell accompanies the second equation."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9ii",
+     "id": "phys-2010-hl-q9-ii",
+     "questionRef": "2010 HL Q9(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      3,
+      2
+     ],
+     "topic": "phys-4-2",
+     "concept": "q9ii",
+     "route": null,
+     "rows": 2,
+     "figure": "q9-frequency-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "11"
+      ],
+      "sum": 14,
+      "waiver": "E=hf3 and frequency substitution/result2. Printed11 groups this5 with the preceding6-mark electron-energy calculation."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(i):antimatter",
+     "id": "phys-2010-hl-q10-a-i-antimatter",
+     "questionRef": "2010 HL Q10(a)(i) — Anti-matter",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "antimatter",
+     "route": null,
+     "item": "Anti-matter",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(i):positron",
+     "id": "phys-2010-hl-q10-a-i-positron",
+     "questionRef": "2010 HL Q10(a)(i) — The first anti-particle",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "positron",
+     "route": null,
+     "item": "The first anti-particle",
+     "rows": 2,
+     "figure": "q10-positron-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3,
+      "waiver": "Name3 and symbol3; the symbol award is a separate object alongside the original symbol row."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(i):annihilation",
+     "id": "phys-2010-hl-q10-a-i-annihilation",
+     "questionRef": "2010 HL Q10(a)(i) — Particle–antiparticle annihilation",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "annihilation",
+     "route": null,
+     "item": "Particle–antiparticle annihilation",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(ii):pair",
+     "id": "phys-2010-hl-q10-a-ii-pair",
+     "questionRef": "2010 HL Q10(a)(ii) — Pair production",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "pair",
+     "route": null,
+     "item": "Pair production",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(ii):kinetic",
+     "id": "phys-2010-hl-q10-a-ii-kinetic",
+     "questionRef": "2010 HL Q10(a)(ii) — Kinetic energy per produced particle",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "kinetic",
+     "route": null,
+     "item": "Kinetic energy per produced particle",
+     "rows": 5,
+     "figure": "q10-kinetic-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "17"
+      ],
+      "sum": 20,
+      "waiver": "Five independent 3-mark calculation stages; pair-production definition is separately 6."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(iii):mesons",
+     "id": "phys-2010-hl-q10-a-iii-mesons",
+     "questionRef": "2010 HL Q10(a)(iii) — Quark combinations, charges and names",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      4,
+      4,
+      4
+     ],
+     "topic": "phys-4-6",
+     "concept": "mesons",
+     "route": null,
+     "item": "Quark combinations, charges and names",
+     "rows": 3,
+     "figure": "q10-mesons-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": "The table has four combinations, each with composition, charge and identity: twelve 1-mark components in total.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(a)(iii):writer",
+     "id": "phys-2010-hl-q10-a-iii-writer",
+     "questionRef": "2010 HL Q10(a)(iii) — The name quark",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-4-6",
+     "concept": "writer",
+     "route": null,
+     "item": "The name quark",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "5",
+       "18"
+      ],
+      "sum": 23,
+      "waiver": "Single5-mark writer identification; detached18 box belongs to the earlier part(i)."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b):conduction",
+     "id": "phys-2010-hl-q10-b-conduction",
+     "questionRef": "2010 HL Q10(b) — Intrinsic and extrinsic conduction",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "conduction",
+     "route": null,
+     "item": "Intrinsic and extrinsic conduction",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(i):observation",
+     "id": "phys-2010-hl-q10-b-i-observation",
+     "questionRef": "2010 HL Q10(b)(i) — LEDs at 1 Hz",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "observation",
+     "route": null,
+     "item": "LEDs at 1 Hz",
+     "rows": 3,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(i):explanation",
+     "id": "phys-2010-hl-q10-b-i-explanation",
+     "questionRef": "2010 HL Q10(b)(i) — Explaining alternating LED pairs",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "explanation",
+     "route": null,
+     "item": "Explaining alternating LED pairs",
+     "rows": 2,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(i):frequency",
+     "id": "phys-2010-hl-q10-b-i-frequency",
+     "questionRef": "2010 HL Q10(b)(i) — LEDs at 50 Hz",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "frequency",
+     "route": null,
+     "item": "LEDs at 50 Hz",
+     "rows": 1,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(ii):resistor",
+     "id": "phys-2010-hl-q10-b-ii-resistor",
+     "questionRef": "2010 HL Q10(b)(ii) — Functions of the resistor",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistor",
+     "route": null,
+     "item": "Functions of the resistor",
+     "rows": 2,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(ii):display",
+     "id": "phys-2010-hl-q10-b-ii-display",
+     "questionRef": "2010 HL Q10(b)(ii) — Displaying the voltage",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "display",
+     "route": null,
+     "item": "Displaying the voltage",
+     "rows": 1,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(ii):graphs",
+     "id": "phys-2010-hl-q10-b-ii-graphs",
+     "questionRef": "2010 HL Q10(b)(ii) — Input and output waveforms",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "graphs",
+     "route": null,
+     "item": "Input and output waveforms",
+     "rows": 2,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6",
+       "6"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10biii",
+     "id": "phys-2010-hl-q10-b-iii",
+     "questionRef": "2010 HL Q10(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-3-3",
+     "concept": "q10biii",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-bridge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "5",
+       "9",
+       "18",
+       "24",
+       "5"
+      ],
+      "sum": 61,
+      "waiver": "One5-mark voltage-drop explanation; detached9/18/24/5 boxes summarise all of Q10(b)."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11a",
+     "id": "phys-2010-hl-q11-a",
+     "questionRef": "2010 HL Q11(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11a",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11b",
+     "id": "phys-2010-hl-q11-b",
+     "questionRef": "2010 HL Q11(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "q11b",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-sar-solution",
+     "questionFigure": "q11-sar-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11c",
+     "id": "phys-2010-hl-q11-c",
+     "questionRef": "2010 HL Q11(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q11c",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "3"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11d",
+     "id": "phys-2010-hl-q11-d",
+     "questionRef": "2010 HL Q11(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11d",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11e",
+     "id": "phys-2010-hl-q11-e",
+     "questionRef": "2010 HL Q11(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "q11e",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4,
+      "waiver": "Lower frequency4 and upper frequency3. The second3 is printed on the unit-deduction line."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11f",
+     "id": "phys-2010-hl-q11-f",
+     "questionRef": "2010 HL Q11(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11f",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11g",
+     "id": "phys-2010-hl-q11-g",
+     "questionRef": "2010 HL Q11(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11g",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-antenna-solution",
+     "questionFigure": "q11-antenna-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11h",
+     "id": "phys-2010-hl-q11-h",
+     "questionRef": "2010 HL Q11(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11h",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3,
+      "waiver": "One radiation choice 4 and matching justification 3; no expansion into combinations."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12ai",
+     "id": "phys-2010-hl-q12-a-i",
+     "questionRef": "2010 HL Q12(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-1-1",
+     "concept": "q12ai",
+     "route": null,
+     "rows": 5,
+     "figure": "q12-position",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3",
+       "2"
+      ],
+      "sum": 14
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aii",
+     "id": "phys-2010-hl-q12-a-ii",
+     "questionRef": "2010 HL Q12(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-1-1",
+     "concept": "q12aii",
+     "route": null,
+     "rows": 5,
+     "figure": "q12-cyclist-solution",
+     "questionFigure": "q12-cyclist-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "2",
+       "2",
+       "2",
+       "2",
+       "2",
+       "6",
+       "6",
+       "3",
+       "4",
+       "14",
+       "14"
+      ],
+      "sum": 57,
+      "waiver": "Seven2-mark stages: speed-unit conversion, three graph areas, distance sum, mean-speed formula and mean-speed result. Original group total14."
+     },
+     "decision": "One printed graph calculation asks for distance and its resulting journey average. The calculation has seven 2-mark components; the three graph areas are a required three-of-three checklist.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12bi",
+     "id": "phys-2010-hl-q12-b-i",
+     "questionRef": "2010 HL Q12(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-6",
+     "concept": "q12bi",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-nuclear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12bii",
+     "id": "phys-2010-hl-q12-b-ii",
+     "questionRef": "2010 HL Q12(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12bii",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-mass-solution",
+     "questionFigure": "q12-mass-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "6",
+       "9",
+       "9",
+       "4"
+      ],
+      "sum": 34,
+      "waiver": "Three3-mark stages: mass-energy equation, converted energy substitution, mass result; total9."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b)(iii):chain",
+     "id": "phys-2010-hl-q12-b-iii-chain",
+     "questionRef": "2010 HL Q12(b)(iii) — Chain reaction",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-6",
+     "concept": "chain",
+     "route": null,
+     "item": "Chain reaction",
+     "rows": 1,
+     "figure": "q12-nuclear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b)(iii):condition",
+     "id": "phys-2010-hl-q12-b-iii-condition",
+     "questionRef": "2010 HL Q12(b)(iii) — Condition for a chain reaction",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "condition",
+     "route": null,
+     "item": "Condition for a chain reaction",
+     "rows": 1,
+     "figure": "q12-nuclear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12biv",
+     "id": "phys-2010-hl-q12-b-iv",
+     "questionRef": "2010 HL Q12(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-4-6",
+     "concept": "q12biv",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-nuclear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(c):resonance",
+     "id": "phys-2010-hl-q12-c-resonance",
+     "questionRef": "2010 HL Q12(c) — Meaning of resonance",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "resonance",
+     "route": null,
+     "item": "Meaning of resonance",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.43,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6,
+      "waiver": "Definition 3+3, separate demonstration 3+3+3."
+     },
+     "pairedBy": "Definition is separately priced6 within the compound definition/demonstration request.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(c):demonstration",
+     "id": "phys-2010-hl-q12-c-demonstration",
+     "questionRef": "2010 HL Q12(c) — Demonstrating resonance",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "demonstration",
+     "route": null,
+     "item": "Demonstrating resonance",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9,
+      "waiver": "The three demonstration stages each 3; definition is independently 6."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(c):characteristics",
+     "id": "phys-2010-hl-q12-c-characteristics",
+     "questionRef": "2010 HL Q12(c) — Musical characteristics and their properties",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "characteristics",
+     "route": null,
+     "item": "Musical characteristics and their properties",
+     "rows": 2,
+     "figure": "q12-characteristics-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0,
+      "waiver": "Published award: 3 per named characteristic (two required), then shared 3 only if both associated properties are correct. Do not invent per-pair 4.5 marks."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(c):timbre",
+     "id": "phys-2010-hl-q12-c-timbre",
+     "questionRef": "2010 HL Q12(c) — Why instruments sound different",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-5",
+     "concept": "timbre",
+     "route": null,
+     "item": "Why instruments sound different",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(d):definition",
+     "id": "phys-2010-hl-q12-d-definition",
+     "questionRef": "2010 HL Q12(d) — Electric field strength and unit",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "definition",
+     "route": null,
+     "item": "Electric field strength and unit",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(d):direction",
+     "id": "phys-2010-hl-q12-d-direction",
+     "questionRef": "2010 HL Q12(d) — Direction of the field at P",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "direction",
+     "route": null,
+     "item": "Direction of the field at P",
+     "rows": 1,
+     "figure": "q12-direction-solution",
+     "questionFigure": "q12-direction-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(d):field",
+     "id": "phys-2010-hl-q12-d-field",
+     "questionRef": "2010 HL Q12(d) — Field strength at P",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "field",
+     "route": null,
+     "item": "Field strength at P",
+     "rows": 4,
+     "figure": "q12-field-solution",
+     "questionFigure": "q12-field-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4,
+      "waiver": "Four3-mark calculation stages: point-charge equation, sum of two fields, substituted values, final field. Separate arrow3 completes printed15."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(d):discharge",
+     "id": "phys-2010-hl-q12-d-discharge",
+     "questionRef": "2010 HL Q12(d) — Point discharge",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-2",
+     "concept": "discharge",
+     "route": null,
+     "item": "Point discharge",
+     "rows": 1,
+     "figure": "q12-charge",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4",
+       "15",
+       "4",
+       "9"
+      ],
+      "sum": 32,
+      "waiver": "One4-mark point-discharge explanation; detached15/4/9 boxes refer to all Q12(d) tasks."
+     },
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 97,
+   "baseTaskCount": 97,
+   "figures": [
+    "physics-2010-hl-q1-data",
+    "physics-2010-hl-q1-graph-question",
+    "physics-2010-hl-q1-mass-question",
+    "physics-2010-hl-q1-method-question",
+    "physics-2010-hl-q1-method-solution",
+    "physics-2010-hl-q1-relationship-question",
+    "physics-2010-hl-q10-bridge",
+    "physics-2010-hl-q10-kinetic-solution",
+    "physics-2010-hl-q10-mesons-solution",
+    "physics-2010-hl-q10-positron-solution",
+    "physics-2010-hl-q11-antenna-question",
+    "physics-2010-hl-q11-antenna-solution",
+    "physics-2010-hl-q11-passage",
+    "physics-2010-hl-q11-sar-question",
+    "physics-2010-hl-q11-sar-solution",
+    "physics-2010-hl-q12-characteristics-solution",
+    "physics-2010-hl-q12-charge",
+    "physics-2010-hl-q12-cyclist-question",
+    "physics-2010-hl-q12-cyclist-solution",
+    "physics-2010-hl-q12-direction-question",
+    "physics-2010-hl-q12-direction-solution",
+    "physics-2010-hl-q12-field-question",
+    "physics-2010-hl-q12-field-solution",
+    "physics-2010-hl-q12-mass-question",
+    "physics-2010-hl-q12-mass-solution",
+    "physics-2010-hl-q12-nuclear",
+    "physics-2010-hl-q12-position",
+    "physics-2010-hl-q2-data",
+    "physics-2010-hl-q2-latent-question",
+    "physics-2010-hl-q2-latent-solution",
+    "physics-2010-hl-q3-data",
+    "physics-2010-hl-q3-graph-question",
+    "physics-2010-hl-q3-index-question",
+    "physics-2010-hl-q3-sines-solution",
+    "physics-2010-hl-q4-data",
+    "physics-2010-hl-q4-graph-question",
+    "physics-2010-hl-q4-variation-question",
+    "physics-2010-hl-q5-angle-solution",
+    "physics-2010-hl-q5-rms-solution",
+    "physics-2010-hl-q5-spectrometer",
+    "physics-2010-hl-q6-gravity-solution",
+    "physics-2010-hl-q6-orbit-question",
+    "physics-2010-hl-q6-orbit-solution",
+    "physics-2010-hl-q6-spacecraft",
+    "physics-2010-hl-q6-weightless-question",
+    "physics-2010-hl-q6-weightless-solution",
+    "physics-2010-hl-q7-spectrum",
+    "physics-2010-hl-q7-speed-question",
+    "physics-2010-hl-q7-speed-solution",
+    "physics-2010-hl-q8-circuit",
+    "physics-2010-hl-q8-length-question",
+    "physics-2010-hl-q8-length-solution",
+    "physics-2010-hl-q8-values-question",
+    "physics-2010-hl-q8-values-solution",
+    "physics-2010-hl-q9-energy-solution",
+    "physics-2010-hl-q9-frequency-solution"
+   ],
+   "checks": {
+    "censusLeaves": 48,
+    "censusLeavesClaimed": 48,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-old-course-acceleration",
+       "physics-higher-old-course-exp-qs-mechanics",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-speed-displacement-velocity",
+       "physics-higher-old-course-force-mass-momentum",
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-old-course-exp-qs-heat",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-heat-heat-transfer"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-old-course-exp-qs-light",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-refraction-lenses",
+       "physics-higher-old-course-light"
+      ],
+      "taskTopics": [
+       "phys-2-3"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "physics-higher-old-course-exp-qs-electricity",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-resistance",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-semiconductors",
+       "physics-higher-old-course-temperature-thermometers",
+       "physics-higher-new-course-33-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-31-charge-interactions",
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-higher-new-course-44-radioactivity",
+       "physics-higher-old-course-pressure-gravity-moments",
+       "physics-higher-old-course-refraction-lenses",
+       "physics-higher-old-course-light",
+       "physics-higher-old-course-heat-heat-transfer",
+       "physics-higher-old-course-potential-difference-capacitance",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-electromagnetic-induction",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity",
+       "physics-higher-old-course-particle-physics",
+       "physics-higher-old-course-magnets-magnetic-fields",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-new-course-35-the-force-experienced-by-a-current-carrying-conductor-in-a-magnetic-field"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-2-1",
+       "phys-2-3",
+       "phys-2-6",
+       "phys-3-2",
+       "phys-3-5",
+       "phys-3-6",
+       "phys-4-4",
+       "phys-4-6"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "physics-higher-new-course-15-forces-acting-in-a-gravitational-field",
+       "physics-higher-old-course-force-mass-momentum",
+       "physics-higher-old-course-pressure-gravity-moments",
+       "physics-higher-old-course-circular-motion",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-new-course-16-uniform-circular-motion"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-1-5",
+       "phys-1-6"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "physics-higher-new-course-27-wave-effects",
+       "physics-higher-old-course-waves-wave-motion",
+       "physics-higher-old-course-vibration-sound",
+       "physics-higher-old-course-light"
+      ],
+      "taskTopics": [
+       "phys-2-7"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-current-charge",
+       "physics-higher-old-course-resistance"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity",
+       "physics-higher-old-course-the-electron",
+       "physics-higher-new-course-41-the-electron"
+      ],
+      "taskTopics": [
+       "phys-4-1",
+       "phys-4-2"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-particle-physics",
+       "physics-higher-old-course-semiconductors",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-new-course-33-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-3-3",
+       "phys-4-5",
+       "phys-4-6"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-old-course-waves-wave-motion",
+       "physics-higher-old-course-light",
+       "physics-higher-old-course-vibration-sound",
+       "physics-higher-old-course-heat-heat-transfer",
+       "physics-higher-old-course-work-energy-power",
+       "physics-higher-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-25-sound-energy"
+      ],
+      "taskTopics": [
+       "phys-1-4",
+       "phys-2-1",
+       "phys-2-4",
+       "phys-2-5"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-old-course-current-charge",
+       "physics-higher-old-course-nuclear-energy",
+       "physics-higher-old-course-vibration-sound",
+       "physics-higher-old-course-speed-displacement-velocity",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity",
+       "physics-higher-old-course-waves-wave-motion",
+       "physics-higher-old-course-static-electricity",
+       "physics-higher-old-course-potential-difference-capacitance",
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-25-sound-energy"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-2-5",
+       "phys-2-6",
+       "phys-3-2",
+       "phys-4-5",
+       "phys-4-6"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (physics-<year>-exam-topic-map.json via physics-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 0,
+    "askScan": {
+     "askLines": 94,
+     "exempt": [
+      {
+       "page": 7,
+       "line": "Calculate:",
+       "reason": "Shared command retained in both independently priced X-ray calculations."
+      },
+      {
+       "page": 7,
+       "line": "Describe what happens:",
+       "reason": "Shared command retained in both separately priced switch tasks."
+      },
+      {
+       "page": 7,
+       "line": "When an electric current flows through the coiled wire, the air around",
+       "reason": "Descriptive hair-dryer stem, retained wherever needed; not a question."
+      }
+     ]
+    },
+    "excluded": []
+   }
+  },
+  "2010-ol": {
+   "status": "reviewed",
+   "reviewedAt": "2026-11-01",
+   "ledger": "scripts/markbank/authoring/phys_review_2010_ol.py",
+   "method": "2010 Ordinary Physics: independent visual review of all 12 paper and 17 scheme pages.\nEvery question, option, complete data set and published marking boundary retained.",
+   "sources": {
+    "paper": {
+     "path": "examiner-reports/physics/papers/2010-ol-paper.pdf",
+     "fileid": "LC021GLP000EV.pdf",
+     "sha256": "cd7e3171188036792f19a4799691011fd7d7f0725bf748512ad1bde1de8adf5d",
+     "bytes": 946345,
+     "pages": 12,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "blank",
+      "12": "blank"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/physics/schemes/2010-ol.pdf",
+     "fileid": "LC021GLP000EV.pdf",
+     "sha256": "28eb1fb20674f042065f9626b1cfe02fd7faeff204bcbcdf358997bc370fe9bc",
+     "bytes": 529270,
+     "pages": 17,
+     "pageRoles": {
+      "1": "cover",
+      "2": "blank",
+      "3": "conventions",
+      "4": "marking",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "back-cover"
+     },
+     "pagesLifted": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 12 pages rendered and read",
+    "scheme": "all 17 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 56,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 56,
+    "11": 56,
+    "12": 112
+   },
+   "partTotals": {
+    "8a": 37,
+    "8b": 19,
+    "9a": 32,
+    "9b": 24,
+    "11a": 7,
+    "11b": 7,
+    "11c": 7,
+    "11d": 7,
+    "11e": 7,
+    "11f": 7,
+    "11g": 7,
+    "11h": 7,
+    "12a": 28,
+    "12b": 28,
+    "12c": 28,
+    "12d": 28
+   },
+   "groupTotals": {},
+   "tickChecksums": {},
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Complete specific-heat report is context, not a response choice."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "the following",
+     "disposition": "All ten independently priced Q5 options retained; do not generate best-eight combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "one of the following",
+     "disposition": "One choose-one scientist-identification card retains all four printed names."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "any two",
+     "disposition": "All four Q12 options retained with their independent task boundaries; no answer-pair combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Same four Q12 options; all included."
+    }
+   ],
+   "routes": {},
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1i",
+     "id": "phys-2010-ol-q1-i",
+     "questionRef": "2010 OL Q1(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "1i",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1ii",
+     "id": "phys-2010-ol-q1-ii",
+     "questionRef": "2010 OL Q1(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "1ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1iii",
+     "id": "phys-2010-ol-q1-iii",
+     "questionRef": "2010 OL Q1(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "1iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1iv",
+     "id": "phys-2010-ol-q1-iv",
+     "questionRef": "2010 OL Q1(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "1iv",
+     "route": null,
+     "rows": 4,
+     "figure": "q1-graph-solution",
+     "questionFigure": "q1-graph-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1v",
+     "id": "phys-2010-ol-q1-v",
+     "questionRef": "2010 OL Q1(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-2",
+     "concept": "1v",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q1-relationship-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2i",
+     "id": "phys-2010-ol-q2-i",
+     "questionRef": "2010 OL Q2(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "2i",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2ii",
+     "id": "phys-2010-ol-q2-ii",
+     "questionRef": "2010 OL Q2(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "2ii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2iii",
+     "id": "phys-2010-ol-q2-iii",
+     "questionRef": "2010 OL Q2(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "2iii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2iv",
+     "id": "phys-2010-ol-q2-iv",
+     "questionRef": "2010 OL Q2(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-1",
+     "concept": "2iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-formula-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2v",
+     "id": "phys-2010-ol-q2-v",
+     "questionRef": "2010 OL Q2(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "2v",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3i",
+     "id": "phys-2010-ol-q3-i",
+     "questionRef": "2010 OL Q3(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "3i",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3ii",
+     "id": "phys-2010-ol-q3-ii",
+     "questionRef": "2010 OL Q3(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "3ii",
+     "route": null,
+     "rows": 2,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3iii",
+     "id": "phys-2010-ol-q3-iii",
+     "questionRef": "2010 OL Q3(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-3",
+     "concept": "3iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3iv",
+     "id": "phys-2010-ol-q3-iv",
+     "questionRef": "2010 OL Q3(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "3iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-calculation-solution",
+     "questionFigure": "q3-calculation-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4 × 3"
+      ],
+      "sum": 12
+     },
+     "decision": "The three trials and their average form one focal-length measurement with a single 12-mark tariff.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3v",
+     "id": "phys-2010-ol-q3-v",
+     "questionRef": "2010 OL Q3(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-3",
+     "concept": "3v",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4i",
+     "id": "phys-2010-ol-q4-i",
+     "questionRef": "2010 OL Q4(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "4i",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4ii",
+     "id": "phys-2010-ol-q4-ii",
+     "questionRef": "2010 OL Q4(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "4ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4(iii):instrument",
+     "id": "phys-2010-ol-q4-iii-instrument",
+     "questionRef": "2010 OL Q4(iii) — Measuring the diameter",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "instrument",
+     "route": null,
+     "item": "Measuring the diameter",
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4(iii):repetition",
+     "id": "phys-2010-ol-q4-iii-repetition",
+     "questionRef": "2010 OL Q4(iii) — Measuring at different places",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "repetition",
+     "route": null,
+     "item": "Measuring at different places",
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4iv",
+     "id": "phys-2010-ol-q4-iv",
+     "questionRef": "2010 OL Q4(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "4iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-area-solution",
+     "questionFigure": "q4-area-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3 × 3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4v",
+     "id": "phys-2010-ol-q4-v",
+     "questionRef": "2010 OL Q4(v)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "4v",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-resistivity-solution",
+     "questionFigure": "q4-resistivity-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3 × 3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5a",
+     "id": "phys-2010-ol-q5-a",
+     "questionRef": "2010 OL Q5(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-1",
+     "concept": "5a",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5b",
+     "id": "phys-2010-ol-q5-b",
+     "questionRef": "2010 OL Q5(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-5",
+     "concept": "5b",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-concrete-question",
+     "sourcePages": null,
+     "pairingScore": 0.74,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5c",
+     "id": "phys-2010-ol-q5-c",
+     "questionRef": "2010 OL Q5(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-5",
+     "concept": "5c",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5d",
+     "id": "phys-2010-ol-q5-d",
+     "questionRef": "2010 OL Q5(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-3",
+     "concept": "5d",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5e",
+     "id": "phys-2010-ol-q5-e",
+     "questionRef": "2010 OL Q5(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-1",
+     "concept": "5e",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5f",
+     "id": "phys-2010-ol-q5-f",
+     "questionRef": "2010 OL Q5(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-2-2",
+     "concept": "5f",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5g",
+     "id": "phys-2010-ol-q5-g",
+     "questionRef": "2010 OL Q5(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-4",
+     "concept": "5g",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-field-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5h",
+     "id": "phys-2010-ol-q5-h",
+     "questionRef": "2010 OL Q5(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-2",
+     "concept": "5h",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5i",
+     "id": "phys-2010-ol-q5-i",
+     "questionRef": "2010 OL Q5(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-3",
+     "concept": "5i",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5j",
+     "id": "phys-2010-ol-q5-j",
+     "questionRef": "2010 OL Q5(j)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-4-6",
+     "concept": "5j",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:momentum",
+     "id": "phys-2010-ol-q6-momentum",
+     "questionRef": "2010 OL Q6 — Meaning of momentum",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "momentum",
+     "route": null,
+     "item": "Meaning of momentum",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.4,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The two requested definitions have separately printed 6-mark tariffs.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:kinetic",
+     "id": "phys-2010-ol-q6-kinetic",
+     "questionRef": "2010 OL Q6 — Meaning of kinetic energy",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-4",
+     "concept": "kinetic",
+     "route": null,
+     "item": "Meaning of kinetic energy",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.6,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The two requested definitions have separately printed 6-mark tariffs.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:conservation",
+     "id": "phys-2010-ol-q6-conservation",
+     "questionRef": "2010 OL Q6 — Conservation of momentum",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "conservation",
+     "route": null,
+     "item": "Conservation of momentum",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "cells": {
+      "printed": [
+       "3 × 3"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The principle is separately priced 9; its spacecraft application is separately 3.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q6:spacecraft",
+     "id": "phys-2010-ol-q6-spacecraft",
+     "questionRef": "2010 OL Q6 — Spacecraft launch",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "spacecraft",
+     "route": null,
+     "item": "Spacecraft launch",
+     "rows": 1,
+     "figure": "q6-rocket",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6i",
+     "id": "phys-2010-ol-q6-i",
+     "questionRef": "2010 OL Q6(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "6i",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-skaters",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6ii",
+     "id": "phys-2010-ol-q6-ii",
+     "questionRef": "2010 OL Q6(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "6ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-skaters",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6iii",
+     "id": "phys-2010-ol-q6-iii",
+     "questionRef": "2010 OL Q6(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "6iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-skaters",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6iv",
+     "id": "phys-2010-ol-q6-iv",
+     "questionRef": "2010 OL Q6(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "6iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-energy-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3,
+      "waiver": "The two skaters each have a separately printed 3-mark kinetic-energy result. The first cell is detached from the equation text; combined total 6."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6v",
+     "id": "phys-2010-ol-q6-v",
+     "questionRef": "2010 OL Q6(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-4",
+     "concept": "6v",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-skaters",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6vi",
+     "id": "phys-2010-ol-q6-vi",
+     "questionRef": "2010 OL Q6(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-4",
+     "concept": "6vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-skaters",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7i",
+     "id": "phys-2010-ol-q7-i",
+     "questionRef": "2010 OL Q7(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-2",
+     "concept": "7i",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-wave",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ii",
+     "id": "phys-2010-ol-q7-ii",
+     "questionRef": "2010 OL Q7(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-2",
+     "concept": "7ii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7iii",
+     "id": "phys-2010-ol-q7-iii",
+     "questionRef": "2010 OL Q7(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-6",
+     "concept": "7iii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7iv",
+     "id": "phys-2010-ol-q7-iv",
+     "questionRef": "2010 OL Q7(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-2",
+     "concept": "7iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-wavelength-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.91,
+     "cells": {
+      "printed": [
+       "3 × 3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7v",
+     "id": "phys-2010-ol-q7-v",
+     "questionRef": "2010 OL Q7(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      6,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "7v",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": "Both required associations share the published 6 + 3 allocation; their marks are not separately fixed.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:glass",
+     "id": "phys-2010-ol-q7-glass",
+     "questionRef": "2010 OL Q7 — Why the glass can shatter",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-6",
+     "concept": "glass",
+     "route": null,
+     "item": "Why the glass can shatter",
+     "rows": 1,
+     "figure": "q7-glass",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7:experiment",
+     "id": "phys-2010-ol-q7-experiment",
+     "questionRef": "2010 OL Q7 — Demonstrating resonance",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-2-6",
+     "concept": "experiment",
+     "route": null,
+     "item": "Demonstrating resonance",
+     "rows": 5,
+     "figure": "q7-resonance-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3",
+       "2"
+      ],
+      "sum": 14
+     },
+     "decision": null,
+     "notes": "One complete air-column method is listed. The original also shows the full Barton’s-pendulums method; use one consistent apparatus, procedure, observation and conclusion."
+    },
+    {
+     "status": "carded",
+     "key": "Q8(a):heat",
+     "id": "phys-2010-ol-q8-a-heat",
+     "questionRef": "2010 OL Q8(a) — Meaning of heat",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "heat",
+     "route": null,
+     "item": "Meaning of heat",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8(a):solid",
+     "id": "phys-2010-ol-q8-a-solid",
+     "questionRef": "2010 OL Q8(a) — Heat transfer in a solid",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "solid",
+     "route": null,
+     "item": "Heat transfer in a solid",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8(a):experiment",
+     "id": "phys-2010-ol-q8-a-experiment",
+     "questionRef": "2010 OL Q8(a) — Comparing solid conductors",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "experiment",
+     "route": null,
+     "item": "Comparing solid conductors",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8(a):u-value",
+     "id": "phys-2010-ol-q8-a-u-value",
+     "questionRef": "2010 OL Q8(a) — Meaning of U-value",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "u-value",
+     "route": null,
+     "item": "Meaning of U-value",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q8(a):insulation",
+     "id": "phys-2010-ol-q8-a-insulation",
+     "questionRef": "2010 OL Q8(a) — Reducing the wall U-value",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-1",
+     "concept": "insulation",
+     "route": null,
+     "item": "Reducing the wall U-value",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bi",
+     "id": "phys-2010-ol-q8-b-i",
+     "questionRef": "2010 OL Q8(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "8bi",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-solar",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bii",
+     "id": "phys-2010-ol-q8-b-ii",
+     "questionRef": "2010 OL Q8(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "8bii",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-solar",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biii",
+     "id": "phys-2010-ol-q8-b-iii",
+     "questionRef": "2010 OL Q8(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "8biii",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-solar",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biv",
+     "id": "phys-2010-ol-q8-b-iv",
+     "questionRef": "2010 OL Q8(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-1",
+     "concept": "8biv",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-solar",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.7,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bv",
+     "id": "phys-2010-ol-q8-b-v",
+     "questionRef": "2010 OL Q8(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "8bv",
+     "route": null,
+     "rows": 2,
+     "figure": "q8-solar",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9(a):coulomb",
+     "id": "phys-2010-ol-q9-a-coulomb",
+     "questionRef": "2010 OL Q9(a) — Coulomb’s law",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-1",
+     "concept": "coulomb",
+     "route": null,
+     "item": "Coulomb’s law",
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "phys-2010-ol-q9-a-i",
+     "questionRef": "2010 OL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "9ai",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3 × 3"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "phys-2010-ol-q9-a-ii",
+     "questionRef": "2010 OL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-1",
+     "concept": "9aii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aiii",
+     "id": "phys-2010-ol-q9-a-iii",
+     "questionRef": "2010 OL Q9(a)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-2",
+     "concept": "9aiii",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-lightning",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aiv",
+     "id": "phys-2010-ol-q9-a-iv",
+     "questionRef": "2010 OL Q9(a)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "9aiv",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-lightning",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9(b):ohm",
+     "id": "phys-2010-ol-q9-b-ohm",
+     "questionRef": "2010 OL Q9(b) — Ohm’s law",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "ohm",
+     "route": null,
+     "item": "Ohm’s law",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi",
+     "id": "phys-2010-ol-q9-b-i",
+     "questionRef": "2010 OL Q9(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "9bi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q9-i-question",
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "phys-2010-ol-q9-b-ii",
+     "questionRef": "2010 OL Q9(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "9bii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q9-ii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "phys-2010-ol-q9-b-iii",
+     "questionRef": "2010 OL Q9(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "9biii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q9-iii-question",
+     "sourcePages": null,
+     "pairingScore": 0.67,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10i",
+     "id": "phys-2010-ol-q10-i",
+     "questionRef": "2010 OL Q10(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-1",
+     "concept": "10i",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-xray",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ii",
+     "id": "phys-2010-ol-q10-ii",
+     "questionRef": "2010 OL Q10(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-2",
+     "concept": "10ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-xray",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10iii",
+     "id": "phys-2010-ol-q10-iii",
+     "questionRef": "2010 OL Q10(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "10iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-xray",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10iv",
+     "id": "phys-2010-ol-q10-iv",
+     "questionRef": "2010 OL Q10(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "10iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-xray",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10v",
+     "id": "phys-2010-ol-q10-v",
+     "questionRef": "2010 OL Q10(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-4-2",
+     "concept": "10v",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-xray",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "5"
+      ],
+      "sum": 5
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10vi",
+     "id": "phys-2010-ol-q10-vi",
+     "questionRef": "2010 OL Q10(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "10vi",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10vii",
+     "id": "phys-2010-ol-q10-vii",
+     "questionRef": "2010 OL Q10(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "10vii",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10viii",
+     "id": "phys-2010-ol-q10-viii",
+     "questionRef": "2010 OL Q10(viii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "10viii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11a",
+     "id": "phys-2010-ol-q11-a",
+     "questionRef": "2010 OL Q11(a)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-4",
+     "concept": "11a",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11b",
+     "id": "phys-2010-ol-q11-b",
+     "questionRef": "2010 OL Q11(b)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-4",
+     "concept": "11b",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11c",
+     "id": "phys-2010-ol-q11-c",
+     "questionRef": "2010 OL Q11(c)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-5",
+     "concept": "11c",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.82,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11d",
+     "id": "phys-2010-ol-q11-d",
+     "questionRef": "2010 OL Q11(d)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-5",
+     "concept": "11d",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11e",
+     "id": "phys-2010-ol-q11-e",
+     "questionRef": "2010 OL Q11(e)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-6",
+     "concept": "11e",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-induction-solution",
+     "questionFigure": "q11-apparatus-question",
+     "sourcePages": null,
+     "pairingScore": 0.8,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11f",
+     "id": "phys-2010-ol-q11-f",
+     "questionRef": "2010 OL Q11(f)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-6",
+     "concept": "11f",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11g",
+     "id": "phys-2010-ol-q11-g",
+     "questionRef": "2010 OL Q11(g)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-6",
+     "concept": "11g",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11h",
+     "id": "phys-2010-ol-q11-h",
+     "questionRef": "2010 OL Q11(h)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-6",
+     "concept": "11h",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "7"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "phys-2010-ol-q12-a-i",
+     "questionRef": "2010 OL Q12(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "12ai",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-i-solution",
+     "questionFigure": "q12-i-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "phys-2010-ol-q12-a-ii",
+     "questionRef": "2010 OL Q12(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "12aii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-ii-solution",
+     "questionFigure": "q12-ii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiii",
+     "id": "phys-2010-ol-q12-a-iii",
+     "questionRef": "2010 OL Q12(a)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "12aiii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-iii-solution",
+     "questionFigure": "q12-iii-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiv",
+     "id": "phys-2010-ol-q12-a-iv",
+     "questionRef": "2010 OL Q12(a)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "12aiv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q12-iv-question",
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme uses bike for the same printed bicycle question.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12av",
+     "id": "phys-2010-ol-q12-a-v",
+     "questionRef": "2010 OL Q12(a)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-1-1",
+     "concept": "12av",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-time-solution",
+     "questionFigure": "q12-v-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b):dispersion",
+     "id": "phys-2010-ol-q12-b-dispersion",
+     "questionRef": "2010 OL Q12(b) — Meaning of dispersion",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "dispersion",
+     "route": null,
+     "item": "Meaning of dispersion",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b):experiment",
+     "id": "phys-2010-ol-q12-b-experiment",
+     "questionRef": "2010 OL Q12(b) — Demonstrating dispersion",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "experiment",
+     "route": null,
+     "item": "Demonstrating dispersion",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3",
+       "3"
+      ],
+      "sum": 9,
+      "waiver": "Four displayed 3-mark components: white light, dispersing element, procedure and spectrum observation. One mark cell is detached from the corresponding line; heading confirms 4 × 3."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b):nature",
+     "id": "phys-2010-ol-q12-b-nature",
+     "questionRef": "2010 OL Q12(b) — Dispersion in nature",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-3",
+     "concept": "nature",
+     "route": null,
+     "item": "Dispersion in nature",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b):lighting",
+     "id": "phys-2010-ol-q12-b-lighting",
+     "questionRef": "2010 OL Q12(b) — Mixing stage-light colours",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-4",
+     "concept": "lighting",
+     "route": null,
+     "item": "Mixing stage-light colours",
+     "rows": 1,
+     "figure": "q12-stage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci",
+     "id": "phys-2010-ol-q12-c-i",
+     "questionRef": "2010 OL Q12(c)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "12ci",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "12cii",
+     "id": "phys-2010-ol-q12-c-ii",
+     "questionRef": "2010 OL Q12(c)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "12cii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "4"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "phys-2010-ol-q12-c-iii",
+     "questionRef": "2010 OL Q12(c)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "12ciii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "12civ",
+     "id": "phys-2010-ol-q12-c-iv",
+     "questionRef": "2010 OL Q12(c)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "12civ",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "12cv",
+     "id": "phys-2010-ol-q12-c-v",
+     "questionRef": "2010 OL Q12(c)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "12cv",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "6"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "12cvi",
+     "id": "phys-2010-ol-q12-c-vi",
+     "questionRef": "2010 OL Q12(c)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "12cvi",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-safety",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": "The illustration shows three separate examples: a fused plug, an MCB and an RCD."
+    },
+    {
+     "status": "carded",
+     "key": "Q12(d):radioactivity",
+     "id": "phys-2010-ol-q12-d-radioactivity",
+     "questionRef": "2010 OL Q12(d) — Meaning of radioactivity",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "radioactivity",
+     "route": null,
+     "item": "Meaning of radioactivity",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3",
+       "3"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12di",
+     "id": "phys-2010-ol-q12-d-i",
+     "questionRef": "2010 OL Q12(d)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "12di",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "3"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12dii",
+     "id": "phys-2010-ol-q12-d-ii",
+     "questionRef": "2010 OL Q12(d)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "12dii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12diii",
+     "id": "phys-2010-ol-q12-d-iii",
+     "questionRef": "2010 OL Q12(d)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "12diii",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12div",
+     "id": "phys-2010-ol-q12-d-iv",
+     "questionRef": "2010 OL Q12(d)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-4-4",
+     "concept": "12div",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12dv",
+     "id": "phys-2010-ol-q12-d-v",
+     "questionRef": "2010 OL Q12(d)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "12dv",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 104,
+   "baseTaskCount": 104,
+   "figures": [
+    "physics-2010-ol-q1-data",
+    "physics-2010-ol-q1-graph-question",
+    "physics-2010-ol-q1-graph-solution",
+    "physics-2010-ol-q1-relationship-question",
+    "physics-2010-ol-q10-xray",
+    "physics-2010-ol-q11-apparatus-question",
+    "physics-2010-ol-q11-induction-solution",
+    "physics-2010-ol-q11-passage",
+    "physics-2010-ol-q12-i-question",
+    "physics-2010-ol-q12-i-solution",
+    "physics-2010-ol-q12-ii-question",
+    "physics-2010-ol-q12-ii-solution",
+    "physics-2010-ol-q12-iii-question",
+    "physics-2010-ol-q12-iii-solution",
+    "physics-2010-ol-q12-iv-question",
+    "physics-2010-ol-q12-radiation",
+    "physics-2010-ol-q12-safety",
+    "physics-2010-ol-q12-stage",
+    "physics-2010-ol-q12-time-solution",
+    "physics-2010-ol-q12-v-question",
+    "physics-2010-ol-q2-formula-solution",
+    "physics-2010-ol-q3-calculation-question",
+    "physics-2010-ol-q3-calculation-solution",
+    "physics-2010-ol-q3-data",
+    "physics-2010-ol-q4-area-question",
+    "physics-2010-ol-q4-area-solution",
+    "physics-2010-ol-q4-data",
+    "physics-2010-ol-q4-resistivity-question",
+    "physics-2010-ol-q4-resistivity-solution",
+    "physics-2010-ol-q5-concrete-question",
+    "physics-2010-ol-q5-field-solution",
+    "physics-2010-ol-q6-energy-solution",
+    "physics-2010-ol-q6-rocket",
+    "physics-2010-ol-q6-skaters",
+    "physics-2010-ol-q7-glass",
+    "physics-2010-ol-q7-resonance-solution",
+    "physics-2010-ol-q7-wave",
+    "physics-2010-ol-q7-wavelength-solution",
+    "physics-2010-ol-q8-solar",
+    "physics-2010-ol-q9-i-question",
+    "physics-2010-ol-q9-ii-question",
+    "physics-2010-ol-q9-iii-question",
+    "physics-2010-ol-q9-lightning"
+   ],
+   "checks": {
+    "censusLeaves": 87,
+    "censusLeavesClaimed": 87,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-force-mass-momentum",
+       "physics-ordinary-old-course-acceleration"
+      ],
+      "taskTopics": [
+       "phys-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-heat-heat-transfer",
+       "physics-ordinary-old-course-temperature"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-reflection-mirrors",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment"
+      ],
+      "taskTopics": [
+       "phys-2-3"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "physics-ordinary-old-course-experiment-questions",
+       "physics-ordinary-old-course-resistance",
+       "physics-ordinary-old-course-electric-circuits",
+       "physics-ordinary-new-course-33-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-ordinary-new-course-22-travelling-waves-as-models-of-disturbances-transferring-energy-without-transferring-matter",
+       "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-ordinary-new-course-24-electromagnetic-energy",
+       "physics-ordinary-new-course-32-modelling-electric-fields",
+       "physics-ordinary-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-ordinary-new-course-41-the-electron",
+       "physics-ordinary-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-ordinary-old-course-pressure-gravity-moments",
+       "physics-ordinary-old-course-refraction",
+       "physics-ordinary-old-course-temperature",
+       "physics-ordinary-old-course-waves-wave-motion",
+       "physics-ordinary-old-course-vibrations-sound",
+       "physics-ordinary-old-course-magnetics",
+       "physics-ordinary-old-course-potential-difference-capacitance",
+       "physics-ordinary-old-course-semiconductors",
+       "physics-ordinary-old-course-nuclear-energy",
+       "physics-ordinary-old-course-heat-heat-transfer",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-new-course-15-forces-acting-in-a-gravitational-field",
+       "physics-ordinary-new-course-33-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-1-5",
+       "phys-2-1",
+       "phys-2-2",
+       "phys-2-3",
+       "phys-3-2",
+       "phys-3-3",
+       "phys-3-4",
+       "phys-4-6"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-ordinary-old-course-work-energy-power",
+       "physics-ordinary-old-course-force-mass-momentum"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-1-4"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-22-travelling-waves-as-models-of-disturbances-transferring-energy-without-transferring-matter",
+       "physics-ordinary-old-course-waves-wave-motion",
+       "physics-ordinary-old-course-vibrations-sound",
+       "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+       "physics-ordinary-new-course-25-sound-energy"
+      ],
+      "taskTopics": [
+       "phys-2-2",
+       "phys-2-5",
+       "phys-2-6"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-ordinary-old-course-heat-heat-transfer",
+       "physics-ordinary-old-course-temperature"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-32-modelling-electric-fields",
+       "physics-ordinary-new-course-33-electric-circuits",
+       "physics-ordinary-old-course-current-charge",
+       "physics-ordinary-old-course-resistance",
+       "physics-ordinary-old-course-static-electricity",
+       "physics-ordinary-old-course-potential-difference-capacitance",
+       "physics-ordinary-old-course-electric-circuits",
+       "physics-ordinary-new-course-31-charge-interactions"
+      ],
+      "taskTopics": [
+       "phys-3-1",
+       "phys-3-2",
+       "phys-3-3"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-ordinary-old-course-the-atom-nucleus-radioactivity",
+       "physics-ordinary-old-course-the-electron",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-new-course-41-the-electron"
+      ],
+      "taskTopics": [
+       "phys-4-1",
+       "phys-4-2"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-33-electric-circuits",
+       "physics-ordinary-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-ordinary-new-course-35-the-force-experienced-by-a-current-carrying-conductor-in-a-magnetic-field",
+       "physics-ordinary-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-ordinary-old-course-current-charge",
+       "physics-ordinary-old-course-magnetics",
+       "physics-ordinary-old-course-electromagnetic-induction",
+       "physics-ordinary-old-course-work-energy-power"
+      ],
+      "taskTopics": [
+       "phys-3-4",
+       "phys-3-5",
+       "phys-3-6"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "physics-ordinary-new-course-12-forces-acting-on-a-particle",
+       "physics-ordinary-new-course-33-electric-circuits",
+       "physics-ordinary-new-course-44-radioactivity",
+       "physics-ordinary-old-course-acceleration",
+       "physics-ordinary-old-course-electric-circuits",
+       "physics-ordinary-old-course-light",
+       "physics-ordinary-old-course-speed-displacement-velocity",
+       "physics-ordinary-old-course-the-atom-nucleus-radioactivity",
+       "physics-ordinary-old-course-force-mass-momentum",
+       "physics-ordinary-old-course-refraction",
+       "physics-ordinary-old-course-nuclear-energy",
+       "physics-ordinary-new-course-11-particle-motion-in-a-straight-line",
+       "physics-ordinary-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-ordinary-new-course-24-electromagnetic-energy"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-2",
+       "phys-2-3",
+       "phys-2-4",
+       "phys-3-3",
+       "phys-4-4"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (physics-<year>-exam-topic-map.json via physics-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 0,
+    "askScan": {
+     "askLines": 99,
+     "exempt": [
+      {
+       "page": 6,
+       "line": "Calculate:",
+       "reason": "Shared command retained in all three separately priced circuit-calculation tasks."
+      },
+      {
+       "page": 9,
+       "line": "Calculate:",
+       "reason": "Shared command retained in all three separately priced cyclist-calculation tasks."
+      }
+     ]
+    },
+    "excluded": []
+   }
   }
  }
 }
