@@ -52823,5 +52823,198 @@
    "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2022-hl-sa-q1-absorption",
+  "topicId": "home-economics-0-8",
+  "conceptId": "calcium-functions-and-absorption-absorption",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1 — absorption",
+  "questionText": "Identify one factor that affects calcium absorption.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 factor × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "factor",
+    "kind": "criterion",
+    "verbatim": "factor that affects calcium absorption",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One factor, graded 2:0. Both increased and reduced absorption are in the published guidance: Vitamin D; oestrogen; acidic environment/Vitamin C; protein; etc. tannins; fat; phytates/phytic acid; oxalates/oxalic acid; etc."
+   }
+  ],
+  "notes": "Separate printed prompt with an independent published tariff. Source review: he_review_2022_hl_main.py."
+ },
+ {
+  "id": "he-2022-hl-sa-q3-example",
+  "topicId": "home-economics-0-5",
+  "conceptId": "protein-foam-formation-example",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q3 — example",
+  "questionText": "Give one culinary example of foam formation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 example × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "example",
+    "kind": "criterion",
+    "verbatim": "culinary example",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One example, graded 2:0. Complete published examples: Culinary example – meringues; pavlova; soufflé; sponge cake; etc."
+   }
+  ],
+  "notes": "Separate printed prompt with an independent published tariff. Source review: he_review_2022_hl_main.py."
+ },
+ {
+  "id": "he-2022-hl-sa-q6-advantage",
+  "topicId": "home-economics-0-4",
+  "conceptId": "quick-freezing-advantage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6 — advantage",
+  "questionText": "Give one advantage of quick-freezing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 advantage × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "advantage",
+    "kind": "criterion",
+    "verbatim": "Advantage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One advantage, graded 2:0. Complete guidance: Little damage to cell walls of food; little loss of nutrients; texture retained; colour retained on thawing; etc."
+   }
+  ],
+  "notes": "Separate printed prompt with an independent published tariff. Source review: he_review_2022_hl_main.py."
+ },
+ {
+  "id": "he-2022-hl-sb-q5c-procedure",
+  "topicId": "home-economics-2-1",
+  "conceptId": "making-a-will-procedure",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q5(c) — procedure",
+  "questionText": "Outline the procedure involved in making a will.",
+  "stem": "Marriage and families are recognised social structures.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 steps × 2 (2:1:0)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "procedure",
+    "kind": "criterion",
+    "verbatim": "Procedure",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "contextNote": "Five steps, each graded 2:1:0. Historical examination guidance: may employ a solicitor; draw up list of assets; list details of beneficiaries – names, addresses, dates of birth; appoint executor; allocate assets/estate; include provision for funeral and burial arrangements; will is formally drawn up; signed in the presence of two witnesses; lodge in safe place; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independently practicable procedure prompt; reasons retain the original Q5(c) ID."
  }
 ]

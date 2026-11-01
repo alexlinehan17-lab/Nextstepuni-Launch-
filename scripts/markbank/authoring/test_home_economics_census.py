@@ -313,6 +313,43 @@ class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
             self.assertEqual(authored[card['id']], card)
         self.assertEqual([c['totalMarks'] for c in recovered], [18, 26, 6])
 
+    def test_2022_higher_main_source_writers_regenerate(self):
+        from he_review_2022_hl_main import build as a
+        from he_review_2022_hl_main_b import build as b
+        from he_review_2022_hl_main_c import build as c
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        authored = {v['id']: v for v in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for build, expected, additions in [(a, 14, 3), (b, 16, 1), (c, 29, 0)]:
+            fixes, added = build()
+            self.assertEqual(len(fixes), expected)
+            self.assertEqual(len(added), additions)
+            for key, value in fixes.items():
+                self.assertEqual(saved[key], value)
+            for value in added:
+                self.assertEqual(authored[value['id']], value)
+
+    def test_2022_higher_anchor_regions_keep_all_continuations_and_figures(self):
+        from he_atlas_2022_hl_main import source_anchors, A, BC
+        from he_review_2022_hl_main import documents
+        from he_review_2022_hl_main_figures import FIGURES
+        import hashlib
+        anchors = source_anchors()
+        docs = documents()
+        self.assertEqual(len(anchors[A]), 14)
+        self.assertEqual(len(anchors[BC]), 9)
+        for file, questions in anchors.items():
+            saved = json.loads((ROOT / f'scripts/paper-trail/answers/2022/{file}.json').read_text())
+            self.assertEqual(saved['q'], questions)
+        texts = {}
+        for q in anchors[BC]:
+            texts[q['n']] = ' '.join(docs['scheme'][r['p'] - 1].get_text(clip=fitz.Rect([v * (docs['scheme'][r['p'] - 1].rect.width if i % 2 == 0 else docs['scheme'][r['p'] - 1].rect.height) for i, v in enumerate(r['r'])])) for r in q['region'])
+        self.assertIn('smallest', texts['2'])
+        self.assertIn('Carpet', texts['6'])
+        self.assertIn('Local Enterprise Offices', texts['8'])
+        self.assertIn('guarantee', texts['9'])
+        for key, spec in FIGURES.items():
+            self.assertEqual(hashlib.sha256((ROOT / f'public/exam-figures/home-economics/{key}.png').read_bytes()).hexdigest(), spec['sha256'])
+
     def test_section_c_crops_include_the_final_printed_marks(self):
         for level, code in [('hl', 'A'), ('ol', 'G')]:
             source = fitz.open(ROOT / f'examiner-reports/home-economics/papers/2023-{level}-039-paper.pdf')

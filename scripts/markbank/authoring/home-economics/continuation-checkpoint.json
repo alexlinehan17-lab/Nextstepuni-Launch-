@@ -10,7 +10,7 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 687,
+    "cards": 690,
     "leaves": 1342,
     "covered": 671,
     "excluded": 0,
@@ -1053,10 +1053,10 @@
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
-    "2022 Ordinary English main source review complete: 60 tasks, 749 offered practice marks, all 81 source pages and 23 final Atlas anchor pairs visually reviewed. Continue 2022 Higher English main (40-page A booklet, 12-page B/C booklet, 42-page scheme), then remaining 2021–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
+    "2022 Higher and Ordinary English main source reviews complete: 62/60 tasks, each 749 offered practice marks; all source pages and 23 Atlas anchor pairs per sitting visually reviewed. Continue 2021 Higher English main, then Ordinary, remaining 2024–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
   ],
-  "coveragePolicy": "The raw census is diagnostic only; its 671 open candidates and 37 flags are not an independent complete count of outstanding exam tasks. The reviewed 2022 Ordinary sitting has 57/57 raw asks covered; its independent source review establishes 60 tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
+  "coveragePolicy": "The raw census is diagnostic only; its 671 open candidates and 37 flags are not an independent complete count of outstanding exam tasks. The reviewed 2022 Higher main sitting has 58/58 raw asks covered; its independent source review establishes 62 tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1137,24 +1137,29 @@
       "workCommit": "6d97b458a",
       "launchCommit": "911008254",
       "scope": "2022 Higher deferred Section C: 26 tasks, original fuel table, four Atlas groups; full sitting source-complete."
+    },
+    {
+      "workCommit": "3349c08cc",
+      "launchCommit": "252375465",
+      "scope": "2022 Ordinary main: all 60 tasks, eight new identities, full 81-page source review and 23 Atlas question groups."
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2022 Ordinary main: all 60 tasks, eight new identities, full guidance/partial marks, four clean source figures, 23 correct Atlas groups",
-    "runtimeCards": 687,
-    "higher": 407,
+    "scope": "2022 Higher main: all 62 tasks; four independent prompt additions, one complete flooring profile with preserved progress alias, missing mould marks restored, three original figures and 23 Atlas groups",
+    "runtimeCards": 690,
+    "higher": 410,
     "ordinary": 280,
-    "sourceReview": "2022-ol-main-review.json",
+    "sourceReview": "2022-hl-main-review.json",
     "validation": {
-      "requiredVitest": "295 tests across 7 suites passed",
-      "atlas": "2 Home Economics registry tests passed; all 60 cards checked against canonical Atlas topics",
-      "python": "23 source/census tests passed",
+      "requiredVitest": "303 tests across 8 suites passed",
+      "atlas": "2 Home Economics registry tests passed; all 62 cards checked against canonical Atlas topics",
+      "python": "25 source/census tests passed",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
       "productionBuild": "passed",
-      "regeneration": "Recovery and A/B/C writers, deck, Atlas, tags and showcase regenerate identically except the generic reference builder generatedAt field; all other JSON fields and files identical.",
+      "regeneration": "All A/B/C/figure writers, taxonomy, deck, Atlas, tags and showcase regenerate identically except generic reference-builder generatedAt; all remaining JSON fields identical.",
       "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "All 23 paper/scheme question groups and four clean source images visually checked; no clipped question fragments or missing continuation pages."
+      "sourceCropReview": "All 23 final paper/scheme question groups and three original source images visually checked."
     }
   }
 }

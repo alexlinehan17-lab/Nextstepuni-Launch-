@@ -98,5 +98,26 @@
     "alt": "Two athleisure outfits. Left: navy open zip jacket, white T-shirt, navy drawstring joggers and white trainers. Right: open taupe hooded jacket, white T-shirt, cropped olive trousers with a drawstring waist, white socks and light-coloured trainers. Both full outfits are visible.",
     "attribution": "SEC Home Economics 2022 Ordinary examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source image only; bounds [199, 129, 382, 302], 2×. Complete image visually inspected. SHA256 2f033a5e8d4600fcc94c9f2e5c47947f643a232873a838678f291de84e9f25e5."
+  },
+  "home-economics-2022-hl-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sa-q14-symbols.png",
+    "md5": "cb44ad636cab1bc612bc55d6f13fbd24",
+    "alt": "Two original symbols in vertical order: Green dot, then Eco label. Original source captions retained.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [42, 265, 143, 537], rendered at 2×; visually checked. SHA256 174d909296ee3b9b21897737cbce37cf720688f3e304826629e3ca2608817a82."
+  },
+  "home-economics-2022-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sb-q1a-chart.png",
+    "md5": "326289ac0e50a00155f99091ff88bf90",
+    "alt": "Factors that make it difficult for teenagers to eat a healthy diet. Percentage agreeing: likes/dislikes 57; convenience 52; availability 35; cost 29; advertising 25; other 3. Source: National Teens Food Survey II, adapted from iuna.net.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [88, 224, 528, 436], rendered at 2×; visually checked. SHA256 b9f185b143e06326d16de7bf6aa3333fc2ac2556161ed06cdcbd1e23a08ac5db."
+  },
+  "home-economics-2022-hl-sc-q2ai-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-sc-q2ai-outfits.png",
+    "md5": "562a6219c0caafc4ff3a23e0efa0b0b6",
+    "alt": "Original smart-casual outfits: one person wears a navy blazer, dark top, beige trousers and trainers; the other wears a light shirt, grey trousers and trainers. Both complete outfits and the source caption are visible.",
+    "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [173, 144, 398, 304], rendered at 2×; visually checked. SHA256 9350cdadd30b7be3472830c09d95ae0ae3d8ea3eca8c8b1fb9e3e6a4a51daf49."
   }
 }

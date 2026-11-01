@@ -1287,7 +1287,11 @@ const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
 const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('phys-'));
 // Source-reviewed missing tasks. Keep the original 283/266 identity hashes
 // frozen; these additions must never disguise a removed older card.
+// Only this newly consolidated identity belongs to the frozen 283/266 set.
+// The older 22 he- aliases are already accounted for in the historical 158 aliases.
+const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties'];
 const homeEconomicsAdditionIds = new Set([
+  'he-2022-hl-sa-q1-absorption', 'he-2022-hl-sa-q3-example', 'he-2022-hl-sa-q6-advantage', 'he-2022-hl-sb-q5c-procedure',
   'he-2022-ol-sa-q14', 'he-2022-ol-sa-q2-source', 'he-2022-ol-sa-q11-car',
   'he-2022-ol-sb-q1a', 'he-2022-ol-sb-q2a', 'he-2022-ol-sb-q2b', 'he-2022-ol-sb-q3a',
   'he-2022-ol-sc-q3ai-terms',
@@ -1347,7 +1351,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
   }
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
-  if (name.startsWith('home-economics:')) return ids.filter(id => !homeEconomicsAdditionIds.has(id));
+  if (name.startsWith('home-economics:')) return [...ids.filter(id => !homeEconomicsAdditionIds.has(id)), ...homeEconomicsAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [
@@ -1422,7 +1426,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(407);
+    expect(HOME_EC_HIGHER).toHaveLength(410);
     expect(HOME_EC_ORDINARY).toHaveLength(280);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
@@ -1538,7 +1542,7 @@ describe('Mark Bank card preservation', () => {
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
         + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet
-        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size);
+        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1896,7 +1900,7 @@ describe('Mark Bank card preservation', () => {
     for (const id of physicsAliasIds) expect(physicsWithdrawn, id).toContain(id);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + mathsNewAliases.size + physicsAliasIds.length);
+      + chemistryAuditAliases.length + mathsNewAliases.size + physicsAliasIds.length + homeEconomicsAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

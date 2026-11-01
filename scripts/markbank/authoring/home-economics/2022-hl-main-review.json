@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "year": 2022,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-complete; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "examiner-reports/home-economics/papers/2022-hl-014-paper.pdf": {
+      "sha256": "40ccc02c39d133657b9248faeabca42ce92dbe286fce217d748bfd26f028bb5b",
+      "pages": 40
+    },
+    "examiner-reports/home-economics/papers/2022-hl-039-paper.pdf": {
+      "sha256": "d9fc4f8d3aa3f81a5258b9aabe3ba2824e81f5623db827a434d4843a0f31ec78",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2022/LC098ALP000EV.pdf": {
+      "sha256": "703878ac5312b2cc5b087ce3c2243051f4b49b495ea81c67fbaa1a96efb3dade",
+      "pages": 42
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 42 pages: cover 1, guidance/rubrics 2–5, A 6–10, B 11–17, C 18–30, separate food-studies coursework 31–40, blank 41, back cover 42. Coursework is a separate assessment, not a task in these written-paper booklets."
+  },
+  "expectedTasks": 62,
+  "expectedSectionTasks": {
+    "A": 17,
+    "B": 17,
+    "C": 28
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    200,
+    240
+  ],
+  "tasks": [
+    {
+      "id": "he-2022-hl-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-hl-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-hl-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-hl-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sa-q1-absorption",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2022-hl-sa-q3-example",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2022-hl-sa-q6-advantage",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    },
+    {
+      "id": "he-2022-hl-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q2c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sb-q3b-conditions",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 23
+    },
+    {
+      "id": "he-2022-hl-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16
+    },
+    {
+      "id": "he-2022-hl-sb-q4b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 24
+    },
+    {
+      "id": "he-2022-hl-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-hl-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16
+    },
+    {
+      "id": "he-2022-hl-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 4
+    },
+    {
+      "id": "he-2022-hl-sb-q5c-procedure",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-hl-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10
+    },
+    {
+      "id": "he-2022-hl-sc-q2bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sc-q2bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2022-hl-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2022-hl-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2022-hl-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q3aiv",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16
+    },
+    {
+      "id": "he-2022-hl-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 14
+    },
+    {
+      "id": "he-2022-hl-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2022-hl-sc-q4aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2022-hl-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sc-q4bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2022-hl-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2022-hl-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 17,
+    "marks": 84,
+    "sourceClarifications": {
+      "foam": {
+        "source": "https://www.ifst.org/lovefoodlovescience/resources/protein-foam-formation",
+        "note": "Whisking mechanically unfolds proteins around air bubbles; subsequent heating sets the foam. Whisking does not need to generate cooking heat, as the scheme suggests."
+      },
+      "ombudsman": {
+        "source": "https://ombudsman.ie/en/publication/8e009-who-we-can-investigate/",
+        "note": "The Office of the Ombudsman deals with public services. Its remit excludes banks, insurance companies and An Post, despite their inclusion in the historical scheme."
+      },
+      "green-dot": {
+        "source": "https://www.verpact.nl/en/green-dot-symbol",
+        "note": "The symbol indicates financial participation in packaging recovery; it does not itself certify recyclability or recycled content."
+      },
+      "ecolabel": {
+        "source": "https://environment.ec.europa.eu/topics/circular-economy-topics/eu-ecolabel/articles-and-success-stories/eu-ecolabel-and-eus-sustainable-consumption-pledge_en",
+        "note": "The EU Ecolabel concerns compliance with product-category environmental criteria assessed across the life cycle, not zero environmental impact."
+      }
+    },
+    "selectionDecisions": "Q1, Q3 and Q6 each have two independent printed prompts and published tariffs. The required digestion table, packaging, additives, income terms and symbol pair remain whole tasks. Q8/Q11 are open named profiles and Q12 is a dependent comparison of the two named insurance types.",
+    "checked": "2026-11-01"
+  },
+  "sectionBReview": {
+    "tasks": 17,
+    "marks": 280,
+    "sourceClarifications": {
+      "tooth-decay": {
+        "source": "https://www.nidcr.nih.gov/health-info/tooth-decay",
+        "note": "Tooth decay is driven by acids produced by oral bacteria acting on sugars/starches, not simply vitamin D deficiency."
+      },
+      "vitamin-d-stability": {
+        "source": "https://pubmed.ncbi.nlm.nih.gov/24262542/",
+        "note": "Vitamin D retention varies with food and processing conditions; the source’s absolute claim that it is unaffected by cooking is inaccurate."
+      },
+      "marriage-notification": {
+        "source": "https://www2.hse.ie/services/births-deaths-and-marriages/getting-married/how/",
+        "note": "Notification goes to the civil registration service for religious as well as civil/secular marriages, not solely to a church."
+      },
+      "marriage-age": {
+        "source": "https://www.irishstatutebook.ie/eli/2018/act/6/enacted/en/print",
+        "note": "Minimum age is 18, not strictly over 18; previous age-exemption provisions were repealed."
+      },
+      "mould": {
+        "source": "https://fsistraining.fsis.usda.gov/pluginfile.php/18440/mod_resource/content/1/TPSP%20Student%20Guide%20Edits12092021.pdf",
+        "note": "Growth and heat-resistance conditions vary by organism and food; source temperatures/timings are historical examples, not validated universal safety limits."
+      }
+    },
+    "selectionDecisions": "B1 chart is one open four-point response. Required vitamin headings stay together. Vegan diet uses three open paired nutrient/strategy slots. Alternative protein food and mould are whole open profiles, with every published model route and a further valid choice. B5(c) has two independent prompts and tariffs; reasons/procedure split. The existing mould ID retains progress while recovering all eleven omitted name/characteristic marks.",
+    "checked": "2026-11-01"
+  },
+  "sectionCReview": {
+    "tasks": 28,
+    "marks": 385,
+    "sourceClarifications": {
+      "solar": {
+        "source": "https://www.seai.ie/renewable-energy/solar-energy/hot-water-from-solar",
+        "note": "Solar systems capture sunlight, not wind/rain energy; hot water supply is variable and does not cover every demand without backup."
+      },
+      "insulation": {
+        "source": "https://bsesc.energy.gov/energy-basics/building-envelope-building-science-intro-heat-flow",
+        "note": "Bulk insulation slows heat flow; reflective barriers are a distinct treatment for radiant transfer."
+      },
+      "texturing": {
+        "source": "https://archive.nptel.ac.in/content/storage2/courses/116102005/m1-introduction/l1-introduction.htm",
+        "note": "Filament yarn can be texturised for bulk/appearance. The historical scheme uses filament modification broadly and includes fabric finishes."
+      },
+      "canning": {
+        "source": "https://nchfp.uga.edu/how/general-canning-information/ensuring-safe-canned-foods/",
+        "note": "Low-acid vegetables require a validated pressure-canning process. Short examination examples are not complete preservation recipes."
+      },
+      "irradiation": {
+        "source": "https://www.iaea.org/sites/default/files/publications/magazines/bulletin/bull15-1/15105701822.pdf",
+        "note": "Enzyme inactivation is not guaranteed by every irradiation treatment; the IAEA source describes blanching before irradiation for enzyme control."
+      },
+      "resistance-heating": {
+        "source": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "note": "Electrical resistance converts electrical energy into thermal energy; conduction and convection describe subsequent heat transfer."
+      }
+    },
+    "selectionDecisions": "Required floor-covering headings form one recommendation; the duplicate half becomes a progress alias. Filament modification is one explanation illustrated by two examples. Open profiles and required headings remain whole.",
+    "checked": "2026-11-01"
+  },
+  "figures": {
+    "home-economics-2022-hl-sa-q14-symbols": {
+      "source": "examiner-reports/home-economics/papers/2022-hl-014-paper.pdf",
+      "page": 7,
+      "bounds": [
+        42,
+        265,
+        143,
+        537
+      ],
+      "sha256": "174d909296ee3b9b21897737cbce37cf720688f3e304826629e3ca2608817a82",
+      "alt": "Two original symbols in vertical order: Green dot, then Eco label. Original source captions retained."
+    },
+    "home-economics-2022-hl-sb-q1a-chart": {
+      "source": "examiner-reports/home-economics/papers/2022-hl-039-paper.pdf",
+      "page": 2,
+      "bounds": [
+        88,
+        224,
+        528,
+        436
+      ],
+      "sha256": "b9f185b143e06326d16de7bf6aa3333fc2ac2556161ed06cdcbd1e23a08ac5db",
+      "alt": "Factors that make it difficult for teenagers to eat a healthy diet. Percentage agreeing: likes/dislikes 57; convenience 52; availability 35; cost 29; advertising 25; other 3. Source: National Teens Food Survey II, adapted from iuna.net."
+    },
+    "home-economics-2022-hl-sc-q2ai-outfits": {
+      "source": "examiner-reports/home-economics/papers/2022-hl-039-paper.pdf",
+      "page": 6,
+      "bounds": [
+        173,
+        144,
+        398,
+        304
+      ],
+      "sha256": "9350cdadd30b7be3472830c09d95ae0ae3d8ea3eca8c8b1fb9e3e6a4a51daf49",
+      "alt": "Original smart-casual outfits: one person wears a navy blazer, dark top, beige trousers and trainers; the other wears a light shirt, grey trousers and trainers. Both complete outfits and the source caption are visible."
+    }
+  },
+  "boundaryDecisions": [
+    "A1/A3/A6 each have separate printed prompts at independent 4+2 tariffs.",
+    "B3(b) is one open mould profile: name 2, characteristics 9, conditions 12. Restored all eleven missing marks on the old conditions ID.",
+    "B5(c) reasons 4 and procedure 10 are independent prompts.",
+    "C1(a)(ii) is one floor-covering recommendation under required headings. The name/properties half is withdrawn onto an explicit progress alias; all nine model floor types and further accepted alternatives remain available.",
+    "C2(b)(ii) remains one explanation illustrated by two examples; its source uses filament modification broadly and the distinction from fabric finishing is explained.",
+    "C3(b)(ii) is one open choice of two facilities, with two separate nine-mark marking groups.",
+    "Whole-sitting A/B/C choice instructions do not create combination cards. All question-level selection directives are pinned from raw paper regions; changes fail authoring."
+  ],
+  "progressAliases": {
+    "he-2022-hl-sc-q1aii-properties": "he-2022-hl-sc-q1aii"
+  },
+  "completion": {
+    "sourcePagesReviewed": 94,
+    "sourceQuestionGroupsReviewed": 23,
+    "sourceFiguresReviewed": 3,
+    "reviewedTasks": 62,
+    "offeredPracticeMarks": 749,
+    "rawCensusAsks": 58,
+    "rawCensusCovered": 58,
+    "browserQA": "pending; browser connection unavailable",
+    "wholeSubjectComplete": false,
+    "notes": "All 23 final paper/scheme anchor pairs visually checked after generation. All required table continuations, original figures and final question marks retained. Three source-image crops independently checked. No coverage or frozen preservation baseline reset."
+  }
+}

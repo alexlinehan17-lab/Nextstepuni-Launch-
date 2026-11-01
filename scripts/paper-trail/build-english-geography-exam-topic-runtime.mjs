@@ -238,9 +238,12 @@ const HOME_ECONOMICS = {
   'The Family': ['home-economics-2-0', 'home-economics-2-1'],
 };
 
-const homeEconomicsCurriculumIds = (topic) => {
+const homeEconomicsCurriculumIds = (topic, variant) => {
   const ids = HOME_ECONOMICS[topic.label];
   if (!ids) throw new Error(`Home Economics crosswalk missing: ${topic.label}`);
+  // Higher has no separate Older Persons shelf. The 2022 B5(b) review maps
+  // older family members to its existing Family shelf using the canonical node.
+  if (variant === 'higher' && topic.label === 'The Family') return [...ids, 'home-economics-2-3'];
   return ids;
 };
 
@@ -485,29 +488,33 @@ const build = ({ subjectId, referenceFile = `${subjectId}.json`, curriculumIds, 
   };
 };
 
-const summaries = [
-  build({
+const requestedSubject = process.argv.find(arg => arg.startsWith('--subject='))?.slice('--subject='.length);
+const configurations = [
+  {
     subjectId: 'english',
     curriculumIds: englishCurriculumIds,
     archives: ENGLISH_ARCHIVE_TOPICS,
-  }),
-  build({
+  },
+  {
     subjectId: 'geography',
     curriculumIds: geographyCurriculumIds,
-  }),
-  build({
+  },
+  {
     subjectId: 'home-economics-s-and-s',
     referenceFile: 'home-economics.json',
     curriculumIds: homeEconomicsCurriculumIds,
-  }),
-  build({
+  },
+  {
     subjectId: 'mathematics',
     curriculumIds: mathematicsCurriculumIds,
-  }),
-  build({
+  },
+  {
     subjectId: 'physical-education',
     curriculumIds: physicalEducationCurriculumIds,
-  }),
+  },
 ];
-
+if (requestedSubject && !configurations.some(config => config.subjectId === requestedSubject)) {
+  throw new Error(`Unknown taxonomy subject: ${requestedSubject}`);
+}
+const summaries = configurations.filter(config => !requestedSubject || config.subjectId === requestedSubject).map(build);
 console.log(JSON.stringify(summaries, null, 2));
