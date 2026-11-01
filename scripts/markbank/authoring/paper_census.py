@@ -75,9 +75,9 @@ SUBJECTS = {
     # 2026 once carded, and 'also' admits each earlier sitting as its
     # phys_review_<year>_<level>.py ledger is written. Both 2020 sittings were
     # visually reviewed and carded on 2026-10-31. The next independently
-    # reviewed sittings include 2015 Higher and 2016–2026 both levels.
-    # 2015 Ordinary, 2010–2014 and deferred sittings remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2016, 'also': [(2015, 'hl')]},
+    # reviewed sittings include 2015–2026 both levels.
+    # 2010–2014 and deferred sittings remain outstanding.
+    'physics': {'mode': 'merged', 'from': 2015},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
@@ -582,6 +582,9 @@ def _letters_in_order(subject, letters):
 # what the page prints). The empty-leaf flag stands down only while the reader
 # extracts exactly that text: a change in what it reads raises the flag again.
 SHORT_ASKS = {
+    ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
+                                                    'scheme p16 puts all four materials in one stepped 6+2+1+1 '
+                                                    'response. The card keeps the full prompt and all four matches.'),
     ('physics', 2019, 'hl', 'Q3(iv)'): ('dried?', 'Paper p3 prints "How was the ice (iii) crushed, (iv) dried?"; '
                                               'scheme p8 prices drying separately at 3 marks. The card retains '
                                               'the shared "How was the ice" lead-in.'),

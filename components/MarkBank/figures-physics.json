@@ -694,6 +694,1013 @@
    780
   ]
  },
+ "physics-2015-ol-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q1-data.png",
+  "md5": "e1368140e8d0d29497799061eb947944",
+  "alt": "All seven force and acceleration data pairs with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q1(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   90,
+   218,
+   526,
+   263
+  ]
+ },
+ "physics-2015-ol-q1-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q1-graph-question.png",
+  "md5": "87970e59533a454c8795427ca7402846",
+  "alt": "Complete experiment context, seven data pairs and graph ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q1(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   156,
+   543,
+   344
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    279,
+    543,
+    327
+   ],
+   [
+    513,
+    327,
+    543,
+    344
+   ]
+  ]
+ },
+ "physics-2015-ol-q1-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q1-graph-solution.png",
+  "md5": "a98a0298e8b47f09bc3a0cbdc5c723b6",
+  "alt": "Official acceleration–force graph with labelled axes, scales and straight line.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q1(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   90,
+   455,
+   449,
+   679
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q10-tube": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q10-tube.png",
+  "md5": "bab088676e7f9e4e77d6231e8afa0fda",
+  "alt": "Entire X-ray tube including voltage supplies, cathode, target and part A.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q10 — Properties of X-rays",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   168,
+   411,
+   452,
+   564
+  ]
+ },
+ "physics-2015-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q11-passage.png",
+  "md5": "8ed54503be3518df2af4b43498cfccfe",
+  "alt": "Complete Rutherford passage, photograph and Gian Francesco Giudice 2010 attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q11(a)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   83,
+   82,
+   543,
+   441
+  ]
+ },
+ "physics-2015-ol-q12-field-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q12-field-question.png",
+  "md5": "f814a9584801386d1615e7aaeade3f72",
+  "alt": "Complete battery and solenoid, context and magnetic-field drawing ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q12(d)(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   83,
+   459,
+   543,
+   598
+  ],
+  "maskedFurniture": [
+   [
+    513,
+    579,
+    543,
+    598
+   ]
+  ]
+ },
+ "physics-2015-ol-q12-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q12-field-solution.png",
+  "md5": "82e63747b39f13386ee44a2a1b75da40",
+  "alt": "Official solenoid magnetic-field pattern.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q12(d)(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   266,
+   499,
+   400,
+   630
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q12-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q12-resistance-solution.png",
+  "md5": "fb6438ade0aa725038ce7a04a635d4cf",
+  "alt": "Original resistance definition as V/I and partial-mark allowance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q12(c) — Resistance",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   112,
+   53,
+   478,
+   101
+  ],
+  "maskedFurniture": [
+   [
+    112,
+    53,
+    132,
+    56.2
+   ],
+   [
+    144,
+    53,
+    478,
+    56.2
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q12-stage": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q12-stage.png",
+  "md5": "a04e99cab20f41699e3f64afd48754ae",
+  "alt": "Stage lighting illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q12(b) — Primary colours of light",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   239,
+   484,
+   372,
+   655
+  ]
+ },
+ "physics-2015-ol-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q2-data.png",
+  "md5": "899956e664e2c84e61c0c8775aa3f5ad",
+  "alt": "Both measured masses with labels and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q2(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   111,
+   525,
+   460,
+   558
+  ]
+ },
+ "physics-2015-ol-q2-heat-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q2-heat-question.png",
+  "md5": "d29bc23a3e559390fb4b2b5b4c31c8d5",
+  "alt": "Complete steam-experiment context, measured masses, latent-heat ask and constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q2(v)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   430,
+   543,
+   713
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    586,
+    543,
+    650
+   ],
+   [
+    518,
+    650,
+    543,
+    666
+   ],
+   [
+    83,
+    666,
+    543,
+    683
+   ]
+  ]
+ },
+ "physics-2015-ol-q2-heat-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q2-heat-solution.png",
+  "md5": "229be2592f51e5b0033507e4ec2aca8f",
+  "alt": "Latent-heat answer, substitution and partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q2(v)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   111,
+   511,
+   477,
+   571
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q3-data.png",
+  "md5": "f0d35b1e0a7464c0252537866e238953",
+  "alt": "All four object and image distance pairs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q3(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   162,
+   147,
+   424,
+   190
+  ]
+ },
+ "physics-2015-ol-q3-focal-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q3-focal-question.png",
+  "md5": "561e65519243efe66402213c00a45b0b",
+  "alt": "Complete mirror experiment, four distance pairs and focal-length ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q3(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   55,
+   543,
+   284
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    207,
+    543,
+    264
+   ],
+   [
+    512,
+    266,
+    543,
+    284
+   ]
+  ]
+ },
+ "physics-2015-ol-q3-focal-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q3-focal-solution.png",
+  "md5": "247904bcce8afb0a69642e764986b425",
+  "alt": "Average focal length and original reciprocal equation with partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q3(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   90,
+   463,
+   478,
+   568
+  ],
+  "maskedFurniture": [
+   [
+    90,
+    463,
+    478,
+    465
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q4-area-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q4-area-question.png",
+  "md5": "cde4a1a536a823a7dcd0440f19bcefd5",
+  "alt": "Full resistivity experiment, intact diameter table and area ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q4(iii)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   430,
+   543,
+   684
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    488,
+    543,
+    525
+   ],
+   [
+    512,
+    667,
+    543,
+    684
+   ]
+  ]
+ },
+ "physics-2015-ol-q4-area-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q4-area-solution.png",
+  "md5": "db0726cca5db745b52558ec1800c265b",
+  "alt": "Area calculation using mean diameter, full answer and partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q4(iii)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   90,
+   378,
+   478,
+   446
+  ],
+  "maskedFurniture": [
+   [
+    90,
+    378,
+    478,
+    381.7
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q4-resistivity-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q4-resistivity-question.png",
+  "md5": "1d1435c17f1b1ff17259cd2667ff666d",
+  "alt": "Full resistivity experiment and correct paper table with resistivity ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q4(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   430,
+   543,
+   703
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    488,
+    543,
+    525
+   ],
+   [
+    83,
+    666,
+    543,
+    684
+   ],
+   [
+    512,
+    686,
+    543,
+    703
+   ]
+  ]
+ },
+ "physics-2015-ol-q4-resistivity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q4-resistivity-solution.png",
+  "md5": "381eaa9b8effccbb2fa229e64ce0f739",
+  "alt": "Original resistivity equation, substitution, result and consistency allowance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q4(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   90,
+   479,
+   481,
+   583
+  ],
+  "maskedFurniture": [
+   [
+    90,
+    479,
+    478,
+    482.9
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q5-circuit-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-circuit-question.png",
+  "md5": "ce9ee0e7ac41d9cad18fe763a782e08d",
+  "alt": "Full parallel circuit, 20 ohm and 5 ohm labels, and resistance ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(e)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   83,
+   434,
+   558,
+   505
+  ]
+ },
+ "physics-2015-ol-q5-generator": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-generator.png",
+  "md5": "e29ae3b1857f31bef2a4f1ebfb5128ec",
+  "alt": "Van de Graaff generator from the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(g)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   450,
+   522,
+   544,
+   693
+  ]
+ },
+ "physics-2015-ol-q5-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-gravity-solution.png",
+  "md5": "0439b09ff529382f1c78364d66d216cd",
+  "alt": "Universal gravitation in words and its proportionality equation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(a)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   105,
+   113,
+   478,
+   157
+  ],
+  "maskedFurniture": [
+   [
+    105,
+    113,
+    478,
+    116
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q5-half-life-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-half-life-solution.png",
+  "md5": "4069fc950864083269b9b0630cb0a9fb",
+  "alt": "Half-life definition and original decay-constant formula.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(j)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   105,
+   704,
+   478,
+   742
+  ],
+  "maskedFurniture": [
+   [
+    105,
+    704,
+    336,
+    708
+   ],
+   [
+    388,
+    704,
+    478,
+    708
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q5-index-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-index-solution.png",
+  "md5": "87f3a5af0c10b2a497fabe36f2a5740b",
+  "alt": "Refractive index result and critical-angle formula.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(d)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   105,
+   339,
+   478,
+   384
+  ],
+  "maskedFurniture": [
+   [
+    105,
+    339,
+    478,
+    342
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q5-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q5-resistance-solution.png",
+  "md5": "9ff6357f4f6ebfa0ab225d8d910843c0",
+  "alt": "Full parallel-resistance circuit, substitution and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(e)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   104,
+   413,
+   478,
+   508
+  ],
+  "maskedFurniture": [
+   [
+    439,
+    504,
+    478,
+    508
+   ],
+   [
+    104,
+    505,
+    260,
+    508
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q6-track": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q6-track.png",
+  "md5": "626bf956533e335c4c507fa077d4b718",
+  "alt": "Full roller-coaster track with points A, B, C and dimensions 100 m, 55 m, 30 m and 95 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q6 — Energy in a roller-coaster",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   37,
+   269,
+   565,
+   463
+  ],
+  "maskedFurniture": [
+   [
+    365,
+    269,
+    540,
+    330
+   ]
+  ]
+ },
+ "physics-2015-ol-q7-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q7-wave.png",
+  "md5": "fcb74f240e04e304213711525d471d59",
+  "alt": "Complete waveform and labelled lengths A and B.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q7(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   208,
+   126,
+   438,
+   211
+  ]
+ },
+ "physics-2015-ol-q7-wavelength-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q7-wavelength-solution.png",
+  "md5": "db53e225fa43ecf21d2b47ff54049e09",
+  "alt": "Wavelength calculation, fraction and partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q7(vi)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   83,
+   700,
+   478,
+   770
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    700,
+    478,
+    702.4
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q8-capacitance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q8-capacitance-question.png",
+  "md5": "6a68f128f241ede00987bd7d384752d0",
+  "alt": "Full 12 V capacitor circuit, context, 0.8 C charge and capacitance ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q8(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   83,
+   414,
+   543,
+   624
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    551,
+    543,
+    594
+   ],
+   [
+    518,
+    608,
+    543,
+    624
+   ]
+  ]
+ },
+ "physics-2015-ol-q8-capacitance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q8-capacitance-solution.png",
+  "md5": "5cc0abcaaa20dadffaf1153f14d50437",
+  "alt": "Capacitance result, Q/V substitution and partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q8(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   111,
+   451,
+   478,
+   542
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    451,
+    478,
+    453.4
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q8-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q8-circuit.png",
+  "md5": "a73a0afbb2ee3d849a5c430c1d5fdb71",
+  "alt": "Entire capacitor, switch and bulb circuit with the 12 V a.c. label.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q8(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   200,
+   414,
+   398,
+   507
+  ]
+ },
+ "physics-2015-ol-q8-devices": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q8-devices.png",
+  "md5": "9779d4a84e2cb54ed652a8a84abe27f5",
+  "alt": "Both radio and camera-flash photographs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q8 — Camera flash",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   184,
+   649,
+   463,
+   745
+  ]
+ },
+ "physics-2015-ol-q9-heat-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q9-heat-question.png",
+  "md5": "a7bde26b5bed0d366975656c49515d1d",
+  "alt": "Complete kettle picture, water mass, temperatures, power, energy-transfer assumption, heat-capacity constant and energy ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q9(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   83,
+   47,
+   543,
+   324
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    47,
+    405,
+    74
+   ],
+   [
+    512,
+    47,
+    543,
+    74
+   ],
+   [
+    512,
+    162,
+    543,
+    180
+   ],
+   [
+    83,
+    181,
+    543,
+    304
+   ]
+  ]
+ },
+ "physics-2015-ol-q9-heat-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q9-heat-solution.png",
+  "md5": "7a470e8782033b48aea90db7f45fa0fa",
+  "alt": "Water-heating energy calculation, substitution and partial-mark rules.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q9(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   111,
+   279,
+   479,
+   346
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    279,
+    479,
+    281.9
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2015-ol-q9-kettle": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q9-kettle.png",
+  "md5": "6678a1ca3c7b92172ae92a930878742f",
+  "alt": "Kettle photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q9(ii)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   410,
+   47,
+   505,
+   161
+  ]
+ },
+ "physics-2015-ol-q9-time-question": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q9-time-question.png",
+  "md5": "4727092a7374f851e610064ea3555803",
+  "alt": "Complete kettle picture and data, time ask and heat-capacity constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q9(iii)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   83,
+   47,
+   543,
+   324
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    47,
+    405,
+    74
+   ],
+   [
+    512,
+    47,
+    543,
+    74
+   ],
+   [
+    83,
+    162,
+    543,
+    200
+   ],
+   [
+    518,
+    204,
+    543,
+    220
+   ],
+   [
+    83,
+    222,
+    543,
+    304
+   ]
+  ]
+ },
+ "physics-2015-ol-q9-time-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2015-ol-q9-time-solution.png",
+  "md5": "0c22fbd52326185dfad4fb9ab75be557",
+  "alt": "Heating-time calculation, quotient and consistency allowance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q9(iii)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   111,
+   431,
+   478,
+   508
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    431,
+    478,
+    433.7
+   ]
+  ],
+  "solution": true
+ },
  "physics-2016-hl-q1-stick": {
   "src": "/exam-figures/physics/markbank/physics-2016-hl-q1-stick.png",
   "md5": "03d6365097a05abe040528e8260546d6",

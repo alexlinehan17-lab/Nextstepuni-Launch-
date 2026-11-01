@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2015-ol': [98, 98, 78, '203bf43f15ee3a7edbf46ee3a50f28bc731f80f181f761a529c8b972f98621bc',
+    '602101c33d2c838205900e19d524d3233028f1b1c0129600ddf51321e44f8ca9'],
   '2015-hl': [101, 101, 32, 'fb8e384a4a1f07432a5c07b0d624aabd0027c55502f6d1d8f2bd36139e6dd452',
     '2e176646ae231a86afdd48c641f30e53f042813633a1b7cfb7c823dd5a1bf022'],
   '2016-ol': [97, 97, 70, 'c3de271bb5e816edfaca05b0ce05fb139b4c8a7b115ea22fb8b7736872e0eb78',
@@ -91,6 +93,46 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2015 Ordinary data, both experiment routes and full stepped responses', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2015-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2015-ol-${suffix}`)!;
+    expect(cards).toHaveLength(98);
+    expect(card('q1-ii').rows[0]).toMatchObject({ group: {
+      claimMax: 2, perOptionSteps: [6, 3], options: ['force', 'distance / velocity / acceleration', 'time'],
+    } });
+    expect(card('q1-iv').questionFigure?.candId).toBe('physics-2015-ol-q1-graph-question');
+    expect(card('q2-v').questionFigure?.candId).toBe('physics-2015-ol-q2-heat-question');
+    expect(card('q3-iv').rows[0].contextNote).toContain('all four readings');
+    expect(card('q4-iv').questionFigure?.candId).toBe('physics-2015-ol-q4-resistivity-question');
+    expect(card('q5-c').questionText).toContain('Faraday Snell Joule Archimedes');
+    expect(card('q5-c').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [4, 3] } });
+    for (const id of ['q6-iii-velocity', 'q6-iv', 'q6-v']) {
+      expect(card(id).stem).toContain('no friction and no air resistance');
+      expect(card(id).stem).toContain('850 kg');
+      expect(card(id).figure?.candId).toBe('physics-2015-ol-q6-track');
+    }
+    expect(card('q7-experiment').rows).toHaveLength(6);
+    expect(card('q7-experiment').totalMarks).toBe(14);
+    for (const index of [1, 4]) expect(card('q7-experiment').rows[index])
+      .toMatchObject({ group: { claimMax: 2, perOption: 3 } });
+    expect(card('q7-iv').rows[0]).toMatchObject({ group: { claimMax: 3, perOptionSteps: [6, 2, 1] } });
+    expect(card('q8-energy').rows).toHaveLength(6);
+    expect(card('q8-energy').totalMarks).toBe(12);
+    expect(card('q8-ii').questionText).not.toContain('(6)');
+    expect(card('q8-iv').questionFigure?.candId).toBe('physics-2015-ol-q8-capacitance-question');
+    expect(card('q9-iii').questionFigure?.candId).toBe('physics-2015-ol-q9-time-question');
+    for (const letter of 'abcdefgh') expect(card(`q11-${letter}`).stem)
+      .toContain('Gian Francesco Giudice, Oxford University Press, 2010');
+    expect(card('q11-f').rows[0].contextNote).toContain('electric repulsion');
+    expect(card('q12-c-carriers').rows[0]).toMatchObject({ group: {
+      claimMax: 4, perOptionSteps: [6, 2, 1, 1],
+      options: ['gases ions', 'semiconductors electrons and holes', 'metals electrons', 'solutions ions'],
+    } });
+    expect(card('q12-d-i').figure?.candId).toBe('physics-2015-ol-q12-field-solution');
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2015-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2015 Higher choices, full calculation context and independent routes', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2015-hl-'));
