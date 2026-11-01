@@ -213,19 +213,31 @@ def _script(text, table):
     return lead + ''.join(table[c] for c in core) + tail
 
 
-def _line_text(ln):
+def _dominant_baseline(spans):
+    weights = {}
+    for sp in spans:
+        text = sp['text'].strip()
+        if text and not all(c in '⎛⎜⎝⎞⎟⎠' for c in text):
+            y = round(sp['origin'][1], 1)
+            weights[y] = weights.get(y, 0) + len(text)
+    return max(weights, key=weights.get)
+
+
+def _line_text(ln, baseline=False):
     """One printed line's text: symbol glyphs decoded by their font, and a
     span set raised (superscript flag, or origin above the line's baseline) and
     smaller than the line's own type read as superscript, a lowered smaller one
     as subscript, unless the line stacks a raised and a lowered span over the
-    same x (a fraction), which is left as printed."""
+    same x (a fraction), which is left as printed. The opt-in baseline mode
+    uses geometric height for legacy equal-size powers and ignores unreliable
+    PDF superscript flags (2011 Higher marks an ordinary angle i as raised)."""
     spans = ln['spans']
     main = max(spans, key=lambda s: (s['size'], len(s['text'].strip())))
-    base, size = main['origin'][1], main['size']
+    base, size = (_dominant_baseline(spans) if baseline else main['origin'][1]), main['size']
     kinds = []
     for s in spans:
-        small = s['size'] < 0.85 * size and s['text'].strip()
-        if small and (s['flags'] & 1 or s['origin'][1] < base - 0.8):
+        small = (baseline or s['size'] < 0.85 * size) and s['text'].strip()
+        if small and ((not baseline and s['flags'] & 1) or s['origin'][1] < base - 0.8):
             kinds.append('sup')
         elif small and s['origin'][1] > base + 0.8:
             kinds.append('sub')
@@ -252,7 +264,7 @@ def _line_text(ln):
 # GLYPHS = {'CambriaMath': {2204: 'v', 2203: 'u', 2183: 'a'}}. The glyph's id is
 # taken from the page's text trace at the glyph's own origin (the duplicate a
 # maths font draws at the same origin with id -1 never overrides a real id).
-def _page_dict(page, glyphs=None, clip=None):
+def _page_dict(page, glyphs=None, clip=None, dedupe=False):
     """page.get_text('dict') (optionally clipped), every span's text rebuilt from
     its characters: a maths font draws each glyph TWICE, the copy a zero-width
     character at the real one's advance or gathered at the line's end (2023
@@ -285,7 +297,10 @@ def _page_dict(page, glyphs=None, clip=None):
                         sp['doubled'] = True
                         continue
                     prev = c
-                    if fix:
+                    # A synthetic space can overlap a real glyph's origin.
+                    # Opt in after visual review to prevent mapping that space
+                    # to a second copy of the glyph (2011 Higher Q3 lambda).
+                    if fix and not (dedupe and ch.get('synthetic')):
                         gid = gid_at.get((sp['font'], round(ch['origin'][0], 1), round(ch['origin'][1], 1)))
                         c = fix.get(gid, c)
                     out.append(c)
@@ -890,7 +905,7 @@ _CELL_ONLY = re.compile(CELL.pattern)
 _ATOM = re.compile(r'^(?:\d+(?:\.\d+)?|[A-Za-z\u0370-\u03ff\U0001d400-\U0001d7ff][\u00b2\u00b3\u00b9\u2070-\u209f]*)$')
 
 
-def _region_text(spans, glyph_order=False):
+def _region_text(spans, glyph_order=False, baseline=False):
     """Spans of one region (left to right), super/subscripts read against the
     region's own largest type."""
     if not any(sp['text'].strip() for sp in spans):
@@ -899,10 +914,15 @@ def _region_text(spans, glyph_order=False):
         # Some equation editors put a whole numeric run in one span and its
         # multiplication signs and powers in separate spans inside that run.
         # Sort individual glyphs, keeping their original baseline and size.
+        # Baseline mode also discards whitespace-only glyphs that an older
+        # equation object overlays on its digits; these are not token spaces.
         spans = [dict(sp, text=c, bbox=(x, sp['bbox'][1], x, sp['bbox'][3]))
-                 for sp in spans for x, c in sp.get('glyphs', [(sp['bbox'][0], sp['text'])])]
+                 for sp in spans for x, c in sp.get('glyphs', [(sp['bbox'][0], sp['text'])])
+                 if not baseline or c.strip()]
     spans = sorted(spans, key=lambda s: s['bbox'][0])
-    out = _line_text({'spans': spans})
+    out = _line_text({'spans': spans}, baseline=baseline)
+    if baseline:
+        out = out.translate(str.maketrans({'⎛': '(', '⎜': '', '⎝': '', '⎞': ')', '⎟': '', '⎠': ''}))
     if glyph_order:
         out = re.sub(r'(?<=[A-Za-z0-9)])\s+(?=[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺])', '', out)
     return _norm(out)
@@ -935,7 +955,7 @@ _VULGAR = {('1', '2'): '\u00bd', ('1', '3'): '\u2153', ('2', '3'): '\u2154', ('1
            ('3', '4'): '\u00be', ('1', '5'): '\u2155', ('1', '8'): '\u215b'}
 
 
-def _items_text(items, sep='', glyph_order=False):
+def _items_text(items, sep='', glyph_order=False, baseline=False):
     """Items (real spans, or fractions already read) left to right: runs of
     real spans read with their super/subscripts, read fractions as tokens."""
     items = sorted(items, key=lambda it: it['x0'])
@@ -945,7 +965,7 @@ def _items_text(items, sep='', glyph_order=False):
             run.append(it['span'])
             continue
         if run:
-            out.append(_region_text(run, glyph_order))
+            out.append(_region_text(run, glyph_order, baseline))
             run = []
         if it.get('glue') and out:
             # A fraction printed as a subscript of the glyph before it ("T" with
@@ -954,11 +974,11 @@ def _items_text(items, sep='', glyph_order=False):
         else:
             out.append(it['text'])
     if run:
-        out.append(_region_text(run, glyph_order))
+        out.append(_region_text(run, glyph_order, baseline))
     return _norm(sep.join(out))
 
 
-def fraction_text(page, clip, glyphs=None, glyph_order=False):
+def fraction_text(page, clip, glyphs=None, glyph_order=False, baseline=False, dedupe=False, segments=False):
     """The text inside `clip` with every stacked fraction written on one line.
 
     Bars are read innermost first, so a fraction inside another's numerator or
@@ -971,8 +991,25 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
     clip = fitz.Rect(*clip)
     bars = [fitz.Rect(d['rect']) for d in page.get_drawings()
             if d['rect'].height < 1.6 and d['rect'].width > 3 and clip.contains(fitz.Rect(d['rect']))]
+    if segments:
+        bars = []
+        # Equation editors may store many fraction bars in one drawing path.
+        # Its overall rectangle spans several formula rows; inspect the actual
+        # horizontal line segments for this visually reviewed region instead.
+        for drawing in page.get_drawings():
+            for item in drawing['items']:
+                if item[0] == 'l':
+                    a, b = item[1:3]
+                    r = fitz.Rect(min(a.x, b.x), min(a.y, b.y), max(a.x, b.x), max(a.y, b.y))
+                elif item[0] == 're':
+                    r = fitz.Rect(item[1])
+                else:
+                    continue
+                if r.height < 1.6 and r.width > 3 and clip.contains(r):
+                    bars.append(r)
+        bars = list({tuple(round(v, 3) for v in bar): bar for bar in bars}.values())
     items = []
-    for b in _page_dict(page, glyphs, clip)['blocks']:
+    for b in _page_dict(page, glyphs, clip, dedupe=dedupe)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
@@ -1025,7 +1062,7 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
         if not num or not den:
             raise LookupError(f'fraction bar {[round(v, 1) for v in bar]} has numerator '
                               f'{_items_text(num)!r}, denominator {_items_text(den)!r}')
-        nt, dt = _items_text(num, glyph_order=glyph_order), _items_text(den, glyph_order=glyph_order)
+        nt, dt = _items_text(num, glyph_order=glyph_order, baseline=baseline), _items_text(den, glyph_order=glyph_order, baseline=baseline)
         token = _VULGAR.get((nt.strip(), dt.strip())) or f'{_wrap(nt)}/{_wrap(dt, den=True)}'
         used = num + den
         live = [it for it in live if all(it is not u for u in used)]
@@ -1045,7 +1082,7 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
                  and it['y0'] >= bar.y0 - 1.5]
         if not under:
             continue
-        inner = _items_text(under, glyph_order=glyph_order)
+        inner = _items_text(under, glyph_order=glyph_order, baseline=baseline)
         # A slanted fraction can place numerator and denominator in one PDF
         # span and its slash in another. Read those glyphs by x, rather than
         # putting the slash after the entire numerator/denominator span.
@@ -1069,7 +1106,7 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
             f = nxt[0]
             if not f['text'].startswith('('):
                 f['text'] = f'({f["text"]})'
-    return re.sub('\u221a\\s+', '\u221a', _items_text(live, sep=' ', glyph_order=glyph_order))
+    return re.sub('\u221a\\s+', '\u221a', _items_text(live, sep=' ', glyph_order=glyph_order, baseline=baseline))
 
 
 # ------------------------------------------------------- nuclear equations --
@@ -1081,10 +1118,10 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
 # a postscript of the symbol before it (a charge, "β⁻"). Every glyph is the
 # SEC's; the Unicode super/subscripts only say where it was printed.
 
-def equation_text(page, clip, glyphs=None, degrees=False):
+def equation_text(page, clip, glyphs=None, degrees=False, dedupe=False, baseline=False):
     clip = fitz.Rect(*clip)
     spans = []
-    for b in _page_dict(page, glyphs, clip)['blocks']:
+    for b in _page_dict(page, glyphs, clip, dedupe=dedupe)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
@@ -1094,8 +1131,13 @@ def equation_text(page, clip, glyphs=None, degrees=False):
     if not any(sp['text'].strip() for sp in spans):
         raise LookupError(f'nothing printed inside {list(clip)}')
     size = max(sp['size'] for sp in spans if sp['text'].strip())
-    main = [sp for sp in spans if sp['size'] >= 0.85 * size]
-    small = [sp for sp in spans if sp['size'] < 0.85 * size and sp['text'].strip()]
+    if baseline:
+        base = _dominant_baseline(spans) if isinstance(baseline, bool) else float(baseline)
+        main = [sp for sp in spans if abs(sp['origin'][1] - base) <= 0.8]
+        small = [sp for sp in spans if abs(sp['origin'][1] - base) > 0.8 and sp['text'].strip()]
+    else:
+        main = [sp for sp in spans if sp['size'] >= 0.85 * size]
+        small = [sp for sp in spans if sp['size'] < 0.85 * size and sp['text'].strip()]
     mid = sorted((sp['bbox'][1] + sp['bbox'][3]) / 2 for sp in main if sp['text'].strip())
     cy = mid[len(mid) // 2]
     stacks = []
@@ -1144,4 +1186,7 @@ def equation_text(page, clip, glyphs=None, degrees=False):
     # A separately positioned minus sign can precede the mass-number stack
     # in x order. Keep the upper mass number before the complete lower charge.
     out = re.sub(r'([₊₋])([⁰¹²³⁴⁵⁶⁷⁸⁹]+)([₀₁₂₃₄₅₆₇₈₉]+)', r'\2\1\3', out)
+    if baseline:
+        out = out.translate(str.maketrans({'⎛': '(', '⎜': '', '⎝': '', '⎞': ')', '⎟': '', '⎠': ''}))
+        out = re.sub(r'([₀₁₂₃₄₅₆₇₈₉]+)([₊₋])(?=[A-Za-z])', r'\2\1', out)
     return _norm(out)

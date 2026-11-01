@@ -278,6 +278,15 @@ def cmd_topics(year, level, adds='', *flags):
                 m = re.search(r'Question\s+(\d+)', h) if h.startswith(f'{year} ') else None
                 if m and t['id'] not in ref[int(m.group(1))]:
                     ref[int(m.group(1))].append(t['id'])
+    # Later direct-paper repairs are also part of the reviewed reference.
+    # An annual review must retain these associations alongside the snapshot.
+    repairs = json.load(open(os.path.join(ROOT, 'data/examTopics/physics-reference-omissions-topic-map.json')))
+    for key, topics in repairs['questions'].items():
+        repaired_level, repaired_year, question = key.split('|')
+        if repaired_level == word and int(repaired_year) == year:
+            for topic in topics:
+                if topic not in ref[int(question)]:
+                    ref[int(question)].append(topic)
     path = os.path.join(ROOT, f'data/examTopics/physics-{year}-exam-topic-map.json')
     doc = json.load(open(path)) if os.path.exists(path) else {
         'schemaVersion': 1, 'subjectId': 'physics', 'year': year, 'authority': 'State Examinations Commission',

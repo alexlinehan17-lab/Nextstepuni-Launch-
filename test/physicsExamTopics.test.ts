@@ -373,7 +373,7 @@ describe('Physics exam-topic registry', () => {
 
   it('keeps every shipped Mark Bank card linked to the exact old-course practice map', () => {
     const cards = [...higherMarkBankCards, ...ordinaryMarkBankCards];
-    expect(cards).toHaveLength(3396);
+    expect(cards).toHaveLength(3498);
 
     for (const card of cards) {
       const parsed = /^(\d{4})\s+(HL|OL)\s+Q(\d+)/.exec(card.questionRef);
@@ -426,9 +426,9 @@ describe('Physics exam-topic registry', () => {
 
   it('pins the independently measured Mark Bank remainder instead of hiding it', () => {
     expect(markBankCoverage.physics).toMatchObject({
-      cards: 3396,
-      leaves: 2719,
-      covered: 2719,
+      cards: 3498,
+      leaves: 2766,
+      covered: 2766,
       excluded: 0,
       open: 0,
       orphans: 0,

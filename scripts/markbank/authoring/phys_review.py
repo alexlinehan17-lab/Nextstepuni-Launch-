@@ -237,7 +237,8 @@ def read_geo(lifter, spec, sp):
         # numerator and denominator are printed (phys_review_lib.fraction_text).
         try:
             value = B.fraction_text(src.doc[page - 1], clip, src.glyphs,
-                                    glyph_order=spec.get('glyph_order', False))
+                                    glyph_order=spec.get('glyph_order', False), baseline=spec.get('baseline', False),
+                                    dedupe=spec.get('dedupe', False), segments=spec.get('segments', False))
         except LookupError as e:
             raise Refusal(f'fraction p{page}: {e}')
     elif kind == 'equation':
@@ -245,7 +246,7 @@ def read_geo(lifter, spec, sp):
         # atomic numbers put back where they are printed (equation_text).
         try:
             value = B.equation_text(src.doc[page - 1], clip, src.glyphs,
-                                    degrees=spec.get('degrees', False))
+                                    degrees=spec.get('degrees', False), dedupe=spec.get('dedupe', False), baseline=spec.get('baseline', False))
         except LookupError as e:
             raise Refusal(f'equation p{page}: {e}')
     elif kind == 'tokens':

@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2011-hl': [102, 102, 47, '512d1f598e4399dee6c2f95d8babee9dcca6beed4a7135e5397e89b6cd3f977f',
+    '65abc80bf07669bec37f28d7aa111edaaf17d8cfeded8d0cbd872497daa7ddeb'],
   '2012-ol': [96, 96, 82, 'e7f46ff6afa24789dfaae192cd22f7aa966761a58a6b5cbb290ec9eda3f2a87e',
     '77b8f95ea2e3d91ad82af08e907bafe379d299f39503f06aa7ee6b212bfb1147'],
   '2012-hl': [95, 95, 62, '38ffeeaa0d59666fe00a75c09dfcf66cbdabbee06ccfd214ffb7c982bcc1da01',
@@ -105,6 +107,45 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains every 2011 Higher branch, practical method and separately marked force task', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2011-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2011-hl-${suffix}`)!;
+    expect(cards).toHaveLength(102);
+    expect(card('q1-velocity').rows.slice(0, 3)).toMatchObject([
+      { route: 'ticker-tape', group: { claimMax: 2, perOption: 3 } },
+      { route: 'light-gate', group: { claimMax: 2, perOption: 3 } },
+      { route: 'data-logger', group: { claimMax: 2, perOption: 3 } },
+    ]);
+    expect(card('q1-velocity').totalMarks).toBe(9);
+    expect(card('q2-graph').rows[1].contextNote).toContain('All eight printed data pairs');
+    expect(card('q3-wavelength').rows[0].verbatim).toBe('nλ =dsinθ');
+    expect(cards.filter(c => c.id.startsWith('phys-2011-hl-q5-'))).toHaveLength(11);
+    expect(card('q5-j-quarks').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [4, 3] } });
+    expect(card('q5-j-transformer').topicId).not.toBe(card('q5-j-quarks').topicId);
+    expect(card('q7-b-cooling').rows).toMatchObject([
+      { group: { claimMax: 2, perOption: 4, options: ['conduction', 'radiation', 'convection', 'evaporation'] } },
+      { group: { claimMax: 2, perOption: 3 } },
+    ]);
+    expect(card('q8-b-distance').rows.map(r => r.marks)).toEqual([3, 3, 3, 3]);
+    expect(card('q10-a-beta').rows[0].verbatim).toBe('²²⁸₈₈X → ²²⁸₈₉Y + ⁰₋₁e');
+    expect(card('q10-a-energy').rows[2].verbatim).toContain('E=2(');
+    for (const part of 'ab') expect(cards.filter(c => c.id.startsWith(`phys-2011-hl-q10-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(56);
+    const passage = cards.filter(c => c.id.startsWith('phys-2011-hl-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.stem).toContain('254 nm');
+      expect(c.stem).toContain('multiple diodes are used together to give white light');
+    }
+    expect(card('q12-a-maximum-force').totalMarks).toBe(5);
+    expect(card('q12-a-minimum-force').totalMarks).toBe(2);
+    for (const id of ['q12-a-maximum-force', 'q12-a-minimum-force']) expect(card(id).stem).toContain('250 g');
+    expect(card('q12-d-iv').rows[2].contextNote).toContain('5.57×10¹²');
+    for (const part of 'abcd') expect(cards.filter(c => new RegExp(`^phys-2011-hl-q12-${part}(?:-|$)`).test(c.id))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
+
 
   it('retains 2012 Ordinary choices, graph data, separate electricity calculations and complete passage', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2012-ol-'));

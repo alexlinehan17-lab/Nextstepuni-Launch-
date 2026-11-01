@@ -75,5 +75,51 @@ class PhysicsSourceMathTest(unittest.TestCase):
             self.assertEqual(equation_text(scheme[6], (83,296,185,309), G12, degrees=True),
                              'speed of jet = 1320 (m s⁻¹)')
 
+
+    def test_legacy_lambda_is_not_duplicated_by_a_synthetic_space(self):
+        from phys_review_2011_hl import GLYPHS as G11, SOURCES as S11
+        with fitz.open(ROOT / S11['scheme']['path']) as scheme:
+            self.assertEqual(equation_text(scheme[4], (220,428,286,446), G11['scheme'],
+                                           degrees=True, dedupe=True), 'nλ =dsinθ')
+
+    def test_legacy_equal_size_powers_and_beta_indices_use_geometry(self):
+        from phys_review_2011_hl import GLYPHS as G11, SOURCES as S11
+        with fitz.open(ROOT / S11['scheme']['path']) as scheme:
+            self.assertEqual(equation_text(scheme[6], (154,213,342,234), G11['scheme'],
+                                           degrees=True, dedupe=True, baseline=True),
+                             'v²=u² + 2as/0=20² + 2(a )(50)/a=4ms⁻²')
+            self.assertEqual(equation_text(scheme[11], (114,219,190,238), G11['scheme'],
+                                           degrees=True, dedupe=True, baseline=230.3),
+                             '²²⁸₈₈X → ²²⁸₈₉Y + ⁰₋₁e')
+
+    def test_compound_paths_preserve_complete_charge_products_and_ratios(self):
+        from phys_review_2011_hl import GLYPHS as G11, SOURCES as S11
+        with fitz.open(ROOT / S11['scheme']['path']) as scheme:
+            options=dict(baseline=True, dedupe=True, glyph_order=True, segments=True)
+            self.assertEqual(fraction_text(scheme[10], (170,253,232,285), G11['scheme'], **options),
+                             'F= Q(3Q)/(4πεd²)')
+            self.assertEqual(fraction_text(scheme[10], (290,332,351,365), G11['scheme'], **options),
+                             "// F'/F = 4Q²/(3Q²)")
+        self.assertEqual((2*2)/(1*3), 4/3)
+
+    def test_legacy_fraction_reader_keeps_digits_contiguous_and_angles_unraised(self):
+        from phys_review_2011_hl import GLYPHS as G11, SOURCES as S11
+        with fitz.open(ROOT / S11['scheme']['path']) as scheme:
+            options=dict(baseline=True, dedupe=True, glyph_order=True, segments=True)
+            self.assertEqual(fraction_text(scheme[13], (134,214,418,238), G11['scheme'], **options),
+                             'EFL(= 8/60 )=0.133//F.L:( (8×100)/60 )/13.33%(efficient)')
+            self.assertEqual(fraction_text(scheme[14], (180,644,264,672), G11['scheme'], **options),
+                             'n= 1/(sinic) (=1.33)')
+            self.assertEqual(fraction_text(scheme[15], (190,333,354,381), G11['scheme'], **options),
+                             'r²= ((1.7×10⁻⁸)(1))/(π(6.75×10⁻³)) //8.017×10⁻⁷')
+
+    def test_strontium_atom_count_uses_the_half_life_given_in_the_question(self):
+        import math
+        for days in (365,365.25):
+            decay_constant=math.log(2)/(28.78*days*24*3600)
+            self.assertAlmostEqual(decay_constant,7.63e-10,delta=0.01e-10)
+            self.assertAlmostEqual(4250/decay_constant,5.57e12,delta=0.01e12)
+            self.assertGreater(abs(decay_constant-7.77e-10),0.1e-10)
+
 if __name__ == '__main__':
     unittest.main()

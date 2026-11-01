@@ -110419,5 +110419,3547 @@
     "askedInThisQuestion": false
    }
   ]
+ },
+ {
+  "id": "phys-2011-hl-q1-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Momentum apparatus",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "track/means of coalescing",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "two trolleys",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "labeled means of measuring time/velocity (e.g. motion sensor)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q1-adjustments",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "adjustments",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Constant-velocity adjustments",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "What adjustments did the student make to the apparatus so that body A would move at constant velocity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "adjust gradient of track / lubricate trolley wheels / polish/brush track / clear holes (air track)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "adjust gradient of track",
+      "lubricate trolley wheels",
+      "polish/brush track",
+      "clear holes (air track)"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Two relevant adjustments, 3 each; keep them consistent with the chosen apparatus."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q1-constant",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "constant",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Evidence of constant velocity",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "How did the student know that body A was moving at constant velocity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "dots on the ticker tape were equally spaced / same time interval shown by both light gates / horizontal line on v vs. t graph (datalogging method)",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q1-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "velocity",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Final velocity",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "Describe how the student measured the velocity v of the bodies after the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Δt between dots = 0.02 s = 1/50 s / measure distance for n intervals",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Δt between dots = 0.02 s = 1/50 s",
+      "measure distance for n intervals"
+     ]
+    },
+    "contextNote": "Ticker tape: both measurement steps are required. Use the total time for the measured n intervals.",
+    "route": "ticker-tape"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "measure length l of card / read Δt from light gate",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "measure length l of card",
+      "read Δt from light gate"
+     ]
+    },
+    "contextNote": "Light gate: both measurements are required; velocity is card length divided by its passage time.",
+    "route": "light-gate"
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "select number of points on (s vs. t ) graph / (use) slope (tool)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "select number of points on (s vs. t ) graph",
+      "(use) slope (tool)"
+     ]
+    },
+    "contextNote": "Data logger: select points on the position–time graph and use its slope tool.",
+    "route": "data-logger"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "velocity = Δs/(Δt) or in words",
+    "marks": 3,
+    "contextNote": "Complete the calculation for your chosen method: distance/time, card length/time, or the position–time slope. The original three complete methods are shown."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q1-velocity-solution"
+ },
+ {
+  "id": "phys-2011-hl-q1-verification",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "verification",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Verifying conservation of momentum",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "Using the recorded data, show how the experiment verifies the principle of conservation of momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum = mass × velocity",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "initial momt = (0.230)(0.53) / 0.1219 (kg m s⁻¹)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "final momt = (0.390)(0.32) / 0.1248 ( kg m s⁻¹)",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "principle verified since 0.1219 kg m s⁻¹ ≈ 0.1248 kg m s⁻¹ or equivalent",
+    "marks": 2,
+    "contextNote": "The two experimental momenta agree approximately. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q1-accuracy",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "accuracy",
+  "section": "A",
+  "questionRef": "2011 HL Q1 — Improving accuracy",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. The student adjusted the apparatus till a body A was moving at a constant velocity u. It was then allowed to collide with a second body B, which was initially at rest, and the two bodies moved off together with a common velocity v. The following data were recorded: mass of body A ........... = 230 g mass of body B ........... = 160 g velocity u .................... = 0.53 m s⁻¹ velocity v .................... = 0.32 m s⁻¹",
+  "questionText": "How could the accuracy of the experiment be improved?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "use digital balance / select more dots / select greater distance/displacement /avoid parallax error",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q2-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Boyle’s law apparatus",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "gas container",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "pressure gauge",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "scale for reading volume",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "alt",
+    "verbatim": "means of adjusting p or V, e.g. pump/valve",
+    "marks": 3,
+    "contextNote": "Four apparatus components, 3 each. Deduct 1 if no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-data"
+ },
+ {
+  "id": "phys-2011-hl-q2-vary",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "vary",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Varying pressure",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "How was the pressure of the gas varied during the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pump // rotate wheel/screw // move piston/plunger // adjust liquid level in reservoir tube //open valve",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-data"
+ },
+ {
+  "id": "phys-2011-hl-q2-measure",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "measure",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Measuring pressure and volume",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "Describe how the pressure and the volume of the gas were measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(pressure) from the (Bourdon) gauge/pc screen",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(volume) from the scale on the gas container/syringe",
+    "marks": 2
+   }
+  ],
+  "notes": "One printed method task with two independently marked measurement components; both remain together for this apparatus. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-data"
+ },
+ {
+  "id": "phys-2011-hl-q2-delay",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "delay",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Waiting before recording",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "Why should there be a delay between adjusting the pressure of the gas and recording its value?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "allow for gas to cool /to reach thermal equilibrium // allow oil (level) to settle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-data"
+ },
+ {
+  "id": "phys-2011-hl-q2-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Boyle’s law graph",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "Draw a suitable graph to show the relationship between the pressure and the volume of a fixed mass of gas.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly on graph paper",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot six points correctly",
+    "marks": 3,
+    "contextNote": "All eight printed data pairs are retained; use all eight. The historical scheme prices six plotted points; deduct 1 per incorrect point or inappropriate scale."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "straight line",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "good distribution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-graph-solution",
+  "questionFigureKey": "physics-2011-hl-q2-graph-question"
+ },
+ {
+  "id": "phys-2011-hl-q2-explain",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "explain",
+  "section": "A",
+  "questionRef": "2011 HL Q2 — Interpreting the graph",
+  "stem": "During an experiment to verify Boyle’s law, the pressure of a fixed mass of gas was varied. A series of measurements of the pressure p and the corresponding volume V of the gas was recorded as shown. The temperature was kept constant.",
+  "questionText": "Explain how your graph verifies Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "straight line through the origin",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "p α 1/V // p V = constant",
+    "marks": 3,
+    "contextNote": "Here α denotes proportionality: p ∝ 1/V, so pV is constant at fixed temperature. The small fitted intercept is experimental uncertainty."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q2-graph-solution",
+  "questionFigureKey": "physics-2011-hl-q2-explain-question"
+ },
+ {
+  "id": "phys-2011-hl-q3-source",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "source",
+  "section": "A",
+  "questionRef": "2011 HL Q3 — Monochromatic light source",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown.",
+  "questionText": "Name a source of monochromatic light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sodium (Na) lamp / laser",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-data"
+ },
+ {
+  "id": "phys-2011-hl-q3-method",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "method",
+  "section": "A",
+  "questionRef": "2011 HL Q3 — Measuring diffraction angles",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown.",
+  "questionText": "Describe, with the aid of a diagram, how the data were obtained.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "diagram showing: monochromatic light source, spectrometer, grating (on turntable)",
+    "marks": 3,
+    "route": "spectrometer"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "focus on nth image on l.h.s read scale/angle",
+    "marks": 3,
+    "route": "spectrometer"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "repeat for nth image on r.h.s.",
+    "marks": 3,
+    "route": "spectrometer"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "diagram showing: light source, grating,(metre rule)",
+    "marks": 3,
+    "route": "screen"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "measure x for nth image and measure D",
+    "marks": 3,
+    "route": "screen"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "determine angle θ (using trigonometry/tan θ)",
+    "marks": 3,
+    "contextNote": "Choose one complete three-step method, 9 marks. Deduct 1 if no diagram. The original alternative-method diagram is shown.",
+    "route": "screen"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-method-solution",
+  "questionFigureKey": "physics-2011-hl-q3-method-question"
+ },
+ {
+  "id": "phys-2011-hl-q3-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wavelength",
+  "section": "A",
+  "questionRef": "2011 HL Q3 — Wavelength from all four angles",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown.",
+  "questionText": "Using the data, calculate the wavelength of the monochromatic light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "nλ =dsinθ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "d= 1/400",
+    "marks": 3,
+    "contextNote": "The grating spacing is 1/400 mm = 2.5 × 10⁻⁶ m; convert units before using SI."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "any λ value",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "λave=642.3nm",
+    "marks": 3,
+    "contextNote": "Use all four angles with their first/second orders, then average. Deduct 1 if not all data are used; deduct 1 for missing/incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-wavelength-solution",
+  "questionFigureKey": "physics-2011-hl-q3-wavelength-question"
+ },
+ {
+  "id": "phys-2011-hl-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3i",
+  "section": "A",
+  "questionRef": "2011 HL Q3(i)",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown. What effect would each of the following changes have on the bright images formed:",
+  "questionText": "using a monochromatic light source of longer wavelength",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "larger θ / images more spaced out /any valid statement",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-data"
+ },
+ {
+  "id": "phys-2011-hl-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3ii",
+  "section": "A",
+  "questionRef": "2011 HL Q3(ii)",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown. What effect would each of the following changes have on the bright images formed:",
+  "questionText": "using a diffraction grating having 200 lines per mm",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "smaller θ / images closer together /any valid statement",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-data"
+ },
+ {
+  "id": "phys-2011-hl-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3iii",
+  "section": "A",
+  "questionRef": "2011 HL Q3(iii)",
+  "stem": "In an experiment to measure the wavelength of a monochromatic light source, a narrow beam of light was incident normally on a diffraction grating having 400 lines per mm. A number of bright images were observed. The angles θ between the central bright image and the first two images to the left and right of it were measured and recorded in a table, as shown. What effect would each of the following changes have on the bright images formed:",
+  "questionText": "using a source of white light instead of monochromatic light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "each fringe/image is a spectrum (of white light) // each fringe/image has many colours",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q3-data"
+ },
+ {
+  "id": "phys-2011-hl-q4-circuit",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit",
+  "section": "A",
+  "questionRef": "2011 HL Q4 — Copper-sulfate circuit",
+  "stem": "A student investigated the variation of the current I through an electrolyte as the potential difference V across the electrolyte was changed. The electrolyte used was a solution of copper sulfate. The electrodes used were made of copper.",
+  "questionText": "Draw a suitable circuit diagram for this investigation and label the components.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "arrangement: power supply unit, label ammeter, label voltmeter, electrolyte, electrodes",
+    "marks": 9,
+    "contextNote": "Show the complete arrangement with all five named components. The source awards 9 overall and deducts 3 per missing component; do not treat the five components as five 3-mark awards."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q4-data"
+ },
+ {
+  "id": "phys-2011-hl-q4-vary",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "vary",
+  "section": "A",
+  "questionRef": "2011 HL Q4 — Changing potential difference",
+  "stem": "A student investigated the variation of the current I through an electrolyte as the potential difference V across the electrolyte was changed. The electrolyte used was a solution of copper sulfate. The electrodes used were made of copper.",
+  "questionText": "How was the potential difference changed during the investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "adjusting (dial/selector on) variable p.s.u. // adjusting rheostat",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q4-data"
+ },
+ {
+  "id": "phys-2011-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2011 HL Q4 — Electrolyte current–voltage graph",
+  "stem": "A student investigated the variation of the current I through an electrolyte as the potential difference V across the electrolyte was changed. The electrolyte used was a solution of copper sulfate. The electrodes used were made of copper.",
+  "questionText": "Draw a suitable graph to show the relationship between the current and the potential difference in this investigation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly on graph paper",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot six points correctly",
+    "marks": 3,
+    "contextNote": "Retain all seven pairs, including the origin. Deduct 1 per incorrect point or inappropriate scale. Convert mA to A if using the displayed source graph."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "straight line",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "good distribution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q4-graph-solution",
+  "questionFigureKey": "physics-2011-hl-q4-graph-question"
+ },
+ {
+  "id": "phys-2011-hl-q4-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance",
+  "section": "A",
+  "questionRef": "2011 HL Q4 — Resistance from the graph",
+  "stem": "A student investigated the variation of the current I through an electrolyte as the potential difference V across the electrolyte was changed. The electrolyte used was a solution of copper sulfate. The electrodes used were made of copper.",
+  "questionText": "Use your graph to calculate the resistance of the electrolyte.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "method for slope",
+    "marks": 3,
+    "contextNote": "For I in amperes on the vertical axis, resistance is the reciprocal of the slope. Convert a slope in mA/V to A/V first."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "R = 1/0.0323 / 30.96 / ≈ 31 Ω",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units; use a slope consistent with your graph."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q4-graph-solution",
+  "questionFigureKey": "physics-2011-hl-q4-resistance-question"
+ },
+ {
+  "id": "phys-2011-hl-q4-electrodes",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "electrodes",
+  "section": "A",
+  "questionRef": "2011 HL Q4 — Observations at the electrodes",
+  "stem": "A student investigated the variation of the current I through an electrolyte as the potential difference V across the electrolyte was changed. The electrolyte used was a solution of copper sulfate. The electrodes used were made of copper.",
+  "questionText": "What was observed at the electrodes as current flowed through the electrolyte?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "cathode got heavier /coated with fresh copper",
+    "marks": 5
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "anode got lighter",
+    "marks": 5,
+    "contextNote": "Other valid observations about the anode and cathode are accepted, as the scheme notes."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q4-data"
+ },
+ {
+  "id": "phys-2011-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2011 HL Q5(a)",
+  "questionText": "A car of mass 1500 kg is travelling at a constant velocity of 20 m s⁻¹. What force is required to stop it in a distance of 50 m?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v²=u² + 2as/0=20² + 2(a )(50)/a=4ms⁻²",
+    "marks": 4,
+    "contextNote": "Acceleration magnitude is 4 m s⁻², directed opposite to the original motion. The complete work–energy alternative is also shown."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F=ma/F=(1500)(4 )/F=6000N",
+    "marks": 3,
+    "contextNote": "Stopping force magnitude 6000 N; its direction opposes the motion. Equivalently, initial kinetic energy 300000 J divided by stopping distance 50 m gives the same force."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q5-car-solution"
+ },
+ {
+  "id": "phys-2011-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2011 HL Q5(b)",
+  "questionText": "Why does the value of g, the acceleration due to gravity, vary at different locations on the surface on the earth?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "locations are at different distances from the earth’s centre / earth is not perfectly spherical / etc.",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2011 HL Q5(c)",
+  "questionText": "Why is a convex mirror used, instead of a plane mirror, as a door mirror on a car?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "wider / greater field of view / any valid answer",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2011 HL Q5(d)",
+  "questionText": "What causes the Doppler effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(relative) motion",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "between source (of waves) and observer",
+    "marks": 3,
+    "contextNote": "A correct definition of the Doppler effect is also accepted for all 7 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2011 HL Q5(e)",
+  "questionText": "The capacitance of a parallel plate air capacitor is 5 pF. If the plates of the capacitor are 2 cm apart, what is the common area of the plates? Take εair = ε₀.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C= εA/d",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "A= ((5×10⁻¹²)(2×10⁻²))/(8.854×10⁻¹²) /A=0.0113m²/A=113cm²",
+    "marks": 3,
+    "contextNote": "Use C = 5 × 10⁻¹² F, d = 0.02 m and ε₀ = 8.854 × 10⁻¹² F m⁻¹."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q5-capacitor-solution"
+ },
+ {
+  "id": "phys-2011-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2011 HL Q5(f)",
+  "questionText": "A residual current device (RCD) as shown is rated 30 mA. Explain the significance of this rating.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "RCD / device trips",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "if more than 30 mA flows to earth / the current difference between L and N is greater than 30 mA",
+    "marks": 3,
+    "contextNote": "This is the historical scheme wording for the residual-current rating, not the normal load current or an overload rating. It refers to an imbalance between live and neutral. IET: https://electrical.theiet.org/bs-7671-18th-edition-wiring-regulations/faqs/consumer-units-and-protective-devices-faqs"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q5-rcd"
+ },
+ {
+  "id": "phys-2011-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2011 HL Q5(g)",
+  "questionText": "The physicist Robert Millikan is usually associated with what physical quantity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charge (on the electron) / 1.6 × 10⁻¹⁹ C",
+    "marks": 7,
+    "contextNote": "Reference only to the oil-drop/electron experiment earns 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2011 HL Q5(h)",
+  "questionText": "What property of light controls the current in a photocell?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(light) intensity/ brightness / photoelectric effect / any valid answer",
+    "marks": 7,
+    "contextNote": "The property asked for is light intensity, at a frequency above the threshold. “Photoelectric effect” is retained as a historical accepted answer but does not itself name a light property."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2011 HL Q5(i)",
+  "questionText": "What is the role of neutrons in a nuclear reactor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to cause (nuclear) fission / to initiate reaction / any valid answer",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-j-quarks",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j-quarks",
+  "section": "B",
+  "questionRef": "2011 HL Q5(j) — quarks",
+  "questionText": "Give the difference between the quark composition of a baryon and of a meson.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "baryon → 3 quarks / meson → quark and antiquark",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "baryon → 3 quarks",
+      "meson → quark and antiquark"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Both required descriptions: first correct 4, second 3. This is one comparison, not a menu of separately carded particle combinations."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q5-j-transformer",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "5j-transformer",
+  "section": "B",
+  "questionRef": "2011 HL Q5(j) — transformer",
+  "questionText": "Give two ways of reducing energy loss in a transformer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "laminate the core / wire of lower resistance / reduce hysteresis / reduce magnetic flux leakage",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "laminate the core",
+      "wire of lower resistance",
+      "reduce hysteresis",
+      "reduce magnetic flux leakage"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q6-a-moment",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moment",
+  "section": "B",
+  "questionRef": "2011 HL Q6(a) — Moment of a force",
+  "questionText": "Define the moment of a force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(T = ) force × (perp) distance / F × d",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q6-a-toy",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "toy",
+  "section": "B",
+  "questionRef": "2011 HL Q6(a) — Why the toy returns upright",
+  "questionText": "A toy, such as that shown, has a heavy hemispherical base and its centre of gravity is located at C. When the toy is knocked over, it always returns to the upright position. Explain why this happens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(toy non-vertical) c.g. has a (turning) moment about fulcrum / point of support/contact / (c.g. has) zero turning moment when toy is in vertical position",
+    "marks": 6,
+    "contextNote": "A restoring moment returns the toy to stable equilibrium. Partial relevant reference such as low centre of gravity or turning moment: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q6-toy",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "(toy non-vertical) c.g.",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-hl-q6-b-equilibrium",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "equilibrium",
+  "section": "B",
+  "questionRef": "2011 HL Q6(b) — Equilibrium conditions",
+  "questionText": "State the conditions necessary for the equilibrium of a body under a set of co-planar forces.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(vector/algebraic) sum of the forces = zero // forces up = forces down // ΣF = 0 / sum of the (turning) moments (about any point) = zero // CTM = ACTM // Σ T = 0",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(vector/algebraic) sum of the forces = zero // forces up = forces down // ΣF = 0",
+      "sum of the (turning) moments (about any point) = zero // CTM = ACTM // Σ T = 0"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both required conditions: first correct 6, second 3. Resolve forces as vectors and take moments about any point."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q6-b-seesaw",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "seesaw",
+  "section": "B",
+  "questionRef": "2011 HL Q6(b) — Balancing the see-saw",
+  "stem": "Three children position themselves on a uniform see-saw so that it is horizontal and in equilibrium. The fulcrum of the see-saw is at its centre of gravity. A child of mass 30 kg sits 1.8 m to the left of the fulcrum and another child of mass 40 kg sits 0.8 m to the right of the fulcrum.",
+  "questionText": "Where should the third child of mass 45 kg sit, in order to balance the see-saw?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "30g(1.8) / 40g(0.8) / 45g(x)",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "30g(1.8) = 40g(0.8) + 45g(x)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "x = 0.488 m / 0.49 m / 49 cm",
+    "marks": 3,
+    "contextNote": "The 45 kg child sits approximately 0.49 m to the right of the fulcrum. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q6-seesaw-solution"
+ },
+ {
+  "id": "phys-2011-hl-q6-c-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "forces",
+  "section": "B",
+  "questionRef": "2011 HL Q6(c) — Forces on the child",
+  "stem": "A simple merry-go-round consists of a flat disc that is rotated horizontally. A child of mass 32 kg stands at the edge of the merry-go-round, 2.2 metres from its centre. The force of friction acting on the child is 50 N.",
+  "questionText": "Draw a diagram showing the forces acting on the child as the merry-go-round rotates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R (reaction)",
+    "marks": 3,
+    "contextNote": "Normal reaction vertically upward."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F (friction)",
+    "marks": 3,
+    "contextNote": "Friction horizontally inward towards the centre."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "W (weight)",
+    "marks": 3,
+    "contextNote": "Weight vertically downward. Deduct 1 for each unlabelled force."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q6-forces-solution",
+  "questionFigureKey": "physics-2011-hl-q6-forces-question"
+ },
+ {
+  "id": "phys-2011-hl-q6-c-angular",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "angular",
+  "section": "B",
+  "questionRef": "2011 HL Q6(c) — Maximum angular velocity",
+  "stem": "A simple merry-go-round consists of a flat disc that is rotated horizontally. A child of mass 32 kg stands at the edge of the merry-go-round, 2.2 metres from its centre. The force of friction acting on the child is 50 N.",
+  "questionText": "What is the maximum angular velocity of the merry-go-round so that the child will not fall from it, as it rotates?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F=mω²r",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "50 =(32)(ω ) ²(2.2)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ω=0.842",
+    "marks": 3,
+    "contextNote": "ω = √(50/(32 × 2.2)) = 0.8427 rad s⁻¹. The scheme rounds to 0.842; deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q6-angular-solution",
+  "questionFigureKey": "physics-2011-hl-q6-angular-question"
+ },
+ {
+  "id": "phys-2011-hl-q6-c-frictionless",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "frictionless",
+  "section": "B",
+  "questionRef": "2011 HL Q6(c) — Without friction",
+  "stem": "A simple merry-go-round consists of a flat disc that is rotated horizontally. A child of mass 32 kg stands at the edge of the merry-go-round, 2.2 metres from its centre. The force of friction acting on the child is 50 N.",
+  "questionText": "If there was no force of friction between the child and the merry-go-round, in what direction would the child move as the merry-go-round starts to rotate?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "child remains stationary / any appropriate answer, e.g. ‘it depends on the frame of reference’",
+    "marks": 5,
+    "contextNote": "At the start, a child initially at rest remains at rest relative to the ground when there is no horizontal force; relative to the rotating disc the description differs."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q6-round"
+ },
+ {
+  "id": "phys-2011-hl-q7-a-steam",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "steam",
+  "section": "B",
+  "questionRef": "2011 HL Q7(a) — Mass of steam",
+  "stem": "(cmilk = 3.90 × 10³ J kg⁻¹ K⁻¹, cwater = 4.18 × 10³ J kg⁻¹ K⁻¹, chot drink = 4.05 × 10³ J kg⁻¹ K⁻¹ specific latent heat of vaporisation of water = 2.34 × 10⁶ J kg⁻¹)",
+  "questionText": "When making a hot drink, steam at 100 °C is added to 160 g of milk at 20 °C. If the final temperature of the drink is to be 70 °C, what mass of steam should be added? You may ignore energy losses to the surroundings.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( m c Δ θ ) ₘ = ( m l ) ₛₜₑₐₘ + ( m c Δ θ ) cond",
+    "marks": 6,
+    "contextNote": "Three 2-mark energy terms: heating the milk, condensing the steam, and cooling the condensed water. Energy gained by milk equals the two energy losses by steam/water."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(0.160)(3.90×10³)(50)=mₛ(2.34×10⁶) + (mₛ)(4.18×10³)(30)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "mₛ= (31.2×10³)/(2.4654×10⁶) /12.655×10⁻³kg/12.66g",
+    "marks": 3,
+    "contextNote": "Mass ≈ 0.012655 kg = 12.66 g. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q7-steam-solution",
+  "questionFigureKey": "physics-2011-hl-q7-steam-question"
+ },
+ {
+  "id": "phys-2011-hl-q7-a-spoon",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "spoon",
+  "section": "B",
+  "questionRef": "2011 HL Q7(a) — Heat capacity of the spoon",
+  "stem": "When making a hot drink, steam at 100 °C is added to 160 g of milk at 20 °C. If the final temperature of the drink is to be 70 °C, what mass of steam should be added? You may ignore energy losses to the surroundings. (cmilk = 3.90 × 10³ J kg⁻¹ K⁻¹, cwater = 4.18 × 10³ J kg⁻¹ K⁻¹, chot drink = 4.05 × 10³ J kg⁻¹ K⁻¹ specific latent heat of vaporisation of water = 2.34 × 10⁶ J kg⁻¹)",
+  "questionText": "A metal spoon, with an initial temperature of 20 °C, is then placed in the hot drink, causing the temperature of the hot drink to drop to 68 °C. What is the heat capacity of the spoon? You may ignore other possible heat transfers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy gained by spoon = energy lost by hot drink (state/imply)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(CΔθ)ₛₚₒₒₙ=(mcΔθ)ₕₒₜdrink(whereC=mc)",
+    "marks": 3,
+    "contextNote": "C is the spoon’s heat capacity, not its specific heat capacity."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "48C=(0.17266)(4.05×10³)(2 )/1.3985×10³",
+    "marks": 3,
+    "contextNote": "The hot drink includes 0.160 kg milk plus the condensed steam from the first calculation; use the given hot-drink specific heat capacity."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "C=29.14JK⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing/incorrect units. Using separate milk and water heat capacities gives about 28.2 J K⁻¹ and loses 1 under the historical scheme."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q7-spoon-solution",
+  "questionFigureKey": "physics-2011-hl-q7-spoon-question"
+ },
+ {
+  "id": "phys-2011-hl-q7-b-cooling",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "cooling",
+  "section": "B",
+  "questionRef": "2011 HL Q7(b) — Two cooling processes and their reduction",
+  "questionText": "Name two processes by which a hot drink cools. How is the energy lost by each of these processes reduced for a hot drink supplied in a disposable cup?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "conduction / radiation / convection / evaporation",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "conduction",
+      "radiation",
+      "convection",
+      "evaporation"
+     ]
+    },
+    "contextNote": "Choose any two processes, 4 marks each; keep the two matching reduction methods in the next row."
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "insulating material / bright (inside) surface/ insulating material / lid / lid/insulation / lid",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "insulating material",
+      "bright (inside) surface/ insulating material / lid",
+      "lid/insulation",
+      "lid"
+     ]
+    },
+    "contextNote": "3 for each method matching a process you named: conduction→insulating material; radiation→bright interior/insulating material/lid; convection→lid/insulation; evaporation→lid. These are matching pairs, not unrelated choices."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q7-cooling-solution"
+ },
+ {
+  "id": "phys-2011-hl-q7-c-principle",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "principle",
+  "section": "B",
+  "questionRef": "2011 HL Q7(c) — Demonstrating a thermocouple",
+  "stem": "A thermocouple is used to measure the temperature of the steam.",
+  "questionText": "How would you demonstrate the principle of operation of a thermocouple?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one junction (reference junction) kept cold / at constant temp",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "other junction heated",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation: e.g. emf /voltage developed // meter reading",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q7-c-calibration",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "calibration",
+  "section": "B",
+  "questionRef": "2011 HL Q7(c) — Calibrating a thermocouple",
+  "stem": "A thermocouple is used to measure the temperature of the steam.",
+  "questionText": "Describe how to establish a calibration curve for a thermocouple.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one junction at constant temperature, other junction in water with (Hg) thermometer (state/imply)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "heat water (in steps of 10 °C approx) and note temperature and emf values (each time)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "plot graph of emf vs. temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q8-a-coherent",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "coherent",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a) — Coherent sources",
+  "stem": "Destructive interference can occur when waves from coherent sources meet.",
+  "questionText": "Explain the underlined term.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "same frequency/wavelength",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in phase / constant phase difference",
+    "marks": 3,
+    "contextNote": "Coherent sources maintain a constant phase difference; they need not always be in phase."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "questionFigureKey": "physics-2011-hl-q8-coherent-question"
+ },
+ {
+  "id": "phys-2011-hl-q8-a-conditions",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "conditions",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a) — Conditions for complete cancellation",
+  "stem": "Destructive interference can occur when waves from coherent sources meet.",
+  "questionText": "Give two other conditions necessary for total destructive interference to occur.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "same amplitude",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "when crest meets trough",
+    "marks": 4,
+    "contextNote": "The waves are in antiphase: 180° or π radians, equivalently a half-cycle phase difference. The original source shows the equivalent half-wavelength path difference."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-conditions-solution"
+ },
+ {
+  "id": "phys-2011-hl-q8-a-i-points",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "points",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a)(i) — Nodes and antinodes",
+  "stem": "The diagram shows a standing wave in a pipe closed at one end. The length of the pipe is 90 cm.",
+  "questionText": "Name the points on the wave labelled P and Q.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "P — node",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q — antinode",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-pipe",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "P: node",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Q",
+    "meaning": "Q: antinode",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-hl-q8-a-ii-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "frequency",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a)(ii) — Frequency of the illustrated standing wave",
+  "stem": "The diagram shows a standing wave in a pipe closed at one end. The length of the pipe is 90 cm. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "Calculate the frequency of the standing wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ=0.720m",
+    "marks": 3,
+    "contextNote": "The full diagram shows five quarter-wavelengths in 0.90 m: 5λ/4 = 0.90, so λ = 0.720 m."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v=fλ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f=472.2Hz",
+    "marks": 3,
+    "contextNote": "Use f = 340/0.720. Deduct 1 for missing or incorrect units; the original solution retains the fraction."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-frequency-solution",
+  "questionFigureKey": "physics-2011-hl-q8-frequency-question"
+ },
+ {
+  "id": "phys-2011-hl-q8-a-iii-fundamental",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fundamental",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a)(iii) — Fundamental frequency of the pipe",
+  "stem": "The diagram shows a standing wave in a pipe closed at one end. The length of the pipe is 90 cm. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "What is the fundamental frequency of the pipe?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ=3.60m",
+    "marks": 3,
+    "contextNote": "At the fundamental, a closed pipe contains one quarter wavelength: λ = 4 × 0.90 = 3.60 m."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "fₒ=94.44Hz",
+    "marks": 3,
+    "contextNote": "f₀ = 340/3.60 ≈ 94.44 Hz; deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-fundamental-solution",
+  "questionFigureKey": "physics-2011-hl-q8-fundamental-question"
+ },
+ {
+  "id": "phys-2011-hl-q8-a-harmonics",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "harmonics",
+  "section": "B",
+  "questionRef": "2011 HL Q8(a) — Clarinet harmonics",
+  "stem": "The clarinet is a wind instrument based on a pipe that is closed at one end.",
+  "questionText": "What type of harmonics is produced by a clarinet?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "odd (multiples of the fundamental)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-clarinet"
+ },
+ {
+  "id": "phys-2011-hl-q8-b-intensity",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "intensity",
+  "section": "B",
+  "questionRef": "2011 HL Q8(b) — Sound intensity at eight metres",
+  "questionText": "An audio speaker at a concert emits sound uniformly in all directions at a rate of 100 W. Calculate the sound intensity experienced by a listener at a distance of 8 m from the speaker.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "SI= Power/(Area)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "SI= 100/(4π(8)²) /0.124Wm⁻²",
+    "marks": 3,
+    "contextNote": "The sound spreads over a sphere of area 4πr². Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-intensity-solution"
+ },
+ {
+  "id": "phys-2011-hl-q8-b-distance",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "distance",
+  "section": "B",
+  "questionRef": "2011 HL Q8(b) — Distance for a three-decibel reduction",
+  "stem": "An audio speaker at a concert emits sound uniformly in all directions at a rate of 100 W. Calculate the sound intensity experienced by a listener at a distance of 8 m from the speaker.",
+  "questionText": "The listener moves back from the speaker to protect her hearing. At what distance from the speaker is the sound intensity level reduced by 3 dB?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "SIL decreased by 3 dB → SI halved (state/imply)",
+    "marks": 3,
+    "contextNote": "The scheme uses the standard rounded approximation that a 3 dB reduction halves intensity."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "SIα 1/R² //0.062= 100/(4πR²)",
+    "marks": 3,
+    "contextNote": "Use the inverse-square law; the scheme rounds half the intensity to 0.062 W m⁻²."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "100/(4π(0.062)) /128.35",
+    "marks": 3,
+    "contextNote": "Rearrange for R²=100/(4π×0.062)≈128.35m²."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "R₂=11.32m//R=11.33m",
+    "marks": 3,
+    "contextNote": "Taking the square root gives about 11.3 m from the speaker. Both original methods are shown. The scheme’s 11.32/11.33 values follow its rounding; deduct 1 for missing/incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q8-distance-solution"
+ },
+ {
+  "id": "phys-2011-hl-q9-a-coulomb",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "coulomb",
+  "section": "B",
+  "questionRef": "2011 HL Q9(a) — Coulomb’s law",
+  "questionText": "State Coulomb’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force proportional to product of charges",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(force) inversely proportional to square of distance",
+    "marks": 3,
+    "contextNote": "A correct formula with symbols explained is equivalent; the original formula alternatives are shown."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q9-law-solution"
+ },
+ {
+  "id": "phys-2011-hl-q9-a-force",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2011 HL Q9(a) — Force after sharing charge",
+  "questionText": "Two identical spherical conductors on insulated stands are placed a certain distance apart. One conductor is given a charge Q while the other conductor is given a charge 3Q and they experience a force of repulsion F. The two conductors are then touched off each other and returned to their original positions. What is the new force, in terms of F, between the spherical conductors?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F= Q(3Q)/(4πεd²)",
+    "marks": 6,
+    "contextNote": "Initially the charge product is Q(3Q)=3Q². The original alternative (3Q²) has the same value; the exponent applies only to Q."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F'= 2Q(2Q)/(4πεd²)",
+    "marks": 6,
+    "contextNote": "Identical spheres share the conserved total charge 4Q equally: 2Q each."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "// F'/F = 4Q²/(3Q²)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "F′= 4/3 F",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q9-force-solution",
+  "questionFigureKey": "physics-2011-hl-q9-force-question"
+ },
+ {
+  "id": "phys-2011-hl-q9-b-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "diagram",
+  "section": "B",
+  "questionRef": "2011 HL Q9(b) — Electroscope diagram",
+  "questionText": "Draw a labelled diagram of an electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "(metal ) cap, labelled leaves, chassis/frame",
+    "marks": 3,
+    "contextNote": "A complete labelled apparatus diagram earns 3 overall, not 3 per component. Deduct 1 for no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q9-b-earth",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "earth",
+  "section": "B",
+  "questionRef": "2011 HL Q9(b) — Earthing the electroscope frame",
+  "questionText": "Why should the frame of an electroscope be earthed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "p.d. between leaves and chassis/frame (determines degree of deflection of leaves) / for safety",
+    "marks": 3,
+    "contextNote": "The frame is held at zero potential; the leaf deflection depends on the potential difference relative to it."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q9-b-induction",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "induction",
+  "section": "B",
+  "questionRef": "2011 HL Q9(b) — Charging by induction",
+  "questionText": "Describe how to charge an electroscope by induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "hold (say) + charged rod near cap of (uncharged) GLE",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "earth cap (touch with finger)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "remove finger and then remove + rod",
+    "marks": 3,
+    "contextNote": "Order matters: disconnect the earth while the rod is still nearby, then remove the rod."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q9-c-shielding",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "shielding",
+  "section": "B",
+  "questionRef": "2011 HL Q9(c) — Electrostatic shielding",
+  "questionText": "How does a full-body metal-foil suit protect an operator when working on high voltage power lines?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(suit) blocks out external electrical fields / no field lines inside (hollow conductor)",
+    "marks": 5
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q9-suit"
+ },
+ {
+  "id": "phys-2011-hl-q9-c-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2011 HL Q9(c) — Investigating electrostatic shielding",
+  "stem": "How does a full-body metal-foil suit protect an operator when working on high voltage power lines?",
+  "questionText": "Describe an experiment to investigate the principle by which the operator is protected.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 3,
+    "contextNote": "For example, a conducting enclosure, a charge source and an electroscope or field detector."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "procedure",
+    "marks": 3,
+    "contextNote": "Charge the outside of the enclosure; compare charge/field detection outside and inside without touching the outside conductor."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "Detect the external field/charge, with no electrostatic field inside the closed conducting enclosure."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "conclusion",
+    "marks": 3,
+    "contextNote": "A closed conductor shields its interior from an external electrostatic field. The scheme gives criteria rather than one prescribed experiment; any valid demonstration is accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q9-suit"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-conserved",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "conserved",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Conserved quantities",
+  "questionText": "List three quantities that are conserved in nuclear reactions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "momentum / charge / mass-energy / nucleons",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "momentum",
+      "charge",
+      "mass-energy",
+      "nucleons"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any three valid quantities; mass-energy is one conserved quantity, not separate conservation of rest mass and energy."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-beta",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "beta",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — A beta-decay equation",
+  "questionText": "Write an equation for a nucleus undergoing beta-decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "²²⁸₈₈X → ²²⁸₈₉Y + ⁰₋₁e",
+    "marks": 9,
+    "contextNote": "The original example has three 3-mark nuclide/particle components: mass number unchanged, daughter atomic number one higher, and a beta-minus electron (mass number 0, charge −1). Other valid beta-decay examples are accepted. The full physical beta-minus equation also includes an electron antineutrino; the historical scheme omits it here and discusses the neutrino next."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-beta-solution"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-neutrino",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "neutrino",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Resolving beta-decay conservation",
+  "stem": "List three quantities that are conserved in nuclear reactions.",
+  "questionText": "In initial observations of beta-decay, not all three quantities appear to be conserved. What was the solution to this contradiction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "proposal/discovery of the neutrino/ ν",
+    "marks": 3,
+    "contextNote": "The extra particle carries missing energy and momentum. In beta-minus decay it is an electron antineutrino."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-forces",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "forces",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Ordering the four fundamental forces",
+  "questionText": "List the fundamental forces of nature in increasing order of their strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "gravitational < weak (nuclear) < electromagnetic < (strong) nuclear",
+    "marks": 9,
+    "contextNote": "Naming any two earns 3; naming all four earns 6; arranging them in increasing order earns the remaining 3. This is one ordered list, not an arbitrary two-force selection."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-weak",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "weak",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Force responsible for beta decay",
+  "questionText": "Which fundamental force of nature is involved in beta-decay?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weak (nuclear)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-new-particles",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "new-particles",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Creating new particles",
+  "stem": "In the Large Hadron Collider, two protons with the same energy and travelling in opposite directions collide. Two protons and two charged pi mesons are produced in the collision.",
+  "questionText": "Why are new particles produced in the collision?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy is converted into mass / E = mc²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-collision",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "collision",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Proton collision equation",
+  "stem": "In the Large Hadron Collider, two protons with the same energy and travelling in opposite directions collide. Two protons and two charged pi mesons are produced in the collision.",
+  "questionText": "Write an equation to represent the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "showing 2 p before and after",
+    "marks": 3,
+    "contextNote": "Two incoming and two outgoing protons."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "showing two pions",
+    "marks": 3,
+    "contextNote": "One π⁺ and one π⁻ conserve charge."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct format",
+    "marks": 3,
+    "contextNote": "Correct form: p + p → p + p + π⁺ + π⁻. The original source equation is shown."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-collision-solution"
+ },
+ {
+  "id": "phys-2011-hl-q10-a-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2011 HL Q10(a) — Minimum incident proton energy",
+  "stem": "In the Large Hadron Collider, two protons with the same energy and travelling in opposite directions collide. Two protons and two charged pi mesons are produced in the collision.",
+  "questionText": "Show that the kinetic energy of each incident proton must be at least 140 MeV for the collision to occur.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "massofπ⁺=273mₑ/=273(9.109×10⁻³¹)kg",
+    "marks": 3,
+    "contextNote": "Use the charged-pion mass from the supplied tables: 273 electron masses ≈ 2.4868 × 10⁻²⁸ kg."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E=mc²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E=2(2.4869×10⁻²⁸)(3×10⁸)²/44.76×10⁻¹²J",
+    "marks": 3,
+    "contextNote": "The factor 2 is required because two pions are produced."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "E= (44.76×10⁻¹²)/(1.602×10⁻¹⁹) /≈279.94×10⁶eV/≈280(MeV)",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "energyperproton=140(MeV)",
+    "marks": 2,
+    "contextNote": "The two identical incident protons have equal kinetic energies, so each supplies half the approximately 280 MeV threshold."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-energy-solution"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-principle",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "principle",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Electric motor principle",
+  "questionText": "State the principle of operation of an electric motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a current-carrying conductor in a magnetic field // a current-carrying coil in a magnetic field",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "experiences a force // experiences a torque/turning moment",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-parts",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "parts",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Motor parts and functions",
+  "stem": "The diagram shows a simple d.c. motor.",
+  "questionText": "Name each of the parts labelled A and B on the diagram and state the function of each.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A – a split ring commutator",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "B – a brush",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "A – to ensure that coil rotates in the same direction (continuously) / B – to allow current flow from battery into coil as it rotates",
+    "marks": 3,
+    "contextNote": "Both functions together earn 3; do not invent separate function tariffs."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "A – a split ring commutator",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "B – a brush",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-hl-q10-b-brush",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "brush",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Brush material and two properties",
+  "stem": "The diagram shows a simple d.c. motor.",
+  "questionText": "What material is normally used in part B? Give two properties of this material that make it suitable for use in a motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "carbon / graphite",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "lubricant / soft / conductor",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "lubricant",
+      "soft",
+      "conductor"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two appropriate properties: first 2, second 1."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "A – a split ring commutator",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "B – a brush",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-hl-q10-b-torque",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "torque",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Three factors affecting motor torque",
+  "stem": "The diagram shows a simple d.c. motor.",
+  "questionText": "List three factors that affect the torque (couple) acting on the coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "magnetic flux density (B) / size of current (I) / number of turns (N) / area of coil (A)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "magnetic flux density (B)",
+      "size of current (I)",
+      "number of turns (N)",
+      "area of coil (A)"
+     ]
+    },
+    "contextNote": "Choose any three of the four named factors, one mark each."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-jam",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "jam",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Why current rises when the motor jams",
+  "stem": "The diagram shows a simple d.c. motor. If the motor jammed, a larger current than normal would flow through the motor.",
+  "questionText": "Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no back/opposing emf (induced)",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-overheat",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "overheat",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Effect of excessive current",
+  "stem": "The diagram shows a simple d.c. motor. If the motor jammed, a larger current than normal would flow through the motor.",
+  "questionText": "What would be the effect on the motor if this happened?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "motor would burn out / overheat",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-convert",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "convert",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Converting the motor to a generator",
+  "stem": "The diagram shows a simple d.c. motor.",
+  "questionText": "What changes can be made to a d.c. motor to convert it to an a.c. generator?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(split ring commutator) replaced by slip rings",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "attach handle to rotate coil",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-motor"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-waveform",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "waveform",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Alternating output voltage",
+  "questionText": "Draw a sketch of the output voltage from an a.c. generator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label any axis",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct shape of graph",
+    "marks": 6,
+    "contextNote": "An alternating sinusoid crossing zero, with voltage/time axes. Deduct 3 if the alternating nature is unclear."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q10-waveform-solution"
+ },
+ {
+  "id": "phys-2011-hl-q10-b-increase",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "increase",
+  "section": "B",
+  "questionRef": "2011 HL Q10(b) — Increasing generator output",
+  "questionText": "Give two ways in which the output voltage from an a.c. generator can be increased. (5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "rotate handle faster / more turns of wire / more powerful magnet",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "rotate handle faster",
+      "more turns of wire",
+      "more powerful magnet"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2011 HL Q11(a)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "A 60 W filament lamp provides 8 J of light energy every second, the same as a CFL with a power rating of 11 W. Compare the efficiencies of the two lamps.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "EFL(= 8/60 )=0.133//F.L:( (8×100)/60 )/13.33%(efficient)",
+    "marks": 4,
+    "contextNote": "Filament efficiency = useful light power / input power = 8/60 ≈ 13.33%."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ECFL(= 8/11 )=0.727//CFL:( (8×100)/11 )/72.73%(efficient)",
+    "marks": 3,
+    "contextNote": "CFL efficiency = 8/11 ≈ 72.73%. The source also accepts the ratio CFL/filament ≈ 5.45, or its reciprocal ≈ 0.183, for the whole 7 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-efficiency-solution",
+  "questionFigureKey": "physics-2011-hl-q11-efficiency-question"
+ },
+ {
+  "id": "phys-2011-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2011 HL Q11(b)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "Most of the energy emitted in a CFL is in the form of ultraviolet radiation. How is this changed to white light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "UV (radiation) absorbed (by electrons) in the fluorescent coating (which)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "emits visible (white) light / photons of lower energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-passage"
+ },
+ {
+  "id": "phys-2011-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2011 HL Q11(c)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "Calculate the energy of an ultraviolet photon emitted in a CFL.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E=hf//E= hc/λ",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E= ((6.63×10⁻³⁴)(3×10⁸))/(254×10⁻⁹) /7.83×10⁻¹⁹J",
+    "marks": 3,
+    "contextNote": "Use the passage’s wavelength 254 nm = 254 × 10⁻⁹ m. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-photon-solution",
+  "questionFigureKey": "physics-2011-hl-q11-photon-question"
+ },
+ {
+  "id": "phys-2011-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2011 HL Q11(d)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "How does an electron in an atom of the fluorescent coating emit a photon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electron absorbs UV photon and jumps to higher energy level",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(then) drops back (to lower level) emitting a photon",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-passage"
+ },
+ {
+  "id": "phys-2011-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2011 HL Q11(e)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "Why does the fluorescent coating in a CFL get warm during use?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "due to absorption // energy difference",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(of) UV photons / energy // between incident and emitted photons",
+    "marks": 3,
+    "contextNote": "Use one consistent explanation: absorbed energy is partly released as heat, corresponding to the energy difference between incident UV and emitted visible photons."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-passage"
+ },
+ {
+  "id": "phys-2011-hl-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2011 HL Q11(f)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "A light sensor attached to a datalogger indicates that the light emitted from a CFL used in the home is not continuous, but flickers at a frequency that is not detected by the eye. What is the cause of the flickering in the light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(house) power supply is alternating / a.c. (state/imply)",
+    "marks": 7,
+    "contextNote": "This is the explanation expected for the lamp described in the 2011 question. Actual flicker behaviour also depends on the lamp’s ballast/driver."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-passage"
+ },
+ {
+  "id": "phys-2011-hl-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2011 HL Q11(g)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "Draw a circuit diagram of a diode in forward bias.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Draw a circuit diagram of a diode in forward bias.",
+    "marks": 7,
+    "ask": true,
+    "contextNote": "Use the complete original circuit: the battery’s positive terminal connects through a current-limiting resistor to the diode anode, and the cathode returns to negative. Correct diode symbol/structure alone earns 3; at most 4 if no suitable series resistor or bulb is shown."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-diode-solution",
+  "questionFigureKey": "physics-2011-hl-q11-diode-question"
+ },
+ {
+  "id": "phys-2011-hl-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2011 HL Q11(h)",
+  "stem": "The government has introduced regulations to phase out the use of incandescent filament lamps in the home. The Sustainable Energy Authority of Ireland promotes the use of compact fluorescent lamps (CFL) in place of less energy-efficient filament lamps. A CFL operates due to the effect of an electric discharge passing through mercury gas at low pressure. Most of the photons that are released from the mercury atoms have a wavelength of 254 nm, which is in the ultraviolet region of the spectrum. These ultraviolet photons are absorbed by electrons in the atoms of the lamp's interior fluorescent coating, causing further photons to be emitted. The photons that are emitted from these interactions have a lower energy than the ones that caused them. The chemicals that make up the fluorescent coating are chosen so that these emitted photons are at wavelengths visible to the human eye. Light emitting diode (LED) lighting is also recommended and growing in popularity. An LED is a special type of diode that emits light when in forward bias. LEDs emit strongly coloured light, such as red, green, or blue, depending on the semiconductor material used. As the light output of an individual LED is small compared to filament lamps, multiple diodes are used together to give white light.",
+  "questionText": "How can LEDs be used to produce white light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "red, green and blue leds / coat LEDs with fluorescent/phosphorescent material",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "red, green and blue leds",
+      "coat LEDs with fluorescent/phosphorescent material"
+     ]
+    },
+    "contextNote": "Either a mixture of red, green and blue LEDs or a fluorescent/phosphorescent coating earns 7. “Mixture of LEDs” without further detail earns 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q11-passage"
+ },
+ {
+  "id": "phys-2011-hl-q12-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "12a-hooke",
+  "section": "B",
+  "questionRef": "2011 HL Q12(a)",
+  "questionText": "State Hooke’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(restoring) force proportional // F α –s / F = – k s",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "displacement / distance // correct notation for F and s",
+    "marks": 3,
+    "contextNote": "The restoring force is opposite to displacement and proportional to its magnitude, within the elastic limit. α denotes proportionality."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q12-a-shm",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "shm",
+  "section": "B",
+  "questionRef": "2011 HL Q12(a) — Recognising simple harmonic motion",
+  "stem": "A body of mass 250 g vibrates on a horizontal surface and its motion is described by the equation a = – 16 s, where s is the displacement of the body from its equilibrium position. The amplitude of each vibration is 5 cm.",
+  "questionText": "Why does the body vibrate with simple harmonic motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "acceleration proportional to displacement",
+    "marks": 6,
+    "contextNote": "The negative sign in a = −16s means acceleration is directed towards equilibrium: it is proportional to displacement and opposite in direction."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-oscillator"
+ },
+ {
+  "id": "phys-2011-hl-q12-a-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "frequency",
+  "section": "B",
+  "questionRef": "2011 HL Q12(a) — Oscillation frequency",
+  "stem": "A body of mass 250 g vibrates on a horizontal surface and its motion is described by the equation a = – 16 s, where s is the displacement of the body from its equilibrium position. The amplitude of each vibration is 5 cm.",
+  "questionText": "Calculate the frequency of vibration of the body?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ω²=16/ω=4",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "f= ω/(2π)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f=0.64Hz",
+    "marks": 3,
+    "contextNote": "ω = 4 rad s⁻¹, so f = 4/(2π) ≈ 0.64 Hz. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-frequency-solution",
+  "questionFigureKey": "physics-2011-hl-q12-frequency-question"
+ },
+ {
+  "id": "phys-2011-hl-q12-a-maximum-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "maximum-force",
+  "section": "B",
+  "questionRef": "2011 HL Q12(a) — Maximum restoring force",
+  "stem": "A body of mass 250 g vibrates on a horizontal surface and its motion is described by the equation a = – 16 s, where s is the displacement of the body from its equilibrium position. The amplitude of each vibration is 5 cm.",
+  "questionText": "What is the magnitude of the maximum force which causes the body’s motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a max = (–)16(0.05) / 0.80 // Fₘₐₓ occurs when acceleration / displacement is a maximum",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Fₘₐₓ = (0.250)(0.800) / 0.20 N",
+    "marks": 2,
+    "contextNote": "Use mass 0.250 kg and maximum acceleration 0.80 m s⁻²; deduct 1 for missing/incorrect units."
+   }
+  ],
+  "notes": "Two independently practicable force magnitudes at the printed5+2 boundary; full oscillator context retained in each. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-oscillator"
+ },
+ {
+  "id": "phys-2011-hl-q12-a-minimum-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "minimum-force",
+  "section": "B",
+  "questionRef": "2011 HL Q12(a) — Minimum restoring force",
+  "stem": "A body of mass 250 g vibrates on a horizontal surface and its motion is described by the equation a = – 16 s, where s is the displacement of the body from its equilibrium position. The amplitude of each vibration is 5 cm.",
+  "questionText": "What is the magnitude of the minimum force, which causes the body’s motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Fmin = 0",
+    "marks": 2,
+    "contextNote": "At the equilibrium position s=0, the restoring force is zero."
+   }
+  ],
+  "notes": "Two independently practicable force magnitudes at the printed5+2 boundary; full oscillator context retained in each. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-oscillator"
+ },
+ {
+  "id": "phys-2011-hl-q12-b-laws",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "laws",
+  "section": "B",
+  "questionRef": "2011 HL Q12(b) — Laws of refraction",
+  "questionText": "State the laws of refraction of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "incident ray, refracted ray and normal in same plane",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "siniˆ/(sinrˆ) =constant",
+    "marks": 3,
+    "contextNote": "For a fixed pair of media, sin i / sin r is constant; angles are measured from the normal."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-refraction-solution"
+ },
+ {
+  "id": "phys-2011-hl-q12-b-image",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "image",
+  "section": "B",
+  "questionRef": "2011 HL Q12(b) — Apparent position of a submerged lamp",
+  "stem": "A lamp is located centrally at the bottom of a large swimming pool, 1.8 m deep. (refractive index of water = 1.33)",
+  "questionText": "Draw a ray diagram to show where the lamp appears to be, as seen by an observer standing at the edge of the pool.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct emergent ray",
+    "marks": 4,
+    "contextNote": "The ray bends away from the normal on entering air."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "image position correctly indicated",
+    "marks": 3,
+    "contextNote": "Extend emergent rays backwards to the apparent image above the actual lamp."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-image-solution",
+  "questionFigureKey": "physics-2011-hl-q12-image-question"
+ },
+ {
+  "id": "phys-2011-hl-q12-b-dark",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "dark",
+  "section": "B",
+  "questionRef": "2011 HL Q12(b) — Dark water beyond the light disc",
+  "stem": "A lamp is located centrally at the bottom of a large swimming pool, 1.8 m deep. (refractive index of water = 1.33)",
+  "questionText": "At night, when the lamp is switched on, a disc of light is seen at the surface of the swimming pool. Explain why the area of water surrounding the disc of light appears dark.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(no light emerges from pool due to) total internal reflection / appropriate diagram",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-pool"
+ },
+ {
+  "id": "phys-2011-hl-q12-b-area",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "area",
+  "section": "B",
+  "questionRef": "2011 HL Q12(b) — Area of the illuminated disc",
+  "stem": "A lamp is located centrally at the bottom of a large swimming pool, 1.8 m deep. At night, when the lamp is switched on, a disc of light is seen at the surface of the swimming pool. Explain why the area of water surrounding the disc of light appears dark. (refractive index of water = 1.33)",
+  "questionText": "Calculate the area of the illuminated disc of water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n= 1/(sinic) (=1.33)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "i c=48.76°",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(radiusofdisc=)r=1.8tan48.76/2.053(m)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "area=πr²/13.24m²",
+    "marks": 3,
+    "contextNote": "The limiting ray meets the water surface at the critical angle. r = 1.8tan(i꜀), and area = πr²."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-area-solution",
+  "questionFigureKey": "physics-2011-hl-q12-area-question"
+ },
+ {
+  "id": "phys-2011-hl-q12-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12c-factors",
+  "section": "B",
+  "questionRef": "2011 HL Q12(c)",
+  "questionText": "List the factors that affect the heat produced in a current-carrying conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "resistance / current (squared) / time",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "resistance",
+      "current (squared)",
+      "time"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      2
+     ]
+    },
+    "contextNote": "All three required factors: resistance, current squared and time (H=I²Rt). First correct 3, then 2+2; this is a three-factor checklist, not a choice of subsets."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2011-hl-q12-c-i-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance",
+  "section": "B",
+  "questionRef": "2011 HL Q12(c)(i) — Maximum wire resistance per metre",
+  "stem": "An electric cable consists of a single strand of insulated copper wire. The wire is of uniform cross-sectional area and is designed to carry a current of 20 A. To preserve the insulation, the maximum rate at which heat may be produced in the wire is 2.7 W per metre length. (resistivity of copper = 1.7 × 10⁻⁸ Ω m) Calculate",
+  "questionText": "the maximum resistance per metre of the wire",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "P=RI²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "2.7=R(20)²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "R=6.75×10⁻³Ω",
+    "marks": 3,
+    "contextNote": "This is the resistance of a one-metre segment:6.75×10⁻³ Ω per metre. Deduct1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-resistance-solution",
+  "questionFigureKey": "physics-2011-hl-q12-resistance-question"
+ },
+ {
+  "id": "phys-2011-hl-q12-c-ii-diameter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diameter",
+  "section": "B",
+  "questionRef": "2011 HL Q12(c)(ii) — Minimum copper-wire diameter",
+  "stem": "An electric cable consists of a single strand of insulated copper wire. The wire is of uniform cross-sectional area and is designed to carry a current of 20 A. To preserve the insulation, the maximum rate at which heat may be produced in the wire is 2.7 W per metre length. (resistivity of copper = 1.7 × 10⁻⁸ Ω m) Calculate",
+  "questionText": "the minimum diameter of the wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ρ= RA/l",
+    "marks": 6,
+    "contextNote": "Use ρ=RA/l (3), then A=πr² to rearrange to r²=ρl/(πR) (3). Both original stages are shown."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "r²= ((1.7×10⁻⁸)(1))/(π(6.75×10⁻³)) //8.017×10⁻⁷",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "r=9.0×10⁻⁴m/0.9mm/diameter=1.8mm",
+    "marks": 3,
+    "contextNote": "Use R = 6.75×10⁻³ Ω for a 1 m segment. Double the radius to get diameter; deduct 1 if only the radius is given, and 1 for missing/incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-diameter-solution",
+  "questionFigureKey": "physics-2011-hl-q12-diameter-question"
+ },
+ {
+  "id": "phys-2011-hl-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "12di",
+  "section": "B",
+  "questionRef": "2011 HL Q12(d)(i)",
+  "stem": "In the manufacture of newsprint paper, heavy rollers are used to adjust the thickness of the moving paper. The paper passes between a radioisotope and a detector, and a pair of rollers, as shown. The radioisotope used is Sr-90 and it emits beta-particles, which are recorded by the detector. The output from the detector adjusts the gap between the rollers, so that the paper is of uniform thickness.",
+  "questionText": "Name a suitable detector.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "solid state detector / GM tube (linked with a ratemeter/scaler)",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-newsprint"
+ },
+ {
+  "id": "phys-2011-hl-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "12dii",
+  "section": "B",
+  "questionRef": "2011 HL Q12(d)(ii)",
+  "stem": "In the manufacture of newsprint paper, heavy rollers are used to adjust the thickness of the moving paper. The paper passes between a radioisotope and a detector, and a pair of rollers, as shown. The radioisotope used is Sr-90 and it emits beta-particles, which are recorded by the detector. The output from the detector adjusts the gap between the rollers, so that the paper is of uniform thickness.",
+  "questionText": "Describe how the reading on the detector may vary as the paper passes by.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(count rate) would decrease",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with increasing paper thickness",
+    "marks": 6,
+    "contextNote": "The inverse description is also valid: thinner paper transmits more beta particles, increasing the count rate."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-newsprint"
+ },
+ {
+  "id": "phys-2011-hl-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "12diii",
+  "section": "B",
+  "questionRef": "2011 HL Q12(d)(iii)",
+  "stem": "In the manufacture of newsprint paper, heavy rollers are used to adjust the thickness of the moving paper. The paper passes between a radioisotope and a detector, and a pair of rollers, as shown. The radioisotope used is Sr-90 and it emits beta-particles, which are recorded by the detector. The output from the detector adjusts the gap between the rollers, so that the paper is of uniform thickness.",
+  "questionText": "Why would the radioisotope Am-241, which emits alpha-particles, not be suitable for this process?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "paper would (easily) block alpha-particles / alpha-particles have poor penetrating power",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-newsprint"
+ },
+ {
+  "id": "phys-2011-hl-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "12div",
+  "section": "B",
+  "questionRef": "2011 HL Q12(d)(iv)",
+  "stem": "In the manufacture of newsprint paper, heavy rollers are used to adjust the thickness of the moving paper. The paper passes between a radioisotope and a detector, and a pair of rollers, as shown. The radioisotope used is Sr-90 and it emits beta-particles, which are recorded by the detector. The output from the detector adjusts the gap between the rollers, so that the paper is of uniform thickness.",
+  "questionText": "Calculate the number of atoms present in a sample of Sr-90 when its activity is 4250 Bq. The half-life of Sr-90 is 28.78 years.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λT ½ =0.693/λ=7.77×10⁻¹⁰s⁻¹/λ=7.63×10⁻¹⁰s⁻¹",
+    "marks": 3,
+    "contextNote": "Convert 28.78 years to seconds (365 or 365.25 days per year accepted), then λ=ln2/T½≈7.63×10⁻¹⁰s⁻¹. The source also prints 7.77×10⁻¹⁰, which is inconsistent with the given half-life."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "activity(= dN/(dt) )=(−)λN/4250=(7.77×10⁻¹⁰)N/4250=(7.63×10⁻¹⁰)N",
+    "marks": 3,
+    "contextNote": "Use positive activity A=λN=4250Bq. The rate of change of the remaining number is dN/dt=−λN."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "N=5.47×10¹²(atoms)/5.57×10¹²(atoms)",
+    "marks": 3,
+    "contextNote": "The supplied 28.78-year half-life gives N=A/λ≈5.57×10¹²atoms. The source’s5.47×10¹²alternative follows its inconsistent7.77×10⁻¹⁰ value; use the result from the stated data."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_hl.py.",
+  "year": 2011,
+  "level": "higher",
+  "figureKey": "physics-2011-hl-q12-atoms-solution",
+  "questionFigureKey": "physics-2011-hl-q12-atoms-question"
  }
 ]

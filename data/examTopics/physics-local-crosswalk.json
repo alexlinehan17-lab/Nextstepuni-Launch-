@@ -55805,26 +55805,32 @@
         "physics-higher-new-course-12-forces-acting-on-a-particle",
         "physics-higher-new-course-15-forces-acting-in-a-gravitational-field",
         "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
-        "physics-higher-new-course-24-electromagnetic-energy",
-        "physics-higher-new-course-31-charge-interactions",
+        "physics-higher-new-course-27-wave-effects",
         "physics-higher-new-course-32-modelling-electric-fields",
         "physics-higher-new-course-33-electric-circuits",
+        "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
+        "physics-higher-new-course-41-the-electron",
         "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+        "physics-higher-new-course-45-mass-energy-equivalence",
         "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
         "physics-higher-old-course-force-mass-momentum",
         "physics-higher-old-course-pressure-gravity-moments",
         "physics-higher-old-course-reflection-mirrors",
-        "physics-higher-old-course-waves-wave-motion",
+        "physics-higher-old-course-vibration-sound",
         "physics-higher-old-course-potential-difference-capacitance",
-        "physics-higher-old-course-applied-electricity",
+        "physics-higher-old-course-electric-circuits",
         "physics-higher-old-course-the-electron",
-        "physics-higher-old-course-light",
         "physics-higher-old-course-nuclear-energy",
         "physics-higher-old-course-particle-physics",
-        "physics-higher-old-course-electromagnetic-induction"
+        "physics-higher-old-course-electromagnetic-induction",
+        "physics-higher-new-course-24-electromagnetic-energy",
+        "physics-higher-new-course-31-charge-interactions",
+        "physics-higher-old-course-waves-wave-motion",
+        "physics-higher-old-course-applied-electricity",
+        "physics-higher-old-course-light"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "higher",
@@ -55838,11 +55844,11 @@
       ],
       "topicIds": [
         "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
-        "physics-higher-old-course-temperature-thermometers",
-        "physics-higher-old-course-heat-heat-transfer"
+        "physics-higher-old-course-heat-heat-transfer",
+        "physics-higher-old-course-temperature-thermometers"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "higher",
@@ -55855,18 +55861,22 @@
         "physics-5-9"
       ],
       "topicIds": [
-        "physics-higher-new-course-24-electromagnetic-energy",
+        "physics-higher-new-course-14-a-work-energy-model-for-analysing-particle-motion",
         "physics-higher-new-course-33-electric-circuits",
-        "physics-higher-new-course-41-the-electron",
         "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
-        "physics-higher-old-course-applied-electricity",
-        "physics-higher-old-course-electric-circuits",
+        "physics-higher-new-course-43-early-models-of-the-atom",
+        "physics-higher-old-course-work-energy-power",
         "physics-higher-old-course-light",
+        "physics-higher-old-course-the-electron",
         "physics-higher-old-course-semiconductors",
-        "physics-higher-old-course-the-electron"
+        "physics-higher-old-course-the-atom-nucleus-radioactivity",
+        "physics-higher-old-course-electric-circuits",
+        "physics-higher-new-course-24-electromagnetic-energy",
+        "physics-higher-new-course-41-the-electron",
+        "physics-higher-old-course-applied-electricity"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",

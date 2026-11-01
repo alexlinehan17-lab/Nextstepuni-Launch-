@@ -1,4 +1,1683 @@
 {
+ "physics-2011-hl-q1-velocity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q1-velocity-solution.png",
+  "md5": "7331d717c46f31a879a3bdb7de9842d3",
+  "alt": "All three accepted velocity methods with original fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q1 — Final velocity",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   84,
+   467,
+   542,
+   562
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q10-beta-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q10-beta-solution.png",
+  "md5": "6160bd6825b57a77364624c0c8d285d0",
+  "alt": "Original beta-decay equation with nuclear indices and3×3tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q10(a) — A beta-decay equation",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   110,
+   215,
+   542,
+   244
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q10-collision-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q10-collision-solution.png",
+  "md5": "16d71b5430fa5d12e6c4f2f6ebd367ab",
+  "alt": "Original complete proton collision equation and three marking criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q10(a) — Proton collision equation",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   110,
+   502,
+   542,
+   547
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q10-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q10-energy-solution.png",
+  "md5": "6e175582169fbc6bd96161d6ca8e9509",
+  "alt": "Complete pion-pair mass-energy calculation and energy per incident proton.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q10(a) — Minimum incident proton energy",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   198,
+   566,
+   542,
+   684
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q10-motor": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q10-motor.png",
+  "md5": "cd55454751562405f6b06cd574061851",
+  "alt": "Full original motor circuit, battery, coil, poles and A/B labels.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q10(b) — Brush material and two properties",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   427,
+   382,
+   582,
+   518
+  ]
+ },
+ "physics-2011-hl-q10-waveform-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q10-waveform-solution.png",
+  "md5": "32d156dc4ba833a1a819d8eb2e4dc4c1",
+  "alt": "Original alternating sinusoidal voltage sketch with axes and criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q10(b) — Alternating output voltage",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   110,
+   574,
+   542,
+   655
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q11-diode-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-diode-question.png",
+  "md5": "f7374b08d83b487ef3ec88cde7ac23da",
+  "alt": "Entire passage, both photographs and forward-bias circuit request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(g)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   80,
+   556,
+   604
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    347,
+    556,
+    580
+   ]
+  ]
+ },
+ "physics-2011-hl-q11-diode-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-diode-solution.png",
+  "md5": "20deb3c0723779cf40db2515be9493a2",
+  "alt": "Complete original battery/resistor/diode circuit and partial-credit guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(g)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   134,
+   610,
+   542,
+   676
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q11-efficiency-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-efficiency-question.png",
+  "md5": "11d8af319d75c24767d5b140bfcd72c6",
+  "alt": "Entire passage, both lamp photographs and efficiency comparison.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(a)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   80,
+   556,
+   384
+  ]
+ },
+ "physics-2011-hl-q11-efficiency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-efficiency-solution.png",
+  "md5": "6b41eea3fac5db92c044cde3dc794db3",
+  "alt": "Both lamp efficiencies and the complete accepted ratio alternative.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(a)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   132,
+   210,
+   542,
+   301
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-passage.png",
+  "md5": "aa4f88f6a2cb6b597c3b366552e61568",
+  "alt": "Entire lighting passage and both CFL/LED photographs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(b)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   80,
+   556,
+   328
+  ]
+ },
+ "physics-2011-hl-q11-photon-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-photon-question.png",
+  "md5": "783b9328e90e34c123738f0f30493469",
+  "alt": "Entire passage including254nm and both photographs with photon-energy request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(c)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   80,
+   556,
+   459
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    347,
+    556,
+    435
+   ]
+  ]
+ },
+ "physics-2011-hl-q11-photon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q11-photon-solution.png",
+  "md5": "73c10399ea920fa4d464710f92e0a07b",
+  "alt": "Original Planck-energy formulas, wavelength substitution and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(c)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   136,
+   381,
+   542,
+   445
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-area-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-area-question.png",
+  "md5": "02f23cf4ebeee3fc0aafe7a1189af082",
+  "alt": "Full pool diagram,depth,lamp and illuminated-disc context,area request and refractive index.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Area of the illuminated disc",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   109,
+   414,
+   545,
+   687
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    557,
+    545,
+    591
+   ],
+   [
+    518,
+    649,
+    545,
+    666
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-area-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-area-solution.png",
+  "md5": "122fb52b7f628ac89a0a7850e347c425",
+  "alt": "Critical angle,disc radius and area,with all four3-mark stages.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Area of the illuminated disc",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   177,
+   644,
+   542,
+   717
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-atoms-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-atoms-question.png",
+  "md5": "e2a409e0a522bafab1594d216f7b62b2",
+  "alt": "Full newsprint context and apparatus with activity,half-life and atom-count request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(d)(iv)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   289,
+   545,
+   692
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    535,
+    545,
+    648
+   ],
+   [
+    519,
+    674,
+    545,
+    691
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-atoms-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-atoms-solution.png",
+  "md5": "e27ee818c76b278be8282468aa9cab52",
+  "alt": "Original decay-constant,activity and atom-count calculations; inconsistent alternative explained.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(d)(iv)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   147,
+   639,
+   542,
+   716
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-diameter-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-diameter-question.png",
+  "md5": "4c0c0e35485f8ce6c2a25c9b5115991f",
+  "alt": "Complete copper-wire data,shared Calculate command,diameter request and resistivity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(c)(ii) — Minimum copper-wire diameter",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   86,
+   545,
+   241
+  ],
+  "maskedFurniture": [
+   [
+    138,
+    182,
+    545,
+    195
+   ],
+   [
+    519,
+    195,
+    545,
+    211
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-diameter-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-diameter-solution.png",
+  "md5": "bbf36fe5e1f8f6f8d1b3e6a36a0b0e66",
+  "alt": "Original resistivity relation,radius calculation and minimum diameter.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(c)(ii) — Minimum copper-wire diameter",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   187,
+   282,
+   542,
+   409
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-frequency-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-frequency-question.png",
+  "md5": "4c075434b5c5aed73d6bbc353e30a04b",
+  "alt": "Full oscillator diagram,250g mass,acceleration equation,5cm amplitude and frequency request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(a) — Oscillation frequency",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   109,
+   124,
+   545,
+   280
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    231,
+    545,
+    251
+   ],
+   [
+    519,
+    260,
+    545,
+    279
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-frequency-solution.png",
+  "md5": "e251d7588eb1ec792ca7ae196cef1460",
+  "alt": "Original angular frequency,frequency formula and numeric result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(a) — Oscillation frequency",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   264,
+   248,
+   542,
+   302
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-image-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-image-question.png",
+  "md5": "be46ce563a01c4c2309064a9037c7415",
+  "alt": "Complete pool diagram,lamp context,apparent-position request and refractive index.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Apparent position of a submerged lamp",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   109,
+   414,
+   545,
+   687
+  ],
+  "maskedFurniture": [
+   [
+    519,
+    574,
+    545,
+    590
+   ],
+   [
+    109,
+    593,
+    545,
+    667
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-image-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-image-solution.png",
+  "md5": "ceef7e1a5553087db8bfc68838bba44a",
+  "alt": "Complete source refraction diagram with emergent ray and apparent image.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Apparent position of a submerged lamp",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   110,
+   499,
+   542,
+   576
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-newsprint": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-newsprint.png",
+  "md5": "55351907cbc0a43ef1e5a3e8b7592b9c",
+  "alt": "Original paper-thickness apparatus with detector,Sr90,control unit,paper and rollers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(d)(i)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   141,
+   359,
+   418,
+   448
+  ]
+ },
+ "physics-2011-hl-q12-oscillator": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-oscillator.png",
+  "md5": "474f5356e193f852822c61fcf5332545",
+  "alt": "Original spring/mass oscillator diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(a) — Maximum restoring force",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   239,
+   124,
+   349,
+   166
+  ]
+ },
+ "physics-2011-hl-q12-pool": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-pool.png",
+  "md5": "11b2246ddbdc859604f5a25ae7ea43bf",
+  "alt": "Full swimming-pool ray diagram,1.8m depth and lamp label.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Dark water beyond the light disc",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   144,
+   414,
+   451,
+   526
+  ]
+ },
+ "physics-2011-hl-q12-refraction-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-refraction-solution.png",
+  "md5": "b8705b6e054dbc706cb05a80665ec08f",
+  "alt": "Both complete refraction laws with original trigonometric fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(b) — Laws of refraction",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   111,
+   418,
+   542,
+   467
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q12-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-resistance-question.png",
+  "md5": "ce4217e2cfb29a5332af057abccc2cd6",
+  "alt": "Complete copper-wire data,shared Calculate command,resistance request and resistivity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(c)(i) — Maximum wire resistance per metre",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   109,
+   86,
+   545,
+   241
+  ],
+  "maskedFurniture": [
+   [
+    138,
+    195,
+    545,
+    211
+   ]
+  ]
+ },
+ "physics-2011-hl-q12-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-resistance-solution.png",
+  "md5": "6b305b7b3e6a2f66b2fea438d0466a4e",
+  "alt": "Original Joule-power relation,substitution and resistance of one metre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(c)(i) — Maximum wire resistance per metre",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   111,
+   190,
+   542,
+   257
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q2-data.png",
+  "md5": "8f11e973a35bf358faf1b336b26e130d",
+  "alt": "All eight pressure/volume pairs and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q2 — Boyle’s law apparatus",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   94,
+   538,
+   511,
+   608
+  ]
+ },
+ "physics-2011-hl-q2-explain-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q2-explain-question.png",
+  "md5": "c27ce58c0a9febd6cce1b26fedbbc184",
+  "alt": "Complete Boyle context and eight pairs with graph and interpretation requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q2 — Interpreting the graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   81,
+   482,
+   530,
+   745
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    615,
+    530,
+    711
+   ],
+   [
+    519,
+    726,
+    545,
+    741
+   ]
+  ]
+ },
+ "physics-2011-hl-q2-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q2-graph-question.png",
+  "md5": "2a1c9bcccb69dc2d21216d9b736e34a5",
+  "alt": "Complete Boyle context and eight pairs with graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q2 — Boyle’s law graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   81,
+   482,
+   530,
+   745
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    615,
+    530,
+    711
+   ],
+   [
+    255,
+    726,
+    530,
+    741
+   ]
+  ]
+ },
+ "physics-2011-hl-q2-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q2-graph-solution.png",
+  "md5": "0e98e6e09c5743646e17cfa3bbfc3d41",
+  "alt": "Original inverse-volume graph, all scales and graph/interpretation criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q2 — Boyle’s law graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   81,
+   351,
+   542,
+   746
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q3-data.png",
+  "md5": "63a8d7b471723574ade6bdc1ee5ca367",
+  "alt": "All four diffraction angles and first/second order labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q3 — Monochromatic light source",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   94,
+   138,
+   513,
+   218
+  ]
+ },
+ "physics-2011-hl-q3-method-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q3-method-question.png",
+  "md5": "2ecf9e2c3ea1520b780d09063138d3cf",
+  "alt": "Complete grating context, all four angles and method request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q3 — Measuring diffraction angles",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   53,
+   530,
+   264
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    229,
+    530,
+    246
+   ]
+  ]
+ },
+ "physics-2011-hl-q3-method-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q3-method-solution.png",
+  "md5": "2c4b222eb872224edafa42ea3ac7b9cc",
+  "alt": "Both complete spectrometer and screen methods with original diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q3 — Measuring diffraction angles",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   82,
+   268,
+   542,
+   425
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    407,
+    350,
+    425
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q3-wavelength-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q3-wavelength-question.png",
+  "md5": "2008af75f499867a202dcf3a3a5655d4",
+  "alt": "Complete grating context, all four angles and wavelength request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q3 — Wavelength from all four angles",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   53,
+   530,
+   282
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    229,
+    530,
+    264
+   ],
+   [
+    519,
+    264,
+    545,
+    281
+   ]
+  ]
+ },
+ "physics-2011-hl-q3-wavelength-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q3-wavelength-solution.png",
+  "md5": "89c4ce43392401642bbbc0927fb94800",
+  "alt": "Original grating equation, spacing, wavelength and mean with tariffs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q3 — Wavelength from all four angles",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   82,
+   426,
+   542,
+   532
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q4-data.png",
+  "md5": "91a1ef20a95ac8409f44538da05bd96d",
+  "alt": "All seven voltage/current pairs with V and mA units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q4 — Changing potential difference",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   101,
+   488,
+   469,
+   543
+  ]
+ },
+ "physics-2011-hl-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q4-graph-question.png",
+  "md5": "bc8d2b70b222f53da2b6dbfda8433204",
+  "alt": "Full electrolyte context, all seven pairs and graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q4 — Electrolyte current–voltage graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   415,
+   532,
+   643
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    549,
+    532,
+    610
+   ]
+  ]
+ },
+ "physics-2011-hl-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q4-graph-solution.png",
+  "md5": "f59c54b377a8394afcd6d69196569c09",
+  "alt": "Original current/voltage graph, axes, scale, graph criteria and resistance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q4 — Electrolyte current–voltage graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   322,
+   542,
+   721
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    462,
+    542,
+    506
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q4-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q4-resistance-question.png",
+  "md5": "8ec3a686a23a9e0accdbb163c6d9436c",
+  "alt": "Full electrolyte context, all seven pairs, graph and resistance requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q4 — Resistance from the graph",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   415,
+   532,
+   663
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    549,
+    532,
+    610
+   ],
+   [
+    519,
+    645,
+    545,
+    661
+   ]
+  ]
+ },
+ "physics-2011-hl-q5-capacitor-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q5-capacitor-solution.png",
+  "md5": "ccdb13e4222244530bf35b2b63298274",
+  "alt": "Capacitance equation and full area substitution/result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q5(e)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   111,
+   416,
+   542,
+   504
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q5-car-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q5-car-solution.png",
+  "md5": "4688647fc3adcdb3047368ed1006c88b",
+  "alt": "Both complete stopping-force methods, kinematics and work-energy.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q5(a)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   111,
+   211,
+   542,
+   252
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q5-rcd": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q5-rcd.png",
+  "md5": "64e173619681c77ae078884aa1395405",
+  "alt": "Original30mA residual-current-device photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q5(f)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   225,
+   382,
+   358,
+   512
+  ]
+ },
+ "physics-2011-hl-q6-angular-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-angular-question.png",
+  "md5": "2b3d1cd36b201083c751377893593e53",
+  "alt": "Full child/merry-go-round data, photograph and angular-velocity request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(c) — Maximum angular velocity",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   109,
+   264,
+   560,
+   414
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    330,
+    410,
+    364
+   ],
+   [
+    386,
+    396,
+    413,
+    412
+   ]
+  ]
+ },
+ "physics-2011-hl-q6-angular-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-angular-solution.png",
+  "md5": "a3f045c4959693ff306299eb7e1f5ac0",
+  "alt": "Centripetal-force equation, substitution and angular velocity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(c) — Maximum angular velocity",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   176,
+   601,
+   542,
+   680
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q6-forces-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-forces-question.png",
+  "md5": "41f955f0f8a002cd075918a6a3c65499",
+  "alt": "Full child/merry-go-round data, photograph and force-diagram request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(c) — Forces on the child",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   109,
+   264,
+   560,
+   388
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    366,
+    410,
+    388
+   ]
+  ]
+ },
+ "physics-2011-hl-q6-forces-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-forces-solution.png",
+  "md5": "f849300e9a03544586ab39f657a4fae2",
+  "alt": "Original child force diagram and all three9-mark components.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(c) — Forces on the child",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   83,
+   488,
+   542,
+   576
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q6-round": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-round.png",
+  "md5": "c1f788e3f37e37bcbdc57e2a5a75d8ad",
+  "alt": "Original merry-go-round photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(c) — Without friction",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   414,
+   269,
+   559,
+   388
+  ]
+ },
+ "physics-2011-hl-q6-seesaw-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-seesaw-solution.png",
+  "md5": "c3a0941e5525a8b970e28c1c02564ab9",
+  "alt": "Complete seesaw moment balance and location result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(b) — Balancing the see-saw",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   165,
+   348,
+   542,
+   415
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q6-toy": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q6-toy.png",
+  "md5": "b481fafa650d83224bf7b896551a1b37",
+  "alt": "Full toy photograph and centre-of-gravity label C.",
+  "lettersVisible": [
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q6(a) — Why the toy returns upright",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   424,
+   19,
+   559,
+   150
+  ]
+ },
+ "physics-2011-hl-q7-cooling-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q7-cooling-solution.png",
+  "md5": "9344167ec05d3cc6f6cf3b2960c64910",
+  "alt": "Every accepted cooling process and its matching reduction method.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q7(b) — Two cooling processes and their reduction",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   111,
+   430,
+   542,
+   485
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q7-spoon-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q7-spoon-question.png",
+  "md5": "dbd77b6c08f12ad096d985781f182089",
+  "alt": "Full preceding steam data, spoon task, photograph and all supplied constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q7(a) — Heat capacity of the spoon",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   81,
+   493,
+   590,
+   782
+  ],
+  "maskedFurniture": [
+   [
+    412,
+    610,
+    438,
+    627
+   ],
+   [
+    81,
+    634,
+    590,
+    737
+   ]
+  ]
+ },
+ "physics-2011-hl-q7-spoon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q7-spoon-solution.png",
+  "md5": "aea643c179f3c17d164294ba4b07fef9",
+  "alt": "Original drink mass, heat balance, substitution and spoon heat capacity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q7(a) — Heat capacity of the spoon",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   310,
+   542,
+   404
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q7-steam-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q7-steam-question.png",
+  "md5": "247fe11c3ec57daac52da5238948e06e",
+  "alt": "Full steam/milk problem and coffee-machine photograph with all heat constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q7(a) — Mass of steam",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   81,
+   493,
+   590,
+   782
+  ],
+  "maskedFurniture": [
+   [
+    81,
+    569,
+    439,
+    634
+   ],
+   [
+    81,
+    634,
+    590,
+    737
+   ]
+  ]
+ },
+ "physics-2011-hl-q7-steam-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q7-steam-solution.png",
+  "md5": "853d0d63b977d8d246c79a064c494720",
+  "alt": "Complete three-term heat balance and steam-mass calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q7(a) — Mass of steam",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   165,
+   542,
+   265
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-clarinet": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-clarinet.png",
+  "md5": "b2bccbc1e3dce454f915bed9c7dbe1f9",
+  "alt": "Original clarinet photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a) — Clarinet harmonics",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   427,
+   221,
+   581,
+   313
+  ],
+  "maskedFurniture": [
+   [
+    427,
+    257,
+    475,
+    273
+   ],
+   [
+    450,
+    277,
+    480,
+    294
+   ]
+  ]
+ },
+ "physics-2011-hl-q8-coherent-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-coherent-question.png",
+  "md5": "3b49582eb61fff8587fb708aee70cfd1",
+  "alt": "Complete statement with coherent sources underlined and definition request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a) — Coherent sources",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   110,
+   59,
+   501,
+   96
+  ]
+ },
+ "physics-2011-hl-q8-conditions-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-conditions-solution.png",
+  "md5": "220d1aeca0a7aaa70a975503568ab32c",
+  "alt": "Both complete cancellation conditions and equivalent phase/path conditions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a) — Conditions for complete cancellation",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   111,
+   197,
+   542,
+   248
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-distance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-distance-solution.png",
+  "md5": "c93f5cdce0421ce3581dfda15c88844f",
+  "alt": "Both complete three-decibel inverse-square calculation routes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(b) — Distance for a three-decibel reduction",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   139,
+   637,
+   542,
+   722
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-frequency-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-frequency-question.png",
+  "md5": "0989d27b0b1faa267d0f139ef9b48148",
+  "alt": "Full90cm pipe context, P/Q diagram, frequency request and sound speed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a)(ii) — Frequency of the illustrated standing wave",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   120,
+   558,
+   423
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    169,
+    410,
+    187
+   ],
+   [
+    109,
+    210,
+    410,
+    226
+   ],
+   [
+    109,
+    224,
+    558,
+    400
+   ]
+  ]
+ },
+ "physics-2011-hl-q8-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-frequency-solution.png",
+  "md5": "a78042f949d10f9e704da57cc40c4d12",
+  "alt": "Original five-quarter-wave wavelength and frequency calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a)(ii) — Frequency of the illustrated standing wave",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   161,
+   315,
+   542,
+   369
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-fundamental-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-fundamental-question.png",
+  "md5": "b39e3b25ab6ac793a1b34ec57f7408a8",
+  "alt": "Full90cm pipe context, diagram, fundamental request and sound speed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a)(iii) — Fundamental frequency of the pipe",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   120,
+   558,
+   423
+  ],
+  "maskedFurniture": [
+   [
+    109,
+    169,
+    410,
+    207
+   ],
+   [
+    109,
+    225,
+    558,
+    400
+   ]
+  ]
+ },
+ "physics-2011-hl-q8-fundamental-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-fundamental-solution.png",
+  "md5": "39ad6e5079c6f4a758d6fa14679da285",
+  "alt": "Original quarter-wave fundamental calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a)(iii) — Fundamental frequency of the pipe",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   161,
+   403,
+   542,
+   450
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-intensity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-intensity-solution.png",
+  "md5": "7a0b37cb389975a1b7a0b362c6495924",
+  "alt": "Spherical-spreading intensity formula and numeric result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(b) — Sound intensity at eight metres",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   164,
+   530,
+   542,
+   602
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q8-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q8-pipe.png",
+  "md5": "17b1be949748f7c6a65cb7f5137719c4",
+  "alt": "Full five-quarter-wave pipe diagram with P and Q arrows.",
+  "lettersVisible": [
+   "P",
+   "Q"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q8(a)(i) — Nodes and antinodes",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   442,
+   130,
+   558,
+   211
+  ]
+ },
+ "physics-2011-hl-q9-force-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q9-force-question.png",
+  "md5": "ab46158771b9a5ee971727697527a99d",
+  "alt": "Full charge-sharing problem with original Q and3Q conductor diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q9(a) — Force after sharing charge",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   109,
+   482,
+   558,
+   585
+  ],
+  "maskedFurniture": [
+   [
+    412,
+    568,
+    440,
+    584
+   ]
+  ]
+ },
+ "physics-2011-hl-q9-force-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q9-force-solution.png",
+  "md5": "49b90f1c3aeb9d5595199bac796eff70",
+  "alt": "Full original charge-sharing force ratios and all equivalent alternatives.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q9(a) — Force after sharing charge",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   165,
+   252,
+   542,
+   391
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q9-law-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q9-law-solution.png",
+  "md5": "2438c3278215b4c418f247985317f974",
+  "alt": "Both word and formula versions of Coulomb’s law.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q9(a) — Coulomb’s law",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   110,
+   133,
+   542,
+   205
+  ],
+  "solution": true
+ },
+ "physics-2011-hl-q9-suit": {
+  "src": "/exam-figures/physics/markbank/physics-2011-hl-q9-suit.png",
+  "md5": "2e75d167e2e29858632e1b8c731e0b7b",
+  "alt": "Original metal-foil-suit photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q9(c) — Electrostatic shielding",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   447,
+   599,
+   565,
+   748
+  ]
+ },
  "physics-2012-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2012-hl-q1-data.png",
   "md5": "ff697331822e2e341bc3a6f1e8038439",

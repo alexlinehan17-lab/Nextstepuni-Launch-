@@ -77,7 +77,7 @@ SUBJECTS = {
     # visually reviewed and carded on 2026-10-31. The next independently
     # reviewed sittings include 2013–2026 both levels.
     # 2010–2012 and deferred sittings remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2012},
+    'physics': {'mode': 'merged', 'from': 2012, 'also': [(2011, 'hl')]},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
