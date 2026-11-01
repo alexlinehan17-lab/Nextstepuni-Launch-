@@ -62,5 +62,18 @@ class PhysicsSourceMathTest(unittest.TestCase):
             self.assertEqual(fraction_text(scheme[10], (91,588,201,621), G14),
                              'n= 1/(sinC) = 1/(sin38) =1.62')
 
+    def test_reviewed_temperature_degrees_preserve_words_and_signed_values(self):
+        from phys_review_2012_hl import GLYPHS as G12, SOURCES as S12
+        with fitz.open(ROOT / S12['scheme']['path']) as scheme:
+            clip = (111,97,363,112)
+            self.assertEqual(equation_text(scheme[14], clip, G12, degrees=True),
+                             'temperature of ice increased (from ≈ –3° to 0°C as energy is added)')
+            self.assertEqual(equation_text(scheme[14], clip, G12),
+                             'temperature of ice increased (from ≈ –3o to 0oC as energy is added)')
+            self.assertEqual(equation_text(scheme[13], (210,593,296.4,610), G12, degrees=True),
+                             'answer: θ = 54.7(4)°')
+            self.assertEqual(equation_text(scheme[6], (83,296,185,309), G12, degrees=True),
+                             'speed of jet = 1320 (m s⁻¹)')
+
 if __name__ == '__main__':
     unittest.main()

@@ -244,7 +244,8 @@ def read_geo(lifter, spec, sp):
         # A nuclear equation (or one nuclide of it), each nuclide's mass and
         # atomic numbers put back where they are printed (equation_text).
         try:
-            value = B.equation_text(src.doc[page - 1], clip, src.glyphs)
+            value = B.equation_text(src.doc[page - 1], clip, src.glyphs,
+                                    degrees=spec.get('degrees', False))
         except LookupError as e:
             raise Refusal(f'equation p{page}: {e}')
     elif kind == 'tokens':

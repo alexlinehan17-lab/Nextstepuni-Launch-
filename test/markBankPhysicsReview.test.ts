@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2012-hl': [95, 95, 62, '38ffeeaa0d59666fe00a75c09dfcf66cbdabbee06ccfd214ffb7c982bcc1da01',
+    '03b134fda65a71f34a8acbdbc1ce905bc466822642af7e1e214b902430dc3162'],
   '2013-ol': [100, 100, 91, '323bea11e3f2ea2598ecd62bde828d0d17215042f19f860ece9f3d8a08b1f6c0',
     '8b7d03ed3157d70986acf9946532b71b55453917fbbc0f0530271c6b18ed8eb8'],
   '2013-hl': [108, 108, 41, 'da9315f733b23a4d90618b5e5d17a5fa8bb36161fd8773ac2e2f11cc9bd3c13b',
@@ -101,6 +103,46 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains 2012 Higher choices, raster solutions and the full practical contexts', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2012-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2012-hl-${suffix}`)!;
+    expect(cards).toHaveLength(95);
+    expect(card('q5-b').questionText).toContain('Give another example');
+    expect(card('q4-resistance').questionText).not.toContain('(18)');
+    expect(card('q1-accuracy').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [4, 3] } });
+    expect(card('q2-focal-length').rows).toHaveLength(6);
+    expect(card('q2-focal-length').totalMarks).toBe(15);
+    expect(card('q5-e').rows).toHaveLength(1);
+    expect(card('q5-e').totalMarks).toBe(7);
+    expect(card('q5-e').rows[0].verbatim).toContain('proper angle of viewing');
+    expect(card('q5-e').rows[0].contextNote).toContain('two additional conditions together');
+    expect(card('q5-i').figure?.candId).toBe('physics-2012-hl-q5-half-life-solution');
+    expect(card('q6-i').stem).toContain('31 km');
+    expect(card('q6-i').stem).toContain('5.97 × 10²⁴ kg');
+    expect(card('q6-i').rows[2].contextNote).toContain('9.755');
+    expect(card('q7-wave-differences').rows[0]).toMatchObject({ group: { claimMax: 2, perOption: 4 } });
+    expect(card('q7-four-metres').questionFigure?.candId).toBe('physics-2012-hl-q7-four-metres-question');
+    expect(card('q8-ii-products').rows[0].contextNote).toContain('not free of radioactive waste');
+    expect(card('q8-iii-energy').questionFigure?.candId).toBe('physics-2012-hl-q8-energy-question');
+    expect(card('q10-b-ii').figure?.candId).toBe('physics-2012-hl-q10-waveforms-solution');
+    expect(card('q10-b-iii-truth').figure?.candId).toBe('physics-2012-hl-q10-not-solution');
+    for (const part of 'ab') expect(cards.filter(c => c.id.startsWith(`phys-2012-hl-q10-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(56);
+    const passage = cards.filter(c => c.id.startsWith('phys-2012-hl-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.stem).toContain('45 dB');
+      expect(c.stem).toContain('The Open University.');
+    }
+    expect(card('q12-b-i').rows[2].verbatim).toContain('54.7(4)°');
+    expect(card('q12-c-i').rows[0].verbatim).toContain('–3° to 0°C');
+    expect(card('q12-c-ii').totalMarks).toBe(6);
+    expect(card('q12-c-ii').rows.some(r => r.verbatim === 'water bath' && r.marks === 6)).toBe(true);
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2012-hl-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2013 Ordinary methods, full contexts and historical correction guidance', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2013-ol-'));

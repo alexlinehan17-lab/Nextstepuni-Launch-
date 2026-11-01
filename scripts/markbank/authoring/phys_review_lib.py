@@ -1081,7 +1081,7 @@ def fraction_text(page, clip, glyphs=None, glyph_order=False):
 # a postscript of the symbol before it (a charge, "β⁻"). Every glyph is the
 # SEC's; the Unicode super/subscripts only say where it was printed.
 
-def equation_text(page, clip, glyphs=None):
+def equation_text(page, clip, glyphs=None, degrees=False):
     clip = fitz.Rect(*clip)
     spans = []
     for b in _page_dict(page, glyphs, clip)['blocks']:
@@ -1113,6 +1113,11 @@ def equation_text(page, clip, glyphs=None):
         txt = lambda ss: _norm(''.join(_span_text(sorted(ss, key=lambda s: s['bbox'][0]), i)
                                        for i in range(len(ss))))
         u, l = txt(up), txt(lo)
+        # Older schemes sometimes use a raised letter o as a degree symbol.
+        # Opt in only for a visually reviewed region; ordinary and lowered
+        # letters retain their source meaning.
+        if degrees and u == 'o' and not l:
+            return '°'
         return (_script(u, SUP_MAP) or u if u else '') + (_script(l, SUB_MAP) or l if l else '')
     # The main line read glyph by glyph, each at its own x: a nuclide's stack
     # is often printed INSIDE a span (" + He" holds He's 4/2), and placed by the

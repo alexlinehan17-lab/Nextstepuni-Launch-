@@ -1,4 +1,1485 @@
 {
+ "physics-2012-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q1-data.png",
+  "md5": "ff697331822e2e341bc3a6f1e8038439",
+  "alt": "All six pendulum points, grid, squared-period axis and length axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q1 — Pendulum length and period",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   40,
+   220,
+   513,
+   548
+  ]
+ },
+ "physics-2012-hl-q1-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q1-graph-question.png",
+  "md5": "c36b41466c1e2ecdf86ff6e51b12fd25",
+  "alt": "Full pendulum context, all six plotted points, axes and graph/acceleration request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q1 — Graph and acceleration due to gravity",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   40,
+   150,
+   550,
+   643
+  ],
+  "maskedFurniture": [
+   [
+    50,
+    570,
+    544,
+    601
+   ],
+   [
+    515,
+    628,
+    544,
+    642
+   ]
+  ]
+ },
+ "physics-2012-hl-q1-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q1-graph-solution.png",
+  "md5": "1df77efbf51e4fba1d2d3e348df8c6c6",
+  "alt": "Official fitted graph, source values, slope tolerance, gravity equation and result tolerance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q1 — Graph and acceleration due to gravity",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   54,
+   326,
+   540,
+   631
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-annihilation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-annihilation-solution.png",
+  "md5": "bfbd1d5bc105492c37d9a9b48e7f1b00",
+  "alt": "Original electron–positron interaction equations in nuclear and symbolic notation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(a)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   110,
+   104,
+   545,
+   143
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-frequency-solution.png",
+  "md5": "1002e54b56d06d8208c108c09c3b08aa",
+  "alt": "All five3-mark minimum-frequency steps, constants, equations and unit/factor-two deductions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(a)(iii) — Minimum photon frequency",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   110,
+   189,
+   545,
+   284
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-inverter-context": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-inverter-context.png",
+  "md5": "bfbdc9dbb4a01e2b2dd85d6f4c1ec3ab",
+  "alt": "Complete source voltage-inverter context and original circuit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(iv)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   337,
+   530,
+   548
+  ]
+ },
+ "physics-2012-hl-q10-inverter-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-inverter-question.png",
+  "md5": "dd5583e8cfd4ef99fe7b8c35200f80fa",
+  "alt": "Full inverter context, incomplete source circuit and completion/label/input/output requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   337,
+   544,
+   605
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    587,
+    544,
+    604
+   ]
+  ]
+ },
+ "physics-2012-hl-q10-inverter-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-inverter-solution.png",
+  "md5": "ac6b236f684671695bd210b43b5d08c0",
+  "alt": "Complete original inverter circuit with base resistor, e/b/c labels and input/output terminals.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   85,
+   498,
+   545,
+   659
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-not-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-not-solution.png",
+  "md5": "a3be281f9ca993e9bcc75219a01d9180",
+  "alt": "Original NOT-gate symbol and both rows of the labelled input/output truth table.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(iii) — NOT-gate symbol",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   413,
+   564,
+   500,
+   639
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-transistor-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-transistor-solution.png",
+  "md5": "dd32a42b86e7abb7ad50493019eefbe1",
+  "alt": "Original transistor-layer diagram and complete structure/composition criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b) — Bipolar transistor structure",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   55,
+   414,
+   545,
+   494
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q10-waveforms-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-waveforms-question.png",
+  "md5": "9aba810f713650bc47b176d7c04fa9c5",
+  "alt": "Inverter context and source circuit, with the complete input/output-waveform request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   337,
+   544,
+   646
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    558,
+    544,
+    604
+   ],
+   [
+    519,
+    629,
+    544,
+    645
+   ]
+  ]
+ },
+ "physics-2012-hl-q10-waveforms-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q10-waveforms-solution.png",
+  "md5": "07ddb279c88c6acc6270d41d6fe532a0",
+  "alt": "Original input/output waveform sketch with voltage and time axes; all9marks are represented by the accompanying rows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q10(b)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   248,
+   564,
+   388,
+   659
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q11-passage.png",
+  "md5": "fe77d753f63a86d5d4ee9fe636309d52",
+  "alt": "Entire2012 wind-power passage, photograph, equations, noise levels and attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q11(a)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   80,
+   546,
+   362
+  ]
+ },
+ "physics-2012-hl-q11-tip-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q11-tip-question.png",
+  "md5": "01f863f6ff53923ad3c12bcc71d47bf6",
+  "alt": "Full wind-power passage and30m-radius/3second blade-tip-speed question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q11(f)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   80,
+   546,
+   631
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    394,
+    546,
+    582
+   ]
+  ]
+ },
+ "physics-2012-hl-q11-tip-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q11-tip-solution.png",
+  "md5": "2f5b0fd66d52d3a2f71c6fdfeb33c6b0",
+  "alt": "Blade-tip question, original velocity equation, substitution and speed with4+3tariffs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q11(f)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   538,
+   546,
+   599
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-acceleration-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-acceleration-question.png",
+  "md5": "cbefd06b984e76da5b5dbac7d2058416",
+  "alt": "Complete hammer context and photograph with acceleration request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(iii) — Centripetal acceleration",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   86,
+   545,
+   460
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    150,
+    545,
+    181
+   ],
+   [
+    80,
+    220,
+    545,
+    237
+   ],
+   [
+    520,
+    205,
+    545,
+    220
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-acceleration-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-acceleration-solution.png",
+  "md5": "5032de6cb9c0e3221e5940b6a7c4f1f3",
+  "alt": "Original centripetal-acceleration equation, substitution, magnitude and inward direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(iii) — Centripetal acceleration",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   220,
+   546,
+   277
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-angle-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-angle-question.png",
+  "md5": "f11f5eaa7635e2406cb91a0208e2f699",
+  "alt": "Full glass-block context,30degree surface angle, original diagram, refractive index and θrequest.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   487,
+   545,
+   702
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    684,
+    545,
+    701
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-angle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-angle-solution.png",
+  "md5": "d8794f976beec9f9e534d5478e0aba47",
+  "alt": "Original Snell equation and angles from the normal/surface with all four3-mark criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   519,
+   546,
+   611
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-angular-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-angular-question.png",
+  "md5": "3c76aa6b83d64419ec435e3b3e80b1af",
+  "alt": "Complete hammer context, original photograph/caption and angular-velocity request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   86,
+   545,
+   460
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    165,
+    545,
+    237
+   ],
+   [
+    520,
+    151,
+    545,
+    165
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-angular-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-angular-solution.png",
+  "md5": "cca5251b5a8eea6a0c03bdc175b2069a",
+  "alt": "Original angular-velocity equation, substitution and7.854result with3+3tariffs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   109,
+   122,
+   546,
+   165
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-critical-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-critical-question.png",
+  "md5": "d9ceb92d9a8f6ef747fdeda24c8c0d87",
+  "alt": "Glass-block context, diagram, refractive index and parallel-emergence request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   487,
+   545,
+   736
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    684,
+    545,
+    701
+   ],
+   [
+    519,
+    719,
+    545,
+    735
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-critical-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-critical-solution.png",
+  "md5": "0ecdd152007862df75622268079ed719",
+  "alt": "Original critical-angle relation and complement angle48.2degrees, three3-mark stages.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   611,
+   546,
+   687
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-energy-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-energy-question.png",
+  "md5": "f93948a649bc78aeb279801c3c9e0cea",
+  "alt": "Complete hammer context and photograph with kinetic-energy request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(iv) — Kinetic energy at release",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   86,
+   545,
+   460
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    150,
+    545,
+    181
+   ],
+   [
+    80,
+    206,
+    545,
+    220
+   ],
+   [
+    520,
+    220,
+    545,
+    237
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-energy-solution.png",
+  "md5": "f9c785319bb2baeb1f19bdb4f9d7c41e",
+  "alt": "Original kinetic-energy equation, substitution and896J answer with3+3+3tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(iv) — Kinetic energy at release",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   281,
+   546,
+   353
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-hammer": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-hammer.png",
+  "md5": "f920f9e9300ee48b77d25be5753eea2c",
+  "alt": "Original hammer-throw photograph and Pat O’Callaghan caption.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   116,
+   245,
+   483,
+   460
+  ]
+ },
+ "physics-2012-hl-q12-ice-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-ice-graph.png",
+  "md5": "a9ed5a1f1a4783dfbc2cb764107d05a1",
+  "alt": "Complete ice temperature–energy graph including axes, units, scale and melting plateau.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(c)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   27,
+   98,
+   512,
+   439
+  ]
+ },
+ "physics-2012-hl-q12-latent-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-latent-question.png",
+  "md5": "14ec659dabad0f21db326f43921b60fb",
+  "alt": "Full150gice context, complete graph and latent-heat request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(c)(iii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   27,
+   53,
+   545,
+   510
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    449,
+    545,
+    489
+   ],
+   [
+    515,
+    491,
+    545,
+    509
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-latent-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-latent-solution.png",
+  "md5": "9485e2792734a524e47ccff99539352d",
+  "alt": "49kJplateau energy, E=mL and original latent-heat substitution/result,3+3+4.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(c)(iii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   108,
+   240,
+   546,
+   300
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-light-speed-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-light-speed-question.png",
+  "md5": "b506ea9696a7a231b819dd163fd4d80c",
+  "alt": "Full glass-block context, diagram, refractive index and light-speed request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(iii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   487,
+   545,
+   758
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    684,
+    545,
+    701
+   ],
+   [
+    80,
+    703,
+    545,
+    736
+   ],
+   [
+    519,
+    739,
+    545,
+    757
+   ]
+  ]
+ },
+ "physics-2012-hl-q12-light-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-light-speed-solution.png",
+  "md5": "a525e35e7df983b4b98fee2245c52856",
+  "alt": "Original refractive-index/speed equation and2×10⁸m/sanswer with4+3tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(iii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   685,
+   546,
+   734
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-photocell-experiment": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-photocell-experiment.png",
+  "md5": "a0dac52e2167dbd0e7ea9c6ace653a88",
+  "alt": "Complete original photocell experiment circuit, source, polarity and four3-mark criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(d)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   99,
+   463,
+   546,
+   645
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q12-photocell-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q12-photocell-solution.png",
+  "md5": "ba07eb075ec389c2ffccb4bb4cc61ad6",
+  "alt": "Original photocell diagram with cathode, anode, vacuum and glass tube, all four criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(d)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   99,
+   332,
+   546,
+   435
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q2-data.png",
+  "md5": "38fb82f60de48cba6db276ac712c17f0",
+  "alt": "All four object-distance and image-distance pairs, in centimetres.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q2 — Image-distance accuracy",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   137,
+   123,
+   458,
+   185
+  ]
+ },
+ "physics-2012-hl-q2-focal-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q2-focal-question.png",
+  "md5": "237a6ddfbcf46c62ef4411355fec15e0",
+  "alt": "Complete converging-lens context, four distance pairs and request to use all data.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q2 — Focal length from all four pairs",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   54,
+   54,
+   542,
+   270
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    195,
+    542,
+    240
+   ],
+   [
+    515,
+    253,
+    542,
+    270
+   ]
+  ]
+ },
+ "physics-2012-hl-q2-focal-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q2-focal-solution.png",
+  "md5": "8ab00ec7f59354381cc3cb0b4d8a14d8",
+  "alt": "Original reciprocal-distance calculation table and alternative reciprocal graph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q2 — Focal length from all four pairs",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   67,
+   425,
+   449,
+   742
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q3-data.png",
+  "md5": "2c51017877d5a4addd41ef5fc685bd98",
+  "alt": "All eight fundamental-frequency and vibrating-string-length pairs with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q3 — Collecting data for the other factor",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   49,
+   416,
+   520,
+   478
+  ]
+ },
+ "physics-2012-hl-q3-factor-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q3-factor-solution.png",
+  "md5": "3017e9b552cf036e6e17c8357dc66386",
+  "alt": "Both factor choices and their original square-root relationships.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q3 — Another factor and its relationship",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   54,
+   608,
+   332,
+   641
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q3-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q3-graph-question.png",
+  "md5": "619e86a091df5527822f41d8eb549e1a",
+  "alt": "Full string experiment, all eight pairs and graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q3 — Frequency–length relationship",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   50,
+   373,
+   544,
+   548
+  ],
+  "maskedFurniture": [
+   [
+    50,
+    488,
+    544,
+    509
+   ],
+   [
+    515,
+    532,
+    544,
+    547
+   ]
+  ]
+ },
+ "physics-2012-hl-q3-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q3-graph-solution.png",
+  "md5": "daacb0f3ed0a43c2a1f77bffbc6bc56f",
+  "alt": "All reciprocal lengths and original best-fit graph; its inverse-wavelength label is clarified in guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q3 — Frequency–length relationship",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   81,
+   283,
+   513,
+   567
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q4-data.png",
+  "md5": "57643e9a4a370ce67a1c5c353490c394",
+  "alt": "All seven diode potential-difference and current pairs with volt and milliamp units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q4 — Diode circuit diagram",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   70,
+   164,
+   441,
+   213
+  ]
+ },
+ "physics-2012-hl-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q4-graph-question.png",
+  "md5": "025534b0e67251cf97a31c952ebe2dc6",
+  "alt": "Complete diode report, all seven data pairs and current–voltage graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q4 — Diode current–voltage graph",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   54,
+   57,
+   544,
+   303
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    228,
+    544,
+    264
+   ]
+  ]
+ },
+ "physics-2012-hl-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q4-graph-solution.png",
+  "md5": "7ac20c0bcb2767767a27ec92e550079d",
+  "alt": "Original nonlinear diode current–voltage plot with all seven points and labelled axes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q4 — Diode current–voltage graph",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   133,
+   323,
+   499,
+   544
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q5-half-life-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q5-half-life-solution.png",
+  "md5": "f0390aa135540e5f8ca3ce5cb3b08d83",
+  "alt": "Full half-life task, original three-half-lives equation,10-minute answer and4+3 allocation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q5(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   587,
+   545,
+   641
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q5-lens-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q5-lens-solution.png",
+  "md5": "3361d8e813cbe618a8a8ed51e5b1dcf8",
+  "alt": "Original lens-power question, reciprocal equation, signed focal length and tariffs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q5(d)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   334,
+   545,
+   377
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q5-map": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q5-map.png",
+  "md5": "e4d9c2b1314a9a45de827766b08b40ac",
+  "alt": "Complete Ireland map, all marked towns and north arrow; original printed scale is1cm to37.5km.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q5(a)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   95,
+   410,
+   466,
+   770
+  ]
+ },
+ "physics-2012-hl-q6-context": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q6-context.png",
+  "md5": "bfffd92089eaff7949dc71b5dd35e844",
+  "alt": "Complete historical Kittinger passage, descent stages, original photograph and attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q6(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   53,
+   554,
+   192
+  ]
+ },
+ "physics-2012-hl-q6-fall-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q6-fall-solution.png",
+  "md5": "fcf37f1ac98e6564223fca605d95d398",
+  "alt": "Original displacement equation, substitution, result and3+3+3 tariffs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q6(iii) — Distance in the first 13 seconds",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   315,
+   545,
+   378
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q6-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q6-gravity-solution.png",
+  "md5": "a83d3875978d092fa063d12f4a085f8a",
+  "alt": "Both original gravity equations, substitutions and printed results; arithmetic error clarified in guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q6(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   132,
+   545,
+   228
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q6-parachute-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q6-parachute-solution.png",
+  "md5": "3575e90f1fef1dc184be766754e93063",
+  "alt": "Complete equal-pressure question, area-ratio working and22.3 force ratio with all three3-mark rows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q6(v)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   487,
+   545,
+   565
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q7-four-metres-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q7-four-metres-question.png",
+  "md5": "657b8f133697ac607fd572296cd02fb3",
+  "alt": "Full electromagnetic spectrum with scale,4mcontext and radiation-location request.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q7 — Locating a 4 m radiation",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   47,
+   502,
+   545,
+   704
+  ],
+  "maskedFurniture": [
+   [
+    47,
+    632,
+    545,
+    664
+   ],
+   [
+    519,
+    687,
+    545,
+    703
+   ]
+  ]
+ },
+ "physics-2012-hl-q7-four-metres-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q7-four-metres-solution.png",
+  "md5": "6456f8ff7c2346a6987d03f770037a1d",
+  "alt": "4m radiation question, c=fλ equation,75MHz and accepted spectrum regions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q7 — Locating a 4 m radiation",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   54,
+   320,
+   545,
+   378
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q7-spectrum": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q7-spectrum.png",
+  "md5": "8f483d8acce59cd15f00e01f8bc25ac5",
+  "alt": "Complete electromagnetic spectrum with logarithmic frequency axis and both regions A/B.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q7 — Detecting radiation A",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   47,
+   502,
+   550,
+   606
+  ]
+ },
+ "physics-2012-hl-q8-context": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q8-context.png",
+  "md5": "3e1390c3e52fba938c4cc2d3c462a212",
+  "alt": "Complete historical ITER context and original deuterium–tritium fusion equation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(i) — Nuclear fission",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   52,
+   53,
+   519,
+   255
+  ]
+ },
+ "physics-2012-hl-q8-energy-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q8-energy-question.png",
+  "md5": "17c8c68a33455a27460f47422496bf13",
+  "alt": "Full fusion context, reaction equation and energy request with original nuclear notation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(iii) — Energy from deuterium–tritium fusion",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   52,
+   53,
+   544,
+   340
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    255,
+    544,
+    302
+   ],
+   [
+    514,
+    320,
+    544,
+    339
+   ]
+  ]
+ },
+ "physics-2012-hl-q8-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q8-energy-solution.png",
+  "md5": "e5ca20e24e001659e21806780c1f1876",
+  "alt": "All mass calculations, E=mc² working and alternative931MeV route with original exponents.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(iii) — Energy from deuterium–tritium fusion",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   315,
+   545,
+   448
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q8-repulsion-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q8-repulsion-question.png",
+  "md5": "6dccd3ece450f8abf1efdd77665268c0",
+  "alt": "Full context, reaction equation and2nm repulsion request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(iv) — Repulsion between the two nuclei",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   52,
+   53,
+   544,
+   367
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    255,
+    544,
+    338
+   ],
+   [
+    517,
+    350,
+    544,
+    366
+   ]
+  ]
+ },
+ "physics-2012-hl-q8-repulsion-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q8-repulsion-solution.png",
+  "md5": "2f5a90a6360a1822739d280bd9f82c08",
+  "alt": "Original Coulomb-law equation, charge/separation substitution, result and3+3+3 tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(iv) — Repulsion between the two nuclei",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   94,
+   461,
+   545,
+   559
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q9-bridge": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q9-bridge.png",
+  "md5": "02b00ad230e75ee998b2bd9f492de6e2",
+  "alt": "Complete Wheatstone bridge, resistor labels, node labels and supply terminals.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(iv)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   122,
+   561,
+   485,
+   697
+  ]
+ },
+ "physics-2012-hl-q9-network-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q9-network-solution.png",
+  "md5": "f58d85d296b31b79a50d348db73a5b3d",
+  "alt": "Original three4Ω network and separate3+6 diagram criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   108,
+   278,
+   546,
+   337
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q9-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q9-resistance-question.png",
+  "md5": "a4baeaac34b139e605ba74d25ffaad6a",
+  "alt": "Complete bridge context, all component values and unknown-resistance request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(v)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   53,
+   526,
+   544,
+   744
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    709,
+    544,
+    728
+   ],
+   [
+    518,
+    728,
+    544,
+    743
+   ]
+  ]
+ },
+ "physics-2012-hl-q9-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q9-resistance-solution.png",
+  "md5": "2873e41957ead9b57b5ef7fc212141e9",
+  "alt": "Original balance equation, substitution and968Ω result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(v)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   523,
+   546,
+   578
+  ],
+  "solution": true
+ },
+ "physics-2012-hl-q9-series-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-hl-q9-series-solution.png",
+  "md5": "d1896edc31497dc3c70d0560995a963a",
+  "alt": "Original series circuit and complete voltage/current derivation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   95,
+   130,
+   546,
+   239
+  ],
+  "solution": true
+ },
  "physics-2013-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2013-hl-q1-data.png",
   "md5": "567523adfeafff9ba809453367379a4d",
