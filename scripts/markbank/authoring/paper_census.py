@@ -1114,8 +1114,8 @@ def lettered_alternatives(P, parts, texts):
     return parts, texts
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -3808,7 +3808,52 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'physics':
+        papers.extend(census_physics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+def census_physics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves."""
+    import hashlib
+    from types import SimpleNamespace
+    from phys_sources import source_path
+    path = os.path.join(ROOT, 'scripts/markbank/authored/physics-review-audit.json')
+    with open(path, encoding='utf-8') as fh:
+        audit = json.load(fh)
+    papers = []
+    for key, review in audit['sittings'].items():
+        if review.get('sitting') != 'deferred':
+            continue
+        match = re.fullmatch(r'(\d{4})-(hl|ol)-deferred', key)
+        assert match and review['status'] == 'reviewed', key
+        year, level = int(match[1]), match[2]
+        source = review['sources']['paper']
+        ledger = SimpleNamespace(SITTING='deferred', YEAR=year, LEVEL=level,
+                                 SOURCES=review['sources'])
+        pdf = source_path(ROOT, ledger, 'paper')
+        with open(pdf, 'rb') as fh:
+            assert hashlib.sha256(fh.read()).hexdigest() == source['sha256'], key
+        parts, texts, _ = census_merged('physics', year, level, files=[pdf])
+        leaves = list(leaves_of(parts))
+        flags = continuity_flags(parts, texts, 'physics')
+        # The actual 2022 deferred paper p10 prints a shared "Define" command
+        # over four numbered terms. These two single-word terms are complete
+        # asks, not extraction loss. Keep this separate from main-paper waivers.
+        short_terms = {(2022, 'hl', 'Q12(a)(i)'): 'quark',
+                       (2022, 'hl', 'Q12(a)(iii)'): 'meson'}
+        flags = [f for f in flags if not (
+            f['type'] == 'empty-leaf'
+            and (year, level, f['where']) in short_terms
+            and f['detail'] == f"extracted text: {short_terms[(year, level, f['where'])]!r}")]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'physics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):

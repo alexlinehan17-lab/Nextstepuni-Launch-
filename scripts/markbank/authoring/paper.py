@@ -398,6 +398,17 @@ INLINE_SENTENCE_MARKERS[('physics', 2018, 'hl')] = [
     '(ii) name a pair of complementary colours of light.',
     '(iii) a long straight current‐carrying wire,',
     '(iv) a current‐carrying solenoid.']
+PHYSICS_DEFERRED_INLINE = {(2022, 'hl'): [
+    '(iii) the value of d,', '(iv) the value of',
+    '(i) displacement,', '(ii) velocity.',
+    '(iv) the energy of a photon', '(v) the energy of the most',
+    '(i) potential difference,', '(ii) resistance.',
+    '(vi) as an', '(vii) as a voltmeter.',
+    '(iv) maximum velocity,', '(v) maximum acceleration?',
+    '(iii) plate A,', '(iv) plate B.',
+    '(vi) plate A,', '(vii) plate B,', '(viii) plate X,', '(ix) plate Y.',
+]}
+
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion
@@ -925,7 +936,7 @@ def _leading(text):
 class Paper:
     """One paper, indexed by question number and part path."""
 
-    def __init__(self, subject, year, level, component=None):
+    def __init__(self, subject, year, level, component=None, *, files=None):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
         self.subject, self.year, self.level = subject, year, level
         self.component = component
@@ -939,7 +950,7 @@ class Paper:
         # every question number in the year.
         want = rf'{year}-{level}-{component}-paper\.pdf' if component else \
             rf'{year}-{level}(-\d+)?-paper\.pdf'
-        self.files = sorted(
+        self.files = list(files) if files is not None else sorted(
             os.path.join(root, f) for f in os.listdir(root)
             if re.fullmatch(want, f))
         if not self.files:
@@ -1404,6 +1415,13 @@ class Paper:
         carry = ''
         inline = MATHS_INLINE_MARKER if self.subject == 'maths' else INLINE_MARKER
         for path in self.files:
+            deferred_physics = self.subject == 'physics' and '/deferredexams/' in str(path)
+            cuts = INLINE_SENTENCE_MARKERS.get((self.subject, self.year, self.level), [])
+            if deferred_physics:
+                # 2022 deferred paper pp3/6/8/9/11/13/14: these lower-case
+                # inline romans are individually priced in the scheme. Keep
+                # this source-specific repair separate from the main sitting.
+                cuts = PHYSICS_DEFERRED_INLINE.get((self.year, self.level), [])
             blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
                              strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
                              .get(os.path.basename(path), ()),
@@ -1456,7 +1474,7 @@ class Paper:
                     for j in reversed(at):
                         pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
                 # (2023 HL Physics Q4: romans inside a sentence; see INLINE_SENTENCE_MARKERS.)
-                for cut in INLINE_SENTENCE_MARKERS.get((self.subject, self.year, self.level), []):
+                for cut in cuts:
                     split = []
                     for p in pieces:
                         k = p.find(cut, 1)

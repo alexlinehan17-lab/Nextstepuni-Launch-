@@ -649,9 +649,16 @@ def reconcile_subject(subject, census=None):
             continue
         if cid in exact_papers:
             ref['paper'] = exact_papers[cid]
+        if subject == 'physics':
+            deferred = bool(re.match(r'^phys-\d{4}-(?:hl|ol)-deferred-', cid))
+            if deferred != (' — Deferred sitting' in refstr):
+                unparsed.append({'id': cid, 'ref': refstr})
+                continue
+            ref['paper'] = 'Deferred' if deferred else None
         candidates = [k for k in idx
                       if k[0] == ref['year'] and k[1] == ref['level']
-                      and (ref['paper'] is None or k[2] == ref['paper'])]
+                      and ((k[2] == 'Deferred') == deferred if subject == 'physics'
+                           else ref['paper'] is None or k[2] == ref['paper'])]
         hit = False
         for pk in candidates:
             got = match_leaves(ref, idx[pk], sections_mode)

@@ -39,7 +39,8 @@ export const paperKeyOf = (label: string): string =>
  * Music have independently selectable components that restart at Q1; legacy
  * Spanish uses one paper slot for both written and aural cards. Their
  * normalised booklet id must therefore remain in the logical key to prevent
- * false deduplication. Mathematics likewise retains standard and Project Maths booklets. */
+ * false deduplication. Mathematics likewise retains standard and Project Maths
+ * booklets. A deferred question must never collapse onto June's same number. */
 export const logicalQuestionIdentity = (question: Pick<
   TopicSibling,
   'subjectId' | 'level' | 'year' | 'paperKey' | 'fileid' | 'n'
@@ -49,8 +50,8 @@ export const logicalQuestionIdentity = (question: Pick<
   question.year,
   question.paperKey,
   question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish' || question.subjectId === 'mathematics'
-    ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
-    : '',
+    ? question.fileid.replace(/(?:EV|IV)(?=(?:-deferred)?\.pdf$)/i, 'BV')
+    : /-deferred\.pdf$/i.test(question.fileid) ? 'deferred' : '',
   question.n,
 ].join('|');
 

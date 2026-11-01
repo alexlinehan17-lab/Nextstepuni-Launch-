@@ -1280,7 +1280,7 @@ const PHYSICS_REVIEW_ADDED = new Set(Object.values(
   .flatMap(sitting => [...(sitting.review?.added ?? []), ...(sitting.review?.unshippedBefore ?? [])]));
 const isPhysicsAdded = (id: string) => {
   const year = Number(id.slice('phys-'.length, 'phys-'.length + 4));
-  return year < 2021 || year > 2025 || PHYSICS_REVIEW_ADDED.has(id);
+  return year < 2021 || year > 2025 || id.includes('-deferred-') || PHYSICS_REVIEW_ADDED.has(id);
 };
 const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
   .map(card => card.id).filter(isPhysicsAdded));
@@ -1964,11 +1964,11 @@ describe('Mark Bank card preservation', () => {
     expect(PHYS_ORDINARY.every(card => card.id.startsWith(`phys-${card.year}-ol-`))).toBe(true);
     for (const id of physicsAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
-    expect(PHYS_HIGHER).toHaveLength(1927);
-    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('1d179e8650a66ff4c8afe2767f6f71cfce128f94b3483345dc14025d79d6e571');
+    expect(PHYS_HIGHER).toHaveLength(2058);
+    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('fe2efa5ecb631b04f3026f6ffe9ddf45b4ceaa93579d442a01716079fa1bccb9');
     expect(PHYS_ORDINARY).toHaveLength(1870);
     expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('db39ff637b225bf8ce6e9e7aa3c952759a9f1b945863ce090076ffd508c36130');
-    expect(physicsAdditionIds.size).toBe(1927 + 1870 - 570 - 563 + physicsAliasIds.length);
+    expect(physicsAdditionIds.size).toBe(2058 + 1870 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

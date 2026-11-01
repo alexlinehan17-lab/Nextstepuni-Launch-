@@ -17,16 +17,39 @@
  * the full source remains committed for preservation review and diffs.
  *
  * Usage:  node scripts/paper-trail/topic-tags/build-tags.mjs
+ *         node scripts/paper-trail/topic-tags/build-tags.mjs --subject physics
  */
 import fs from 'fs';
 import path from 'path';
 
 const TAGS_DIR = 'scripts/paper-trail/topic-tags/tags';
+const args = process.argv.slice(2);
+if (args.length && (args.length !== 2 || args[0] !== '--subject' || !/^[a-z][a-z-]*$/.test(args[1]))) {
+  throw new Error('Usage: build-tags.mjs [--subject subject-id]');
+}
+const subjectFilter = args[1];
+if (subjectFilter && !fs.existsSync(path.join(TAGS_DIR, `${subjectFilter}.json`))) {
+  throw new Error(`Unknown topic-tag subject: ${subjectFilter}`);
+}
 
 // all subject wave files → one array
-const papers = [];
-for (const fn of fs.readdirSync(TAGS_DIR).filter(f => f.endsWith('.json')).sort()) {
+// A scoped review preserves other subjects exactly as currently published;
+// their wave files and labels may contain separate, unintegrated revisions.
+const papers = subjectFilter
+  ? JSON.parse(fs.readFileSync('data/paperTrail/paperTopicTags.json', 'utf8'))
+    .filter(paper => paper.subjectId !== subjectFilter)
+  : [];
+const reviewedTopics = new Set();
+for (const fn of fs.readdirSync(TAGS_DIR).filter(f => f.endsWith('.json')
+  && (!subjectFilter || f === `${subjectFilter}.json`)).sort()) {
   const arr = JSON.parse(fs.readFileSync(path.join(TAGS_DIR, fn), 'utf8'));
+  if (subjectFilter && arr.some(paper => paper.subjectId !== subjectFilter)) {
+    throw new Error(`${fn} contains a different subject`);
+  }
+  for (const paper of arr) for (const question of paper.q) {
+    reviewedTopics.add(question.primary);
+    if (question.secondary) reviewedTopics.add(question.secondary);
+  }
   papers.push(...arr);
 }
 papers.sort(
@@ -60,7 +83,12 @@ const NAME = {};
 for (const subj of CUR) for (const st of subj.strands) for (const sub of st.subtopics) NAME[sub.id] = sub.name;
 
 const labels = {};
-for (const id of [...used].sort()) labels[id] = NAME[id] || id;
+const existingLabels = subjectFilter
+  ? JSON.parse(fs.readFileSync('data/paperTrail/topicLabels.json', 'utf8')) : {};
+for (const id of [...used].sort()) {
+  labels[id] = subjectFilter && !reviewedTopics.has(id)
+    ? existingLabels[id] ?? NAME[id] ?? id : NAME[id] || id;
+}
 
 const subjects = [...new Set(papers.map(p => p.subjectId))];
 const runtimeSubjects = [...subjects].sort();

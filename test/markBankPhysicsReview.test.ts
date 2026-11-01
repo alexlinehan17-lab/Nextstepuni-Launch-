@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2022-hl-deferred': [131, 131, 130, '2a9a3ac9068ef33c6e0dd9ed4c7ad1b0c3362b6ef99a6d009f2e8026cb300ea4',
+    'cfb303b96c1cc5ae99e719b8689570a1866e65a88c32b3496cf7c8b1e91603a7'],
   '2010-hl': [97, 97, 48, '38b88551b2ffac2d7c906e4e50c6f825475b00d1e273c17c827777bb9d1140ea',
     '331781327a9392fdf2ae092f61c5b238f15862dc4f753bc5ccb97c9214e3c099'],
   '2010-ol': [104, 104, 87, 'cd7e3171188036792f19a4799691011fd7d7f0725bf748512ad1bde1de8adf5d',
@@ -841,9 +843,9 @@ describe('Physics — reviewed sittings', () => {
   it.each(Object.entries(PINS))('%s ships every reviewed task, and nothing else', (key, pin) => {
     const [cards, tasks, leaves, paperSha, schemeSha] = pin;
     const s = sittings[key];
-    const [year, level] = key.split('-');
-    const prefix = `phys-${year}-${level}-`;
-    const shipped = deck.filter(card => card.id.startsWith(prefix));
+    const prefix = `phys-${key}-`;
+    const shipped = deck.filter(card => card.id.startsWith(prefix)
+      && card.id.includes('-deferred-') === key.endsWith('-deferred'));
     // A retained id the review withdrew onto its replacement does not ship.
     const withdrawn = new Set(Object.keys(s.review?.withdrawn ?? {}));
     const retained = new Set((s.review?.retained ?? []).map(r => r.id).filter(id => !withdrawn.has(id)));
@@ -890,9 +892,9 @@ describe('Physics — reviewed sittings', () => {
   });
 
   it.each(Object.keys(PINS))('%s binds every figure it crops, from the manifest', (key) => {
-    const [year, level] = key.split('-');
-    const prefix = `phys-${year}-${level}-`;
-    for (const card of deck.filter(c => c.id.startsWith(prefix))) {
+    const prefix = `phys-${key}-`;
+    for (const card of deck.filter(c => c.id.startsWith(prefix)
+      && c.id.includes('-deferred-') === key.endsWith('-deferred'))) {
       for (const k of [card.figure?.candId, card.questionFigure?.candId]) {
         if (k) expect(figureKeys.has(k), `${card.id}: ${k}`).toBe(true);
       }

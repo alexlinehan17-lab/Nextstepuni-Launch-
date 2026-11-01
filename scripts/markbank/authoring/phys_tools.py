@@ -60,7 +60,7 @@ def _ledger(year, level):
 def cmd_dump(path, pages):
     import phys_review_lib as B
     # A scheme is read as a scheme: only its right-hand column prints bare-number cells.
-    src = B.Src(_pdf(path), 'scheme' if '/schemes/' in _pdf(path) else 'paper')
+    src = B.Src(_pdf(path), 'scheme' if '/schemes/' in _pdf(path) or '/deferredmarkingschemes/' in _pdf(path) else 'paper')
     for p in _pages(pages):
         if p not in src.lines:
             break
@@ -164,7 +164,7 @@ def cmd_existing(year, level):
 def _build(year, level):
     import phys_review as R
     L = _ledger(int(year), level)
-    return L, R.build(L, int(year), level)
+    return L, R.build(L, int(year), L.LEVEL)
 
 
 def cmd_cards(year, level):
@@ -208,7 +208,7 @@ def cmd_pointers(year, level):
 def cmd_crops(year, level, *only):
     import phys_review as R
     L = _ledger(int(year), level)
-    _, recs = R.figures(L, R.Lifter(L), int(year), level, False)
+    _, recs = R.figures(L, R.Lifter(L), int(year), L.LEVEL, False)
     d = os.path.join(OUT, 'crops')
     os.makedirs(d, exist_ok=True)
     for k, png in recs:
@@ -336,6 +336,7 @@ def cmd_identity(*skip):
             os.path.join(ROOT, 'public/exam-figures/physics/markbank/physics-20*.png')))
         return {f: hashlib.sha256(open(os.path.join(ROOT, f), 'rb').read()).hexdigest() for f in files}
     before = snapshot()
+    failed = []
     sittings = sorted({re.match(r'phys_review_(\d{4})_(hl|ol)\.py', os.path.basename(f)).groups()
                        for f in glob.glob(os.path.join(HERE, 'phys_review_20??_??.py'))}, reverse=True)
     for year, level in sittings:
@@ -345,9 +346,14 @@ def cmd_identity(*skip):
                              capture_output=True, text=True)
         lines = out.stdout.strip().splitlines() or [out.stderr.strip()]
         print(f'{year} {level}:', ([l for l in lines if 'reviewed tasks' in l] or lines)[-1][:110])
+        if out.returncode:
+            failed.append(f'{year}-{level}')
+            print(out.stderr)
     after = snapshot()
     moved = sorted(f for f in set(before) | set(after) if before.get(f) != after.get(f))
     print('byte-identical' if not moved else 'CHANGED: ' + ', '.join(moved))
+    if failed or moved:
+        raise SystemExit(f'Identity verification failed: generators={failed}, changed={moved}')
 
 
 def cmd_scheme_md(year, level):
@@ -360,8 +366,10 @@ def cmd_scheme_md(year, level):
     import importlib.util
     import subprocess
     mb = os.path.join(ROOT, 'scripts', 'markbank')
-    pdf = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes', f'{year}-{level}.pdf')
-    md = pdf[:-4] + '.md'
+    L = _ledger(int(year), level)
+    pdf = os.path.join(ROOT, L.SOURCES['scheme']['path'])
+    md = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes',
+                      f'{year}-{level.replace("_", "-")}.md')
 
     def load(path, name):
         spec = importlib.util.spec_from_file_location(name, path)
@@ -392,7 +400,7 @@ def cmd_scheme_md(year, level):
     fractions = load(os.path.join(mb, 'append-scheme-fractions.py'), 'scheme_fractions')
     append(fractions, fractions.fractions(fractions.Path(pdf)), drop_empty=True)
     append(CLIP_READS, _clip_reads(year, level), drop_empty=True)
-    append(PHYS_ROWS, _phys_rows(pdf))
+    append(PHYS_ROWS, _phys_rows(pdf, L))
     print(md)
 
 
@@ -407,14 +415,16 @@ def cmd_scheme_rows(year, level):
     """Append (or refresh) only the phys-rows block of an EXISTING scheme .md: a
     pre-carded 2021-2025 sitting keeps the file its other cards were checked
     against, and gains the runner's own reading of every scheme line."""
-    pdf = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes', f'{year}-{level}.pdf')
-    md = pdf[:-4] + '.md'
+    L = _ledger(int(year), level)
+    pdf = os.path.join(ROOT, L.SOURCES['scheme']['path'])
+    md = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes',
+                      f'{year}-{level.replace("_", "-")}.md')
     text = open(md, encoding='utf-8').read()
     if PHYS_ROWS.START in text:
         text = re.sub(re.escape(PHYS_ROWS.START) + r'.*?' + re.escape(PHYS_ROWS.END) + r'\n?', '', text, flags=re.S)
     if CLIP_READS.START in text:
         text = re.sub(re.escape(CLIP_READS.START) + r'.*?' + re.escape(CLIP_READS.END) + r'\n?', '', text, flags=re.S)
-    body = '\n\n' + f'{PHYS_ROWS.START}\n' + '\n'.join(_phys_rows(pdf)) + f'\n{PHYS_ROWS.END}\n'
+    body = '\n\n' + f'{PHYS_ROWS.START}\n' + '\n'.join(_phys_rows(pdf, L)) + f'\n{PHYS_ROWS.END}\n'
     clips = _clip_reads(year, level)
     if clips:
         body += '\n' + f'{CLIP_READS.START}\n' + '\n'.join(clips) + f'\n{CLIP_READS.END}\n'
@@ -423,7 +433,7 @@ def cmd_scheme_rows(year, level):
     print(md)
 
 
-def _phys_rows(pdf):
+def _phys_rows(pdf, ledger=None):
     """The scheme's lines as the runner reads them for this sitting: with the
     ledger's glyph-id corrections (GLYPHS) and part-total column (TOTAL_COLUMN_X)."""
     import phys_review_lib as B
@@ -437,6 +447,11 @@ def _phys_rows(pdf):
             total_x = getattr(L, 'TOTAL_COLUMN_X', None)
         except ModuleNotFoundError:
             pass
+    if ledger is not None:
+        glyphs = getattr(ledger, 'GLYPHS', None)
+        if isinstance(glyphs, dict) and 'scheme' in glyphs:
+            glyphs = glyphs['scheme']
+        total_x = getattr(ledger, 'TOTAL_COLUMN_X', None)
     src = B.Src(pdf, 'scheme', total_x=total_x, glyphs=glyphs)
     return [line for p in sorted(src.lines) for line in src.lines[p]]
 
@@ -458,7 +473,7 @@ CLIP_READS = type('ClipReads', (), {'START': '<!-- markbank:clip-reads -->',
 def _clip_reads(year, level):
     import phys_review as R
     L = _ledger(int(year), level)
-    lifter = R.build(L, int(year), level)[0]
+    lifter = R.build(L, int(year), L.LEVEL)[0]
     specs = []
 
     def walk(x):

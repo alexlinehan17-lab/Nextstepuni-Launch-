@@ -190199,7 +190199,12 @@
        "physics-higher-old-course-the-electron",
        "physics-higher-old-course-nuclear-energy",
        "physics-higher-old-course-particle-physics",
-       "physics-higher-old-course-electromagnetic-induction"
+       "physics-higher-old-course-electromagnetic-induction",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-31-charge-interactions",
+       "physics-higher-old-course-waves-wave-motion",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-light"
       ],
       "taskTopics": [
        "phys-1-2",
@@ -190296,7 +190301,10 @@
        "physics-higher-old-course-the-electron",
        "physics-higher-old-course-semiconductors",
        "physics-higher-old-course-the-atom-nucleus-radioactivity",
-       "physics-higher-old-course-electric-circuits"
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-41-the-electron",
+       "physics-higher-old-course-applied-electricity"
       ],
       "taskTopics": [
        "phys-1-4",
@@ -203523,6 +203531,5845 @@
        "page": 9,
        "line": "Calculate:",
        "reason": "Shared command retained in all three separately priced cyclist-calculation tasks."
+      }
+     ]
+    },
+    "excluded": []
+   }
+  },
+  "2022-hl-deferred": {
+   "status": "reviewed",
+   "reviewedAt": "2026-11-01",
+   "ledger": "scripts/markbank/authoring/phys_review_2022_hl_deferred.py",
+   "sitting": "deferred",
+   "method": "2022 Higher deferred Physics: independent visual review of all 16 paper and 24 scheme pages.\nAll source tasks, choices, diagrams and separately published tariffs must be retained.",
+   "sources": {
+    "paper": {
+     "path": "paper-trail-corpus/deferredexams/2022/LC021ALP000EV.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "2a9a3ac9068ef33c6e0dd9ed4c7ad1b0c3362b6ef99a6d009f2e8026cb300ea4",
+     "bytes": 2302793,
+     "pages": 16,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "questions",
+      "13": "questions",
+      "14": "questions",
+      "15": "blank",
+      "16": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    "scheme": {
+     "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC021ALP000EV.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "cfb303b96c1cc5ae99e719b8689570a1866e65a88c32b3496cf7c8b1e91603a7",
+     "bytes": 393248,
+     "pages": 24,
+     "pageRoles": {
+      "1": "cover",
+      "2": "deferred-guidance",
+      "3": "conventions",
+      "4": "marking",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "marking",
+      "19": "marking",
+      "20": "marking",
+      "21": "marking",
+      "22": "marking",
+      "23": "blank",
+      "24": "back-cover"
+     },
+     "pagesLifted": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 16 pages rendered and read",
+    "scheme": "all 24 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 40,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 56,
+    "11": 56,
+    "12": 112,
+    "13": 56,
+    "14": 112
+   },
+   "partTotals": {
+    "10a": 21,
+    "10b": 35,
+    "12a": 56,
+    "12b": 56,
+    "13a": 7,
+    "13b": 7,
+    "13c": 7,
+    "13d": 7,
+    "13e": 7,
+    "13f": 7,
+    "13g": 7,
+    "13h": 7,
+    "14a": 28,
+    "14b": 28,
+    "14c": 28,
+    "14d": 28
+   },
+   "groupTotals": {},
+   "tickChecksums": {},
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "both",
+     "disposition": "Both bodies are required setup context, not a choice."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "All seven experimental readings are required data, retained in Q2(ii)."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "All four mirror trials are required data."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "The full quoted diffraction report is source context."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Best eight of twelve short-question parts; all parts retained, with both distinct-topic Q6(l) alternatives."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q6(l) particle and LED alternatives are separately priced seven-mark routes in distinct topics."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "either",
+     "disposition": "Both 56-mark Q12 options retained."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "or",
+     "disposition": "Both 56-mark Q12 options retained."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "All four particle terms are required, each at its own six-mark boundary."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "both",
+     "disposition": "Both protons are required collision context."
+    },
+    {
+     "doc": "paper",
+     "page": 12,
+     "directive": "the following",
+     "disposition": "Full wind-power passage and attribution retained in every Q13 card."
+    },
+    {
+     "doc": "paper",
+     "page": 13,
+     "directive": "any two",
+     "disposition": "All four 28-mark Q14 options retained; no combination cards."
+    },
+    {
+     "doc": "paper",
+     "page": 13,
+     "directive": "the following",
+     "disposition": "All four 28-mark Q14 options retained; no combination cards."
+    },
+    {
+     "doc": "paper",
+     "page": 14,
+     "directive": "or",
+     "disposition": "One classification task: spontaneous or induced is the answer choice, not multiple tasks."
+    },
+    {
+     "doc": "paper",
+     "page": 14,
+     "directive": "or",
+     "disposition": "The response must give all three values; numbers/symbols describes their form."
+    }
+   ],
+   "routes": {
+    "Q6(l)": [
+     "particle",
+     "led"
+    ]
+   },
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "q1i",
+     "id": "phys-2022-hl-deferred-q1-i",
+     "questionRef": "2022 HL Q1(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1i",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1ii",
+     "id": "phys-2022-hl-deferred-q1-ii",
+     "questionRef": "2022 HL Q1(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q1ii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iii",
+     "id": "phys-2022-hl-deferred-q1-iii",
+     "questionRef": "2022 HL Q1(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1iii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[ 4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iv",
+     "id": "phys-2022-hl-deferred-q1-iv",
+     "questionRef": "2022 HL Q1(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1iv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [],
+      "sum": 0
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1v",
+     "id": "phys-2022-hl-deferred-q1-v",
+     "questionRef": "2022 HL Q1(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-1",
+     "concept": "q1v",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[6]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1vi",
+     "id": "phys-2022-hl-deferred-q1-vi",
+     "questionRef": "2022 HL Q1(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q1-speed-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2i",
+     "id": "phys-2022-hl-deferred-q2-i",
+     "questionRef": "2022 HL Q2(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2i",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2ii",
+     "id": "phys-2022-hl-deferred-q2-ii",
+     "questionRef": "2022 HL Q2(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2ii",
+     "route": null,
+     "rows": 6,
+     "figure": "q2-latent-solution",
+     "questionFigure": "q2-latent-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 18
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2iii",
+     "id": "phys-2022-hl-deferred-q2-iii",
+     "questionRef": "2022 HL Q2(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2iii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2iv",
+     "id": "phys-2022-hl-deferred-q2-iv",
+     "questionRef": "2022 HL Q2(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      4,
+      2
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2iv",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 2]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3i",
+     "id": "phys-2022-hl-deferred-q3-i",
+     "questionRef": "2022 HL Q3(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3ii",
+     "id": "phys-2022-hl-deferred-q3-ii",
+     "questionRef": "2022 HL Q3(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3ii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3iii",
+     "id": "phys-2022-hl-deferred-q3-iii",
+     "questionRef": "2022 HL Q3(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3iii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3iv",
+     "id": "phys-2022-hl-deferred-q3-iv",
+     "questionRef": "2022 HL Q3(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3iv",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3v",
+     "id": "phys-2022-hl-deferred-q3-v",
+     "questionRef": "2022 HL Q3(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      6,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3v",
+     "route": null,
+     "rows": 3,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[6]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3vi",
+     "id": "phys-2022-hl-deferred-q3-vi",
+     "questionRef": "2022 HL Q3(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3vi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3vii",
+     "id": "phys-2022-hl-deferred-q3-vii",
+     "questionRef": "2022 HL Q3(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3vii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4i",
+     "id": "phys-2022-hl-deferred-q4-i",
+     "questionRef": "2022 HL Q4(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q4i",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4ii",
+     "id": "phys-2022-hl-deferred-q4-ii",
+     "questionRef": "2022 HL Q4(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q4ii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4(iii):spacing",
+     "id": "phys-2022-hl-deferred-q4-iii-spacing",
+     "questionRef": "2022 HL Q4(iii) — Deferred sitting — Grating spacing",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "spacing",
+     "route": null,
+     "item": "Grating spacing",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.7,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q4(iv):angle",
+     "id": "phys-2022-hl-deferred-q4-iv-angle",
+     "questionRef": "2022 HL Q4(iv) — Deferred sitting — Angle of diffraction",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "angle",
+     "route": null,
+     "item": "Angle of diffraction",
+     "rows": 3,
+     "figure": "q4-angle-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.7,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3,
+      "waiver": "Three mutually exclusive methods, two 3-mark steps in each; Q4(iii) is a separately priced 3-mark task."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4v",
+     "id": "phys-2022-hl-deferred-q4-v",
+     "questionRef": "2022 HL Q4(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-6",
+     "concept": "q4v",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4vi",
+     "id": "phys-2022-hl-deferred-q4-vi",
+     "questionRef": "2022 HL Q4(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q4vi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4vii",
+     "id": "phys-2022-hl-deferred-q4-vii",
+     "questionRef": "2022 HL Q4(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q4vii",
+     "route": null,
+     "rows": 2,
+     "figure": "q4-wavelength-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4viii",
+     "id": "phys-2022-hl-deferred-q4-viii",
+     "questionRef": "2022 HL Q4(viii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      4,
+      2
+     ],
+     "topic": "phys-2-6",
+     "concept": "q4viii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "Any two items [4 + 2]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5i",
+     "id": "phys-2022-hl-deferred-q5-i",
+     "questionRef": "2022 HL Q5(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5i",
+     "route": null,
+     "rows": 4,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5ii",
+     "id": "phys-2022-hl-deferred-q5-ii",
+     "questionRef": "2022 HL Q5(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      6,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5ii",
+     "route": null,
+     "rows": 3,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[6]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5iii",
+     "id": "phys-2022-hl-deferred-q5-iii",
+     "questionRef": "2022 HL Q5(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5iv",
+     "id": "phys-2022-hl-deferred-q5-iv",
+     "questionRef": "2022 HL Q5(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5v",
+     "id": "phys-2022-hl-deferred-q5-v",
+     "questionRef": "2022 HL Q5(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5v",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5vi",
+     "id": "phys-2022-hl-deferred-q5-vi",
+     "questionRef": "2022 HL Q5(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6a",
+     "id": "phys-2022-hl-deferred-q6-a",
+     "questionRef": "2022 HL Q6(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "q6a",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-power-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6b",
+     "id": "phys-2022-hl-deferred-q6-b",
+     "questionRef": "2022 HL Q6(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q6b",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-archimedes",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6c",
+     "id": "phys-2022-hl-deferred-q6-c",
+     "questionRef": "2022 HL Q6(c) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-3",
+     "concept": "q6c",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-pendulum-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6d",
+     "id": "phys-2022-hl-deferred-q6-d",
+     "questionRef": "2022 HL Q6(d) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q6d",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6e",
+     "id": "phys-2022-hl-deferred-q6-e",
+     "questionRef": "2022 HL Q6(e) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q6e",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6f",
+     "id": "phys-2022-hl-deferred-q6-f",
+     "questionRef": "2022 HL Q6(f) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "q6f",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6g",
+     "id": "phys-2022-hl-deferred-q6-g",
+     "questionRef": "2022 HL Q6(g) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-2-3",
+     "concept": "q6g",
+     "route": null,
+     "rows": 3,
+     "figure": "q6-lenses-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[1 + 1]",
+       "[2]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6h",
+     "id": "phys-2022-hl-deferred-q6-h",
+     "questionRef": "2022 HL Q6(h) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q6h",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6i",
+     "id": "phys-2022-hl-deferred-q6-i",
+     "questionRef": "2022 HL Q6(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      2,
+      2,
+      2,
+      1
+     ],
+     "topic": "phys-1-2",
+     "concept": "q6i",
+     "route": null,
+     "rows": 4,
+     "figure": "q6-pressure-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]",
+       "[2]",
+       "[1]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6j",
+     "id": "phys-2022-hl-deferred-q6-j",
+     "questionRef": "2022 HL Q6(j) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-2-1",
+     "concept": "q6j",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[2]",
+       "[2]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6k",
+     "id": "phys-2022-hl-deferred-q6-k",
+     "questionRef": "2022 HL Q6(k) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q6k",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6l-particle",
+     "id": "phys-2022-hl-deferred-q6-l-particle",
+     "questionRef": "2022 HL Q6(l) — Deferred sitting — particle",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-4-5",
+     "concept": "q6l-particle",
+     "route": "particle",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[7]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6l-led",
+     "id": "phys-2022-hl-deferred-q6-l-led",
+     "questionRef": "2022 HL Q6(l) — Deferred sitting — led",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-3",
+     "concept": "q6l-led",
+     "route": "led",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[7]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7(i):displacement",
+     "id": "phys-2022-hl-deferred-q7-i-displacement",
+     "questionRef": "2022 HL Q7(i) — Deferred sitting — Displacement",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "displacement",
+     "route": null,
+     "item": "Displacement",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.4,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q7(ii):velocity",
+     "id": "phys-2022-hl-deferred-q7-ii-velocity",
+     "questionRef": "2022 HL Q7(ii) — Deferred sitting — Velocity",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "velocity",
+     "route": null,
+     "item": "Velocity",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.4,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6,
+      "waiver": "Separate displacement definition costs 3; each alternative velocity definition is 3 + 3."
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7iii",
+     "id": "phys-2022-hl-deferred-q7-iii",
+     "questionRef": "2022 HL Q7(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q7iii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7iv",
+     "id": "phys-2022-hl-deferred-q7-iv",
+     "questionRef": "2022 HL Q7(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q7iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-velocity-solution",
+     "questionFigure": "q7-velocity-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7v",
+     "id": "phys-2022-hl-deferred-q7-v",
+     "questionRef": "2022 HL Q7(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q7v",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-river",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7vi",
+     "id": "phys-2022-hl-deferred-q7-vi",
+     "questionRef": "2022 HL Q7(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q7vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-displacement-solution",
+     "questionFigure": "q7-displacement-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7vii",
+     "id": "phys-2022-hl-deferred-q7-vii",
+     "questionRef": "2022 HL Q7(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7vii",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7viii",
+     "id": "phys-2022-hl-deferred-q7-viii",
+     "questionRef": "2022 HL Q7(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 11,
+     "markUnits": [
+      3,
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7viii",
+     "route": null,
+     "rows": 4,
+     "figure": "q7-slope-solution",
+     "questionFigure": "q7-slope-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[2]"
+      ],
+      "sum": 11
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8i",
+     "id": "phys-2022-hl-deferred-q8-i",
+     "questionRef": "2022 HL Q8(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q8i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8ii",
+     "id": "phys-2022-hl-deferred-q8-ii",
+     "questionRef": "2022 HL Q8(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q8ii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9,
+      "waiver": "Two complete alternative three-step explanations, 3 marks per step."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iii",
+     "id": "phys-2022-hl-deferred-q8-iii",
+     "questionRef": "2022 HL Q8(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-3",
+     "concept": "q8iii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iv",
+     "id": "phys-2022-hl-deferred-q8-iv",
+     "questionRef": "2022 HL Q8(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-3",
+     "concept": "q8iv",
+     "route": null,
+     "rows": 3,
+     "figure": "q8-levels-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8v",
+     "id": "phys-2022-hl-deferred-q8-v",
+     "questionRef": "2022 HL Q8(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-3",
+     "concept": "q8v",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8vi",
+     "id": "phys-2022-hl-deferred-q8-vi",
+     "questionRef": "2022 HL Q8(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q8vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q8-frequency-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8vii",
+     "id": "phys-2022-hl-deferred-q8-vii",
+     "questionRef": "2022 HL Q8(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q8vii",
+     "route": null,
+     "rows": 3,
+     "figure": "q8-doppler-solution",
+     "questionFigure": "q8-doppler-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8viii",
+     "id": "phys-2022-hl-deferred-q8-viii",
+     "questionRef": "2022 HL Q8(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      2,
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-1-6",
+     "concept": "q8viii",
+     "route": null,
+     "rows": 4,
+     "figure": "q8-orbit-solution",
+     "questionFigure": "q8-orbit-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]",
+       "[2]",
+       "[2]"
+      ],
+      "sum": 8
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9(i):faraday",
+     "id": "phys-2022-hl-deferred-q9-i-faraday",
+     "questionRef": "2022 HL Q9(i) — Deferred sitting — Faraday’s law",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "faraday",
+     "route": null,
+     "item": "Faraday’s law",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.7,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q9(ii):lenz",
+     "id": "phys-2022-hl-deferred-q9-ii-lenz",
+     "questionRef": "2022 HL Q9(ii) — Deferred sitting — Lenz’s law",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "lenz",
+     "route": null,
+     "item": "Lenz’s law",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9iii",
+     "id": "phys-2022-hl-deferred-q9-iii",
+     "questionRef": "2022 HL Q9(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9iii",
+     "route": null,
+     "rows": 5,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 15
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9iv",
+     "id": "phys-2022-hl-deferred-q9-iv",
+     "questionRef": "2022 HL Q9(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q9-flux-solution",
+     "questionFigure": "q9-flux-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9v",
+     "id": "phys-2022-hl-deferred-q9-v",
+     "questionRef": "2022 HL Q9(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9v",
+     "route": null,
+     "rows": 3,
+     "figure": "q9-emf-solution",
+     "questionFigure": "q9-emf-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9vi",
+     "id": "phys-2022-hl-deferred-q9-vi",
+     "questionRef": "2022 HL Q9(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-transformer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9vii",
+     "id": "phys-2022-hl-deferred-q9-vii",
+     "questionRef": "2022 HL Q9(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9vii",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-transformer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9viii",
+     "id": "phys-2022-hl-deferred-q9-viii",
+     "questionRef": "2022 HL Q9(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-3-6",
+     "concept": "q9viii",
+     "route": null,
+     "rows": 3,
+     "figure": "q9-transformer",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[2]"
+      ],
+      "sum": 8
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10ai",
+     "id": "phys-2022-hl-deferred-q10-a-i",
+     "questionRef": "2022 HL Q10(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-1",
+     "concept": "q10ai",
+     "route": null,
+     "rows": 5,
+     "figure": "q10-tv",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 15
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10aii",
+     "id": "phys-2022-hl-deferred-q10-a-ii",
+     "questionRef": "2022 HL Q10(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-1",
+     "concept": "q10aii",
+     "route": null,
+     "rows": 1,
+     "figure": "q10-tv",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2 × 3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10bi",
+     "id": "phys-2022-hl-deferred-q10-b-i",
+     "questionRef": "2022 HL Q10(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q10bi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10bii",
+     "id": "phys-2022-hl-deferred-q10-b-ii",
+     "questionRef": "2022 HL Q10(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      3,
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-4-2",
+     "concept": "q10bii",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[2]",
+       "[2]"
+      ],
+      "sum": 10
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10biii",
+     "id": "phys-2022-hl-deferred-q10-b-iii",
+     "questionRef": "2022 HL Q10(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 10,
+     "markUnits": [
+      3,
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-4-2",
+     "concept": "q10biii",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[2]",
+       "[2]"
+      ],
+      "sum": 10
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(iv):photon",
+     "id": "phys-2022-hl-deferred-q10-b-iv-photon",
+     "questionRef": "2022 HL Q10(b)(iv) — Deferred sitting — Photon energy",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "photon",
+     "route": null,
+     "item": "Photon energy",
+     "rows": 2,
+     "figure": "q10-photon-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.58,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q10(b)(v):electron",
+     "id": "phys-2022-hl-deferred-q10-b-v-electron",
+     "questionRef": "2022 HL Q10(b)(v) — Deferred sitting — Maximum electron energy",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "electron",
+     "route": null,
+     "item": "Maximum electron energy",
+     "rows": 2,
+     "figure": "q10-electron-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q11(i):pd",
+     "id": "phys-2022-hl-deferred-q11-i-pd",
+     "questionRef": "2022 HL Q11(i) — Deferred sitting — Potential difference",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "pd",
+     "route": null,
+     "item": "Potential difference",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.5,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6,
+      "waiver": "Each definition is a separate 3 + 3. Formula/notation and words are alternative routes, not additional marks."
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q11(ii):resistance",
+     "id": "phys-2022-hl-deferred-q11-ii-resistance",
+     "questionRef": "2022 HL Q11(ii) — Deferred sitting — Resistance",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "resistance",
+     "route": null,
+     "item": "Resistance",
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.33,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6,
+      "waiver": "Each definition is a separate 3 + 3. Formula/notation and words are alternative routes, not additional marks."
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11iii",
+     "id": "phys-2022-hl-deferred-q11-iii",
+     "questionRef": "2022 HL Q11(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11iii",
+     "route": null,
+     "rows": 3,
+     "figure": "q11-derive-solution",
+     "questionFigure": "q11-derive-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11iv",
+     "id": "phys-2022-hl-deferred-q11-iv",
+     "questionRef": "2022 HL Q11(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11iv",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11v",
+     "id": "phys-2022-hl-deferred-q11-v",
+     "questionRef": "2022 HL Q11(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11v",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11vi",
+     "id": "phys-2022-hl-deferred-q11-vi",
+     "questionRef": "2022 HL Q11(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11vi",
+     "route": null,
+     "rows": 3,
+     "figure": "q11-resistance-solution",
+     "questionFigure": "q11-resistance-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11vii",
+     "id": "phys-2022-hl-deferred-q11-vii",
+     "questionRef": "2022 HL Q11(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11vii",
+     "route": null,
+     "rows": 2,
+     "figure": "q11-current-solution",
+     "questionFigure": "q11-current-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11viii",
+     "id": "phys-2022-hl-deferred-q11-viii",
+     "questionRef": "2022 HL Q11(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      3,
+      2
+     ],
+     "topic": "phys-3-3",
+     "concept": "q11viii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": "q11-change-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[2]"
+      ],
+      "sum": 5
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(a)(i):quark",
+     "id": "phys-2022-hl-deferred-q12-a-i-quark",
+     "questionRef": "2022 HL Q12(a)(i) — Deferred sitting — Quark",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "quark",
+     "route": null,
+     "item": "Quark",
+     "rows": 2,
+     "figure": "q12-cern",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.42,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(a)(ii):lepton",
+     "id": "phys-2022-hl-deferred-q12-a-ii-lepton",
+     "questionRef": "2022 HL Q12(a)(ii) — Deferred sitting — Lepton",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "lepton",
+     "route": null,
+     "item": "Lepton",
+     "rows": 2,
+     "figure": "q12-cern",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.42,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(a)(iii):meson",
+     "id": "phys-2022-hl-deferred-q12-a-iii-meson",
+     "questionRef": "2022 HL Q12(a)(iii) — Deferred sitting — Meson",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-5",
+     "concept": "meson",
+     "route": null,
+     "item": "Meson",
+     "rows": 1,
+     "figure": "q12-cern",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.42,
+     "cells": {
+      "printed": [
+       "[6]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(a)(iv):baryon",
+     "id": "phys-2022-hl-deferred-q12-a-iv-baryon",
+     "questionRef": "2022 HL Q12(a)(iv) — Deferred sitting — Baryon",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-5",
+     "concept": "baryon",
+     "route": null,
+     "item": "Baryon",
+     "rows": 1,
+     "figure": "q12-cern",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.42,
+     "cells": {
+      "printed": [
+       "[6]"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The scheme repeats the shared inline command; this card retains one independently priced numbered item.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12av",
+     "id": "phys-2022-hl-deferred-q12-a-v",
+     "questionRef": "2022 HL Q12(a)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12av",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12avi",
+     "id": "phys-2022-hl-deferred-q12-a-vi",
+     "questionRef": "2022 HL Q12(a)(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12avi",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-collision",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[5]"
+      ],
+      "sum": 5
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12avii",
+     "id": "phys-2022-hl-deferred-q12-a-vii",
+     "questionRef": "2022 HL Q12(a)(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      6,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12avii",
+     "route": null,
+     "rows": 5,
+     "figure": "q12-speed-solution",
+     "questionFigure": "q12-speed-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[6]",
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 18
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aviii",
+     "id": "phys-2022-hl-deferred-q12-a-viii",
+     "questionRef": "2022 HL Q12(a)(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aviii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12bi",
+     "id": "phys-2022-hl-deferred-q12-b-i",
+     "questionRef": "2022 HL Q12(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q12bi",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12bii",
+     "id": "phys-2022-hl-deferred-q12-b-ii",
+     "questionRef": "2022 HL Q12(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q12bii",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-speaker",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12biii",
+     "id": "phys-2022-hl-deferred-q12-b-iii",
+     "questionRef": "2022 HL Q12(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q12biii",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-speaker",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12biv",
+     "id": "phys-2022-hl-deferred-q12-b-iv",
+     "questionRef": "2022 HL Q12(b)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q12biv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3 × 3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12bv",
+     "id": "phys-2022-hl-deferred-q12-b-v",
+     "questionRef": "2022 HL Q12(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-4",
+     "concept": "q12bv",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b)(vi):ammeter",
+     "id": "phys-2022-hl-deferred-q12-b-vi-ammeter",
+     "questionRef": "2022 HL Q12(b)(vi) — Deferred sitting — Ammeter",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "ammeter",
+     "route": null,
+     "item": "Ammeter",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.83,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q12(b)(vii):voltmeter",
+     "id": "phys-2022-hl-deferred-q12-b-vii-voltmeter",
+     "questionRef": "2022 HL Q12(b)(vii) — Deferred sitting — Voltmeter",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      3,
+      2
+     ],
+     "topic": "phys-3-3",
+     "concept": "voltmeter",
+     "route": null,
+     "item": "Voltmeter",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.75,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[2]"
+      ],
+      "sum": 5
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13a",
+     "id": "phys-2022-hl-deferred-q13-a",
+     "questionRef": "2022 HL Q13(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13a",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[7]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13b",
+     "id": "phys-2022-hl-deferred-q13-b",
+     "questionRef": "2022 HL Q13(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-4",
+     "concept": "q13b",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13c",
+     "id": "phys-2022-hl-deferred-q13-c",
+     "questionRef": "2022 HL Q13(c) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13c",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13d",
+     "id": "phys-2022-hl-deferred-q13-d",
+     "questionRef": "2022 HL Q13(d) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13d",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13e",
+     "id": "phys-2022-hl-deferred-q13-e",
+     "questionRef": "2022 HL Q13(e) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13e",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13f",
+     "id": "phys-2022-hl-deferred-q13-f",
+     "questionRef": "2022 HL Q13(f) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13f",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]",
+       "[3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13g",
+     "id": "phys-2022-hl-deferred-q13-g",
+     "questionRef": "2022 HL Q13(g) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q13g",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13h",
+     "id": "phys-2022-hl-deferred-q13-h",
+     "questionRef": "2022 HL Q13(h) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-1",
+     "concept": "q13h",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-passage",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4 + 3]"
+      ],
+      "sum": 7
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14ai",
+     "id": "phys-2022-hl-deferred-q14-a-i",
+     "questionRef": "2022 HL Q14(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-1-3",
+     "concept": "q14ai",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]"
+      ],
+      "sum": 4,
+      "waiver": "Words and formula/notation are complete alternative 2 + 2 routes."
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14aii",
+     "id": "phys-2022-hl-deferred-q14-a-ii",
+     "questionRef": "2022 HL Q14(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-1-3",
+     "concept": "q14aii",
+     "route": null,
+     "rows": 3,
+     "figure": "q14-spring-solution",
+     "questionFigure": "q14-spring-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]",
+       "[2]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14aiii",
+     "id": "phys-2022-hl-deferred-q14-a-iii",
+     "questionRef": "2022 HL Q14(a)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-3",
+     "concept": "q14aiii",
+     "route": null,
+     "rows": 4,
+     "figure": "q14-period-solution",
+     "questionFigure": "q14-period-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 12
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(a)(iv):velocity",
+     "id": "phys-2022-hl-deferred-q14-a-iv-velocity",
+     "questionRef": "2022 HL Q14(a)(iv) — Deferred sitting — Maximum velocity",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-3",
+     "concept": "velocity",
+     "route": null,
+     "item": "Maximum velocity",
+     "rows": 1,
+     "figure": "q14-spring",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.82,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(a)(v):acceleration",
+     "id": "phys-2022-hl-deferred-q14-a-v-acceleration",
+     "questionRef": "2022 HL Q14(a)(v) — Deferred sitting — Maximum acceleration",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       19
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-3",
+     "concept": "acceleration",
+     "route": null,
+     "item": "Maximum acceleration",
+     "rows": 1,
+     "figure": "q14-spring",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.73,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bi",
+     "id": "phys-2022-hl-deferred-q14-b-i",
+     "questionRef": "2022 HL Q14(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q14bi",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bii",
+     "id": "phys-2022-hl-deferred-q14-b-ii",
+     "questionRef": "2022 HL Q14(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q14bii",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-index-solution",
+     "questionFigure": "q14-index-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14biii",
+     "id": "phys-2022-hl-deferred-q14-b-iii",
+     "questionRef": "2022 HL Q14(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q14biii",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-light-speed-solution",
+     "questionFigure": "q14-light-speed-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14biv",
+     "id": "phys-2022-hl-deferred-q14-b-iv",
+     "questionRef": "2022 HL Q14(b)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q14biv",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-wavelength-solution",
+     "questionFigure": "q14-wavelength-question",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bv",
+     "id": "phys-2022-hl-deferred-q14-b-v",
+     "questionRef": "2022 HL Q14(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       20
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-3",
+     "concept": "q14bv",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-glass",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[4]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14ci",
+     "id": "phys-2022-hl-deferred-q14-c-i",
+     "questionRef": "2022 HL Q14(c)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14ci",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[6]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14cii",
+     "id": "phys-2022-hl-deferred-q14-c-ii",
+     "questionRef": "2022 HL Q14(c)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14cii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(iii):plate-a",
+     "id": "phys-2022-hl-deferred-q14-c-iii-plate-a",
+     "questionRef": "2022 HL Q14(c)(iii) — Deferred sitting — Plate A charge",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-a",
+     "route": null,
+     "item": "Plate A charge",
+     "rows": 1,
+     "figure": "q14-capacitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.86,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(iv):plate-b",
+     "id": "phys-2022-hl-deferred-q14-c-iv-plate-b",
+     "questionRef": "2022 HL Q14(c)(iv) — Deferred sitting — Plate B charge",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-b",
+     "route": null,
+     "item": "Plate B charge",
+     "rows": 1,
+     "figure": "q14-capacitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14cv",
+     "id": "phys-2022-hl-deferred-q14-c-v",
+     "questionRef": "2022 HL Q14(c)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14cv",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-capacitor",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(vi):plate-a",
+     "id": "phys-2022-hl-deferred-q14-c-vi-plate-a",
+     "questionRef": "2022 HL Q14(c)(vi) — Deferred sitting — Parallel plate A",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 1,
+     "markUnits": [
+      1
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-a",
+     "route": null,
+     "item": "Parallel plate A",
+     "rows": 1,
+     "figure": "q14-parallel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "cells": {
+      "printed": [
+       "[1]"
+      ],
+      "sum": 1
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(vii):plate-b",
+     "id": "phys-2022-hl-deferred-q14-c-vii-plate-b",
+     "questionRef": "2022 HL Q14(c)(vii) — Deferred sitting — Parallel plate B",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 1,
+     "markUnits": [
+      1
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-b",
+     "route": null,
+     "item": "Parallel plate B",
+     "rows": 1,
+     "figure": "q14-parallel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "cells": {
+      "printed": [
+       "[1]"
+      ],
+      "sum": 1
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(viii):plate-x",
+     "id": "phys-2022-hl-deferred-q14-c-viii-plate-x",
+     "questionRef": "2022 HL Q14(c)(viii) — Deferred sitting — Parallel plate X",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-x",
+     "route": null,
+     "item": "Parallel plate X",
+     "rows": 1,
+     "figure": "q14-parallel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "cells": {
+      "printed": [
+       "[2]"
+      ],
+      "sum": 2
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "Q14(c)(ix):plate-y",
+     "id": "phys-2022-hl-deferred-q14-c-ix-plate-y",
+     "questionRef": "2022 HL Q14(c)(ix) — Deferred sitting — Parallel plate Y",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "phys-3-2",
+     "concept": "plate-y",
+     "route": null,
+     "item": "Parallel plate Y",
+     "rows": 1,
+     "figure": "q14-parallel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.71,
+     "cells": {
+      "printed": [
+       "[2]"
+      ],
+      "sum": 2
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14cx",
+     "id": "phys-2022-hl-deferred-q14-c-x",
+     "questionRef": "2022 HL Q14(c)(x) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       21
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14cx",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-parallel",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14di",
+     "id": "phys-2022-hl-deferred-q14-d-i",
+     "questionRef": "2022 HL Q14(d)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "q14di",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14dii",
+     "id": "phys-2022-hl-deferred-q14-d-ii",
+     "questionRef": "2022 HL Q14(d)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "q14dii",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fission",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]"
+      ],
+      "sum": 3
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14diii",
+     "id": "phys-2022-hl-deferred-q14-d-iii",
+     "questionRef": "2022 HL Q14(d)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-6",
+     "concept": "q14diii",
+     "route": null,
+     "rows": 3,
+     "figure": "q14-fission",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]",
+       "[3]"
+      ],
+      "sum": 9
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14div",
+     "id": "phys-2022-hl-deferred-q14-d-iv",
+     "questionRef": "2022 HL Q14(d)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q14div",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-atoms-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[3]",
+       "[3]"
+      ],
+      "sum": 6
+     },
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14dv",
+     "id": "phys-2022-hl-deferred-q14-d-v",
+     "questionRef": "2022 HL Q14(d)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       22
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-4-4",
+     "concept": "q14dv",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-half-life-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "[2]",
+       "[2]"
+      ],
+      "sum": 4
+     },
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 131,
+   "baseTaskCount": 131,
+   "figures": [
+    "physics-2022-hl-deferred-q1-speed-solution",
+    "physics-2022-hl-deferred-q10-electron-solution",
+    "physics-2022-hl-deferred-q10-photon-solution",
+    "physics-2022-hl-deferred-q10-tv",
+    "physics-2022-hl-deferred-q11-change-question",
+    "physics-2022-hl-deferred-q11-current-question",
+    "physics-2022-hl-deferred-q11-current-solution",
+    "physics-2022-hl-deferred-q11-derive-question",
+    "physics-2022-hl-deferred-q11-derive-solution",
+    "physics-2022-hl-deferred-q11-resistance-question",
+    "physics-2022-hl-deferred-q11-resistance-solution",
+    "physics-2022-hl-deferred-q12-cern",
+    "physics-2022-hl-deferred-q12-collision",
+    "physics-2022-hl-deferred-q12-speaker",
+    "physics-2022-hl-deferred-q12-speed-question",
+    "physics-2022-hl-deferred-q12-speed-solution",
+    "physics-2022-hl-deferred-q13-passage",
+    "physics-2022-hl-deferred-q14-atoms-solution",
+    "physics-2022-hl-deferred-q14-capacitor",
+    "physics-2022-hl-deferred-q14-fission",
+    "physics-2022-hl-deferred-q14-glass",
+    "physics-2022-hl-deferred-q14-half-life-solution",
+    "physics-2022-hl-deferred-q14-index-question",
+    "physics-2022-hl-deferred-q14-index-solution",
+    "physics-2022-hl-deferred-q14-light-speed-question",
+    "physics-2022-hl-deferred-q14-light-speed-solution",
+    "physics-2022-hl-deferred-q14-parallel",
+    "physics-2022-hl-deferred-q14-period-question",
+    "physics-2022-hl-deferred-q14-period-solution",
+    "physics-2022-hl-deferred-q14-spring",
+    "physics-2022-hl-deferred-q14-spring-question",
+    "physics-2022-hl-deferred-q14-spring-solution",
+    "physics-2022-hl-deferred-q14-wavelength-question",
+    "physics-2022-hl-deferred-q14-wavelength-solution",
+    "physics-2022-hl-deferred-q2-latent-question",
+    "physics-2022-hl-deferred-q2-latent-solution",
+    "physics-2022-hl-deferred-q3-data",
+    "physics-2022-hl-deferred-q4-angle-solution",
+    "physics-2022-hl-deferred-q4-wavelength-solution",
+    "physics-2022-hl-deferred-q5-data",
+    "physics-2022-hl-deferred-q6-archimedes",
+    "physics-2022-hl-deferred-q6-lenses-solution",
+    "physics-2022-hl-deferred-q6-pendulum-solution",
+    "physics-2022-hl-deferred-q6-power-solution",
+    "physics-2022-hl-deferred-q6-pressure-solution",
+    "physics-2022-hl-deferred-q7-displacement-question",
+    "physics-2022-hl-deferred-q7-displacement-solution",
+    "physics-2022-hl-deferred-q7-river",
+    "physics-2022-hl-deferred-q7-slope-question",
+    "physics-2022-hl-deferred-q7-slope-solution",
+    "physics-2022-hl-deferred-q7-velocity-question",
+    "physics-2022-hl-deferred-q7-velocity-solution",
+    "physics-2022-hl-deferred-q8-doppler-question",
+    "physics-2022-hl-deferred-q8-doppler-solution",
+    "physics-2022-hl-deferred-q8-frequency-solution",
+    "physics-2022-hl-deferred-q8-levels-solution",
+    "physics-2022-hl-deferred-q8-orbit-question",
+    "physics-2022-hl-deferred-q8-orbit-solution",
+    "physics-2022-hl-deferred-q9-emf-question",
+    "physics-2022-hl-deferred-q9-emf-solution",
+    "physics-2022-hl-deferred-q9-flux-question",
+    "physics-2022-hl-deferred-q9-flux-solution",
+    "physics-2022-hl-deferred-q9-transformer"
+   ],
+   "checks": {
+    "censusLeaves": 130,
+    "censusLeavesClaimed": 130,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-mechanics"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-heat"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-light"
+      ],
+      "taskTopics": [
+       "phys-2-3"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-light"
+      ],
+      "taskTopics": [
+       "phys-2-4",
+       "phys-2-6"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-electricity"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-new-course-13-stretching-and-compressing-objects",
+       "physics-higher-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-new-course-25-sound-energy",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-heat-heat-transfer",
+       "physics-higher-old-course-particle-physics",
+       "physics-higher-old-course-pressure-gravity-moments",
+       "physics-higher-old-course-refraction-lenses",
+       "physics-higher-old-course-simple-harmonic-motion",
+       "physics-higher-old-course-temperature-thermometers",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity",
+       "physics-higher-old-course-vibration-sound",
+       "physics-higher-old-course-waves-wave-motion",
+       "physics-higher-old-course-work-energy-power"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-1-3",
+       "phys-1-4",
+       "phys-2-1",
+       "phys-2-3",
+       "phys-2-5",
+       "phys-2-6",
+       "phys-3-3",
+       "phys-4-2",
+       "phys-4-5"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-old-course-speed-displacement-velocity"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-2"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "physics-higher-new-course-16-uniform-circular-motion",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-27-wave-effects",
+       "physics-higher-new-course-43-early-models-of-the-atom",
+       "physics-higher-old-course-circular-motion",
+       "physics-higher-old-course-the-electron",
+       "physics-higher-old-course-waves-wave-motion"
+      ],
+      "taskTopics": [
+       "phys-1-6",
+       "phys-2-4",
+       "phys-2-7",
+       "phys-4-3"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-higher-old-course-electromagnetic-induction"
+      ],
+      "taskTopics": [
+       "phys-3-6"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "physics-higher-new-course-41-the-electron",
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-old-course-the-electron"
+      ],
+      "taskTopics": [
+       "phys-4-1",
+       "phys-4-2"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-resistance"
+      ],
+      "taskTopics": [
+       "phys-3-2",
+       "phys-3-3"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-higher-new-course-35-the-force-experienced-by-a-current-carrying-conductor-in-a-magnetic-field",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-particle-physics"
+      ],
+      "taskTopics": [
+       "phys-3-3",
+       "phys-3-4",
+       "phys-3-5",
+       "phys-4-5"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "physics-higher-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+       "physics-higher-new-course-31-charge-interactions",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-higher-old-course-electric-circuits"
+      ],
+      "taskTopics": [
+       "phys-1-4",
+       "phys-3-1",
+       "phys-3-3"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "physics-higher-new-course-13-stretching-and-compressing-objects",
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-44-radioactivity",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-old-course-light",
+       "physics-higher-old-course-nuclear-energy",
+       "physics-higher-old-course-potential-difference-capacitance",
+       "physics-higher-old-course-refraction-lenses",
+       "physics-higher-old-course-simple-harmonic-motion",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity"
+      ],
+      "taskTopics": [
+       "phys-1-3",
+       "phys-2-3",
+       "phys-3-2",
+       "phys-4-4",
+       "phys-4-6"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (physics-<year>-exam-topic-map.json via physics-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 0,
+    "askScan": {
+     "askLines": 119,
+     "exempt": [
+      {
+       "page": 12,
+       "line": "Where turbines are more than about 80 kilometres from shore, a.c. transmission is not viable, due",
+       "reason": "Descriptive passage sentence, retained in the full Q13 passage; not a question."
+      },
+      {
+       "page": 13,
+       "line": "When the body at the end of the spring is pulled down",
+       "reason": "SHM setup sentence retained in the relevant Q14(a) stems; not a question."
       }
      ]
     },

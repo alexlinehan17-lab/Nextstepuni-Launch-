@@ -18616,6 +18616,1470 @@
    226
   ]
  },
+ "physics-2022-hl-deferred-q1-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q1-speed-solution.png",
+  "md5": "f4f999c0079cd0046e08058fe32005c3",
+  "alt": "Momentum calculation with the 2m:m mass ratio and final speed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   553,
+   546,
+   590
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q10-electron-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q10-electron-solution.png",
+  "md5": "5abd0a0601a5beb6e0008ab2378fab4d",
+  "alt": "Work function conversion and maximum electron energy.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q10(b)(v) — Deferred sitting — Maximum electron energy",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   603.5,
+   546,
+   638
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q10-photon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q10-photon-solution.png",
+  "md5": "dfde61188aeea023ab99abe9e9196989",
+  "alt": "Photon energy calculation and published tariff.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q10(b)(iv) — Deferred sitting — Photon energy",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   108,
+   568,
+   546,
+   603
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q10-tv": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q10-tv.png",
+  "md5": "4c94b63be43392bcdd49d797431adade",
+  "alt": "Original flat-screen television photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q10(a)(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   411,
+   414,
+   541,
+   544
+  ]
+ },
+ "physics-2022-hl-deferred-q11-change-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-change-question.png",
+  "md5": "1013beb22b8c8facff97ba9e0300679d",
+  "alt": "Full circuit and LDR data with the potential-difference explanation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(viii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   242,
+   546,
+   529
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    453,
+    546,
+    493
+   ],
+   [
+    515,
+    511,
+    546,
+    529
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q11-current-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-current-question.png",
+  "md5": "255803161131f8ebb97ebddaaf0ffcbe",
+  "alt": "Full circuit and LDR data with the 900-ohm current request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   242,
+   546,
+   493
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    453,
+    546,
+    472
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q11-current-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-current-solution.png",
+  "md5": "36f104e0c4786febc1503a66b56a7874",
+  "alt": "Total circuit current and current through the 900-ohm branch.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   80,
+   536,
+   546,
+   571
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q11-derive-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-derive-question.png",
+  "md5": "d8b39e57e57b62a5743e8bb5174ccc2f",
+  "alt": "Complete parallel-resistor diagram, both resistor labels and derivation request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   53,
+   541,
+   126
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    53,
+    312,
+    75
+   ],
+   [
+    281,
+    107,
+    312,
+    125
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q11-derive-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-derive-solution.png",
+  "md5": "f88e7a8f95d8950d74b775d7a7f5647e",
+  "alt": "Full parallel-resistance derivation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   80,
+   177,
+   546,
+   230
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q11-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-resistance-question.png",
+  "md5": "5a2d6ed92505ec3b781fd2f6bfd76907",
+  "alt": "Full 12 V LDR/900-ohm/500-ohm circuit, 1.1-kilohm LDR value and resistance request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   242,
+   546,
+   472
+  ]
+ },
+ "physics-2022-hl-deferred-q11-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q11-resistance-solution.png",
+  "md5": "ad5ea2e77bb34732bd160b5205502487",
+  "alt": "Parallel combination and total circuit resistance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   80,
+   465,
+   546,
+   518
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q12-cern": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q12-cern.png",
+  "md5": "5f0fb69ef7ebda3f95996f717191730c",
+  "alt": "Original CERN accelerator photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(a)(i) — Deferred sitting — Quark",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   333,
+   54,
+   541,
+   183
+  ]
+ },
+ "physics-2022-hl-deferred-q12-collision": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q12-collision.png",
+  "md5": "d42df50aa320de5c6c55805ef9b7fbbc",
+  "alt": "Proton collision and neutral-pion reaction with the original raised zero.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(a)(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   264,
+   309,
+   363,
+   330
+  ]
+ },
+ "physics-2022-hl-deferred-q12-speaker": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q12-speaker.png",
+  "md5": "01ea969d4c195ef86483d3dce267527a",
+  "alt": "Complete moving-coil loudspeaker with A/B/C pointers, magnet poles and connections.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(b)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   400,
+   92,
+   536,
+   225
+  ]
+ },
+ "physics-2022-hl-deferred-q12-speed-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q12-speed-question.png",
+  "md5": "67399a74909cc3af2ad19628e57b8fee",
+  "alt": "Full proton/pion collision, reaction equation and final-speed calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(a)(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   261,
+   546,
+   386
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    332,
+    546,
+    351
+   ],
+   [
+    516,
+    369,
+    546,
+    386
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q12-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q12-speed-solution.png",
+  "md5": "61cf898ac8ffd904506944f73b55ebda",
+  "alt": "All five stages of the published pion-production calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12(a)(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   108,
+   482,
+   546,
+   571
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q13-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q13-passage.png",
+  "md5": "a833a9dfaf28db2b9bc4e9fe59df7e3e",
+  "alt": "Full historical wind-power passage, photograph and Physics World June 2013 attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q13(a) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   82,
+   547,
+   439
+  ]
+ },
+ "physics-2022-hl-deferred-q14-atoms-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-atoms-solution.png",
+  "md5": "673f4d80219e1ce43ed863f92a86a2ad",
+  "alt": "Activity equation and number of krypton atoms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(d)(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 22,
+  "sourceRect": [
+   108,
+   334,
+   546,
+   369
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-capacitor": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-capacitor.png",
+  "md5": "4a764e15d390bbc3550c970bf5b16113",
+  "alt": "Original capacitor and battery diagram preserving A/B labels and polarity.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(c)(iii) — Deferred sitting — Plate A charge",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   414,
+   102,
+   541,
+   211
+  ]
+ },
+ "physics-2022-hl-deferred-q14-fission": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-fission.png",
+  "md5": "5351345e7cb0717785b38b5527895626",
+  "alt": "Original uranium-235 fission equation with every nuclear index and the unknown X, Y and Z.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(d)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   211,
+   498,
+   402,
+   525
+  ]
+ },
+ "physics-2022-hl-deferred-q14-glass": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-glass.png",
+  "md5": "5c2ed5d0008adf0c1d5a7879c63bc64d",
+  "alt": "Complete glass block and light ray, 50/65-degree angles and air/glass labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   336,
+   451,
+   542,
+   655
+  ]
+ },
+ "physics-2022-hl-deferred-q14-half-life-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-half-life-solution.png",
+  "md5": "c38287f10e0eb8fe15ec816da76c464f",
+  "alt": "Half-life equation and value in seconds.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(d)(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 22,
+  "sourceRect": [
+   108,
+   387,
+   546,
+   422
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-index-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-index-question.png",
+  "md5": "49cebe92126c0b7b13206c05364680f4",
+  "alt": "Full blue-light data, glass diagram and refractive-index request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   450,
+   545,
+   655
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    536,
+    318,
+    655
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q14-index-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-index-solution.png",
+  "md5": "5206e1b3fc260280122f6a6cf3d63562",
+  "alt": "Angles to the normal and the refractive index.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   108,
+   160,
+   546,
+   194
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-light-speed-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-light-speed-question.png",
+  "md5": "10fb61fb7c3b6f02728d0eddf7dfe366",
+  "alt": "Full blue-light data, glass diagram and speed request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   450,
+   545,
+   655
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    501,
+    318,
+    533
+   ],
+   [
+    80,
+    571,
+    318,
+    655
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q14-light-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-light-speed-solution.png",
+  "md5": "baefad88247a18703635749dd3c52ad8",
+  "alt": "Refractive index and light-speed calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   108,
+   212,
+   546,
+   247
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-parallel": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-parallel.png",
+  "md5": "769a54ca0b2c37fc112a225db6ae5704",
+  "alt": "Complete parallel-capacitor circuit, X/Y and A/B labels and battery polarity.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(c)(ix) — Deferred sitting — Parallel plate Y",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   80,
+   211,
+   207,
+   380
+  ]
+ },
+ "physics-2022-hl-deferred-q14-period-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-period-question.png",
+  "md5": "7cf1c853874359464d1e3ec66abebed9",
+  "alt": "Full spring data, apparatus, SHM setup, period request and gravity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   119,
+   542,
+   345
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    119,
+    379,
+    133
+   ],
+   [
+    80,
+    185,
+    379,
+    204
+   ],
+   [
+    80,
+    291,
+    379,
+    324
+   ],
+   [
+    350,
+    272,
+    379,
+    289
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q14-period-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-period-solution.png",
+  "md5": "3cd0a6741e4bac1f0b977ac1ac4d142d",
+  "alt": "Angular frequency, mass relation and period calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(iii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   108,
+   298,
+   546,
+   368
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-spring": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-spring.png",
+  "md5": "8485d1b37723620d23483b0c31f7160e",
+  "alt": "Complete spring, suspended body, stand and scale.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(iv) — Deferred sitting — Maximum velocity",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   408,
+   120,
+   532,
+   292
+  ]
+ },
+ "physics-2022-hl-deferred-q14-spring-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-spring-question.png",
+  "md5": "54753958965e551f6cd6ca4aa7e27184",
+  "alt": "Full spring setup, original apparatus and elastic-constant calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   119,
+   542,
+   293
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    119,
+    379,
+    133
+   ],
+   [
+    80,
+    206,
+    379,
+    293
+   ],
+   [
+    350,
+    186,
+    379,
+    203
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q14-spring-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-spring-solution.png",
+  "md5": "8898357c1b362acf29d146388d87a21d",
+  "alt": "Spring extension, Hooke’s law substitution and elastic constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   108,
+   195,
+   546,
+   247
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q14-wavelength-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-wavelength-question.png",
+  "md5": "50f3be56390ad93d95d7498608bc18ea",
+  "alt": "Full blue-light data, glass diagram and wavelength request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   450,
+   545,
+   655
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    501,
+    318,
+    568
+   ],
+   [
+    80,
+    607,
+    318,
+    655
+   ],
+   [
+    290,
+    587,
+    318,
+    604
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q14-wavelength-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q14-wavelength-solution.png",
+  "md5": "4728701423f8686b3ce5ef28854ad443",
+  "alt": "Original stacked wavelength equation, equivalent formula and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   108,
+   262.5,
+   546,
+   310
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q2-latent-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q2-latent-question.png",
+  "md5": "11f1221716bb8b2c5e71d8f178db2b67",
+  "alt": "Full steam-experiment setup, all seven readings, both specific heat capacities and calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   460,
+   546,
+   670
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    496,
+    546,
+    529
+   ],
+   [
+    513,
+    653,
+    546,
+    670
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q2-latent-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q2-latent-solution.png",
+  "md5": "9905d15bbd195db678627dc665d89c58",
+  "alt": "All six latent-heat steps, mass and temperature differences, energy equation and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(ii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   330,
+   546,
+   437
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q3-data.png",
+  "md5": "77f58336c0aa92c63e5f6b6acacc4cfe",
+  "alt": "All four mirror trials, object/image distances and centimetre units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   145,
+   134,
+   449,
+   181
+  ]
+ },
+ "physics-2022-hl-deferred-q4-angle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q4-angle-solution.png",
+  "md5": "2fd232c9d36945d3b96f68424880efbd",
+  "alt": "All three alternative angle-measurement methods, each with two three-mark steps.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iv) — Deferred sitting — Angle of diffraction",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   325,
+   546,
+   360
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q4-wavelength-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q4-wavelength-solution.png",
+  "md5": "8efbc7140d146221266129af0cd0ae0e",
+  "alt": "Grating equation, line-density conversion and wavelength.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   509,
+   546,
+   546
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q5-data": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q5-data.png",
+  "md5": "a54b65587458439f2c83b24def437815",
+  "alt": "All seven resistance/temperature pairs with ohm and Celsius units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   57,
+   132,
+   541,
+   180
+  ]
+ },
+ "physics-2022-hl-deferred-q6-archimedes": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q6-archimedes.png",
+  "md5": "c39fd9a1d8763d8386564528248f2b9e",
+  "alt": "Original Archimedes portrait referenced by the question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(b) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   397,
+   183,
+   543,
+   376
+  ]
+ },
+ "physics-2022-hl-deferred-q6-lenses-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q6-lenses-solution.png",
+  "md5": "7f294bc387e56613cf25e65b886fcad7",
+  "alt": "Lens combination equation, both signed focal lengths and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(g) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   89,
+   546,
+   142
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q6-pendulum-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q6-pendulum-solution.png",
+  "md5": "7893cffeb06f099f7b9172d2d4e0dbb7",
+  "alt": "Pendulum period equation and calculated length.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(c) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   338,
+   546,
+   374
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q6-power-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q6-power-solution.png",
+  "md5": "00a32d8afb97795f95071ce535a31906",
+  "alt": "Work/time equation and power calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(a) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   201,
+   546,
+   236
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q6-pressure-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q6-pressure-solution.png",
+  "md5": "97363f5b65bc936f285388450160962e",
+  "alt": "Pressure, density and weight equations with the cube calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(i) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   241,
+   546,
+   312
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q7-displacement-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-displacement-question.png",
+  "md5": "0dc3688afc348168a23f6b25f68755f9",
+  "alt": "Full river setup, diagram and displacement request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   105,
+   546,
+   375
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    301,
+    546,
+    339
+   ],
+   [
+    516,
+    359,
+    546,
+    375
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q7-displacement-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-displacement-solution.png",
+  "md5": "1366914acf9d3ddb69afcb8c5da648fa",
+  "alt": "Displacement calculation from the resultant velocity and crossing time.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   427,
+   546,
+   462
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q7-river": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-river.png",
+  "md5": "9d2dd6eb59c24ecd4e7ec29ca5c8156c",
+  "alt": "Complete river diagram, both banks, 75 m width and 4 m/s direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   189,
+   150,
+   406,
+   253
+  ]
+ },
+ "physics-2022-hl-deferred-q7-slope-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-slope-question.png",
+  "md5": "78ba0a4f067631a5364e34a780c4c69c",
+  "alt": "Full car-on-slope setup, friction, original road sign, acceleration request and gravity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(viii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   415,
+   546,
+   679
+  ],
+  "maskedFurniture": [
+   [
+    514,
+    467,
+    546,
+    483
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q7-slope-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-slope-solution.png",
+  "md5": "1471992cd2f9dcdda0813253c351d6a8",
+  "alt": "Downhill weight component, opposing friction, net force and acceleration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(viii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   615,
+   546,
+   685
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q7-velocity-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-velocity-question.png",
+  "md5": "6e418ff4232905644cb96cd7235f2159",
+  "alt": "Full river setup, current direction, width, swimmer speed and resultant-velocity ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   105,
+   546,
+   319
+  ]
+ },
+ "physics-2022-hl-deferred-q7-velocity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q7-velocity-solution.png",
+  "md5": "3e28ba2070739aecdfe9901d453013bd",
+  "alt": "Resultant velocity magnitude and direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q7(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   305,
+   546,
+   341
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q8-doppler-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-doppler-question.png",
+  "md5": "041382b58e560904d0f1a177602187e9",
+  "alt": "Laboratory wavelength, full Hubble/galaxy context, portrait and observed-frequency request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   52,
+   186,
+   546,
+   418
+  ],
+  "maskedFurniture": [
+   [
+    334,
+    201,
+    546,
+    219
+   ],
+   [
+    363,
+    379,
+    385,
+    395
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q8-doppler-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-doppler-solution.png",
+  "md5": "f52582c32a6b04afa691b6a30dc961e1",
+  "alt": "Doppler formula, substitution criterion and observed frequency.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(vii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   538,
+   546,
+   590
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q8-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-frequency-solution.png",
+  "md5": "4c66058d2d7e4880e8609904f56a9caa",
+  "alt": "Wavelength-to-frequency equation and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   380,
+   546,
+   414
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q8-levels-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-levels-solution.png",
+  "md5": "4f49437197fde98853c3e13066038f4f",
+  "alt": "Electron transitions and the photon energy equation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   244,
+   546,
+   296
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q8-orbit-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-orbit-question.png",
+  "md5": "a3d401a2ba9a91fca7575f7d9605fb83",
+  "alt": "Original galaxy photograph, orbital speed, period and radius request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(viii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   52,
+   418,
+   546,
+   677
+  ],
+  "maskedFurniture": [
+   [
+    515,
+    660,
+    546,
+    677
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q8-orbit-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q8-orbit-solution.png",
+  "md5": "03b37094ce31070dff023cb5c3d9af9e",
+  "alt": "Period conversion, angular speed and galactic orbit radius.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(viii) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   668,
+   546,
+   738
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q9-emf-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q9-emf-question.png",
+  "md5": "f0aceaa1b0b75e45d591f5a6684514c6",
+  "alt": "Full coil diagram and data, direction/speed of removal and induced-emf request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   52,
+   100,
+   545,
+   249
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    160,
+    416,
+    177
+   ],
+   [
+    393,
+    232,
+    416,
+    249
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q9-emf-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q9-emf-solution.png",
+  "md5": "f44c703ede851146fc1ea6872c1385df",
+  "alt": "Induced emf, exit time and four-turn calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(v) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   386,
+   546,
+   438
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q9-flux-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q9-flux-question.png",
+  "md5": "6439e0e975cfd99a113b23a04fd89da9",
+  "alt": "Full four-turn square-coil diagram and data with the magnetic-flux request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   52,
+   100,
+   545,
+   249
+  ],
+  "maskedFurniture": [
+   [
+    52,
+    180,
+    416,
+    249
+   ]
+  ]
+ },
+ "physics-2022-hl-deferred-q9-flux-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q9-flux-solution.png",
+  "md5": "48043b55a22ac9027bc8a570fb59e6cd",
+  "alt": "Flux equation, square-coil area and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(iv) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   80,
+   301,
+   546,
+   335
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-deferred-q9-transformer": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-deferred-q9-transformer.png",
+  "md5": "5b013cd237122fc3d03ab3aaf83b0b9b",
+  "alt": "Transformer diagram retaining coils A and B and laminated core.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(vi) — Deferred sitting",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   429,
+   279,
+   534,
+   343
+  ]
+ },
  "physics-2022-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2022-hl-q1-table.png",
   "md5": "d49e8f197e710a48c5a00aa373b4abbb",

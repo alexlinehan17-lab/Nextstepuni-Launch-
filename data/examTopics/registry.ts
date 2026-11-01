@@ -476,7 +476,10 @@ interface TechnologyRuntime {
 
 interface ChemistryRuntime extends BiologyRuntime {}
 
-interface PhysicsRuntime extends BiologyRuntime {}
+interface PhysicsRuntime extends Omit<BiologyRuntime, 'questionMappings'> {
+  /** [h/o, year-2000, question, topic indexes, optional deferred sitting] */
+  questionMappings: Array<['h' | 'o', number, string, number[], 'd'?]>;
+}
 
 interface DesignAndCommunicationGraphicsRuntime {
   v: 1;
@@ -3970,16 +3973,16 @@ for (const [levelCode, yearOffset, n, topicIndexes] of chemistryRuntime.question
   );
 }
 
-// Physics shares the audited mapping between both official-language editions.
-// Exact factual joins cover 391 logical cards; 41 valid local questions absent
-// from the snapshot are retained from direct SEC-paper review.
-for (const [levelCode, yearOffset, n, topicIndexes] of physicsRuntime.questionMappings) {
+// Physics main mappings are shared between official-language editions.
+// Reviewed deferred sittings have a separate key, even when their Q numbers
+// match the main paper. Direct reviews also retain reference omissions.
+for (const [levelCode, yearOffset, n, topicIndexes, sittingCode] of physicsRuntime.questionMappings) {
   QUESTION_TOPICS.set(
     questionKey(
       physicsRuntime.subjectId,
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
-      'main',
+      sittingCode === 'd' ? 'deferred' : 'main',
       n,
       'single',
     ),

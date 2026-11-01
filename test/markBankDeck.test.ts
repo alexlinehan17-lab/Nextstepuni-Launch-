@@ -26,6 +26,7 @@ import { resolve } from 'node:path';
 // two copies drifted once and reported four correct cards as untraceable.
 import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
+import { reviewedPhysicsSource } from '../scripts/markbank/physicsSources.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -194,12 +195,12 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-const schemeFor = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) =>
+const schemeFor = (card: { id: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('-deferred') ? '-deferred' : ''}.md`);
+    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : (card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('-deferred')) || (card.subjectId === 'physics' && reviewedPhysicsSource(card.id)?.sitting === 'deferred') ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) => {
+const schemeText = (card: { id: string; year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -548,7 +549,7 @@ describe('every card points at the question paper it came from', () => {
         const source = c.subjectId === 'maths' && 'mathematicsScale' in c
           && c.mathematicsScale && c.sourceMaterial?.sourceFileid
           ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
-          : undefined;
+          : c.subjectId === 'physics' ? reviewedPhysicsSource(c.id) : undefined;
         const expected = source
           ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
           : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection);

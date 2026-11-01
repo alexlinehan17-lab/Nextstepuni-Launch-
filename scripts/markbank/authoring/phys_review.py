@@ -50,6 +50,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import phys_review_lib as B  # noqa: E402
 import paper_census as PC  # noqa: E402
+import phys_sources as PS  # noqa: E402
 
 ROOT = B.ROOT
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'physics.json')
@@ -103,7 +104,7 @@ class Lifter:
         self.srcs = {}
         problems = []
         for key, pin in ledger.SOURCES.items():
-            path = os.path.join(ROOT, pin['path'])
+            path = PS.source_path(ROOT, ledger, key)
             if not os.path.exists(path):
                 problems.append(f'{key}: {pin["path"]} is missing')
                 continue
@@ -519,6 +520,8 @@ def build(ledger, year, level):
     B.LETTERED = set(getattr(ledger, 'LETTERED', ()))
     lifter = Lifter(ledger)
     LT = B.LEVEL_TOKEN[level]
+    skey = PS.key(ledger, year, level)
+    deferred = PS.sitting(ledger) == 'deferred'
     problems = []
 
     # --- selection scan ---------------------------------------------------
@@ -719,6 +722,8 @@ def build(ledger, year, level):
         item = t.get('item')
         cid = t.get('id') or B.card_id(year, level, t['ref'],
                                        t['route'] or (item[0] if item else None))
+        if deferred:
+            cid = cid.replace(f'phys-{year}-{level}-', f'phys-{skey}-', 1)
         if cid in seen_ids:
             problems.append(f'{cid}: duplicate card id')
         seen_ids.add(cid)
@@ -745,7 +750,7 @@ def build(ledger, year, level):
         card = {
             'id': cid, 'subjectId': 'physics', 'topicId': t['topic'], 'conceptId': t['concept'],
             'section': t['sec'],
-            'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else '')
+            'questionRef': f'{year} {LT} {t["ref"]}' + (' — Deferred sitting' if deferred else '') + (f' — {t["route"]}' if t['route'] else '')
                            + (f' — {item[1]}' if item else ''),
         }
         if stem:
@@ -776,15 +781,15 @@ def build(ledger, year, level):
             card['answerVariants'] = variants
         notes = ' '.join(x for x in (t['decision'], t['notes']) if x)
         card['notes'] = (notes + ' ' if notes else '') + \
-            f'Reviewed {getattr(ledger, "REVIEWED_AT", "2026-10-28")} against the paper and scheme; ledger phys_review_{year}_{level}.py.'
+            f'Reviewed {getattr(ledger, "REVIEWED_AT", "2026-10-28")} against the paper and scheme; ledger {PS.ledger_name(ledger, year, level)}.py.'
         card.update({'year': year, 'level': level_word(level)})
         if t['fig']:
             # A key naming a figure already inspected and in a manifest
             # ("physics-2025-HL-paper-p06-i0", a 2021-2025 card's own figure) is
             # kept as it is; any other is one of this ledger's FIGURES.
-            card['figureKey'] = t['fig'] if t['fig'].startswith('physics-') else f'physics-{year}-{level}-{t["fig"]}'
+            card['figureKey'] = t['fig'] if t['fig'].startswith('physics-') else f'physics-{skey}-{t["fig"]}'
         if t['qfig']:
-            card['questionFigureKey'] = f'physics-{year}-{level}-{t["qfig"]}'
+            card['questionFigureKey'] = f'physics-{skey}-{t["qfig"]}'
         if t['labels']:
             key = []
             for lab in t['labels']:
@@ -944,7 +949,9 @@ def build(ledger, year, level):
                                                   for p, st in sorted(used_exempt)]}
 
     # --- census: every leaf claimed, every task a leaf --------------------
-    parts, _texts, _files = PC.census_merged('physics', year, level, None)
+    parts, _texts, _files = PC.census_merged(
+        'physics', year, level, None,
+        files=[PS.source_path(ROOT, ledger, 'paper')] if deferred else None)
     leaves = set(PC.leaves_of(parts))
     claimed = set()
     for t in ledger.TASKS:
@@ -1051,7 +1058,8 @@ def build(ledger, year, level):
                                 f'{sel["start"][:50]!r} (a question figure replaces the question text)')
 
     # --- Atlas topics -----------------------------------------------------
-    atlas = json.load(open(ATLAS_MAP.format(year=year), encoding='utf-8'))
+    atlas_path = ATLAS_MAP.format(year=str(year) + ('-deferred' if deferred else ''))
+    atlas = json.load(open(atlas_path, encoding='utf-8'))
     crosswalk = json.load(open(CROSSWALK, encoding='utf-8'))
     atlas_view = defaultdict(lambda: {'atlasTopics': [], 'taskTopics': set()})
     for t in ledger.TASKS:
@@ -1124,7 +1132,7 @@ def figures(ledger, lifter, year, level, write):
     for suffix, spec in ledger.FIGURES.items():
         doc, page, rect, credit, letters, alt, solution = spec[:7]
         masks = spec[7] if len(spec) > 7 else []
-        key = f'physics-{year}-{level}-{suffix}'
+        key = f'physics-{PS.key(ledger, year, level)}-{suffix}'
         src = lifter.srcs[doc]
         if doc not in fresh:
             fresh[doc] = fitz.open(src.path)
@@ -1165,12 +1173,14 @@ def figures(ledger, lifter, year, level, write):
         level_name = 'Higher' if level == 'hl' else 'Ordinary'
         what = 'marking scheme' if doc == 'scheme' else 'examination paper'
         attribution = f'SEC Leaving Certificate Physics {year} {level_name} Level {what} — © State Examinations Commission'
+        if PS.sitting(ledger) == 'deferred':
+            attribution = attribution.replace('Level ', 'Level deferred ', 1)
         if credit != ledger.SEC:
             attribution += f'; source credited in the paper\'s acknowledgements: {credit}'
         entry = {'src': rel, 'md5': hashlib.md5(png).hexdigest(), 'alt': alt,
                  'lettersVisible': letters, 'labelMeanings': [], 'questionRef': None,
                  'year': year, 'level': level_word(level), 'attribution': attribution,
-                 'sourceDocument': ledger.SOURCES[doc]['fileid'], 'sourcePage': page,
+                 'sourceDocument': PS.indexed_fileid(ledger, doc), 'sourcePage': page,
                  'sourceRect': list(rect)}
         if any(len(m) == 4 for m in masks):
             entry['maskedFurniture'] = [list(m) for m in masks if len(m) == 4]
@@ -1212,7 +1222,7 @@ def legacy_cards(ledger, prefix):
     import subprocess
     raw = subprocess.check_output(['git', 'show', f'{ledger.BASELINE_COMMIT}:'
                                    'scripts/markbank/authored/physics.json'], cwd=ROOT)
-    return [c for c in json.loads(raw) if c['id'].startswith(prefix)]
+    return [c for c in json.loads(raw) if PS.owns(c['id'], ledger, ledger.YEAR, ledger.LEVEL)]
 
 
 def reconcile_existing(ledger, prefix, cards):
@@ -1281,7 +1291,8 @@ def _unshipped_before(ledger, level, record):
 
 
 def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
-    prefix = f'phys-{year}-{level}-'
+    prefix = f'phys-{PS.key(ledger, year, level)}-'
+    owns = lambda identifier: PS.owns(identifier, ledger, year, level)
     raw = open(AUTHORED, encoding='utf-8').read()
     bank = json.loads(raw)
     record = None
@@ -1294,7 +1305,7 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
             if t['status'] == 'carded':
                 t['status'] = status[t['id']]
     else:
-        before = [c['id'] for c in bank if c['id'].startswith(prefix)]
+        before = [c['id'] for c in bank if owns(c['id'])]
         new_ids = {c['id'] for c in cards}
         lost = [i for i in before if i not in new_ids]
         if lost:
@@ -1305,7 +1316,7 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
         # anchor. Cards this pipeline added on an earlier run are dropped first.
         out, first, placed = [], True, set()
         for c in bank:
-            if c['id'].startswith(prefix) and c['id'] not in replacements:
+            if owns(c['id']) and c['id'] not in replacements:
                 continue
             # A pre-existing id the bank holds twice (2021 HL's figure twins,
             # stored under the same id) is one card: its first place only.
@@ -1324,9 +1335,9 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     else:
         # The sitting's cards go back where they were (appended when new), so
         # a re-run leaves every other card, and the bank's order, untouched.
-        at = next((i for i, c in enumerate(bank) if c['id'].startswith(prefix)), len(bank))
-        kept = [c for c in bank if not c['id'].startswith(prefix)]
-        at -= sum(1 for c in bank[:at] if c['id'].startswith(prefix))
+        at = next((i for i, c in enumerate(bank) if owns(c['id'])), len(bank))
+        kept = [c for c in bank if not owns(c['id'])]
+        at -= sum(1 for c in bank[:at] if owns(c['id']))
         bank = kept[:at] + block + kept[at:]
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         fh.write(json.dumps(bank, indent=1, ensure_ascii=False))
@@ -1350,8 +1361,8 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     # A crop this sitting's ledger no longer names leaves the manifest and its
     # PNG goes with it (only one the manifest listed: a legacy figure the shared
     # figures.json names is not this ledger's to remove).
-    dropped = {k for k in manifest if k.startswith(f'physics-{year}-{level}-')} - set(figs)
-    manifest = {k: v for k, v in manifest.items() if not k.startswith(f'physics-{year}-{level}-')}
+    dropped = {k for k in manifest if PS.owns(k, ledger, year, level, 'physics')} - set(figs)
+    manifest = {k: v for k, v in manifest.items() if not PS.owns(k, ledger, year, level, 'physics')}
     legacy = set(json.load(open(os.path.join(ROOT, 'components', 'MarkBank', 'figures.json'), encoding='utf-8')))
     for k in sorted(dropped - legacy):
         png = os.path.join(FIG_DIR, f'{k}.png')
@@ -1385,10 +1396,11 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
                 'pageRoles': {str(p): r for p, r in ledger.PAGE_ROLES[k].items()},
                 'pagesLifted': sorted(lifter.used.get(k, []))}
             for k, v in ledger.SOURCES.items()}
-    audit['sittings'][f'{year}-{level}'] = {
+    audit['sittings'][PS.key(ledger, year, level)] = {
         'status': 'reviewed',
         'reviewedAt': getattr(ledger, 'REVIEWED_AT', '2026-10-28'),
-        'ledger': f'scripts/markbank/authoring/phys_review_{year}_{level}.py',
+        'ledger': f'scripts/markbank/authoring/{PS.ledger_name(ledger, year, level)}.py',
+        **({'sitting': 'deferred'} if PS.sitting(ledger) == 'deferred' else {}),
         'method': ledger.__doc__.strip().split('\n\n')[0],
         'sources': srcs,
         'visualSweep': {k: f'all {v["pages"]} pages rendered and read' for k, v in ledger.SOURCES.items()},
@@ -1425,8 +1437,12 @@ def main():
     ap.add_argument('year', type=int)
     ap.add_argument('level', choices=['hl', 'ol'])
     ap.add_argument('--write', action='store_true')
+    ap.add_argument('--sitting', choices=['main', 'deferred'], default='main')
     args = ap.parse_args()
-    ledger = importlib.import_module(f'phys_review_{args.year}_{args.level}')
+    suffix = '_deferred' if args.sitting == 'deferred' else ''
+    ledger = importlib.import_module(f'phys_review_{args.year}_{args.level}{suffix}')
+    if PS.sitting(ledger) != args.sitting:
+        raise Refusal('Requested sitting and ledger identity differ')
     try:
         lifter, cards, audit_tasks, checks = build(ledger, args.year, args.level)
         figs, _ = figures(ledger, lifter, args.year, args.level, args.write)
