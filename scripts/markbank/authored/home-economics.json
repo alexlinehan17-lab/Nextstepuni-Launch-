@@ -37002,5 +37002,39 @@
    "presentationNote": "Open the original examination page to review this task in context."
   },
   "notes": "Independently reviewed against paper and full scheme; preserve the published response boundary. See he_review_2023_ol.py."
+ },
+ {
+  "id": "he-2023-ol-sa-q4-source",
+  "topicId": "home-economics-0-8",
+  "conceptId": "dietary-source-of-iron",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q4 — dietary source",
+  "questionText": "Name one dietary source of iron.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 source × 2 (2:1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "dietary source of iron",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "One dietary source, graded 2:1:0. Published examples: meat; meat products; offal; poultry; eggs; cereals; green vegetables; fish; etc."
+   }
+  ],
+  "notes": "Separate printed prompt and separate 2-mark tariff. Original Q4 identity retains the 4-mark functions task."
  }
 ]

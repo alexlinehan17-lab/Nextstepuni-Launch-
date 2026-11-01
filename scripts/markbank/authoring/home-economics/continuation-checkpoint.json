@@ -10,7 +10,7 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 558,
+    "cards": 559,
     "leaves": 1229,
     "covered": 553,
     "excluded": 0,
@@ -1039,7 +1039,7 @@
   },
   "nextActions": [
     "2023 Higher main sitting source review complete: 59 tasks, every published boundary and all scheme guidance checked. Browser QA pending.",
-    "2023 Ordinary main missing tasks recovered and Atlas corrected; continue the complete existing-card grading/boundary review, starting Section A, then English deferred.",
+    "2023 Ordinary Section A reviewed (15 tasks, 84 offered marks); continue Section B and C, then English deferred.",
     "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 using full paper/scheme sweeps.",
     "Reconcile subject-wide Mark Bank and Topic Atlas, including Section B/C identities and available deferred English papers.",
     "Integrate only verified batches; keep moving to the next actionable sitting."
@@ -1070,6 +1070,11 @@
       "workCommit": "35b5850a1",
       "launchCommit": "d1bb0e640",
       "scope": "2023 Higher Section C: 26 grading corrections; full main-sitting source review complete."
+    },
+    {
+      "workCommit": "57d32509e",
+      "launchCommit": "020a8eec2",
+      "scope": "2023 Ordinary: four recovered tasks, full statutory-scheme tariff, Section C and care-symbol Atlas corrections."
     }
   ]
 }

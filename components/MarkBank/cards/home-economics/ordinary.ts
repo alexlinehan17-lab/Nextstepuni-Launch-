@@ -415,11 +415,11 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q1", topicId: "home-economics-0-7", conceptId: "lipids-composition-and-function",
     section: "A", questionRef: "2023 OL Section A Q1",
     questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\nPolyunsaturated fatty acids are present in oily fish\nLipids (fats) contain the element nitrogen\nAdipose tissue protects delicate organs in the body",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "True — Polyunsaturated fatty acids are present in oily fish", marks: 2, accepts: ["True"], contextNote: "Graded 2:0: the tick is in the right column for 2 marks or it is wrong for 0, with no partial credit." },
-    { id: "r-2", kind: "point", verbatim: "False — Lipids (fats) contain the element nitrogen", marks: 2, accepts: ["False"], contextNote: "Lipids are built from carbon, hydrogen and oxygen; nitrogen is the element that marks out protein. Graded 2:0." },
-    { id: "r-3", kind: "point", verbatim: "True — Adipose tissue protects delicate organs in the body", marks: 2, accepts: ["True"], contextNote: "Graded 2:0." },
+    { id: "r-1", kind: "point", verbatim: "True — Polyunsaturated fatty acids are present in oily fish", marks: 2, accepts: ["True"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-2", kind: "point", verbatim: "False — Lipids (fats) contain the element nitrogen", marks: 2, accepts: ["False"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-3", kind: "point", verbatim: "True — Adipose tissue protects delicate organs in the body", marks: 2, accepts: ["True"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
     ],
   } as SecCard,
   {
@@ -430,9 +430,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q2", topicId: "home-economics-0-1", conceptId: "adult-energy-requirement-factors",
     section: "A", questionRef: "2023 OL Section A Q2",
     questionText: "List three factors that influence the energy requirements of adults.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":12,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three of the following factors", marks: null, contextNote: "Each factor is graded 2:1:0, a sliding value for one factor and not three separate marks: a factor named and made clear scores 2, a vague or half-stated one scores 1, nothing relevant scores 0.", openList: true, group: {"claimMax":3,"perOption":2,"options":["body weight","body size","gender, men differ from women","pregnancy, lactation","age, older people need less","climate, need less in warm weather","physical activity","growth spurts","occupation, physical worker needs more","basal metabolic rate (BMR)","sedentary lifestyle","health status"]} },
+    { id: "points", kind: "criterion", verbatim: "energy requirements", marks: 6, contextNote: "Three distinct points, each graded 2:1:0. Published guidance: body weight; body size; gender, men differ from women; pregnancy, lactation; age, older people need less; climate, need less in warm weather; physical activity; growth spurts; occupation, physical worker needs more; basal metabolic rate (BMR); sedentary lifestyle; health status; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -457,12 +457,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q4", topicId: "home-economics-0-8", conceptId: "iron-functions-and-sources",
-    section: "A", questionRef: "2023 OL Section A Q4",
-    questionText: "State two functions of iron in the body.\nName one dietary source of iron.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 2 marks (graded 2:1:0); 1 @ 2 marks (graded 2:1:0)"}, totalMarks: 6,
+    section: "A", questionRef: "2023 OL Section A Q4 — functions",
+    questionText: "State two functions of iron in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 functions × 2 (2:1:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two functions of iron in the body", marks: null, contextNote: "Each function is graded 2:1:0, a sliding value for one function: fully stated scores 2, vague or half-stated scores 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["essential in formation of pigment haemoglobin in red blood cells","haemoglobin transports oxygen around the body","prevents anaemia","iron produces myoglobin which carries oxygen to the muscles","necessary for the efficient functioning of enzymes to release energy from food"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One dietary source of iron", marks: null, contextNote: "Graded 2:1:0 for the one source named.", openList: true, group: {"claimMax":1,"perOption":2,"options":["meat","meat products","offal","poultry","eggs","cereals","green vegetables","fish"]} },
+    { id: "functions", kind: "criterion", verbatim: "functions of iron", marks: 4, contextNote: "Two functions, each graded 2:1:0. Published guidance: essential in formation of pigment haemoglobin in red blood cells; haemoglobin transports oxygen around the body; prevents anaemia; iron produces myoglobin which carries oxygen to the muscles; necessary for the efficient functioning of enzymes to release energy from food; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -473,11 +472,11 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q5", topicId: "home-economics-0-1", conceptId: "digestion-of-nutrients",
     section: "A", questionRef: "2023 OL Section A Q5",
     questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\nCarbohydrate is converted into glucose during digestion\nBile is produced in the stomach\nEnzymes are proteins essential for digestion",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "True — Carbohydrate is converted into glucose during digestion", marks: 2, accepts: ["True"], contextNote: "Graded 2:0: the tick is in the right column for 2 marks or it is wrong for 0, with no partial credit." },
-    { id: "r-2", kind: "point", verbatim: "False — Bile is produced in the stomach", marks: 2, accepts: ["False"], contextNote: "Bile is produced in the liver and stored in the gall bladder before being released into the small intestine. Graded 2:0." },
-    { id: "r-3", kind: "point", verbatim: "True — Enzymes are proteins essential for digestion", marks: 2, accepts: ["True"], contextNote: "Graded 2:0." },
+    { id: "r-1", kind: "point", verbatim: "True — Carbohydrate is converted into glucose during digestion", marks: 2, accepts: ["True"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-2", kind: "point", verbatim: "False — Bile is produced in the stomach", marks: 2, accepts: ["False"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-3", kind: "point", verbatim: "True — Enzymes are proteins essential for digestion", marks: 2, accepts: ["True"], contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
     ],
   } as SecCard,
   {
@@ -503,9 +502,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q7", topicId: "home-economics-0-6", conceptId: "increasing-dietary-fibre-intake",
     section: "A", questionRef: "2023 OL Section A Q7",
     questionText: "Outline three different ways a teenager can increase the amount of fibre in their diet.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "add bran to breakfast cereals; increase intake of fruit/vegetables; avoid peeling fruit and vegetables; eat skins of fruit and vegetables; eat brown bread/pasta/rice; add seeds and nuts to food; use brown flour instead of white flour", marks: null, contextNote: "Each way is worth 2 and is graded 2:1:0, so it slides: 2 for a way outlined so the examiner can see how it puts more fibre in, 1 for a bare mention, 0 for nothing usable. The question says three DIFFERENT ways, so tick only one of \"avoid peeling fruit and vegetables\" and \"eat skins of fruit and vegetables\" — the scheme prints them as alternatives on one list, not as two separate ways. The list ends in \"etc.\", so another genuine way of adding fibre still scores.", openList: true, group: {"claimMax":3,"perOption":2,"options":["add bran to breakfast cereals","increase intake of fruit/vegetables","avoid peeling fruit and vegetables","eat skins of fruit and vegetables","eat brown bread/pasta/rice","add seeds and nuts to food","use brown flour instead of white flour"]} },
+    { id: "points", kind: "criterion", verbatim: "fibre", marks: 6, contextNote: "Three distinct points, each graded 2:1:0. Use three different ways; do not count the same idea twice. Published guidance: add bran to breakfast cereals; increase intake of fruit/vegetables; avoid peeling fruit and vegetables; eat skins of fruit and vegetables; eat brown bread/pasta/rice; add seeds and nuts to food; use brown flour instead of white flour; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -515,13 +514,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q8", topicId: "home-economics-0-3", conceptId: "raising-agents-in-baked-products",
     section: "A", questionRef: "2023 OL Section A Q8",
-    stem: "The paper prints a two-column table. The Baked products column lists Sponge cake, Bread and Lemon drizzle cake; the Raising agent column beside it is blank.",
-    questionText: "Name one different raising agent suitable for each of the following baked products.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Name one different raising agent suitable for each of the following baked products.\nSponge cake\nBread\nLemon drizzle cake",
+    tariffModel: {"kind":"fixed","notation":"3 different agents × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Sponge cake — air; self-raising flour", marks: 2, accepts: ["air","self-raising flour"], contextNote: "Either answer scores the 2, graded 2:1:0. The question says one DIFFERENT raising agent for each product, so whatever you use here you cannot use again below — air appears on more than one of the scheme's lists but is only paid once.", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "Bread — bread soda; yeast; air; baking powder", marks: 2, accepts: ["bread soda","yeast","air","baking powder"], contextNote: "Any one of the four scores the 2. Yeast is the answer that is only right here, so it is the safe one to spend on bread and leave the shared answers for the other two rows.", openList: true },
-    { id: "r-3", kind: "alt", verbatim: "Lemon drizzle cake — baking powder; air", marks: 2, accepts: ["baking powder","air"], contextNote: "Either scores the 2, but it has to be one you have not already used for the sponge cake or the bread.", openList: true },
+    { id: "product-1", kind: "criterion", verbatim: "Sponge cake", marks: 2, contextNote: "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: air; self-raising flour; etc.", permittedMarks: [0,1,2] },
+    { id: "product-2", kind: "criterion", verbatim: "Bread", marks: 2, contextNote: "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: bread soda; yeast; air; baking powder; etc.", permittedMarks: [0,1,2] },
+    { id: "product-3", kind: "criterion", verbatim: "Lemon drizzle cake", marks: 2, contextNote: "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: baking powder; air; etc.", permittedMarks: [0,1,2] },
     ],
   } as SecCard,
   {
@@ -532,9 +530,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q9", topicId: "home-economics-0-3", conceptId: "guidelines-for-grilling",
     section: "A", questionRef: "2023 OL Section A Q9",
     questionText: "Outline three guidelines to follow when using grilling as a method of cooking.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "preheat grill or barbeque to required temperature; use tongs to turn food; oil grill, grid to prevent food sticking; seal surface of food with high heat; suitable for thin pieces of food; do not salt food before grilling; suitable cooking time to avoid overcooking", marks: null, contextNote: "Three guidelines at 2 marks each, graded 2:1:0 — the command word is outline, so 2 goes to a guideline that says what to do and the 1 is where a bare word like \"tongs\" lands. Note the scheme pays guidelines about the food as well as about the grill: choosing thin pieces and not salting beforehand are on the list. It ends in \"etc.\", so another sound grilling guideline still scores.", openList: true, group: {"claimMax":3,"perOption":2,"options":["preheat grill or barbeque to required temperature","use tongs to turn food","oil grill, grid to prevent food sticking","seal surface of food with high heat","suitable for thin pieces of food","do not salt food before grilling","suitable cooking time to avoid overcooking"]} },
+    { id: "points", kind: "criterion", verbatim: "grilling", marks: 6, contextNote: "Three distinct points, each graded 2:1:0. Published guidance: preheat grill or barbeque to required temperature; use tongs to turn food; oil grill, grid to prevent food sticking; seal surface of food with high heat; suitable for thin pieces of food; do not salt food before grilling; suitable cooking time to avoid overcooking; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -546,11 +544,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q10",
     stem: "Supplementary welfare allowance is means tested. Child benefit is a universal welfare payment. Working family payment is available to employees on low pay with children.",
     questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Supplementary welfare allowance is means tested — True", marks: 2, contextNote: "Graded 2:0, so a tick is worth 2 or nothing — there is no half mark on this question. Supplementary Welfare Allowance is paid only after your means have been assessed, so the tick goes in the True column." },
-    { id: "r-2", kind: "point", verbatim: "Child benefit is a universal welfare payment — True", marks: 2, contextNote: "True. Universal means paid for every child whatever the family earns, and Child Benefit is not means tested — which is the contrast this question is testing against the payment above." },
-    { id: "r-3", kind: "point", verbatim: "Working family payment is available to employees on low pay with children — True", marks: 2, contextNote: "True. Working Family Payment tops up the wages of an employee on low pay who has children. All three statements here are true, so a candidate who split the ticks between the columns looking for a pattern gave marks away." },
+    { id: "r-1", kind: "point", verbatim: "Supplementary welfare allowance is means tested — True", marks: 2, contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-2", kind: "point", verbatim: "Child benefit is a universal welfare payment — True", marks: 2, contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
+    { id: "r-3", kind: "point", verbatim: "Working family payment is available to employees on low pay with children — True", marks: 2, contextNote: "Published 2023 examination answer. Graded 2:0; no partial credit." },
     ],
   } as SecCard,
   {
@@ -561,10 +559,10 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "types-of-credit-and-disadvantages",
     section: "A", questionRef: "2023 OL Section A Q11",
     questionText: "Name one type of credit available to consumers. Outline two disadvantages of the type of credit named.",
-    tariffModel: {"kind":"fixed","notation":"1 @ 2 marks (graded 2:1:0) + 2 @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Name 2; 2 disadvantages × 2 (all 2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "credit card; overdraft; term loan; hire purchase; mortgages", marks: null, contextNote: "The type of credit you named, worth 2 and graded 2:1:0. Tick what you actually wrote, because it fixes what the two disadvantages below have to be about. The list ends in \"etc.\", so another real form of consumer credit scores.", openList: true, group: {"claimMax":1,"perOption":2,"options":["credit card","overdraft","term loan","hire purchase","mortgages"]} },
-    { id: "r-2", kind: "anyN", verbatim: "high rate of interest; easy to have too many credit agreements; easy to overspend; encourages impulse buying; goods may be repossessed; goods not owned until final payment is made", marks: null, contextNote: "Two disadvantages at 2 marks each, graded 2:1:0 — 2 for one outlined, 1 for a bare phrase. They must be disadvantages of the type you named above: \"goods not owned until final payment is made\" is a hire purchase point and scores nothing written against a credit card or an overdraft. The list ends in \"etc.\", so another genuine disadvantage of your own type of credit still scores.", openList: true, group: {"claimMax":2,"perOption":2,"options":["high rate of interest","easy to have too many credit agreements","easy to overspend","encourages impulse buying","goods may be repossessed","goods not owned until final payment is made"]} },
+    { id: "name", kind: "criterion", verbatim: "type of credit", marks: 2, contextNote: "Name one type, graded 2:1:0. Published examples: credit card; overdraft; term loan; hire purchase; mortgages; etc.", permittedMarks: [0,1,2] },
+    { id: "disadvantages", kind: "criterion", verbatim: "disadvantages", marks: 4, contextNote: "Two disadvantages of the type you named, each graded 2:1:0. Use only guidance relevant to your chosen type. Published guidance: high rate of interest; easy to have too many credit agreements; easy to overspend; encourages impulse buying; goods may be repossessed; goods not owned until final payment is made; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -575,9 +573,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "functions-of-household-textiles",
     section: "A", questionRef: "2023 OL Section A Q12",
     questionText: "Describe three functions of textiles in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "warmth, insulation; comfort; protection; safety; absorbency; privacy; absorb sound; decoration; hygiene", marks: null, contextNote: "Three functions at 2 marks each, graded 2:1:0. The command word is describe, so the 2 wants the function and what it does in the home — \"privacy: curtains and blinds stop people seeing in\" — while a one-word function on its own is where the 1 lands. The scheme prints warmth and insulation together as one function, so they are one answer and not two. The list ends in \"etc.\", so another real function of household textiles scores.", openList: true, group: {"claimMax":3,"perOption":2,"options":["warmth, insulation","comfort","protection","safety","absorbency","privacy","absorb sound","decoration","hygiene"]} },
+    { id: "points", kind: "criterion", verbatim: "functions of textiles", marks: 6, contextNote: "Three distinct points, each graded 2:1:0. Published guidance: warmth, insulation; comfort; protection; safety; absorbency; privacy; absorb sound; decoration; hygiene; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -588,9 +586,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sa-q13", topicId: "home-economics-1-3", conceptId: "selecting-a-microwave-oven",
     section: "A", questionRef: "2023 OL Section A Q13",
     questionText: "Outline three guidelines to follow when selecting a microwave oven.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":14,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three of the following guidelines", marks: null, contextNote: "Each guideline is one point worth 2 marks, graded 2:1:0 — 2 where the guideline is named and outlined, 1 where it is only named or is vague, 0 where nothing creditable is given. Three separate guidelines are needed, so the same idea reworded scores once.", openList: true, group: {"claimMax":3,"perOption":2,"options":["consider cost e.g. initial, running","quality","family size/needs","wattage","pre-programme settings","smart technology","space available","safety features","guarantee","reliability","design and construction","easy to operate","easy to clean","after sales service"]} },
+    { id: "points", kind: "criterion", verbatim: "microwave oven", marks: 6, contextNote: "Three distinct points, each graded 2:1:0. Published guidance: consider cost e.g. initial, running; quality; family size/needs; brand; wattage; pre-programme settings; smart technology; space available; safety features; guarantee; reliability; design and construction; easy to operate; easy to clean; after sales service; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -5121,5 +5119,18 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original examination page to review this task in context."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sa-q4-source", topicId: "home-economics-0-8", conceptId: "dietary-source-of-iron",
+    section: "A", questionRef: "2023 OL Section A Q4 — dietary source",
+    questionText: "Name one dietary source of iron.",
+    tariffModel: {"kind":"fixed","notation":"1 source × 2 (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "source", kind: "criterion", verbatim: "dietary source of iron", marks: 2, contextNote: "One dietary source, graded 2:1:0. Published examples: meat; meat products; offal; poultry; eggs; cereals; green vegetables; fish; etc.", permittedMarks: [0,1,2] },
+    ],
   } as SecCard,
 ];

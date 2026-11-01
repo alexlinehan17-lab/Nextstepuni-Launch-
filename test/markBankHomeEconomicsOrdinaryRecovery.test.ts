@@ -17,6 +17,45 @@ const get = (id: string) => {
 };
 
 describe('2023 Ordinary Home Economics recovered tasks', () => {
+  it('splits the independent iron-source task without changing its functions identity', () => {
+    const functions = get('he-2023-ol-sa-q4');
+    const source = get('he-2023-ol-sa-q4-source');
+    expect(functions.totalMarks).toBe(4);
+    expect(functions.questionText).toBe('State two functions of iron in the body.');
+    expect(functions.rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 1, 2], [0, 1, 2]]);
+    expect(source.questionText).toBe('Name one dietary source of iron.');
+    expect(source.totalMarks).toBe(2);
+    expect(source.rows[0].permittedMarks).toEqual([0, 1, 2]);
+    expect(source.rows[0].contextNote).toContain('green vegetables; fish; etc.');
+    const row = runtime.questionMappings.find(q => q[0] === 'o' && q[1] === 'e' && q[2] === 2023
+      && q[4] === 'LC098GLP014EV.pdf' && q[5] === '4')!;
+    expect((row[6] as number[]).map(i => runtime.topicIds[i])
+      .some(t => (crosswalk as Record<string, string[]>)[t]?.includes(source.topicId))).toBe(true);
+  });
+
+  it('exposes the published one-mark steps and complete short-answer guidance', () => {
+    for (const n of [2, 7, 9, 12, 13]) {
+      const c = get(`he-2023-ol-sa-q${n}`);
+      expect(c.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 1, 2]));
+      expect(c.rows[0].contextNote).toMatch(/etc\.$/);
+    }
+    const microwave = get('he-2023-ol-sa-q13');
+    expect(microwave.rows[0].contextNote).toContain('brand;');
+    expect(microwave.rows[0].contextNote).toContain('after sales service;');
+    const raising = get('he-2023-ol-sa-q8');
+    expect(raising.questionText).toContain('Sponge cake\nBread\nLemon drizzle cake');
+    expect(raising.rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 1, 2]));
+    expect(raising.rows.every(r => r.contextNote?.includes('different agent for each product'))).toBe(true);
+    const credit = get('he-2023-ol-sa-q11');
+    expect(credit.rows.map(r => r.marks)).toEqual([2, 4]);
+    expect(credit.rows[0].permittedMarks).toEqual([0, 1, 2]);
+    expect(credit.rows[1].parts?.map(p => p.permittedMarks)).toEqual([[0, 1, 2], [0, 1, 2]]);
+    const cards = CARDS.filter(c => c.questionRef.startsWith('2023 OL Section A '));
+    expect(cards).toHaveLength(15);
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(84);
+    for (const c of cards) expect(tariffReconciles(c), c.id).toBe(true);
+  });
+
   it('shows the original care symbols with separate published partial marks', () => {
     const c = get('he-2023-ol-sa-q14');
     expect(c.questionFigure?.src).toContain('2023-ol-sa-q14-symbols.png');

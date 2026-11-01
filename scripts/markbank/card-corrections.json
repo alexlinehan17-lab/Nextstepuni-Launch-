@@ -7706,6 +7706,579 @@
     },
     "notes": "Full named-scheme response restored on its existing ID. Detail criterion is explicit and honest about the absence of a printed model answer. See he_review_2023_ol.py."
    }
+  },
+  "he-2023-ol-sa-q2": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "energy requirements",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: body weight; body size; gender, men differ from women; pregnancy, lactation; age, older people need less; climate, need less in warm weather; physical activity; growth spurts; occupation, physical worker needs more; basal metabolic rate (BMR); sedentary lifestyle; health status; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q7": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "fibre",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct points, each graded 2:1:0. Use three different ways; do not count the same idea twice. Published guidance: add bran to breakfast cereals; increase intake of fruit/vegetables; avoid peeling fruit and vegetables; eat skins of fruit and vegetables; eat brown bread/pasta/rice; add seeds and nuts to food; use brown flour instead of white flour; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q9": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "grilling",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: preheat grill or barbeque to required temperature; use tongs to turn food; oil grill, grid to prevent food sticking; seal surface of food with high heat; suitable for thin pieces of food; do not salt food before grilling; suitable cooking time to avoid overcooking; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q12": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "functions of textiles",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: warmth, insulation; comfort; protection; safety; absorbency; privacy; absorb sound; decoration; hygiene; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q13": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "microwave oven",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: consider cost e.g. initial, running; quality; family size/needs; brand; wattage; pre-programme settings; smart technology; space available; safety features; guarantee; reliability; design and construction; easy to operate; easy to clean; after sales service; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q4": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions of iron",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two functions, each graded 2:1:0. Published guidance: essential in formation of pigment haemoglobin in red blood cells; haemoglobin transports oxygen around the body; prevents anaemia; iron produces myoglobin which carries oxygen to the muscles; necessary for the efficient functioning of enzymes to release energy from food; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 functions × 2 (2:1:0)"
+    },
+    "totalMarks": 4,
+    "questionText": "State two functions of iron in the body.",
+    "questionRef": "2023 OL Section A Q4 — functions"
+   }
+  },
+  "he-2023-ol-sa-q8": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "product-1",
+      "kind": "criterion",
+      "verbatim": "Sponge cake",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: air; self-raising flour; etc."
+     },
+     {
+      "id": "product-2",
+      "kind": "criterion",
+      "verbatim": "Bread",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: bread soda; yeast; air; baking powder; etc."
+     },
+     {
+      "id": "product-3",
+      "kind": "criterion",
+      "verbatim": "Lemon drizzle cake",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One suitable raising agent, graded 2:1:0. Use a different agent for each product. Published examples: baking powder; air; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 different agents × 2 (2:1:0)"
+    },
+    "stem": "",
+    "questionText": "Name one different raising agent suitable for each of the following baked products.\nSponge cake\nBread\nLemon drizzle cake"
+   }
+  },
+  "he-2023-ol-sa-q11": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "type of credit",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name one type, graded 2:1:0. Published examples: credit card; overdraft; term loan; hire purchase; mortgages; etc."
+     },
+     {
+      "id": "disadvantages",
+      "kind": "criterion",
+      "verbatim": "disadvantages",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two disadvantages of the type you named, each graded 2:1:0. Use only guidance relevant to your chosen type. Published guidance: high rate of interest; easy to have too many credit agreements; easy to overspend; encourages impulse buying; goods may be repossessed; goods not owned until final payment is made; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 2; 2 disadvantages × 2 (all 2:1:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q1": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "True — Polyunsaturated fatty acids are present in oily fish",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "True"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "False — Lipids (fats) contain the element nitrogen",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "False"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "True — Adipose tissue protects delicate organs in the body",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "True"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q5": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "True — Carbohydrate is converted into glucose during digestion",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "True"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "False — Bile is produced in the stomach",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "False"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "True — Enzymes are proteins essential for digestion",
+      "marks": 2,
+      "openList": false,
+      "accepts": [
+       "True"
+      ],
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    }
+   }
+  },
+  "he-2023-ol-sa-q10": {
+   "reason": "2023 Ordinary Section A: paper pp3–7 and scheme pp6–9 independently reviewed. Preserve all source guidance and actual graded values. See he_review_2023_ol_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Supplementary welfare allowance is means tested — True",
+      "marks": 2,
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "Child benefit is a universal welfare payment — True",
+      "marks": 2,
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "Working family payment is available to employees on low pay with children — True",
+      "marks": 2,
+      "contextNote": "Published 2023 examination answer. Graded 2:0; no partial credit."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    }
+   }
   }
  },
  "english": {
