@@ -79,11 +79,6 @@
     "secondary": "home-economics-0-7"
    },
    {
-    "n": "2",
-    "primary": "home-economics-0-1",
-    "secondary": "home-economics-0-8"
-   },
-   {
     "n": "3",
     "primary": "home-economics-0-4"
    },
@@ -96,6 +91,11 @@
     "n": "5",
     "primary": "home-economics-2-0",
     "secondary": "home-economics-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8",
+    "secondary": "home-economics-0-9"
    }
   ]
  },

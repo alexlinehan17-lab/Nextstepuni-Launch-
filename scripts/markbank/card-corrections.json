@@ -45078,6 +45078,332 @@
      }
     ]
    }
+  },
+  "he-2025-hl-sb-q2a": {
+   "reason": "Independently priced osteoporosis description: preserve existing identity at its 6-mark boundary.",
+   "set": {
+    "questionRef": "2025 HL Section B Q2(a) — description",
+    "questionText": "Describe osteoporosis.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’(www.irishosteoporosis.ie)",
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 description points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "points described",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two developed description points, each graded 3:2:0. Complete source guidance: a condition that causes the bones to become thin, porous and brittle; bones break easily; bone strength weakens; causes loss of height; stooped posture; bone/nerve pain; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Paper page 3 controls lettering. Scheme page 14 omits the calcium (b) label and mislabels cheese (b). Preserve the existing cheese identity and correct its displayed reference to (c)."
+   }
+  },
+  "he-2025-hl-sb-q2b": {
+   "reason": "Existing cheese card is the paper’s part (c), mislettered (b) in the scheme. Preserve identity/progress and restore the complete production guidance.",
+   "set": {
+    "questionRef": "2025 HL Section B Q2(c)",
+    "questionText": "Give a detailed account of the production of cheese. Refer to:\n• stages of production\n• packaging and labelling.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’(www.irishosteoporosis.ie)",
+    "totalMarks": 17,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Production 6 × 2 (2:1:0); packaging 2 × 1; labelling 3 × 1"
+    },
+    "rows": [
+     {
+      "id": "stages",
+      "kind": "criterion",
+      "verbatim": "Stages of production",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Six stages, each graded 2:1:0. Complete source process, including the previously omitted rind, maturation, grading and portioning stages; this is an industrial account, not a validated home-preservation recipe: milk is pasteurised; (raw cheeses made from unpasteurised milk) a culture of lactic acid bacteria/vinegar is added; homogenised; lactose (milk sugar) changes to lactic acid which adds flavour and acts as a preservative; milk is heated to 30°C; rennet/curdling agent is added – contains the enzyme rennin which coagulates protein (caseinogen to casein); mixture separates into curds (solids) and whey (liquid); whey is drained off; curds are chopped to release more whey; curds are heated to 35-40°C to squeeze out more whey and achieve correct consistency (scalding); curds are cut into blocks and piled on top of each other to complete drainage of whey (cheddaring); the blocks are cut; 2% salt is added for flavour and preservation; salted curds are placed in moulds and pressed; moulds may be sprayed with hot water to form a protective rind; cheese is removed from the mould; details/date of production is stamped on cheese rind; stored for 3-12 months to ripen/mature; cheese is graded; weighed into portions; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "packaging",
+      "kind": "criterion",
+      "verbatim": "Packaging",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Two packaging points, each graded 1:0. Complete source examples: vacuum packed in polythene zip-lock plastic bag; waxed paper; plastic tubs; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "labelling",
+      "kind": "criterion",
+      "verbatim": "Labelling",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three label details, each graded 1:0. Complete source examples: type; brand; quantity; nutritional information; date-stamped; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Paper page 3 controls lettering. Scheme page 14 omits the calcium (b) label and mislabels cheese (b). Preserve the existing cheese identity and correct its displayed reference to (c)."
+   }
+  },
+  "he-2025-hl-sb-q2a-calcium": {
+   "reason": "Existing calcium card was misfiled under (a); preserve its identity and use the paper’s (b) reference.",
+   "set": {
+    "questionRef": "2025 HL Section B Q2(b)",
+    "questionText": "Outline the factors that affect the absorption of calcium in the body.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’(www.irishosteoporosis.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 factors × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "factors",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "contextNote": "Five factors, each graded 3:2:1:0. Source clarification: vitamin D supports active calcium absorption; oxalic/phytic acids can reduce absorption. The source mixes absorption with broader calcium balance; its blanket phosphorus-as-an-aid entry is misleading (NIH notes a small reduction in net absorption). Do not treat this list as supplement instructions. Complete historical guidance: Assist Vitamin D; phosphorus; protein; acid environment; vitamin C; hormone parathormone; hormone oestrogen; lactose in milk; vitamin B/B12 ;etc. Inhibit tannins; excess dietary fibre; excess fat; excess protein; phytic acid; oxalic acid; excess alcohol; smoking; nicotine; digestive disorders e.g. coeliacs disease; caffeine; drugs; excess Vit A; excess Vit K; excess sodium/salt; sulphur; phosphoric acid; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Paper page 3 controls lettering. Scheme page 14 omits the calcium (b) label and mislabels cheese (b). Preserve the existing cheese identity and correct its displayed reference to (c).",
+    "topicId": "home-economics-0-8"
+   }
   }
  },
  "english": {

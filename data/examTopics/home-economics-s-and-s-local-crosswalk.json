@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-11-01T22:30:54.167Z",
+  "generatedAt": "2026-11-01T22:38:46.609Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
@@ -1078,19 +1078,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
         }
       ]
     },
@@ -4084,7 +4085,8 @@
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "2",
+          "label": "Section B · Q2"
         },
         {
           "level": "higher",
@@ -4785,7 +4787,8 @@
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "2",
+          "label": "Section B · Q2"
         },
         {
           "level": "higher",
@@ -10012,19 +10015,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
         }
       ]
     },
@@ -14723,19 +14727,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
         }
       ]
     },
@@ -34373,6 +34378,53 @@
         "id": "he-2025-hl-sa-q3-sources",
         "fileid": "LC098ALP014EV.pdf",
         "n": "3",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      }
+    ]
+  },
+  "reviewedEnglish2025HigherB2": {
+    "paperFileids": [
+      "LC098ALP014EV.pdf",
+      "LC098ALP039EV.pdf"
+    ],
+    "physicalQuestions": 1,
+    "review": "scripts/markbank/authoring/home-economics/2025-hl-main-review.json",
+    "policy": "Question B2 paper/scheme anchor reviewed; all four tasks mapped to canonical topics. Original paper lettering overrides scheme typo: cheese is (c), calcium is (b). All other question anchors preserved. B1/B3–B5/C task authoring remains pending; Irish editions untouched.",
+    "markBankMappings": [
+      {
+        "id": "he-2025-hl-sb-q2a",
+        "fileid": "LC098ALP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sb-q2a-calcium",
+        "fileid": "LC098ALP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sb-q2b",
+        "fileid": "LC098ALP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sb-q2a-risk",
+        "fileid": "LC098ALP039EV.pdf",
+        "n": "2",
         "topicId": "home-economics-0-8",
         "atlasTopicIds": [
           "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"

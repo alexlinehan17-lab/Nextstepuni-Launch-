@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 713,
+    "cards": 714,
     "leaves": 1342,
-    "covered": 681,
+    "covered": 682,
     "excluded": 0,
-    "open": 661,
-    "coveragePct": 50.7,
+    "open": 660,
+    "coveragePct": 50.8,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -876,11 +876,9 @@
         "level": "hl",
         "paper": null,
         "leaves": 57,
-        "covered": 56,
+        "covered": 57,
         "excluded": 0,
-        "open": [
-          "Section B Q2(c)"
-        ]
+        "open": []
       },
       {
         "year": 2025,
@@ -1039,10 +1037,10 @@
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
-    "2021 Higher/Ordinary and 2024 Higher/Ordinary English main source reviews complete. 2025 Higher: all 96 source pages visually swept; Section A complete (15 tasks). Next author B/C: missing cheese production, separate osteoporosis risk, ventilation effects and meat-tenderising tasks; full choices, figures, tariffs and Atlas mappings. See 2025-hl-main-review.json remainingWork. Then 2025 Ordinary, 2026 and 2010–2020. Irish editions deferred.",
+    "2025 Higher: Section A (15 tasks) and B2 (4 tasks) complete. Existing calcium/cheese cards were mislettered, not missing; both IDs preserved and references corrected. Next B1 and B3–B5, then C; consolidate required fatty-acid and refrigerator headings with explicit progress aliases, restore all images and guidance, split independent ventilation effects and meat-tenderising tasks, and verify all Atlas mappings. Then 2025 Ordinary, 2026 and 2010–2020. Irish editions deferred.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
   ],
-  "coveragePolicy": "Raw census is diagnostic only: 661 open candidates and 37 flags are not an independent count of outstanding tasks. 2025 Higher Section A has 15 independently reviewed tasks; its B/C review remains pending. Coverage baseline remains unchanged while the subject is incomplete.",
+  "coveragePolicy": "Raw census is diagnostic only: 660 open candidates and 37 flags are not an independent count of outstanding tasks. 2025 Higher raw asks are now 57/57 covered after the source-reference correction, but only A/B2 have completed detailed task authoring; do not claim the sitting or subject complete.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1153,23 +1151,36 @@
       "workCommit": "543f3e2c3",
       "launchCommit": "dd98eeb36",
       "scope": "2024 Ordinary main: all 58 tasks, four additions, all 82 source pages, two original figures and all 23 Atlas groups."
+    },
+    {
+      "workCommit": "3419f52e5",
+      "launchCommit": "8f826a10c",
+      "scope": "2025 Higher Section A: fifteen tasks, one addition, all 96 source pages swept, fourteen Atlas anchors."
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2025 Higher Section A: fifteen tasks, one independent addition, complete tables and answer routes, fourteen paper/scheme Atlas anchors",
-    "runtimeCards": 713,
-    "higher": 421,
+    "scope": "2025 Higher B2: four tasks; existing calcium and cheese IDs corrected to paper references (b)/(c), independent osteoporosis risk task added, complete source guidance and canonical Atlas mapping",
+    "runtimeCards": 714,
+    "higher": 422,
     "ordinary": 292,
     "sourceReview": "2025-hl-main-review.json",
     "validation": {
-      "requiredVitest": "238 tests across the three required preservation/curriculum/deck suites and the 2025 Higher regression suite passed after final regeneration.",
-      "atlas": "2 Home Economics registry tests passed; all 15 Section A cards checked against canonical Atlas topics.",
+      "requiredVitest": "240 tests across the three required preservation/curriculum/deck suites and the 2025 Higher regression suite passed.",
+      "atlas": "2 Home Economics registry tests passed; every reviewed A/B2 task checked against canonical topics.",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
-      "productionBuild": "passed after final regeneration",
-      "regeneration": "19 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
+      "productionBuild": "passed",
+      "regeneration": "20 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
       "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "All 96 source pages swept; fourteen final Section A paper/scheme question groups visually checked. B/C task authoring remains pending."
+      "sourceCropReview": "Complete B2 paper/scheme pair visually checked; correct paper lettering controls all four tasks.",
+      "broaderCheck": "Broader finalStudyclixExamTopics test: 6 passed, 1 pre-existing Mathematics count assertion failed (expected 1632 logical topic mappings, received 2091). Mathematics runtime/crosswalk and that test are byte-identical to the pre-batch commit. Recorded for later reconciliation; no unrelated baseline change."
     }
-  }
+  },
+  "knownExistingValidationIssues": [
+    {
+      "test": "test/finalStudyclixExamTopics.test.ts:138",
+      "subject": "mathematics",
+      "issue": "Expected 1632 logical topic mappings; current established runtime produces 2091. Test, Mathematics runtime and curriculum crosswalk unchanged from the pre-B2 commit. Reconcile this count separately against the completed Mathematics source-review evidence; do not change frozen preservation/coverage baselines to silence it."
+    }
+  ]
 }

@@ -125,6 +125,30 @@
       "status": "source-reviewed",
       "section": "A",
       "marks": 2
+    },
+    {
+      "id": "he-2025-hl-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B2",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sb-q2a-calcium",
+      "status": "source-reviewed",
+      "section": "B2",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B2",
+      "marks": 17
+    },
+    {
+      "id": "he-2025-hl-sb-q2a-risk",
+      "status": "source-reviewed",
+      "section": "B2",
+      "marks": 12
     }
   ],
   "sectionAReview": {
@@ -150,13 +174,14 @@
     "otherCards": "All existing cards outside 2025 Higher Section A byte-identical; no live identity withdrawn."
   },
   "remainingWork": [
-    "B2(c) cheese production is missing from the old deck. Scheme page 14 misletters the cheese prompt as (b); paper page 3 is authoritative for B2(a)/(b)/(c).",
-    "B2(a) has separately priced description (6) and risk reasons (12).",
+    "B2 source references corrected: existing calcium ID was under (a), cheese under (b); both identities are preserved at paper parts (b)/(c). Only independent osteoporosis-risk task added.",
+    "B2(a) description (6) and risk reasons (12) independently authored and reviewed.",
     "C1(a)(iii) ventilation principle and effects have independent 9-mark tariffs; C4(a)(ii) toughness causes (6) and tenderising methods (12) are separate prompts.",
     "Retain all 8 energy-chart categories and both blazer outfit photographs.",
     "B3(a) full original bacterial table, all answer routes and accurate safety clarifications; B4(b) includes 1-mark appliance name in its 22-mark total.",
     "C2(a)(i) printed three required headings and source outfit quota need careful combined presentation; C2(b) is one whole two-names/one-procedure choice response.",
-    "Review all B/C exact tariffs and all canonical Atlas links, then final source crops and validation."
+    "Review all B/C exact tariffs and all canonical Atlas links, then final source crops and validation.",
+    "B1(b) currently has three required fatty-acid headings as separate live cards; consolidate as one response with explicit progress aliases. B4(b) currently splits required refrigeration headings; preserve the 1-mark name in a whole 22-mark study with explicit progress alias."
   ],
   "sectionASourceCropReview": {
     "status": "visually-checked",
@@ -186,5 +211,34 @@
       "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/storage",
       "finding": "FSAI distinguishes uncooked thawed food from food cooked after defrosting; avoid presenting the scheme never-refreeze statement without its conditions."
     }
+  },
+  "sectionB2Review": {
+    "tasks": 4,
+    "marks": 50,
+    "selectionDecisions": "One independent description and one risk-factor task under (a); correct existing calcium to (b), correct the existing cheese card to (c) without changing its ID. Required cheese headings stay whole. No finite printed option pool.",
+    "sourceClarifications": {
+      "calcium": {
+        "source": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+        "note": "Distinguish active absorption, factors reducing absorption and broader calcium balance; phosphorus is not a universal absorption aid."
+      }
+    },
+    "checked": "2026-11-01"
+  },
+  "sectionB2Validation": {
+    "requiredVitest": "240 tests across the three required preservation/curriculum/deck suites and the 2025 Higher regression suite passed.",
+    "atlas": "2 Home Economics registry tests passed; every reviewed A/B2 task checked against canonical topics.",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed",
+    "regeneration": "20 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
+    "browser": "unavailable; browser QA pending",
+    "sourceCropReview": "Complete B2 paper/scheme pair visually checked; correct paper lettering controls all four tasks.",
+    "broaderCheck": "Broader finalStudyclixExamTopics test: 6 passed, 1 pre-existing Mathematics count assertion failed (expected 1632 logical topic mappings, received 2091). Mathematics runtime/crosswalk and that test are byte-identical to the pre-batch commit. Recorded for later reconciliation; no unrelated baseline change."
+  },
+  "sectionB2Preservation": {
+    "previousLiveTasks": 3,
+    "preservedLiveTasks": 3,
+    "addedTasks": 1,
+    "details": "Calcium was already authored under Q2(a), and cheese under Q2(b), following the scheme’s mislettering. Preserve both existing IDs; correct references to Q2(b)/(c). The only added identity is the separately priced 12-mark osteoporosis-risk task. All other cards unchanged."
   }
 }

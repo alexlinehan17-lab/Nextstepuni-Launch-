@@ -55212,5 +55212,90 @@
    }
   ],
   "notes": "Independent source prompt and tariff; original ID retains the functions prompt."
+ },
+ {
+  "id": "he-2025-hl-sb-q2a-risk",
+  "topicId": "home-economics-0-8",
+  "conceptId": "osteoporosis-risk-factors",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q2(a) — risk factors",
+  "questionText": "Discuss why a person might be at risk of developing this condition (osteoporosis).",
+  "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’(www.irishosteoporosis.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 reasons × 3 (3:2:0)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "reasons discussed",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Four distinct reasons, each graded 3:2:0. These are risk factors, not inevitable outcomes or a diagnosis. Complete source wording: risk increases with age; more common in females (especially post-menopausal women); family history can increase risk; lack of calcium; lack of vitamin D; phosphorus; etc. considerable weight loss may also cause loss of bone mass; lack of weight bearing exercise contributes to weakening of bones; some disabilities increase risk -due to inactivity; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Paper page 3 controls lettering. Scheme page 14 omits the calcium (b) label and mislabels cheese (b). Preserve the existing cheese identity and correct its displayed reference to (c)."
  }
 ]

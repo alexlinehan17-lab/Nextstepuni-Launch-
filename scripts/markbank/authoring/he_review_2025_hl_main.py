@@ -14,7 +14,8 @@ REVIEW='scripts/markbank/authoring/home-economics/2025-hl-main-review.json'
 
 
 def page_text(doc,n):
- cutoff=780 if doc.name.endswith('LC098ALP000EV.pdf') else (760 if doc.name.endswith('2025-hl-039-paper.pdf') else 740)
+ # 2025 scheme footers start at y=770; paper footers at y=746.
+ cutoff=760 if doc.name.endswith('LC098ALP000EV.pdf') else 740
  return tidy(doc[n-1].get_text(clip=fitz.Rect(0,35,doc[n-1].rect.width,cutoff)))
 
 

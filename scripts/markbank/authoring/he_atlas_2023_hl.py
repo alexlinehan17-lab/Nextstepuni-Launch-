@@ -233,3 +233,8 @@ if __name__ == "__main__":
 if __name__ == "__main__":
  from he_atlas_2025_hl_main_a import apply as apply_2025_hl_main_a
  apply_2025_hl_main_a()
+
+# Preserve the paper-authoritative 2025 Higher B2 source review.
+if __name__ == "__main__":
+ from he_atlas_2025_hl_main_b2 import apply as apply_2025_hl_main_b2
+ apply_2025_hl_main_b2()

@@ -4,6 +4,7 @@ import { tariffReconciles } from '../types/markBank';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
 import crosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-crosswalk.json';
 import anchors from '../scripts/paper-trail/answers/2025/LC098ALP014EV.pdf.json';
+import bcAnchors from '../scripts/paper-trail/answers/2025/LC098ALP039EV.pdf.json';
 import review from '../scripts/markbank/authoring/home-economics/2025-hl-main-review.json';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
@@ -13,6 +14,7 @@ const get = (id: string) => {
   return c;
 };
 const sitting = CARDS.filter(c => c.id.startsWith('he-2025-hl-sa-'));
+const b2 = CARDS.filter(c => c.id.startsWith('he-2025-hl-sb-q2'));
 describe('2025 Higher Home Economics Section A source review', () => {
   it('keeps all fifteen independently reviewed tasks and every answer-route tariff', () => {
     expect(sitting.map(c => c.id).sort()).toEqual(review.tasks.filter(t => t.section === 'A').map(t => t.id).sort());
@@ -59,8 +61,37 @@ describe('2025 Higher Home Economics Section A source review', () => {
     expect(anchors.q.map(q => q.n)).toEqual(Array.from({ length: 14 }, (_, i) => String(i + 1)));
     expect(anchors.q.find(q => q.n === '8')!.region.map(r => r.p)).toEqual([8]);
   });
-  it('maps each card to its own Atlas question and canonical topic', () => {
-    for (const c of sitting) {
+  it('corrects B2 lettering while preserving the existing cheese and calcium identities', () => {
+    expect(b2).toHaveLength(4);
+    expect(b2.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(50);
+    expect(b2.map(c => c.id).sort()).toEqual(review.tasks.filter(t => t.section === 'B2').map(t => t.id).sort());
+    for (const c of b2) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+    }
+    expect(get('sb-q2a').totalMarks).toBe(6);
+    expect(get('sb-q2a-risk').totalMarks).toBe(12);
+    expect(get('sb-q2a-risk').questionText).toContain('osteoporosis');
+    expect(get('sb-q2a-calcium').questionRef).toBe('2025 HL Section B Q2(b)');
+    expect(get('sb-q2b').questionRef).toBe('2025 HL Section B Q2(c)');
+    expect(get('sb-q2b').conceptId).toBe('production-of-cheese');
+    expect(CARDS.some(c => c.id === 'he-2025-hl-sb-q2b-calcium')).toBe(false);
+  });
+  it('retains the complete cheese process, calcium factors and exact partial credit', () => {
+    const cheese = get('sb-q2b');
+    expect(cheese.rows.map(r => r.marks)).toEqual([12, 2, 3]);
+    expect(cheese.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(6).fill([0, 1, 2]));
+    for (const text of ['protective rind', '3-12 months', 'cheese is graded', 'weighed into portions']) expect(cheese.rows[0].contextNote).toContain(text);
+    const calcium = get('sb-q2a-calcium');
+    expect(calcium.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(5).fill([0, 1, 2, 3]));
+    expect(calcium.rows[0].contextNote).toContain('Assist Vitamin D');
+    expect(calcium.rows[0].contextNote).toContain('Inhibit tannins');
+    expect(calcium.rows[0].contextNote).toContain('phosphoric acid');
+    expect(bcAnchors.q.find(q => q.n === '2')!.region.map(r => r.p)).toEqual([14]);
+    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
+  });
+  it('maps each reviewed A/B2 card to its own Atlas question and canonical topic', () => {
+    for (const c of [...sitting, ...b2]) {
       const m = c.questionRef.match(/Section ([ABC]) (?:E\d )?Q(\d+)/)!;
       const file = m[1] === 'A' ? 'LC098ALP014EV.pdf' : 'LC098ALP039EV.pdf';
       const n = String(Number(m[2]) + (m[1] === 'C' ? 5 : 0));
