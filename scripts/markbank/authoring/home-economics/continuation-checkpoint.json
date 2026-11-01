@@ -10,7 +10,7 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 552,
+    "cards": 554,
     "leaves": 1229,
     "covered": 549,
     "excluded": 0,
@@ -1043,11 +1043,18 @@
     "unreadPapers": []
   },
   "nextActions": [
-    "Finish checking existing 2023 Higher task boundaries and grading.",
+    "Review all existing 2023 Higher B/C card grading and answer detail. Section A source review is complete.",
     "Recover missing 2023 Ordinary tasks and held criterion-only detail.",
     "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 using full paper/scheme sweeps.",
     "Reconcile subject-wide Mark Bank and Topic Atlas, including Section B/C identities and available deferred English papers.",
     "Integrate only verified batches; keep moving to the next actionable sitting."
   ],
-  "coveragePolicy": "The census is diagnostic only; 680 open candidates and 37 flags are not a complete independent count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete."
+  "coveragePolicy": "The census is diagnostic only; 680 open candidates and 37 flags are not a complete independent count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
+  "integratedBatches": [
+    {
+      "workCommit": "14e08691b",
+      "launchCommit": "e3b8fd504",
+      "scope": "Three missing 2023 Higher tasks, four Section C Atlas anchors, 2022 Ordinary census correction."
+    }
+  ]
 }

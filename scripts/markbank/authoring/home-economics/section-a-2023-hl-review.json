@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Higher English Home Economics Section A",
+  "status": "source-reviewed; browser QA pending",
+  "generator": "scripts/markbank/authoring/he_review_2023_hl_section_a.py",
+  "sources": {
+    "paper": "2023-hl-014-paper.pdf pp3–7; SHA256 8a1dceedb76a3c4aadeaa57ecc94c59d23b78c07dbbec75bd679f6e30e0c5243",
+    "scheme": "2023-marking-scheme.pdf pp6–9; SHA256 885b58b2d7c1c5ad60b107a4367795762443399dd91778697367399b3e64ea2b"
+  },
+  "correctedExistingIds": [
+    "he-2023-hl-sa-q1",
+    "he-2023-hl-sa-q10",
+    "he-2023-hl-sa-q11",
+    "he-2023-hl-sa-q12",
+    "he-2023-hl-sa-q13",
+    "he-2023-hl-sa-q14",
+    "he-2023-hl-sa-q2",
+    "he-2023-hl-sa-q3",
+    "he-2023-hl-sa-q4",
+    "he-2023-hl-sa-q5",
+    "he-2023-hl-sa-q6",
+    "he-2023-hl-sa-q7",
+    "he-2023-hl-sa-q8",
+    "he-2023-hl-sa-q9"
+  ],
+  "addedIds": [
+    "he-2023-hl-sa-q4-factors",
+    "he-2023-hl-sa-q8-uses"
+  ],
+  "boundaryDecisions": {
+    "Q4": "Two separate prompts/answer spaces priced 4 and 2; original ID retains definition, new ID factors. Essential minimum point retained separately.",
+    "Q8": "Two separate prompts/answer spaces priced 2 and 4; original ID retains test, new ID uses.",
+    "Q2/Q5": "Culinary examples illustrate the same response; keep one card with separately priced components.",
+    "Q3": "Two chosen bacteria with different associated foods stay one response with two paired name/food slots.",
+    "Q12/Q13": "Required table headings remain together, each graded 3:2:0.",
+    "Other questions": "One response with the published number of scoring slots; no combination expansion."
+  },
+  "corrections": [
+    "Selectable partial-credit steps replace binary full-mark claims.",
+    "Q7 restores accepted chemical-raising-agent detail.",
+    "Q12 restores borrower repayment detail.",
+    "Q6 follows paper wording adults, not the scheme-only Irish adults.",
+    "Notes follow printed bands without inventing exact meanings for each partial grade."
+  ],
+  "choiceReview": "Raw paper directives are scanned against SELECTION_TOKENS. Pinned sources and exact question identities fail on source changes.",
+  "marks": {
+    "before": 84,
+    "after": 84,
+    "printedQuestions": 14,
+    "practiceTasks": 16
+  },
+  "preservation": {
+    "previousCardIdsRetained": true,
+    "previousAuthoredCardsUnchanged": true,
+    "changedExistingRuntimeCards": 14,
+    "otherExistingRuntimeCardsUnchanged": true
+  },
+  "atlas": "New prompts map to original Section A Q4/Q8 and canonical topics; tested.",
+  "figure": {
+    "path": "public/exam-figures/home-economics/home-economics-2023-hl-sa-q3-scheme.png",
+    "sha256": "d6ce01b372724821cea8324fb00ed0e8c6e8b0d9408a951d78a53bb988299a65",
+    "review": "Complete original two-column table, all eight associations and borders visually checked. Bounds [55,472,548,712], scheme p6, 2×."
+  },
+  "validation": {
+    "vitest": "240 passed",
+    "python": "4 passed",
+    "typecheck": "passed",
+    "testTypecheck": "passed",
+    "productionBuild": "passed",
+    "browser": "Native pipe startup failed; no browser QA claim.",
+    "deterministicRegeneration": "byte-identical"
+  },
+  "remaining": "Review existing 2023 B/C grading and answer detail, then remaining sittings. Subject incomplete."
+}

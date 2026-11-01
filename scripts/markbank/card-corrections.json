@@ -820,6 +820,666 @@
    "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
    "drop": true,
    "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+  },
+  "he-2023-hl-sa-q1": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "biological functions of lipids",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: supply body with heat; source of energy; excess stored as adipose tissue, insulating body; acts as energy reserve; protect delicate organs; source of fat-soluble vitamins A,D,E,K; source of essential fatty acids e.g. linoleic; feeling of fullness, delay hunger; unsaturated fatty acids reduce cholesterol; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q6": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "benefits",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: slow release of glucose into the bloodstream; helps to lower blood cholesterol; reduces risk of CHD; adds bulk to the diet; gives feeling of fullness; speeds up peristalsis; helps prevent bowel disorders; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    },
+    "questionText": "Outline two benefits of including high fibre foods in the diet of adults."
+   }
+  },
+  "he-2023-hl-sa-q9": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "role of public analyst laboratories",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: ensure food available to consumers is safe and wholesome; analyse food and water samples; test foods to ensure compliance with food legislation; test foods to ensure compliance with labelling; test food and water samples for general public on payment of a fee; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q10": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "Working Family Payment",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: weekly tax-free payment; paid to families where the earner is in low-paid employment; to qualify an individual must be in full-time employment; work at least 19 hours per week; have at least one dependent child; have a weekly income that falls below a fixed amount for family size; payment received is 60% of the difference between the net family income and the income limit that applies to the family; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q11": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "measures",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: use less polluting sources of energy e.g. gas, smokeless fuels; use renewable energy sources e.g. solar energy; walk, cycle or use public transport when possible; drive electric cars; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q14": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "benefits the consumer",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, each graded 3:2:0. Published guidance: aims to protect the consumer by ensuring transparency in all credit agreements; ensures they are clear and easy to understand; regulates consumer credit; monitors credit advertising; stipulates the information that must be written on all credit agreements; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q2": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "definition",
+      "kind": "criterion",
+      "verbatim": "Gelatinisation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two explanation points, each graded 2:1:0. Published guidance: when starch is heated; the starch grains swell, burst and absorb the liquid; resulting in a gel / thickened mixture; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "example",
+      "kind": "criterion",
+      "verbatim": "Culinary example",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "One example, graded 2:0. Published examples: custard, white sauce; pastry; pasta dishes; risotto; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Explanation 2 × 2 (2:1:0); example 2 (2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q3": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "pairs",
+      "kind": "criterion",
+      "verbatim": "Name of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Name two different bacteria and give a different associated high-risk food for each. Each name is graded 2:1:0; each food is graded 1:0. The complete published associations are in the table.",
+      "parts": [
+       {
+        "id": "name-1",
+        "verbatim": "Name of bacteria 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "food-1",
+        "verbatim": "High-risk food 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "name-2",
+        "verbatim": "Name of bacteria 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "food-2",
+        "verbatim": "High-risk food 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Two pairs: name 2 (2:1:0), associated food 1 (1:0)"
+    },
+    "figureKey": "home-economics-2023-hl-sa-q3-scheme"
+   }
+  },
+  "he-2023-hl-sa-q4": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "minimum",
+      "kind": "point",
+      "verbatim": "the minimum",
+      "marks": 1,
+      "contextNote": "The scheme explicitly says minimum is an essential point in the answer."
+     },
+     {
+      "id": "definition",
+      "kind": "anyN",
+      "verbatim": "Basal Metabolic Rate",
+      "marks": 3,
+      "openList": true,
+      "group": {
+       "claimMax": 3,
+       "perOption": 1,
+       "options": [
+        "amount of energy",
+        "needed to keep internal organs functioning",
+        "maintain body temperature",
+        "when the body is at rest"
+       ]
+      },
+      "contextNote": "Three further points at 1 mark each. This keeps the essential minimum point separate, rather than permitting four other points to receive full marks."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 1 mark (1:0); minimum is essential"
+    },
+    "totalMarks": 4,
+    "questionText": "Explain the term Basal Metabolic Rate (BMR).",
+    "questionRef": "2023 HL Section A Q4 — BMR definition"
+   }
+  },
+  "he-2023-hl-sa-q5": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "roux-based sauce",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two description points, graded 2:1:0. Published guidance: made with equal parts fat and flour; addition of varying amounts of liquid; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "example",
+      "kind": "criterion",
+      "verbatim": "Culinary example",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One culinary example, graded 2:1:0. Published examples: white sauce; parsley sauce; cheese sauce; mushroom sauce; béchamel sauce; etc. panard; pouring sauce; stewing sauce; curry sauce; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Description 2 × 2 (2:1:0); example 2 (2:1:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q7": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "changes",
+      "kind": "criterion",
+      "verbatim": "chemical changes",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct changes, each graded 3:2:1:0. Published guidance: maillard reaction amino acids react with sugar in dry heat, producing a brown colour; caramelisation sugar melts and changes to a brown syrup/caramel; dextrinisation dextrins, short chains of polysaccharides form on carbohydrate foods in dry heat causing browning; etc. accept details on chemical raising agents; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 marks (3:2:1:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q8": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "test",
+      "kind": "criterion",
+      "verbatim": "sensory analysis test",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One test, graded 2:1:0. Published examples: paired preference test; hedonic rating test; preference ranking test; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 test × 2 marks (2:1:0)"
+    },
+    "totalMarks": 2,
+    "questionText": "Name one sensory analysis test used to determine a preferred product from two or more samples.",
+    "questionRef": "2023 HL Section A Q8 — test"
+   }
+  },
+  "he-2023-hl-sa-q12": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Fixed Rate",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One explanation, graded 3:2:0. Published guidance: interest rate is fixed for a set period of time; borrower knows the exact amount to be repaid each month; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Variable Rate",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One explanation, graded 3:2:0. Published guidance: interest rates rise and fall with the European Central Bank rates; borrower pays more if interest rates rise; they pay less if interest rates fall; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Two required headings × 3 marks (3:2:0)"
+    }
+   }
+  },
+  "he-2023-hl-sa-q13": {
+   "reason": "2023 Higher Section A independently checked against paper pp3–7 and scheme pp6–9: preserve the printed question, complete guidance and actual partial-credit steps. See he_review_2023_hl_section_a.py.",
+   "set": {
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Interest payable",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One explanation, graded 3:2:0. Published guidance: interest rates vary between financial institutions; interest rates vary between schemes offered; short term savings receive lower rates of interest; long term savings offer higher rates of interest; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Access to funds",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One explanation, graded 3:2:0. Published guidance: some savings schemes allow for immediate withdrawal of money; suited to short-term saving; other schemes require money to be invested for the longer term; penalties may be incurred for early withdrawal or encashment; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Two required headings × 3 marks (3:2:0)"
+    }
+   }
   }
  },
  "english": {

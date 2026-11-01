@@ -18,6 +18,41 @@ const get = (id: string) => {
 };
 
 describe('2023 Higher Home Economics recovered tasks', () => {
+  it('preserves Section A marks while splitting the two separately priced prompts', () => {
+    const cards = CARDS.filter(c => /^2023 HL Section A /.test(c.questionRef));
+    expect(cards).toHaveLength(16);
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(84);
+    expect(get('he-2023-hl-sa-q4').totalMarks).toBe(4);
+    expect(get('he-2023-hl-sa-q4-factors').totalMarks).toBe(2);
+    expect(get('he-2023-hl-sa-q8').totalMarks).toBe(2);
+    expect(get('he-2023-hl-sa-q8-uses').totalMarks).toBe(4);
+    expect(get('he-2023-hl-sa-q4').rows[0].verbatim).toBe('the minimum');
+    for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
+  });
+
+  it('offers the published partial credit and restores omitted guidance', () => {
+    expect(get('he-2023-hl-sa-q14').rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 2, 3], [0, 2, 3]]);
+    expect(get('he-2023-hl-sa-q12').rows[0].contextNote).toContain('borrower knows the exact amount');
+    expect(get('he-2023-hl-sa-q12').rows[1].contextNote).toContain('they pay less if interest rates fall');
+    expect(get('he-2023-hl-sa-q7').rows[0].contextNote).toContain('chemical raising agents');
+    expect(get('he-2023-hl-sa-q7').rows[0].contextNote).toMatch(/etc\.$/);
+    expect(get('he-2023-hl-sa-q6').questionText).toBe('Outline two benefits of including high fibre foods in the diet of adults.');
+    const bacteria = get('he-2023-hl-sa-q3');
+    expect(bacteria.figure?.solution).toBe(true);
+    expect(bacteria.rows[0].parts?.map(p => p.marks)).toEqual([2, 1, 2, 1]);
+    expect(bacteria.figure?.alt).toContain('Clostridium perfringens/welchii: vegetables');
+  });
+
+  it('maps both new short tasks into their existing Atlas question and curriculum topic', () => {
+    for (const [id, n] of [['he-2023-hl-sa-q4-factors', '4'], ['he-2023-hl-sa-q8-uses', '8']]) {
+      const card = get(id);
+      const row = runtime.questionMappings.find(q => q[0] === 'h' && q[1] === 'e' && q[2] === 2023
+        && q[4] === 'LC098ALP014EV.pdf' && q[5] === n)!;
+      const topics = (row[6] as number[]).map(i => runtime.topicIds[i]);
+      expect(topics.some(t => (crosswalk as Record<string, string[]>)[t]?.includes(card.topicId)), id).toBe(true);
+    }
+  });
+
   it('keeps fish preservation as one open choice with every published process', () => {
     const card = get('he-2023-hl-sb-q2b');
     expect(card.totalMarks).toBe(18);

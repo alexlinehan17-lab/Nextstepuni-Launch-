@@ -432,9 +432,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q1", topicId: "home-economics-0-7", conceptId: "biological-functions-of-lipids",
     section: "A", questionRef: "2023 HL Section A Q1",
     questionText: "State two biological functions of lipids.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":9,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "supply body with heat; source of energy; excess stored as adipose tissue, insulating body; acts as energy reserve; protect delicate organs; source of fat-soluble vitamins A,D,E,K; source of essential fatty acids e.g. linoleic; feeling of fullness, delay hunger; unsaturated fatty acids reduce cholesterol; etc.", marks: 6, contextNote: "Any two of these, 3 marks each. The band is 3:2:0, so there is no landing spot below 2: a function stated as a function scores 3, a bare or half-stated one 2, anything else 0. Only the first two offered are marked, so a third function is wasted writing.", openList: true, group: {"claimMax":2,"perOption":3,"options":["supply body with heat","source of energy","excess stored as adipose tissue, insulating body","acts as energy reserve","protect delicate organs","source of fat-soluble vitamins A,D,E,K","source of essential fatty acids e.g. linoleic","feeling of fullness, delay hunger","unsaturated fatty acids reduce cholesterol"]} },
+    { id: "points", kind: "criterion", verbatim: "biological functions of lipids", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: supply body with heat; source of energy; excess stored as adipose tissue, insulating body; acts as energy reserve; protect delicate organs; source of fat-soluble vitamins A,D,E,K; source of essential fatty acids e.g. linoleic; feeling of fullness, delay hunger; unsaturated fatty acids reduce cholesterol; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -445,10 +445,10 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q2", topicId: "home-economics-0-2", conceptId: "gelatinisation",
     section: "A", questionRef: "2023 HL Section A Q2",
     questionText: "Explain the term gelatinisation and include one culinary example in your answer.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 2 marks (graded 2:1:0) + Culinary example 1 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Explanation 2 × 2 (2:1:0); example 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Gelatinisation – when starch is heated; the starch grains swell, burst and absorb the liquid; resulting in a gel / thickened mixture; etc.", marks: 4, contextNote: "The explanation is worth 4 of the 6 marks: two points at 2 marks each, and the scheme prints three stages to choose from. Each point is one sliding band (graded 2:1:0), so a stage named but not explained scores 1 and the stage properly described scores 2.", openList: true, group: {"claimMax":2,"perOption":2,"options":["when starch is heated","the starch grains swell, burst and absorb the liquid","resulting in a gel / thickened mixture"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Example - custard, white sauce; pastry; pasta dishes; risotto; etc.", marks: 2, contextNote: "One culinary example only, 2 marks graded 2:0 - all or nothing, with no partial credit for a near miss. It must be a dish or product where starch is heated in liquid and thickens.", openList: true, group: {"claimMax":1,"perOption":2,"options":["custard","white sauce","pastry","pasta dishes","risotto"]} },
+    { id: "definition", kind: "criterion", verbatim: "Gelatinisation", marks: 4, contextNote: "Two explanation points, each graded 2:1:0. Published guidance: when starch is heated; the starch grains swell, burst and absorb the liquid; resulting in a gel / thickened mixture; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "example", kind: "criterion", verbatim: "Culinary example", marks: 2, contextNote: "One example, graded 2:0. Published examples: custard, white sauce; pastry; pasta dishes; risotto; etc.", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -459,10 +459,20 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q3", topicId: "home-economics-0-4", conceptId: "food-poisoning-bacteria-and-high-risk-foods",
     section: "A", questionRef: "2023 HL Section A Q3",
     questionText: "Name two food poisoning bacteria and give an example of a different high-risk food associated with each.",
-    tariffModel: {"kind":"bestNofParts","notation":"Name of bacteria = 2 (graded 2:1:0) food = 1 (graded 1:0) x 2","answer":2,"ofParts":8,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Two pairs: name 2 (2:1:0), associated food 1 (1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Salmonella eggs; meat; fish; poultry; milk; cheese; etc. E-coli milk; cheese; meat; polluted water; etc. Listeria cheese; pâté; cook chill foods; coleslaw; milk; meat; ice cream; seafood; etc. Clostridium botulinum canned fish / food; vacuum packed meat; milk; cheese; yoghurt; etc. Clostridium perfringens vegetables; etc. /welchii Staphylococcus aureus meat; milk; cheese; etc. Bacillus cereus cooked rice; cereals; herbs; etc. Campylobacter milk; poultry; shellfish; etc.", marks: 6, contextNote: "Two bacteria, and each one carries 3 marks: 2 for the name (graded 2:1:0, so a partial name such as 'Clostridium' on its own or 'staph' can still take 1) and 1 for a high-risk food (graded 1:0). The food must be one associated with the bacterium you named - the scheme prints a separate food list against each organism, so a food lifted from the wrong row is not safe. The question also says a different high-risk food for each, so do not use milk or cheese twice even though both appear on several lists.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Salmonella","E-coli","Listeria","Clostridium botulinum","Clostridium perfringens","Staphylococcus aureus","Bacillus cereus","Campylobacter"]} },
+    { id: "pairs", kind: "criterion", verbatim: "Name of bacteria", marks: 6, contextNote: "Name two different bacteria and give a different associated high-risk food for each. Each name is graded 2:1:0; each food is graded 1:0. The complete published associations are in the table.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"name-1","verbatim":"Name of bacteria 1","marks":2,"permittedMarks":[0,1,2]},{"id":"food-1","verbatim":"High-risk food 1","marks":1,"permittedMarks":[0,1]},{"id":"name-2","verbatim":"Name of bacteria 2","marks":2,"permittedMarks":[0,1,2]},{"id":"food-2","verbatim":"High-risk food 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    figure: {
+          "candId": "home-economics-2023-hl-sa-q3-scheme",
+          "src": "/exam-figures/home-economics/home-economics-2023-hl-sa-q3-scheme.png",
+          "srcHash": "98e266b2e2505b24561299d83d6f9b2c",
+          "alt": "Official table of food-poisoning bacteria and associated high-risk foods. Salmonella: eggs, meat, fish, poultry, milk, cheese. E-coli: milk, cheese, meat, polluted water. Listeria: cheese, pâté, cook chill foods, coleslaw, milk, meat, ice cream, seafood. Clostridium botulinum: canned fish/food, vacuum packed meat, milk, cheese, yoghurt. Clostridium perfringens/welchii: vegetables. Staphylococcus aureus: meat, milk, cheese. Bacillus cereus: cooked rice, cereals, herbs. Campylobacter: milk, poultry, shellfish. Each published list is non-exhaustive.",
+          "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 6 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Inspected crop from the hash-pinned official scheme; bounds [55, 472, 548, 712], rendered at 2×.",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -470,12 +480,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sa-q4", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate",
-    section: "A", questionRef: "2023 HL Section A Q4",
-    questionText: "Explain the term Basal Metabolic Rate (BMR). Give two factors that affect a person’s basal metabolic rate.",
-    tariffModel: {"kind":"fixed","notation":"4 points @ 1 mark (graded 1:0) + 2 points @ 1 mark (graded 1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    section: "A", questionRef: "2023 HL Section A Q4 — BMR definition",
+    questionText: "Explain the term Basal Metabolic Rate (BMR).",
+    tariffModel: {"kind":"fixed","notation":"4 points × 1 mark (1:0); minimum is essential"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "the minimum; amount of energy; needed to keep internal organs functioning; maintain body temperature; when the body is at rest; etc. minimum is an essential point in the answer", marks: 4, contextNote: "The explanation is broken into four separate 1-mark points, each graded 1:0, and the scheme prints five elements to draw them from. The scheme adds one condition in writing: 'minimum is an essential point in the answer' - an explanation that never says minimum or lowest cannot take the full 4.", openList: true, group: {"claimMax":4,"perOption":1,"options":["the minimum","amount of energy","needed to keep internal organs functioning","maintain body temperature","when the body is at rest"]} },
-    { id: "r-2", kind: "anyN", verbatim: "body weight; age; gender; occupation; health status; activity level; climate; pregnancy; etc.", marks: 2, contextNote: "Two factors, 1 mark each, graded 1:0. Single words are enough here - the scheme's own list is single words - so no explanation is needed or rewarded.", openList: true, group: {"claimMax":2,"perOption":1,"options":["body weight","age","gender","occupation","health status","activity level","climate","pregnancy"]} },
+    { id: "minimum", kind: "point", verbatim: "the minimum", marks: 1, contextNote: "The scheme explicitly says minimum is an essential point in the answer." },
+    { id: "definition", kind: "anyN", verbatim: "Basal Metabolic Rate", marks: 3, contextNote: "Three further points at 1 mark each. This keeps the essential minimum point separate, rather than permitting four other points to receive full marks.", openList: true, group: {"claimMax":3,"perOption":1,"options":["amount of energy","needed to keep internal organs functioning","maintain body temperature","when the body is at rest"]} },
     ],
   } as SecCard,
   {
@@ -486,10 +496,10 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q5", topicId: "home-economics-0-3", conceptId: "roux-based-sauce",
     section: "A", questionRef: "2023 HL Section A Q5",
     questionText: "Describe a roux-based sauce and give one culinary example.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 2 marks (graded 2:1:0) + Culinary example 1 @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Description 2 × 2 (2:1:0); example 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "made with equal parts fat and flour; addition of varying amounts of liquid; etc.", marks: 4, contextNote: "Two points at 2 marks each, and the scheme prints exactly two - so both are needed for the full 4. Each is its own sliding band (graded 2:1:0): 'fat and flour' without the equal parts, or 'add liquid' without the varying amount, is the 1-mark version of the point.", openList: true, group: {"claimMax":2,"perOption":2,"options":["made with equal parts fat and flour","addition of varying amounts of liquid"]} },
-    { id: "r-2", kind: "anyN", verbatim: "white sauce; parsley sauce; cheese sauce; mushroom sauce; béchamel sauce; etc. panard; pouring sauce; stewing sauce; curry sauce; etc.", marks: 2, contextNote: "One example, 2 marks, graded 2:1:0 - unlike a straight 2:0 example there is a middle mark here, so a loosely named sauce still gets something. The scheme accepts both named sauces and the roux consistencies (panard, pouring, stewing), so either kind of answer counts as the culinary example.", openList: true, group: {"claimMax":1,"perOption":2,"options":["white sauce","parsley sauce","cheese sauce","mushroom sauce","béchamel sauce","panard","pouring sauce","stewing sauce","curry sauce"]} },
+    { id: "description", kind: "criterion", verbatim: "roux-based sauce", marks: 4, contextNote: "Two description points, graded 2:1:0. Published guidance: made with equal parts fat and flour; addition of varying amounts of liquid; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "example", kind: "criterion", verbatim: "Culinary example", marks: 2, contextNote: "One culinary example, graded 2:1:0. Published examples: white sauce; parsley sauce; cheese sauce; mushroom sauce; béchamel sauce; etc. panard; pouring sauce; stewing sauce; curry sauce; etc.", permittedMarks: [0,1,2] },
     ],
   } as SecCard,
   {
@@ -499,10 +509,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sa-q6", topicId: "home-economics-0-6", conceptId: "benefits-of-dietary-fibre",
     section: "A", questionRef: "2023 HL Section A Q6",
-    questionText: "Outline two benefits of including high fibre foods in the diet of Irish adults.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":7,"perPart":3}, totalMarks: 6,
+    questionText: "Outline two benefits of including high fibre foods in the diet of adults.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "slow release of glucose into the bloodstream; helps to lower blood cholesterol; reduces risk of CHD; adds bulk to the diet; gives feeling of fullness; speeds up peristalsis; helps prevent bowel disorders; etc.", marks: 6, contextNote: "Any two of these, 3 marks each. The band is 3:2:0, so an outlined benefit takes 3 and a bare one takes 2 - there is no 1. Only the first two offered are marked.", openList: true, group: {"claimMax":2,"perOption":3,"options":["slow release of glucose into the bloodstream","helps to lower blood cholesterol","reduces risk of CHD","adds bulk to the diet","gives feeling of fullness","speeds up peristalsis","helps prevent bowel disorders"]} },
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: slow release of glucose into the bloodstream; helps to lower blood cholesterol; reduces risk of CHD; adds bulk to the diet; gives feeling of fullness; speeds up peristalsis; helps prevent bowel disorders; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -513,9 +523,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q7", topicId: "home-economics-0-2", conceptId: "chemical-changes-in-cooking",
     section: "A", questionRef: "2023 HL Section A Q7",
     questionText: "Describe two chemical changes that occur when food is cooked.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:1:0)","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "two chemical changes that occur when food is cooked", marks: 6, contextNote: "Each change is one graded point worth up to 3 marks (3:2:1:0) — name it AND say what happens to score the full 3; a bare name drops down the band. Two changes are needed for the 6 marks.", openList: true, group: {"claimMax":2,"perOption":3,"options":["maillard reaction amino acids react with sugar in dry heat, producing a brown colour","caramelisation sugar melts and changes to a brown syrup/caramel","dextrinisation dextrins, short chains of polysaccharides form on carbohydrate foods in dry heat causing browning"]} },
+    { id: "changes", kind: "criterion", verbatim: "chemical changes", marks: 6, contextNote: "Two distinct changes, each graded 3:2:1:0. Published guidance: maillard reaction amino acids react with sugar in dry heat, producing a brown colour; caramelisation sugar melts and changes to a brown syrup/caramel; dextrinisation dextrins, short chains of polysaccharides form on carbohydrate foods in dry heat causing browning; etc. accept details on chemical raising agents; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
   } as SecCard,
   {
@@ -524,12 +534,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sa-q8", topicId: "home-economics-0-11", conceptId: "sensory-analysis",
-    section: "A", questionRef: "2023 HL Section A Q8",
-    questionText: "Name one sensory analysis test used to determine a preferred product from two or more samples. Describe two different uses of sensory analysis in the food industry.",
-    tariffModel: {"kind":"fixed","notation":"1 test @ 2 marks (graded 2:1:0) + 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    section: "A", questionRef: "2023 HL Section A Q8 — test",
+    questionText: "Name one sensory analysis test used to determine a preferred product from two or more samples.",
+    tariffModel: {"kind":"fixed","notation":"1 test × 2 marks (2:1:0)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "one sensory analysis test used to determine a preferred product from two or more samples", marks: 2, contextNote: "Naming the test is worth 2 marks as a graded band (2:1:0) — only one test is asked for, so the second one you write earns nothing.", openList: true, group: {"claimMax":1,"perOption":2,"options":["paired preference test","hedonic rating test","preference ranking test"]} },
-    { id: "r-2", kind: "anyN", verbatim: "two different uses of sensory analysis in the food industry", marks: 4, contextNote: "Two uses @ 2 marks each, each graded 2:1:0. The scheme says different uses — two versions of the same use share one point.", openList: true, group: {"claimMax":2,"perOption":2,"options":["developing new products","to see if consumers can notice a detectable difference between an original and a modified food product","to compare own-brand food products with branded market leaders","quality assurance"]} },
+    { id: "test", kind: "criterion", verbatim: "sensory analysis test", marks: 2, contextNote: "One test, graded 2:1:0. Published examples: paired preference test; hedonic rating test; preference ranking test; etc.", permittedMarks: [0,1,2] },
     ],
   } as SecCard,
   {
@@ -540,9 +549,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q9", topicId: "home-economics-0-4", conceptId: "public-analyst-laboratories",
     section: "A", questionRef: "2023 HL Section A Q9",
     questionText: "Outline the role of public analyst laboratories in relation to food safety.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":5,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "the role of public analyst laboratories in relation to food safety", marks: 6, contextNote: "Two points, each a graded band worth up to 3 marks (3:2:0) — a developed point takes 3, a thin one 2, and there is no 1 in this band. Extra points beyond two are not marked.", openList: true, group: {"claimMax":2,"perOption":3,"options":["ensure food available to consumers is safe and wholesome","analyse food and water samples","test foods to ensure compliance with food legislation","test foods to ensure compliance with labelling","test food and water samples for general public on payment of a fee"]} },
+    { id: "points", kind: "criterion", verbatim: "role of public analyst laboratories", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: ensure food available to consumers is safe and wholesome; analyse food and water samples; test foods to ensure compliance with food legislation; test foods to ensure compliance with labelling; test food and water samples for general public on payment of a fee; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -553,9 +562,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q10", topicId: "home-economics-1-1", conceptId: "social-welfare-payments",
     section: "A", questionRef: "2023 HL Section A Q10",
     questionText: "Describe the Working Family Payment (WFP) (formerly Family Income Supplement) as a social welfare payment.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":7,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "the Working Family Payment (WFP) (formerly Family Income Supplement) as a social welfare payment", marks: 6, contextNote: "Two points, each a graded band worth up to 3 marks (3:2:0). A qualifying condition counts as a point here just as much as a description of the payment itself.", openList: true, group: {"claimMax":2,"perOption":3,"options":["weekly tax-free payment","paid to families where the earner is in low-paid employment","to qualify an individual must be in full-time employment","work at least 19 hours per week","have at least one dependent child","have a weekly income that falls below a fixed amount for family size","payment received is 60% of the difference between the net family income and the income limit that applies to the family"]} },
+    { id: "points", kind: "criterion", verbatim: "Working Family Payment", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: weekly tax-free payment; paid to families where the earner is in low-paid employment; to qualify an individual must be in full-time employment; work at least 19 hours per week; have at least one dependent child; have a weekly income that falls below a fixed amount for family size; payment received is 60% of the difference between the net family income and the income limit that applies to the family; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -566,9 +575,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q11", topicId: "home-economics-1-5", conceptId: "air-pollution-reduction",
     section: "A", questionRef: "2023 HL Section A Q11",
     questionText: "Outline two measures consumers can implement in their daily lives to prevent/reduce air pollution.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":4,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "two measures consumers can implement in their daily lives to prevent/reduce air pollution", marks: 6, contextNote: "Two measures, each a graded band worth up to 3 marks (3:2:0). The scheme's points carry an example (e.g. gas, smokeless fuels; solar energy) — naming the measure and giving an example is what earns the full 3.", openList: true, group: {"claimMax":2,"perOption":3,"options":["use less polluting sources of energy e.g. gas, smokeless fuels","use renewable energy sources e.g. solar energy","walk, cycle or use public transport when possible","drive electric cars"]} },
+    { id: "points", kind: "criterion", verbatim: "measures", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: use less polluting sources of energy e.g. gas, smokeless fuels; use renewable energy sources e.g. solar energy; walk, cycle or use public transport when possible; drive electric cars; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -579,10 +588,10 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q12", topicId: "home-economics-1-1", conceptId: "mortgage-interest-rates",
     section: "A", questionRef: "2023 HL Section A Q12",
     questionText: "Explain the following types of mortgage interest rates. Fixed Rate. Variable Rate.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Two required headings × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "interest rate is fixed for a set period of time", marks: 3, accepts: ["borrower knows the exact amount to be repaid each month"], contextNote: "Fixed Rate. One graded point worth up to 3 marks (3:2:0) — the whole 3 marks for this rate type ride on this single explanation, so develop it.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "interest rates rise and fall with the European Central Bank rates", marks: 3, accepts: ["borrower pays more if interest rates rise","they pay less if interest rates fall"], contextNote: "Variable Rate. One graded point worth up to 3 marks (3:2:0), graded the same way.", openList: true },
+    { id: "heading-1", kind: "criterion", verbatim: "Fixed Rate", marks: 3, contextNote: "One explanation, graded 3:2:0. Published guidance: interest rate is fixed for a set period of time; borrower knows the exact amount to be repaid each month; etc.", permittedMarks: [0,2,3] },
+    { id: "heading-2", kind: "criterion", verbatim: "Variable Rate", marks: 3, contextNote: "One explanation, graded 3:2:0. Published guidance: interest rates rise and fall with the European Central Bank rates; borrower pays more if interest rates rise; they pay less if interest rates fall; etc.", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -593,10 +602,10 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q13", topicId: "home-economics-1-1", conceptId: "selecting-a-savings-scheme",
     section: "A", questionRef: "2023 HL Section A Q13",
     questionText: "Describe the importance of each of the following when selecting a savings scheme: Interest payable; Access to funds.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Two required headings × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Interest payable — any one of the following", marks: null, contextNote: "Interest payable is one graded point of 3 (3:2:0), so there is no 1 on this band: a point described — what varies and what that means for your money — takes the 3, a bare statement such as 'you get interest' takes 2, anything else 0. Every reason the scheme prints under this heading is shown here.", openList: true, group: {"claimMax":1,"perOption":3,"options":["interest rates vary between financial institutions","interest rates vary between schemes offered","short term savings receive lower rates of interest","long term savings offer higher rates of interest"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Access to funds — any one of the following", marks: null, contextNote: "The second graded point of 3 (3:2:0), marked the same way. It is a separate 3 from the interest one, so two good sentences about interest rates still cap you at 3 — both headings have to be answered. Every reason the scheme prints under this heading is shown here.", openList: true, group: {"claimMax":1,"perOption":3,"options":["some savings schemes allow for immediate withdrawal of money","suited to short-term saving","other schemes require money to be invested for the longer term","penalties may be incurred for early withdrawal or encashment"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Interest payable", marks: 3, contextNote: "One explanation, graded 3:2:0. Published guidance: interest rates vary between financial institutions; interest rates vary between schemes offered; short term savings receive lower rates of interest; long term savings offer higher rates of interest; etc.", permittedMarks: [0,2,3] },
+    { id: "heading-2", kind: "criterion", verbatim: "Access to funds", marks: 3, contextNote: "One explanation, graded 3:2:0. Published guidance: some savings schemes allow for immediate withdrawal of money; suited to short-term saving; other schemes require money to be invested for the longer term; penalties may be incurred for early withdrawal or encashment; etc.", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -607,9 +616,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sa-q14", topicId: "home-economics-1-2", conceptId: "consumer-credit-act-1995",
     section: "A", questionRef: "2023 HL Section A Q14",
     questionText: "Explain how the Consumer Credit Act, 1995 benefits the consumer.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":5,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 marks (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any two ways the Consumer Credit Act, 1995 benefits the consumer", marks: null, contextNote: "Two picks from this list, each a graded point of 3 (3:2:0) — there is no 1 on the band. The verb is 'explain', so a benefit named and then said out — what the Act makes lenders do and why that helps the consumer — takes the 3, while a bare phrase such as 'regulates credit' takes 2. Only the first two offered are marked, so give two developed benefits rather than a list of five short ones.", openList: true, group: {"claimMax":2,"perOption":3,"options":["aims to protect the consumer by ensuring transparency in all credit agreements","ensures they are clear and easy to understand","regulates consumer credit","monitors credit advertising","stipulates the information that must be written on all credit agreements"]} },
+    { id: "points", kind: "criterion", verbatim: "benefits the consumer", marks: 6, contextNote: "Two distinct points, each graded 3:2:0. Published guidance: aims to protect the consumer by ensuring transparency in all credit agreements; ensures they are clear and easy to understand; regulates consumer credit; monitors credit advertising; stipulates the information that must be written on all credit agreements; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -6706,5 +6715,31 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original examination page to review this task in context."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "he-2023-hl-sa-q4-factors", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate-factors",
+    section: "A", questionRef: "2023 HL Section A Q4 — factors",
+    questionText: "Give two factors that affect a person’s basal metabolic rate.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 1 mark (1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "factors", kind: "anyN", verbatim: "factors", marks: 2, openList: true, group: {"claimMax":2,"perOption":1,"options":["body weight","age","gender","occupation","health status","activity level","climate","pregnancy"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "he-2023-hl-sa-q8-uses", topicId: "home-economics-0-11", conceptId: "sensory-analysis-uses",
+    section: "A", questionRef: "2023 HL Section A Q8 — uses",
+    questionText: "Describe two different uses of sensory analysis in the food industry.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 2 marks (2:1:0)"}, totalMarks: 4,
+    rows: [
+    { id: "uses", kind: "criterion", verbatim: "uses of sensory analysis", marks: 4, contextNote: "Two different uses, each graded 2:1:0. Published guidance: developing new products; to see if consumers can notice a detectable difference between an original and a modified food product; to compare own-brand food products with branded market leaders; quality assurance; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
   } as SecCard,
 ];

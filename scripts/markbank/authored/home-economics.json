@@ -36228,5 +36228,106 @@
    "presentationNote": "Open the original examination page to review this task in context."
   },
   "notes": "Independently reviewed against the paper and scheme; see he_review_2023_hl.py and home-economics/2023-hl-recovery-review.json. Open choices and required headings remain one task."
+ },
+ {
+  "id": "he-2023-hl-sa-q4-factors",
+  "topicId": "home-economics-0-1",
+  "conceptId": "basal-metabolic-rate-factors",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4 — factors",
+  "questionText": "Give two factors that affect a person’s basal metabolic rate.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 1 mark (1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "anyN",
+    "verbatim": "factors",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "body weight",
+      "age",
+      "gender",
+      "occupation",
+      "health status",
+      "activity level",
+      "climate",
+      "pregnancy"
+     ]
+    }
+   }
+  ],
+  "notes": "Second separately priced prompt of Section A Q4; 2 marks. Original Q4 ID retains the 4-mark definition."
+ },
+ {
+  "id": "he-2023-hl-sa-q8-uses",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sensory-analysis-uses",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q8 — uses",
+  "questionText": "Describe two different uses of sensory analysis in the food industry.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 2 marks (2:1:0)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "uses",
+    "kind": "criterion",
+    "verbatim": "uses of sensory analysis",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Two different uses, each graded 2:1:0. Published guidance: developing new products; to see if consumers can notice a detectable difference between an original and a modified food product; to compare own-brand food products with branded market leaders; quality assurance; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Second separately priced prompt of Section A Q8; 4 marks. Original Q8 ID retains the 2-mark naming task."
  }
 ]

@@ -30,6 +30,15 @@ class HomeEconomicsNestedDevicesTest(unittest.TestCase):
 
 
 class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
+    def test_section_a_repairs_regenerate_and_keep_the_full_mark_tariffs(self):
+        from he_review_2023_hl_section_a import build
+        fixes, added = build()
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        self.assertEqual(len(fixes), 14)
+        for key, correction in fixes.items():
+            self.assertEqual(saved[key], correction)
+        self.assertEqual([c['totalMarks'] for c in added], [2, 4])
+
     def test_recovered_cards_regenerate_from_the_pinned_sources(self):
         from he_review_2023_hl import build
         authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}

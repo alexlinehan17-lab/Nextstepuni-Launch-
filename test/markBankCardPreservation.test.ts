@@ -1289,6 +1289,7 @@ const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
 // frozen; these additions must never disguise a removed older card.
 const homeEconomicsAdditionIds = new Set([
   'he-2023-hl-sb-q2b', 'he-2023-hl-sb-q3b', 'he-2023-hl-sc-q2cii',
+  'he-2023-hl-sa-q4-factors', 'he-2023-hl-sa-q8-uses',
 ]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
@@ -1370,10 +1371,10 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
-  it('retains the three reviewed Home Economics additions beside the frozen set', () => {
+  it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = HOME_EC_HIGHER.filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(286);
+    expect(HOME_EC_HIGHER).toHaveLength(288);
     expect(HOME_EC_ORDINARY).toHaveLength(266);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
