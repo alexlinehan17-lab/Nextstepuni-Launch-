@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2014-ol': [105, 105, 90, '3407ac46166bebbff21c67d30d618a082d8330207462532b707d05f4a446f5f3',
+    'b3a9b22cb91b0f825adb50b22f07f6c243e1c58349a5e672c0385f2e8eb007c1'],
   '2014-hl': [100, 100, 40, 'aef0a7bf87759279dd08588d84df37e4b197940884b7c92d7528ec2b79f9cfed',
     '01166938fafb2e2ac0862843995e6afdf238a62576f82fb6462d28f18b4aa7c1'],
   '2015-ol': [98, 98, 78, '203bf43f15ee3a7edbf46ee3a50f28bc731f80f181f761a529c8b972f98621bc',
@@ -95,6 +97,56 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2014 Ordinary data, full options, independent prompts and source corrections', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2014-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2014-ol-${suffix}`)!;
+    expect(cards).toHaveLength(105);
+    expect(card('q1-iii-c').stem).toContain('Find the total downward force');
+    expect(card('q1-iv-c').stem).toContain('clockwise moments');
+    expect(card('q1-ii').questionFigure?.candId).toBe('physics-2014-ol-q1-forces-question');
+    expect(card('q2-ii').rows[0]).toMatchObject({ group: {
+      claimMax: 3, perOptionSteps: [6, 3, 3], options: [
+        'mass of empty calorimeter', 'mass of calorimeter and water // mass of water',
+        'mass of calorimeter with water and ice // mass of (dried) ice', 'initial temperature of water',
+        'final temperature of water (and melted ice) // temperature difference',
+      ],
+    } });
+    expect(card('q3-i').rows).toHaveLength(5);
+    expect(card('q3-i').totalMarks).toBe(9);
+    expect(card('q3-v').questionFigure?.candId).toBe('physics-2014-ol-q3-graph-question');
+    expect(card('q3-v').rows[0].verbatim).toContain('1.25 1.41 1.56 1.67 1.89 2.33');
+    expect(card('q4-iv').figure?.candId).toBe('physics-2014-ol-q4-circuit-graph');
+    expect(card('q5-b').questionText).toContain('time force mass velocity');
+    expect(card('q5-c').questionText).toContain('electroscope hydrometer capacitor barometer');
+    expect(card('q6-force').rows).toHaveLength(6);
+    expect(card('q6-force').totalMarks).toBe(6);
+    expect(card('q6-unit').totalMarks).toBe(3);
+    expect(card('q6-mars-g').rows[0].verbatim).toContain('(3.4 ×10⁶)²');
+    expect(card('q6-iii').stem).toContain('899 kg');
+    expect(card('q8-ii').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [6, 3] } });
+    expect(card('q8-iv').rows).toHaveLength(6);
+    expect(card('q8-iv').totalMarks).toBe(12);
+    expect(card('q9-v').rows).toHaveLength(4);
+    expect(card('q9-v').totalMarks).toBe(6);
+    expect(card('q10-x').rows[0].verbatim).toBe('⅛');
+    const passage = cards.filter(c => c.id.startsWith('phys-2014-ol-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.stem).toContain('howstuffworks.com');
+      expect(c.stem).toContain('Sound travels much slower than light');
+    }
+    expect(card('q12-a-i').stem).toContain('100 seconds');
+    expect(card('q12-b-pressure-experiment').rows).toHaveLength(6);
+    expect(card('q12-b-pressure-experiment').totalMarks).toBe(9);
+    expect(card('q12-c-iv').questionText).toBe('Transverse waves can be polarised. Name a type of wave that cannot be polarised.');
+    expect(card('q12-d-iii').rows[0].contextNote).toContain('0.012 A');
+    expect(card('q12-d-iv').rows[0].contextNote).toContain('0.012 × 50 = 0.6 V');
+    expect(card('q12-a-speed-velocity').rows[0].contextNote).toContain('speed is scalar');
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2014-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2014 Higher data, both passage alternatives and complete marking routes', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2014-hl-'));

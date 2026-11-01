@@ -94111,5 +94111,3173 @@
   "year": 2014,
   "level": "higher",
   "figureKey": "physics-2014-hl-q12-pipes"
+ },
+ {
+  "id": "phys-2014-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1i",
+  "section": "A",
+  "questionRef": "2014 OL Q1(i)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "How did the student measure the upward forces?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "newton balance",
+    "marks": 4,
+    "contextNote": "A partial answer such as “balance” earns 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1ii",
+  "section": "A",
+  "questionRef": "2014 OL Q1(ii)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "Copy the diagram and show all the forces acting on the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "copy diagram and show given forces",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "shows weight /1.5 N downward at 50 cm mark",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces-solution",
+  "questionFigureKey": "physics-2014-ol-q1-forces-question"
+ },
+ {
+  "id": "phys-2014-ol-q1-iii-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iii)(a",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iii)(a)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "Find the total upward force acting on the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( 9 + 12.5 = ) 21.5 (N)",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-iii-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iii)(b",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iii)(b)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "Find the total downward force acting on the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(5 + 15 + 1.5 =) 21.5 (N)",
+    "marks": 6,
+    "contextNote": "Partial answer, such as omitting the metre stick’s weight: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-iii-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iii)(c",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iii)(c)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium. Find the total upward force acting on the metre stick. Find the total downward force acting on the metre stick.",
+  "questionText": "Explain how these values verify one of the laws of equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "forces are equal // sum of acting forces is zero // forces up = forces down",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-iv-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iv)(a",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iv)(a)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "Find the sum of the anticlockwise moments of the upward forces about the 0 mark.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "((9)(0.2) + (12.5)(0.9) = 1.8 + 11.25 =) 13.05 (N m)",
+    "marks": 6,
+    "contextNote": "Partial answer such as one correct moment or F × d: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-iv-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iv)(b",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iv)(b)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium.",
+  "questionText": "Find the sum of the clockwise moments of the downward forces about the 0 mark.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "((5)(0.36) + (1.5)(0.5) + (0.7)(15) = 1.8 + 0.75 + 10.5 =) 13.05 (N m )",
+    "marks": 6,
+    "contextNote": "Read the 5 N force at the 36 cm tick on the original scale. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q1-iv-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iv)(c",
+  "section": "A",
+  "questionRef": "2014 OL Q1(iv)(c)",
+  "stem": "A student investigated the laws of equilibrium for a set of co-planar forces acting on a metre stick. The weight of the metre stick was 1.5 N and its centre of gravity was at the 50 cm mark. The student applied the forces shown to the metre stick until it was in equilibrium. Find the sum of the anticlockwise moments of the upward forces about the 0 mark. Find the sum of the clockwise moments of the downward forces about the 0 mark.",
+  "questionText": "Explain how these values verify the other law of equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "moments are equal // sum of the moments equals zero",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q1-forces"
+ },
+ {
+  "id": "phys-2014-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2i",
+  "section": "A",
+  "questionRef": "2014 OL Q2(i)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I got ice which was at 0 °C and prepared it for my experiment by crushing and drying it. I added the ice to water in a calorimeter and waited for the ice to melt before taking more measurements. I used the measurements to calculate the specific latent heat of fusion of ice. I then repeated my experiment.”",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "calorimeter (with water)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "thermometer // temperature sensor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ice",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "other detail e.g. insulation/(electronic) balance/stirrer, etc.",
+    "marks": 3,
+    "contextNote": "Deduct one mark if no labels. An incorrect experiment is capped at 9 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2ii",
+  "section": "A",
+  "questionRef": "2014 OL Q2(ii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I got ice which was at 0 °C and prepared it for my experiment by crushing and drying it. I added the ice to water in a calorimeter and waited for the ice to melt before taking more measurements. I used the measurements to calculate the specific latent heat of fusion of ice. I then repeated my experiment.”",
+  "questionText": "What measurements would the student have taken for this experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mass of empty calorimeter / mass of calorimeter and water // mass of water / mass of calorimeter with water and ice // mass of (dried) ice / initial temperature of water / final temperature of water (and melted ice) // temperature difference",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "mass of empty calorimeter",
+      "mass of calorimeter and water // mass of water",
+      "mass of calorimeter with water and ice // mass of (dried) ice",
+      "initial temperature of water",
+      "final temperature of water (and melted ice) // temperature difference"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "Any three measurement lines; 6+3+3. Measurements may be inferred from the diagram. General reference to masses and temperatures earns 6; partial answer earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iii",
+  "section": "A",
+  "questionRef": "2014 OL Q2(iii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I got ice which was at 0 °C and prepared it for my experiment by crushing and drying it. I added the ice to water in a calorimeter and waited for the ice to melt before taking more measurements. I used the measurements to calculate the specific latent heat of fusion of ice. I then repeated my experiment.”",
+  "questionText": "How was the ice crushed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "any valid method e.g. (place in a plastic bag/towel and hit) with a hammer // blended",
+    "marks": 4,
+    "contextNote": "A diagram may merit full marks; partial answer earns 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q2-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iv",
+  "section": "A",
+  "questionRef": "2014 OL Q2(iv)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I got ice which was at 0 °C and prepared it for my experiment by crushing and drying it. I added the ice to water in a calorimeter and waited for the ice to melt before taking more measurements. I used the measurements to calculate the specific latent heat of fusion of ice. I then repeated my experiment.”",
+  "questionText": "Why was the ice crushed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "crushed ice melts faster // reference to larger surface area // to ensure all the ice is 0 °C",
+    "marks": 6,
+    "contextNote": "Partial answer such as less heat loss: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q2-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2v",
+  "section": "A",
+  "questionRef": "2014 OL Q2(v)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I got ice which was at 0 °C and prepared it for my experiment by crushing and drying it. I added the ice to water in a calorimeter and waited for the ice to melt before taking more measurements. I used the measurements to calculate the specific latent heat of fusion of ice. I then repeated my experiment.”",
+  "questionText": "Why was the experiment repeated?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "increase accuracy // to get average",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3i",
+  "section": "A",
+  "questionRef": "2014 OL Q3(i)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length, l, of the string and its fundamental frequency, f, were recorded. The procedure was repeated for different values of f and l.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sonometer and string",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tuning fork(s)",
+    "marks": 3,
+    "route": "tuning-fork"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "bridge(s) and metre stick / detail",
+    "marks": 3,
+    "contextNote": "Use the apparatus for the same method. Deduct one mark for no labels.",
+    "route": "tuning-fork"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "signal generator",
+    "marks": 3,
+    "route": "signal-generator"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "bridges and magnet / detail",
+    "marks": 3,
+    "contextNote": "Use the apparatus for the same method. Deduct one mark for no labels.",
+    "route": "signal-generator"
+   }
+  ],
+  "notes": "Two complete apparatus routes share the sonometer criterion. Each totals 9 marks; never add both routes. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q3-data"
+ },
+ {
+  "id": "phys-2014-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3ii",
+  "section": "A",
+  "questionRef": "2014 OL Q3(ii)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length, l, of the string and its fundamental frequency, f, were recorded. The procedure was repeated for different values of f and l. Draw a labelled diagram of the apparatus used in the experiment.",
+  "questionText": "Indicate on your diagram the length of the string that was measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distance between bridges indicated",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q3-data"
+ },
+ {
+  "id": "phys-2014-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3iii",
+  "section": "A",
+  "questionRef": "2014 OL Q3(iii)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length, l, of the string and its fundamental frequency, f, were recorded. The procedure was repeated for different values of f and l.",
+  "questionText": "Describe how the string could have been set vibrating.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "place a vibrating tuning fork on bridge // send signal from signal generator through it",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q3-data"
+ },
+ {
+  "id": "phys-2014-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3iv",
+  "section": "A",
+  "questionRef": "2014 OL Q3(iv)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length, l, of the string and its fundamental frequency, f, were recorded. The procedure was repeated for different values of f and l.",
+  "questionText": "How was the frequency determined?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "read off the tuning fork // read off the signal generator",
+    "marks": 6,
+    "contextNote": "Use the frequency source for your chosen method. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q3-data"
+ },
+ {
+  "id": "phys-2014-ol-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "3v",
+  "section": "A",
+  "questionRef": "2014 OL Q3(v)",
+  "stem": "An experiment was set up to investigate how the fundamental frequency of a stretched string varied with its length. The length, l, of the string and its fundamental frequency, f, were recorded. The procedure was repeated for different values of f and l.",
+  "questionText": "Copy and complete the table into your answer book. Draw a graph on graph paper of f on the X-axis against 1/l on the Y-axis. What conclusion can be drawn from your graph?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/l (m⁻¹) 1.25 1.41 1.56 1.67 1.89 2.33",
+    "marks": 5,
+    "contextNote": "Five missing reciprocals, 1 mark each; 1.41 was already supplied. Keep all six data pairs."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "labelled axes – names/ symbol / unit acceptable",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "plot five points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line graph",
+    "marks": 3,
+    "contextNote": "Without graph paper, or with f on the Y-axis, the graph is capped at 6 marks."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "conclusion; f and l are inversely proportional",
+    "marks": 2,
+    "contextNote": "The source also accepts f × l = constant, an appropriate linear relationship, f proportional to 1/l, or an answer consistent with the graph."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q3-graph-solution",
+  "questionFigureKey": "physics-2014-ol-q3-graph-question"
+ },
+ {
+  "id": "phys-2014-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4i",
+  "section": "A",
+  "questionRef": "2014 OL Q4(i)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "How was the voltage changed in this experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "using the potential divider // by varying the resistance/the battery/power supply",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph"
+ },
+ {
+  "id": "phys-2014-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4ii",
+  "section": "A",
+  "questionRef": "2014 OL Q4(ii)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "What is the function of part X?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure current",
+    "marks": 6,
+    "contextNote": "Naming the ammeter without its function earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "measure current",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2014-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iii",
+  "section": "A",
+  "questionRef": "2014 OL Q4(iii)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "What is the function of part Y?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure voltage",
+    "marks": 6,
+    "contextNote": "Naming the voltmeter without its function earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph",
+  "labelKey": [
+   {
+    "letter": "Y",
+    "meaning": "measure voltage",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2014-ol-q4-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iv",
+  "section": "A",
+  "questionRef": "2014 OL Q4(iv)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "What does the graph tell you about conduction in a diode?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current varies linearly with voltage until 0.6 V // little current is conducted below 0.6 V, etc",
+    "marks": 6,
+    "contextNote": "The plotted curve shows very little current below 0.6 V; the source accepts that description. Partial description earns 3."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "after 0.6 V the current increases (rapidly) with voltage, etc",
+    "marks": 6,
+    "contextNote": "Partial description earns 3. An incomplete description of the whole graph may earn 9."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph"
+ },
+ {
+  "id": "phys-2014-ol-q4-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4v",
+  "section": "A",
+  "questionRef": "2014 OL Q4(v)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "How would a student connect the diode in reverse bias?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "switch the polarity of battery / diode",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph"
+ },
+ {
+  "id": "phys-2014-ol-q4-vi",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4vi",
+  "section": "A",
+  "questionRef": "2014 OL Q4(vi)",
+  "stem": "A student carried out an experiment to investigate the variation of current, I, with voltage, V, for a semiconductor diode in forward bias and wrote the following report. “I set up the circuit shown below for the experiment. During the experiment I varied the voltage and I recorded the current flowing at the different voltages and plotted a graph of my results, as shown below.”",
+  "questionText": "What is the function of the 330 Ω resistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "protection / limit the current",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q4-circuit-graph"
+ },
+ {
+  "id": "phys-2014-ol-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2014 OL Q5(a)",
+  "questionText": "A crane, powered by an electric motor, has a bucket that weighs 540 N when empty. The crane uses the bucket to lift 800 N of concrete up 75 m on a building site. Calculate the work done by the crane’s motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "((540 + 800)(75) = ) 1.005 × 10⁵ (N m)",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q5-crane"
+ },
+ {
+  "id": "phys-2014-ol-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2014 OL Q5(b)",
+  "questionText": "Which of the following are vector quantities and which are scalar quantities? time force mass velocity",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force and velocity are vectors quantities / time and mass are scalar quantities",
+    "marks": 7,
+    "contextNote": "All four classifications are required for the published seven marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2014 OL Q5(c)",
+  "questionText": "Which of the following is used in the flash of a camera? electroscope hydrometer capacitor barometer",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "capacitor",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2014 OL Q5(d)",
+  "questionText": "What is the Doppler effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(apparent) change in (wave) frequency due to motion (of the wave source)",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2014 OL Q5(e)",
+  "questionText": "Name the lens shown and give an application of it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(bi) convex / converging / used as a magnifying glass/(eye) glasses /binoculars/camera/etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(bi) convex / converging",
+      "used as a magnifying glass/(eye) glasses /binoculars/camera/etc."
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Both the correct name and an application are required; either line alone earns 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q5-lens"
+ },
+ {
+  "id": "phys-2014-ol-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2014 OL Q5(f)",
+  "questionText": "What is meant by the U-value of a material?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure of the heat flow through 1 m² of material each second (perpendicular to the direction of flow) when a temperature difference of one degree exists between the two sides",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2014 OL Q5(g)",
+  "questionText": "Name the component with the symbol shown in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light dependent resistor / LDR",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q5-ldr"
+ },
+ {
+  "id": "phys-2014-ol-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2014 OL Q5(h)",
+  "questionText": "Name a piece of laboratory equipment used to separate white light into its colours.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(glass) prism // (diffraction) grating",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2014 OL Q5(i)",
+  "questionText": "How are X-rays produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(when high speed) electrons hit a metal target",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q5-j",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j",
+  "section": "B",
+  "questionRef": "2014 OL Q5(j)",
+  "questionText": "In the Sun, a mass of 4 × 10⁹ kg is converted into energy every second. Calculate the energy released each second. (speed of light, c = 3 × 10⁸ m s⁻¹)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = m c² = (4× 10⁹)(3 × 10⁸) ² =) 3.6 × 10²⁶ (J)",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q6-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Definition of force",
+  "questionText": "Define force",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(force) causes / changes",
+    "marks": 3,
+    "route": "acceleration"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "acceleration",
+    "marks": 3,
+    "route": "acceleration"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(F=) m",
+    "marks": 3,
+    "route": "equation"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "acceleration",
+    "marks": 3,
+    "route": "equation"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "(rate of ) change of",
+    "marks": 3,
+    "route": "momentum"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "momentum",
+    "marks": 3,
+    "route": "momentum"
+   }
+  ],
+  "notes": "Three complete six-mark definitions, never summed together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q6-unit",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "unit",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Unit of force",
+  "questionText": "give the unit of force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Unit — newton / N / kg m s⁻²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q6-gravitation",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "gravitation",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Newton’s law of gravitation",
+  "questionText": "State Newton’s law of universal gravitation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force proportional / F ∝",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "product of masses / m₁m₂",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "inversely proportional to the square of the distance between them",
+    "marks": 3,
+    "contextNote": "Partial answer such as a reference to G earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q6-mars-g",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "mars-g",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Gravity on Mars",
+  "questionText": "Use the equation below, which is from page 56 of the Formulae and Tables booklet, to calculate, to one decimal place, the acceleration due to gravity on Mars. The radius of Mars is 3.4 × 10⁶ m and the mass of Mars is 6.4 × 10²³ kg.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(g= GM/d² = ((6.67 ×10⁻¹¹)(6.4 ×10²³))/(3.4 ×10⁶)² =)3.7 (ms⁻²)",
+    "marks": 10,
+    "contextNote": "One error earns 7; a correct constant or substitution earns 4. Answer to one decimal place."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q6-gravity-solution",
+  "questionFigureKey": "physics-2014-ol-q6-gravity-question"
+ },
+ {
+  "id": "phys-2014-ol-q6-wheels",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "wheels",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Strength of the rover’s wheels",
+  "stem": "In August 2012 the Curiosity rover landed on Mars. The wheels of the rover are not as strong as the wheels that would be needed if the rover was to be used on Earth.",
+  "questionText": "Give a reason for this.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weighs less on Mars // gravity is less on Mars // the mass of Mars is smaller than mass of Earth",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q6-rover"
+ },
+ {
+  "id": "phys-2014-ol-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6i",
+  "section": "B",
+  "questionRef": "2014 OL Q6(i)",
+  "stem": "The Curiosity rover was built on Earth to travel on the surface of Mars. The rover has a mass of 899 kg. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Find the weight of Curiosity on Earth",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W = mg = (899)(9.8) = 8.8 × 10³ (N)",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q6-rover"
+ },
+ {
+  "id": "phys-2014-ol-q6-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6ii",
+  "section": "B",
+  "questionRef": "2014 OL Q6(ii)",
+  "stem": "The Curiosity rover was built on Earth to travel on the surface of Mars. The rover has a mass of 899 kg. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Find the mass of Curiosity on Mars",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "899 (kg) // the same as on Earth",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q6-rover"
+ },
+ {
+  "id": "phys-2014-ol-q6-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6iii",
+  "section": "B",
+  "questionRef": "2014 OL Q6(iii)",
+  "stem": "Use the equation below, which is from page 56 of the Formulae and Tables booklet, to calculate, to one decimal place, the acceleration due to gravity on Mars. The radius of Mars is 3.4 × 10⁶ m and the mass of Mars is 6.4 × 10²³ kg. The Curiosity rover was built on Earth to travel on the surface of Mars. The rover has a mass of 899 kg. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Find the weight of Curiosity on Mars.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W = mg = (899)(3.7) = 3.3 × 10³ (N)",
+    "marks": 4,
+    "contextNote": "The scheme accepts a value consistent with your calculated Martian g or mass. Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q6-gravity-question"
+ },
+ {
+  "id": "phys-2014-ol-q6-spectrum",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "spectrum",
+  "section": "B",
+  "questionRef": "2014 OL Q6 — Other electromagnetic waves",
+  "stem": "The Curiosity rover communicates with Earth using radio waves, which are part of the electromagnetic spectrum.",
+  "questionText": "Name one other part of the electromagnetic spectrum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "microwaves / infra-red / visible light / ultra-violet / X-rays / gamma rays",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "microwaves",
+      "infra-red",
+      "visible light",
+      "ultra-violet",
+      "X-rays",
+      "gamma rays"
+     ]
+    },
+    "contextNote": "One part other than radio waves. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q7-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7ai",
+  "section": "B",
+  "questionRef": "2014 OL Q7(a)(i)",
+  "stem": "The temperature of an object can be measured using a thermometer which is based on a suitable thermometric property.",
+  "questionText": "What is heat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a form of) energy / mcΔθ /ml",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-thermometer"
+ },
+ {
+  "id": "phys-2014-ol-q7-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7aii",
+  "section": "B",
+  "questionRef": "2014 OL Q7(a)(ii)",
+  "stem": "The temperature of an object can be measured using a thermometer which is based on a suitable thermometric property.",
+  "questionText": "What is meant by temperature?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "degree of hotness // measurement of hotness/coldness",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-thermometer"
+ },
+ {
+  "id": "phys-2014-ol-q7-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7aiii",
+  "section": "B",
+  "questionRef": "2014 OL Q7(a)(iii)",
+  "stem": "The temperature of an object can be measured using a thermometer which is based on a suitable thermometric property.",
+  "questionText": "Give an example of a thermometric property.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "length (of a liquid column), resistance (of a thermistor / conductor), emf / voltage (generated by a thermocouple), colour (of certain crystals), volume (of a gas at constant pressure), pressure (of a constant volume of gas), etc",
+    "marks": 6,
+    "contextNote": "Give one of these properties. A definition alone earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-thermometer"
+ },
+ {
+  "id": "phys-2014-ol-q7-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7aiv",
+  "section": "B",
+  "questionRef": "2014 OL Q7(a)(iv)",
+  "stem": "The temperature of an object can be measured using a thermometer which is based on a suitable thermometric property.",
+  "questionText": "The SI unit of temperature is the kelvin. Give another temperature scale.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Celsius /°C // Fahrenheit /°F",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-thermometer"
+ },
+ {
+  "id": "phys-2014-ol-q7-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7av",
+  "section": "B",
+  "questionRef": "2014 OL Q7(a)(v)",
+  "stem": "The temperature of an object can be measured using a thermometer which is based on a suitable thermometric property. The SI unit of temperature is the kelvin. Give another temperature scale.",
+  "questionText": "Express 310 K in the units of the scale you have named in part (iv).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "310 – 273 = 37± 0.2 (°C)",
+    "marks": 6,
+    "contextNote": "The scheme illustrates Celsius. If you chose Fahrenheit, 310 K is 98.33 °F (about 98.6 °F using 273 in the Celsius conversion). Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-thermometer"
+ },
+ {
+  "id": "phys-2014-ol-q7-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7bi",
+  "section": "B",
+  "questionRef": "2014 OL Q7(b)(i)",
+  "stem": "The photograph shows an experiment to compare the heat transfer in different metals. A piece of wood is placed in a drop of wax at the end of each piece of metal and a heat source is used to heat the metals at the centre of the apparatus.",
+  "questionText": "How is heat transferred in metals?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conduction // vibrating atoms (transfer energy)",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-metals"
+ },
+ {
+  "id": "phys-2014-ol-q7-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7bii",
+  "section": "B",
+  "questionRef": "2014 OL Q7(b)(ii)",
+  "stem": "The photograph shows an experiment to compare the heat transfer in different metals. A piece of wood is placed in a drop of wax at the end of each piece of metal and a heat source is used to heat the metals at the centre of the apparatus.",
+  "questionText": "Name the two other methods of heat transfer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "convection",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "radiation",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-metals"
+ },
+ {
+  "id": "phys-2014-ol-q7-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7biii",
+  "section": "B",
+  "questionRef": "2014 OL Q7(b)(iii)",
+  "stem": "The photograph shows an experiment to compare the heat transfer in different metals. A piece of wood is placed in a drop of wax at the end of each piece of metal and a heat source is used to heat the metals at the centre of the apparatus.",
+  "questionText": "How can this experiment be used to find out which of the metals is best at allowing heat transfer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(heat under the centre) the piece of wood which falls first indicates the best conductor",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-metals"
+ },
+ {
+  "id": "phys-2014-ol-q7-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "7biv",
+  "section": "B",
+  "questionRef": "2014 OL Q7(b)(iv)",
+  "stem": "The photograph shows an experiment to compare the heat transfer in different metals. A piece of wood is placed in a drop of wax at the end of each piece of metal and a heat source is used to heat the metals at the centre of the apparatus.",
+  "questionText": "State one way to make sure that this is a fair test.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ensure that there is only one (independent) variable // heat in the centre /ensure there is an equal amount of heat for each metal // ensure that the metal strips are the same length // ensure to have the same amount of wax, etc",
+    "marks": 6,
+    "contextNote": "One valid control; partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q7-metals"
+ },
+ {
+  "id": "phys-2014-ol-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8i",
+  "section": "B",
+  "questionRef": "2014 OL Q8(i)",
+  "stem": "A ray of light can undergo both reflection and refraction.",
+  "questionText": "Explain what is meant by reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sending back / returning / bouncing",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "from a mirror / (shiny) surface",
+    "marks": 3,
+    "contextNote": "A diagram may merit full marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8ii",
+  "section": "B",
+  "questionRef": "2014 OL Q8(ii)",
+  "stem": "A ray of light can undergo both reflection and refraction.",
+  "questionText": "State the laws of reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "the incident ray, (the normal) and the reflected ray are all in the same plane / the angle of incidence is equal to the angle of reflection // i = r",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "the incident ray, (the normal) and the reflected ray are all in the same plane",
+      "the angle of incidence is equal to the angle of reflection // i = r"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both laws: 9 marks. Either correct law alone: 6. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q8-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8iii",
+  "section": "B",
+  "questionRef": "2014 OL Q8(iii)",
+  "stem": "A ray of light can undergo both reflection and refraction.",
+  "questionText": "Give an application of reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mirror images / optic fibres / binoculars / endoscope / specific toys",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "mirror images",
+      "optic fibres",
+      "binoculars",
+      "endoscope",
+      "specific toys"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q8-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8iv",
+  "section": "B",
+  "questionRef": "2014 OL Q8(iv)",
+  "stem": "A ray of light can undergo both reflection and refraction.",
+  "questionText": "Describe an experiment to demonstrate one of the laws of reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus; raybox /laser // drawing pins",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mirror",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "procedure; mark position of rays / pins",
+    "marks": 3,
+    "route": "same-plane"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "observation/conclusion; incident ray, reflected ray and normal in same plane",
+    "marks": 3,
+    "contextNote": "Keep procedure and conclusion from the same method. Valid alternatives and labelled diagrams are accepted.",
+    "route": "same-plane"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "measure i and r",
+    "marks": 3,
+    "route": "equal-angles"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "i = r",
+    "marks": 3,
+    "contextNote": "Keep procedure and conclusion from the same method. Valid alternatives and labelled diagrams are accepted.",
+    "route": "equal-angles"
+   }
+  ],
+  "notes": "Two full 12-mark routes share six apparatus marks; never add routes. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q8-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8v",
+  "section": "B",
+  "questionRef": "2014 OL Q8(v)",
+  "stem": "The diagram shows a ray of light travelling from glass to air. The ray of light undergoes refraction at B.",
+  "questionText": "Explain what is meant by refraction of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "bending of light at the boundary when going from one medium to another",
+    "marks": 6,
+    "contextNote": "A labelled diagram may earn full marks; partial answer earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q8-refraction"
+ },
+ {
+  "id": "phys-2014-ol-q8-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8vi",
+  "section": "B",
+  "questionRef": "2014 OL Q8(vi)",
+  "stem": "The diagram shows a ray of light travelling from glass to air. The ray of light undergoes refraction at B.",
+  "questionText": "What special name is given to the angle of incidence, i, when the effect shown in the diagram occurs?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "critical angle / C",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q8-refraction"
+ },
+ {
+  "id": "phys-2014-ol-q8-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8vii",
+  "section": "B",
+  "questionRef": "2014 OL Q8(vii)",
+  "stem": "The diagram shows a ray of light travelling from glass to air. The ray of light undergoes refraction at B. In the diagram the value of the angle i is 38°.",
+  "questionText": "Calculate the value of the refractive index of the glass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n= 1/(sinC) = 1/(sin38) =1.62",
+    "marks": 6,
+    "contextNote": "Use degrees. A correct equation or intermediate step earns 3. The scheme deducts one for a radians/gradians-mode result."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q8-index-solution",
+  "questionFigureKey": "physics-2014-ol-q8-index-question"
+ },
+ {
+  "id": "phys-2014-ol-q8-viii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "8viii",
+  "section": "B",
+  "questionRef": "2014 OL Q8(viii)",
+  "stem": "The diagram shows a ray of light travelling from glass to air. The ray of light undergoes refraction at B. In the diagram the value of the angle i is 38°.",
+  "questionText": "Draw a diagram to show what happens to the ray of light when the angle of incidence is increased to 40°.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "reflection at boundary",
+    "marks": 6,
+    "contextNote": "At 40°, beyond the 38° critical angle, show total internal reflection. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q8-reflection-solution",
+  "questionFigureKey": "physics-2014-ol-q8-reflection-question"
+ },
+ {
+  "id": "phys-2014-ol-q9-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "9i",
+  "section": "B",
+  "questionRef": "2014 OL Q9(i)",
+  "stem": "A magnetic field exists around a current-carrying conductor.",
+  "questionText": "What is a magnetic field?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "region ( where) / space",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "magnetism is experienced // force is detected",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q9-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "9ii",
+  "section": "B",
+  "questionRef": "2014 OL Q9(ii)",
+  "stem": "A magnetic field exists around a current-carrying conductor.",
+  "questionText": "How does a compass indicate the direction of a magnetic field?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(experiences a force in a magnetic field and) points in the direction of the field lines",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q9-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "9iii",
+  "section": "B",
+  "questionRef": "2014 OL Q9(iii)",
+  "stem": "A magnetic field exists around a current-carrying conductor.",
+  "questionText": "Describe an experiment to show that there is a magnetic field around a current-carrying conductor and sketch the field lines around the conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus; power supply/ battery / voltage, conductor, compass",
+    "marks": 3,
+    "contextNote": "Any two listed items earn these three marks; power supply/battery/voltage are alternatives for one item."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure; set up the circuit / turn on the power supply / current",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion; compass deflects",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "field lines; circular lines (with correct direction)",
+    "marks": 3,
+    "contextNote": "Labelled diagrams and valid alternatives such as iron filings are accepted. An incorrect experiment is capped at 6 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-field-solution"
+ },
+ {
+  "id": "phys-2014-ol-q9-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "9iv",
+  "section": "B",
+  "questionRef": "2014 OL Q9(iv)",
+  "questionText": "Sketch the magnetic field around a bar magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "magnet, field lines and correct direction",
+    "marks": 6,
+    "contextNote": "Partial diagram: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-magnet-solution"
+ },
+ {
+  "id": "phys-2014-ol-q9-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9v",
+  "section": "B",
+  "questionRef": "2014 OL Q9(v)",
+  "stem": "A coil of wire is connected as shown in the diagram to a galvanometer. A bar magnet is placed near the coil.",
+  "questionText": "What is observed when the magnet is moved towards the coil?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "needle / pointer / galvanometer",
+    "marks": 3,
+    "route": "galvanometer"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "deflects",
+    "marks": 3,
+    "route": "galvanometer"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "current",
+    "marks": 3,
+    "route": "current"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "induced",
+    "marks": 3,
+    "route": "current"
+   }
+  ],
+  "notes": "Two complete 3+3 descriptions of the same observation, not additive. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-coil"
+ },
+ {
+  "id": "phys-2014-ol-q9-vi",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9vi",
+  "section": "B",
+  "questionRef": "2014 OL Q9(vi)",
+  "stem": "A coil of wire is connected as shown in the diagram to a galvanometer. A bar magnet is placed near the coil.",
+  "questionText": "What is observed when the magnet is stationary?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "needle / pointer / galvanometer does not deflect // no current, etc",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-coil"
+ },
+ {
+  "id": "phys-2014-ol-q9-vii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9vii",
+  "section": "B",
+  "questionRef": "2014 OL Q9(vii)",
+  "stem": "A coil of wire is connected as shown in the diagram to a galvanometer. A bar magnet is placed near the coil. What is observed when the magnet is moved towards the coil? What is observed when the magnet is stationary?",
+  "questionText": "Explain these observations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emf / voltage / current / electromagnetic induction",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "due to changing magnetic field (around the coil)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-coil"
+ },
+ {
+  "id": "phys-2014-ol-q9-viii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9viii",
+  "section": "B",
+  "questionRef": "2014 OL Q9(viii)",
+  "stem": "A coil of wire is connected as shown in the diagram to a galvanometer. A bar magnet is placed near the coil.",
+  "questionText": "How would increasing the speed of movement of the magnet alter the observations?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "greater deflection/ emf // current is greater",
+    "marks": 5,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q9-coil"
+ },
+ {
+  "id": "phys-2014-ol-q10-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10i",
+  "section": "B",
+  "questionRef": "2014 OL Q10(i)",
+  "questionText": "What is meant by radioactivity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(spontaneous) emission of (one or more types of) particles/energy / α / β / γ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "from the nuclei (of atoms)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10ii",
+  "section": "B",
+  "questionRef": "2014 OL Q10(ii)",
+  "stem": "In an experiment, the radiation from a radioactive source is passed through an electric field, as shown in the diagram.",
+  "questionText": "What does this experiment indicate about radiation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "there are three different types // there is positive, negative and neutral radiation",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-radiation"
+ },
+ {
+  "id": "phys-2014-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10iii",
+  "section": "B",
+  "questionRef": "2014 OL Q10(iii)",
+  "stem": "In an experiment, the radiation from a radioactive source is passed through an electric field, as shown in the diagram.",
+  "questionText": "State which type of radiation (1, 2 or 3) is unaffected by electric fields",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "2 / gamma / γ",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-radiation"
+ },
+ {
+  "id": "phys-2014-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10iv",
+  "section": "B",
+  "questionRef": "2014 OL Q10(iv)",
+  "stem": "In an experiment, the radiation from a radioactive source is passed through an electric field, as shown in the diagram.",
+  "questionText": "State which type of radiation (1, 2 or 3) is positively charged",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1 / alpha / α",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-radiation"
+ },
+ {
+  "id": "phys-2014-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10v",
+  "section": "B",
+  "questionRef": "2014 OL Q10(v)",
+  "stem": "In an experiment, the radiation from a radioactive source is passed through an electric field, as shown in the diagram.",
+  "questionText": "State which type of radiation (1, 2 or 3) is negatively charged.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3 / beta / β",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-radiation"
+ },
+ {
+  "id": "phys-2014-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10vi",
+  "section": "B",
+  "questionRef": "2014 OL Q10(vi)",
+  "stem": "In an experiment, the radiation from a radioactive source is passed through an electric field, as shown in the diagram.",
+  "questionText": "Give the name of radiation types 1, 2 and 3, in that order.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "alpha, gamma, beta",
+    "marks": 9,
+    "contextNote": "All three in the stated order: 9. Correct names in the wrong order: 6. Any one correct: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-radiation"
+ },
+ {
+  "id": "phys-2014-ol-q10-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "10vii",
+  "section": "B",
+  "questionRef": "2014 OL Q10(vii)",
+  "stem": "Nuclear fission occurs in a nuclear power station such as the one shown in the photograph.",
+  "questionText": "Name a suitable fuel for nuclear fission.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(enriched) uranium/ U / plutonium / Pu / thorium / Th",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "(enriched) uranium/ U",
+      "plutonium / Pu",
+      "thorium / Th"
+     ]
+    },
+    "contextNote": "Partial answer naming a reactor part: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-station"
+ },
+ {
+  "id": "phys-2014-ol-q10-viii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "10viii",
+  "section": "B",
+  "questionRef": "2014 OL Q10(viii)",
+  "stem": "Nuclear fission occurs in a nuclear power station such as the one shown in the photograph.",
+  "questionText": "Explain the role of neutrons in nuclear fission.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "hit nucleus, are absorbed, cause fission / chain reaction",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-station"
+ },
+ {
+  "id": "phys-2014-ol-q10-ix",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "10ix",
+  "section": "B",
+  "questionRef": "2014 OL Q10(ix)",
+  "stem": "Nuclear fission occurs in a nuclear power station such as the one shown in the photograph.",
+  "questionText": "Explain how the control rods can control the rate of fission, or stop the reaction completely.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "absorb neutrons // raise to increase // lower to decrease/stop",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-station"
+ },
+ {
+  "id": "phys-2014-ol-q10-x",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10x",
+  "section": "B",
+  "questionRef": "2014 OL Q10(x)",
+  "questionText": "Iodine–131 is a product of nuclear fission. The half-life of iodine–131 is 8 days. What fraction of iodine–131 remains after 24 days?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "⅛",
+    "marks": 8,
+    "contextNote": "24 ÷ 8 = 3 half-lives; remaining fraction = (1/2)³. A partial answer earns 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q10-half-life-solution"
+ },
+ {
+  "id": "phys-2014-ol-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2014 OL Q11(a)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "Explain the term evaporation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "process by which a liquid absorbs heat and changes to a gas",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2014 OL Q11(b)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "What effect does the addition of heat have on the molecules of a liquid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "they move around faster",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2014 OL Q11(c)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "What happens to the temperature of a gas rising through the atmosphere?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "it drops",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2014 OL Q11(d)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "What part does gravity play in the water cycle?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "causes the liquid to fall back down to the earth",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2014 OL Q11(e)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "Explain the term convection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transfer of heat/energy by the movement of atoms/molecules / currents",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2014 OL Q11(f)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "What helps create the conductive path needed for lightning to occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "cloud’s (strong) electric field",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2014 OL Q11(g)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "Name an instrument used in the laboratory to study static electricity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electroscope / GLE // Van De Graaff generator // capacitor, etc",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2014 OL Q11(h)",
+  "stem": "Lightning is one of the most deadly natural phenomena known to man. Lightning begins with the water cycle. To understand the water cycle we must first understand the principles of evaporation and condensation. Evaporation is the process by which a liquid absorbs heat and changes to a gas. When a liquid is heated its molecules move around faster. Some of the molecules may move quickly enough to break away from the surface of the liquid and carry heat away in the form of a gas. Once free the gas begins to rise into the atmosphere due to convection. Condensation is the process by which a gas loses heat and turns into a liquid. As the gas rises higher, the temperature of the surrounding air drops. Eventually the gas cools and turns back into a liquid. Earth's gravitational pull then causes the liquid to fall back down to the earth, thereby completing the cycle. In an electrical storm, the storm clouds become charged due to convection in the cloud. The upper portion of the cloud becomes positively charged and the lower portion becomes negatively charged. The cloud’s strong electric field creates a conductive path between the cloud and the earth’s surface. This allows a current to flow which we see as the ‘spark’ of lightning. The lightning causes air to heat up and expand rapidly, creating a sound wave that travels through the surrounding air. Sound travels much slower than light, so we see the flash before we hear the thunder. (Adapted from ‘howstuffworks.com’)",
+  "questionText": "Why do we see the flash of lightning before we hear the thunder?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sound travels (much) slower than light",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q11-passage"
+ },
+ {
+  "id": "phys-2014-ol-q12-a-speed-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "speed-velocity",
+  "section": "B",
+  "questionRef": "2014 OL Q12(a) — Speed and velocity",
+  "questionText": "Explain the distinction between speed and velocity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "velocity is speed in a given direction // velocity is a vector // sound is a scalar",
+    "marks": 6,
+    "contextNote": "The source’s “sound is a scalar” is a typographical error: speed is scalar, while velocity includes direction. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q12-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "12ai",
+  "section": "B",
+  "questionRef": "2014 OL Q12(a)(i)",
+  "stem": "A bus leaves a bus stop and accelerates from rest at 0.5 m s⁻² to reach a speed of 15 m s⁻¹. It then maintains this speed for 100 seconds. When it approaches the next stop, the driver applies the brakes uniformly to bring the bus to a stop in 20 seconds.",
+  "questionText": "Calculate the time it took the bus to reach its top speed",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( t = (v-u)/a = (15 – 0 ) / 0.5 = ) 30 (s)",
+    "marks": 5,
+    "contextNote": "A valid equation or partial answer earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-bus"
+ },
+ {
+  "id": "phys-2014-ol-q12-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "12aii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(a)(ii)",
+  "stem": "A bus leaves a bus stop and accelerates from rest at 0.5 m s⁻² to reach a speed of 15 m s⁻¹. It then maintains this speed for 100 seconds. When it approaches the next stop, the driver applies the brakes uniformly to bring the bus to a stop in 20 seconds.",
+  "questionText": "Calculate the distance it travelled while at its top speed",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( s = vt = (15)(100)= ) 1500 (m)",
+    "marks": 5,
+    "contextNote": "A valid equation or partial answer earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-bus"
+ },
+ {
+  "id": "phys-2014-ol-q12-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "12aiii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(a)(iii)",
+  "stem": "A bus leaves a bus stop and accelerates from rest at 0.5 m s⁻² to reach a speed of 15 m s⁻¹. It then maintains this speed for 100 seconds. When it approaches the next stop, the driver applies the brakes uniformly to bring the bus to a stop in 20 seconds.",
+  "questionText": "Calculate the acceleration required to bring the bus to a stop.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a= (v – u ) / t = (0– 15 ) / 20 = ) (–) 0.75 (m s ⁻²)",
+    "marks": 5,
+    "contextNote": "A valid equation or partial answer earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-bus"
+ },
+ {
+  "id": "phys-2014-ol-q12-a-graph",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "graph",
+  "section": "B",
+  "questionRef": "2014 OL Q12(a) — Velocity–time graph of the bus",
+  "stem": "A bus leaves a bus stop and accelerates from rest at 0.5 m s⁻² to reach a speed of 15 m s⁻¹. It then maintains this speed for 100 seconds. When it approaches the next stop, the driver applies the brakes uniformly to bring the bus to a stop in 20 seconds.",
+  "questionText": "Sketch a velocity-time graph of the bus journey.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "v increasing, v constant, v decreasing",
+    "marks": 7,
+    "contextNote": "Show 0–30 s acceleration to 15 m s⁻¹, 30–130 s constant velocity, and 130–150 s deceleration to rest. Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-bus-graph-solution",
+  "questionFigureKey": "physics-2014-ol-q12-bus-graph-question"
+ },
+ {
+  "id": "phys-2014-ol-q12-b-pressure-unit",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "pressure-unit",
+  "section": "B",
+  "questionRef": "2014 OL Q12(b) — Unit of pressure",
+  "questionText": "State the unit of pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pa / N m⁻² / bar",
+    "marks": 5,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q12-b-pressure-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "pressure-experiment",
+  "section": "B",
+  "questionRef": "2014 OL Q12(b) — Demonstrating atmospheric pressure",
+  "questionText": "Describe an experiment to demonstrate that the atmosphere exerts pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: glass of water and cardboard",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "inverted-glass"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: place cardboard over glass and invert",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "inverted-glass"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion: water remains in glass",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "inverted-glass"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "can of water and heat source",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "collapsing-can"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "boil water and put on lid",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "collapsing-can"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "can collapses",
+    "marks": 3,
+    "contextNote": "Use all three steps from one method; valid alternatives and diagrams are accepted.",
+    "route": "collapsing-can"
+   }
+  ],
+  "notes": "Two complete 9-mark experiment routes, never added together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q12-b-archimedes",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "archimedes",
+  "section": "B",
+  "questionRef": "2014 OL Q12(b) — Archimedes’ principle",
+  "questionText": "State Archimedes’ principle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "The upthrust (on a body immersed in a liquid) is equal to the weight of the liquid displaced",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q12-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "12bi",
+  "section": "B",
+  "questionRef": "2014 OL Q12(b)(i)",
+  "stem": "The diagram shows the reading on a newton balance for an object suspended in air and in a liquid. The weight of the liquid displaced is also shown on a balance.",
+  "questionText": "What is the upthrust (buoyancy force) on the object caused by the liquid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3 (N)",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-buoyancy"
+ },
+ {
+  "id": "phys-2014-ol-q12-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "12bii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(b)(ii)",
+  "stem": "The diagram shows the reading on a newton balance for an object suspended in air and in a liquid. The weight of the liquid displaced is also shown on a balance.",
+  "questionText": "Will the object float in the liquid if released? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no / it won’t / it will sink",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "the upthrust is less than the weight, it is more dense, diagram shows it immersed",
+    "marks": 2,
+    "contextNote": "Use the force comparison: 3 N upthrust is smaller than the object’s 10 N weight."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-buoyancy"
+ },
+ {
+  "id": "phys-2014-ol-q12-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "12ci",
+  "section": "B",
+  "questionRef": "2014 OL Q12(c)(i)",
+  "stem": "The diagram shows a transverse wave.",
+  "questionText": "Name the distances labelled A and B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = wavelength / λ",
+    "marks": 5,
+    "contextNote": "Partial answer: 3 marks."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "B = amplitude / height of wave",
+    "marks": 5,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-wave",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "A = wavelength / λ",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "B = amplitude / height of wave",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2014-ol-q12-c-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "12cii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(c)(ii)",
+  "stem": "The diagram shows a transverse wave.",
+  "questionText": "20 waves pass a fixed point every second. What is the frequency of the wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "20 (Hz)",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-wave"
+ },
+ {
+  "id": "phys-2014-ol-q12-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "12ciii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(c)(iii)",
+  "stem": "The diagram shows a transverse wave. 20 waves pass a fixed point every second.",
+  "questionText": "Calculate the velocity of the wave if distance A = 1.5 m.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(v = f λ = (20)(1.5) = ) 30 ( m s⁻¹)",
+    "marks": 6,
+    "contextNote": "A correct equation earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-wave"
+ },
+ {
+  "id": "phys-2014-ol-q12-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12civ",
+  "section": "B",
+  "questionRef": "2014 OL Q12(c)(iv)",
+  "questionText": "Transverse waves can be polarised. Name a type of wave that cannot be polarised.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "longitudinal // sound // pressure",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-ol-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12di",
+  "section": "B",
+  "questionRef": "2014 OL Q12(d)(i)",
+  "stem": "The circuit diagram shows a resistor and a thermistor connected in series with a 6 V battery. At a certain temperature the resistance of the thermistor is 450 Ω.",
+  "questionText": "State Ohm’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vα I // V = IR",
+    "marks": 6,
+    "contextNote": "At constant temperature, voltage is proportional to current. The source uses α for the proportionality sign. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-circuit"
+ },
+ {
+  "id": "phys-2014-ol-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12dii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(d)(ii)",
+  "stem": "The circuit diagram shows a resistor and a thermistor connected in series with a 6 V battery. At a certain temperature the resistance of the thermistor is 450 Ω.",
+  "questionText": "What is the total resistance of the circuit?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "500 (Ω)",
+    "marks": 4,
+    "contextNote": "The series resistance is 50 + 450 = 500 Ω. Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-circuit"
+ },
+ {
+  "id": "phys-2014-ol-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12diii",
+  "section": "B",
+  "questionRef": "2014 OL Q12(d)(iii)",
+  "stem": "The circuit diagram shows a resistor and a thermistor connected in series with a 6 V battery. At a certain temperature the resistance of the thermistor is 450 Ω.",
+  "questionText": "What is the current in the circuit?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(I= V/R = 6/500 =) 1.2 ×10⁻³(A)",
+    "marks": 6,
+    "contextNote": "The source has an exponent typo. Correct calculation: I = 6/500 = 0.012 A = 1.2 × 10⁻² A. The scheme accepts an answer consistent with the preceding resistance; a correct equation earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-current-solution",
+  "questionFigureKey": "physics-2014-ol-q12-current-question"
+ },
+ {
+  "id": "phys-2014-ol-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12div",
+  "section": "B",
+  "questionRef": "2014 OL Q12(d)(iv)",
+  "stem": "The circuit diagram shows a resistor and a thermistor connected in series with a 6 V battery. At a certain temperature the resistance of the thermistor is 450 Ω.",
+  "questionText": "What is the potential difference across the 50 Ω resistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(V = IR = (1.2 × 10⁻³)(50) = ) 0.6 (V)",
+    "marks": 6,
+    "contextNote": "The source repeats the current exponent typo. Use I = 0.012 A: V = 0.012 × 50 = 0.6 V, matching its final voltage. A consistent prior-current answer is accepted; a correct equation earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-voltage-solution",
+  "questionFigureKey": "physics-2014-ol-q12-voltage-question"
+ },
+ {
+  "id": "phys-2014-ol-q12-d-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12dv",
+  "section": "B",
+  "questionRef": "2014 OL Q12(d)(v)",
+  "stem": "The circuit diagram shows a resistor and a thermistor connected in series with a 6 V battery. At a certain temperature the resistance of the thermistor is 450 Ω.",
+  "questionText": "What would happen to the resistance of the circuit if the temperature were increased?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "it would decrease // depends on the thermistor",
+    "marks": 6,
+    "contextNote": "For the usual negative-temperature-coefficient thermistor, resistance decreases. The scheme also accepts a response qualified by thermistor type. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_ol.py.",
+  "year": 2014,
+  "level": "ordinary",
+  "figureKey": "physics-2014-ol-q12-circuit"
  }
 ]

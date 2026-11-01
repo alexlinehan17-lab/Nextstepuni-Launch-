@@ -568,6 +568,934 @@
    ]
   ]
  },
+ "physics-2014-ol-q1-forces": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q1-forces.png",
+  "md5": "cd417ab67f6490de01f09e419ca9148e",
+  "alt": "Original metre-stick scale and four labelled applied forces.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q1(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   165,
+   216,
+   415,
+   338
+  ]
+ },
+ "physics-2014-ol-q1-forces-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q1-forces-question.png",
+  "md5": "760929d4c9e8499274e416b96883d57a",
+  "alt": "Full equilibrium context, scale, all applied forces and diagram task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q1(ii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   84,
+   157,
+   555,
+   395
+  ],
+  "maskedFurniture": [
+   [
+    84,
+    349,
+    555,
+    369
+   ],
+   [
+    532,
+    379,
+    555,
+    395
+   ]
+  ]
+ },
+ "physics-2014-ol-q1-forces-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q1-forces-solution.png",
+  "md5": "f0ac8305018268b2de9fc5566059e424",
+  "alt": "All five forces including the 1.5 N metre-stick weight.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q1(ii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   154,
+   250,
+   409,
+   368
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q10-half-life-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q10-half-life-solution.png",
+  "md5": "332cb1097fd59608ae710f0e3a02fb24",
+  "alt": "Original one-eighth fraction and partial-credit guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q10(x)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   84,
+   722,
+   318,
+   784
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q10-radiation": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q10-radiation.png",
+  "md5": "6854276697067d7fee2760c163595813",
+  "alt": "All three radiation paths, electric-field plates, charges and number labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q10(ii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   199,
+   147,
+   395,
+   331
+  ]
+ },
+ "physics-2014-ol-q10-station": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q10-station.png",
+  "md5": "d0e68a90d06adc1a64255bc025ef617d",
+  "alt": "Original nuclear power-station photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q10(ix)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   208,
+   524,
+   411,
+   647
+  ]
+ },
+ "physics-2014-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q11-passage.png",
+  "md5": "538aab7e6dda4bd877f97403bbc98f6f",
+  "alt": "Complete lightning passage, photograph and attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q11(a)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   84,
+   79,
+   538,
+   416
+  ]
+ },
+ "physics-2014-ol-q12-buoyancy": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-buoyancy.png",
+  "md5": "134c2963d5941dd5e8e5b905aa943b10",
+  "alt": "Full balance apparatus and all three readings: 10 N, 7 N and 3 N.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(b)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   370,
+   527,
+   570,
+   742
+  ]
+ },
+ "physics-2014-ol-q12-bus": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-bus.png",
+  "md5": "79d03dc6093abdee020bc65dc1360fbf",
+  "alt": "Original bus illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(a)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   112,
+   124,
+   486,
+   171
+  ]
+ },
+ "physics-2014-ol-q12-bus-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-bus-graph-question.png",
+  "md5": "3fdc158623eee0c82fc0672b3119f4e1",
+  "alt": "Full bus data and velocity–time graph ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(a) — Velocity–time graph of the bus",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   112,
+   124,
+   530,
+   351
+  ],
+  "maskedFurniture": [
+   [
+    112,
+    235,
+    530,
+    313
+   ]
+  ]
+ },
+ "physics-2014-ol-q12-bus-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-bus-graph-solution.png",
+  "md5": "8ba1c6a982b181d9ff9e61ed40c4baf2",
+  "alt": "Original velocity–time graph with every time, velocity and unit label.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(a) — Velocity–time graph of the bus",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   63,
+   330,
+   300,
+   423
+  ],
+  "maskedFurniture": [
+   [
+    275,
+    350,
+    300,
+    381
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q12-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-circuit.png",
+  "md5": "907a7d778961cfc52a7b689abd21aaf7",
+  "alt": "Full 6 V series circuit with 50 Ω resistor and 450 Ω thermistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(d)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   193,
+   449,
+   411,
+   588
+  ]
+ },
+ "physics-2014-ol-q12-current-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-current-question.png",
+  "md5": "e2d99fa098a63a6c41fe032976d7ed38",
+  "alt": "Full series-circuit values, context and target calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(d)(iii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   112,
+   384,
+   556,
+   644
+  ],
+  "maskedFurniture": [
+   [
+    112,
+    591,
+    556,
+    628
+   ],
+   [
+    531,
+    628,
+    556,
+    644
+   ]
+  ]
+ },
+ "physics-2014-ol-q12-current-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-current-solution.png",
+  "md5": "b68f5a441a2efbf7273002cb31e98fcc",
+  "alt": "Original current equation, including the historical exponent typo, with visible correction supplied in the answer guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(d)(iii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   80,
+   617,
+   425,
+   664
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    617,
+    107,
+    619
+   ],
+   [
+    142,
+    617,
+    425,
+    619
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q12-voltage-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-voltage-question.png",
+  "md5": "915692fca9118624d0d8a9319c592677",
+  "alt": "Full series-circuit values, context and target calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(d)(iv)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   112,
+   384,
+   556,
+   662
+  ],
+  "maskedFurniture": [
+   [
+    112,
+    591,
+    556,
+    645
+   ],
+   [
+    531,
+    645,
+    556,
+    662
+   ]
+  ]
+ },
+ "physics-2014-ol-q12-voltage-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-voltage-solution.png",
+  "md5": "4f4881fdcf2fe6df004cdacb9f604c13",
+  "alt": "Original voltage calculation with repeated exponent typo; corrected working is supplied in the answer guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(d)(iv)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   83,
+   678,
+   428,
+   708
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q12-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q12-wave.png",
+  "md5": "c2ec145912adf3f4e803bbcc90865217",
+  "alt": "Complete transverse-wave diagram with A and B arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(c)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   207,
+   88,
+   386,
+   187
+  ]
+ },
+ "physics-2014-ol-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q3-data.png",
+  "md5": "5ab8efd5e083454e7732704d3bba8e24",
+  "alt": "All six frequency and length pairs, with the supplied reciprocal and five blanks.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q3(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   90,
+   229,
+   482,
+   296
+  ]
+ },
+ "physics-2014-ol-q3-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q3-graph-question.png",
+  "md5": "f55c3579f309d48840fa9d1631c65601",
+  "alt": "Full string experiment, six-row data table and graph task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q3(v)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   84,
+   56,
+   534,
+   348
+  ],
+  "maskedFurniture": [
+   [
+    84,
+    110,
+    534,
+    193
+   ],
+   [
+    531,
+    332,
+    534,
+    348
+   ]
+  ]
+ },
+ "physics-2014-ol-q3-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q3-graph-solution.png",
+  "md5": "29bada2b9c5cf12deb459776753ff151",
+  "alt": "Completed reciprocal table, labelled graph and published graph criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q3(v)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   84,
+   386,
+   491,
+   775
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q4-circuit-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q4-circuit-graph.png",
+  "md5": "d6752d748ff0299ccebcd42ad74befdf",
+  "alt": "Complete 9 V diode circuit with 330 Ω resistor, X/Y meters and I–V curve.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q4(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   74,
+   488,
+   508,
+   606
+  ],
+  "maskedFurniture": [
+   [
+    74,
+    488,
+    359,
+    490
+   ]
+  ]
+ },
+ "physics-2014-ol-q5-crane": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q5-crane.png",
+  "md5": "6e25b25da15b3ebbc27ce65a2b608710",
+  "alt": "Original crane illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q5(a)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   443,
+   168,
+   529,
+   268
+  ]
+ },
+ "physics-2014-ol-q5-ldr": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q5-ldr.png",
+  "md5": "0c9f348c80c80e437960bd596432b945",
+  "alt": "Complete component symbol including incident light arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q5(g)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   411,
+   546,
+   535,
+   596
+  ]
+ },
+ "physics-2014-ol-q5-lens": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q5-lens.png",
+  "md5": "465373252af02046e17a4d8dacd1e70f",
+  "alt": "Converging rays through the pictured lens.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q5(e)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   397,
+   464,
+   534,
+   525
+  ]
+ },
+ "physics-2014-ol-q6-gravity-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q6-gravity-question.png",
+  "md5": "667f3a5df48ee334eeb6d09540970b57",
+  "alt": "Full Martian radius and mass with the original g = GM/d² equation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q6 — Gravity on Mars",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   84,
+   129,
+   556,
+   211
+  ],
+  "maskedFurniture": [
+   [
+    352,
+    176,
+    556,
+    212
+   ],
+   [
+    531,
+    190,
+    556,
+    211
+   ]
+  ]
+ },
+ "physics-2014-ol-q6-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q6-gravity-solution.png",
+  "md5": "47a817b969cf740138b47a05196cf2fa",
+  "alt": "Complete gravitational equation, substitution, units and partial-credit criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q6 — Gravity on Mars",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   63,
+   340,
+   345,
+   403
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q6-rover": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q6-rover.png",
+  "md5": "884d17013ef10e46a5f40203b1365bfb",
+  "alt": "Original Curiosity rover illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q6 — Strength of the rover’s wheels",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   352,
+   176,
+   559,
+   357
+  ],
+  "maskedFurniture": [
+   [
+    352,
+    249,
+    369,
+    266
+   ],
+   [
+    532,
+    190,
+    559,
+    211
+   ],
+   [
+    537,
+    264,
+    559,
+    281
+   ]
+  ]
+ },
+ "physics-2014-ol-q7-metals": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q7-metals.png",
+  "md5": "7d920df3c0e2fe13d435d2083127f1f3",
+  "alt": "Original metal-rod heat transfer experiment.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q7(b)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   433,
+   621,
+   557,
+   709
+  ]
+ },
+ "physics-2014-ol-q7-thermometer": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q7-thermometer.png",
+  "md5": "25603c1a3b4a5e5131a296bdb8d52bcc",
+  "alt": "Original laboratory thermometer.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q7(a)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   400,
+   505,
+   547,
+   585
+  ],
+  "maskedFurniture": [
+   [
+    400,
+    503,
+    486,
+    517
+   ]
+  ]
+ },
+ "physics-2014-ol-q8-index-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q8-index-question.png",
+  "md5": "df36310f45ead6272c483c8a1542002a",
+  "alt": "Full critical-angle context, diagram, 38-degree value and refractive-index ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q8(vii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   84,
+   147,
+   556,
+   314
+  ],
+  "maskedFurniture": [
+   [
+    84,
+    147,
+    556,
+    162
+   ],
+   [
+    84,
+    211,
+    351,
+    276
+   ],
+   [
+    532,
+    211,
+    556,
+    276
+   ],
+   [
+    532,
+    297,
+    556,
+    314
+   ]
+  ]
+ },
+ "physics-2014-ol-q8-index-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q8-index-solution.png",
+  "md5": "3d9a0a6a0f2b81fae444d945b42cb084",
+  "alt": "Original n = 1/sin C equation and worked index.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q8(vii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   91,
+   589,
+   320,
+   649
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q8-reflection-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q8-reflection-question.png",
+  "md5": "54990910ce8d0bac617b36b93db733fc",
+  "alt": "Full original glass–air diagram, critical angle and 40-degree reflection task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q8(viii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   84,
+   147,
+   556,
+   349
+  ],
+  "maskedFurniture": [
+   [
+    84,
+    147,
+    556,
+    162
+   ],
+   [
+    84,
+    211,
+    351,
+    276
+   ],
+   [
+    532,
+    211,
+    556,
+    276
+   ],
+   [
+    84,
+    297,
+    556,
+    315
+   ],
+   [
+    532,
+    334,
+    556,
+    349
+   ]
+  ]
+ },
+ "physics-2014-ol-q8-reflection-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q8-reflection-solution.png",
+  "md5": "4a3c357e7835c85f61c78342f93c8341",
+  "alt": "Original total internal reflection solution diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q8(viii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   98,
+   682,
+   261,
+   754
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q8-refraction": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q8-refraction.png",
+  "md5": "124145960f334c77e66308df3fc4444c",
+  "alt": "Complete glass–air critical-angle diagram with B, i and right-angle indicator.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q8(v)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   354,
+   163,
+   535,
+   276
+  ]
+ },
+ "physics-2014-ol-q9-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q9-coil.png",
+  "md5": "51bfcb5690950d37a2f328addb9154b1",
+  "alt": "Complete magnet, coil and galvanometer diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q9(v)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   372,
+   544,
+   529,
+   616
+  ]
+ },
+ "physics-2014-ol-q9-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q9-field-solution.png",
+  "md5": "ee9e8b81201fcfc31c9e45e367baff3c",
+  "alt": "Original circular magnetic-field diagram with current and field direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q9(iii)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   312,
+   259,
+   491,
+   366
+  ],
+  "maskedFurniture": [
+   [
+    469,
+    259,
+    491,
+    280
+   ],
+   [
+    466,
+    301,
+    491,
+    333
+   ],
+   [
+    451,
+    359,
+    491,
+    366
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2014-ol-q9-magnet-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-ol-q9-magnet-solution.png",
+  "md5": "06caa069e66ebb5cb7b64bcff86f1e51",
+  "alt": "Original bar-magnet field lines with N/S poles and direction arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q9(iv)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   77,
+   382,
+   228,
+   462
+  ],
+  "solution": true
+ },
  "physics-2015-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2015-hl-q1-data.png",
   "md5": "e839303a54e40527f8d67a4c18498d15",

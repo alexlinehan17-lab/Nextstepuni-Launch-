@@ -236,7 +236,8 @@ def read_geo(lifter, spec, sp):
         # A formula the scheme sets as a stacked fraction, read from where its
         # numerator and denominator are printed (phys_review_lib.fraction_text).
         try:
-            value = B.fraction_text(src.doc[page - 1], clip, src.glyphs)
+            value = B.fraction_text(src.doc[page - 1], clip, src.glyphs,
+                                    glyph_order=spec.get('glyph_order', False))
         except LookupError as e:
             raise Refusal(f'fraction p{page}: {e}')
     elif kind == 'equation':

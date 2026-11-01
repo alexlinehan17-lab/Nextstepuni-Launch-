@@ -1,4 +1,4 @@
-"""Source-layout regressions found during the independent 2016 Physics review."""
+"""Source-layout regressions from independent Physics paper/scheme reviews."""
 from pathlib import Path
 import unittest
 import fitz
@@ -39,6 +39,28 @@ class PhysicsSourceMathTest(unittest.TestCase):
         # independent calculations from the paper's 1.1 kHz, 340 and 13 m/s.
         self.assertAlmostEqual(1100 * 340 / (340 - 13), 1143.7, delta=0.05)
         self.assertAlmostEqual(1100 * 340 / (340 + 13), 1059.5, delta=0.05)
+
+    def test_interleaved_gravity_glyphs_keep_products_powers_and_fraction_groups(self):
+        from phys_review_2014_ol import GLYPHS as G14, SOURCES as S14
+        with fitz.open(ROOT / S14['scheme']['path']) as scheme:
+            self.assertEqual(fraction_text(scheme[8], (65,341,290,375), G14, glyph_order=True),
+                             '(g= GM/d² = ((6.67 ×10⁻¹¹)(6.4 ×10²³))/(3.4 ×10⁶)² =)3.7 (ms⁻²)')
+        self.assertAlmostEqual(6.67e-11 * 6.4e23 / (3.4e6)**2, 3.7, delta=0.05)
+
+    def test_interleaved_current_preserves_source_typo_for_visible_correction(self):
+        from phys_review_2014_ol import GLYPHS as G14, SOURCES as S14
+        with fitz.open(ROOT / S14['scheme']['path']) as scheme:
+            self.assertEqual(fraction_text(scheme[15], (93,616,226,649), G14, glyph_order=True),
+                             '(I= V/R = 6/500 =) 1.2 ×10⁻³(A)')
+        # Independently recompute from the paper's 6 V and 50 + 450 ohms.
+        self.assertEqual(6 / (50 + 450), 0.012)
+        self.assertEqual(6 / (50 + 450) * 50, 0.6)
+
+    def test_critical_angle_fraction_keeps_both_sine_denominators(self):
+        from phys_review_2014_ol import GLYPHS as G14, SOURCES as S14
+        with fitz.open(ROOT / S14['scheme']['path']) as scheme:
+            self.assertEqual(fraction_text(scheme[10], (91,588,201,621), G14),
+                             'n= 1/(sinC) = 1/(sin38) =1.62')
 
 if __name__ == '__main__':
     unittest.main()

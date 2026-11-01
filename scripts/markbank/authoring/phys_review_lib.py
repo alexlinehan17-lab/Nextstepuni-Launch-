@@ -890,13 +890,21 @@ _CELL_ONLY = re.compile(CELL.pattern)
 _ATOM = re.compile(r'^(?:\d+(?:\.\d+)?|[A-Za-z\u0370-\u03ff\U0001d400-\U0001d7ff][\u00b2\u00b3\u00b9\u2070-\u209f]*)$')
 
 
-def _region_text(spans):
+def _region_text(spans, glyph_order=False):
     """Spans of one region (left to right), super/subscripts read against the
     region's own largest type."""
     if not any(sp['text'].strip() for sp in spans):
         return ''
+    if glyph_order:
+        # Some equation editors put a whole numeric run in one span and its
+        # multiplication signs and powers in separate spans inside that run.
+        # Sort individual glyphs, keeping their original baseline and size.
+        spans = [dict(sp, text=c, bbox=(x, sp['bbox'][1], x, sp['bbox'][3]))
+                 for sp in spans for x, c in sp.get('glyphs', [(sp['bbox'][0], sp['text'])])]
     spans = sorted(spans, key=lambda s: s['bbox'][0])
     out = _line_text({'spans': spans})
+    if glyph_order:
+        out = re.sub(r'(?<=[A-Za-z0-9)])\s+(?=[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺])', '', out)
     return _norm(out)
 
 
@@ -927,7 +935,7 @@ _VULGAR = {('1', '2'): '\u00bd', ('1', '3'): '\u2153', ('2', '3'): '\u2154', ('1
            ('3', '4'): '\u00be', ('1', '5'): '\u2155', ('1', '8'): '\u215b'}
 
 
-def _items_text(items, sep=''):
+def _items_text(items, sep='', glyph_order=False):
     """Items (real spans, or fractions already read) left to right: runs of
     real spans read with their super/subscripts, read fractions as tokens."""
     items = sorted(items, key=lambda it: it['x0'])
@@ -937,7 +945,7 @@ def _items_text(items, sep=''):
             run.append(it['span'])
             continue
         if run:
-            out.append(_region_text(run))
+            out.append(_region_text(run, glyph_order))
             run = []
         if it.get('glue') and out:
             # A fraction printed as a subscript of the glyph before it ("T" with
@@ -946,11 +954,11 @@ def _items_text(items, sep=''):
         else:
             out.append(it['text'])
     if run:
-        out.append(_region_text(run))
+        out.append(_region_text(run, glyph_order))
     return _norm(sep.join(out))
 
 
-def fraction_text(page, clip, glyphs=None):
+def fraction_text(page, clip, glyphs=None, glyph_order=False):
     """The text inside `clip` with every stacked fraction written on one line.
 
     Bars are read innermost first, so a fraction inside another's numerator or
@@ -1017,7 +1025,7 @@ def fraction_text(page, clip, glyphs=None):
         if not num or not den:
             raise LookupError(f'fraction bar {[round(v, 1) for v in bar]} has numerator '
                               f'{_items_text(num)!r}, denominator {_items_text(den)!r}')
-        nt, dt = _items_text(num), _items_text(den)
+        nt, dt = _items_text(num, glyph_order=glyph_order), _items_text(den, glyph_order=glyph_order)
         token = _VULGAR.get((nt.strip(), dt.strip())) or f'{_wrap(nt)}/{_wrap(dt, den=True)}'
         used = num + den
         live = [it for it in live if all(it is not u for u in used)]
@@ -1037,7 +1045,7 @@ def fraction_text(page, clip, glyphs=None):
                  and it['y0'] >= bar.y0 - 1.5]
         if not under:
             continue
-        inner = _items_text(under)
+        inner = _items_text(under, glyph_order=glyph_order)
         # A slanted fraction can place numerator and denominator in one PDF
         # span and its slash in another. Read those glyphs by x, rather than
         # putting the slash after the entire numerator/denominator span.
@@ -1061,7 +1069,7 @@ def fraction_text(page, clip, glyphs=None):
             f = nxt[0]
             if not f['text'].startswith('('):
                 f['text'] = f'({f["text"]})'
-    return re.sub('\u221a\\s+', '\u221a', _items_text(live, sep=' '))
+    return re.sub('\u221a\\s+', '\u221a', _items_text(live, sep=' ', glyph_order=glyph_order))
 
 
 # ------------------------------------------------------- nuclear equations --

@@ -289,12 +289,20 @@ describe('Physics exam-topic registry', () => {
       const [level, year, n] = key.split('|') as [
         'higher' | 'ordinary', string, string,
       ];
+      // A subsequent full-paper review may add topics to the omission repair.
+      // It must retain the repair and publish the complete reviewed mapping.
+      const annualPath = path.join(ROOT, 'data', 'examTopics', `physics-${year}-exam-topic-map.json`);
+      const annual = fs.existsSync(annualPath)
+        ? JSON.parse(fs.readFileSync(annualPath, 'utf8')).questions[`${level}|${n}`] as string[] | undefined
+        : undefined;
+      const completeIds = annual ?? expectedIds;
+      expect(completeIds).toEqual(expect.arrayContaining(expectedIds));
       expect(examTopicIdsForQuestion(
         'physics', level, Number(year), 'main', n, 'single', 'ev',
-      )).toEqual(expectedIds);
+      )).toEqual(completeIds);
       expect(examTopicIdsForQuestion(
         'physics', level, Number(year), 'main', n, 'single', 'iv',
-      )).toEqual(expectedIds);
+      )).toEqual(completeIds);
     }
     expect(physicsEvidence.retainedLocalCards.every(card => (
       card.resolution === 'retained-local-reviewed'
@@ -365,7 +373,7 @@ describe('Physics exam-topic registry', () => {
 
   it('keeps every shipped Mark Bank card linked to the exact old-course practice map', () => {
     const cards = [...higherMarkBankCards, ...ordinaryMarkBankCards];
-    expect(cards).toHaveLength(2892);
+    expect(cards).toHaveLength(2997);
 
     for (const card of cards) {
       const parsed = /^(\d{4})\s+(HL|OL)\s+Q(\d+)/.exec(card.questionRef);
@@ -418,9 +426,9 @@ describe('Physics exam-topic registry', () => {
 
   it('pins the independently measured Mark Bank remainder instead of hiding it', () => {
     expect(markBankCoverage.physics).toMatchObject({
-      cards: 2892,
-      leaves: 2353,
-      covered: 2353,
+      cards: 2997,
+      leaves: 2443,
+      covered: 2443,
       excluded: 0,
       open: 0,
       orphans: 0,
