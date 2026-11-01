@@ -1634,11 +1634,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "fish-nutritional-significance",
     section: "B", questionRef: "2023 HL Section B Q2(a)",
-    stem: "'Nutritional experts recommend 2-3 portions of fish each week for a balanced diet.' (www.goodfoodireland.ie)",
+    stem: "‘Nutritional experts recommend consuming 2-3 portions of fish each week for a balanced diet.’ (www.goodfoodireland.ie)",
     questionText: "Discuss the nutritional significance of fish in the diet.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks (graded 4:3:2:1:0); nutrient 1, type 1, function/dietary 2","answer":5,"ofParts":5,"perPart":4}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0); nutrient 1, type 1, function/dietary 2"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the nutritional significance of fish in the diet", marks: 20, contextNote: "Five nutrients at 4 marks, and the scheme spells out how each 4 is built: 1 for the nutrient, 1 for its type, 2 for its function or dietary significance. That is the shape to write in — \"protein, HBV, supplies essential amino acids for growth\" is a full 4, where \"fish contains protein\" is a 1. The percentages are the scheme's own and are worth quoting.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Protein (16-18%), HBV; actin, myosin, collagen; source of essential amino acids; etc.","Fat (0-18%), polyunsaturated fat in oily fish; omega 3; no fat present in white fish; shellfish contain cholesterol; source of vitamins A,D,E,K; provide essential fatty acids; etc.","Vitamins (1%) B group vitamins, B6; B12; oily fish and white fish livers and shellfish contain Vitamin A Vitamin D; Vitamin C in oysters; etc.","Minerals (1%) shellfish are good sources of non-haem iron; canned fish are a source of calcium; iodine; Zinc; potassium; phosphorus; fluorine; etc.","Water (65-80%) content varies depending on type of fish; the higher the water content the lower the fat content; etc."]} },
+    { id: "nutrients", kind: "criterion", verbatim: "Nutritional significance of fish", marks: 20, contextNote: "Mark five distinct points. Each has 1 mark for the nutrient, 1 for its type and 2 for function or dietary significance, using the published 4:3:2:1:0 steps.\n\nProtein (16-18%), HBV; actin, myosin, collagen; source of essential amino acids; etc.\n\nFat (0-18%), polyunsaturated fat in oily fish; omega 3; no fat present in white fish; shellfish contain cholesterol; source of vitamins A,D,E,K; provide essential fatty acids; etc.\n\nVitamins (1%) B group vitamins, B6; B12; oily fish and white fish livers and shellfish contain Vitamin A Vitamin D; Vitamin C in oysters; etc.\n\nMinerals (1%) shellfish are good sources of non-haem iron; canned fish are a source of calcium; iodine; Zinc; potassium; phosphorus; fluorine; etc.\n\nWater (65-80%) content varies depending on type of fish; the higher the water content the lower the fat content; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
   } as SecCard,
   {
@@ -1648,11 +1648,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q2c", topicId: "home-economics-0-4", conceptId: "fsai-role",
     section: "B", questionRef: "2023 HL Section B Q2(c)",
-    stem: "'Nutritional experts recommend 2-3 portions of fish each week for a balanced diet.' (www.goodfoodireland.ie)",
+    stem: "‘Nutritional experts recommend consuming 2-3 portions of fish each week for a balanced diet.’ (www.goodfoodireland.ie)",
     questionText: "Describe the role of the Food Safety Authority of Ireland (FSAI) in the food industry.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 6 marks (graded 6:3:0)","answer":2,"ofParts":9,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"2 points × 6 (6:3:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe the role of the Food Safety Authority of Ireland (FSAI) in the food industry", marks: 12, contextNote: "Two points at 6 marks each, graded 6:3:0 — half or full, nothing else, so a point either gets developed or loses three marks outright. With only two points wanted, take the two that describe themselves: the enforcement powers (improvement notices, closure orders) and the rapid-alert system.", openList: true, group: {"claimMax":2,"perOption":6,"options":["co-ordinates the enforcement of food safety regulation in Ireland","co-ordinates rapid-alert systems","advises the Minister for Agriculture, Food and the Marine","protects consumers – safe food, accurate information","works with the food industry to ensure food produced is safe to eat (HACCP)","takes action when a premises is in breach of food regulations","issues improvement notices","issues closure orders","processes applications for novel foods and new methods of processing"]} },
+    { id: "role", kind: "criterion", verbatim: "role", marks: 12, contextNote: "Describe two distinct points, each graded 6:3:0. Published guidance: co-ordinates the enforcement of food safety regulation in Ireland; co-ordinates rapid-alert systems; advises the Minister for Agriculture, Food and the Marine; protects consumers – safe food, accurate information; works with the food industry to ensure food produced is safe to eat (HACCP); takes action when a premises is in breach of food regulations; issues improvement notices; issues closure orders; processes applications for novel foods and new methods of processing; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,3,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,3,6]}] },
     ],
   } as SecCard,
   {
@@ -1662,11 +1662,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q3a", topicId: "home-economics-0-10", conceptId: "family-food-choice-factors",
     section: "B", questionRef: "2023 HL Section B Q3(a)",
-    stem: "'People are becoming more experimental in their culinary choices.' (www.bordbia.ie)",
+    stem: "‘People are becoming more experimental in their culinary choices.’ (www.bordbia.ie)",
     questionText: "Discuss the factors that affect food choices for families today.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 4 marks (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the factors that affect food choices for families today", marks: 12, contextNote: "Only three factors at 4 marks, so this is a short part — do not spend Section-B time on it. Graded 4:2:0: named is 2, discussed is 4. The sustainability, origins and ethics cluster is the most current thing on the list and the easiest to develop.", openList: true, group: {"claimMax":3,"perOption":4,"options":["culture","cost","sensory aspects","nutritional awareness","health status","diet-related health issues","food sustainability","food origins","food ethics","eating patterns","lifestyle","availability","marketing","advertising"]} },
+    { id: "factors", kind: "criterion", verbatim: "factors that affect food choices for families today", marks: 12, contextNote: "Discuss three factors, each graded 4:2:0. The scheme lists headings but does not define an exact name-only partial grade. Published guidance: culture; cost; sensory aspects; nutritional awareness; health status; diet-related health issues; food sustainability; food origins; food ethics; eating patterns; lifestyle; availability; marketing; advertising; influencers; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -1676,11 +1676,503 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q3c", topicId: "home-economics-0-11", conceptId: "physical-conditioning-agents",
     section: "B", questionRef: "2023 HL Section B Q3(c)",
-    stem: "'People are becoming more experimental in their culinary choices.' (www.bordbia.ie)",
+    stem: "‘People are becoming more experimental in their culinary choices.’ (www.bordbia.ie)",
     questionText: "Name and describe the role of one physical conditioning agent used in food processing.",
-    tariffModel: {"kind":"bestNofParts","notation":"name 4 marks; role 2 points @ 4 marks (graded 4:0)","answer":1,"ofParts":10,"perPart":12}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"Name 4; role 2 × 4 (4:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name and describe the role of one physical conditioning agent used in food processing", marks: 12, contextNote: "One agent only, and the 12 marks split 4 for naming it and 4 + 4 for two points on its role — all graded 4:0, so every mark here is all-or-nothing. Each option carries the agent, its named chemicals and the foods it is used in, because the second role mark usually comes from the application. Naming the agent alone is a third of the marks; stopping there throws away eight.", openList: true, group: {"claimMax":1,"perOption":12,"options":["Name: humectants; sorbitol; mannitol; role: prevent food from losing moisture; drying out and hardening; used in marzipan, cakes; etc.","Name: emulsifiers; lecithin; alginates; role: forms emulsions between water and oil in food; prevents separation of oil and water in food; used in mayonnaise, dairy spreads; ice cream; etc.","Name: anti-caking agents; magnesium carbonate; role: prevents lumping (anti-caking) in dried foods; used in cake mixes, chocolate milk powder; etc.","Name: setting agent; pectin; role: acts as a setting agent; used in jams, jellies and marmalades; etc.","Name: stabilisers; carrageenan; guar gum; role: prevents emulsions from separating; used in ice cream, yoghurts; etc.","Name: anti-spattering agents; lecithin; phosphates; role: are added to cooking fats and oils to prevent spattering by keeping the water droplets apart; etc.","Name: anti-foaming agents; stearates; glycols; role: prevents the formation of foam in industrial produced liquids; etc.","Name: firming agents; calcium chloride; calcium sulphate; role: prevent fruit and vegetables from softening during processing; etc.","Name: buffers; sodium; calcium; potassium citrate; role: maintain the acidity of the food at the appropriate level; etc.","Name: packaging gas; nitrogen; role: when nitrogen is introduced into a package, it drives out oxygen and any moisture present; modifying the atmosphere inside the package, slows down spoilage and extends the shelf life of the food; nitrogen protects delicate foods inside the package from being crushed during handling; etc."]} },
+    { id: "name", kind: "point", verbatim: "humectants; sorbitol; mannitol", marks: 4 },
+    { id: "role", kind: "criterion", verbatim: "role", marks: 8, contextNote: "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevent food from losing moisture; drying out and hardening; used in marzipan, cakes; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "humectants",
+                "label": "Humectants",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "humectants; sorbitol; mannitol",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevent food from losing moisture; drying out and hardening; used in marzipan, cakes; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "emulsifiers",
+                "label": "Emulsifiers",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "emulsifiers; lecithin; alginates",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: forms emulsions between water and oil in food; prevents separation of oil and water in food; used in mayonnaise, dairy spreads; ice cream; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "anti-caking-agents",
+                "label": "Anti-caking agents",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "anti-caking agents; magnesium carbonate",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevents lumping (anti-caking) in dried foods; used in cake mixes, chocolate milk powder; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "setting-agent",
+                "label": "Setting agent",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "setting agent; pectin",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: acts as a setting agent; used in jams, jellies and marmalades; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "stabilisers",
+                "label": "Stabilisers",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "stabilisers; carrageenan; guar gum",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevents emulsions from separating; used in ice cream, yoghurts; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "anti-spattering-agents",
+                "label": "Anti-spattering agents",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "anti-spattering agents; lecithin; phosphates",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: are added to cooking fats and oils to prevent spattering by keeping the water droplets apart; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "anti-foaming-agents",
+                "label": "Anti-foaming agents",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "anti-foaming agents; stearates; glycols",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevents the formation of foam in industrial produced liquids; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "firming-agents",
+                "label": "Firming agents",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "firming agents; calcium chloride; calcium sulphate",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: prevent fruit and vegetables from softening during processing; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "buffers",
+                "label": "Buffers",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "buffers; sodium; calcium; potassium citrate",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: maintain the acidity of the food at the appropriate level; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "packaging-gas",
+                "label": "Packaging gas",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "packaging gas; nitrogen",
+                            "marks": 4
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two distinct role points for the same agent. Each is graded 4:0. Published guidance: when nitrogen is introduced into a package, it drives out oxygen and any moisture present; modifying the atmosphere inside the package, slows down spoilage and extends the shelf life of the food; nitrogen protects delicate foods inside the package from being crushed during handling; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-agent",
+                "label": "Another physical conditioning agent",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name the physical conditioning agent you described. The paper leaves this choice open."
+                      },
+                      {
+                            "id": "role",
+                            "kind": "criterion",
+                            "verbatim": "role",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Describe two accurate role points for that agent, each graded 4:0. The scheme prints the ten example agents shown in the other answer routes; it does not print a model for another agent.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -1690,11 +2182,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q4a", topicId: "home-economics-1-0", conceptId: "home-management-factors",
     section: "B", questionRef: "2023 HL Section B Q4(a)",
-    stem: "'Consumers must be constantly vigilant to protect themselves.' (www.thecai.ie)",
-    questionText: "Discuss how the following factors affect the management of the home: stages in the life cycle of the family; employment patterns; values.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0); one point on each factor plus one other","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
+    stem: "‘Consumers must be constantly vigilant to protect themselves.’ (www.thecai.ie)",
+    questionText: "Discuss how the following factors affect the management of the home. • stages in the life cycle of the family • employment patterns • values.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0); one on each required factor plus one other"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss how the life cycle of the family, employment patterns and values affect the management of the home", marks: 20, contextNote: "Four points at 5 marks with a reserved mark on each of the three named factors, plus one free. Values is the thinnest list in the scheme and the one most often skipped — but a mark is held for it, so an answer covering only family stage and employment caps at 15 of 20.", openList: true, group: {"claimMax":4,"perOption":5,"options":["arrival of children","number of children","ages of children","teenagers more involved in decision making","elderly people may have reduced income","dual income families","single income families","commute times","job-sharing","shift work","sustainability","shopping local","environmentally friendly","organic"]} },
+    { id: "factor-1", kind: "criterion", verbatim: "Stages in the life cycle of the family", marks: 5, contextNote: "One point on this required factor, graded 5:3:0. Published guidance: arrival of children; number of children; ages of children; teenagers more involved in decision making; elderly people may have reduced income; decreased agility; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-2", kind: "criterion", verbatim: "Employment patterns", marks: 5, contextNote: "One point on this required factor, graded 5:3:0. Published guidance: dual income families; single income families; commute times; job-sharing; shift work; working from home; one parent working abroad; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-3", kind: "criterion", verbatim: "Values", marks: 5, contextNote: "One point on this required factor, graded 5:3:0. Published guidance: sustainability; shopping local; environmentally friendly; organic; etc.", permittedMarks: [0,3,5] },
+    { id: "additional", kind: "criterion", verbatim: "one other", marks: 5, contextNote: "One further distinct point on any of the three factors above, graded 5:3:0. Do not score a point already used for a required factor again.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -1704,11 +2199,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q4b", topicId: "home-economics-1-2", conceptId: "retailer-techniques",
     section: "B", questionRef: "2023 HL Section B Q4(b)",
-    stem: "'Consumers must be constantly vigilant to protect themselves.' (www.thecai.ie)",
+    stem: "‘Consumers must be constantly vigilant to protect themselves.’ (www.thecai.ie)",
     questionText: "Analyse how different techniques used by retailers influence consumer spending.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0); max of 2 points under each technique","answer":4,"ofParts":7,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0), maximum 2 points per technique"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Analyse how different techniques used by retailers influence consumer spending", marks: 20, contextNote: "Four points at 5 marks, with a cap the scheme states outright: a maximum of 2 points under any one technique. So four points on shelf position cannot score 20 — at least two different techniques are required. \"Analyse\" wants the mechanism: essentials at the back of the store is a 3, and walking a shopper past everything else to reach the milk is the 5.", openList: true, group: {"claimMax":4,"perOption":5,"options":["shop layout size influences time spent in store; follow flow of aisles and see more products; location of goods in defined departments; etc.","in-store stimuli lighting; background music; aromas; samples etc.","product placement essentials at back of store; items at checkouts; pasta and sauces together; etc.","shelf position luxuries at eye-level; products aimed at children at their eye level; etc.","pricing multiple buys; special offers; loss leader technique; etc.","online shopping suggestions of alternatives or complementary products; what other people bought; creating illusion of scarcity; etc.","loyalty cards money off coupons; etc."]} },
+    { id: "techniques", kind: "criterion", verbatim: "techniques used by retailers", marks: 20, contextNote: "Mark four distinct points, graded 5:3:0. Count no more than two points under the same technique: if you wrote more, select its best two before using these slots. Each slot represents a point, not a whole technique.\n\nshop layout size influences time spent in store; follow flow of aisles and see more products; location of goods in defined departments; etc.\n\nin-store stimuli lighting; background music; aromas; samples etc.\n\nproduct placement essentials at back of store; items at checkouts; pasta and sauces together; etc.\n\nshelf position luxuries at eye-level; products aimed at children at their eye level; etc.\n\npricing multiple buys; special offers; loss leader technique; etc.\n\nonline shopping suggestions of alternatives or complementary products; what other people bought; creating illusion of scarcity; etc.\n\nloyalty cards money off coupons; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -1718,11 +2213,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q4c", topicId: "home-economics-1-2", conceptId: "consumer-responsibilities",
     section: "B", questionRef: "2023 HL Section B Q4(c)",
-    stem: "'Consumers must be constantly vigilant to protect themselves.' (www.thecai.ie)",
+    stem: "‘Consumers must be constantly vigilant to protect themselves.’ (www.thecai.ie)",
     questionText: "Describe how the responsibilities of a consumer can assist them in making wise choices.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:0)","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe how the responsibilities of a consumer can assist them in making wise choices", marks: 10, contextNote: "Two points at 5 marks. Note the question is about RESPONSIBILITIES, not rights — knowing your rights is itself a responsibility here, but listing the rights is answering a different question. The 5 comes from the second half of the question: how the responsibility leads to a better choice.", openList: true, group: {"claimMax":2,"perOption":5,"options":["know their rights","educate themselves about consumer laws","be well informed about goods and services","mindful of balance between price and quality","complain and seek redress","read labels","use resources carefully","avoid waste","be environmentally aware"]} },
+    { id: "responsibilities", kind: "criterion", verbatim: "responsibilities of a consumer", marks: 10, contextNote: "Describe two points showing how a consumer’s responsibilities can assist wise choices. Each is graded 5:3:0. Published guidance: know their rights; educate themselves about consumer laws; be well informed about goods and services; mindful of balance between price and quality; complain and seek redress; read labels; use resources carefully; avoid waste; be environmentally aware; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -1734,9 +2229,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 HL Section B Q5(a)",
     stem: "The family is an integral social institution in society.",
     questionText: "Discuss the changes that have taken place in the family from the middle of the twentieth century to the present day.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks (graded 4:2:0)","answer":5,"ofParts":13,"perPart":4}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the changes that have taken place in the family from the middle of the twentieth century to the present day", marks: 20, contextNote: "Five changes at 4 marks, graded 4:2:0. The scheme gives headings only, so the 2 is nearly automatic and the other 2 comes entirely from tracking the change across the period — each point needs a then and a now. An accurate description of the family today, with no movement in it, scores 10.", openList: true, group: {"claimMax":5,"perOption":4,"options":["family structure","location","parental roles of patriarchal egalitarian","family size","standard of living","marriage","family income","family relationships","state supports","communication","childcare","gender equality","influence of religion"]} },
+    { id: "changes", kind: "criterion", verbatim: "changes that have taken place in the family", marks: 20, contextNote: "Discuss five changes over the period named in the question. Each point is graded 4:2:0. The scheme lists headings but does not define exact descriptions for each grade. Published guidance: family structure; location; parental roles of patriarchal egalitarian; family size; standard of living; marriage; family income; family relationships; state supports; communication; childcare; gender equality; influence of religion; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -1747,12 +2242,12 @@ export const CARDS: SecCard[] = [
     id: "he-2023-hl-sb-q5b", topicId: "home-economics-2-0", conceptId: "sociological-terms",
     section: "B", questionRef: "2023 HL Section B Q5(b)",
     stem: "The family is an integral social institution in society.",
-    questionText: "Explain the following sociological terms: universality of the family; kinship; monogamy.",
-    tariffModel: {"kind":"fixed","notation":"3 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Explain the following sociological terms: • universality of the family • kinship • monogamy.",
+    tariffModel: {"kind":"fixed","notation":"3 required terms × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Universality of the family", marks: 5, contextNote: "One term, 5 marks, graded 5:3:0. All three are compulsory, so this is three short definitions rather than a choice. The 5 here needs both halves the scheme gives: the family exists in virtually every known society AND the form it takes varies between them.", openList: true, group: {"claimMax":1,"perOption":5,"options":["universality of the family family is present in virtually all known societies; form the family takes may differ from one society to another; etc."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Kinship", marks: 5, contextNote: "One term, 5 marks. The scheme accepts a cluster of near-synonyms — family ties, blood relationships, common ancestry — so give two of them rather than one bare word.", openList: true, group: {"claimMax":1,"perOption":5,"options":["kinship relationships; family ties; family connections; blood relationships; common ancestry; common lineage; etc."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Monogamy", marks: 5, contextNote: "One term, 5 marks for a single-clause definition: a relationship with only one partner at a time. The phrase \"at a time\" is doing real work; leaving it out defines something else.", openList: true, group: {"claimMax":1,"perOption":5,"options":["monogamy relationship with only one partner at a time; etc."]} },
+    { id: "term-1", kind: "criterion", verbatim: "Universality of the family", marks: 5, contextNote: "Explain this required term, graded 5:3:0. Published guidance: family is present in virtually all known societies; form the family takes may differ from one society to another; etc.", permittedMarks: [0,3,5] },
+    { id: "term-2", kind: "criterion", verbatim: "Kinship", marks: 5, contextNote: "Explain this required term, graded 5:3:0. Published guidance: relationships; family ties; family connections; blood relationships; common ancestry; common lineage; etc.", permittedMarks: [0,3,5] },
+    { id: "term-3", kind: "criterion", verbatim: "Monogamy", marks: 5, contextNote: "Explain this required term, graded 5:3:0. Published guidance: relationship with only one partner at a time; etc.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -1764,9 +2259,342 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 HL Section B Q5(c)",
     stem: "The family is an integral social institution in society.",
     questionText: "Describe one legal option available in Ireland to couples when their marriage has broken down.",
-    tariffModel: {"kind":"bestNofParts","notation":"name 1 point @ 3 marks (graded 3:2:0); description 3 points @ 4 marks (graded 4:2:0)","answer":1,"ofParts":4,"perPart":15}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Name 3 (3:2:0); description 3 × 4 (4:2:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe one legal option available in Ireland to couples when their marriage has broken down", marks: 15, contextNote: "ONE option only, worth 15 marks: 3 for naming it and 3 points at 4 for describing it. Describing two options wastes half the answer. Each option carries its own conditions and they are not interchangeable — the two-of-the-previous-three-years living apart belongs to divorce, the one-year and three-year grounds to judicial separation. Those time periods are marking content; a description without them will not reach 4 a point.", openList: true, group: {"claimMax":1,"perOption":15,"options":["deed of separation arrangement agreed by couple in mediation; drawn up by solicitor; agreement to live apart; arrangements regarding responsibility of the care of dependent children; amount of maintenance to be paid for dependent spouse and children; arrangements regarding ownership and occupation of family home; rights of spouses to inherit from each other; etc.","judicial separation granted by the court if couple cannot reach a separation agreement or if only one spouse wishes to separate; grounds for judicial separation include adultery; desertion; unreasonable behaviour; no normal marital relationship for a least one year; spouses living apart for one year before application (consent of both spouses) or living apart for three years (where one spouse does not give consent); court make additional orders in relation to child custody and access; maintenance; property allocation; extinguishing of succession rights; etc.","legal nullity partners are free to marry; neither party can claim maintenance; neither party has right to share in estate of other party; does not affect the rights of dependent children; etc.","divorce spouse wishing to end an existing legal marriage can make an application to the court for a decree of divorce; spouses have lived apart for at least two of the previous three years; no prospect of reconciliation; court is satisfied that adequate provision has been made for spouses and dependent children; additional orders to cover child custody and accesses; property; maintenance; gives the right to remarry; etc."]} },
+    { id: "name", kind: "criterion", verbatim: "Deed of separation", marks: 3, contextNote: "Name the legal option you described, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "description", kind: "criterion", verbatim: "description", marks: 12, contextNote: "Describe three distinct points about this option, each graded 4:2:0. Published 2023 examination guidance: arrangement agreed by couple in mediation; drawn up by solicitor; agreement to live apart; arrangements regarding responsibility of the care of dependent children; amount of maintenance to be paid for dependent spouse and children; arrangements regarding ownership and occupation of family home; rights of spouses to inherit from each other; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "deed-of-separation",
+                "label": "Deed of separation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Deed of separation",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name the legal option you described, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Describe three distinct points about this option, each graded 4:2:0. Published 2023 examination guidance: arrangement agreed by couple in mediation; drawn up by solicitor; agreement to live apart; arrangements regarding responsibility of the care of dependent children; amount of maintenance to be paid for dependent spouse and children; arrangements regarding ownership and occupation of family home; rights of spouses to inherit from each other; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "judicial-separation",
+                "label": "Judicial separation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Judicial separation",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name the legal option you described, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Describe three distinct points about this option, each graded 4:2:0. Published 2023 examination guidance: granted by the court if couple cannot reach a separation agreement or if only one spouse wishes to separate; grounds for judicial separation include adultery; desertion; unreasonable behaviour; no normal marital relationship for a least one year; spouses living apart for one year before application (consent of both spouses) or living apart for three years (where one spouse does not give consent); court make additional orders in relation to child custody and access; maintenance; property allocation; extinguishing of succession rights; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "legal-nullity",
+                "label": "Legal nullity",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Legal nullity",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name the legal option you described, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Describe three distinct points about this option, each graded 4:2:0. Published 2023 examination guidance: partners are free to marry; neither party can claim maintenance; neither party has right to share in estate of other party; does not affect the rights of dependent children; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "divorce",
+                "label": "Divorce",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Divorce",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name the legal option you described, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Describe three distinct points about this option, each graded 4:2:0. Published 2023 examination guidance: spouse wishing to end an existing legal marriage can make an application to the court for a decree of divorce; spouses have lived apart for at least two of the previous three years; no prospect of reconciliation; court is satisfied that adequate provision has been made for spouses and dependent children; additional orders to cover child custody and accesses; property; maintenance; gives the right to remarry; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-option",
+                "label": "Another legal option",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name an option valid for this 2023 examination question, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Describe three accurate points about the same option, each graded 4:2:0. The scheme prints four example options; it gives no model for another option.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {

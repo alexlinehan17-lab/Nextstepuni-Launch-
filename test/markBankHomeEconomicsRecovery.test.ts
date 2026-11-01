@@ -18,6 +18,61 @@ const get = (id: string) => {
 };
 
 describe('2023 Higher Home Economics recovered tasks', () => {
+  it('retains the fish tariff, complete factor guidance and compulsory management headings', () => {
+    const fish = get('he-2023-hl-sb-q2a');
+    expect(fish.stem).toContain('recommend consuming 2-3 portions');
+    expect(fish.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(5).fill([0, 1, 2, 3, 4]));
+    expect(fish.rows[0].contextNote).toContain('1 mark for the nutrient, 1 for its type and 2 for function');
+    expect(get('he-2023-hl-sb-q2c').rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 3, 6], [0, 3, 6]]);
+    expect(get('he-2023-hl-sb-q3a').rows[0].contextNote).toContain('influencers; etc.');
+    const management = get('he-2023-hl-sb-q4a');
+    expect(management.rows.map(r => r.verbatim)).toEqual([
+      'Stages in the life cycle of the family', 'Employment patterns', 'Values', 'one other',
+    ]);
+    expect(management.rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 3, 5]));
+    expect(management.rows[0].contextNote).toContain('decreased agility');
+    expect(management.rows[1].contextNote).toContain('one parent working abroad');
+    expect(management.rows[3].contextNote).toContain('Do not score a point already used');
+  });
+
+  it('marks retail points individually with the two-per-technique instruction and retains all three family terms', () => {
+    const retail = get('he-2023-hl-sb-q4b');
+    expect(retail.rows).toHaveLength(1);
+    expect(retail.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(4).fill([0, 3, 5]));
+    expect(retail.rows[0].contextNote).toContain('Count no more than two points under the same technique');
+    expect(retail.rows[0].contextNote).toContain('select its best two');
+    expect(retail.rows[0].contextNote?.split('\n\n')).toHaveLength(8);
+    expect(retail.rows[0].contextNote).toContain('loyalty cards money off coupons');
+    const terms = get('he-2023-hl-sb-q5b');
+    expect(terms.questionText).toContain('• universality of the family • kinship • monogamy.');
+    expect(terms.rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 3, 5]));
+    expect(terms.rows[2].contextNote).toContain('only one partner at a time');
+  });
+
+  it('keeps the agent and legal-option choices as single cards with independently scored name and detail', () => {
+    const agent = get('he-2023-hl-sb-q3c');
+    expect(agent.answerVariants).toHaveLength(11);
+    expect(agent.answerVariants?.at(-2)?.rows[1].contextNote).toContain('crushed during handling');
+    for (const variant of agent.answerVariants ?? []) {
+      expect(variant.rows.map(r => r.marks)).toEqual([4, 8]);
+      expect(variant.rows[1].parts?.map(p => p.permittedMarks)).toEqual([[0, 4], [0, 4]]);
+      expect(tariffReconciles({ ...agent, rows: variant.rows })).toBe(true);
+    }
+    const legal = get('he-2023-hl-sb-q5c');
+    expect(legal.answerVariants?.map(v => v.id)).toEqual(['deed-of-separation', 'judicial-separation', 'legal-nullity', 'divorce', 'another-option']);
+    for (const variant of legal.answerVariants ?? []) {
+      expect(variant.rows[0].permittedMarks).toEqual([0, 2, 3]);
+      expect(variant.rows[1].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 4]));
+      expect(tariffReconciles({ ...legal, rows: variant.rows })).toBe(true);
+    }
+    expect(legal.answerVariants?.[3].rows[1].contextNote).toContain('at least two of the previous three years');
+    for (let q = 2; q <= 5; q++) {
+      const cards = ['a', 'b', 'c'].map(part => get(`he-2023-hl-sb-q${q}${part}`));
+      expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(50);
+      for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
+    }
+  });
+
   it('keeps the complete iron chart on the question side and all seven scheme sources in the reveal', () => {
     const card = get('he-2023-hl-sb-q1a');
     expect(card.questionFigure?.includesPrompt).toBe(false);
