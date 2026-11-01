@@ -1,4 +1,574 @@
 {
+ "physics-2016-hl-q1-stick": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q1-stick.png",
+  "md5": "03d6365097a05abe040528e8260546d6",
+  "alt": "Metre stick with all upward and downward forces, scale positions and labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q1 — Finding the centre of gravity",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   157,
+   265,
+   470,
+   421
+  ]
+ },
+ "physics-2016-hl-q10-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q10-circuit.png",
+  "md5": "97fe5d6817ed0684415d27e6271aab01",
+  "alt": "Full 120 V circuit with 200-ohm coil and 200/50-ohm parallel resistors.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q10(i) — Average induced emf",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   98,
+   203,
+   465,
+   434
+  ]
+ },
+ "physics-2016-hl-q10-parallel-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q10-parallel-solution.png",
+  "md5": "a4c572dc0b26fb9267be696ccd8cf206",
+  "alt": "Official current-splitting criterion and parallel-resistance derivation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q10 — Deriving parallel resistance",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   53,
+   208,
+   545,
+   295
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q11-passage.png",
+  "md5": "d0fa454b6bdfcc869e1ce4ffd9a65e13",
+  "alt": "Complete light-theories passage, attribution, Hamilton stamp and three optical models.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q11(a)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   53,
+   82,
+   568,
+   471
+  ]
+ },
+ "physics-2016-hl-q12a-decay": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12a-decay.png",
+  "md5": "44b389b9d8d96032cf039534d44bfb02",
+  "alt": "Stationary polonium-212 decay into an alpha-particle and daughter nucleus.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(a) — Identifying the daughter nucleus",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   117,
+   174,
+   478,
+   267
+  ]
+ },
+ "physics-2016-hl-q12b-oil": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12b-oil.png",
+  "md5": "6ebe26e77030fb48111b7f3bdd6b4fcb",
+  "alt": "Oil drop between two horizontal parallel plates.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(b) — Charge of the oil drop",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   194,
+   494,
+   400,
+   579
+  ]
+ },
+ "physics-2016-hl-q12c-frequency-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12c-frequency-question.png",
+  "md5": "77e0cedf00856e9825e9374318696860",
+  "alt": "Buzzer, observer and vertical-circle diagram with all data, frequency ask and constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(c)(i) — Maximum and minimum observed frequencies",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   92,
+   550,
+   360
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    321,
+    550,
+    339
+   ]
+  ]
+ },
+ "physics-2016-hl-q12c-frequency-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12c-frequency-solution.png",
+  "md5": "f2df2335808ff1f607544f47b34a51c7",
+  "alt": "Official Doppler formula/result rows; denominators are transposed in the source and corrected explicitly in the card guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(c)(i) — Maximum and minimum observed frequencies",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   138,
+   286,
+   545,
+   355
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q12c-tension-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12c-tension-question.png",
+  "md5": "f6d9f4d2ab7c3309c7f17a7b259513dc",
+  "alt": "Buzzer and vertical circle with all data, tension ask and constants.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(c)(ii) — Maximum and minimum tensions",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   92,
+   550,
+   360
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    303,
+    550,
+    320
+   ],
+   [
+    510,
+    322,
+    550,
+    339
+   ]
+  ]
+ },
+ "physics-2016-hl-q12c-tension-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12c-tension-solution.png",
+  "md5": "99c1471e75d3d54e008b104a7afed1ba",
+  "alt": "Official centripetal-force and weight terms with both tension results.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(c)(ii) — Maximum and minimum tensions",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   138,
+   369,
+   545,
+   432
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q12d-annihilation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q12d-annihilation-solution.png",
+  "md5": "04ee0cad2e82017e6dcf3142516ea954",
+  "alt": "Both official electron–positron annihilation equations and extra-species deduction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q12(d)(i) — Electron–positron annihilation",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   110,
+   201,
+   545,
+   237
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q2-data.png",
+  "md5": "e9aa5e802499c93d516a54c04b87e882",
+  "alt": "All eight measured frequency and string-length pairs.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q2 — Frequency–length graph",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   120,
+   176,
+   472,
+   233
+  ]
+ },
+ "physics-2016-hl-q2-density-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q2-density-question.png",
+  "md5": "279706341b9df648a1222fbef988736b",
+  "alt": "Full string context, eight data pairs, graph request and mass-per-unit-length question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q2(ii) — Mass per unit length",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   53,
+   55,
+   548,
+   351
+  ],
+  "maskedFurniture": [
+   [
+    53,
+    102,
+    550,
+    137
+   ],
+   [
+    53,
+    269,
+    550,
+    285
+   ],
+   [
+    83,
+    310,
+    550,
+    330
+   ],
+   [
+    500,
+    332,
+    550,
+    350
+   ]
+  ]
+ },
+ "physics-2016-hl-q2-density-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q2-density-solution.png",
+  "md5": "7d35b07026f62eb9c6404c452c929f0d",
+  "alt": "Official stretched-string equation, graph slope criterion and linear-density result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q2(ii) — Mass per unit length",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   109,
+   632,
+   544,
+   712
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q3-data.png",
+  "md5": "89d610819855610d837a57fc67adbd19",
+  "alt": "First- and second-order diffraction angles on both sides.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q3 — Measuring diffraction angles",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   124,
+   568,
+   516,
+   630
+  ]
+ },
+ "physics-2016-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q4-data.png",
+  "md5": "144aa96bbf398d430da8e3f8554c2207",
+  "alt": "Wire resistance, length and diameter with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q4 — Checking uniform diameter",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   82,
+   125,
+   299,
+   190
+  ]
+ },
+ "physics-2016-hl-q5c-rays": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q5c-rays.png",
+  "md5": "888960e69537c393cde1424db91d1229",
+  "alt": "Light ray at the glass-air interface with 42-degree angle and normal.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q5(c)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   451,
+   330,
+   548,
+   388
+  ]
+ },
+ "physics-2016-hl-q5e-ear": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q5e-ear.png",
+  "md5": "66b5a89a6ad9bd9b1e00cdfaa4d7326c",
+  "alt": "Ear canal and eardrum diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q5(e)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   446,
+   418,
+   555,
+   514
+  ]
+ },
+ "physics-2016-hl-q6-height-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q6-height-solution.png",
+  "md5": "1a3d7110d6a9de965e17a6169d501989",
+  "alt": "Official period, gravity and height working.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q6 — Height for a longer period",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   53,
+   650,
+   545,
+   757
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q6-pendulum": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q6-pendulum.png",
+  "md5": "970aa234315d5ec06e190e2cd6c7dcb9",
+  "alt": "Pendulum moving on its curved path.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q6 — Forces at maximum displacement",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   519,
+   136,
+   586,
+   254
+  ]
+ },
+ "physics-2016-hl-q6-shm-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q6-shm-question.png",
+  "md5": "65b6ac3404f8630cf4e07abd8779cb6d",
+  "alt": "Spring context and underlined simple harmonic motion term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q6 — Simple harmonic motion",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   53,
+   54,
+   548,
+   103
+  ]
+ },
+ "physics-2016-hl-q6-shm-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q6-shm-solution.png",
+  "md5": "6659839bfabda1e161b8bbb1e7c5c985",
+  "alt": "Official Hooke-law derivation showing acceleration proportional to displacement.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q6 — Showing simple harmonic motion",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   53,
+   153,
+   350,
+   206
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q8-diode": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q8-diode.png",
+  "md5": "afd4230f282ceae048285abf79d8cabb",
+  "alt": "Battery and forward-biased diode circuit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q8 — Protecting a diode",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   53,
+   242,
+   136,
+   311
+  ]
+ },
+ "physics-2016-hl-q9-decay-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q9-decay-solution.png",
+  "md5": "d603ff7c6422bc780621998c34ee245c",
+  "alt": "Official radium-225 beta-decay equation and marking guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q9 — Radium-225 decay",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   53,
+   537,
+   545,
+   571
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q9-definitions-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q9-definitions-question.png",
+  "md5": "7c79cd49d9e63fdd5dcb2da88f36fdb0",
+  "alt": "Full Meitner and Curie context with fission and radioactivity underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q9 — Fission and radioactivity",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   53,
+   429,
+   548,
+   518
+  ]
+ },
+ "physics-2016-hl-q9-nuclei-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q9-nuclei-solution.png",
+  "md5": "f38f688d488d2a9aea49a8240dceb1f7",
+  "alt": "Official half-life, decay constant, activity and nuclei calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q9 — Number of radium-225 nuclei",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   53,
+   620,
+   545,
+   705
+  ],
+  "solution": true
+ },
+ "physics-2016-hl-q9-reaction": {
+  "src": "/exam-figures/physics/markbank/physics-2016-hl-q9-reaction.png",
+  "md5": "d6ae29dded7d3bbd31c78edbe052c89a",
+  "alt": "Complete uranium fission equation including isotope numbers and neutrons.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q9 — A safe sustained chain reaction",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   227,
+   542,
+   371,
+   565
+  ]
+ },
  "physics-2017-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2017-hl-q1-data.png",
   "md5": "4a35d77f4dc1206411ee8ac774ed135e",

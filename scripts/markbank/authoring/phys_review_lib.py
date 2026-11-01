@@ -982,7 +982,11 @@ def fraction_text(page, clip, glyphs=None):
         # fraction under the root may start at the same x.
         # An overbar sits at the TOP of the root sign (or just above it); a bar
         # level with the sign's middle is a fraction under a tall radical.
-        cand = [b for b in bars if abs(it['x1'] - b.x0) <= 2 and it['y0'] - 8 <= b.y0 <= it['y0'] + 2]
+        # Cambria's slanted radical has a bounding box extending about four
+        # points into its radicand (2016 Higher, Q2/Q6). Its overbar therefore
+        # starts inside that box, rather than exactly at its right edge.
+        overlap = 4 if 'Cambria' in it['span'].get('font', '') else 2
+        cand = [b for b in bars if abs(it['x1'] - b.x0) <= overlap and it['y0'] - 8 <= b.y0 <= it['y0'] + 2]
         if cand:
             roots.append(min(cand, key=lambda b: b.y0))
     fbars = sorted([b for b in bars if b not in roots], key=lambda b: (b.width, b.x0))
@@ -1034,6 +1038,14 @@ def fraction_text(page, clip, glyphs=None):
         if not under:
             continue
         inner = _items_text(under)
+        # A slanted fraction can place numerator and denominator in one PDF
+        # span and its slash in another. Read those glyphs by x, rather than
+        # putting the slash after the entire numerator/denominator span.
+        if all(it.get('span') is not None for it in under) and any(
+                it['text'].strip() == '/' for it in under):
+            inner = _norm(''.join(c for _, c in sorted(
+                (x, c) for it in under for x, c in it['span'].get('glyphs', [])
+                if c.strip())))
         token = inner if (len(inner.strip()) == 1 or _ATOM.match(inner.strip())) else f'({inner})'
         live = [it for it in live if all(it is not u for u in under)]
         live.append({'x0': min(u['x0'] for u in under), 'x1': max(u['x1'] for u in under),
@@ -1116,4 +1128,7 @@ def equation_text(page, clip, glyphs=None):
     # ...and a stack printed AFTER its symbol ("He⁴₂", where a trailing space
     # in the span pushed it right) is closed up to that symbol.
     out = re.sub(r'([A-Za-z\u0370-\u03ff]) +(?=[\u00b2\u00b3\u00b9\u2070-\u209f])', r'\1', out)
+    # A separately positioned minus sign can precede the mass-number stack
+    # in x order. Keep the upper mass number before the complete lower charge.
+    out = re.sub(r'([₊₋])([⁰¹²³⁴⁵⁶⁷⁸⁹]+)([₀₁₂₃₄₅₆₇₈₉]+)', r'\2\1\3', out)
     return _norm(out)

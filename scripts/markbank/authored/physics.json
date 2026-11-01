@@ -77420,5 +77420,3595 @@
   "notes": "Reviewed 2026-10-31 against the paper and scheme; ledger phys_review_2017_ol.py.",
   "year": 2017,
   "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-hl-q1-centre",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "centre",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Finding the centre of gravity",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Explain how the centre of gravity was found",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "balance (horizontally) on a pivot // suspend (horizontally) from a thread",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-weight",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "weight",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Measuring the stick’s weight",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Explain how the weight of the metre stick was found",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "newton balance / weighing scales // mass balance & multiply by g",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "forces",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Measuring upward and downward forces",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Explain how the upward forces and downward forces were determined.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "upward: newton balances // pulleys & (known) weights",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "downward: (known) weights",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-off-centre",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "off-centre",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Why the centre is not at 50 cm",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Give one possible reason why the centre of gravity is not at the 50.0 cm mark.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "stick worn at one side / stick had a hole in one side / stick not uniform",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-net-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "net-force",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Net force",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Use the data given to calculate the net force acting on the metre stick",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "upward force = 3.9 + 4.1 = 8.0 (N)",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "downward force = 2 + 3 + 2 + 1.1 = 8.1 (N)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "net vertical force = 0.1 N // upward ≈ downward",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-moments",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moments",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Sum of moments",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary.",
+  "questionText": "Use the data given to calculate the sum of the moments about the 40 cm mark of the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "moment = force × displacement",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "clockwise moments = (2 × 0.52) + (1.1 × 0.102) + (3.9 × 0.04) = 1.3082 (N m)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "anti-clockwise moments = (2 × 0.24) + (4.1 × 0.20) = 1.3 (N m)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "sum of moments ≈ 0.01 N m // clockwise ≈ anti-clockwise",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark for use of an incorrect axis. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q1-verify",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2016 HL Q1 — Verifying equilibrium",
+  "stem": "In an experiment to verify the laws of equilibrium, the centre of gravity and the weight of a metre stick were found. The centre of gravity of the stick was at the 50.2 cm mark and its weight was 1.1 N. A number of forces were then applied to the metre stick, as shown in the diagram. The metre stick was horizontal and stationary. Use the data given to calculate the net force acting on the metre stick Use the data given to calculate the sum of the moments about the 40 cm mark of the metre stick.",
+  "questionText": "Explain how your calculations verify the laws of equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "net vertical force ≈ 0 (N)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "sum of moments about a point ≈ 0 (N m)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme awards zero for answers inconsistent with the calculations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q1-stick"
+ },
+ {
+  "id": "phys-2016-hl-q2-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2016 HL Q2 — Stretched-string apparatus",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "stretched string / two bridges / tuning fork / signal generator / newton balance / pulley & (known) weights",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "stretched string",
+      "two bridges",
+      "tuning fork / signal generator",
+      "newton balance / pulley & (known) weights"
+     ]
+    }
+   }
+  ],
+  "notes": "One apparatus drawing with any three of four printed equipment entries; no combinations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q2-measured-length",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "measured-length",
+  "section": "A",
+  "questionRef": "2016 HL Q2 — Showing the measured length",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N. Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "questionText": "Indicate on your diagram the measured length of the string.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "length shown between two bridges",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q2-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2016 HL Q2 — Frequency–length graph",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N.",
+  "questionText": "Draw a suitable graph to illustrate the relationship between f and l.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "values of ¹/f or ¹/ₗ",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "axes labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for each omitted or incorrect point."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line with good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q2-data"
+ },
+ {
+  "id": "phys-2016-hl-q2-relationship",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "relationship",
+  "section": "A",
+  "questionRef": "2016 HL Q2 — Verifying the frequency–length relationship",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N. Draw a suitable graph to illustrate the relationship between f and l.",
+  "questionText": "State the relationship and explain how the graph verifies it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f ∝ ¹/ₗ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "straight line through origin",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q2-data"
+ },
+ {
+  "id": "phys-2016-hl-q2-i-length",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "length",
+  "section": "A",
+  "questionRef": "2016 HL Q2(i) — Length at 192 Hz",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N. Draw a suitable graph to illustrate the relationship between f and l.",
+  "questionText": "Use your graph to calculate the length of the string at a frequency of 192 Hz",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "value read from graph (¹/ₗ ≈ 1.52 m⁻¹)",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "value inverted (l ≈ 0.66 m)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q2-data"
+ },
+ {
+  "id": "phys-2016-hl-q2-ii-density",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "density",
+  "section": "A",
+  "questionRef": "2016 HL Q2(ii) — Mass per unit length",
+  "stem": "A student investigated the variation of f, the fundamental frequency of a stretched string, with its length l. The string was kept at a constant tension of 8.5 N. Draw a suitable graph to illustrate the relationship between f and l.",
+  "questionText": "Use your graph to calculate the mass per unit length of the string.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f= 1/(2l) √(T/μ)",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "value for slope from graph",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "μ ≈ 1.3 × 10⁻⁴ kg m⁻¹",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q2-density-solution",
+  "questionFigureKey": "physics-2016-hl-q2-density-question"
+ },
+ {
+  "id": "phys-2016-hl-q3-method",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "method",
+  "section": "A",
+  "questionRef": "2016 HL Q3 — Measuring diffraction angles",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, the angles θ between a central bright image (n = 0) and the first and second order images to the left and right were measured. A source of monochromatic light and a diffraction grating of 500 lines per mm were used.",
+  "questionText": "Describe, with the aid of a labelled diagram, how the data were obtained.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "laser / grating & screen",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "laser",
+      "grating & screen"
+     ]
+    },
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "laser"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "measure D from grating to screen / measure x from central image to other images",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "measure D from grating to screen",
+      "measure x from central image to other images"
+     ]
+    },
+    "contextNote": "Both measurements are required for this method; each earns 3 marks.",
+    "route": "laser"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "tanθ = x/D",
+    "marks": 3,
+    "route": "laser"
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "vapour lamp / grating & spectrometer",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "vapour lamp",
+      "grating & spectrometer"
+     ]
+    },
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "spectrometer"
+   },
+   {
+    "id": "r5",
+    "kind": "anyN",
+    "verbatim": "measure angle on left, θL / measure angle on right, θR",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "measure angle on left, θL",
+      "measure angle on right, θR"
+     ]
+    },
+    "contextNote": "Both measurements are required for this method; each earns 3 marks.",
+    "route": "spectrometer"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "½(θL ± θR)",
+    "marks": 3,
+    "route": "spectrometer"
+   }
+  ],
+  "notes": "The apparatus must be arranged correctly. Each complete laser or spectrometer method is worth 15 marks. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q3-data"
+ },
+ {
+  "id": "phys-2016-hl-q3-i-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wavelength",
+  "section": "A",
+  "questionRef": "2016 HL Q3(i) — Wavelength of the light",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, the angles θ between a central bright image (n = 0) and the first and second order images to the left and right were measured. A source of monochromatic light and a diffraction grating of 500 lines per mm were used.",
+  "questionText": "Use the data to calculate the wavelength of the light",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "d = 2 × 10⁻⁶ (m)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "nλ = dsinθ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "λ = 5.9 × 10⁻⁷ m",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "repeat and average appropriately",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q3-data"
+ },
+ {
+  "id": "phys-2016-hl-q3-ii-image-count",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "image-count",
+  "section": "A",
+  "questionRef": "2016 HL Q3(ii) — Maximum number of images",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, the angles θ between a central bright image (n = 0) and the first and second order images to the left and right were measured. A source of monochromatic light and a diffraction grating of 500 lines per mm were used.",
+  "questionText": "Use the data to calculate the maximum number of images that could be observed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "θₘₐₓ = 90°",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "nₘₐₓ = 3",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "3 + 3 + 1 = 7",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q3-data"
+ },
+ {
+  "id": "phys-2016-hl-q3-i-shorter-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "shorter-wavelength",
+  "section": "A",
+  "questionRef": "2016 HL Q3(i) — Image positions",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, the angles θ between a central bright image (n = 0) and the first and second order images to the left and right were measured. A source of monochromatic light and a diffraction grating of 500 lines per mm were used.",
+  "questionText": "Explain what would happen to the positions of the images if the wavelength of the light was decreased",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "they would be closer together",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q3-data"
+ },
+ {
+  "id": "phys-2016-hl-q3-ii-fewer-lines",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fewer-lines",
+  "section": "A",
+  "questionRef": "2016 HL Q3(ii) — Image positions",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, the angles θ between a central bright image (n = 0) and the first and second order images to the left and right were measured. A source of monochromatic light and a diffraction grating of 500 lines per mm were used.",
+  "questionText": "Explain what would happen to the positions of the images if the diffraction grating was replaced with a diffraction grating of 300 lines per mm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "they would be closer together",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q3-data"
+ },
+ {
+  "id": "phys-2016-hl-q4-measurements",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "measurements",
+  "section": "A",
+  "questionRef": "2016 HL Q4 — Measuring the wire",
+  "stem": "In an experiment to measure the resistivity of nichrome, a student measured the length, resistance and diameter of a sample of nichrome wire of uniform diameter.",
+  "questionText": "Describe how the data were collected.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistance: ohmmeter/multimeter",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "length: metre stick",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "diameter: micrometer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q4-data"
+ },
+ {
+  "id": "phys-2016-hl-q4-diameter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diameter",
+  "section": "A",
+  "questionRef": "2016 HL Q4 — Checking uniform diameter",
+  "stem": "In an experiment to measure the resistivity of nichrome, a student measured the length, resistance and diameter of a sample of nichrome wire of uniform diameter.",
+  "questionText": "How did the student ensure that the wire was of uniform diameter?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure diameter/thickness at different positions // no kinks",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q4-data"
+ },
+ {
+  "id": "phys-2016-hl-q4-resistivity",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity",
+  "section": "A",
+  "questionRef": "2016 HL Q4 — Resistivity of nichrome",
+  "stem": "In an experiment to measure the resistivity of nichrome, a student measured the length, resistance and diameter of a sample of nichrome wire of uniform diameter.",
+  "questionText": "Use the data to calculate the resistivity of nichrome.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = πr²",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "r = ½d",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ρ = RA/ₗ",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "ρ = 1.06 × 10⁻⁶ Ω m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q4-data"
+ },
+ {
+  "id": "phys-2016-hl-q4-temperature-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "temperature-apparatus",
+  "section": "A",
+  "questionRef": "2016 HL Q4 — Resistance–temperature apparatus",
+  "stem": "In an experiment to measure the resistivity of nichrome, a student measured the length, resistance and diameter of a sample of nichrome wire of uniform diameter. The student then used a piece of this nichrome wire in an experiment to investigate the variation of the resistance of the piece of wire with its temperature.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermometer and source of heat",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "wire in container of liquid",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ohmmeter/multimeter connected across the wire",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q4-temperature-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "temperature-graph",
+  "section": "A",
+  "questionRef": "2016 HL Q4 — Resistance–temperature graph",
+  "stem": "In an experiment to measure the resistivity of nichrome, a student measured the length, resistance and diameter of a sample of nichrome wire of uniform diameter. The student then used a piece of this nichrome wire in an experiment to investigate the variation of the resistance of the piece of wire with its temperature. The student drew a graph to show the relationship between resistance and temperature.",
+  "questionText": "Draw a sketch of the graph. Describe this relationship.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "straight line with positive slope and correct intercept",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "linear/proportional relationship // R increases with T",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2016 HL Q5(a)",
+  "questionText": "A cyclist’s average power output when climbing a mountain is 280 W. He completes the climb in 18 minutes. How much energy does he use?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = Pt",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = 302400 J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2016 HL Q5(b)",
+  "questionText": "A sprinter starts from rest and accelerates uniformly for 3 seconds until she reaches a velocity of 10 m s⁻¹. She then runs at a constant velocity for 6 seconds before decelerating. Sketch a velocity-time graph of her motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axes",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct acceleration",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct constant velocity",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct deceleration",
+    "marks": 1,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2016 HL Q5(c)",
+  "questionText": "In your answer book copy the diagram on the right, which shows a light ray incident on the interface between glass and air. In your diagram, sketch (i) the refracted ray, (ii) the weak reflected ray. The critical angle of the glass is 42°.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct refracted ray",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct reflected ray",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q5c-rays"
+ },
+ {
+  "id": "phys-2016-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2016 HL Q5(d)",
+  "questionText": "What is meant by the polarisation of a wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one plane",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "of wave vibration",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2016 HL Q5(e)",
+  "questionText": "The ear canal acts as a cylindrical pipe closed at one end. It is of average length 2.3 cm. The speed of sound in air is 340 m s⁻¹. What is the fundamental frequency of the ear canal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = fλ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "λ = 4l = 0.092 (m)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f = 3696 Hz",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q5e-ear"
+ },
+ {
+  "id": "phys-2016-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2016 HL Q5(f)",
+  "questionText": "State and define the SI unit of capacitance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the farad",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "couloumb per volt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2016 HL Q5(g)",
+  "questionText": "Why is it more economical to transmit electrical energy at high-voltage?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "low current",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "less heat lost",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2016 HL Q5(h)",
+  "questionText": "When does the photoelectric effect occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "when a photon/light/em radiation strikes a surface",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with a suitable frequency/energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2016 HL Q5(i)",
+  "questionText": "The magnets in the Large Hadron Collider (LHC) operate at a temperature of 1.92 K, which is colder than deep space. What is the value of this temperature in degrees Celsius (°C)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "273.15 indicated",
+    "marks": 4,
+    "contextNote": "The scheme deducts one mark if 273 is used."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "– 271.23 (°C)",
+    "marks": 3
+   }
+  ],
+  "notes": "No marks are deducted for omission of units in this answer. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-j-quarks",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j-quarks",
+  "section": "B",
+  "questionRef": "2016 HL Q5(j) — quarks",
+  "questionText": "Experiments in the LHC in 2016 have suggested the existence of pentaquarks, hadrons that consist of five quarks. What terms are used for hadrons that consist of (i) two quarks, (ii) three quarks?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mesons",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "baryons",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q5-j-relay",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "5j-relay",
+  "section": "B",
+  "questionRef": "2016 HL Q5(j) — relay",
+  "questionText": "Draw a labelled diagram of an electromagnetic relay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnet",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "armature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q6-shm",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "shm",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Simple harmonic motion",
+  "stem": "A mass at the end of a spring obeys Hooke’s law. The mass can be made to oscillate vertically, so that it executes simple harmonic motion.",
+  "questionText": "Explain the underlined term.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "acceleration proportional to displacement // equation and notation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "questionFigureKey": "physics-2016-hl-q6-shm-question"
+ },
+ {
+  "id": "phys-2016-hl-q6-hooke",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "hooke",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Hooke’s law",
+  "stem": "A mass at the end of a spring obeys Hooke’s law. The mass can be made to oscillate vertically, so that it executes simple harmonic motion.",
+  "questionText": "State Hooke’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(restoring) force proportional to displacement // equation and notation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q6-shm-proof",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "shm-proof",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Showing simple harmonic motion",
+  "stem": "A mass at the end of a spring obeys Hooke’s law. The mass can be made to oscillate vertically, so that it executes simple harmonic motion.",
+  "questionText": "Use Hooke’s law to show that the mass executes simple harmonic motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = ‒ks // F = ma",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ma = ‒ks",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "a = ‒ k/ₘ(s)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-shm-solution"
+ },
+ {
+  "id": "phys-2016-hl-q6-i-length",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "length",
+  "section": "B",
+  "questionRef": "2016 HL Q6(i) — Pendulum length",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation. (acceleration due to gravity at the Earth’s surface = 9.8 m s⁻²; radius of Earth = 6371 km)",
+  "questionText": "Calculate the length of the pendulum",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T²= 4π²l/g",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "l = 0.99 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-pendulum"
+ },
+ {
+  "id": "phys-2016-hl-q6-ii-angle",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "angle",
+  "section": "B",
+  "questionRef": "2016 HL Q6(ii) — Maximum angular displacement",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation. (acceleration due to gravity at the Earth’s surface = 9.8 m s⁻²; radius of Earth = 6371 km)",
+  "questionText": "Calculate the maximum angular displacement of the pendulum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "s = ¼(0.18) = 0.045 (m)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "θ = s/r",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "θ = 0.045 radians",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-pendulum"
+ },
+ {
+  "id": "phys-2016-hl-q6-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "forces",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Forces at maximum displacement",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation.",
+  "questionText": "Draw a diagram to show the forces acting on the bob when it is at its maximum displacement.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weight down",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tension up at angle to the vertical",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if no label is shown and one for each additional incorrect force. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-pendulum"
+ },
+ {
+  "id": "phys-2016-hl-q6-restoring-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "restoring-force",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Restoring force",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation. (acceleration due to gravity at the Earth’s surface = 9.8 m s⁻²; radius of Earth = 6371 km) Draw a diagram to show the forces acting on the bob when it is at its maximum displacement.",
+  "questionText": "Calculate the restoring force at this point.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = Wsinθ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 0.16 N",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-pendulum"
+ },
+ {
+  "id": "phys-2016-hl-q6-angular-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "angular-velocity",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Greatest angular velocity",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation.",
+  "questionText": "At what point during its movement does the bob have its greatest angular velocity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "when θ = 0 / at the centre of oscillation / at its lowest point",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-pendulum"
+ },
+ {
+  "id": "phys-2016-hl-q6-height",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "height",
+  "section": "B",
+  "questionRef": "2016 HL Q6 — Height for a longer period",
+  "stem": "A simple pendulum also executes simple harmonic motion. The time taken for each oscillation of a certain simple pendulum on the Earth’s surface is 2 s. The weight of its bob is 3.5 N. The bob travels along a curved path. It travels a distance of 18 cm during each oscillation. (acceleration due to gravity at the Earth’s surface = 9.8 m s⁻²; radius of Earth = 6371 km)",
+  "questionText": "The period of a simple pendulum varies with its height above the surface of the Earth. At what height will the period of a simple pendulum be 2% more than the period of a simple pendulum of the same length at the Earth’s surface? Show your work clearly.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T=2π√(l/g)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "g= Gm/d²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "T ∝ d",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "height = 127.4 km",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if the radius 6498.4 km is given instead of height above the surface. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q6-height-solution"
+ },
+ {
+  "id": "phys-2016-hl-q7-heat-temperature",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-temperature",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — Heat and temperature",
+  "stem": "At a lecture in Cork in 1843, James Joule, while describing his work on heat and temperature, suggested the principle of conservation of energy. Later in the nineteenth century, the work of Joule and Lord Kelvin led to the invention of the heat pump.",
+  "questionText": "Distinguish between heat and temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat is a measure of energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "temperature is a measure of hotness",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-energy",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — Conservation of energy",
+  "stem": "At a lecture in Cork in 1843, James Joule, while describing his work on heat and temperature, suggested the principle of conservation of energy. Later in the nineteenth century, the work of Joule and Lord Kelvin led to the invention of the heat pump.",
+  "questionText": "State the principle of conservation of energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy cannot be created or destroyed",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "it can be changed from one form into another",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-waterfall-height",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "waterfall-height",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — Height of Niagara Falls",
+  "stem": "At a lecture in Cork in 1843, James Joule, while describing his work on heat and temperature, suggested the principle of conservation of energy. Later in the nineteenth century, the work of Joule and Lord Kelvin led to the invention of the heat pump. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹; acceleration due to gravity = 9.8 m s⁻²; density of air = 1.23 kg m⁻³; specific heat capacity of air = 1005 J kg⁻¹ K⁻¹)",
+  "questionText": "As part of his presentation, Joule proposed that the temperature of the water at the bottom of the Niagara Falls would be 0.12 °C greater than that at the top, due to gravitational potential energy being converted into heat energy. Calculate the height of the Niagara Falls.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = mgh // E = mcΔθ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mgh = mcΔθ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "h = 51.4 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-temperature-rise",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-rise",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — Actual temperature rise",
+  "stem": "At a lecture in Cork in 1843, James Joule, while describing his work on heat and temperature, suggested the principle of conservation of energy. Later in the nineteenth century, the work of Joule and Lord Kelvin led to the invention of the heat pump. As part of his presentation, Joule proposed that the temperature of the water at the bottom of the Niagara Falls would be 0.12 °C greater than that at the top, due to gravitational potential energy being converted into heat energy. Calculate the height of the Niagara Falls. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹; acceleration due to gravity = 9.8 m s⁻²; density of air = 1.23 kg m⁻³; specific heat capacity of air = 1005 J kg⁻¹ K⁻¹)",
+  "questionText": "In reality the increase in temperature will be much smaller. Suggest a reason for this.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy converted into other forms // energy lost to surroundings",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-pump-operation",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "pump-operation",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — How a heat pump works",
+  "stem": "In a heat pump, a fluid is used to transfer energy from a cold body to a warmer body.",
+  "questionText": "Describe the operation of a heat pump and explain how a heat pump can be used to reduce the temperature of a cold region, for example the interior of a refrigerator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pipe containing a fluid",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "fluid changes state on passing through a valve/compressor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "latent heat associated with fluid changing from liquid to gas",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "loss of temperature/heat in surroundings associated with fluid changing from liquid to gas",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-fluid-properties",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "fluid-properties",
+  "section": "B",
+  "questionRef": "2016 HL Q7 — Suitable fluid properties",
+  "stem": "In a heat pump, a fluid is used to transfer energy from a cold body to a warmer body.",
+  "questionText": "State two desirable physical properties of the fluid used in a heat pump.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high (specific) latent heat of vaporisation",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "low boiling point / volatile / low molecular mass / little intermolecular forces",
+    "marks": 3
+   }
+  ],
+  "notes": "Two required properties at separate three-mark boundaries; alternatives within the second property stay together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-i-evaporated-mass",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "evaporated-mass",
+  "section": "B",
+  "questionRef": "2016 HL Q7(i) — Mass of evaporated fluid",
+  "stem": "In a heat pump, a fluid is used to transfer energy from a cold body to a warmer body. The fluid in the heat pump of a refrigerator has a specific latent heat of vaporisation of 4.6 MJ kg⁻¹. The internal volume of the refrigerator is 0.6 m³. The heat pump removes 12 kJ of energy from the air in the refrigerator as the fluid evaporates. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹; acceleration due to gravity = 9.8 m s⁻²; density of air = 1.23 kg m⁻³; specific heat capacity of air = 1005 J kg⁻¹ K⁻¹)",
+  "questionText": "Calculate the mass of fluid that has evaporated",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = ml",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m = 0.0026 kg",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q7-ii-cooling",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "cooling",
+  "section": "B",
+  "questionRef": "2016 HL Q7(ii) — Fall in air temperature",
+  "stem": "In a heat pump, a fluid is used to transfer energy from a cold body to a warmer body. The fluid in the heat pump of a refrigerator has a specific latent heat of vaporisation of 4.6 MJ kg⁻¹. The internal volume of the refrigerator is 0.6 m³. The heat pump removes 12 kJ of energy from the air in the refrigerator as the fluid evaporates. (specific heat capacity of water = 4200 J kg⁻¹ K⁻¹; acceleration due to gravity = 9.8 m s⁻²; density of air = 1.23 kg m⁻³; specific heat capacity of air = 1005 J kg⁻¹ K⁻¹)",
+  "questionText": "Calculate the fall in temperature of the air in the refrigerator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ρ = m/V",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m = 0.74 (kg)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = mcΔθ",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Δθ = 16.1 °C",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-semiconductor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "semiconductor",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — What a semiconductor is",
+  "questionText": "What is a semiconductor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistivity/conductivity",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "between-materials"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "between that of a conductor and an insulator",
+    "marks": 3,
+    "route": "between-materials"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "resistivity",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "resistivity-temperature"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "decreases",
+    "marks": 3,
+    "contextNote": "For the temperature route, the scheme’s shared words “with temperature” apply to both decreases and increases.",
+    "route": "resistivity-temperature"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "conductivity",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "conductivity-temperature"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "increases with temperature",
+    "marks": 3,
+    "route": "conductivity-temperature"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-conduction",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "conduction",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Intrinsic and extrinsic conduction",
+  "questionText": "Distinguish between intrinsic and extrinsic conduction in a semiconductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "intrinsic: pure semiconductor // equal number of electrons & holes",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "extrinsic: doped semiconductor // unequal number of electrons & holes",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-doping",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "doping",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Producing p-type and n-type semiconductors",
+  "questionText": "Explain how a pure semiconductor can be converted into (i) a p-type and (ii) an n-type semiconductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "doped with a group III element / element with fewer outer electrons / boron",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "doped with a group V element / element with more outer electrons / phosphorus",
+    "marks": 3
+   }
+  ],
+  "notes": "One paired explanation asks for both named semiconductor types; both separately priced three-mark criteria retained. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-depletion-formation",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "depletion-formation",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Formation of a depletion layer",
+  "stem": "A semiconductor p-n junction acts a diode.",
+  "questionText": "Describe, with the aid of a labelled diagram, how a depletion layer is formed at the p-n junction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "p-type material connected to n-type material",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "electrons move from n-type to p-type",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-depletion-definition",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "depletion-definition",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — What a depletion layer is",
+  "stem": "A semiconductor p-n junction acts a diode.",
+  "questionText": "What is a depletion layer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "region with no charge carriers / high resistance",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-regions",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "regions",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Charged and neutral regions",
+  "stem": "A semiconductor p-n junction acts a diode. Describe, with the aid of a labelled diagram, how a depletion layer is formed at the p-n junction.",
+  "questionText": "Indicate on your diagram the sections of the p-n junction that are positively charged, negatively charged and neutral.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "correctly labelled positive region (in n-type side of layer)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "correctly labelled negative region (in p-type side of layer)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "correctly labelled neutral regions (on both sides of depletion layer)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-protection",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "protection",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Protecting a diode",
+  "stem": "A diode will be damaged if too large a current flows through it when it is connected in forward bias.",
+  "questionText": "Explain how a diode might be protected from having too large a current flowing through it when it is connected across a battery, as in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistor",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in series",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q8-diode"
+ },
+ {
+  "id": "phys-2016-hl-q8-reverse",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "reverse",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Reversing the battery",
+  "stem": "A diode will be damaged if too large a current flows through it when it is connected in forward bias.",
+  "questionText": "What would be the effect on the current flowing in this diode if the terminals of the battery were reversed? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "small/zero current",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "diode in reverse bias // larger resistance/depletion layer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q8-diode"
+ },
+ {
+  "id": "phys-2016-hl-q8-rectifier",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "rectifier",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Function of a rectifier",
+  "questionText": "A diode can be used as a rectifier. What is the function of a rectifier?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "converts a.c. to d.c.",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q8-one-way",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "one-way",
+  "section": "B",
+  "questionRef": "2016 HL Q8 — Why a diode works as a rectifier",
+  "stem": "A diode can be used as a rectifier. What is the function of a rectifier?",
+  "questionText": "What property of a diode makes it useful in a rectifier circuit?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "allows current to flow in one direction only",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q9-definitions",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "definitions",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — Fission and radioactivity",
+  "questionText": "Lise Meitner and Marie Curie are the only women scientists to have elements named after them. In the case of Meitner this was for her work on fission and in the case of Curie it was for her discovery of radium and her work on radioactivity. Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the breaking up of a large nucleus into smaller nuclei",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for “atom” instead of “nucleus” and one for omission of nuclear size."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with the release of energy and neutrons",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for omission of neutrons."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "the (spontaneous) disintegration of a nucleus",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for “atom” instead of “nucleus”."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "with the emission of one or more types of radiation",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper requests both underlined definitions as one response; all four three-mark criteria retained. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "questionFigureKey": "physics-2016-hl-q9-definitions-question"
+ },
+ {
+  "id": "phys-2016-hl-q9-fission-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "fission-energy",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — Energy released in fission",
+  "stem": "The following is the nuclear equation of a fission reaction explained by Meitner. (Nuclear masses: U–238 = 3.9529 ×10⁻²⁵ kg; Ba–139 = 2.3066 ×10⁻²⁵ kg; Kr–97 = 1.6099 ×10⁻²⁵ kg)",
+  "questionText": "Calculate the energy released during this reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass before = 3.9696 × 10⁻²⁵ (kg)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mass after = 3.9667 × 10⁻²⁵ (kg)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "loss in mass = 2.9 × 10⁻²⁸ (kg)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "E = mc²",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "E = 2.6 × 10⁻¹¹ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q9-reaction"
+ },
+ {
+  "id": "phys-2016-hl-q9-chain-reaction",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "chain-reaction",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — A safe sustained chain reaction",
+  "stem": "The following is the nuclear equation of a fission reaction explained by Meitner.",
+  "questionText": "How many of the neutrons emitted in a fission reaction must, on average, cause a further fission so that the reaction is self-sustaining and safe? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": ">1: uncontrolled reaction // <1: chain-reaction ending",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q9-reaction"
+ },
+ {
+  "id": "phys-2016-hl-q9-moderator",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "moderator",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — Function of a moderator",
+  "stem": "The following is the nuclear equation of a fission reaction explained by Meitner.",
+  "questionText": "The neutrons emitted are sometimes passed through a moderator. Explain the function of the moderator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "slows down neutrons // allows for more fission",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q9-reaction"
+ },
+ {
+  "id": "phys-2016-hl-q9-radium-decay",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "radium-decay",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — Radium-225 decay",
+  "stem": "Radium–225 is a radioactive isotope that decays into an isotope of actinium.",
+  "questionText": "Write a nuclear equation for the decay of radium–225.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "²²⁵₈₈Ra → ²²⁵₈₉Ac + ⁰₋₁e",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme deducts three marks for each extra species. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q9-decay-solution"
+ },
+ {
+  "id": "phys-2016-hl-q9-nuclei",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "nuclei",
+  "section": "B",
+  "questionRef": "2016 HL Q9 — Number of radium-225 nuclei",
+  "stem": "Radium–225 is a radioactive isotope that decays into an isotope of actinium. Radium–225 has a half-life of 14.9 days.",
+  "questionText": "Calculate the number of radium–225 nuclei in a sample that has an activity of 5600 Bq.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ = (ln 2)/(T½)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "λ = 5.38 × 10⁻⁷ (s⁻¹)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "A = −λN",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "N = 1.04 × 10¹⁰",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q9-nuclei-solution"
+ },
+ {
+  "id": "phys-2016-hl-q10-faraday",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "faraday",
+  "section": "B",
+  "questionRef": "2016 HL Q10 — Faraday’s law",
+  "questionText": "State Faraday’s law of electromagnetic induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emf induced is proportional to",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "the rate of change of magnetic flux",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct equation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer.",
+    "route": "equation"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "notation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer.",
+    "route": "equation"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q10-faraday-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "faraday-experiment",
+  "section": "B",
+  "questionRef": "2016 HL Q10 — Demonstrating Faraday’s law",
+  "stem": "State Faraday’s law of electromagnetic induction.",
+  "questionText": "Describe an experiment to demonstrate this law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: magnet / source of magnetic flux, coil/conductor, meter",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "e.g. move magnet, reading on meter",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "e.g. move magnet faster, larger reading",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q10-parallel-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "parallel-resistance",
+  "section": "B",
+  "questionRef": "2016 HL Q10 — Deriving parallel resistance",
+  "questionText": "Derive an expression for the effective resistance of two resistors in parallel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled diagram showing current splitting",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "IT=I₁+I₂",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "V/(RT) = V/R₁ + V/R₂",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "1/(RT) = 1/R₁ + 1/R₂",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q10-parallel-solution"
+ },
+ {
+  "id": "phys-2016-hl-q10-i-dc-coil",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "dc-coil",
+  "section": "B",
+  "questionRef": "2016 HL Q10(i) — Direct current in the coil",
+  "stem": "A coil consists of 150 turns of wire and has a total resistance of 200 Ω. It is connected in series with a 120 V d.c. power supply and a parallel combination of a 200 Ω and a 50 Ω resistor, as shown.",
+  "questionText": "Calculate the current in the coil",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "RT in parallel part = 40 (Ω)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Rcircuit = 240 (Ω)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "V = IR",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "I = 0.5 A",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q10-circuit"
+ },
+ {
+  "id": "phys-2016-hl-q10-ii-resistor-current",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistor-current",
+  "section": "B",
+  "questionRef": "2016 HL Q10(ii) — Current in the 50 Ω resistor",
+  "stem": "A coil consists of 150 turns of wire and has a total resistance of 200 Ω. It is connected in series with a 120 V d.c. power supply and a parallel combination of a 200 Ω and a 50 Ω resistor, as shown.",
+  "questionText": "Calculate the current in the 50 Ω resistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I₅₀ = ⁴/5(I) = 0.4 A",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q10-circuit"
+ },
+ {
+  "id": "phys-2016-hl-q10-i-induced-emf",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induced-emf",
+  "section": "B",
+  "questionRef": "2016 HL Q10(i) — Average induced emf",
+  "stem": "A coil consists of 150 turns of wire and has a total resistance of 200 Ω. It is connected in series with a 120 V d.c. power supply and a parallel combination of a 200 Ω and a 50 Ω resistor, as shown. The d.c. supply is then replaced with an a.c. supply. It takes 3 ms for the magnetic flux cutting the coil to increase by 4.5 × 10⁻⁴ Wb. The average voltage of the a.c. supply during this time period is 120 V.",
+  "questionText": "Calculate the average emf induced in the coil during the 3 ms time period",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = dΦ/dt",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = 0.15 (V)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "0.15 × 150 = 22.5 V",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q10-circuit"
+ },
+ {
+  "id": "phys-2016-hl-q10-ii-ac-current",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "ac-current",
+  "section": "B",
+  "questionRef": "2016 HL Q10(ii) — Average current with induced emf",
+  "stem": "A coil consists of 150 turns of wire and has a total resistance of 200 Ω. It is connected in series with a 120 V d.c. power supply and a parallel combination of a 200 Ω and a 50 Ω resistor, as shown. The d.c. supply is then replaced with an a.c. supply. It takes 3 ms for the magnetic flux cutting the coil to increase by 4.5 × 10⁻⁴ Wb. The average voltage of the a.c. supply during this time period is 120 V.",
+  "questionText": "Calculate the average current in the coil during this period.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Ecoil = 97.5 (V)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "I = 97.5/240 = 0.406 A",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q10-circuit"
+ },
+ {
+  "id": "phys-2016-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2016 HL Q11(a)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "State the laws of refraction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "incident ray, refracted ray and normal in the same plane",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "n = sin ⁱ/sin r",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2016 HL Q11(b)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "Draw a ray diagram to show the formation of a virtual image in a magnifying glass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "object inside focal point of correctly shaped (converging) lens",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "2 correct rays",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct image at point of intersection of light rays",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2016 HL Q11(c)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "Explain what is meant by the term wavelength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distance",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "between two crests/troughs",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2016 HL Q11(d)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "As part of his investigations into light, Newton dispersed light with a prism. List the colours observed by Newton, in order, starting with the colour that was refracted the least.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct colours (5 of: red, orange, yellow, green, blue, indigo, violet)",
+    "marks": 4,
+    "contextNote": "The scheme accepts five of the listed colours for this four-mark criterion; the requested order is assessed separately."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct order",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for inverted order."
+   }
+  ],
+  "notes": "One ordered spectrum response, not a choice combination or one card per colour. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2016 HL Q11(e)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "In Young’s experiment to demonstrate the wave nature of light he needed two coherent sources of light. How might he have produced these sources?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "double slits",
+    "marks": 7,
+    "contextNote": "The scheme also allows “slits” or “grating”."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2016 HL Q11(f)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "Calculate the energy of a photon of green light, which has a wavelength of 510 nm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = fλ",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = hf",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 3.89 × 10⁻¹⁹ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2016 HL Q11(g)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "Quantum mechanics is used to explain how electrons in atoms produce line emission spectra. Describe how these spectra are produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrons gain energy to move to higher energy level",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "return (to lower energy level) emitting photon/light/em radiation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2016 HL Q11(h)",
+  "stem": "The story of theories of light nicely demonstrates the ways in which theories are used as science evolves. Some ideas are discarded while others are retained as approximations that are appropriate in certain circumstances. Geometrical optics hit its heyday in the nineteenth century when the Irish mathematician William Rowan Hamilton made a mathematical prediction about conical refraction that was later verified by his friend and colleague Humphrey Lloyd. Geometrical optics, though clearly an approximation, is nonetheless a good description for a wave with wavelengths small enough for interference effects to be irrelevant. Ray diagrams can be used to explain refraction and reflection as well as in the fields of photography, medicine and astronomy. Isaac Newton had developed a ‘corpuscular’ theory that was inconsistent with the wave theory of light developed by his rival Robert Hooke and by Christian Huygens. Thomas Young measured light interference, providing a clear verification that light had the properties of a wave. However, later developments in quantum theory demonstrated that Newton was also correct in some sense. Quantum mechanics now tells us that light is indeed composed of individual particles called photons that are responsible for communicating the electromagnetic force. Quantum mechanics gives us our most fundamental description of what light is and how it interacts with matter. (Adapted from Knocking on Heaven’s Door: How Physics and Scientific Thinking Illuminate the Universe and the Modern World, Lisa Randall, Random House, 2011)",
+  "questionText": "State two differences between photons and electrons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "photons have no mass / photons have no charge / photons are light / electromagnetic radiation / photons are packets/bundles of energy",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "photons have no mass",
+      "photons have no charge",
+      "photons are light / electromagnetic radiation",
+      "photons are packets/bundles of energy"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q11-passage"
+ },
+ {
+  "id": "phys-2016-hl-q12-a-momentum",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "momentum",
+  "section": "B",
+  "questionRef": "2016 HL Q12(a) — Conservation of momentum",
+  "questionText": "State the principle of conservation of momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum before = momentum after",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "if there are no external forces",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-a-daughter",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "daughter",
+  "section": "B",
+  "questionRef": "2016 HL Q12(a) — Identifying the daughter nucleus",
+  "stem": "A polonium–212 nucleus decays spontaneously while at rest, with the emission of an alpha-particle.",
+  "questionText": "What daughter nucleus is produced during this alpha-decay?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "lead–208",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12a-decay"
+ },
+ {
+  "id": "phys-2016-hl-q12-a-alpha-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "alpha-velocity",
+  "section": "B",
+  "questionRef": "2016 HL Q12(a) — Velocity of the alpha-particle",
+  "stem": "A polonium–212 nucleus decays spontaneously while at rest, with the emission of an alpha-particle.",
+  "questionText": "The kinetic energy of the emitted alpha-particle is 8.9 MeV. Calculate its velocity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = 1.426 × 10⁻¹² (J)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = ½mv²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v = 2.07 × 10⁷ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12a-decay"
+ },
+ {
+  "id": "phys-2016-hl-q12-a-recoil",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "recoil",
+  "section": "B",
+  "questionRef": "2016 HL Q12(a) — Velocity of the daughter nucleus",
+  "stem": "A polonium–212 nucleus decays spontaneously while at rest, with the emission of an alpha-particle. The kinetic energy of the emitted alpha-particle is 8.9 MeV. Calculate its velocity.",
+  "questionText": "Calculate the velocity of the daughter nucleus after the decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum before = momentum after = 0 // ratio of masses = 208:4",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v = 4.0 × 10⁵ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12a-decay"
+ },
+ {
+  "id": "phys-2016-hl-q12-b-field-strength",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-strength",
+  "section": "B",
+  "questionRef": "2016 HL Q12(b) — Electric field strength",
+  "stem": "In 1909 Robert Millikan determined the charge on an electron by experiment. A tiny drop of oil was placed between two horizontal plates, one directly above the other as shown. The oil drop was ionised by X-rays so that it became negatively charged. An electric field was applied between the plates until the drop no longer moved up or down.",
+  "questionText": "Define electric field strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = F/Q",
+    "marks": 3,
+    "contextNote": "The scheme’s // separates complete alternative methods; do not mix partial answers across methods.",
+    "route": "equation"
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "notation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer.",
+    "route": "equation"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "force per",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "unit charge",
+    "marks": 3,
+    "route": "words"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12b-oil"
+ },
+ {
+  "id": "phys-2016-hl-q12-b-field-pattern",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-pattern",
+  "section": "B",
+  "questionRef": "2016 HL Q12(b) — Field between parallel plates",
+  "stem": "In 1909 Robert Millikan determined the charge on an electron by experiment. A tiny drop of oil was placed between two horizontal plates, one directly above the other as shown. The oil drop was ionised by X-rays so that it became negatively charged. An electric field was applied between the plates until the drop no longer moved up or down.",
+  "questionText": "In your answer book, sketch the electric field pattern between two oppositely charged parallel plates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "parallel field lines",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "from + to –",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12b-oil"
+ },
+ {
+  "id": "phys-2016-hl-q12-b-oil-forces",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "oil-forces",
+  "section": "B",
+  "questionRef": "2016 HL Q12(b) — Forces on the stationary oil drop",
+  "stem": "In 1909 Robert Millikan determined the charge on an electron by experiment. A tiny drop of oil was placed between two horizontal plates, one directly above the other as shown. The oil drop was ionised by X-rays so that it became negatively charged. An electric field was applied between the plates until the drop no longer moved up or down.",
+  "questionText": "Draw a diagram to show the forces acting on the drop of oil when it is stationary.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force of weight down",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "equal force up",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if no label is shown and one for each additional incorrect force. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12b-oil"
+ },
+ {
+  "id": "phys-2016-hl-q12-b-charge",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "charge",
+  "section": "B",
+  "questionRef": "2016 HL Q12(b) — Charge of the oil drop",
+  "stem": "In 1909 Robert Millikan determined the charge on an electron by experiment. A tiny drop of oil was placed between two horizontal plates, one directly above the other as shown. The oil drop was ionised by X-rays so that it became negatively charged. An electric field was applied between the plates until the drop no longer moved up or down. The electric field strength between the plates was 3.6 × 10⁴ V m⁻¹ when the drop of oil was stationary, and the mass of the drop was 2.4 × 10⁻¹⁵ kg. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate the charge of the drop.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = Eq // F = mg",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Eq = mg",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "q = 6.53 × 10⁻¹⁹ C",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12b-oil"
+ },
+ {
+  "id": "phys-2016-hl-q12-b-electrons",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "electrons",
+  "section": "B",
+  "questionRef": "2016 HL Q12(b) — Excess electrons on the oil drop",
+  "stem": "In 1909 Robert Millikan determined the charge on an electron by experiment. A tiny drop of oil was placed between two horizontal plates, one directly above the other as shown. The oil drop was ionised by X-rays so that it became negatively charged. An electric field was applied between the plates until the drop no longer moved up or down. The electric field strength between the plates was 3.6 × 10⁴ V m⁻¹ when the drop of oil was stationary, and the mass of the drop was 2.4 × 10⁻¹⁵ kg. (acceleration due to gravity = 9.8 m s⁻²) Calculate the charge of the drop.",
+  "questionText": "How many excess electrons are on this drop?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme deducts one mark if the answer is not rounded to the nearest integer. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12b-oil"
+ },
+ {
+  "id": "phys-2016-hl-q12-c-doppler",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "doppler",
+  "section": "B",
+  "questionRef": "2016 HL Q12(c) — The Doppler effect",
+  "questionText": "What is meant by the Doppler effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(apparent) change in frequency of a wave",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "due to (relative) motion between source and observer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-c-centripetal",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "centripetal",
+  "section": "B",
+  "questionRef": "2016 HL Q12(c) — Centripetal force",
+  "questionText": "Define centripetal force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force towards the centre",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "on an object moving in a circle // correct formula",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-c-i-frequencies",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "frequencies",
+  "section": "B",
+  "questionRef": "2016 HL Q12(c)(i) — Maximum and minimum observed frequencies",
+  "stem": "A buzzer attached to a string of length 80 cm moves at a speed of 13 m s⁻¹ in a vertical circle. The buzzer has a mass of 70 g and emits a note of frequency 1.1 kHz. An observer stands in the plane of motion of the buzzer, as shown in the diagram. (speed of sound in air = 340 m s⁻¹; acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate the maximum and minimum frequency of the note detected by an observer",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "the maximum and minimum frequency of the note detected by an observer",
+    "marks": 6,
+    "contextNote": "Reviewed correction: use f′ = fc/(c − u) for the maximum and f′ = fc/(c + u) for the minimum. The official scheme prints these denominators beside the opposite extrema; its numerical results are correct."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "f'ₘₐₓ = 1143.7 Hz",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f'min = 1059.5 Hz",
+    "marks": 3
+   }
+  ],
+  "notes": "Both extrema are requested in one calculation; the complete source and corrected formula pairing are retained. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12c-frequency-solution",
+  "questionFigureKey": "physics-2016-hl-q12c-frequency-question"
+ },
+ {
+  "id": "phys-2016-hl-q12-c-ii-tensions",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "tensions",
+  "section": "B",
+  "questionRef": "2016 HL Q12(c)(ii) — Maximum and minimum tensions",
+  "stem": "A buzzer attached to a string of length 80 cm moves at a speed of 13 m s⁻¹ in a vertical circle. The buzzer has a mass of 70 g and emits a note of frequency 1.1 kHz. An observer stands in the plane of motion of the buzzer, as shown in the diagram. (speed of sound in air = 340 m s⁻¹; acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Calculate the maximum and minimum tension in the string.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mv²/r",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mg",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Tₘₐₓ = 15.5 N, Tmin = 14.1 N",
+    "marks": 2
+   }
+  ],
+  "notes": "The final maximum/minimum tension pair shares one two-mark cell; retain one six-mark task. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12c-tension-solution",
+  "questionFigureKey": "physics-2016-hl-q12c-tension-question"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-i-positron",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "positron",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(i) — What a positron is",
+  "stem": "The pair annihilation of an electron and a positron has been investigated for many years at CERN in Switzerland. Two gamma-ray photons are produced during this annihilation.",
+  "questionText": "What is a positron?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "positively charged electron // anti-electron",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-i-photon-pair",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "photon-pair",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(i) — Why photons are produced in pairs",
+  "stem": "The pair annihilation of an electron and a positron has been investigated for many years at CERN in Switzerland. Two gamma-ray photons are produced during this annihilation.",
+  "questionText": "Why are photons always produced in pairs during pair annihilation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to conserve momentum",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-i-annihilation-equation",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "annihilation-equation",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(i) — Electron–positron annihilation",
+  "stem": "The pair annihilation of an electron and a positron has been investigated for many years at CERN in Switzerland. Two gamma-ray photons are produced during this annihilation.",
+  "questionText": "Write an equation for this annihilation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "⁰₋₁e + ⁰₊₁e → 2hf",
+    "marks": 8,
+    "contextNote": "The scheme also accepts 2γ for the two photons; both official equations appear in the source image."
+   }
+  ],
+  "notes": "The scheme deducts three marks for each extra species. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher",
+  "figureKey": "physics-2016-hl-q12d-annihilation-solution"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-i-gamma-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "gamma-frequency",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(i) — Frequency of the gamma radiation",
+  "stem": "The pair annihilation of an electron and a positron has been investigated for many years at CERN in Switzerland. Two gamma-ray photons are produced during this annihilation.",
+  "questionText": "Calculate the frequency of the gamma-radiation produced in this annihilation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = mc²",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = 8.1 × 10⁻¹⁴ (J)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f = 1.2 × 10²⁰ Hz",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-i-compare-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "compare-energy",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(i) — Comparing annihilation energies",
+  "stem": "The pair annihilation of an electron and a positron has been investigated for many years at CERN in Switzerland. Two gamma-ray photons are produced during this annihilation. The pair annihilation of a proton and an anti-proton is now being investigated at CERN.",
+  "questionText": "Compare the energy produced in these two annihilations. Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy from proton annihilation is greater",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "proton mass is greater",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-ii-dc-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "dc-diagram",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(ii) — Direct-current motor",
+  "stem": "Electric motors a have huge range of applications in the modern world. Two types of motor are the d.c. motor and the induction motor.",
+  "questionText": "Draw a labelled diagram of a d.c. motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "coil; magnet; power supply; carbon brushes; commutator",
+    "marks": 6,
+    "contextNote": "The scheme deducts one mark for each missing item; the whole diagram has a six-mark tariff."
+   }
+  ],
+  "notes": "Five apparatus labels share one six-mark tariff; no invented per-component prices. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-ii-dc-operation",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "dc-operation",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(ii) — Why a direct-current motor rotates",
+  "stem": "Electric motors a have huge range of applications in the modern world. Two types of motor are the d.c. motor and the induction motor. Draw a labelled diagram of a d.c. motor.",
+  "questionText": "Use your diagram to explain why the coil of a d.c. motor rotates when current flows through the coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current carrying conductor in magnetic field",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "force on each side",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "rotation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-ii-induction-demonstration",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induction-demonstration",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(ii) — Demonstrating an induction motor",
+  "stem": "Electric motors a have huge range of applications in the modern world. Two types of motor are the d.c. motor and the induction motor.",
+  "questionText": "Describe how you would demonstrate the principle of operation of an induction motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2016-hl-q12-d-ii-induction-advantage",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "induction-advantage",
+  "section": "B",
+  "questionRef": "2016 HL Q12(d)(ii) — Advantage of an induction motor",
+  "stem": "Electric motors a have huge range of applications in the modern world. Two types of motor are the d.c. motor and the induction motor.",
+  "questionText": "State one advantage of an induction motor over a d.c. motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no sparking at brushes // no need to replace brushes",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
+  "year": 2016,
+  "level": "higher"
  }
 ]

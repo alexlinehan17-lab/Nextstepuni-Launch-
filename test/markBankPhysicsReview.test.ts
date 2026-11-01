@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2016-hl': [104, 104, 39, 'f258a6d132ad06476344d78410bdae04ea08050698c2978dc949f5ac35075c97',
+    '2e0d63865ce6923c7186e8ab0f51ab66f81b4fceee3c75d3b19a2ff0b4d6eb59'],
   '2017-ol': [97, 97, 96, '918a5a2b1d6ce774cc40a9b0452a7ce11dc2ff4ffb271e1a05cb4d37a761e962',
     '52edb2df4e641d707e1270c131c685bbf5efd3a7258b09625cb543c505579720'],
   '2017-hl': [103, 103, 37, '4a3e69eebd86b3bed98fb557715fdc21511fbfa18895e1728da2a0e519be88de',
@@ -85,6 +87,40 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains every 2016 Higher option, complete source context and corrected mathematical layout', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2016-hl-${id}`)!;
+    expect(deck.filter(c => c.id.startsWith('phys-2016-hl-'))).toHaveLength(104);
+    expect(card('q2-apparatus').rows[0]).toMatchObject({ group: { claimMax: 3, perOption: 3,
+      options: ['stretched string', 'two bridges', 'tuning fork / signal generator', 'newton balance / pulley & (known) weights'],
+    } });
+    expect(card('q3-method').rows).toHaveLength(6);
+    expect(card('q3-method').totalMarks).toBe(15);
+    expect(card('q2-ii-density').rows[0].verbatim).toBe('f= 1/(2l) √(T/μ)');
+    expect(card('q2-ii-density').questionFigure?.candId).toBe('physics-2016-hl-q2-density-question');
+    expect(card('q6-height').rows[0].verbatim).toBe('T=2π√(l/g)');
+    expect(card('q6-restoring-force').questionText).toBe('Calculate the restoring force at this point.');
+    expect(card('q7-heat-temperature').questionText).toBe('Distinguish between heat and temperature.');
+    expect(card('q9-moderator').questionText).toBe('The neutrons emitted are sometimes passed through a moderator. Explain the function of the moderator.');
+    expect(card('q9-radium-decay').rows[0].verbatim).toBe('²²⁵₈₈Ra → ²²⁵₈₉Ac + ⁰₋₁e');
+    for (const id of ['q10-i-dc-coil', 'q10-ii-resistor-current', 'q10-i-induced-emf', 'q10-ii-ac-current']) {
+      expect(card(id).figure?.candId).toBe('physics-2016-hl-q10-circuit');
+      expect(card(id).stem).toContain('150 turns');
+      expect(card(id).stem).toContain('50 Ω resistor');
+    }
+    expect(card('q5-j-quarks').totalMarks).toBe(7);
+    expect(card('q5-j-relay').totalMarks).toBe(7);
+    expect(card('q12-c-i-frequencies').rows[0].contextNote).toContain('fc/(c − u) for the maximum');
+    expect(card('q12-c-i-frequencies').rows[0].contextNote).toContain('fc/(c + u) for the minimum');
+    for (const part of ['a', 'b', 'c', 'd-i', 'd-ii']) {
+      expect(deck.filter(c => c.id.startsWith(`phys-2016-hl-q12-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    }
+    for (const part of 'abcdefgh') {
+      expect(card(`q11-${part}`).stem).toContain('Humphrey Lloyd');
+      expect(card(`q11-${part}`).stem).toContain('Lisa Randall');
+    }
+  });
+
   it('retains 2017 Ordinary context, every labelled pin, and the published stepped responses', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2017-ol-${id}`)!;
     expect(deck.filter(c => c.id.startsWith('phys-2017-ol-'))).toHaveLength(97);
