@@ -20,6 +20,47 @@ const get = (suffix: string) => {
 };
 
 describe('Home Economics deferred source boundaries', () => {
+  it('keeps all 17 Section B tasks and the full choice profiles at their published tariffs', () => {
+    const b = CARDS.filter(c => c.id.startsWith('he-2023-hl-deferred-sb-'));
+    expect(b).toHaveLength(17);
+    expect(b.reduce((n, c) => n + c.totalMarks, 0)).toBe(280);
+    const getB = (part: string) => {
+      const c = b.find(c => c.id.endsWith(`q${part}`));
+      if (!c || c.kind !== 'question') throw new Error(part);
+      return c;
+    };
+    expect(getB('2a').rows.map(r => r.marks)).toEqual([8, 6, 8]);
+    expect(getB('2a').rows[0].contextNote).toContain('ESPGHAN, 2024');
+    expect(getB('2a').rows[0].contextNote).toContain('gluten in a baby’s diet before 6 months');
+    expect(getB('2a').rows[2].contextNote).toContain('most people with coeliac disease tolerate avenin');
+    expect(getB('2b').rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 2, 4]));
+    expect(getB('2c').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(2).fill([[0, 2, 4], [0, 2]]));
+    expect(getB('2c').rows[0].contextNote).toContain('Cesar salad');
+    expect(getB('3a').answerVariants).toHaveLength(4);
+    expect(getB('3a').answerVariants?.[0].rows[1].contextNote).toContain('1.5 cm head space');
+    expect(getB('3a').answerVariants?.[0].rows[2].contextNote).not.toContain('usually fruit');
+    expect(getB('3a').answerVariants?.[1].rows[2].contextNote).toContain('usually fruit');
+    expect(getB('3a').answerVariants?.[1].rows[2].contextNote).toContain('vacuum on cooling');
+    expect(getB('3b').answerVariants).toHaveLength(5);
+    expect(getB('3b').answerVariants?.[3].rows[2].contextNote).toContain('biodegradable');
+    expect(getB('4b').rows.map(r => r.marks)).toEqual([6, 12, 6]);
+    expect(getB('4c').answerVariants).toHaveLength(6);
+    expect(getB('4c').answerVariants?.[0].rows[0].permittedMarks).toEqual([0, 1, 2]);
+    expect(getB('5a').rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 3, 5]));
+    expect(getB('5b').rows.map(r => r.marks)).toEqual([5, 5, 10]);
+    expect(getB('5c').questionRef).toContain('Q5(c)');
+    expect(getB('5c').rows[0].contextNote).toContain('scheme accidentally repeats (b)');
+    const file = 'LC098ALP039EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2023 && p.fileid === file)!;
+    for (const c of b) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      for (const v of c.answerVariants ?? []) expect(tariffReconciles({ ...c, rows: v.rows }), `${c.id}/${v.id}`).toBe(true);
+      const n = c.questionRef.match(/Q(\d+)/)![1];
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(c.topicId)).map(([k]) => k);
+      expect(browseTopicIdsForQuestion(tags, tags.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(expected));
+    }
+  });
   it('retains the B1 chart, three carbohydrate headings, paired classes and reserved environmental points', () => {
     const b1 = CARDS.filter(c => /^he-2023-hl-deferred-sb-q1[a-e]$/.test(c.id));
     expect(b1).toHaveLength(5);
@@ -40,7 +81,7 @@ describe('Home Economics deferred source boundaries', () => {
     expect(b('e').rows.map(r => r.marks)).toEqual([4, 4, 12]);
     expect(b('e').rows[0].contextNote).toContain('consider food miles');
     expect(b('e').rows[1].contextNote).toContain('At least one point');
-    expect(bcAnchors.q.map(q => q.n)).toEqual(['1']);
+    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
     expect(bcAnchors.q[0].region.map(r => r.p)).toEqual([8, 9]);
     const file = 'LC098ALP039EV-deferred.pdf';
     const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2023 && p.fileid === file)!;

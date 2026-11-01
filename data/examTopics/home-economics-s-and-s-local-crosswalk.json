@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-11-01T17:22:12.423Z",
+  "generatedAt": "2026-11-01T17:43:22.715Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
     "referenceOfficialAssociations": 1561,
-    "matchedAssociations": 1192,
-    "sourceBlockedAssociations": 369,
+    "matchedAssociations": 1206,
+    "sourceBlockedAssociations": 355,
     "sourceBlockedByReason": {
       "before-local-corpus": 297,
-      "deferred-sitting-not-in-local-corpus": 72
+      "deferred-sitting-not-in-local-corpus": 58
     },
-    "matchedLocalCardLinks": 1707,
-    "exactRuntimeQuestionMappings": 918,
+    "matchedLocalCardLinks": 1721,
+    "exactRuntimeQuestionMappings": 922,
     "localAnswerAnchoredPaperVariants": 93,
-    "localAnswerAnchoredPhysicalCards": 1258,
+    "localAnswerAnchoredPhysicalCards": 1262,
     "sourceUnavailableTopics": 0
   },
   "policy": {
@@ -281,8 +281,18 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 4 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "4",
+          "label": "Section B · Q4"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-consumer-studies",
@@ -1415,16 +1425,36 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 2 - Part A",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-diet-health",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 2 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-diet-health",
@@ -6907,8 +6937,18 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 3 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-environment",
@@ -7535,24 +7575,54 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 2 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-food-industry-packaging",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 3 - Part A",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-food-industry-packaging",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 3 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-food-industry-packaging",
@@ -8666,8 +8736,18 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 3 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-food-spoilage-food-safety",
@@ -10514,16 +10594,36 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 4 - Part A",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "4",
+          "label": "Section B · Q4"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-household-appliances",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 4 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "4",
+          "label": "Section B · Q4"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-household-appliances",
@@ -14136,8 +14236,18 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 2 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals",
@@ -15060,24 +15170,54 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 5 - Part A",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "5",
+          "label": "Section B · Q5"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-the-family",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 5 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "5",
+          "label": "Section B · Q5"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-the-family",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 5 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "5",
+          "label": "Section B · Q5"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-the-family",
@@ -28992,11 +29132,11 @@
       }
     ]
   },
-  "reviewedEnglish2023DeferredB1": {
+  "reviewedEnglish2023DeferredB": {
     "paperFileid": "LC098ALP039EV-deferred.pdf",
-    "physicalQuestions": 1,
+    "physicalQuestions": 5,
     "review": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
-    "policy": "B1 only: all five separately priced tasks. Other B/C questions still open.",
+    "policy": "All 17 Section B tasks across five printed questions. Section C still open.",
     "markBankMappings": [
       {
         "id": "he-2023-hl-deferred-sb-q1a",
@@ -29037,6 +29177,106 @@
         "atlasTopicIds": [
           "home-economics-s-and-s-higher-food-assignments",
           "home-economics-s-and-s-higher-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q2a",
+        "n": "2",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-diet-health"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q2b",
+        "n": "2",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-diet-health"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q2c",
+        "n": "2",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q3a",
+        "n": "3",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q3b",
+        "n": "3",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q3c",
+        "n": "3",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q4a",
+        "n": "4",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q4b",
+        "n": "4",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-higher-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q4c",
+        "n": "4",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q5a",
+        "n": "5",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q5b",
+        "n": "5",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q5c",
+        "n": "5",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
         ]
       }
     ]

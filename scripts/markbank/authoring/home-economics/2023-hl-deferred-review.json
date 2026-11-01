@@ -32,7 +32,7 @@
   },
   "sectionStatus": {
     "A": "15 tasks carded, 84 offered marks",
-    "B": "5 of 17 tasks carded (Question 1); 80 of 280 offered marks. Questions 2–5 open.",
+    "B": "All 17 tasks carded; 280 offered marks. C remains open.",
     "C": "26 tasks open, 385 offered marks"
   },
   "offeredPracticeMarks": 749,
@@ -468,6 +468,102 @@
       "questionRef": "2023 HL Section B Q1(e) — Deferred sitting",
       "marks": 20,
       "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(a) — Deferred sitting",
+      "marks": 22,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(b) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q2c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q2(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(a) — Deferred sitting",
+      "marks": 24,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(b) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q3c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q3(c) — Deferred sitting",
+      "marks": 8,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(a) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(b) — Deferred sitting",
+      "marks": 24,
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q4c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q4(c) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(a) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(b) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q5c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q5(c) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-2-0"
     }
   ],
   "sectionBQuestion1Review": {
@@ -493,5 +589,44 @@
       "sha256": "7d276c03c8566f8c9e76fb0cbcf9498f3a92f56e75562d7c8423778fbc9ca542"
     },
     "detail": "Full source guidance retained. B1(d) has factor names only; its reveal explicitly distinguishes those from unprinted model descriptions."
+  },
+  "sectionBRemainingReview": {
+    "paperPages": [
+      3,
+      4
+    ],
+    "schemePages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "tasks": 12,
+    "offeredMarks": 200,
+    "decisions": [
+      "Required coeliac headings remain one 22-mark account (8+6+8).",
+      "Malnutrition remains one dependent four-heading profile.",
+      "Two physical-agent functions keep their paired examples in one task.",
+      "Heat method, packaging material and statutory agency are open choices with answer routes, not separate scheduled cards.",
+      "All microwave and sociological headings required.",
+      "Economic/technological change reserves one point per heading plus two others.",
+      "Paper B5(c) is authoritative despite the scheme’s repeated (b) label."
+    ],
+    "sourceClarifications": {
+      "infant-gluten": {
+        "checked": "2026-11-01",
+        "source": "https://www.espghan.org/knowledge-center/publications/Gastroenterology/2024-Early-Life-Gluten-Free-Diet",
+        "note": "The 2024 ESPGHAN position paper finds that introduction between completed 4 and 12 months does not change cumulative coeliac-disease incidence. The scheme’s before-six-months statement is historical examination wording, not a general current conclusion."
+      },
+      "oats": {
+        "checked": "2026-11-01",
+        "source": "https://www2.hse.ie/conditions/coeliac-disease/treatment/",
+        "note": "HSE distinguishes contamination of oats and individual sensitivity to avenin. Most people with coeliac disease tolerate avenin; HSE advises discussing oats with a dietitian. The scheme’s blanket “avoid oats” wording is retained as 2023 marking guidance."
+      }
+    }
   }
 }

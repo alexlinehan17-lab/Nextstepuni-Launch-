@@ -88,7 +88,10 @@ def write():
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     path = ROOT / BASE / '2023-hl-deferred-review.json'; review = json.loads(path.read_text())
     review['tasks'] = [t for t in review['tasks'] if t['id'] not in {c['id'] for c in cards}] + [dict(id=c['id'], status='carded', section='B', questionRef=c['questionRef'], marks=c['totalMarks'], topicId=c['topicId']) for c in cards]
-    review['sectionStatus']['B'] = '5 of 17 tasks carded (Question 1); 80 of 280 offered marks. Questions 2–5 open.'
+    if len([t for t in review['tasks'] if t['section'] == 'B']) == 17:
+        review['sectionStatus']['B'] = 'All 17 tasks carded; 280 offered marks. C remains open.'
+    else:
+        review['sectionStatus']['B'] = '5 of 17 tasks carded (Question 1); 80 of 280 offered marks. Questions 2–5 open.'
     review['sectionBQuestion1Review'] = dict(paperPages=[2], schemePages=[8, 9], tasks=5, offeredMarks=80,
         boundaries='Five independently priced tasks. B1(a) all three foods required; B1(b) all three classifications and paired examples required; B1(c) all three properties required. B1(d) open factors. B1(e) requires one planning point, one purchasing point and three others. No combination expansion.',
         figure=dict(key=FIGURE, bounds=BOUNDS, scale=2, sha256=sha),

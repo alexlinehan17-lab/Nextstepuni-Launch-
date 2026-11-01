@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 580,
+    "cards": 592,
     "leaves": 1342,
-    "covered": 572,
+    "covered": 584,
     "excluded": 0,
-    "open": 770,
-    "coveragePct": 42.6,
+    "open": 758,
+    "coveragePct": 43.5,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -902,21 +902,9 @@
         "level": "hl",
         "paper": "Deferred",
         "leaves": 57,
-        "covered": 19,
+        "covered": 31,
         "excluded": 0,
         "open": [
-          "Section B Q2(a)",
-          "Section B Q2(b)",
-          "Section B Q2(c)",
-          "Section B Q3(a)",
-          "Section B Q3(b)",
-          "Section B Q3(c)",
-          "Section B Q4(a)",
-          "Section B Q4(b)",
-          "Section B Q4(c)",
-          "Section B Q5(a)",
-          "Section B Q5(b)",
-          "Section B Q5(c)",
           "Section C Q1(a)(i)",
           "Section C Q1(a)(ii)",
           "Section C Q1(a)(iii)",
@@ -1153,7 +1141,7 @@
   },
   "nextActions": [
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks; browser QA pending.",
-    "2023 Higher deferred: all source pages swept; Section A 15 tasks and B1 five tasks carded with Atlas. Author B2–B5 (12 tasks) and C (26 tasks), then review 2022 Higher deferred.",
+    "2023 Higher deferred: all source pages swept; all A and B tasks carded (32 cards, 364 offered marks) and mapped to Atlas. Author Section C (26 tasks, 385 offered marks), then review 2022 Higher deferred.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Review remaining 2021–2025 main gaps, then 2026 and 2010–2020; keep Irish editions deferred.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
@@ -1209,23 +1197,28 @@
       "workCommit": "34d964099",
       "launchCommit": "1b8cc8171",
       "scope": "2023 Higher deferred Section A: 15 cards, 14 Atlas anchors; sitting-aware source guard and deferred census."
+    },
+    {
+      "workCommit": "41f29a452",
+      "launchCommit": "bdb2f6823",
+      "scope": "2023 Higher deferred B1: five nutrition tasks, original consumption chart and matching two-page Atlas scheme anchor."
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2023 Higher deferred B1, five new cards with the original chart; all five linked to the matching Atlas question",
-    "runtimeCards": 580,
-    "higher": 308,
+    "scope": "2023 Higher deferred B2–B5: twelve new tasks; all 17 Section B tasks now carded and linked to Atlas",
+    "runtimeCards": 592,
+    "higher": 320,
     "ordinary": 272,
     "sourceReview": "2023-hl-deferred-review.json",
     "validation": {
-      "requiredVitest": "272 tests across 6 suites passed",
-      "atlas": "2 Home Economics registry tests passed; 5 deferred task tests passed",
-      "python": "16 source/census tests passed",
+      "requiredVitest": "273 tests across 6 suites passed",
+      "atlas": "2 Home Economics registry tests passed; all 17 B tasks checked against canonical Atlas topics",
+      "python": "17 source/census tests passed",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
       "productionBuild": "passed",
       "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "Original chart and full B1 paper/scheme boundaries visually reviewed; all axes, legend, age groups and final 20-mark prompt retained."
+      "sourceCropReview": "All five B paper crops and scheme pages 8–17 visually reviewed. No final task, continuation or marking paragraph clipped."
     }
   }
 }

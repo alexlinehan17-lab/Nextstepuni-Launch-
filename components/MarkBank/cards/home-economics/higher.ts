@@ -9525,4 +9525,1633 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q2a", topicId: "home-economics-0-1", conceptId: "coeliac-disease-account",
+    section: "B", questionRef: "2023 HL Section B Q2(a) — Deferred sitting",
+    stem: "‘Research reveals that up to one in every 100 people have coeliac disease and many more have an intolerance to gluten.’ (www.safefood.net)",
+    questionText: "Write an informative account of coeliac disease. Refer to: • causes and symptoms • specific dietary guidelines a coeliac should follow.",
+    tariffModel: {"kind":"fixed","notation":"Causes 2 × 4 (4:2:0); symptoms 3 × 2 (2:0); diet 2 × 4 (4:2:0)"}, totalMarks: 22,
+    rows: [
+    { id: "causes", kind: "criterion", verbatim: "causes", marks: 8, contextNote: "Two cause points, each graded 4:2:0. Source clarification (ESPGHAN, 2024): introduction of gluten between completed four and twelve months has not been shown to change cumulative coeliac-disease incidence. The before-six-months statement below is historical examination wording. Published 2023 scheme guidance: coeliac disease is an autoimmune condition, the immune system fights healthy cells in the body instead of bacteria or viruses; body's immune system has an abnormal reaction to gluten in the diet, present in foods such as bread, pasta, cereals and biscuits; the immune system mistakes gluten as a threat to the body and produces antibodies that attack parts of the body that are healthy; small intestine becomes red and swollen; the villi foldings flatten in the small intestine; this reduces the ability of the body to absorb nutrients and deficiency such as anaemia can occur; family history may increase the risk of coeliac disease; gluten in a baby’s diet before 6 months may increase the risk of coeliac disease etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "symptoms", kind: "criterion", verbatim: "symptoms", marks: 6, contextNote: "Three symptoms, each graded 2:0. Published guidance: abdominal pain; bloating and flatulence; indigestion; constipation; vomiting; unexpected weight loss; an itchy rash; tingling and numbness in hands and feet; disorders that affect coordination, balance and speech (ataxia); swelling of the hands, feet, arms and legs caused by a build-up of fluid (oedema); extreme tiredness etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "diet", kind: "criterion", verbatim: "specific dietary guidelines", marks: 8, contextNote: "Two dietary points, each graded 4:2:0. Source clarification (HSE): ordinary oats can be contaminated; most people with coeliac disease tolerate avenin, but some react. HSE advises discussing oats with a dietitian. The broad “avoid oats” wording below is retained as 2023 marking guidance. Published guidance: choose gluten free foods; select products with the gluten free symbol; read labels carefully for hidden gluten in products; avoid foods containing gluten – wheat, oats, barley, rye and their products; choose rice and corn and their products; consume naturally gluten free products, e.g. vegetables, fruit, meat, eggs, nuts and seeds etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q2b", topicId: "home-economics-0-1", conceptId: "malnutrition-profile",
+    section: "B", questionRef: "2023 HL Section B Q2(b) — Deferred sitting",
+    stem: "‘Research reveals that up to one in every 100 people have coeliac disease and many more have an intolerance to gluten.’ (www.safefood.net)",
+    questionText: "In relation to current healthy eating guidelines: Identify one aspect of malnutrition prevalent in the Irish diet. Refer to: • cause • effect • how to correct the aspect of malnutrition identified.",
+    tariffModel: {"kind":"fixed","notation":"Aspect 4; cause 4; effect 4; correction 4 (all 4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "aspect", kind: "criterion", verbatim: "aspect of malnutrition", marks: 4, contextNote: "One aspect of malnutrition throughout: the cause, effect and correction must match your chosen aspect. This heading is graded 4:2:0. “Current” refers to the 2023 examination. Published examples: low dietary fibre; high saturated fat; relatively low iron intake; relatively low calcium intake; high salt intake; high sugar intake; low vitamin D diet; etc.", permittedMarks: [0,2,4] },
+    { id: "cause", kind: "criterion", verbatim: "cause", marks: 4, contextNote: "One aspect of malnutrition throughout: the cause, effect and correction must match your chosen aspect. This heading is graded 4:2:0. “Current” refers to the 2023 examination. Published examples: high intake of processed foods/ low water intake; high intake of takeaways/ low activity levels; increased blood loss/ poor absorption; hormone imbalance/ poor absorption; lack of sunshine; etc.", permittedMarks: [0,2,4] },
+    { id: "effect", kind: "criterion", verbatim: "effect", marks: 4, contextNote: "One aspect of malnutrition throughout: the cause, effect and correction must match your chosen aspect. This heading is graded 4:2:0. “Current” refers to the 2023 examination. Published examples: constipation/ bowel conditions; overweight/obesity/CHD; anaemia; bone disease/ tooth decay; type 2 diabetes; dull skin; etc.", permittedMarks: [0,2,4] },
+    { id: "correction", kind: "criterion", verbatim: "correction", marks: 4, contextNote: "One aspect of malnutrition throughout: the cause, effect and correction must match your chosen aspect. This heading is graded 4:2:0. “Current” refers to the 2023 examination. Published examples: increase fibre rich foods/ increase water consumption; balance energy intake/ reduce saturated fats/ use appropriate methods of cooking; increase iron rich foods/ increase Vitamin C intake; increase calcium rich foods/ increase Vitamin D intake; chose low salt or salt free foods; choose reduced sugar or sugar free food and drink options; increase fresh fruit and vegetable intake; food pyramid; portion control; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q2c", topicId: "home-economics-0-11", conceptId: "physical-conditioning-agents",
+    section: "B", questionRef: "2023 HL Section B Q2(c) — Deferred sitting",
+    stem: "‘Research reveals that up to one in every 100 people have coeliac disease and many more have an intolerance to gluten.’ (www.safefood.net)",
+    questionText: "Describe two functions of physical conditioning agents and give two examples of their use in food manufacture.",
+    tariffModel: {"kind":"fixed","notation":"2 pairs: function 4 (4:2:0) + use 2 (2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "pair-1", kind: "criterion", verbatim: "Functions", marks: 6, contextNote: "Pair 1: describe a different function and give a matching example of its use. Function graded 4:2:0; example graded 2:0. Complete published guidance: prevents food drying out as they absorb water vapour from the air e.g., humectants; etc. uses- cakes; marzipan; etc. prevents dry ingredients lumping (anti-caking), e.g. polyphosphates; etc. uses - cake mixes; desiccated coconut; etc. form emulsions enabling water and oil to mix, giving food a smooth texture/ stops them from separating e.g. emulsifiers; etc. uses- salad dressing; ice cream; etc. prevents emulsions (oil and water) from separating over time e.g. stabilisers; etc. uses - dairy spreads; mayonnaise; etc. aids the setting of jams and jellies e.g. thickening agent e.g. pectin; etc. uses- jam; marmalade; etc prevents fruit and vegetables from softening during processing e.g. firming agents; etc. uses- fruit salad; Cesar salad; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"function","verbatim":"Function","marks":4,"permittedMarks":[0,2,4]},{"id":"example","verbatim":"Example of use","marks":2,"permittedMarks":[0,2]}] },
+    { id: "pair-2", kind: "criterion", verbatim: "Functions", marks: 6, contextNote: "Pair 2: describe a different function and give a matching example of its use. Function graded 4:2:0; example graded 2:0. Use the complete published guidance above.", permittedMarks: [0,2,4,6], parts: [{"id":"function","verbatim":"Function","marks":4,"permittedMarks":[0,2,4]},{"id":"example","verbatim":"Example of use","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q3a", topicId: "home-economics-0-4", conceptId: "heat-preservation-profile",
+    section: "B", questionRef: "2023 HL Section B Q3(a) — Deferred sitting",
+    stem: "Food preservation helps to reduce food waste and to increase the availability of different foods.",
+    questionText: "Set out details of one method of home food preservation that involves the application of heat. Refer to: • name • how the method of preservation is carried out • the underlying principle.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); method 5 × 2 (2:1:0); principle 3 × 4 (4:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "name", marks: 2, contextNote: "Name the method you describe, graded 2:0. Published example: Jam/chutney making", permittedMarks: [0,2] },
+    { id: "method", kind: "criterion", verbatim: "method of preservation", marks: 10, contextNote: "Five method points, each graded 2:1:0. Published examination outline (recipe-specific processing times are not supplied): weigh out ingredients accurately; wash jars in hot, soapy water and dry; place on a baking tray and sterilise in the oven at 140°C for 20 minutes to remove microbes; remove bruised or damaged fruit; wash, peel, remove stalks and leaves and cut evenly; place fruit/vegetables in a greased saucepan and simmer gently to soften and release pectin from the cell walls; some fruits require the addition of water; warm sugar in the oven at 140°C for five minutes to help it dissolve quicker, reducing the risk of crystallisation; add the sugar to the fruit and stir until it is fully dissolved; addition of vinegar; bring to the boil and boil rapidly, stirring occasionally; check if the jam has reached its setting point; if jam is set, skim the scum from the top; using a ladle, spoon into the sterilised jars, leaving 1.5 cm head space at the top; cover with a wax disc; removing any air bubbles with the back of a spoon; apply a cellophane cover over the top of the jar to form an airtight seal; hold the cellophane cover in place with an elastic band; place a lid on top; label the jar with the date of potting and type of jam; store in a cool, dry place.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 12, contextNote: "Three principle points, each graded 4:2:0. Published guidance: high heat is used to soften the fruit and to kill microbes and enzymes; high proportion of sugar is used to help setting and acts as a preservative; sugar dissolves in the water of the fruit forming a concentrated solution; water is then drawn from any microbial cells by osmosis to equalise the solution; this dehydrates the microbial cells causing death; good quality, ripe fruit will have a high pectin content which will help setting; acid is necessary to draw pectin out of the fruit, giving a better colour and flavour and helps to prevent crystallisation; lemons are added if the fruit does not have a high acid content; ripe fruit has adequate pectin present; some fruits have more pectin than others, so fruits are often combined to maintain pectin content; sealing prevents the re-entry of micro-organisms; sterilising – to kill bacteria present; pH – the vinegar in chutney lowers the pH which prevents microbial growth;", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "jam-chutney",
+                "label": "Jam/chutney making",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the method you describe, graded 2:0. Published example: Jam/chutney making"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "method of preservation",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10
+                            ],
+                            "contextNote": "Five method points, each graded 2:1:0. Published examination outline (recipe-specific processing times are not supplied): weigh out ingredients accurately; wash jars in hot, soapy water and dry; place on a baking tray and sterilise in the oven at 140°C for 20 minutes to remove microbes; remove bruised or damaged fruit; wash, peel, remove stalks and leaves and cut evenly; place fruit/vegetables in a greased saucepan and simmer gently to soften and release pectin from the cell walls; some fruits require the addition of water; warm sugar in the oven at 140°C for five minutes to help it dissolve quicker, reducing the risk of crystallisation; add the sugar to the fruit and stir until it is fully dissolved; addition of vinegar; bring to the boil and boil rapidly, stirring occasionally; check if the jam has reached its setting point; if jam is set, skim the scum from the top; using a ladle, spoon into the sterilised jars, leaving 1.5 cm head space at the top; cover with a wax disc; removing any air bubbles with the back of a spoon; apply a cellophane cover over the top of the jar to form an airtight seal; hold the cellophane cover in place with an elastic band; place a lid on top; label the jar with the date of potting and type of jam; store in a cool, dry place.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three principle points, each graded 4:2:0. Published guidance: high heat is used to soften the fruit and to kill microbes and enzymes; high proportion of sugar is used to help setting and acts as a preservative; sugar dissolves in the water of the fruit forming a concentrated solution; water is then drawn from any microbial cells by osmosis to equalise the solution; this dehydrates the microbial cells causing death; good quality, ripe fruit will have a high pectin content which will help setting; acid is necessary to draw pectin out of the fruit, giving a better colour and flavour and helps to prevent crystallisation; lemons are added if the fruit does not have a high acid content; ripe fruit has adequate pectin present; some fruits have more pectin than others, so fruits are often combined to maintain pectin content; sealing prevents the re-entry of micro-organisms; sterilising – to kill bacteria present; pH – the vinegar in chutney lowers the pH which prevents microbial growth;",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "bottling",
+                "label": "Bottling",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the method you describe, graded 2:0. Published example: Bottling"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "method of preservation",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10
+                            ],
+                            "contextNote": "Five method points, each graded 2:1:0. Published examination outline (recipe-specific processing times are not supplied): wash and sterilise chopping board, knife or other equipment; use ripe, unblemished produce for preserving; sterilize the empty jars; bottling in a pressure cooker or in a water bath; fill jars and leave a gap at the top and apply the lid; lower into the water/ pressure cooker for the required time and test the seal; store in a cool dry place etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three principle points, each graded 4:2:0. Published guidance: a process of preservation by sterilisation, usually fruit. Bottling kills yeast and moulds already present in or on the fruit by heating the jars in a water bath in the oven, on the hob or in a pressure cooker and then sealing the jars when hot; it forms a vacuum on cooling that creates a seal and prevents the re-entry of un- sterilised air.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "drying",
+                "label": "Drying",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the method you describe, graded 2:0. Published example: Drying"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "method of preservation",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10
+                            ],
+                            "contextNote": "Five method points, each graded 2:1:0. Published examination outline (recipe-specific processing times are not supplied): removal of moisture from herbs, fruit, vegetables, meat; etc.; water is evaporated from the cells of the food causing them to become dehydrated; fruit/vegetables are blanched before drying to inactivate enzymes; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three principle points, each graded 4:2:0. Published guidance: herbs can be dried by tying them in bundles and allowing them to dry out for a few days; micro-organisms and enzymes require moisture and are inactivated without it.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-method",
+                "label": "Another valid heat method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name a home food-preservation method involving heat. The printed examples end in “etc.”."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "method of preservation",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10
+                            ],
+                            "contextNote": "Five accurate method points for your chosen method, each graded 2:1:0. The scheme supplies model guidance for jam/chutney making, bottling and drying only.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three accurate principle points for the same method, each graded 4:2:0. No model for another method is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q3b", topicId: "home-economics-0-11", conceptId: "food-packaging-profile",
+    section: "B", questionRef: "2023 HL Section B Q3(b) — Deferred sitting",
+    stem: "Food preservation helps to reduce food waste and to increase the availability of different foods.",
+    questionText: "Assess the use of one type of packaging material used in food processing. Refer to: • name • suitability of purpose • environmental impact.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); suitability 2 × 4; environment 2 × 4 (4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name one packaging material, graded 2:0. Published example: Glass", permittedMarks: [0,2] },
+    { id: "purpose", kind: "criterion", verbatim: "suitability of purpose", marks: 8, contextNote: "Two points about your chosen material, each graded 4:2:0. Published 2023 guidance: can withstand heat without cracking; available in different colours, sizers and shapes; protects food from contamination; heavy to lift- increases transport costs; cannot be printed on; can be easily damaged and broken; expensive to produce etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "environment", kind: "criterion", verbatim: "environmental impact", marks: 8, contextNote: "Two points about the same material, each graded 4:2:0. Published 2023 guidance: reusable; 100% recyclable; reduces greenhouse gas emissions and reduces landfill; non-biodegradable; careless disposal dangerous to animals etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "glass",
+                "label": "Glass",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one packaging material, graded 2:0. Published example: Glass"
+                      },
+                      {
+                            "id": "purpose",
+                            "kind": "criterion",
+                            "verbatim": "suitability of purpose",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about your chosen material, each graded 4:2:0. Published 2023 guidance: can withstand heat without cracking; available in different colours, sizers and shapes; protects food from contamination; heavy to lift- increases transport costs; cannot be printed on; can be easily damaged and broken; expensive to produce etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "environment",
+                            "kind": "criterion",
+                            "verbatim": "environmental impact",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about the same material, each graded 4:2:0. Published 2023 guidance: reusable; 100% recyclable; reduces greenhouse gas emissions and reduces landfill; non-biodegradable; careless disposal dangerous to animals etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "plastic",
+                "label": "Plastic",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one packaging material, graded 2:0. Published example: Plastic"
+                      },
+                      {
+                            "id": "purpose",
+                            "kind": "criterion",
+                            "verbatim": "suitability of purpose",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about your chosen material, each graded 4:2:0. Published 2023 guidance: strong; moisture proof; convenient; easy to handle; lightweight; flexible; can be heat sealed; relatively low cost; suitable for frozen foods; variety of weights; thickness; can be printed on; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "environment",
+                            "kind": "criterion",
+                            "verbatim": "environmental impact",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about the same material, each graded 4:2:0. Published 2023 guidance: made from crude oil which is a non- renewable resource; lack of facilities for recycling; contributes a huge bulk to landfill sites; non-biodegradable; not all plastics are recyclable; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "metal",
+                "label": "Metal",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one packaging material, graded 2:0. Published example: Metal"
+                      },
+                      {
+                            "id": "purpose",
+                            "kind": "criterion",
+                            "verbatim": "suitability of purpose",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about your chosen material, each graded 4:2:0. Published 2023 guidance: protects the food i.e., impervious to moisture, gases, micro-organism; tins lacquered to prevent reaction with the food; easy to stack/store; suitable for heat treatment; may be printed on; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "environment",
+                            "kind": "criterion",
+                            "verbatim": "environmental impact",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about the same material, each graded 4:2:0. Published 2023 guidance: recyclable; reusable, non –biodegradable ect.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "paper",
+                "label": "Paper",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one packaging material, graded 2:0. Published example: Paper"
+                      },
+                      {
+                            "id": "purpose",
+                            "kind": "criterion",
+                            "verbatim": "suitability of purpose",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about your chosen material, each graded 4:2:0. Published 2023 guidance: protect food from contamination; light weight and easy to transport; easy to print on; low cost etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "environment",
+                            "kind": "criterion",
+                            "verbatim": "environmental impact",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two points about the same material, each graded 4:2:0. Published 2023 guidance: recyclable; reduces greenhouse gas emissions; reusable; biodegradable.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-material",
+                "label": "Another valid material",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name a suitable packaging material. The source list is open, not a compulsory choice between four."
+                      },
+                      {
+                            "id": "purpose",
+                            "kind": "criterion",
+                            "verbatim": "suitability of purpose",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two accurate suitability points, each graded 4:2:0. The scheme supplies models for glass, plastic, metal and paper only.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "environment",
+                            "kind": "criterion",
+                            "verbatim": "environmental impact",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two accurate environmental-impact points for the same material, each graded 4:2:0. No model for another material is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q3c", topicId: "home-economics-0-4", conceptId: "historical-food-drugs-acts",
+    section: "B", questionRef: "2023 HL Section B Q3(c) — Deferred sitting",
+    stem: "Food preservation helps to reduce food waste and to increase the availability of different foods.",
+    questionText: "Outline the protection provided to the consumer by the Sale of Food and Drugs Acts (1875, 1879, 1899, 1936).",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4 (4:2:0)"}, totalMarks: 8,
+    rows: [
+    { id: "protection", kind: "criterion", verbatim: "protection", marks: 8, contextNote: "Two points, each graded 4:2:0. This task concerns the historical Acts named in the question. Published 2023 examination guidance: protects the consumer against adulteration and fraud; it is an offence to mix, colour or stain food with any ingredient that would render the food dangerous to human health; to sell any food which is not of the nature or quality expected by consumer; gives consumer the right, on payment of a fee, to have food analysed by the Public Analysis Laboratory.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q4a", topicId: "home-economics-1-2", conceptId: "appliance-consumer-responsibilities",
+    section: "B", questionRef: "2023 HL Section B Q4(a) — Deferred sitting",
+    stem: "Kitchen appliances assist the consumer when cooking, cleaning, and storing food.",
+    questionText: "Discuss four responsibilities a consumer has when purchasing kitchen appliances.",
+    tariffModel: {"kind":"fixed","notation":"4 responsibilities × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "responsibilities", kind: "criterion", verbatim: "responsibilities", marks: 16, contextNote: "Four distinct responsibilities, each graded 4:2:0. Published guidance: ensure they are well informed; understand Consumer protection laws; understand their consumer rights; read all labels and follow instructions carefully; complain about poor- quality or unsafe appliances; seek redress; to protect the environment by using resources carefully and disposing of appliances in an environmentally conscious way; to contribute to sustainable living; to be aware of quality; to be aware of value for money; to keep themselves safe; to keep receipts etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q4b", topicId: "home-economics-1-3", conceptId: "microwave-study",
+    section: "B", questionRef: "2023 HL Section B Q4(b) — Deferred sitting",
+    stem: "Kitchen appliances assist the consumer when cooking, cleaning, and storing food.",
+    questionText: "Set out details of a study you have carried out on a microwave oven. Refer to: • modern design features • working principle • guidelines for using the appliance.",
+    tariffModel: {"kind":"fixed","notation":"Design 2 × 3 (3:2:0); principle 3 × 4 (4:2:0); use 2 × 3 (3:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "design", kind: "criterion", verbatim: "modern design features", marks: 6, contextNote: "Two design points, each graded 3:2:0. Published guidance: jet power button to reheat food quickly; auto weight defrost; temperature probes; automatic programming; keep warm setting; electronic/digital controls; combination cookers; browning dish/grill etc; smart technology; built in sensors regarding cooking times; eco mode; child lock menu; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "principle", kind: "criterion", verbatim: "working principle", marks: 12, contextNote: "Three working-principle points, each graded 4:2:0. Published guidance: transformer increases domestic voltage; magnetron changes electrical energy to electromagnetic energy; wave-guide guides the microwaves into cabinet; microwaves can be reflected, transmitted and absorbed; microwaves penetrate food to a depth of 2-4cm; which cause food molecules to vibrate rapidly, which causes friction and produces high heat; heat spreads to the centre of food through conduction, cooking the food; any water in food is driven to surface and prevents browning of food.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "use", kind: "criterion", verbatim: "guidelines for using the appliance", marks: 6, contextNote: "Two use points, each graded 3:2:0. Published guidance: cooking time influenced by factors – foods high in sugar, fat and water cooks quicker; food density, size and shape, volume of food, temperature of food; type of containers- metal reflect the microwaves and damage the magnetron; ceramic, tubber wear etc.; covering food to avoid spatters; stirring food to ensure even cooking and prevent cold spots/ hot spots; turning food; piercing certain foods to avoid them bursting as steam builds up; follow the standing times to ensure food is cooked thoroughly etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q4c", topicId: "home-economics-1-2", conceptId: "statutory-consumer-agency",
+    section: "B", questionRef: "2023 HL Section B Q4(c) — Deferred sitting",
+    stem: "Kitchen appliances assist the consumer when cooking, cleaning, and storing food.",
+    questionText: "Name and give details of one statutory agency that protects consumers.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:1:0); explanation 2 × 4 (4:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name the agency you describe, graded 2:1:0. Published 2023 example: Competition and Consumer Protection Commission", permittedMarks: [0,1,2] },
+    { id: "explanation", kind: "criterion", verbatim: "Explanation", marks: 8, contextNote: "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: enforce consumer legislation; investigation of consumer law breaches; informing consumers; consumer helpline; advise government agencies etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "competition-and-consumer-protection-commission",
+                "label": "Competition and Consumer Protection Commission",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name the agency you describe, graded 2:1:0. Published 2023 example: Competition and Consumer Protection Commission"
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: enforce consumer legislation; investigation of consumer law breaches; informing consumers; consumer helpline; advise government agencies etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "office-of-the-ombudsman",
+                "label": "Office of the Ombudsman",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name the agency you describe, graded 2:1:0. Published 2023 example: Office of the Ombudsman"
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: investigate complaints made by public regarding public bodies; make recommendations to public bodies; inform the house of the Oireachtas.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "citizens-information-board",
+                "label": "Citizens Information Board",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name the agency you describe, graded 2:1:0. Published 2023 example: Citizens Information Board"
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: provide information and advice to consumers; supports the Money Advice and Budgeting Service etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "national-standards-authority-of-ireland",
+                "label": "National Standards Authority of Ireland",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name the agency you describe, graded 2:1:0. Published 2023 example: National Standards Authority of Ireland"
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: enforce quality and safety standards for goods and services; controls ISO 9000 scheme etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "european-consumer-centre",
+                "label": "European Consumer Centre",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name the agency you describe, graded 2:1:0. Published 2023 example: European Consumer Centre"
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two details about the same agency, each graded 4:2:0. Published 2023 guidance: provide advice on consumer rights when buying goods and services in other EU countries; assists in any disputes that arise between consumers and traders etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-agency",
+                "label": "Another valid statutory agency",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2
+                            ],
+                            "contextNote": "Name a statutory agency that protects consumers, graded 2:1:0. The paper does not restrict you to the examples in the scheme."
+                      },
+                      {
+                            "id": "explanation",
+                            "kind": "criterion",
+                            "verbatim": "Explanation",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two accurate details about that agency, each graded 4:2:0. No model for another agency is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q5a", topicId: "home-economics-2-0", conceptId: "sociological-terms",
+    section: "B", questionRef: "2023 HL Section B Q5(a) — Deferred sitting",
+    stem: "‘62 per cent of people identified family and home as the biggest influences on their thinking.’ (www.irishtimes.ie)",
+    questionText: "Explain the following sociological terms: • culture • norms • role • social mobility.",
+    tariffModel: {"kind":"fixed","notation":"4 required terms × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "culture", kind: "criterion", verbatim: "Culture", marks: 5, contextNote: "Required term, graded 5:3:0. Published guidance: society’s way of life; shared beliefs, values and behaviours; language and customs; passed on from one generation to the next etc.", permittedMarks: [0,3,5] },
+    { id: "norms", kind: "criterion", verbatim: "Norms", marks: 5, contextNote: "Required term, graded 5:3:0. Published guidance: acceptable way of behaving in society e.g., showing respect for older people, etc.", permittedMarks: [0,3,5] },
+    { id: "role", kind: "criterion", verbatim: "Role", marks: 5, contextNote: "Required term, graded 5:3:0. Published guidance: pattern of behaviour considered appropriate for a person according to his/her position in society e.g., teacher, student, adult, child, parent, etc.", permittedMarks: [0,3,5] },
+    { id: "social-mobility", kind: "criterion", verbatim: "Social mobility", marks: 5, contextNote: "Required term, graded 5:3:0. Published guidance: movement of individuals from one socio-economic group to another; education, income and occupation enable social mobility; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q5b", topicId: "home-economics-2-0", conceptId: "economic-technological-family-change",
+    section: "B", questionRef: "2023 HL Section B Q5(b) — Deferred sitting",
+    stem: "‘62 per cent of people identified family and home as the biggest influences on their thinking.’ (www.irishtimes.ie)",
+    questionText: "Analyse how economic and technological changes in recent times have affected the modern family.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0): economic 1; technological 1; other 2"}, totalMarks: 20,
+    rows: [
+    { id: "economic", kind: "criterion", verbatim: "economic", marks: 5, contextNote: "At least one economic point, graded 5:3:0. Published 2023 guidance: high cost of living has led to smaller family sizes; housing costs; state provides financial benefits and support; both partners working to support family; higher standard of living; higher expectations; moving in search of work or because of work; cost of childcare; high cost of education; unemployment has increased the financial burden on families; etc.", permittedMarks: [0,3,5] },
+    { id: "technological", kind: "criterion", verbatim: "technological", marks: 5, contextNote: "At least one technological point, graded 5:3:0. Published 2023 guidance: – household appliances save time and labour; communication technologies; home entertainment; broadband; security technology; cyber bullying; social media; technology which enables working from home, paying bills, booking holidays etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 10, contextNote: "Two further distinct points from either heading, each graded 5:3:0. Do not score a point already used above again.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q5c", topicId: "home-economics-2-0", conceptId: "family-communication",
+    section: "B", questionRef: "2023 HL Section B Q5(c) — Deferred sitting",
+    stem: "‘62 per cent of people identified family and home as the biggest influences on their thinking.’ (www.irishtimes.ie)",
+    questionText: "Discuss the importance of good communication within the family.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "communication", kind: "criterion", verbatim: "good communication", marks: 10, contextNote: "Two points, each graded 5:3:0. The paper labels this task (c); the scheme accidentally repeats (b). Published guidance: encourages good quality relationships; children feel valued; develop good listening skills; prevents stress; easier to solve disagreements; develops positive self-esteem; creates a positive and relaxed home environment; clarifies rules and expectations; helps to build trust among family members; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
