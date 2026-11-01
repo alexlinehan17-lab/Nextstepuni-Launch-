@@ -569,6 +569,781 @@
    565
   ]
  },
+ "physics-2016-ol-q1-velocity": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q1-velocity.png",
+  "md5": "4e6e8e8d2ab9c8ed637ec759dc40b002",
+  "alt": "Velocity equals distance divided by time, with the symbolic s/t alternative.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q1(iii) — Calculating velocity",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   91,
+   414,
+   215,
+   443
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q10-crt": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q10-crt.png",
+  "md5": "5ed5752abac3d6135625f5b2f1a393f6",
+  "alt": "Complete cathode-ray tube with A, B and C, supply polarity, beam of electrons and vacuum labels.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q10(i) — Another subatomic particle",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   141,
+   450,
+   465,
+   541
+  ]
+ },
+ "physics-2016-ol-q10-xray-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q10-xray-solution.png",
+  "md5": "6b19c107a506f6afe78e050ece89f0ff",
+  "alt": "Official X-ray tube sketch including heater, cathode, anode, target, high voltage and cooling fins.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q10 — X-ray tube sketch",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   100,
+   582,
+   412,
+   679
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q11-passage.png",
+  "md5": "75c54d34b732da344233aa277bad23fa",
+  "alt": "Complete Experimentum crucis passage, Newton illustration and Brian Clegg 2015 attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q11(a)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   82,
+   82,
+   545,
+   449
+  ]
+ },
+ "physics-2016-ol-q12-egg": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q12-egg.png",
+  "md5": "171ac2fc6ac782eaf97116b5138fec2d",
+  "alt": "The falling egg illustration from the experiment.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q12(a) — Everyday protection",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   481,
+   180,
+   524,
+   310
+  ],
+  "maskedFurniture": [
+   [
+    481,
+    217,
+    502,
+    310
+   ]
+  ]
+ },
+ "physics-2016-ol-q12-field-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q12-field-question.png",
+  "md5": "9832ee5ed094f6ba7fc40ffa07c6e751",
+  "alt": "Original bar magnet, north and south pole labels and instruction to add its field lines.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q12(b)(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   110,
+   529,
+   550,
+   636
+  ]
+ },
+ "physics-2016-ol-q12-field-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q12-field-solution.png",
+  "md5": "714bd23cdc79e8d821fffa6a6ff276ac",
+  "alt": "Official magnetic field diagram with north-to-south arrows and closed lines.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q12(b)(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   64,
+   485,
+   191,
+   564
+  ],
+  "maskedFurniture": [
+   [
+    175,
+    485,
+    191,
+    489
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q12-magnet": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q12-magnet.png",
+  "md5": "24723cd2ff432fd43992d9b7dc492956",
+  "alt": "Complete bar magnet with north and south poles labelled.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q12(b)(ii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   240,
+   561,
+   400,
+   598
+  ]
+ },
+ "physics-2016-ol-q12-sun": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q12-sun.png",
+  "md5": "fb7e98a6ab97e2259b9f646d47e9f5bb",
+  "alt": "The Sun illustration accompanying the nuclear-fusion questions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q12(d)(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   226,
+   375,
+   398,
+   548
+  ]
+ },
+ "physics-2016-ol-q2-formulae": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q2-formulae.png",
+  "md5": "61a746085be14997b00584256193f910",
+  "alt": "All three refractive-index equations: sine ratio, real-to-apparent depth ratio and critical-angle expression.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q2(iv)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   91,
+   409,
+   336,
+   442
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q4-data.png",
+  "md5": "c75e8cd16123294b3ceb1039308b01af",
+  "alt": "All seven current and temperature-rise readings, with the supplied squared-current entry.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   120,
+   504,
+   530,
+   591
+  ]
+ },
+ "physics-2016-ol-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q4-graph-question.png",
+  "md5": "61d8bc8d237f02b5d264fc9e2972d680",
+  "alt": "Complete Joule experiment context, all seven data readings and graph instruction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(iv)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   82,
+   295,
+   550,
+   643
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    413,
+    550,
+    485
+   ]
+  ]
+ },
+ "physics-2016-ol-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q4-graph-solution.png",
+  "md5": "ebab7572ac76b0737571b710b862cd27",
+  "alt": "Official Joule-law graph with squared-current and temperature-rise axes, units and all plotted readings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(iv)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   91,
+   476,
+   458,
+   673
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q4-table-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q4-table-question.png",
+  "md5": "6c9071edf0d0f1a4a64e9590cfa07480",
+  "alt": "Complete Joule experiment context, seven-column table and table-completion instruction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(iii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   82,
+   295,
+   550,
+   593
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    413,
+    550,
+    461
+   ]
+  ]
+ },
+ "physics-2016-ol-q4-table-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q4-table-solution.png",
+  "md5": "dce29edeac330e7e9fbfd0cbb5d9f031",
+  "alt": "Completed seven-column current, squared-current and temperature-rise table.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(iii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   120,
+   299.5,
+   371,
+   361
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q5-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q5-electroscope.png",
+  "md5": "9be57e5830f681494aba7aeebdd4d393",
+  "alt": "Electroscope shown in the question paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q5(h)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   330,
+   561,
+   402,
+   655
+  ]
+ },
+ "physics-2016-ol-q5-tractor": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q5-tractor.png",
+  "md5": "b47115d32bf547a679c991988ccb02b0",
+  "alt": "Tractor and trailer pictured alongside Q5(b).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q5(b)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   420,
+   230,
+   555,
+   286
+  ]
+ },
+ "physics-2016-ol-q5-transformer-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q5-transformer-solution.png",
+  "md5": "1358f1d76a215b854d6cf55295fb98c2",
+  "alt": "Transformer turns-ratio substitution and 240-volt output.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q5(g)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   91,
+   512,
+   318,
+   541
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q6-gravity-data": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q6-gravity-data.png",
+  "md5": "24b49f3ca7dd681c747363ca22732ce5",
+  "alt": "The supplied gravitational acceleration equation g equals GM divided by d squared.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q6 — Spacecraft weight",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   291,
+   402,
+   336,
+   439
+  ]
+ },
+ "physics-2016-ol-q6-gravity-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q6-gravity-question.png",
+  "md5": "93af87f2037143aef39766a5040cbc7a",
+  "alt": "Complete Pluto mass and radius, printed equation and acceleration calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q6 — Gravity at Pluto’s surface",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   82,
+   349,
+   550,
+   440
+  ]
+ },
+ "physics-2016-ol-q6-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q6-gravity-solution.png",
+  "md5": "8623a8ac7d78acd8325d24205aba76a1",
+  "alt": "Full Pluto gravity substitution, powers of ten, fractions and 0.62 metres per second squared.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q6 — Gravity at Pluto’s surface",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   54,
+   385,
+   355,
+   422
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q6-orbits": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q6-orbits.png",
+  "md5": "baba2531551fb56eb258c15c5e0b2296",
+  "alt": "Complete Solar System orbit diagram showing Pluto, the Sun and labelled planets.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q6 — Solar panels near Pluto",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   273,
+   607,
+   543,
+   749
+  ]
+ },
+ "physics-2016-ol-q6-pluto": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q6-pluto.png",
+  "md5": "9ff6b4279e2802d95b98be3d5bc92433",
+  "alt": "Pluto and New Horizons pictured in the question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q6 — Gravitational-force factors",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   209,
+   100,
+   423,
+   248
+  ]
+ },
+ "physics-2016-ol-q7-angle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q7-angle-solution.png",
+  "md5": "2c90b389842f17039749a0b89f4371ce",
+  "alt": "Complete critical-angle formula and working giving 43.98 degrees.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q7(iii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   91,
+   551,
+   327,
+   582
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q7-meter": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q7-meter.png",
+  "md5": "08fe1a9b7dec4e2e33500d241fbf1aff",
+  "alt": "The sound-level meter pictured in the question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q7(iv)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   380,
+   265,
+   536,
+   404
+  ],
+  "maskedFurniture": [
+   [
+    380,
+    270,
+    403,
+    288
+   ],
+   [
+    524,
+    310,
+    536,
+    350
+   ],
+   [
+    380,
+    331,
+    391,
+    349
+   ]
+  ]
+ },
+ "physics-2016-ol-q7-tir-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q7-tir-solution.png",
+  "md5": "9e363573d6c3a75b4bee6a607485704a",
+  "alt": "Official total-internal-reflection diagram with the glass-air interface, normal, rays and critical-angle condition.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q7(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   202,
+   313,
+   363,
+   373
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q7-waves-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q7-waves-question.png",
+  "md5": "c78de8e6cc52c042a98ce815056e648a",
+  "alt": "Wave context, both underlined terms and instruction to explain them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q7 — Longitudinal and transverse waves",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   55,
+   550,
+   110
+  ]
+ },
+ "physics-2016-ol-q8-ammeter-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-ammeter-question.png",
+  "md5": "d9674dda07e966f1ee19d997da452d97",
+  "alt": "Complete parallel circuit, 12-volt supply, two 4-ohm resistors, ammeter and the ammeter calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(ii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   480,
+   550,
+   738
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    675,
+    550,
+    694
+   ],
+   [
+    82,
+    718,
+    550,
+    737
+   ],
+   [
+    518,
+    718,
+    550,
+    738
+   ]
+  ]
+ },
+ "physics-2016-ol-q8-ammeter-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-ammeter-solution.png",
+  "md5": "80bea43af2f19ae33d4bdfb146b6d0a3",
+  "alt": "Total-current working: twelve volts divided by two ohms equals six amps.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(ii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   91,
+   452,
+   194,
+   484
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q8-each-resistor-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-each-resistor-question.png",
+  "md5": "cffd95df7c990e87bb50339342e96d61",
+  "alt": "Complete parallel circuit, 12-volt supply, two 4-ohm resistors, ammeter and the each-resistor calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(iii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   480,
+   550,
+   738
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    675,
+    550,
+    694
+   ],
+   [
+    82,
+    697,
+    550,
+    715
+   ],
+   [
+    518,
+    718,
+    550,
+    738
+   ]
+  ]
+ },
+ "physics-2016-ol-q8-each-resistor-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-each-resistor-solution.png",
+  "md5": "96566e11fc36d2bc57c3f855d299f214",
+  "alt": "Branch-current working: twelve volts divided by four ohms equals three amps.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(iii)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   91,
+   522,
+   200,
+   554
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q8-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-resistance-question.png",
+  "md5": "2273c48182ed83ff505e7ca968dd72ca",
+  "alt": "Complete parallel circuit, 12-volt supply, two 4-ohm resistors, ammeter and the resistance calculation question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   480,
+   550,
+   738
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    697,
+    550,
+    715
+   ],
+   [
+    82,
+    718,
+    550,
+    737
+   ],
+   [
+    518,
+    718,
+    550,
+    738
+   ]
+  ]
+ },
+ "physics-2016-ol-q8-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q8-resistance-solution.png",
+  "md5": "f73d17927b6e762fc2fda3d731489920",
+  "alt": "Complete parallel-resistance equation and two-ohm result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q8(i)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   91,
+   348,
+   278,
+   383
+  ],
+  "solution": true
+ },
+ "physics-2016-ol-q9-bottle": {
+  "src": "/exam-figures/physics/markbank/physics-2016-ol-q9-bottle.png",
+  "md5": "8f970227953d6ac17971b8d621438c3d",
+  "alt": "The frozen glass bottle pictured in Question 9.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q9 — Freezer time",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   408,
+   149,
+   560,
+   230
+  ]
+ },
  "physics-2017-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2017-hl-q1-data.png",
   "md5": "4a35d77f4dc1206411ee8ac774ed135e",

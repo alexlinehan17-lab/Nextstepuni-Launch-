@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2016-ol': [97, 97, 70, 'c3de271bb5e816edfaca05b0ce05fb139b4c8a7b115ea22fb8b7736872e0eb78',
+    '12d4feae32ab7ea1926e6c9a67bd07f771a88e850ccda5dac5fc58d01388abf4'],
   '2016-hl': [104, 104, 39, 'f258a6d132ad06476344d78410bdae04ea08050698c2978dc949f5ac35075c97',
     '2e0d63865ce6923c7186e8ab0f51ab66f81b4fceee3c75d3b19a2ff0b4d6eb59'],
   '2017-ol': [97, 97, 96, '918a5a2b1d6ce774cc40a9b0452a7ce11dc2ff4ffb271e1a05cb4d37a761e962',
@@ -87,6 +89,40 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2016 Ordinary data, choices and exact marking boundaries', () => {
+    const card = (id: string) => deck.find(c => c.id === `phys-2016-ol-${id}`)!;
+    expect(deck.filter(c => c.id.startsWith('phys-2016-ol-'))).toHaveLength(97);
+    expect(card('q1-iii-measurements').totalMarks).toBe(6);
+    expect(card('q1-iii-calculation').totalMarks).toBe(3);
+    expect(card('q4-iii').rows.map(r => [r.verbatim, r.marks]))
+      .toEqual([['1', 1], ['4', 1], ['6.25', 1], ['9', 1], ['12.25', 1], ['16', 1]]);
+    expect(card('q4-iv').questionFigure?.candId).toBe('physics-2016-ol-q4-graph-question');
+    expect(card('q5-d').rows[0].contextNote).not.toContain('Conduction');
+    expect(card('q10-iii').rows[0]).toMatchObject({ group: {
+      claimMax: 2, perOptionSteps: [6, 3], options: [
+        'cathode emits electrons / particles', 'anode attracts / focuses /accelerates (electrons)',
+        'screen lights up / shows presence (of electrons)',
+      ],
+    } });
+    expect(card('q10-ii').rows.map(r => r.verbatim)).toEqual(['A — cathode', 'B — anode', 'C — screen']);
+    expect(card('q12-c-iv').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('q12-c-iv').rows[2].verbatim).toBe('neutral is blue and the earth is green-yellow');
+    expect(card('q12-a-i').stem).toContain('9.8 m s⁻²');
+    for (const part of 'abcd') {
+      expect(deck.filter(c => c.id.startsWith(`phys-2016-ol-q12-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    }
+    for (const part of ['i', 'ii', 'iii']) {
+      expect(card(`q8-${part}`).questionFigure?.candId).toMatch(/^physics-2016-ol-q8-/);
+      expect(card(`q9-${part}`).stem).toContain('0.75 kg');
+      expect(card(`q9-${part}`).stem).toContain('4200 J kg⁻¹ K⁻¹');
+      expect(card(`q9-${part}`).stem).toContain('3.3 × 10⁵ J kg⁻¹');
+      expect(card(`q9-${part}`).stem).toContain('2200 J kg⁻¹ K⁻¹');
+    }
+    expect(card('q9-iii').questionText).not.toContain('to to');
+    for (const part of 'abcdefgh') expect(card(`q11-${part}`).stem).toContain('Brian Clegg, Icon Books, 2015');
+  });
+
   it('retains every 2016 Higher option, complete source context and corrected mathematical layout', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2016-hl-${id}`)!;
     expect(deck.filter(c => c.id.startsWith('phys-2016-hl-'))).toHaveLength(104);

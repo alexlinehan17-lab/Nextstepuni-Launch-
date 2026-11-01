@@ -28,6 +28,12 @@ class PhysicsSourceMathTest(unittest.TestCase):
         self.assertEqual(equation_text(self.scheme[11], (54,532,153,560), GLYPHS),
                          '²²⁵₈₈Ra → ²²⁵₈₉Ac + ⁰₋₁e')
 
+    def test_ordinary_gravity_unit_keeps_raised_minus_and_square(self):
+        from phys_review_lib import Src
+        from phys_review_2016_ol import GLYPHS as OL_GLYPHS, SOURCES as OL_SOURCES
+        paper = Src(str(ROOT / OL_SOURCES['paper']['path']), 'paper', glyphs=OL_GLYPHS)
+        self.assertIn('(acceleration due to gravity, g = 9.8 m s⁻²)', paper.lines[9])
+
     def test_doppler_correction_agrees_with_both_published_numerical_results(self):
         # The printed formulas are paired with opposite extrema. These are
         # independent calculations from the paper's 1.1 kHz, 340 and 13 m/s.

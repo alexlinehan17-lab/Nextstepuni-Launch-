@@ -81010,5 +81010,3141 @@
   "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_hl.py.",
   "year": 2016,
   "level": "higher"
+ },
+ {
+  "id": "phys-2016-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1i",
+  "section": "A",
+  "questionRef": "2016 OL Q1(i)",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "2 trolleys / 2 riders / runway / air-track / timer e.g. photo-gates (and timer) / tickertape (and timer) / means of trolleys joining / detail e.g. sloped runway, means of measuring mass / time / distance,",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "2 trolleys / 2 riders",
+      "runway / air-track",
+      "timer e.g. photo-gates (and timer) / tickertape (and timer)",
+      "means of trolleys joining",
+      "detail e.g. sloped runway, means of measuring mass / time / distance,"
+     ]
+    },
+    "contextNote": "NOTE: no labels, deduct 2 incorrect arrangement, deduct 2 accept valid alternatives e.g. data logging methods"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1ii",
+  "section": "A",
+  "questionRef": "2016 OL Q1(ii)",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity.",
+  "questionText": "How was mass measured?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "used (electronic) balance / used weighing scales / weighed them",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. mentions spiral spring (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q1-iii-measurements",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "1iii-measurements",
+  "section": "A",
+  "questionRef": "2016 OL Q1(iii) — Measurements for velocity",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity.",
+  "questionText": "What measurements were taken to calculate velocity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(relevant) distance specified",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(relevant) time specified",
+    "marks": 3,
+    "contextNote": "A relevant time/distance detail or reference to a datalogger merits at least 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q1-iii-calculation",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "1iii-calculation",
+  "section": "A",
+  "questionRef": "2016 OL Q1(iii) — Calculating velocity",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity. What measurements were taken to calculate velocity?",
+  "questionText": "How were these measurements used to calculate velocity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(velocity=) distance/(time) / s/t",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q1-velocity"
+ },
+ {
+  "id": "phys-2016-ol-q1-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iv",
+  "section": "A",
+  "questionRef": "2016 OL Q1(iv)",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity.",
+  "questionText": "How did the student determine the momentum?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mv",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. using the equation / m / v (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q1-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1v",
+  "section": "A",
+  "questionRef": "2016 OL Q1(v)",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum. During the experiment, the student took measurements to find mass and velocity.",
+  "questionText": "How did the student verify the principle of conservation of momentum?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum before = momentum after / m₁u = (m₁ + m₂ )v / m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "2i",
+  "section": "A",
+  "questionRef": "2016 OL Q2(i)",
+  "stem": "An experiment was set up to determine the refractive index of a material.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "glass/plastic block",
+    "marks": 6,
+    "contextNote": "The scheme’s // separates complete alternative methods; use one complete method.",
+    "route": "block"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ray box / laser / optical pins",
+    "marks": 3,
+    "route": "block"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "detail e.g. protractor",
+    "marks": 3,
+    "contextNote": "other valid methods acceptable incorrect experiment, maximum mark 6 + 3 NOTE: no labels, deduct 2 incorrect arrangement, deduct 2 accept valid alternatives",
+    "route": "block"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "container of liquid",
+    "marks": 6,
+    "contextNote": "The scheme’s // separates complete alternative methods; use one complete method.",
+    "route": "liquid"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "optical pins",
+    "marks": 3,
+    "route": "liquid"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "metre stick / mirror",
+    "marks": 3,
+    "contextNote": "other valid methods acceptable incorrect experiment, maximum mark 6 + 3 NOTE: no labels, deduct 2 incorrect arrangement, deduct 2 accept valid alternatives",
+    "route": "liquid"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "2ii",
+  "section": "A",
+  "questionRef": "2016 OL Q2(ii)",
+  "stem": "An experiment was set up to determine the refractive index of a material. Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "questionText": "Indicate on your diagram the measurements that were taken.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "angle of incidence / i / angle of refraction / r",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "angle of incidence / i",
+      "angle of refraction / r"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "The scheme’s // separates complete alternative methods; use one complete method. Both: 9; one: 6; partial: 3.",
+    "route": "angles"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "real depth / apparent depth",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "real depth",
+      "apparent depth"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "The scheme’s // separates complete alternative methods; use one complete method. Both: 9; one: 6; partial: 3.",
+    "route": "depth"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "critical angle",
+    "marks": 9,
+    "contextNote": "The scheme also accepts measuring the critical angle for the full 9 marks.",
+    "route": "critical-angle"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "2iii",
+  "section": "A",
+  "questionRef": "2016 OL Q2(iii)",
+  "stem": "An experiment was set up to determine the refractive index of a material. Indicate on your diagram the measurements that were taken.",
+  "questionText": "What instrument was used to take these measurements?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "protractor // metre stick / ruler",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. describes how to measure (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q2-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "2iv",
+  "section": "A",
+  "questionRef": "2016 OL Q2(iv)",
+  "stem": "An experiment was set up to determine the refractive index of a material. Indicate on your diagram the measurements that were taken.",
+  "questionText": "How was the refractive index calculated?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(n=) sini/(sinr) //(n=) (real depth)/(apparent depth) // (n=) 1/(sinc)",
+    "marks": 7,
+    "contextNote": "Use the formula for the experimental method chosen. Complete: 7; one error or the listed partial expression: 4. All three complete routes appear below."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q2-formulae"
+ },
+ {
+  "id": "phys-2016-ol-q2-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "2v",
+  "section": "A",
+  "questionRef": "2016 OL Q2(v)",
+  "stem": "An experiment was set up to determine the refractive index of a material.",
+  "questionText": "Why should the experiment be repeated?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "for increased accuracy / to get average / to draw a graph",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3i",
+  "section": "A",
+  "questionRef": "2016 OL Q3(i)",
+  "stem": "A student carried out a laboratory experiment to find the speed of sound in air.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(resonance) tube",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tuning fork / signal generator",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "means of measuring length e.g. ruler / metre stick / means of changing length",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "detail e.g. fork over the mouth of tube",
+    "marks": 3,
+    "contextNote": "NOTE: no labels, deduct 2 incorrect arrangement, deduct 2 accept valid alternatives e.g. data logging methods"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3ii",
+  "section": "A",
+  "questionRef": "2016 OL Q3(ii)",
+  "stem": "A student carried out a laboratory experiment to find the speed of sound in air.",
+  "questionText": "How did the student find the frequency of the sound wave used?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(read it) from the tuning fork / signal generator // used tuning forks of known frequency",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3iii",
+  "section": "A",
+  "questionRef": "2016 OL Q3(iii)",
+  "stem": "A student carried out a laboratory experiment to find the speed of sound in air. How did the student find the frequency of the sound wave used?",
+  "questionText": "What other measurements did the student take?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "measure length of vibrating air / measure diameter of tube // measure length for next resonance / detail e.g. equation λ = 4(l + 0.3d) // λ = 2(l₂ – l₁) // end-correction",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "measure length of vibrating air",
+      "measure diameter of tube // measure length for next resonance",
+      "detail e.g. equation λ = 4(l + 0.3d) // λ = 2(l₂ – l₁) // end-correction"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Two lines: 9; one: 6; partial e.g. using a ruler: 3. Marks may be obtained from a diagram. Keep the diameter/end-correction method or the two-resonance method internally consistent."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3iv",
+  "section": "A",
+  "questionRef": "2016 OL Q3(iv)",
+  "stem": "A student carried out a laboratory experiment to find the speed of sound in air.",
+  "questionText": "How did the student calculate the speed of sound in air?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = 4f (l+0.3d) / c =f λ",
+    "marks": 9,
+    "contextNote": "one error partial answer e.g. λ = 2(l₂ – l₁) / substituted measurements into the formula Complete: 9; one error: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3v",
+  "section": "A",
+  "questionRef": "2016 OL Q3(v)",
+  "stem": "A student carried out a laboratory experiment to find the speed of sound in air.",
+  "questionText": "State one precaution which the student might have taken to get an accurate result.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "use a vernier callipers to find the diameter of the tube / quiet background / use a tuning fork of high frequency as it is easier to hear / avoid no parallax / get the second resonance position to eliminate the end-correction",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "use a vernier callipers to find the diameter of the tube",
+      "quiet background",
+      "use a tuning fork of high frequency as it is easier to hear",
+      "avoid no parallax",
+      "get the second resonance position to eliminate the end-correction"
+     ]
+    },
+    "openList": true,
+    "contextNote": "partial answer e.g. use more sensitive instruments, repeat the experiment to get a more accurate result Partial: 2. The printed phrase “avoid no parallax” means avoid parallax error."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4i",
+  "section": "A",
+  "questionRef": "2016 OL Q4(i)",
+  "stem": "In an experiment to verify Joule’s law, a heating coil was placed in a fixed mass of water. A current I was allowed to flow through the coil for a fixed length of time and the rise in temperature, Δθ, was recorded. This was repeated for different values of I. The table below shows the data recorded.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "ammeter / multimeter, heating coil, calorimeter",
+    "marks": 6,
+    "contextNote": "All three: 6; any one: 3. The scheme gives one combined apparatus criterion, not 3 marks for each of the three items."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(variable) power supply",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "detail e.g. closed circuit, stop watch, insulation, variable resistance, thermometer",
+    "marks": 3,
+    "contextNote": "NOTE: no labels, deduct 2 incorrect arrangement, deduct 2 accept valid alternatives methods"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q4-data"
+ },
+ {
+  "id": "phys-2016-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4ii",
+  "section": "A",
+  "questionRef": "2016 OL Q4(ii)",
+  "stem": "In an experiment to verify Joule’s law, a heating coil was placed in a fixed mass of water. A current I was allowed to flow through the coil for a fixed length of time and the rise in temperature, Δθ, was recorded. This was repeated for different values of I. The table below shows the data recorded.",
+  "questionText": "How was the current changed during the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "adjust the (variable) power supply / (variable) resistor",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q4-data"
+ },
+ {
+  "id": "phys-2016-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iii",
+  "section": "A",
+  "questionRef": "2016 OL Q4(iii)",
+  "stem": "In an experiment to verify Joule’s law, a heating coil was placed in a fixed mass of water. A current I was allowed to flow through the coil for a fixed length of time and the rise in temperature, Δθ, was recorded. This was repeated for different values of I. The table below shows the data recorded.",
+  "questionText": "Copy the table below and complete it in your answerbook.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": 1,
+    "contextNote": "Squared current for I = 1.0 A."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 1,
+    "contextNote": "Squared current for I = 2.0 A."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "6.25",
+    "marks": 1,
+    "contextNote": "Squared current for I = 2.5 A."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "9",
+    "marks": 1,
+    "contextNote": "Squared current for I = 3.0 A."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "12.25",
+    "marks": 1,
+    "contextNote": "Squared current for I = 3.5 A."
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "16",
+    "marks": 1,
+    "contextNote": "Squared current for I = 4.0 A."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q4-table-solution",
+  "questionFigureKey": "physics-2016-ol-q4-table-question"
+ },
+ {
+  "id": "phys-2016-ol-q4-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iv",
+  "section": "A",
+  "questionRef": "2016 OL Q4(iv)",
+  "stem": "In an experiment to verify Joule’s law, a heating coil was placed in a fixed mass of water. A current I was allowed to flow through the coil for a fixed length of time and the rise in temperature, Δθ, was recorded. This was repeated for different values of I. The table below shows the data recorded.",
+  "questionText": "Using the data in the completed table, draw a graph on graph paper of Δθ against I ².",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly (name / symbol / unit acceptable)",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "plot another three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line",
+    "marks": 3,
+    "contextNote": "if graph paper is not used, maximum mark 3 × 3 The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "All seven printed readings are retained. The scheme groups plotting marks as three points plus another three. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q4-graph-solution",
+  "questionFigureKey": "physics-2016-ol-q4-graph-question"
+ },
+ {
+  "id": "phys-2016-ol-q4-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4v",
+  "section": "A",
+  "questionRef": "2016 OL Q4(v)",
+  "stem": "In an experiment to verify Joule’s law, a heating coil was placed in a fixed mass of water. A current I was allowed to flow through the coil for a fixed length of time and the rise in temperature, Δθ, was recorded. This was repeated for different values of I. The table below shows the data recorded. Using the data in the completed table, draw a graph on graph paper of Δθ against I ².",
+  "questionText": "Explain how your graph verifies Joule’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(straight) line through origin // Δθ α I ² / P α I ²",
+    "marks": 6,
+    "contextNote": "Complete: 6; partial proportionality statement: 3. Answer must be consistent with the graph drawn."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q4-data"
+ },
+ {
+  "id": "phys-2016-ol-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2016 OL Q5(a)",
+  "questionText": "State the principle of Archimedes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(when a body is immersed in a liquid) the upthrust is equal to the weight of the displaced liquid",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. upthrust (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2016 OL Q5(b)",
+  "questionText": "A tractor applies a force of 500 N to pull a trailer a distance of 3 km. Calculate the work done by the tractor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(W = Fs = 500 ×3000 =) 1.5 × 10⁶ (J)",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q5-tractor"
+ },
+ {
+  "id": "phys-2016-ol-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2016 OL Q5(c)",
+  "questionText": "Choose from the list below the instrument used to measure (i) pressure, and (ii) energy.\nopisometer barometer hydrometer joulemeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(i) barometer / (ii) joulemeter",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(i) barometer",
+      "(ii) joulemeter"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Both required matches: 7; one correct: 4."
+   }
+  ],
+  "notes": "The full four-instrument pool stays with both required matches in one stepped response. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2016 OL Q5(d)",
+  "questionText": "State two uses for a concave mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "headlights / makeup / shaving mirrors",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "headlights",
+      "makeup",
+      "shaving mirrors"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "openList": true,
+    "contextNote": "partial answer e.g. 2 uses of a convex mirror Two uses: 7; one correct: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2016 OL Q5(e)",
+  "questionText": "Conduction is one method of heat transfer. Name the other two methods.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "convection / radiation",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "convection",
+      "radiation"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Both required methods: 7; one correct: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2016 OL Q5(f)",
+  "questionText": "What is the function of a lightning conductor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to earth / protect building / safety / point discharge",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. metal rod (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2016 OL Q5(g)",
+  "questionText": "There are 150 turns in the primary coil of a transformer and 3000 turns in the secondary coil. Calculate the output voltage when 12 V a.c. is connected across the primary coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "240 (V)",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. correct equation (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q5-transformer-solution"
+ },
+ {
+  "id": "phys-2016-ol-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2016 OL Q5(h)",
+  "questionText": "State one common use of the electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "test for charge / identify charge / measure potential etc",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "test for charge",
+      "identify charge",
+      "measure potential etc"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q5-electroscope"
+ },
+ {
+  "id": "phys-2016-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2016 OL Q5(i)",
+  "questionText": "What is the photoelectric effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emission of electrons when light (radiation) is incident",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. emission of electrons (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q5-j",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "5j",
+  "section": "B",
+  "questionRef": "2016 OL Q5(j)",
+  "questionText": "What are alpha-particles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "helium nucleus / He⁺⁺ / two protons and two neutrons",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g. helium, protons and neutrons, (nuclear) radiation (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q6-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Force and its unit",
+  "questionText": "Define the term force and state the unit of force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force is anything that causes a body to accelerate // F=ma",
+    "marks": 6,
+    "contextNote": "partial e.g. relevant force equation Definition: 6; partial force equation: 3."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "newton / N",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q6-vector",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "vector",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Another vector quantity",
+  "questionText": "Force is a vector quantity. Name another example of a vector quantity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "displacement / velocity / acceleration",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "displacement",
+      "velocity",
+      "acceleration"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q6-factors",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "factors",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Gravitational-force factors",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft.",
+  "questionText": "State the factors which affect the size of the gravitational force between two bodies.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mass of first body / mass of second body / distance / G",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "mass of first body",
+      "mass of second body",
+      "distance",
+      "G"
+     ]
+    },
+    "contextNote": "Any three: 9; the word “masses” can earn 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-pluto"
+ },
+ {
+  "id": "phys-2016-ol-q6-gravity",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "gravity",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Gravity at Pluto’s surface",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft.",
+  "questionText": "Pluto has a mass of 1.3 × 10²² kg and a radius of 1186 km. Use the equation below, which is taken from page 56 of the Formulae and Tables booklet, to calculate g, the acceleration due to gravity on the surface of Pluto.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.62 (m s⁻²)",
+    "marks": 12,
+    "contextNote": "Full calculation: 12; one error: 9; two errors: 6; partial: 3. Complete official substitution and working are shown below."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-gravity-solution",
+  "questionFigureKey": "physics-2016-ol-q6-gravity-question"
+ },
+ {
+  "id": "phys-2016-ol-q6-weight",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "weight",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Spacecraft weight",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft. Pluto has a mass of 1.3 × 10²² kg and a radius of 1186 km. Use the equation below, which is taken from page 56 of the Formulae and Tables booklet, to calculate g, the acceleration due to gravity on the surface of Pluto.",
+  "questionText": "The mass of the New Horizons spacecraft is 450 kg. Calculate the weight it would have on the surface of Pluto.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(weight = mg = 450 × 0.62 =) 279 (N) // answer consistent with g above",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-gravity-data"
+ },
+ {
+  "id": "phys-2016-ol-q6-weight-distance",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "weight-distance",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Weight farther from Pluto",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft. Pluto has a mass of 1.3 × 10²² kg and a radius of 1186 km. Use the equation below, which is taken from page 56 of the Formulae and Tables booklet, to calculate g, the acceleration due to gravity on the surface of Pluto. The mass of the New Horizons spacecraft is 450 kg. Calculate the weight it would have on the surface of Pluto.",
+  "questionText": "The closest the spacecraft got to Pluto was 11000 km from the surface of the planet. Would you expect its weight at this position to be greater or less than it would be at the surface? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "less",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "further away (from Pluto)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-gravity-data"
+ },
+ {
+  "id": "phys-2016-ol-q6-atmosphere",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "atmosphere",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Pluto’s atmospheric pressure",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft.",
+  "questionText": "The Earth is surrounded by a layer of air, called its atmosphere, which exerts a pressure on the surface of the planet. Explain why Pluto’s atmosphere exerts a very low pressure on its surface.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "small g / little atmosphere / Pluto has a small mass (relative to the earth)",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "small g",
+      "little atmosphere",
+      "Pluto has a small mass (relative to the earth)"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-pluto"
+ },
+ {
+  "id": "phys-2016-ol-q6-solar",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "solar",
+  "section": "B",
+  "questionRef": "2016 OL Q6 — Solar panels near Pluto",
+  "stem": "The New Horizons spacecraft visited the minor planet Pluto in 2015. Newton’s law of universal gravitation is used to calculate the force between two bodies, for example Pluto and the New Horizons spacecraft. The New Horizons spacecraft used a radioactive isotope to generate electricity, instead of the solar panels used on most spacecraft.",
+  "questionText": "Suggest a reason why solar panels were unsuitable in this case.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pluto is too far from the sun, they wouldn’t generate much energy",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q6-orbits"
+ },
+ {
+  "id": "phys-2016-ol-q7-waves",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "waves",
+  "section": "B",
+  "questionRef": "2016 OL Q7 — Longitudinal and transverse waves",
+  "stem": "Sound and light travel as waves. Sound travels as a longitudinal wave whereas light travels as a transverse wave.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "longitudinal waves: the vibration (of the medium) is in the same direction of motion of the wave",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "transverse waves: the vibration (of the medium) is perpendicular to the direction of motion of the wave",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2016-ol-q7-waves-question"
+ },
+ {
+  "id": "phys-2016-ol-q7-medium",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "medium",
+  "section": "B",
+  "questionRef": "2016 OL Q7 — Sound needs a medium",
+  "stem": "Sound and light travel as waves. Sound travels as a longitudinal wave whereas light travels as a transverse wave.",
+  "questionText": "Describe a laboratory experiment which demonstrates that sound requires a medium to travel through.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "apparatus: bell jar / electric bell / phone / battery / vacuum pump",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "apparatus: bell jar",
+      "electric bell / phone",
+      "battery",
+      "vacuum pump"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: turn on pump / remove the air",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion: no sound heard when air removed, so sound needs a medium",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q7-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7i",
+  "section": "B",
+  "questionRef": "2016 OL Q7(i)",
+  "stem": "Total internal reflection is the basis of operation of optical fibres.",
+  "questionText": "With the aid of a labelled diagram, explain how total internal reflection occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "diagram with explanation of TIR",
+    "marks": 9,
+    "contextNote": "diagram / explanation partial answer NOTE: no labels, deduct 2 Diagram and explanation: 9; either alone: 6; partial: 3; deduct 2 for no labels."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q7-tir-solution"
+ },
+ {
+  "id": "phys-2016-ol-q7-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7ii",
+  "section": "B",
+  "questionRef": "2016 OL Q7(ii)",
+  "stem": "Total internal reflection is the basis of operation of optical fibres.",
+  "questionText": "State two uses of optical fibres.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "telecommunications / endoscope / correct specific ornament/toy / to supply light to inaccessible places",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "telecommunications",
+      "endoscope",
+      "correct specific ornament/toy",
+      "to supply light to inaccessible places"
+     ]
+    },
+    "openList": true,
+    "contextNote": "partial answer e.g. cars, medicine, decorations, toys Partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q7-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7iii",
+  "section": "B",
+  "questionRef": "2016 OL Q7(iii)",
+  "stem": "Total internal reflection is the basis of operation of optical fibres.",
+  "questionText": "The refractive index of a material in an optical fibre is 1.44. Calculate the minimum angle at which light can strike the sides of the fibre and still be transmitted through the fibre.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C =43.98°",
+    "marks": 9,
+    "contextNote": "Full calculation: 9; one error: 6; correct equation: 3. Full working is shown below."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q7-angle-solution"
+ },
+ {
+  "id": "phys-2016-ol-q7-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "7iv",
+  "section": "B",
+  "questionRef": "2016 OL Q7(iv)",
+  "stem": "The picture shows a sound-level meter, which is used to measure sound intensity level.",
+  "questionText": "What is the unit of sound intensity level?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Bel / B // decibel / dB",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. defines sound intensity level (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q7-meter"
+ },
+ {
+  "id": "phys-2016-ol-q7-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "7v",
+  "section": "B",
+  "questionRef": "2016 OL Q7(v)",
+  "stem": "The picture shows a sound-level meter, which is used to measure sound intensity level.",
+  "questionText": "Why might a sound-level meter be used in a workplace?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure the sound level is below (permitted) limit, to protect hearing",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. to measure the sound level, to measure loudness (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q7-meter"
+ },
+ {
+  "id": "phys-2016-ol-q8-definitions",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "definitions",
+  "section": "B",
+  "questionRef": "2016 OL Q8 — Voltage and resistance",
+  "questionText": "Define voltage and resistance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "potential energy between two points on a circuit / potential difference / W/Q / electromotive force / the ratio of the potential difference to the current / V/I",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "potential energy between two points on a circuit / potential difference / W/Q / electromotive force",
+      "the ratio of the potential difference to the current / V/I"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both definitions: 9; one correct: 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q8-instruments",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "instruments",
+  "section": "B",
+  "questionRef": "2016 OL Q8 — Measuring voltage and resistance",
+  "stem": "Define voltage and resistance.",
+  "questionText": "Name an instrument used to measure each of these quantities.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "voltmeter / multimeter",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ohmmeter / multimeter",
+    "marks": 3,
+    "contextNote": "partial answer e.g. ammeter The printed partial score is 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q8-source",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "source",
+  "section": "B",
+  "questionRef": "2016 OL Q8 — Voltage source",
+  "questionText": "Name a source of voltage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "battery / cell /power supply /generator / thermocouple / solar panel",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. wall socket (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8i",
+  "section": "B",
+  "questionRef": "2016 OL Q8(i)",
+  "stem": "The diagram above shows a circuit with a 12 V d.c. power supply, an ammeter, and two 4 Ω resistors connected in parallel.",
+  "questionText": "Calculate the total resistance of the circuit",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "⇒ R = 2 (Ω)",
+    "marks": 9,
+    "contextNote": "Full working is shown below. One error: 6; correct equation: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q8-resistance-solution",
+  "questionFigureKey": "physics-2016-ol-q8-resistance-question"
+ },
+ {
+  "id": "phys-2016-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8ii",
+  "section": "B",
+  "questionRef": "2016 OL Q8(ii)",
+  "stem": "The diagram above shows a circuit with a 12 V d.c. power supply, an ammeter, and two 4 Ω resistors connected in parallel.",
+  "questionText": "Calculate the current flowing through the ammeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "6 (A)",
+    "marks": 6,
+    "contextNote": "Full working is shown below. Complete: 6; correct equation: 3; accept an answer consistent with the previous result."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q8-ammeter-solution",
+  "questionFigureKey": "physics-2016-ol-q8-ammeter-question"
+ },
+ {
+  "id": "phys-2016-ol-q8-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8iii",
+  "section": "B",
+  "questionRef": "2016 OL Q8(iii)",
+  "stem": "The diagram above shows a circuit with a 12 V d.c. power supply, an ammeter, and two 4 Ω resistors connected in parallel.",
+  "questionText": "Calculate the current flowing through each resistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3 (A)",
+    "marks": 6,
+    "contextNote": "Full working is shown below. Complete: 6; correct equation: 3; accept an answer consistent with the previous result."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q8-each-resistor-solution",
+  "questionFigureKey": "physics-2016-ol-q8-each-resistor-question"
+ },
+ {
+  "id": "phys-2016-ol-q8-effects",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "effects",
+  "section": "B",
+  "questionRef": "2016 OL Q8 — Other effects of current",
+  "questionText": "One effect of an electric current is the heating effect. Name the two other effects of an electric current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "chemical",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "magnetic",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q8-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2016 OL Q8 — Demonstrating a current effect",
+  "stem": "One effect of an electric current is the heating effect. Name the two other effects of an electric current.",
+  "questionText": "Describe an experiment to demonstrate one of these two effects.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus: power source, closed circuit, solenoid, compasses / iron filings",
+    "marks": 3,
+    "contextNote": "The scheme gives one 3-mark criterion for any two of these apparatus entries."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: turn on the current",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion: compass direction changes / iron filings rearrange etc.",
+    "marks": 2,
+    "contextNote": "accept valid alternatives e.g. Hofmann voltameter a labelled diagram may merit full marks"
+   }
+  ],
+  "notes": "Open choice of one demonstrated current effect. The magnetic method and explicit acceptance of a chemical Hofmann-voltameter alternative stay together; no combinations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q9-latent",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent",
+  "section": "B",
+  "questionRef": "2016 OL Q9 — Latent heat",
+  "questionText": "What is meant by latent heat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat required to change state (without changing its temperature)",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q9-thermometer",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermometer",
+  "section": "B",
+  "questionRef": "2016 OL Q9 — Temperature instrument",
+  "questionText": "Name an instrument used to measure temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q9-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9i",
+  "section": "B",
+  "questionRef": "2016 OL Q9(i)",
+  "stem": "A glass bottle is filled with 0.75 kg of water at a temperature of 20 °C. The bottle is then placed in a freezer, which freezes the water and cools it to −15 °C. specific heat capacity of water = 4200 J kg⁻¹ K⁻¹ specific latent heat of fusion of water = 3.3 × 10⁵ J kg⁻¹ specific heat capacity of ice = 2200 J kg⁻¹ K⁻¹",
+  "questionText": "Calculate the energy removed from the water to reduce its temperature to 0 °C",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = mcΔθ = 0.75 × 4200 × 20 =) 63000 (J)",
+    "marks": 9,
+    "contextNote": "Complete: 9; one error: 6; correct equation: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q9-bottle"
+ },
+ {
+  "id": "phys-2016-ol-q9-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9ii",
+  "section": "B",
+  "questionRef": "2016 OL Q9(ii)",
+  "stem": "A glass bottle is filled with 0.75 kg of water at a temperature of 20 °C. The bottle is then placed in a freezer, which freezes the water and cools it to −15 °C. specific heat capacity of water = 4200 J kg⁻¹ K⁻¹ specific latent heat of fusion of water = 3.3 × 10⁵ J kg⁻¹ specific heat capacity of ice = 2200 J kg⁻¹ K⁻¹",
+  "questionText": "Calculate the energy removed from the water to convert the water at 0 °C to ice at 0 °C",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = ml = 0.75 × 3.3 × 10⁵ =) 247500 (J)",
+    "marks": 9,
+    "contextNote": "Complete: 9; one error: 6; correct equation: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q9-bottle"
+ },
+ {
+  "id": "phys-2016-ol-q9-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9iii",
+  "section": "B",
+  "questionRef": "2016 OL Q9(iii)",
+  "stem": "A glass bottle is filled with 0.75 kg of water at a temperature of 20 °C. The bottle is then placed in a freezer, which freezes the water and cools it to −15 °C. specific heat capacity of water = 4200 J kg⁻¹ K⁻¹ specific latent heat of fusion of water = 3.3 × 10⁵ J kg⁻¹ specific heat capacity of ice = 2200 J kg⁻¹ K⁻¹",
+  "questionText": "Calculate the energy removed from the water to cool the ice at 0 °C to ice at −15 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = mcΔθ = 0.75 × 2200 × 15 =) 24750 (J)",
+    "marks": 6,
+    "contextNote": "Complete: 6; one error or correct equation: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q9-bottle"
+ },
+ {
+  "id": "phys-2016-ol-q9-time",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "time",
+  "section": "B",
+  "questionRef": "2016 OL Q9 — Freezer time",
+  "stem": "A glass bottle is filled with 0.75 kg of water at a temperature of 20 °C. The bottle is then placed in a freezer, which freezes the water and cools it to −15 °C.",
+  "questionText": "The power rating of the freezer is 300 W. How long will it take for the freezer to remove 9000 J of energy from the water?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(t = W ÷ P = 9000 ÷ 300 =) 30 s",
+    "marks": 5,
+    "contextNote": "The scheme prices this “5 or 3”: partial answer e.g. correct equation (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q9-bottle"
+ },
+ {
+  "id": "phys-2016-ol-q9-cracks",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "cracks",
+  "section": "B",
+  "questionRef": "2016 OL Q9 — Why the bottle cracks",
+  "stem": "A glass bottle is filled with 0.75 kg of water at a temperature of 20 °C. The bottle is then placed in a freezer, which freezes the water and cools it to −15 °C.",
+  "questionText": "As the water freezes, the glass bottle cracks and shatters. Explain why this occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "water expands / glass contracts",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q9-bottle"
+ },
+ {
+  "id": "phys-2016-ol-q9-heat-pump",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-pump",
+  "section": "B",
+  "questionRef": "2016 OL Q9 — Heat-pump operation",
+  "questionText": "The freezer is an example of a heat pump. Outline the operation of a heat pump.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "liquid evaporates / liquid needs heat to evaporate // takes heat from fridge contents / releases heat (at back) / gas condenses / reference to latent heat",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "liquid evaporates",
+      "liquid needs heat to evaporate // takes heat from fridge contents",
+      "releases heat (at back)",
+      "gas condenses",
+      "reference to latent heat"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "Three lines: 12; two: 9; one: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q10-i-properties",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10i-properties",
+  "section": "B",
+  "questionRef": "2016 OL Q10(i) — Electron properties",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "State two properties of the electron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(negatively) charged / deflected by electric fields / deflected by magnetic fields / fundamental particle / small mass / outside nucleus",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(negatively) charged",
+      "deflected by electric fields",
+      "deflected by magnetic fields",
+      "fundamental particle",
+      "small mass",
+      "outside nucleus"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-i-particle",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10i-particle",
+  "section": "B",
+  "questionRef": "2016 OL Q10(i) — Another subatomic particle",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "Name another sub-atomic particle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "proton / neutron / neutrino / quark",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "proton",
+      "neutron",
+      "neutrino",
+      "quark"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10ii",
+  "section": "B",
+  "questionRef": "2016 OL Q10(ii)",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "Name the parts labelled A, B, and C in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A — cathode",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "B — anode",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "C — screen",
+    "marks": 3,
+    "contextNote": "three correct labels, incorrect order partial answer e.g. 2 correct labels in incorrect order All three correct names in the wrong order: 6; two names in the wrong order: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "cathode",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "anode",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "screen",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2016-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10iii",
+  "section": "B",
+  "questionRef": "2016 OL Q10(iii)",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission. Name the parts labelled A, B, and C in the diagram.",
+  "questionText": "State the function of any two of these parts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cathode emits electrons / particles / anode attracts / focuses /accelerates (electrons) / screen lights up / shows presence (of electrons)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "cathode emits electrons / particles",
+      "anode attracts / focuses /accelerates (electrons)",
+      "screen lights up / shows presence (of electrons)"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Two correct functions: 9; one: 6; partial: 3."
+   }
+  ],
+  "notes": "Any two of the complete three-part pool is one stepped card, not three combinations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10iv",
+  "section": "B",
+  "questionRef": "2016 OL Q10(iv)",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "How could the beam of electrons be deflected?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electric field / electrode / magnetic field / magnet / X-Y plates",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10v",
+  "section": "B",
+  "questionRef": "2016 OL Q10(v)",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "Why is it important to have a vacuum inside a cathode ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrons not blocked / easier to pass through / electrons not absorbed",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "10vi",
+  "section": "B",
+  "questionRef": "2016 OL Q10(vi)",
+  "stem": "X-ray tubes and cathode ray tubes are practical applications of thermionic emission. Thermionic emission causes the emission of electrons, which are sub-atomic particles. The diagram shows a simple cathode ray tube, which produces a beam of electrons by thermionic emission.",
+  "questionText": "State one use of a cathode ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "monitors, TV (screen), computer screen, etc.",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-crt"
+ },
+ {
+  "id": "phys-2016-ol-q10-xray",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray",
+  "section": "B",
+  "questionRef": "2016 OL Q10 — X-ray tube sketch",
+  "stem": "Electrons are produced by thermionic emission in an X-ray tube also.",
+  "questionText": "Draw a sketch of an X-ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "heater / cathode / anode / target / high voltage",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "heater",
+      "cathode",
+      "anode",
+      "target",
+      "high voltage"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "detail e.g. correct arrangement, coolant, shielding, vacuum, window",
+    "marks": 2,
+    "contextNote": "partial answer Partial: 3. The official labelled sketch is shown below."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q10-xray-solution"
+ },
+ {
+  "id": "phys-2016-ol-q10-aprons",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "aprons",
+  "section": "B",
+  "questionRef": "2016 OL Q10 — Lead aprons",
+  "questionText": "Why are lead aprons often worn when using an X-ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "protect body, safety",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2016 OL Q11(a)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "What word is used to describe the bending of light by a prism?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "refraction",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2016 OL Q11(b)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "What does the spectrum of light consist of?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "range of colours, seven colours",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2016 OL Q11(c)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "Which colour of light is bent the most?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "violet / blue",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2016 OL Q11(d)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "Draw a diagram to show how a spectrum can be produced using a prism.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "diagram to include white light source, prism and screen/spectrum",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2016 OL Q11(e)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "What was the significance of Newton’s experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light is made up of colours",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer e.g wave theory (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2016 OL Q11(f)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "Without using a prism, how else can a spectrum be produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(diffraction) grating, CD, etc.",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2016 OL Q11(g)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "Why is a spectrum not produced by an ordinary block of glass?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "because it splits (on entering) and recombines (on leaving) // faces not triangular / sides parallel",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2016 OL Q11(h)",
+  "stem": "Experimentum crucis Once he returned to Cambridge from the country in 1667, Newton began to gain honours with startling rapidity and became the second holder of the Lucasian Professorship in Mathematics, a position later held by Stephen Hawking. This new job obliged Newton to give occasional lectures but he was also able to spend much more time on experiments. To isolate a single colour (or at least what the eye sees as a colour – a spectrum in fact consists of an innumerable range of colours, each blending into the next), he put a card with a hole in it next to a prism, only letting through a narrow band of light. Not only did he confirm his view that when this beam was passed through a second prism no different colours were produced – red light remained red, blue remained blue and so on – he discovered that red coloured light was bent much less by the prism than blue light. The degree of bending, the refraction, varied as he moved through the different colours. He later referred to this discovery as the experimentum crucis, the crucial experiment, emphasising its significance as a turning point in the understanding of the nature of light. He had found something fundamental and new - that light was made up of colours that were distinct entities, impossible to change from one into the other, each bent differently by a prism. For good measure, his experiment explained why a prism worked at all. When a beam of light hit an ordinary block of glass there was no rainbow produced. As the light passed from air to glass it was true that the blue light would bend further than the red, splitting it out, but when it reached the far side of the block it would move back the other way an equal amount and the result would be to recombine the colours. The prism’s triangular faces meant that the two opportunities to bend - towards the vertical of the first face and away from the vertical of the second - both resulted in movement in the same direction. The colours remained separate. (Adapted from Light Years - The Extraordinary Story of Mankind’s Fascination with Light, Brian Clegg, Icon Books, 2015)",
+  "questionText": "Name another field of physics for which Newton is famous.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mechanics / gravitation / heat",
+    "marks": 7,
+    "contextNote": "The scheme prices this “7 or 4”: partial answer (4). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q11-passage"
+ },
+ {
+  "id": "phys-2016-ol-q12-a-definitions",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "definitions",
+  "section": "B",
+  "questionRef": "2016 OL Q12(a) — Kinetic and potential energy",
+  "questionText": "Define kinetic energy and potential energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy due to motion / ½ mv²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "energy due to position / energy due to state / mgh",
+    "marks": 3,
+    "contextNote": "partial answer e.g. definition of energy Partial definition of energy: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "12ai",
+  "section": "B",
+  "questionRef": "2016 OL Q12(a)(i)",
+  "stem": "Students carried out an experiment to investigate how to protect a falling egg from breaking. They observed the results when an egg of mass 52 g was dropped from a height of 2 m, when protected and unprotected. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate the potential energy of the egg before it was dropped.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(PE = mgh = 0.052 × 9.8 × 2 =) 1.02 (J)",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. correct equation (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-egg"
+ },
+ {
+  "id": "phys-2016-ol-q12-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "12aii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(a)(ii)",
+  "stem": "Students carried out an experiment to investigate how to protect a falling egg from breaking. They observed the results when an egg of mass 52 g was dropped from a height of 2 m, when protected and unprotected. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate the velocity of the egg as it hit the ground.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(½mv² = mgh ⇒ v² = 2gh = 2 × 9.8 × 2 = 39.2 ⇒ v =) 6.26 (m s⁻¹)",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. correct equation (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-egg"
+ },
+ {
+  "id": "phys-2016-ol-q12-a-protect",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "protect",
+  "section": "B",
+  "questionRef": "2016 OL Q12(a) — Protecting the egg",
+  "stem": "Students carried out an experiment to investigate how to protect a falling egg from breaking. They observed the results when an egg of mass 52 g was dropped from a height of 2 m, when protected and unprotected.",
+  "questionText": "Suggest how the egg could be protected from breaking when it hits the ground.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "place balls of paper on the ground under it to give it a soft landing, etc.",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-egg"
+ },
+ {
+  "id": "phys-2016-ol-q12-a-application",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "application",
+  "section": "B",
+  "questionRef": "2016 OL Q12(a) — Everyday protection",
+  "stem": "Students carried out an experiment to investigate how to protect a falling egg from breaking. They observed the results when an egg of mass 52 g was dropped from a height of 2 m, when protected and unprotected. Suggest how the egg could be protected from breaking when it hits the ground.",
+  "questionText": "State one everyday application of the principal behind the protection of the egg.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "air bags in cars / lunar landing / on the ground for safety when workers are up on a height",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "air bags in cars",
+      "lunar landing",
+      "on the ground for safety when workers are up on a height"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-egg"
+ },
+ {
+  "id": "phys-2016-ol-q12-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "12bi",
+  "section": "B",
+  "questionRef": "2016 OL Q12(b)(i)",
+  "stem": "The diagram shows a bar magnet.",
+  "questionText": "Copy the diagram and show on it the magnetic field lines around the magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "diagram to show: magnet, two field lines, correct direction on lines",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer e.g. incomplete diagram (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-field-solution",
+  "questionFigureKey": "physics-2016-ol-q12-field-question"
+ },
+ {
+  "id": "phys-2016-ol-q12-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "12bii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(b)(ii)",
+  "stem": "The diagram shows a bar magnet.",
+  "questionText": "Describe an experiment to plot the magnetic field lines around the magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: magnet",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(plotting) compass // iron filings",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "procedure: use the apparatus to locate the field lines e.g. (place the compass on the paper and) mark the dots and repeat // sprinkle filings",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "detail: e.g. join the dots / show field lines / the lines go from north to south / field lines are concentrated at the magnet’s poles / tap filings",
+    "marks": 3,
+    "contextNote": "Marks may be obtained from a diagram. Use the compass procedure or the filings procedure consistently."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-magnet"
+ },
+ {
+  "id": "phys-2016-ol-q12-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "12biii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(b)(iii)",
+  "stem": "The diagram shows a bar magnet.",
+  "questionText": "Name a metal that is attracted to a magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "nickel / iron / cobalt / steel / alnico / named magnetic alloy",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "nickel",
+      "iron",
+      "cobalt",
+      "steel",
+      "alnico",
+      "named magnetic alloy"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer e.g. alloy (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-magnet"
+ },
+ {
+  "id": "phys-2016-ol-q12-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "12biv",
+  "section": "B",
+  "questionRef": "2016 OL Q12(b)(iv)",
+  "stem": "The diagram shows a bar magnet.",
+  "questionText": "State two practical uses of a magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "compass / keep fridge door closed / electric bell / electric motor / transformers / electromagnets / moving coil meters / loudspeakers",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "compass",
+      "keep fridge door closed",
+      "electric bell",
+      "electric motor",
+      "transformers",
+      "electromagnets",
+      "moving coil meters",
+      "loudspeakers"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-magnet"
+ },
+ {
+  "id": "phys-2016-ol-q12-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12ci",
+  "section": "B",
+  "questionRef": "2016 OL Q12(c)(i)",
+  "stem": "A ring circuit is used in domestic wiring.",
+  "questionText": "State one advantage of using of a ring circuit when wiring a house.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "fewer sockets / fewer safety devices / cables carry less current",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "fewer sockets",
+      "fewer safety devices",
+      "cables carry less current"
+     ]
+    },
+    "openList": true,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-c-ii-earthing",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12cii-earthing",
+  "section": "B",
+  "questionRef": "2016 OL Q12(c)(ii) — Meaning of earthing",
+  "stem": "Earthing is a safety measure included in domestic circuits.",
+  "questionText": "What is meant by earthing?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(wire) connecting (the metal body of appliances) to the earth / ground",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-c-ii-safety",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12cii-safety",
+  "section": "B",
+  "questionRef": "2016 OL Q12(c)(ii) — How earthing protects",
+  "stem": "Earthing is a safety measure included in domestic circuits.",
+  "questionText": "How does earthing contribute to safety?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "in the event of a fault occurring the current will flow to earth",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12ciii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(c)(iii)",
+  "stem": "Earthing is a safety measure included in domestic circuits.",
+  "questionText": "Name one other safety device used in domestic wiring.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "fuse / circuit breaker / MCB / RCD",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "fuse",
+      "circuit breaker",
+      "MCB",
+      "RCD"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "12civ",
+  "section": "B",
+  "questionRef": "2016 OL Q12(c)(iv)",
+  "questionText": "In a standard domestic three-pin plug, the live wire is covered in brown plastic. Name the other two wires and state the colour associated with each of them.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "neutral",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "earth",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "neutral is blue and the earth is green-yellow",
+    "marks": 3,
+    "contextNote": "partial answer Partial answer: 3. Both colours share one printed 3-mark row; no invented per-colour tariff."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2016-ol-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12di",
+  "section": "B",
+  "questionRef": "2016 OL Q12(d)(i)",
+  "stem": "Nuclear fusion is the source of the Sun’s energy.",
+  "questionText": "What is meant by nuclear fusion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "combining of two nuclei with the release of energy / radiation",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-sun"
+ },
+ {
+  "id": "phys-2016-ol-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12dii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(d)(ii)",
+  "stem": "Nuclear fusion is the source of the Sun’s energy.",
+  "questionText": "Name the other type of nuclear reaction used in nuclear power stations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "fission",
+    "marks": 6,
+    "contextNote": "The scheme prices this “6 or 3”: partial answer (3). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-sun"
+ },
+ {
+  "id": "phys-2016-ol-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12diii",
+  "section": "B",
+  "questionRef": "2016 OL Q12(d)(iii)",
+  "stem": "Nuclear fusion is the source of the Sun’s energy. Name the other type of nuclear reaction used in nuclear power stations.",
+  "questionText": "State one advantage and one disadvantage of each of these sources of nuclear energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "fusion advantage: H and He atoms are plentiful, fusion produces lots of energy, little waste, etc.",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "fusion disadvantage: very high temperatures needed, uneconomical at present, more difficult to control and sustain, etc.",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "fission advantage: (breeder reactors) can make their own fuel, can generate radioisotopes (for medicine), etc.",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "fission disadvantage: dangerous raw material, dangerous waste, waste storage, security problems, etc.",
+    "marks": 3
+   }
+  ],
+  "notes": "Both sources each require one advantage and one disadvantage: one four-heading response, not alternative source combinations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-sun"
+ },
+ {
+  "id": "phys-2016-ol-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "12div",
+  "section": "B",
+  "questionRef": "2016 OL Q12(d)(iv)",
+  "stem": "Nuclear fusion is the source of the Sun’s energy.",
+  "questionText": "Name the scientist whose equation E = mc² explained why a large amount of energy is available from a small mass of fuel in nuclear reactions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Einstein",
+    "marks": 4,
+    "contextNote": "The scheme prices this “4 or 2”: partial answer e.g. named nuclear scientist (2). "
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2016_ol.py.",
+  "year": 2016,
+  "level": "ordinary",
+  "figureKey": "physics-2016-ol-q12-sun"
  }
 ]

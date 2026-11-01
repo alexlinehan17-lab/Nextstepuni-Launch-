@@ -55692,7 +55692,7 @@
         "physics-ordinary-old-course-magnetics"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2016 task retained from direct paper review (phys_review_2016); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
