@@ -8279,6 +8279,1087 @@
      "notation": "3 statements × 2 (2:0)"
     }
    }
+  },
+  "he-2023-ol-sb-q1b": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Give an account of protein under each of the following headings:  classification  dietary sources  functions in the body.",
+    "stem": "‘Protein bars are a sector of the nutrition market that is rapidly expanding.’ (www.tastetech.com)",
+    "totalMarks": 26,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 classes × 3 (3:2:0); 3 sources × 4; 2 functions × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "classes",
+      "kind": "criterion",
+      "verbatim": "classification",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two classifications, graded 3:2:0. Published guidance: high biological value/animal protein; low biological value/vegetable/plant protein; simple proteins; conjugated proteins; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sources",
+      "kind": "criterion",
+      "verbatim": "dietary sources",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Three sources, graded 4:2:0. Published guidance: meat; fish; dairy products, milk, cheese, yogurt; eggs; soya beans; cereals; nuts; lentils; seeds; beans, peas; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions in the body",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two functions, graded 4:2:0. Published guidance: growth; repair of body cells; manufacture of new cells; formation of muscle; skin; cell membranes; production of hormones; antibodies; enzymes; manufacture of blood plasma; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      2
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q1c": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Explain the importance of including water in the diet of a person who plays sport.",
+    "stem": "‘Protein bars are a sector of the nutrition market that is rapidly expanding.’ (www.tastetech.com)",
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "water",
+      "kind": "criterion",
+      "verbatim": "importance of including water",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two points explaining its importance to someone who plays sport, each graded 5:3:0. Published guidance: regulates body temperature; component of all body cells; removal of waste; quenches thirst; necessary for breakdown of food during digestion; transports nutrients, oxygen, carbon dioxide, hormones and enzymes around the body; provides minerals e.g. calcium, fluorine; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      2
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q1d": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Discuss four guidelines consumers should follow to reduce household costs when planning and purchasing food.",
+    "stem": "‘Protein bars are a sector of the nutrition market that is rapidly expanding.’ (www.tastetech.com)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 guidelines × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "costs",
+      "kind": "criterion",
+      "verbatim": "reduce household costs",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "Four distinct guidelines, each graded 5:3:0. Published guidance: plan meals on a weekly basis; make out a shopping list; use meal planning apps; use cheaper cuts of meat; buy fresh fruit and vegetables; buy cheaper fish e.g. mackerel; use leftovers wherever possible; shop around for special offers; buy own brand goods; shop in larger discount supermarkets rather than small convenience stores; avoid expensive ready prepared convenience food; buy unpackaged food; buy in bulk; avail of loyalty schemes; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      2
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q2c": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Describe two different methods of tenderising meat.",
+    "stem": "‘17% of Irish consumers are now buying better quality beef.’ (www.farmersjournal.ie)",
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 methods × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "methods",
+      "kind": "criterion",
+      "verbatim": "methods of tenderising meat",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two different methods, each graded 5:3:0. Published guidance: before slaughter inject with proteolytic enzymes; mincing; marinating; pounding with a steak hammer; piercing with needles; before cooking sprinkle with meat tenderiser; slow moist methods of cooking e.g. stewing; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      3
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q3a": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Discuss four kitchen hygiene practices that should be followed to ensure the safe preparation and storage of food.",
+    "stem": "Safe food preparation and storage helps to prevent food waste in Irish households.",
+    "totalMarks": 16,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 × 4 (4:2:0): preparation 1, storage 1, other 2"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "preparation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One required point, graded 4:2:0. Published guidance: avoid over-handling food; wash hands before handling food; frozen meat and poultry should be thawed fully before cooking; avoid having food out of fridge for lengthy periods during preparation; ensure surfaces and utensils are clean; have good lighting and ventilation; avoid cross contamination; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "storage",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One required point, graded 4:2:0. Published guidance: cover food before storage; check fridge/freezer temperature; check best before and use by dates; store perishable food below 5°C; store frozen food at -18°C; cool cooked foods before storage; store perishable and chilled cooked food in fridge; store ready-to-eat food separate to raw food; store raw food on base of fridge; avoid overpacking the fridge; etc."
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "2 other points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two further distinct points on either heading, each graded 4:2:0. Do not count a point already used above again.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      3
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q3b": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Set out the results of a study you have carried out on a refrigeration appliance. Refer to:  type of refrigeration appliance  guidelines for use  care and cleaning.",
+    "stem": "Safe food preparation and storage helps to prevent food waste in Irish households.",
+    "totalMarks": 26,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Type 2 (2:1:0); use 3 × 4; care/cleaning 3 × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "type",
+      "kind": "criterion",
+      "verbatim": "type of refrigeration appliance",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name the type studied, graded 2:1:0. Published examples: standard under the counter; larder fridge; fridge freezer; American fridge; retro style; integrated model; smart fridge; etc."
+     },
+     {
+      "id": "use",
+      "kind": "criterion",
+      "verbatim": "guidelines for use",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Three guidelines for the appliance studied, each graded 4:2:0. Published guidance: follow manufacturer’s instructions; avoid opening the door unnecessarily; cool foods beforehand; cover foods to prevent drying out; store raw and cooked foods separately to prevent cross contamination; use food in rotation; thaw food in the fridge; allow air to circulate around foods; do not over pack; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "care",
+      "kind": "criterion",
+      "verbatim": "care and cleaning",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Three guidelines for the same appliance, each graded 4:2:0. Published guidance: position away from heat source; defrost regularly; wash inside with bread soda; do not use strong smelling cleaning agents; check and clean door seal regularly; keep back of fridge dust free; if not in use, leave unplugged and open; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      3
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q3c": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Describe how technology has contributed to greater efficiency when planning and preparing family meals.",
+    "stem": "Safe food preparation and storage helps to prevent food waste in Irish households.",
+    "totalMarks": 8,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "technology",
+      "kind": "criterion",
+      "verbatim": "technology",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two points, each graded 4:2:0. Published guidance: timers lower fuel bills; electrical appliances save time, reduce workload; apps for planning menus; apps to look into fridge/smart fridge; easy clean worksurfaces; induction hobs; microwaves; slow cookers; air fryers; food processors; on-line shopping; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      3
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q4a": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Explain how the following factors influence the family’s choice when buying or renting a family home:  family needs  cost  location  trends in housing development.",
+    "stem": "The family home is a base that provides comfort and security for family members.",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 required factors × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "factor-1",
+      "kind": "criterion",
+      "verbatim": "family needs",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required factor, graded 5:3:0. Published guidance: young children; greater outdoor space; study area; office space; separate bedrooms; special needs, physical disability; elderly parents; bathroom facilities; sufficient storage space; etc."
+     },
+     {
+      "id": "factor-2",
+      "kind": "criterion",
+      "verbatim": "cost",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required factor, graded 5:3:0. Published guidance: money available/income; lending agency fees; legal fees; stamp duty; interest rate; cost of repayments; cost determines size and location; re-sale value of property; energy efficiency/BER rating; etc."
+     },
+     {
+      "id": "factor-3",
+      "kind": "criterion",
+      "verbatim": "location",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required factor, graded 5:3:0. Published guidance: proximity to work, shops, schools; environmental factors; proposed developments in areas; rural or urban; amenities e.g. electricity, water, refuse; transport; local community, neighbours; privacy and security; possible risks e.g. pollution, flooding; etc."
+     },
+     {
+      "id": "factor-4",
+      "kind": "criterion",
+      "verbatim": "trends in housing development",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required factor, graded 5:3:0. Published guidance: housing estates offer a range of house types; green open spaces; walled entrances; amenities; move away from single house developments; development of small, gated estates; buying old houses for refurbishment; redevelopment of inner-city houses; environmentally friendly houses; apartment living; passive houses with high energy rating-BER rating; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q4b": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Describe three advantages of having household insurance.",
+    "stem": "The family home is a base that provides comfort and security for family members.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 advantages × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "insurance",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Three advantages, each graded 5:3:0. Published guidance: provides peace of mind; protects assets e.g. valuables; protection against loss or injury due to burglary; fires; flooding; security; public liability included; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q4c": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Outline three different ways consumers can reduce pollution to protect the environment.",
+    "stem": "The family home is a base that provides comfort and security for family members.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 ways × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "pollution",
+      "kind": "criterion",
+      "verbatim": "reduce pollution",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Three different ways, each graded 5:3:0.\n\nSource clarification: the printed phrase “use phosphate detergents” appears to be an error. Excess phosphorus contributes to water pollution; reducing it is the relevant principle. The original wording is preserved below so the distinction is clear.\n\nPublished 2023 scheme wording: use phosphate detergents; limit use of artificial fertilisers and pesticides; use renewable sources of energy; avoid using CFC’s, choose pump action and ozone friendly products; use smokeless fuel; avoid using fossil fuels; use an electric car; walk or cycle more; use public transport; buy energy efficient appliances; compost food waste; upcycle clothing; choose biodegradable products; buy second hand items; recycle glass, paper, metal and plastics; reuse products; buy only what you will use; buy products with less packaging; avoid single use products; use a reusable water bottle; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q5a": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Discuss four roles and responsibilities of older people within the family.",
+    "stem": "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "roles",
+      "kind": "criterion",
+      "verbatim": "roles and responsibilities",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "Discuss four points, each graded 5:3:0. The paper requires roles and responsibilities; the scheme does not reserve a fixed number for either heading. Published guidance: roles: spending time with their children/grandchildren; childcare; financial help for their families; emotional support for children/grandchildren; passing on values e.g. respect and life experiences; help with home maintenance; etc. responsibility: grandparents often indirectly teach young people respect and can be a great emotional support for children or grandchildren; more relaxed with grandchildren and can be positive role models; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
+  },
+  "he-2023-ol-sb-q5b": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Identify two causes of conflict between teenagers and adults.",
+    "stem": "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 causes × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "causes",
+      "kind": "criterion",
+      "verbatim": "causes of conflict",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Identify two causes, each graded 5:3:0. Published guidance: teenagers question rules and authority; many take on part time jobs and parents feel they are not spending enough time at their study; teenagers seeking independence from parents; change in the family such as new baby or separation; sibling rivalry; discipline issues; poor communication; high parental expectations; schoolwork; social media/phone use; boyfriend/girlfriend; church/religion; personal appearance; smoking, alcohol, drug use; dishonesty; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py.",
+    "questionRef": "2023 OL Section B Q5(b)(i)"
+   }
+  },
+  "he-2023-ol-sb-q5c": {
+   "reason": "2023 Ordinary Section B source review: complete question wording and guidance, exact per-point grades and published response boundaries.",
+   "set": {
+    "questionText": "Outline two reasons why it is important for an older person to make a will.",
+    "stem": "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 reasons × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "will",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two reasons, each graded 5:3:0.\n\nSource clarification: the scheme’s statement that a sizeable portion automatically goes to the State without a will is not a general rule. Intestacy rules determine distribution among family members. The historical wording is reproduced below; use accurate reasons such as recording wishes and appointing an executor.\n\nPublished 2023 scheme wording: person’s wishes about the distribution of their estate following their death are set out; an executor will ensure the wishes of the deceased are respected; if a person dies without leaving a will a sizable portion of their estate will go to the state; property passes to whom the deceased wishes; inheritance tax can be reduced for dependents; guardianship arrangements for children if both parents are deceased; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      4
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
+   }
   }
  },
  "english": {

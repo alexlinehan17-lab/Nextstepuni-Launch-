@@ -17,6 +17,55 @@ const get = (id: string) => {
 };
 
 describe('2023 Ordinary Home Economics recovered tasks', () => {
+  it('retains the full Section B protein, hygiene and appliance allocations', () => {
+    const protein = get('he-2023-ol-sb-q1b');
+    expect(protein.rows.map(r => r.marks)).toEqual([6, 12, 8]);
+    expect(protein.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(2).fill([0, 2, 3]));
+    expect(protein.rows[1].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 4]));
+    expect(protein.rows[2].contextNote).toContain('manufacture of blood plasma');
+    const hygiene = get('he-2023-ol-sb-q3a');
+    expect(hygiene.rows.map(r => r.marks)).toEqual([4, 4, 8]);
+    expect(hygiene.rows[0].verbatim).toBe('preparation');
+    expect(hygiene.rows[1].verbatim).toBe('storage');
+    expect(hygiene.rows[1].contextNote).toContain('-18°C');
+    const fridge = get('he-2023-ol-sb-q3b');
+    expect(fridge.rows.map(r => r.marks)).toEqual([2, 12, 12]);
+    expect(fridge.rows[0].permittedMarks).toEqual([0, 1, 2]);
+    expect(fridge.rows[2].contextNote).toContain('leave unplugged and open');
+  });
+
+  it('preserves the separate causes and solutions tariffs with the conflict context', () => {
+    const causes = get('he-2023-ol-sb-q5b');
+    const ways = get('he-2023-ol-sb-q5bii');
+    expect(causes.questionRef).toBe('2023 OL Section B Q5(b)(i)');
+    expect(ways.questionRef).toBe('2023 OL Section B Q5(b)(ii)');
+    expect(causes.totalMarks).toBe(10);
+    expect(ways.totalMarks).toBe(10);
+    expect(ways.stem).toBe('Identify two causes of conflict between teenagers and adults.');
+    for (const c of [causes, ways]) expect(c.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(2).fill([0, 3, 5]));
+    expect(causes.rows[0].contextNote).toContain('dishonesty; etc.');
+    expect(ways.rows[0].contextNote).toContain('do not ignore conflict; etc.');
+    const cards = CARDS.filter(c => c.questionRef.startsWith('2023 OL Section B '));
+    expect(cards).toHaveLength(17);
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(280);
+    for (const c of cards) expect(tariffReconciles(c), c.id).toBe(true);
+  });
+
+  it('keeps all housing factors and distinguishes original source errors from factual guidance', () => {
+    const housing = get('he-2023-ol-sb-q4a');
+    expect(housing.rows.map(r => r.verbatim)).toEqual(['family needs', 'cost', 'location', 'trends in housing development']);
+    expect(housing.rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 3, 5]));
+    expect(housing.rows[3].contextNote).toContain('passive houses with high energy rating-BER rating');
+    const pollution = get('he-2023-ol-sb-q4c');
+    expect(pollution.rows[0].contextNote).toContain('appears to be an error');
+    expect(pollution.rows[0].contextNote).toContain('Published 2023 scheme wording: use phosphate detergents;');
+    expect(pollution.rows[0].contextNote).toContain('use a reusable water bottle; etc.');
+    const will = get('he-2023-ol-sb-q5c');
+    expect(will.rows[0].contextNote).toContain('is not a general rule');
+    expect(will.rows[0].contextNote).toContain('Intestacy rules determine distribution among family members');
+    expect(will.rows[0].contextNote).toContain('if a person dies without leaving a will a sizable portion of their estate will go to the state');
+  });
+
   it('splits the independent iron-source task without changing its functions identity', () => {
     const functions = get('he-2023-ol-sa-q4');
     const source = get('he-2023-ol-sa-q4-source');
@@ -126,7 +175,7 @@ describe('2023 Ordinary Home Economics recovered tasks', () => {
     const paper = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s'
       && p.year === 2023 && p.level === 'ordinary' && p.lang === 'ev' && p.fileid === 'LC098GLP039EV.pdf')!;
     const cards = CARDS.filter(c => /^2023 OL Section [BC] /.test(c.questionRef));
-    expect(cards).toHaveLength(44);
+    expect(cards).toHaveLength(45);
     for (const c of cards) {
       const m = c.questionRef.match(/Section ([BC]) (?:E\d )?Q(\d+)/)!;
       const n = String(Number(m[2]) + (m[1] === 'C' ? 5 : 0));

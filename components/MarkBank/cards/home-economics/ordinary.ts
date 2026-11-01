@@ -1403,12 +1403,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1b", topicId: "home-economics-0-5", conceptId: "protein-account-ol",
     section: "B", questionRef: "2023 OL Section B Q1(b)",
-    questionText: "Give an account of protein under each of the following headings: classification; dietary sources; functions in the body.",
-    tariffModel: {"kind":"fixed","notation":"classification 2 classes @ 3 marks (graded 3:2:0); sources 3 @ 4 marks (graded 4:2:0); functions 2 @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 26,
+    questionText: "Give an account of protein under each of the following headings: • classification • dietary sources • functions in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 classes × 3 (3:2:0); 3 sources × 4; 2 functions × 4 (4:2:0)"}, totalMarks: 26,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Classification", marks: 6, contextNote: "Two classes at 3 marks. High biological value and low biological value is the pair the examiner expects, and the scheme accepts the animal/plant wording for the same idea. Simple and conjugated proteins is a different classification and also scores — but pick one system and stay in it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["high biological value/animal protein","low biological value/vegetable/plant protein","simple proteins","conjugated proteins"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Three sources at 4 marks — the biggest strand at 12 marks. Naming the food is 2; saying whether it gives HBV or LBV protein is the other 2, and that link is what most answers leave out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["meat","fish","dairy products, milk, cheese, yogurt","eggs","soya beans","cereals","nuts","lentils","seeds","beans, peas"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Functions in the body", marks: 8, contextNote: "Two functions at 4 marks. Growth and repair is one function, not two — pair it with something structural (muscle, skin, cell membranes) or with the manufacturing functions (hormones, antibodies, enzymes) for a clearly separate second point.", openList: true, group: {"claimMax":2,"perOption":4,"options":["growth","repair of body cells","manufacture of new cells","formation of muscle","skin","cell membranes","production of hormones","antibodies","enzymes","manufacture of blood plasma"]} },
+    { id: "classes", kind: "criterion", verbatim: "classification", marks: 6, contextNote: "Two classifications, graded 3:2:0. Published guidance: high biological value/animal protein; low biological value/vegetable/plant protein; simple proteins; conjugated proteins; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "Three sources, graded 4:2:0. Published guidance: meat; fish; dairy products, milk, cheese, yogurt; eggs; soya beans; cereals; nuts; lentils; seeds; beans, peas; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "Two functions, graded 4:2:0. Published guidance: growth; repair of body cells; manufacture of new cells; formation of muscle; skin; cell membranes; production of hormones; antibodies; enzymes; manufacture of blood plasma; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1429,9 +1429,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "water-in-sport-diet",
     section: "B", questionRef: "2023 OL Section B Q1(c)",
     questionText: "Explain the importance of including water in the diet of a person who plays sport.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:0)","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain the importance of including water in the diet of a person who plays sport", marks: 10, contextNote: "Two points at 5 marks, so both need explaining. The question says \"who plays sport\", and the two functions that answer it directly are regulating body temperature and transporting nutrients and oxygen — a general list of what water does earns the 3 but not the 5.", openList: true, group: {"claimMax":2,"perOption":5,"options":["regulates body temperature","component of all body cells","removal of waste","quenches thirst","necessary for breakdown of food during digestion","transports nutrients, oxygen, carbon dioxide, hormones and enzymes around the body","provides minerals e.g. calcium, fluorine"]} },
+    { id: "water", kind: "criterion", verbatim: "importance of including water", marks: 10, contextNote: "Two points explaining its importance to someone who plays sport, each graded 5:3:0. Published guidance: regulates body temperature; component of all body cells; removal of waste; quenches thirst; necessary for breakdown of food during digestion; transports nutrients, oxygen, carbon dioxide, hormones and enzymes around the body; provides minerals e.g. calcium, fluorine; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1452,9 +1452,9 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sb-q1d", topicId: "home-economics-1-1", conceptId: "reducing-household-food-costs",
     section: "B", questionRef: "2023 OL Section B Q1(d)",
     questionText: "Discuss four guidelines consumers should follow to reduce household costs when planning and purchasing food.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 guidelines @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 guidelines × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four guidelines consumers should follow to reduce household costs when planning and purchasing food", marks: 20, contextNote: "Four guidelines at 5 marks, graded 5:3:0 — named is 3, discussed is 5. The list splits into planning ahead, buying cheaper alternatives and shopping smarter; four points spread across those reads as four guidelines, whereas own brands, special offers and discount supermarkets are three versions of one idea.", openList: true, group: {"claimMax":4,"perOption":5,"options":["plan meals on a weekly basis","make out a shopping list","use meal planning apps","use cheaper cuts of meat","buy fresh fruit and vegetables","buy cheaper fish e.g. mackerel","use leftovers wherever possible","shop around for special offers","buy own brand goods","shop in larger discount supermarkets rather than small convenience stores","avoid expensive ready prepared convenience food","buy unpackaged food","buy in bulk","avail of loyalty schemes"]} },
+    { id: "costs", kind: "criterion", verbatim: "reduce household costs", marks: 20, contextNote: "Four distinct guidelines, each graded 5:3:0. Published guidance: plan meals on a weekly basis; make out a shopping list; use meal planning apps; use cheaper cuts of meat; buy fresh fruit and vegetables; buy cheaper fish e.g. mackerel; use leftovers wherever possible; shop around for special offers; buy own brand goods; shop in larger discount supermarkets rather than small convenience stores; avoid expensive ready prepared convenience food; buy unpackaged food; buy in bulk; avail of loyalty schemes; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1474,12 +1474,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q2c", topicId: "home-economics-0-9", conceptId: "tenderising-meat",
     section: "B", questionRef: "2023 OL Section B Q2(c)",
-    stem: "'17% of Irish consumers are now buying better quality beef.' (www.farmersjournal.ie)",
+    stem: "‘17% of Irish consumers are now buying better quality beef.’ (www.farmersjournal.ie)",
     questionText: "Describe two different methods of tenderising meat.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 methods @ 5 marks each (graded 5:3:0)","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 methods × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe two different methods of tenderising meat", marks: 10, contextNote: "Two methods at 5 marks. The scheme's list runs in time order — before slaughter, before cooking, during cooking — and picking from two different stages makes the \"different\" in the question obvious. Naming the method is 3; saying what it does to the connective tissue or muscle fibre is the 5.", openList: true, group: {"claimMax":2,"perOption":5,"options":["before slaughter inject with proteolytic enzymes","mincing","marinating","pounding with a steak hammer","piercing with needles","before cooking sprinkle with meat tenderiser","slow moist methods of cooking e.g. stewing"]} },
+    { id: "methods", kind: "criterion", verbatim: "methods of tenderising meat", marks: 10, contextNote: "Two different methods, each graded 5:3:0. Published guidance: before slaughter inject with proteolytic enzymes; mincing; marinating; pounding with a steak hammer; piercing with needles; before cooking sprinkle with meat tenderiser; slow moist methods of cooking e.g. stewing; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1490,10 +1500,22 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q3(a)",
     stem: "Safe food preparation and storage helps to prevent food waste in Irish households.",
     questionText: "Discuss four kitchen hygiene practices that should be followed to ensure the safe preparation and storage of food.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 4 marks (graded 4:2:0); 1 reference to preparation, 1 reference to storage + 2 other points","answer":4,"ofParts":14,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 × 4 (4:2:0): preparation 1, storage 1, other 2"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four kitchen hygiene practices for the safe preparation and storage of food", marks: 16, contextNote: "Four practices at 4 marks, with a mark reserved on each of preparation and storage — four excellent storage points cannot reach 16. The storage temperatures are marking content: below 5C for perishables, -18C for frozen. Naming the practice is 2 and saying what it prevents (cross contamination, bacterial growth) is the other 2.", openList: true, group: {"claimMax":4,"perOption":4,"options":["avoid over-handling food","wash hands before handling food","frozen meat and poultry should be thawed fully before cooking","avoid having food out of fridge for lengthy periods during preparation","ensure surfaces and utensils are clean","have good lighting and ventilation","avoid cross contamination","cover food before storage","check fridge/freezer temperature","check best before and use by dates","store perishable food below 5°C","store frozen food at -18°C","cool cooked foods before storage","store perishable and chilled cooked food in fridge"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "preparation", marks: 4, contextNote: "One required point, graded 4:2:0. Published guidance: avoid over-handling food; wash hands before handling food; frozen meat and poultry should be thawed fully before cooking; avoid having food out of fridge for lengthy periods during preparation; ensure surfaces and utensils are clean; have good lighting and ventilation; avoid cross contamination; etc.", permittedMarks: [0,2,4] },
+    { id: "heading-2", kind: "criterion", verbatim: "storage", marks: 4, contextNote: "One required point, graded 4:2:0. Published guidance: cover food before storage; check fridge/freezer temperature; check best before and use by dates; store perishable food below 5°C; store frozen food at -18°C; cool cooked foods before storage; store perishable and chilled cooked food in fridge; store ready-to-eat food separate to raw food; store raw food on base of fridge; avoid overpacking the fridge; etc.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "2 other points", marks: 8, contextNote: "Two further distinct points on either heading, each graded 4:2:0. Do not count a point already used above again.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1503,13 +1525,23 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sb-q3b", topicId: "home-economics-1-3", conceptId: "refrigeration-appliance-study",
     section: "B", questionRef: "2023 OL Section B Q3(b)",
     stem: "Safe food preparation and storage helps to prevent food waste in Irish households.",
-    questionText: "Set out the results of a study you have carried out on a refrigeration appliance. Refer to: type of refrigeration appliance; guidelines for use; care and cleaning.",
-    tariffModel: {"kind":"fixed","notation":"type 1 @ 2 marks (graded 2:1:0); guidelines for use 3 @ 4 marks (graded 4:2:0); care and cleaning 3 @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 26,
+    questionText: "Set out the results of a study you have carried out on a refrigeration appliance. Refer to: • type of refrigeration appliance • guidelines for use • care and cleaning.",
+    tariffModel: {"kind":"fixed","notation":"Type 2 (2:1:0); use 3 × 4; care/cleaning 3 × 4 (4:2:0)"}, totalMarks: 26,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Type of refrigeration appliance", marks: 2, contextNote: "Naming the type is worth only 2 marks of the 26 — but it is one word and it is the mark most often skipped in a question that otherwise reads as an essay.", openList: true, group: {"claimMax":1,"perOption":2,"options":["standard under the counter","larder fridge","fridge freezer","American fridge","retro style","integrated model","smart fridge"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Guidelines for use", marks: 12, contextNote: "Three guidelines at 4 marks. These are about using the fridge day to day — what you put in, how, and how often you open it. Naming the guideline is 2; saying what it protects (temperature, cross contamination, food quality) is the other 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["follow manufacturer’s instructions","avoid opening the door unnecessarily","cool foods beforehand","cover foods to prevent drying out","store raw and cooked foods separately to prevent cross contamination","use food in rotation","thaw food in the fridge","allow air to circulate around foods","do not over pack"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Care and cleaning", marks: 12, contextNote: "Three guidelines at 4 marks, equal in weight to the use strand — so an answer heavy on use and light on cleaning gives away 12 marks. The bread soda and the door seal are the two most specific points here and the easiest to develop.", openList: true, group: {"claimMax":3,"perOption":4,"options":["position away from heat source","defrost regularly","wash inside with bread soda","do not use strong smelling cleaning agents","check and clean door seal regularly","keep back of fridge dust free","if not in use, leave unplugged and open"]} },
+    { id: "type", kind: "criterion", verbatim: "type of refrigeration appliance", marks: 2, contextNote: "Name the type studied, graded 2:1:0. Published examples: standard under the counter; larder fridge; fridge freezer; American fridge; retro style; integrated model; smart fridge; etc.", permittedMarks: [0,1,2] },
+    { id: "use", kind: "criterion", verbatim: "guidelines for use", marks: 12, contextNote: "Three guidelines for the appliance studied, each graded 4:2:0. Published guidance: follow manufacturer’s instructions; avoid opening the door unnecessarily; cool foods beforehand; cover foods to prevent drying out; store raw and cooked foods separately to prevent cross contamination; use food in rotation; thaw food in the fridge; allow air to circulate around foods; do not over pack; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "care", kind: "criterion", verbatim: "care and cleaning", marks: 12, contextNote: "Three guidelines for the same appliance, each graded 4:2:0. Published guidance: position away from heat source; defrost regularly; wash inside with bread soda; do not use strong smelling cleaning agents; check and clean door seal regularly; keep back of fridge dust free; if not in use, leave unplugged and open; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1520,10 +1552,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q3(c)",
     stem: "Safe food preparation and storage helps to prevent food waste in Irish households.",
     questionText: "Describe how technology has contributed to greater efficiency when planning and preparing family meals.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 4 marks (graded 4:2:0)","answer":2,"ofParts":11,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"2 points × 4 (4:2:0)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe how technology has contributed to greater efficiency when planning and preparing family meals", marks: 8, contextNote: "Only two points at 4 marks — the smallest part in this Section B, so do not overspend on it. The question says planning AND preparing, and the scheme's list covers both: apps and online shopping for planning, appliances and induction hobs for preparing. One from each is the natural answer.", openList: true, group: {"claimMax":2,"perOption":4,"options":["timers lower fuel bills","electrical appliances save time, reduce workload","apps for planning menus","apps to look into fridge/smart fridge","easy clean worksurfaces","induction hobs","microwaves","slow cookers","air fryers","food processors","on-line shopping"]} },
+    { id: "technology", kind: "criterion", verbatim: "technology", marks: 8, contextNote: "Two points, each graded 4:2:0. Published guidance: timers lower fuel bills; electrical appliances save time, reduce workload; apps for planning menus; apps to look into fridge/smart fridge; easy clean worksurfaces; induction hobs; microwaves; slow cookers; air fryers; food processors; on-line shopping; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1533,11 +1575,24 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sb-q4a", topicId: "home-economics-3-3", conceptId: "choosing-a-family-home",
     section: "B", questionRef: "2023 OL Section B Q4(a)",
     stem: "The family home is a base that provides comfort and security for family members.",
-    questionText: "Explain how the following factors influence the family’s choice when buying or renting a family home: family needs; cost; location; trends in housing development.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
+    questionText: "Explain how the following factors influence the family’s choice when buying or renting a family home: • family needs • cost • location • trends in housing development.",
+    tariffModel: {"kind":"fixed","notation":"4 required factors × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain how family needs, cost, location and trends in housing development influence the choice of a family home", marks: 20, contextNote: "Four points at 5 marks, and the question names exactly four factors — so this is one point on each, not a free choice. Graded 5:3:0: naming the consideration is 3, and explaining how it changes which house a family ends up in is the 5. The BER rating appears under both cost and trends, and it is the most current point on the list.", openList: true, group: {"claimMax":4,"perOption":5,"options":["young children","greater outdoor space","study area","office space","money available/income","lending agency fees","legal fees","stamp duty","proximity to work, shops, schools","environmental factors","proposed developments in areas","housing estates offer a range of house types","green open spaces","walled entrances"]} },
+    { id: "factor-1", kind: "criterion", verbatim: "family needs", marks: 5, contextNote: "Explain this required factor, graded 5:3:0. Published guidance: young children; greater outdoor space; study area; office space; separate bedrooms; special needs, physical disability; elderly parents; bathroom facilities; sufficient storage space; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-2", kind: "criterion", verbatim: "cost", marks: 5, contextNote: "Explain this required factor, graded 5:3:0. Published guidance: money available/income; lending agency fees; legal fees; stamp duty; interest rate; cost of repayments; cost determines size and location; re-sale value of property; energy efficiency/BER rating; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-3", kind: "criterion", verbatim: "location", marks: 5, contextNote: "Explain this required factor, graded 5:3:0. Published guidance: proximity to work, shops, schools; environmental factors; proposed developments in areas; rural or urban; amenities e.g. electricity, water, refuse; transport; local community, neighbours; privacy and security; possible risks e.g. pollution, flooding; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-4", kind: "criterion", verbatim: "trends in housing development", marks: 5, contextNote: "Explain this required factor, graded 5:3:0. Published guidance: housing estates offer a range of house types; green open spaces; walled entrances; amenities; move away from single house developments; development of small, gated estates; buying old houses for refurbishment; redevelopment of inner-city houses; environmentally friendly houses; apartment living; passive houses with high energy rating-BER rating; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1548,10 +1603,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q4(b)",
     stem: "The family home is a base that provides comfort and security for family members.",
     questionText: "Describe three advantages of having household insurance.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 advantages @ 5 marks (graded 5:3:0)","answer":3,"ofParts":7,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 advantages × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe three advantages of having household insurance", marks: 15, contextNote: "Three advantages at 5 marks. The list is short, so the marks come from developing rather than listing: peace of mind is a 3, and saying that a family can replace what a fire or burglary destroyed without borrowing is the 5. Public liability is the one most students have never heard of and it is worth knowing.", openList: true, group: {"claimMax":3,"perOption":5,"options":["provides peace of mind","protects assets e.g. valuables","protection against loss or injury due to burglary","fires","flooding","security","public liability included"]} },
+    { id: "insurance", kind: "criterion", verbatim: "advantages", marks: 15, contextNote: "Three advantages, each graded 5:3:0. Published guidance: provides peace of mind; protects assets e.g. valuables; protection against loss or injury due to burglary; fires; flooding; security; public liability included; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1562,10 +1627,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q4(c)",
     stem: "The family home is a base that provides comfort and security for family members.",
     questionText: "Outline three different ways consumers can reduce pollution to protect the environment.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 ways × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline three different ways consumers can reduce pollution to protect the environment", marks: 15, contextNote: "Three ways at 5 marks. \"Different\" matters again: recycle, reuse and buy second hand are one idea in three coats. Spread across energy, transport and waste instead. Naming the action is 3; naming the pollution it prevents is the 5.", openList: true, group: {"claimMax":3,"perOption":5,"options":["use phosphate detergents","limit use of artificial fertilisers and pesticides","use renewable sources of energy","avoid using CFC’s, choose pump action and ozone friendly products","use smokeless fuel","avoid using fossil fuels","use an electric car","walk or cycle more","use public transport","buy energy efficient appliances","compost food waste","upcycle clothing","choose biodegradable products","buy second hand items"]} },
+    { id: "pollution", kind: "criterion", verbatim: "reduce pollution", marks: 15, contextNote: "Three different ways, each graded 5:3:0.\n\nSource clarification: the printed phrase “use phosphate detergents” appears to be an error. Excess phosphorus contributes to water pollution; reducing it is the relevant principle. The original wording is preserved below so the distinction is clear.\n\nPublished 2023 scheme wording: use phosphate detergents; limit use of artificial fertilisers and pesticides; use renewable sources of energy; avoid using CFC’s, choose pump action and ozone friendly products; use smokeless fuel; avoid using fossil fuels; use an electric car; walk or cycle more; use public transport; buy energy efficient appliances; compost food waste; upcycle clothing; choose biodegradable products; buy second hand items; recycle glass, paper, metal and plastics; reuse products; buy only what you will use; buy products with less packaging; avoid single use products; use a reusable water bottle; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1574,12 +1649,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5a", topicId: "home-economics-2-3", conceptId: "older-people-roles",
     section: "B", questionRef: "2023 OL Section B Q5(a)",
-    stem: "'Ireland has officially been recognised as one of the best places to grow old.' (WHO)",
+    stem: "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
     questionText: "Discuss four roles and responsibilities of older people within the family.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0)","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four roles and responsibilities of older people within the family", marks: 20, contextNote: "Four points at 5 marks, graded 5:3:0. The scheme divides them into roles (what an older person does — childcare, financial help, home maintenance) and responsibilities (what they pass on — respect, values, being a role model). Taking from both halves makes it easier to reach four genuinely different points.", openList: true, group: {"claimMax":4,"perOption":5,"options":["spending time with their children/grandchildren","childcare","financial help for their families","emotional support for children/grandchildren","passing on values e.g. respect and life experiences","help with home maintenance","grandparents often indirectly teach young people respect and can be a great emotional support for children or grandchildren","more relaxed with grandchildren and can be positive role models"]} },
+    { id: "roles", kind: "criterion", verbatim: "roles and responsibilities", marks: 20, contextNote: "Discuss four points, each graded 5:3:0. The paper requires roles and responsibilities; the scheme does not reserve a fixed number for either heading. Published guidance: roles: spending time with their children/grandchildren; childcare; financial help for their families; emotional support for children/grandchildren; passing on values e.g. respect and life experiences; help with home maintenance; etc. responsibility: grandparents often indirectly teach young people respect and can be a great emotional support for children or grandchildren; more relaxed with grandchildren and can be positive role models; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1587,14 +1672,23 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "teenage-adult-conflict",
-    section: "B", questionRef: "2023 OL Section B Q5(b)",
-    stem: "'Ireland has officially been recognised as one of the best places to grow old.' (WHO)",
-    questionText: "Identify two causes of conflict between teenagers and adults, and explain two ways of dealing with this conflict.",
-    tariffModel: {"kind":"fixed","notation":"causes 2 @ 5 marks (graded 5:3:0); ways 2 @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    section: "B", questionRef: "2023 OL Section B Q5(b)(i)",
+    stem: "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
+    questionText: "Identify two causes of conflict between teenagers and adults.",
+    tariffModel: {"kind":"fixed","notation":"2 causes × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identify two causes of conflict between teenagers and adults", marks: 10, contextNote: "Two causes at 5 marks. \"Identify\" reads like a one-word instruction but it is priced at 5, so the cause still has to be explained — social media use is a 3, and what it is actually a conflict about (time, privacy, trust) is the 5.", openList: true, group: {"claimMax":2,"perOption":5,"options":["teenagers question rules and authority","many take on part time jobs and parents feel they are not spending enough time at their study","teenagers seeking independence from parents","change in the family such as new baby or separation","sibling rivalry","discipline issues","poor communication","high parental expectations","schoolwork","social media/phone use","boyfriend/girlfriend","church/religion","personal appearance","smoking, alcohol, drug use"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Explain two ways of dealing with this conflict", marks: 10, contextNote: "Two ways at 5 marks. Communication and boundaries are the two the scheme leads with, and \"do not ignore conflict\" is a point in its own right. Match the ways to the causes you gave — an answer where the solutions do not address the stated problems reads as two unconnected lists.", openList: true, group: {"claimMax":2,"perOption":5,"options":["good communication avoids confrontation","is important that everyone knows what is expected of them and where their boundaries lie","patience","understanding of others prevents conflict","younger people should appreciate the wisdom and experience of adults","appreciate both sides","do not ignore conflict"]} },
+    { id: "causes", kind: "criterion", verbatim: "causes of conflict", marks: 10, contextNote: "Identify two causes, each graded 5:3:0. Published guidance: teenagers question rules and authority; many take on part time jobs and parents feel they are not spending enough time at their study; teenagers seeking independence from parents; change in the family such as new baby or separation; sibling rivalry; discipline issues; poor communication; high parental expectations; schoolwork; social media/phone use; boyfriend/girlfriend; church/religion; personal appearance; smoking, alcohol, drug use; dishonesty; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1603,12 +1697,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5c", topicId: "home-economics-2-3", conceptId: "making-a-will",
     section: "B", questionRef: "2023 OL Section B Q5(c)",
-    stem: "'Ireland has officially been recognised as one of the best places to grow old.' (WHO)",
+    stem: "‘Ireland has officially been recognised as one of the best places to grow old.’ (WHO)",
     questionText: "Outline two reasons why it is important for an older person to make a will.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 reasons @ 5 marks (graded 5:3:0)","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 reasons × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline two reasons why it is important for an older person to make a will", marks: 10, contextNote: "Two reasons at 5 marks. The strongest point in the scheme is the consequence of NOT making one — a sizable portion of the estate going to the state — because it explains itself. Inheritance tax and guardianship of children are the two most specific of the rest.", openList: true, group: {"claimMax":2,"perOption":5,"options":["person’s wishes about the distribution of their estate following their death are set out","an executor will ensure the wishes of the deceased are respected","if a person dies without leaving a will a sizable portion of their estate will go to the state","property passes to whom the deceased wishes","inheritance tax can be reduced for dependents","guardianship arrangements for children if both parents are deceased"]} },
+    { id: "will", kind: "criterion", verbatim: "reasons", marks: 10, contextNote: "Two reasons, each graded 5:3:0.\n\nSource clarification: the scheme’s statement that a sizeable portion automatically goes to the State without a will is not a general rule. Intestacy rules determine distribution among family members. The historical wording is reproduced below; use accurate reasons such as recording wishes and appointing an executor.\n\nPublished 2023 scheme wording: person’s wishes about the distribution of their estate following their death are set out; an executor will ensure the wishes of the deceased are respected; if a person dies without leaving a will a sizable portion of their estate will go to the state; property passes to whom the deceased wishes; inheritance tax can be reduced for dependents; guardianship arrangements for children if both parents are deceased; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5132,5 +5236,29 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "source", kind: "criterion", verbatim: "dietary source of iron", marks: 2, contextNote: "One dietary source, graded 2:1:0. Published examples: meat; meat products; offal; poultry; eggs; cereals; green vegetables; fish; etc.", permittedMarks: [0,1,2] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sb-q5bii", topicId: "home-economics-2-1", conceptId: "dealing-with-family-conflict",
+    section: "B", questionRef: "2023 OL Section B Q5(b)(ii)",
+    stem: "Identify two causes of conflict between teenagers and adults.",
+    questionText: "Explain two ways of dealing with this conflict.",
+    tariffModel: {"kind":"fixed","notation":"2 ways × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "ways", kind: "criterion", verbatim: "ways of dealing with this conflict", marks: 10, contextNote: "Two ways of dealing with conflict between teenagers and adults, each graded 5:3:0. Published guidance: good communication avoids confrontation; is important that everyone knows what is expected of them and where their boundaries lie; patience; understanding of others prevents conflict; younger people should appreciate the wisdom and experience of adults; appreciate both sides; do not ignore conflict; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
 ];

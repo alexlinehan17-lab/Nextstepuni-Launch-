@@ -28350,7 +28350,7 @@
       },
       {
         "id": "he-2023-ol-sb-q5b",
-        "questionRef": "2023 OL Section B Q5(b)",
+        "questionRef": "2023 OL Section B Q5(b)(i)",
         "n": "5",
         "topicId": "home-economics-2-1",
         "atlasTopicIds": [
@@ -28648,6 +28648,16 @@
         "topicId": "home-economics-0-10",
         "atlasTopicIds": [
           "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2023-ol-sb-q5bii",
+        "questionRef": "2023 OL Section B Q5(b)(ii)",
+        "n": "5",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-marriage-family-law",
+          "home-economics-s-and-s-ordinary-the-family"
         ]
       }
     ]

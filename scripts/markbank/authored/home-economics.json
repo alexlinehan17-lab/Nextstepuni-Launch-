@@ -37036,5 +37036,74 @@
    }
   ],
   "notes": "Separate printed prompt and separate 2-mark tariff. Original Q4 identity retains the 4-mark functions task."
+ },
+ {
+  "id": "he-2023-ol-sb-q5bii",
+  "topicId": "home-economics-2-1",
+  "conceptId": "dealing-with-family-conflict",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2023 OL Section B Q5(b)(ii)",
+  "questionText": "Explain two ways of dealing with this conflict.",
+  "stem": "Identify two causes of conflict between teenagers and adults.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 ways × 5 (5:3:0)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "ways",
+    "kind": "criterion",
+    "verbatim": "ways of dealing with this conflict",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Two ways of dealing with conflict between teenagers and adults, each graded 5:3:0. Published guidance: good communication avoids confrontation; is important that everyone knows what is expected of them and where their boundaries lie; patience; understanding of others prevents conflict; younger people should appreciate the wisdom and experience of adults; appreciate both sides; do not ignore conflict; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Separately priced 10-mark task. Carry the teenage/adult conflict context from (i); original Q5b ID retains causes.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]

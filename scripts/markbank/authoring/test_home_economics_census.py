@@ -30,6 +30,18 @@ class HomeEconomicsNestedDevicesTest(unittest.TestCase):
 
 
 class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
+    def test_ordinary_section_b_regenerates_and_preserves_the_split_context(self):
+        from he_review_2023_ol_section_b import build
+        fixes, added = build()
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        self.assertEqual(len(fixes), 13)
+        self.assertEqual(len(added), 1)
+        for key, correction in fixes.items(): self.assertEqual(saved[key], correction)
+        self.assertEqual(authored[added[0]['id']], added[0])
+        self.assertEqual(added[0]['totalMarks'], 10)
+        self.assertIn('teenagers and adults', added[0]['stem'])
+
     def test_ordinary_section_a_regenerates_with_independent_iron_source(self):
         from he_review_2023_ol_section_a import build
         fixes, added = build()

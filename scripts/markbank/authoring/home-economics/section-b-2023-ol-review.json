@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "2023 Ordinary English main sitting, Section B",
+  "status": "source-reviewed; browser QA pending",
+  "sources": "Paper 039 pp2–4; scheme physical pp10–15, hashes pinned by generator.",
+  "generator": "he_review_2023_ol_section_b.py",
+  "correctedExistingIds": [
+    "he-2023-ol-sb-q1b",
+    "he-2023-ol-sb-q1c",
+    "he-2023-ol-sb-q1d",
+    "he-2023-ol-sb-q2c",
+    "he-2023-ol-sb-q3a",
+    "he-2023-ol-sb-q3b",
+    "he-2023-ol-sb-q3c",
+    "he-2023-ol-sb-q4a",
+    "he-2023-ol-sb-q4b",
+    "he-2023-ol-sb-q4c",
+    "he-2023-ol-sb-q5a",
+    "he-2023-ol-sb-q5b",
+    "he-2023-ol-sb-q5c"
+  ],
+  "addedIds": [
+    "he-2023-ol-sb-q5bii"
+  ],
+  "verifiedEarlierIds": [
+    "he-2023-ol-sb-q1a",
+    "he-2023-ol-sb-q2a",
+    "he-2023-ol-sb-q2b"
+  ],
+  "responseCount": 17,
+  "offeredMarks": 280,
+  "candidateMarks": "Question 1 (80) plus any two of Q2–5 (50 each): 180. Practice includes all optional questions.",
+  "boundaryDecisions": [
+    "Q5(b)(i) causes and Q5(b)(ii) ways each receive a published 10 marks. Keep the original ID for causes and add ways with the prior teenage/adult conflict context.",
+    "Required protein, hygiene and housing headings remain single responses with reserved scoring slots.",
+    "A chosen refrigeration appliance with its use and care remains one open response, not a card for each example.",
+    "Older-person roles and responsibilities have four points in total; no invented per-heading quota."
+  ],
+  "sourceClarifications": {
+    "pollution": {
+      "url": "https://www.epa.ie/environment-and-you/freshwater-and-marine/water-quality-and-agriculture/",
+      "checked": "2026-11-01",
+      "note": "EPA identifies excess phosphorus as a pressure on water quality. The scheme phrase “use phosphate detergents” appears to be an error; retain it as source wording and distinguish the clarification."
+    },
+    "detergents": {
+      "url": "https://www.hsa.ie/eng/your_industry/chemicals/legislation_enforcement/detergents/",
+      "checked": "2026-11-01",
+      "note": "HSA describes restrictions on phosphorus compounds in consumer detergents."
+    },
+    "intestacy": {
+      "url": "https://www.courts.ie/guides/explaining-probate",
+      "checked": "2026-11-01",
+      "note": "Courts Service explains that without a will the rules of intestacy determine distribution among family members. No automatic sizeable State share follows merely from not making a will."
+    }
+  },
+  "preservation": {
+    "previous559RuntimeIdsRetained": true,
+    "existingChanged": 13,
+    "otherRuntimeCardsByteIdentical": true,
+    "frozenIdentityHashesUnchanged": true
+  },
+  "atlas": "All 45 Ordinary B/C cards map to their own section and canonical topics, including the added conflict-resolution task.",
+  "validation": {
+    "vitest": "263 passed across 5 suites",
+    "python": "12 passed",
+    "scopedTestTypecheck": "passed",
+    "regeneration": "byte-identical",
+    "browser": "Pending: native connection unavailable",
+    "productionBuild": "Previous recovery batch passed; this data-only batch verified by deck build, source tests and mandatory suites."
+  },
+  "remaining": "Review all 28 Section C tasks; one statutory-scheme task already reviewed. English deferred sittings and other main sittings remain."
+}
