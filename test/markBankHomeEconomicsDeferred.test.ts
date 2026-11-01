@@ -5,6 +5,7 @@ import { reviewedHomeEconomicsSource, homeEconomicsSourceMap } from '../scripts/
 import { resolveIndexedPaperFileid } from '../scripts/markbank/paperIndex.mjs';
 import review from '../scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json';
 import anchors from '../scripts/paper-trail/answers/2023/LC098ALP014EV-deferred.pdf.json';
+import bcAnchors from '../scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
 import crosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-crosswalk.json';
 import { preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
@@ -19,6 +20,39 @@ const get = (suffix: string) => {
 };
 
 describe('Home Economics deferred source boundaries', () => {
+  it('retains the B1 chart, three carbohydrate headings, paired classes and reserved environmental points', () => {
+    const b1 = CARDS.filter(c => /^he-2023-hl-deferred-sb-q1[a-e]$/.test(c.id));
+    expect(b1).toHaveLength(5);
+    expect(b1.reduce((n, c) => n + c.totalMarks, 0)).toBe(80);
+    const b = (part: string) => {
+      const c = b1.find(c => c.id.endsWith(`q1${part}`));
+      if (!c || c.kind !== 'question') throw new Error(part);
+      return c;
+    };
+    expect(b('a').questionFigure?.alt).toContain('Potatoes: 14%, 21%, 26%, 33%, 38%, 43%');
+    expect(b('a').questionFigure?.includesPrompt).toBe(false);
+    expect(b('a').stem).toContain('evening meal');
+    expect(b('a').rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 1, 2, 3, 4, 5, 6]));
+    expect(b('a').rows[2].contextNote).toContain('rice puddings, risottos, curries');
+    expect(b('b').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill([[0, 2], [0, 2]]));
+    expect(b('c').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill([[0, 2, 3], [0, 2, 3]]));
+    expect(b('d').rows[0].contextNote).toContain('no model descriptions');
+    expect(b('e').rows.map(r => r.marks)).toEqual([4, 4, 12]);
+    expect(b('e').rows[0].contextNote).toContain('consider food miles');
+    expect(b('e').rows[1].contextNote).toContain('At least one point');
+    expect(bcAnchors.q.map(q => q.n)).toEqual(['1']);
+    expect(bcAnchors.q[0].region.map(r => r.p)).toEqual([8, 9]);
+    const file = 'LC098ALP039EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2023 && p.fileid === file)!;
+    for (const c of b1) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      expect(c.paperFileid).toBe('LC098ALP039EV-deferred');
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(c.topicId)).map(([k]) => k);
+      expect(browseTopicIdsForQuestion(tags, tags.q[0])).toEqual(expect.arrayContaining(expected));
+    }
+    expect(preferredAnswersUrl('home-economics-s-and-s', 2023, file, 'stale')).toBe(`/paper-answers/2023/${file}.json`);
+  });
   it('separates the two gel tasks while preserving every other required or open response', () => {
     expect(cards).toHaveLength(15);
     expect(cards.reduce((n, c) => n + c.totalMarks, 0)).toBe(84);

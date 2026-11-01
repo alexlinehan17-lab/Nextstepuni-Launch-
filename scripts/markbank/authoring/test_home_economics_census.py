@@ -12,6 +12,19 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_deferred_b1_regenerates_with_the_last_environmental_prompt_in_its_anchor(self):
+        from he_review_2023_hl_deferred_b1 import build
+        from he_review_2023_hl_deferred import documents
+        cards = build(); self.assertEqual(len(cards), 5)
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for c in cards: self.assertEqual(authored[c['id']], c)
+        self.assertEqual([c['totalMarks'] for c in cards], [18, 12, 18, 12, 20])
+        q = json.loads((ROOT / 'scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json').read_text())['q'][0]
+        page = documents()['bc'][1]
+        text = page.get_text(clip=fitz.Rect(0, q['pY'][0] * page.rect.height, page.rect.width, q['endY'] * page.rect.height))
+        self.assertIn('(20 marks)', text)
+        self.assertIn('purchasing foods', text)
+
     def test_deferred_census_reads_both_booklets_and_uncarded_year_independently(self):
         from paper_census import census_home_economics_deferred
         papers = census_home_economics_deferred()

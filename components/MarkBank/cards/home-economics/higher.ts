@@ -9392,4 +9392,137 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q1a", topicId: "home-economics-0-6", conceptId: "carbohydrate-food-consumption",
+    section: "B", questionRef: "2023 HL Section B Q1(a) — Deferred sitting",
+    stem: "The following infographic shows the consumption of potatoes, pasta and rice as part of the evening meal among Irish adults aged 18 to 65+. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House)",
+    questionText: "Using the information provided in the chart, comment and elaborate on the consumption of potatoes, pasta and rice among Irish adults.",
+    tariffModel: {"kind":"fixed","notation":"3 comments × 6 (6:5:4:3:2:1:0)"}, totalMarks: 18,
+    rows: [
+    { id: "potatoes", kind: "criterion", verbatim: "Potatoes", marks: 6, contextNote: "Comment and elaborate using the chart. This food receives one point graded 6:5:4:3:2:1:0. Published guidance: traditional staple food in Ireland; highest % eaten by the 65+ age group; versatile as can be used in many dishes/ways – potato gratin, mashed, fried, boiled, potato salad; etc; high in vitamin C; high in starch, with skin on is high in fibre; easy to prepare and cook; source of energy for active adults; etc.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "pasta", kind: "criterion", verbatim: "Pasta", marks: 6, contextNote: "Comment and elaborate using the chart. This food receives one point graded 6:5:4:3:2:1:0. Published guidance: more popular as a staple food with younger generations; rise in popularity among younger generations due to increased travel and rise in number of Italian restaurants in Ireland; easy and quick to cook for students and those with busy lifestyles; high in starch; brown varieties are high in fibre; used in a variety of dishes; important energy source for athletic adults; long shelf life; etc.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "rice", kind: "criterion", verbatim: "Rice", marks: 6, contextNote: "Comment and elaborate using the chart. This food receives one point graded 6:5:4:3:2:1:0. Published guidance: more popular as a staple food with younger generations; rise in popularity among younger generations due to increased travel and rise in number of Thai, Indian, Chinese restaurants in Ireland; easy and quick to cook for students and those with busy lifestyles; high in starch; brown varieties are high in fibre; high in Vitamin B; versatile can be used in many dishes/ ways e.g., rice puddings, risottos, curries etc.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-hl-deferred-sb-q1a-chart",
+          "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sb-q1a-chart.png",
+          "srcHash": "8cd97ecf5188bec998c8e69afa3223ce",
+          "alt": "Consumption of potatoes, pasta and rice at the evening meal among Irish adults. Age groups: 18–24, 25–34, 35–44, 45–54, 55–64, 65+ years. Potatoes: 14%, 21%, 26%, 33%, 38%, 43%. Pasta: 18%, 16%, 14%, 13%, 10%, 10%. Rice: 16%, 12%, 11%, 12%, 11%, 6%. Vertical axis: consumption rate, 0–50%; horizontal axis: age group.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q1b", topicId: "home-economics-0-6", conceptId: "carbohydrate-classes",
+    section: "B", questionRef: "2023 HL Section B Q1(b) — Deferred sitting",
+    questionText: "Classify carbohydrates and give one example of each class.",
+    tariffModel: {"kind":"fixed","notation":"3 pairs: classification 2 + example 2 (all 2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "monosaccharide", kind: "criterion", verbatim: "Monosaccharide", marks: 4, contextNote: "Classification 2 marks (2:0); one matching example 2 marks (2:0). Published examples: Glucose; Fructose; Galactose", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Classification","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Matching example","marks":2,"permittedMarks":[0,2]}] },
+    { id: "disaccharide", kind: "criterion", verbatim: "Disaccharide", marks: 4, contextNote: "Classification 2 marks (2:0); one matching example 2 marks (2:0). Published examples: Sucrose; Lactose; Maltose", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Classification","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Matching example","marks":2,"permittedMarks":[0,2]}] },
+    { id: "polysaccharide", kind: "criterion", verbatim: "Polysaccharide", marks: 4, contextNote: "Classification 2 marks (2:0); one matching example 2 marks (2:0). Published examples: Starch; Cellulose; Glycogen; Pectin", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Classification","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Matching example","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q1c", topicId: "home-economics-0-6", conceptId: "carbohydrate-properties",
+    section: "B", questionRef: "2023 HL Section B Q1(c) — Deferred sitting",
+    questionText: "Explain each of the following properties of carbohydrates: • gelatinisation • dextrinisation • maillard reaction.",
+    tariffModel: {"kind":"fixed","notation":"3 required properties: 2 points × 3 each (3:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "gelatinisation", kind: "criterion", verbatim: "Gelatinisation", marks: 6, contextNote: "Two explanation points for this required property, each graded 3:2:0. Published guidance: starch grains are heated in a liquid, swell and burst absorbing the liquid to form a thickened solution called a sol; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "dextrinisation", kind: "criterion", verbatim: "Dextrinisation", marks: 6, contextNote: "Two explanation points for this required property, each graded 3:2:0. Published guidance: starch, when heated forms a brown coloured compound called pyrodextrins or short chains of polysaccharides called dextrins, use: toast.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "maillard-reaction", kind: "criterion", verbatim: "Maillard Reaction", marks: 6, contextNote: "Two explanation points for this required property, each graded 3:2:0. Published guidance: chemical reaction sugar (carbohydrate) + amino acid + dry heat = non enzymic browning of food; etc., use: roast potatoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q1d", topicId: "home-economics-0-1", conceptId: "adult-energy-requirements",
+    section: "B", questionRef: "2023 HL Section B Q1(d) — Deferred sitting",
+    questionText: "Describe three factors that determine the energy requirements of an adult.",
+    tariffModel: {"kind":"fixed","notation":"3 factors × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "energy requirements", marks: 12, contextNote: "Describe three distinct factors, each graded 4:2:0. The scheme lists factor names, but no model descriptions: gender; pregnancy/lactation; size; occupation; activity level; health status; climate; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sb-q1e", topicId: "home-economics-0-3", conceptId: "environmental-meal-planning",
+    section: "B", questionRef: "2023 HL Section B Q1(e) — Deferred sitting",
+    questionText: "Discuss the guidelines to follow when planning family meals and purchasing foods, to reduce the impact on the environment.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0): planning 1; purchasing 1; other 3"}, totalMarks: 20,
+    rows: [
+    { id: "planning", kind: "criterion", verbatim: "planning meals", marks: 4, contextNote: "At least one point must address planning meals. Graded 4:2:0. Complete published guidance pool; use relevant ideas for each heading: make a list; Include family likes & dislikes; buy products without excess packaging; buy in bulk; buy fruit and vegetables loose; buy economy size to reduce packaging; buy products in reusable containers; use reusable bags for shopping; use biodegradable packaging; choose eco-refill products e.g., coffee; buy products in recycled packaging; select products with ECO label; minimise shopping trips; buy organic produce; buy foods with Bord Bia mark; buy fairtrade products; energy efficiency in selection of cooking methods; buy local produce; consider food miles; etc.", permittedMarks: [0,2,4] },
+    { id: "purchasing", kind: "criterion", verbatim: "purchasing foods", marks: 4, contextNote: "At least one point must address purchasing foods. Graded 4:2:0. Use the complete published guidance pool above.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 12, contextNote: "Three further distinct points on either heading, each graded 4:2:0. Do not score an idea already used above again. Use the complete published guidance pool above.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

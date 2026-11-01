@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "paperFileid": "LC098ALP039EV-deferred.pdf",
+  "schemeFileid": "LC098ALP000EV-deferred.pdf",
+  "component": "039",
+  "band": [
+    1,
+    33
+  ],
+  "copyright": "© State Examinations Commission",
+  "q": [
+    {
+      "n": "1",
+      "label": "Section B · Q1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [
+        0.179335,
+        0.914489
+      ],
+      "endP": 2,
+      "endY": 0.914489,
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.153207,
+            1,
+            0.863325
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.064133,
+            1,
+            0.758361
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    }
+  ]
+}

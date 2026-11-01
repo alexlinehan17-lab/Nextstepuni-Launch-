@@ -50,6 +50,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'home-economics-s-and-s|2023|LC098ALP039EV.pdf',
   'home-economics-s-and-s|2023|LC098GLP039EV.pdf',
   'home-economics-s-and-s|2023|LC098ALP014EV-deferred.pdf',
+  'home-economics-s-and-s|2023|LC098ALP039EV-deferred.pdf',
   // Historical questions and alternatives reconstructed from inspected crops.
   'mathematics|2010|LC003ALP230EV.pdf',
   'mathematics|2010|LC003GLP230EV.pdf',

@@ -32,7 +32,7 @@
   },
   "sectionStatus": {
     "A": "15 tasks carded, 84 offered marks",
-    "B": "17 tasks open, 280 offered marks",
+    "B": "5 of 17 tasks carded (Question 1); 80 of 280 offered marks. Questions 2–5 open.",
     "C": "26 tasks open, 385 offered marks"
   },
   "offeredPracticeMarks": 749,
@@ -428,6 +428,70 @@
       "questionRef": "2023 HL Section A Q14 — Deferred sitting",
       "marks": 6,
       "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(a) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(b) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(c) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1d",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(d) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sb-q1e",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2023 HL Section B Q1(e) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-3"
     }
-  ]
+  ],
+  "sectionBQuestion1Review": {
+    "paperPages": [
+      2
+    ],
+    "schemePages": [
+      8,
+      9
+    ],
+    "tasks": 5,
+    "offeredMarks": 80,
+    "boundaries": "Five independently priced tasks. B1(a) all three foods required; B1(b) all three classifications and paired examples required; B1(c) all three properties required. B1(d) open factors. B1(e) requires one planning point, one purchasing point and three others. No combination expansion.",
+    "figure": {
+      "key": "home-economics-2023-hl-deferred-sb-q1a-chart",
+      "bounds": [
+        77,
+        216,
+        523,
+        465
+      ],
+      "scale": 2,
+      "sha256": "7d276c03c8566f8c9e76fb0cbcf9498f3a92f56e75562d7c8423778fbc9ca542"
+    },
+    "detail": "Full source guidance retained. B1(d) has factor names only; its reveal explicitly distinguishes those from unprinted model descriptions."
+  }
 }

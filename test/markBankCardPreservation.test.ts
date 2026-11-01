@@ -1298,6 +1298,8 @@ const homeEconomicsAdditionIds = new Set([
   'he-2023-hl-deferred-sa-q8', 'he-2023-hl-deferred-sa-q9', 'he-2023-hl-deferred-sa-q10',
   'he-2023-hl-deferred-sa-q11', 'he-2023-hl-deferred-sa-q12', 'he-2023-hl-deferred-sa-q13',
   'he-2023-hl-deferred-sa-q14',
+  'he-2023-hl-deferred-sb-q1a', 'he-2023-hl-deferred-sb-q1b', 'he-2023-hl-deferred-sb-q1c',
+  'he-2023-hl-deferred-sb-q1d', 'he-2023-hl-deferred-sb-q1e',
 ]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
@@ -1382,7 +1384,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(303);
+    expect(HOME_EC_HIGHER).toHaveLength(308);
     expect(HOME_EC_ORDINARY).toHaveLength(272);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {

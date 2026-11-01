@@ -2672,5 +2672,20 @@
     "primary": "home-economics-1-5"
    }
   ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "paperKey": "single",
+  "year": 2023,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC098ALP039EV-deferred.pdf",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6",
+    "secondary": "home-economics-0-1"
+   }
+  ]
  }
 ]

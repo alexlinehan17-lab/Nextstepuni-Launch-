@@ -186,6 +186,10 @@ def write():
     if path.exists():
         old = json.loads(path.read_text())
         review['tasks'] += [t for t in old.get('tasks', []) if t['section'] != 'A']
+        for section in ['B', 'C']:
+            review['sectionStatus'][section] = old.get('sectionStatus', {}).get(section, review['sectionStatus'][section])
+        for key in ['sectionBQuestion1Review']:
+            if key in old: review[key] = old[key]
     path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n')
     print(f'2023 Higher deferred A: {len(cards)} cards, 84 offered marks; B/C still open.')
 

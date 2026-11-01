@@ -6,16 +6,16 @@
   "summary": {
     "referenceTopics": 54,
     "referenceOfficialAssociations": 1561,
-    "matchedAssociations": 1186,
-    "sourceBlockedAssociations": 375,
+    "matchedAssociations": 1192,
+    "sourceBlockedAssociations": 369,
     "sourceBlockedByReason": {
       "before-local-corpus": 297,
-      "deferred-sitting-not-in-local-corpus": 78
+      "deferred-sitting-not-in-local-corpus": 72
     },
-    "matchedLocalCardLinks": 1701,
-    "exactRuntimeQuestionMappings": 917,
-    "localAnswerAnchoredPaperVariants": 92,
-    "localAnswerAnchoredPhysicalCards": 1257,
+    "matchedLocalCardLinks": 1707,
+    "exactRuntimeQuestionMappings": 918,
+    "localAnswerAnchoredPaperVariants": 93,
+    "localAnswerAnchoredPhysicalCards": 1258,
     "sourceUnavailableTopics": 0
   },
   "policy": {
@@ -1361,24 +1361,54 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part A",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-diet-health",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-diet-health",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part D",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-diet-health",
@@ -6859,8 +6889,18 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part E",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-environment",
@@ -12523,16 +12563,36 @@
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-nutrition-carbohydrates",
       "heading": "2023 - Deferred Exam Paper - Section B - Question 1 - Part C",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-nutrition-carbohydrates",
@@ -28928,6 +28988,55 @@
         "atlasTopicIds": [
           "home-economics-s-and-s-higher-elective-1-energy-emissions",
           "home-economics-s-and-s-higher-environment"
+        ]
+      }
+    ]
+  },
+  "reviewedEnglish2023DeferredB1": {
+    "paperFileid": "LC098ALP039EV-deferred.pdf",
+    "physicalQuestions": 1,
+    "review": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
+    "policy": "B1 only: all five separately priced tasks. Other B/C questions still open.",
+    "markBankMappings": [
+      {
+        "id": "he-2023-hl-deferred-sb-q1a",
+        "n": "1",
+        "topicId": "home-economics-0-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-carbohydrates"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q1b",
+        "n": "1",
+        "topicId": "home-economics-0-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-carbohydrates"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q1c",
+        "n": "1",
+        "topicId": "home-economics-0-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-carbohydrates"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q1d",
+        "n": "1",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-diet-health"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sb-q1e",
+        "n": "1",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-assignments",
+          "home-economics-s-and-s-higher-meal-planning-preparation"
         ]
       }
     ]
