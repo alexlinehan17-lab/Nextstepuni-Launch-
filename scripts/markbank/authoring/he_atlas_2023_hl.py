@@ -96,6 +96,8 @@ def apply(level='higher'):
         ref = re.search(rf'questionRef: "(2023 {short} Section ([BC]) (?:E\d )?Q(\d+)[^"]*)"', chunk)
         if not ref:
             continue
+        if 'Deferred' in ref[1]:
+            continue
         cid = re.search(r'\bid: "([^"]+)"', chunk).group(1)
         node = re.search(r'topicId: "([^"]+)"', chunk).group(1)
         n = str(int(ref[3]) + (5 if ref[2] == 'C' else 0))
@@ -201,3 +203,5 @@ def apply(level='higher'):
 if __name__ == '__main__':
     apply('higher')
     apply('ordinary')
+    from he_atlas_deferred import apply as apply_deferred
+    apply_deferred()

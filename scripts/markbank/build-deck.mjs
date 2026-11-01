@@ -34,6 +34,7 @@ import { questionStandsAlone } from './questionText.mjs';
 import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
 import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
 import { reviewedPhysicsSource } from './physicsSources.mjs';
+import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -628,7 +629,8 @@ const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', f
 function schemeFor(subjectId, card) {
   const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
   const deferred = (subjectId === 'maths' && reviewedMathematicsSource(card.id)?.sitting === 'deferred')
-    || (subjectId === 'physics' && reviewedPhysicsSource(card.id)?.sitting === 'deferred');
+    || (subjectId === 'physics' && reviewedPhysicsSource(card.id)?.sitting === 'deferred')
+    || (subjectId === 'home-economics' && reviewedHomeEconomicsSource(card.id)?.sitting === 'deferred');
   const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
@@ -1638,7 +1640,8 @@ for (const c of cards) {
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
   const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id)
-    : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id) : undefined;
+    : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id)
+    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
@@ -1648,7 +1651,7 @@ for (const c of cards) {
     ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${SUBJECT_ID === 'physics' && reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},

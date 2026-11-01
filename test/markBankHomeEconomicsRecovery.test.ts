@@ -54,7 +54,7 @@ describe('2023 Higher Home Economics recovered tasks', () => {
   });
 
   it('reconciles all 2023 Higher practice tasks after the full paper and scheme review', () => {
-    const cards = CARDS.filter(c => c.year === 2023);
+    const cards = CARDS.filter(c => c.year === 2023 && !c.questionRef.includes('Deferred'));
     expect(cards).toHaveLength(59);
     expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(749);
     for (const card of cards) {
@@ -224,7 +224,7 @@ describe('2023 Higher Home Economics recovered tasks', () => {
   });
 
   it('preserves Section A marks while splitting the two separately priced prompts', () => {
-    const cards = CARDS.filter(c => /^2023 HL Section A /.test(c.questionRef));
+    const cards = CARDS.filter(c => /^2023 HL Section A /.test(c.questionRef) && !c.questionRef.includes('Deferred'));
     expect(cards).toHaveLength(16);
     expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(84);
     expect(get('he-2023-hl-sa-q4').totalMarks).toBe(4);
@@ -321,7 +321,7 @@ describe('2023 Higher Home Economics recovered tasks', () => {
   it('places every 2023 Higher B/C Mark Bank card in its own Atlas question and canonical topic', () => {
     const paper = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s'
       && p.year === 2023 && p.level === 'higher' && p.lang === 'ev' && p.fileid === 'LC098ALP039EV.pdf')!;
-    const cards = CARDS.filter(c => /^2023 HL Section [BC] /.test(c.questionRef));
+    const cards = CARDS.filter(c => /^2023 HL Section [BC] /.test(c.questionRef) && !c.questionRef.includes('Deferred'));
     expect(cards).toHaveLength(43);
     for (const card of cards) {
       const match = card.questionRef.match(/Section ([BC]) (?:E\d )?Q(\d+)/)!;

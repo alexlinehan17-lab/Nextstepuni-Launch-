@@ -37105,5 +37105,1094 @@
    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "protein-gel-formation",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q1 — Deferred sitting",
+  "questionText": "In relation to proteins, explain gel formation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 2 (2:1:0)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "explain",
+    "kind": "criterion",
+    "verbatim": "gel formation",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Two explanation points, each graded 2:1:0. Published guidance: collagen when heated converts to gelatine; gelatine can absorb large amounts of water when heated; protein chain uncoils and water becomes entrapped; forms a sol; on cooling sol forms a gel, a semi-viscous solution that has a 3D protein matrix in which water molecules become trapped etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q1-example",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "protein-gel-culinary-example",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q1 — culinary example — Deferred sitting",
+  "questionText": "Give one culinary example of gel formation.",
+  "stem": "In relation to proteins.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 example × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "example",
+    "kind": "criterion",
+    "verbatim": "culinary example",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One example, graded 2:0. Published examples: cheesecake, soufflé, jelly sweets; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-7",
+  "conceptId": "lipid-digestion",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q2 — Deferred sitting",
+  "questionText": "Complete the table below in relation to the digestion of lipids.\nSecretion: Pancreatic juice\nEnzyme: _____\nSubstrate: _____\nProduct: _____",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 entries × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "enzyme",
+    "kind": "criterion",
+    "verbatim": "Enzyme",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required table entry, graded 2:1:0. Published answer: Lipase"
+   },
+   {
+    "id": "substrate",
+    "kind": "criterion",
+    "verbatim": "Substrate",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required table entry, graded 2:1:0. Published answer: Lipids"
+   },
+   {
+    "id": "product",
+    "kind": "criterion",
+    "verbatim": "Product",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required table entry, graded 2:1:0. Published answer: Fatty acids and glycerol"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "mineral-deficiency",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3 — Deferred sitting",
+  "questionText": "The following health conditions may result from a mineral deficiency in the diet. Identify one deficient mineral in each case.\nRickets in children\nMuscular spasms and muscle cramps\nEnlargement of the thyroid gland",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 minerals × 2 (2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "condition-1",
+    "kind": "criterion",
+    "verbatim": "Rickets in children",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name one deficient mineral for this condition, graded 2:0. Published answers: calcium"
+   },
+   {
+    "id": "condition-2",
+    "kind": "criterion",
+    "verbatim": "Muscular spasms and muscle cramps",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name one deficient mineral for this condition, graded 2:0. Published answers: potassium; sodium; magnesium; Calcium; iron"
+   },
+   {
+    "id": "condition-3",
+    "kind": "criterion",
+    "verbatim": "Enlargement of the thyroid gland",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name one deficient mineral for this condition, graded 2:0. Published answers: iodine"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "thiamine-properties",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4 — Deferred sitting",
+  "questionText": "List three properties of Vitamin B1 (thiamine).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "properties of Vitamin B1",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: water soluble, insoluble in fat; destroyed by high temperature; destroyed by alkalis; destroyed by light; 70% loss during milling etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "energy-balance",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q5 — Deferred sitting",
+  "questionText": "In relation to the diet, explain the term energy balance.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "energy balance",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: energy intake should match energy output to maintain a healthy body weight; if kcal intake is greater than energy output, this can lead to weight gain; obesity and other health complications may result; if kcal output is greater than energy intake, this leads to weight loss etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "irish-food-exports",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q6 — Deferred sitting",
+  "questionText": "Name three different sectors in the Irish food industry and give one example of a food exported in each case.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 pairs: sector 1 + export 1 (all 1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "sector-1",
+    "kind": "criterion",
+    "verbatim": "Sector in the Irish food Industry",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Pair 1: choose a different sector for each pair. Sector 1 mark; suitable export 1 mark. Published examples:\n\nDairy: Butter; cheese; cream; ice cream; yoghurt; milk powder; whey; etc.\n\nMeat & livestock: Beef; lamb; pork; poultry.\n\nMariculture/ Fish: Salmon; cod; trout; Shellfish.\n\nHorticulture: Mushrooms; potatoes; vegetables; fruit.\n\nBeverages: Water; whiskey; cream liqueur; gin.\n\nPrepared consumer foods: Cooked meat; pizza; sauces; bakery; confectionary.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Sector",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Matching export",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sector-2",
+    "kind": "criterion",
+    "verbatim": "Sector in the Irish food Industry",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Pair 2: choose a different sector for each pair. Sector 1 mark; suitable export 1 mark. Published examples:\n\nDairy: Butter; cheese; cream; ice cream; yoghurt; milk powder; whey; etc.\n\nMeat & livestock: Beef; lamb; pork; poultry.\n\nMariculture/ Fish: Salmon; cod; trout; Shellfish.\n\nHorticulture: Mushrooms; potatoes; vegetables; fruit.\n\nBeverages: Water; whiskey; cream liqueur; gin.\n\nPrepared consumer foods: Cooked meat; pizza; sauces; bakery; confectionary.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Sector",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Matching export",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sector-3",
+    "kind": "criterion",
+    "verbatim": "Sector in the Irish food Industry",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Pair 3: choose a different sector for each pair. Sector 1 mark; suitable export 1 mark. Published examples:\n\nDairy: Butter; cheese; cream; ice cream; yoghurt; milk powder; whey; etc.\n\nMeat & livestock: Beef; lamb; pork; poultry.\n\nMariculture/ Fish: Salmon; cod; trout; Shellfish.\n\nHorticulture: Mushrooms; potatoes; vegetables; fruit.\n\nBeverages: Water; whiskey; cream liqueur; gin.\n\nPrepared consumer foods: Cooked meat; pizza; sauces; bakery; confectionary.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Sector",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Matching export",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "bacterial-growth",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q7 — Deferred sitting",
+  "questionText": "Outline three conditions that affect the growth of bacteria.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "conditions that affect the growth of bacteria",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: Food: saprophytic or parasitic. Temp: mesophilic 20 – 45°C; psychrophilic; thermophilic; hyperthermophilic. Moisture: require water for growth, grow best in humid conditions, foods above .90 aw. Oxygen: aerobic; anaerobic and facultative; etc. pH: neutral or slightly acidic pH 6-7 etc. Time: In ideal conditions will grow and multiply every 20 minutes. Light/darkness.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "added-value-food",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q8 — Deferred sitting",
+  "questionText": "Explain the term ‘added value food’ and give one example of an added value food.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Explanation 4 (4:2:0); example 2 (2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "criterion",
+    "verbatim": "added value food",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Explanation graded 4:2:0. Published guidance: raw products that have been modified or enhanced to have a higher market value and/or a longer shelf life."
+   },
+   {
+    "id": "example",
+    "kind": "criterion",
+    "verbatim": "example",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One example, graded 2:0. Published examples: flour; dairy products; cook-chill foods; functional foods; genetically modified foods etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sensory-analysis-uses",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q9 — Deferred sitting",
+  "questionText": "Outline three uses of sensory analysis in the food industry.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "uses of sensory analysis",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: marketing of products; evaluating food products; quality control; determine preference or difference; develop new products; modify recipes etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "savings-scheme-factors",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q10 — Deferred sitting",
+  "questionText": "Describe three factors to consider when choosing a savings scheme.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2 (2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "savings scheme",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Three distinct points, each graded 2:1:0. Published guidance: (i) security of savings; interest earned; (ii) tax payable; (iii) access to funds; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "household-insurance-terms",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q11 — Deferred sitting",
+  "questionText": "Explain the following household insurance terms:\nPolicy\nPremium",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 required terms × 3 (3:2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "policy",
+    "kind": "criterion",
+    "verbatim": "Policy",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Required term, graded 3:2:0. Published guidance: written details of the terms and conditions of insurance cover for the home; etc."
+   },
+   {
+    "id": "premium",
+    "kind": "criterion",
+    "verbatim": "Premium",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Required term, graded 3:2:0. Published guidance:  the sum of money paid annually or by instalments to the Insurance company."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "national-housing-policy-2023",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q12 — Deferred sitting",
+  "questionText": "Identify two current features under Ireland’s National Housing Policy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 features × 3 (3:2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "features",
+    "kind": "criterion",
+    "verbatim": "National Housing Policy",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two features, each graded 3:2:0. “Current” refers to this 2023 examination. Published 2023 guidance; policy names and measures may since have changed: provision of social and affordable housing through social housing schemes; help to buy scheme (HTB); promotion of energy efficient homes - insulation grants; solar panel grants; support of home ownership through local authority home loan; home modification grant scheme; rent allowance scheme (RAS); registration of rented accommodation PRTB; rent value freeze; regulations for short term lettings; minimum BER rating standards; evection ban; housing and related supports for disabled people; Croí Cónaithe refurbishment grants; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q13",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "household-textiles-factors",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q13 — Deferred sitting",
+  "questionText": "Outline two factors to consider when choosing household textiles.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 factors × 3 (3:2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "criterion",
+    "verbatim": "household textiles",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two factors, each graded 3:2:0. Published guidance: function/ suitability of purpose; cost; aesthetic appeal/ personal preference; care and cleaning; durability etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2023-hl-deferred-sa-q14",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "water-pollution",
+  "level": "higher",
+  "year": 2023,
+  "section": "A",
+  "questionRef": "2023 HL Section A Q14 — Deferred sitting",
+  "questionText": "Name one cause of water pollution and state the effect of this pollution on the environment. Explain how water pollution can be reduced.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Cause 2; effect 2; reduction 2 (all 2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cause",
+    "kind": "criterion",
+    "verbatim": "Cause",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required heading, graded 2:1:0. Relate the effect to the pollution you named. Published guidance: industrial waste e.g., chemical solvents; marine dumping; oil spillages/leakage; run off from chemical fertilisers and pesticides; leakage from sewer pipes; etc."
+   },
+   {
+    "id": "effect",
+    "kind": "criterion",
+    "verbatim": "Effect",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required heading, graded 2:1:0. Relate the effect to the pollution you named. Published guidance: make water unsafe for human consumption; illness; death of aquatic life; negative affect on tourist and fishing industries; increase in algae bloom, suffocates animal life etc."
+   },
+   {
+    "id": "reduction",
+    "kind": "criterion",
+    "verbatim": "Reduction measure",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Required heading, graded 2:1:0. Relate the effect to the pollution you named. Published guidance: industries implement environmentally friendly waste management systems; no illegal dumping of industrial waste; heavy fines for illegal dumping and oil spillages; reduce use of chemical fertilisers and pesticides; choose eco-friendly versions of chemical fertilisers and pesticides; maintenance of sewer pipes; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Paper and deferred scheme independently reviewed. Source identity, boundaries and open-choice decisions: he_review_2023_hl_deferred.py and home-economics/2023-hl-deferred-review.json."
  }
 ]

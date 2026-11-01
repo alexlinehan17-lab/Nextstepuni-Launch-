@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "year": 2023,
+  "level": "higher",
+  "sitting": "deferred",
+  "language": "ev",
+  "status": "partial-carding; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "a": {
+      "fileid": "LC098ALP014EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2023/LC098ALP014EV.pdf",
+      "sha256": "3841b3f1398f2a92c6378812733017cc0c30b39a81b565b1ffb723f172e1df30",
+      "pages": 40
+    },
+    "bc": {
+      "fileid": "LC098ALP039EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2023/LC098ALP039EV.pdf",
+      "sha256": "06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3",
+      "pages": 12
+    },
+    "scheme": {
+      "fileid": "LC098ALP000EV.pdf",
+      "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC098ALP000EV.pdf",
+      "sha256": "1ff62adab752ea79017ecd7b7f40c1e553a399c34bfb07bda4b7e7a96548b952",
+      "pages": 32
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 32 pages: cover 1, deferred marking notice 2, candidate rubric 3, A 4–7, B 8–17, C 18–30, blank 31, back cover 32."
+  },
+  "sectionStatus": {
+    "A": "15 tasks carded, 84 offered marks",
+    "B": "17 tasks open, 280 offered marks",
+    "C": "26 tasks open, 385 offered marks"
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "boundaryDecisions": [
+    "A1: separate gel explanation (4) and culinary example (2).",
+    "A2/A3: required table entries remain one task per question.",
+    "A6: open choice of three paired sectors and exports; one task, not sector combinations.",
+    "A8/A11/A14: required or dependent headings remain one task.",
+    "Other A counts: open points/examples, no finite choice pool.",
+    "B5(c): scheme accidentally labels (b); paper identity (c) governs.",
+    "C1(a)(iii): published 5:3:0 ladder; allocation 3 provision/2 distribution does not permit standalone 2.",
+    "C1(c)(ii): published examples list inefficiencies, not model reductions; do not invent official models.",
+    "C4(a)(ii): heading says 9 × 2, but detailed 12+4+4 allocation and paper both require 20.",
+    "C4(c)(ii): historical marital-rights guidance needs an explicit consent clarification before publication."
+  ],
+  "paperRegionsA": {
+    "1": {
+      "page": 3,
+      "rect": [
+        0,
+        150.1197509765625,
+        595.219970703125,
+        344.1799621582031
+      ]
+    },
+    "2": {
+      "page": 3,
+      "rect": [
+        0,
+        371.81976318359375,
+        595.219970703125,
+        461.17999267578125
+      ]
+    },
+    "3": {
+      "page": 3,
+      "rect": [
+        0,
+        491.27972412109375,
+        595.219970703125,
+        657.2000122070312
+      ]
+    },
+    "4": {
+      "page": 4,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "5": {
+      "page": 4,
+      "rect": [
+        0,
+        257.8797607421875,
+        595.219970703125,
+        440.72003173828125
+      ]
+    },
+    "6": {
+      "page": 4,
+      "rect": [
+        0,
+        477.3597412109375,
+        595.219970703125,
+        631.280029296875
+      ]
+    },
+    "7": {
+      "page": 5,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "8": {
+      "page": 5,
+      "rect": [
+        0,
+        257.8797607421875,
+        595.219970703125,
+        440.72003173828125
+      ]
+    },
+    "9": {
+      "page": 5,
+      "rect": [
+        0,
+        456.7197570800781,
+        595.219970703125,
+        639.5
+      ]
+    },
+    "10": {
+      "page": 6,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "11": {
+      "page": 6,
+      "rect": [
+        0,
+        265.67974853515625,
+        595.219970703125,
+        448.52001953125
+      ]
+    },
+    "12": {
+      "page": 6,
+      "rect": [
+        0,
+        474.41973876953125,
+        595.219970703125,
+        657.260009765625
+      ]
+    },
+    "13": {
+      "page": 7,
+      "rect": [
+        0,
+        56.0997314453125,
+        595.219970703125,
+        238.94000244140625
+      ]
+    },
+    "14": {
+      "page": 7,
+      "rect": [
+        0,
+        264.83966064453125,
+        595.219970703125,
+        462.32000732421875
+      ]
+    }
+  },
+  "schemeRegionsA": {
+    "1": {
+      "page": 4,
+      "rect": [
+        0,
+        147.479736328125,
+        595.219970703125,
+        329.65985107421875
+      ]
+    },
+    "2": {
+      "page": 4,
+      "rect": [
+        0,
+        353.93988037109375,
+        595.219970703125,
+        497.17999267578125
+      ]
+    },
+    "3": {
+      "page": 4,
+      "rect": [
+        0,
+        527.2796020507812,
+        595.219970703125,
+        734.47998046875
+      ]
+    },
+    "4": {
+      "page": 5,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        135.01971435546875
+      ]
+    },
+    "5": {
+      "page": 5,
+      "rect": [
+        0,
+        153.3597412109375,
+        595.219970703125,
+        261.559814453125
+      ]
+    },
+    "6": {
+      "page": 5,
+      "rect": [
+        0,
+        279.89984130859375,
+        595.219970703125,
+        544.8800048828125
+      ]
+    },
+    "7": {
+      "page": 5,
+      "rect": [
+        0,
+        556.9796752929688,
+        595.219970703125,
+        709.15966796875
+      ]
+    },
+    "8": {
+      "page": 6,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        259.58001708984375
+      ]
+    },
+    "9": {
+      "page": 6,
+      "rect": [
+        0,
+        278.51971435546875,
+        595.219970703125,
+        357.499755859375
+      ]
+    },
+    "10": {
+      "page": 6,
+      "rect": [
+        0,
+        375.77978515625,
+        595.219970703125,
+        502.6999816894531
+      ]
+    },
+    "11": {
+      "page": 6,
+      "rect": [
+        0,
+        521.759765625,
+        595.219970703125,
+        606.6798095703125
+      ]
+    },
+    "12": {
+      "page": 6,
+      "rect": [
+        0,
+        624.9597778320312,
+        595.219970703125,
+        777.1397705078125
+      ]
+    },
+    "13": {
+      "page": 7,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        135.01971435546875
+      ]
+    },
+    "14": {
+      "page": 7,
+      "rect": [
+        0,
+        147.3597412109375,
+        595.219970703125,
+        366.7999267578125
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2023-hl-deferred-sa-q1",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q1 — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q1-example",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q1 — culinary example — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q2",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q2 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q3",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q3 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q4",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q4 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q5",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q5 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q6",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q6 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q7",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q7 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q8",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q8 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q9",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q9 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q10",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q10 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q11",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q11 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q12",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q12 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q13",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q13 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2023-hl-deferred-sa-q14",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2023 HL Section A Q14 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-5"
+    }
+  ]
+}

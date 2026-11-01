@@ -1320,7 +1320,7 @@ def _paragraph_heads(raw):
     return chunks
 
 
-def census_sections(subject, year, level):
+def census_sections(subject, year, level, files=None):
     """The section-restart walker: Business and Home Economics.
 
     paper.py reads a sitting as one forward-numbered sequence, and these
@@ -1340,7 +1340,7 @@ def census_sections(subject, year, level):
     P = PP.Paper.__new__(PP.Paper)
     P.subject, P.year, P.level, P.component = subject, year, level, None
     root = PP.papers_dir(subject)
-    P.files = sorted(os.path.join(root, f) for f in os.listdir(root)
+    P.files = files if files is not None else sorted(os.path.join(root, f) for f in os.listdir(root)
                      if re.fullmatch(rf'{year}-{level}(-\d+)?-paper\.pdf', f))
     if not P.files:
         raise FileNotFoundError(f'no {year} {level} paper for {subject}')
@@ -1355,8 +1355,16 @@ def census_sections(subject, year, level):
         # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
         # Stait ... 136 marks Instructions" -- through the continuation rule.
         blocks.append(FILE_BREAK)
+        # The deferred B/C cover repeats Section C's rubric after the first
+        # booklet has already contributed A tasks. It is not a section start:
+        # letting it advance the state to C hides every following B question.
+        # Both published 2022/2023 covers are instructions only.
+        skip_pages = (1,) if (subject == 'home-economics' and files is not None
+                              and '/deferredexams/' in path
+                              and path.endswith('LC098ALP039EV.pdf')) else ()
         for block in (_business_blocks(path) if subject == 'business' else
-                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None)):
+                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None,
+                                 skip_pages=skip_pages)):
             # The answerbook's own back matter -- its instructions, its ruled
             # pages, the image acknowledgements and the copyright notice --
             # follows the last question in the SAME booklet, and the walker
@@ -3820,7 +3828,40 @@ def census_subject(subject):
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
     if subject == 'physics':
         papers.extend(census_physics_deferred())
+    if subject == 'home-economics':
+        papers.extend(census_home_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+def census_home_economics_deferred():
+    """Both published English sittings, including tasks not yet authored.
+
+    Read raw source booklets independently of the reviewed card ledger. Counts
+    remain diagnostic; source review decides actual practice-task boundaries.
+    """
+    import hashlib
+    path = os.path.join(ROOT, 'scripts/markbank/authoring/home-economics/deferred-source-inventory.json')
+    with open(path, encoding='utf-8') as fh:
+        inventory = json.load(fh)
+    papers = []
+    for sitting in inventory['sittings']:
+        year, level = sitting['year'], sitting['level']
+        assert level == 'hl' and sitting['language'] == 'ev' and sitting['sitting'] == 'deferred'
+        files = []
+        for kind, component in [('a', '014'), ('bc', '039')]:
+            source = sitting['sources'][kind]
+            expected = f'paper-trail-corpus/deferredexams/{year}/LC098ALP{component}EV.pdf'
+            assert source['path'] == expected
+            pdf = os.path.join(ROOT, expected)
+            with open(pdf, 'rb') as fh:
+                assert hashlib.sha256(fh.read()).hexdigest() == source['sha256']
+            files.append(pdf)
+        parts, texts, _ = census_sections('home-economics', year, level, files=files)
+        leaves = list(leaves_of(parts))
+        papers.append(dict(year=year, level=level, paper='Deferred', leafCount=len(leaves),
+            leaves=[dict(key=list(k), label=key_label(k, 'home-economics'), text=texts.get(k, '')[:160]) for k in leaves],
+            marksSum=None, marksQuestions=0, flags=continuity_flags(parts, texts, 'home-economics')))
+    return papers
 
 
 def census_physics_deferred():

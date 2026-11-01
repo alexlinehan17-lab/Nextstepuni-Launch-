@@ -2606,5 +2606,71 @@
     "primary": "home-economics-2-1"
    }
   ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "paperKey": "single",
+  "year": 2023,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC098ALP014EV-deferred.pdf",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-3-3"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-5"
+   }
+  ]
  }
 ]

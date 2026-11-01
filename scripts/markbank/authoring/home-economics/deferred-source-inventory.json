@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-01",
+  "authority": "State Examinations Commission",
+  "archiveUrl": "https://www.examinations.ie/exammaterialarchive/index.php",
+  "offeredYears": {
+    "deferredexams": [
+      2025,
+      2024,
+      2023,
+      2022
+    ],
+    "deferredmarkingschemes": [
+      2025,
+      2024,
+      2023,
+      2022
+    ]
+  },
+  "listings": [
+    {
+      "view": "deferredexams",
+      "year": 2025,
+      "subjectListSha256": "e3799ebe616e9c1a094dacc8b8297ac0f5afea3647796deb5526abca2b213242",
+      "homeEconomicsSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2024,
+      "subjectListSha256": "af0c23065b5ac85c4cc35c379c1c7af9bd3bb14d22007c4ded487c19dd0adac9",
+      "homeEconomicsSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredexams",
+      "year": 2023,
+      "subjectListSha256": "4ce972a1e9fdbd4c27cd6f8fbe8622c9745892fe7bdf9dcbcec3ebf080430e2e",
+      "homeEconomicsSubjects": [
+        [
+          "98",
+          "Home Economics S & S"
+        ]
+      ],
+      "files": [
+        [
+          "LC098ALP014EV.pdf",
+          "Section A / Higher Level (EV)",
+          ""
+        ],
+        [
+          "LC098ALP014IV.pdf",
+          "Section A / Higher Level (IV)",
+          ""
+        ],
+        [
+          "LC098ALP039EV.pdf",
+          "Section B&C / Higher Level (EV)",
+          ""
+        ],
+        [
+          "LC098ALP039IV.pdf",
+          "Section B&C / Higher Level (IV)",
+          ""
+        ]
+      ],
+      "listingSha256": "2ef367580bec3e1891f9b9c63e60d50eaa4e37ff6b4bb31537f00d376894008d"
+    },
+    {
+      "view": "deferredexams",
+      "year": 2022,
+      "subjectListSha256": "4308a255b853794c8367f3a76ec41d55921a34fe3aff5614533674858e9db161",
+      "homeEconomicsSubjects": [
+        [
+          "98",
+          "Home Economics S & S"
+        ]
+      ],
+      "files": [
+        [
+          "LC098ALP014EV.pdf",
+          "Section A / Higher Level (EV)",
+          ""
+        ],
+        [
+          "LC098ALP039EV.pdf",
+          "Section B&C / Higher Level (EV)",
+          ""
+        ]
+      ],
+      "listingSha256": "7251ce11e34d590ce927070d9b895088101f2f9a4f7f4cfc06ec390304012924"
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2025,
+      "subjectListSha256": "2126718797e0f1e150c46157386064db2fabe0be6351f95e46c0cba148fa71a5",
+      "homeEconomicsSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2024,
+      "subjectListSha256": "6a5d1c40ddcd905b2bcdcc8638c2cfd249e5eee36e53c62afe84a078f2425b9d",
+      "homeEconomicsSubjects": [],
+      "subjectIds": [
+        "25",
+        "2",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2023,
+      "subjectListSha256": "9ac56a71d20e75bb7c94af0099b7102fca724dcb9e0d4a6678ad6923ef214ba8",
+      "homeEconomicsSubjects": [
+        [
+          "98",
+          "Home Economics S & S"
+        ]
+      ],
+      "files": [
+        [
+          "LC098ALP000EV.pdf",
+          "Higher Level (EV)",
+          ""
+        ]
+      ],
+      "listingSha256": "bef0399e6729c4c1cd5d221b9ea873d42d355ef33e67fa0fd842bf599acf455e"
+    },
+    {
+      "view": "deferredmarkingschemes",
+      "year": 2022,
+      "subjectListSha256": "86348941ce136849d0c7ab3cf2248f62549e5d986084e35f63beb7f558335823",
+      "homeEconomicsSubjects": [
+        [
+          "98",
+          "Home Economics S & S"
+        ]
+      ],
+      "files": [
+        [
+          "LC098ALP000EV.pdf",
+          "Higher Level (EV)",
+          ""
+        ]
+      ],
+      "listingSha256": "fd6e745ac28ab8bb75b9fab724b33788dbef8dbe9bc5f656b4234eab6974e30e"
+    }
+  ],
+  "scope": "English editions only; Irish editions deferred at user instruction.",
+  "limit": "A missing archive listing is a publication finding, not evidence that no exam was sat.",
+  "sittings": [
+    {
+      "year": 2022,
+      "level": "hl",
+      "language": "ev",
+      "sitting": "deferred",
+      "sources": {
+        "a": {
+          "fileid": "LC098ALP014EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2022/LC098ALP014EV.pdf",
+          "sha256": "5861dc717c7f278c4cc3f6b748349221c26a42789f72054442bfe4094ab14cb6"
+        },
+        "bc": {
+          "fileid": "LC098ALP039EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2022/LC098ALP039EV.pdf",
+          "sha256": "8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03"
+        },
+        "scheme": {
+          "fileid": "LC098ALP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC098ALP000EV.pdf",
+          "sha256": "8e9ff528232a53b0c03cd41d2a4f4a44fbcd294c0c2c3932182ae9a93e818e8f"
+        }
+      },
+      "visualReview": "pending"
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "language": "ev",
+      "sitting": "deferred",
+      "sources": {
+        "a": {
+          "fileid": "LC098ALP014EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2023/LC098ALP014EV.pdf",
+          "sha256": "3841b3f1398f2a92c6378812733017cc0c30b39a81b565b1ffb723f172e1df30"
+        },
+        "bc": {
+          "fileid": "LC098ALP039EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2023/LC098ALP039EV.pdf",
+          "sha256": "06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3"
+        },
+        "scheme": {
+          "fileid": "LC098ALP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC098ALP000EV.pdf",
+          "sha256": "1ff62adab752ea79017ecd7b7f40c1e553a399c34bfb07bda4b7e7a96548b952"
+        }
+      },
+      "visualReview": "2023-hl-deferred-review.json"
+    }
+  ]
+}

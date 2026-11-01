@@ -12,6 +12,29 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_deferred_census_reads_both_booklets_and_uncarded_year_independently(self):
+        from paper_census import census_home_economics_deferred
+        papers = census_home_economics_deferred()
+        self.assertEqual([p['year'] for p in papers], [2022, 2023])
+        for p in papers:
+            self.assertEqual(p['paper'], 'Deferred')
+            self.assertEqual({leaf['key'][0] for leaf in p['leaves']}, {'A', 'B', 'C'})
+        deferred = next(p for p in papers if p['year'] == 2023)
+        self.assertTrue(any('gel formation' in leaf['text'] for leaf in deferred['leaves']))
+        self.assertTrue(any('water pollution' in leaf['text'] for leaf in deferred['leaves']))
+        self.assertFalse(any('Basal Metabolic Rate' in leaf['text'] for leaf in deferred['leaves']))
+
+    def test_deferred_section_a_regenerates_and_anchors_include_floating_answers(self):
+        from he_review_2023_hl_deferred import build_a, documents, region_text
+        docs = documents(); cards, paper, scheme = build_a(docs)
+        self.assertEqual(len(cards), 15)
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for c in cards: self.assertEqual(authored[c['id']], c)
+        self.assertIn('genetically modified foods', region_text(docs['scheme'], scheme[8]))
+        self.assertIn('access to funds', region_text(docs['scheme'], scheme[10]))
+        self.assertIn('Croí Cónaithe', region_text(docs['scheme'], scheme[12]))
+        self.assertIn('Reduction measure', region_text(docs['a'], paper[14]))
+
     def test_device_labels_do_not_move_the_following_safety_ask(self):
         paper = ROOT / 'examiner-reports/home-economics/papers/2022-ol-039-paper.pdf'
         self.assertEqual(hashlib.sha256(paper.read_bytes()).hexdigest(),

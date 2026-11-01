@@ -3661,6 +3661,9 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
 
   for (const paper of PAPER_TOPIC_TAGS) {
     if (paper.subjectId !== taxonomy.subjectId) continue;
+    // The index gives deferred files a distinct virtual name. A canonical
+    // fallback must preserve that sitting just as exact runtime mappings do.
+    const sitting: ExamSitting = /-deferred\.pdf$/i.test(paper.fileid) ? 'deferred' : 'main';
     for (const question of paper.q) {
       const topicIds = [...new Set(
         [question.primary, question.secondary]
@@ -3681,7 +3684,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         question.n,
         paper.paperKey,
       );
@@ -3689,7 +3692,7 @@ const registerCanonicalTagBridge = (taxonomy: ExamTopicTaxonomy) => {
         paper.subjectId,
         paper.level,
         paper.year,
-        'main',
+        sitting,
         paper.fileid,
         question.n,
         paper.paperKey,

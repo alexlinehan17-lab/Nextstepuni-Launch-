@@ -848,7 +848,7 @@ def _deduplicated_lines(page):
             for _, row in sorted(rows.items())]
 
 
-def _blocks(path, subject=None, strip_pages=(), any_space=False, maths=False):
+def _blocks(path, subject=None, strip_pages=(), any_space=False, maths=False, skip_pages=()):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order.
     A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
@@ -857,7 +857,7 @@ def _blocks(path, subject=None, strip_pages=(), any_space=False, maths=False):
                  [(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n], indices=subject == 'physics'))]
                  if n + 1 in strip_pages else
                  sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
-                 for n in range(doc.page_count)]
+                 for n in range(doc.page_count) if n + 1 not in skip_pages]
     if subject in GUTTER_MARKERS:
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
