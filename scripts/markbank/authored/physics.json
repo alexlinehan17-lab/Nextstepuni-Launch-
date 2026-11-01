@@ -100912,5 +100912,3174 @@
   "year": 2013,
   "level": "higher",
   "figureKey": "physics-2013-hl-q12-thermistor"
+ },
+ {
+  "id": "phys-2013-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "1i",
+  "section": "A",
+  "questionRef": "2013 OL Q1(i)",
+  "stem": "You carried out an experiment to measure g, the acceleration due to gravity.",
+  "questionText": "Draw a labelled diagram of the apparatus you used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "falling object; ball",
+    "marks": 6,
+    "route": "falling-ball"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "timer; timer shown in diagram / detail;stop/start mechanism",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "timer; timer shown in diagram",
+      "detail;stop/start mechanism"
+     ]
+    },
+    "contextNote": "Both remaining apparatus details are required, 3 marks each. Use one complete method. Deduct 1 if no labels; other valid methods are accepted.",
+    "route": "falling-ball"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "pendulum bob",
+    "marks": 6,
+    "route": "pendulum"
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "stop-watch / fixed point/split cork",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "stop-watch",
+      "fixed point/split cork"
+     ]
+    },
+    "contextNote": "Both remaining apparatus details are required, 3 marks each. Use one complete method. Deduct 1 if no labels; other valid methods are accepted.",
+    "route": "pendulum"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "picket fence",
+    "marks": 6,
+    "route": "picket-fence"
+   },
+   {
+    "id": "r6",
+    "kind": "anyN",
+    "verbatim": "photogate (and timer) / calculator/computer",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "photogate (and timer)",
+      "calculator/computer"
+     ]
+    },
+    "contextNote": "Both remaining apparatus details are required, 3 marks each. Use one complete method. Deduct 1 if no labels; other valid methods are accepted.",
+    "route": "picket-fence"
+   }
+  ],
+  "notes": "Three complete 12-mark methods, each object 6 plus two required details at 3 each; routes never added. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "1ii",
+  "section": "A",
+  "questionRef": "2013 OL Q1(ii)",
+  "stem": "You carried out an experiment to measure g, the acceleration due to gravity.",
+  "questionText": "State the measurements you took during the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "distance / time",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "distance",
+      "time"
+     ]
+    },
+    "contextNote": "Both matching measurements are required. For data logging the source accepts velocity against time and its gradient, or distance and time.",
+    "route": "falling-ball"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "length (of pendulum) / period (of pendulum)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "length (of pendulum)",
+      "period (of pendulum)"
+     ]
+    },
+    "contextNote": "Both matching measurements are required. For data logging the source accepts velocity against time and its gradient, or distance and time.",
+    "route": "pendulum"
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "selected v versus t /s / slope of graph /t",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "selected v versus t /s",
+      "slope of graph /t"
+     ]
+    },
+    "contextNote": "Both matching measurements are required. For data logging the source accepts velocity against time and its gradient, or distance and time.",
+    "route": "data-logging"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q1-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "1iii",
+  "section": "A",
+  "questionRef": "2013 OL Q1(iii)",
+  "stem": "You carried out an experiment to measure g, the acceleration due to gravity. State the measurements you took during the experiment.",
+  "questionText": "Describe how you took these measurements.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "1st correct instrument",
+    "marks": 6,
+    "contextNote": "Describe the instrument and method for the first measurement in your chosen experiment."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "2nd correct instrument",
+    "marks": 3,
+    "contextNote": "Describe the instrument and method for the second measurement in the same experiment."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q1-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "1iv",
+  "section": "A",
+  "questionRef": "2013 OL Q1(iv)",
+  "stem": "You carried out an experiment to measure g, the acceleration due to gravity.",
+  "questionText": "How did you calculate a value for g from your measurements?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "g= 2s/t² /s= ½ gt²",
+    "marks": 9,
+    "contextNote": "Substitute your measured distance and time. One equation error: 6; partial substitution: 3. Other valid methods fitting the scheme are accepted.",
+    "route": "free-fall"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "g= 4π²l/T²",
+    "marks": 9,
+    "contextNote": "Substitute the pendulum length and period. The equivalent T = 2π√(l/g) is accepted. One equation error: 6; partial substitution or a T²-versus-l graph: 3.",
+    "route": "pendulum"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q1-g-solution"
+ },
+ {
+  "id": "phys-2013-ol-q1-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "1v",
+  "section": "A",
+  "questionRef": "2013 OL Q1(v)",
+  "stem": "You carried out an experiment to measure g, the acceleration due to gravity.",
+  "questionText": "Give one precaution that you took to get an accurate result.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "use the smallest time value recorded for t // swing through small angle",
+    "marks": 4,
+    "contextNote": "Any valid specific precaution not already credited earns 4. A general precaution such as repetition earns 2; use the precaution for your chosen method."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2i",
+  "section": "A",
+  "questionRef": "2013 OL Q2(i)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "calorimeter (with water)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "thermometer // temperature sensor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ice",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "other detail e.g. insulation/(electronic) balance/stirrer, etc.",
+    "marks": 3,
+    "contextNote": "No labels: deduct 1; incorrect experiment is capped at 9."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2ii",
+  "section": "A",
+  "questionRef": "2013 OL Q2(ii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "How did the student prepare the ice for the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "crushed / dried / melting ice used",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "crushed",
+      "dried",
+      "melting ice used"
+     ]
+    },
+    "contextNote": "Any one preparation; it may be inferred from the diagram. A partial answer such as “in the fridge” earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iii",
+  "section": "A",
+  "questionRef": "2013 OL Q2(iii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "How did the student know that the ice was at 0 °C?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "stand in ice-water mixture / (use) melting (ice)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iv",
+  "section": "A",
+  "questionRef": "2013 OL Q2(iv)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "How did the student find the mass of the ice?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "subtract",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "initial mass (of calorimeter and water)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "from final mass (of calorimeter and water and melted ice)",
+    "marks": 3,
+    "contextNote": "A partial answer such as using weighing scales earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2v",
+  "section": "A",
+  "questionRef": "2013 OL Q2(v)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "Why did the student use warm water in the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "increase accuracy //ice melts faster // less heat loss // heat lost = heat gained",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q2-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2vi",
+  "section": "A",
+  "questionRef": "2013 OL Q2(vi)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following is an extract from her report. “I first set up the apparatus for this experiment. I prepared the ice. I added the ice which was at 0 °C to the warm water. I found the mass of the ice. When all the ice was melted I took a temperature reading. I was then able to calculate the specific latent heat of fusion of ice.”",
+  "questionText": "What precaution did the student take when adding the ice to the water?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "avoid splashing//did it quickly//ensured the ice was dry//added lots of ice//stir, etc.",
+    "marks": 4,
+    "contextNote": "Partial answer such as wearing gloves: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "3i",
+  "section": "A",
+  "questionRef": "2013 OL Q3(i)",
+  "stem": "An experiment to measure the refractive index of a substance was carried out by a student. When the apparatus had been set up the student made a series of measurements. The student repeated the experiment a number of times.",
+  "questionText": "Draw a labelled diagram of the apparatus that the student used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "glass/plastic block",
+    "marks": 6,
+    "route": "block"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ray box / laser / optical pins",
+    "marks": 3,
+    "route": "block"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "protractor // mirror",
+    "marks": 3,
+    "contextNote": "A protractor or mirror for the chosen block method. No labels: deduct 1; incorrect experiment: maximum 9.",
+    "route": "block"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "container of liquid",
+    "marks": 6,
+    "route": "liquid-depth"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "optical pins",
+    "marks": 3,
+    "route": "liquid-depth"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "metre stick",
+    "marks": 3,
+    "contextNote": "No labels: deduct 1; incorrect experiment: maximum 9.",
+    "route": "liquid-depth"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "3ii",
+  "section": "A",
+  "questionRef": "2013 OL Q3(ii)",
+  "stem": "An experiment to measure the refractive index of a substance was carried out by a student. When the apparatus had been set up the student made a series of measurements. The student repeated the experiment a number of times.",
+  "questionText": "What measurements did the student take?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "angle of incidence / i",
+    "marks": 6,
+    "route": "angles"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "angle of refraction / r",
+    "marks": 6,
+    "route": "angles"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "real depth",
+    "marks": 6,
+    "route": "depths"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "apparent depth",
+    "marks": 6,
+    "route": "depths"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "critical angle",
+    "marks": 12,
+    "contextNote": "Critical angle alone is a complete accepted 12-mark method. General reference to angles or height earns 6. Measurements may be inferred from the diagram.",
+    "route": "critical-angle"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "3iii",
+  "section": "A",
+  "questionRef": "2013 OL Q3(iii)",
+  "stem": "An experiment to measure the refractive index of a substance was carried out by a student. When the apparatus had been set up the student made a series of measurements. The student repeated the experiment a number of times.",
+  "questionText": "How were these measurements used to calculate the refractive index of the substance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(n=) sini/(sinr) //(n=) (real depth)/(apparent depth) // (n=) 1/(sinc)",
+    "marks": 10,
+    "contextNote": "Choose the formula matching your experiment. One equation error: 7; partial substitution: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q3-index-solution"
+ },
+ {
+  "id": "phys-2013-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "3iv",
+  "section": "A",
+  "questionRef": "2013 OL Q3(iv)",
+  "stem": "An experiment to measure the refractive index of a substance was carried out by a student. When the apparatus had been set up the student made a series of measurements. The student repeated the experiment a number of times.",
+  "questionText": "Why did the student repeat the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "for increased accuracy / to get average / to draw a graph",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4i",
+  "section": "A",
+  "questionRef": "2013 OL Q4(i)",
+  "stem": "In an experiment to investigate the variation of the resistance R of a thermistor with temperature θ a student measured the resistance of a thermistor at different temperatures.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermistor (in waterbath)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "thermometer // temperature sensor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ohmmeter // datalogger",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "detail e.g. heat source, used hot water, test tube containing glycerol, etc.",
+    "marks": 3,
+    "contextNote": "No labels: deduct 1."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q4-data"
+ },
+ {
+  "id": "phys-2013-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4ii",
+  "section": "A",
+  "questionRef": "2013 OL Q4(ii)",
+  "stem": "In an experiment to investigate the variation of the resistance R of a thermistor with temperature θ a student measured the resistance of a thermistor at different temperatures.",
+  "questionText": "How did the student measure the resistance of the thermistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ohmmeter/(digital) multimeter (set to ohms)//measure V and I and hence determine R",
+    "marks": 6,
+    "contextNote": "Partial answer such as “meter”: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q4-data"
+ },
+ {
+  "id": "phys-2013-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iii",
+  "section": "A",
+  "questionRef": "2013 OL Q4(iii)",
+  "stem": "In an experiment to investigate the variation of the resistance R of a thermistor with temperature θ a student measured the resistance of a thermistor at different temperatures.",
+  "questionText": "Plot a graph on graph paper to show the relationship between resistance R of the thermistor and the temperature θ. (Put θ on the X-axis.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly, (name / symbol / unit acceptable)",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "plot another three points correctly",
+    "marks": 3,
+    "contextNote": "All seven data pairs remain available; the historical scheme awards the plotting marks in two groups of three."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "(smooth) curve",
+    "marks": 3,
+    "contextNote": "Without graph paper or with θ on the Y-axis, maximum 9. The historical guide curve is approximate and misses some plotted readings; use a smooth best-fit curve based on your plotted data."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q4-graph-solution",
+  "questionFigureKey": "physics-2013-ol-q4-graph-question"
+ },
+ {
+  "id": "phys-2013-ol-q4-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iv",
+  "section": "A",
+  "questionRef": "2013 OL Q4(iv)",
+  "stem": "In an experiment to investigate the variation of the resistance R of a thermistor with temperature θ a student measured the resistance of a thermistor at different temperatures. Plot a graph on graph paper to show the relationship between resistance R of the thermistor and the temperature θ. (Put θ on the X-axis.)",
+  "questionText": "Use the graph to estimate the temperature of the thermistor when its resistance is 500 Ω.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "34 °C to 37 °C // value consistent with the graph",
+    "marks": 4,
+    "contextNote": "Evidence of using the graph at R = 500 Ω: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q4-data"
+ },
+ {
+  "id": "phys-2013-ol-q4-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4v",
+  "section": "A",
+  "questionRef": "2013 OL Q4(v)",
+  "stem": "In an experiment to investigate the variation of the resistance R of a thermistor with temperature θ a student measured the resistance of a thermistor at different temperatures. Plot a graph on graph paper to show the relationship between resistance R of the thermistor and the temperature θ. (Put θ on the X-axis.)",
+  "questionText": "What can you tell from the graph about the relationship between the resistance of a thermistor and its temperature?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistance goes down with increased temperature // non linear // not proportional",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q4-data"
+ },
+ {
+  "id": "phys-2013-ol-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2013 OL Q5(a)",
+  "questionText": "Give an example of (i) a vector quantity, (ii) a scalar quantity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct examples of each",
+    "marks": 7,
+    "contextNote": "Give one correctly identified vector and one scalar, for 4+3. Examples for guidance: force is a vector; mass is a scalar. The scheme allows 4 for reversed examples or definitions."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2013 OL Q5(b)",
+  "questionText": "The spanner shown in the diagram is used to turn a nut. Calculate the moment of the force applied by the spanner to the nut.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "5 (N m)",
+    "marks": 7,
+    "contextNote": "Moment = force × perpendicular distance = 50 × 0.10. Partial method: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q5-spanner"
+ },
+ {
+  "id": "phys-2013-ol-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2013 OL Q5(c)",
+  "questionText": "Which of the following scientists is associated with the discovery of the structure of the atom? Einstein Rutherford Faraday Coulomb",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Rutherford",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2013 OL Q5(d)",
+  "questionText": "What is meant by the threshold of hearing?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "minimum sound (intensity) audible // quietest sound that can be heard",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2013 OL Q5(e)",
+  "questionText": "How does light travel through an optical fibre?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(by) total internal reflection stated or shown by diagram",
+    "marks": 7,
+    "contextNote": "Reflection alone: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2013 OL Q5(f)",
+  "questionText": "Give a common use for a convex lens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "magnification, (eye) glasses, binoculars, contact lenses, camera, etc.",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2013 OL Q5(g)",
+  "questionText": "What colour is the wire that is connected to the fuse in a standard three-pin plug?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "brown (red-brown)",
+    "marks": 7,
+    "contextNote": "The historical scheme awards 4 for blue or green-yellow, but those are not the live-wire colour."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2013 OL Q5(h)",
+  "questionText": "Give a common use for a capacitor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "store charge / conducts a.c. /(radio) tuning / filtering / smoothing / timing / store energy / flash camera / phone charger, etc.",
+    "marks": 7,
+    "contextNote": "Partial answer such as “radio”: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2013 OL Q5(i)",
+  "questionText": "What is the photoelectric effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emission of electrons when light (radiation) is incident",
+    "marks": 7,
+    "contextNote": "Emission of electrons alone: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q5-j",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "5j",
+  "section": "B",
+  "questionRef": "2013 OL Q5(j)",
+  "questionText": "Name one method for detecting radioactive particles.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Geiger-Muller tube, Geiger counter, solid state detector, cloud chamber, bubble chamber, GLE, photographic film, radioactive sensor, etc.",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q6-momentum",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "momentum",
+  "section": "B",
+  "questionRef": "2013 OL Q6 — Momentum",
+  "questionText": "Define momentum",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass (multiplied by) velocity // mv",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q6-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2013 OL Q6 — Force",
+  "questionText": "Define force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass (multiplied by) acceleration // ma // causes acceleration",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q6-conservation",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "conservation",
+  "section": "B",
+  "questionRef": "2013 OL Q6 — Conservation of momentum",
+  "questionText": "State the principle of conservation of momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(total) momentum before (interaction) // m₁u₁ + m₂u₂",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "equal to (total) momentum after (interaction) // = m₁v₁ + m₂v₂",
+    "marks": 3,
+    "contextNote": "For an isolated system with no net external force; use matching words or formula on both rows."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q6-jet",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "jet",
+  "section": "B",
+  "questionRef": "2013 OL Q6 — Jet-engine momentum",
+  "questionText": "Explain how the principle of conservation of momentum applies in the case of a jet engine moving an aircraft.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(backward) momentum of air equal to",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(forward) momentum of aircraft",
+    "marks": 3,
+    "contextNote": "A correct diagram may earn marks; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-aircraft"
+ },
+ {
+  "id": "phys-2013-ol-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6i",
+  "section": "B",
+  "questionRef": "2013 OL Q6(i)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "Calculate the momentum of the truck and the car before the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "50 000 (kg m s⁻¹)",
+    "marks": 6,
+    "contextNote": "The truck contributes 50,000 kg m s⁻¹ and the stationary car contributes zero. Partial method mv: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-collision"
+ },
+ {
+  "id": "phys-2013-ol-q6-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6ii",
+  "section": "B",
+  "questionRef": "2013 OL Q6(ii)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "What is the momentum of the combined vehicles after the collision?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "50 000 (kg m s⁻¹) / 6000v // the same as the momentum before collision",
+    "marks": 4,
+    "contextNote": "An answer consistent with your before-collision momentum is accepted; partial answer: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-collision"
+ },
+ {
+  "id": "phys-2013-ol-q6-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6iii",
+  "section": "B",
+  "questionRef": "2013 OL Q6(iii)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "Calculate the velocity of the combined vehicles after the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( 50000/6000 =) 8.3 (m s⁻¹)",
+    "marks": 6,
+    "contextNote": "An answer consistent with the preceding momentum is accepted; partial answer: 3. Retain the unrounded 8⅓ m s⁻¹ for later calculations."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-speed-solution",
+  "questionFigureKey": "physics-2013-ol-q6-speed-question"
+ },
+ {
+  "id": "phys-2013-ol-q6-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6iv",
+  "section": "B",
+  "questionRef": "2013 OL Q6(iv)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "What is the momentum of the truck after the collision?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(8.3 × 5000 =) 41 500 (kg m s⁻¹)",
+    "marks": 4,
+    "contextNote": "The printed value uses rounded 8.3 m s⁻¹. The unrounded result is 41,666.7 kg m s⁻¹. An answer consistent with the preceding velocity is accepted; partial answer: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-collision"
+ },
+ {
+  "id": "phys-2013-ol-q6-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6v",
+  "section": "B",
+  "questionRef": "2013 OL Q6(v)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "If the collision between the truck and the car takes 0.3 seconds, calculate the force exerted by the truck on the car.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(F = (50000−41500)/0.3 // 8300/0.3 =) 27.8 ± 0.2 (kN)",
+    "marks": 6,
+    "contextNote": "Use unrounded momentum: (50,000 − 41,666.7)/0.3 ≈ 27.8 kN. The historical first substitution uses 41,500 and would give 28.3 kN, outside its printed range; the alternative 8,300/0.3 gives 27.7 kN. Correct equation alone: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-force-solution",
+  "questionFigureKey": "physics-2013-ol-q6-force-question"
+ },
+ {
+  "id": "phys-2013-ol-q6-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6vi",
+  "section": "B",
+  "questionRef": "2013 OL Q6(vi)",
+  "stem": "A truck of mass 5000 kg is moving with a velocity 10 m s⁻¹ when it collides with a stationary car with a mass of 1000 kg. The truck and the car then move off together.",
+  "questionText": "When the truck hits the back of the car the driver’s airbag inflates. The airbag deflates when it is hit by the driver’s head. Explain why the airbag reduces the risk of injury to the driver.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "longer time reduced force on driver’s head",
+    "marks": 6,
+    "contextNote": "Any relevant explanation is accepted; a partial reference to force earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q6-collision"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "frequency",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a) — Frequency",
+  "questionText": "What is meant by the frequency of a wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "number of waves per second",
+    "marks": 6,
+    "contextNote": "Number of waves alone: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-relationship",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "relationship",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a) — Frequency and wavelength",
+  "questionText": "Give the relationship between the frequency and the wavelength of a wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = fλ // f and λ inversely proportional",
+    "marks": 6,
+    "contextNote": "The inverse relationship applies for constant wave speed. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7ai",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a)(i)",
+  "stem": "The diagram shows a student walking in front of two loudspeakers along the path between A and B. A signal generator set at 500 Hz is connected to the loudspeakers.",
+  "questionText": "What will the student notice as he moves from A to B?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "loudness varies // increasing and decreasing sound",
+    "marks": 6,
+    "contextNote": "The frequency remains 500 Hz. The historical scheme allows 3 for the incorrect suggestion that the frequency varies."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-speakers"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7aii",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a)(ii)",
+  "stem": "The diagram shows a student walking in front of two loudspeakers along the path between A and B. A signal generator set at 500 Hz is connected to the loudspeakers. What will the student notice as he moves from A to B?",
+  "questionText": "Name this phenomenon.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Interference",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-speakers"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7aiii",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a)(iii)",
+  "stem": "The diagram shows a student walking in front of two loudspeakers along the path between A and B. A signal generator set at 500 Hz is connected to the loudspeakers. What will the student notice as he moves from A to B?",
+  "questionText": "Explain with the aid of a diagram how this phenomenon occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "full marks may be obtained from a diagram",
+    "marks": 9,
+    "contextNote": "Show constructive interference when the waves reinforce and destructive interference when they cancel. The original scheme diagrams are shown. A correct explanation alone earns 6; a partial example earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-interference-solution",
+  "questionFigureKey": "physics-2013-ol-q7-interference-question"
+ },
+ {
+  "id": "phys-2013-ol-q7-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7aiv",
+  "section": "B",
+  "questionRef": "2013 OL Q7(a)(iv)",
+  "stem": "The diagram shows a student walking in front of two loudspeakers along the path between A and B. A signal generator set at 500 Hz is connected to the loudspeakers. What will the student notice as he moves from A to B?",
+  "questionText": "Why should this phenomenon be taken into account in the placing of speakers in theatres or auditoriums?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to ensure that all areas have equal loudness",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-speakers"
+ },
+ {
+  "id": "phys-2013-ol-q7-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7bi",
+  "section": "B",
+  "questionRef": "2013 OL Q7(b)(i)",
+  "stem": "The note produced by a guitar string depends on the fundamental frequency of the string. The quality of the note depends on the number of overtones produced. The loudness of a note is increased by resonance in the body of a guitar.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "fundamental frequency is the lowest / main frequency of an object / overtones are multiples of fundamental // higher frequencies produced // harmonics",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "fundamental frequency is the lowest / main frequency of an object",
+      "overtones are multiples of fundamental // higher frequencies produced // harmonics"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both definitions are required: first correct definition 6, second 3. Overtones lie above the fundamental; for the ideal string they are higher harmonics. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-guitar",
+  "questionFigureKey": "physics-2013-ol-q7-terms-question"
+ },
+ {
+  "id": "phys-2013-ol-q7-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7bii",
+  "section": "B",
+  "questionRef": "2013 OL Q7(b)(ii)",
+  "stem": "The note produced by a guitar string depends on the fundamental frequency of the string. The quality of the note depends on the number of overtones produced. The loudness of a note is increased by resonance in the body of a guitar.",
+  "questionText": "How can the note produced by a guitar string be changed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change tension / (effective) length / amplitude",
+    "marks": 4,
+    "contextNote": "Tension or effective length changes pitch; amplitude changes loudness. Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-guitar"
+ },
+ {
+  "id": "phys-2013-ol-q7-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "7biii",
+  "section": "B",
+  "questionRef": "2013 OL Q7(b)(iii)",
+  "stem": "The note produced by a guitar string depends on the fundamental frequency of the string. The quality of the note depends on the number of overtones produced. The loudness of a note is increased by resonance in the body of a guitar.",
+  "questionText": "What is resonance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transfer of energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "between two objects of similar natural frequency",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q7-guitar"
+ },
+ {
+  "id": "phys-2013-ol-q8-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8ai",
+  "section": "B",
+  "questionRef": "2013 OL Q8(a)(i)",
+  "stem": "An electric current is the flow of charge in a conductor when there is a potential difference between its ends.",
+  "questionText": "Name the unit of current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "amp / A",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8aii",
+  "section": "B",
+  "questionRef": "2013 OL Q8(a)(ii)",
+  "stem": "An electric current is the flow of charge in a conductor when there is a potential difference between its ends.",
+  "questionText": "Give an example of a conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "named metal",
+    "marks": 3,
+    "contextNote": "Any correct conductor is accepted; copper is an example of a named metal."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8aiii",
+  "section": "B",
+  "questionRef": "2013 OL Q8(a)(iii)",
+  "stem": "An electric current is the flow of charge in a conductor when there is a potential difference between its ends.",
+  "questionText": "Name a source of potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "cell / battery / power supply, etc.",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8aiv",
+  "section": "B",
+  "questionRef": "2013 OL Q8(a)(iv)",
+  "stem": "An electric current is the flow of charge in a conductor when there is a potential difference between its ends.",
+  "questionText": "What are the charge carriers in semiconductors?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "electrons / holes",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "electrons",
+      "holes"
+     ],
+     "perOptionSteps": [
+      6,
+      2
+     ]
+    },
+    "contextNote": "Both charge carriers: 8; one: 6. A partial reference to semiconductor types or doping: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "8av",
+  "section": "B",
+  "questionRef": "2013 OL Q8(a)(v)",
+  "stem": "An electric current is the flow of charge in a conductor when there is a potential difference between its ends.",
+  "questionText": "What type of conductor does the I-V graph in the diagram represent?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ohmic / metallic / wire",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q8-iv"
+ },
+ {
+  "id": "phys-2013-ol-q8-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "8bi",
+  "section": "B",
+  "questionRef": "2013 OL Q8(b)(i)",
+  "stem": "A magnetic field exists about a current-carrying conductor.",
+  "questionText": "What is a magnetic field?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "region / area /space",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "where iron is attracted / magnetic effect is felt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "8bii",
+  "section": "B",
+  "questionRef": "2013 OL Q8(b)(ii)",
+  "stem": "A magnetic field exists about a current-carrying conductor.",
+  "questionText": "Describe an experiment to show that a long straight wire carrying a current has a magnetic field. Sketch the magnetic field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus; source of current / battery / power supply",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure; complete the circuit / turn on the current",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "sketch the circular field (with correct direction)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "(plotting) compass / compass direction changes",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(plotting) compass",
+      "compass direction changes"
+     ]
+    },
+    "contextNote": "Both apparatus and its matching observation are required. Other valid methods are accepted; a labelled diagram can earn full marks.",
+    "route": "compass"
+   },
+   {
+    "id": "r5",
+    "kind": "anyN",
+    "verbatim": "iron filings / iron filings rearrange",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "iron filings",
+      "iron filings rearrange"
+     ]
+    },
+    "contextNote": "Both apparatus and its matching observation are required. Other valid methods are accepted; a labelled diagram can earn full marks.",
+    "route": "iron-filings"
+   }
+  ],
+  "notes": "One 15-mark experiment-plus-field task: three common criteria and one matching two-criterion apparatus/observation route. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q8-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "8biii",
+  "section": "B",
+  "questionRef": "2013 OL Q8(b)(iii)",
+  "stem": "A magnetic field exists about a current-carrying conductor.",
+  "questionText": "Give an application of the magnetic field due to a current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnet, speaker, motor, induction coil, transformer, etc",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q9-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9i",
+  "section": "B",
+  "questionRef": "2013 OL Q9(i)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes.",
+  "questionText": "What is heat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a form of) energy / mcΔθ /ml",
+    "marks": 6,
+    "contextNote": "More precisely, heat is energy transferred because of a temperature difference. The paper’s opening statement assumes no change of state. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q9-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9ii",
+  "section": "B",
+  "questionRef": "2013 OL Q9(ii)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes.",
+  "questionText": "Name the three ways in which heat can be transferred.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conduction",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "convection",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "radiation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q9-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9iii",
+  "section": "B",
+  "questionRef": "2013 OL Q9(iii)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes.",
+  "questionText": "Describe an experiment to show how heat is transferred in a liquid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus; liquid in glass beaker, heat source, (solid) dye",
+    "marks": 3,
+    "contextNote": "Any two of these three apparatus items are required for this single 3-mark criterion."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure; put the dye in the liquid and heat",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation/conclusion; the dye can be seen rising to the top of the liquid / convection currents visible",
+    "marks": 3,
+    "contextNote": "A diagram may earn full marks; other valid experiments are accepted. Incorrect experiment: maximum 6; incomplete description: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q9-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9iv",
+  "section": "B",
+  "questionRef": "2013 OL Q9(iv)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes. The water in an electric kettle is heated by the element and its handle is made from an insulating material.",
+  "questionText": "How does the method of heat transfer in a liquid affect the positioning of the heating element in a kettle?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heating element at the bottom of the kettle",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q9-kettle"
+ },
+ {
+  "id": "phys-2013-ol-q9-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9v",
+  "section": "B",
+  "questionRef": "2013 OL Q9(v)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes. The water in an electric kettle is heated by the element and its handle is made from an insulating material.",
+  "questionText": "Why is the handle of a kettle made of an insulating material?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "insulator doesn’t conduct heat // safe to touch",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q9-kettle"
+ },
+ {
+  "id": "phys-2013-ol-q9-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9vi",
+  "section": "B",
+  "questionRef": "2013 OL Q9(vi)",
+  "stem": "When heat is transferred to or from an object the temperature of the object changes. The water in an electric kettle is heated by the element and its handle is made from an insulating material.",
+  "questionText": "Name an insulator suitable for use in the handle of a kettle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "plastic, wood, ceramic, etc.",
+    "marks": 4,
+    "contextNote": "Any suitable insulator is accepted; partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q9-kettle"
+ },
+ {
+  "id": "phys-2013-ol-q9-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "9vii",
+  "section": "B",
+  "questionRef": "2013 OL Q9(vii)",
+  "stem": "A kettle contains 1.3 kg of water with a specific heat capacity of 4200 J kg⁻¹ K⁻¹. The temperature of the water rises from 10 °C to 80 °C during a three-minute period.",
+  "questionText": "Calculate the energy gained by the water",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = mcΔθ = (1.3)(4200)(80-10) = ) 3.8 ×10⁵ (J)",
+    "marks": 9,
+    "contextNote": "The unrounded result is 382,200 J. Two correctly substituted quantities: 6; mcΔθ alone: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q9-energy-solution"
+ },
+ {
+  "id": "phys-2013-ol-q9-viii",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "9viii",
+  "section": "B",
+  "questionRef": "2013 OL Q9(viii)",
+  "stem": "A kettle contains 1.3 kg of water with a specific heat capacity of 4200 J kg⁻¹ K⁻¹. The temperature of the water rises from 10 °C to 80 °C during a three-minute period.",
+  "questionText": "Calculate the power rating of the kettle, assuming all of the electrical energy is used to heat the water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "P = 2123.3 (W) // answer consistent with (vii)",
+    "marks": 9,
+    "contextNote": "Use E/t = 382,200/180 ≈ 2123.3 W. The printed 3.8 × 10⁵ J is rounded and gives 2111.1 W; answers consistent with the preceding energy are accepted. Correct substitution: 6; E = Pt alone: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q9-power-solution"
+ },
+ {
+  "id": "phys-2013-ol-q10-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10i",
+  "section": "B",
+  "questionRef": "2013 OL Q10(i)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph.",
+  "questionText": "What are X-rays?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnetic radiation // photons",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "high energy/frequency (low wavelength)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10ii",
+  "section": "B",
+  "questionRef": "2013 OL Q10(ii)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph.",
+  "questionText": "State a property of X-rays that makes them suitable for medical use.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "highly penetrating // selective absorbance",
+    "marks": 6,
+    "contextNote": "Partial answer, such as seeing broken bones: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10iii",
+  "section": "B",
+  "questionRef": "2013 OL Q10(iii)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph.",
+  "questionText": "Give a use, other than medical, for X-rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "airport security, X-ray telescopes/astronomy, weld/art inspection, thickness of metal, etc",
+    "marks": 6,
+    "contextNote": "A general industry/agriculture answer earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10iv",
+  "section": "B",
+  "questionRef": "2013 OL Q10(iv)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "Draw a labelled diagram showing the main parts of an X-ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "heater / cathode / anode / target / high voltage",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "heater",
+      "cathode",
+      "anode",
+      "target",
+      "high voltage"
+     ]
+    },
+    "contextNote": "Any three of the five named components, at 3 each."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "detail e.g. correct arrangement / coolant / shielding/vacuum/extra item from previous line",
+    "marks": 3,
+    "contextNote": "An additional, unused component can count as the detail. No labels: deduct 1; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-tube-solution",
+  "questionFigureKey": "physics-2013-ol-q10-tube-question"
+ },
+ {
+  "id": "phys-2013-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10v",
+  "section": "B",
+  "questionRef": "2013 OL Q10(v)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "How are electrons produced in an X-ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heating",
+    "marks": 3,
+    "route": "heating-metal"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "metal",
+    "marks": 3,
+    "route": "heating-metal"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "thermionic",
+    "marks": 3,
+    "route": "thermionic-emission"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "emission",
+    "marks": 3,
+    "route": "thermionic-emission"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10vi",
+  "section": "B",
+  "questionRef": "2013 OL Q10(vi)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "What is the purpose of the high voltage in an X-ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "accelerate electrons // give energy to electrons // give enough energy to produce X-rays",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10vii",
+  "section": "B",
+  "questionRef": "2013 OL Q10(vii)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "What happens when the electrons hit the target in an X-ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "X-rays produced // target heats",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-viii",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10viii",
+  "section": "B",
+  "questionRef": "2013 OL Q10(viii)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "Name a suitable material for use as the target.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "tungsten",
+    "marks": 4,
+    "contextNote": "Any other named metal is a partial answer for 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q10-ix",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "10ix",
+  "section": "B",
+  "questionRef": "2013 OL Q10(ix)",
+  "stem": "X-rays are used to diagnose and treat medical conditions. The image shows an X-ray photograph. In an X-ray tube a beam of electrons is used to produce X-rays.",
+  "questionText": "Give one safety precaution required when using X-rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "use a lead shield, protective clothing, lead glass, monitor dosage, reduce dosage, etc.",
+    "marks": 4,
+    "contextNote": "One suitable precaution; partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q10-hand"
+ },
+ {
+  "id": "phys-2013-ol-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2013 OL Q11(a)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "What are the key components of the national grid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(network of high voltage) transmission stations and (high voltage) power lines",
+    "marks": 7,
+    "contextNote": "Partial answer such as cables, low-voltage lines or transformers: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2013 OL Q11(b)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "Why are high voltages used to transmit power over the national grid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to avoid power/energy losses // cheaper",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2013 OL Q11(c)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "Why is the power supplied to domestic customers at lower voltages?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "safety // more suitable for home uses",
+    "marks": 7,
+    "contextNote": "Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2013 OL Q11(d)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "Name two renewable and two non-renewable energy sources used to generate electricity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "renewable — wind, solar, wave, hydroelectric, biomass, geothermal etc. / non-renewable — coal, oil, peat, gas, nuclear etc",
+    "marks": 7,
+    "contextNote": "Give two renewable sources from the first set and two non-renewable sources from the second. All four classifications form one 7-mark answer; incomplete answer: 4. Other valid examples are accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2013 OL Q11(e)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "The national grid uses alternating current (a.c.) rather than direct current (d.c.). What is the difference between them?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a.c. changes direction // d.c. flows in one direction // direction // frequency",
+    "marks": 7,
+    "contextNote": "Compare the two currents: a.c. reverses direction, while d.c. flows in one direction. Partial answer: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2013 OL Q11(f)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "Name the device used to convert high voltages to lower voltages.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(step down) transformer",
+    "marks": 7,
+    "contextNote": "A partial answer such as voltage converter: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2013 OL Q11(g)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.) Name the device used to convert high voltages to lower voltages.",
+  "questionText": "Give the principle of operation of the device named in part (f).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnetic induction // answer consistent with named device in (f)",
+    "marks": 7,
+    "contextNote": "Partial reference to the device’s use or magnetic field: 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2013 OL Q11(h)",
+  "stem": "The National Grid - Ireland’s Transmission System The national grid system supplies electricity to customers. The grid consists of a network of high voltage transmission stations, power lines and cables delivering power to over 100 sub-stations all over Ireland. From these sub-stations power can be taken onwards on lower voltage lines to individual customers’ premises. The network includes approximately 6,000 km of overhead lines and underground cables. High voltages are used to avoid power losses which would otherwise occur when transferring power over long distances. Power is generated by power plants throughout the country, utilising a variety of fuel or energy sources, including gas, oil, coal, peat, hydro-electricity, wind turbines and other sources such as biomass and landfill gas. All of the major power plants feed into the national grid. At the sub-stations power is transferred from the grid, transformed into medium and low voltage electricity and is delivered to Ireland’s 2.1 million domestic, commercial and industrial customers. (Adapted from EIRGRID AT A GLANCE, Eirgrid information publication.)",
+  "questionText": "Name the unit of electrical energy that is used in the delivery of electricity to homes and businesses.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kilowatt-hour / kWh",
+    "marks": 7,
+    "contextNote": "Joule alone is a partial answer for 4 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q11-passage"
+ },
+ {
+  "id": "phys-2013-ol-q12-a-pressure",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "pressure",
+  "section": "B",
+  "questionRef": "2013 OL Q12(a) — Pressure",
+  "questionText": "Define pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pressure is the force per unit area",
+    "marks": 6,
+    "contextNote": "P = F/A is also accepted. Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q12-a-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2013 OL Q12(a) — Atmospheric-pressure experiment",
+  "questionText": "Describe an experiment to show that the atmosphere exerts pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "apparatus: can (containing water) / observation/conclusion: can crushes / collapses",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "apparatus: can (containing water)",
+      "observation/conclusion: can crushes / collapses"
+     ]
+    },
+    "contextNote": "Both apparatus and observation are required. Use the matching procedure; other valid methods are accepted.",
+    "route": "water-can"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: boil water in can / seal / invert in cold water",
+    "marks": 3,
+    "contextNote": "Both actions belong to one 3-mark procedure criterion.",
+    "route": "water-can"
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "can (of air) / observation/conclusion: can crushes / collapses",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "can (of air)",
+      "observation/conclusion: can crushes / collapses"
+     ]
+    },
+    "contextNote": "Both apparatus and observation are required. Use the matching procedure; other valid methods are accepted.",
+    "route": "air-can"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "pump / air out",
+    "marks": 3,
+    "contextNote": "Both actions belong to one 3-mark procedure criterion.",
+    "route": "air-can"
+   },
+   {
+    "id": "r5",
+    "kind": "anyN",
+    "verbatim": "glass of water / lid supported",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "glass of water",
+      "lid supported"
+     ]
+    },
+    "contextNote": "Both apparatus and observation are required. Use the matching procedure; other valid methods are accepted.",
+    "route": "water-glass"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "cardboard / lid / invert",
+    "marks": 3,
+    "contextNote": "Both actions belong to one 3-mark procedure criterion.",
+    "route": "water-glass"
+   }
+  ],
+  "notes": "Three complete 9-mark methods; each method keeps its matching apparatus, two-action procedure and observation. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q12-a-diver",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "diver",
+  "section": "B",
+  "questionRef": "2013 OL Q12(a) — Decrease in water pressure",
+  "stem": "A diver swims upwards from a depth of 50 m to a depth of 20 m below the surface of the water. (density of the water = 1000 kg m⁻³; acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate the decrease in pressure on the diver as she swims upwards.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "decrease in pressure due to water: = 4.9 ×10⁵ – 1.96 ×10⁵ = 2.94 ×10⁵ (Pa)",
+    "marks": 13,
+    "contextNote": "Use p = ρgh at both depths, then subtract, or use ρgΔh directly. Correct substitution for either depth earns 9; P = hρg alone earns 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-diver-solution",
+  "questionFigureKey": "physics-2013-ol-q12-diver-question"
+ },
+ {
+  "id": "phys-2013-ol-q12-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12bi",
+  "section": "B",
+  "questionRef": "2013 OL Q12(b)(i)",
+  "stem": "The diagram shows a beam of white light undergoing refraction and dispersion as it passes through a prism.",
+  "questionText": "What is meant by dispersion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "splitting/separating of light",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "into colours/frequencies/wavelengths",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-prism"
+ },
+ {
+  "id": "phys-2013-ol-q12-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12bii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(b)(ii)",
+  "stem": "The diagram shows a beam of white light undergoing refraction and dispersion as it passes through a prism.",
+  "questionText": "What is observed on the screen between X and Y?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "spectrum // different colours",
+    "marks": 6,
+    "contextNote": "Naming two colours alone earns 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-prism"
+ },
+ {
+  "id": "phys-2013-ol-q12-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12biii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(b)(iii)",
+  "stem": "The diagram shows a beam of white light undergoing refraction and dispersion as it passes through a prism.",
+  "questionText": "What information does dispersion give about the nature of white light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "it consists of different colours // that it is a wave",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-prism"
+ },
+ {
+  "id": "phys-2013-ol-q12-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12biv",
+  "section": "B",
+  "questionRef": "2013 OL Q12(b)(iv)",
+  "stem": "The diagram shows a beam of white light undergoing refraction and dispersion as it passes through a prism.",
+  "questionText": "Give another method for the dispersion of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(shine light through a) diffraction grating // (reflection from a) CD/DVD/oil",
+    "marks": 6,
+    "contextNote": "The historical scheme accepts these colour-separation examples. CD/DVD colours arise from diffraction and interference; oil-film colours arise from thin-film interference. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-prism"
+ },
+ {
+  "id": "phys-2013-ol-q12-b-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "12bv",
+  "section": "B",
+  "questionRef": "2013 OL Q12(b)(v)",
+  "stem": "The diagram shows a beam of white light undergoing refraction and dispersion as it passes through a prism.",
+  "questionText": "Give an everyday example of the dispersion of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rainbow, reflection of light from a CD/DVD/oil",
+    "marks": 6,
+    "contextNote": "A rainbow is a dispersion example. The scheme also accepts CD/DVD/oil colours, although their mechanisms include diffraction or thin-film interference. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-prism"
+ },
+ {
+  "id": "phys-2013-ol-q12-c-law",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "law",
+  "section": "B",
+  "questionRef": "2013 OL Q12(c) — Coulomb’s law",
+  "questionText": "State Coulomb’s law of force between electric charges.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force proportional to product of charges",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "inversely proportional to square of distance between them",
+    "marks": 3,
+    "contextNote": "Equivalent mathematical statements with correct notation are accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2013-ol-q12-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "12ci",
+  "section": "B",
+  "questionRef": "2013 OL Q12(c)(i)",
+  "stem": "The diagram shows a positively-charged electroscope.",
+  "questionText": "Give a use for an electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "detecting (measuring) charge / potential difference / capacitance",
+    "marks": 6,
+    "contextNote": "“Measures electricity” alone: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-electroscope"
+ },
+ {
+  "id": "phys-2013-ol-q12-c-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "12cii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(c)(ii)",
+  "stem": "The diagram shows a positively-charged electroscope.",
+  "questionText": "How can an electroscope be given a positive charge?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "contact with",
+    "marks": 3,
+    "route": "contact"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "positive conductor",
+    "marks": 3,
+    "route": "contact"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "brought close to negative charge",
+    "marks": 3,
+    "route": "induction"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "and earthed",
+    "marks": 3,
+    "contextNote": "For induction, disconnect the earth while the negative rod is still nearby, then remove the rod. This completes the charging sequence abbreviated in the scheme.",
+    "route": "induction"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-electroscope"
+ },
+ {
+  "id": "phys-2013-ol-q12-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "12ciii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(c)(iii)",
+  "stem": "The diagram shows a positively-charged electroscope.",
+  "questionText": "What is observed if you touch the cap of the electroscope with your finger?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "leaves collapse",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-electroscope"
+ },
+ {
+  "id": "phys-2013-ol-q12-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "12civ",
+  "section": "B",
+  "questionRef": "2013 OL Q12(c)(iv)",
+  "stem": "The diagram shows a positively-charged electroscope. What is observed if you touch the cap of the electroscope with your finger?",
+  "questionText": "Explain why this happens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(negative) charge flows from earth // earthing",
+    "marks": 6,
+    "contextNote": "A partial reference to charge: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-electroscope"
+ },
+ {
+  "id": "phys-2013-ol-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12di",
+  "section": "B",
+  "questionRef": "2013 OL Q12(d)(i)",
+  "stem": "Nuclear fission occurs in the reactor of a nuclear power station like the one shown in the photograph.",
+  "questionText": "What is nuclear fission?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "splitting (of large) nucleus",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "into (two) smaller nuclei // with release of energy/radiation // release of neutrons",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-nuclear"
+ },
+ {
+  "id": "phys-2013-ol-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12dii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(d)(ii)",
+  "stem": "Nuclear fission occurs in the reactor of a nuclear power station like the one shown in the photograph.",
+  "questionText": "Name a fuel used in a nuclear reactor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "plutonium / P, (enriched) uranium / U",
+    "marks": 6,
+    "contextNote": "One fuel is required. The source prints P for plutonium; its correct chemical symbol is Pu. A named reactor part alone earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-nuclear"
+ },
+ {
+  "id": "phys-2013-ol-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12diii",
+  "section": "B",
+  "questionRef": "2013 OL Q12(d)(iii)",
+  "stem": "Nuclear fission occurs in the reactor of a nuclear power station like the one shown in the photograph.",
+  "questionText": "How can the reaction in a nuclear reactor be controlled?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "correct reference to (control/boron) rods // refers to absorbing neutrons // vary (U) fuel",
+    "marks": 6,
+    "contextNote": "Partial answer: 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-nuclear"
+ },
+ {
+  "id": "phys-2013-ol-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12div",
+  "section": "B",
+  "questionRef": "2013 OL Q12(d)(iv)",
+  "stem": "Nuclear fission occurs in the reactor of a nuclear power station like the one shown in the photograph.",
+  "questionText": "How is the energy produced in a reactor used to generate electricity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat exchanger // produces steam // turbine",
+    "marks": 6,
+    "contextNote": "The energy heats water to steam, which drives a turbine and generator. Generator alone is a partial answer for 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-nuclear"
+ },
+ {
+  "id": "phys-2013-ol-q12-d-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "12dv",
+  "section": "B",
+  "questionRef": "2013 OL Q12(d)(v)",
+  "stem": "Nuclear fission occurs in the reactor of a nuclear power station like the one shown in the photograph.",
+  "questionText": "State a hazard of nuclear reactors.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pollution /risk of nuclear contamination / fallout / difficulty of dealing with waste / health risk, dangerous, etc",
+    "marks": 4,
+    "contextNote": "Partial answer: 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_ol.py.",
+  "year": 2013,
+  "level": "ordinary",
+  "figureKey": "physics-2013-ol-q12-nuclear"
  }
 ]

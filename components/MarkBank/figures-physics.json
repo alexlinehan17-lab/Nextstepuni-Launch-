@@ -1240,6 +1240,719 @@
    613
   ]
  },
+ "physics-2013-ol-q1-g-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q1-g-solution.png",
+  "md5": "5118d5ecf7ccf213b602bb66da0100bb",
+  "alt": "Both complete gravity formulas, including the original square-root pendulum expression.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q1(iv)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   184,
+   359.4,
+   407,
+   392
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q10-hand": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q10-hand.png",
+  "md5": "50f742dbe76a8c2820810618c06a0f02",
+  "alt": "Original X-ray photograph of a hand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q10(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   415,
+   94,
+   511,
+   208
+  ]
+ },
+ "physics-2013-ol-q10-tube-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q10-tube-question.png",
+  "md5": "9792d16d25ba1d4b866d8d5fdaa60f5d",
+  "alt": "Complete X-ray context, hand photograph and labelled-tube-diagram request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q10(iv)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   83,
+   70,
+   545,
+   277
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    108,
+    413,
+    212
+   ],
+   [
+    517,
+    108,
+    545,
+    212
+   ],
+   [
+    517,
+    260,
+    545,
+    277
+   ]
+  ]
+ },
+ "physics-2013-ol-q10-tube-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q10-tube-solution.png",
+  "md5": "f4f9258c0a030f66bad682d0fda6c615",
+  "alt": "Official labelled X-ray tube, cathode/filament, anode/target, cooling and high voltage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q10(iv)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   158,
+   316,
+   407,
+   408
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q11-passage.png",
+  "md5": "0f8f6dbdbb4e6c6cc4e0761b1b93fadd",
+  "alt": "Complete National Grid passage, control-room photograph and caption, and Eirgrid attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q11(a)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   83,
+   102,
+   545,
+   476
+  ]
+ },
+ "physics-2013-ol-q12-diver-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q12-diver-question.png",
+  "md5": "a176ffa443aed534d3c987f1ea497a36",
+  "alt": "Full diver depth change, density, gravity constant, photograph and pressure-decrease task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(a) — Decrease in water pressure",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   112,
+   162,
+   542,
+   330
+  ],
+  "maskedFurniture": [
+   [
+    383,
+    235,
+    410,
+    250
+   ]
+  ]
+ },
+ "physics-2013-ol-q12-diver-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q12-diver-solution.png",
+  "md5": "ed0fd884133b5a0f7200c96adbb04540",
+  "alt": "Both depth pressures and their difference, scientific notation, units and the published partial-credit methods.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(a) — Decrease in water pressure",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   83,
+   300.8,
+   486,
+   370
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q12-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q12-electroscope.png",
+  "md5": "ad3fd135532c86f62288c3eef6b9bba1",
+  "alt": "Positively charged electroscope, separated leaves and earthed case.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(c)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   409,
+   123,
+   513,
+   226
+  ]
+ },
+ "physics-2013-ol-q12-nuclear": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q12-nuclear.png",
+  "md5": "d8045d5fccb274e6a6e7110b971e7baf",
+  "alt": "Nuclear power-station photograph supplied with all five reactor tasks.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(d)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   215,
+   484,
+   383,
+   589
+  ]
+ },
+ "physics-2013-ol-q12-prism": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q12-prism.png",
+  "md5": "bf40aaf8ce7b90c02b93309a426c88b0",
+  "alt": "Complete white-light prism and spectrum screen with endpoints X and Y.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   196,
+   435,
+   432,
+   520
+  ]
+ },
+ "physics-2013-ol-q3-index-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q3-index-solution.png",
+  "md5": "cf7e9fbd5ad87e6b92858d54d7bfbb0d",
+  "alt": "Three accepted refractive-index formulas with proper fraction layout.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q3(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   92,
+   459,
+   334,
+   493
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q4-data.png",
+  "md5": "99ba30412bd1b3e2b8c5dc983d691bc4",
+  "alt": "All seven thermistor temperature and resistance pairs with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q4(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   111,
+   494,
+   484,
+   538
+  ]
+ },
+ "physics-2013-ol-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q4-graph-question.png",
+  "md5": "fb29bac92cd06f8330f3375818513ae8",
+  "alt": "Full thermistor context, all seven measured pairs and graph request with θ on the horizontal axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q4(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   346,
+   544,
+   592
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    396,
+    544,
+    435
+   ],
+   [
+    517,
+    575,
+    544,
+    592
+   ]
+  ]
+ },
+ "physics-2013-ol-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q4-graph-solution.png",
+  "md5": "c4adfd28e2a3eb2a89b4df48b53ea182",
+  "alt": "Original thermistor graph, all seven points, both labelled axes and 500-ohm reading guide; approximation note retained in guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q4(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   78,
+   346,
+   462,
+   582
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q5-spanner": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q5-spanner.png",
+  "md5": "dd54fa6c2c4d12c8172b41756170d2b8",
+  "alt": "Spanner with the 50-newton force and 0.10-metre lever arm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q5(b)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   228,
+   280,
+   435,
+   357
+  ]
+ },
+ "physics-2013-ol-q6-aircraft": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-aircraft.png",
+  "md5": "b8ef92093b7671cc1e0ed575c3543f46",
+  "alt": "Aircraft illustration accompanying the jet-engine momentum question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6 — Jet-engine momentum",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   407,
+   58,
+   551,
+   157
+  ]
+ },
+ "physics-2013-ol-q6-collision": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-collision.png",
+  "md5": "97ef9279f69f33d3d4a23bd7077d5692",
+  "alt": "Before and after truck/car collision, initial 10 m/s speed and direction arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   85,
+   209,
+   534,
+   292
+  ]
+ },
+ "physics-2013-ol-q6-force-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-force-question.png",
+  "md5": "fd0f8040de7178494634b498c85941e2",
+  "alt": "Full collision data and diagram with the 0.3-second interaction time and force question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(v)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   163,
+   545,
+   435
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    300,
+    545,
+    395
+   ],
+   [
+    523,
+    418,
+    545,
+    435
+   ]
+  ]
+ },
+ "physics-2013-ol-q6-force-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-force-solution.png",
+  "md5": "2e57b58dbce988f2b8326494652ce91e",
+  "alt": "Original impulse calculation and tolerance, with its rounding inconsistency explained in the card guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(v)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   90,
+   636,
+   319,
+   665.2
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q6-speed-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-speed-question.png",
+  "md5": "72a2fac03f90ec87dd9670b995eedc92",
+  "alt": "Full truck/car masses and initial speeds, before/after diagram and combined-velocity question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   163,
+   545,
+   370
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    300,
+    545,
+    344
+   ],
+   [
+    523,
+    352,
+    545,
+    370
+   ]
+  ]
+ },
+ "physics-2013-ol-q6-speed-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q6-speed-solution.png",
+  "md5": "0af6766e927439a8a9f3ad628f4e1552",
+  "alt": "Combined velocity as total momentum divided by total mass.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   90,
+   487.8,
+   197,
+   516.7
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q7-guitar": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q7-guitar.png",
+  "md5": "bef21e618e51e0547a78104f8d55b7ae",
+  "alt": "Guitar illustration accompanying the note, overtone and resonance tasks.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   438,
+   364,
+   533,
+   459
+  ],
+  "maskedFurniture": [
+   [
+    438,
+    364,
+    511,
+    374
+   ],
+   [
+    438,
+    374,
+    444,
+    388
+   ],
+   [
+    523,
+    391,
+    533,
+    449
+   ]
+  ]
+ },
+ "physics-2013-ol-q7-interference-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q7-interference-question.png",
+  "md5": "d339cce0c9c831a23a6dffc42447e5c9",
+  "alt": "Full two-speaker interference context, diagram and diagram/explanation task.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(a)(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   103,
+   111,
+   545,
+   288
+  ],
+  "maskedFurniture": [
+   [
+    103,
+    251,
+    545,
+    268
+   ],
+   [
+    523,
+    231,
+    545,
+    248
+   ],
+   [
+    523,
+    272,
+    545,
+    288
+   ]
+  ]
+ },
+ "physics-2013-ol-q7-interference-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q7-interference-solution.png",
+  "md5": "eeb702d4914f8dcaca557d8ba19db017",
+  "alt": "Both official wave-addition diagrams showing reinforcement and cancellation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(a)(iii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   77,
+   356,
+   342,
+   449
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q7-speakers": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q7-speakers.png",
+  "md5": "8ef89f686bd9f4c0f6654a917a2a7a83",
+  "alt": "Both loudspeakers, 500 Hz signal generator, connecting wires and full A-to-B walking path.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(a)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   103,
+   140,
+   526,
+   224
+  ]
+ },
+ "physics-2013-ol-q7-terms-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q7-terms-question.png",
+  "md5": "0014b745155907ed684ea7febd29fbc2",
+  "alt": "Full guitar context with the two underlined terms, original illustration and definition request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   112,
+   344,
+   545,
+   459
+  ],
+  "maskedFurniture": [
+   [
+    112,
+    411,
+    436,
+    448
+   ],
+   [
+    523,
+    391,
+    545,
+    449
+   ]
+  ]
+ },
+ "physics-2013-ol-q8-iv": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q8-iv.png",
+  "md5": "45fa4650ccfc083dbe7f5c05b4b49d2e",
+  "alt": "Original straight-line current–voltage graph through the origin, both I and V axes retained.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q8(a)(v)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   400,
+   148,
+   499,
+   232
+  ]
+ },
+ "physics-2013-ol-q9-energy-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q9-energy-solution.png",
+  "md5": "ccbb479d5790efb4983d18b67b842426",
+  "alt": "Original heat-energy formula, full numerical substitution and rounded result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q9(vii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   90,
+   605.8,
+   309,
+   621
+  ],
+  "solution": true
+ },
+ "physics-2013-ol-q9-kettle": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q9-kettle.png",
+  "md5": "80683a723f9c4cb1b12f47675f45b598",
+  "alt": "Kettle photograph supplied with the heat-transfer questions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q9(iv)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   411,
+   498,
+   525,
+   613
+  ]
+ },
+ "physics-2013-ol-q9-power-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-ol-q9-power-solution.png",
+  "md5": "423444ff32999a043b387fbb26db35c2",
+  "alt": "Power result, accepted follow-through and partial-method guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q9(viii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2013 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   90,
+   682,
+   316,
+   725
+  ],
+  "solution": true
+ },
  "physics-2014-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2014-hl-q1-data.png",
   "md5": "e384c70f00c1b5d297f392589688eb7e",

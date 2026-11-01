@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2013-ol': [100, 100, 91, '323bea11e3f2ea2598ecd62bde828d0d17215042f19f860ece9f3d8a08b1f6c0',
+    '8b7d03ed3157d70986acf9946532b71b55453917fbbc0f0530271c6b18ed8eb8'],
   '2013-hl': [108, 108, 41, 'da9315f733b23a4d90618b5e5d17a5fa8bb36161fd8773ac2e2f11cc9bd3c13b',
     'acb15db33829681ec15c0a6766b007b0659b1697c05df29803943e8ca1612702'],
   '2014-ol': [105, 105, 90, '3407ac46166bebbff21c67d30d618a082d8330207462532b707d05f4a446f5f3',
@@ -99,6 +101,51 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2013 Ordinary methods, full contexts and historical correction guidance', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2013-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2013-ol-${suffix}`)!;
+    expect(cards).toHaveLength(100);
+    expect(card('q1-i').rows).toHaveLength(6);
+    expect(card('q1-i').totalMarks).toBe(12);
+    expect(card('q1-ii').rows).toHaveLength(3);
+    expect(card('q2-iv').stem).toContain('When all the ice was melted');
+    expect(card('q3-ii').rows).toHaveLength(5);
+    expect(card('q3-ii').totalMarks).toBe(12);
+    expect(card('q4-iii').questionFigure?.candId).toBe('physics-2013-ol-q4-graph-question');
+    expect(card('q4-iv').stem).toContain('Put θ on the X-axis.');
+    for (const name of ['Einstein', 'Rutherford', 'Faraday', 'Coulomb']) expect(card('q5-c').questionText).toContain(name);
+    expect(card('q6-v').rows[0].contextNote).toContain('41,666.7');
+    expect(card('q6-v').rows[0].contextNote).toContain('28.3 kN');
+    expect(card('q7-a-ii').stem).toContain('What will the student notice');
+    expect(card('q7-b-i').questionFigure?.candId).toBe('physics-2013-ol-q7-terms-question');
+    expect(card('q8-a-iv').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [6, 2], options: ['electrons', 'holes'] } });
+    expect(card('q8-b-ii').totalMarks).toBe(15);
+    expect(card('q8-b-ii').rows).toHaveLength(5);
+    for (const suffix of ['q9-vii', 'q9-viii']) {
+      expect(card(suffix).questionText).toMatch(/^Calculate /);
+      expect(card(suffix).stem).toContain('4200 J kg⁻¹ K⁻¹');
+      expect(card(suffix).stem).toContain('three-minute period');
+    }
+    expect(card('q10-iv').rows[0]).toMatchObject({ group: { claimMax: 3, options: ['heater', 'cathode', 'anode', 'target', 'high voltage'] } });
+    expect(card('q10-v').rows).toHaveLength(4);
+    const passage = cards.filter(c => c.id.startsWith('phys-2013-ol-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.stem).toContain('The National Grid');
+      expect(c.stem).toContain('EIRGRID AT A GLANCE');
+      expect(c.figure?.candId).toBe('physics-2013-ol-q11-passage');
+    }
+    expect(card('q11-d').rows).toHaveLength(1);
+    expect(card('q11-d').rows[0].verbatim).toContain('non-renewable — coal');
+    expect(card('q12-a-experiment').rows).toHaveLength(6);
+    expect(card('q12-a-experiment').totalMarks).toBe(9);
+    expect(card('q12-c-iv').stem).toContain('touch the cap');
+    expect(card('q12-d-ii').rows[0].contextNote).toContain('Pu');
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2013-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2013 Higher context, alternatives and separately priced tasks', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2013-hl-'));
