@@ -1288,6 +1288,9 @@ const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
 // Source-reviewed missing tasks. Keep the original 283/266 identity hashes
 // frozen; these additions must never disguise a removed older card.
 const homeEconomicsAdditionIds = new Set([
+  'he-2022-ol-sa-q14', 'he-2022-ol-sa-q2-source', 'he-2022-ol-sa-q11-car',
+  'he-2022-ol-sb-q1a', 'he-2022-ol-sb-q2a', 'he-2022-ol-sb-q2b', 'he-2022-ol-sb-q3a',
+  'he-2022-ol-sc-q3ai-terms',
   'he-2022-hl-deferred-sc-q1ai', 'he-2022-hl-deferred-sc-q1aii', 'he-2022-hl-deferred-sc-q1aiii',
   'he-2022-hl-deferred-sc-q1bi', 'he-2022-hl-deferred-sc-q1bii', 'he-2022-hl-deferred-sc-q1ci',
   'he-2022-hl-deferred-sc-q1cii', 'he-2022-hl-deferred-sc-q2ai', 'he-2022-hl-deferred-sc-q2aii',
@@ -1420,7 +1423,7 @@ describe('Mark Bank card preservation', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
     expect(HOME_EC_HIGHER).toHaveLength(407);
-    expect(HOME_EC_ORDINARY).toHaveLength(272);
+    expect(HOME_EC_ORDINARY).toHaveLength(280);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
     const frozen = frozenIds(name, cards);

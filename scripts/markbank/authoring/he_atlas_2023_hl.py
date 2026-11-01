@@ -207,3 +207,5 @@ if __name__ == '__main__':
     apply_deferred()
     from he_atlas_2022_deferred import apply as apply_deferred_2022
     apply_deferred_2022()
+    from he_atlas_2022_ol import apply as apply_ordinary_2022
+    apply_ordinary_2022()

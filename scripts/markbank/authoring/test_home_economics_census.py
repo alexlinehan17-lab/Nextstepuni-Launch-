@@ -12,6 +12,45 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_2022_ordinary_source_review_reproduces_all_tasks_and_complete_examples(self):
+        from he_review_2022_ol import build as recovery, FIGURES as RECOVERY_FIGURES
+        from he_review_2022_ol_section_a import build as section_a
+        from he_review_2022_ol_section_b import build as section_b
+        from he_review_2022_ol_section_c import build as section_c, FIGURES as C_FIGURES
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        corrections = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        recovered = recovery(); a, a_new = section_a(); b = section_b(); c, c_new = section_c()
+        self.assertEqual([len(recovered), len(a), len(a_new), len(b), len(c), len(c_new)], [5, 13, 2, 12, 27, 1])
+        for card in recovered + a_new + c_new: self.assertEqual(authored[card['id']], card)
+        for key, value in {**a, **b, **c}.items(): self.assertEqual(corrections[key], value)
+        for key, spec in {**RECOVERY_FIGURES, **C_FIGURES}.items():
+            self.assertEqual(hashlib.sha256((ROOT / f'public/exam-figures/home-economics/{key}.png').read_bytes()).hexdigest(), spec['sha256'])
+        review = json.loads((ROOT / 'scripts/markbank/authoring/home-economics/2022-ol-main-review.json').read_text())
+        self.assertEqual(len({t['id'] for t in review['tasks']}), 60)
+        self.assertEqual(sum(t['marks'] for t in review['tasks']), 749)
+
+    def test_2022_ordinary_anchors_retain_floating_answers_and_final_continuation(self):
+        from he_review_2022_ol import documents
+        from he_atlas_2022_ol import source_anchors, A, BC
+        docs = documents(); anchors = source_anchors()
+        def text(doc, region):
+            p = doc[region['p'] - 1]; x0, y0, x1, y1 = region['r']
+            return ' '.join(p.get_text(clip=fitz.Rect(x0*p.rect.width, y0*p.rect.height, x1*p.rect.width, y1*p.rect.height)).split())
+        self.assertIn('Citrus fruits are a rich source of vitamin C.', text(docs['scheme'], anchors[A][3]['region'][0]))
+        self.assertIn('Loan; hire purchase; PCP', text(docs['scheme'], anchors[A][10]['region'][0]))
+        self.assertNotIn('12.', text(docs['scheme'], anchors[A][10]['region'][0]))
+        self.assertIn('Dry flat.', text(docs['scheme'], anchors[A][13]['region'][0]))
+        self.assertEqual([[r['p'] for r in q['region']] for q in anchors[BC]], [[11,12],[13],[14],[15],[16],[17,18],[19,20],[21,22],[23,24,25]])
+        self.assertIn('apps for budgeting;', text(docs['scheme'], anchors[BC][-1]['region'][-1]))
+        for file, questions in anchors.items():
+            doc = docs['a' if file == A else 'bc']
+            for q in questions:
+                page = doc[q['pP'] - 1]
+                crop = ' '.join(page.get_text(clip=fitz.Rect(0,q['pY'][0]*page.rect.height,page.rect.width,q['endY']*page.rect.height)).split())
+                self.assertNotIn('Leaving Certificate Examination', crop)
+                self.assertTrue(crop)
+                for r in q['region']: self.assertNotIn('Food Studies Coursework', text(docs['scheme'], r))
+
     def test_2022_deferred_c_regenerates_and_retains_final_prompts_and_all_scheme_pages(self):
         from he_review_2022_hl_deferred_c import build, FIGURE, CROP_SHA256
         from he_review_2022_hl_deferred import documents

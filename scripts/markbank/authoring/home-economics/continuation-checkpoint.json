@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 679,
+    "cards": 687,
     "leaves": 1342,
-    "covered": 666,
+    "covered": 671,
     "excluded": 0,
-    "open": 676,
-    "coveragePct": 49.6,
+    "open": 671,
+    "coveragePct": 50.0,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -830,15 +830,9 @@
         "level": "ol",
         "paper": null,
         "leaves": 57,
-        "covered": 52,
+        "covered": 57,
         "excluded": 0,
-        "open": [
-          "Section A Q14",
-          "Section B Q1(a)",
-          "Section B Q2(a)",
-          "Section B Q2(b)",
-          "Section B Q3(a)"
-        ]
+        "open": []
       },
       {
         "year": 2023,
@@ -1059,10 +1053,10 @@
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
-    "Continue 2022 Ordinary main: 32-page A booklet and 12-page B/C booklet visually swept; 37-page scheme sweep in progress. Recover missing visual/menu/preservation tasks and independently split Section A Q2/Q11; review every existing response. Then remaining 2021–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
+    "2022 Ordinary English main source review complete: 60 tasks, 749 offered practice marks, all 81 source pages and 23 final Atlas anchor pairs visually reviewed. Continue 2022 Higher English main (40-page A booklet, 12-page B/C booklet, 42-page scheme), then remaining 2021–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
   ],
-  "coveragePolicy": "The raw census is diagnostic only; its 676 open candidates and 37 flags are not an independent complete count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
+  "coveragePolicy": "The raw census is diagnostic only; its 671 open candidates and 37 flags are not an independent complete count of outstanding exam tasks. The reviewed 2022 Ordinary sitting has 57/57 raw asks covered; its independent source review establishes 60 tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1138,24 +1132,29 @@
       "workCommit": "d41590a7c",
       "launchCommit": "d6025bea1",
       "scope": "2022 Higher deferred Section B: sixteen tasks, original six-category food-label chart and five Atlas question groups."
+    },
+    {
+      "workCommit": "6d97b458a",
+      "launchCommit": "911008254",
+      "scope": "2022 Higher deferred Section C: 26 tasks, original fuel table, four Atlas groups; full sitting source-complete."
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2022 Higher deferred Section C: all 26 tasks, original five-fuel table, four complete Atlas question groups; full sitting source-complete",
-    "runtimeCards": 679,
+    "scope": "2022 Ordinary main: all 60 tasks, eight new identities, full guidance/partial marks, four clean source figures, 23 correct Atlas groups",
+    "runtimeCards": 687,
     "higher": 407,
-    "ordinary": 272,
-    "sourceReview": "2022-hl-deferred-review.json",
+    "ordinary": 280,
+    "sourceReview": "2022-ol-main-review.json",
     "validation": {
-      "requiredVitest": "286 tests across 6 suites passed",
-      "atlas": "2 Home Economics registry tests passed; all 26 tasks checked against canonical Atlas topics",
-      "python": "21 source/census tests passed",
+      "requiredVitest": "295 tests across 7 suites passed",
+      "atlas": "2 Home Economics registry tests passed; all 60 cards checked against canonical Atlas topics",
+      "python": "23 source/census tests passed",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
       "productionBuild": "passed",
-      "regeneration": "Authoring A/B/C, deck, Atlas, tags and showcase regenerate identically except generic reference builder generatedAt; all other fields/files identical.",
+      "regeneration": "Recovery and A/B/C writers, deck, Atlas, tags and showcase regenerate identically except the generic reference builder generatedAt field; all other JSON fields and files identical.",
       "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "All four final Section C paper crops and ten scheme-page crops visually checked. Page 21 scoring line at y=782 retained below the former cutoff; footer excluded. Original fuel table fully visible."
+      "sourceCropReview": "All 23 paper/scheme question groups and four clean source images visually checked; no clipped question fragments or missing continuation pages."
     }
   }
 }

@@ -70,5 +70,33 @@
     "alt": "2020 fuel costs (cent/kWh) and efficiency: standard coal 5.66, 60%; kerosene oil 8.60, 80%; natural gas Band D2 6.86, 90%; electricity Band DE 17.77, 100%; electricity night rate 9.60, 100% (shared electricity cell).",
     "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 5; source SEAI — © State Examinations Commission.",
     "sourceNote": "Original table, bounds [111, 217, 541, 351], rendered at 2×. Source SHA256 8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03. Shared electricity efficiency cell retained."
+  },
+  "home-economics-2022-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sa-q14-symbols.png",
+    "md5": "2fe507fc73cab2d4870c053a630e0ac8",
+    "alt": "Two care symbols, in vertical order. Top: a crossed-out triangle. Bottom: a square containing one horizontal line.",
+    "attribution": "SEC Home Economics 2022 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [53, 315, 202, 599], rendered at 2×; visually checked. SHA256 90d8c2d6644c2a27fa8adc091140bb44171917dadf0007a42cc84b77e2927197."
+  },
+  "home-economics-2022-ol-sb-q1a-milk": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sb-q1a-milk.png",
+    "md5": "0c86dee104f47bbfb5c37b7c8ea0b971",
+    "alt": "Nutrition per 100 ml. Whole milk: 64 kcal, protein 3.4 g, carbohydrates 4.7 g, fat 3.5 g, calcium 119 mg, vitamin B12 0.4 µg. Super Milk Fat-free: 35 kcal, protein 3.3 g, carbohydrates 5.0 g, fat 0.2 g, calcium 160 mg, vitamin B12 0.4 µg.",
+    "attribution": "SEC Home Economics 2022 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [59, 216, 533, 345], rendered at 2×; visually checked. SHA256 1b36e8fdb3b37bfcb8ffb59c9c9611b621fd4121bd4751b2dd0d2425592b5007."
+  },
+  "home-economics-2022-ol-sc-q1-room": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sc-q1-room.png",
+    "md5": "e41db0cabdc7345a9d5905151544f958",
+    "alt": "An overhead view of an open-plan kitchen, dining and living room. Left: corner sofa, armchair, coffee table, television and window. Right: dining table with four chairs, kitchen units, hob, extractor, sink and worktops. Pale wood-effect flooring continues throughout.",
+    "attribution": "SEC Home Economics 2022 Ordinary examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source image only; bounds [115, 210, 493, 345], 2×. Complete image visually inspected. SHA256 40f65cef79179c3b439f18971011e3ae4e67af491c70981b6c946bf3951574b0."
+  },
+  "home-economics-2022-ol-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2022-ol-sc-q2-outfits.png",
+    "md5": "3bc92b2b7fdd32e99fd05e49fc876b59",
+    "alt": "Two athleisure outfits. Left: navy open zip jacket, white T-shirt, navy drawstring joggers and white trainers. Right: open taupe hooded jacket, white T-shirt, cropped olive trousers with a drawstring waist, white socks and light-coloured trainers. Both full outfits are visible.",
+    "attribution": "SEC Home Economics 2022 Ordinary examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source image only; bounds [199, 129, 382, 302], 2×. Complete image visually inspected. SHA256 2f033a5e8d4600fcc94c9f2e5c47947f643a232873a838678f291de84e9f25e5."
   }
 }

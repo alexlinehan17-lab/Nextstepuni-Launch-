@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-11-01T18:25:51.443Z",
+  "generatedAt": "2026-11-01T18:46:15.614Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
@@ -12,9 +12,9 @@
       "before-local-corpus": 297
     },
     "matchedLocalCardLinks": 1779,
-    "exactRuntimeQuestionMappings": 949,
+    "exactRuntimeQuestionMappings": 953,
     "localAnswerAnchoredPaperVariants": 95,
-    "localAnswerAnchoredPhysicalCards": 1289,
+    "localAnswerAnchoredPhysicalCards": 1293,
     "sourceUnavailableTopics": 0
   },
   "policy": {
@@ -16309,19 +16309,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "4"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "4"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "4",
+          "label": "Section B · Q4"
         }
       ]
     },
@@ -17243,19 +17244,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
         }
       ]
     },
@@ -17268,19 +17270,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "1",
+          "label": "Section A · Q1"
         }
       ]
     },
@@ -17293,19 +17296,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "8"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "8"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "8",
+          "label": "Section A · Q8"
         }
       ]
     },
@@ -18123,19 +18127,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "6",
+          "label": "Section C · Q1"
         }
       ]
     },
@@ -18424,19 +18429,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "6",
+          "label": "Section C · Q1"
         }
       ]
     },
@@ -18449,19 +18455,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "6",
+          "label": "Section C · Q1"
         }
       ]
     },
@@ -19442,19 +19449,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "7",
+          "label": "Section C · Q2"
         }
       ]
     },
@@ -19950,19 +19958,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "7",
+          "label": "Section C · Q2"
         }
       ]
     },
@@ -19975,19 +19984,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "7",
+          "label": "Section C · Q2"
         }
       ]
     },
@@ -20649,19 +20659,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "8",
+          "label": "Section C · Q3"
         }
       ]
     },
@@ -21091,19 +21102,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "8",
+          "label": "Section C · Q3"
         }
       ]
     },
@@ -21521,19 +21533,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "8",
+          "label": "Section C · Q3"
         }
       ]
     },
@@ -22305,19 +22318,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
         }
       ]
     },
@@ -22330,19 +22344,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "7"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "7"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "7",
+          "label": "Section A · Q7"
         }
       ]
     },
@@ -22355,19 +22370,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "10"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "10"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "10",
+          "label": "Section A · Q10"
         }
       ]
     },
@@ -22906,19 +22922,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "3",
+          "label": "Section B · Q3"
         }
       ]
     },
@@ -22931,19 +22948,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "9"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "9"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "9",
+          "label": "Section A · Q9"
         }
       ]
     },
@@ -23614,19 +23632,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
         }
       ]
     },
@@ -23639,19 +23658,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
         }
       ]
     },
@@ -23664,19 +23684,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "4"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "4"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "4",
+          "label": "Section A · Q4"
         }
       ]
     },
@@ -24477,19 +24498,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "4"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "4"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "4",
+          "label": "Section B · Q4"
         }
       ]
     },
@@ -25025,19 +25047,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "11"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "11"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "11",
+          "label": "Section A · Q11"
         }
       ]
     },
@@ -25050,19 +25073,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "12"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "12"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "12",
+          "label": "Section A · Q12"
         }
       ]
     },
@@ -25525,19 +25549,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "5"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "5"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "5",
+          "label": "Section B · Q5"
         }
       ]
     },
@@ -25850,19 +25875,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "3",
+          "label": "Section A · Q3"
         }
       ]
     },
@@ -25875,19 +25901,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "5"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "5"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "5",
+          "label": "Section A · Q5"
         }
       ]
     },
@@ -25900,19 +25927,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "6"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "6"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "6",
+          "label": "Section A · Q6"
         }
       ]
     },
@@ -26481,19 +26509,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "2",
+          "label": "Section B · Q2"
         }
       ]
     },
@@ -26713,19 +26742,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "1",
+          "label": "Section A · Q1"
         }
       ]
     },
@@ -26738,19 +26768,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "2",
+          "label": "Section A · Q2"
         }
       ]
     },
@@ -27391,19 +27422,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP039EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP039IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP039EV.pdf",
+          "n": "1",
+          "label": "Section B · Q1"
         }
       ]
     },
@@ -28058,19 +28090,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "13"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "13"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "13",
+          "label": "Section A · Q13"
         }
       ]
     },
@@ -28083,19 +28116,20 @@
       "targets": [
         {
           "level": "ordinary",
-          "lang": "ev",
-          "year": 2022,
-          "paperKey": "single",
-          "fileid": "LC098GLP014EV.pdf",
-          "n": "14"
-        },
-        {
-          "level": "ordinary",
           "lang": "iv",
           "year": 2022,
           "paperKey": "single",
           "fileid": "LC098GLP014IV.pdf",
           "n": "14"
+        },
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC098GLP014EV.pdf",
+          "n": "14",
+          "label": "Section A · Q14"
         }
       ]
     },
@@ -30592,6 +30626,576 @@
         "topicId": "home-economics-1-0",
         "atlasTopicIds": [
           "home-economics-s-and-s-higher-household-finances"
+        ]
+      }
+    ]
+  },
+  "reviewedEnglish2022Ordinary": {
+    "paperFileids": [
+      "LC098GLP014EV.pdf",
+      "LC098GLP039EV.pdf"
+    ],
+    "physicalQuestions": 23,
+    "review": "scripts/markbank/authoring/home-economics/2022-ol-main-review.json",
+    "policy": "All English main paper/scheme anchors reviewed. Every emitted card is mapped to its canonical topics. Section C uses B/C IDs 6–9, separate from B1–B5; Irish editions untouched. Per-task marking-review status is recorded separately in the review.",
+    "markBankMappings": [
+      {
+        "id": "he-2022-ol-sa-q1",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-diet-health"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q2",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-nutrition-lipids"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q3",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-assignments",
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q4",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "4",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q5",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "5",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-assignments",
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q6",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-0-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q7",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q8",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-0-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q9",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q10",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "10",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q11",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "11",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-household-finances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q12",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "12",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-household-finances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q13",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "13",
+        "topicId": "home-economics-1-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-fabrics",
+          "home-economics-s-and-s-ordinary-textiles"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q1b",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q1c",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q1d",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-1-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-energy-emissions",
+          "home-economics-s-and-s-ordinary-environment"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q2c",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q3b",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-assignments",
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q3c",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q4a",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "4",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q4b",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "4",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-ordinary-energy",
+          "home-economics-s-and-s-ordinary-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q4c",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "4",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-ordinary-energy",
+          "home-economics-s-and-s-ordinary-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q5a",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "5",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-marriage-family-law",
+          "home-economics-s-and-s-ordinary-the-family"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q5b",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "5",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-marriage-family-law",
+          "home-economics-s-and-s-ordinary-the-family"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q5c",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "5",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-marriage-family-law",
+          "home-economics-s-and-s-ordinary-the-family"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1aii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1aiii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1bi",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-irish-housing"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1bii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-energy-emissions"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1ci",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1cii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-ordinary-energy",
+          "home-economics-s-and-s-ordinary-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2aii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2bi",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-fabrics"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2bii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-fabrics"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2ci",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2cii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3ai",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3aii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3aiii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3bi",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3bii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3ci",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-family-life-leisure",
+          "home-economics-s-and-s-ordinary-the-family"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3cii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-family-life-leisure",
+          "home-economics-s-and-s-ordinary-the-family"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4ai",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4aii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4aiii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4bi",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4bii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4ci",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-1-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-household-finances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q4cii",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-ordinary-energy",
+          "home-economics-s-and-s-ordinary-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q1ai",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-3-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-1-interior-design"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q2ai",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q14",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "14",
+        "topicId": "home-economics-1-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-2-fabrics",
+          "home-economics-s-and-s-ordinary-textiles"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q1a",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-diet-health"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q2a",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q2b",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sb-q3a",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q2-source",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-nutrition-lipids"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sa-q11-car",
+        "fileid": "LC098GLP014EV.pdf",
+        "n": "11",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-household-finances"
+        ]
+      },
+      {
+        "id": "he-2022-ol-sc-q3ai-terms",
+        "fileid": "LC098GLP039EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-ordinary-elective-3-un-employment-poverty"
         ]
       }
     ]

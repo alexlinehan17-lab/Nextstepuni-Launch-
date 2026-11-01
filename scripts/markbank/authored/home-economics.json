@@ -51296,5 +51296,1532 @@
    "presentationNote": "Open the original examination page to review this task in context."
   },
   "notes": "2022 deferred source pages independently reviewed; complete boundaries, choices and factual clarifications recorded in he_review_2022_hl_deferred_c.py and home-economics/2022-hl-deferred-review.json."
+ },
+ {
+  "id": "he-2022-ol-sa-q14",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "fabric-care-symbols",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "A",
+  "questionRef": "2022 OL Section A Q14",
+  "questionText": "What information does each of the following fabric care symbols convey to the consumer?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 symbols × 3 (3:2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "top",
+    "kind": "criterion",
+    "verbatim": "Do not bleach",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Meaning of the top symbol, graded 3:2:0."
+   },
+   {
+    "id": "bottom",
+    "kind": "criterion",
+    "verbatim": "Dry flat",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Meaning of the bottom symbol, graded 3:2:0."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Independently checked against the 2022 Ordinary paper and full scheme. he_review_2022_ol.py records source hashes, response boundaries and source corrections.",
+  "questionFigureKey": "home-economics-2022-ol-sa-q14-symbols",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2022-ol-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "milk-comparison",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "B",
+  "questionRef": "2022 OL Section B Q1(a)",
+  "questionText": "Using the information presented in the table above, state which milk you would recommend for a teenager. Give four reasons for your choice.",
+  "stem": "‘Milk is a staple food in the diets of Irish children.’ (www.nationaldairycouncil.ie)\n\nThe table below shows the nutritional content of whole milk and super milk fat-free per 100 ml.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 (4:0); reasons 4 × 4 (4:2:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Choose one of the two printed milks, graded 4:0. Selected route: Whole milk"
+   },
+   {
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Four distinct reasons for your choice, each graded 4:2:0. Source correction: Super Milk Fat-free has more carbohydrate (5.0 g versus 4.7 g), not less; both have 0.4 µg vitamin B12. Use the table values. Complete published guidance: higher kcal content; higher fat content; fat for heat and energy; fat is easy to digest; saturated fat can increase risk of CHD; higher protein content; protein for growth and repair; lower carbohydrate content; CHO for heat and energy; lower amount of calcium; calcium for strong bones and teeth; vitamin B12 for production of red blood cells, metabolism of folic acid, fatty acids and formation of myelin sheath around nerves; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Independently checked against the 2022 Ordinary paper and full scheme. he_review_2022_ol.py records source hashes, response boundaries and source corrections.",
+  "answerVariants": [
+   {
+    "id": "whole",
+    "label": "Whole milk",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Choose one of the two printed milks, graded 4:0. Selected route: Whole milk"
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 16,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "contextNote": "Four distinct reasons for your choice, each graded 4:2:0. Source correction: Super Milk Fat-free has more carbohydrate (5.0 g versus 4.7 g), not less; both have 0.4 µg vitamin B12. Use the table values. Complete published guidance: higher kcal content; higher fat content; fat for heat and energy; fat is easy to digest; saturated fat can increase risk of CHD; higher protein content; protein for growth and repair; lower carbohydrate content; CHO for heat and energy; lower amount of calcium; calcium for strong bones and teeth; vitamin B12 for production of red blood cells, metabolism of folic acid, fatty acids and formation of myelin sheath around nerves; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fat-free",
+    "label": "Super Milk Fat-free",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Choose one of the two printed milks, graded 4:0. Selected route: Super Milk Fat-free"
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 16,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "contextNote": "Four distinct reasons for your choice, each graded 4:2:0. Source correction: Super Milk Fat-free has more carbohydrate (5.0 g versus 4.7 g), not less; both have 0.4 µg vitamin B12. Use the table values. Complete published guidance: lower kcal content; lower fat content; lower protein content; protein for growth and repair; lower carbohydrate content; CHO for heat and energy; higher amount of calcium; calcium for bones and teeth; vitamin B12 for production of red blood cells, metabolism of folic acid, fatty acids and formation of myelin sheath around nerves; prevents anaemia; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2022-ol-sb-q1a-milk",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2022-ol-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "cereals-nutritive-dietetic-value",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "B",
+  "questionRef": "2022 OL Section B Q2(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) the dietetic value of cereals.",
+  "stem": "‘Six in ten primary school children are not eating enough fibre.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5 (5:3:0): nutritive 1, dietetic 1, other 2"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "nutritive",
+    "kind": "criterion",
+    "verbatim": "Nutritive",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "One required nutritive point, graded 5:3:0. Published guidance: LBV protein; carbohydrate; wholegrains are a source of fibre; unsaturated fatty acids; source of B group vitamins; vitamin E; calcium; iron and phosphorus; low water content; etc."
+   },
+   {
+    "id": "dietetic",
+    "kind": "criterion",
+    "verbatim": "Dietetic",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "One required dietetic point, graded 5:3:0. Source clarification: coeliac disease is an immune disorder triggered by gluten, not simply an inability to digest it. Published wording: protein for growth and repair; starch for energy, useful in the diet of active people; whole grains contain dietary fibre which prevents constipation; fat is polyunsaturated, does not contribute to the build-up of cholesterol; versatile; inexpensive to buy; easy to use; gluten cannot be digested by coeliacs; can be used in both sweet and savoury dishes; quick to cook, saving energy costs; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "plus 2 others",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Two further distinct points on either heading, each graded 5:3:0. Use the full guidance above without counting the same point twice.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Independently checked against the 2022 Ordinary paper and full scheme. he_review_2022_ol.py records source hashes, response boundaries and source corrections."
+ },
+ {
+  "id": "he-2022-ol-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "high-fibre-child-menu",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "B",
+  "questionRef": "2022 OL Section B Q2(b)",
+  "questionText": "Plan a high fibre menu (3 meals, to include a packed lunch) for one day for a school‐going child.",
+  "stem": "‘Six in ten primary school children are not eating enough fibre.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 meals × (2 courses × 2 + beverage 2), all 2:1:0"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "meal-1",
+    "kind": "criterion",
+    "verbatim": "Menu",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Breakfast: provide two suitable food courses and one beverage; each element graded 2:1:0. Preserve the high-fibre, school-going-child brief. Complete published example: Orange juice; Wholegrain cereal with milk; Strawberry yoghurt; Glass of milk The sample lists both orange juice and milk; the tariff still awards one beverage slot, not two.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meal-2",
+    "kind": "criterion",
+    "verbatim": "Menu",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Packed lunch: provide two suitable food courses and one beverage; each element graded 2:1:0. Preserve the high-fibre, school-going-child brief. Complete published example: Brown roll with chicken and cheese; Apple; Bottle of water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meal-3",
+    "kind": "criterion",
+    "verbatim": "Menu",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Dinner: provide two suitable food courses and one beverage; each element graded 2:1:0. Preserve the high-fibre, school-going-child brief. Complete published example: Vegetable soup with brown bread; Spaghetti Bolognese with brown pasta; Glass of milk",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Independently checked against the 2022 Ordinary paper and full scheme. he_review_2022_ol.py records source hashes, response boundaries and source corrections."
+ },
+ {
+  "id": "he-2022-ol-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "home-food-preservation-profile",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "B",
+  "questionRef": "2022 OL Section B Q3(a)",
+  "questionText": "Give an account of one method of home food preservation. Refer to:\n• name of preservation method\n• suitable foods\n• steps to carry out the method of preservation.",
+  "stem": "Home food preservation helps to reduce food waste.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 3 (3:2:0); 3 foods × 3 (3:0); 4 steps × 3 (3:2:0)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "One named method, graded 3:2:0. Published method examples: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+   },
+   {
+    "id": "foods",
+    "kind": "criterion",
+    "verbatim": "suitable foods",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Three foods suitable for your chosen method, each graded 3:0. The source supplies one general list, not a claim that every food suits every process: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "steps",
+    "kind": "criterion",
+    "verbatim": "steps",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Four appropriate steps, each graded 3:2:0. This is examination guidance, not a complete preservation recipe. Complete published process: wash and sterilise jars; prepare fruit and vegetables according to type; use heavy based saucepan; simmer to release pectin; add sugar; lemon juice can be added to increase acidity; boil until setting point is reached; test; skim; pot; seal; label; store; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Independently checked against the 2022 Ordinary paper and full scheme. he_review_2022_ol.py records source hashes, response boundaries and source corrections.",
+  "answerVariants": [
+   {
+    "id": "jam",
+    "label": "Jam / chutney making",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One named method, graded 3:2:0. Published method examples: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "suitable foods",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three foods suitable for your chosen method, each graded 3:0. The source supplies one general list, not a claim that every food suits every process: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steps",
+      "kind": "criterion",
+      "verbatim": "steps",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four appropriate steps, each graded 3:2:0. This is examination guidance, not a complete preservation recipe. Complete published process: wash and sterilise jars; prepare fruit and vegetables according to type; use heavy based saucepan; simmer to release pectin; add sugar; lemon juice can be added to increase acidity; boil until setting point is reached; test; skim; pot; seal; label; store; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bottling",
+    "label": "Bottling",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One named method, graded 3:2:0. Published method examples: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "suitable foods",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three foods suitable for your chosen method, each graded 3:0. The source supplies one general list, not a claim that every food suits every process: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steps",
+      "kind": "criterion",
+      "verbatim": "steps",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four appropriate steps, each graded 3:2:0. Source clarification: boiling-water bottling is not suitable for all vegetables. Low-acid foods require a validated pressure-canning process. This is examination guidance, not a complete preservation recipe. Complete published process: heat jars of fruit/vegetables in a water bath; seal jars when hot; forms a vacuum on cooling that creates a seal; label; store; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "drying",
+    "label": "Drying",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One named method, graded 3:2:0. Published method examples: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "suitable foods",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three foods suitable for your chosen method, each graded 3:0. The source supplies one general list, not a claim that every food suits every process: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steps",
+      "kind": "criterion",
+      "verbatim": "steps",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four appropriate steps, each graded 3:2:0. This is examination guidance, not a complete preservation recipe. Complete published process: herbs are tying them in bundles; dry in a warm area; package; label; store; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "freezing",
+    "label": "Freezing",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One named method, graded 3:2:0. Published method examples: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "suitable foods",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three foods suitable for your chosen method, each graded 3:0. The source supplies one general list, not a claim that every food suits every process: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steps",
+      "kind": "criterion",
+      "verbatim": "steps",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four appropriate steps, each graded 3:2:0. This is examination guidance, not a complete preservation recipe. Complete published process: blanch according to type; put into moisture proof packaging; remove air; seal; label; freeze at -25˚C; store -18˚C; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "another",
+    "label": "Another valid method",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Name one valid method, graded 3:2:0. The paper leaves the choice open. Published names: heat treatments, e.g. jam/chutney making, chemical preservation, pickling, drying, freezing, etc. "
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "suitable foods",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three foods suitable for that method, each graded 3:0. General source examples: fruit: apples, oranges, strawberries, plums, apricots, etc. vegetables: carrots, peas, beans, tomatoes, onions, cauliflower, broccoli; meat and fish; baked foods; soups and sauces; cooked meals; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steps",
+      "kind": "criterion",
+      "verbatim": "steps",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four accurate steps for the same method, each graded 3:2:0. The source prints no model for this alternative.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2022-ol-sa-q2-source",
+  "topicId": "home-economics-0-7",
+  "conceptId": "dietary-source-of-lipids",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q2 — dietary source",
+  "questionText": "Name one dietary source of lipids (fats).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 source × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "dietary source of lipids (fats)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One source, graded 2:0. Complete published examples: (i) Meat; eggs; oily fish; dairy products; soya beans; avocado; olives; (ii) Nuts and nut oils; vegetable oils; fish liver oils; margarine; seeds; etc."
+   }
+  ],
+  "notes": "Independent source prompt, with its own 2-mark tariff; functions stay on the original Q2 ID."
+ },
+ {
+  "id": "he-2022-ol-sa-q11-car",
+  "topicId": "home-economics-1-1",
+  "conceptId": "credit-for-a-car",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q11 — car credit",
+  "questionText": "Suggest one form of credit suitable for buying a car.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 form × 2 (2:1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "credit",
+    "kind": "criterion",
+    "verbatim": "form of credit",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "One suitable form, graded 2:1:0. Published 2022 examples (extracted after the following question’s table): Loan; hire purchase; PCP (personal contract plans); credit card; etc."
+   }
+  ],
+  "notes": "Separate printed prompt with its own 2-mark tariff. Historical exam examples, not financial advice."
+ },
+ {
+  "id": "he-2022-ol-sc-q3ai-terms",
+  "topicId": "home-economics-3-9",
+  "conceptId": "relative-and-absolute-poverty",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 OL Section C E3 Q3(a)(i) — terms",
+  "questionText": "Explain each of the following:\n• relative poverty\n• absolute poverty.",
+  "stem": "‘A quarter of those in poverty are children.’ (Social Justice Ireland, 2021)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 terms × 2 points × 3 (3:2:0)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "relative",
+    "kind": "criterion",
+    "verbatim": "relative poverty",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two points, each graded 3:2:0. Source correction: CSO’s at-risk-of-poverty threshold is 60% of median equivalised disposable income, not 50% of average household income. Complete published wording: living below what society recognises as a basic standard of living; living below the poverty line which is defined as 50% of the average household income; this reduces standard of living, prevents people from partaking in activities considered normal in society; people endure income poverty and deprivation/lack of provisions e.g. a winter coat; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "absolute",
+    "kind": "criterion",
+    "verbatim": "absolute poverty",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two points, each graded 3:2:0. Complete published guidance: a household income is below a certain level, which makes it impossible for a person or family to meet the basic needs of life; not having enough food, clothing, warmth or shelter; struggling to stay alive on limited resources; difficulty in solving the problem; may include homeless people; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full question and scheme independently reviewed, including all required headings and grades. See he_review_2022_ol_section_c.py.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
