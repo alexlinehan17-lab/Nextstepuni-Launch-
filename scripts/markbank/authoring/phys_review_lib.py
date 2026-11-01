@@ -785,7 +785,7 @@ def G(kind, page=None, clip=None, expect=None, **kw):
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
       paper_pages=None, scheme_pages=None, leaf=None, excluded=None, evidence=None,
-      item=None, id=None, tariff=None, cells=None):
+      item=None, id=None, tariff=None, cells=None, qfig_prompt=None):
     """One reviewed task -> one card, or, with `excluded` (the reason) and
     `evidence` (what the SEC documents print), a reviewed and priced task kept
     out of the bank on purpose and recorded as excluded.
@@ -806,7 +806,8 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
                 paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf,
                 excluded=excluded, evidence=evidence, id=id,
-                item=item, tariff=tariff, **({'cells': cells} if cells else {}))
+                item=item, tariff=tariff, **({'cells': cells} if cells else {}),
+                **({'qfig_prompt': qfig_prompt} if qfig_prompt is not None else {}))
 
 
 def L(letter, meaning_sel, asked):

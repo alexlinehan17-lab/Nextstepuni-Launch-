@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2023-hl-deferred': [131, 131, 133, '03a43dee1fa12ae6f17a3cff6640e07dce70260dd9cfc7c58bea3a10f4e868e3',
+    '6de7c758d0ea1006e85ac3032892eee934e65fbc860bb28147984dc0e120f52e'],
   '2022-hl-deferred': [131, 131, 130, '2a9a3ac9068ef33c6e0dd9ed4c7ad1b0c3362b6ef99a6d009f2e8026cb300ea4',
     'cfb303b96c1cc5ae99e719b8689570a1866e65a88c32b3496cf7c8b1e91603a7'],
   '2010-hl': [97, 97, 48, '38b88551b2ffac2d7c906e4e50c6f825475b00d1e273c17c827777bb9d1140ea',

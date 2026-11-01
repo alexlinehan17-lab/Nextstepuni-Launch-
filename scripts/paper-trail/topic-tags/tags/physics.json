@@ -4703,5 +4703,79 @@
     "secondary": "physics-7-5"
    }
   ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC021ALP000EV-deferred.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-2",
+    "secondary": "physics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "physics-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-6-10"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-2",
+    "secondary": "physics-7-9"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "physics-7-3",
+    "secondary": "physics-5-10"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-6"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-17",
+    "secondary": "physics-6-18"
+   },
+   {
+    "n": "11",
+    "primary": "physics-5-9",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "12",
+    "primary": "physics-7-9",
+    "secondary": "physics-6-12"
+   },
+   {
+    "n": "13",
+    "primary": "physics-4-2",
+    "secondary": "physics-7-4"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-13",
+    "secondary": "physics-3-2"
+   }
+  ]
  }
 ]

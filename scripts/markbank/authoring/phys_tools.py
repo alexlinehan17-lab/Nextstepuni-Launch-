@@ -337,17 +337,23 @@ def cmd_identity(*skip):
         return {f: hashlib.sha256(open(os.path.join(ROOT, f), 'rb').read()).hexdigest() for f in files}
     before = snapshot()
     failed = []
-    sittings = sorted({re.match(r'phys_review_(\d{4})_(hl|ol)\.py', os.path.basename(f)).groups()
-                       for f in glob.glob(os.path.join(HERE, 'phys_review_20??_??.py'))}, reverse=True)
-    for year, level in sittings:
-        if f'{year}-{level}' in skip:
+    sittings = sorted({match.groups() for f in glob.glob(os.path.join(HERE, 'phys_review_20*.py'))
+                       if (match := re.fullmatch(r'phys_review_(\d{4})_(hl|ol)(_deferred)?\.py',
+                                                os.path.basename(f)))},
+                      key=lambda item: (item[0], item[1], item[2] or ''), reverse=True)
+    for year, level, deferred in sittings:
+        key = f'{year}-{level}' + ('-deferred' if deferred else '')
+        if key in skip:
             continue
-        out = subprocess.run([sys.executable, os.path.join(HERE, 'phys_review.py'), year, level, '--write'],
+        command = [sys.executable, os.path.join(HERE, 'phys_review.py'), year, level, '--write']
+        if deferred:
+            command += ['--sitting', 'deferred']
+        out = subprocess.run(command,
                              capture_output=True, text=True)
         lines = out.stdout.strip().splitlines() or [out.stderr.strip()]
-        print(f'{year} {level}:', ([l for l in lines if 'reviewed tasks' in l] or lines)[-1][:110])
+        print(f'{key}:', ([l for l in lines if 'reviewed tasks' in l] or lines)[-1][:110], flush=True)
         if out.returncode:
-            failed.append(f'{year}-{level}')
+            failed.append(key)
             print(out.stderr)
     after = snapshot()
     moved = sorted(f for f in set(before) | set(after) if before.get(f) != after.get(f))

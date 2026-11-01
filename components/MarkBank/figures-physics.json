@@ -20581,6 +20581,1112 @@
    294
   ]
  },
+ "physics-2023-hl-deferred-q1-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q1-graph.png",
+  "md5": "bc48def4b1f744f25d16d895520446f4",
+  "alt": "Original force–acceleration graph, with N and cm s⁻² axes, ticks, data and best-fit line.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   96,
+   232,
+   474,
+   521
+  ]
+ },
+ "physics-2023-hl-deferred-q1-mass-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q1-mass-solution.png",
+  "md5": "38081fdec026c3fab8ad839b0d11ce02",
+  "alt": "Printed slope-method criterion and mass result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   81,
+   194,
+   227,
+   214
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q10-charger": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q10-charger.png",
+  "md5": "ead0bff0132cebee66eab855a64e53a4",
+  "alt": "Original mains-charger photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(vi) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: sciencemuseumgroup.org.uk; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   414,
+   236,
+   541,
+   330
+  ]
+ },
+ "physics-2023-hl-deferred-q10-induced-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q10-induced-solution.png",
+  "md5": "bef5b7956f15d3a2222b4329574d822f",
+  "alt": "Flux, period and induced-voltage calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(viii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   81,
+   336,
+   171,
+   427
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q10-turns-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q10-turns-solution.png",
+  "md5": "13e0ad2ae143a521572b169696e9403e",
+  "alt": "Transformer turns-ratio calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   81,
+   287,
+   130,
+   338
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q11-fusion-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-fusion-question.png",
+  "md5": "fb934d6d427960ca8693ec92ebd9df4f",
+  "alt": "Original hydrogen–hydrogen fusion reaction with all mass and atomic numbers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(iv) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   258,
+   320,
+   340,
+   347
+  ]
+ },
+ "physics-2023-hl-deferred-q11-fusion-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-fusion-solution.png",
+  "md5": "aa331b9a360df17fc0928f27d59a59a0",
+  "alt": "Fusion calculation as printed, including the mass-defect exponent typo explicitly corrected in the card guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(iv) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   81,
+   164,
+   488,
+   267
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q11-laboratory": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-laboratory.png",
+  "md5": "4f89c03ec0c0968ae50e52e71ef3736f",
+  "alt": "Complete two-part Tyndall Institute laboratory photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: tyndall.ie; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   55,
+   508,
+   542,
+   658
+  ]
+ },
+ "physics-2023-hl-deferred-q11-photon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-photon-solution.png",
+  "md5": "2e5c9d3e1e092ce3a17386438b61ac30",
+  "alt": "Photon frequency and energy calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   81,
+   351,
+   213,
+   412
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q11-time-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-time-solution.png",
+  "md5": "47608c4d11bb137a5719e1fb5421e81c",
+  "alt": "Astronomical-unit conversion and light-travel time.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   81,
+   102,
+   216,
+   164
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q11-tyndall": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q11-tyndall.png",
+  "md5": "e9688e63075659f8fefccacab5e87e49",
+  "alt": "Original John Tyndall portrait.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   464,
+   54,
+   542,
+   136
+  ]
+ },
+ "physics-2023-hl-deferred-q12-balloon": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-balloon.png",
+  "md5": "5793d5ad4dda33a97fcc1de27864ccfd",
+  "alt": "Original atmospheric-research balloon photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: donegaldaily.com; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   418,
+   95,
+   542,
+   180
+  ]
+ },
+ "physics-2023-hl-deferred-q12-cern": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-cern.png",
+  "md5": "71901c0efcc6ffa4f32a075fe7c1c679",
+  "alt": "Original CERN accelerator location image.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(v) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: cern.ch; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   421,
+   258,
+   542,
+   383
+  ]
+ },
+ "physics-2023-hl-deferred-q12-chip": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-chip.png",
+  "md5": "046447cb89613fbe7b58ac71be6dd8f9",
+  "alt": "Original semiconductor-chip photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (i)–(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: cloudfront.net; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   374,
+   53,
+   542,
+   122
+  ]
+ },
+ "physics-2023-hl-deferred-q12-mass-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-mass-solution.png",
+  "md5": "17a559419875f28162eb4d1733d71fb9",
+  "alt": "Both-proton collision energy to maximum new-particle mass.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(v) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   109,
+   226,
+   212,
+   288
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q12-not-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-not-solution.png",
+  "md5": "d07b7b3cf7db1c451b307c8883b23831",
+  "alt": "Original NOT-gate truth table with both input/output rows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (viii)–(ix)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   110,
+   460,
+   223,
+   531
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q12-pair-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-pair-solution.png",
+  "md5": "77d38cb902e658ec8980b88da6f30e4f",
+  "alt": "Pair-creation equation and threshold-energy form.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   109,
+   144,
+   204,
+   184
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q12-ring-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-ring-solution.png",
+  "md5": "442c72247fd27e6b9a61c11650f1bebf",
+  "alt": "Magnetic and centripetal force expressions leading to tangential speed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(viii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   109,
+   370,
+   216,
+   433
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q12-thermistor": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q12-thermistor.png",
+  "md5": "266e6a779b17a8de3b3ef3b7f0b0b804",
+  "alt": "Complete thermistor/transistor/LED circuit, including both supply rails and component symbols.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (vi)–(vii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   199,
+   381,
+   420,
+   592
+  ]
+ },
+ "physics-2023-hl-deferred-q13-carbon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q13-carbon-solution.png",
+  "md5": "eab92d640968e3135234eb75082a7abc",
+  "alt": "Triple-alpha fusion equation, with all four nuclides and their indices.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(h) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   81,
+   425,
+   217,
+   451
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q13-glass-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q13-glass-solution.png",
+  "md5": "73e0c107019d00791be18bd42d262cdc",
+  "alt": "Closed-pipe wavelength and fundamental frequency calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(e) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   81,
+   243,
+   144,
+   304
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q13-illustrations": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q13-illustrations.png",
+  "md5": "9f1299559687fdcf767fb5c6453c38eb",
+  "alt": "Original flute and drinking-glass illustrations accompanying the resonance passage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(a) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikimedia.org and freepik.com; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   450,
+   397,
+   542,
+   602
+  ],
+  "maskedFurniture": [
+   [
+    450,
+    496,
+    475,
+    601
+   ]
+  ]
+ },
+ "physics-2023-hl-deferred-q13-swing-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q13-swing-solution.png",
+  "md5": "cbb3422c9357a83f9a57474b2e1961bb",
+  "alt": "Pendulum period and resonant frequency calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(c) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   81,
+   126,
+   191,
+   201
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q14-bridge-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-bridge-solution.png",
+  "md5": "44b89ecf0d3b7eae9cf445849e7d6ff5",
+  "alt": "Wheatstone bridge ratio and wire resistance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(b)(iv) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   109,
+   413,
+   179,
+   464
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q14-capacitance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-capacitance-solution.png",
+  "md5": "86b15f60cef78eb298e7ac473899c5b2",
+  "alt": "Parallel-plate capacitance formula, constant-area relation and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(d)(iv) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   109,
+   345,
+   174,
+   415
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q14-car": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-car.png",
+  "md5": "8e2569abedab2183994510012dbcdd09",
+  "alt": "Original car photograph beside the two Doppler readings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(c)(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: cloudfront.net; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   450,
+   566,
+   542,
+   636
+  ]
+ },
+ "physics-2023-hl-deferred-q14-derive-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-derive-solution.png",
+  "md5": "f402e51d171ea0602998a6878949e87f",
+  "alt": "Both printed derivation methods for s = ut + ½at².",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(a)(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   109,
+   101,
+   305,
+   157
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q14-doppler-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-doppler-solution.png",
+  "md5": "45e15d8472787798ae4781a2c82dbe97",
+  "alt": "Doppler formula, simultaneous equations, speed and emitted frequency.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(c)(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   109,
+   121,
+   378,
+   208
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q14-keyboard": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-keyboard.png",
+  "md5": "0c7ed167ebf4adf05d60646c4380c039",
+  "alt": "Original keyboard illustration beside the capacitor-spacing question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(d)(iv) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   408,
+   165,
+   542,
+   251
+  ]
+ },
+ "physics-2023-hl-deferred-q14-stone-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q14-stone-solution.png",
+  "md5": "ecf3a1bab1238ecf0d20c0bc878f4920",
+  "alt": "Complete algebraic and time-up/time-down methods for the bridge problem.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(a)(v) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   109,
+   175,
+   501,
+   250
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q2-data.png",
+  "md5": "8d280858f1e9b6e71c8e55a3aa45591d",
+  "alt": "All six energy and final-temperature readings, with joule and °C headings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   55,
+   156,
+   541,
+   201
+  ]
+ },
+ "physics-2023-hl-deferred-q2-heat-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q2-heat-solution.png",
+  "md5": "21d9e543568604a753d2c166ccfc2cc0",
+  "alt": "Specific heat capacity from slope divided by mass, with complete units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   81,
+   348,
+   271,
+   392
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q2-slope-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q2-slope-solution.png",
+  "md5": "396656e6dfa38e8ff48fa20861f55b3f",
+  "alt": "Printed gradient criterion and numerical slope.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(vi) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   81,
+   348,
+   223,
+   365.5
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q3-data.png",
+  "md5": "8215e9d3a9ebf8eb40319392ad471b37",
+  "alt": "All four object/image distance pairs, with both mm headings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q3(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   144,
+   505,
+   451,
+   553
+  ]
+ },
+ "physics-2023-hl-deferred-q3-lens-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q3-lens-solution.png",
+  "md5": "4d80c7db91db6237ac11d2ca8bab05f6",
+  "alt": "All four focal lengths and the mean, with the four printed criteria.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q3(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   81,
+   221,
+   308,
+   282
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q4-data.png",
+  "md5": "c63b14161411f67b0eb73c0a7aac3118",
+  "alt": "Six temperature/resistance pairs, with °C and Ω headings.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   55,
+   91,
+   541,
+   137
+  ]
+ },
+ "physics-2023-hl-deferred-q4-materials": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q4-materials.png",
+  "md5": "ccec4e92434536f1a86254e837b87b3c",
+  "alt": "All six candidate materials and their resistivities at 300 K, in nΩ m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   55,
+   217,
+   541,
+   262
+  ]
+ },
+ "physics-2023-hl-deferred-q4-temperature-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q4-temperature-solution.png",
+  "md5": "dcd8bd4b6ef5d177c7be02c2fb736f93",
+  "alt": "Kelvin-to-Celsius conversion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   81,
+   254,
+   189,
+   295
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q5-data": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q5-data.png",
+  "md5": "554245018202e710d97b650db1fe9ba7",
+  "alt": "All seven voltage/current pairs, including the origin, in V and mA.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   55,
+   445,
+   541,
+   491
+  ]
+ },
+ "physics-2023-hl-deferred-q6-balloon": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-balloon.png",
+  "md5": "fb12f9dee3a011869df153f7c8aba987",
+  "alt": "Original photograph of a balloon attached to a wall.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(j) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: quora.com; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   469,
+   484,
+   540,
+   569
+  ]
+ },
+ "physics-2023-hl-deferred-q6-box": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-box.png",
+  "md5": "4fdc395483e7946da8cb239834a7d093",
+  "alt": "Box, floor and angled applied-force arrow from the original paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(a) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   435,
+   151,
+   540,
+   198
+  ]
+ },
+ "physics-2023-hl-deferred-q6-couple-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-couple-solution.png",
+  "md5": "9f90e123c1d588e021be8ec6a58afbf3",
+  "alt": "Motor force, moment and maximum couple.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(k) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   545,
+   179,
+   587
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q6-critical-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-critical-solution.png",
+  "md5": "d6aa93f2e2e28d1d7b75a73630a16d4b",
+  "alt": "Refractive-index/critical-angle relation and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(f) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   310,
+   132,
+   360
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q6-force-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-force-solution.png",
+  "md5": "6be718f81f30b67c0807de9ce959d20c",
+  "alt": "Horizontal component and net horizontal force calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(a) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   62,
+   245,
+   96
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q6-heat-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-heat-solution.png",
+  "md5": "3fe4ba0ba7414a123c87cf7ac72cf3d3",
+  "alt": "Heat lost in a minute and perspiration mass calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(c) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   153,
+   313,
+   214
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q6-spring-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-spring-solution.png",
+  "md5": "b6b24688bb11e530c0d7755b366c3658",
+  "alt": "Hooke/Newton force relations and the full acceleration expression.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(b) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   96,
+   211,
+   149
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q6-string-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q6-string-solution.png",
+  "md5": "a7165d5d473b0afb9bf486beb71978d6",
+  "alt": "String-frequency proportionality, full formula and new frequency.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q6(d) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   81,
+   216,
+   242,
+   272
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q7-balloon-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q7-balloon-solution.png",
+  "md5": "ebedd9cb77cda001794eddd7a41bbb5f",
+  "alt": "Boyle-law volume and air density at depth.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(viii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   81,
+   307,
+   330,
+   378
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q7-boat": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q7-boat.png",
+  "md5": "ad5aba37af4f93d48f719e0fba4e67c6",
+  "alt": "Original steel-boat photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(i) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: cruisemapper.com; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   358,
+   53,
+   542,
+   166
+  ]
+ },
+ "physics-2023-hl-deferred-q7-density-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q7-density-solution.png",
+  "md5": "bde88dddc0a794a4896e02769345e500",
+  "alt": "Air density calculation with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(v) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   81,
+   175,
+   165,
+   224
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q7-pressure-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q7-pressure-solution.png",
+  "md5": "01df248e263ddbb7ac82a64355b76759",
+  "alt": "Hydrostatic and total pressure, including atmospheric pressure.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(vi) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   81,
+   225,
+   355,
+   266
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q8-grating-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q8-grating-solution.png",
+  "md5": "d067104ca6f2dffbcf80a62a412f0609",
+  "alt": "All four diffraction calculation steps.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   81,
+   241,
+   179,
+   322
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q8-janssen": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q8-janssen.png",
+  "md5": "588c44b2deee8212a37e0e941c2eead4",
+  "alt": "Original portrait of Jules Janssen.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8(v) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org; reproduced in the SEC paper",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   446,
+   171,
+   542,
+   309
+  ]
+ },
+ "physics-2023-hl-deferred-q9-decay-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q9-decay-solution.png",
+  "md5": "0e317cf69aefa9e8762a2719bad891dc",
+  "alt": "Uranium–235 alpha decay equation with full nuclear notation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(vi) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   81,
+   264,
+   197,
+   291
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q9-halflife-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q9-halflife-solution.png",
+  "md5": "be3fcae3b555848b3de36c49947365aa",
+  "alt": "Activity, decay constant and half-life calculation in seconds and years.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(vii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   81,
+   289,
+   318,
+   356
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-deferred-q9-radiation": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-deferred-q9-radiation.png",
+  "md5": "7754e4c3d378ea00d01f756d5c7d9609",
+  "alt": "Both radiation paths and direction arrows entering the magnetic field.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(iii) — Deferred sitting",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level deferred examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV-deferred.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   212,
+   142,
+   455,
+   192
+  ]
+ },
  "physics-2023-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2023-hl-q1-table.png",
   "md5": "e1fcf589c3d06127be8d333556a06a81",

@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-01",
+  "subjectId": "physics",
+  "scope": "English main papers 2010–2026 Higher and Ordinary, plus both published English deferred Physics papers (2022 and 2023 Higher).",
+  "requestedPublishedContentScopeComplete": true,
+  "browserInteractionReviewComplete": false,
+  "irishEditions": "Deferred at Alex’s instruction; existing cards and Atlas entries preserved.",
+  "reviewedSittingsAdded": [
+    "2023-hl-deferred"
+  ],
+  "indexedEnglishScope": {
+    "booklets": 36,
+    "reviewedBooklets": 36,
+    "unreviewedPublishedBooklets": 0,
+    "mainBooklets": 34,
+    "deferredBooklets": 2
+  },
+  "runtimeCards": {
+    "higher": 2189,
+    "ordinary": 1870,
+    "total": 4059,
+    "added": 131
+  },
+  "authoredCards": 4070,
+  "figuresAdded": 56,
+  "figureManifestTotal": 1093,
+  "sources": {
+    "paper": {
+      "path": "paper-trail-corpus/deferredexams/2023/LC021ALP000EV.pdf",
+      "fileid": "LC021ALP000EV.pdf",
+      "sha256": "03a43dee1fa12ae6f17a3cff6640e07dce70260dd9cfc7c58bea3a10f4e868e3",
+      "bytes": 2437615,
+      "pages": 16,
+      "pageRoles": {
+        "1": "cover",
+        "2": "questions",
+        "3": "questions",
+        "4": "questions",
+        "5": "questions",
+        "6": "questions",
+        "7": "questions",
+        "8": "questions",
+        "9": "questions",
+        "10": "questions",
+        "11": "questions",
+        "12": "questions",
+        "13": "questions",
+        "14": "questions",
+        "15": "questions",
+        "16": "back-cover"
+      },
+      "pagesLifted": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "scheme": {
+      "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC021ALP000EV.pdf",
+      "fileid": "LC021ALP000EV.pdf",
+      "sha256": "6de7c758d0ea1006e85ac3032892eee934e65fbc860bb28147984dc0e120f52e",
+      "bytes": 370523,
+      "pages": 20,
+      "pageRoles": {
+        "1": "cover",
+        "2": "deferred-guidance",
+        "3": "marking",
+        "4": "marking",
+        "5": "marking",
+        "6": "marking",
+        "7": "marking",
+        "8": "marking",
+        "9": "marking",
+        "10": "marking",
+        "11": "marking",
+        "12": "marking",
+        "13": "marking",
+        "14": "marking",
+        "15": "marking",
+        "16": "marking",
+        "17": "marking",
+        "18": "marking",
+        "19": "blank",
+        "20": "back-cover"
+      },
+      "pagesLifted": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  },
+  "visualReview": {
+    "paper": "All 16 pages independently rendered and read.",
+    "scheme": "All 20 pages independently rendered and read.",
+    "specialGlyphs": 135,
+    "generatedCardsRead": 131,
+    "finalFigureCropsReviewed": 56
+  },
+  "coverage": {
+    "subject": "physics",
+    "mode": "merged",
+    "cards": 4059,
+    "leaves": 3250,
+    "covered": 3250,
+    "excluded": 0,
+    "open": 0,
+    "coveragePct": 100.0,
+    "orphans": [],
+    "unparsed": [],
+    "staleExclusions": [],
+    "papers": [
+      {
+        "year": 2010,
+        "level": "hl",
+        "paper": null,
+        "leaves": 48,
+        "covered": 48,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2010,
+        "level": "ol",
+        "paper": null,
+        "leaves": 87,
+        "covered": 87,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2011,
+        "level": "hl",
+        "paper": null,
+        "leaves": 47,
+        "covered": 47,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2011,
+        "level": "ol",
+        "paper": null,
+        "leaves": 86,
+        "covered": 86,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2012,
+        "level": "hl",
+        "paper": null,
+        "leaves": 62,
+        "covered": 62,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2012,
+        "level": "ol",
+        "paper": null,
+        "leaves": 82,
+        "covered": 82,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2013,
+        "level": "hl",
+        "paper": null,
+        "leaves": 41,
+        "covered": 41,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2013,
+        "level": "ol",
+        "paper": null,
+        "leaves": 91,
+        "covered": 91,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2014,
+        "level": "hl",
+        "paper": null,
+        "leaves": 40,
+        "covered": 40,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2014,
+        "level": "ol",
+        "paper": null,
+        "leaves": 90,
+        "covered": 90,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2015,
+        "level": "hl",
+        "paper": null,
+        "leaves": 32,
+        "covered": 32,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2015,
+        "level": "ol",
+        "paper": null,
+        "leaves": 78,
+        "covered": 78,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2016,
+        "level": "hl",
+        "paper": null,
+        "leaves": 39,
+        "covered": 39,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2016,
+        "level": "ol",
+        "paper": null,
+        "leaves": 70,
+        "covered": 70,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2017,
+        "level": "hl",
+        "paper": null,
+        "leaves": 37,
+        "covered": 37,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2017,
+        "level": "ol",
+        "paper": null,
+        "leaves": 96,
+        "covered": 96,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2018,
+        "level": "hl",
+        "paper": null,
+        "leaves": 47,
+        "covered": 47,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2018,
+        "level": "ol",
+        "paper": null,
+        "leaves": 97,
+        "covered": 97,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2019,
+        "level": "hl",
+        "paper": null,
+        "leaves": 42,
+        "covered": 42,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2019,
+        "level": "ol",
+        "paper": null,
+        "leaves": 100,
+        "covered": 100,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "hl",
+        "paper": null,
+        "leaves": 106,
+        "covered": 106,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2020,
+        "level": "ol",
+        "paper": null,
+        "leaves": 109,
+        "covered": 109,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "hl",
+        "paper": null,
+        "leaves": 121,
+        "covered": 121,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2021,
+        "level": "ol",
+        "paper": null,
+        "leaves": 130,
+        "covered": 130,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "hl",
+        "paper": "Deferred",
+        "leaves": 130,
+        "covered": 130,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "hl",
+        "paper": "Section B (224 marks)",
+        "leaves": 118,
+        "covered": 118,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2022,
+        "level": "ol",
+        "paper": "Section B (224 marks)",
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "hl",
+        "paper": "Deferred",
+        "leaves": 133,
+        "covered": 133,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "hl",
+        "paper": null,
+        "leaves": 114,
+        "covered": 114,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2023,
+        "level": "ol",
+        "paper": null,
+        "leaves": 119,
+        "covered": 119,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "hl",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2024,
+        "level": "ol",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "hl",
+        "paper": null,
+        "leaves": 125,
+        "covered": 125,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2025,
+        "level": "ol",
+        "paper": null,
+        "leaves": 131,
+        "covered": 131,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "hl",
+        "paper": null,
+        "leaves": 107,
+        "covered": 107,
+        "excluded": 0,
+        "open": []
+      },
+      {
+        "year": 2026,
+        "level": "ol",
+        "paper": null,
+        "leaves": 120,
+        "covered": 120,
+        "excluded": 0,
+        "open": []
+      }
+    ],
+    "censusFlags": 0,
+    "unreadPapers": []
+  },
+  "preservation": {
+    "previousAuthoredCardsUnchanged": 3939,
+    "previousHigherRuntimeBlocksUnchanged": 2058,
+    "previousOrdinaryRuntimeBlocksUnchanged": 1870,
+    "previousFigureEntriesUnchanged": 1037,
+    "previousReviewAuditRecordsUnchanged": 35,
+    "otherSubjectCoverageAndSizesUnchanged": true,
+    "previousAtlasBookletsUnchanged": 69,
+    "previousAggregatePaperRecordsUnchanged": 3170,
+    "previousAtlasQuestionMappingsUnchanged": 446,
+    "newlyResolvedDeferredReferenceAssociations": 68,
+    "priorFigurePngsAndOtherSubjectDecksUnchanged": true,
+    "launchPreExistingDirtyFilesUnchanged": 55,
+    "claudePreExistingDirtyFilesUnchanged": 45
+  },
+  "atlas": {
+    "physicalBooklets": 70,
+    "physicalQuestions": 892,
+    "logicalQuestions": 460,
+    "newDeferredQuestions": 14,
+    "newlyResolvedFactualReferenceAssociations": 68
+  },
+  "validation": {
+    "javascriptTestsPassed": 980,
+    "javascriptSuitesPassed": 10,
+    "pythonTestsPassed": 32,
+    "nodeSourceIdentityTestsPassed": 2,
+    "sourceReviewGeneratorsPassed": 36,
+    "priorGeneratorRebuild": "All 36 source generators passed and regenerated byte-identical authored cards, audit records and figures. Afterwards only ten new 2023 card topic IDs were corrected to existing Mark Bank mechanics/circuits buckets, retaining the specific outgoing-course Atlas headings; prior 35 sitting records remain unchanged.",
+    "applicationTypecheck": "passed",
+    "productionBuild": "passed; existing large-chunk warning",
+    "browserInteraction": "Pending: CUA retried 2026-11-01, no apps/browsers returned; native pipe startup failed. No browser pass claimed."
+  },
+  "sourceReviewNotes": [
+    "133 independently enumerated printed leaves are represented by 131 cards: Q12(b) has four jointly priced responses across nine parts; nested hadron asks and separately priced asks are retained. No exclusions.",
+    "Q12(b) shared groups retain their published totals 12, 16, 15 and 13; rows remain unpriced where the scheme provides no row allocations.",
+    "Q1(vii), Q9(vi) and Q13(h) retain whole-response tariffs rather than inventing a row allocation.",
+    "All 56 original SEC crops reviewed; full graph axes, data tables, circuit rails and values, nuclear indices, both stone-motion calculation routes and Q13 passage/illustrations retained.",
+    "Supplementary equation and data crops preserve the question and stem through questionFigure.includesPrompt=false.",
+    "The final paper page contains Q14(d) above acknowledgements. The hash-pinned reviewed crop includes all four capacitor tasks, ending at page 15 y=0.35 before the credits.",
+    "Q11(iv) preserves the scheme’s printed mass-exponent typo and explicitly explains the missing minus sign. Q11 greenhouse guidance distinguishes emitted infrared from the scheme’s reflected wording.",
+    "Q12(b) distinguishes the pnp structure answer from the npn thermistor circuit shown. Q14(a)(v) keeps each alternative route at 9 marks, never a combined 18.",
+    "Internal slashes in to/from and diode/battery remain within single answer options.",
+    "Existing cards, source hashes, identifiers, figures, scheme maps, topic mappings and both external dirty worktrees preserved."
+  ],
+  "publicationInventory": "scripts/markbank/authoring/physics/deferred-source-inventory-20261101.json",
+  "publicationLimits": [
+    "The live deferred archive checked on 2026-11-01 offered 2022–2025, with English Physics in 2022 and 2023 only.",
+    "No Physics listing in 2024/2025 is a publication finding, not a claim that no exam was sat.",
+    "2026 deferred material is not yet offered by the archive; add it if/when published."
+  ],
+  "remaining": [
+    "Browser interaction review when CUA is available.",
+    "Monitor publication of additional deferred material; Irish editions remain deferred."
+  ],
+  "nextSubject": "home-economics"
+}

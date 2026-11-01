@@ -19,12 +19,26 @@ REVIEWED = {
         'paperPages': [2, 2, 3, 3, 4, 5, 6, 7, 8, 8, 9, 10, 12, 13],
         'schemePages': [(4,4),(5,5),(6,6),(7,7),(8,8),(9,10),(11,11),
                         (12,12),(13,13),(14,14),(15,15),(16,17),(18,18),(19,22)],
+        'tail': (14,1.0),
         'tags': [('physics-0-3',),('physics-2-2',),('physics-5-1',),
                  ('physics-5-10',),('physics-6-11',),('physics-0-8','physics-7-9'),
                  ('physics-0-0','physics-0-2'),('physics-3-2','physics-0-11'),
                  ('physics-6-16','physics-6-17'),('physics-7-0','physics-7-2'),
                  ('physics-6-11',),('physics-7-9','physics-6-15'),
                  ('physics-6-9','physics-6-13'),('physics-0-12','physics-7-5')],
+    },
+    '2023-hl-deferred': {
+        'paperPages': [2,3,3,4,4,5,6,7,8,9,10,11,13,14],
+        'schemePages': [(3,3),(4,4),(5,5),(6,6),(7,7),(8,8),(9,9),
+                        (10,10),(11,11),(12,12),(13,13),(14,15),(16,16),(17,18)],
+        'tail': (15,0.35),
+        'mixedTailPage': 15,
+        'tags': [('physics-0-2','physics-0-0'),('physics-2-1',),('physics-5-4',),
+                 ('physics-6-11',),('physics-6-10',),('physics-0-2','physics-7-9'),
+                 ('physics-0-5',),('physics-7-3','physics-5-10'),('physics-7-6',),
+                 ('physics-6-17','physics-6-18'),('physics-5-9','physics-7-7'),
+                 ('physics-7-9','physics-6-12'),('physics-4-2','physics-7-4'),
+                 ('physics-0-13','physics-3-2')],
     },
 }
 
@@ -52,8 +66,19 @@ def generate():
         path=ROOT/review['sources']['paper']['path']
         with fitz.open(path) as doc:
             anchors,tail=physics.paper_anchors(doc,path,wanted,physics.load_anchor_mapper())
+            if geometry.get('mixedTailPage'):
+                # The hash-pinned 2023 p15 carries Q14(d) above its credits.
+                # The generic acknowledgements detector stops one page too
+                # early. Independently reviewed endpoint: after the complete
+                # 0.12 pF / 5 mm / 0.3 mm task, before acknowledgements.
+                page_number=geometry['mixedTailPage']
+                text=physics.clean(doc[page_number-1].get_text('text'))
+                assert tail==(page_number-1,1.0), (key,tail)
+                assert all(term in text for term in ['What is meant by capacitance?',
+                           '0.12 pF','0.3 mm.','Acknowledgements']), key
+                tail=geometry['tail']
         assert [a['page'] for a in anchors]==geometry['paperPages'], key
-        assert tail==(14,1.0), (key,tail)
+        assert tail==geometry['tail'], (key,tail)
         anchor_map,_=physics.hosted_map(fileid,year,anchors,tail)
         answers={'v':1,'paperFileid':fileid,'schemeFileid':fileid,'component':'000',
                  'band':[1,review['sources']['scheme']['pages']+1],

@@ -592,7 +592,7 @@ def build(ledger, year, level):
             # line ("(a) Protein", 2015 Higher Section A, a scheme that prints no
             # reprints): the marker is the anchor, and the rows are searched from
             # that same line.
-            mk = re.match(r'(\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+\S', sq_text)
+            mk = re.match(r'(\((?:[a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+\S', sq_text)
             if not (sq.get('bare') and mk):
                 problems.append(f'{t["key"]}: a welded anchor is a bare part marker opening its answer\'s line; '
                                 f'got {sq_text!r}')
@@ -603,7 +603,7 @@ def build(ledger, year, level):
         # (or its stem: the scheme often reprints the lead-in with the ask).
         score = B.overlap(sq_text, qtext + ' ' + stem)
         if sq.get('bare'):
-            if not (sq.get('paired') and re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)', sq_text)):
+            if not (sq.get('paired') and re.fullmatch(r'\((?:[a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)', sq_text)):
                 problems.append(f'{t["key"]}: a bare scheme anchor must be a part marker alone, with the '
                                 f'reviewer\'s reason; got {sq_text!r}')
         elif score < 0.6 and not (sq.get('paired') and score >= 0.25):
@@ -659,7 +659,23 @@ def build(ledger, year, level):
             part = wl if wl and not wr else (wr if wr and not wl else None)
             printed = ledger.PART_TOTALS.get((wq, part)) if part else (
                 None if (wl or wr) else ledger.QUESTION_TOTALS.get(wq))
-            if wsub is not None or t['route'] or t.get('item') or (wl and wr):
+            group = getattr(ledger, 'WHOLE_GROUPS', {}).get(t['key'])
+            if group:
+                # A scheme may price a run of roman parts once, with no
+                # per-part allocation (2023 deferred Higher Q12(b)). Keep
+                # that exact response together and its rows unpriced.
+                valid_group = (group.get('ref') == t['ref'] and wl and not wr and not wsub
+                               and not t['route'] and t.get('item') and group.get('romans')
+                               and len(set(group['romans'])) == len(group['romans']))
+                if not valid_group:
+                    problems.append(f'{t["key"]}: invalid shared printed-part group')
+                printed = group.get('total')
+                paper_cells = [cell for meta in qmetas if meta.get('lines')
+                               for i, cell in lifter.srcs[doc].cells[meta['page']].items()
+                               if meta['lines'][0] <= i <= meta['lines'][1]]
+                if not paper_cells or sum(B.cell_value(c) for c in paper_cells) != printed:
+                    problems.append(f'{t["key"]}: shared group must match its paper mark cells {paper_cells}')
+            elif wsub is not None or t['route'] or t.get('item') or (wl and wr):
                 problems.append(f'{t["key"]}: a questionTotal task cards a whole printed part')
             if printed != t['total']:
                 problems.append(f'{t["key"]}: questionTotal {t["total"]} is not the printed part total {printed}')
@@ -705,6 +721,9 @@ def build(ledger, year, level):
             cell_check = {'printed': printed_cells, 'sum': printed_sum,
                           **({'partial': partial_cells} if partial_cells else {}),
                           **({'waiver': waiver} if waiver else {})}
+        if t['key'] in getattr(ledger, 'WHOLE_GROUPS', {}):
+            if not whole or not cell_check or cell_check['sum'] != t['total'] or t.get('cells'):
+                problems.append(f'{t["key"]}: shared-part total must equal its lifted printed mark cells')
         variants = None
         if t['key'] in getattr(ledger, 'ANSWER_VARIANTS', {}):
             variants = []
@@ -790,6 +809,10 @@ def build(ledger, year, level):
             card['figureKey'] = t['fig'] if t['fig'].startswith('physics-') else f'physics-{skey}-{t["fig"]}'
         if t['qfig']:
             card['questionFigureKey'] = f'physics-{skey}-{t["qfig"]}'
+        if 'qfig_prompt' in t:
+            if not t['qfig'] or not isinstance(t['qfig_prompt'], bool):
+                problems.append(f'{t["key"]}: qfig_prompt requires a question figure and a boolean')
+            card['questionFigureIncludesPrompt'] = t['qfig_prompt']
         if t['labels']:
             key = []
             for lab in t['labels']:
@@ -827,6 +850,9 @@ def build(ledger, year, level):
             **({'tariff': 'questionTotal'} if whole else {}),
             **({'item': item[1]} if item else {}), 'rows': len(rows),
             'figure': t['fig'], 'questionFigure': t['qfig'],
+            **({'questionFigureIncludesPrompt': t['qfig_prompt']} if 'qfig_prompt' in t else {}),
+            **({'sharedParts': getattr(ledger, 'WHOLE_GROUPS', {})[t['key']]}
+               if t['key'] in getattr(ledger, 'WHOLE_GROUPS', {}) else {}),
             'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),
             **({'cells': cell_check} if cell_check else {}),
             **({'evidence': t['evidence']} if t.get('evidence') else {}),
@@ -954,11 +980,24 @@ def build(ledger, year, level):
         files=[PS.source_path(ROOT, ledger, 'paper')] if deferred else None)
     leaves = set(PC.leaves_of(parts))
     claimed = set()
+    shared_claims = set()
+    task_keys = {t['key'] for t in ledger.TASKS}
+    for key in set(getattr(ledger, 'WHOLE_GROUPS', {})) - task_keys:
+        problems.append(f'WHOLE_GROUPS {key}: no matching task')
     for t in ledger.TASKS:
         # An excluded task is reviewed and accounted for: it claims its leaf.
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
+        group = getattr(ledger, 'WHOLE_GROUPS', {}).get(t['key'])
+        if group:
+            expected = {(qn, letter, r) for r in group['romans']}
+            hit = sorted(leaves & expected, key=str)
+            if expected - leaves:
+                problems.append(f'{t["key"]}: shared group contains unprinted census parts {expected - leaves}')
+            if shared_claims & expected:
+                problems.append(f'{t["key"]}: shared printed-part groups overlap {shared_claims & expected}')
+            shared_claims.update(expected)
         if not hit and letter is None and roman is None and t.get('tariff') == 'questionTotal':
             # A whole QUESTION carded as one task (its scheme prints a tariff the
             # answers fit no reading of, 2013 Higher Q5 and Q6 "1 + 1 + 8 + 6 +
@@ -1040,7 +1079,7 @@ def build(ledger, year, level):
     # stem, so the crop must itself print the ask: every paper selector of the
     # task's question has to open inside the crop's rectangle on its page.
     for t in ledger.TASKS:
-        if not t['qfig'] or t['qfig'] not in ledger.FIGURES:
+        if not t['qfig'] or t['qfig'] not in ledger.FIGURES or t.get('qfig_prompt') is False:
             continue
         fdoc, fpage, frect = ledger.FIGURES[t['qfig']][:3]
         for sel in (t['q'] if isinstance(t['q'], list) else [t['q']]):
@@ -1203,7 +1242,7 @@ def figures(ledger, lifter, year, level, write):
 # says what the review says. Row ids and the card's own notes are bookkeeping.
 COMPARED = ('section', 'questionRef', 'stem', 'questionText', 'tariffModel', 'totalMarks',
             'rows', 'answerVariants', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey',
-            'sourceMaterial')
+            'sourceMaterial', 'questionFigureIncludesPrompt')
 
 
 def _seen(card, field):

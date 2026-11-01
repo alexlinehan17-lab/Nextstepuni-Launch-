@@ -1248,6 +1248,19 @@ class Paper:
                 continue
 
             found_letter, found_roman, rest = _leading(text)
+            if self.subject == 'physics' and (self.year, self.level) == (2023, 'hl') \
+                    and all('/deferredexams/' in str(p) for p in self.files) \
+                    and q == 12 and letter == 'a' and roman in ('vi', 'vii') \
+                    and any(text.startswith(prefix) for prefix in (
+                        '(a) What type of hadron is this sigma particle?',
+                        '(b) What charge does this sigma particle have?',
+                        '(a) What type of hadron is this kaon?',
+                        '(b) What charge does this kaon have?')):
+                # Paper p11 nests (a)/(b) below roman vi/vii inside Q12(a).
+                # Preserve both asks in that roman leaf, without mistaking
+                # their (b) for the electronics option on the next page.
+                self.parts[open_key].append(text)
+                continue
             if found_roman == 'i' and not found_letter and letter == 'h' \
                     and _i_is_letter(blocks, index):
                 # Not gated on (h) being roman-free: Physics 2025 HL Q6 sets

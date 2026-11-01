@@ -209375,6 +209375,5872 @@
     },
     "excluded": []
    }
+  },
+  "2023-hl-deferred": {
+   "status": "reviewed",
+   "reviewedAt": "2026-11-01",
+   "ledger": "scripts/markbank/authoring/phys_review_2023_hl_deferred.py",
+   "sitting": "deferred",
+   "method": "2023 Higher deferred Physics: independent visual review of all 16 paper and 20 scheme pages.\nThe terse scheme has no question reprints. Match the visually checked printed\nquestion/part path, retain shared tariffs, and never invent per-response marks.",
+   "sources": {
+    "paper": {
+     "path": "paper-trail-corpus/deferredexams/2023/LC021ALP000EV.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "03a43dee1fa12ae6f17a3cff6640e07dce70260dd9cfc7c58bea3a10f4e868e3",
+     "bytes": 2437615,
+     "pages": 16,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "questions",
+      "13": "questions",
+      "14": "questions",
+      "15": "questions",
+      "16": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "scheme": {
+     "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC021ALP000EV.pdf",
+     "fileid": "LC021ALP000EV.pdf",
+     "sha256": "6de7c758d0ea1006e85ac3032892eee934e65fbc860bb28147984dc0e120f52e",
+     "bytes": 370523,
+     "pages": 20,
+     "pageRoles": {
+      "1": "cover",
+      "2": "deferred-guidance",
+      "3": "marking",
+      "4": "marking",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "marking",
+      "19": "blank",
+      "20": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 16 pages rendered and read",
+    "scheme": "all 20 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 40,
+    "2": 40,
+    "3": 40,
+    "4": 40,
+    "5": 40,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 56,
+    "11": 56,
+    "12": 112,
+    "13": 56,
+    "14": 112
+   },
+   "partTotals": {
+    "12a": 56,
+    "12b": 56,
+    "13a": 7,
+    "13b": 7,
+    "13c": 7,
+    "13d": 7,
+    "13e": 7,
+    "13f": 7,
+    "13g": 7,
+    "13h": 7,
+    "14a": 28,
+    "14b": 28,
+    "14c": 28,
+    "14d": 28,
+    "1vii": 7,
+    "9vi": 8
+   },
+   "groupTotals": {},
+   "tickChecksums": {},
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Diagram or otherwise permits explanatory method; both measured-quantity and acceleration tasks remain."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "both",
+     "disposition": "The box contains both lens types; this is experiment context, not a choice."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "All twelve short-question parts retained, including both distinct-topic alternatives in Q6(l)."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Neutrino and relay are distinct-topic seven-mark alternatives; retain both routes and count the tariff once."
+    },
+    {
+     "doc": "paper",
+     "page": 7,
+     "directive": "both",
+     "disposition": "Both X-rays and visible light belong to the spectrum; descriptive context."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "The supplied fusion equation is required source data, retained as an original crop."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "both",
+     "disposition": "Positive and negative consequences are both required in one six-mark task."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "either",
+     "disposition": "Both particle-physics and electronics options retained at their own published mark boundaries."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "or",
+     "disposition": "Both Q12 options retained; these are alternatives, not a response combination."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "both",
+     "disposition": "Electrons and positrons are descriptive examples of leptons."
+    },
+    {
+     "doc": "paper",
+     "page": 13,
+     "directive": "the following",
+     "disposition": "Complete passage and attribution retained in all eight Q13 cards."
+    },
+    {
+     "doc": "paper",
+     "page": 13,
+     "directive": "both",
+     "disposition": "The flute is open at both ends; essential physical setup, not a choice."
+    },
+    {
+     "doc": "paper",
+     "page": 13,
+     "directive": "both",
+     "disposition": "Bohr and Schrödinger provide historical context; the task explicitly asks for the Bohr model."
+    },
+    {
+     "doc": "paper",
+     "page": 14,
+     "directive": "any two",
+     "disposition": "All four separately selectable 28-mark options retained; do not generate combinations."
+    },
+    {
+     "doc": "paper",
+     "page": 14,
+     "directive": "the following",
+     "disposition": "The same four Q14 options; each task follows its published tariff."
+    }
+   ],
+   "routes": {
+    "Q6(l)": [
+     "neutrino",
+     "relay"
+    ]
+   },
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "q1i",
+     "id": "phys-2023-hl-deferred-q1-i",
+     "questionRef": "2023 HL Q1(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1i",
+     "route": null,
+     "rows": 3,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iia",
+     "id": "phys-2023-hl-deferred-q1-ii-a",
+     "questionRef": "2023 HL Q1(ii)(a) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q1iia",
+     "route": null,
+     "rows": 2,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iib",
+     "id": "phys-2023-hl-deferred-q1-ii-b",
+     "questionRef": "2023 HL Q1(ii)(b) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q1iib",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iii",
+     "id": "phys-2023-hl-deferred-q1-iii",
+     "questionRef": "2023 HL Q1(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1iv",
+     "id": "phys-2023-hl-deferred-q1-iv",
+     "questionRef": "2023 HL Q1(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1v",
+     "id": "phys-2023-hl-deferred-q1-v",
+     "questionRef": "2023 HL Q1(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1v",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1vi",
+     "id": "phys-2023-hl-deferred-q1-vi",
+     "questionRef": "2023 HL Q1(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-1-2",
+     "concept": "q1vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q1-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q1vii",
+     "id": "phys-2023-hl-deferred-q1-vii",
+     "questionRef": "2023 HL Q1(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       3
+      ]
+     },
+     "total": 7,
+     "markUnits": [],
+     "topic": "phys-1-2",
+     "concept": "q1vii",
+     "route": null,
+     "tariff": "questionTotal",
+     "rows": 2,
+     "figure": "q1-mass-solution",
+     "questionFigure": "q1-graph",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 3 +1)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "Retain the printed 3+3+1 total without inventing an unnamed intermediate criterion.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2i",
+     "id": "phys-2023-hl-deferred-q2-i",
+     "questionRef": "2023 HL Q2(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2i",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2ii",
+     "id": "phys-2023-hl-deferred-q2-ii",
+     "questionRef": "2023 HL Q2(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2iii",
+     "id": "phys-2023-hl-deferred-q2-iii",
+     "questionRef": "2023 HL Q2(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2iv",
+     "id": "phys-2023-hl-deferred-q2-iv",
+     "questionRef": "2023 HL Q2(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2v",
+     "id": "phys-2023-hl-deferred-q2-v",
+     "questionRef": "2023 HL Q2(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2v",
+     "route": null,
+     "rows": 3,
+     "figure": "q2-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2vi",
+     "id": "phys-2023-hl-deferred-q2-vi",
+     "questionRef": "2023 HL Q2(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q2-slope-solution",
+     "questionFigure": "q2-data",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q2vii",
+     "id": "phys-2023-hl-deferred-q2-vii",
+     "questionRef": "2023 HL Q2(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       4
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q2vii",
+     "route": null,
+     "rows": 2,
+     "figure": "q2-heat-solution",
+     "questionFigure": "q2-data",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3i",
+     "id": "phys-2023-hl-deferred-q3-i",
+     "questionRef": "2023 HL Q3(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3i",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3ii",
+     "id": "phys-2023-hl-deferred-q3-ii",
+     "questionRef": "2023 HL Q3(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3iii",
+     "id": "phys-2023-hl-deferred-q3-iii",
+     "questionRef": "2023 HL Q3(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3iii",
+     "route": null,
+     "rows": 2,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3iv",
+     "id": "phys-2023-hl-deferred-q3-iv",
+     "questionRef": "2023 HL Q3(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3iv",
+     "route": null,
+     "rows": 2,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3v",
+     "id": "phys-2023-hl-deferred-q3-v",
+     "questionRef": "2023 HL Q3(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      2,
+      2
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3v",
+     "route": null,
+     "rows": 2,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(2 × 2)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3vi",
+     "id": "phys-2023-hl-deferred-q3-vi",
+     "questionRef": "2023 HL Q3(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q3-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q3vii",
+     "id": "phys-2023-hl-deferred-q3-vii",
+     "questionRef": "2023 HL Q3(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q3vii",
+     "route": null,
+     "rows": 4,
+     "figure": "q3-lens-solution",
+     "questionFigure": "q3-data",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 × 3)"
+      ],
+      "sum": 12
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4i",
+     "id": "phys-2023-hl-deferred-q4-i",
+     "questionRef": "2023 HL Q4(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4i",
+     "route": null,
+     "rows": 3,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4ii",
+     "id": "phys-2023-hl-deferred-q4-ii",
+     "questionRef": "2023 HL Q4(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4ii",
+     "route": null,
+     "rows": 3,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4iii",
+     "id": "phys-2023-hl-deferred-q4-iii",
+     "questionRef": "2023 HL Q4(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q4iii",
+     "route": null,
+     "rows": 2,
+     "figure": "q4-temperature-solution",
+     "questionFigure": "q4-materials",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4iv",
+     "id": "phys-2023-hl-deferred-q4-iv",
+     "questionRef": "2023 HL Q4(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4v",
+     "id": "phys-2023-hl-deferred-q4-v",
+     "questionRef": "2023 HL Q4(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4v",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4vi",
+     "id": "phys-2023-hl-deferred-q4-vi",
+     "questionRef": "2023 HL Q4(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4vi",
+     "route": null,
+     "rows": 3,
+     "figure": "q4-materials",
+     "questionFigure": "q4-data",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q4vii",
+     "id": "phys-2023-hl-deferred-q4-vii",
+     "questionRef": "2023 HL Q4(vii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 1,
+     "markUnits": [
+      1
+     ],
+     "topic": "phys-3-3",
+     "concept": "q4vii",
+     "route": null,
+     "rows": 1,
+     "figure": "q4-materials",
+     "questionFigure": "q4-data",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(1)"
+      ],
+      "sum": 1
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5i",
+     "id": "phys-2023-hl-deferred-q5-i",
+     "questionRef": "2023 HL Q5(i) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5i",
+     "route": null,
+     "rows": 4,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(4 × 3)"
+      ],
+      "sum": 12
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5ii",
+     "id": "phys-2023-hl-deferred-q5-ii",
+     "questionRef": "2023 HL Q5(ii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5iii",
+     "id": "phys-2023-hl-deferred-q5-iii",
+     "questionRef": "2023 HL Q5(iii) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5iv",
+     "id": "phys-2023-hl-deferred-q5-iv",
+     "questionRef": "2023 HL Q5(iv) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5iv",
+     "route": null,
+     "rows": 3,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5v",
+     "id": "phys-2023-hl-deferred-q5-v",
+     "questionRef": "2023 HL Q5(v) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5v",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q5vi",
+     "id": "phys-2023-hl-deferred-q5-vi",
+     "questionRef": "2023 HL Q5(vi) — Deferred sitting",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q5vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q5-data",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "any two (3 + 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6a",
+     "id": "phys-2023-hl-deferred-q6-a",
+     "questionRef": "2023 HL Q6(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q6a",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-force-solution",
+     "questionFigure": "q6-box",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6b",
+     "id": "phys-2023-hl-deferred-q6-b",
+     "questionRef": "2023 HL Q6(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-1-3",
+     "concept": "q6b",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-spring-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)",
+       "(4 + 3)",
+       "(4 + 3)",
+       "(4 + 3)",
+       "(4 + 3)",
+       "(3 + 2 + 2)",
+       "(4 + 3)",
+       "(4 + 3)",
+       "(4 + 3)",
+       "(7)",
+       "(4 + 3)",
+       "(4 + 3)"
+      ],
+      "sum": 84,
+      "waiver": "The final formula is a separate PDF block below the page text, but its printed (4+3) belongs to Q6(b)."
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6c",
+     "id": "phys-2023-hl-deferred-q6-c",
+     "questionRef": "2023 HL Q6(c) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-2-1",
+     "concept": "q6c",
+     "route": null,
+     "rows": 3,
+     "figure": "q6-heat-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6d",
+     "id": "phys-2023-hl-deferred-q6-d",
+     "questionRef": "2023 HL Q6(d) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "q6d",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-string-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6e",
+     "id": "phys-2023-hl-deferred-q6-e",
+     "questionRef": "2023 HL Q6(e) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q6e",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6f",
+     "id": "phys-2023-hl-deferred-q6-f",
+     "questionRef": "2023 HL Q6(f) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q6f",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-critical-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6g",
+     "id": "phys-2023-hl-deferred-q6-g",
+     "questionRef": "2023 HL Q6(g) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q6g",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6h",
+     "id": "phys-2023-hl-deferred-q6-h",
+     "questionRef": "2023 HL Q6(h) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-3-3",
+     "concept": "q6h",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6i",
+     "id": "phys-2023-hl-deferred-q6-i",
+     "questionRef": "2023 HL Q6(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-4-1",
+     "concept": "q6i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6j",
+     "id": "phys-2023-hl-deferred-q6-j",
+     "questionRef": "2023 HL Q6(j) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-1",
+     "concept": "q6j",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-balloon",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6k",
+     "id": "phys-2023-hl-deferred-q6-k",
+     "questionRef": "2023 HL Q6(k) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-5",
+     "concept": "q6k",
+     "route": null,
+     "rows": 2,
+     "figure": "q6-couple-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6l-neutrino",
+     "id": "phys-2023-hl-deferred-q6-l-neutrino",
+     "questionRef": "2023 HL Q6(l) — Deferred sitting — neutrino",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "phys-4-5",
+     "concept": "q6l-neutrino",
+     "route": "neutrino",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(7)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q6l-relay",
+     "id": "phys-2023-hl-deferred-q6-l-relay",
+     "questionRef": "2023 HL Q6(l) — Deferred sitting — relay",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-3-4",
+     "concept": "q6l-relay",
+     "route": "relay",
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7i",
+     "id": "phys-2023-hl-deferred-q7-i",
+     "questionRef": "2023 HL Q7(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7i",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-boat",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7ii",
+     "id": "phys-2023-hl-deferred-q7-ii",
+     "questionRef": "2023 HL Q7(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7ii",
+     "route": null,
+     "rows": 3,
+     "figure": "q7-boat",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7iii",
+     "id": "phys-2023-hl-deferred-q7-iii",
+     "questionRef": "2023 HL Q7(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7iii",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-boat",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7iv",
+     "id": "phys-2023-hl-deferred-q7-iv",
+     "questionRef": "2023 HL Q7(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q7-boat",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7v",
+     "id": "phys-2023-hl-deferred-q7-v",
+     "questionRef": "2023 HL Q7(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7v",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-density-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7vi",
+     "id": "phys-2023-hl-deferred-q7-vi",
+     "questionRef": "2023 HL Q7(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7vi",
+     "route": null,
+     "rows": 2,
+     "figure": "q7-pressure-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7vii",
+     "id": "phys-2023-hl-deferred-q7-vii",
+     "questionRef": "2023 HL Q7(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7vii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7viii",
+     "id": "phys-2023-hl-deferred-q7-viii",
+     "questionRef": "2023 HL Q7(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7viii",
+     "route": null,
+     "rows": 3,
+     "figure": "q7-balloon-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)",
+       "(2)"
+      ],
+      "sum": 8
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q7ix",
+     "id": "phys-2023-hl-deferred-q7-ix",
+     "questionRef": "2023 HL Q7(ix) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-1-2",
+     "concept": "q7ix",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 2)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8i",
+     "id": "phys-2023-hl-deferred-q8-i",
+     "questionRef": "2023 HL Q8(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q8i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8ii",
+     "id": "phys-2023-hl-deferred-q8-ii",
+     "questionRef": "2023 HL Q8(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q8ii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "any four (4 × 3)"
+      ],
+      "sum": 12
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iii",
+     "id": "phys-2023-hl-deferred-q8-iii",
+     "questionRef": "2023 HL Q8(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q8iii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8iv",
+     "id": "phys-2023-hl-deferred-q8-iv",
+     "questionRef": "2023 HL Q8(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 2,
+     "markUnits": [
+      2
+     ],
+     "topic": "phys-4-2",
+     "concept": "q8iv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2)"
+      ],
+      "sum": 2
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8v",
+     "id": "phys-2023-hl-deferred-q8-v",
+     "questionRef": "2023 HL Q8(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q8v",
+     "route": null,
+     "rows": 3,
+     "figure": "q8-janssen",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8vi",
+     "id": "phys-2023-hl-deferred-q8-vi",
+     "questionRef": "2023 HL Q8(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-2-6",
+     "concept": "q8vi",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-janssen",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "any three (3 × 2)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8vii",
+     "id": "phys-2023-hl-deferred-q8-vii",
+     "questionRef": "2023 HL Q8(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q8vii",
+     "route": null,
+     "rows": 4,
+     "figure": "q8-grating-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 × 3)"
+      ],
+      "sum": 12
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q8viii",
+     "id": "phys-2023-hl-deferred-q8-viii",
+     "questionRef": "2023 HL Q8(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q8viii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9i",
+     "id": "phys-2023-hl-deferred-q9-i",
+     "questionRef": "2023 HL Q9(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9ii",
+     "id": "phys-2023-hl-deferred-q9-ii",
+     "questionRef": "2023 HL Q9(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9ii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9iii",
+     "id": "phys-2023-hl-deferred-q9-iii",
+     "questionRef": "2023 HL Q9(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9iii",
+     "route": null,
+     "rows": 2,
+     "figure": "q9-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9iv",
+     "id": "phys-2023-hl-deferred-q9-iv",
+     "questionRef": "2023 HL Q9(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-3-4",
+     "concept": "q9iv",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-radiation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9v",
+     "id": "phys-2023-hl-deferred-q9-v",
+     "questionRef": "2023 HL Q9(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9v",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9vi",
+     "id": "phys-2023-hl-deferred-q9-vi",
+     "questionRef": "2023 HL Q9(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 8,
+     "markUnits": [],
+     "topic": "phys-4-4",
+     "concept": "q9vi",
+     "route": null,
+     "tariff": "questionTotal",
+     "rows": 1,
+     "figure": "q9-decay-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(8 × 1)"
+      ],
+      "sum": 8
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "Retain the eight-mark complete nuclear equation; do not guess which printed elements receive individual marks.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9vii",
+     "id": "phys-2023-hl-deferred-q9-vii",
+     "questionRef": "2023 HL Q9(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9vii",
+     "route": null,
+     "rows": 3,
+     "figure": "q9-halflife-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9viii",
+     "id": "phys-2023-hl-deferred-q9-viii",
+     "questionRef": "2023 HL Q9(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9viii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q9ix",
+     "id": "phys-2023-hl-deferred-q9-ix",
+     "questionRef": "2023 HL Q9(ix) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "phys-4-4",
+     "concept": "q9ix",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(6)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10i",
+     "id": "phys-2023-hl-deferred-q10-i",
+     "questionRef": "2023 HL Q10(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q10i",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10ii",
+     "id": "phys-2023-hl-deferred-q10-ii",
+     "questionRef": "2023 HL Q10(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-4",
+     "concept": "q10ii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10iii",
+     "id": "phys-2023-hl-deferred-q10-iii",
+     "questionRef": "2023 HL Q10(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q10iii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10iv",
+     "id": "phys-2023-hl-deferred-q10-iv",
+     "questionRef": "2023 HL Q10(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q10iv",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10v",
+     "id": "phys-2023-hl-deferred-q10-v",
+     "questionRef": "2023 HL Q10(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q10v",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10vi",
+     "id": "phys-2023-hl-deferred-q10-vi",
+     "questionRef": "2023 HL Q10(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q10vi",
+     "route": null,
+     "rows": 3,
+     "figure": "q10-charger",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10vii",
+     "id": "phys-2023-hl-deferred-q10-vii",
+     "questionRef": "2023 HL Q10(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-6",
+     "concept": "q10vii",
+     "route": null,
+     "rows": 2,
+     "figure": "q10-turns-solution",
+     "questionFigure": "q10-charger",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q10viii",
+     "id": "phys-2023-hl-deferred-q10-viii",
+     "questionRef": "2023 HL Q10(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      2,
+      2,
+      2,
+      2
+     ],
+     "topic": "phys-3-6",
+     "concept": "q10viii",
+     "route": null,
+     "rows": 4,
+     "figure": "q10-induced-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2)",
+       "(2)",
+       "(2)",
+       "(2)"
+      ],
+      "sum": 8
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11i",
+     "id": "phys-2023-hl-deferred-q11-i",
+     "questionRef": "2023 HL Q11(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11i",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-tyndall",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11ii",
+     "id": "phys-2023-hl-deferred-q11-ii",
+     "questionRef": "2023 HL Q11(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11ii",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-tyndall",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "any two (2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11iii",
+     "id": "phys-2023-hl-deferred-q11-iii",
+     "questionRef": "2023 HL Q11(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-2-4",
+     "concept": "q11iii",
+     "route": null,
+     "rows": 3,
+     "figure": "q11-time-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)",
+       "(2)"
+      ],
+      "sum": 8
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11iv",
+     "id": "phys-2023-hl-deferred-q11-iv",
+     "questionRef": "2023 HL Q11(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 15,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q11iv",
+     "route": null,
+     "rows": 5,
+     "figure": "q11-fusion-solution",
+     "questionFigure": "q11-fusion-question",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)",
+       "(3)",
+       "(3)",
+       "(3)"
+      ],
+      "sum": 15
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11v",
+     "id": "phys-2023-hl-deferred-q11-v",
+     "questionRef": "2023 HL Q11(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q11v",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11vi",
+     "id": "phys-2023-hl-deferred-q11-vi",
+     "questionRef": "2023 HL Q11(vi) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-1",
+     "concept": "q11vi",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11vii",
+     "id": "phys-2023-hl-deferred-q11-vii",
+     "questionRef": "2023 HL Q11(vii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-2",
+     "concept": "q11vii",
+     "route": null,
+     "rows": 3,
+     "figure": "q11-photon-solution",
+     "questionFigure": "q11-laboratory",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q11viii",
+     "id": "phys-2023-hl-deferred-q11-viii",
+     "questionRef": "2023 HL Q11(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-2-3",
+     "concept": "q11viii",
+     "route": null,
+     "rows": 1,
+     "figure": "q11-laboratory",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12ai",
+     "id": "phys-2023-hl-deferred-q12-a-i",
+     "questionRef": "2023 HL Q12(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12ai",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-balloon",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aii",
+     "id": "phys-2023-hl-deferred-q12-a-ii",
+     "questionRef": "2023 HL Q12(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-4",
+     "concept": "q12aii",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-balloon",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aiii",
+     "id": "phys-2023-hl-deferred-q12-a-iii",
+     "questionRef": "2023 HL Q12(a)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aiii",
+     "route": null,
+     "rows": 2,
+     "figure": "q12-pair-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aiv",
+     "id": "phys-2023-hl-deferred-q12-a-iv",
+     "questionRef": "2023 HL Q12(a)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aiv",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12av",
+     "id": "phys-2023-hl-deferred-q12-a-v",
+     "questionRef": "2023 HL Q12(a)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      3,
+      3,
+      2
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12av",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-mass-solution",
+     "questionFigure": "q12-cern",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)",
+       "(3)",
+       "(2)"
+      ],
+      "sum": 8
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12avia",
+     "id": "phys-2023-hl-deferred-q12-a-vi-a",
+     "questionRef": "2023 HL Q12(a)(vi)(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12avia",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12avib",
+     "id": "phys-2023-hl-deferred-q12-a-vi-b",
+     "questionRef": "2023 HL Q12(a)(vi)(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12avib",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aviia",
+     "id": "phys-2023-hl-deferred-q12-a-vii-a",
+     "questionRef": "2023 HL Q12(a)(vii)(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aviia",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aviib",
+     "id": "phys-2023-hl-deferred-q12-a-vii-b",
+     "questionRef": "2023 HL Q12(a)(vii)(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aviib",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aviii",
+     "id": "phys-2023-hl-deferred-q12-a-viii",
+     "questionRef": "2023 HL Q12(a)(viii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aviii",
+     "route": null,
+     "rows": 3,
+     "figure": "q12-ring-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12aix",
+     "id": "phys-2023-hl-deferred-q12-a-ix",
+     "questionRef": "2023 HL Q12(a)(ix) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-4-5",
+     "concept": "q12aix",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12b-i-ii",
+     "id": "phys-2023-hl-deferred-q12-b-i-ii",
+     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (i)–(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 12,
+     "markUnits": [],
+     "topic": "phys-3-3",
+     "concept": "q12b-i-ii",
+     "route": null,
+     "tariff": "questionTotal",
+     "item": "Parts (i)–(ii)",
+     "rows": 4,
+     "figure": "q12-chip",
+     "questionFigure": null,
+     "sharedParts": {
+      "ref": "Q12(b)",
+      "romans": [
+       "i",
+       "ii"
+      ],
+      "total": 12
+     },
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(12)"
+      ],
+      "sum": 12
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "The paper and scheme give a single 12-mark total for i–ii. Assess the whole response without inventing per-part or row marks.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12b-iii-v",
+     "id": "phys-2023-hl-deferred-q12-b-iii-v",
+     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (iii)–(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 16,
+     "markUnits": [],
+     "topic": "phys-3-3",
+     "concept": "q12b-iii-v",
+     "route": null,
+     "tariff": "questionTotal",
+     "item": "Parts (iii)–(v)",
+     "rows": 5,
+     "figure": null,
+     "questionFigure": null,
+     "sharedParts": {
+      "ref": "Q12(b)",
+      "romans": [
+       "iii",
+       "iv",
+       "v"
+      ],
+      "total": 16
+     },
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(16)"
+      ],
+      "sum": 16
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "The paper and scheme give one 16-mark total for iii–v; all three asks and the complete rectifier criteria remain together.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12b-vi-vii",
+     "id": "phys-2023-hl-deferred-q12-b-vi-vii",
+     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (vi)–(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 15,
+     "markUnits": [],
+     "topic": "phys-3-3",
+     "concept": "q12b-vi-vii",
+     "route": null,
+     "tariff": "questionTotal",
+     "item": "Parts (vi)–(vii)",
+     "rows": 6,
+     "figure": "q12-thermistor",
+     "questionFigure": null,
+     "sharedParts": {
+      "ref": "Q12(b)",
+      "romans": [
+       "vi",
+       "vii"
+      ],
+      "total": 15
+     },
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(15)"
+      ],
+      "sum": 15
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "The shared 15-mark transistor block includes the full original thermistor circuit. Do not split an unpublished allocation.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q12b-viii-ix",
+     "id": "phys-2023-hl-deferred-q12-b-viii-ix",
+     "questionRef": "2023 HL Q12(b) — Deferred sitting — Parts (viii)–(ix)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 13,
+     "markUnits": [],
+     "topic": "phys-3-3",
+     "concept": "q12b-viii-ix",
+     "route": null,
+     "tariff": "questionTotal",
+     "item": "Parts (viii)–(ix)",
+     "rows": 4,
+     "figure": "q12-not-solution",
+     "questionFigure": null,
+     "sharedParts": {
+      "ref": "Q12(b)",
+      "romans": [
+       "viii",
+       "ix"
+      ],
+      "total": 13
+     },
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(13)"
+      ],
+      "sum": 13
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "Keep the NOT-gate circuit and truth table together at their published shared 13-mark boundary.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13a",
+     "id": "phys-2023-hl-deferred-q13-a",
+     "questionRef": "2023 HL Q13(a) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-6",
+     "concept": "q13a",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-illustrations",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13b",
+     "id": "phys-2023-hl-deferred-q13-b",
+     "questionRef": "2023 HL Q13(b) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-2-6",
+     "concept": "q13b",
+     "route": null,
+     "rows": 3,
+     "figure": "q13-illustrations",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13c",
+     "id": "phys-2023-hl-deferred-q13-c",
+     "questionRef": "2023 HL Q13(c) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-1-3",
+     "concept": "q13c",
+     "route": null,
+     "rows": 3,
+     "figure": "q13-swing-solution",
+     "questionFigure": "q13-illustrations",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13d",
+     "id": "phys-2023-hl-deferred-q13-d",
+     "questionRef": "2023 HL Q13(d) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      4,
+      3
+     ],
+     "topic": "phys-2-5",
+     "concept": "q13d",
+     "route": null,
+     "rows": 2,
+     "figure": "q13-illustrations",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 + 3)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13e",
+     "id": "phys-2023-hl-deferred-q13-e",
+     "questionRef": "2023 HL Q13(e) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-2-5",
+     "concept": "q13e",
+     "route": null,
+     "rows": 3,
+     "figure": "q13-glass-solution",
+     "questionFigure": "q13-illustrations",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13f",
+     "id": "phys-2023-hl-deferred-q13-f",
+     "questionRef": "2023 HL Q13(f) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-4-2",
+     "concept": "q13f",
+     "route": null,
+     "rows": 3,
+     "figure": "q13-illustrations",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13g",
+     "id": "phys-2023-hl-deferred-q13-g",
+     "questionRef": "2023 HL Q13(g) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-4-3",
+     "concept": "q13g",
+     "route": null,
+     "rows": 3,
+     "figure": "q13-illustrations",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q13h",
+     "id": "phys-2023-hl-deferred-q13-h",
+     "questionRef": "2023 HL Q13(h) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       13
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 7,
+     "markUnits": [],
+     "topic": "phys-4-6",
+     "concept": "q13h",
+     "route": null,
+     "tariff": "questionTotal",
+     "rows": 1,
+     "figure": "q13-carbon-solution",
+     "questionFigure": "q13-illustrations",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(5 × 1 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": "Retain the seven-mark complete nuclear equation without inventing named one-mark/two-mark subcriteria.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14ai",
+     "id": "phys-2023-hl-deferred-q14-a-i",
+     "questionRef": "2023 HL Q14(a)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q14ai",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14aii",
+     "id": "phys-2023-hl-deferred-q14-a-ii",
+     "questionRef": "2023 HL Q14(a)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "phys-1-1",
+     "concept": "q14aii",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4 × 1)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14aiii",
+     "id": "phys-2023-hl-deferred-q14-a-iii",
+     "questionRef": "2023 HL Q14(a)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q14aiii",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-derive-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14aiv",
+     "id": "phys-2023-hl-deferred-q14-a-iv",
+     "questionRef": "2023 HL Q14(a)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q14aiv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "any two (2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14av",
+     "id": "phys-2023-hl-deferred-q14-a-v",
+     "questionRef": "2023 HL Q14(a)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-1-1",
+     "concept": "q14av",
+     "route": null,
+     "rows": 6,
+     "figure": "q14-stone-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bi",
+     "id": "phys-2023-hl-deferred-q14-b-i",
+     "questionRef": "2023 HL Q14(b)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q14bi",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bii",
+     "id": "phys-2023-hl-deferred-q14-b-ii",
+     "questionRef": "2023 HL Q14(b)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q14bii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14biii",
+     "id": "phys-2023-hl-deferred-q14-b-iii",
+     "questionRef": "2023 HL Q14(b)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q14biii",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3)"
+      ],
+      "sum": 3
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14biv",
+     "id": "phys-2023-hl-deferred-q14-b-iv",
+     "questionRef": "2023 HL Q14(b)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-3",
+     "concept": "q14biv",
+     "route": null,
+     "rows": 2,
+     "figure": "q14-bridge-solution",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14bv",
+     "id": "phys-2023-hl-deferred-q14-b-v",
+     "questionRef": "2023 HL Q14(b)(v) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-3-3",
+     "concept": "q14bv",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14ci",
+     "id": "phys-2023-hl-deferred-q14-c-i",
+     "questionRef": "2023 HL Q14(c)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q14ci",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14cii",
+     "id": "phys-2023-hl-deferred-q14-c-ii",
+     "questionRef": "2023 HL Q14(c)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q14cii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14ciii",
+     "id": "phys-2023-hl-deferred-q14-c-iii",
+     "questionRef": "2023 HL Q14(c)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-2-7",
+     "concept": "q14ciii",
+     "route": null,
+     "rows": 3,
+     "figure": "q14-doppler-solution",
+     "questionFigure": "q14-car",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14civ",
+     "id": "phys-2023-hl-deferred-q14-c-iv",
+     "questionRef": "2023 HL Q14(c)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       14
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "phys-2-7",
+     "concept": "q14civ",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-car",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(4)"
+      ],
+      "sum": 4
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14di",
+     "id": "phys-2023-hl-deferred-q14-d-i",
+     "questionRef": "2023 HL Q14(d)(i) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       15
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14di",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14dii",
+     "id": "phys-2023-hl-deferred-q14-d-ii",
+     "questionRef": "2023 HL Q14(d)(ii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       15
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14dii",
+     "route": null,
+     "rows": 3,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 × 3)"
+      ],
+      "sum": 9
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14diii",
+     "id": "phys-2023-hl-deferred-q14-d-iii",
+     "questionRef": "2023 HL Q14(d)(iii) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       15
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14diii",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(2 × 3)"
+      ],
+      "sum": 6
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "q14div",
+     "id": "phys-2023-hl-deferred-q14-d-iv",
+     "questionRef": "2023 HL Q14(d)(iv) — Deferred sitting",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       15
+      ]
+     },
+     "scheme": {
+      "pages": [
+       18
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      3,
+      2,
+      2
+     ],
+     "topic": "phys-3-2",
+     "concept": "q14div",
+     "route": null,
+     "rows": 3,
+     "figure": "q14-capacitance-solution",
+     "questionFigure": "q14-keyboard",
+     "questionFigureIncludesPrompt": false,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "cells": {
+      "printed": [
+       "(3 + 2 + 2)"
+      ],
+      "sum": 7
+     },
+     "pairedBy": "The deferred scheme prints the answer below or beside this numbered marker, without reprinting the ask. Paper and scheme paths independently checked visually.",
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 131,
+   "baseTaskCount": 131,
+   "figures": [
+    "physics-2023-hl-deferred-q1-graph",
+    "physics-2023-hl-deferred-q1-mass-solution",
+    "physics-2023-hl-deferred-q10-charger",
+    "physics-2023-hl-deferred-q10-induced-solution",
+    "physics-2023-hl-deferred-q10-turns-solution",
+    "physics-2023-hl-deferred-q11-fusion-question",
+    "physics-2023-hl-deferred-q11-fusion-solution",
+    "physics-2023-hl-deferred-q11-laboratory",
+    "physics-2023-hl-deferred-q11-photon-solution",
+    "physics-2023-hl-deferred-q11-time-solution",
+    "physics-2023-hl-deferred-q11-tyndall",
+    "physics-2023-hl-deferred-q12-balloon",
+    "physics-2023-hl-deferred-q12-cern",
+    "physics-2023-hl-deferred-q12-chip",
+    "physics-2023-hl-deferred-q12-mass-solution",
+    "physics-2023-hl-deferred-q12-not-solution",
+    "physics-2023-hl-deferred-q12-pair-solution",
+    "physics-2023-hl-deferred-q12-ring-solution",
+    "physics-2023-hl-deferred-q12-thermistor",
+    "physics-2023-hl-deferred-q13-carbon-solution",
+    "physics-2023-hl-deferred-q13-glass-solution",
+    "physics-2023-hl-deferred-q13-illustrations",
+    "physics-2023-hl-deferred-q13-swing-solution",
+    "physics-2023-hl-deferred-q14-bridge-solution",
+    "physics-2023-hl-deferred-q14-capacitance-solution",
+    "physics-2023-hl-deferred-q14-car",
+    "physics-2023-hl-deferred-q14-derive-solution",
+    "physics-2023-hl-deferred-q14-doppler-solution",
+    "physics-2023-hl-deferred-q14-keyboard",
+    "physics-2023-hl-deferred-q14-stone-solution",
+    "physics-2023-hl-deferred-q2-data",
+    "physics-2023-hl-deferred-q2-heat-solution",
+    "physics-2023-hl-deferred-q2-slope-solution",
+    "physics-2023-hl-deferred-q3-data",
+    "physics-2023-hl-deferred-q3-lens-solution",
+    "physics-2023-hl-deferred-q4-data",
+    "physics-2023-hl-deferred-q4-materials",
+    "physics-2023-hl-deferred-q4-temperature-solution",
+    "physics-2023-hl-deferred-q5-data",
+    "physics-2023-hl-deferred-q6-balloon",
+    "physics-2023-hl-deferred-q6-box",
+    "physics-2023-hl-deferred-q6-couple-solution",
+    "physics-2023-hl-deferred-q6-critical-solution",
+    "physics-2023-hl-deferred-q6-force-solution",
+    "physics-2023-hl-deferred-q6-heat-solution",
+    "physics-2023-hl-deferred-q6-spring-solution",
+    "physics-2023-hl-deferred-q6-string-solution",
+    "physics-2023-hl-deferred-q7-balloon-solution",
+    "physics-2023-hl-deferred-q7-boat",
+    "physics-2023-hl-deferred-q7-density-solution",
+    "physics-2023-hl-deferred-q7-pressure-solution",
+    "physics-2023-hl-deferred-q8-grating-solution",
+    "physics-2023-hl-deferred-q8-janssen",
+    "physics-2023-hl-deferred-q9-decay-solution",
+    "physics-2023-hl-deferred-q9-halflife-solution",
+    "physics-2023-hl-deferred-q9-radiation"
+   ],
+   "checks": {
+    "censusLeaves": 133,
+    "censusLeavesClaimed": 133,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-mechanics"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-heat"
+      ],
+      "taskTopics": [
+       "phys-2-1"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-light"
+      ],
+      "taskTopics": [
+       "phys-2-3"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-electricity"
+      ],
+      "taskTopics": [
+       "phys-2-1",
+       "phys-3-3"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-exp-qs-all",
+       "physics-higher-old-course-exp-qs-electricity"
+      ],
+      "taskTopics": [
+       "phys-3-3"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-new-course-13-stretching-and-compressing-objects",
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-25-sound-energy",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-31-charge-interactions",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-higher-new-course-35-the-force-experienced-by-a-current-carrying-conductor-in-a-magnetic-field",
+       "physics-higher-new-course-41-the-electron",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-old-course-acceleration",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-electric-circuits",
+       "physics-higher-old-course-force-mass-momentum",
+       "physics-higher-old-course-heat-heat-transfer",
+       "physics-higher-old-course-magnets-magnetic-fields",
+       "physics-higher-old-course-particle-physics",
+       "physics-higher-old-course-reflection-mirrors",
+       "physics-higher-old-course-refraction-lenses",
+       "physics-higher-old-course-static-electricity",
+       "physics-higher-old-course-the-electron",
+       "physics-higher-old-course-vibration-sound",
+       "physics-higher-old-course-waves-wave-motion"
+      ],
+      "taskTopics": [
+       "phys-1-2",
+       "phys-1-3",
+       "phys-2-1",
+       "phys-2-3",
+       "phys-2-4",
+       "phys-2-5",
+       "phys-3-1",
+       "phys-3-3",
+       "phys-3-4",
+       "phys-3-5",
+       "phys-4-1",
+       "phys-4-5"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-old-course-pressure-gravity-moments"
+      ],
+      "taskTopics": [
+       "phys-1-2"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-old-course-the-electron"
+      ],
+      "taskTopics": [
+       "phys-2-4",
+       "phys-2-6",
+       "phys-4-2"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "physics-higher-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-higher-new-course-44-radioactivity",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity"
+      ],
+      "taskTopics": [
+       "phys-3-4",
+       "phys-4-4"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-34-magnetic-fields-around-permanent-and-temporary-magnets",
+       "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
+       "physics-higher-old-course-current-charge",
+       "physics-higher-old-course-electromagnetic-induction"
+      ],
+      "taskTopics": [
+       "phys-3-2",
+       "phys-3-3",
+       "phys-3-4",
+       "phys-3-6"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+       "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
+       "physics-higher-new-course-24-electromagnetic-energy",
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-old-course-light",
+       "physics-higher-old-course-nuclear-energy"
+      ],
+      "taskTopics": [
+       "phys-2-1",
+       "phys-2-3",
+       "phys-2-4",
+       "phys-4-2",
+       "phys-4-5"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-new-course-44-radioactivity",
+       "physics-higher-new-course-45-mass-energy-equivalence",
+       "physics-higher-old-course-applied-electricity",
+       "physics-higher-old-course-semiconductors"
+      ],
+      "taskTopics": [
+       "phys-3-3",
+       "phys-4-4",
+       "phys-4-5"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "physics-higher-new-course-13-stretching-and-compressing-objects",
+       "physics-higher-new-course-25-sound-energy",
+       "physics-higher-new-course-26-principle-of-superposition-of-waves",
+       "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
+       "physics-higher-new-course-43-early-models-of-the-atom",
+       "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
+       "physics-higher-old-course-nuclear-energy",
+       "physics-higher-old-course-the-atom-nucleus-radioactivity",
+       "physics-higher-old-course-the-electron",
+       "physics-higher-old-course-vibration-sound"
+      ],
+      "taskTopics": [
+       "phys-1-3",
+       "phys-2-5",
+       "phys-2-6",
+       "phys-4-2",
+       "phys-4-3",
+       "phys-4-6"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "physics-higher-new-course-11-particle-motion-in-a-straight-line",
+       "physics-higher-new-course-12-forces-acting-on-a-particle",
+       "physics-higher-new-course-27-wave-effects",
+       "physics-higher-new-course-32-modelling-electric-fields",
+       "physics-higher-new-course-33-electric-circuits",
+       "physics-higher-old-course-potential-difference-capacitance",
+       "physics-higher-old-course-resistance",
+       "physics-higher-old-course-speed-displacement-velocity",
+       "physics-higher-old-course-waves-wave-motion"
+      ],
+      "taskTopics": [
+       "phys-1-1",
+       "phys-2-7",
+       "phys-3-2",
+       "phys-3-3"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (physics-<year>-exam-topic-map.json via physics-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 0,
+    "askScan": {
+     "askLines": 138,
+     "exempt": [
+      {
+       "page": 15,
+       "line": "State Examination Commission",
+       "reason": "Image-credit attribution in the acknowledgements, not an instruction."
+      },
+      {
+       "page": 15,
+       "line": "State Examinations Commission",
+       "reason": "Image-credit attribution in the acknowledgements, not an instruction."
+      },
+      {
+       "page": 15,
+       "line": "capacitors. When the key is pressed, the distance between the",
+       "reason": "Descriptive keyboard setup retained in Q14(d)(iv), not an extra ask."
+      }
+     ]
+    },
+    "excluded": []
+   }
   }
  }
 }

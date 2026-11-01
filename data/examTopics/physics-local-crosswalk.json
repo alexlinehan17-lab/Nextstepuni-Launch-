@@ -11,13 +11,13 @@
     "referenceOfficialAssociations": 2482,
     "referenceMockAssociations": 2051,
     "referenceProviderSampleAssociations": 168,
-    "matchedAssociations": 1768,
-    "sourceBlockedAssociations": 714,
-    "matchedLogicalCards": 405,
+    "matchedAssociations": 1836,
+    "sourceBlockedAssociations": 646,
+    "matchedLogicalCards": 419,
     "retainedLocalLogicalCards": 41,
-    "localPaperVariants": 69,
-    "localPhysicalCards": 878,
-    "localLogicalQuestions": 446,
+    "localPaperVariants": 70,
+    "localPhysicalCards": 892,
+    "localLogicalQuestions": 460,
     "preservedBaselineVariants": 63,
     "preservedBaselineTasks": 790
   },
@@ -142,8 +142,17 @@
       "questionNumber": "6",
       "tail": " - Part A",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-11-particle-motion-in-a-straight-line",
@@ -556,8 +565,17 @@
       "questionNumber": "1",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "1"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-12-forces-acting-on-a-particle",
@@ -572,8 +590,17 @@
       "questionNumber": "7",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-12-forces-acting-on-a-particle",
@@ -588,8 +615,17 @@
       "questionNumber": "14",
       "tail": " - Part A",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-12-forces-acting-on-a-particle",
@@ -2420,8 +2456,17 @@
       "questionNumber": "2",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "2"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
@@ -2436,8 +2481,17 @@
       "questionNumber": "6",
       "tail": " - Part C",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
@@ -3251,8 +3305,17 @@
       "questionNumber": "3",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "3"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
@@ -3267,8 +3330,17 @@
       "questionNumber": "6",
       "tail": " - Part F",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
@@ -3283,8 +3355,17 @@
       "questionNumber": "6",
       "tail": " - Part G",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
@@ -3299,8 +3380,17 @@
       "questionNumber": "11",
       "tail": " - (viii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-23-wave-behaviour-caused-by-the-interaction-of-waves-with-their-environment",
@@ -4027,8 +4117,17 @@
       "questionNumber": "8",
       "tail": " - Part (i)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-24-electromagnetic-energy",
@@ -4043,8 +4142,17 @@
       "questionNumber": "11",
       "tail": " - (i)-(iii), (vii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-24-electromagnetic-energy",
@@ -4571,8 +4679,17 @@
       "questionNumber": "6",
       "tail": " - Part D",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-26-principle-of-superposition-of-waves",
@@ -4587,8 +4704,17 @@
       "questionNumber": "8",
       "tail": " - Part (v) - (viii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-26-principle-of-superposition-of-waves",
@@ -5272,8 +5398,17 @@
       "questionNumber": "14",
       "tail": " - Part C",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-27-wave-effects",
@@ -5652,8 +5787,17 @@
       "questionNumber": "6",
       "tail": " - Part J",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-31-charge-interactions",
@@ -6449,8 +6593,17 @@
       "questionNumber": "4",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "4"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-33-electric-circuits",
@@ -6465,8 +6618,17 @@
       "questionNumber": "5",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "5"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-33-electric-circuits",
@@ -6481,8 +6643,17 @@
       "questionNumber": "6",
       "tail": " - Part H",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-33-electric-circuits",
@@ -6497,8 +6668,17 @@
       "questionNumber": "12",
       "tail": " - Part B",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-33-electric-circuits",
@@ -7892,8 +8072,17 @@
       "questionNumber": "10",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-36-induced-potential-difference-and-the-generator-effect",
@@ -8632,8 +8821,17 @@
       "questionNumber": "8",
       "tail": " - Part (ii) - (iv)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
@@ -8648,8 +8846,17 @@
       "questionNumber": "13",
       "tail": " - Part F",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-42-photoelectric-emission-and-x-ray-production",
@@ -9433,8 +9640,17 @@
       "questionNumber": "9",
       "tail": " - Part (i) - (iii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "9"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-44-radioactivity",
@@ -9449,8 +9665,17 @@
       "questionNumber": "9",
       "tail": " - Part (v) - (ix)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "9"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-44-radioactivity",
@@ -10282,8 +10507,17 @@
       "questionNumber": "11",
       "tail": " - (iv)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-new-course-46-harnessing-energy-from-nuclear-processes",
@@ -10821,8 +11055,17 @@
       "questionNumber": "6",
       "tail": " - Part B",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-acceleration",
@@ -11094,8 +11337,17 @@
       "questionNumber": "12",
       "tail": " - Part B",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-applied-electricity",
@@ -11110,8 +11362,17 @@
       "questionNumber": "6",
       "tail": " - Part L - (ii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-applied-electricity",
@@ -11988,8 +12249,17 @@
       "questionNumber": "10",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-current-charge",
@@ -12673,8 +12943,17 @@
       "questionNumber": "6",
       "tail": " - Part H",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-electric-circuits",
@@ -13271,8 +13550,17 @@
       "questionNumber": "10",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "10"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-electromagnetic-induction",
@@ -13749,8 +14037,17 @@
       "questionNumber": "4",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "4"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-electricity",
@@ -13765,8 +14062,17 @@
       "questionNumber": "5",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "5"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-electricity",
@@ -14195,8 +14501,17 @@
       "questionNumber": "2",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "2"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-heat",
@@ -14575,8 +14890,17 @@
       "questionNumber": "3",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "3"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-light",
@@ -15146,8 +15470,17 @@
       "questionNumber": "1",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "1"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-mechanics",
@@ -16099,8 +16432,17 @@
       "questionNumber": "1",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "1"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-all",
@@ -16115,8 +16457,17 @@
       "questionNumber": "2",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "2"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-all",
@@ -16131,8 +16482,17 @@
       "questionNumber": "3",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "3"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-all",
@@ -16147,8 +16507,17 @@
       "questionNumber": "4",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "4"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-all",
@@ -16163,8 +16532,17 @@
       "questionNumber": "5",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "5"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-exp-qs-all",
@@ -18008,8 +18386,17 @@
       "questionNumber": "6",
       "tail": " - Part A",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-force-mass-momentum",
@@ -18588,8 +18975,17 @@
       "questionNumber": "6",
       "tail": " - Part C",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-heat-heat-transfer",
@@ -19407,8 +19803,17 @@
       "questionNumber": "11",
       "tail": " - (i), (ii), (iii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-light",
@@ -19423,8 +19828,17 @@
       "questionNumber": "11",
       "tail": " - (v), (vi), (vii), (viii)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-light",
@@ -20276,8 +20690,17 @@
       "questionNumber": "6",
       "tail": " - Part K",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-magnets-magnetic-fields",
@@ -20565,8 +20988,17 @@
       "questionNumber": "11",
       "tail": " - (iv)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "11"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-nuclear-energy",
@@ -20581,8 +21013,17 @@
       "questionNumber": "13",
       "tail": " - Part H",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-nuclear-energy",
@@ -21061,8 +21502,17 @@
       "questionNumber": "6",
       "tail": " - Part L - (i)",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-particle-physics",
@@ -21873,8 +22323,17 @@
       "questionNumber": "14",
       "tail": " - Part D",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-potential-difference-capacitance",
@@ -22419,8 +22878,17 @@
       "questionNumber": "7",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "7"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-pressure-gravity-moments",
@@ -23195,8 +23663,17 @@
       "questionNumber": "6",
       "tail": " - Part E",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-reflection-mirrors",
@@ -23584,8 +24061,17 @@
       "questionNumber": "6",
       "tail": " - Part E",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-refraction-lenses",
@@ -23600,8 +24086,17 @@
       "questionNumber": "6",
       "tail": " - Part F",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-refraction-lenses",
@@ -24087,8 +24582,17 @@
       "questionNumber": "14",
       "tail": " - Part B",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-resistance",
@@ -24565,8 +25069,17 @@
       "questionNumber": "12",
       "tail": " - Part B",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "12"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-semiconductors",
@@ -25336,8 +25849,17 @@
       "questionNumber": "14",
       "tail": " - Part A",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-speed-displacement-velocity",
@@ -25643,8 +26165,17 @@
       "questionNumber": "6",
       "tail": " - Part J",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-static-electricity",
@@ -26141,8 +26672,17 @@
       "questionNumber": "9",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "9"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-the-atom-nucleus-radioactivity",
@@ -26157,8 +26697,17 @@
       "questionNumber": "13",
       "tail": " - Part G",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-the-atom-nucleus-radioactivity",
@@ -27076,8 +27625,17 @@
       "questionNumber": "8",
       "tail": "",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "8"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-the-electron",
@@ -27092,8 +27650,17 @@
       "questionNumber": "6",
       "tail": " - Part I",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-the-electron",
@@ -27108,8 +27675,17 @@
       "questionNumber": "13",
       "tail": " - Part F",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-the-electron",
@@ -27827,8 +28403,17 @@
       "questionNumber": "6",
       "tail": " - Part D",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-vibration-sound",
@@ -27843,8 +28428,17 @@
       "questionNumber": "13",
       "tail": " - Part A,B,C,D,E",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "13"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-vibration-sound",
@@ -28885,8 +29479,17 @@
       "questionNumber": "6",
       "tail": " - Part G",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "6"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-waves-wave-motion",
@@ -28901,8 +29504,17 @@
       "questionNumber": "14",
       "tail": " - Part C",
       "paperKey": "single",
-      "resolution": "source-blocked",
-      "reason": "The entitled corpus does not contain this deferred Physics sitting. Its factual heading is retained; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC021ALP000EV-deferred.pdf",
+          "questionNumber": "14"
+        }
+      ]
     },
     {
       "topicId": "physics-higher-old-course-waves-wave-motion",
