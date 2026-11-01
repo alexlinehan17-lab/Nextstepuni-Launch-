@@ -55158,5 +55158,59 @@
     ]
    }
   ]
+ },
+ {
+  "id": "he-2025-hl-sa-q3-sources",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sodium-functions-and-sources-sources",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q3 — sources",
+  "questionText": "Identify two dietary sources of sodium.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 sources × 1 (1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "sources",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Two sources, each graded 1:0. Complete examples: table salt; cured meats; processed meats; snack foods; white bread; cheese; seafood; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent source prompt and tariff; original ID retains the functions prompt."
  }
 ]

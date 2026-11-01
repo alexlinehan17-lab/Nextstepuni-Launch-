@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "year": 2025,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "partial-review; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "examiner-reports/home-economics/papers/2025-hl-014-paper.pdf": {
+      "sha256": "ba1c8a8406190cfdad6fa5a727477d06605d1f31c1bb9b3d309fa1ce6f39a779",
+      "pages": 40
+    },
+    "examiner-reports/home-economics/papers/2025-hl-039-paper.pdf": {
+      "sha256": "0e736bbcd3fec699c6383fa2edb6b0f61370cb30d7fecfc0860df40754e1a956",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2025/LC098ALP000EV.pdf": {
+      "sha256": "00ee82fb17ba14cbbfd1d36cfbcce58e61685510f4986fb328d97891b3f0abee",
+      "pages": 44
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 44 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–10, B 11–18, C 19–30, separate food-studies coursework 31–42, blank 43, back cover 44. Coursework is a separate assessment, not a task in these written-paper booklets."
+  },
+  "expectedTasks": 61,
+  "expectedSectionTasks": {
+    "A": 15,
+    "B": 18,
+    "C": 28
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "tasks": [
+    {
+      "id": "he-2025-hl-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4
+    },
+    {
+      "id": "he-2025-hl-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sa-q3-sources",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 15,
+    "marks": 84,
+    "selectionDecisions": "Sodium functions and sources have separate printed prompts/tariffs. All required table cells, disease rows, terms, smoking methods, budget categories and research types remain whole. Heat transfer and life assurance keep one open profile each, with dependent examples. Physical-conditioning agents keep two paired slots and all ten source models.",
+    "sourceClarifications": {
+      "rickets": {
+        "source": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+        "note": "Vitamin D deficiency causes nutritional rickets; distinguish the extra historical table acceptances."
+      },
+      "smoked-fish": {
+        "source": "https://www2.hse.ie/conditions/listeriosis/",
+        "note": "Cold-smoked fish may be sold ready to eat; pregnancy/immunocompromise advice and product cooking instructions remain relevant."
+      }
+    },
+    "checked": "2026-11-01"
+  },
+  "preservation": {
+    "previousLiveSectionATasks": 14,
+    "preservedLiveSectionATasks": 14,
+    "addedTasks": 1,
+    "otherCards": "All existing cards outside 2025 Higher Section A byte-identical; no live identity withdrawn."
+  },
+  "remainingWork": [
+    "B2(c) cheese production is missing from the old deck. Scheme page 14 misletters the cheese prompt as (b); paper page 3 is authoritative for B2(a)/(b)/(c).",
+    "B2(a) has separately priced description (6) and risk reasons (12).",
+    "C1(a)(iii) ventilation principle and effects have independent 9-mark tariffs; C4(a)(ii) toughness causes (6) and tenderising methods (12) are separate prompts.",
+    "Retain all 8 energy-chart categories and both blazer outfit photographs.",
+    "B3(a) full original bacterial table, all answer routes and accurate safety clarifications; B4(b) includes 1-mark appliance name in its 22-mark total.",
+    "C2(a)(i) printed three required headings and source outfit quota need careful combined presentation; C2(b) is one whole two-names/one-procedure choice response.",
+    "Review all B/C exact tariffs and all canonical Atlas links, then final source crops and validation."
+  ],
+  "sectionASourceCropReview": {
+    "status": "visually-checked",
+    "paperSchemePairs": 14,
+    "detail": "All fourteen final A paper/scheme anchors checked, including sodium two-prompt boundary and the complete heat-transfer table. All 96 source pages swept; B/C task authoring remains pending."
+  },
+  "sectionAValidation": {
+    "requiredVitest": "238 tests across the three required preservation/curriculum/deck suites and the 2025 Higher regression suite passed after final regeneration.",
+    "atlas": "2 Home Economics registry tests passed; all 15 Section A cards checked against canonical Atlas topics.",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed after final regeneration",
+    "regeneration": "19 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
+    "browser": "unavailable; browser QA pending",
+    "sourceCropReview": "All 96 source pages swept; fourteen final Section A paper/scheme question groups visually checked. B/C task authoring remains pending."
+  },
+  "longAnswerResearchPreparation": {
+    "reheating": {
+      "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/cooking-and-reheating",
+      "finding": "FSAI consumer guidance states cooking core temperature 75°C or above, leftovers reheated to 70°C or above and steaming hot; the scheme page 16 above-100°C claim is not a general requirement."
+    },
+    "essential-fatty-acids": {
+      "source": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/?cid=24333",
+      "finding": "Linoleic acid and alpha-linolenic acid are the essential dietary fatty acids; the page 13 blanket claim about arachidonic acid needs clarification."
+    },
+    "refreezing": {
+      "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/storage",
+      "finding": "FSAI distinguishes uncooked thawed food from food cooked after defrosting; avoid presenting the scheme never-refreeze statement without its conditions."
+    }
+  }
+}

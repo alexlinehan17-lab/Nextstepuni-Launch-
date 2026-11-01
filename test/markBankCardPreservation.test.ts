@@ -1293,6 +1293,8 @@ const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties'];
 const homeEconomicsAdditionIds = new Set([
   // 2024 Ordinary: four independently reviewed published task boundaries. Frozen baseline unchanged.
   'he-2024-ol-sa-q2-source', 'he-2024-ol-sa-q4-methods', 'he-2024-ol-sb-q2a', 'he-2024-ol-sb-q2b',
+  // 2025 Higher A: independent sodium-source prompt; frozen baseline unchanged.
+  'he-2025-hl-sa-q3-sources',
   'he-2024-hl-sa-q2-sources', 'he-2024-hl-sb-q1d', 'he-2024-hl-sb-q4b', 'he-2024-hl-sc-q1ci-methods',
   'he-2021-ol-sa-q3-methods', 'he-2021-ol-sa-q10-payment', 'he-2021-ol-sa-q11-disposal', 'he-2021-ol-sa-q14',
   'he-2021-ol-sb-q1a', 'he-2021-ol-sb-q2b', 'he-2021-ol-sb-q3a', 'he-2021-ol-sb-q3b-storage',
@@ -1433,7 +1435,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(420);
+    expect(HOME_EC_HIGHER).toHaveLength(421);
     expect(HOME_EC_ORDINARY).toHaveLength(292);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {

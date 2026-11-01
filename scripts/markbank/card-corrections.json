@@ -44058,6 +44058,1026 @@
     ],
     "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
    }
+  },
+  "he-2025-hl-sa-q1": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 functions × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two developed functions, each graded 3:2:0. Complete guidance: heats the body to 37°C; provides energy for all activities; protein-sparing function; fibre absorbs water; fibre helps stimulate peristalsis; fibre prevents bowel disorders; excess carbohydrate converted to glycogen for medium term energy; converted to fat as long-term energy reserve; converted to fat and insulates the body; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q2": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required cells × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "enzyme",
+      "kind": "criterion",
+      "verbatim": "Enzyme",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Pancreas enzyme: Trypsin, Tripsin, Proteinase, etc. Graded 2:1:0."
+     },
+     {
+      "id": "substrate",
+      "kind": "criterion",
+      "verbatim": "Substrate",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Substrate: Peptones. Graded 2:1:0."
+     },
+     {
+      "id": "product",
+      "kind": "criterion",
+      "verbatim": "Product/Result",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Product/result: Peptides. Graded 2:1:0."
+     }
+    ],
+    "questionText": "Complete the table below in relation to the digestion of protein.\nOrgan: Pancreas. Complete: Enzyme; Substrate; Product/Result."
+   }
+  },
+  "he-2025-hl-sa-q3": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 4,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 functions × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two functions, each graded 2:1:0. Source examples describe biological roles, not a recommendation to increase sodium intake. Complete wording: blood pressure; normal muscle contraction; functioning of the heart; healthy nerve activity; fluid balance in the body; enzyme functioning; glucose absorption; etc. blood vessels; prevents dehydration; electrolyte balance; helps immune system fight bacteria; cognitive function; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "State two biological functions of sodium.",
+    "questionRef": "2025 HL Section A Q3 — functions"
+   }
+  },
+  "he-2025-hl-sa-q4": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required vitamins × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "night",
+      "kind": "criterion",
+      "verbatim": "Night blindness",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Vitamin A (retinol); the source also accepts beta-carotene, a precursor. Graded 2:1:0."
+     },
+     {
+      "id": "rickets",
+      "kind": "criterion",
+      "verbatim": "Rickets",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Vitamin D (cholecalciferol/ergocalciferol). Graded 2:1:0. Source clarification: vitamin D deficiency is the standard vitamin-deficiency cause of rickets. The historical table additionally lists B12 (cobalamin), K and C; do not present these as interchangeable causes of vitamin-D-deficiency rickets."
+     },
+     {
+      "id": "beriberi",
+      "kind": "criterion",
+      "verbatim": "Beriberi",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Vitamin B1 (thiamine), graded 2:1:0."
+     }
+    ],
+    "questionText": "Each of the following deficiency diseases may result from a lack of a vitamin in the diet. Name one deficient vitamin in each case.\nNight blindness: ____\nRickets: ____\nBeri-beri: ____"
+   }
+  },
+  "he-2025-hl-sa-q5": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 guidelines × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "guidelines",
+      "kind": "criterion",
+      "verbatim": "guidelines",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three distinct guidelines, each graded 2:1:0. Complete source guidance: exclude all foods that contain gluten, e.g. wheat, etc. choose staple cereal foods that are naturally gluten-free, corn, rice; include gluten free versions of products; look for gluten-free symbol on labels when shopping; check for hidden gluten sources/examine ingredient lists on food labels; eat a high fibre diet; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q6": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required methods × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "0",
+      "kind": "criterion",
+      "verbatim": "Cold smoking",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain this required method, graded 3:2:1:0. Historical industrial examples, not a validated home-preservation recipe. Cold smoking does not cook fish, but some products are sold ready to eat; follow product instructions. People who are pregnant or immunocompromised should avoid ready-to-eat cold-smoked fish unless cooked until steaming hot. Complete historical wording: fish is filleted/trimmed/cut into portions; fish is immersed in brine/ dry salted; rinsed; dried; fish is exposed to smoke/from burning wood chips/peat/sawdust, etc. creosote and formaldehyde form a coating; temperature of 27°C (25°C - 30°C); smoking temperature is low so fish will need to be cooked before eating; etc,"
+     },
+     {
+      "id": "1",
+      "kind": "criterion",
+      "verbatim": "Hot smoking",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain this required method, graded 3:2:1:0. Historical industrial examples, not a validated home-preservation recipe. Cold smoking does not cook fish, but some products are sold ready to eat; follow product instructions. People who are pregnant or immunocompromised should avoid ready-to-eat cold-smoked fish unless cooked until steaming hot. Complete historical wording: fish is filleted/trimmed/cut into portions; fish is immersed in brine/ dry salted; rinsed; dried; fish is exposed to smoke/from burning wood chips/peat/sawdust, etc; creosote and formaldehyde form a coating; temperature gradually increases to 80°C (78°C - 83°C); smoking temperature is higher so fish is cooked by the process; etc."
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q7": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required explanations × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "0",
+      "kind": "criterion",
+      "verbatim": "Added value foods",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain the required term, graded 3:2:1:0. Source examples are not guarantees of a health effect for every product. Complete guidance: food products that are of higher economic value as an end product/more economically viable; for the producer/manufacturer; created by the addition of ingredient(s); created by the application of processes during manufacturing; e.g. cook-chill foods; cheese/yoghurt; grated cheese; potato chips; etc."
+     },
+     {
+      "id": "1",
+      "kind": "criterion",
+      "verbatim": "Functional foods",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain the required term, graded 3:2:1:0. Source examples are not guarantees of a health effect for every product. Complete guidance: Food that has a health promoting benefit; beyond its nutritional value; due to an (added) ingredient; e.g. plant sterols/stanols; omega 3 fatty acids supplementation; folic acid supplementation; probiotics; accept relevant examples; etc. accept examples of functional foods/products, live yogurt; cholesterol lowering spreads; etc."
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q8": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 2 (2:1:0) + description 3 (3:2:1:0) + matched example 1 (1:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of method",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name Conduction, graded 2:1:0."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description of method of heat transfer",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "One developed description, graded 3:2:1:0. Accept a labelled diagram. Complete guidance: transfer of heat through a solid; from molecule to molecule; until all are heated; hot cooker ring heats a saucepan; etc."
+     },
+     {
+      "id": "example",
+      "kind": "criterion",
+      "verbatim": "Example",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Give an example that demonstrates the SAME chosen method, graded 1:0. A cooking process can involve several modes; explain the relevant transfer. Complete source examples: boiling; poaching; stewing; steaming; roasting; baking; frying; microwave cooking; etc."
+     }
+    ],
+    "answerVariants": [
+     {
+      "id": "conduction",
+      "label": "Conduction",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name of method",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name Conduction, graded 2:1:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description of method of heat transfer",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "One developed description, graded 3:2:1:0. Accept a labelled diagram. Complete guidance: transfer of heat through a solid; from molecule to molecule; until all are heated; hot cooker ring heats a saucepan; etc."
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ],
+        "contextNote": "Give an example that demonstrates the SAME chosen method, graded 1:0. A cooking process can involve several modes; explain the relevant transfer. Complete source examples: boiling; poaching; stewing; steaming; roasting; baking; frying; microwave cooking; etc."
+       }
+      ]
+     },
+     {
+      "id": "convection",
+      "label": "Convection",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name of method",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name Convection, graded 2:1:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description of method of heat transfer",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "One developed description, graded 3:2:1:0. Accept a labelled diagram. Complete guidance: transfer of heat by creating convection currents; in air or liquid; hot air or liquid expands and rises; cold air or liquid falls and takes its place; occurs in an oven/boiling water; etc."
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ],
+        "contextNote": "Give an example that demonstrates the SAME chosen method, graded 1:0. A cooking process can involve several modes; explain the relevant transfer. Complete source examples: boiling; poaching; stewing; steaming; roasting; baking; air frying; deep fat frying; etc."
+       }
+      ]
+     },
+     {
+      "id": "radiation",
+      "label": "Radiation",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name of method",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name Radiation, graded 2:1:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description of method of heat transfer",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "One developed description, graded 3:2:1:0. Accept a labelled diagram. Complete guidance: transfer of heat directly in rays (transmitted) from the heat source; to the object (food) in front of it; grill/sun’s rays; etc."
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ],
+        "contextNote": "Give an example that demonstrates the SAME chosen method, graded 1:0. A cooking process can involve several modes; explain the relevant transfer. Complete source examples: grilling; barbequing; etc."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q9": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 pairs × (name 2 (2:1:0) + function 1 (1:0))"
+    },
+    "rows": [
+     {
+      "id": "name-1",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name distinct physical conditioning agent 1, graded 2:1:0. All ten printed agents and functions: humectants prevent food from losing moisture; prevent foods from drying out/hardening; etc. anti-caking agents (polyphosphates) prevent lumping in dried food; etc. emulsifiers form emulsions; etc. setting agents act as a setting agent; etc. stabilisers prevent emulsions from separating; etc. anti-spattering agents prevents spattering of fats and cooking oil; etc. anti-foaming agents prevents a scum forming on the surface when boiling; etc. bulking agents add volume to foods; etc. firming agents keep fruit and vegetables firm during processing; etc. packaging gas inert gas inhibits food spoilage and oxidation; etc."
+     },
+     {
+      "id": "function-1",
+      "kind": "criterion",
+      "verbatim": "Function",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Give the function of the SAME agent 1, graded 1:0."
+     },
+     {
+      "id": "name-2",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name distinct physical conditioning agent 2, graded 2:1:0. Refer to the complete guidance above."
+     },
+     {
+      "id": "function-2",
+      "kind": "criterion",
+      "verbatim": "Function",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Give the function of the SAME agent 2, graded 1:0."
+     }
+    ],
+    "taskGroups": [
+     {
+      "sourceCardId": "he-2025-hl-sa-q9-pair-1",
+      "label": "Agent and function 1",
+      "marks": 3,
+      "rowIds": [
+       "name-1",
+       "function-1"
+      ]
+     },
+     {
+      "sourceCardId": "he-2025-hl-sa-q9-pair-2",
+      "label": "Agent and function 2",
+      "marks": 3,
+      "rowIds": [
+       "name-2",
+       "function-2"
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q10": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 3 (3:2:0) + description 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "type",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Name the chosen type, graded 3:2:0. Model: Term life assurance"
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "point",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: the insured person pays a premium for a set amount of time; covers policy holder for a specific amount of time; a lump sum is paid out to dependents if the policy holder dies during the set time period; if policy holder survives past the duration of policy, no payment is made; generally cheapest type of life assurance; etc."
+     }
+    ],
+    "answerVariants": [
+     {
+      "id": "0",
+      "label": "Term life assurance",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name the chosen type, graded 3:2:0. Model: Term life assurance"
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: the insured person pays a premium for a set amount of time; covers policy holder for a specific amount of time; a lump sum is paid out to dependents if the policy holder dies during the set time period; if policy holder survives past the duration of policy, no payment is made; generally cheapest type of life assurance; etc."
+       }
+      ]
+     },
+     {
+      "id": "1",
+      "label": "Whole of life assurance",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name the chosen type, graded 3:2:0. Model: Whole of life assurance"
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: the insured person pays a premium; policy lasts for the lifetime of the policy holder once premiums are paid; a lump sum is paid out to dependents on the death of the policy holder or their retirement depending on the policy terms; more expensive than term life assurance; etc."
+       }
+      ]
+     },
+     {
+      "id": "2",
+      "label": "Endowment life assurance",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name the chosen type, graded 3:2:0. Model: Endowment life assurance"
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: a premium is paid for a set amount of time; a lump sum is paid out at the end of this period; insured person has the option to cash in policy at any time; upon the death of the insured person within the time period lump sum is paid to dependents; etc."
+       }
+      ]
+     },
+     {
+      "id": "3",
+      "label": "Mortgage protection policy",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name the chosen type, graded 3:2:0. Model: Mortgage protection policy"
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: a premium is paid for a set amount of time; this type of life assurance is compulsory with an annuity mortgage; provides protection to policy holder for the duration of the mortgage; etc."
+       }
+      ]
+     },
+     {
+      "id": "4",
+      "label": "Convertible term assurance",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name the chosen type, graded 3:2:0. Model: Convertible term assurance"
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One developed description of the SAME type, graded 3:2:0. Historical policy examples: payouts, surrender rights, exclusions and mortgage-protection requirements depend on contract and applicable rules. Complete wording: allows policy holder to change from term assurance to a whole of life or endowment policy; previous premiums paid for term assurance are taken into consideration; etc."
+       }
+      ]
+     },
+     {
+      "id": "another",
+      "label": "Another valid type",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "type",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Name another valid life-assurance type, graded 3:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe that same type accurately, graded 3:2:0. No additional model is printed."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q11": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required pairs × (definition 2 (2:0) + example 1 (1:0))"
+    },
+    "rows": [
+     {
+      "id": "definition-1",
+      "kind": "criterion",
+      "verbatim": "Essential expenditure",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Explain the required category, graded 2:0. money that has to be spent to manage family life i.e. spending on necessities; etc. "
+     },
+     {
+      "id": "example-1",
+      "kind": "criterion",
+      "verbatim": "example",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Example for the SAME category, graded 1:0. housing/rent/mortgage; etc. utility bills/telephone/mobile/broadband; food; clothes; medical; education/school expenses; transport/car payments/fuel/road tax; insurance; savings; etc."
+     },
+     {
+      "id": "definition-2",
+      "kind": "criterion",
+      "verbatim": "Discretionary expenditure",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Explain the required category, graded 2:0. spending on non-essentials; this should occur when all essential expenditure and savings have been made; etc. "
+     },
+     {
+      "id": "example-2",
+      "kind": "criterion",
+      "verbatim": "example",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Example for the SAME category, graded 1:0. holidays; leisure activities; entertainment/subscriptions/Netflix; personal grooming; etc."
+     }
+    ],
+    "taskGroups": [
+     {
+      "sourceCardId": "he-2025-hl-sa-q11-pair-1",
+      "label": "Essential expenditure",
+      "marks": 3,
+      "rowIds": [
+       "definition-1",
+       "example-1"
+      ]
+     },
+     {
+      "sourceCardId": "he-2025-hl-sa-q11-pair-2",
+      "label": "Discretionary expenditure",
+      "marks": 3,
+      "rowIds": [
+       "definition-2",
+       "example-2"
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q12": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required descriptions × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "0",
+      "kind": "criterion",
+      "verbatim": "Desk research",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Describe this required research type, graded 3:2:1:0. Complete guidance: the collection of data from public/general sources; from state agencies, CSO; etc. a large quantity of information can be collected relatively quickly; e.g. online searches; etc."
+     },
+     {
+      "id": "1",
+      "kind": "criterion",
+      "verbatim": "Field research",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Describe this required research type, graded 3:2:1:0. Complete guidance: information is collected using focused techniques; such as observing, interviews, surveys, etc. e.g. vox pop; consumer panel; focus groups; etc."
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q13": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 techniques × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Describe how two different techniques influence buying behaviour, each graded 3:2:1:0. Naming alone does not answer the prompt. Complete source examples: shop layout; background music; in-store stimuli; food samples; product placement; shelf position; pricing; loyalty schemes; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2025-hl-sa-q14": {
+   "reason": "2025 Higher A full source review: complete prompts and tables, exact published tariffs and every model route.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two discussed points, each graded 3:2:0. Answer about the Act named in the historical examination; this is not a current legal checklist. Complete guidance: all forms of credit are regulated; restrictions on how lenders can seek payment/contact borrowers/defaulters; credit advertising is monitored for compliance; must show APR; credit agreements must be in writing; must contain information on cash price and price payable under credit agreement; must contain names, addresses and signatures of all parties involved; must detail number of instalments; cooling oﬀ period; etc",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
   }
  },
  "english": {

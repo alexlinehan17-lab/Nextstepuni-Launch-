@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-11-01T22:24:48.370Z",
+  "generatedAt": "2026-11-01T22:30:54.167Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
@@ -58,19 +58,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "12"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "12"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "12",
+          "label": "Section A · Q12"
         }
       ]
     },
@@ -83,19 +84,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "13"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "13"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "13",
+          "label": "Section A · Q13"
         }
       ]
     },
@@ -999,19 +1001,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "5"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "5"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "5",
+          "label": "Section A · Q5"
         }
       ]
     },
@@ -1024,19 +1027,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "6"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "6"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "6",
+          "label": "Section A · Q6"
         }
       ]
     },
@@ -7671,19 +7675,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "7"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "7"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "7",
+          "label": "Section A · Q7"
         }
       ]
     },
@@ -7696,19 +7701,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "9"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "9"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "9",
+          "label": "Section A · Q9"
         }
       ]
     },
@@ -11517,19 +11523,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "10"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "10"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "10",
+          "label": "Section A · Q10"
         }
       ]
     },
@@ -11542,19 +11549,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "11"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "11"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "11",
+          "label": "Section A · Q11"
         }
       ]
     },
@@ -11567,19 +11575,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "14"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "14"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "14",
+          "label": "Section A · Q14"
         }
       ]
     },
@@ -12639,19 +12648,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "8"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "8"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "8",
+          "label": "Section A · Q8"
         }
       ]
     },
@@ -13180,19 +13190,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "1"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "1"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "1",
+          "label": "Section A · Q1"
         }
       ]
     },
@@ -14165,19 +14176,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "2"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "2"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "2",
+          "label": "Section A · Q2"
         }
       ]
     },
@@ -14659,19 +14671,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "3"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "3"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "3",
+          "label": "Section A · Q3"
         }
       ]
     },
@@ -14684,19 +14697,20 @@
       "targets": [
         {
           "level": "higher",
-          "lang": "ev",
-          "year": 2025,
-          "paperKey": "single",
-          "fileid": "LC098ALP014EV.pdf",
-          "n": "4"
-        },
-        {
-          "level": "higher",
           "lang": "iv",
           "year": 2025,
           "paperKey": "single",
           "fileid": "LC098ALP014IV.pdf",
           "n": "4"
+        },
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC098ALP014EV.pdf",
+          "n": "4",
+          "label": "Section A · Q4"
         }
       ]
     },
@@ -34215,6 +34229,153 @@
         "topicId": "home-economics-0-10",
         "atlasTopicIds": [
           "home-economics-s-and-s-ordinary-meal-planning-preparation"
+        ]
+      }
+    ]
+  },
+  "reviewedEnglish2025HigherA": {
+    "paperFileids": [
+      "LC098ALP014EV.pdf",
+      "LC098ALP039EV.pdf"
+    ],
+    "physicalQuestions": 14,
+    "review": "scripts/markbank/authoring/home-economics/2025-hl-main-review.json",
+    "policy": "All 14 English Section A paper/scheme anchors reviewed; all 15 reviewed tasks mapped to canonical topics. B/C source authoring remains pending; Irish editions untouched.",
+    "markBankMappings": [
+      {
+        "id": "he-2025-hl-sa-q1",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "1",
+        "topicId": "home-economics-0-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-carbohydrates"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q2",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "2",
+        "topicId": "home-economics-0-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-protein"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q3",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q4",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "4",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q5",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "5",
+        "topicId": "home-economics-0-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-diet-health"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q6",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "6",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q7",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "7",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q8",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "8",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-assignments",
+          "home-economics-s-and-s-higher-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q9",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "9",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q10",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "10",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q11",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "11",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q12",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "12",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q13",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "13",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q14",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "14",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2025-hl-sa-q3-sources",
+        "fileid": "LC098ALP014EV.pdf",
+        "n": "3",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
         ]
       }
     ]

@@ -228,3 +228,8 @@ if __name__ == "__main__":
 if __name__ == "__main__":
  from he_atlas_2024_ol_main import apply as apply_2024_ol_main
  apply_2024_ol_main()
+
+# Preserve the independently reviewed 2025 Higher English Section A overlay.
+if __name__ == "__main__":
+ from he_atlas_2025_hl_main_a import apply as apply_2025_hl_main_a
+ apply_2025_hl_main_a()
