@@ -183,5 +183,19 @@
     "alt": "Both original summer outfits: a floral dress with thin straps and an asymmetrical hem, and a denim jacket with white T-shirt, beige trousers and white trainers. Both original source captions retained.",
     "attribution": "SEC Home Economics 2024 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [165, 136, 369, 297], rendered at 2×; visually checked. SHA256 659ce7703e0241eb2ed0545ceee56eab6b2b65b16b746f3cc6dadd3022025883."
+  },
+  "home-economics-2024-ol-sb-q1a-food-choice": {
+    "src": "/exam-figures/home-economics/home-economics-2024-ol-sb-q1a-food-choice.png",
+    "md5": "d7da5b4d0444fc00034e34a8f5e74a08",
+    "alt": "Original diagram showing seven factors affecting food choice: food availability, work patterns, emotions, cooking skills, time, money, and likes and dislikes. All seven photographs and labels are retained.",
+    "attribution": "SEC Home Economics 2024 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [60, 193, 528, 419], rendered at 2×; visually checked. SHA256 9120990a0a57b54ac42c6a0e7bb6211f4c9176ec470994deb1eb52d98c89b0cd."
+  },
+  "home-economics-2024-ol-sc-q2a-sportswear": {
+    "src": "/exam-figures/home-economics/home-economics-2024-ol-sc-q2a-sportswear.png",
+    "md5": "e002c6dd8801a22f9ae5b105bd5c85bf",
+    "alt": "Both original sportswear outfits: a man in a white and dark jacket with a green shoulder stripe and dark tracksuit bottoms; a woman in a dark jacket, yellow top, dark leggings with a yellow stripe and bright trainers. The original Pinterest caption is retained.",
+    "attribution": "SEC Home Economics 2024 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [190, 132, 393, 305], rendered at 2×; visually checked. SHA256 7d345a91a3d526711e0c5dfdfb36eb121e297ef795eca5f904189864bf74686d."
   }
 }

@@ -54784,5 +54784,379 @@
    }
   ],
   "notes": "Independent second prompt, with a separately published 12-mark tariff; the original ID retains the 6-mark underlying principle."
+ },
+ {
+  "id": "he-2024-ol-sa-q2-source",
+  "topicId": "home-economics-0-8",
+  "conceptId": "vitamin-c-source",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q2 — source",
+  "questionText": "Name one dietary source of Vitamin C.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 source × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "dietary source",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One source, graded 2:0. Complete examples: citrus fruits, oranges, lemons, grapefruit; blackcurrants; rosehips; strawberries; apples; pears; kiwi; peppers; green leafy vegetables; tomatoes; potatoes; peas; beansprouts; red cabbage; etc."
+   }
+  ],
+  "notes": "Independent printed prompt with its own published tariff; original identity retains the first prompt."
+ },
+ {
+  "id": "he-2024-ol-sa-q4-methods",
+  "topicId": "home-economics-0-9",
+  "conceptId": "meat-tenderness-methods",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q4 — methods",
+  "questionText": "List two ways of tenderising meat.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 ways × 1 (1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "methods",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Two ways, each graded 1:0. The before-slaughter treatment is a historical industrial example, not a domestic preparation instruction. Complete wording: before slaughter inject with proteolytic enzymes; mincing; marinating; pounding with a steak hammer; piercing with needles; before cooking sprinkle with meat tenderiser; slow moist methods of cooking, e.g. stewing; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent printed prompt with its own published tariff; original identity retains the first prompt."
+ },
+ {
+  "id": "he-2024-ol-sb-q2a",
+  "topicId": "home-economics-0-9",
+  "conceptId": "fruit-vegetable-nutritive-dietetic-value",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2024 OL Section B Q2(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) dietetic value of fruit and vegetables.",
+  "stem": "‘Approximately 8% of Irish people are following a vegetarian based diet.’ (Bord Bia, 2021)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "nutrition",
+    "kind": "criterion",
+    "verbatim": "nutritive",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "One nutritive point, graded 5:4:3:2:0. Composition varies by food. Complete guidance: LBV protein, soya beans provide HBV protein; low in fat, polyunsaturated fat in olives and avocados; starch in pulse, root and tuber vegetables; starch present in under-ripe fruit, e.g. bananas; fibre in pulse, root, tuber vegetables and fruit; sugar in onions, carrots and in all fruit; Vitamin C in citrus fruit, berries, kiwis; Vitamin A in brightly coloured fruit and vegetables; calcium in dark green vegetables; non-haem iron in dark green vegetables; bananas source of potassium; high water content in all fresh fruit and vegetables; etc."
+   },
+   {
+    "id": "dietetic",
+    "kind": "criterion",
+    "verbatim": "dietetic",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "One dietetic point, graded 5:4:3:2:0. Historical diet and disease examples are not an individual treatment plan or guaranteed prevention effects. Complete wording: used in vegetarian diets; good source of dietary fibre, help in the prevention of bowel disorders; useful in low-cholesterol/low-calorie diets due to low fat content, high water content and fibre present in skins; provides antioxidants Vitamins A and C, lowering risk of CHD, stroke and some cancers; diabetics need to be aware of fruits high in sugar; readily available all year around; versatile; economical when in-season; can be eaten raw or cooked; many culinary uses; requires little preparation; lack Vitamin D and B12; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "other points",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "contextNote": "Two further distinct points under either heading, each graded 5:4:3:2:0.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+ },
+ {
+  "id": "he-2024-ol-sb-q2b",
+  "topicId": "home-economics-0-10",
+  "conceptId": "vegetarian-day-menu",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2024 OL Section B Q2(b)",
+  "questionText": "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a vegetarian to ensure their nutritional needs are met.",
+  "stem": "‘Approximately 8% of Irish people are following a vegetarian based diet.’ (Bord Bia, 2021)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 meals × (2 courses × 2 (2:1:0) + beverage 2 (2:0))"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "courses-1",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Breakfast: two suitable vegetarian food courses, each graded 2:1:0. Complete published sample for this meal (two courses plus one beverage): Orange juice; Porridge with milk; Tea/coffee/water/milk",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-1",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Breakfast: one suitable beverage, graded 2:0, not 2:1:0. The paper asks for a whole day of three meals; no extra course earns another slot."
+   },
+   {
+    "id": "courses-2",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Lunch: two suitable vegetarian food courses, each graded 2:1:0. Complete published sample for this meal (two courses plus one beverage): Vegetable soup with wholemeal bread; Strawberry yoghurt; Glass of milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-2",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Lunch: one suitable beverage, graded 2:0, not 2:1:0. The paper asks for a whole day of three meals; no extra course earns another slot."
+   },
+   {
+    "id": "courses-3",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Dinner: two suitable vegetarian food courses, each graded 2:1:0. Complete published sample for this meal (two courses plus one beverage): Carrot and lentil soup with brown bread; Vegetarian Lasagne with green salad; Glass of milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-3",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Dinner: one suitable beverage, graded 2:0, not 2:1:0. The paper asks for a whole day of three meals; no extra course earns another slot."
+   }
+  ],
+  "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks.",
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2024-ol-sb-q2b-meal-1",
+    "label": "Breakfast",
+    "marks": 6,
+    "rowIds": [
+     "courses-1",
+     "beverage-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2024-ol-sb-q2b-meal-2",
+    "label": "Lunch",
+    "marks": 6,
+    "rowIds": [
+     "courses-2",
+     "beverage-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2024-ol-sb-q2b-meal-3",
+    "label": "Dinner",
+    "marks": 6,
+    "rowIds": [
+     "courses-3",
+     "beverage-3"
+    ]
+   }
+  ]
  }
 ]

@@ -223,3 +223,8 @@ if __name__ == "__main__":
 if __name__ == "__main__":
  from he_atlas_2024_hl_main import apply as apply_2024_hl_main
  apply_2024_hl_main()
+
+# Preserve the independently reviewed 2024 Ordinary English overlay.
+if __name__ == "__main__":
+ from he_atlas_2024_ol_main import apply as apply_2024_ol_main
+ apply_2024_ol_main()

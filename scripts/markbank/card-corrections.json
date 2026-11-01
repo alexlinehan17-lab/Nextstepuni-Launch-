@@ -3722,33 +3722,269 @@
    "replacementId": "he-2023-hl-sc-q4aiii-glass"
   },
   "he-2024-ol-sc-q2b-linen": {
-   "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity.",
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
    "set": {
+    "questionText": "Write a profile of a natural fibre under each of the following headings:\n• fibre production\n• properties\n• test to identify a natural fibre. ",
     "questionRef": "2024 OL Section C E2 Q2(b)",
+    "stem": "‘Textiles have such an important bearing on our daily lives.’ (www.coats.com)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Production 5 + properties 5 + identification 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One developed production point for Linen, graded 5:3:0. Naming the fibre has no separate tariff. Complete guidance: made from the stem of the flax plant; flax stems are pulled and retted, soaked until the outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric; etc."
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One developed property point, graded 5:3:0. Complete historical wording: absorbent ; strong; conducts heat well; resists mildew; good lustre; shrinks; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc."
+     },
+     {
+      "id": "test",
+      "kind": "criterion",
+      "verbatim": "test to identify a natural fibre",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One developed identification-test point, graded 5:3:0. Source observations for supervised practical work: hold fabric over a flame proof dish; ignite; etc. takes longer to ignite; easily extinguished by blowing on it; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole.",
+    "answerVariants": [
+     {
+      "id": "linen",
+      "label": "Linen",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fibre production",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed production point for Linen, graded 5:3:0. Naming the fibre has no separate tariff. Complete guidance: made from the stem of the flax plant; flax stems are pulled and retted, soaked until the outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric; etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed property point, graded 5:3:0. Complete historical wording: absorbent ; strong; conducts heat well; resists mildew; good lustre; shrinks; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc."
+       },
+       {
+        "id": "test",
+        "kind": "criterion",
+        "verbatim": "test to identify a natural fibre",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed identification-test point, graded 5:3:0. Source observations for supervised practical work: hold fabric over a flame proof dish; ignite; etc. takes longer to ignite; easily extinguished by blowing on it; etc."
+       }
+      ]
+     },
+     {
+      "id": "cotton",
+      "label": "Cotton",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fibre production",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed production point for Cotton, graded 5:3:0. Naming the fibre has no separate tariff. Complete guidance: comes from the boll or seed head of the cotton plant, fibres are 2-3cm long; fibres are white and fluffy; the bolls are picked; the fibres are separated from the seeds; then pressed into bales; the cotton is graded according to the length of the fibres; these fibres are spun into yarn; etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed property point, graded 5:3:0. Complete historical wording: absorbent ; cool; strong; easy to wash and dry; dyes well; creases easily; shrinks; etc."
+       },
+       {
+        "id": "test",
+        "kind": "criterion",
+        "verbatim": "test to identify a natural fibre",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed identification-test point, graded 5:3:0. Source observations for supervised practical work: hold fabric over a flame proof dish; ignite; etc. flares up when lit; no melting beads are left and after burning it continues to glow; smoke is grey to white and ash is fine and soft; etc."
+       }
+      ]
+     },
+     {
+      "id": "wool",
+      "label": "Wool",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fibre production",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed production point for Wool, graded 5:3:0. Naming the fibre has no separate tariff. Complete guidance: fleece of sheep, goats, llamas grown; sheared; sorted/graded; cleaned; combed/carded; dyed; spun into yarn; etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed property point, graded 5:3:0. Complete historical wording: warm ; soft; absorbent; resilient; irritates sensitive skin; pills; shrinks; etc."
+       },
+       {
+        "id": "test",
+        "kind": "criterion",
+        "verbatim": "test to identify a natural fibre",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed identification-test point, graded 5:3:0. Source observations for supervised practical work: hold fabric over a flame proof dish; ignite; etc. burns slowly; sizzles and curls away from the flame; leaves beads that are brittle, dark and easily crushed; is self-extinguishing; leaves harsh ash from the crushed bead; strong odour of burning feathers/hair; etc."
+       }
+      ]
+     },
+     {
+      "id": "silk",
+      "label": "Silk",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fibre production",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed production point for Silk, graded 5:3:0. Naming the fibre has no separate tariff. Complete guidance: silkworms eat leaves of mulberry tree; spin cocoon of silk; cocoons soaked in water; thread extraction; dyed; spun into yarn; etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed property point, graded 5:3:0. Complete historical wording: absorbent ; crease resistant; drapes well; flammable; easily damaged; etc."
+       },
+       {
+        "id": "test",
+        "kind": "criterion",
+        "verbatim": "test to identify a natural fibre",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One developed identification-test point, graded 5:3:0. Source observations for supervised practical work: hold fabric over a flame proof dish; ignite; etc. burns slowly; sizzles and curls away from the flame; leaves a dark bead which can be crushed; is self-extinguishing; leaves ash that is a dark, gritty, fine powder; smells like burned hair/charred meat; gives out little or no smoke; etc."
+       }
+      ]
+     },
+     {
+      "id": "another",
+      "label": "Another natural fibre",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fibre production",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Give a developed fibre-production account for another valid natural fibre, graded 5:3:0. The choice is open; no other model is printed."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Give a developed property point about the same fibre, graded 5:3:0."
+       },
+       {
+        "id": "test",
+        "kind": "criterion",
+        "verbatim": "test to identify a natural fibre",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Give a developed identification-test account for the same fibre, graded 5:3:0."
+       }
+      ]
+     }
+    ],
     "conceptId": "natural-fibre-profile-ol"
-   },
-   "answerVariantSources": [
-    {
-     "cardId": "he-2024-ol-sc-q2b-linen",
-     "id": "linen",
-     "label": "Linen"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q2b-cotton",
-     "id": "cotton",
-     "label": "Cotton"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q2b-wool",
-     "id": "wool",
-     "label": "Wool"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q2b-silk",
-     "id": "silk",
-     "label": "Silk"
-    }
-   ]
+   }
   },
   "he-2024-ol-sc-q2b-cotton": {
    "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity. Progress now belongs to he-2024-ol-sc-q2b-linen.",
@@ -3766,38 +4002,836 @@
    "replacementId": "he-2024-ol-sc-q2b-linen"
   },
   "he-2024-ol-sc-q4aii-pasteurisation": {
-   "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity.",
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
    "set": {
+    "questionText": "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to:\n• name of process\n• how the process is carried out\n• labelling. ",
     "questionRef": "2024 OL Section C Q4(a)(ii)",
+    "stem": "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 2 (2:1:0); process 4 × 3 (3:2:0); labelling 2 × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "name of process",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name the chosen process, graded 2:1:0. This model: pasteurisation"
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four points, each graded 3:2:0. Source correction: quickly cool pasteurised milk to no more than 6°C; 10°C is not the target. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk heated to 72°C; for 15-25 seconds; cooled quickly to 10°C; packaged into glass bottles, plastic cartons, waxed cardboard; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "labelling",
+      "kind": "criterion",
+      "verbatim": "labelling",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole.",
+    "answerVariants": [
+     {
+      "id": "pasteurisation",
+      "label": "Pasteurisation",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name the chosen process, graded 2:1:0. This model: pasteurisation"
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four points, each graded 3:2:0. Source correction: quickly cool pasteurised milk to no more than 6°C; 10°C is not the target. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk heated to 72°C; for 15-25 seconds; cooled quickly to 10°C; packaged into glass bottles, plastic cartons, waxed cardboard; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sterilisation",
+      "label": "Sterilisation",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name the chosen process, graded 2:1:0. This model: sterilisation"
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four points, each graded 3:2:0. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk homogenised; sealed in glass bottles; heated to 110°C; for 30 minutes; cooled; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "ultra-heat",
+      "label": "UHT",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name the chosen process, graded 2:1:0. This model: ultra-heat treatment (UHT)"
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four points, each graded 3:2:0. Source correction: UHT requires at least 135°C with a suitable holding time; the printed 132°C is too low. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk heated to 132°C; for 1-3 seconds; cooled quickly; packaged into sterile containers; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "condensed",
+      "label": "Condensed Milk",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name the chosen process, graded 2:1:0. This model: condensed milk"
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four points, each graded 3:2:0. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk homogenised; heated to 80°C; for 15 minutes; 15% sugar added; sealed in sterile cans; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "evaporated",
+      "label": "Evaporated Milk",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name the chosen process, graded 2:1:0. This model: evaporated milk"
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four points, each graded 3:2:0. Historical industrial-process examples, not a validated domestic preservation recipe. Complete source wording: milk homogenised; heated to 115°C; for 20 minutes; sealed in sterile cans; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another",
+      "label": "Another valid process (including spray or roller drying)",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of process",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ],
+        "contextNote": "Name another valid process, graded 2:1:0. The scheme explicitly accepts Spray Drying and Roller Drying, but prints no further model for them."
+       },
+       {
+        "id": "process",
+        "kind": "criterion",
+        "verbatim": "how the process is carried out",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four accurate process points about the same method, each graded 3:2:0. No additional model is printed; this is not a home-preservation recipe.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "labelling",
+        "kind": "criterion",
+        "verbatim": "labelling",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4
+        ],
+        "contextNote": "Two label points, each graded 2:1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc. Accept Spray Drying and Roller Drying",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 2,
+          "permittedMarks": [
+           0,
+           1,
+           2
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "conceptId": "milk-heat-treatment"
-   },
-   "answerVariantSources": [
-    {
-     "cardId": "he-2024-ol-sc-q4aii-pasteurisation",
-     "id": "pasteurisation",
-     "label": "Pasteurisation"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q4aii-sterilisation",
-     "id": "sterilisation",
-     "label": "Sterilisation"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q4aii-uht",
-     "id": "uht",
-     "label": "Ultra-heat treatment (UHT)"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q4aii-condensed",
-     "id": "condensed",
-     "label": "Condensed milk"
-    },
-    {
-     "cardId": "he-2024-ol-sc-q4aii-evaporated",
-     "id": "evaporated",
-     "label": "Evaporated milk"
-    }
-   ]
+   }
   },
   "he-2024-ol-sc-q4aii-sterilisation": {
    "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
@@ -39573,6 +40607,3456 @@
      }
     ],
     "notes": "Full source review: he_review_2024_hl_main_c.py. Required headings and paired name/detail responses remain whole."
+   }
+  },
+  "he-2024-ol-sa-q1": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "Meat contains fibres and connective tissue — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "1 g of protein provides 4 kilocalories of energy to the body — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "Eggs are a low biological value food — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nMeat contains fibres and connective tissue\n1 g of protein provides 4 kilocalories of energy to the body\nEggs are a low biological value food"
+   }
+  },
+  "he-2024-ol-sa-q5": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "The bran layer of cereals is high in fibre — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "Heat causes starch grains to swell and burst — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "A roux sauce contains different amounts of fat and flour — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nThe bran layer of cereals is high in fibre\nHeat causes starch grains to swell and burst\nA roux sauce contains different amounts of fat and flour"
+   }
+  },
+  "he-2024-ol-sa-q2": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 4,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 functions × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two functions, each graded 2:1:0. Source correction: vitamin C enhances absorption of non-haem iron; it does not convert it into haem iron. Historical prevention claims are not guarantees. Complete source wording: prevents scurvy; converts non-haem iron to haem iron; builds up the immune system; helps form connective tissue; builds up collagen for wound healing; works with Vitamin E to prevent coronary heart disease; is an antioxidant; thought to have a role in cancer prevention; formation of blood vessels; maintains elasticity in skin; manufacture of thyroxine; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "State two functions of Vitamin C in the body.",
+    "questionRef": "2024 OL Section A Q2 — functions"
+   }
+  },
+  "he-2024-ol-sa-q3": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Over indulgence in sugar-based foods can cause obesity.",
+      "marks": 2,
+      "accepts": [
+       "obesity"
+      ],
+      "contextNote": "The missing term is obesity. Graded 2:0 — the term is either the right one or it is not.",
+      "openList": false
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "empty kilocalories are calories that have little nutritional value.",
+      "marks": 2,
+      "accepts": [
+       "empty kilocalories"
+      ],
+      "contextNote": "The missing term is empty kilocalories. Graded 2:0.",
+      "openList": false
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "Energy input equals energy output is known as energy balance.",
+      "marks": 2,
+      "accepts": [
+       "energy balance"
+      ],
+      "contextNote": "The missing term is energy balance. Graded 2:0.",
+      "openList": false
+     }
+    ],
+    "questionText": "Using the terms listed below, complete the following statements in relation to energy.\n\nempty kilocalories    energy balance    obesity\n\nOver indulgence in sugar-based foods can cause ______________________.\n______________________ are calories that have little nutritional value.\nEnergy input equals energy output is known as ______________________."
+   }
+  },
+  "he-2024-ol-sa-q4": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 4,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 factors × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "factors",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two factors, each graded 2:1:0. Complete guidance: age; older animals have longer, thicker muscle fibres, more connective tissue; active parts of the animal are tougher, e.g. neck/legs; animal treatment before and after slaughter; cooking method; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Outline two factors that affect the tenderness of meat.",
+    "questionRef": "2024 OL Section A Q4 — factors"
+   }
+  },
+  "he-2024-ol-sa-q6": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "lifestyle changes",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three points, each graded 2:1:0. Historical examination examples, not an individual weight-management plan. Complete guidance: follow a low-fat diet; follow a reduced sugar diet; remove visible fat from meat; avoid cream- based sauces; consider low fat cooking methods; increase fibre intake; increase water intake; choose lean protein foods; reduced processed foods; exercise; avoid alcohol; avoid eating in front of TV; avoid eating late at night; avoid empty kilocalorie foods; set weight loss targets; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q8": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "guidelines",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three points, each graded 2:1:0. Freezing capacity and fast-freeze timings depend on the appliance; follow its instructions. Cool cooked food promptly and maintain safe storage before freezing. Complete guidance: turn on fast freeze button 3 to 4 hours in advance of freezing food; only freeze 1/10 of the capacity of freezer in any 24-hour period; choose best quality fresh food for freezing; freeze in usable quantities; cool all foods before freezing; open freeze foods such as strawberries; blanch vegetables before freezing; use appropriate packaging; remove air from packaging before freezing; leave room for expansion when freezing liquids; label products with name and date; maintain temperature of freezer at −18°C; store similar foods together; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q10": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "consumer rights",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three points, each graded 2:1:0. Historical examination summary, not current legal guidance. Complete guidance: value for money; right to honest and truthful information; right to choice of goods and services; right to quality; right to safety; services completed to high standard by qualified person; using good quality materials; right to redress; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q11": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three points, each graded 2:1:0. Complete guidance: reduce financial worries; give a feeling of security and independence; emergencies can be catered for; sets a good example for family members; avoids the necessity for loans/credit agreements; builds a sound financial reputation; useful if planning for future event; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q14": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "guidelines",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three points, each graded 2:1:0. Use cookware approved for the microwave and follow the appliance instructions. Complete guidance: arrange foods in a circle, thickest part outwards; turn and rotate food during cooking; pierce foods e.g. skin of sausages, potatoes; time accurately; use recipes adapted for the microwave; cover food to maintain moisture, speeds up the cooking time, prevent splatters; never place metal or metal trim containers/dishes in the microwave; use appropriate cookware, e.g. paper, glass, plastic, ceramic, earthenware; stir food; allow standing time; use defrost power setting when thawing foods; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q7": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 pairs × (type 2 (2:0) + dish 1 (1:0))"
+    },
+    "rows": [
+     {
+      "id": "type-1",
+      "kind": "criterion",
+      "verbatim": "Type of pastry",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name pastry type 1, graded 2:0. Types: choux; shortcrust; rough puff; puff; flaky; filo; suet; rich shortcrust; etc. Dishes: eclairs; profiteroles; apple tart; quiche; sausage rolls; steak and kidney pie; croissants; vol au vents; mince pies; spring rolls; steamed puddings; samosas; etc. Match each dish to an appropriate pastry type; the two table rows are illustrative lists, not prescribed combinations."
+     },
+     {
+      "id": "dish-1",
+      "kind": "criterion",
+      "verbatim": "Dish",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Name a different dish made from the same pastry type 1, graded 1:0."
+     },
+     {
+      "id": "type-2",
+      "kind": "criterion",
+      "verbatim": "Type of pastry",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name pastry type 2, graded 2:0. Choose a different type."
+     },
+     {
+      "id": "dish-2",
+      "kind": "criterion",
+      "verbatim": "Dish",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ],
+      "contextNote": "Name a different dish made from the same pastry type 2, graded 1:0."
+     }
+    ],
+    "taskGroups": [
+     {
+      "sourceCardId": "he-2024-ol-sa-q7-pair-1",
+      "label": "Pastry and dish 1",
+      "marks": 3,
+      "rowIds": [
+       "type-1",
+       "dish-1"
+      ]
+     },
+     {
+      "sourceCardId": "he-2024-ol-sa-q7-pair-2",
+      "label": "Pastry and dish 2",
+      "marks": 3,
+      "rowIds": [
+       "type-2",
+       "dish-2"
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sa-q9": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 matches × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Heat travels in straight lines and heats/cooks the first solid object it touches — Radiation",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0 — the match is right or wrong, with no part-mark for a near miss."
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "Heat travels through a liquid or gas, causing it to rise, cold liquid or gas moves in to take its place — Convection",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0 — the match is right or wrong, with no part-mark for a near miss."
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "Heat travels through the molecules of a solid object until it is fully heated — Conduction",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0 — the match is right or wrong, with no part-mark for a near miss."
+     }
+    ],
+    "questionText": "Match the following methods of heat transfer with the correct definition.\n\nConduction    Convection    Radiation\n\nHeat travels in straight lines and heats/cooks the first solid object it touches\nHeat travels through a liquid or gas, causing it to rise, cold liquid or gas moves in to take its place\nHeat travels through the molecules of a solid object until it is fully heated"
+   }
+  },
+  "he-2024-ol-sa-q12": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required criteria × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "purpose",
+      "kind": "criterion",
+      "verbatim": "Suitability for purpose",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Explain this required criterion, graded 2:1:0. Complete guidance: properties should make fabric fit for purpose intended e.g. washable; aesthetic properties, e.g. appearance, rough, smooth, drape, weight, colour, pattern and texture; etc."
+     },
+     {
+      "id": "choice",
+      "kind": "criterion",
+      "verbatim": "Personal choice",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Explain this required criterion, graded 2:1:0. Complete guidance: personal likes and dislikes; individuals’ favourite colour; preferred style; desired comfort level; durability of fabric; people have preference for natural fabrics’ e.g. like linen creased look; synthetic fabrics have easy care properties and elasticity; etc."
+     },
+     {
+      "id": "cost",
+      "kind": "criterion",
+      "verbatim": "Cost",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Explain this required criterion, graded 2:1:0. Complete guidance: natural fibres, e.g. wool and silk are more expensive than synthetic fabrics; amount of money available will influence type and quality of fabric bought; etc."
+     }
+    ],
+    "questionText": "Explain how the following criteria influence the consumer when selecting textiles for the household.\n\nSuitability for purpose\nPersonal choice\nCost"
+   }
+  },
+  "he-2024-ol-sa-q13": {
+   "reason": "2024 Ordinary A independent paper/scheme review: complete prompts, exact tariffs and required pairings.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 benefits × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "benefits",
+      "kind": "criterion",
+      "verbatim": "benefits",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two benefits, each graded 3:2:0. Historical examples: savings and surrender value depend on policy type; not every policy can be cashed in. Complete wording: the persons family receive money on the death of the insured person; provides security and peace of mind; can be used as a means of saving; can cash in the policy at any time; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sb-q1a": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Using the information presented in the table, discuss five factors that affect a person’s food choices.",
+    "questionRef": "2024 OL Section B Q1(a)",
+    "stem": "‘All around the world, people choose to eat different food for many different reasons.’ (www.foodfactoflife.org.uk)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "5 distinct points, each graded 4:2:0. Complete historical guidance: Emotions buy more food when in an unhappy mood; buy food to celebrate happy times; will comfort eat; etc. Cooking skills people with greater cooking skills are more likely to make a meal from scratch; unskilled cooks will use more convenience foods; many buy quick to cook foods; etc. Time: busy lifestyle; use of convenience foods; take away foods; type of work; hours worked; etc. Money price wars; increased competition; recession; discount stores; disposable income; seasonality; many cheaper foods are highly processed, and may contain high levels of salt, sugar, and fat; etc. Likes and dislikes may have a preference for foods high in sugar; may take a dislike to food due to allergies; appeals to senses; etc. Food availability foods in season are cheaper and fresher; foods can be imported leading to year- round availability; carbon footprint; location; special diets; diverse cultural requirements; etc. Work patterns busy lifestyle can lead to greater reliance on takeaways and convenience foods; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks.",
+    "questionFigureKey": "home-economics-2024-ol-sb-q1a-food-choice",
+    "questionFigureIncludesPrompt": false,
+    "figureKey": ""
+   }
+  },
+  "he-2024-ol-sb-q1b": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Give an account of carbohydrates under each of the following headings:\n• classification\n• functions in the body\n• dietary sources.",
+    "questionRef": "2024 OL Section B Q1(b)",
+    "stem": "‘All around the world, people choose to eat different food for many different reasons.’ (www.foodfactoflife.org.uk)",
+    "totalMarks": 28,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Classification 3 × 2 (2:0); functions 2 × 5 (5:3:0); sources 3 × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "classification",
+      "kind": "criterion",
+      "verbatim": "classification",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three classes, each graded 2:0. Complete examples: monosaccharides; disaccharides; polysaccharides; sugar; starch; fibre/cellulose; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions in the body",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two functions, each graded 5:3:0. Complete guidance: heat; energy; stimulate peristalsis; prevents constipation; prevents bowel disorders; acts as a protein sparer; insulation, excess carbohydrate stored as adipose tissue; glycogen reserve; fibre gives a feeling of fullness; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sources",
+      "kind": "criterion",
+      "verbatim": "dietary sources",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Three sources, each graded 4:2:0. Complete guidance: breakfast cereals; rice; pasta; potatoes; bread; fruit; vegetables; nuts; seeds; honey; cakes; biscuits; sweets; popcorn; milk; sugar; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q1c": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Outline three different ways a person can increase the amount of fibre in their diet.",
+    "questionRef": "2024 OL Section B Q1(c)",
+    "stem": "‘All around the world, people choose to eat different food for many different reasons.’ (www.foodfactoflife.org.uk)",
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: add bran/fruit to breakfast cereals; increase intake of fruit/vegetables; eat skins of fruit and vegetables; eat brown bread/pasta/rice; add seeds/nuts to food; use brown flour instead of white flour; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q1d": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Describe four ways consumers can reduce food waste when planning meals and purchasing foods.",
+    "questionRef": "2024 OL Section B Q1(d)",
+    "stem": "‘All around the world, people choose to eat different food for many different reasons.’ (www.foodfactoflife.org.uk)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Planning 1 + purchasing 1 + other 2, each 5 (5:4:3:0)"
+    },
+    "rows": [
+     {
+      "id": "planning",
+      "kind": "criterion",
+      "verbatim": "planning",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "One planning point, graded 5:4:3:0. Complete guidance: check stocks in the kitchen before going shopping; move more perishable items or with upcoming expiry dates to the front of the fridge/cupboard to use them first; make a meal plan for the week; shop using list; buy online; use leftovers for next day’s lunch or freeze them; use leftover fruits/vegetables to make preserves; use planning apps; etc."
+     },
+     {
+      "id": "purchasing",
+      "kind": "criterion",
+      "verbatim": "purchasing",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "One purchasing point, graded 5:4:3:0. Complete guidance: buy in useable/small quantities; check expiry dates; buy only what you need; examine foods before buying to ensure freshness; extend meals with meat alternatives; consider using pulses as a protein source; etc."
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "other points",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "contextNote": "Two further distinct points under either heading, each graded 5:4:3:0.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q2c": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Describe three guidelines to follow when storing fruit and vegetables in order to maintain their quality.",
+    "questionRef": "2024 OL Section B Q2(c)",
+    "stem": "‘Approximately 8% of Irish people are following a vegetarian based diet.’ (Bord Bia, 2021)",
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "ways",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Apply storage conditions to the specific fruit or vegetable; the source lists different examples, not one temperature/humidity for every food. remove from wrapping; store in vegetable drawer of refrigerator; allow air to circulate; remove damaged fruit/vegetables; store away from bananas as they produce ethylene gas which speeds up the ripening process; store in a cool, dark, dry place with low humidity; store fruit at room temperature; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q3a": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Describe four food additives used in the manufacture of processed foods.",
+    "questionRef": "2024 OL Section B Q3(a)",
+    "stem": "Ireland’s food industry is globally recognised for producing high quality processed foods.",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: colourings used to improve colour; natural, e.g. carotene; synthetic, e.g. tartrazine; etc. flavourings used to improve flavour; natural flavourings, e.g. sugar, salt, spices, herbs; artificial flavourings, e.g. esters; flavour enhancers, e.g. monosodium glutamate; etc. sweeteners natural, e.g. fructose, table sugar, glucose syrup; artificial, intense sweeteners, e.g. aspartame, saccharin; bulk sweeteners, e.g. sorbitol, mannitol; etc. preservatives increase the shelf life of food; natural, e.g. sugar, salt, vinegar, alcohol, smoke; artificial, e.g. sulphur dioxide, sorbic acid; etc. antioxidants prevent reaction with oxygen; natural, e.g. Vitamin C, Vitamin E; artificial, e.g. butylated hydroxyanisole, butylated hydroxytoluene; etc. physical conditioning agents improve the texture of food; emulsifiers, e.g. lecithin, alginates, stabilisers; polyphosphates; humectants; etc. nutritive additives improve the nutritional value; fortified foods; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q3b": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Identify three major sectors of the Irish food industry and give one example of a food product produced in each sector named.",
+    "questionRef": "2024 OL Section B Q3(b)",
+    "stem": "Ireland’s food industry is globally recognised for producing high quality processed foods.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 pairs × (sector 3 (3:2:0) + product 2 (2:1:0))"
+    },
+    "rows": [
+     {
+      "id": "sector-1",
+      "kind": "criterion",
+      "verbatim": "sectors",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Identify sector 1, graded 3:2:0. All six published sector/product examples: dairy and ingredients milk; butter; cream; cheese; yoghurt; milk powder; dairy spreads; infant formula; etc. meat and livestock beef; sheep meat; pig meat; poultry; etc. beverages alcoholic, whiskey, gins, beer; non-alcoholic, fruit juices; water; etc. seafood fresh fish; processed fish; etc. edible horticulture and cereals flour; malt; oats; potatoes; mushrooms; berry fruits; etc. prepared consumer foods fruit juices; smoothies; confectionary; jams; chutneys; relishes; prepared meals; baked goods; cooked sliced meats; etc."
+     },
+     {
+      "id": "food-1",
+      "kind": "criterion",
+      "verbatim": "food",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Give a product from the same sector 1, graded 2:1:0."
+     },
+     {
+      "id": "sector-2",
+      "kind": "criterion",
+      "verbatim": "sectors",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Identify sector 2, graded 3:2:0. Choose a different sector."
+     },
+     {
+      "id": "food-2",
+      "kind": "criterion",
+      "verbatim": "food",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Give a product from the same sector 2, graded 2:1:0."
+     },
+     {
+      "id": "sector-3",
+      "kind": "criterion",
+      "verbatim": "sectors",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Identify sector 3, graded 3:2:0. Choose a different sector."
+     },
+     {
+      "id": "food-3",
+      "kind": "criterion",
+      "verbatim": "food",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Give a product from the same sector 3, graded 2:1:0."
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks.",
+    "taskGroups": [
+     {
+      "sourceCardId": "he-2024-ol-sb-q3b-sector-1",
+      "label": "Sector and product 1",
+      "marks": 5,
+      "rowIds": [
+       "sector-1",
+       "food-1"
+      ]
+     },
+     {
+      "sourceCardId": "he-2024-ol-sb-q3b-sector-2",
+      "label": "Sector and product 2",
+      "marks": 5,
+      "rowIds": [
+       "sector-2",
+       "food-2"
+      ]
+     },
+     {
+      "sourceCardId": "he-2024-ol-sb-q3b-sector-3",
+      "label": "Sector and product 3",
+      "marks": 5,
+      "rowIds": [
+       "sector-3",
+       "food-3"
+      ]
+     }
+    ]
+   }
+  },
+  "he-2024-ol-sb-q3c": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Evaluate the role of packaging in relation to each of the following:\n• suitability for purpose\n• environmental impact\n• as a source of consumer information.",
+    "questionRef": "2024 OL Section B Q3(c)",
+    "stem": "Ireland’s food industry is globally recognised for producing high quality processed foods.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required roles × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "role-1",
+      "kind": "criterion",
+      "verbatim": "suitability for purpose",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Evaluate this required role, graded 5:3:0. Complete guidance: safe/non- toxic; strong; hygienic; easy to open and reseal; economical; protects the food; impervious to moisture, gases, micro-organisms; tins lacquered to prevent reaction with the food; easy to stack/store; suitable for heat treatment; may be printed on; easily moulded into variety of shapes and sizes; etc."
+     },
+     {
+      "id": "role-2",
+      "kind": "criterion",
+      "verbatim": "environmental impact",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Evaluate this required role, graded 5:3:0. Complete guidance: metal is a limited and non-renewable resource, non-biodegradable; recyclable; glass is reusable, recyclable; paper is biodegradable and recyclable; plastic is non – biodegradable, made from a non-renewable resource; Re-Turn scheme; etc."
+     },
+     {
+      "id": "role-3",
+      "kind": "criterion",
+      "verbatim": "as a source of consumer information",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Evaluate this required role, graded 5:3:0. Complete guidance: displays legal requirements such as ingredients; weight; nutritional information; allergy information; identify product; cooking instructions; etc."
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q4a": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Describe four factors that influence consumers when selecting goods and services.",
+    "questionRef": "2024 OL Section B Q4(a)",
+    "stem": "‘From time to time problems will arise with goods and services.’ (www.ccpc.ie)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: amount of disposable income; personal preferences; merchandising of goods; advertising; word of mouth; salespeople in shops; packaging; labelling; environmental impact of the product/service; current trends; peer pressure; after sales service; facility to order online; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q4b": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Give an account of the Small Claims Court procedure used to resolve a consumer dispute over goods or services.",
+    "questionRef": "2024 OL Section B Q4(b)",
+    "stem": "‘From time to time problems will arise with goods and services.’ (www.ccpc.ie)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: The fee, limits and deadlines below are historical 2024 scheme examples, not current legal advice. part of the district court office; consumer completes the application form; pays €25.00 to have form processed; the complaint is registered; a notice of the claim is sent to the respondent; the respondent can admit, dispute or ignore the claim or can counter claim; they have 15 days to reply; the small claims registrar will try to resolve the issue; if the issue cannot be resolved it may be referred to a court hearing; if the respondent does not reply or challenge the claim within 15 days, it is taken that they admitted the claim and the claim is settled in favour of the consumer; the respondent has 28 days to comply with the judgment; claims up to €2,000 may be resolved; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q4c": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Explain how the Sale of Goods and Supply Services Act 1980, protects the consumer.",
+    "questionRef": "2024 OL Section B Q4(c)",
+    "stem": "‘From time to time problems will arise with goods and services.’ (www.ccpc.ie)",
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "2 distinct points, each graded 5:3:0. Complete historical guidance: Answer about the Act named in the historical question; this is not a statement of current consumer law. goods should be of merchantable quality; fit for purpose intended; be as described; correspond to sample; services should be provided by a skilled person; consumer is entitled to redress; entitled to a repair, refund or replacement; sets out the conditions for a guarantee; materials used must be of good quality; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q5a": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Describe each of the following functions of the family:\n• physical\n• emotional\n• social\n• economic.",
+    "questionRef": "2024 OL Section B Q5(a)",
+    "stem": "‘Caring for our family members has always been a fundamental part of ethical living.’ (www.familycarers.ie)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 required family functions × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "physical",
+      "kind": "criterion",
+      "verbatim": "physical",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Describe this required function, graded 5:3:0. Historical examples, not assumptions about a particular family or a complete statement of legal duties. Complete guidance: provides basic needs, e.g. food, clothes, shelter; protects vulnerable members by providing a safe environment; procreation/reproduction; etc."
+     },
+     {
+      "id": "emotional",
+      "kind": "criterion",
+      "verbatim": "emotional",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Describe this required function, graded 5:3:0. Historical examples, not assumptions about a particular family or a complete statement of legal duties. Complete guidance: safe and secure home, a place for children to discuss feelings and express emotions; helps children develop self-esteem resulting in well-adjusted personalities; capable of forming healthy relationships; children loved and cared for; parents support each other, role models for children; etc."
+     },
+     {
+      "id": "social",
+      "kind": "criterion",
+      "verbatim": "social",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Describe this required function, graded 5:3:0. Historical examples, not assumptions about a particular family or a complete statement of legal duties. Complete guidance: teaches what is acceptable in society; respect; teaching right from wrong; children learn how to behave in a socially acceptable way through imitation and observation; children need consistent discipline to help them develop a set of values; etc."
+     },
+     {
+      "id": "economic",
+      "kind": "criterion",
+      "verbatim": "economic",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Describe this required function, graded 5:3:0. Historical examples, not assumptions about a particular family or a complete statement of legal duties. Complete guidance: support children until they reach the age of 18 or 23 if in fulltime education; both parents may work; large families may work together as an economic unit; working families pay taxes and spend money in the economy; etc."
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q5b": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Explain how the state assists the family in carrying out their physical, social and economic functions.",
+    "questionRef": "2024 OL Section B Q5(b)",
+    "stem": "‘Caring for our family members has always been a fundamental part of ethical living.’ (www.familycarers.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required functions × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "physical",
+      "kind": "criterion",
+      "verbatim": "physical",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain state support for this required function, graded 5:3:0. Historical examples; availability and eligibility vary. Complete guidance: social welfare allowances; HSE, e.g. public health nurse; Community Mothers and Family Support Programmes; Parent Plus Programmes; Parent & Toddler Groups; Tusla; etc."
+     },
+     {
+      "id": "social",
+      "kind": "criterion",
+      "verbatim": "social",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain state support for this required function, graded 5:3:0. Historical examples; availability and eligibility vary. Complete guidance: Early Childhood Care and Education Scheme (ECCE); pre-school, primary and post primary schools; SNA’s; special schools; special classes; HEAR; DARE; Garda liaison/probation services/detention centres; etc."
+     },
+     {
+      "id": "economic",
+      "kind": "criterion",
+      "verbatim": "economic",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain state support for this required function, graded 5:3:0. Historical examples; availability and eligibility vary. Complete guidance: social welfare allowances; Disability & Carers Allowance; Back to School Clothing and Footwear Allowance; Child Benefit; Working Family Payment (WFP); School Meals Programme; Junior Cycle Schoolbooks Scheme; etc."
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sb-q5c": {
+   "reason": "2024 Ordinary B complete source review: exact partial credit, full headings and all guidance.",
+   "set": {
+    "questionText": "Discuss three advantages of a positive parent-child relationship within the family.",
+    "questionRef": "2024 OL Section B Q5(c)",
+    "stem": "‘Caring for our family members has always been a fundamental part of ethical living.’ (www.familycarers.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: children feel valued as they can express their feelings in a safe environment; secure and healthy attachment to their parents; develop happy and content relationships with others in life; child learns to regulate emotions under stress and in difficult situations; establish secure bonds and friendships with peers; promote a child’s cognitive, emotional, and social development; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full independent source review: he_review_2024_ol_main_b.py. Preserve open choices, required headings and paired tasks."
+   }
+  },
+  "he-2024-ol-sc-q1ai": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe four stages involved in the treatment of the public water supply to make it safe for people to drink.",
+    "questionRef": "2024 OL Section C E1 Q1(a)(i)",
+    "stem": "‘The quality of drinking water is a powerful environmental determinant of health.’ (www.hse.ie)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "stages",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: screening impurities in water such as floating debris are removed; etc. sedimentation chemicals added to the water which attach to the dirt which sinks to the base of the tank, water is allowed settle so that soil and other solid matter can be removed; etc. filtration water passes through filter beds of sand, gravel, and stones to remove any excess matter/dirt; etc. chlorination chlorine is added to kill bacteria; etc. fluoridation fluoride added to protect teeth; etc. softening softener added in hard water areas to soften water and protect fittings; etc. testing water is tested for quality and pureness and stored in high storage reservoir; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1aii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Explain what precautions should be taken to prevent the cold-water supply freezing in the home during cold weather.",
+    "questionRef": "2024 OL Section C E1 Q1(a)(ii)",
+    "stem": "‘The quality of drinking water is a powerful environmental determinant of health.’ (www.hse.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Source clarification: Uisce Éireann advises that running taps does not prevent freezing; insulate exposed pipes/tanks and maintain warmth. The historical heat-bulb/dripping-tap examples are not general installation instructions. Prevention is distinct from thawing already frozen pipes. storage tank in the attic should be insulated; water pipes should be lagged to prevent burst pipes during frost; heat should be set to come on periodically at a lower temperature if away during winter; circulate warm air around pipes; service heating system regularly; install heat bulbs in attic; allow cold water tap to drip; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1aiii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe the function of the following in relation to the cold-water supply of a house:\n• service pipe\n• ball valve\n• storage tank.",
+    "questionRef": "2024 OL Section C E1 Q1(a)(iii)",
+    "stem": "‘The quality of drinking water is a powerful environmental determinant of health.’ (www.hse.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "service pipe",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: connects the mains pipe with the house; the service pipe enters the house just underneath the kitchen sink, carries fresh water to the cold water tap in the kitchen; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "ball valve",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: controls the level of water in the water tank in the attic; it floats on the top of a full tank keeping the valve closed; it closes off the pipe and stops the inward flow of water when a certain level is reached; when water is used the ball drops opening the valve until the water fills again to the correct level, closing the valve; prevents an overflow of water into the house; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "storage tank",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: located in the attic as high level improves pressure to supply the system; a ball valve controls the level of water in the tank; stores the cold water which supplies the cold-water taps, toilets and hot press tank in the home; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1bi": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe the procedure to follow when applying for full planning permission to build a house.",
+    "questionRef": "2024 OL Section C E1 Q1(b)(i)",
+    "stem": "‘Over the past ten years the way we design our homes has changed a lot.’ (www.houzz.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Historical examination summary, not current planning-law guidance. must be got from local planning authority before any building work starts on the site; must submit detailed application to local planning authority including site maps with proposed location of building, house plans and interior plans, details of materials to be used; application form; planning fee; copies of planning application notices published in local newspapers; notice must be placed at the site of the proposed development; local planning authority may agree that site is suitable for building, may request further information; may refuse planning permission; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1bii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss the role of the following professional services when designing and building a house:\n• architect\n• engineer\n• solicitor.",
+    "questionRef": "2024 OL Section C E1 Q1(b)(ii)",
+    "stem": "‘Over the past ten years the way we design our homes has changed a lot.’ (www.houzz.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "architect",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of professional roles; individual services and legal requirements vary. Complete guidance: advises on choice of site; designs and draws up house plans; advises on contractors; makes planning application; house design suitability for the needs of the family; may oversee construction of the house; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "engineer",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of professional roles; individual services and legal requirements vary. Complete guidance: provides advice on the structure of the house; oversees project; advises on building problems; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "solicitor",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of professional roles; individual services and legal requirements vary. Complete guidance: deals with the legal aspect e.g. advises on building and planning regulations; ensures that title deeds are in order; checks rights of way with land registry; must engage a solicitor if applying for a mortgage; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1ci": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss three advantages of having good ventilation in the home.",
+    "questionRef": "2024 OL Section C E1 Q1(c)(i)",
+    "stem": "All homes in Ireland should have good ventilation.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: provides fresh air; removes stale/impure air; controls humidity levels; controls room temperature; reduces condensation; reduces odours and smells; prevents mould; reduces damage to home; reduces risk of illnesses and infections; assists combustion; more comfortable atmosphere; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q1cii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Name one method of ventilation suitable for a kitchen and explain the underlying principle of the method named.",
+    "questionRef": "2024 OL Section C E1 Q1(c)(ii)",
+    "stem": "All homes in Ireland should have good ventilation.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 5 + 2 principle points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Name one kitchen ventilation method, graded 5:3:0. Complete examples for extractor fan, ducted cooker hood, open doors/windows, trickle vents and air vents: extractor fan powered by electricity; switch operated; when fan is turned on, the shutters open; electric motor rotates blades at high speed; causes suction, drawing stale air from the room; replaced by fresh air entering underneath doors or through open windows/vents; etc. cooker hood powered by electricity; when ducted cooker hood turned on, electric motor rotates blades of fan at high speed; causes suction, drawing air containing heat, steam, fumes, smoke, odours out of room; air passes through grease filter, trapping grease; air is expelled outside; naturally replaced by fresh air; etc. Accept open doors; open windows, trickle vents in windows air vents warm moisture filled stale air moves upwards by means of convection; removed through open natural ventilation method located high up on the wall; fresh clean air enters house through openings lower down; etc."
+     },
+     {
+      "id": "principle",
+      "kind": "criterion",
+      "verbatim": "underlying principles",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two explanation points for the same chosen method, each graded 5:3:0. The choice is open; name and explanation stay together.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q2ai": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Comment on the suitability of the sportswear outfits shown above. Refer to:\n• comfort\n• function\n• aesthetic appeal.",
+    "questionRef": "2024 OL Section C E2 Q2(a)(i)",
+    "stem": "Sportwear needs to be practical but can also be stylish. (www.pinterest.com)",
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "comfort",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: allows for ease of movement during exercise; easy to remove jacket/hoodie; woman’s jacket is water resistant; round neck t-shirt for women is comfortable; suitable footwear for exercise; tracksuit bottoms are fitted, less like to slip/move down during exercise/movement; etc",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "function",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: suitable for different exercise activities; durable; reduced risk of creasing; suited to warm and cold weather; improved visibility due to strips of bright colours; can hold personal items; suitable footwear for exercise; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "aesthetic appeal",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: stripes of colour on tracksuit bottoms; narrowed cuff on man’s hoodie; fitted leggings style bottoms; zip on both hoodie/jacket; pockets in hoodie/jacket; colour blocking; draw string feature on man’s hoodie; brand crest less obvious due to small size; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole.",
+    "questionFigureKey": "home-economics-2024-ol-sc-q2a-sportswear",
+    "questionFigureIncludesPrompt": false,
+    "figureKey": ""
+   }
+  },
+  "he-2024-ol-sc-q2aii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe how emphasis as a design principle is applied to the outfits pictured above.",
+    "questionRef": "2024 OL Section C E2 Q2(a)(ii)",
+    "stem": "Sportwear needs to be practical but can also be stylish. (www.pinterest.com)",
+    "totalMarks": 7,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "First point 4 (4:2:0) + second point 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "first",
+      "kind": "criterion",
+      "verbatim": "point",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "First emphasis point, graded 4:2:0. Complete guidance: bright yellow t-shirt; bright yellow/white runners; yellow stripe on side and back of tracksuit bottom; green stripe on shoulder and top of tracksuit bottom; brand logos; contrasting zip; etc."
+     },
+     {
+      "id": "second",
+      "kind": "criterion",
+      "verbatim": "2nd point",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Second different emphasis point, graded 3:2:0. Use the complete guidance above; both original outfits are retained."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole.",
+    "questionFigureKey": "home-economics-2024-ol-sc-q2a-sportswear",
+    "questionFigureIncludesPrompt": false,
+    "figureKey": ""
+   }
+  },
+  "he-2024-ol-sc-q2ci": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe two fashion trends currently popular in summer clothing.",
+    "questionRef": "2024 OL Section C E2 Q2(c)(i)",
+    "stem": "‘Fashion has two purposes comfort and love.’ (Coco Chanel)",
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Complete historical guidance: Interpret current trends in the 2024 examination context. light weight leggings; loose t-shirts; crochet knits; denim jackets; knee high splits; oversized jackets; mini dresses; cut out clothing; sheer white; metallics; cargo trousers; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q2cii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss three factors that influence a person’s choice when choosing work wear clothing.",
+    "questionRef": "2024 OL Section C E2 Q2(c)(ii)",
+    "stem": "‘Fashion has two purposes comfort and love.’ (Coco Chanel)",
+    "totalMarks": 9,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "3 distinct points, each graded 3:2:0. Complete historical guidance: comfortable; suitable for function; washable; allow for ease of movement; high visibility; easy to remove; well fitted footwear; waterproof; stylish; sustainable; cost; fashion trends; easy care; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3ai": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Explain the following types of work:\n• paid work\n• unpaid work\n• voluntary work.",
+    "questionRef": "2024 OL Section C E3 Q3(a)(i)",
+    "stem": "‘Of women over 15 years of age in Ireland, more than 50% of them are in the workforce.’ (www.cso.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "paid work",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: done for financial gain; may be permanent, temporary, full-time, part-time or contract based; self-employed or employed by another person; can be completed from home setting or designated work setting; a wide range of skills required from manual to managerial positions; provides security in the form of pension, PRSI, holiday and sick pay; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "unpaid work",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: no financial reward for work; domestic housework i.e. child rearing, caring for elderly/disabled; general household tasks; DIY home related activities; work experience/placement; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "voluntary work",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: involves working for community or for a charity; no financial reward; helping other people and making a difference in other peoples’ lives; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3aii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss three reasons for the increased participation of women in the work force.",
+    "questionRef": "2024 OL Section C E3 Q3(a)(ii)",
+    "stem": "‘Of women over 15 years of age in Ireland, more than 50% of them are in the workforce.’ (www.cso.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: better educated; equality in workplace; social contact; improved self-esteem; equal pay; part-time work available; better working conditions, e.g. job share, flexitime, career breaks; etc. high standard of living; more stay at home partners; greater variety of childcare options available; two incomes needed to meet high cost of living; independence; role models for children; personal desire; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3aiii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Evaluate the impact of dual-earner families on family life.",
+    "questionRef": "2024 OL Section C E3 Q3(a)(iii)",
+    "stem": "‘Of women over 15 years of age in Ireland, more than 50% of them are in the workforce.’ (www.cso.ie)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: These are possible effects, not inevitable outcomes or assumptions about any family. increase in disposable income; higher standard of living; both parents involved in child rearing; both parents involved in household tasks; children have better attitude towards work; less financial worry; role overload; role conflict; older children have more responsibilities; children feel lonely, neglected; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3bi": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss how family leisure activities are influenced by each of the following:\n• gender\n• age\n• cultural influences.",
+    "questionRef": "2024 OL Section C E3 Q3(b)(i)",
+    "stem": "Leisure time is time that a person is free from work or other duties.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "gender",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of influences, not fixed traits or universal age-based activity rules. Complete guidance: some activities are male/female dominated; the amount of time; women/men working outside the home have less time for leisure; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "age",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of influences, not fixed traits or universal age-based activity rules. Complete guidance: young people have fewer commitments and more time for leisure; couples with young children have the least amount of time and disposable income; retired couples have more time and money to spend on leisure; older people have less money, may have physical constraints and do more sedentary pursuits; leisure activities change with age; some leisure activities are regarded as too dangerous for children e.g. under 10’s may not scuba dive; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "cultural influences",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Historical examples of influences, not fixed traits or universal age-based activity rules. Complete guidance: in a particular area of a county, e.g. surfing, hurling; etc. traditional to a country, e.g. Irish music; children’s choice of leisure activities often influenced by parent’s activities; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3bii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Evaluate the benefits of participating in leisure activities for family members.",
+    "questionRef": "2024 OL Section C E3 Q3(b)(ii)",
+    "stem": "Leisure time is time that a person is free from work or other duties.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "benefits",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: helps relax and unwind from stresses of daily life; assists mental well-being; improves physical health; furthers social interaction; encourages positive relationships; assist the development of new skills; develops creative skills; improves self-esteem; encourages family bonding; improves communication and teamwork; reduces boredom; good example for children; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3ci": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Evaluate the impact of the following on family life:\n• improvements in the provision of education\n• parenting roles within the family\n• improved conditions at work.",
+    "questionRef": "2024 OL Section C E3 Q3(c)(i)",
+    "stem": "Social and economic changes have impacted on family life in Ireland today.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "improvements in the provision of education",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. “Today” refers to the 2024 paper. Complete guidance: pre-schools; after school/homework clubs; special classes for pupils with additional needs; SNA’s at primary and secondary level; multi-sensory rooms; autism hubs; abolition of fees, SUSI grants, HEAR, DARE have made third level education more accessible; adult and second-chance education; PLC courses and SOLAS training programmes; VTOS for long term unemployed; distance learning; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "parenting roles within the family",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. “Today” refers to the 2024 paper. Complete guidance: parents are role models; parents discipline their children so that they learn to behave in an acceptable manner within society; cultural values or religious beliefs are passed onto children; both parents involved in childrearing; both parents work outside the home and children go to creche; many one parent families; women as breadwinners; men staying at home to mind children; children have greater say in family matters; egalitarian approach to childcare and household tasks; role conflict; role overload; increased need for childcare; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "improved conditions at work",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. “Today” refers to the 2024 paper. Complete guidance: shorter working week/day; better hourly pay rates; more disposable income and a higher standard of living; people are happier at work which can have a positive effect on family life; health and safety regulations ensure a safer work environment; etc."
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q3cii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe how second-level education prepares students for participation in the workplace.",
+    "questionRef": "2024 OL Section C E3 Q3(c)(ii)",
+    "stem": "Social and economic changes have impacted on family life in Ireland today.",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: literacy skills; numeracy skills; computer skills; develop qualities, e.g. respect for authority; punctuality; trustworthiness; responsibility; self-discipline; socialisation skills; work experience; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4ai": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Give an account of (i) the nutritive value and (ii) the dietetic value of milk. ",
+    "questionRef": "2024 OL Section C Q4(a)(i)",
+    "stem": "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "nutritive",
+      "kind": "criterion",
+      "verbatim": "nutritive value",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "One nutritive point, graded 5:4:3:2:0. Amounts depend on milk type and fortification. Complete guidance: HBV protein; saturated fat; carbohydrates in the form of lactose; contains Vitamins A, B, D; excellent source of calcium; good source of phosphorus; traces of magnesium, potassium and sodium; contains 87% water; deficient in Vitamin C and iron; etc."
+     },
+     {
+      "id": "dietetic",
+      "kind": "criterion",
+      "verbatim": "dietetic value",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "One dietetic point, graded 5:4:3:2:0. Suitability and digestibility depend on the individual. Complete historical guidance: HBV protein for growth and repair; saturated fat, provides heat and energy; carbohydrate in form of lactose for energy; calcium and phosphorus for bones and teeth; important for children, adolescents, pregnant women and elderly; versatile; used in both sweet and savoury dishes; easy to digest; can be fortified with vitamins and minerals; should be combined with foods rich in starch, fibre, iron to have balance in the diet; inexpensive; wide range of different types available to suit different diets, tastes and requirements; etc."
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "other points",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "contextNote": "Two further distinct points under either heading, each graded 5:4:3:2:0.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4aiii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Outline three different ways that dairy foods can be included as part of a healthy diet. ",
+    "questionRef": "2024 OL Section C Q4(a)(iii)",
+    "stem": "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "ways",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Milk, milk with cereal; part of milkshake/smoothie, glass of milk with a meal; added to scrambled eggs; in white sauce for cauliflower, over bacon, in pasta bakes, lasagnes; added to mashed potatoes; part of custard, rice pudding, semolina pudding; panna cotta; etc. Cheese, grilled cheese sandwich; crackers and cheese; part of salads; added to scrambled eggs; garnish for soups; added to pasta dishes; topping for pizza, lasagne, shepherd’s pie; cheesecake; cheeseboard; etc. Yoghurt, instead of milk with cereals; part of smoothies; a snack; added to curries; part of a dip; muffins; used instead of cream for desserts; added to cheesecakes; frozen yoghurt; etc. Cream, garnish for soups; added to mashed potatoes; used in white sauces; accompaniment to desserts; served with scones; part of ice-creams; etc. ",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4bi": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss three factors that should be considered when choosing a kitchen appliance.",
+    "questionRef": "2024 OL Section C Q4(b)(i)",
+    "stem": "‘Choosing an electrical appliance, less is usually best.’ (www.electricireland.com)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: cost; energy efficiency; safety; colour, size and shape; size of family; cleaning/maintenance; guarantee and after sales service; design; function; ease of use; special features; brand; consumer websites; leaflets; word of mouth; trends; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4bii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Describe three guidelines to follow for the safe use of electrical kitchen appliances.",
+    "questionRef": "2024 OL Section C Q4(b)(ii)",
+    "stem": "‘Choosing an electrical appliance, less is usually best.’ (www.electricireland.com)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "guidelines",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Follow the manufacturer’s safety instructions; the historical examples are not directions for unqualified electrical repairs. follow manufacturer’s instructions; assemble correctly; use correct speed/temperature; use correct attachments; buy appliances with a safety approval mark; ensure plugs are correctly wired and replace if defective; examine flexes for wear and tear; do not handle sockets, plugs or electrical appliances with wet hands; do not have flexes trailing over hob or sink; do not use adapters/extension leads to overload sockets; unplug all appliances before cleaning; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4ci": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Outline the conditions necessary for a marriage to be legally valid in Ireland.",
+    "questionRef": "2024 OL Section C Q4(c)(i)",
+    "stem": "‘There was a total of 23,173 marriages celebrated in Ireland in 2022.’ (www.cso.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: The source summarises requirements in the historical 2024 examination context; this is not a current legal checklist. three months’ notice required by registrar; partners must be over 18 years of age; marriage must be voluntary; both people must be free to marry, cannot be married already; partners must not be too closely related; two witnesses must be present; the register must be signed by the couple and witnesses; all marriages must be registered after the ceremony; must take place in a registered building, e.g. registry office, church, or approved venue; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
+   }
+  },
+  "he-2024-ol-sc-q4cii": {
+   "reason": "Complete 2024 Ordinary C source review: original prompts, exact partial credit, all profile models and continued guidance.",
+   "set": {
+    "questionText": "Discuss three responsibilities of a couple within a marriage relationship.",
+    "questionRef": "2024 OL Section C Q4(c)(ii)",
+    "stem": "‘There was a total of 23,173 marriages celebrated in Ireland in 2022.’ (www.cso.ie)",
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Historical relationship and legal examples, not advice on a particular couple’s legal obligations. provide financial support for partner and children; joint guardianship of children; legal duty to provide for the physical, emotional, social, moral and educational needs of the children; work on the relationship to ensure it is functioning; show commitment to the marriage; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": "Full source-pinned review: he_review_2024_ol_main_c.py. Required headings and dependent name/details remain whole."
    }
   }
  },
