@@ -75,7 +75,7 @@ describe('Home Economics 2022 deferred Section A', () => {
     }
     const wrongYear = structuredClone(review2022); wrongYear.year = 2023;
     expect(() => homeEconomicsSourceMap(wrongYear)).toThrow(/archive identity/);
-    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sc-q1ai')).toThrow(/lacks reviewed sources/);
+    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sc-q99ai')).toThrow(/lacks reviewed sources/);
   });
 });
 
@@ -121,8 +121,8 @@ describe('Home Economics 2022 deferred Section B', () => {
   it('links every card to its 2022 deferred question and all canonical Atlas topics', () => {
     const file = 'LC098ALP039EV-deferred.pdf';
     const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2022 && p.fileid === file)!;
-    expect(bcAnchors2022.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
-    expect(bcAnchors2022.q.map(q => q.region.map(r => r.p))).toEqual([[9, 10], [11, 12], [13], [14], [15]]);
+    expect(bcAnchors2022.q.slice(0, 5).map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
+    expect(bcAnchors2022.q.slice(0, 5).map(q => q.region.map(r => r.p))).toEqual([[9, 10], [11, 12], [13], [14], [15]]);
     expect(preferredAnswersUrl('home-economics-s-and-s', 2022, file, 'stale')).toBe(`/paper-answers/2022/${file}.json`);
     for (const c of b) {
       if (c.kind !== 'question') throw new Error(c.id);
@@ -338,5 +338,77 @@ describe('Home Economics deferred source boundaries', () => {
       const question = tags.q.find(q => q.n === n)!;
       expect(browseTopicIdsForQuestion(tags, question)).toEqual(expect.arrayContaining(expected));
     }
+  });
+});
+
+describe('Home Economics 2022 deferred Section C', () => {
+  const c = CARDS.filter(c => c.id.startsWith('he-2022-hl-deferred-sc-'));
+  const card = (part: string) => {
+    const found = c.find(c => c.id === `he-2022-hl-deferred-sc-q${part}`);
+    if (!found || found.kind !== 'question') throw new Error(part);
+    return found;
+  };
+  it('retains all 61 independently reviewed sitting tasks and maps every C task to Atlas', () => {
+    const sitting = CARDS.filter(c => c.id.startsWith('he-2022-hl-deferred-'));
+    expect(sitting).toHaveLength(61);
+    expect(sitting.reduce((n, c) => n + c.totalMarks, 0)).toBe(749);
+    expect(sitting.map(c => c.id).sort()).toEqual(review2022.tasks.map(t => t.id).sort());
+    expect(review2022.status).toContain('source-complete');
+    expect(review2022.pendingDecisions).toEqual([]);
+    expect(c).toHaveLength(26);
+    expect(c.reduce((n, c) => n + c.totalMarks, 0)).toBe(385);
+    const file = 'LC098ALP039EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2022 && p.fileid === file)!;
+    expect(bcAnchors2022.q.slice(5).map(q => q.region.map(r => r.p))).toEqual([[16, 17, 18], [19, 20], [21, 22], [23, 24, 25]]);
+    for (const task of c) {
+      if (task.kind !== 'question') throw new Error(task.id);
+      expect(tariffReconciles(task), task.id).toBe(true);
+      for (const v of task.answerVariants ?? []) expect(tariffReconciles({ ...task, rows: v.rows }), `${task.id}/${v.id}`).toBe(true);
+      expect(task.paperFileid).toBe('LC098ALP039EV-deferred');
+      const n = String(Number(task.questionRef.match(/Q(\d+)/)![1]) + 5);
+      const mapping = runtime.questionMappings.find(r => r[0] === 'h' && r[1] === 'e' && r[2] === 2022 && r[4] === file && r[5] === n)!;
+      expect(mapping?.[7], task.id).toBe('deferred');
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(task.topicId)).map(([k]) => k);
+      expect((mapping[6] as number[]).map(i => runtime.topicIds[i])).toEqual(expect.arrayContaining(expected));
+      expect(browseTopicIdsForQuestion(tags, tags.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(expected));
+    }
+  });
+  it('preserves the historical table, full heating routes, exact paired tariffs and earlier sketch', () => {
+    expect(card('1ai').questionFigure?.alt).toContain('night rate 9.60, 100%');
+    expect(card('1ai').rows).toHaveLength(4);
+    expect(card('1ai').rows[0].contextNote).toContain('15.21c');
+    expect(card('1aii').answerVariants).toHaveLength(7);
+    for (const v of card('1aii').answerVariants ?? []) expect(v.rows.map(r => r.marks)).toEqual([6, 9, 9]);
+    expect(card('1aii').answerVariants?.[2].rows[1].contextNote).toContain('describes active solar');
+    expect(card('1aiii').rows.map(r => r.marks)).toEqual([2, 8]);
+    expect(card('1bii').rows[1].contextNote).toContain('no model grant details');
+    expect(card('1ci').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill([[0, 2, 3], [0, 2, 3]]));
+    expect(card('1cii').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill([[0, 2], [0, 2]]));
+    expect(card('1cii').rows[0].contextNote).toContain('CO affects climate indirectly');
+    expect(card('2ai').rows.map(r => r.permittedMarks)).toEqual([[0, 1, 2, 3, 4], [0, 2, 4, 6]]);
+    expect(card('2aii').stem).toContain('Sketch and describe a smart casual outfit');
+    expect(card('2aii').rows.map(r => r.marks)).toEqual([9, 6]);
+    expect(card('2b').answerVariants).toHaveLength(2);
+    expect(card('2b').rows.map(r => r.marks)).toEqual([1, 6, 4, 4]);
+    expect(card('2b').rows[2].contextNote).toContain('damaged by hot concentrated alkalis');
+    expect(card('2cii').rows[0].contextNote).toContain('no model discussions');
+  });
+  it('keeps the full poverty ask, reserved headings and unequal expenditure tariffs', () => {
+    expect(card('3ai').rows.map(r => r.verbatim)).toEqual(['Physical', 'Emotional', 'Moral', 'Intellectual']);
+    expect(card('3bi').questionText).toBe('Identify two groups at risk of experiencing poverty in Ireland and discuss the impact of poverty on the family and society.');
+    expect(card('3bi').rows.map(r => r.marks)).toEqual([6, 4, 4, 4]);
+    expect(card('3bi').rows.map(r => r.verbatim)).toEqual(['groups', 'family', 'society', 'one other']);
+    expect(card('3bii').questionText).toContain('Analyse how each');
+    expect(card('3bii').rows[1].contextNote).toContain('not universal');
+    expect(card('3ci').questionText).toContain('dual‐earner');
+    expect(card('3cii').rows.map(r => r.marks)).toEqual([1, 8, 1, 8]);
+    expect(card('4ai').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(5).fill([0, 1, 2, 3, 4]));
+    expect(card('4aii').rows.map(r => r.marks)).toEqual([12, 6]);
+    expect(card('4aii').rows[1].contextNote).toContain('not a general direct effect');
+    expect(card('4bi').rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 2, 3, 4, 5]));
+    expect(card('4bi').rows[0].contextNote).toContain('facultatively anaerobic');
+    expect(card('4bi').rows[0].contextNote).toContain('Light:');
+    expect(card('4bii').rows[0].contextNote).toContain('aspergillus');
+    expect(card('4cii').rows.map(r => r.permittedMarks)).toEqual([[0, 3, 5], [0, 3, 5], [0, 2, 4], [0, 2, 4]]);
   });
 });

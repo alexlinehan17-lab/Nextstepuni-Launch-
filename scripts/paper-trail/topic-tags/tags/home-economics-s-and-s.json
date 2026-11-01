@@ -2824,6 +2824,26 @@
     "n": "5",
     "primary": "home-economics-2-0",
     "secondary": "home-economics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-3-6",
+    "secondary": "home-economics-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-3-8",
+    "secondary": "home-economics-3-7"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-3-10",
+    "secondary": "home-economics-3-11"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-1"
    }
   ]
  }

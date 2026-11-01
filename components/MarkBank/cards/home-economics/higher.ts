@@ -13836,4 +13836,1733 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1ai", topicId: "home-economics-3-6", conceptId: "fuel-cost-efficiency-comparison",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(a)(i) — Deferred sitting",
+    stem: "The table below shows a comparison of energy costs and efficiency ratings for a variety of fuel used to heat a room in 2020. (www.seai.ie)",
+    questionText: "Using the information in the table, comment on the merits of heating a room using the fuels listed.",
+    tariffModel: {"kind":"fixed","notation":"4 merits × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "merit-1", kind: "criterion", verbatim: "merits", marks: 4, contextNote: "Merit 1 of four, graded 4:2:0. Use the table and give a distinct relevant point; the scheme does not require one point from every fuel. Source correction: the paper table gives the night rate as 9.60 cent/kWh; the 15.21c in the prose below is inconsistent. All figures refer to 2020, not current prices. Complete published examples:\n\nStandard Coal: an economic fuel compared to other sources, easy to burn and generates a lot of heat; etc.\n\nOil: one of the most abundant fossil fuels; has a high heating value so it produces more heat than other fossil fuels; etc.\n\nGas: natural gas is cleaner than other fossil fuels; it produces no soot or ash; etc.\n\nElectricity: a reliable and readily- available energy source; delivered to all homes; an efficient form of energy; etc.\n\nElectricity – night rate: cheaper (off- peak) electricity from 11pm to 8am; night rate 15.21c; etc.", permittedMarks: [0,2,4] },
+    { id: "merit-2", kind: "criterion", verbatim: "merits", marks: 4, contextNote: "Merit 2 of four, graded 4:2:0. Use the table and give a distinct relevant point; the scheme does not require one point from every fuel. Use the complete source guidance and corrected table value above.", permittedMarks: [0,2,4] },
+    { id: "merit-3", kind: "criterion", verbatim: "merits", marks: 4, contextNote: "Merit 3 of four, graded 4:2:0. Use the table and give a distinct relevant point; the scheme does not require one point from every fuel. Use the complete source guidance and corrected table value above.", permittedMarks: [0,2,4] },
+    { id: "merit-4", kind: "criterion", verbatim: "merits", marks: 4, contextNote: "Merit 4 of four, graded 4:2:0. Use the table and give a distinct relevant point; the scheme does not require one point from every fuel. Use the complete source guidance and corrected table value above.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2022-hl-deferred-sc-q1ai-fuels",
+          "src": "/exam-figures/home-economics/home-economics-2022-hl-deferred-sc-q1ai-fuels.png",
+          "srcHash": "713eb15feb663109c98cf4ab6ebf88cd",
+          "alt": "2020 fuel costs (cent/kWh) and efficiency: standard coal 5.66, 60%; kerosene oil 8.60, 80%; natural gas Band D2 6.86, 90%; electricity Band DE 17.77, 100%; electricity night rate 9.60, 100% (shared electricity cell).",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 5; source SEAI — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1aii", topicId: "home-economics-3-5", conceptId: "central-heating-profile",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(a)(ii) — Deferred sitting",
+    questionText: "Describe one type of central heating system suitable for a family home. Refer to:\n• type of heating system\n• underlying principle\n• reasons for choice.",
+    tariffModel: {"kind":"fixed","notation":"Type 6 (6:3:0); principle 3 × 3; reasons 3 × 3 (3:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "type", kind: "criterion", verbatim: "Type of heating system", marks: 6, contextNote: "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc.", permittedMarks: [0,3,6] },
+    { id: "principle", kind: "criterion", verbatim: "Underlying principle", marks: 9, contextNote: "Three points for the same system, each graded 3:2:0. Complete published principle: working principle: boiler heats cold water by convection; heated water rises and draws the colder water underneath; creates convection currents, water reaches the required temperature; due to thermal expansion the hot water leaves the top of the boiler and travels to the hot water cylinder; passes through a heat exchanger, heats the water in the tank indirectly through convection; when the water in the heat exchanger cools, it returns to the boiler; hot water is sent from the boiler to radiators; radiators heat rooms by radiation and convection; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "reasons", kind: "criterion", verbatim: "Reasons for choice", marks: 9, contextNote: "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "wet",
+                "label": "Wet central heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Complete published principle: working principle: boiler heats cold water by convection; heated water rises and draws the colder water underneath; creates convection currents, water reaches the required temperature; due to thermal expansion the hot water leaves the top of the boiler and travels to the hot water cylinder; passes through a heat exchanger, heats the water in the tank indirectly through convection; when the water in the heat exchanger cools, it returns to the boiler; hot water is sent from the boiler to radiators; radiators heat rooms by radiation and convection; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "dry",
+                "label": "Dry central / underfloor / storage heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Complete published principle: working principle: electrical elements embedded in thermal blocks of fireclay or concrete, surrounded by an insulating material; elements are heated by electricity at off-peak periods, the thermal blocks heat up; fire clay blocks absorb heat through conduction and gradually release heat during the day; radiated heat; heat transferred by convection; boost heat option; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "active-solar",
+                "label": "Active solar heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Source correction: this collector/pump/fan description is printed under “Passive solar heating”, but describes active solar heating. Complete published principle: solar collectors absorb sunlight, convert it into heat; mechanical devices such as pumps and fans transfer the solar heat directly to the interior space or to a storage system for later use; heat is transferred by convection around each room; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "air-source",
+                "label": "Air source heat pump",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Complete published principle: Air source heat pumps extract heat from the outside environment by using a fan in a wall mounted unit; the system contains a compressor, a condenser, an expansion valve and an evaporator; the fan passes air over the evaporator; refrigerant absorbs heat from the outside air; refrigerant boils and evaporates at a low temperature giving vapour; vapour passes into the compressor and compression increases the temperature; the warm vapour is condensed in the heat exchanger, rejected heat is passed into the heating system and is distributed through radiators and underfloor heating; condensed vapour returns to liquid, passes back through expansion valve, reducing pressure and temperature, cycle starts again;",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "ground-source",
+                "label": "Ground source heat pump",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published type examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Complete published principle: extracts heat from the ground through a refrigerant loop buried in the ground; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons appropriate to your chosen system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "passive-solar",
+                "label": "Passive solar heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. Source correction: passive design collects and distributes heat through the building’s orientation, glazing and thermal mass, without the powered collectors/pumps/fans described under this name in the scheme. The source prints no accurate passive model.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons for the same system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid heating system",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "Type of heating system",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "One system, graded 6:3:0. Published examples: Wet central heating; dry central heating/under floor/storage heating; passive solar heating; full central heating system; partial central heating; background heating; active solar heating/solar panels; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three points for the same system, each graded 3:2:0. The named systems are examples, not a finite choice pool. The source prints no model principle for this alternative; explain your chosen system accurately.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons for choice",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three reasons for the same system, each graded 3:2:0. Published examples: Heats all of the house at an even temperature; heats water; easy to use; underfloor keeps tiles warm; rooms can be heated to different temperatures; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "wall-insulation",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(a)(iii) — Deferred sitting",
+    questionText: "Recommend one method of insulation suitable for the walls of a house. Explain the underlying principle involved in your choice of insulation.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); principle 2 × 4 (4:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name of insulation", marks: 2, contextNote: "Name one method, graded 2:0. Published examples: Bonded beads;aero board / polystyrene sheets; insulated slabs; etc. ", permittedMarks: [0,2] },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 8, contextNote: "Two points for that method, each graded 4:2:0. Source clarification: bulk insulation slows heat transfer; it does not completely stop heat or necessarily reflect it. Published wording: poor conductors of heat – they so not allow heat to pass through; when the heat comes in contact with the wall insulation it is directed back into the room; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1bi", topicId: "home-economics-3-3", conceptId: "housing-design-changes",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(b)(i) — Deferred sitting",
+    stem: "The design of new homes has changed the Irish landscape.",
+    questionText: "Describe three recent changes in the design of housing in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 changes × 6 (6:3:0)"}, totalMarks: 18,
+    rows: [
+    { id: "changes", kind: "criterion", verbatim: "changes", marks: 18, contextNote: "Three changes, each graded 6:3:0. “Recent” refers to this 2022 examination. Published guidance: more houses being built on outskirts of towns; land for building in urban areas is limited and expensive leading to high density housing; compact houses with small living spaces and outdoor areas; in rural areas one-off custom-designed houses still being built on private land which include bungalows, dormer and two-story dwellings; patios; decking; etc.", permittedMarks: [0,3,6,9,12,15,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,3,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,3,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,3,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1bii", topicId: "home-economics-3-3", conceptId: "housing-grant-profile",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(b)(ii) — Deferred sitting",
+    stem: "The design of new homes has changed the Irish landscape.",
+    questionText: "Name and give details of one grant provision/scheme available to home owners.",
+    tariffModel: {"kind":"fixed","notation":"Name 4; details 2 × 4 (all 4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one grant, graded 4:2:0. These are historical 2022 examples, not current eligibility advice: Home renovation incentive; housing adaptation grant for people with disabilities; mobility aids grant scheme; better energy homes scheme; grants for solar panels and battery systems; better energy warmer homes scheme; various Gaeltacht grants; SEAI grants; etc.", permittedMarks: [0,2,4] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two accurate details of the same grant, each graded 4:2:0. The scheme lists names only; no model grant details are printed.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1ci", topicId: "home-economics-3-6", conceptId: "home-energy-efficiency",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(c)(i) — Deferred sitting",
+    stem: "Householders who are more energy aware can reduce energy use by up to 20%.",
+    questionText: "In relation to energy use in the home, identify potential energy inefficiencies and strategies for their improvement.",
+    tariffModel: {"kind":"fixed","notation":"3 pairs × (inefficiency 3 + strategy 3), all 3:2:0"}, totalMarks: 18,
+    rows: [
+    { id: "pair-1", kind: "criterion", verbatim: "Energy inefficiencies", marks: 6, contextNote: "Pair 1: one inefficiency and a matching improvement strategy, each graded 3:2:0. The scheme lists inefficient uses but no model strategies. Complete examples: Use of standard light bulbs not CFL’s; lights left on; appliances on standby; timers not used on heating systems, water heating; room thermostats not installed; use of oven for one dish only; using dishwasher when not full; using less energy efficient cooking options; not using A rated appliances; using tumble dryers; etc. Boiler; central heating system; open fires; immersion; hot water cylinder; baths; toilet systems; leaking hot taps; attic; draughts; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Energy inefficiency","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Improvement strategy","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "pair-2", kind: "criterion", verbatim: "Energy inefficiencies", marks: 6, contextNote: "Pair 2: one inefficiency and a matching improvement strategy, each graded 3:2:0. Use the examples above and give an accurate matching strategy.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Energy inefficiency","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Improvement strategy","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "pair-3", kind: "criterion", verbatim: "Energy inefficiencies", marks: 6, contextNote: "Pair 3: one inefficiency and a matching improvement strategy, each graded 3:2:0. Use the examples above and give an accurate matching strategy.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Energy inefficiency","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Improvement strategy","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q1cii", topicId: "home-economics-3-6", conceptId: "fuel-emissions-effects",
+    section: "C", questionRef: "2022 HL Section C E1 Q1(c)(ii) — Deferred sitting",
+    stem: "Householders who are more energy aware can reduce energy use by up to 20%.",
+    questionText: "Identify the emissions produced as a result of burning fuels in the home and describe the effects of these emissions on the environment.",
+    tariffModel: {"kind":"fixed","notation":"3 pairs × (emission 2 + effect 2), all 2:0"}, totalMarks: 12,
+    rows: [
+    { id: "pair-1", kind: "criterion", verbatim: "emissions", marks: 4, contextNote: "Pair 1: a distinct emission and matching environmental effect, each graded 2:0. Source clarification: CO2 directly contributes to warming; CO affects climate indirectly. SO2 and nitrogen oxides drive acid deposition; CO2 causes normal rain’s mild acidity. Acid rain does not have one fixed pH. Published examples and wording:\n\nEmissions: carbon dioxide (CO2); carbon monoxide; water vapour; etc. Effect: global warming; climate change; etc.\n\nEmissions: sulphur dioxide (SO2); nitrogen oxide (NO2); etc. Effect: acid rain - damage to plants and crops, fish species endangered and ecosystems are destroyed; harmful emissions e.g. carbon dioxide and sulphur dioxide combine with water vapour resulting in acidic precipitation with a pH of 4.1; reduces pH of soil, affecting growth; dissolves calcium carbonate in limestone, destroys historic buildings, damages paintwork, stained glass and corrodes metal; etc.\n\nSmog and smoke: smoke from burning fossil fuels released into the atmosphere; combines with fog and results in smog; etc. Effects: reduced sunshine which effects plant growth; makes area seem darker; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Emission","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Environmental effect","marks":2,"permittedMarks":[0,2]}] },
+    { id: "pair-2", kind: "criterion", verbatim: "emissions", marks: 4, contextNote: "Pair 2: a distinct emission and matching environmental effect, each graded 2:0. Use the source examples and factual clarifications above; match each effect to its emission.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Emission","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Environmental effect","marks":2,"permittedMarks":[0,2]}] },
+    { id: "pair-3", kind: "criterion", verbatim: "emissions", marks: 4, contextNote: "Pair 3: a distinct emission and matching environmental effect, each graded 2:0. Use the source examples and factual clarifications above; match each effect to its emission.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Emission","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Environmental effect","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q2ai", topicId: "home-economics-3-8", conceptId: "smart-casual-workwear",
+    section: "C", questionRef: "2022 HL Section C E2 Q2(a)(i) — Deferred sitting",
+    stem: "Smart casual clothing is a requirement for many men and women in the workplace.",
+    questionText: "Sketch and describe a smart casual outfit suitable for work wear.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 4 (4:3:2:1:0); description 6 (6:4:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "Sketch the outfit asked for; graded 4:3:2:1:0. The source prints no model drawing.", permittedMarks: [0,1,2,3,4] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 6, contextNote: "Describe the same smart casual work outfit; graded 6:4:2:0. The source prints no model description.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q2aii", topicId: "home-economics-3-8", conceptId: "workwear-design-evaluation",
+    section: "C", questionRef: "2022 HL Section C E2 Q2(a)(ii) — Deferred sitting",
+    stem: "Smart casual clothing is a requirement for many men and women in the workplace.\n\nUse your outfit from part (a)(i): “Sketch and describe a smart casual outfit suitable for work wear.”",
+    questionText: "In relation to the outfit give details of:\n• how three principles of design have been applied\n• how the outfit is suitable for purpose.",
+    tariffModel: {"kind":"fixed","notation":"Principles 3 × 3; suitability 2 × 3 (3:2:0)"}, totalMarks: 15,
+    rows: [
+    { id: "principles", kind: "criterion", verbatim: "principles of design", marks: 9, contextNote: "Apply three principles to your own outfit; each graded 3:2:0. Source examples (names only, no model applications): balance; proportion; emphasis; rhythm; harmony; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "purpose", kind: "criterion", verbatim: "suitable for purpose", marks: 6, contextNote: "Two points about the same outfit’s suitability, each graded 3:2:0. Source examples (no model evaluations): durability; ease of care; cost; comfort; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q2b", topicId: "home-economics-3-7", conceptId: "blended-fabric-profile",
+    section: "C", questionRef: "2022 HL Section C E2 Q2(b) — Deferred sitting",
+    stem: "The use of blended fabrics in clothing can have many benefits.",
+    questionText: "Write a profile of one fabric manufactured from blended fibres. Refer to:\n• name\n• fibre production\n• fabric properties\n• uses.",
+    tariffModel: {"kind":"fixed","notation":"Name 1; production 2 × 3 (3:2:0); properties 2 × 2; uses 2 × 2 (2:0)"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "name", marks: 1, contextNote: "Name one blend, graded 1:0. Published example: polyester cotton (polycotton).", permittedMarks: [0,1] },
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Two points, each graded 3:2:0. Published guidance: Cotton develops in the seed pod of the cotton plant; seeds are exposed with fibres attached; fibres removed for processing. Polyester – a viscous liquid is created and extruded through fine holes in a nozzle or spinneret; filaments solidify in cold air; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "properties", kind: "criterion", verbatim: "fabric properties", marks: 4, contextNote: "Two properties, each graded 2:0. Both positive and negative examples are retained: Positive - good wash wear; easy to press; strong; permeable to air; drip dries quickly; resists staining; comfortable; low static level due to cotton; good for dyeing; Negative - mildew and rotting, static and pills (polyester); uncomfortable (low moisture absorption); damaged by hot concentrated alkalis, etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 4, contextNote: "Two suitable uses, each graded 2:0. Published guidance: shirts, suits and skirts, etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "polycotton",
+                "label": "Polyester cotton (polycotton)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 1,
+                            "permittedMarks": [
+                                  0,
+                                  1
+                            ],
+                            "contextNote": "Name one blend, graded 1:0. Published example: polyester cotton (polycotton)."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two points, each graded 3:2:0. Published guidance: Cotton develops in the seed pod of the cotton plant; seeds are exposed with fibres attached; fibres removed for processing. Polyester – a viscous liquid is created and extruded through fine holes in a nozzle or spinneret; filaments solidify in cold air; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties, each graded 2:0. Both positive and negative examples are retained: Positive - good wash wear; easy to press; strong; permeable to air; drip dries quickly; resists staining; comfortable; low static level due to cotton; good for dyeing; Negative - mildew and rotting, static and pills (polyester); uncomfortable (low moisture absorption); damaged by hot concentrated alkalis, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two suitable uses, each graded 2:0. Published guidance: shirts, suits and skirts, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-blend",
+                "label": "Another valid blended fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 1,
+                            "permittedMarks": [
+                                  0,
+                                  1
+                            ],
+                            "contextNote": "Name one blended fabric, graded 1:0. The paper leaves the choice open."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two accurate production points for the chosen blend, each graded 3:2:0. No alternative model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two accurate properties of the chosen blend, each graded 2:0. No alternative model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two appropriate uses of the chosen blend, each graded 2:0. No alternative model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q2ci", topicId: "home-economics-3-8", conceptId: "irish-clothing-sectors",
+    section: "C", questionRef: "2022 HL Section C E2 Q2(c)(i) — Deferred sitting",
+    questionText: "Describe the different sectors that comprise the Irish clothing market.",
+    tariffModel: {"kind":"fixed","notation":"2 sectors × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "sectors", kind: "criterion", verbatim: "sectors", marks: 6, contextNote: "Describe two sectors, each graded 3:2:0. The source lists names only, not model descriptions: Ladies’ wear; intimate apparel; fashion knitwear; children’s wear; gents’ wear; underwear; shirts; business clothing; leisurewear; athleisure wear; accessories; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q2cii", topicId: "home-economics-3-8", conceptId: "technology-clothing-design",
+    section: "C", questionRef: "2022 HL Section C E2 Q2(c)(ii) — Deferred sitting",
+    questionText: "Discuss how technology has influenced the design and construction of modern clothing.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
+    rows: [
+    { id: "technology", kind: "criterion", verbatim: "technology", marks: 9, contextNote: "Three discussed points, each graded 3:2:0. The source names example areas but prints no model discussions: CAD; fibre development; new fibre finishes; availability of new materials; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3ai", topicId: "home-economics-3-10", conceptId: "purpose-education",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(a)(i) — Deferred sitting",
+    stem: "Education is now widely recognised and accepted as a critical driver of economic success and social progress in modern society.",
+    questionText: "Discuss the purpose of education in relation to the physical, emotional, moral and intellectual development of the individual.",
+    tariffModel: {"kind":"fixed","notation":"4 required headings × 6 (6:3:0)"}, totalMarks: 24,
+    rows: [
+    { id: "physical", kind: "criterion", verbatim: "Physical", marks: 6, contextNote: "Required development heading, graded 6:3:0. Published examples: aided by activities which encourage hand, eye co-ordination; dexterity; speed; can be improved through PE, Home Ec., Art, Construction Studies; etc.", permittedMarks: [0,3,6] },
+    { id: "emotional", kind: "criterion", verbatim: "Emotional", marks: 6, contextNote: "Required development heading, graded 6:3:0. Published examples: interaction; meeting other students; become aware of feelings – theirs and others; developed through SPHE; provides coping skills; etc.", permittedMarks: [0,3,6] },
+    { id: "moral", kind: "criterion", verbatim: "Moral", marks: 6, contextNote: "Required development heading, graded 6:3:0. Published examples: enhanced by ethos of the school; school values reflected in student’s behaviour; etc.", permittedMarks: [0,3,6] },
+    { id: "intellectual", kind: "criterion", verbatim: "Intellectual", marks: 6, contextNote: "Required development heading, graded 6:3:0. Published examples: fundamental function of education; provided by wide variety of subjects; extracurricular activities; school environment; competitions and exams provide motivation and stimulation; etc.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3aii", topicId: "home-economics-3-10", conceptId: "education-equality",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(a)(ii) — Deferred sitting",
+    stem: "Education is now widely recognised and accepted as a critical driver of economic success and social progress in modern society.",
+    questionText: "Comment on how socio‐economic status impacts on equality of opportunity in education.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "opportunity", kind: "criterion", verbatim: "equality of opportunity", marks: 16, contextNote: "Four points, each graded 4:2:0. The source describes group-level inequalities, not inevitable outcomes for individual students. Published 2022 guidance: Children of middle and higher income families are more likely to complete second level and go to third level; middle and higher income families have greater financial stability; children from lower socio-economic group are more likely to leave school early; low income families can be under pressure to finance children in education; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "education-access-initiative",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(a)(iii) — Deferred sitting",
+    stem: "Education is now widely recognised and accepted as a critical driver of economic success and social progress in modern society.",
+    questionText: "Name and give details of one contemporary initiative that improves access to education.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0); details 2 × 3 (3:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one initiative, graded 4:2:0. “Contemporary” refers to 2022. Source examples, not current eligibility guidance: Visiting teacher service for travellers; Youthreach programme; VTOS; HEAR; Home School Community Liaison Person; Early Start project; Back to School Clothing and Footwear Allowance; TUSLA; DEIS; Examination systems; DARE; Student Grant Scheme; Back to Education Allowance; Springboard+; SNA; autism units; sensory rooms; AEN; SUSI; etc.", permittedMarks: [0,2,4] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 6, contextNote: "Two accurate details of that initiative, each graded 3:2:0. The source gives examples only, with no model details.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3bi", topicId: "home-economics-3-9", conceptId: "poverty-groups-impact",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(b)(i) — Deferred sitting",
+    stem: "Poverty remains an immense challenge in today’s society.",
+    questionText: "Identify two groups at risk of experiencing poverty in Ireland and discuss the impact of poverty on the family and society.",
+    tariffModel: {"kind":"fixed","notation":"Groups 2 × 3 (3:2:0); family 4 + society 4 + other 4 (4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "groups", kind: "criterion", verbatim: "groups", marks: 6, contextNote: "Two groups at risk, each graded 3:2:0. Published examples: early school leavers; older people from 66 years upwards; one-parent families; people with illnesses; people with disabilities; people with special needs; migrants; children; homeless; travelling community; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "family", kind: "criterion", verbatim: "family", marks: 4, contextNote: "One required family impact, graded 4:2:0. Published impact examples: debt; social isolation; depression; destructive habits; relationship problems; decline in standard of living; educational disadvantage; etc.", permittedMarks: [0,2,4] },
+    { id: "society", kind: "criterion", verbatim: "society", marks: 4, contextNote: "One required societal impact, graded 4:2:0. Apply the source examples above at society level.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "one other", marks: 4, contextNote: "One further distinct family or societal impact, graded 4:2:0. Use the complete impact examples above.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3bii", topicId: "home-economics-3-9", conceptId: "poverty-cycle-policy",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(b)(ii) — Deferred sitting",
+    stem: "Poverty remains an immense challenge in today’s society.",
+    questionText: "Analyse how each of the following has impacted on the current rates of poverty:\n• the cycle of poverty\n• social policy on poverty.",
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 6 (6:3:0)"}, totalMarks: 12,
+    rows: [
+    { id: "cycle", kind: "criterion", verbatim: "cycle of poverty", marks: 6, contextNote: "Required heading, graded 6:3:0. The paper asks how it has affected poverty rates. Intergenerational disadvantage is a risk, not an inevitable outcome for a family. Published example: in the cycle of poverty/deprivation one aspect of poverty contributes to another and creates a never ending cycle e.g. children born into a poor family may have children at a young age and this family is also poor; etc.", permittedMarks: [0,3,6] },
+    { id: "policy", kind: "criterion", verbatim: "social policy on poverty", marks: 6, contextNote: "Required heading, graded 6:3:0. Source clarification: the benefit-trap example is not universal. In-work and transition supports exist, including Working Family Payment and Back to Work Family Dividend. The historical guidance is not current benefits advice: people receiving state benefits lose them if they return to work; wages that they receive may be less than the combined state benefits; larger financial gain remaining on state benefits; etc.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3ci", topicId: "home-economics-3-11", conceptId: "dual-earner-families",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(c)(i) — Deferred sitting",
+    stem: "The number of dual‐earner families has increased significantly in recent years.",
+    questionText: "Analyse the impact of dual‐earner families on family life.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "impact", kind: "criterion", verbatim: "family life", marks: 12, contextNote: "Three analysed points, each graded 4:2:0. These are possible positive/negative effects, not universal outcomes or a required positive/negative quota. Complete published examples: Positive: fathers are more involved in parenting allowing them to form a closer bond with their children; more egalitarian households where tasks are shared, this introduces children to gender equality from a young age; children tend to have a healthier attitude towards work and develop a strong work ethic as parents are positive work role models; etc.\n\nNegative: Role overload can occur when parents attempt to play several roles at one time; role conflict can occur when the expectations of a person in one role clashes with what is expected in another role; children may feel lonely and neglected if spending a lot of time in childcare due to parents working long hours; extra responsibilities can fall on older children which can affect school work; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q3cii", topicId: "home-economics-3-11", conceptId: "childcare-options",
+    section: "C", questionRef: "2022 HL Section C E3 Q3(c)(ii) — Deferred sitting",
+    stem: "The number of dual‐earner families has increased significantly in recent years.",
+    questionText: "Name and evaluate two types of childcare options that are available to parents.",
+    tariffModel: {"kind":"fixed","notation":"2 options × (name 1 + evaluation 4 × 2), evaluation 2:1:0"}, totalMarks: 18,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 1, contextNote: "Childcare option 1: name, graded 1:0. Choose two different options. Published examples: Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair: pre-school; after school groups: etc.", permittedMarks: [0,1] },
+    { id: "evaluation-1", kind: "criterion", verbatim: "Evaluate", marks: 8, contextNote: "Four evaluation points for option 1, each graded 2:1:0. The scheme lists names only, not model evaluations.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 1, contextNote: "Childcare option 2: name, graded 1:0. Choose two different options. Use the example list above or another valid option.", permittedMarks: [0,1] },
+    { id: "evaluation-2", kind: "criterion", verbatim: "Evaluate", marks: 8, contextNote: "Four evaluation points for option 2, each graded 2:1:0. The scheme lists names only, not model evaluations.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4ai", topicId: "home-economics-0-9", conceptId: "milk-dietary-significance",
+    section: "C", questionRef: "2022 HL Section C Q4(a)(i) — Deferred sitting",
+    stem: "‘Milk is a natural, delicious and nutritious drink’. (National Dairy Council)",
+    questionText: "Discuss the nutritional significance of milk in the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 20, contextNote: "Five points, each graded 4:3:2:1:0. No fixed quota per nutrient is printed. Full published guidance: Protein – HBV, for growth and repair; etc. Fat – saturated, for heat and energy; etc. Carbohydrate in form of lactose for energy; etc. Vitamins A for production of rhodopsin; B – riboflavin, thiamine, niacin; D for strong bones and teeth; etc. Minerals calcium and phosphorus – both necessary for strong bones and teeth; traces of potassium (healthy nerve activity) and sodium (regulates blood pressure, muscle contractions); etc. Water 87%, hydration; etc. can be fortified with minerals, vitamins and omega-3 fatty acids; low fat and skimmed milk available for people on low cholesterol or slimming diets; should be combined with foods rich in starch, fibre, vitamin C and iron in order to balance the diet; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4aii", topicId: "home-economics-0-1", conceptId: "osteoporosis-risk-effects",
+    section: "C", questionRef: "2022 HL Section C Q4(a)(ii) — Deferred sitting",
+    stem: "‘Milk is a natural, delicious and nutritious drink’. (National Dairy Council)",
+    questionText: "In relation to osteoporosis discuss:\n• the main factors that increase the risk of developing osteoporosis\n• the effects of osteoporosis on the body.",
+    tariffModel: {"kind":"fixed","notation":"Risk factors 3 × 4 (4:2:0); effects 3 × 2 (2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "risk", kind: "criterion", verbatim: "main factors", marks: 12, contextNote: "Three risk factors, each graded 4:2:0. Published examples: Gender: more common in females (especially post-menopausal women); diet: a lack of calcium and vitamin D in the diet; hereditary: family history can increase risk; age: risk increases with age; weight: considerable weight loss may also cause loss of bone mass; lack of weight bearing exercise contributes to weakening of bones; disability: wheelchair and bed bound people are at risk due to inactivity; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "effects", kind: "criterion", verbatim: "effects of osteoporosis", marks: 6, contextNote: "Three effects, each graded 2:0. Source clarification: tooth decay is a separate process involving bacterial acids acting on enamel; it is not a general direct effect of osteoporosis. Use the bone/fracture effects. Complete historical wording: Fragile/brittle bones; bone fractures; back/neck pain; loss of height; curved spine; rounded shoulders; loss of bone density/bone mass; tooth decay etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "dairy-exports",
+    section: "C", questionRef: "2022 HL Section C Q4(a)(iii) — Deferred sitting",
+    stem: "‘Milk is a natural, delicious and nutritious drink’. (National Dairy Council)",
+    questionText: "Outline the reasons why dairy products are a major Irish export.",
+    tariffModel: {"kind":"fixed","notation":"3 reasons × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "Three reasons, each graded 4:2:0. Published 2022 guidance: Good variety - includes butter, cheese, cream, milk powder, dairy spreads, yoghurt, ice cream; exports widely; dairy farming, milk and other dairy products make up the largest share of agricultural exports; Irish climate supports dairy farming; infant formula;", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4bi", topicId: "home-economics-0-4", conceptId: "bacterial-growth",
+    section: "C", questionRef: "2022 HL Section C Q4(b)(i) — Deferred sitting",
+    stem: "Some bacteria are harmful, but most serve a useful purpose.",
+    questionText: "Discuss four conditions necessary for the growth of bacteria.",
+    tariffModel: {"kind":"fixed","notation":"4 conditions × 5 (5:4:3:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "condition-1", kind: "criterion", verbatim: "conditions", marks: 5, contextNote: "Condition 1 of four, graded 5:4:3:2:0. Choose four different conditions. Source clarifications: E. coli is facultatively anaerobic; bacterial growth rates vary, so 20 minutes is an example, not a universal rate. Heat and UV inactivation depend on exposure conditions and time/dose; darkness is not a universal requirement. The printed temperatures alone are not a sterilisation procedure. Complete published guidance:\n\nFood: most bacteria are saprophytic and parasitic; etc.\n\nWarmth: Wide temperature range; some are psychrophiles, eg. listeria, some are thermophiles e.g. clostridia, most are mesophiles; temperatures between 70oC – 100oC will destroy most bacteria; temperatures above 121oC are required to destroy bacterial spores; freezing inactivates bacterial growth; etc.\n\nMoisture: is needed for growth in liquid form, thus frozen foods are unsuitable; etc.\n\nOxygen: most bacteria are aerobic, need oxygen, eg. E-coli; some are anaerobic eg. clostridium botulinum and some are facultative e.g. salmonella; etc.\n\npH level: bacteria like neutral or slightly acidic conditions, extreme acids or alkaline conditions inhibit growth; etc.\n\nTime: bacteria need time to multiply, they will double every 20 minutes in correct conditions; etc.\n\nLight: bacteria need darkness and are destroyed by UV light; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "condition-2", kind: "criterion", verbatim: "conditions", marks: 5, contextNote: "Condition 2 of four, graded 5:4:3:2:0. Choose four different conditions. Use the complete seven-heading source guidance and factual clarifications above.", permittedMarks: [0,2,3,4,5] },
+    { id: "condition-3", kind: "criterion", verbatim: "conditions", marks: 5, contextNote: "Condition 3 of four, graded 5:4:3:2:0. Choose four different conditions. Use the complete seven-heading source guidance and factual clarifications above.", permittedMarks: [0,2,3,4,5] },
+    { id: "condition-4", kind: "criterion", verbatim: "conditions", marks: 5, contextNote: "Condition 4 of four, graded 5:4:3:2:0. Choose four different conditions. Use the complete seven-heading source guidance and factual clarifications above.", permittedMarks: [0,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4bii", topicId: "home-economics-0-4", conceptId: "microorganisms-food-production",
+    section: "C", questionRef: "2022 HL Section C Q4(b)(ii) — Deferred sitting",
+    stem: "Some bacteria are harmful, but most serve a useful purpose.",
+    questionText: "Outline two uses of micro‐organisms in food production.",
+    tariffModel: {"kind":"fixed","notation":"2 uses × 5 (5:4:3:2:1:0)"}, totalMarks: 10,
+    rows: [
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 10, contextNote: "Two distinct uses, each graded 5:4:3:2:1:0. Complete published examples: Some are edible such as mushrooms and truffles; yeast used for bread and sourdough; cultures of bacteria are used to produce salami, pepperoni and chorizo; mould flavours cheese; used for novel protein foods e.g. mycoprotein such as Quorn; etc. bacteria - are used to make food supplements; used in food production e.g. yoghurt & cheese; used in functional foods such as pro-biotic yogurts; used in making vinegar, wine and beer; aspergillus is used in making soy sauce; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4ci", topicId: "home-economics-1-0", conceptId: "family-financial-unit",
+    section: "C", questionRef: "2022 HL Section C Q4(c)(i) — Deferred sitting",
+    stem: "‘Ireland is going to have to rebuild its economy, for the second time in a decade’. (The Irish Times, 2020)",
+    questionText: "Outline the role of the family as a financial unit within the economy.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "role", kind: "criterion", verbatim: "financial unit", marks: 12, contextNote: "Three points, each graded 4:2:0. Economic commentary refers to this 2022 examination. Published guidance: Family members who are working contribute to the economy by purchasing food and necessities; spending creates and maintains jobs; family provides accommodation for family members by purchasing property; stamp duty contributes to economy and to the financial institutions; money management skills are learned and are essential to the independent running of the family unit; many families are financially independent, however with the recent down turn in the economy some are experiencing financial difficulties and are therefore dependent on state aid; pay taxes which contribute to the national economy and to the running of the country; produces children and therefore a future workforce; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sc-q4cii", topicId: "home-economics-1-0", conceptId: "household-expenditure-factors",
+    section: "C", questionRef: "2022 HL Section C Q4(c)(ii) — Deferred sitting",
+    stem: "‘Ireland is going to have to rebuild its economy, for the second time in a decade’. (The Irish Times, 2020)",
+    questionText: "Identify and explain four factors that may contribute to varying patterns of household expenditure.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 5 (5:3:0) + 2 factors × 4 (4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "factor-1", kind: "criterion", verbatim: "factors", marks: 5, contextNote: "Distinct factor 1: graded 5:3:0. The scheme allocates two 5-mark factors and two 4-mark factors; it does not assign particular factor names to either tariff. Use the two 5-mark slots for your strongest distinct explanations. Historical 2022 guidance: Expenditure is relative to each home and the different levels of income; level of expenditure needs to correspond with the level of income to prevent getting into debt; essential expenditure (fixed) – mortgage, loans, insurance, utilities (Irregular) – food, clothing, medical, car; discretionary – savings, luxuries, holidays, entertainment; Household Budget Survey – people on low income spent more on food than those on higher income; highest increase in expenditure was for housing, lowest increase recorded for alcohol and tobacco; income level / social class influence spending patterns; low income families have less discretionary income; family size; family stages; etc.", permittedMarks: [0,3,5] },
+    { id: "factor-2", kind: "criterion", verbatim: "factors", marks: 5, contextNote: "Distinct factor 2: graded 5:3:0. Use the complete source guidance above; do not score the same factor twice.", permittedMarks: [0,3,5] },
+    { id: "factor-3", kind: "criterion", verbatim: "factors", marks: 4, contextNote: "Distinct factor 3: graded 4:2:0. Use the complete source guidance above; do not score the same factor twice.", permittedMarks: [0,2,4] },
+    { id: "factor-4", kind: "criterion", verbatim: "factors", marks: 4, contextNote: "Distinct factor 4: graded 4:2:0. Use the complete source guidance above; do not score the same factor twice.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

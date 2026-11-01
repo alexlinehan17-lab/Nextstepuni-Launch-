@@ -12,6 +12,31 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_2022_deferred_c_regenerates_and_retains_final_prompts_and_all_scheme_pages(self):
+        from he_review_2022_hl_deferred_c import build, FIGURE, CROP_SHA256
+        from he_review_2022_hl_deferred import documents
+        cards = build(); self.assertEqual(len(cards), 26)
+        self.assertEqual(sum(c['totalMarks'] for c in cards), 385)
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for c in cards: self.assertEqual(authored[c['id']], c)
+        self.assertEqual(hashlib.sha256((ROOT / f'public/exam-figures/home-economics/{FIGURE}.png').read_bytes()).hexdigest(), CROP_SHA256)
+        questions = json.loads((ROOT / 'scripts/paper-trail/answers/2022/LC098ALP039EV-deferred.pdf.json').read_text())['q'][5:]
+        self.assertEqual([[r['p'] for r in q['region']] for q in questions], [[16, 17, 18], [19, 20], [21, 22], [23, 24, 25]])
+        docs = documents()
+        for q, marks, final in zip(questions, [12, 9, 18, 18], ['environment', 'modern clothing', 'available to parents', 'household expenditure']):
+            page = docs['bc'][q['pP'] - 1]
+            text = ' '.join(page.get_text(clip=fitz.Rect(0, q['pY'][0] * page.rect.height, page.rect.width, q['endY'] * page.rect.height)).split())
+            self.assertIn(f'({marks} marks)', text)
+            self.assertIn(final, text)
+            self.assertNotIn('Leaving Certificate Examination', text)
+            for r in q['region']:
+                page = docs['scheme'][r['p'] - 1]
+                self.assertGreaterEqual(r['r'][3] * page.rect.height, max(w[3] for w in page.get_text('words') if w[3] < 788))
+                if r['p'] == 21:
+                    cropped = ' '.join(page.get_text(clip=fitz.Rect(0, r['r'][1]*page.rect.height, page.rect.width, r['r'][3]*page.rect.height)).split())
+                    self.assertIn('2 groups @ 3 marks', cropped)
+                    self.assertLess(r['r'][3]*page.rect.height, 788.8)
+
     def test_2022_deferred_b_regenerates_and_keeps_all_source_guidance(self):
         from he_review_2022_hl_deferred_b import build, FIGURE, CROP_SHA256
         from he_review_2022_hl_deferred import documents

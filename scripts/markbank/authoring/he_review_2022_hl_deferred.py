@@ -129,9 +129,12 @@ def write():
         old = json.loads(path.read_text()); review['tasks'] += [t for t in old.get('tasks', []) if t['section'] != 'A']
         for section in ['B', 'C']: review['sectionStatus'][section] = old.get('sectionStatus', {}).get(section, review['sectionStatus'][section])
         for key in old:
-            if key.startswith(('sectionB', 'sectionC')): review[key] = old[key]
+            if key.startswith(('sectionB', 'sectionC')) or key in ['completion', 'resolvedDecisions']: review[key] = old[key]
+        if 'completion' in old:
+            review['status'] = old['status']
+            review['pendingDecisions'] = old['pendingDecisions']
     path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n')
-    print('2022 Higher deferred Section A: 19 practice tasks, 84 offered marks; B/C remain open.')
+    print('2022 Higher deferred Section A: 19 practice tasks, 84 offered marks; preserved existing B/C review.')
 
 
 if __name__ == '__main__':

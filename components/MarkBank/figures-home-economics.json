@@ -63,5 +63,12 @@
     "alt": "Why consumers consult food labels: nutrient information 37%; calorie content 35%; specific ingredients 34%; allergen information 13%; food additives 3%; origin 3%. Horizontal axis: 0–40%.",
     "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 2; adapted from FSAI research — © State Examinations Commission.",
     "sourceNote": "Original chart, bounds [82, 187, 534, 419], rendered at 2×. Source SHA256 8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03. All six bars, values, labels and axis retained."
+  },
+  "home-economics-2022-hl-deferred-sc-q1ai-fuels": {
+    "src": "/exam-figures/home-economics/home-economics-2022-hl-deferred-sc-q1ai-fuels.png",
+    "md5": "713eb15feb663109c98cf4ab6ebf88cd",
+    "alt": "2020 fuel costs (cent/kWh) and efficiency: standard coal 5.66, 60%; kerosene oil 8.60, 80%; natural gas Band D2 6.86, 90%; electricity Band DE 17.77, 100%; electricity night rate 9.60, 100% (shared electricity cell).",
+    "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 5; source SEAI — © State Examinations Commission.",
+    "sourceNote": "Original table, bounds [111, 217, 541, 351], rendered at 2×. Source SHA256 8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03. Shared electricity efficiency cell retained."
   }
 }
