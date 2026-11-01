@@ -1,0 +1,502 @@
+"""Reviewer's tools for the Physics paper-by-paper review (phys_review.py), adapted
+from bio_tools.py.
+
+None of these write to the bank; they are how a reviewer reads the PDFs and
+checks a ledger before `phys_review.py <year> <level> --write`.
+
+  python3 phys_tools.py dump PDF FIRST-LAST          printed lines, page by page (the lifter's own text),
+                                                    with the mark cell printed on each line's baseline
+  python3 phys_tools.py lines PDF PAGE Y0 Y1         line boxes in PDF points, for crop rectangles
+  python3 phys_tools.py images PDF PAGE [PAGE ...]   image blocks and drawing extents per page
+  python3 phys_tools.py sheet PDF NAME FIRST-LAST COLS ZOOM   contact sheet of rendered pages
+  python3 phys_tools.py scan YEAR LEVEL              selection directives, in SELECTION_SCAN order
+  python3 phys_tools.py existing YEAR LEVEL          the sitting's authored cards before review
+  python3 phys_tools.py cards YEAR LEVEL             the cards a ledger builds (check only)
+  python3 phys_tools.py pointers YEAR LEVEL          cards whose text points at a printed figure but carry none
+  python3 phys_tools.py crops YEAR LEVEL [KEY ...]   render the ledger's crops
+  python3 phys_tools.py montage [KEY ...]            four crops to a sheet, for viewing
+  python3 phys_tools.py topics YEAR LEVEL [ADDS] [--replace]
+                                                    write a sitting's Topic Atlas entries: the reference
+                                                    topics per question plus ADDS ("5:24-immunity;8:...",
+                                                    "-topic" drops a wrong reference topic); refuses to
+                                                    change a level already mapped unless --replace
+  python3 phys_tools.py scheme-md YEAR LEVEL         write the scheme's markdown, the copy the deck build's
+                                                    provenance gate reads: extraction, then the table cells,
+                                                    block order, column runs and fractions appended, in the
+                                                    order the 2021-2026 files carry them
+  python3 phys_tools.py scheme-rows YEAR LEVEL       append only the runner's own scheme lines to an existing .md
+  python3 phys_tools.py identity [YEAR-LEVEL ...]    re-run --write for every reviewed sitting (except those
+                                                    named) and report whether the bank comes back byte-identical
+
+Output (sheets, crops, montages) goes to $PHYS_REVIEW_OUT, default
+<tmpdir>/phys-review. Run from anywhere; paths resolve from this file.
+"""
+import importlib
+import json
+import os
+import re
+import sys
+import tempfile
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+sys.path.insert(0, HERE)
+OUT = os.environ.get('PHYS_REVIEW_OUT', os.path.join(tempfile.gettempdir(), 'phys-review'))
+
+
+def _pdf(path):
+    return path if os.path.isabs(path) else os.path.join(ROOT, path)
+
+
+def _pages(spec):
+    a, _, b = spec.partition('-')
+    return range(int(a), int(b or a) + 1)
+
+
+def _ledger(year, level):
+    return importlib.import_module(f'phys_review_{year}_{level}')
+
+
+def cmd_dump(path, pages):
+    import phys_review_lib as B
+    # A scheme is read as a scheme: only its right-hand column prints bare-number cells.
+    src = B.Src(_pdf(path), 'scheme' if '/schemes/' in _pdf(path) else 'paper')
+    for p in _pages(pages):
+        if p not in src.lines:
+            break
+        print(f'===== p{p}')
+        for i, line in enumerate(src.lines[p]):
+            cell = src.cells[p].get(i)
+            print(f'{i:3d}| {line}' + (f'   ⟦{cell}⟧' if cell and cell != line else
+                                       ('   ⟦cell⟧' if cell else '')))
+
+
+def cmd_lines(path, page, y0, y1):
+    import fitz
+    pg = fitz.open(_pdf(path))[int(page) - 1]
+    for b in pg.get_text('dict')['blocks']:
+        for ln in b.get('lines', []):
+            x0, ly0, x1, ly1 = ln['bbox']
+            if ly1 >= float(y0) and ly0 <= float(y1):
+                text = ''.join(s['text'] for s in ln['spans']).strip()
+                if text:
+                    print(f'{x0:5.0f}{ly0:5.0f}{x1:5.0f}{ly1:5.0f}  {text[:80]}')
+
+
+def cmd_images(path, *pages):
+    import fitz
+    doc = fitz.open(_pdf(path))
+    for p in pages:
+        pg = doc[int(p) - 1]
+        ims = [[round(v) for v in b['bbox']] for b in pg.get_text('dict')['blocks'] if b['type'] == 1]
+        big = [d['rect'] for d in pg.get_drawings() if d['rect'].width > 3 and d['rect'].height > 3]
+        print(f'p{p} images {ims}')
+        if big:
+            u = fitz.Rect(big[0])
+            for r in big:
+                u |= r
+            print(f'    drawings {len(big)} union {[round(v) for v in u]}')
+
+
+def cmd_sheet(path, name, pages, cols, zoom):
+    import fitz
+    doc = fitz.open(_pdf(path))
+    ps = list(_pages(pages))
+    pix = [doc[p - 1].get_pixmap(matrix=fitz.Matrix(float(zoom), float(zoom))) for p in ps]
+    w0, h0 = pix[0].width, pix[0].height
+    cols = int(cols)
+    rows = (len(pix) + cols - 1) // cols
+    canvas = fitz.Pixmap(fitz.csRGB, fitz.IRect(0, 0, cols * (w0 + 6), rows * (h0 + 6)), False)
+    canvas.clear_with(200)
+    for i, p in enumerate(pix):
+        p2 = fitz.Pixmap(fitz.csRGB, p) if p.alpha or p.colorspace.n != 3 else p
+        p2.set_origin((i % cols) * (w0 + 6), (i // cols) * (h0 + 6))
+        canvas.copy(p2, p2.irect)
+    os.makedirs(OUT, exist_ok=True)
+    out = os.path.join(OUT, f'{name}.png')
+    canvas.save(out)
+    print(out)
+
+
+def cmd_scan(year, level):
+    import phys_review as R
+    import phys_review_lib as B
+    L = _ledger(int(year), level)
+    n = 0
+    for doc, ps in L.SCAN_PAGES.items():
+        src = B.Src(os.path.join(ROOT, L.SOURCES[doc]['path']), doc)
+        for p in ps:
+            t = src.page_text(p)
+            for m in R.SCAN.finditer(t):
+                print(f"{n:3d} {doc} p{p} {m.group(0).lower()!r:24} ...{t[max(0, m.start() - 55):m.end() + 45]}...")
+                n += 1
+
+
+def cmd_existing(year, level):
+    tag = f'phys-{year}-{level}'
+    authored = json.load(open(os.path.join(ROOT, 'scripts/markbank/authored/physics.json')))
+    cards = authored['cards'] if isinstance(authored, dict) else authored
+    deck = open(os.path.join(ROOT, 'components/MarkBank/cards/physics',
+                             ('higher' if level == 'hl' else 'ordinary') + '.ts')).read()
+    shipped = set(re.findall(rf'^\s*id: "({tag}[^"]*)"', deck, re.M))
+    bind = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-source-bindings.json'))).get('physics', {})
+    corr = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-corrections.json'))).get('physics', {})
+    n = 0
+    for c in cards:
+        if not c['id'].startswith(tag + '-'):
+            continue
+        n += 1
+        flags = ['SHIP' if c['id'] in shipped else 'NOSHIP'] + (['BIND'] if c['id'] in bind else []) \
+            + (['CORR'] if c['id'] in corr else [])
+        rows = ' || '.join(f"{r.get('kind')}:{r.get('marks')}:{str(r.get('verbatim', ''))[:50]}" for r in c['rows'])
+        print(f"{c['id']} [{' '.join(flags)}] {c['questionRef']} | {c['totalMarks']} | "
+              f"{json.dumps(c.get('tariffModel'))} | {c['topicId']} | sec {c.get('section')} | "
+              f"fig={c.get('figureKey')} | {c['questionText'][:90]!r}\n     {rows[:300]}")
+    print(f'{n} authored, {len(shipped)} shipped')
+    for k, v in bind.items():
+        if k.startswith(tag + '-'):
+            print('BIND', k, v)
+    for k, v in corr.items():
+        if k.startswith(tag + '-'):
+            print('CORR', k, json.dumps(v)[:200])
+
+
+def _build(year, level):
+    import phys_review as R
+    L = _ledger(int(year), level)
+    return L, R.build(L, int(year), level)
+
+
+def cmd_cards(year, level):
+    _, (_, cards, _, checks) = _build(year, level)
+    for c in cards:
+        print('=' * 100)
+        print(c['id'], '|', c['questionRef'], '|', c['topicId'], c['conceptId'], '|', c['totalMarks'], '|',
+              c.get('figureKey'), '|', c.get('questionFigureKey'))
+        if c.get('stem'):
+            print('STEM:', c['stem'])
+        print('Q:', c['questionText'])
+        for r in c['rows']:
+            extra = ''
+            if r.get('group'):
+                extra = f" claim={r['group']['claimMax']} per={r['group']['perOption']} opts={r['group']['options']}"
+            print(f"  [{r['kind']}:{r['marks']}] {r['verbatim']}{extra}"
+                  + (f"  NOTE: {r['contextNote']}" if r.get('contextNote') else '')
+                  + (' OPEN' if r.get('openList') else ''))
+        if c.get('labelKey'):
+            print('  LABELS:', c['labelKey'])
+        print('  NOTES:', c['notes'])
+    for h in checks.get('excluded', []):
+        print('HELD', h)
+
+
+POINTS_AT_PRINT = re.compile(r'\b(the|this) (diagram|image|photograph|graph|table|picture|circuit|figure|'
+                             r'apparatus shown|arrangement shown|waveform|trace|spectrum)s?\b'
+                             r'|\bdata table\b|\bcircuit diagram\b|\bshown (below|above|opposite)\b'
+                             r'|\bas shown\b|\bthe one shown\b|\bin the figure\b|\blabelled [A-Z]\b', re.I)
+
+
+def cmd_pointers(year, level):
+    _, (_, cards, _, _) = _build(year, level)
+    for c in cards:
+        text = f"{c.get('stem') or ''} {c['questionText']}"
+        m = POINTS_AT_PRINT.search(text)
+        if m and not (c.get('figureKey') or c.get('questionFigureKey') or c.get('sourceMaterial')):
+            print('NEEDS FIG', c['id'], m.group(0))
+
+
+def cmd_crops(year, level, *only):
+    import phys_review as R
+    L = _ledger(int(year), level)
+    _, recs = R.figures(L, R.Lifter(L), int(year), level, False)
+    d = os.path.join(OUT, 'crops')
+    os.makedirs(d, exist_ok=True)
+    for k, png in recs:
+        if only and not any(o in k for o in only):
+            continue
+        open(os.path.join(d, f'{k}.png'), 'wb').write(png)
+        print(k, len(png))
+
+
+def cmd_montage(*names):
+    import glob
+    import fitz
+    d = os.path.join(OUT, 'crops')
+    files = sorted(glob.glob(os.path.join(d, '*.png')))
+    if names:
+        files = [f for f in files if any(n in f for n in names)]
+    for gi in range(0, len(files), 4):
+        grp = files[gi:gi + 4]
+        pix = [fitz.Pixmap(f) for f in grp]
+        scaled = [(p, min(1.0, 680 / p.width, 600 / p.height)) for p in pix]
+        rows = [scaled[0:2], scaled[2:4]]
+        height = sum(max((int(p.height * s) for p, s in r), default=0) + 30 for r in rows)
+        doc = fitz.open()
+        page = doc.new_page(width=1400, height=height)
+        y = 0
+        for r in rows:
+            x = rh = 0
+            for p, s in r:
+                w, h = int(p.width * s), int(p.height * s)
+                page.draw_rect(fitz.Rect(x, y + 20, x + w, y + 20 + h), color=(0.6, 0.6, 0.6), width=0.5)
+                page.insert_image(fitz.Rect(x, y + 20, x + w, y + 20 + h), pixmap=p)
+                page.insert_text((x + 2, y + 14), os.path.basename(grp[pix.index(p)]), fontsize=11)
+                x += 700
+                rh = max(rh, h)
+            y += rh + 30
+        out = os.path.join(OUT, f'montage-{gi // 4}.png')
+        page.get_pixmap().save(out)
+        print(out)
+
+
+def cmd_topics(year, level, adds='', *flags):
+    """data/examTopics/physics-<year>-exam-topic-map.json: each question of the
+    sitting keeps every topic the reference snapshot (data/examTopics/physics.json
+    headings) gives it and gains ADDS, written "q:topic,topic;q:topic" with
+    topics named without their "physics-<level>-new-course-" prefix; "-topic"
+    drops a reference topic the reviewed tasks show is wrong. A level already in
+    the file is left alone unless the result matches it or --replace is given,
+    so a reviewed map is never silently rebuilt."""
+    from collections import defaultdict
+    if adds == '--replace':
+        adds, flags = '', ('--replace',) + flags
+    year = int(year)
+    word = {'hl': 'higher', 'ol': 'ordinary'}.get(level, level)
+    full = lambda t: t if t.startswith('physics-') else f'physics-{word}-new-course-{t}'
+    extra, drop = {}, {}
+    for part in filter(None, adds.split(';')):
+        q, ts = part.split(':')
+        ts = ts.split(',')
+        extra[int(q)] = [full(t) for t in ts if not t.startswith('-')]
+        drop[int(q)] = {full(t[1:]) for t in ts if t.startswith('-')}
+    ref_doc = json.load(open(os.path.join(ROOT, 'data/examTopics/physics.json')))
+    cw = json.load(open(os.path.join(ROOT, 'data/examTopics/physics-curriculum-crosswalk.json')))
+    ref = defaultdict(list)
+    for var in (f'{word}-new-course', f'{word}-old-course'):
+        for t in ref_doc['variants'][var]['topics']:
+            for h in t.get('officialQuestionHeadings', []):
+                m = re.search(r'Question\s+(\d+)', h) if h.startswith(f'{year} ') else None
+                if m and t['id'] not in ref[int(m.group(1))]:
+                    ref[int(m.group(1))].append(t['id'])
+    path = os.path.join(ROOT, f'data/examTopics/physics-{year}-exam-topic-map.json')
+    doc = json.load(open(path)) if os.path.exists(path) else {
+        'schemaVersion': 1, 'subjectId': 'physics', 'year': year, 'authority': 'State Examinations Commission',
+        'scope': 'Top-level question-to-reference-topic mapping reviewed directly from the official English paper '
+                 'booklets and marking schemes, task by task (scripts/markbank/authoring/phys_review_'
+                 f'{year}_<level>.py). Each question keeps every topic the factual reference snapshot already gave '
+                 'it and gains the topics its reviewed tasks need.', 'questions': {}}
+    before = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
+    for q in range(1, 18):
+        if not ref[q] and not extra.get(q):
+            continue   # a sitting with fewer questions (15 up to 2020)
+        for t in extra.get(q, []):
+            if t not in cw:
+                raise SystemExit(f'{t} is not in the curriculum crosswalk')
+        for t in drop.get(q, set()) - set(ref[q]):
+            raise SystemExit(f'Q{q}: {t} is not a reference topic, so there is nothing to drop')
+        kept = [t for t in ref[q] if t not in drop.get(q, set())]
+        doc['questions'][f'{word}|{q}'] = kept + [t for t in extra.get(q, []) if t not in kept]
+        print(q, sorted({n for t in doc['questions'][f'{word}|{q}'] for n in cw.get(t, []) if n.startswith('phys-')}))
+    after = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
+    if before and before != after and '--replace' not in flags:
+        for k in sorted(set(before) | set(after), key=lambda k: int(k.split('|')[1])):
+            if before.get(k) != after.get(k):
+                print(f'  {k}: mapped {before.get(k)} -> would be {after.get(k)}')
+        raise SystemExit(f'{year} {word} is already mapped and this would change it; pass --replace to rewrite it')
+    head = {k: v for k, v in doc.items() if k != 'questions'}
+    lines = ['{'] + [f'  {json.dumps(k)}: {json.dumps(v, ensure_ascii=False)},' for k, v in head.items()]
+    lines.append('  "questions": {')
+    qs = list(doc['questions'].items())
+    for i, (k, v) in enumerate(qs):
+        lines.append(f'    {json.dumps(k)}: {json.dumps(v, ensure_ascii=False)}' + (',' if i < len(qs) - 1 else ''))
+    lines += ['  }', '}']
+    open(path, 'w').write('\n'.join(lines) + '\n')
+
+
+def cmd_identity(*skip):
+    """A reader or runner change must not move a reviewed sitting it was not
+    made for: re-write every reviewed sitting and compare the bank's files."""
+    import glob
+    import hashlib
+    import subprocess
+    watched = ['scripts/markbank/authored/physics.json', 'scripts/markbank/authored/physics-review-audit.json',
+               'components/MarkBank/figures-physics.json', 'scripts/markbank/card-corrections.json']
+
+    def snapshot():
+        files = watched + sorted(os.path.relpath(f, ROOT) for f in glob.glob(
+            os.path.join(ROOT, 'public/exam-figures/physics/markbank/physics-20*.png')))
+        return {f: hashlib.sha256(open(os.path.join(ROOT, f), 'rb').read()).hexdigest() for f in files}
+    before = snapshot()
+    sittings = sorted({re.match(r'phys_review_(\d{4})_(hl|ol)\.py', os.path.basename(f)).groups()
+                       for f in glob.glob(os.path.join(HERE, 'phys_review_20??_??.py'))}, reverse=True)
+    for year, level in sittings:
+        if f'{year}-{level}' in skip:
+            continue
+        out = subprocess.run([sys.executable, os.path.join(HERE, 'phys_review.py'), year, level, '--write'],
+                             capture_output=True, text=True)
+        lines = out.stdout.strip().splitlines() or [out.stderr.strip()]
+        print(f'{year} {level}:', ([l for l in lines if 'reviewed tasks' in l] or lines)[-1][:110])
+    after = snapshot()
+    moved = sorted(f for f in set(before) | set(after) if before.get(f) != after.get(f))
+    print('byte-identical' if not moved else 'CHANGED: ' + ', '.join(moved))
+
+
+def cmd_scheme_md(year, level):
+    """examiner-reports/physics/schemes/<year>-<level>.md from its PDF, for one
+    sitting only. The append scripts are called by function with this PDF
+    rather than by command: their own lookup refuses a scheme whose cover does
+    not name its level (2020 Ordinary's cover reads only "Marking Scheme
+    Physics"), and append-scheme-blocks.py rewrites every scheme of a subject
+    and drops what follows its own marker."""
+    import importlib.util
+    import subprocess
+    mb = os.path.join(ROOT, 'scripts', 'markbank')
+    pdf = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes', f'{year}-{level}.pdf')
+    md = pdf[:-4] + '.md'
+
+    def load(path, name):
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    def append(mod, lines, drop_empty=False):
+        text = open(md, encoding='utf-8').read()
+        if mod.START in text:
+            text = re.sub(re.escape(mod.START) + r'.*?' + re.escape(mod.END) + r'\n?', '', text, flags=re.S)
+        if drop_empty and not lines:
+            body = ''
+        else:
+            body = '\n\n' + f'{mod.START}\n' + '\n'.join(lines) + f'\n{mod.END}\n'
+        with open(md, 'w', encoding='utf-8') as fh:
+            fh.write(text.rstrip('\n') + (body or '\n'))
+
+    subprocess.run([sys.executable, os.path.join(mb, 'extract-scheme.py'), pdf, '-o', md], check=True, cwd=ROOT)
+    tables = load(os.path.join(mb, 'append-scheme-tables.py'), 'scheme_tables')
+    append(tables, tables.cells(tables.Path(pdf)))
+    blocks = load(os.path.join(HERE, 'append-scheme-blocks.py'), 'scheme_blocks')
+    original = open(md, encoding='utf-8', errors='ignore').read().split(blocks.MARK)[0].rstrip('\n')
+    with open(md, 'w', encoding='utf-8') as fh:
+        fh.write(f'{original}\n\n{blocks.MARK}\n\n{blocks.fold(blocks.block_text(pdf))}\n')
+    columns = load(os.path.join(mb, 'append-scheme-columns.py'), 'scheme_columns')
+    append(columns, columns.column_runs(columns.Path(pdf)))
+    fractions = load(os.path.join(mb, 'append-scheme-fractions.py'), 'scheme_fractions')
+    append(fractions, fractions.fractions(fractions.Path(pdf)), drop_empty=True)
+    append(CLIP_READS, _clip_reads(year, level), drop_empty=True)
+    append(PHYS_ROWS, _phys_rows(pdf))
+    print(md)
+
+
+# The scheme's lines exactly as the runner's reader returns them (superscripts
+# and subscripts read from the baseline, mark cells taken off), so every row
+# the runner lifts is found by the deck build's provenance gate. Append-only.
+PHYS_ROWS = type('PhysRows', (), {'START': '<!-- markbank:phys-rows -->',
+                                   'END': '<!-- /markbank:phys-rows -->'})
+
+
+def cmd_scheme_rows(year, level):
+    """Append (or refresh) only the phys-rows block of an EXISTING scheme .md: a
+    pre-carded 2021-2025 sitting keeps the file its other cards were checked
+    against, and gains the runner's own reading of every scheme line."""
+    pdf = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes', f'{year}-{level}.pdf')
+    md = pdf[:-4] + '.md'
+    text = open(md, encoding='utf-8').read()
+    if PHYS_ROWS.START in text:
+        text = re.sub(re.escape(PHYS_ROWS.START) + r'.*?' + re.escape(PHYS_ROWS.END) + r'\n?', '', text, flags=re.S)
+    if CLIP_READS.START in text:
+        text = re.sub(re.escape(CLIP_READS.START) + r'.*?' + re.escape(CLIP_READS.END) + r'\n?', '', text, flags=re.S)
+    body = '\n\n' + f'{PHYS_ROWS.START}\n' + '\n'.join(_phys_rows(pdf)) + f'\n{PHYS_ROWS.END}\n'
+    clips = _clip_reads(year, level)
+    if clips:
+        body += '\n' + f'{CLIP_READS.START}\n' + '\n'.join(clips) + f'\n{CLIP_READS.END}\n'
+    with open(md, 'w', encoding='utf-8') as fh:
+        fh.write(text.rstrip('\n') + body)
+    print(md)
+
+
+def _phys_rows(pdf):
+    """The scheme's lines as the runner reads them for this sitting: with the
+    ledger's glyph-id corrections (GLYPHS) and part-total column (TOTAL_COLUMN_X)."""
+    import phys_review_lib as B
+    m = re.search(r'(\d{4})-(hl|ol)\.pdf$', pdf)
+    glyphs = total_x = None
+    if m:
+        try:
+            L = _ledger(int(m.group(1)), m.group(2))
+            g = getattr(L, 'GLYPHS', None)
+            glyphs = g.get('scheme', g) if isinstance(g, dict) and 'scheme' in g else g
+            total_x = getattr(L, 'TOTAL_COLUMN_X', None)
+        except ModuleNotFoundError:
+            pass
+    src = B.Src(pdf, 'scheme', total_x=total_x, glyphs=glyphs)
+    return [line for p in sorted(src.lines) for line in src.lines[p]]
+
+
+# Answers the sitting's ledger reads by glyph position (G rows of kind 'tokens'
+# or 'tokens-x'), read again from the scheme PDF by the runner's own reader,
+# each in its printed order. The flat extraction reads ACROSS the page, so an
+# answer printed in a box beside another (2015 Higher scheme p6: Q3's answers
+# with Q4's key cells beside them) comes out with the other box's cells inside
+# it, and neither the table, block-order nor column-run passes rejoins a line
+# the PDF sets as two text objects ("(antigen) reaction or" / "size or host
+# species or structure"). Every line here is words the SEC printed, read from
+# one region of one page in the order the runner verified against the
+# reviewer's reading of the rendered page; append-only, like the passes above.
+CLIP_READS = type('ClipReads', (), {'START': '<!-- markbank:clip-reads -->',
+                                     'END': '<!-- /markbank:clip-reads -->'})
+
+
+def _clip_reads(year, level):
+    import phys_review as R
+    L = _ledger(int(year), level)
+    lifter = R.build(L, int(year), level)[0]
+    specs = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x', 'fraction', 'equation'):
+                specs.append(x)
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, (list, tuple)):
+            for v in x:
+                walk(v)
+    walk(L.TASKS)
+    out = []
+    for spec in specs:
+        value = R.read_geo(lifter, spec, spec.get('page'))
+        if (len(value) >= 12 or spec.get('kind') in ('fraction', 'equation')) and value not in out:
+            out.append(value)
+    return out
+
+
+def cmd_fold_ledger(year, level):
+    """Rewrite a ledger's strings to read as the runner's reader now reads the
+    PDFs: maths-alphabet characters as plain ones, broken-font characters as
+    what they stand for (glyphmap.json, never "Ɵ"). Run after a reader change
+    that folds text, then re-run the check."""
+    import unicodedata
+    import phys_review_lib as B
+    p = os.path.join(HERE, f'phys_review_{year}_{level}.py')
+    s = open(p, encoding='utf-8').read()
+    out = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else B._GLYPHMAP.get(c, c)
+                  for c in s)
+    # A decimal the text layer split ("2. 5"), as the reader now joins it.
+    out = re.sub(r'(?<![\d.])(\d{1,3})\. (?=\d)', r'\1.', out)
+    # Escaped broken glyphs written into the source as \uXXXX.
+    out = re.sub(r'\\u([0-9a-fA-F]{4})', lambda m: B._GLYPHMAP.get(chr(int(m.group(1), 16)), m.group(0)), out)
+    n = sum(1 for a, b in zip(s.split('\n'), out.split('\n')) if a != b)
+    open(p, 'w', encoding='utf-8').write(out)
+    print(f'{p}: {n} lines folded')
+
+
+COMMANDS = {k[4:].replace('_', '-'): v for k, v in globals().items() if k.startswith('cmd_')}
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
+        print(__doc__)
+        sys.exit(2)
+    COMMANDS[sys.argv[1]](*sys.argv[2:])
+    sys.stdout.flush()
+    # PyMuPDF can crash in its exit-time cleanup after heavy page reads.
+    os._exit(0)
