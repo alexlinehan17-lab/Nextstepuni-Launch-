@@ -1480,6 +1480,951 @@
   ],
   "solution": true
  },
+ "physics-2012-ol-q1-acceleration-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q1-acceleration-solution.png",
+  "md5": "28069750a0f94f77d66a0551cd91fb39",
+  "alt": "Both acceleration formulas with the original fraction layout.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q1(iv)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   437,
+   375,
+   468
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q1-velocity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q1-velocity-solution.png",
+  "md5": "4adb3a13b34e876a8c5452ea371083f4",
+  "alt": "Complete accepted final-velocity methods and distance/time formula.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q1(ii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   90,
+   267,
+   398,
+   311
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q10-crt": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q10-crt.png",
+  "md5": "78e19cc89135bca06d43fb0912329bfa",
+  "alt": "Complete cathode ray tube, A/B/C labels, power connection and polarity.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   137,
+   188,
+   455,
+   282
+  ]
+ },
+ "physics-2012-ol-q10-particle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q10-particle-solution.png",
+  "md5": "a017c5797e5166e66984fbd6ad8cdc86",
+  "alt": "Full proton/neutron table with mass, charge and location.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10 — Subatomic particle and properties",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   83,
+   134,
+   471,
+   193
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q10-xray-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q10-xray-solution.png",
+  "md5": "33384cf884cf44459d5c118ba07ed6ee",
+  "alt": "Original labelled X-ray tube including heater, cathode, anode/target and high voltage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10 — X-ray tube diagram",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   129,
+   616,
+   414,
+   710
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q11-passage.png",
+  "md5": "b4d0c6f906ae06ba1678f63e931ca182",
+  "alt": "Complete Fukushima passage, annotated reactor illustration and June2011 attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q11(a)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   83,
+   85,
+   575,
+   456
+  ]
+ },
+ "physics-2012-ol-q12-cannon": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-cannon.png",
+  "md5": "8d3d24b219dda0fc739359053af67a29",
+  "alt": "Complete before/after cannon and cannonball illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(a) — Cannon stopping distance",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   412,
+   193,
+   556,
+   322
+  ]
+ },
+ "physics-2012-ol-q12-capacitor": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-capacitor.png",
+  "md5": "0da620cbfeaf9f84030ca2a981cbd64f",
+  "alt": "Complete battery/capacitor/bulb circuit, both switch positions and 6V supply.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(d)(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   183,
+   470,
+   410,
+   567
+  ]
+ },
+ "physics-2012-ol-q12-doppler-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-doppler-question.png",
+  "md5": "d93c6765cf32aa511c5866ba7f9cbe16",
+  "alt": "Complete moving-fire-engine context, illustration and diagram/explanation task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(c)(ii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   111,
+   70,
+   544,
+   293
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    256,
+    544,
+    272
+   ],
+   [
+    517,
+    277,
+    544,
+    293
+   ]
+  ]
+ },
+ "physics-2012-ol-q12-doppler-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-doppler-solution.png",
+  "md5": "2c27d746800b25170b4d306172ca147d",
+  "alt": "Original moving-source wavefront diagram and wavelength spacing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(c)(ii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   82,
+   150,
+   216,
+   269
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q12-fire": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-fire.png",
+  "md5": "ceec923bcdbc73778946e6869ebc610b",
+  "alt": "Original fire-engine siren illustration with emitted wavefronts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(c)(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   215,
+   94,
+   398,
+   243
+  ],
+  "maskedFurniture": [
+   [
+    215,
+    94,
+    279,
+    99
+   ]
+  ]
+ },
+ "physics-2012-ol-q12-mirror-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-mirror-question.png",
+  "md5": "44fb9151b8a2f66c8563047a4d78b5ae",
+  "alt": "Complete object/focus context, original mirror diagram and image-formation request.",
+  "lettersVisible": [
+   "O",
+   "F",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(b) — Concave mirror ray diagram",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   111,
+   507,
+   543,
+   704
+  ],
+  "maskedFurniture": [
+   [
+    522,
+    687,
+    543,
+    704
+   ]
+  ]
+ },
+ "physics-2012-ol-q12-mirror-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q12-mirror-solution.png",
+  "md5": "f69ab08269d85f9d679ad3e58a237003",
+  "alt": "Original ray construction with two full rays and the virtual image.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(b) — Concave mirror ray diagram",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   129,
+   570,
+   399,
+   704
+  ],
+  "maskedFurniture": [
+   [
+    239,
+    683,
+    399,
+    704
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q2-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q2-graph-question.png",
+  "md5": "ce90fc5b2803fc90c8a9b8270dfe5f4e",
+  "alt": "Complete calibration context, all six pairs and graph request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q2(iii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   518,
+   542,
+   683
+  ],
+  "maskedFurniture": [
+   [
+    517,
+    652,
+    542,
+    683
+   ]
+  ]
+ },
+ "physics-2012-ol-q2-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q2-graph-solution.png",
+  "md5": "352bb42aadf0b9bd11eb20eff5ffc309",
+  "alt": "Original calibration curve with both axes, all six points and reading guides.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q2(iii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   90,
+   507,
+   408,
+   725
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q2-reading-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q2-reading-question.png",
+  "md5": "f13ca58af49b947dfe4a9dda328dea13",
+  "alt": "Complete six-point calibration table and property-60 reading request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q2(iv)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   518,
+   542,
+   718
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    652,
+    542,
+    683
+   ],
+   [
+    517,
+    689,
+    542,
+    718
+   ]
+  ]
+ },
+ "physics-2012-ol-q3-angle-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q3-angle-question.png",
+  "md5": "37dc2a4784f88dede2335f8f83ca2a5c",
+  "alt": "Complete Snell experiment context and angle-identification task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q3(iii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   70,
+   548,
+   360
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    149,
+    548,
+    202
+   ],
+   [
+    517,
+    204,
+    548,
+    219
+   ],
+   [
+    83,
+    226,
+    548,
+    241
+   ]
+  ]
+ },
+ "physics-2012-ol-q3-angle-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q3-angle-solution.png",
+  "md5": "cc2cefe64d32a96c749e39c46b1ae1bc",
+  "alt": "Original incident and refracted ray diagram with angles measured from the normal.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q3(iii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   142,
+   357,
+   361,
+   454
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q3-data.png",
+  "md5": "d9feeb021a7766574df3b75807684868",
+  "alt": "All four incidence/refraction pairs and three empty calculation columns.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q3(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   110,
+   245,
+   473,
+   360
+  ]
+ },
+ "physics-2012-ol-q3-table-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q3-table-question.png",
+  "md5": "1ae1baa1f0eb94333e4e3cb8da01a926",
+  "alt": "Complete experiment context, all given angles and the table-completion task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q3(iv)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   70,
+   548,
+   360
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    149,
+    548,
+    219
+   ],
+   [
+    517,
+    226,
+    548,
+    241
+   ]
+  ]
+ },
+ "physics-2012-ol-q3-table-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q3-table-solution.png",
+  "md5": "d2756691a361c30dcb9dcf55e97fcd13",
+  "alt": "Complete official four-row table of sines and ratios.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q3(iv)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   90,
+   534,
+   406,
+   632
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q4-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q4-apparatus.png",
+  "md5": "a79d127534dcf88acb4228a35fb6be9a",
+  "alt": "Complete copper-sulfate circuit, labelled instruments, copper electrodes and solution.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   323,
+   452,
+   545,
+   573
+  ]
+ },
+ "physics-2012-ol-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q4-graph-question.png",
+  "md5": "a973d213ad9b210cc49c40f9620ac5e7",
+  "alt": "Full circuit context, seven I/V pairs and graph request.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4 — Current–voltage graph",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   419,
+   545,
+   722
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    551,
+    321,
+    567
+   ],
+   [
+    83,
+    571,
+    545,
+    607
+   ],
+   [
+    517,
+    692,
+    545,
+    722
+   ]
+  ]
+ },
+ "physics-2012-ol-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q4-graph-solution.png",
+  "md5": "6a157ea87d32229056ed8400cb61d567",
+  "alt": "Original V-against-I graph, axes and straight-line fit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4 — Current–voltage graph",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   73,
+   380,
+   408,
+   584
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q4-resistance-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q4-resistance-question.png",
+  "md5": "b1ccec8b5b305cac8a7e9f6db40c8a9b",
+  "alt": "Full circuit context and all seven data pairs with slope/resistance request.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4 — Slope and resistance",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   419,
+   545,
+   755
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    551,
+    321,
+    567
+   ],
+   [
+    83,
+    571,
+    545,
+    607
+   ],
+   [
+    83,
+    692,
+    545,
+    722
+   ],
+   [
+    517,
+    740,
+    545,
+    755
+   ]
+  ]
+ },
+ "physics-2012-ol-q4-resistance-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q4-resistance-solution.png",
+  "md5": "60be861b6b4e9f1318365ba04cac176e",
+  "alt": "Original gradient and resistance calculations, with both permitted axis orientations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4 — Slope and resistance",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   78,
+   689,
+   395,
+   750
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q5-bridge": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q5-bridge.png",
+  "md5": "7b15dfbd0fbc26e8858a27affce7a176",
+  "alt": "Original Tacoma bridge photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q5(d)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   403,
+   390,
+   509,
+   463
+  ]
+ },
+ "physics-2012-ol-q5-ldr-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q5-ldr-question.png",
+  "md5": "c5f227fe5372ab61b2db335f489e937a",
+  "alt": "LDR symbol request with its full photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q5(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   111,
+   619,
+   552,
+   693
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    619,
+    471,
+    628
+   ]
+  ]
+ },
+ "physics-2012-ol-q5-ldr-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q5-ldr-solution.png",
+  "md5": "1699ba2a1138cc18d42e41ed8a783c38",
+  "alt": "Original LDR circuit symbol with incoming light arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q5(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   141,
+   604,
+   204,
+   652
+  ],
+  "maskedFurniture": [
+   [
+    141,
+    646,
+    154,
+    652
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q5-tow": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q5-tow.png",
+  "md5": "9041017f7d71d0a3b01779feede269c7",
+  "alt": "Original tow-truck and car illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q5(a)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   201,
+   249,
+   326,
+   284
+  ]
+ },
+ "physics-2012-ol-q6-forces-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q6-forces-question.png",
+  "md5": "40b7d04a9db781fc7f199c47714dc26f",
+  "alt": "Moon gravity, spacecraft context, full module data/photo and force-diagram request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q6(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   37,
+   574,
+   262
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    70,
+    411,
+    87
+   ],
+   [
+    83,
+    129,
+    411,
+    176
+   ],
+   [
+    517,
+    246,
+    574,
+    262
+   ]
+  ]
+ },
+ "physics-2012-ol-q6-forces-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q6-forces-solution.png",
+  "md5": "a92c2843d975747e5a6b685cbdf5ce10",
+  "alt": "Original module diagram with downward weight and upward thrust arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q6(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   260,
+   299,
+   421,
+   385
+  ],
+  "maskedFurniture": [
+   [
+    260,
+    299,
+    299,
+    303
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2012-ol-q6-module": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q6-module.png",
+  "md5": "9f8fecc5090f9731251d38e1cc9729fd",
+  "alt": "Original lunar module photograph and caption.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q6 — Earth and Moon weights",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   419,
+   37,
+   574,
+   207
+  ]
+ },
+ "physics-2012-ol-q7-glasses": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q7-glasses.png",
+  "md5": "2f7638467f402b193f8125d99183c689",
+  "alt": "Original Polaroid sunglasses photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q7(iii)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   329,
+   565,
+   548,
+   687
+  ],
+  "maskedFurniture": [
+   [
+    329,
+    672,
+    430,
+    687
+   ],
+   [
+    517,
+    670,
+    548,
+    687
+   ]
+  ]
+ },
+ "physics-2012-ol-q7-terms-question": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q7-terms-question.png",
+  "md5": "502f8b6f2eb29075589a031be0e9ba6a",
+  "alt": "Both original underlined wave terms and the definition request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q7(i) — Diffraction",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   501,
+   543,
+   545
+  ],
+  "maskedFurniture": [
+   [
+    517,
+    529,
+    543,
+    545
+   ]
+  ]
+ },
+ "physics-2012-ol-q8-vacuum": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q8-vacuum.png",
+  "md5": "31c15ce02bc8a05dd843c9ee59c6cb2f",
+  "alt": "Original vacuum-cleaner photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q8(iv)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   437,
+   151,
+   584,
+   297
+  ]
+ },
+ "physics-2012-ol-q9-ice": {
+  "src": "/exam-figures/physics/markbank/physics-2012-ol-q9-ice.png",
+  "md5": "f1551f01ecac4271acc5b44d6a75e928",
+  "alt": "Original ice-and-water glass illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q9(ix)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   452,
+   599,
+   552,
+   754
+  ]
+ },
  "physics-2013-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2013-hl-q1-data.png",
   "md5": "567523adfeafff9ba809453367379a4d",

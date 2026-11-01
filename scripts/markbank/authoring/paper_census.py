@@ -77,7 +77,7 @@ SUBJECTS = {
     # visually reviewed and carded on 2026-10-31. The next independently
     # reviewed sittings include 2013–2026 both levels.
     # 2010–2012 and deferred sittings remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2013, 'also': [(2012, 'hl')]},
+    'physics': {'mode': 'merged', 'from': 2012},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
@@ -1124,6 +1124,21 @@ def census_merged(subject, year, level, component=None):
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    if (subject, year, level) == ('physics', 2012, 'ol'):
+        # Paper p6 prints vii/viii inside the block following vi. The generic
+        # reader leaves them in vi's text. Split the actual printed markers,
+        # with wording assertions so a changed source cannot silently pass.
+        parent = (8, None, 'vi')
+        pieces = re.split(r'\((vii|viii)\)\s*', texts[parent])
+        assert len(pieces) == 5 and pieces[1::2] == ['vii', 'viii']
+        assert 'number of units of electricity used' in pieces[2]
+        assert 'cost of the energy used' in pieces[4]
+        texts[parent] = pieces[0].strip()
+        for roman, wording in zip(pieces[1::2], pieces[2::2]):
+            key = (8, None, roman)
+            assert key not in parts
+            parts.add(key)
+            texts[key] = wording.strip()
     if subject == 'chemistry':
         parts, texts = chemistry_choice_parts(year, level, parts, texts)
     if subject == 'construction-studies':

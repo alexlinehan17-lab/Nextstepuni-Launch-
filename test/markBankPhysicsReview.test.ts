@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2012-ol': [96, 96, 82, 'e7f46ff6afa24789dfaae192cd22f7aa966761a58a6b5cbb290ec9eda3f2a87e',
+    '77b8f95ea2e3d91ad82af08e907bafe379d299f39503f06aa7ee6b212bfb1147'],
   '2012-hl': [95, 95, 62, '38ffeeaa0d59666fe00a75c09dfcf66cbdabbee06ccfd214ffb7c982bcc1da01',
     '03b134fda65a71f34a8acbdbc1ce905bc466822642af7e1e214b902430dc3162'],
   '2013-ol': [100, 100, 91, '323bea11e3f2ea2598ecd62bde828d0d17215042f19f860ece9f3d8a08b1f6c0',
@@ -103,6 +105,41 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains 2012 Ordinary choices, graph data, separate electricity calculations and complete passage', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2012-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2012-ol-${suffix}`)!;
+    expect(cards).toHaveLength(96);
+    expect(card('q2-i').rows[0]).toMatchObject({ group: { claimMax: 4, perOption: 3, options: expect.any(Array) } });
+    expect(card('q2-ii').totalMarks).toBe(10);
+    expect(card('q2-ii').rows).toMatchObject([
+      { marks: 7, route: 'mercury' }, { marks: 3, route: 'mercury' },
+      { marks: 7, route: 'thermistor' }, { marks: 3, route: 'thermistor' },
+    ]);
+    expect(card('q2-iii').questionFigure?.candId).toBe('physics-2012-ol-q2-graph-question');
+    expect(card('q3-iv').totalMarks).toBe(9);
+    expect(card('q3-iv').rows).toHaveLength(1);
+    expect(card('q3-iv').rows[0].contextNote).toContain('all twelve empty cells');
+    expect(card('q4-graph').rows[3].contextNote).toContain('all seven pairs');
+    expect(cards.filter(c => c.id.startsWith('phys-2012-ol-q5-'))).toHaveLength(10);
+    expect(card('q8-vii').totalMarks).toBe(8);
+    expect(card('q8-viii').totalMarks).toBe(6);
+    for (const id of ['q8-vii', 'q8-viii']) {
+      expect(card(id).stem).toContain('900 W');
+      expect(card(id).stem).toContain('90 minutes');
+    }
+    expect(card('q8-viii').questionText).toContain('22 cent');
+    expect(card('q10-ii').rows[0]).toMatchObject({ group: { claimMax: 2, perOptionSteps: [6, 3] } });
+    const passage = cards.filter(c => c.id.startsWith('phys-2012-ol-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.figure?.candId).toBe('physics-2012-ol-q11-passage');
+    }
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2012-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
+
 
   it('retains 2012 Higher choices, raster solutions and the full practical contexts', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2012-hl-'));
