@@ -1043,7 +1043,7 @@
     "unreadPapers": []
   },
   "nextActions": [
-    "Review all existing 2023 Higher B/C card grading and answer detail. Section A source review is complete.",
+    "Review remaining 2023 Higher B2–B5 and Section C grading and answer detail. Section A and B1 source review complete.",
     "Recover missing 2023 Ordinary tasks and held criterion-only detail.",
     "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 using full paper/scheme sweeps.",
     "Reconcile subject-wide Mark Bank and Topic Atlas, including Section B/C identities and available deferred English papers.",
@@ -1055,6 +1055,11 @@
       "workCommit": "14e08691b",
       "launchCommit": "e3b8fd504",
       "scope": "Three missing 2023 Higher tasks, four Section C Atlas anchors, 2022 Ordinary census correction."
+    },
+    {
+      "workCommit": "2135d2060",
+      "launchCommit": "80b3816b5",
+      "scope": "2023 Higher Section A: 14 existing cards corrected, two separately priced tasks added, original bacteria table retained."
     }
   ]
 }

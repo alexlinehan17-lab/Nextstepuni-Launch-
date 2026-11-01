@@ -66,7 +66,7 @@
     "vitest": "240 passed",
     "python": "4 passed",
     "typecheck": "passed",
-    "testTypecheck": "passed",
+    "testTypecheck": "Correction: did not pass. Saved log contains 92 pre-existing errors in missing functions Firebase modules and Mathematics/Physics test narrowing; no Home Economics errors.",
     "productionBuild": "passed",
     "browser": "Native pipe startup failed; no browser QA claim.",
     "deterministicRegeneration": "byte-identical"

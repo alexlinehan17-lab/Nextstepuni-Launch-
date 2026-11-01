@@ -6,5 +6,12 @@
     "alt": "Official table of food-poisoning bacteria and associated high-risk foods. Salmonella: eggs, meat, fish, poultry, milk, cheese. E-coli: milk, cheese, meat, polluted water. Listeria: cheese, pâté, cook chill foods, coleslaw, milk, meat, ice cream, seafood. Clostridium botulinum: canned fish/food, vacuum packed meat, milk, cheese, yoghurt. Clostridium perfringens/welchii: vegetables. Staphylococcus aureus: meat, milk, cheese. Bacillus cereus: cooked rice, cereals, herbs. Campylobacter: milk, poultry, shellfish. Each published list is non-exhaustive.",
     "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 6 — © State Examinations Commission.",
     "sourceNote": "Inspected crop from the hash-pinned official scheme; bounds [55, 472, 548, 712], rendered at 2×."
+  },
+  "home-economics-2023-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-sb-q1a-chart.png",
+    "md5": "f7cc757ff23e169d1051b3ef45e7a3ac",
+    "alt": "Sources of iron in Irish teenagers aged 13–18 years. Breakfast cereals 22%; meat and meat products 20%; breads and rolls 14%; grains, rice and pasta 10%; vegetables and potatoes 9%; confectionery, biscuits and preserves 11%; other 14%.",
+    "attribution": "SEC Home Economics 2023 Higher Level examination paper, Sections B and C page 2 — © State Examinations Commission.",
+    "sourceNote": "Complete original question chart, visually checked with title, all seven labels and percentages, and all borders. No marking-scheme material. Bounds [74,214,520,437], 2×."
   }
 }

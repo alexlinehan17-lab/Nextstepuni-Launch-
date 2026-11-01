@@ -1480,6 +1480,273 @@
      "notation": "Two required headings × 3 marks (3:2:0)"
     }
    }
+  },
+  "he-2023-hl-sb-q1a": {
+   "reason": "Independent 2023 Higher B1 paper/scheme review: inline original chart, full source wording, untruncated guidance and published partial marks. See he_review_2023_hl_section_b_q1.py.",
+   "set": {
+    "questionText": "Using the information provided in the chart, comment and elaborate on the importance of including different sources of iron in a teenagers’ diet. Refer to four sources in your answer.",
+    "stem": "‘Adequate micronutrient intake during the teenage years is important for optimum growth and development.’ (National Teen Food Survey II Report 2021 adapted from iuna.net)",
+    "questionFigureKey": "home-economics-2023-hl-sb-q1a-chart",
+    "questionFigureIncludesPrompt": false,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 marks (5:4:3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "sources",
+      "kind": "criterion",
+      "verbatim": "different sources of iron",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19,
+       20
+      ],
+      "contextNote": "Comment and elaborate on four different chart sources. Mark each source separately using the published 5:4:3:2:1:0 steps.\n\nBreakfast cereals 22% fortified options; oats naturally high in non-haem iron – porridge; muesli contains dried fruit & nuts; wholemeal varieties high in fibre – impact on absorption of iron; combine with Vit C; easily accessible; eat on the go; help production of haemoglobin; etc.\n\nMeat & meat products 20% red meat, liver and black pudding are good sources of haem iron; meat is a good source of HBV protein for growing teenagers; variety of uses- breakfast, lunch, dinner; readily available; may be lacking in diet of teenage girls; important source to prevent anaemia, especially in menstruating girls; etc.\n\nBread & rolls 14% fortified options; seeds, nuts & dried fruits good sources; wholemeal varieties (phytic acid) may prevent absorption; combine with Vit C; easy to incorporate into diet; versatile foods that can be eaten at any time of the day; source of iron and energy for athletic teenagers; forms myoglobin that carries oxygen to the muscles for energy; etc.\n\nGrains, rice & pasta 10% brown varieties may prevent iron absorption; easy to incorporate into diet; lunches / dinners; quick snacks; source of iron and energy for teenagers involved in sport; forms cell enzymes systems that aid and speed up the metabolism of food; etc.\n\nVegetables & potatoes 9% peas, beans & lentils good sources; green vegetables good sources; soya beans useful in vegetarian diets; variety available; versatile; potatoes good source of iron and energy in the form of starch; useful for athletic teenagers; source of Vitamin C to aid absorption; variety of uses; breakfast, lunch, dinner; staple food in traditional Irish diets; etc.\n\nConfectionary 11% biscuits & preserves – high sugar foods, top shelf of food pyramid; some are low in iron; biscuits and bars which contain oats are a good source of iron; dried fruit; useful as snacks; eat on the go; could include wholemeal flour; etc.\n\nOther 14% nuts; seeds; curry powder; snack foods; root crisps; egg yolk; good sources of iron; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2023-hl-sb-q1b": {
+   "reason": "Independent 2023 Higher B1 paper/scheme review: inline original chart, full source wording, untruncated guidance and published partial marks. See he_review_2023_hl_section_b_q1.py.",
+   "set": {
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 factors × 5 marks (5:4:3:0)"
+    },
+    "rows": [
+     {
+      "id": "factors",
+      "kind": "criterion",
+      "verbatim": "factors that affect the absorption of iron",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19,
+       20
+      ],
+      "contextNote": "Identify and describe four factors. Each is graded 5:4:3:0; there are no 1- or 2-mark bands. Published guidance: consuming haem iron and non-haem iron together; food high in Vitamin C; acidity from hydrochloric acid in the stomach; tannins; dietary fibre; phytic acid; oxalic acid; excess protein; excess alcohol; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         4,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2023-hl-sb-q1d": {
+   "reason": "Independent 2023 Higher B1 paper/scheme review: inline original chart, full source wording, untruncated guidance and published partial marks. See he_review_2023_hl_section_b_q1.py.",
+   "set": {
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 points × 4 marks (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "guidelines",
+      "kind": "criterion",
+      "verbatim": "guidelines",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "Discuss five guidelines, referring to both the restricted budget and nutritional needs. Each is graded 4:2:0. Published guidance: fruit and vegetables in season, cheaper and at their most nutritious; buy fish in season; buy in bulk where possible; plan meals; consider meals that can be prepared in large quantities; cooking costs; make a list; look for offers; limit convenience foods, can be more expensive and less nutritious; buy generic products instead of branded; shop around – price check for expensive protein foods; purchase cheaper cuts of meat, similar nutritional value; dietary requirements of family members; choose wholegrain pasta, cereals, high in fibre; cheaper options; limit ready meals and takeaway meals, generally more expensive; food pyramid; awareness of food labelling; budget constraints; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
   }
  },
  "english": {

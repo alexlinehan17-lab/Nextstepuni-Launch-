@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '../components/MarkBank/cards/home-economics/higher';
-import { isPointCard, tariffReconciles } from '../types/markBank';
+import { tariffReconciles } from '../types/markBank';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
 import crosswalk from '../data/examTopics/home-economics-s-and-s-curriculum-crosswalk.json';
 import anchors from '../scripts/paper-trail/answers/2023/LC098ALP039EV.pdf.json';
@@ -13,11 +13,38 @@ import type { PaperAnswerMap } from '../types/paperTrail';
 const get = (id: string) => {
   const card = CARDS.find(candidate => candidate.id === id);
   expect(card, id).toBeDefined();
-  if (!card || !isPointCard(card)) throw new Error(`Missing point card: ${id}`);
+  if (!card || card.kind !== 'question') throw new Error(`Missing point card: ${id}`);
   return card;
 };
 
 describe('2023 Higher Home Economics recovered tasks', () => {
+  it('keeps the complete iron chart on the question side and all seven scheme sources in the reveal', () => {
+    const card = get('he-2023-hl-sb-q1a');
+    expect(card.questionFigure?.includesPrompt).toBe(false);
+    expect(card.questionFigure?.solution).not.toBe(true);
+    expect(card.questionFigure?.alt).toContain('confectionery, biscuits and preserves 11%');
+    expect(card.stem).toContain('Adequate micronutrient intake during the teenage years');
+    expect(card.stem).toContain('National Teen Food Survey II Report 2021');
+    expect(card.rows[0].parts).toHaveLength(4);
+    expect(card.rows[0].parts?.every(p => JSON.stringify(p.permittedMarks) === '[0,1,2,3,4,5]')).toBe(true);
+    const guidance = card.rows[0].contextNote!;
+    expect(guidance.split('\n\n')).toHaveLength(8);
+    expect(guidance).toContain('Grains, rice & pasta 10%');
+    expect(guidance).toContain('Other 14%');
+    expect(tariffReconciles(card)).toBe(true);
+  });
+
+  it('keeps the absorption mark ladder and all budget-shopping guidance', () => {
+    expect(get('he-2023-hl-sb-q1b').rows[0].parts?.map(p => p.permittedMarks))
+      .toEqual(Array(4).fill([0, 3, 4, 5]));
+    const shopping = get('he-2023-hl-sb-q1d');
+    expect(shopping.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(5).fill([0, 2, 4]));
+    expect(shopping.rows[0].contextNote).toContain('food pyramid');
+    expect(shopping.rows[0].contextNote).toContain('awareness of food labelling');
+    expect(shopping.rows[0].contextNote).toMatch(/budget constraints; etc\.$/);
+    expect(['a', 'b', 'c', 'd'].reduce((sum, part) => sum + get(`he-2023-hl-sb-q1${part}`).totalMarks, 0)).toBe(80);
+  });
+
   it('preserves Section A marks while splitting the two separately priced prompts', () => {
     const cards = CARDS.filter(c => /^2023 HL Section A /.test(c.questionRef));
     expect(cards).toHaveLength(16);

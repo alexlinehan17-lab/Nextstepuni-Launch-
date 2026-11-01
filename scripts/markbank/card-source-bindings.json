@@ -10119,7 +10119,7 @@
       "pages": [
         2
       ],
-      "stripStem": true
+      "stripStem": false
     },
     "he-2023-hl-sb-q1b": {
       "pages": [
