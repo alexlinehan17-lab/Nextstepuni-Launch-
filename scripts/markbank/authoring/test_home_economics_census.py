@@ -30,6 +30,18 @@ class HomeEconomicsNestedDevicesTest(unittest.TestCase):
 
 
 class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
+    def test_ordinary_recovery_regenerates_from_full_source_guidance(self):
+        from he_review_2023_ol import build
+        added, fixes = build()
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        self.assertEqual(len(added), 4)
+        self.assertEqual(len(fixes), 1)
+        for c in added:
+            self.assertEqual(authored[c['id']], c)
+        for key, correction in fixes.items():
+            self.assertEqual(saved[key], correction)
+
     def test_social_studies_and_core_source_reviews_regenerate(self):
         from he_review_2023_hl_elective3 import build as social
         from he_review_2023_hl_core import build as core
@@ -91,15 +103,16 @@ class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
         self.assertEqual([c['totalMarks'] for c in recovered], [18, 26, 6])
 
     def test_section_c_crops_include_the_final_printed_marks(self):
-        source = fitz.open(ROOT / 'examiner-reports/home-economics/papers/2023-hl-039-paper.pdf')
-        anchors = json.loads((ROOT / 'scripts/paper-trail/answers/2023/LC098ALP039EV.pdf.json').read_text())
-        for question in anchors['q'][5:]:
-            page = source[question['pP'] - 1]
-            marks = [line['bbox'] for block in page.get_text('dict')['blocks'] if 'lines' in block
-                     for line in block['lines'] if 'marks)' in ''.join(span['text'] for span in line['spans'])]
-            self.assertTrue(marks)
-            self.assertLess(max(rect[3] for rect in marks), question['endY'] * page.rect.height)
-            self.assertEqual(question['endP'], question['pP'])
+        for level, code in [('hl', 'A'), ('ol', 'G')]:
+            source = fitz.open(ROOT / f'examiner-reports/home-economics/papers/2023-{level}-039-paper.pdf')
+            anchors = json.loads((ROOT / f'scripts/paper-trail/answers/2023/LC098{code}LP039EV.pdf.json').read_text())
+            for question in anchors['q'][5:]:
+                page = source[question['pP'] - 1]
+                marks = [line['bbox'] for block in page.get_text('dict')['blocks'] if 'lines' in block
+                         for line in block['lines'] if 'marks)' in ''.join(span['text'] for span in line['spans'])]
+                self.assertTrue(marks)
+                self.assertLess(max(rect[3] for rect in marks), question['endY'] * page.rect.height)
+                self.assertEqual(question['endP'], question['pP'])
 
 
 if __name__ == '__main__':

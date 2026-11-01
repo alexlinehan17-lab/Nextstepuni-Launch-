@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 554,
+    "cards": 558,
     "leaves": 1229,
-    "covered": 549,
+    "covered": 553,
     "excluded": 0,
-    "open": 680,
-    "coveragePct": 44.7,
+    "open": 676,
+    "coveragePct": 45.0,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -845,14 +845,9 @@
         "level": "ol",
         "paper": null,
         "leaves": 59,
-        "covered": 55,
+        "covered": 59,
         "excluded": 0,
-        "open": [
-          "Section A Q14",
-          "Section B Q1(a)",
-          "Section B Q2(a)",
-          "Section B Q2(b)"
-        ]
+        "open": []
       },
       {
         "year": 2024,
@@ -1044,12 +1039,12 @@
   },
   "nextActions": [
     "2023 Higher main sitting source review complete: 59 tasks, every published boundary and all scheme guidance checked. Browser QA pending.",
-    "Recover and review 2023 Ordinary main tasks, then available English deferred papers (2023 Higher deferred corpus is present).",
+    "2023 Ordinary main missing tasks recovered and Atlas corrected; continue the complete existing-card grading/boundary review, starting Section A, then English deferred.",
     "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 using full paper/scheme sweeps.",
     "Reconcile subject-wide Mark Bank and Topic Atlas, including Section B/C identities and available deferred English papers.",
     "Integrate only verified batches; keep moving to the next actionable sitting."
   ],
-  "coveragePolicy": "The census is diagnostic only; 680 open candidates and 37 flags are not a complete independent count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
+  "coveragePolicy": "The census is diagnostic only; 676 open candidates and 37 flags are not a complete independent count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1070,6 +1065,11 @@
       "workCommit": "341c8b39f",
       "launchCommit": "a606985d6",
       "scope": "2023 Higher B2–B5: 10 marking corrections, preserved headings and choice boundaries."
+    },
+    {
+      "workCommit": "35b5850a1",
+      "launchCommit": "d1bb0e640",
+      "scope": "2023 Higher Section C: 26 grading corrections; full main-sitting source review complete."
     }
   ]
 }

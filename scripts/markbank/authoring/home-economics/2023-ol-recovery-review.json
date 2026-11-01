@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "home-economics",
+  "sitting": "2023-ordinary-English-main",
+  "status": "missing-task-recovery-reviewed; full-existing-card-boundary-and-grading-audit-in-progress",
+  "sources": [
+    {
+      "path": "examiner-reports/home-economics/papers/2023-ol-014-paper.pdf",
+      "sha256": "6a3f42524c13a8fc9d3661f53dd767c7aa66917d81a863a58fe6547e6a313da0"
+    },
+    {
+      "path": "examiner-reports/home-economics/papers/2023-ol-039-paper.pdf",
+      "sha256": "25ba9252a844743751fe0933052603ce8071c07b1227de413acf31b52b21491f"
+    },
+    {
+      "path": "paper-trail-corpus/markingschemes/2023/LC098GLP000EV.pdf",
+      "sha256": "856913d37890c8ffc78aa2c03b4f3507f909730c9dc3d2b5d4ba80f477f5db82"
+    }
+  ],
+  "visualReview": {
+    "sectionABooklet": "All 32 physical pages inspected: p1 cover, p2 instructions, p3–7 questions, p8 answer instructions, p9–31 ruled answer pages, p32 back cover.",
+    "sectionBCBooklet": "All 12 pages inspected: p1 cover, p2–4 Section B, p5–8 Section C, p9–11 blank, p12 back cover.",
+    "scheme": "All 38 physical pages inspected: p1 cover, p2–5 guidance, p6–9 Section A, p10–15 Section B, p16–24 Section C, p25–26 Irish bonus, p27–36 separate Food Studies coursework, p37 blank, p38 back cover."
+  },
+  "addedCardIds": [
+    "he-2023-ol-sa-q14",
+    "he-2023-ol-sb-q1a",
+    "he-2023-ol-sb-q2a",
+    "he-2023-ol-sb-q2b"
+  ],
+  "correctedExistingIds": [
+    "he-2023-ol-sc-q3aiv"
+  ],
+  "sourceBoundaries": [
+    {
+      "id": "he-2023-ol-sa-q14",
+      "marks": 6,
+      "allocation": "2 symbols × 3 (3:2:0)"
+    },
+    {
+      "id": "he-2023-ol-sb-q1a",
+      "marks": 24,
+      "allocation": "Name 4 (4:0); four reasons × 5 (5:4:3:2:0)"
+    },
+    {
+      "id": "he-2023-ol-sb-q2a",
+      "marks": 20,
+      "allocation": "4 × 5 (5:4:3:2:0): nutritive 1, dietetic 1, other 2"
+    },
+    {
+      "id": "he-2023-ol-sb-q2b",
+      "marks": 20,
+      "allocation": "2 courses × 4; 3 reasons × 4, including low income (4:2:0)"
+    }
+  ],
+  "boundaryDecisions": [
+    "Care symbols form one required two-symbol response, with two separately graded 3-mark slots.",
+    "Three protein bars form one choice task; each has the same 24-mark tariff and its own complete source guidance.",
+    "Meat nutritive and dietetic headings are required parts of one 20-mark response. Reserve one point each and two additional points.",
+    "Menu design and its justifications are dependent and remain one card. Reserve the low-income justification.",
+    "The statutory-scheme task requires name and detail together. Restore 8 marks on the existing ID; disclose that the scheme prints no model detail."
+  ],
+  "figures": {
+    "home-economics-2023-ol-sa-q14-symbols": {
+      "source": "examiner-reports/home-economics/papers/2023-ol-014-paper.pdf",
+      "page": 7,
+      "bounds": [
+        83,
+        322,
+        220,
+        626
+      ],
+      "sha256": "f1d7366a56f9d51b3067b3a47d143f33012de3e1b261b6be828c48ece659ef82",
+      "alt": "Two care symbols, in vertical order. Top: a square containing three vertical lines. Bottom: a square containing a circle, with a diagonal cross over it."
+    },
+    "home-economics-2023-ol-sb-q1a-table": {
+      "source": "examiner-reports/home-economics/papers/2023-ol-039-paper.pdf",
+      "page": 2,
+      "bounds": [
+        54,
+        199,
+        542,
+        439
+      ],
+      "sha256": "bcb457f5dc75ec7710ed3898fee3ce3569cd858c2f78964ef12f09f71e1094e1",
+      "alt": "Nutrition per 100 g. Columns: Peanut & chocolate; Peanut & caramel; Crunchy peanut butter. Energy: 492, 373, 518 kcal. Protein: 25.6, 36.3, 25 g. Carbohydrates: 24, 16, 26 g; of which sugars: 15, 3, 16 g. Fibre: 13.6, 16.1, 14 g. Fat: 30, 15.9, 12 g; of which saturates: 9, 8, 5 g. Salt: 0.95, 0.73, 0.59 g."
+    }
+  },
+  "preservation": {
+    "previousAuthoredCardsUnchanged": true,
+    "all554PreviousRuntimeIdsRetained": true,
+    "changedExistingRuntimeCards": [
+      "he-2023-ol-sc-q3aiv"
+    ],
+    "newRuntimeCards": 4,
+    "otherRuntimeCardsByteIdentical": true,
+    "otherSubjectsAndWithdrawnAliasesUnchanged": true,
+    "frozenIdentityHashesUnchanged": true
+  },
+  "atlas": {
+    "fileid": "LC098GLP039EV.pdf",
+    "sectionBIds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sectionCIds": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "reviewedBCTasks": 44,
+    "sectionCCrops": "Paper pp5–8, startY .06 and endY .885; visually inspected with all final mark allocations. Schemes pp16–17, 18–19, 20–22, 23–24.",
+    "sectionA14": "Original paper shows fabric-care symbols; English mapping corrected from household appliances to textiles. Irish targets retained untouched.",
+    "counts": "Public tagged papers: 51 / 492 physical questions / 916 registry mappings. Full answers=1 index (including untagged editions): 91 paper variants / 1243 physical questions. Recounted directly rather than adding to a stale total.",
+    "regeneration": "Deck, figures, anchors, tags and question runtime byte-identical after regeneration. General reference builder preserves reviewed output; only its generatedAt timestamp changes.",
+    "irishEditions": "Deferred; source anchors and runtime mappings unchanged."
+  },
+  "validation": {
+    "vitest": "258 passed across 5 suites; additional Home Economics Atlas tests 8 passed.",
+    "python": "10 passed",
+    "browser": "Unavailable native connection; browser QA pending.",
+    "typecheck": "passed",
+    "scopedTestTypecheck": "both Home Economics suites passed",
+    "fullTestTypecheck": "Not rerun; previously recorded 92 pre-existing errors outside these suites.",
+    "productionBuild": "passed"
+  },
+  "remainingReview": [
+    "Review all existing Ordinary cards against every published grading step and response boundary.",
+    "Already identified separately priced iron-source and family-conflict-resolution tasks need their own cards.",
+    "Review published English deferred sittings, then remaining main sittings.",
+    "Separate Food Studies coursework has not been carded by this written-examination batch."
+  ]
+}

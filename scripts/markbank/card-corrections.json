@@ -7656,6 +7656,56 @@
     },
     "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
    }
+  },
+  "he-2023-ol-sc-q3aiv": {
+   "reason": "The printed task combines name and detail. Restore its full 8-mark tariff on the existing ID; source prints names and a detail criterion, not model details.",
+   "set": {
+    "questionRef": "2023 OL Section C E3 Q3(a)(iv)",
+    "questionText": "Name and give details of one statutory scheme that provides support to people who are unemployed.",
+    "stem": "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    "totalMarks": 8,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 4 (4:2:0); detail 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Name one statutory scheme that provides support to unemployed people. Published examples: jobseeker’s benefit; one-parent family payment; supplementary welfare allowance; working family payment; child benefit; back to school clothing and footwear allowance; housing assistance payment; national fuel scheme; book loan/rental scheme; medical cards; national minimum wage; MABS; Abhaile; etc."
+     },
+     {
+      "id": "detail",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Give a relevant detail about the scheme you named. The official scheme allocates 4 marks, graded 4:2:0, but prints no model detail answer."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full named-scheme response restored on its existing ID. Detail criterion is explicit and honest about the absence of a printed model answer. See he_review_2023_ol.py."
+   }
   }
  },
  "english": {

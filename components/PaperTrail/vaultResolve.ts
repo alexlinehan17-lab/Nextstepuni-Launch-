@@ -48,6 +48,7 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
 export const HOSTED_ANSWER_OVERRIDES = new Set([
   // Reviewed English B/C booklet: preserve Section B and append Section C.
   'home-economics-s-and-s|2023|LC098ALP039EV.pdf',
+  'home-economics-s-and-s|2023|LC098GLP039EV.pdf',
   // Historical questions and alternatives reconstructed from inspected crops.
   'mathematics|2010|LC003ALP230EV.pdf',
   'mathematics|2010|LC003GLP230EV.pdf',

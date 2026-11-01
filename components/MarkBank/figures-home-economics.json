@@ -21,5 +21,19 @@
     "solution": true,
     "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 19 — © State Examinations Commission.",
     "sourceNote": "Original three-column table; all five rows, headers and borders visually verified. Bounds [53,153,547,376], 2×."
+  },
+  "home-economics-2023-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sa-q14-symbols.png",
+    "md5": "1df70f374f6a88a0939b1ec4073de1a7",
+    "alt": "Two care symbols, in vertical order. Top: a square containing three vertical lines. Bottom: a square containing a circle, with a diagonal cross over it.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, visually inspected with all content and borders. Bounds [83, 322, 220, 626], 2×. No marking-scheme answer content."
+  },
+  "home-economics-2023-ol-sb-q1a-table": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sb-q1a-table.png",
+    "md5": "730a9ab779838dd540339890d5c38cd1",
+    "alt": "Nutrition per 100 g. Columns: Peanut & chocolate; Peanut & caramel; Crunchy peanut butter. Energy: 492, 373, 518 kcal. Protein: 25.6, 36.3, 25 g. Carbohydrates: 24, 16, 26 g; of which sugars: 15, 3, 16 g. Fibre: 13.6, 16.1, 14 g. Fat: 30, 15.9, 12 g; of which saturates: 9, 8, 5 g. Salt: 0.95, 0.73, 0.59 g.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, visually inspected with all content and borders. Bounds [54, 199, 542, 439], 2×. No marking-scheme answer content."
   }
 }

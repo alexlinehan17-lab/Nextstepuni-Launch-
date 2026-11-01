@@ -4390,13 +4390,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aiv", topicId: "home-economics-3-9", conceptId: "statutory-schemes-supporting-the-unemployed",
-    section: "C", questionRef: "2023 OL Section C E3 Q3(a)(iv) - naming the scheme",
-    stem: "‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)",
-    questionText: "Name one statutory scheme that provides support to people who are unemployed.",
-    tariffModel: {"kind":"bestNofParts","notation":"Name: 4 marks (graded 4:2:0)","answer":1,"ofParts":13,"perPart":4}, totalMarks: 4,
+    section: "C", questionRef: "2023 OL Section C E3 Q3(a)(iv)",
+    stem: "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    questionText: "Name and give details of one statutory scheme that provides support to people who are unemployed.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0); detail 4 (4:2:0)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the statutory scheme", marks: 4, contextNote: "One name, 4 marks, graded 4:2:0. Name the actual scheme - \"jobseeker’s benefit\", not \"the dole\". The scheme accepts the full range of statutory supports, including the ones people forget: MABS, Abhaile, the medical card.", openList: true, group: {"claimMax":1,"perOption":4,"options":["jobseeker’s benefit","one-parent family payment","supplementary welfare allowance","working family payment","child benefit","back to school clothing and footwear allowance","housing assistance payment","national fuel scheme","book loan/rental scheme","medical cards","national minimum wage","MABS","Abhaile"]} },
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one statutory scheme that provides support to unemployed people. Published examples: jobseeker’s benefit; one-parent family payment; supplementary welfare allowance; working family payment; child benefit; back to school clothing and footwear allowance; housing assistance payment; national fuel scheme; book loan/rental scheme; medical cards; national minimum wage; MABS; Abhaile; etc.", permittedMarks: [0,2,4] },
+    { id: "detail", kind: "criterion", verbatim: "Details", marks: 4, contextNote: "Give a relevant detail about the scheme you named. The official scheme allocates 4 marks, graded 4:2:0, but prints no model detail answer.", permittedMarks: [0,2,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4715,6 +4726,400 @@ export const CARDS: SecCard[] = [
           "alt": "Three colour photographs of special occasion clothing against a plain backdrop. LEFT: a woman in a black full-length jumpsuit with one bare shoulder and a single asymmetric ruffled strap, a fitted bodice and wide flowing palazzo legs, worn with black open-toe heeled sandals and both hands in the side pockets. CENTRE: a man in a charcoal grey two-piece suit worn over a black crew-neck top rather than a shirt, the jacket single-breasted and buttoned, with matching trousers and black leather lace-up shoes, one hand in his pocket. RIGHT: a woman in a navy floral-print midi dress with short cap sleeves, a square neckline, a fitted bodice and a pleated skirt falling below the knee, worn with flat black ballet pumps and holding a small dark clutch bag.",
           "attribution": "SEC Leaving Certificate Home Economics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sa-q14", topicId: "home-economics-1-4", conceptId: "fabric-care-symbols",
+    section: "A", questionRef: "2023 OL Section A Q14",
+    questionText: "What information does each of the following fabric care symbols convey to the consumer?",
+    tariffModel: {"kind":"fixed","notation":"2 symbols × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "top", kind: "criterion", verbatim: "drip dry", marks: 3, contextNote: "Meaning of the top symbol. Use the printed 3:2:0 steps.", permittedMarks: [0,2,3] },
+    { id: "bottom", kind: "criterion", verbatim: "do not tumble dry", marks: 3, contextNote: "Meaning of the bottom symbol. Use the printed 3:2:0 steps.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-ol-sa-q14-symbols",
+          "src": "/exam-figures/home-economics/home-economics-2023-ol-sa-q14-symbols.png",
+          "srcHash": "1df70f374f6a88a0939b1ec4073de1a7",
+          "alt": "Two care symbols, in vertical order. Top: a square containing three vertical lines. Bottom: a square containing a circle, with a diagonal cross over it.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sb-q1a", topicId: "home-economics-0-1", conceptId: "protein-bar-comparison",
+    section: "B", questionRef: "2023 OL Section B Q1(a)",
+    stem: "‘Protein bars are a sector of the nutrition market that is rapidly expanding.’ (www.tastetech.com)\n\nThe table below shows nutritional information per 100 g, for three protein bars.",
+    questionText: "Using the information presented in the table above, state which protein bar you would recommend for a young person who plays sport. Give four reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:0); four reasons × 5 (5:4:3:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Peanut & chocolate", marks: 4 },
+    { id: "reasons", kind: "criterion", verbatim: "Reasons", marks: 20, contextNote: "Give four distinct reasons for the bar you selected, each graded 5:4:3:2:0. Published scheme guidance: second highest kcal content for energy; second highest in protein for growth and repair; second highest in carbohydrate for heat and energy; lowest in fibre, healthy digestion; highest in saturated fat for heat and energy; highest in salt for electrolyte balance; second highest in sugar for energy; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,2,3,4,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "peanut-chocolate",
+                "label": "Peanut & chocolate",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Peanut & chocolate",
+                            "marks": 4
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20
+                            ],
+                            "contextNote": "Give four distinct reasons for the bar you selected, each graded 5:4:3:2:0. Published scheme guidance: second highest kcal content for energy; second highest in protein for growth and repair; second highest in carbohydrate for heat and energy; lowest in fibre, healthy digestion; highest in saturated fat for heat and energy; highest in salt for electrolyte balance; second highest in sugar for energy; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "peanut-caramel",
+                "label": "Peanut & caramel",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Peanut & caramel",
+                            "marks": 4
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20
+                            ],
+                            "contextNote": "Give four distinct reasons for the bar you selected, each graded 5:4:3:2:0. Published scheme guidance: lowest kcal content to prevent obesity; highest in protein for growth and repair; lowest in carbohydrate to prevent obesity/diabetes; lowest in sugar to prevent diabetes/tooth decay; highest in fibre for healthy digestion; second highest in salt for electrolyte balance; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "crunchy-peanut-butter",
+                "label": "Crunchy peanut butter",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Crunchy peanut butter",
+                            "marks": 4
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20
+                            ],
+                            "contextNote": "Give four distinct reasons for the bar you selected, each graded 5:4:3:2:0. Published scheme guidance: highest kcal content for energy; lowest in protein for growth and repair; highest in carbohydrate for heat and energy; highest in sugar for energy; second highest in fibre for healthy digestion; lowest in saturated fat to prevent cholesterol build up; lowest in salt to prevent high blood pressure; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              4,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-ol-sb-q1a-table",
+          "src": "/exam-figures/home-economics/home-economics-2023-ol-sb-q1a-table.png",
+          "srcHash": "730a9ab779838dd540339890d5c38cd1",
+          "alt": "Nutrition per 100 g. Columns: Peanut & chocolate; Peanut & caramel; Crunchy peanut butter. Energy: 492, 373, 518 kcal. Protein: 25.6, 36.3, 25 g. Carbohydrates: 24, 16, 26 g; of which sugars: 15, 3, 16 g. Fibre: 13.6, 16.1, 14 g. Fat: 30, 15.9, 12 g; of which saturates: 9, 8, 5 g. Salt: 0.95, 0.73, 0.59 g.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sb-q2a", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-meat",
+    section: "B", questionRef: "2023 OL Section B Q2(a)",
+    stem: "‘17% of Irish consumers are now buying better quality beef.’ (www.farmersjournal.ie)",
+    questionText: "Give an account of (i) the nutritive value and (ii) the dietetic value of meat.",
+    tariffModel: {"kind":"fixed","notation":"4 × 5 (5:4:3:2:0): nutritive 1, dietetic 1, other 2"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "nutritive", marks: 5, contextNote: "One required point on this heading, graded 5:4:3:2:0. Published guidance: HBV protein; saturated fat; no carbohydrates; vitamin B group, vitamin A and D in liver; deficient in vitamin C; iron in red meat; small amounts of sulphur, zinc, potassium; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "dietetic", marks: 5, contextNote: "One required point on this heading, graded 5:4:3:2:0. Published guidance: excellent source of protein for growth and repair of body cells; saturated fat, provides heat and energy; high in cholesterol, should be avoided by people with CHD; difficult to digest; serve with a carbohydrate food e.g. bread; haem iron easily absorbed; important for pregnant women, children, teenagers and menstruating women; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "additional", kind: "criterion", verbatim: "plus 2 others", marks: 10, contextNote: "Two further distinct points on either heading, each graded 5:4:3:2:0. Do not score a point already used above again.", permittedMarks: [0,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "he-2023-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "low-income-family-meat-menu",
+    section: "B", questionRef: "2023 OL Section B Q2(b)",
+    stem: "‘17% of Irish consumers are now buying better quality beef.’ (www.farmersjournal.ie)",
+    questionText: "Using meat as the main ingredient, design a two‐course menu suitable for the main meal of the day for a family on a low income. Give reasons for your choice of foods.",
+    tariffModel: {"kind":"fixed","notation":"2 courses × 4; 3 reasons × 4, including low income (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "menu", kind: "criterion", verbatim: "Menu", marks: 8, contextNote: "Design two suitable courses, each graded 4:2:0. Keep meat as the main ingredient and the family’s low income in mind. The printed sample menu is Spaghetti Bolognese followed by Apple crumble; it is an example, not the only valid menu.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "income", kind: "criterion", verbatim: "low income", marks: 4, contextNote: "One reason must refer to low income, graded 4:2:0. The scheme includes cost in its guidance.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "reasons", marks: 8, contextNote: "Two further distinct reasons for the foods you chose, each graded 4:2:0. Do not count the low-income reason again. Published guidance: nutritive value; convenience; cost; personal preference; skills to make the dish; meat is high in protein, good for growth and repair; high in iron, good for pregnant women and teenage girls; balanced meal; easy to cook; quick to prepare; suitable equipment; easy to digest; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
 ];
