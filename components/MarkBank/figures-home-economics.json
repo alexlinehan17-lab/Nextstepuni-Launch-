@@ -49,5 +49,12 @@
     "alt": "Consumption of potatoes, pasta and rice at the evening meal among Irish adults. Age groups: 18–24, 25–34, 35–44, 45–54, 55–64, 65+ years. Potatoes: 14%, 21%, 26%, 33%, 38%, 43%. Pasta: 18%, 16%, 14%, 13%, 10%, 10%. Rice: 16%, 12%, 11%, 12%, 11%, 6%. Vertical axis: consumption rate, 0–50%; horizontal axis: age group.",
     "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 2 — © State Examinations Commission.",
     "sourceNote": "Original question chart, bounds [77, 216, 523, 465], rendered at 2×. All axes, age groups, data labels and legend retained. Source SHA256 06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3."
+  },
+  "home-economics-2023-hl-deferred-sc-q2a-graduation": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sc-q2a-graduation.png",
+    "md5": "b2eb887848057f923f3b0048678e3160",
+    "alt": "Original graduation-ball photograph: a group wearing formal dresses and suits at a celebration.",
+    "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 6; photograph credited to www.etiquettejulie.com — © State Examinations Commission.",
+    "sourceNote": "Original image, bounds [160, 161, 428, 311], rendered at 2×. Source SHA256 06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3."
   }
 }

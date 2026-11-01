@@ -104,6 +104,82 @@
       ],
       "mode": "pagejump",
       "conf": 0.5
+    },
+    {
+      "n": "6",
+      "label": "Section C · Elective 1",
+      "printOrder": 6,
+      "pP": 5,
+      "pY": [
+        0.181329,
+        0.876223
+      ],
+      "endP": 5,
+      "endY": 0.876223,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "7",
+      "label": "Section C · Elective 2",
+      "printOrder": 7,
+      "pP": 6,
+      "pY": [
+        0.063751,
+        0.878646
+      ],
+      "endP": 6,
+      "endY": 0.878646,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "8",
+      "label": "Section C · Elective 3",
+      "printOrder": 8,
+      "pP": 7,
+      "pY": [
+        0.063751,
+        0.674061
+      ],
+      "endP": 7,
+      "endY": 0.674061,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "9",
+      "label": "Section C · Core Q 4",
+      "printOrder": 9,
+      "pP": 8,
+      "pY": [
+        0.063751,
+        0.770617
+      ],
+      "endP": 8,
+      "endY": 0.770617,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
     }
   ]
 }

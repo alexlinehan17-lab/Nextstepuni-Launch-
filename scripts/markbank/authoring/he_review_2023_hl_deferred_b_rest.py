@@ -171,7 +171,7 @@ def write():
     path.write_text(json.dumps(authored, ensure_ascii=False, indent=1) + '\n')
     path = ROOT / BASE / '2023-hl-deferred-review.json'; review = json.loads(path.read_text())
     review['tasks'] = [t for t in review['tasks'] if t['id'] not in {c['id'] for c in cards}] + [dict(id=c['id'], status='carded', section='B', questionRef=c['questionRef'], marks=c['totalMarks'], topicId=c['topicId']) for c in cards]
-    review['sectionStatus']['B'] = 'All 17 tasks carded; 280 offered marks. C remains open.'
+    review['sectionStatus']['B'] = 'All 17 tasks carded; 280 offered marks.'
     review['sectionBRemainingReview'] = dict(paperPages=[3, 4], schemePages=list(range(10, 18)), tasks=12, offeredMarks=200,
         decisions=['Required coeliac headings remain one 22-mark account (8+6+8).', 'Malnutrition remains one dependent four-heading profile.', 'Two physical-agent functions keep their paired examples in one task.', 'Heat method, packaging material and statutory agency are open choices with answer routes, not separate scheduled cards.', 'All microwave and sociological headings required.', 'Economic/technological change reserves one point per heading plus two others.', 'Paper B5(c) is authoritative despite the scheme’s repeated (b) label.'],
         sourceClarifications=CLARIFICATIONS)

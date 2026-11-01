@@ -98,10 +98,11 @@ def apply():
         sourceBlockedByReason={reason: sum(a['reason'] == reason for a in blocked) for reason in sorted({a['reason'] for a in blocked})})
     local['reviewedEnglish2023DeferredA'] = dict(paperFileid=FILE, physicalQuestions=14,
         review='scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json',
-        policy='15 practice tasks map to 14 printed Section A questions. Deferred identities are separate from main. B/C still open.', markBankMappings=mappings)
+        policy='15 practice tasks map to 14 printed Section A questions. Deferred identities are separate from main.', markBankMappings=mappings)
     write(local_path, local)
     print('2023 HL deferred: 14 Section A anchors; all 15 Mark Bank tasks mapped to canonical Atlas topics.')
     apply_b(docs, node_topics)
+    apply_c(docs, node_topics)
 
 
 def b_heads(doc, pages):
@@ -198,9 +199,90 @@ def apply_b(docs, node_topics):
         sourceBlockedByReason={reason: sum(a['reason'] == reason for a in blocked) for reason in sorted({a['reason'] for a in blocked})})
     local.pop('reviewedEnglish2023DeferredB1', None)
     local['reviewedEnglish2023DeferredB'] = dict(paperFileid=file, physicalQuestions=5, review='scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json',
-        policy='All 17 Section B tasks across five printed questions. Section C still open.', markBankMappings=mappings)
+        policy='All 17 Section B tasks across five printed questions.', markBankMappings=mappings)
     write(local_path, local)
     print('2023 HL deferred B: five original questions, full scheme anchors; all 17 tasks mapped.')
+
+
+def apply_c(docs, node_topics):
+    file = 'LC098ALP039EV-deferred.pdf'
+    questions = []
+    for number, pages in [(1, range(18, 22)), (2, range(22, 25)), (3, range(25, 28)), (4, range(28, 31))]:
+        heading = f'Elective {number}' if number < 4 else 'Question 4'
+        def top(page):
+            found = []
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines', []):
+                    if ''.join(span['text'] for span in line['spans']).strip().startswith(heading): found.append(line['bbox'][1] - 3)
+            assert len(found) == 1, (number, found)
+            return found[0]
+        paper_page = number + 4; p = docs['bc'][paper_page - 1]
+        upper = top(p); bound = 760 if number == 4 else 770
+        lower = max(w[3] for w in p.get_text('words') if upper <= w[1] and w[3] < bound) + 8
+        assert lower < bound
+        regions = []
+        for page in pages:
+            s = docs['scheme'][page - 1]; start = top(s) if page == pages.start else 35
+            end = max(w[3] for w in s.get_text('words') if w[3] < 775) + 8
+            regions.append(dict(p=page, r=[0, round(start / s.rect.height, 6), 1, round(end / s.rect.height, 6)]))
+        questions.append(dict(n=str(number + 5), label=f'Section C · {"Elective" if number < 4 else "Core Q"} {number}', printOrder=number + 5,
+            pP=paper_page, pY=[round(upper / p.rect.height, 6), round(lower / p.rect.height, 6)], endP=paper_page,
+            endY=round(lower / p.rect.height, 6), region=regions, conf=1.0, mode='crop'))
+    for folder in ['scripts/paper-trail/answers', 'public/paper-answers']:
+        path = f'{folder}/2023/{file}.json'; sidecar = read(path)
+        sidecar['q'] = [q for q in sidecar['q'] if int(q['n']) < 6] + questions
+        write(path, sidecar)
+    path = f'public/paper-anchors/2023/{file}.json'; sidecar = read(path)
+    sidecar['q'] = [q for q in sidecar['q'] if int(q['n']) < 6] + [
+        {**{k: v for k, v in q.items() if k not in ('region', 'mode', 'conf')},
+         'region': [dict(p=1)], 'mode': 'pagejump', 'conf': 0.5} for q in questions]
+    write(path, sidecar)
+    deck = (ROOT / 'components/MarkBank/cards/home-economics/higher.ts').read_text()
+    mappings = []; canonical = {str(n): set() for n in range(6, 10)}; topics = {str(n): set() for n in range(6, 10)}
+    counts = {str(n): 0 for n in range(6, 10)}
+    for chunk in re.split(r'^\s*\.\.\.base,', deck, flags=re.M)[1:]:
+        cid = re.search(r'\bid: "([^"]+)"', chunk).group(1)
+        match = re.fullmatch(r'he-2023-hl-deferred-sc-q([1-4])[a-c](?:i{1,3})?', cid)
+        if not match: continue
+        n = str(int(match[1]) + 5); counts[n] += 1
+        node = re.search(r'topicId: "([^"]+)"', chunk).group(1)
+        canonical[n].add(node); topics[n].update(node_topics[node])
+        mappings.append(dict(id=cid, n=n, topicId=node, atlasTopicIds=node_topics[node]))
+    assert counts == {'6': 7, '7': 5, '8': 7, '9': 7}, counts
+    tags_path = f'scripts/paper-trail/topic-tags/tags/{SUBJECT}.json'; tags = read(tags_path)
+    entry, = [p for p in tags if p['year'] == 2023 and p['fileid'] == file]
+    entry['q'] = [q for q in entry['q'] if int(q['n']) < 6]
+    for n, primary in [('6', '3-3'), ('7', '3-8'), ('8', '3-9'), ('9', '0-9')]:
+        primary = 'home-economics-' + primary; assert primary in canonical[n]
+        tag = dict(n=n, primary=primary); others = sorted(canonical[n] - {primary})
+        if others: tag['secondary'] = others[0]
+        entry['q'].append(tag)
+    write(tags_path, tags, indent=1)
+    local_path = f'data/examTopics/{SUBJECT}-local-crosswalk.json'; local = read(local_path)
+    matched_c = 0
+    for association in local['associations']:
+        match = re.fullmatch(r'2023 - Deferred Exam Paper - Section C - Question ([1-4]) - Part [A-C](?: - \(i{1,3}\))?', association['heading'])
+        if association['level'] != 'higher' or not match: continue
+        n = str(int(match[1]) + 5); q = questions[int(n) - 6]
+        association['targets'] = [dict(level='higher', lang='ev', year=2023, paperKey='single', fileid=file, n=n, label=q['label'])]
+        association['resolution'] = 'matched'; association.pop('reason', None)
+        topics[n].add(association['topicId']); matched_c += 1
+    assert matched_c == 20, matched_c
+    runtime_path = f'data/examTopics/{SUBJECT}-question-runtime.json'; runtime = read(runtime_path)
+    runtime['questionMappings'] = [r for r in runtime['questionMappings'] if not (r[:5] == ['h', 'e', 2023, 'single', file] and int(r[5]) >= 6)]
+    runtime['questionMappings'] += [['h', 'e', 2023, 'single', file, str(n), sorted(runtime['topicIds'].index(t) for t in topics[str(n)]), 'deferred'] for n in range(6, 10)]
+    write(runtime_path, runtime)
+    local['summary']['exactRuntimeQuestionMappings'] = len(runtime['questionMappings'])
+    local['summary']['localAnswerAnchoredPhysicalCards'] = physical_question_count()
+    matched = [a for a in local['associations'] if a['resolution'] == 'matched']; blocked = [a for a in local['associations'] if a['resolution'] == 'source-blocked']
+    local['summary'].update(matchedAssociations=len(matched), sourceBlockedAssociations=len(blocked),
+        matchedLocalCardLinks=sum(len(a['targets']) for a in matched),
+        sourceBlockedByReason={reason: sum(a['reason'] == reason for a in blocked) for reason in sorted({a['reason'] for a in blocked})})
+    local['reviewedEnglish2023DeferredC'] = dict(paperFileid=file, physicalQuestions=4,
+        review='scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json',
+        policy='All 26 Section C tasks; all three electives and alternative Core Q4 included. Canonical card topics supplemented with the source associations. Deferred identities remain separate from main.', markBankMappings=mappings)
+    write(local_path, local)
+    print('2023 HL deferred C: four complete paper/scheme anchors; all 26 tasks mapped to canonical topics.')
 
 
 if __name__ == '__main__': apply()

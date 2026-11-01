@@ -20,6 +20,73 @@ const get = (suffix: string) => {
 };
 
 describe('Home Economics deferred source boundaries', () => {
+  it('keeps all 58 reviewed tasks with exact section totals and every canonical Atlas topic', () => {
+    const sitting = CARDS.filter(c => c.id.startsWith('he-2023-hl-deferred-'));
+    expect(sitting).toHaveLength(58);
+    expect(sitting.reduce((n, c) => n + c.totalMarks, 0)).toBe(749);
+    expect(sitting.map(c => c.id).sort()).toEqual(review.tasks.map(t => t.id).sort());
+    const c = sitting.filter(c => c.id.includes('-sc-'));
+    expect(c).toHaveLength(26);
+    expect(c.reduce((n, c) => n + c.totalMarks, 0)).toBe(385);
+    const file = 'LC098ALP039EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2023 && p.fileid === file)!;
+    expect(bcAnchors.q.slice(5).map(q => q.region.map(r => r.p))).toEqual([[18, 19, 20, 21], [22, 23, 24], [25, 26, 27], [28, 29, 30]]);
+    for (const card of c) {
+      if (card.kind !== 'question') throw new Error(card.id);
+      expect(tariffReconciles(card), card.id).toBe(true);
+      for (const v of card.answerVariants ?? []) expect(tariffReconciles({ ...card, rows: v.rows }), `${card.id}/${v.id}`).toBe(true);
+      expect(card.paperFileid).toBe('LC098ALP039EV-deferred');
+      const n = String(Number(card.questionRef.match(/Q(\d+)/)![1]) + 5);
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(card.topicId)).map(([k]) => k);
+      const mapping = runtime.questionMappings.find(r => r[0] === 'h' && r[1] === 'e' && r[2] === 2023 && r[4] === file && r[5] === n)!;
+      expect(mapping?.[7]).toBe('deferred');
+      expect(browseTopicIdsForQuestion(tags, tags.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(expected));
+    }
+  });
+  const getC = (part: string) => {
+    const c = CARDS.find(c => c.id === `he-2023-hl-deferred-sc-q${part}`);
+    if (!c || c.kind !== 'question') throw new Error(part);
+    return c;
+  };
+  it('retains exact housing/design/electricity scoring and labels the MCB error', () => {
+    expect(getC('1ai').questionText).toContain('nineteenth century');
+    expect(getC('1ai').rows[0].contextNote).toContain('small living space and outdoor areas');
+    expect(getC('1aiii').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 3, 5]));
+    expect(getC('1bi').rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 2, 4]));
+    expect(getC('1bii').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill(Array(3).fill([0, 2])));
+    expect(getC('1bii').rows[0].contextNote).toContain('Rhythm:');
+    expect(getC('1ci').rows[1].contextNote).toContain('An RCBO combines overcurrent and residual-current protection');
+    expect(getC('1cii').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill([[0, 3], [0, 3]]));
+    expect(getC('1cii').rows[0].contextNote).toContain('no model reduction descriptions');
+  });
+  it('carries the graduation image and sketch into evaluation, retaining one open fabric profile', () => {
+    expect(getC('2ai').questionFigure?.alt).toContain('Original graduation-ball photograph');
+    expect(getC('2aii').questionFigure).toEqual(getC('2ai').questionFigure);
+    expect(getC('2ai').rows.map(r => r.permittedMarks)).toEqual([[0, 1, 2, 3, 4], [0, 2, 4, 6]]);
+    expect(getC('2aii').stem).toContain(getC('2ai').questionText);
+    expect(getC('2aii').rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 3, 5]));
+    expect(getC('2b').answerVariants?.map(v => v.label)).toEqual(['Cotton', 'Linen', 'Wool', 'Silk', 'Another valid natural fabric']);
+    for (const variant of getC('2b').answerVariants ?? []) expect(variant.rows.map(r => r.marks)).toEqual([6, 4, 5]);
+    expect(getC('2b').answerVariants?.[3].rows[2].contextNote).toContain('burns as black beads');
+    expect(getC('2ci').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 3]));
+  });
+  it('preserves the full social-studies continuations and corrects core source errors', () => {
+    expect(getC('3aiii').rows[0].contextNote).toContain('Social contact:');
+    expect(getC('3bii').rows.map(r => r.permittedMarks)).toEqual([[0, 1, 2], [0, 2, 4, 6, 8]]);
+    expect(getC('3bii').rows[1].contextNote).toContain('Night classes-');
+    expect(getC('3bii').rows[1].contextNote).toContain('not current eligibility or funding advice');
+    expect(getC('3ci').questionText).toContain('Analyse the key requirements');
+    expect(getC('3cii').rows[1].contextNote).toContain('not a complete model evaluation');
+    expect(getC('4ai').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(5).fill([0, 1, 2, 3, 4]));
+    expect(getC('4aii').rows.map(r => r.marks)).toEqual([12, 4, 4]);
+    expect(getC('4aii').rows[0].contextNote).toContain('heading says “9 points”');
+    expect(getC('4bi').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(2).fill([[0, 3], [0, 1, 2], [0, 1, 2]]));
+    expect(getC('4bi').rows[0].contextNote).toContain('Discount Electrical Stores');
+    expect(getC('4bii').rows[0].contextNote).toContain('Outputs / Evaluation:');
+    expect(getC('4ci').questionText).toContain('Describe three different');
+    expect(getC('4cii').rows[0].contextNote).toContain('marriage creates no entitlement to sex');
+    expect(getC('4cii').rows[0].contextNote).toContain('Family Home Protection Act 1976');
+  });
   it('keeps all 17 Section B tasks and the full choice profiles at their published tariffs', () => {
     const b = CARDS.filter(c => c.id.startsWith('he-2023-hl-deferred-sb-'));
     expect(b).toHaveLength(17);
@@ -81,7 +148,7 @@ describe('Home Economics deferred source boundaries', () => {
     expect(b('e').rows.map(r => r.marks)).toEqual([4, 4, 12]);
     expect(b('e').rows[0].contextNote).toContain('consider food miles');
     expect(b('e').rows[1].contextNote).toContain('At least one point');
-    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
+    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5', '6', '7', '8', '9']);
     expect(bcAnchors.q[0].region.map(r => r.p)).toEqual([8, 9]);
     const file = 'LC098ALP039EV-deferred.pdf';
     const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2023 && p.fileid === file)!;

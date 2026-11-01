@@ -89,7 +89,7 @@ def write():
     path = ROOT / BASE / '2023-hl-deferred-review.json'; review = json.loads(path.read_text())
     review['tasks'] = [t for t in review['tasks'] if t['id'] not in {c['id'] for c in cards}] + [dict(id=c['id'], status='carded', section='B', questionRef=c['questionRef'], marks=c['totalMarks'], topicId=c['topicId']) for c in cards]
     if len([t for t in review['tasks'] if t['section'] == 'B']) == 17:
-        review['sectionStatus']['B'] = 'All 17 tasks carded; 280 offered marks. C remains open.'
+        review['sectionStatus']['B'] = 'All 17 tasks carded; 280 offered marks.'
     else:
         review['sectionStatus']['B'] = '5 of 17 tasks carded (Question 1); 80 of 280 offered marks. Questions 2–5 open.'
     review['sectionBQuestion1Review'] = dict(paperPages=[2], schemePages=[8, 9], tasks=5, offeredMarks=80,

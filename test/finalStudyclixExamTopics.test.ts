@@ -92,7 +92,7 @@ describe('Home Economics exam-topic registry', () => {
       expect(ids.length).toBeGreaterThan(0);
       expect(ids.filter(id => !canonicalIds.has(id))).toEqual([]);
     }
-    expectEveryExistingCardMapped('home-economics-s-and-s', 53, 511, 935, taxonomy);
+    expectEveryExistingCardMapped('home-economics-s-and-s', 53, 515, 939, taxonomy);
   });
 });
 

@@ -188,8 +188,12 @@ def write():
         review['tasks'] += [t for t in old.get('tasks', []) if t['section'] != 'A']
         for section in ['B', 'C']:
             review['sectionStatus'][section] = old.get('sectionStatus', {}).get(section, review['sectionStatus'][section])
-        for key in ['sectionBQuestion1Review', 'sectionBRemainingReview']:
+        for key in ['sectionBQuestion1Review', 'sectionBRemainingReview'] + [k for k in old if k.startswith('sectionCQuestion')]:
             if key in old: review[key] = old[key]
+        if old.get('completion') and len(review['tasks']) == 58:
+            review['completion'] = old['completion']
+            review['status'] = old['status']
+            review['sectionStatus'] = old['sectionStatus']
     path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n')
     print(f'2023 Higher deferred A: {len(cards)} cards, 84 offered marks. B: {review["sectionStatus"]["B"]} C: {review["sectionStatus"]["C"]}')
 

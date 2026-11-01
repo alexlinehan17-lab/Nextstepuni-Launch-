@@ -11154,4 +11154,1127 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1ai", topicId: "home-economics-3-3", conceptId: "housing-history",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(a)(i) — Deferred sitting",
+    stem: "‘It is estimated that Ireland will need an average of 33,000 new homes to be provided each year from 2021 to 2030.’ (www.gov.ie)",
+    questionText: "Outline the historical development of housing styles in Ireland from the nineteenth century to the present day.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "history", kind: "criterion", verbatim: "historical development", marks: 20, contextNote: "Five points, each graded 4:2:0. Cover the historical development asked for. “Present day” refers to this 2023 examination. Complete published guidance: Early Nineteenth Century: Rural areas in the early 1800’s, single storey thatched cottage; consisted of two rooms, a kitchen and a bedroom, the walls were constructed from solid stone, the windows were small and the door - usually a half-door, opened into the kitchen; an open turf fire was used for cooking and to provide heat; the thatch was of reeds, straw or hay; some cottages had a room or loft directly under the thatch which was accessed by a ladder, where children slept; wealthy farmers lived in a two-storey, slate roofed houses with up to five bedrooms including a parlour; wealthy landowners lived in a large estate house with servants quarters generally in the basement, etc. Urban areas: Georgian style 2, 3, 4 storey terraced with basements, etc. Suburbs; middle class had small terraced houses, shopkeepers lived over their shops, workers in single storey cottages, etc. Late Nineteenth Century: two-storey, slate-roofed stone buildings; greater variety of building materials available due to improved transportation; more ornate – gothic and tudor styles; stone used; rural – 2 storey houses with slated roofs; urban – moved to suburbs, Georgian houses divided and rented to poorer families, etc. Early Twentieth Century: detached and semidetached; council and housing estates; use of brick with plaster walls; 2 storey as land was expensive; tiles replaced slates; rural electrification (1950’s) and government housing grants changed housing in rural Ireland; the slate roofed bungalow replaced the thatched cottage of the past, etc. Late Twentieth Century: private housing estates used a common design; many different designs for private houses including classical and modern; building regulations improved housing standards; new materials and methods e.g. double-glazing, plastic (pvc) and fibreglass used, etc. Twenty-first century: rural housing developments in small towns and villages; houses of different styles and sizes; renovation of period properties; one off houses architecturally designed; attic conversions, extensions, sunrooms added to houses; outside living space - balconies, decking, patios; improved security – electronic gates, flood lighting; etc. urban areas – housing complexes, which include a variety of town houses and apartments enclosed behind security gates; more houses build on outskirts of towns/cities; high density housing; small living space and outdoor areas; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1aii", topicId: "home-economics-3-3", conceptId: "accessible-housing",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(a)(ii) — Deferred sitting",
+    stem: "‘It is estimated that Ireland will need an average of 33,000 new homes to be provided each year from 2021 to 2030.’ (www.gov.ie)",
+    questionText: "Explain the housing requirements necessary to meet the needs of people who have a disability.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "needs", kind: "criterion", verbatim: "housing requirements", marks: 15, contextNote: "Three points, each graded 5:3:0. Explain the housing features in relation to the relevant needs. Published guidance: People with disabilities: adjustments to basic housing requirements, will depend on the type of disabilities e.g. people with mobility problems using a walking aid or wheelchair may require ramp access to house, wide doorways, lower kitchen worktops, light switches, sockets and door handles positioned appropriately, raised toilet level with rails beside toilet, bath, shower; alarm bells for visually impaired; people with hearing disability require flashing lights to alert them to door bells; alarm communication systems in case of emergencies; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "housing-provision-distribution",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(a)(iii) — Deferred sitting",
+    stem: "‘It is estimated that Ireland will need an average of 33,000 new homes to be provided each year from 2021 to 2030.’ (www.gov.ie)",
+    questionText: "Evaluate the distribution of housing provision in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0), each noting provision 3 / distribution 2"}, totalMarks: 15,
+    rows: [
+    { id: "distribution", kind: "criterion", verbatim: "distribution of housing provision", marks: 15, contextNote: "Three points, each using the published 5:3:0 total ladder. The scheme notes 3 marks for provision and 2 for distribution within each point; it does not print a standalone 2-mark grade. The three housing sectors below are guidance, not a printed requirement to choose one point from each. Figures and “today” refer to 2023. Published guidance: Private- very high level of home ownership 70% home owners, higher than EU average, government policy has encouraged home ownership e.g. mortgage interest relief, tenant purchase schemes etc.; in the past low interest rates for mortgages; ECB recently increased rates; a growing young population created conditions of high demand for home ownership; Building industry effected by high cost for materials; Social- supply not meeting demand; if lower income or unable to afford a private house, provided by local authority or by voluntary or co-operative housing groups; increase in the number of people on waiting lists, elderly people, people with a disability and homeless people; increase in refugees and asylum seekers; rent support available; ‘improvements works’ schemes in lieu of local authority schemes; Rental accommodation scheme/ RAS; shared housing for elderly; etc. Private rental sector - High demand for rented accommodation among young single workers; families or students; demand mainly in urban areas, availability is limited and sometimes of poor quality; purpose built housing for students provides rental accommodation but availability is limited; supply of rental properties low; short term rental in urban areas for tourists unavailable to renters; vacant holiday homes unavailable; high number of vacant properties; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1bi", topicId: "home-economics-3-4", conceptId: "interior-design-factors",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(b)(i) — Deferred sitting",
+    stem: "‘Interior design is the art and science of enhancing the interior of a building.’ (wikipedia.org)",
+    questionText: "Describe how each of the following may impact the interior design of the home: • aesthetic and comfort factors • function of the room • environmental awareness.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "aesthetic", kind: "criterion", verbatim: "Aesthetic and comfort factors", marks: 4, contextNote: "Required heading, graded 4:2:0. Published 2023 examples: visual appeal, personal taste, colour trends, trends in pattern and texture, purpose of a room, heating, lighting and ventilation must be a comfortable level; all heights e.g., work surfaces must be at a suitable level to avoid discomfort etc.", permittedMarks: [0,2,4] },
+    { id: "function", kind: "criterion", verbatim: "Function of the room", marks: 4, contextNote: "Required heading, graded 4:2:0. Published 2023 examples: design of a room should allow for ease of movement, accommodate the natural traffic flow; room design should facilitate maximum efficiency e.g. work triangle; lighting and ventilation must be at a comfortable level to suit the use of the room e.g. kitchen different to sitting room; all heights e.g. work surfaces must be at a suitable level to avoid discomfort; spaces should be easy to clean and have free access to windows and sockets, etc.", permittedMarks: [0,2,4] },
+    { id: "environment", kind: "criterion", verbatim: "Environmental awareness", marks: 4, contextNote: "Required heading, graded 4:2:0. Published 2023 examples: use of natural materials e.g., wooden floors, stone fireplaces; features e.g., wood burning stove – environmentally friendly; organic paints are more environmentally friendly as there is less waste produced during their manufacture; use of recycled textiles; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1bii", topicId: "home-economics-3-4", conceptId: "interior-design-principles",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(b)(ii) — Deferred sitting",
+    stem: "‘Interior design is the art and science of enhancing the interior of a building.’ (wikipedia.org)",
+    questionText: "Explain three principles of interior design and give an example of the application of each principle in the home.",
+    tariffModel: {"kind":"fixed","notation":"3 principles × (identify 2 + explain 2 + application 2), all 2:0"}, totalMarks: 18,
+    rows: [
+    { id: "principle-1", kind: "criterion", verbatim: "principles of design", marks: 6, contextNote: "Principle 1: identify, explain and give a matching application. Each element is graded 2:0; total 6:4:2:0. Use three different principles. Complete published examples:\n\nBalance: when harmony is achieved between the elements of design-colours, patterns and textures; well-balanced room is aesthetically pleasing; symmetrical balance is achieved when one object is a mirror image of another in terms of size/shape, colour, pattern or texture; etc.\n\nProportion: relationship between objects and their size; achieved when the pieces of furniture in a room relate to one another in size and relate to the size of the room; etc.\n\nEmphasis: the eye is drawn to a particular object/area/feature in a room; add interest/variety to a room giving it a focal point; achieved by using strong/contrasting colours, pattern, texture, shape or lighting; etc.\n\nRhythm: used to link various objects in a room to create a harmonious, unified look; colours /patterns/textures repeated to bring a space together; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Identify","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explain","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Application","marks":2,"permittedMarks":[0,2]}] },
+    { id: "principle-2", kind: "criterion", verbatim: "principles of design", marks: 6, contextNote: "Principle 2: identify, explain and give a matching application. Each element is graded 2:0; total 6:4:2:0. Use three different principles. Use the published examples listed above.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Identify","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explain","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Application","marks":2,"permittedMarks":[0,2]}] },
+    { id: "principle-3", kind: "criterion", verbatim: "principles of design", marks: 6, contextNote: "Principle 3: identify, explain and give a matching application. Each element is graded 2:0; total 6:4:2:0. Use three different principles. Use the published examples listed above.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Identify","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explain","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Application","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1ci", topicId: "home-economics-3-5", conceptId: "household-electrical-protection",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(c)(i) — Deferred sitting",
+    stem: "‘There are lots of ways to make your home more energy efficient and comfortable.’ (www.seai.ie)",
+    questionText: "In relation to household electricity supply describe each of the following: • ring circuit • miniature circuit breakers (MCBs) • earth wire.",
+    tariffModel: {"kind":"fixed","notation":"3 required terms × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "ring-circuit", kind: "criterion", verbatim: "Ring circuit", marks: 4, contextNote: "Required term, graded 4:2:0. Published 2023 scheme wording: a wire leads from the consumer unit all around the house and returns to the consumer unit; The ring loop could contain all the sockets or the light switches for the house, or one ring loop could be used for upstairs and one for downstairs; contains an earth wire for safety; each circuit has its own fuse, usually 35amp.", permittedMarks: [0,2,4] },
+    { id: "miniature-circuit-breakers", kind: "criterion", verbatim: "Miniature circuit breakers", marks: 4, contextNote: "Required term, graded 4:2:0. Source clarification: an ordinary MCB provides overcurrent protection. An RCBO combines overcurrent and residual-current protection. The scheme’s statement that MCBs contain RCDs is too broad. Published 2023 scheme wording: MCBs are safety feature that contain trip switches that interrupt the circuit & disconnect the current when a fault occurs or the circuit is overloaded; trip switches can be reset when the fault has been found and adjusted; MCBs also contain RCDs (residual current devices) providing additional protection.", permittedMarks: [0,2,4] },
+    { id: "earth-wire", kind: "criterion", verbatim: "Earth wire", marks: 4, contextNote: "Required term, graded 4:2:0. Published 2023 scheme wording: if a fault occurs in the appliance, the earth wire carries the electrical current to the ground; prevents electrocution; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q1cii", topicId: "home-economics-3-6", conceptId: "household-electricity-efficiency",
+    section: "C", questionRef: "2023 HL Section C E1 Q1(c)(ii) — Deferred sitting",
+    stem: "‘There are lots of ways to make your home more energy efficient and comfortable.’ (www.seai.ie)",
+    questionText: "Identify three inefficient uses of electricity in the home and describe how to reduce the energy use in each case.",
+    tariffModel: {"kind":"fixed","notation":"3 pairs × (inefficient use 3 + reduction 3), both 3:0"}, totalMarks: 18,
+    rows: [
+    { id: "use-1", kind: "criterion", verbatim: "Inefficient use", marks: 6, contextNote: "Pair 1: identify a different inefficient use (3:0) and describe a matching reduction (3:0). Total 6:3:0. The scheme prints example inefficient uses but no model reduction descriptions. Complete source examples: unnecessary use of lights; use of standard bulbs instead of CFL’s; appliances left on standby; use of oven for one dish; heating system without thermostat/timer; washing half loads in dishwasher etc; choosing less energy efficient option e.g., grill instead of toaster; C rating appliance instead of an A rating; using tumble dryers to dry clothes etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Inefficient use","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Reduction in energy use","marks":3,"permittedMarks":[0,3]}] },
+    { id: "use-2", kind: "criterion", verbatim: "Inefficient use", marks: 6, contextNote: "Pair 2: identify a different inefficient use (3:0) and describe a matching reduction (3:0). Total 6:3:0. The scheme prints example inefficient uses but no model reduction descriptions. Use the example inefficient uses listed above; the reduction must match the use you identified.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Inefficient use","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Reduction in energy use","marks":3,"permittedMarks":[0,3]}] },
+    { id: "use-3", kind: "criterion", verbatim: "Inefficient use", marks: 6, contextNote: "Pair 3: identify a different inefficient use (3:0) and describe a matching reduction (3:0). Total 6:3:0. The scheme prints example inefficient uses but no model reduction descriptions. Use the example inefficient uses listed above; the reduction must match the use you identified.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Inefficient use","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Reduction in energy use","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q2ai", topicId: "home-economics-3-8", conceptId: "graduation-outfit-sketch",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(a)(i) — Deferred sitting",
+    stem: "A graduation ball allows young people the opportunity to dress formally for a celebratory occasion. (www.etiquettejulie.com)",
+    questionText: "Sketch and describe an outfit suitable to wear to a graduation ball.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 4 (4:3:2:1:0); description 6 (6:4:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "Sketch an outfit suitable for a graduation ball. Graded 4:3:2:1:0. The scheme supplies no model sketch.", permittedMarks: [0,1,2,3,4] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 6, contextNote: "Describe the same outfit. Graded 6:4:2:0. The scheme supplies no model description.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-hl-deferred-sc-q2a-graduation",
+          "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sc-q2a-graduation.png",
+          "srcHash": "b2eb887848057f923f3b0048678e3160",
+          "alt": "Original graduation-ball photograph: a group wearing formal dresses and suits at a celebration.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 6; photograph credited to www.etiquettejulie.com — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q2aii", topicId: "home-economics-3-8", conceptId: "graduation-outfit-evaluation",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(a)(ii) — Deferred sitting",
+    stem: "A graduation ball allows young people the opportunity to dress formally for a celebratory occasion. (www.etiquettejulie.com)\n\nEarlier task (i): Sketch and describe an outfit suitable to wear to a graduation ball. Use that outfit for this evaluation; sketch marks are awarded in the earlier task.",
+    questionText: "Evaluate the outfit with reference to each of the following: • comfort • aesthetic appeal • suitability for purpose.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "comfort", kind: "criterion", verbatim: "Comfort", marks: 5, contextNote: "Required heading, graded 5:3:0. Evaluate your own outfit from part (i). Published guidance: overall feel/comfort of the outfit, allows for body movement while dancing etc.", permittedMarks: [0,3,5] },
+    { id: "aesthetic", kind: "criterion", verbatim: "Aesthetic appeal", marks: 5, contextNote: "Required heading, graded 5:3:0. Evaluate your own outfit from part (i). Published guidance: overall appearance of outfit; colours, embellishments, emphasis in the outfit etc.", permittedMarks: [0,3,5] },
+    { id: "purpose", kind: "criterion", verbatim: "Suitability for purpose", marks: 5, contextNote: "Required heading, graded 5:3:0. Evaluate your own outfit from part (i). Published guidance: flattering, easy to care for; durable; suitable of fashion trends etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-hl-deferred-sc-q2a-graduation",
+          "src": "/exam-figures/home-economics/home-economics-2023-hl-deferred-sc-q2a-graduation.png",
+          "srcHash": "b2eb887848057f923f3b0048678e3160",
+          "alt": "Original graduation-ball photograph: a group wearing formal dresses and suits at a celebration.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper, page 6; photograph credited to www.etiquettejulie.com — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q2b", topicId: "home-economics-3-7", conceptId: "natural-fabric-profile",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(b) — Deferred sitting",
+    stem: "Natural fabric is clothing that is made from fibres produced by plants or animals.",
+    questionText: "Write a profile of one natural fabric you have studied. Refer to: • fibre production • fabric properties • fibre identification test.",
+    tariffModel: {"kind":"fixed","notation":"Production 3 × 2; properties 2 × 2 (2:0); test 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Three points for Cotton, each graded 2:0. Published guidance: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "fabric properties", marks: 4, contextNote: "Two properties for the same fabric, each graded 2:0. Published guidance: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "test", kind: "criterion", verbatim: "fibre identification test", marks: 5, contextNote: "One test for the same fibre, graded 5:3:0. Published guidance: can be identified by flame cotton burns quickly with yellow flame; grey ask produced; smells like charred paper etc.", permittedMarks: [0,3,5] },
+    ],
+    answerVariants: [
+          {
+                "id": "cotton",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three points for Cotton, each graded 2:0. Published guidance: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties for the same fabric, each graded 2:0. Published guidance: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "test",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One test for the same fibre, graded 5:3:0. Published guidance: can be identified by flame cotton burns quickly with yellow flame; grey ask produced; smells like charred paper etc."
+                      }
+                ]
+          },
+          {
+                "id": "linen",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three points for Linen, each graded 2:0. Published guidance: made from the stem of the flax plant; flax stems are pulled and stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties for the same fabric, each graded 2:0. Published guidance: absorbent; cool; strong; washes well; creases easily; shrinks easily; difficult to dye; damaged by mildew; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "test",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One test for the same fibre, graded 5:3:0. Published guidance: can be identified by flame linen burns quickly with yellow flame; grey ash produced; smells like burning paper etc."
+                      }
+                ]
+          },
+          {
+                "id": "wool",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three points for Wool, each graded 2:0. Published guidance: comes from the soft hair of sheep; the soft hair, which is called its fleece, is removed from the sheep; it is then collected and graded to the length of the fibres and also the colour and fineness of the wool; it is then cleaned and combed which is sometimes known as carding; it is then spun into yarn and can then be used to produce textiles; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties for the same fabric, each graded 2:0. Published guidance: warm; absorbent; does not burn easily; hardwearing; resilient; shrinks if washed at too high a temperature or if tumble dried; coarse, can irritate the skin; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "test",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One test for the same fibre, graded 5:3:0. Published guidance: wool smoulders, burns slowly with slow flickering flame; smell like burning feathers; the ash is black and crushable etc."
+                      }
+                ]
+          },
+          {
+                "id": "silk",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three points for Silk, each graded 2:0. Published guidance: silkworm feeds on mulberry leaves; it spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; these are then woven into fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties for the same fabric, each graded 2:0. Published guidance: absorbent; crease resistant; strong; smooth; light; drapes well; expensive; damaged by careless washing, moths, sunshine, chemicals; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "test",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One test for the same fibre, graded 5:3:0. Published guidance: slow to ignite, curls away from the flame; smells of burning feathers; burns as black beads etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-fabric",
+                "label": "Another valid natural fabric",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three accurate production points for your chosen natural fabric, each graded 2:0. The scheme supplies examples for cotton, linen, wool and silk only.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two accurate properties of the same fabric, each graded 2:0. No model for another fabric is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "test",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "An accurate identification test for the same fibre, graded 5:3:0. No model for another fabric is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q2ci", topicId: "home-economics-3-8", conceptId: "socioeconomic-fashion-factors",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(c)(i) — Deferred sitting",
+    stem: "The development of clothing trends is highly influenced by social and economic factors.",
+    questionText: "Discuss how socio-economic factors influence the design and construction of clothing.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "socio-economic factors", marks: 9, contextNote: "Three points, each graded 3:2:0. Address the social and economic influences asked for; the scheme does not assign a fixed number to each. Published guidance: social- changing roles of men; status of women; social conformity; etc. economic- consumer spending; production costs; wealthy economies- power dressing; poorer economies- simple fashions; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q2cii", topicId: "home-economics-3-8", conceptId: "social-media-fashion-influence",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(c)(ii) — Deferred sitting",
+    stem: "The development of clothing trends is highly influenced by social and economic factors.",
+    questionText: "Explain how social media influencers affect teenagers’ choice of clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "influence", kind: "criterion", verbatim: "social media influence", marks: 6, contextNote: "Two points, each graded 3:2:0. Published guidance: influencers sharing new fashion styles; products linked to social media; brand endorsement; endorsement of sustainable fashion; clothing lines designed by influencers; special offers on clothing; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3ai", topicId: "home-economics-3-9", conceptId: "paid-unpaid-work",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(a)(i) — Deferred sitting",
+    stem: "‘Irish job attitudes survey says two-thirds of adults are happy in their jobs.’ (www.rte.ie)",
+    questionText: "Differentiate between paid and unpaid work.",
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "paid", kind: "criterion", verbatim: "Paid work", marks: 5, contextNote: "Required comparison heading, graded 5:3:0. Published guidance: financial gain - wage / salary from working usually in a designated place; may be permanent, temporary, full-time, part-time or contract-based; self-employed or employed by another person; a wide range of skills required ranging from manual to managerial position; provides security in the form of pensions, PRSI, holiday and sick pay, etc.", permittedMarks: [0,3,5] },
+    { id: "unpaid", kind: "criterion", verbatim: "Unpaid work", marks: 5, contextNote: "Required comparison heading, graded 5:3:0. Published guidance: no financial reward for work; domestic housework e.g., child – rearing, caring for elderly/disabled, general tasks e.g., cooking, cleaning etc.; DIY home related activities, etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3aii", topicId: "home-economics-3-9", conceptId: "women-workforce-participation",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(a)(ii) — Deferred sitting",
+    stem: "‘Irish job attitudes survey says two-thirds of adults are happy in their jobs.’ (www.rte.ie)",
+    questionText: "Analyse the factors that have contributed to the increased participation rate of women in the Irish labour market.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Four points, each graded 5:3:0. Published 2023 guidance: smaller families; women not having their children until their careers are well established; male unemployment so many women returning to work as the family breadwinner; economic pressures two incomes required to maintain lifestyle; highly educated wish to make use of qualifications; support structures in place e.g. crèches; increased flexibility in the workplace e.g. job sharing, working part time, flexible hours, parental leave, term time, working from home etc; equality of opportunity in employment and education etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "attitudes-to-work",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(a)(iii) — Deferred sitting",
+    stem: "‘Irish job attitudes survey says two-thirds of adults are happy in their jobs.’ (www.rte.ie)",
+    questionText: "Identify and elaborate on the factors that affect an individual’s attitude to work.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "attitudes", kind: "criterion", verbatim: "attitude to work", marks: 20, contextNote: "Four points, each graded 5:3:0. Complete published 2023 guidance (general examples, not predictions about an individual): Social group: children from higher socio-economic group tend to have higher educational aspirations and long-term goals; they are encouraged and therefore more likely to attain work in desired area; children from lower socio-economic group tend to have fewer educational opportunities and are often less qualified; they may attain employment in low- status positions, with little chance of advancement and little job satisfaction, etc. Education: higher socio-economic group have better qualifications and higher career expectations, they have a more positive experience of work and remain in employment for longer; early school leavers find it difficult to find well-paid long-term employment; etc. Extrinsic satisfaction: based on bonuses associated with work rather than the job itself; repetitive uninteresting work e.g. assembly line – may fail to stimulate so the wage alone may become the focus for satisfaction; satisfaction is derived from spending the money on luxury goods and/or socialising, etc. Intrinsic satisfaction: work gives sense of fulfilment, pleasure and scope for creativity; pride in work; develops self-esteem, confidence, independence; confers status and respect; satisfies psychological and social needs; etc. Work ethic: attitude to work including absenteeism, punctuality, commitment to work and respect for authority, etc. Personal identity: some professions confer status in the community and as a result may link to a positive attitude to work; etc. Working conditions: availability of part time work, job sharing, flexitime and working from home make work life balance easier; atmosphere at work, etc. Social contact: influenced by background; experience; peer pressure; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3bi", topicId: "home-economics-3-10", conceptId: "adult-education-demand",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(b)(i) — Deferred sitting",
+    stem: "There are many part-time and full-time education courses available to adults.",
+    questionText: "Analyse the factors that contribute to the increasing demand for adult and second chance education.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "demand", kind: "criterion", verbatim: "adult and second chance education", marks: 20, contextNote: "Four points, each graded 5:3:0. Published 2023 guidance: Increases chances of employment; gain/add to qualifications; improves chances of promotion; self-fulfilment; keeping up to date with technological changes; to pursue an area of interest/hobby; professional development / keeping skills up to date; socialisation; as a second chance of education to increase literacy and numeracy; availability of courses; Back to Education Allowance (BTEA); etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3bii", topicId: "home-economics-3-10", conceptId: "second-chance-education-initiative",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(b)(ii) — Deferred sitting",
+    stem: "There are many part-time and full-time education courses available to adults.",
+    questionText: "Name and give details of one contemporary initiative that has improved access for adults to second chance education.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:1:0); details 2 × 4 (4:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name one initiative, graded 2:1:0. This is an open choice; do not combine details from different initiatives. “Contemporary” refers to the 2023 examination.", permittedMarks: [0,1,2] },
+    { id: "details", kind: "criterion", verbatim: "Explanation", marks: 8, contextNote: "Two matching details, each graded 4:2:0. The following are the published 2023 examination examples, not current eligibility or funding advice: VTOS- Courses of up to 2 years for long term unemployed over 21; personal development, business and computer skills; Training allowance paid etc. SOLAS- provides further training programmes for adults; apprenticeships, traineeships etc. P.L.C courses- Offer training with work experience; pathway for getting into further Education; variety of courses; No fees paid; exams under NFQ certification etc. Distance learning- Open university with online courses; different levels of qualifications available; entry requirements vary; etc. BTEA- funded by Dept of Social, Community and Family Affairs; unemployed for 15 months and over 21 or have a disability; may pursue full time or part time course; receive weekly payment etc. Special Initiatives for Disadvantaged Adults Scheme- funds through ETB’s for books, materials etc. Teagasc- provides courses and certification in agriculture or community Education Schemes; Macra na Feirme; Adult Literacy Initiatives etc. Further Education and Training courses (FET)- provide an opportunity to develop or upgrade skills in the commercial and industrial sectors if unemployed or redundant. Most courses are free may have opportunity to avail of Further Education and Training (FET) allowance depending on circumstances. If on a full-time course and childcare required, may qualify for a free childcare place under the Childcare Employment and Training Support (CETS) scheme. Springboard -provides free higher education places for unemployed people; may keep social welfare payment; etc. Night classes- self-funded educational opportunities are available through a range of night courses organised by local ETB, colleges and universities etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3ci", topicId: "home-economics-3-11", conceptId: "childcare-requirements",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(c)(i) — Deferred sitting",
+    stem: "‘Deciding on childcare is a big decision for any parent.’ (www.citizensinformation.ie)",
+    questionText: "Analyse the key requirements that parents should consider when choosing a suitable childcare option.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "requirements", kind: "criterion", verbatim: "requirements for childcare", marks: 20, contextNote: "Four points, each graded 5:3:0. Use the original paper’s request to analyse key requirements when choosing childcare; the scheme paraphrases that request. Published guidance: Both parents working; single parent working; availability of grandparents/family members; cost; after school care requirements; availability/convenience; opening/closing hours; flexibility/school holidays; proximity to child’s home; special needs of the child; age of child; reliability; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q3cii", topicId: "home-economics-3-11", conceptId: "childcare-option-evaluation",
+    section: "C", questionRef: "2023 HL Section C E3 Q3(c)(ii) — Deferred sitting",
+    stem: "‘Deciding on childcare is a big decision for any parent.’ (www.citizensinformation.ie)",
+    questionText: "Evaluate one childcare option available to dual-earner families.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); evaluation 4 × 2 (2:1:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name one suitable childcare option, graded 2:0. Use that same option throughout.", permittedMarks: [0,2] },
+    { id: "evaluation", kind: "criterion", verbatim: "Evaluation", marks: 8, contextNote: "Four evaluative points, each graded 2:1:0. The scheme gives option names and evaluation criteria, not a complete model evaluation for each: Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair; pre-school; after school groups; naíonraí; etc. Evaluative statement - i.e. advantages/disadvantages; number of children; ratio of children to adults; activities; safety; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4ai", topicId: "home-economics-0-9", conceptId: "cheese-nutritional-significance",
+    section: "C", questionRef: "2023 HL Section C Q4(a)(i) — Deferred sitting",
+    stem: "‘In Ireland, 8 in 10 consumers eat cheese in a typical week, with the majority consuming cheese 2-3 times a week.’ (www.bordbia.ie)",
+    questionText: "Discuss the nutritional significance of cheese in the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 20, contextNote: "Five points, each graded 4:3:2:1:0. The scheme groups its examples by nutrient but does not print a quota of one point per nutrient. Full published guidance: Protein: 10 - 27%, HBV, casein, soft cheese contains less protein than hard; needed for the growth and repair of cells etc. Fat: 4 - 35%, hard cheese is high in fat but less if made with skimmed milk; high in saturated fat; provided the body with heat and energy and raises blood cholesterol levels etc. Carbohydrate: 0% - 1.5% in cottage cheese; heat and energy; should be served with as carbohydrate food to balance it etc. Vitamins: 1%, A (retinol) and beta carotene-eyes, skin, membranes and growth; Vitamin B2 (riboflavin) for energy release; contains some vitamin D for absorption of calcium; for strong bones and teeth; deficient in vitamin C; etc. Minerals: 1.5 - 4% calcium for bones and teeth; sodium present as salt is added during production for healthy nerves; lacks iron; contains phosphorus for healthy bones and teeth; contains magnesium for nerve and muscle function; contains zinc for a healthy immune system etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4aii", topicId: "home-economics-0-9", conceptId: "cheese-production",
+    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) — Deferred sitting",
+    stem: "‘In Ireland, 8 in 10 consumers eat cheese in a typical week, with the majority consuming cheese 2-3 times a week.’ (www.bordbia.ie)",
+    questionText: "Describe the production of cheese. Refer to: • stages of production • packaging • labelling.",
+    tariffModel: {"kind":"fixed","notation":"Production 6 × 2 (2:1:0); packaging 2 × 2; labelling 2 × 2 (2:0) = 20"}, totalMarks: 20,
+    rows: [
+    { id: "production", kind: "criterion", verbatim: "stages of production", marks: 12, contextNote: "Six points, each graded 2:1:0. Source correction: the heading says “9 points”, but the detailed allocation is 6 + 2 + 2 points, matching the paper’s 20 marks. Published guidance: a culture of lactic acid bacteria is added to pasteurised milk; lactose (sugar in milk) changes to lactic acid which adds flavour and acts as a preservative; milk is heated to 30°C, rennet is added - contains enzymes rennin which coagulates protein (caseinogen to casein); mixture separates into curds (solids) and whey (liquid); curds are chopped to release more whey, whey is drained off; curds are heated to 35 - 40°c to squeeze out more whey and achieve correct consistency (scalding); curds are cut into blocks and piled on top of each other to complete drainage of whey (cheddaring); the blocks are cut and 2% salt is added for flavour and preservation; salted curds are placed in moulds and pressed; moulds may be sprayed with hot water to form a protective rind; cheese is removed from the mould, date stamped and stored for 3 - 12 months to ripen (mature); cheese is graded; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]},{"id":"point-6","verbatim":"Point 6","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "packaging", kind: "criterion", verbatim: "packaging", marks: 4, contextNote: "Two points, each graded 2:0. Published guidance: vacuum packed in polythene zip-lock plastic bag; waxed paper, plastic tubs; aluminium foils; cardboard etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "labelling", kind: "criterion", verbatim: "labelling", marks: 4, contextNote: "Two points, each graded 2:0. Published guidance: type; brand; quantity; nutritional information; date-stamp; storage instructions etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "fsai-role",
+    section: "C", questionRef: "2023 HL Section C Q4(a)(iii) — Deferred sitting",
+    stem: "‘In Ireland, 8 in 10 consumers eat cheese in a typical week, with the majority consuming cheese 2-3 times a week.’ (www.bordbia.ie)",
+    questionText: "Give an account of the role of the Food Safety Authority of Ireland (FSAI).",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "role", kind: "criterion", verbatim: "Food Safety Authority of Ireland", marks: 10, contextNote: "Two points, each graded 5:3:0. Published 2023 guidance: Advises Ministers, regulators, the food industry and consumers on food safety; takes action if places are in breach of regulations; has national responsibility for coordinating the enforcement of food safety; working with the food industry to gain its commitment in the production of safe food; processes application for novel foods and newer processing methods etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4bi", topicId: "home-economics-1-2", conceptId: "household-technology-retail-outlets",
+    section: "C", questionRef: "2023 HL Section C Q4(b)(i) — Deferred sitting",
+    stem: "There are numerous shopping outlets available to Irish consumers.",
+    questionText: "Name two different types of retail outlets where household technology can be purchased. State one advantage and one disadvantage of each outlet.",
+    tariffModel: {"kind":"fixed","notation":"2 outlets × (name 3 (3:0) + advantage 2 + disadvantage 2 (2:1:0))"}, totalMarks: 14,
+    rows: [
+    { id: "outlet-1", kind: "criterion", verbatim: "Retail Outlets", marks: 7, contextNote: "Name a different outlet (3:0), then give a matching advantage and disadvantage (each 2:1:0). Full published examples: Small independent shops; Advantage: offer more of a personal service; specialised knowledge; convenient location; offer choice etc. Disadvantage: may be more expensive etc. Supermarkets; Advantage: convenient location; offer choice etc. Disadvantage: less personal service; smaller range of brands; etc. Department stores; Advantage: offer choice; offer store card etc. Disadvantage: inconvenient location etc. Chain stores; Advantage: convenient location; offer choice etc. Disadvantage: less personal service etc. Discount Electrical Stores; Advantage: convenient location; offer choice; offer better value for money etc. Disadvantage: sometimes lack choice etc.", permittedMarks: [0,1,2,3,4,5,6,7], parts: [{"id":"name","verbatim":"Name","marks":3,"permittedMarks":[0,3]},{"id":"advantage","verbatim":"Advantage","marks":2,"permittedMarks":[0,1,2]},{"id":"disadvantage","verbatim":"Disadvantage","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "outlet-2", kind: "criterion", verbatim: "Retail Outlets", marks: 7, contextNote: "Name a different outlet (3:0), then give a matching advantage and disadvantage (each 2:1:0). Use the full published examples listed above.", permittedMarks: [0,1,2,3,4,5,6,7], parts: [{"id":"name","verbatim":"Name","marks":3,"permittedMarks":[0,3]},{"id":"advantage","verbatim":"Advantage","marks":2,"permittedMarks":[0,1,2]},{"id":"disadvantage","verbatim":"Disadvantage","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4bii", topicId: "home-economics-1-0", conceptId: "management-shopping",
+    section: "C", questionRef: "2023 HL Section C Q4(b)(ii) — Deferred sitting",
+    stem: "There are numerous shopping outlets available to Irish consumers.",
+    questionText: "Describe how the components of management (inputs, throughputs and outputs), could be applied to shopping efficiently for the family.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "management", kind: "criterion", verbatim: "components of management", marks: 16, contextNote: "Four points, each graded 4:2:0. Address inputs, throughputs and outputs as asked. The scheme does not assign a fixed quota to each heading. Published guidance: Inputs: Demands – needs; goals; wants; values, etc. Resources – human; economic; material; environmental, etc. Throughputs: Planning; Organising; Implementing. Planning – gathering information; considering alternatives; deciding on a list; etc. Organising – allocating different tasks; communication with family members etc. Implementing – putting the plan into action e.g. suitable day & time etc. Outputs / Evaluation: assess the end result of inputs and throughputs - have the goals been reached; have the values changed; have the needs been met; were the wants fulfilled; were all resources used effectively; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4ci", topicId: "home-economics-2-1", conceptId: "cultural-marital-arrangements",
+    section: "C", questionRef: "2023 HL Section C Q4(c)(i) — Deferred sitting",
+    stem: "Marriage is a big decision and is one of the most significant commitments in a person’s life.",
+    questionText: "Describe three different cultural variations in marital arrangements.",
+    tariffModel: {"kind":"fixed","notation":"3 different variations × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "variations", kind: "criterion", verbatim: "cultural variations", marks: 15, contextNote: "Describe three different cultural variations, each graded 5:3:0, as the original paper specifies. The scheme uses the shorter instruction “Outline”. Published guidance: Cultural variations – minimum age; choice of partners; number of spouses – monogamy and polygamy; arranged marriages; interfaith marriages and different faiths; same sex marriages; different ages; type of ceremony; location of ceremony; 2nd marriages; etc", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2023-hl-deferred-sc-q4cii", topicId: "home-economics-2-1", conceptId: "marital-rights-responsibilities",
+    section: "C", questionRef: "2023 HL Section C Q4(c)(ii) — Deferred sitting",
+    stem: "Marriage is a big decision and is one of the most significant commitments in a person’s life.",
+    questionText: "Discuss the rights and responsibilities of a couple within a marriage relationship.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "rights", kind: "criterion", verbatim: "rights and responsibilities", marks: 15, contextNote: "Three points, each graded 5:3:0. Source clarification: marriage never removes the requirement for freely given consent to sexual activity. Consent can be withdrawn; marriage creates no entitlement to sex. Ireland abolished the marital rape exemption in 1990. The wording and Acts below are historical examination guidance, not current legal advice. Published 2023 scheme wording: to cohabit/live together and keep each other company; to have sexual relations with each other during the marriage; to show commitment to the marriage and remain faithful and loyal in a monogamous relationship; to provide financial support for dependent spouses and children as set out in the Family Law (Maintenance of Spouses and Children) Act 1976; to share joint guardianship of any children born within the marriage, and to meet their children’s physical, moral, emotional, intellectual and social needs. Children may be taken into care if parents do not fulfil this right; to inherit from each other under the Succession Act 1965, e.g., if a spouse dies and there is no will and no children the surviving spouse is entitled to all of the estate; protection under the Domestic Violence Act 1996; under the Family Home Protection Act 1976 etc", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

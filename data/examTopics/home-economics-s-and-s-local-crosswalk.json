@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-11-01T17:43:22.715Z",
+  "generatedAt": "2026-11-01T17:57:12.806Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
     "referenceOfficialAssociations": 1561,
-    "matchedAssociations": 1206,
-    "sourceBlockedAssociations": 355,
+    "matchedAssociations": 1226,
+    "sourceBlockedAssociations": 335,
     "sourceBlockedByReason": {
       "before-local-corpus": 297,
-      "deferred-sitting-not-in-local-corpus": 58
+      "deferred-sitting-not-in-local-corpus": 38
     },
-    "matchedLocalCardLinks": 1721,
-    "exactRuntimeQuestionMappings": 922,
+    "matchedLocalCardLinks": 1741,
+    "exactRuntimeQuestionMappings": 926,
     "localAnswerAnchoredPaperVariants": 93,
-    "localAnswerAnchoredPhysicalCards": 1262,
+    "localAnswerAnchoredPhysicalCards": 1266,
     "sourceUnavailableTopics": 0
   },
   "policy": {
@@ -2547,16 +2547,36 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part C - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-heating-water-lighting",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part C - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-heating-water-lighting",
@@ -3132,24 +3152,54 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part A - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-housing-planning-building",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part A - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-housing-planning-building",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part A - (iii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-housing-planning-building",
@@ -3532,16 +3582,36 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part B - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-interior-design",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 1 - Part B - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "6",
+          "label": "Section C · Elective 1"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-1-interior-design",
@@ -3978,16 +4048,36 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part A - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-fabrics",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part B",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-fabrics",
@@ -4670,32 +4760,72 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part A - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-patterns-fashion",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part A - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-patterns-fashion",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part C - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-patterns-fashion",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 2 - Part C - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "7",
+          "label": "Section C · Elective 2"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-2-patterns-fashion",
@@ -5530,24 +5660,54 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part A - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-un-employment-poverty",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part A - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-un-employment-poverty",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part A - (iii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-un-employment-poverty",
@@ -6131,16 +6291,36 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part B - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-education-in-ireland",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part B - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-education-in-ireland",
@@ -6473,16 +6653,36 @@
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part C - (i)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-family-life-leisure",
       "heading": "2023 - Deferred Exam Paper - Section C - Question 3 - Part C - (ii)",
       "level": "higher",
       "variant": "higher",
-      "resolution": "source-blocked",
-      "reason": "deferred-sitting-not-in-local-corpus"
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC098ALP039EV-deferred.pdf",
+          "n": "8",
+          "label": "Section C · Elective 3"
+        }
+      ]
     },
     {
       "topicId": "home-economics-s-and-s-higher-elective-3-family-life-leisure",
@@ -29006,7 +29206,7 @@
     "paperFileid": "LC098ALP014EV-deferred.pdf",
     "physicalQuestions": 14,
     "review": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
-    "policy": "15 practice tasks map to 14 printed Section A questions. Deferred identities are separate from main. B/C still open.",
+    "policy": "15 practice tasks map to 14 printed Section A questions. Deferred identities are separate from main.",
     "markBankMappings": [
       {
         "id": "he-2023-hl-deferred-sa-q1",
@@ -29136,7 +29336,7 @@
     "paperFileid": "LC098ALP039EV-deferred.pdf",
     "physicalQuestions": 5,
     "review": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
-    "policy": "All 17 Section B tasks across five printed questions. Section C still open.",
+    "policy": "All 17 Section B tasks across five printed questions.",
     "markBankMappings": [
       {
         "id": "he-2023-hl-deferred-sb-q1a",
@@ -29276,6 +29476,224 @@
         "topicId": "home-economics-2-0",
         "atlasTopicIds": [
           "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      }
+    ]
+  },
+  "reviewedEnglish2023DeferredC": {
+    "paperFileid": "LC098ALP039EV-deferred.pdf",
+    "physicalQuestions": 4,
+    "review": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
+    "policy": "All 26 Section C tasks; all three electives and alternative Core Q4 included. Canonical card topics supplemented with the source associations. Deferred identities remain separate from main.",
+    "markBankMappings": [
+      {
+        "id": "he-2023-hl-deferred-sc-q1ai",
+        "n": "6",
+        "topicId": "home-economics-3-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-housing-planning-building"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1aii",
+        "n": "6",
+        "topicId": "home-economics-3-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-housing-planning-building"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1aiii",
+        "n": "6",
+        "topicId": "home-economics-3-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-housing-planning-building"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1bi",
+        "n": "6",
+        "topicId": "home-economics-3-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-interior-design"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1bii",
+        "n": "6",
+        "topicId": "home-economics-3-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-interior-design"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1ci",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q1cii",
+        "n": "6",
+        "topicId": "home-economics-3-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-energy-emissions"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q2ai",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q2aii",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q2b",
+        "n": "7",
+        "topicId": "home-economics-3-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-fabrics"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q2ci",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q2cii",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3ai",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3aii",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3aiii",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3bi",
+        "n": "8",
+        "topicId": "home-economics-3-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-education-in-ireland"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3bii",
+        "n": "8",
+        "topicId": "home-economics-3-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-education-in-ireland"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3ci",
+        "n": "8",
+        "topicId": "home-economics-3-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q3cii",
+        "n": "8",
+        "topicId": "home-economics-3-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4ai",
+        "n": "9",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4aii",
+        "n": "9",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4aiii",
+        "n": "9",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4bi",
+        "n": "9",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4bii",
+        "n": "9",
+        "topicId": "home-economics-1-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4ci",
+        "n": "9",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-marriage-family-law",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-deferred-sc-q4cii",
+        "n": "9",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-marriage-family-law",
           "home-economics-s-and-s-higher-the-family"
         ]
       }

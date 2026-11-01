@@ -12,13 +12,35 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_deferred_c_regenerates_with_final_prompts_and_complete_scheme_continuations(self):
+        from he_review_2023_hl_deferred_c1 import build as build_c1
+        from he_review_2023_hl_deferred_c_rest import build as build_rest, FIGURE, CROP_SHA256
+        from he_review_2023_hl_deferred import documents
+        cards = build_c1() + build_rest()
+        self.assertEqual(len(cards), 26)
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for c in cards: self.assertEqual(authored[c['id']], c)
+        self.assertEqual(hashlib.sha256((ROOT / f'public/exam-figures/home-economics/{FIGURE}.png').read_bytes()).hexdigest(), CROP_SHA256)
+        q = json.loads((ROOT / 'scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json').read_text())['q'][5:]
+        self.assertEqual([[r['p'] for r in x['region']] for x in q], [[18, 19, 20, 21], [22, 23, 24], [25, 26, 27], [28, 29, 30]])
+        docs = documents()
+        for question, last_marks, last_prompt in zip(q, [18, 6, 10, 15], ['reduce the energy', 'influencers', 'dual-earner', 'marriage relationship']):
+            page = docs['bc'][question['pP'] - 1]
+            text = page.get_text(clip=fitz.Rect(0, question['pY'][0] * page.rect.height, page.rect.width, question['endY'] * page.rect.height))
+            self.assertIn(f'({last_marks} marks)', text)
+            self.assertIn(last_prompt, text)
+            self.assertNotIn('Leaving Certificate Examination', text)
+            for r in question['region']:
+                page = docs['scheme'][r['p'] - 1]
+                self.assertGreaterEqual(r['r'][3] * page.rect.height, max(w[3] for w in page.get_text('words') if w[3] < 775))
+
     def test_deferred_b2_to_b5_regenerate_and_keep_every_final_prompt_and_source_page(self):
         from he_review_2023_hl_deferred_b_rest import build
         from he_review_2023_hl_deferred import documents
         cards = build(); self.assertEqual(len(cards), 12)
         authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
         for c in cards: self.assertEqual(authored[c['id']], c)
-        q = json.loads((ROOT / 'scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json').read_text())['q']
+        q = json.loads((ROOT / 'scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json').read_text())['q'][:5]
         self.assertEqual([[r['p'] for r in x['region']] for x in q], [[8, 9], [10, 11], [12, 13, 14], [15, 16], [17]])
         docs = documents()
         for question, last_marks in zip(q, [20, 12, 8, 10, 10]):
