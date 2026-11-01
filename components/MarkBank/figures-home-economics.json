@@ -13,5 +13,13 @@
     "alt": "Sources of iron in Irish teenagers aged 13–18 years. Breakfast cereals 22%; meat and meat products 20%; breads and rolls 14%; grains, rice and pasta 10%; vegetables and potatoes 9%; confectionery, biscuits and preserves 11%; other 14%.",
     "attribution": "SEC Home Economics 2023 Higher Level examination paper, Sections B and C page 2 — © State Examinations Commission.",
     "sourceNote": "Complete original question chart, visually checked with title, all seven labels and percentages, and all borders. No marking-scheme material. Bounds [74,214,520,437], 2×."
+  },
+  "home-economics-2023-hl-sc-q1bi-scheme": {
+    "src": "/exam-figures/home-economics/home-economics-2023-hl-sc-q1bi-scheme.png",
+    "md5": "d3972b124395e12f3fa7ee5becdf19f5",
+    "alt": "SEC scheme: Property; Explanation; Example. Reflected: rays bounce off a shiny surface; mirrors, polished porcelain, light colours on walls, gloss paint, glazed wall tiles. Diffused: rays scatter through translucent substances or on a non-reflecting surface; net curtains, frosted glass, translucent lampshades. Absorbed: dark and matt surfaces absorb light; dark painted walls, brick walls, stone. Dispersed: a prism or crystal splits rays into component colours; chandeliers. Refracted: thick or ridged glass bends rays; glass bricks, double glazing.",
+    "solution": true,
+    "attribution": "SEC Home Economics 2023 Higher Level marking scheme, page 19 — © State Examinations Commission.",
+    "sourceNote": "Original three-column table; all five rows, headers and borders visually verified. Bounds [53,153,547,376], 2×."
   }
 }

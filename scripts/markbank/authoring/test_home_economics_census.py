@@ -30,6 +30,32 @@ class HomeEconomicsNestedDevicesTest(unittest.TestCase):
 
 
 class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
+    def test_social_studies_and_core_source_reviews_regenerate(self):
+        from he_review_2023_hl_elective3 import build as social
+        from he_review_2023_hl_core import build as core
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        for build in [social, core]:
+            fixes = build()
+            self.assertEqual(len(fixes), 7)
+            for key, correction in fixes.items():
+                self.assertEqual(saved[key], correction)
+
+    def test_elective_two_source_review_regenerates(self):
+        from he_review_2023_hl_elective2 import build
+        fixes = build()
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        self.assertEqual(len(fixes), 5)
+        for key, correction in fixes.items():
+            self.assertEqual(saved[key], correction)
+
+    def test_elective_one_source_review_regenerates(self):
+        from he_review_2023_hl_elective1 import build
+        fixes = build()
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        self.assertEqual(len(fixes), 7)
+        for key, correction in fixes.items():
+            self.assertEqual(saved[key], correction)
+
     def test_remaining_section_b_reproduces_complete_source_guidance(self):
         from he_review_2023_hl_section_b_rest import build
         fixes = build()

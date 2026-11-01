@@ -18,6 +18,129 @@ const get = (id: string) => {
 };
 
 describe('2023 Higher Home Economics recovered tasks', () => {
+  it('preserves the Social Studies minimum headings and paired scheme marks', () => {
+    const work = get('he-2023-hl-sc-q3ai');
+    expect(work.rows.map(r => r.marks)).toEqual([4, 4, 12]);
+    expect(work.rows[2].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 4]));
+    const welfare = get('he-2023-hl-sc-q3bii');
+    expect(welfare.rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual([
+      [[0, 2, 3], [0, 2, 4]], [[0, 2, 3], [0, 2, 4]],
+    ]);
+    expect(welfare.rows[0].contextNote?.split('\n\n')).toHaveLength(9);
+    expect(welfare.rows[0].contextNote).toContain('eases transition from rent to mortgage');
+    expect(get('he-2023-hl-sc-q3ci').rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 3, 6]));
+    expect(get('he-2023-hl-sc-q3cii').rows[0].contextNote).toContain('Published 2023 examination guidance');
+    expect(get('he-2023-hl-sc-q3cii').rows[0].contextNote).toContain('€7.91');
+  });
+
+  it('keeps complete cooking and packaging choices within their existing live identities', () => {
+    const cooking = get('he-2023-hl-sc-q4aii-boiling');
+    expect(cooking.answerVariants).toHaveLength(10);
+    expect(cooking.answerVariants?.find(v => v.id === 'frying')?.rows[2].contextNote).toContain('some loss of B group vitamins');
+    for (const variant of cooking.answerVariants ?? []) {
+      expect(variant.rows.map(r => r.marks)).toEqual([3, 9, 12]);
+      expect(variant.rows[1].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 3]));
+      expect(variant.rows[2].parts?.map(p => p.permittedMarks)).toEqual(Array(4).fill([0, 2, 3]));
+      expect(tariffReconciles({ ...cooking, rows: variant.rows })).toBe(true);
+    }
+    const packaging = get('he-2023-hl-sc-q4aiii-glass');
+    expect(packaging.answerVariants?.map(v => v.id)).toEqual(['glass', 'metal', 'paper', 'plastic', 'another-material']);
+    for (const variant of packaging.answerVariants ?? []) {
+      expect(variant.rows.map(r => r.permittedMarks)).toEqual([[0, 2, 4], [0, 3, 5], [0, 3, 5]]);
+      expect(tariffReconciles({ ...packaging, rows: variant.rows })).toBe(true);
+    }
+    expect(packaging.answerVariants?.find(v => v.id === 'plastic')?.rows[2].contextNote).toContain('limited and non-renewable resources');
+    expect(get('he-2023-hl-sc-q4cii').rows[0].contextNote).toContain('incorporated grill browns food by radiation');
+  });
+
+  it('reconciles all 2023 Higher practice tasks after the full paper and scheme review', () => {
+    const cards = CARDS.filter(c => c.year === 2023);
+    expect(cards).toHaveLength(59);
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(749);
+    for (const card of cards) {
+      if (card.kind !== 'question') throw new Error(card.id);
+      expect(tariffReconciles(card), card.id).toBe(true);
+      for (const variant of card.answerVariants ?? []) expect(tariffReconciles({ ...card, rows: variant.rows }), `${card.id}/${variant.id}`).toBe(true);
+    }
+  });
+
+  it('keeps the graduation-ball outfit context with its fabric and principle tasks', () => {
+    const sketch = get('he-2023-hl-sc-q2ai');
+    expect(sketch.rows[0].permittedMarks).toEqual([0, 2, 4, 6]);
+    expect(sketch.rows[1].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 1, 2]));
+    const fabric = get('he-2023-hl-sc-q2aii');
+    expect(fabric.questionText).toBe('Suggest a suitable fabric for the outfit and give a reason for your choice.');
+    expect(fabric.stem).toContain('Sketch and describe an outfit to wear for your graduation ball.');
+    expect(fabric.rows.map(r => r.permittedMarks)).toEqual([[0, 3], [0, 2, 3]]);
+    const principle = get('he-2023-hl-sc-q2aiii');
+    expect(principle.stem).toContain('graduation ball');
+    expect(principle.answerVariants?.map(v => v.id)).toEqual(['balance', 'emphasis', 'proportion', 'rhythm', 'another-principle']);
+    for (const variant of principle.answerVariants ?? []) {
+      expect(variant.rows[1].permittedMarks).toEqual([0, 3, 5]);
+      expect(tariffReconciles({ ...principle, rows: variant.rows })).toBe(true);
+    }
+  });
+
+  it('keeps one blended-fabric profile with complete component production and the original progress identity', () => {
+    const blend = get('he-2023-hl-sc-q2b-wool-nylon');
+    expect(CARDS.some(c => c.id === 'he-2023-hl-sc-q2b-cotton-polyester')).toBe(false);
+    expect(blend.answerVariants?.map(v => v.id)).toEqual(['wool-nylon', 'cotton-polyester', 'another-blend']);
+    expect(blend.answerVariants?.[0].rows[0].contextNote).toContain('wool fleece is graded');
+    expect(blend.answerVariants?.[1].rows[0].contextNote).toContain('filaments solidify when cooled');
+    for (const variant of blend.answerVariants ?? []) {
+      expect(variant.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 3]));
+      expect(variant.rows[0].contextNote).toContain('warp and weft');
+      expect(variant.rows[2].contextNote).toContain('bed linen');
+      expect(tariffReconciles({ ...blend, rows: variant.rows })).toBe(true);
+    }
+    const vintage = get('he-2023-hl-sc-q2ci');
+    expect(vintage.rows.map(r => r.verbatim)).toEqual(['pattern', 'influences', 'accessories']);
+    expect(vintage.rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 2, 3]));
+    const cards = ['ai', 'aii', 'aiii', 'b-wool-nylon', 'ci', 'cii'].map(part => get(`he-2023-hl-sc-q2${part}`));
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(55);
+    for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
+  });
+
+  it('keeps paired Elective 1 answers and the complete original light-property table', () => {
+    const rooms = get('he-2023-hl-sc-q1aii');
+    expect(rooms.stem).toContain('help people make their home');
+    expect(rooms.sourceMaterial?.pages).toEqual([5]);
+    expect(rooms.rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual([
+      [[0, 2], [0, 2, 4]], [[0, 2], [0, 2, 4]],
+    ]);
+    expect(rooms.rows[0].contextNote).toContain('17°C to 21°C');
+    const light = get('he-2023-hl-sc-q1bi');
+    expect(light.figure?.solution).toBe(true);
+    expect(light.figure?.alt).toContain('Refracted:');
+    expect(light.rows).toHaveLength(4);
+    for (const row of light.rows) {
+      expect(row.parts?.map(p => p.permittedMarks)).toEqual([[0, 2], [0, 1, 2], [0, 1]]);
+      expect(row.contextNote).toContain('matching explanation and home example');
+    }
+  });
+
+  it('retains Elective 1 required headings, lighting choices and every published tariff', () => {
+    const design = get('he-2023-hl-sc-q1ai');
+    expect(design.rows.map(r => r.marks)).toEqual([8, 8, 4]);
+    expect(design.rows[0].contextNote).toContain('ergonomics');
+    expect(design.rows[1].contextNote).toContain('repurpose');
+    const housing = get('he-2023-hl-sc-q1ci');
+    expect(housing.rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 2, 4, 6]));
+    const lighting = get('he-2023-hl-sc-q1bii');
+    expect(lighting.answerVariants?.map(v => v.id)).toEqual(['cfl', 'led', 'another-type']);
+    for (const variant of lighting.answerVariants ?? []) {
+      expect(variant.rows[0].permittedMarks).toEqual([0, 2, 4]);
+      expect(variant.rows[1].parts?.map(p => p.permittedMarks)).toEqual([[0, 2, 3], [0, 2, 3]]);
+      expect(tariffReconciles({ ...lighting, rows: variant.rows })).toBe(true);
+    }
+    const cards = ['ai', 'aii', 'aiii', 'bi', 'bii', 'ci', 'cii'].map(part => get(`he-2023-hl-sc-q1${part}`));
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(110);
+    expect(cards.slice(0, 3).reduce((sum, c) => sum + c.totalMarks, 0)).toBe(50);
+    expect(cards.slice(3, 5).reduce((sum, c) => sum + c.totalMarks, 0)).toBe(30);
+    expect(cards.slice(5).reduce((sum, c) => sum + c.totalMarks, 0)).toBe(30);
+    for (const card of cards) expect(tariffReconciles(card), card.id).toBe(true);
+  });
+
   it('retains the fish tariff, complete factor guidance and compulsory management headings', () => {
     const fish = get('he-2023-hl-sb-q2a');
     expect(fish.stem).toContain('recommend consuming 2-3 portions');

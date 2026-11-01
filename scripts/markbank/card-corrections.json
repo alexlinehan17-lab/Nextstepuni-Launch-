@@ -562,23 +562,586 @@
    "replacementId": "he-2024-hl-sc-q2b-wool"
   },
   "he-2023-hl-sc-q2b-wool-nylon": {
-   "reason": "The paper asks for one blended fabric. The two published examples are selectable scheme routes within one practice identity.",
+   "reason": "Independent 2023 Higher Elective 2 review: original linked context, complete source guidance and published partial marks.",
    "set": {
+    "questionText": "Write a profile of one blended fabric. Refer to: • fabric production • fabric properties • uses.",
+    "stem": "Blended fabrics have combined properties of each component fibre.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Production 3 × 3 (3:2:0), properties 3 × 1 (1:0), uses 3 × 1 (1:0)"
+    },
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fabric production",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "Three distinct production points for your chosen blend, each graded 3:2:0. Published component and blending guidance:\n\nwool fleece is graded; cleaned; teased; etc.\n\nnylon two chemicals are mixed together and heated; molecules link to produce a long filament; hot nylon is squirted from a slit in the base of steel vessels; etc.\n\nBlending combinations/mixing threads by weaving together in the warp and weft; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "fabric properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the blend, each graded 1:0. Published component properties:\n\nwool warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing (shrinks and felts); piles; can irritate some skin; etc.\n\nnylon strong; warm; elastic; light; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uses",
+      "kind": "criterion",
+      "verbatim": "uses",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three uses, each graded 1:0. Published guidance: clothing; soft furnishings; upholstery; bed linen; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Required headings and open choices remain one response. See he_review_2023_hl_elective2.py.",
+    "answerVariants": [
+     {
+      "id": "wool-nylon",
+      "label": "Wool and nylon",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fabric production",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct production points for your chosen blend, each graded 3:2:0. Published component and blending guidance:\n\nwool fleece is graded; cleaned; teased; etc.\n\nnylon two chemicals are mixed together and heated; molecules link to produce a long filament; hot nylon is squirted from a slit in the base of steel vessels; etc.\n\nBlending combinations/mixing threads by weaving together in the warp and weft; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "fabric properties",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three properties of the blend, each graded 1:0. Published component properties:\n\nwool warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing (shrinks and felts); piles; can irritate some skin; etc.\n\nnylon strong; warm; elastic; light; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       },
+       {
+        "id": "uses",
+        "kind": "criterion",
+        "verbatim": "uses",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three uses, each graded 1:0. Published guidance: clothing; soft furnishings; upholstery; bed linen; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cotton-polyester",
+      "label": "Cotton and polyester",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fabric production",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct production points for your chosen blend, each graded 3:2:0. Published component and blending guidance:\n\ncotton boll is harvested; cotton fibres are removed; spun into yarn; etc.\n\npolyester viscous liquid created; extruded through fine holes in a nozzle or spinneret; filaments solidify when cooled; etc.\n\nBlending combinations/mixing threads by weaving together in the warp and weft; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "fabric properties",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three properties of the blend, each graded 1:0. Published component properties:\n\ncotton strong; durable; absorbent; easy to launder; cool against the skin; easy to dye; no elasticity; shrinks; burns; etc.\n\npolyester strong; hardwearing; crease-resistant; stain-resistant; good drape; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       },
+       {
+        "id": "uses",
+        "kind": "criterion",
+        "verbatim": "uses",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three uses, each graded 1:0. Published guidance: clothing; soft furnishings; upholstery; bed linen; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another-blend",
+      "label": "Another blended fabric",
+      "rows": [
+       {
+        "id": "production",
+        "kind": "criterion",
+        "verbatim": "fabric production",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three accurate production points for the blend you chose, each graded 3:2:0. The scheme prints examples for wool/nylon and cotton/polyester only. General blending guidance: Blending combinations/mixing threads by weaving together in the warp and weft; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "fabric properties",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three accurate properties of the blend you chose, each graded 1:0. The other routes contain the printed component examples.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       },
+       {
+        "id": "uses",
+        "kind": "criterion",
+        "verbatim": "uses",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         2,
+         3
+        ],
+        "contextNote": "Three valid uses of the blend, each graded 1:0. Published guidance: clothing; soft furnishings; upholstery; bed linen; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 1,
+          "permittedMarks": [
+           0,
+           1
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "questionRef": "2023 HL Section C E2 Q2(b)",
     "conceptId": "blended-fabric-profile"
-   },
-   "answerVariantSources": [
-    {
-     "cardId": "he-2023-hl-sc-q2b-wool-nylon",
-     "id": "wool-nylon",
-     "label": "Wool and nylon"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q2b-cotton-polyester",
-     "id": "cotton-polyester",
-     "label": "Cotton and polyester"
-    }
-   ]
+   }
   },
   "he-2023-hl-sc-q2b-cotton-polyester": {
    "reason": "The paper asks for one blended fabric. The two published examples are selectable scheme routes within one practice identity. Progress now belongs to he-2023-hl-sc-q2b-wool-nylon.",
@@ -586,58 +1149,1406 @@
    "replacementId": "he-2023-hl-sc-q2b-wool-nylon"
   },
   "he-2023-hl-sc-q4aii-boiling": {
-   "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions.",
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
    "set": {
+    "questionText": "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: • name of cooking method • underlying principle • how the cooking method chosen affects the meat.",
+    "stem": "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 3 (3:0); principle 3 × 3, effects 4 × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Boiling",
+      "marks": 3
+     },
+     {
+      "id": "principle",
+      "kind": "criterion",
+      "verbatim": "underlying principle",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction heat moving from molecule to molecule within the food; convection - as water is heated it becomes less dense and rises creating convection currents; occurs at 100°C; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effects",
+      "kind": "criterion",
+      "verbatim": "how the cooking method chosen affects the meat",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: change in colour; change in texture; meat remains moist; B vitamins lost in cooking liquid; little flavour added; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py.",
+    "answerVariants": [
+     {
+      "id": "boiling",
+      "label": "Boiling",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Boiling",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction heat moving from molecule to molecule within the food; convection - as water is heated it becomes less dense and rises creating convection currents; occurs at 100°C; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: change in colour; change in texture; meat remains moist; B vitamins lost in cooking liquid; little flavour added; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "poaching",
+      "label": "Poaching",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Poaching",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction; convection; occurs at 80°C; barely bubbling; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: little change in colour; no change in flavour; meat remains moist; water soluble vitamin B group retained; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "steaming",
+      "label": "Steaming",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Steaming",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: meat is cooked in the steam of boiling water; convection; conduction; 100+°C; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: little change in colour; no change in flavour; meat remains moist; water soluble vitamin B group retained; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "stewing",
+      "label": "Stewing",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Stewing",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction; convection; small amount of liquid; at 80-90°C; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: tenderises meat; enhance flavour with well flavoured stock; change in colour; change in texture; meat remains moist; nutrients leach into cooking liquid; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "braising",
+      "label": "Braising",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Braising",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: meat seared in hot fat; conduction; convection; 80-90°C; in a small amount of liquid; covered saucepan on hob; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: tenderises tough cuts of meat; searing seals in flavour; gives colour to meat; flavour enhanced by well-flavoured stock; nutrients leach into cooking liquid; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "pressure-cooking",
+      "label": "Pressure cooking",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Pressure cooking",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: high temperatures; conduction; convection; pressure increased inside the pressure cooker; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: meat cooks quickly; meal cooked in one pot increases flavour; no extra fat is added; retains more nutrients than other methods; tenderises meat; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "roasting",
+      "label": "Roasting",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Roasting",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction; convection; 175-230°C; in a little fat in oven; pot roasting in a covered saucepan on a hob; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: basting adds moisture; melting fat adds flavour; change in colour; tenderises meat; crisp texture can form; loss of B group vitamins; high temperatures cause meat to shrink; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "grilling-barbecuing",
+      "label": "Grilling/Barbecuing",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Grilling/Barbecuing",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: radiant heat; conduction; heat seals surface of food; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: sealing surface of meat retains nutrients; colour change; marinating meat develops flavour; adds moisture; loss of B group vitamins; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "frying",
+      "label": "Frying",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "Frying",
+        "marks": 3
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three distinct points for your chosen method, each graded 3:2:0. Published guidance: conduction; convection; hot oil/fat seals outer surface of meat; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four distinct effects of the same method, each graded 3:2:0. Published guidance: increases fat content; forms crisp finish on meat; adds flavour; some loss of B group vitamins etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another-method",
+      "label": "Another cooking method",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "name of cooking method",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ],
+        "contextNote": "Name the method you evaluated. The question leaves the choice open."
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 9,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9
+        ],
+        "contextNote": "Three accurate points for your method, each graded 3:2:0. The nine other routes contain the printed examples; no model is supplied for another method.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       },
+       {
+        "id": "effects",
+        "kind": "criterion",
+        "verbatim": "how the cooking method chosen affects the meat",
+        "marks": 12,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+        ],
+        "contextNote": "Four accurate effects on meat, each graded 3:2:0. Keep the effects tied to the same method; the scheme gives no model for another method.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-3",
+          "verbatim": "Point 3",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-4",
+          "verbatim": "Point 4",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ],
     "questionRef": "2023 HL Section C Q4(a)(ii)",
     "conceptId": "evaluating-one-method-of-cooking-meat"
-   },
-   "answerVariantSources": [
-    {
-     "cardId": "he-2023-hl-sc-q4aii-boiling",
-     "id": "boiling",
-     "label": "Boiling"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-poaching",
-     "id": "poaching",
-     "label": "Poaching"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-steaming",
-     "id": "steaming",
-     "label": "Steaming"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-stewing",
-     "id": "stewing",
-     "label": "Stewing"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-braising",
-     "id": "braising",
-     "label": "Braising"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-pressure-cooking",
-     "id": "pressure-cooking",
-     "label": "Pressure cooking"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-roasting",
-     "id": "roasting",
-     "label": "Roasting"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-grilling-barbecuing",
-     "id": "grilling-barbecuing",
-     "label": "Grilling / barbecuing"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aii-frying",
-     "id": "frying",
-     "label": "Frying"
-    }
-   ]
+   }
   },
   "he-2023-hl-sc-q4aii-poaching": {
    "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
@@ -680,33 +2591,278 @@
    "replacementId": "he-2023-hl-sc-q4aii-boiling"
   },
   "he-2023-hl-sc-q4aiii-glass": {
-   "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity.",
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
    "set": {
+    "questionText": "Identify a type of material suitable for packaging perishable foods. Assess the suitability for purpose and environmental impact of the material identified.",
+    "stem": "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 4 (4:2:0), suitability 5 and environment 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Glass",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Identify the material you assessed, graded 4:2:0."
+     },
+     {
+      "id": "purpose",
+      "kind": "criterion",
+      "verbatim": "suitability for purpose",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One point on suitability for purpose, graded 5:3:0. Published guidance: bottles, jars protect from contamination; easily moulded into a variety of shapes and sizes; coloured or transparent; can withstand heat processing without cracking; etc."
+     },
+     {
+      "id": "environment",
+      "kind": "criterion",
+      "verbatim": "environmental impact",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One point on environmental impact, graded 5:3:0. Published guidance: 100% recyclable; reduces pollution; reduces greenhouse gas emissions; conserves raw materials; reusable; non-biodegradable; careless disposal can be dangerous for animals; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py.",
+    "answerVariants": [
+     {
+      "id": "glass",
+      "label": "Glass",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Glass",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Identify the material you assessed, graded 4:2:0."
+       },
+       {
+        "id": "purpose",
+        "kind": "criterion",
+        "verbatim": "suitability for purpose",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on suitability for purpose, graded 5:3:0. Published guidance: bottles, jars protect from contamination; easily moulded into a variety of shapes and sizes; coloured or transparent; can withstand heat processing without cracking; etc."
+       },
+       {
+        "id": "environment",
+        "kind": "criterion",
+        "verbatim": "environmental impact",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on environmental impact, graded 5:3:0. Published guidance: 100% recyclable; reduces pollution; reduces greenhouse gas emissions; conserves raw materials; reusable; non-biodegradable; careless disposal can be dangerous for animals; etc."
+       }
+      ]
+     },
+     {
+      "id": "metal",
+      "label": "Metal",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Metal",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Identify the material you assessed, graded 4:2:0."
+       },
+       {
+        "id": "purpose",
+        "kind": "criterion",
+        "verbatim": "suitability for purpose",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on suitability for purpose, graded 5:3:0. Published guidance: aluminium, tinfoil cartons, stainless steel – protects from contamination; convenient to store; easy to stack; can withstand heat processing; etc."
+       },
+       {
+        "id": "environment",
+        "kind": "criterion",
+        "verbatim": "environmental impact",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on environmental impact, graded 5:3:0. Published guidance: recyclable; reduces greenhouse gas emissions; reduces pollution; conserves raw materials; reusable; non-biodegradable; etc."
+       }
+      ]
+     },
+     {
+      "id": "paper",
+      "label": "Paper",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Paper",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Identify the material you assessed, graded 4:2:0."
+       },
+       {
+        "id": "purpose",
+        "kind": "criterion",
+        "verbatim": "suitability for purpose",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on suitability for purpose, graded 5:3:0. Published guidance: waxed cartons, greaseproof paper, cardboard – protects from contamination; cheap to produce; lightweight; can be printed on; can be resealed; etc."
+       },
+       {
+        "id": "environment",
+        "kind": "criterion",
+        "verbatim": "environmental impact",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on environmental impact, graded 5:3:0. Published guidance: recyclable; reduces greenhouse gas emissions; reduces pollution; conserves raw materials; reusable; biodegradable; etc."
+       }
+      ]
+     },
+     {
+      "id": "plastic",
+      "label": "Plastic",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Plastic",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Identify the material you assessed, graded 4:2:0."
+       },
+       {
+        "id": "purpose",
+        "kind": "criterion",
+        "verbatim": "suitability for purpose",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on suitability for purpose, graded 5:3:0. Published guidance: cartons, containers, bags, vacuum packed - moisture-proof; cheap to produce; lightweight; durable and strong depending on type; can be printed on; etc."
+       },
+       {
+        "id": "environment",
+        "kind": "criterion",
+        "verbatim": "environmental impact",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "One point on environmental impact, graded 5:3:0. Published guidance: recyclable; reduces greenhouse gas emissions; reduces pollution; conserves raw materials; reusable; non-biodegradable; careless disposal can be dangerous for animals; made from limited and non-renewable resources; etc."
+       }
+      ]
+     },
+     {
+      "id": "another-material",
+      "label": "Another packaging material",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Identify a material suitable for packaging perishable foods, graded 4:2:0."
+       },
+       {
+        "id": "purpose",
+        "kind": "criterion",
+        "verbatim": "suitability for purpose",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Assess the suitability of that material, graded 5:3:0. The scheme prints examples for glass, metal, paper and plastic; it gives no model for another material."
+       },
+       {
+        "id": "environment",
+        "kind": "criterion",
+        "verbatim": "environmental impact",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Assess the environmental impact of the same material, graded 5:3:0. The scheme gives no model for another material."
+       }
+      ]
+     }
+    ],
     "questionRef": "2023 HL Section C Q4(a)(iii)",
     "conceptId": "packaging-perishable-foods"
-   },
-   "answerVariantSources": [
-    {
-     "cardId": "he-2023-hl-sc-q4aiii-glass",
-     "id": "glass",
-     "label": "Glass"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aiii-metal",
-     "id": "metal",
-     "label": "Metal"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aiii-paper",
-     "id": "paper",
-     "label": "Paper"
-    },
-    {
-     "cardId": "he-2023-hl-sc-q4aiii-plastic",
-     "id": "plastic",
-     "label": "Plastic"
-    }
-   ]
+   }
   },
   "he-2023-hl-sc-q4aiii-metal": {
    "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity. Progress now belongs to he-2023-hl-sc-q4aiii-glass.",
@@ -3242,6 +5398,2263 @@
       ]
      }
     ]
+   }
+  },
+  "he-2023-hl-sc-q1ai": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Describe the factors that influence interior design in the home. Refer to: • aesthetic and comfort factors • environmental awareness.",
+    "stem": "‘Ireland’s Better Energy Warmer Homes scheme aims to help people make their home warmer, healthier and cheaper to run.’ (www.seai.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 × 4 (4:2:0): two points on each heading and one other"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "aesthetic and comfort factors",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two distinct points on this required heading, each graded 4:2:0. Published guidance: elements of design; principles of design; create visually attractive rooms; personal taste; influencers and current fashion trends; use of trends that will date easily/ quickly; comfortable spaces to live in; suitable for individuals with disabilities who are sedentary; suitable as work areas; multipurpose; efficient heating; zoned heating to provide different temperatures/variety of levels of heat; use of lighting; ergonomics; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "environmental awareness",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two distinct points on this required heading, each graded 4:2:0. Published guidance: impact of materials used on the environment; creating product; using product; disposing of product; origin of materials; organic/non-organic; sustainability; reuse; recycle; repurpose; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "additional",
+      "kind": "criterion",
+      "verbatim": "1 other",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One further distinct point on either heading, graded 4:2:0. Do not score a point already used above again."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py."
+   }
+  },
+  "he-2023-hl-sc-q1aii": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Discuss levels of thermal comfort in relation to two different living spaces in the home.",
+    "stem": "‘Ireland’s Better Energy Warmer Homes scheme aims to help people make their home warmer, healthier and cheaper to run.’ (www.seai.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 rooms × (identify 2 (2:0) + discussion 4 (4:2:0))"
+    },
+    "rows": [
+     {
+      "id": "room-1",
+      "kind": "criterion",
+      "verbatim": "room",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Living space 1: identify the room (2:0) and discuss its thermal comfort (4:2:0). The two spaces must be different. Published guidance: depends on room function e.g. sitting or carrying out light work 19°C to 23°C; recommended temperature for living rooms is 17°C to 21°C; bedrooms 10°C to 16°C; kitchens 15°C to 19°C; bathrooms 16°C to 19°C; minimum temperature of 20°C is recommended for elderly people; etc.",
+      "parts": [
+       {
+        "id": "room",
+        "verbatim": "Identify room",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "discussion",
+        "verbatim": "Discussion",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "room-2",
+      "kind": "criterion",
+      "verbatim": "room",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Living space 2: identify the room (2:0) and discuss its thermal comfort (4:2:0). The two spaces must be different. Use the guidance above for this second space.",
+      "parts": [
+       {
+        "id": "room",
+        "verbatim": "Identify room",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "discussion",
+        "verbatim": "Discussion",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py."
+   }
+  },
+  "he-2023-hl-sc-q1aiii": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Explain the underlying principle of a thermostat and describe how it can be used in the home.",
+    "stem": "‘Ireland’s Better Energy Warmer Homes scheme aims to help people make their home warmer, healthier and cheaper to run.’ (www.seai.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Underlying principle 4 × 3; use 2 × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "principle",
+      "kind": "criterion",
+      "verbatim": "underlying principle",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four distinct points, graded 3:2:0. Published guidance: based on the principle of thermal expansion; contain a bimetal strip, composed of two metals; brass expands readily on heating; invar expands only slightly when heated; when heat is applied the brass expands and the strip bends; this breaks the electrical circuit and switches off the appliance; on cooling the bimetallic strip returns to its original shape switching on the appliance again; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uses",
+      "kind": "criterion",
+      "verbatim": "use in the home",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points, graded 3:2:0. Published guidance: central heating system; individual radiators; electric heaters; immersion heaters; electric showers; kettles; ovens; toasters; slow cookers; refrigerators; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py."
+   }
+  },
+  "he-2023-hl-sc-q1bi": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Describe four properties of light and give an example of how each property is used in the home.",
+    "stem": "‘Lighting ideas are an essential part of space design.’ (www.homesandgardens.com)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Four properties: name 2 (2:0), description 2 (2:1:0), example 1 (1:0)"
+    },
+    "rows": [
+     {
+      "id": "property-1",
+      "kind": "criterion",
+      "verbatim": "Property",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "Property 1 of the four you chose. Use a different property for each row, with its matching explanation and home example. The complete scheme table is shown above.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "description",
+        "verbatim": "Description",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "example",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "property-2",
+      "kind": "criterion",
+      "verbatim": "Property",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "Property 2 of the four you chose. Use a different property for each row, with its matching explanation and home example. The complete scheme table is shown above.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "description",
+        "verbatim": "Description",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "example",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "property-3",
+      "kind": "criterion",
+      "verbatim": "Property",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "Property 3 of the four you chose. Use a different property for each row, with its matching explanation and home example. The complete scheme table is shown above.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "description",
+        "verbatim": "Description",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "example",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "property-4",
+      "kind": "criterion",
+      "verbatim": "Property",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "contextNote": "Property 4 of the four you chose. Use a different property for each row, with its matching explanation and home example. The complete scheme table is shown above.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "description",
+        "verbatim": "Description",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "example",
+        "verbatim": "Example",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py.",
+    "figureKey": "home-economics-2023-hl-sc-q1bi-scheme"
+   }
+  },
+  "he-2023-hl-sc-q1bii": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Explain the underlying principle of one type of energy-efficient lighting.",
+    "stem": "‘Lighting ideas are an essential part of space design.’ (www.homesandgardens.com)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 4 (4:2:0), principle 2 × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "CFL/Fluorescents",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Name the type you explained, graded 4:2:0."
+     },
+     {
+      "id": "principle",
+      "kind": "criterion",
+      "verbatim": "underlying principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct points for this type, each graded 3:2:0. Published guidance: lights made compact by looping the tube a number of times; consists of a glass tube coated with phosphor; contains argon and mercury; when electricity flows electrodes at each end of the glass tube heat up causing mercury to vaporise; the gases react with the phosphor coating and cause it to glow; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py.",
+    "answerVariants": [
+     {
+      "id": "cfl",
+      "label": "CFL/Fluorescents",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "CFL/Fluorescents",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name the type you explained, graded 4:2:0."
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two distinct points for this type, each graded 3:2:0. Published guidance: lights made compact by looping the tube a number of times; consists of a glass tube coated with phosphor; contains argon and mercury; when electricity flows electrodes at each end of the glass tube heat up causing mercury to vaporise; the gases react with the phosphor coating and cause it to glow; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "led",
+      "label": "LED (Light Emitting Diode)",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "LED (Light Emitting Diode)",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name the type you explained, graded 4:2:0."
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two distinct points for this type, each graded 3:2:0. Published guidance: when switched on electrodes combine with holes within the bulb releasing energy (photons); the effect is electro luminescence; the colour is determined by the energy band gap of the semi-conductor; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another-type",
+      "label": "Another energy-efficient type",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name the energy-efficient lighting type you explained, graded 4:2:0. The paper leaves this choice open."
+       },
+       {
+        "id": "principle",
+        "kind": "criterion",
+        "verbatim": "underlying principle",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Explain two accurate principle points for the same type, each graded 3:2:0. The printed scheme supplies models for CFL/fluorescent lighting and LED only.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2023-hl-sc-q1ci": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Discuss how environmental, economic and social factors influence the choice of housing styles in Ireland today.",
+    "stem": "‘We have been forced to rethink how we live in our homes in recent years.’ (The Irish Times)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required factors × 6 (6:4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "factor-1",
+      "kind": "criterion",
+      "verbatim": "environmental factors",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "One point on this required factor, graded 6:4:2:0. Published guidance: energy efficiency; aspect; surrounding area; building regulations; local materials; climate; sustainability; etc."
+     },
+     {
+      "id": "factor-2",
+      "kind": "criterion",
+      "verbatim": "economic factors",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "One point on this required factor, graded 6:4:2:0. Published guidance: household income; cost of site; house size; house style; cost of materials; additional costs; household bills; investment potential; resale value; etc."
+     },
+     {
+      "id": "factor-3",
+      "kind": "criterion",
+      "verbatim": "social factors",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "One point on this required factor, graded 6:4:2:0. Published guidance: personal likes and dislikes; location; family requirements; family member with special needs; availability; history/ tradition; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py."
+   }
+  },
+  "he-2023-hl-sc-q1cii": {
+   "reason": "Independent 2023 Higher Elective 1 review: full guidance, paired responses and published partial-credit steps.",
+   "set": {
+    "questionText": "Describe the impact of burning fossil fuels in the home. Refer to: • an emission produced by burning fossil fuels • effects on the environment • a strategy households could implement in order to reduce emissions.",
+    "stem": "‘We have been forced to rethink how we live in our homes in recent years.’ (The Irish Times)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Emission 3 (3:0), effects 2 × 3 (3:2:0), strategy 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "emission",
+      "kind": "criterion",
+      "verbatim": "Emissions",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Identify one emission. Published guidance: carbon dioxide; nitrogen oxide; sulphur dioxide; smoke; water vapour; methane gas; etc."
+     },
+     {
+      "id": "effects",
+      "kind": "criterion",
+      "verbatim": "effects on the environment",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two distinct effects, graded 3:2:0. Published guidance: increasing temperatures; rising sea levels; climate change; agriculture is affected; spread of infectious disease; damage to plants and crops; reduced sunshine; changes in distribution of plant and animal species; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "strategy",
+      "kind": "criterion",
+      "verbatim": "a strategy households could implement in order to reduce emissions",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One strategy, graded 3:2:0. Published guidance: use renewable sources of energy; choose natural gas instead of oil; use smokeless fuels; use timers and thermostats on heating systems; avoid burning rubbish; electric cars; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Reviewed against the full paper and marking scheme. Published mark boundaries and open choices retained; no combination expansion. See he_review_2023_hl_elective1.py."
+   }
+  },
+  "he-2023-hl-sc-q2ai": {
+   "reason": "Independent 2023 Higher Elective 2 review: original linked context, complete source guidance and published partial marks.",
+   "set": {
+    "questionText": "Sketch and describe an outfit to wear for your graduation ball.",
+    "stem": "A special occasion is an opportunity for an individual to showcase their unique sense of style.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Sketch 6 (6:4:2:0), description 3 × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "sketch",
+      "kind": "criterion",
+      "verbatim": "Sketch",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "The sketch is graded as one response, using 6:4:2:0. Published guidance: sketch should show detail of design features i.e. line, shape, proportion, harmony; be clearly labelled; may include fabric colour; etc."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "description",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Describe three distinct features of your own outfit, each graded 2:1:0. Published guidance: colour; design; line; proportion; shape; pockets; seams; type of neckline; sleeves; fabric; fabric finishes / properties; accessories; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Required headings and open choices remain one response. See he_review_2023_hl_elective2.py."
+   }
+  },
+  "he-2023-hl-sc-q2aii": {
+   "reason": "Independent 2023 Higher Elective 2 review: original linked context, complete source guidance and published partial marks.",
+   "set": {
+    "questionText": "Suggest a suitable fabric for the outfit and give a reason for your choice.",
+    "stem": "A special occasion is an opportunity for an individual to showcase their unique sense of style.\n\nSketch and describe an outfit to wear for your graduation ball.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Fabric 3 (3:0), reason 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "fabric",
+      "kind": "criterion",
+      "verbatim": "fabric",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Suggest one suitable fabric for the outfit you designed. Published guidance: silk; satin; lace; organza; chiffon; wool; linen; etc."
+     },
+     {
+      "id": "reason",
+      "kind": "criterion",
+      "verbatim": "reason",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Give a reason that applies to the fabric and outfit you chose, graded 3:2:0. Published guidance: lightweight; drape; sheer; pleasant to touch; smooth; non-static; durable; wrinkle resistant; absorbent; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Required headings and open choices remain one response. See he_review_2023_hl_elective2.py."
+   }
+  },
+  "he-2023-hl-sc-q2aiii": {
+   "reason": "Independent 2023 Higher Elective 2 review: original linked context, complete source guidance and published partial marks.",
+   "set": {
+    "questionText": "Name one design principle and evaluate how it applies to your outfit.",
+    "stem": "A special occasion is an opportunity for an individual to showcase their unique sense of style.\n\nSketch and describe an outfit to wear for your graduation ball.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 2 (2:0), evaluate 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "balance",
+      "marks": 2
+     },
+     {
+      "id": "evaluate",
+      "kind": "criterion",
+      "verbatim": "evaluate",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Evaluate how this principle applies to your own outfit, graded 5:3:0. Published guidance: can be vertical, symmetrical or asymmetrical; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Required headings and open choices remain one response. See he_review_2023_hl_elective2.py.",
+    "answerVariants": [
+     {
+      "id": "balance",
+      "label": "Balance",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "balance",
+        "marks": 2
+       },
+       {
+        "id": "evaluate",
+        "kind": "criterion",
+        "verbatim": "evaluate",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Evaluate how this principle applies to your own outfit, graded 5:3:0. Published guidance: can be vertical, symmetrical or asymmetrical; etc."
+       }
+      ]
+     },
+     {
+      "id": "emphasis",
+      "label": "Emphasis",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "emphasis",
+        "marks": 2
+       },
+       {
+        "id": "evaluate",
+        "kind": "criterion",
+        "verbatim": "evaluate",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Evaluate how this principle applies to your own outfit, graded 5:3:0. Published guidance: achieved through use of colour; lines; other features; should only be one centre of emphasis in an outfit; etc."
+       }
+      ]
+     },
+     {
+      "id": "proportion",
+      "label": "Proportion",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "proportion",
+        "marks": 2
+       },
+       {
+        "id": "evaluate",
+        "kind": "criterion",
+        "verbatim": "evaluate",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Evaluate how this principle applies to your own outfit, graded 5:3:0. Published guidance: relationship between parts of the garment; etc."
+       }
+      ]
+     },
+     {
+      "id": "rhythm",
+      "label": "Rhythm",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "point",
+        "verbatim": "rhythm",
+        "marks": 2
+       },
+       {
+        "id": "evaluate",
+        "kind": "criterion",
+        "verbatim": "evaluate",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Evaluate how this principle applies to your own outfit, graded 5:3:0. Published guidance: associated with repetition in clothing; etc."
+       }
+      ]
+     },
+     {
+      "id": "another-principle",
+      "label": "Another design principle",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "Name",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Name the design principle you evaluated. The paper leaves the choice open."
+       },
+       {
+        "id": "evaluate",
+        "kind": "criterion",
+        "verbatim": "evaluate",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Evaluate how that principle applies to your own outfit, graded 5:3:0. The scheme gives examples for balance, emphasis, proportion and rhythm; it gives no model for another principle."
+       }
+      ]
+     }
+    ],
+    "questionRef": "2023 HL Section C E2 Q2(a)(iii)"
+   }
+  },
+  "he-2023-hl-sc-q2ci": {
+   "reason": "Independent 2023 Higher Elective 2 review: original linked context, complete source guidance and published partial marks.",
+   "set": {
+    "questionText": "Discuss the emergence of vintage clothing as a current fashion trend. Refer to: • pattern • influences • accessories.",
+    "stem": "‘The vintage clothing industry is growing 25 times faster than the overall retail market.’ (www.rediscoverycentre.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "pattern",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Discuss this required heading, graded 3:2:0. Published guidance: bold statement patterns; eye-catching; retro style; cool vibe; unique style; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "influences",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Discuss this required heading, graded 3:2:0. Published guidance: contemporary influences; sustainability; use of organic fabrics; up-styling; up-cycling; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "accessories",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Discuss this required heading, graded 3:2:0. Published guidance: draws attention to an area; brightens up an outfit; enhances the appearance; ties an outfit together; up-cycling; up-styling; vintage feel to outfits; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Required headings and open choices remain one response. See he_review_2023_hl_elective2.py."
+   }
+  },
+  "he-2023-hl-sc-q3ai": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Discuss how technology and increasing flexibility in working hours affect patterns of work and work availability.",
+    "stem": "‘We are currently witnessing the nature of employment being redefined in Ireland and across the world.’ (www.skillnetireland.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 × 4 (4:2:0): technology 1, flexibility 1, other 3"
+    },
+    "rows": [
+     {
+      "id": "technology",
+      "kind": "criterion",
+      "verbatim": "technology",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One required point on this heading, graded 4:2:0. Published guidance: automation and increased output has resulted in the reduction in working hours; some types of work taken over by machines resulting in job loses; increase in electronic communication therefore less social interaction; difficult for employees to switch off; easily accessible through zoom calls, e-mail; decline in primary and secondary industries; loss of jobs in manufacturing; companies relocating to Eastern countries; increase in service industries; etc."
+     },
+     {
+      "id": "flexibility",
+      "kind": "criterion",
+      "verbatim": "flexibility",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One required point on this heading, graded 4:2:0. Published guidance: flexi-time; term time; job sharing; working from home; parental leave to care for a child under 12 years of age; career breaks; reduced working hours; greater participation of women in workplace; etc."
+     },
+     {
+      "id": "additional",
+      "kind": "criterion",
+      "verbatim": "any other 3 points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Three further distinct points on either heading, each graded 4:2:0. Do not score a point already used above again.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3aii": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Describe the impact of dual-earner families on family life. Refer to: • role overload • role conflict • distribution of parental responsibilities in the home.",
+    "stem": "‘We are currently witnessing the nature of employment being redefined in Ireland and across the world.’ (www.skillnetireland.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Role overload",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One point on this required heading, graded 5:3:0. Published guidance: occurs when an individual attempts to play several roles at one time; reduced leisure time; increased stress and tension between spouses and other members of the family; difficult to find time to do both roles; can interfere with promotion prospects; no one available to care for the more vulnerable members of the family; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Role conflict",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One point on this required heading, graded 5:3:0. Published guidance: caused when the expectations of a person in one role clash with what is expected in another role; conflict balancing work and home activities; work or family has to be prioritised; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Distribution of parental responsibilities in the home",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One point on this required heading, graded 5:3:0. Published guidance: greater reliance on labour saving appliances; decision making shared by both partners; less time available to spend with children; outside help may take over some parental duties; parents actively involved in childcare; children become more independent; children have a positive attitude to parental and homecare responsibilities; extra responsibilities on older children; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3aiii": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Recommend one type of child care option available to working parents. Analyse how the chosen child care option meets the requirements of the family.",
+    "stem": "‘We are currently witnessing the nature of employment being redefined in Ireland and across the world.’ (www.skillnetireland.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 3 (3:0), detail 4 × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Recommend one childcare option. Published guidance: creche; child minder; family member; au pair; afterschool groups; playgroups; montessori; naíonraí; etc."
+     },
+     {
+      "id": "detail",
+      "kind": "criterion",
+      "verbatim": "detail",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Analyse how the same chosen option meets the family’s needs. Four distinct points, graded 3:2:0. Published guidance: location; opening hours; cost; safe and hygienic environment; reliable child-carers/minders; suitability to the age of child; suitability to needs of child; convenience; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3bi": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Analyse the following as contributory factors to poverty in Ireland today. • cycle of deprivation in geographical areas • the influence of social policy on poverty.",
+    "stem": "‘One in every nine people in Ireland lives on an income below the poverty line.’ (poverty focus 2022, socialjusticeireland.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required factors × 2 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "factor-1",
+      "kind": "criterion",
+      "verbatim": "cycle of deprivation in geographical areas",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two distinct points on this required factor, each graded 4:2:0. Published 2023 marking guidance: inner cities and urban areas of economic decline; isolated & undeveloped rural areas; large social housing estates; areas of high unemployment; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "factor-2",
+      "kind": "criterion",
+      "verbatim": "the influence of social policy on poverty",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two distinct points on this required factor, each graded 4:2:0. Published 2023 marking guidance: state responds to the needs of those living in poverty; the social welfare system provides payments to individuals and families; assists with meeting their basic needs; can also perpetuate poverty; payments can be generous; more financially rewarding than wages from low-paid jobs; little incentive to seek employment as it would represent a financial loss; some choose to remain dependant on welfare payments; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3bii": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Name and give details of two statutory schemes that reduce expenditure for low-income families.",
+    "stem": "‘One in every nine people in Ireland lives on an income below the poverty line.’ (poverty focus 2022, socialjusticeireland.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 schemes × (name 3 (3:2:0) + detail 4 (4:2:0))"
+    },
+    "rows": [
+     {
+      "id": "scheme-1",
+      "kind": "criterion",
+      "verbatim": "statutory schemes",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "contextNote": "Scheme 1 of the two you chose: name (3:2:0) and a matching detail (4:2:0). Choose two different schemes. Published 2023 marking guidance:\n\nworking family payment weekly tax-free payment for employees with children; supports people who are on low pay; must have at least one dependent child; average weekly income must be under a certain amount for your family size; payment is 60% of the difference; etc.\n\nback to school clothing and footwear allowance run by Department of Employment Affairs and Social Protection; designed to meet the cost of uniforms and footwear for children of low-income families; etc.\n\nnational fuel scheme intended to help households that are dependent on social welfare payments and that are unable to provide for their own heating needs; etc.\n\nbook rental schemes run by many schools throughout the country; fee is charged for renting school books, which remain the property of the school; etc.\n\nmedical cards means tested; issued by HSE; enable the cardholder and their dependants to receive certain health services free of charge; services include GP services, prescribed drugs and medicines, dental services; etc.\n\nGP visit card do not qualify for medical card; allows free visits to a participating family doctor; etc.\n\nHousing Assistance Payment (HAP) a form of social housing support provided by all local authorities; must be on local authority housing waiting list; recipients are responsible for finding their own accommodation in private rented market; local authority will pay rent in full directly to landlord; HAP recipient pays a rent contribution to the local authority, based on income and ability to pay; etc.\n\nmortgage allowance scheme available to a tenant of local authority house who wishes to return the existing home to the local authority and buy/build a private home; allowance is paid on decreasing scale over 5 years; paid directly to mortgage lender; reduces mortgage payments over initial period; eases transition from rent to mortgage; etc.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "detail",
+        "verbatim": "Detail",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "scheme-2",
+      "kind": "criterion",
+      "verbatim": "statutory schemes",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "contextNote": "Scheme 2 of the two you chose: name (3:2:0) and a matching detail (4:2:0). Choose two different schemes. Use the complete scheme guidance above.",
+      "parts": [
+       {
+        "id": "name",
+        "verbatim": "Name",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "detail",
+        "verbatim": "Detail",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3ci": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Analyse the impact of social change on the family. Refer to: • changing attitudes to marriage • parenting roles • increased participation of women in the workforce.",
+    "stem": "‘Contemporary society is experiencing rapid social change.’ (Social Change Research Group, wit.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 6 (6:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "changing attitudes to marriage",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "One point on this required heading, graded 6:3:0. Published guidance: divorce and separation has led to breakdown in traditional nuclear family unit; increase in blended families; remarrying; increase in one-parent families; couples cohabiting; increase in children born outside marriage; increase in same-sex marriages; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "parenting roles",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "One point on this required heading, graded 6:3:0. Published guidance: women as breadwinners; men staying at home to mind children; more democracy between parents; children have greater say in family matters; egalitarian approach to childcare and household tasks; role conflict due to dual income households; role overload; increased need for childcare; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "increased participation of women in the workforce",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "One point on this required heading, graded 6:3:0. Published guidance: increase in disposable income; role overload; role conflict; increase need for childcare; smaller family size; older children required to take on extra responsibility; etc."
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q3cii": {
+   "reason": "Independent 2023 Higher Social Studies review: full source guidance, required headings, paired name/detail responses and printed partial marks.",
+   "set": {
+    "questionText": "Describe how the Protection of Young Persons (Employment), Act 1996 offers protection to young people in work.",
+    "stem": "‘Contemporary society is experiencing rapid social change.’ (Social Change Research Group, wit.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "protection",
+      "kind": "criterion",
+      "verbatim": "protection to young people in work",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Describe three distinct points, each graded 4:2:0. Published 2023 examination guidance: limits number of hours a young person can work; it is an offence to employ children under 16 years full time; under 14 year olds cannot work during school term; during holidays cannot work more than 7 hours per day, 35 hours per week; must have a break of 30 minutes every 4 hours; must have 2 rest days a week; must have 21 free days; 15 year olds must not work more than 8 hours a week during school term; 16/17 year olds must not work more than 40 hours per week; must not work before 6 a.m. or after 10 p.m.; employer must get evidence of a young persons’ age; permission from parent or guardian; keep a register of hours worked; must be paid the National Minimum Wage per hour for their age group (under 18 years €7.91); etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently checked against the paper and scheme. Choices remain one task; no combinations. Historic statutory material is the published 2023 examination guidance. See he_review_2023_hl_elective3.py."
+   }
+  },
+  "he-2023-hl-sc-q4ai": {
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
+   "set": {
+    "questionText": "Discuss the measures that have been implemented in the Irish food industry to ensure meat is safe for consumption.",
+    "stem": "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "measures",
+      "kind": "criterion",
+      "verbatim": "measures that have been implemented in the Irish food industry",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Discuss three distinct measures, graded 4:2:0. Published guidance: Department of Agriculture, Food and the Marine enforce food safety within the meat sector; ensure meat purchased is fresh, hygienic and free from disease; enforce EU legislation regarding the importing of foods of animal origin from outside the EU; farmers must record the use of antibiotics and growth promoters in animal production to ensure there is no cross-over to humans; control of animal feed; maintenance of abattoirs and meat-processing factories; animals tested routinely for diseases; strict regulation on identification of livestock and traceability of meat; Sustainable Bord Bia Assurance Scheme ensures high standards of animal welfare are implemented, accurate records are kept of all livestock, including veterinary treatments, to ensure full traceability; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
+   }
+  },
+  "he-2023-hl-sc-q4bi": {
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
+   "set": {
+    "questionText": "Evaluate the socio-economic factors that impact household expenditure.",
+    "stem": "Everyday living includes many transactions that require consumer spending.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "factors",
+      "kind": "criterion",
+      "verbatim": "socio-economic factors",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Evaluate three distinct points, each graded 5:3:0. Published guidance:\n\nfamily stage mortgage payments; families with young children require childcare; school expenses; older people have mortgage paid; could have lower income so less disposable income; etc.\n\nfamily circumstances special needs; elderly parent; etc.\n\ngender more women in workforce; dual income families; more disposable income; etc.\n\nsocial class some from poorer background leave school earlier without qualifications; may lead to unemployment, dependence on social welfare payments; middle class backgrounds generally better educational opportunities, more likely to gain qualifications leading to better paid jobs and more discretionary spending; etc.\n\nculture some cultures focus more on providing for needs; more affluent cultures spend more on luxuries, more disposable income; some cultures restrict women for working outside the home which impacts on money available for spending; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
+   }
+  },
+  "he-2023-hl-sc-q4bii": {
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
+   "set": {
+    "questionText": "Describe how the state assists the family in carrying out its economic function in society.",
+    "stem": "Everyday living includes many transactions that require consumer spending.",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "state",
+      "kind": "criterion",
+      "verbatim": "economic function in society",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Describe three distinct points, each graded 5:3:0. Published 2023 marking guidance: social welfare payments; pensions; child benefit; back to school clothing and footwear allowance; provision of grants for third level students; provision of social housing schemes; fuel allowances; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
+   }
+  },
+  "he-2023-hl-sc-q4ci": {
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
+   "set": {
+    "questionText": "Evaluate the contribution of the microwave oven to the management of the home.",
+    "stem": "‘Irish people are cooking more at home, and how we shop for food, cook and eat has changed significantly.’ (The Irish Times)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "contribution",
+      "kind": "criterion",
+      "verbatim": "contribution of the microwave oven",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Evaluate three distinct points, each graded 5:3:0. Published guidance: food cooks quickly; less energy is used; food can be reheated; safe to use by children and/elderly; few skills required; no installation required; food can be cooked and served in same dish; versatile; food can be defrosted; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
+   }
+  },
+  "he-2023-hl-sc-q4cii": {
+   "reason": "Independent 2023 Higher core review: original context, complete source guidance and partial marks; consolidated identities and withdrawn-card aliases retained.",
+   "set": {
+    "questionText": "Describe the working principle of the microwave oven.",
+    "stem": "‘Irish people are cooking more at home, and how we shop for food, cook and eat has changed significantly.’ (The Irish Times)",
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "principle",
+      "kind": "criterion",
+      "verbatim": "working principle of the microwave oven",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "contextNote": "Describe five distinct points, each graded 3:2:0. Published guidance: transformer increase domestic voltage; magnetron changes electrical energy to electromagnetic energy; wave-guide guides the microwaves into cabinet; microwaves can be reflected; transmitted; absorbed in the food; microwaves penetrate food to a depth of 2-4 cm; microwaves cause food molecules to vibrate rapidly; causes friction and produces high heat; heat spreads to the centre of food through conduction; allow standing time as the molecules continue to vibrate after cooking time; incorporated grill browns food by radiation; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Independently reviewed against the paper and full scheme. Open choices stay one response with source-backed answer routes. See he_review_2023_hl_core.py."
    }
   }
  },
