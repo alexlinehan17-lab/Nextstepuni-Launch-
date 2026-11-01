@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2014-hl': [100, 100, 40, 'aef0a7bf87759279dd08588d84df37e4b197940884b7c92d7528ec2b79f9cfed',
+    '01166938fafb2e2ac0862843995e6afdf238a62576f82fb6462d28f18b4aa7c1'],
   '2015-ol': [98, 98, 78, '203bf43f15ee3a7edbf46ee3a50f28bc731f80f181f761a529c8b972f98621bc',
     '602101c33d2c838205900e19d524d3233028f1b1c0129600ddf51321e44f8ca9'],
   '2015-hl': [101, 101, 32, 'fb8e384a4a1f07432a5c07b0d624aabd0027c55502f6d1d8f2bd36139e6dd452',
@@ -93,6 +95,53 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2014 Higher data, both passage alternatives and complete marking routes', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2014-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2014-hl-${suffix}`)!;
+    expect(cards).toHaveLength(100);
+    expect(card('q1-verify').figure?.candId).toBe('physics-2014-hl-q1-data');
+    expect(card('q2-method').rows[0]).toMatchObject({ group: {
+      claimMax: 4, perOption: 3, options: ['rectangular block', 'pins / ray box / laser',
+        'correct incident, normal and refracted rays drawn', 'angle of refraction indicated', 'protractor / trigonometry'],
+    } });
+    expect(card('q2-graph').figure?.candId).toBe('physics-2014-hl-q2-data');
+    expect(card('q2-graph').rows[2].contextNote).toContain('all seven printed pairs');
+    expect(card('q3-speed').stem).toContain('512 Hz');
+    expect(card('q3-speed').figure?.candId).toBe('physics-2014-hl-q3-data');
+    expect(card('q4-graph').questionText).toBe('Draw a suitable graph to verify Joule’s law.');
+    expect(card('q4-graph').totalMarks).toBe(12);
+    expect(card('q4-verify').totalMarks).toBe(6);
+    for (const id of ['q5-j-walton', 'q5-j-voltmeter']) expect(card(id).totalMarks).toBe(7);
+    expect(card('q6-height').stem).toContain('5.3 kN');
+    expect(card('q6-height').stem).toContain('0.54 ms');
+    expect(card('q6-height').questionText).toContain('Ignore the effect of air resistance');
+    expect(card('q8-heat-exchanger').questionText).toBe('Explain how the heat exchanger operates.');
+    expect(card('q8-plutonium').rows[0].verbatim).toBe('U²³⁸₉₂ + n¹₀ → Pu²³⁹₉₄ + 2β⁰₋₁');
+    expect(card('q9-terms').rows).toHaveLength(6);
+    expect(card('q9-terms').totalMarks).toBe(12);
+    expect(card('q9-terms').rows[0]).toMatchObject({ route: 'words', marks: 3 });
+    expect(card('q9-terms').rows[1]).toMatchObject({ route: 'formula', marks: 3 });
+    expect(card('q10-resistor').figure?.candId).toBe('physics-2014-hl-q10-bridge');
+    for (const branch of ['a', 'b']) {
+      const passage = cards.filter(c => c.id.startsWith(`phys-2014-hl-q11-${branch}-`));
+      expect(passage).toHaveLength(8);
+      expect(passage.reduce((n, c) => n + c.totalMarks, 0)).toBe(56);
+      for (const c of passage) expect(c.stem).toContain(branch === 'a' ? 'Powsner & Powsner; 1998' : 'Browne; 2013');
+    }
+    expect(card('q11-a-ii-annihilation').rows).toHaveLength(4);
+    expect(card('q11-a-ii-annihilation').totalMarks).toBe(7);
+    expect(card('q11-a-v-decay').figure?.candId).toBe('physics-2014-hl-q11-decay-solution');
+    expect(card('q11-a-v-decay').questionFigure?.candId).toBe('physics-2014-hl-q11-decay-question');
+    expect(card('q11-b-viii-critical-angle').figure?.candId).toBe('physics-2014-hl-q11-critical-solution');
+    expect(card('q12-a-hooke').rows).toHaveLength(6);
+    expect(card('q12-a-hooke').totalMarks).toBe(4);
+    expect(card('q12-c-temperature').questionFigure?.candId).toBe('physics-2014-hl-q12-heat-question');
+    expect(card('q12-c-temperature').figure?.candId).toBe('physics-2014-hl-q12-heat-solution');
+    expect(card('q12-c-temperature').rows[2]).toMatchObject({ marks: 8 });
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2014-hl-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2015 Ordinary data, both experiment routes and full stepped responses', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2015-ol-'));

@@ -90657,5 +90657,3459 @@
   "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_ol.py.",
   "year": 2015,
   "level": "ordinary"
+ },
+ {
+  "id": "phys-2014-hl-q1-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2014 HL Q1 — Momentum experiment apparatus",
+  "stem": "The following is part of a student’s report on an experiment to verify the principle of conservation of momentum. “I ensured that no net external forces acted on body A or body B. When I released body A it was moving at a constant velocity; body B was at rest. I allowed body A to collide with body B and they moved off together after the collision.”",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "two bodies and track",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "labelled means of attaching the two bodies",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "timer / motion sensor",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q1-data"
+ },
+ {
+  "id": "phys-2014-hl-q1-measurements",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "measurements",
+  "section": "A",
+  "questionRef": "2014 HL Q1 — Momentum measurements and velocities",
+  "stem": "The following is part of a student’s report on an experiment to verify the principle of conservation of momentum. “I ensured that no net external forces acted on body A or body B. When I released body A it was moving at a constant velocity; body B was at rest. I allowed body A to collide with body B and they moved off together after the collision.”",
+  "questionText": "State what measurements the student took and how these measurements were used to calculate the velocities.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measurements: masses",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "time for n gaps // time for body to pass through light gate // approp. time",
+    "marks": 3,
+    "contextNote": "Use the time measurement for your chosen timer, light-gate or motion-sensor method."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "length of n gaps // length of (card)body // approp. distance",
+    "marks": 3,
+    "contextNote": "Use the matching distance measurement from the same method."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "distance ÷ time // appropriate slope = velocity",
+    "marks": 3,
+    "contextNote": "Use matching time and distance readings, or the slope of the distance–time graph."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q1-data"
+ },
+ {
+  "id": "phys-2014-hl-q1-verify",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2014 HL Q1 — Verifying conservation of momentum",
+  "stem": "The following is part of a student’s report on an experiment to verify the principle of conservation of momentum. “I ensured that no net external forces acted on body A or body B. When I released body A it was moving at a constant velocity; body B was at rest. I allowed body A to collide with body B and they moved off together after the collision.”",
+  "questionText": "Using the recorded data, show how the experiment verifies the principle of conservation of momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.3251 × 0.84 = 0.273 kg m s⁻¹",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(0.3251 + 0.3498) × 0.41 = 0.277 kg m s⁻¹",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "0.273 kg m s⁻¹ ≈ 0.277 kg m s⁻¹/ or equivalent",
+    "marks": 3,
+    "contextNote": "The scheme awards 3 marks for the formula alone, and deducts one for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q1-data"
+ },
+ {
+  "id": "phys-2014-hl-q1-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "forces",
+  "section": "A",
+  "questionRef": "2014 HL Q1 — External forces",
+  "stem": "The following is part of a student’s report on an experiment to verify the principle of conservation of momentum. “I ensured that no net external forces acted on body A or body B. When I released body A it was moving at a constant velocity; body B was at rest. I allowed body A to collide with body B and they moved off together after the collision.” When carrying out this experiment the student ensures that there is no net external force acting on the bodies.",
+  "questionText": "What are the two forces that the student needs to take account of to ensure this?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weight (gravitational force)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "friction",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q1-reduce-forces",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "reduce-forces",
+  "section": "A",
+  "questionRef": "2014 HL Q1 — Reducing external forces",
+  "stem": "The following is part of a student’s report on an experiment to verify the principle of conservation of momentum. “I ensured that no net external forces acted on body A or body B. When I released body A it was moving at a constant velocity; body B was at rest. I allowed body A to collide with body B and they moved off together after the collision.” When carrying out this experiment the student ensures that there is no net external force acting on the bodies. What are the two forces that the student needs to take account of to ensure this?",
+  "questionText": "Describe how the student reduced the effects of these forces.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "horizontal (air)track / cushion of air / (small) slope / polish runway / oil wheels",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q2-outlier",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "outlier",
+  "section": "A",
+  "questionRef": "2014 HL Q2 — Inconsistent refraction reading",
+  "stem": "In an experiment to measure the refractive index of a substance, a student used a rectangular block of the substance to measure the angle of incidence i and the corresponding angle of refraction r for a ray of light as it passed from air into the substance. The student repeated the procedure for a series of different values of the angle of incidence and recorded the following data.",
+  "questionText": "One of the recorded angles of refraction is inconsistent with the others. Which one?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "23 °",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q2-data"
+ },
+ {
+  "id": "phys-2014-hl-q2-method",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "method",
+  "section": "A",
+  "questionRef": "2014 HL Q2 — Measuring the angle of refraction",
+  "stem": "In an experiment to measure the refractive index of a substance, a student used a rectangular block of the substance to measure the angle of incidence i and the corresponding angle of refraction r for a ray of light as it passed from air into the substance. The student repeated the procedure for a series of different values of the angle of incidence and recorded the following data.",
+  "questionText": "Describe, with the aid of a labelled diagram, how the student found the angle of refraction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "rectangular block / pins / ray box / laser / correct incident, normal and refracted rays drawn / angle of refraction indicated / protractor / trigonometry",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "rectangular block",
+      "pins / ray box / laser",
+      "correct incident, normal and refracted rays drawn",
+      "angle of refraction indicated",
+      "protractor / trigonometry"
+     ]
+    },
+    "contextNote": "Any four of the five published criteria; deduct one mark if the diagram has no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q2-data"
+ },
+ {
+  "id": "phys-2014-hl-q2-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2014 HL Q2 — Refractive index from a graph",
+  "stem": "In an experiment to measure the refractive index of a substance, a student used a rectangular block of the substance to measure the angle of incidence i and the corresponding angle of refraction r for a ray of light as it passed from air into the substance. The student repeated the procedure for a series of different values of the angle of incidence and recorded the following data.",
+  "questionText": "Calculate a value for the refractive index of the substance by drawing a suitable graph based on the recorded data.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "sin i and sin r calculated",
+    "marks": 3,
+    "contextNote": "Deduct one mark for each incorrect value."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "axes labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "6 points plotted",
+    "marks": 3,
+    "contextNote": "Deduct one mark for each incorrect point; all seven printed pairs, including the outlier, are retained in the question."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line with good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "criterion",
+    "verbatim": "method for finding slope",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "slope = n ≈ 1.44",
+    "marks": 3,
+    "contextNote": "Deduct one mark for an inappropriate scale."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q2-data"
+ },
+ {
+  "id": "phys-2014-hl-q2-graph-benefits",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "graph-benefits",
+  "section": "A",
+  "questionRef": "2014 HL Q2 — Why use a graph?",
+  "stem": "In an experiment to measure the refractive index of a substance, a student used a rectangular block of the substance to measure the angle of incidence i and the corresponding angle of refraction r for a ray of light as it passed from air into the substance. The student repeated the procedure for a series of different values of the angle of incidence and recorded the following data. Using a graph to calculate a value for the refractive index is a more accurate method than calculating the refractive index for each pair of angles and then finding the mean.",
+  "questionText": "Give two reasons for this.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "outliers can be identified / slope gives weighted mean / reference to origin / reference to Tan θ",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "outliers can be identified",
+      "slope gives weighted mean",
+      "reference to origin",
+      "reference to Tan θ"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q2-data"
+ },
+ {
+  "id": "phys-2014-hl-q3-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2014 HL Q3 — Resonance apparatus",
+  "stem": "A student used a cylindrical column of air closed at one end and a tuning fork of frequency 512 Hz in an experiment to measure the speed of sound in air.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(vibrating) tuning fork",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "column of air",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "means of changing length of column / metre stick and callipers",
+    "marks": 3,
+    "contextNote": "Deduct one mark if the diagram has no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q3-data"
+ },
+ {
+  "id": "phys-2014-hl-q3-resonance",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "resonance",
+  "section": "A",
+  "questionRef": "2014 HL Q3 — Finding the first resonance",
+  "stem": "A student used a cylindrical column of air closed at one end and a tuning fork of frequency 512 Hz in an experiment to measure the speed of sound in air.",
+  "questionText": "Describe how the first position of resonance was found.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "hold (vibrating) fork over column",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "increase length of column (from zero)",
+    "marks": 3,
+    "contextNote": "The scheme also accepts “change length of column”."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "until (loudest) sound is heard (from column)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q3-data"
+ },
+ {
+  "id": "phys-2014-hl-q3-speed",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "speed",
+  "section": "A",
+  "questionRef": "2014 HL Q3 — Speed of sound",
+  "stem": "A student used a cylindrical column of air closed at one end and a tuning fork of frequency 512 Hz in an experiment to measure the speed of sound in air.",
+  "questionText": "Using the recorded data, calculate the speed of sound in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = 4f(l + 0.3d)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v = 4f(0.16545)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v = 338.8 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q3-data"
+ },
+ {
+  "id": "phys-2014-hl-q3-end-correction",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "end-correction",
+  "section": "A",
+  "questionRef": "2014 HL Q3 — Why measure the diameter?",
+  "stem": "A student used a cylindrical column of air closed at one end and a tuning fork of frequency 512 Hz in an experiment to measure the speed of sound in air.",
+  "questionText": "Why was it necessary to measure the diameter of the air column?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "because wave exists partially above the top of the tube",
+    "marks": 6,
+    "contextNote": "The scheme accepts “end correction” or “error in length” alone for 3 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q3-data"
+ },
+ {
+  "id": "phys-2014-hl-q3-two-resonances",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "two-resonances",
+  "section": "A",
+  "questionRef": "2014 HL Q3 — Using two resonance positions",
+  "stem": "A student used a cylindrical column of air closed at one end and a tuning fork of frequency 512 Hz in an experiment to measure the speed of sound in air. Another student carried out the experiment. She measured the length of the column of air for each of the first two positions of resonance but she did not measure the diameter of the air column.",
+  "questionText": "Explain how this second student would find the speed of sound in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "find distance between first two positions of resonance / l₂ – l₁",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "double this distance for wavelength / λ = 2(l₂-l₁)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "multiply wavelength by frequency (for speed) / (v =) fλ",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q4-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2014 HL Q4 — Joule’s law apparatus",
+  "stem": "In an experiment to verify Joule’s law, a fixed mass of water was heated in an insulated cup. θ, the highest temperature reached, was recorded for different values of current, I. In each case the current flowed for 4 minutes and the initial temperature of the water was 20.0 °C. The recorded data is shown in the table.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "coil in water",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "power supply or battery with variable resistor, ammeter",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct circuit diagram",
+    "marks": 3,
+    "contextNote": "Deduct one mark if the diagram has no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q4-data"
+ },
+ {
+  "id": "phys-2014-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2014 HL Q4 — Joule’s law graph",
+  "stem": "In an experiment to verify Joule’s law, a fixed mass of water was heated in an insulated cup. θ, the highest temperature reached, was recorded for different values of current, I. In each case the current flowed for 4 minutes and the initial temperature of the water was 20.0 °C. The recorded data is shown in the table.",
+  "questionText": "Draw a suitable graph to verify Joule’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "six I² values calculated",
+    "marks": 3,
+    "contextNote": "Deduct one for each missing or incorrect value."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "axes labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "6 points plotted",
+    "marks": 3,
+    "contextNote": "Deduct one for each incorrect point."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "straight line with good fit",
+    "marks": 3,
+    "contextNote": "Deduct one for an inappropriate scale."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q4-data"
+ },
+ {
+  "id": "phys-2014-hl-q4-verify",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2014 HL Q4 — How the graph verifies Joule’s law",
+  "stem": "In an experiment to verify Joule’s law, a fixed mass of water was heated in an insulated cup. θ, the highest temperature reached, was recorded for different values of current, I. In each case the current flowed for 4 minutes and the initial temperature of the water was 20.0 °C. The recorded data is shown in the table. Draw a suitable graph to verify Joule’s law.",
+  "questionText": "Explain how the graph verifies Joule’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Explain — straight line through origin / I² proportional to rise in temperature / P proportional to I²",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q4-data"
+ },
+ {
+  "id": "phys-2014-hl-q4-temperature",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "temperature",
+  "section": "A",
+  "questionRef": "2014 HL Q4 — Temperature at 1.6 amperes",
+  "stem": "In an experiment to verify Joule’s law, a fixed mass of water was heated in an insulated cup. θ, the highest temperature reached, was recorded for different values of current, I. In each case the current flowed for 4 minutes and the initial temperature of the water was 20.0 °C. The recorded data is shown in the table. Draw a suitable graph to verify Joule’s law.",
+  "questionText": "Use your graph to estimate the highest temperature of the water when a current of 1.6 A flows through the coil for 4 minutes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I² = 2.56",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "highest temperature ≈ 25.3 °C",
+    "marks": 3,
+    "contextNote": "Deduct one for failing to add the initial 20 °C, and one for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q4-data"
+ },
+ {
+  "id": "phys-2014-hl-q4-fixed-mass",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "fixed-mass",
+  "section": "A",
+  "questionRef": "2014 HL Q4 — Keeping the water mass fixed",
+  "stem": "In an experiment to verify Joule’s law, a fixed mass of water was heated in an insulated cup. θ, the highest temperature reached, was recorded for different values of current, I. In each case the current flowed for 4 minutes and the initial temperature of the water was 20.0 °C. The recorded data is shown in the table.",
+  "questionText": "Explain why a fixed mass of water was used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(power required for) temperature rise is proportional to mass / otherwise there would be too many variables",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q4-data"
+ },
+ {
+  "id": "phys-2014-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2014 HL Q5(a)",
+  "questionText": "State Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "p and V inversely proportional",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "for a fixed mass of gas at constant temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2014 HL Q5(b)",
+  "questionText": "The Martian moon Phobos travels in a circular orbit of radius 9.4 × 10⁶ m around Mars with a period of 7.6 hours. Calculate the mass of Mars.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T² = 4π²R³/GM",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "6.57 × 10²³ kg",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q5-mars"
+ },
+ {
+  "id": "phys-2014-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2014 HL Q5(c)",
+  "questionText": "On what thermometric properties are the following based: (i) the thermocouple thermometer and (ii) the mercury-in-glass thermometer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(i) emf / (ii) length/height/volume",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(i) emf",
+      "(ii) length/height/volume"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Both specified instruments are required; first correct property earns 4 marks, second 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2014 HL Q5(d)",
+  "questionText": "The U-value of the material in a double-glazed window in a house is 2.8 W m⁻² K⁻¹. The window has an area of 3.0 m². How much energy is lost through the window in one hour if the temperature inside the house is 20 °C and the outside temperature is 11 °C?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "272160 J",
+    "marks": 7,
+    "contextNote": "Partial credit: 4 marks for ΔE/Δt = AUΔθ; 3 marks for 9 °C or 3600 s. Deduct one for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q5-window"
+ },
+ {
+  "id": "phys-2014-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2014 HL Q5(e)",
+  "questionText": "List a pair of complementary colours of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "any one primary colour",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "any one secondary colour",
+    "marks": 2,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "correct pair: red and cyan / green and magenta / blue and yellow",
+    "marks": 3
+   }
+  ],
+  "notes": "One complementary pair is one response; the examples are accepted pairs, not separate cards. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2014 HL Q5(f)",
+  "questionText": "What are the charge carriers in (i) semiconductors and (ii) metals?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(i) electrons and holes",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(ii) electrons",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2014 HL Q5(g)",
+  "questionText": "With reference to domestic electric circuits, what do the letters in the acronyms (i) RCD and (ii) MCB stand for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "residual current device; miniature circuit breaker",
+    "marks": 7,
+    "contextNote": "The six words earn one mark each, with a further mark for the complete response."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2014 HL Q5(h)",
+  "questionText": "The work function of tungsten is 4.50 eV. Calculate the maximum kinetic energy of an electron ejected from a tungsten surface when electromagnetic radiation whose photon energy is 5.85 eV shines on the surface.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Energy of incident photon = Work function + KE of electron",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1.35 (eV) / 2.16 × 10⁻¹⁹ ( J)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2014 HL Q5(i)",
+  "questionText": "Describe Rutherford’s model of the atom.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mostly empty space / dense core / positive core / electron cloud",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "mostly empty space",
+      "dense core",
+      "positive core",
+      "electron cloud"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "any two"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q5-j-walton",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j-walton",
+  "section": "B",
+  "questionRef": "2014 HL Q5(j) — walton",
+  "questionText": "ETS Walton is Ireland’s only Nobel Prize winner in the sciences. Give two reasons why the Cockcroft and Walton experiment was significant to the understanding of particle physics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "first experimental verification of E = mc² / first transmutation using artificially accelerated particles / first artificial splitting of a nucleus / development of linear accelerator",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "first experimental verification of E = mc²",
+      "first transmutation using artificially accelerated particles",
+      "first artificial splitting of a nucleus",
+      "development of linear accelerator"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q5-walton"
+ },
+ {
+  "id": "phys-2014-hl-q5-j-voltmeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5j-voltmeter",
+  "section": "B",
+  "questionRef": "2014 HL Q5(j) — voltmeter",
+  "questionText": "Describe how a galvanometer may be converted into a voltmeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "connect a large resistor / multiplier",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in series",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q6-vectors",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "vectors",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Vectors and scalars",
+  "questionText": "Compare vector and scalar quantities.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "vectors have direction",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "scalars have no direction",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q6-examples",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "examples",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Examples of vector and scalar quantities",
+  "stem": "Compare vector and scalar quantities.",
+  "questionText": "Give one example of each.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. velocity and speed",
+    "marks": 4,
+    "contextNote": "One vector and one scalar are required; each earns 2 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q6-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Resultant of two vectors",
+  "questionText": "Describe an experiment to find the resultant of two vectors.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus and arrangement e.g. 3 weights and pulleys",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "procedure and measurements e.g. adjust and read each force",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation and result e.g. statement",
+    "marks": 3,
+    "contextNote": "Deduct one mark if the correct direction is not shown."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q6-net-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "net-force",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Force on the golf trolley",
+  "stem": "A golfer pulls his trolley and bag along a level path. He applies a force of 277 N at an angle of 24.53° to the horizontal. The weight of the trolley and bag together is 115 N and the force of friction is 252 N.",
+  "questionText": "Calculate the net force acting on the trolley and bag.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Horizontal force applied by golfer = 277Cos24.53° ≈ 252 N",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Vertical force applied by golfer = 277Sin24.53° ≈ 115 N",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Net force ≈ 0 N",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q6-trolley"
+ },
+ {
+  "id": "phys-2014-hl-q6-motion",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "motion",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — The golfer’s motion",
+  "stem": "A golfer pulls his trolley and bag along a level path. He applies a force of 277 N at an angle of 24.53° to the horizontal. The weight of the trolley and bag together is 115 N and the force of friction is 252 N. Calculate the net force acting on the trolley and bag.",
+  "questionText": "What does the net force tell you about the golfer’s motion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "constant speed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q6-trolley"
+ },
+ {
+  "id": "phys-2014-hl-q6-newton",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newton",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Deriving Newton’s second-law equation",
+  "questionText": "Use Newton’s second law of motion to derive an equation relating force, mass and acceleration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F proportional to (mv – mu)/t",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F proportional to ma",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F = kma",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "k = 1 (by definition of the newton)",
+    "marks": 2
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "F = ma",
+    "marks": 1
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q6-ball-speed",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "ball-speed",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Speed of the golf ball",
+  "stem": "A force of 5.3 kN is applied to a golf ball by a club. The mass of the ball is 45 g and the ball and club are in contact for 0.54 ms.",
+  "questionText": "Calculate the speed of the ball as it leaves the club.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = ma // I = Ft // F = (mv – mu)/t",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v = 63.6 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q6-ball"
+ },
+ {
+  "id": "phys-2014-hl-q6-height",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "height",
+  "section": "B",
+  "questionRef": "2014 HL Q6 — Maximum height of the golf ball",
+  "stem": "A force of 5.3 kN is applied to a golf ball by a club. The mass of the ball is 45 g and the ball and club are in contact for 0.54 ms. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "The ball leaves the club head at an angle of 15° to the horizontal. Calculate the maximum height reached by the ball. Ignore the effect of air resistance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "uy = 16.46 m s⁻¹",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v² = u² +2as // ½mv² = mgh",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "height = 13.82 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q6-ball"
+ },
+ {
+  "id": "phys-2014-hl-q7-diffraction",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "diffraction",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Diffraction",
+  "questionText": "What is meant by the terms diffraction",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the spreading of a wave",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "into the space beyond a barrier/obstacle/gap",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q7-interference",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "interference",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Interference",
+  "questionText": "What is meant by the terms interference?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "the addition/(meeting) of two or more waves (to form a new wave)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q7-photon-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photon-energy",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Energy of a laser photon",
+  "stem": "A laser produces a beam of red light with a wavelength of 709 nm. The beam is incident on a diffraction grating, as shown in the diagram. A diffraction pattern is formed on a screen. A second order image is detected at an angle of 34.6° from the central image.",
+  "questionText": "Calculate the energy of each photon in the laser beam.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = hf",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "c = fλ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 2.8 × 10⁻¹⁹ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q7-grating"
+ },
+ {
+  "id": "phys-2014-hl-q7-retina",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "retina",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Photon sensors in the eye",
+  "questionText": "Sensors in the eye can respond to single photons. Where in the eye are these sensors located?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "retina",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q7-laser-lamp",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "laser-lamp",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Laser and vapour-lamp light",
+  "questionText": "State two differences between the electromagnetic radiation emitted from a laser and the electromagnetic radiation emitted from a vapour lamp.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "laser has one frequency/wavelength only / laser light is more powerful / laser light is coherent / laser light is collimated",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "laser has one frequency/wavelength only",
+      "laser light is more powerful",
+      "laser light is coherent",
+      "laser light is collimated"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q7-derive",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "derive",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Deriving the grating formula",
+  "questionText": "Derive, with the aid of a labelled diagram, the diffraction grating formula.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "diffraction grating, two rays on diagram",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "θ and d indicated on diagram",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "nλ indicated on diagram",
+    "marks": 3,
+    "contextNote": "The scheme gives zero for this criterion if n = 1 is used."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "nλ linked to constructive interference",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Sinθ = nλ/d from diagram",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q7-lines",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "lines",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Lines per millimetre",
+  "stem": "A laser produces a beam of red light with a wavelength of 709 nm. The beam is incident on a diffraction grating, as shown in the diagram. A diffraction pattern is formed on a screen. A second order image is detected at an angle of 34.6° from the central image.",
+  "questionText": "Calculate the number of lines per millimetre on the grating used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "nλ = dSinθ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "d = 0.000002497 m",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "i.e. 400 (lines per mm)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q7-grating"
+ },
+ {
+  "id": "phys-2014-hl-q7-white-light",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "white-light",
+  "section": "B",
+  "questionRef": "2014 HL Q7 — Replacing the laser with white light",
+  "stem": "A laser produces a beam of red light with a wavelength of 709 nm. The beam is incident on a diffraction grating, as shown in the diagram. A diffraction pattern is formed on a screen. A second order image is detected at an angle of 34.6° from the central image.",
+  "questionText": "What would be observed on the screen if the laser was replaced by a ray of white light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "spectra / dispersion / colours",
+    "marks": 5
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q7-grating"
+ },
+ {
+  "id": "phys-2014-hl-q8-terms",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "terms",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — Chain reaction and nuclear fission",
+  "stem": "A nuclear reactor is a device in which a sustained chain reaction takes place. From each nuclear fission, only one (on average) of the emitted neutrons hits another nucleus to cause another fission. The power output from a sustained nuclear reaction doesn’t grow, but is constant.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "a self-sustaining reaction / a reaction where the release of one or more neutrons causes further fission",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "fission is the splitting of a large nucleus",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "into two (smaller) nuclei with the release of energy/neutrons",
+    "marks": 3,
+    "contextNote": "Deduct one mark if “atom” is used in place of nucleus."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "questionFigureKey": "physics-2014-hl-q8-terms"
+ },
+ {
+  "id": "phys-2014-hl-q8-moderator",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "moderator",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — An example of a moderator",
+  "stem": "A substance called a moderator is mixed with the fuel in a nuclear reactor. Control rods are used to control the rate of the reaction.",
+  "questionText": "Give an example of a moderator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "graphite / (heavy) water",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q8-moderator-role",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "moderator-role",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — Why a moderator is needed",
+  "stem": "A substance called a moderator is mixed with the fuel in a nuclear reactor. Control rods are used to control the rate of the reaction.",
+  "questionText": "Explain why a moderator is needed in a nuclear reactor",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to slow down neutrons / so as to increase the probability of fission",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q8-control-rods",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "control-rods",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — How control rods affect the reaction",
+  "stem": "A substance called a moderator is mixed with the fuel in a nuclear reactor. Control rods are used to control the rate of the reaction.",
+  "questionText": "Explain how the control rods affect the rate of the reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "by absorbing neutrons",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q8-heat-exchanger",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "heat-exchanger",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — How the heat exchanger works",
+  "stem": "A heat exchanger is used in a nuclear reactor.",
+  "questionText": "Explain how the heat exchanger operates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat/energy from reactor",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "transfers to liquid/water in heat exchanger (to drive a turbine)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q8-heat-exchanger-need",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "heat-exchanger-need",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — Why use a heat exchanger?",
+  "stem": "A heat exchanger is used in a nuclear reactor.",
+  "questionText": "Why is it necessary to use a heat exchanger?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the material in a reactor is radioactive / allows the core to reach a higher temperature",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q8-plutonium",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "plutonium",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — Production of plutonium",
+  "stem": "Plutonium is produced in a fission reactor when one of the neutrons released in the fission reaction converts uranium–238 into plutonium–239 with the emission of two beta-particles.",
+  "questionText": "Write an equation for this nuclear reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "U²³⁸₉₂ + n¹₀ → Pu²³⁹₉₄ + 2β⁰₋₁",
+    "marks": 10,
+    "contextNote": "The historical scheme awards ten one-mark components and deducts 3 for extra particles. This is the overall process; the source equation omits the two electron antineutrinos from the beta decays."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q8-nuclear-solution"
+ },
+ {
+  "id": "phys-2014-hl-q8-fissions",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "fissions",
+  "section": "B",
+  "questionRef": "2014 HL Q8 — Fissions needed for one day of electricity",
+  "questionText": "Each fission of a uranium–235 nucleus produces 202 MeV of energy. Only 35% of this energy is used to generate electricity. How many uranium–235 nuclei are required to undergo fission to generate a constant electric power of 1 GW for a day?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Each fission = (202 ×10⁶)(1.6 × 10⁻¹⁹) / 3.23 × 10⁻¹¹ J",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "35% of 202 MeV = 1.13 × 10⁻¹¹ J",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "1 GW for a day = 8.64 × 10¹³ J",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "7.65 × 10²⁴ nuclei",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-terms",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "terms",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Capacitance and electric field",
+  "stem": "Most modern electronic devices contain a touchscreen. One type of touchscreen is a capacitive touchscreen, in which the user’s finger acts as a plate of a capacitor. Placing your finger on the screen will alter the capacitance and the electric field at that point.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "capacitance is the ratio of charge (on a capacitor)",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "C = Q/V",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "to the potential difference (across it)",
+    "marks": 3,
+    "route": "words"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "correct notation",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "an electric field is a region (of space)",
+    "marks": 3
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "where electrostatic forces are experienced / forces experienced by charged particles",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "questionFigureKey": "physics-2014-hl-q9-terms"
+ },
+ {
+  "id": "phys-2014-hl-q9-field-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-experiment",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — An electric field pattern",
+  "questionText": "Describe an experiment to demonstrate an electric field pattern.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high voltage",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "connected to two plates",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "in oil and semolina",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "semolina forms electric field pattern",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-charge",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "charge",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Charge on each capacitor plate",
+  "stem": "Two parallel metal plates are placed a distance d apart in air. The plates form a parallel plate capacitor with a capacitance of 12 µF. A 6 V battery is connected across the plates.",
+  "questionText": "Calculate the charge on each plate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Q/V",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q = 72 µC",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-energy",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Energy stored in the capacitor",
+  "stem": "Two parallel metal plates are placed a distance d apart in air. The plates form a parallel plate capacitor with a capacitance of 12 µF. A 6 V battery is connected across the plates.",
+  "questionText": "Calculate the energy stored in the capacitor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = ½CV²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = 216 µJ",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-separation",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "separation",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Increasing plate separation",
+  "stem": "Two parallel metal plates are placed a distance d apart in air. The plates form a parallel plate capacitor with a capacitance of 12 µF. A 6 V battery is connected across the plates.",
+  "questionText": "While the battery is connected the distance d is increased by a factor of three. Calculate the new capacitance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "4 (µF)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-battery",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "battery",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Capacitors and batteries",
+  "questionText": "A capacitor and a battery are both sources of electrical energy. State two differences between a capacitor and a battery.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "capacitor discharges faster than a battery / capacitor stores (electrostatic) potential energy while a battery stores chemical energy / battery gives a constant current / battery stores more energy",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "capacitor discharges faster than a battery",
+      "capacitor stores (electrostatic) potential energy while a battery stores chemical energy",
+      "battery gives a constant current",
+      "battery stores more energy"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-polarisation",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "polarisation",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Polarisation of light",
+  "questionText": "Touchscreens also contain two polarising filters. What is meant by polarisation of light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "vibration (of a wave)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "is in one plane",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q9-application",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "application",
+  "section": "B",
+  "questionRef": "2014 HL Q9 — Another use for capacitors",
+  "questionText": "Give one application of capacitors, other than in touchscreens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. flash of a camera / tuning circuits / defibrillator",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-doppler",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "doppler",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — The Doppler effect",
+  "stem": "Blood pressure can be measured in many ways. One technique uses the Doppler effect; another uses strain gauges contained in Wheatstone bridges.",
+  "questionText": "What is the Doppler effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the (apparent) change in the frequency (of a wave)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "due to the relative motion between the source (of the wave) and the observer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q10-pressure"
+ },
+ {
+  "id": "phys-2014-hl-q10-doppler-explanation",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "doppler-explanation",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — How the Doppler effect occurs",
+  "questionText": "Explain, with the aid of labelled diagrams, how the Doppler effect occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "source, concentric circles labelled as waves",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "source moving towards/away from observer, non-concentric circles",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "wavelength shorter moving towards the observer (or equivalent)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "therefore frequency greater (or equivalent)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-ambulance",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "ambulance",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Speed of the ambulance",
+  "stem": "An ambulance siren emits a sound of frequency 750 Hz. When the ambulance is travelling towards an observer, the frequency detected by the observer is 820 Hz. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "What is the speed of the ambulance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Doppler formula",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct rearrangement for u",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "29 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-applications",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "applications",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Other Doppler applications",
+  "stem": "Blood pressure can be measured in many ways. One technique uses the Doppler effect; another uses strain gauges contained in Wheatstone bridges. An ambulance siren emits a sound of frequency 750 Hz. When the ambulance is travelling towards an observer, the frequency detected by the observer is 820 Hz.",
+  "questionText": "State two other practical applications of the Doppler effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. police “speed guns” / measuring velocities of stars / ultrasound (scan) / landing aircraft / weather forecasting",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "e.g. police “speed guns”",
+      "measuring velocities of stars",
+      "ultrasound (scan)",
+      "landing aircraft",
+      "weather forecasting"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-balance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "balance",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Recognising a balanced bridge",
+  "stem": "The resistance of the conductor in a strain gauge increases when a force is applied to it. Strain gauges can act as the resistors in a Wheatstone bridge, and any change in their resistance can then be detected.",
+  "questionText": "How would an observer know that a Wheatstone bridge is balanced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "zero reading on / no deflection of / no current flowing through",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "galvanometer",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-resistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistor",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Unknown resistance in the bridge",
+  "stem": "The Wheatstone bridge in the diagram is balanced.",
+  "questionText": "What is the resistance of the unknown resistor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R₁ ÷ R₂ = R₃ ÷ R₄",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "17.36 Ω",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q10-bridge"
+ },
+ {
+  "id": "phys-2014-hl-q10-resistivity",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Resistance in terms of diameter",
+  "questionText": "Write an expression for the resistance of a wire in terms of its resistivity, length and diameter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R = ρl/A",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "R = 4ρl/πd²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q10-radius",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "radius",
+  "section": "B",
+  "questionRef": "2014 HL Q10 — Doubling the wire radius",
+  "questionText": "The radius of a wire is doubled. What is the effect of this on the resistance of the wire?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistance decreases",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "by a factor of 4",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-i-forces",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "forces",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(i) — Forces experienced by electrons",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Electrons are leptons. List the three fundamental forces that electrons experience in increasing order of strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "gravitational, weak (nuclear) and electromagnetic",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "in correct order",
+    "marks": 1,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-ii-annihilation",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "annihilation",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(ii) — Pair annihilation equation",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Write an equation to represent the pair annihilation described in the text.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e⁻ + e⁺",
+    "marks": 4,
+    "route": "particles"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "2mₑc²",
+    "marks": 4,
+    "route": "energy"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "→ 2hf / 2γ",
+    "marks": 3,
+    "route": "particles"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "= 2hf",
+    "marks": 3,
+    "route": "energy"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-iii-frequency",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "frequency",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(iii) — Frequency of an annihilation photon",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Calculate the frequency of each photon produced in this pair annihilation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "hf = mc²",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1.2356 × 10²⁰ Hz",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-iv-opposite",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "opposite",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(iv) — Opposite photon directions",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Why do the photons produced in pair annihilation travel in opposite directions?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "is conserved",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-v-decay",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "decay",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(v) — Carbon-11 decay equation",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Write a nuclear equation to represent the decay of carbon–11.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C¹¹₆ → B¹¹₅ + e⁰₁ ( + νₑ)",
+    "marks": 7,
+    "contextNote": "The scheme shows the electron neutrino in brackets and deducts 3 marks for extra particles."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-decay-solution",
+  "questionFigureKey": "physics-2014-hl-q11-decay-question"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-vi-decay-constant",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "decay-constant",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(vi) — Decay constant of carbon-11",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "What is the value of the decay constant of carbon–11?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ = ln2/T½",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "0.000578 s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-vii-hospital",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "hospital",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(vii) — Why produce carbon-11 nearby?",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Explain why the carbon–11 nuclei used in the PET scanner must be produced in a cyclotron in, or close to, the same hospital as the scanner.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "short half-life / too many would have decayed before they could be used",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-a-viii-momentum",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "momentum",
+  "section": "B",
+  "questionRef": "2014 HL Q11(a)(viii) — Momentum in the cyclotron",
+  "stem": "Cyclotrons and PET Scanners Positron emission tomography (PET) scanners are designed to detect the pair of photons generated from the annihilation reaction between a positron and an electron. A carbon–11 nucleus, which has a half-life of twenty minutes, decays with the emission of a positron. The positron travels only a short distance before colliding with an electron in the surrounding matter. Pair annihilation occurs. The emitted photons travel in opposite directions. Cyclotrons are located in the same hospital as the PET scanners and are used to manufacture radioactive nuclei. Cyclotrons are circular devices in which charged particles are accelerated in a spiral path within a vacuum. The particles are accelerated by a rapidly alternating voltage and acquire high kinetic energies. They spiral outwards under the influence of the magnetic field until they have sufficent velocity and are deflected into a target producing radioactive nuclei, including carbon–11. (Adapted from “Essentials of Nuclear Medicine Physics”; Powsner & Powsner; 1998)",
+  "questionText": "Give an expression for the momentum of a particle in the cyclotron in terms of the magnetic flux density of the field, the charge on the particle and the radius of its circular path at any instant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "qrB",
+    "marks": 7,
+    "contextNote": "Partial credit: 4 for equating centripetal and magnetic force, or qvB, mv²/r or mrω². Deduct one if e replaces the general charge q."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-pet-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-i-transistor",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "transistor",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(i) — Structure of a transistor",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Draw a labelled diagram to show the basic structure of a transistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "npn / pnp layers",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "collector, base and emitter all shown correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-ii-currents",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "currents",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(ii) — Transistor current relationship",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "State the relationship between the three currents flowing in a transistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Iₑ = Ib + Ic",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-iii-amplifier",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "amplifier",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(iii) — Voltage amplifier circuit",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Draw a circuit diagram for a voltage amplifier.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "transistor and resistor in series",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "complete circuit with input and output voltages indicated",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-iv-and-gate",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "and-gate",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(iv) — AND gate and truth table",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Draw the symbol and truth table for an AND gate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct symbol",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct table",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-v-diodes",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "diodes",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(v) — Photodiode and LED",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Give two ways in which the operation of a photodiode differs from that of an LED.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "photodiode requires light to allow current to flow, LED produces light when a current flows / photodiode is in reverse bias, LED is in forward bias / photodiode does not need a protective resistor, LED does",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "photodiode requires light to allow current to flow, LED produces light when a current flows",
+      "photodiode is in reverse bias, LED is in forward bias",
+      "photodiode does not need a protective resistor, LED does"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-vi-photon",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "photon",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(vi) — Photon emission inside an LED",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "What event inside an LED causes the release of a photon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electron drops to a lower energy level (combines with a hole)",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-vii-fibre",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "fibre",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(vii) — Guiding light along a fibre",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Explain, with the aid of a labelled diagram, how a ray of light is guided along an optical fibre.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "angle of incidence greater than critical angle / total internal reflection",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "more than once on diagram",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-silicon-passage"
+ },
+ {
+  "id": "phys-2014-hl-q11-b-viii-critical-angle",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "critical-angle",
+  "section": "B",
+  "questionRef": "2014 HL Q11(b)(viii) — Critical angle and light speed",
+  "stem": "Silicon At the end of June 1948, Bell Labs announced the invention of the transistor by Shockley, Bardeen and Brattain. Like the vacuum tube, which it had the potential to replace, the transistor could amplify electric signals and act as an on-off switch. Any computational problem can be broken down into a set of simple logical steps. These steps are controlled by logic gates, which are the basic building blocks of digital circuits. Logic gates are made from transistors and other simple components, and they use transistors as switches to send signals. A computer is simply a number of these transistor-based logic gates linked together to produce a complex output. Transistors are used because they are very small, very cheap and use little power. Transistor switches can be turned on and off well over a billion times every second. Silicon’s semiconducting properties make it ideal for making these switches. Today’s communication infrastructure also depends on silicon in a very different format. Silica-glass optical fibres were developed in the 1980s, replacing copper for long-distance telecommunication lines. LEDs and photodiodes may be used to transmit and receive signals that travel in optical fibres. (Adapted from “Seven Elements that Changed the World”; Browne; 2013)",
+  "questionText": "Give an expression for the critical angle of the glass in an optical fibre in terms of the speed of light in the glass and the speed of light in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sin C = cglass/cair",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "C = Sin⁻¹(cglass/cair)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q11-critical-solution",
+  "questionFigureKey": "physics-2014-hl-q11-critical-question"
+ },
+ {
+  "id": "phys-2014-hl-q12-a-hooke",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "hooke",
+  "section": "B",
+  "questionRef": "2014 HL Q12(a) — Hooke’s law",
+  "questionText": "State Hooke’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "extension proportional to",
+    "marks": 2,
+    "route": "extension"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(applied )force",
+    "marks": 2,
+    "route": "extension"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(restoring) force prop. to",
+    "marks": 2,
+    "route": "restoring-force"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "displacement",
+    "marks": 2,
+    "route": "restoring-force"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "F = (−)ks",
+    "marks": 2,
+    "route": "equation"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "notation",
+    "marks": 2,
+    "route": "equation"
+   }
+  ],
+  "notes": "Three complete alternative definitions each retain their own 2+2 tariff; never add routes together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-a-length",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "length",
+  "section": "B",
+  "questionRef": "2014 HL Q12(a) — New length of the spring",
+  "stem": "The elastic constant of a spring is 12 N m⁻¹ and it has a length of 25 mm. An object of mass 20 g is attached to the spring. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "What is the new length of the spring?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "x = F/k = (0.02 × 9.8)/12 = 0.0163 m",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "new length = 41.3 mm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-spring"
+ },
+ {
+  "id": "phys-2014-hl-q12-a-graph",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "graph",
+  "section": "B",
+  "questionRef": "2014 HL Q12(a) — Velocity–time graph of the spring",
+  "stem": "The elastic constant of a spring is 12 N m⁻¹ and it has a length of 25 mm. An object of mass 20 g is attached to the spring. The object is then pulled down until the spring’s length is increased by a further 5 mm and is then released. The object oscillates with simple harmonic motion.",
+  "questionText": "Sketch a velocity-time graph of the motion of the object.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "axes labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "periodic graph",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct sinusoidal shape, beginning with v = 0",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-spring"
+ },
+ {
+  "id": "phys-2014-hl-q12-a-period",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "period",
+  "section": "B",
+  "questionRef": "2014 HL Q12(a) — Period of the spring",
+  "stem": "The elastic constant of a spring is 12 N m⁻¹ and it has a length of 25 mm. An object of mass 20 g is attached to the spring. The object is then pulled down until the spring’s length is increased by a further 5 mm and is then released. The object oscillates with simple harmonic motion.",
+  "questionText": "Calculate the period of oscillation of the object.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ω² = k/m (= 600)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "T = 2π/ω",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "T = 0.256 s",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-spring"
+ },
+ {
+  "id": "phys-2014-hl-q12-b-reflection",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "reflection",
+  "section": "B",
+  "questionRef": "2014 HL Q12(b) — Reflection",
+  "questionText": "What is reflection?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light rebounding (off surfaces)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-b-ray-diagram",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "ray-diagram",
+  "section": "B",
+  "questionRef": "2014 HL Q12(b) — Image in a convex mirror",
+  "stem": "Spherical mirrors can be either convex or concave.",
+  "questionText": "Draw a ray diagram to show the formation of an image in a convex mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "object, correct mirror",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "two correct reflected rays",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct image",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-b-image",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "image",
+  "section": "B",
+  "questionRef": "2014 HL Q12(b) — Image in a spherical decoration",
+  "questionText": "A person looks at her image in a shiny spherical decoration when her face is 30 cm from the surface of the decoration. The diameter of the decoration is 20 cm. Find the position of the image.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f = r/2 = 5 cm",
+    "marks": 3,
+    "contextNote": "This is the focal-length magnitude. Apply the convex-mirror sign consistently; the image is virtual, behind the mirror. Deduct one if f = 10 cm is used."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "v = 30/7 = 4.3 cm (behind the mirror)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-decoration"
+ },
+ {
+  "id": "phys-2014-hl-q12-b-dentist",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "dentist",
+  "section": "B",
+  "questionRef": "2014 HL Q12(b) — Why dentists use concave mirrors",
+  "questionText": "Concave mirrors, rather than convex mirrors, are used by dentists to examine teeth. Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to give a magnified image",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-c-latent-heat",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat",
+  "section": "B",
+  "questionRef": "2014 HL Q12(c) — Specific latent heat",
+  "questionText": "Define specific latent heat.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat needed to change the state",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "of 1 kg of a substance (with no change in temperature)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-c-ice-mass",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "ice-mass",
+  "section": "B",
+  "questionRef": "2014 HL Q12(c) — Mass of the three ice cubes",
+  "stem": "A drinking glass contains 500 g of water at a temperature of 24 °C. Three cubes of ice, of side 2.5 cm, are removed from a freezer and placed in the water. The temperture of the ice is –20 °C. density of ice = 0.92 g cm⁻³ specific heat capacity of water = 4200 J kg⁻¹ K⁻¹ specific heat capacity of ice = 2100 J kg⁻¹ K⁻¹ specific latent heat of fusion of ice = 3.3 × 10⁵ J kg⁻¹",
+  "questionText": "Calculate the mass of the ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "m = ρV",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m = 43.125 g",
+    "marks": 3,
+    "contextNote": "All three cubes are required; deduct one if only one cube is used, and one for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-ice"
+ },
+ {
+  "id": "phys-2014-hl-q12-c-temperature",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature",
+  "section": "B",
+  "questionRef": "2014 HL Q12(c) — Minimum water temperature",
+  "stem": "A drinking glass contains 500 g of water at a temperature of 24 °C. Three cubes of ice, of side 2.5 cm, are removed from a freezer and placed in the water. The temperture of the ice is –20 °C. density of ice = 0.92 g cm⁻³ specific heat capacity of water = 4200 J kg⁻¹ K⁻¹ specific heat capacity of ice = 2100 J kg⁻¹ K⁻¹ specific latent heat of fusion of ice = 3.3 × 10⁵ J kg⁻¹",
+  "questionText": "Calculate the minimum temperature of the water when the ice has melted.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "any mcΔθ",
+    "marks": 3,
+    "contextNote": "Stated or implied."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ml",
+    "marks": 3,
+    "contextNote": "Stated or implied."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(0.043125×2100×20) + (0.043125×3.3×10⁵) + (0.043125×4200×T) = (0.5 × 4200 × (24 – T))",
+    "marks": 8,
+    "contextNote": "Each of the four energy terms carries 2 marks."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "T = 15.06 °C",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-heat-solution",
+  "questionFigureKey": "physics-2014-hl-q12-heat-question"
+ },
+ {
+  "id": "phys-2014-hl-q12-d-faraday",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "faraday",
+  "section": "B",
+  "questionRef": "2014 HL Q12(d) — Faraday’s law",
+  "questionText": "State Faraday’s law of electromagnetic induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(size of an) induced emf is proportional to",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "the rate of change of flux (through a circuit)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-d-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "experiment",
+  "section": "B",
+  "questionRef": "2014 HL Q12(d) — Demonstrating Faraday’s law",
+  "questionText": "Describe an experiment to demonstrate Faraday’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "coil, meter, magnet",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "reading on meter when coil is moved relative to magnet",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "faster movement gives larger reading",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2014-hl-q12-d-falling-magnet",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "falling-magnet",
+  "section": "B",
+  "questionRef": "2014 HL Q12(d) — Magnet falling through copper and glass",
+  "questionText": "A hollow copper pipe and a hollow glass pipe, with identical dimensions, were arranged as shown in the diagram. A student measured the time it took a strong magnet to fall through each cylinder. It took much longer for the magnet to fall through the copper pipe. Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(falling) magnet creates changing magnetic flux/field",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "emf induced",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "current flows in copper (only)",
+    "marks": 4
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "generating magnetic fields which oppose the motion (of the falling magnet)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2014_hl.py.",
+  "year": 2014,
+  "level": "higher",
+  "figureKey": "physics-2014-hl-q12-pipes"
  }
 ]

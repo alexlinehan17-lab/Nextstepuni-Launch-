@@ -1,4 +1,573 @@
 {
+ "physics-2014-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q1-data.png",
+  "md5": "e384c70f00c1b5d297f392589688eb7e",
+  "alt": "All four labelled momentum measurements with their values and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q1 — Momentum experiment apparatus",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   82,
+   258,
+   420,
+   318
+  ]
+ },
+ "physics-2014-hl-q10-bridge": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q10-bridge.png",
+  "md5": "3ec7d6086bd2ee8bb916abd0ad6fabbb",
+  "alt": "Complete balanced Wheatstone bridge with all three resistances, unknown resistor, galvanometer and cell.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q10 — Unknown resistance in the bridge",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   134,
+   377,
+   434,
+   515
+  ]
+ },
+ "physics-2014-hl-q10-pressure": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q10-pressure.png",
+  "md5": "9253ed5a753d6ea99565358b162e9934",
+  "alt": "Original blood-pressure measurement illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q10 — The Doppler effect",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   417,
+   32,
+   541,
+   126
+  ]
+ },
+ "physics-2014-hl-q11-critical-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-critical-question.png",
+  "md5": "fb86baff0f275c4cb305d84cdb9659a2",
+  "alt": "Full Silicon passage with illustrations and citation, followed by the critical-angle ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(b)(viii) — Critical angle and light speed",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   82,
+   563,
+   675
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    447,
+    563,
+    639
+   ]
+  ]
+ },
+ "physics-2014-hl-q11-critical-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-critical-solution.png",
+  "md5": "6ff1b587c604a63c968321403115cbe0",
+  "alt": "Official critical-angle expressions with correctly typeset speed subscripts.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(b)(viii) — Critical angle and light speed",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   111,
+   577,
+   283,
+   612
+  ],
+  "solution": true
+ },
+ "physics-2014-hl-q11-decay-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-decay-question.png",
+  "md5": "09dcce923234e3315cf2344d2ef7a7be",
+  "alt": "Full PET passage and both diagrams, citation, and carbon-11 decay ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(a)(v) — Carbon-11 decay equation",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   110,
+   544,
+   599
+  ],
+  "maskedFurniture": [
+   [
+    80,
+    449,
+    544,
+    576
+   ]
+  ]
+ },
+ "physics-2014-hl-q11-decay-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-decay-solution.png",
+  "md5": "0c0fc86f5660a70b96d237cc7783c64b",
+  "alt": "Official carbon-11 beta-plus equation with every nuclear index and electron neutrino.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(a)(v) — Carbon-11 decay equation",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   112,
+   382,
+   200,
+   416
+  ],
+  "solution": true
+ },
+ "physics-2014-hl-q11-pet-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-pet-passage.png",
+  "md5": "fa1e615f94302cbd42e348f103f6d0a4",
+  "alt": "Full Cyclotrons and PET Scanners passage, annihilation diagram, labelled cyclotron and Powsner citation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(a)(i) — Forces experienced by electrons",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   110,
+   544,
+   444
+  ]
+ },
+ "physics-2014-hl-q11-silicon-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q11-silicon-passage.png",
+  "md5": "2af7dfdc78020c9f8435af5e26dcc9e1",
+  "alt": "Full Silicon passage, transistor and optical-fibre illustrations and Browne citation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(b)(i) — Structure of a transistor",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   82,
+   563,
+   446
+  ]
+ },
+ "physics-2014-hl-q12-decoration": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-decoration.png",
+  "md5": "62419951df76710086e9c77bfcbb5fa7",
+  "alt": "Original spherical reflective decoration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(b) — Image in a spherical decoration",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   429,
+   473,
+   571,
+   648
+  ]
+ },
+ "physics-2014-hl-q12-heat-question": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-heat-question.png",
+  "md5": "78593447f7caf327057ee16f6d4f4990",
+  "alt": "Full ice-and-water data, three-cube photograph, four constants and minimum-temperature ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(c) — Minimum water temperature",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   88,
+   544,
+   350
+  ],
+  "maskedFurniture": [
+   [
+    82,
+    141,
+    544,
+    162
+   ],
+   [
+    516,
+    171,
+    544,
+    189
+   ]
+  ]
+ },
+ "physics-2014-hl-q12-heat-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-heat-solution.png",
+  "md5": "5429ab6d66531ba6a15caf051a1147fa",
+  "alt": "Complete official four-term energy balance, substitutions, working and final temperature.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(c) — Minimum water temperature",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   82,
+   248,
+   544,
+   364
+  ],
+  "solution": true
+ },
+ "physics-2014-hl-q12-ice": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-ice.png",
+  "md5": "587c04a9ec4f7570fbbf9e95f461b0c8",
+  "alt": "Original glass and three ice cubes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(c) — Mass of the three ice cubes",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   452,
+   192,
+   527,
+   350
+  ]
+ },
+ "physics-2014-hl-q12-pipes": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-pipes.png",
+  "md5": "7c6aeca4399ac4cd1583f25da804a8c0",
+  "alt": "Both full magnets with north/south labels above the copper and glass cylinders.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(d) — Magnet falling through copper and glass",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   442,
+   425,
+   534,
+   615
+  ]
+ },
+ "physics-2014-hl-q12-spring": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q12-spring.png",
+  "md5": "2c62539a6e9dfb70786520bf5d59d9a4",
+  "alt": "Original suspended spring, mass and stand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q12(a) — New length of the spring",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   438,
+   111,
+   583,
+   325
+  ]
+ },
+ "physics-2014-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q2-data.png",
+  "md5": "03c787e80350e24ee6c202cddf0d4dd8",
+  "alt": "All seven incidence and refraction pairs, including the 23-degree outlier.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q2 — Inconsistent refraction reading",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   144,
+   574,
+   450,
+   632
+  ]
+ },
+ "physics-2014-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q3-data.png",
+  "md5": "cd5ef877903c4ba075d90584694f8f8d",
+  "alt": "Resonance-column length and diameter with their labels and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q3 — Finding the first resonance",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   82,
+   123,
+   410,
+   156
+  ]
+ },
+ "physics-2014-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q4-data.png",
+  "md5": "7b5605552db603be3530af00d4550b1f",
+  "alt": "All six currents and corresponding highest temperatures, with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q4 — How the graph verifies Joule’s law",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   86,
+   470,
+   510,
+   528
+  ]
+ },
+ "physics-2014-hl-q5-mars": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q5-mars.png",
+  "md5": "61c07d8d394e13818bb354c7b753f75c",
+  "alt": "Original illustration of Mars and Phobos.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q5(b)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   385,
+   177,
+   541,
+   277
+  ]
+ },
+ "physics-2014-hl-q5-walton": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q5-walton.png",
+  "md5": "69c5d8487189ad5fd746ee21ebfa992f",
+  "alt": "Original Cockcroft and Walton photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q5(j) — walton",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   355,
+   529,
+   541,
+   619
+  ]
+ },
+ "physics-2014-hl-q5-window": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q5-window.png",
+  "md5": "1c72a7bcd759883dba145fa48e991638",
+  "alt": "Original double-glazed window illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q5(d)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   464,
+   304,
+   531,
+   396
+  ]
+ },
+ "physics-2014-hl-q6-ball": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q6-ball.png",
+  "md5": "196e2aec53fb9ab3b391880c7086517a",
+  "alt": "Golf ball and club in the original question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q6 — Maximum height of the golf ball",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   313,
+   273,
+   540,
+   426
+  ]
+ },
+ "physics-2014-hl-q6-trolley": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q6-trolley.png",
+  "md5": "097ee645a7a2e74d4eb01243155b2060",
+  "alt": "Golfer and trolley in the original question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q6 — Force on the golf trolley",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   408,
+   120,
+   540,
+   242
+  ]
+ },
+ "physics-2014-hl-q7-grating": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q7-grating.png",
+  "md5": "6baa40ba75a9dcfd2a6aefd885931cc2",
+  "alt": "Complete laser, diffraction grating, screen and angle diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q7 — Energy of a laser photon",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   317,
+   501,
+   541,
+   576
+  ]
+ },
+ "physics-2014-hl-q8-nuclear-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q8-nuclear-solution.png",
+  "md5": "8a6a9d0ea5ba8ae5d7bcd81d0ddf11fa",
+  "alt": "Complete official uranium-to-plutonium equation with every nuclear index.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q8 — Production of plutonium",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   54,
+   462,
+   150,
+   499
+  ],
+  "solution": true
+ },
+ "physics-2014-hl-q8-terms": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q8-terms.png",
+  "md5": "9ad5bd68d52c572924a464e479ed0cfc",
+  "alt": "Full nuclear-reactor stem with chain reaction and nuclear fission underlined and the term-definition ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q8 — Chain reaction and nuclear fission",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   54,
+   52,
+   542,
+   181
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    140,
+    437,
+    181
+   ],
+   [
+    407,
+    116,
+    431,
+    135
+   ]
+  ]
+ },
+ "physics-2014-hl-q9-terms": {
+  "src": "/exam-figures/physics/markbank/physics-2014-hl-q9-terms.png",
+  "md5": "87dd6b02e165ed198248624a9cc5a3df",
+  "alt": "Touchscreen illustration, complete stem with both underlined terms and their definition ask.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q9 — Capacitance and electric field",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   54,
+   428,
+   542,
+   543
+  ],
+  "maskedFurniture": [
+   [
+    382,
+    526,
+    410,
+    543
+   ]
+  ]
+ },
  "physics-2015-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2015-hl-q1-data.png",
   "md5": "e839303a54e40527f8d67a4c18498d15",

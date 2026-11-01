@@ -1964,11 +1964,11 @@ describe('Mark Bank card preservation', () => {
     expect(PHYS_ORDINARY.every(card => card.id.startsWith(`phys-${card.year}-ol-`))).toBe(true);
     for (const id of physicsAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
-    expect(PHYS_HIGHER).toHaveLength(1425);
-    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('1a6e641b774f62ad2eee297d5a6f69a1c4eb87ca06aa78bb41f370ef40291f87');
+    expect(PHYS_HIGHER).toHaveLength(1525);
+    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('98143d912578988ff762f748331902ea4d5c75d67bea5721519c50f27c6937a0');
     expect(PHYS_ORDINARY).toHaveLength(1367);
     expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('cc79d8d468bf6d831c2eda1d25b6161fee8ad3bc01148cc09fed0d966e75aca3');
-    expect(physicsAdditionIds.size).toBe(1425 + 1367 - 570 - 563 + physicsAliasIds.length);
+    expect(physicsAdditionIds.size).toBe(1525 + 1367 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
