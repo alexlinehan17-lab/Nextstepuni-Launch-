@@ -54425,5 +54425,364 @@
    }
   ],
   "notes": "Independent storage prompt and nine-mark tariff; cooking remains on the original Q3b ID."
+ },
+ {
+  "id": "he-2024-hl-sa-q2-sources",
+  "topicId": "home-economics-0-8",
+  "conceptId": "vitamin-a-dietary-sources",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q2 — sources",
+  "questionText": "Identify two dietary sources of Vitamin A.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 sources × 1 (1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "sources",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Two sources, each graded 1:0. Complete published examples: carrots; leafy green vegetables; tomatoes; apricots; red peppers; sweet potatoes; oily fish; fish liver oils; meat; offal; eggs; margarine; butter; milk; cheese; nuts; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent source-identification prompt with its own 2-mark tariff. Functions retain the original Q2 ID."
+ },
+ {
+  "id": "he-2024-hl-sb-q1d",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sugar-reduction-strategies",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2024 HL Section B Q1(d)",
+  "questionText": "Devise a set of strategies to follow when purchasing and preparing food/drink to reduce a person’s sugar consumption.",
+  "stem": "The Eurobarometer survey 2022 and 2019 questioned consumers on factors that affect their decisions when purchasing foods. (adapted from www.efsa.europa.eu)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Purchasing 1 + preparing 1 + other 2, each 5 (5:3:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "purchasing",
+    "kind": "criterion",
+    "verbatim": "purchasing",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "One purchasing strategy, graded 5:3:0. Complete examples: check food labels for sugar content; examine ingredient list for names of different sugars; choose reduced sugar/zero sugar alternatives; choose dark chocolate instead of milk or white chocolate; choose reduced sugar jam; etc. avoid the following foods sauces ketchup; sweet chilli sauce, pre-made pasta sauces; etc. dips honey dips; etc. confectionery iced confectionery, ice-creams, ‘low fat’ snack foods, sugar coated cereals, granola bars, protein bars, sweets; etc. glazes glazed meats; etc. chocolate coated chocolate coated fruit, nuts, rice cakes; etc. drinks, fizzy drinks/energy drinks; etc. other foods fruit canned in syrup, choose fruit canned in natural juices/spring water; etc."
+   },
+   {
+    "id": "preparing",
+    "kind": "criterion",
+    "verbatim": "preparing",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "One preparing strategy, graded 5:3:0. Complete examples: use spices to give flavour and sweetness; choose ripe fruit; choose water, sparkling water, herbal teas; include fresh fruit, baked fruit; use natural yoghurt; reduce sugar/flavoured syrups; flavour water using fresh fruit and vegetables rather than using cordials; use extracts instead of sugar when baking; use artificial sweeteners; combine sweet fruit with lesser sweet fruits instead of adding sugar; use unsweetened apple sauce, mashed bananas, blended dates, prunes, cooked sweet potatoes instead of sugar in recipes; avoid adding sugar to snack foods; avoid adding jams to bread/toast; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "other points",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Two further distinct strategies under either heading, each graded 5:3:0; do not count a point twice.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full source-pinned paper/scheme review: he_review_2024_hl_main_b.py. Required headings and open choices remain whole responses."
+ },
+ {
+  "id": "he-2024-hl-sb-q4b",
+  "topicId": "home-economics-1-2",
+  "conceptId": "in-store-payment-methods",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2024 HL Section B Q4(b)",
+  "questionText": "Name and evaluate two different methods of payment used by consumers to pay for in-store purchases.",
+  "stem": "‘Helpful, knowledgeable staff are the driving force behind in-store shopping being popular amongst Irish consumers.’ (www.pwc.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 methods × (name 3 + 2 evaluations × 3), all 3:2:0"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "name-1",
+    "kind": "criterion",
+    "verbatim": "name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Name payment method 1, graded 3:2:0. Choose two different methods; complete historical examples and evaluation criteria: name cash; cheque; debit card; credit card; Revolut; phone tap; vouchers; direct debit; hire purchase; etc. evaluate availability; ease of use; cost to consumer; safety; etc."
+   },
+   {
+    "id": "evaluate-1",
+    "kind": "criterion",
+    "verbatim": "evaluate",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two evaluations of the same method 1, each graded 3:2:0. Refer to availability, ease of use, cost or safety; examples are not current product or fee advice.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "name-2",
+    "kind": "criterion",
+    "verbatim": "name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Name payment method 2, graded 3:2:0. Use the full examples above."
+   },
+   {
+    "id": "evaluate-2",
+    "kind": "criterion",
+    "verbatim": "evaluate",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Two evaluations of the same method 2, each graded 3:2:0. Refer to availability, ease of use, cost or safety; examples are not current product or fee advice.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full source-pinned paper/scheme review: he_review_2024_hl_main_b.py. Required headings and open choices remain whole responses.",
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2024-hl-sb-q4b-method-1",
+    "label": "Chosen payment method 1",
+    "marks": 9,
+    "rowIds": [
+     "name-1",
+     "evaluate-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2024-hl-sb-q4b-method-2",
+    "label": "Chosen payment method 2",
+    "marks": 9,
+    "rowIds": [
+     "name-2",
+     "evaluate-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2024-hl-sc-q1ci-methods",
+  "topicId": "home-economics-3-6",
+  "conceptId": "home-insulation-methods",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(c)(i) — methods",
+  "questionText": "Identify and describe three different methods of home insulation.",
+  "stem": "‘If your home is well insulated; you also need good ventilation.’ (www.seai.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 methods × 4 (4:3:2:1:0)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "methods",
+    "kind": "criterion",
+    "verbatim": "methods of home insulation",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Three identified and described methods, each graded 4:3:2:1:0. No separate naming tariff is printed. Complete guidance, including labelled-diagram acceptance: attic/roof fibre blanket insulation; loose fill insulation; foam insulation; blown cellulose insulation; water tank and pipes insulated; etc. walls cavity walls air; polystyrene sheets; polystyrene foam; bonded beads; etc. solid walls blanket insulation (fibreglass/rockwool) insulation sheets; external insulation (polystyrene with reinforced mesh); etc. floor fill gaps in around floorboards; fitted carpets with thick underlay; fibreglass first floor insulation; etc. draught excluders brush excluders; fabric excluders; etc. windows/doors well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Accept labelled diagram",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent second prompt, with a separately published 12-mark tariff; the original ID retains the 6-mark underlying principle."
  }
 ]

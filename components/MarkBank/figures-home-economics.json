@@ -161,5 +161,27 @@
     "alt": "The two original occasion-wear outfits: a red lace dress with fitted bodice and flared skirt, and a grey suit with shirt, tie and pocket square. Original Pinterest and The Black Tux captions retained.",
     "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [160, 130, 395, 332], rendered at 2×; visually checked. SHA256 bf829a5626fa7b6c2725c6fb583b0b6dd46f2306f81b7a5dda1c536a76c41ab2."
+  },
+  "home-economics-2024-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sb-q1a-chart.png",
+    "md5": "07f6ed1803701e8e44c8cd29c04659ea",
+    "alt": "Original Eurobarometer chart, 2022 (blue) / 2019 (red), percentage of consumers: cost 63 / 57; food safety 52 / 51; origin of food 36 / 44; impact on environment 11 / 0; nutrient content 52 / 52. Both year keys, axes and EFSA caption retained.",
+    "attribution": "SEC Home Economics 2024 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [85, 207, 551, 452], rendered at 2×; visually checked. SHA256 61037c3834e030eacb4996f4327d96db010879fdd09d39b43e0388b776ef0550."
+  },
+  "home-economics-2024-hl-sb-q1b-chemistry": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sb-q1b-chemistry.png",
+    "md5": "7d29ebacdf80ac5308e201f9a7625e77",
+    "alt": "Original marking-scheme chemical diagrams: glucose ring structure with atom and hydroxyl-group labels, and two monosaccharide rings joining with loss of H₂O. Includes the corresponding structure and formation guidance.",
+    "attribution": "SEC Home Economics 2024 Higher Level marking scheme, page 12 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [54, 80, 551, 405], rendered at 2×; visually checked. SHA256 d864a5a04f4edcb13d9c72942c1a7503ab463985806b4b82b59cf80291704208.",
+    "solution": true
+  },
+  "home-economics-2024-hl-sc-q2ai-summer-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2024-hl-sc-q2ai-summer-outfits.png",
+    "md5": "e870cf3582c96299b4442e2443de9c86",
+    "alt": "Both original summer outfits: a floral dress with thin straps and an asymmetrical hem, and a denim jacket with white T-shirt, beige trousers and white trainers. Both original source captions retained.",
+    "attribution": "SEC Home Economics 2024 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [165, 136, 369, 297], rendered at 2×; visually checked. SHA256 659ce7703e0241eb2ed0545ceee56eab6b2b65b16b746f3cc6dadd3022025883."
   }
 }
