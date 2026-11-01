@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "home-economics",
+  "sitting": "2023-higher-English-main",
+  "status": "missing-task-recovery-reviewed; full-existing-card-boundary-audit-pending",
+  "sources": [
+    {
+      "path": "examiner-reports/home-economics/papers/2023-hl-014-paper.pdf",
+      "sha256": "8a1dceedb76a3c4aadeaa57ecc94c59d23b78c07dbbec75bd679f6e30e0c5243"
+    },
+    {
+      "path": "examiner-reports/home-economics/papers/2023-hl-039-paper.pdf",
+      "sha256": "f81801f7c53b59c23a368c1640698d603c8f4361a440db2456f6d230439415ba"
+    },
+    {
+      "path": "examiner-reports/home-economics/2023-marking-scheme.pdf",
+      "sha256": "885b58b2d7c1c5ad60b107a4367795762443399dd91778697367399b3e64ea2b"
+    }
+  ],
+  "visualReview": {
+    "sectionABooklet": "All 40 physical pages inspected: p1 cover; p2 instructions; p3–7 questions; p8 answer-book instructions; p9–39 answer pages; p40 back cover.",
+    "sectionBCBooklet": "All 12 pages inspected: p1 cover; p2–4 B1–B5; p5–8 C1–C4; p9–11 blank; p12 back cover.",
+    "scheme": "All 44 pages inspected: p1 cover; p2–5 guidance/annotations; p6–9 Section A; p10–17 Section B; p18–28 Section C; p29–30 Irish bonus; p31–40 separate Food Studies coursework; p41–43 blank; p44 back cover."
+  },
+  "addedCardIds": [
+    "he-2023-hl-sb-q2b",
+    "he-2023-hl-sb-q3b",
+    "he-2023-hl-sc-q2cii"
+  ],
+  "sourceBoundaries": [
+    {
+      "id": "he-2023-hl-sb-q2b",
+      "paperPage": 3,
+      "schemePages": [
+        12,
+        13
+      ],
+      "marks": 18,
+      "allocation": "name 3; underlying principle 3 × 3; effects 2 × 3",
+      "choicePolicy": "One open process choice. All five table examples plus a clearly labelled another-process criterion route; no per-process cards. Each principle/effect point has the published 0/2/3 steps."
+    },
+    {
+      "id": "he-2023-hl-sb-q3b",
+      "paperPage": 3,
+      "schemePages": [
+        14
+      ],
+      "marks": 26,
+      "allocation": "name 2; production 6 × 3; packaging/labelling 2 × 3",
+      "choicePolicy": "One open added-value-food profile. Complete cheese and margarine examples plus an honest criterion route for another food. Six separate production scoring slots, each 0/2/3."
+    },
+    {
+      "id": "he-2023-hl-sc-q2cii",
+      "paperPage": 6,
+      "schemePages": [
+        22
+      ],
+      "marks": 6,
+      "allocation": "name 2; detail 4 (0/2/4)",
+      "choicePolicy": "One named career with its detail; all eleven scheme names retained. The scheme prints no model detail answer and the card says so."
+    }
+  ],
+  "preservation": {
+    "previousAuthoredCards": 571,
+    "allPreviousAuthoredCardsByteEquivalentAsObjects": true,
+    "previousRuntimeHigher": 283,
+    "previousRuntimeOrdinary": 266,
+    "previousHigherContentPreservedAsExactPrefix": true,
+    "ordinaryFileByteIdentical": true,
+    "frozenIdentityBaselineUnchanged": true
+  },
+  "atlas": {
+    "fileid": "LC098ALP039EV.pdf",
+    "previousQuestionIds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "addedQuestionIds": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "mapping": "Section B Q1–5 retain IDs 1–5; Section C Q1–4 use IDs 6–9. All 43 live B/C cards checked against canonical Atlas topic mappings.",
+    "hostedAnswerOverride": true,
+    "irishEditions": "Deferred. No Irish source text or source anchors changed."
+  },
+  "remainingReview": [
+    "Audit all existing 2023 cards for separately practicable boundaries and exact graded scoring; zero census gaps is not independent completion.",
+    "Existing iron-chart source is attached as a whole question page; assess cropped chart presentation during the card-quality pass.",
+    "No claim is made about separate Food Studies coursework coverage.",
+    "Browser QA remains pending because the native browser connection is unavailable."
+  ],
+  "validation": {
+    "coreVitest": "263 passed across recovery, preservation, curriculum, deck and vault-anchor suites",
+    "homeEconomicsAtlasVitest": "2 passed",
+    "reviewedSidecarVitest": "2 passed",
+    "sourcePython": "3 passed",
+    "typecheck": "passed",
+    "deterministicRegeneration": "All generated files byte-identical",
+    "preservedExternalDirtyFiles": 100,
+    "census2023Higher": {
+      "covered": 57,
+      "total": 57,
+      "open": 0
+    },
+    "fullSubjectDiagnostic": {
+      "covered": 549,
+      "total": 1229,
+      "open": 680,
+      "orphans": 0,
+      "unparsed": 0,
+      "censusFlags": 37
+    },
+    "coverageBaseline": "Unchanged; the subject is still incomplete.",
+    "separateExistingFailure": "The broader finalStudyclixExamTopics Mathematics test expects 1632 mappings; the pre-existing reviewed/deferred Maths runtime exposes 2091. Home Economics-specific checks pass; Maths data was not changed.",
+    "productionBuild": "passed"
+  }
+}

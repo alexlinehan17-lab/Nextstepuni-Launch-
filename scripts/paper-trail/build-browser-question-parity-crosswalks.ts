@@ -9,6 +9,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 
 const ROOT = path.resolve(process.cwd());
@@ -513,7 +514,12 @@ const candidatesFor = (
   return { parsed, candidates: [], reason: 'answer-anchored-local-card-missing' };
 };
 
+const requestedSubject = process.argv.find(arg => arg.startsWith('--subject='))?.split('=')[1];
+if (requestedSubject && !SUBJECTS.some(([id]) => id === requestedSubject)) {
+  throw new Error(`Unknown crosswalk subject: ${requestedSubject}`);
+}
 for (const [subjectId, fileStem] of SUBJECTS) {
+  if (requestedSubject && subjectId !== requestedSubject) continue;
   const reference = readJson<ReferenceAudit>(path.join(DATA, `${fileStem}.json`));
   const runtime = readJson<{ topics: Array<[string, ...unknown[]]> }>(path.join(DATA, `${subjectId}-runtime.json`));
   const topicIndex = new Map(runtime.topics.map((topic, index) => [topic[0], index]));
@@ -611,4 +617,7 @@ for (const [subjectId, fileStem] of SUBJECTS) {
     questionMappings,
   });
   console.log(`${subjectId}: ${matched.length}/${associations.length} matched, ${blocked.length} source blocked, ${questionMappings.length} exact runtime mappings`);
+  if (subjectId === 'home-economics-s-and-s') {
+    execFileSync('python3', ['scripts/markbank/authoring/he_atlas_2023_hl.py', '--after-reference-build'], { cwd: ROOT, stdio: 'inherit' });
+  }
 }

@@ -117,57 +117,6 @@
   "heldReason": "The scheme lists the saving schemes by provider and lists the reasons, but prints no marking points for the two detail points, which carry 6 of the part's 15 marks. The naming and reasons strands ship as he-2025-ol-sc-q4bii-name-reasons."
  },
  {
-  "id": "he-2023-hl-sc-q2cii",
-  "topicId": "home-economics-3-8",
-  "conceptId": "careers-in-clothing-and-textiles",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "home-economics",
-  "section": "C",
-  "questionRef": "2023 HL Section C E2 Q2(c)(ii)",
-  "questionText": "Name and give details of one career opportunity in the clothing and textile industry.",
-  "stem": "‘The vintage clothing industry is growing 25 times faster than the overall retail market.’ (www.rediscoverycentre.ie)",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "Name 1 point @ 2 marks (graded 2:0); detail 1 point @ 4 marks (graded 4:2:0)",
-   "answer": 1,
-   "ofParts": 11,
-   "perPart": 2
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Careers in the clothing and textile industry",
-    "marks": 2,
-    "openList": true,
-    "contextNote": "Name one, 2 marks, graded 2:0.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 2,
-     "options": [
-      "fashion designers",
-      "tailors",
-      "milliner",
-      "fashion journalists",
-      "photographers",
-      "model",
-      "stylist",
-      "clothing manufacturer",
-      "advertising",
-      "blogger",
-      "retail sales assistant"
-     ]
-    }
-   }
-  ],
-  "notes": "Held — see heldReason.",
-  "heldReason": "The scheme prints the list of career names and no marking points at all for the detail point, which carries 4 of the part's 6 marks. Unlike the naming strands split out on other papers, what is left here is a 2-mark card, too thin to ship on its own."
- },
- {
   "id": "he-2023-ol-sc-q3aiv-details",
   "topicId": "home-economics-3-9",
   "conceptId": "statutory-scheme-details",

@@ -5608,4 +5608,1103 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "anyN", verbatim: "Food poisoning symptoms", marks: 4, contextNote: "Two symptoms at 2 marks each. Diarrhoea, nausea and vomiting are common to all five, so they are always safe - the distinguishing ones are worth knowing, like the severe effects of Clostridium botulinum.", openList: true, group: {"claimMax":2,"perOption":2,"options":["diarrhoea; nausea; vomiting; abdominal pain; may be accompanied by fever; etc.","diarrhoea; nausea; vomiting; muscle aches; convulsions; chills; meningitis in babies; miscarriage; premature births; etc.","diarrhoea; nausea; vomiting; abdominal pains; fever; kidney failure; death etc.","diarrhoea; nausea; vomiting; slurred speech; double vision; paralysis of throat; dizziness; can lead to death; etc.","diarrhoea; nausea; vomiting; abdominal pains; fever; etc."]} },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "he-2023-hl-sb-q2b", topicId: "home-economics-0-4", conceptId: "fish-preservation-process",
+    section: "B", questionRef: "2023 HL Section B Q2(b)",
+    stem: "‘Nutritional experts recommend consuming 2-3 portions of fish each week for a balanced diet.’ (www.goodfoodireland.ie)",
+    questionText: "Give a detailed account of one process used to extend the shelf life of fish. Refer to: • name • underlying principle • effects.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 (3:0); underlying principle 3 × 3 (3:2:0); effects 2 × 3 (3:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Freezing", marks: 3 },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 9, contextNote: "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: very low temperatures -30°C inhibit growth of microorganisms; water is converted ice and therefore not available; enzymes are inactivated; wrapping the food prevents freezer burn; vacuum packing removes oxygen which prevents re-entry of micro-organisms; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "effects", kind: "criterion", verbatim: "effects", marks: 6, contextNote: "Two distinct effects, each graded 3:2:0. Scheme examples: colour is unchanged; flavour is unchanged; texture is changed when fillets of fish are plate frozen; some loss of vitamin B; some loss of extractives; freezer burn; oxidative rancidity if not wrapped; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "freezing",
+                "label": "Freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Freezing",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: very low temperatures -30°C inhibit growth of microorganisms; water is converted ice and therefore not available; enzymes are inactivated; wrapping the food prevents freezer burn; vacuum packing removes oxygen which prevents re-entry of micro-organisms; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two distinct effects, each graded 3:2:0. Scheme examples: colour is unchanged; flavour is unchanged; texture is changed when fillets of fish are plate frozen; some loss of vitamin B; some loss of extractives; freezer burn; oxidative rancidity if not wrapped; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "salting-brining",
+                "label": "Salting/Brining",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Salting/Brining",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: salt inhibits the growth of microorganisms; minimises enzyme activity; osmosis which dehydrates the microorganisms; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two distinct effects, each graded 3:2:0. Scheme examples: flavour is changed; salt content is increased; texture is changed; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "smoking",
+                "label": "Smoking",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Smoking",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: destroys microorganisms by osmosis; cold smoking at 27°C slows microbial growth; hot smoking at 80°C destroys microorganisms; chemicals creosote and formaldehyde prevent growth of micro-organisms; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two distinct effects, each graded 3:2:0. Scheme examples: colour is changed; flavour is changed; salt content is increased; texture is changed; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "canning",
+                "label": "Canning",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Canning",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: heating to high temperature up to 140°C destroys micro-organisms; enzymes destroyed; sealing prevents re-entry of microorganisms; oxygen unavailable; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two distinct effects, each graded 3:2:0. Scheme examples: colour; flavour; texture changed; loss of B vitamins; bones softened; calorie and fat content increased if canned in oil or sauce; vitamins A and D increase if canned in oil; salt content is increased if canned in brine; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "vacuum-packing",
+                "label": "Vacuum packing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Vacuum packing",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three distinct points about your chosen process, each graded 3:2:0. Scheme examples: oxygen is removed, preventing microbial growth; oxidative rancidity; prevents enzyme activity; sealing prevents re-entry of microbes; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two distinct effects, each graded 3:2:0. Scheme examples: no change in colour; flavour; texture; no loss of nutrients; fish vacuum packed in a sauce will have a change in flavour and may have an increased salt and/or fat content; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-process",
+                "label": "Another valid process",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name the process you described. The five printed examples are guidance for the open choice; the paper does not restrict the choice to them."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Give three accurate principle points for the same process. The scheme provides examples for freezing, salting/brining, smoking, canning and vacuum packing; it prints no model for another process.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effects",
+                            "kind": "criterion",
+                            "verbatim": "effects",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Give two accurate effects of that process on fish. Use the published 3:2:0 grading for each point; no model answer for this process is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "he-2023-hl-sb-q3b", topicId: "home-economics-0-11", conceptId: "added-value-food-profile",
+    section: "B", questionRef: "2023 HL Section B Q3(b)",
+    stem: "‘People are becoming more experimental in their culinary choices.’ (www.bordbia.ie)",
+    questionText: "Profile an added value food you have studied. Refer to: • name • stages of production • packaging and labelling.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); stages of production 6 × 3 (3:2:0); packaging and labelling 2 × 3 (3:2:0)"}, totalMarks: 26,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Cheese", marks: 2 },
+    { id: "production", kind: "criterion", verbatim: "stages of production", marks: 18, contextNote: "Six distinct stages, each graded 3:2:0. Scheme example: milk pasteurised; culture of lactic acid bacteria is added; changes lactose to lactic acid; milk heated to 30°C; rennet added, coagulates the milk; after 30-45 minutes, the mixture separates into curds and whey; curds are chopped; whey drained off; curds heated to 35-40°C; scalding; curds cut into blocks and piled on top of each other; cheddaring; 2% salt added; curds placed in moulds and pressed; sprayed with hot water; removed from moulds; date stamped; stored in controlled conditions for 3-12 months; graded; cut into blocks and sealed; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]},{"id":"point-5","verbatim":"Point 5","marks":3,"permittedMarks":[0,2,3]},{"id":"point-6","verbatim":"Point 6","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "packaging", kind: "criterion", verbatim: "packaging and labelling", marks: 6, contextNote: "Two relevant points for the food you chose, each graded 3:2:0. Scheme examples: wrapped in foil; plastic tubs; polythene; waxed paper; brand name; type; producer; best-before date; nutritional information; storage; allergen information; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "cheese",
+                "label": "Cheese",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cheese",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "stages of production",
+                            "marks": 18,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18
+                            ],
+                            "contextNote": "Six distinct stages, each graded 3:2:0. Scheme example: milk pasteurised; culture of lactic acid bacteria is added; changes lactose to lactic acid; milk heated to 30°C; rennet added, coagulates the milk; after 30-45 minutes, the mixture separates into curds and whey; curds are chopped; whey drained off; curds heated to 35-40°C; scalding; curds cut into blocks and piled on top of each other; cheddaring; 2% salt added; curds placed in moulds and pressed; sprayed with hot water; removed from moulds; date stamped; stored in controlled conditions for 3-12 months; graded; cut into blocks and sealed; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "packaging and labelling",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two relevant points for the food you chose, each graded 3:2:0. Scheme examples: wrapped in foil; plastic tubs; polythene; waxed paper; brand name; type; producer; best-before date; nutritional information; storage; allergen information; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "margarine",
+                "label": "Margarine",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Margarine",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "stages of production",
+                            "marks": 18,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18
+                            ],
+                            "contextNote": "Six distinct stages, each graded 3:2:0. Scheme example: oil extraction; hydrogenation; blending; water or skimmed milk, salt, flavouring and /or colours added; fortified with Vitamin A and D; emulsification – lecithin added; ingredients mixed in a machine called a votator; weighed into retail portions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "packaging and labelling",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two relevant points for the food you chose, each graded 3:2:0. Scheme examples: wrapped in foil; plastic tubs; polythene; waxed paper; brand name; type; producer; best-before date; nutritional information; storage; allergen information; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-food",
+                "label": "Another added value food",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "It must be an added value food. Other scheme examples: cook chill foods; soup; lasagne; sausage rolls; jams; jellies; salsa; yoghurt; ice-cream; etc."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "stages of production",
+                            "marks": 18,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18
+                            ],
+                            "contextNote": "Give six accurate production stages for your chosen food. The scheme prints model stages for cheese and margarine only; use the same published 3:2:0 steps for each stage.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "packaging and labelling",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two relevant points, each graded 3:2:0. Scheme examples: wrapped in foil; plastic tubs; polythene; waxed paper; brand name; type; producer; best-before date; nutritional information; storage; allergen information; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "he-2023-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "careers-in-clothing-and-textiles",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(c)(ii)",
+    stem: "‘The vintage clothing industry is growing 25 times faster than the overall retail market.’ (www.rediscoverycentre.ie)",
+    questionText: "Name and give details of one career opportunity in the clothing and textile industry.",
+    tariffModel: {"kind":"fixed","notation":"Name 1 × 2 (2:0); detail 1 × 4 (4:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Name one career. The list ends in “etc.”, so another valid career can also receive the naming marks.", openList: true, group: {"claimMax":1,"perOption":2,"options":["fashion designers","tailors","milliner","fashion journalists","photographers","model","stylist","clothing manufacturer","advertising","blogger","retail sales assistant"]} },
+    { id: "detail", kind: "criterion", verbatim: "detail", marks: 4, contextNote: "Give a relevant detail about the career you named. The official scheme allocates 4 marks, graded 4:2:0, but does not print an example detail answer.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

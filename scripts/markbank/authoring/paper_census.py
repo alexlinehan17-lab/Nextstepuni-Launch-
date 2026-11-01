@@ -1665,6 +1665,16 @@ def census_sections(subject, year, level):
             continue
         if PP.RUBRIC.match(text):
             continue
+        if (subject, year, level, section, q, letter, roman) == \
+                ('home-economics', 2022, 'ol', 'C', 1, 'c', 'i') \
+                and text.startswith('(a) miniature circuit breakers'):
+            # Paper p5 nests device labels (a)/(b) inside Q1(c)(i).
+            # Scheme p18 prices each device at 5 marks. Neither label opens
+            # another elective part: the following (ii) is still Q1(c)(ii).
+            # Keep the full device list with its ask, instead of moving the
+            # safety question into the earlier kitchen-lighting Q1(a)(ii).
+            parts.setdefault((section, q, letter, roman), []).append(text)
+            continue
         u = re.match(r'\(([A-H])\)\s*', text)
         if u:
             text = f'({u.group(1).lower()}) ' + text[u.end():]

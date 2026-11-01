@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subjectId": "home-economics-s-and-s",
-  "generatedAt": "2026-09-05T22:46:13.894Z",
+  "generatedAt": "2026-11-01T15:50:57.911Z",
   "status": "exact-current-corpus-mapped-source-completion-pending",
   "summary": {
     "referenceTopics": 54,
@@ -13,9 +13,9 @@
       "deferred-sitting-not-in-local-corpus": 92
     },
     "matchedLocalCardLinks": 1688,
-    "exactRuntimeQuestionMappings": 895,
+    "exactRuntimeQuestionMappings": 899,
     "localAnswerAnchoredPaperVariants": 91,
-    "localAnswerAnchoredPhysicalCards": 1235,
+    "localAnswerAnchoredPhysicalCards": 1239,
     "sourceUnavailableTopics": 0
   },
   "policy": {
@@ -263,7 +263,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "4",
+          "label": "Section B · Q4"
         },
         {
           "level": "higher",
@@ -1298,7 +1299,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "1",
+          "label": "Section B · Q1"
         },
         {
           "level": "higher",
@@ -1323,7 +1325,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "3",
+          "label": "Section B · Q3"
         },
         {
           "level": "higher",
@@ -2456,7 +2459,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "6",
+          "label": "Section C · Q1"
         },
         {
           "level": "higher",
@@ -3886,7 +3890,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "7",
+          "label": "Section C · Q2"
         },
         {
           "level": "higher",
@@ -4577,7 +4582,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "7",
+          "label": "Section C · Q2"
         },
         {
           "level": "higher",
@@ -5410,7 +5416,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "4",
+          "label": "Section B · Q4"
         },
         {
           "level": "higher",
@@ -5435,7 +5442,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "8",
+          "label": "Section C · Q3"
         },
         {
           "level": "higher",
@@ -6351,7 +6359,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "3",
+          "label": "Section B · Q3"
         },
         {
           "level": "higher",
@@ -6376,7 +6385,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "8",
+          "label": "Section C · Q3"
         },
         {
           "level": "higher",
@@ -6777,7 +6787,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "6",
+          "label": "Section C · Q1"
         },
         {
           "level": "higher",
@@ -6802,7 +6813,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -7357,7 +7369,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "2",
+          "label": "Section B · Q2"
         },
         {
           "level": "higher",
@@ -7382,7 +7395,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "3",
+          "label": "Section B · Q3"
         },
         {
           "level": "higher",
@@ -7407,7 +7421,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -8491,7 +8506,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "2",
+          "label": "Section B · Q2"
         },
         {
           "level": "higher",
@@ -8516,7 +8532,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -9467,7 +9484,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "2"
+          "n": "2",
+          "label": "Section B · Q2"
         },
         {
           "level": "higher",
@@ -9492,7 +9510,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -10377,7 +10396,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -10992,7 +11012,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "1",
+          "label": "Section B · Q1"
         },
         {
           "level": "higher",
@@ -11017,7 +11038,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -11647,7 +11669,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "5"
+          "n": "5",
+          "label": "Section B · Q5"
         },
         {
           "level": "higher",
@@ -11672,7 +11695,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "8",
+          "label": "Section C · Q3"
         },
         {
           "level": "higher",
@@ -11917,7 +11941,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "9",
+          "label": "Section C · Q4"
         },
         {
           "level": "higher",
@@ -13887,7 +13912,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "1",
+          "label": "Section B · Q1"
         },
         {
           "level": "higher",
@@ -14738,7 +14764,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "5"
+          "n": "5",
+          "label": "Section B · Q5"
         },
         {
           "level": "higher",
@@ -14763,7 +14790,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "1"
+          "n": "1",
+          "label": "Section B · Q1"
         },
         {
           "level": "higher",
@@ -14788,7 +14816,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "4"
+          "n": "4",
+          "label": "Section B · Q4"
         },
         {
           "level": "higher",
@@ -14813,7 +14842,8 @@
           "year": 2023,
           "paperKey": "single",
           "fileid": "LC098ALP039EV.pdf",
-          "n": "3"
+          "n": "8",
+          "label": "Section C · Q3"
         },
         {
           "level": "higher",
@@ -27775,5 +27805,413 @@
       "resolution": "source-blocked",
       "reason": "before-local-corpus"
     }
-  ]
+  ],
+  "reviewedEnglish2023": {
+    "priorPhysicalQuestionCount": 1235,
+    "paperFileid": "LC098ALP039EV.pdf",
+    "physicalQuestions": 9,
+    "review": "scripts/markbank/authoring/home-economics/2023-hl-recovery-review.json",
+    "policy": "B1–B5 retain their IDs; C1–C4 use IDs 6–9. English source anchors and headings reviewed; Irish editions deferred.",
+    "markBankMappings": [
+      {
+        "id": "he-2023-hl-sb-q1a",
+        "questionRef": "2023 HL Section B Q1(a)",
+        "n": "1",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q1b",
+        "questionRef": "2023 HL Section B Q1(b)",
+        "n": "1",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q1c",
+        "questionRef": "2023 HL Section B Q1(c)",
+        "n": "1",
+        "topicId": "home-economics-0-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-nutrition-vitamins-and-minerals"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q1d",
+        "questionRef": "2023 HL Section B Q1(d)",
+        "n": "1",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q2a",
+        "questionRef": "2023 HL Section B Q2(a)",
+        "n": "2",
+        "topicId": "home-economics-0-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-foods-meat-fish-cereal-fruitveg-dairy-eggs"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q2c",
+        "questionRef": "2023 HL Section B Q2(c)",
+        "n": "2",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q3a",
+        "questionRef": "2023 HL Section B Q3(a)",
+        "n": "3",
+        "topicId": "home-economics-0-10",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q3c",
+        "questionRef": "2023 HL Section B Q3(c)",
+        "n": "3",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q4a",
+        "questionRef": "2023 HL Section B Q4(a)",
+        "n": "4",
+        "topicId": "home-economics-1-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q4b",
+        "questionRef": "2023 HL Section B Q4(b)",
+        "n": "4",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q4c",
+        "questionRef": "2023 HL Section B Q4(c)",
+        "n": "4",
+        "topicId": "home-economics-1-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-consumer-studies"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q5a",
+        "questionRef": "2023 HL Section B Q5(a)",
+        "n": "5",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q5b",
+        "questionRef": "2023 HL Section B Q5(b)",
+        "n": "5",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q5c",
+        "questionRef": "2023 HL Section B Q5(c)",
+        "n": "5",
+        "topicId": "home-economics-2-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-marriage-family-law",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1ai",
+        "questionRef": "2023 HL Section C E1 Q1(a)(i)",
+        "n": "6",
+        "topicId": "home-economics-3-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-interior-design"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1aii",
+        "questionRef": "2023 HL Section C E1 Q1(a)(ii)",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1aiii",
+        "questionRef": "2023 HL Section C E1 Q1(a)(iii)",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1bii",
+        "questionRef": "2023 HL Section C E1 Q1(b)(ii)",
+        "n": "6",
+        "topicId": "home-economics-3-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-energy-emissions"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1ci",
+        "questionRef": "2023 HL Section C E1 Q1(c)(i)",
+        "n": "6",
+        "topicId": "home-economics-3-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-housing-planning-building"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1cii",
+        "questionRef": "2023 HL Section C E1 Q1(c)(ii)",
+        "n": "6",
+        "topicId": "home-economics-3-6",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-energy-emissions"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2ai",
+        "questionRef": "2023 HL Section C E2 Q2(a)(i)",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2aii",
+        "questionRef": "2023 HL Section C E2 Q2(a)(ii)",
+        "n": "7",
+        "topicId": "home-economics-3-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-fabrics"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2aiii",
+        "questionRef": "2023 HL Section C E2 Q2(a)(iii)",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2b-wool-nylon",
+        "questionRef": "2023 HL Section C E2 Q2(b)",
+        "n": "7",
+        "topicId": "home-economics-3-7",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-fabrics"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2ci",
+        "questionRef": "2023 HL Section C E2 Q2(c)(i)",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3ai",
+        "questionRef": "2023 HL Section C E3 Q3(a)(i)",
+        "n": "8",
+        "topicId": "home-economics-2-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty",
+          "home-economics-s-and-s-higher-elective-3-education-in-ireland",
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3aii",
+        "questionRef": "2023 HL Section C E3 Q3(a)(ii)",
+        "n": "8",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3aiii",
+        "questionRef": "2023 HL Section C E3 Q3(a)(iii)",
+        "n": "8",
+        "topicId": "home-economics-3-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3bi",
+        "questionRef": "2023 HL Section C E3 Q3(b)(i)",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3bii",
+        "questionRef": "2023 HL Section C E3 Q3(b)(ii)",
+        "n": "8",
+        "topicId": "home-economics-3-9",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3ci",
+        "questionRef": "2023 HL Section C E3 Q3(c)(i)",
+        "n": "8",
+        "topicId": "home-economics-2-0",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure",
+          "home-economics-s-and-s-higher-the-family"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q3cii",
+        "questionRef": "2023 HL Section C E3 Q3(c)(ii)",
+        "n": "8",
+        "topicId": "home-economics-2-2",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-3-un-employment-poverty",
+          "home-economics-s-and-s-higher-elective-3-education-in-ireland",
+          "home-economics-s-and-s-higher-elective-3-family-life-leisure"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4ai",
+        "questionRef": "2023 HL Section C Q4(a)(i) - Core",
+        "n": "9",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4aii-boiling",
+        "questionRef": "2023 HL Section C Q4(a)(ii)",
+        "n": "9",
+        "topicId": "home-economics-0-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-assignments",
+          "home-economics-s-and-s-higher-meal-planning-preparation"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4aiii-glass",
+        "questionRef": "2023 HL Section C Q4(a)(iii)",
+        "n": "9",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4bi",
+        "questionRef": "2023 HL Section C Q4(b)(i) - Core",
+        "n": "9",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4bii",
+        "questionRef": "2023 HL Section C Q4(b)(ii) - Core",
+        "n": "9",
+        "topicId": "home-economics-1-1",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-household-finances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4ci",
+        "questionRef": "2023 HL Section C Q4(c)(i) - Core",
+        "n": "9",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-higher-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q4cii",
+        "questionRef": "2023 HL Section C Q4(c)(ii) - Core",
+        "n": "9",
+        "topicId": "home-economics-1-3",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting",
+          "home-economics-s-and-s-higher-household-appliances"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q1bi",
+        "questionRef": "2023 HL Section C E1 Q1(b)(i)",
+        "n": "6",
+        "topicId": "home-economics-3-5",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-1-heating-water-lighting"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q2b",
+        "questionRef": "2023 HL Section B Q2(b)",
+        "n": "2",
+        "topicId": "home-economics-0-4",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-spoilage-food-safety"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sb-q3b",
+        "questionRef": "2023 HL Section B Q3(b)",
+        "n": "3",
+        "topicId": "home-economics-0-11",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-food-industry-packaging"
+        ]
+      },
+      {
+        "id": "he-2023-hl-sc-q2cii",
+        "questionRef": "2023 HL Section C E2 Q2(c)(ii)",
+        "n": "7",
+        "topicId": "home-economics-3-8",
+        "atlasTopicIds": [
+          "home-economics-s-and-s-higher-elective-2-patterns-fashion"
+        ]
+      }
+    ]
+  }
 }

@@ -1285,6 +1285,11 @@ const isPhysicsAdded = (id: string) => {
 const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
   .map(card => card.id).filter(isPhysicsAdded));
 const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('phys-'));
+// Source-reviewed missing tasks. Keep the original 283/266 identity hashes
+// frozen; these additions must never disguise a removed older card.
+const homeEconomicsAdditionIds = new Set([
+  'he-2023-hl-sb-q2b', 'he-2023-hl-sb-q3b', 'he-2023-hl-sc-q2cii',
+]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('maths:')) {
@@ -1293,6 +1298,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
   }
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
+  if (name.startsWith('home-economics:')) return ids.filter(id => !homeEconomicsAdditionIds.has(id));
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [
@@ -1348,6 +1354,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+    : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
     : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
@@ -1363,6 +1370,12 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
+  it('retains the three reviewed Home Economics additions beside the frozen set', () => {
+    const added = HOME_EC_HIGHER.filter(card => homeEconomicsAdditionIds.has(card.id));
+    expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
+    expect(HOME_EC_HIGHER).toHaveLength(286);
+    expect(HOME_EC_ORDINARY).toHaveLength(266);
+  });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
     const frozen = frozenIds(name, cards);
     expect(frozen.length, `${name}: card count changed`).toBe(count);
@@ -1461,6 +1474,7 @@ describe('Mark Bank card preservation', () => {
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
         || name.startsWith('chemistry:') || name.startsWith('maths:') || name.startsWith('physics:')
+        || name.startsWith('home-economics:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1475,7 +1489,7 @@ describe('Mark Bank card preservation', () => {
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
         + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet
-        + physicsAdditionIds.size - physicsAliasIds.length);
+        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
