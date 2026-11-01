@@ -213,3 +213,8 @@ if __name__ == '__main__':
     apply_higher_main_2022()
     from he_atlas_2021_hl_main import apply as apply_higher_main_2021
     apply_higher_main_2021()
+
+# Preserve the independently reviewed 2021 Ordinary English overlay on regeneration.
+if __name__ == "__main__":
+ from he_atlas_2021_ol_main import apply as apply_2021_ol_main
+ apply_2021_ol_main()

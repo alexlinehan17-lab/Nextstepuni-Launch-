@@ -35,12 +35,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q1", topicId: "home-economics-0-5", conceptId: "he-protein-hbv-and-amino-acids",
     section: "A", questionRef: "2021 OL Section A Q1",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\nMeat contains high biological value protein\nProteins are large molecules made up of smaller units called amino acids\nSugar is a source of protein",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nMeat contains high biological value protein\nProteins are large molecules made up of smaller units called amino acids\nSugar is a source of protein",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Meat contains high biological value protein", marks: 2, contextNote: "TRUE — the scheme ticks the True column. Graded 2:0, so the tick is worth 2 marks or nothing; there is no partial credit on a true/false statement." },
-    { id: "r-2", kind: "point", verbatim: "Proteins are large molecules made up of smaller units called", marks: 2, contextNote: "The statement continues \"…amino acids\". TRUE — the scheme ticks the True column. Graded 2:0, all or nothing." },
-    { id: "r-3", kind: "point", verbatim: "Sugar is a source of protein", marks: 2, contextNote: "FALSE — the scheme ticks the False column. Sugar is a carbohydrate, not a protein source. Graded 2:0, all or nothing." },
+    { id: "statement-1", kind: "criterion", verbatim: "Meat contains high biological value protein — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "Proteins are large molecules made up of smaller units called amino acids — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Sugar is a source of protein — False", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -50,8 +50,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q2", topicId: "home-economics-0-8", conceptId: "he-minerals-calcium-and-iron-functions",
     section: "A", questionRef: "2021 OL Section A Q2",
-    questionText: "Using the words listed below, complete the following statements in relation to minerals.\n\ncalcium    osteoporosis    iron",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Using the words listed below, complete the following statements in relation to minerals.\n\ncalcium    osteoporosis    iron\n\nA deficiency of calcium in the diet can cause ___________________________.\nVitamin C assists in _______________________ absorption.\nCheese is a good dietary source of ___________________________.",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A deficiency of calcium in the diet can cause osteoporosis.", marks: 2, contextNote: "Graded 2:0 — the correct word from the list or nothing; no partial credit for a near miss." },
     { id: "r-2", kind: "point", verbatim: "Vitamin C assists in iron absorption.", marks: 2, contextNote: "Graded 2:0 — the correct word from the list or nothing." },
@@ -64,12 +64,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q3", topicId: "home-economics-0-9", conceptId: "he-meat-toughness-and-tenderising",
-    section: "A", questionRef: "2021 OL Section A Q3",
-    questionText: "Outline one cause of toughness in meat.\nName two methods of tenderising meat.",
-    tariffModel: {"kind":"fixed","notation":"1 cause @ 2 marks (graded 2:1:0) + 2 methods @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    section: "A", questionRef: "2021 OL Section A Q3 — cause",
+    questionText: "Outline one cause of toughness in meat.",
+    tariffModel: {"kind":"fixed","notation":"1 cause × 2 (2:1:0)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Age/older animal is tougher; meat from the active parts of the animal have longer fibres and more connective tissue; animals not rested before slaughter, more glycogen in muscles; after slaughter not hung for required length of time; incorrect method of cooking; cooked too quickly; etc.", marks: null, contextNote: "One cause only. Graded 2:1:0 — a cause that is genuinely outlined scores the full 2; a bare word or a half-explained cause scores 1; nothing relevant scores 0.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Age/older animal is tougher","meat from the active parts of the animal have longer fibres and more connective tissue","animals not rested before slaughter, more glycogen in muscles","after slaughter not hung for required length of time","incorrect method of cooking","cooked too quickly"]} },
-    { id: "r-2", kind: "anyN", verbatim: "(i) Meat tenderisers, proteolytic enzymes e.g. papain; mechanical breakdown e.g. meat hammer, pierce with knives/needles; slow moist method of cooking e.g. stewing; (ii) Mincing; marinating e.g. in oil, wine, lemon juice, vinegar, buttermilk, yoghurt before cooking; etc.", marks: null, contextNote: "Two methods, 2 marks each. Graded 2:0 here — naming a valid method scores the full 2, anything else scores 0. The scheme groups the list as (i) and (ii) only to show a spread; a candidate may take both methods from anywhere in the list.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Meat tenderisers, proteolytic enzymes e.g. papain","mechanical breakdown e.g. meat hammer, pierce with knives/needles","slow moist method of cooking e.g. stewing","Mincing","marinating e.g. in oil, wine, lemon juice, vinegar, buttermilk, yoghurt before cooking"]} },
+    { id: "cause", kind: "criterion", verbatim: "Cause of toughness", marks: 2, contextNote: "One cause, graded 2:1:0. Complete historical guidance: Age/older animal is tougher; meat from the active parts of the animal have longer fibres and more connective tissue; animals not rested before slaughter, more glycogen in muscles; after slaughter not hung for required length of time; incorrect method of cooking; cooked too quickly; etc.", permittedMarks: [0,1,2] },
     ],
   } as SecCard,
   {
@@ -79,12 +78,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q4", topicId: "home-economics-0-9", conceptId: "he-vegetables-classification-and-composition",
     section: "A", questionRef: "2021 OL Section A Q4",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\nPeas, beans and lentils are pulse vegetables\nFruit and vegetables do not contain fibre\nVegetables have a high water content",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nPeas, beans and lentils are pulse vegetables\nFruit and vegetables do not contain fibre\nVegetables have a high water content",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Peas, beans and lentils are pulse vegetables", marks: 2, contextNote: "TRUE — the scheme ticks the True column. Graded 2:0, all or nothing." },
-    { id: "r-2", kind: "point", verbatim: "Fruit and vegetables do not contain fibre", marks: 2, contextNote: "FALSE — the scheme ticks the False column. Fruit and vegetables are a major source of dietary fibre. Graded 2:0, all or nothing." },
-    { id: "r-3", kind: "point", verbatim: "Vegetables have a high water content", marks: 2, contextNote: "TRUE — the scheme ticks the True column. Graded 2:0, all or nothing." },
+    { id: "statement-1", kind: "criterion", verbatim: "Peas, beans and lentils are pulse vegetables — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "Fruit and vegetables do not contain fibre — False", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Vegetables have a high water content — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -95,9 +94,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q5", topicId: "home-economics-0-1", conceptId: "he-healthy-eating-guidelines-for-children",
     section: "A", questionRef: "2021 OL Section A Q5",
     questionText: "Outline three healthy eating guidelines for children.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 guidelines @ 2 marks (graded 2:1:0)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Follow the food pyramid; have well balanced/regular meals; easy to manage portion size; portion size should relate to child’s age/level of activity; (ii) Provide nutritious snacks; increase fibre; reduce sugar intake; reduce salt intake; (iii) Protein needed for growth; carbohydrate/fat for heat and energy; calcium for bones and teeth; drink water/fluids; etc.", marks: null, contextNote: "Three guidelines, 2 marks each. Graded 2:1:0 — a guideline that is actually outlined scores the full 2; a bare phrase or a vague one scores 1; nothing relevant scores 0. The scheme's (i)/(ii)/(iii) grouping is only a spread of expected answers, not three compulsory categories, so all three guidelines may come from the same group. The claim menu below shows eight of the scheme's twelve expected responses; the four not shown as claim options — \"easy to manage portion size\", \"Protein needed for growth\", \"carbohydrate/fat for heat and energy\" and \"calcium for bones and teeth\" — score exactly the same and appear in the full scheme text above, so claim them as another valid point.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Follow the food pyramid","have well balanced/regular meals","portion size should relate to child’s age/level of activity","Provide nutritious snacks","increase fibre","reduce sugar intake","reduce salt intake","drink water/fluids"]} },
+    { id: "points", kind: "criterion", verbatim: "healthy eating guidelines", marks: 6, contextNote: "Three different points, each graded 2:1:0. Complete guidance: (i) Follow the food pyramid; have well balanced/regular meals; easy to manage portion size; portion size should relate to child’s age/level of activity; (ii) Provide nutritious snacks; increase fibre; reduce sugar intake; reduce salt intake; (iii) Protein needed for growth; carbohydrate/fat for heat and energy; calcium for bones and teeth; drink water/fluids; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -107,12 +106,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q6", topicId: "home-economics-0-4", conceptId: "he-food-processing-and-cross-contamination",
     section: "A", questionRef: "2021 OL Section A Q6",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\nFood is processed to extend its shelf life\nAn example of cross contamination is the transfer of bacteria from raw to cooked food\nCooking food at 50°C kills all bacteria",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nFood is processed to extend its shelf life\nAn example of cross contamination is the transfer of bacteria from raw to cooked food\nCooking food at 50°C kills all bacteria",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Food is processed to extend its shelf life", marks: 2, contextNote: "TRUE — the scheme ticks the True column. Graded 2:0, all or nothing." },
-    { id: "r-2", kind: "point", verbatim: "An example of cross contamination is the transfer of bacteria", marks: 2, contextNote: "The statement continues \"…from raw to cooked food\". TRUE — the scheme ticks the True column. Graded 2:0, all or nothing." },
-    { id: "r-3", kind: "point", verbatim: "Cooking food at 50°C kills all bacteria", marks: 2, contextNote: "FALSE — the scheme ticks the False column. 50°C sits inside the danger zone; a core temperature of 75°C is needed. Graded 2:0, all or nothing." },
+    { id: "statement-1", kind: "criterion", verbatim: "Food is processed to extend its shelf life — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "An example of cross contamination is the transfer of bacteria from raw to cooked food — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Cooking food at 50°C kills all bacteria — False", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -123,12 +122,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q7", topicId: "home-economics-0-9", conceptId: "flour-types-and-culinary-uses",
     section: "A", questionRef: "2021 OL Section A Q7",
     stem: "Type of flour:\nSelf-raising flour\nWholemeal flour\nPlain white flour (cream)",
-    questionText: "Listed below are three types of flour. Give one different culinary use of each.",
-    tariffModel: {"kind":"fixed","notation":"3 uses @ 2 marks (graded 2:1:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "Listed below are three types of flour. Give one different culinary use of each.\n\nSelf-raising flour\nWholemeal flour\nPlain white flour (cream)",
+    tariffModel: {"kind":"fixed","notation":"3 required flours × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Self-raising flour", marks: 2, contextNote: "One use for this flour, and it must differ from the uses you give for the other two. Graded 2:1:0 — a clear, correct use of self-raising flour is the full 2; a vague or only partly right one is where the 1 goes.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Cakes","biscuits","scones"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Wholemeal flour", marks: 2, contextNote: "One use, different from the other two flours. Graded 2:1:0.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Brown bread","brown scones","wholemeal pastry","wholemeal muffins"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Plain white flour (cream)", marks: 2, contextNote: "One use, different from the other two flours. Graded 2:1:0.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Pizza","apple tart","sauces","cupcakes"]} },
+    { id: "flour-1", kind: "criterion", verbatim: "Self-raising flour", marks: 2, contextNote: "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Cakes; biscuits; scones.", permittedMarks: [0,1,2] },
+    { id: "flour-2", kind: "criterion", verbatim: "Wholemeal flour", marks: 2, contextNote: "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Brown bread; brown scones; wholemeal pastry; wholemeal muffins.", permittedMarks: [0,1,2] },
+    { id: "flour-3", kind: "criterion", verbatim: "Plain white flour (cream)", marks: 2, contextNote: "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Pizza; apple tart; sauces; cupcakes; etc.", permittedMarks: [0,1,2] },
     ],
   } as SecCard,
   {
@@ -139,12 +138,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q8", topicId: "home-economics-0-1", conceptId: "dental-health-vegetarian-diets-and-fibre",
     section: "A", questionRef: "2021 OL Section A Q8",
     stem: "Periodontal/gum disease affects the tissues surrounding the teeth\nA lacto-vegetarian does not eat dairy produce\nA high fibre diet reduces the risk of bowel disease",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nPeriodontal/gum disease affects the tissues surrounding the teeth\nA lacto-vegetarian does not eat dairy produce\nA high fibre diet reduces the risk of bowel disease",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Periodontal/gum disease affects the tissues surrounding the teeth — True", marks: 2, contextNote: "Graded 2:0 — the right box scores the full 2, the wrong box nothing. No half credit." },
-    { id: "r-2", kind: "point", verbatim: "A lacto-vegetarian does not eat dairy produce — False", marks: 2, contextNote: "Graded 2:0. A lacto-vegetarian does eat milk, cheese and yogurt, so the statement as printed is false." },
-    { id: "r-3", kind: "point", verbatim: "A high fibre diet reduces the risk of bowel disease — True", marks: 2, contextNote: "Graded 2:0." },
+    { id: "statement-1", kind: "criterion", verbatim: "Periodontal/gum disease affects the tissues surrounding the teeth — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "A lacto-vegetarian does not eat dairy produce — False", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "A high fibre diet reduces the risk of bowel disease — True", marks: 2, contextNote: "Published answer, graded 2:0; no partial credit.", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -155,8 +154,8 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q9", topicId: "home-economics-0-4", conceptId: "methods-of-food-preservation",
     section: "A", questionRef: "2021 OL Section A Q9",
     stem: "Definition:\nBoiling fruit, vegetables or a mixture of both with sugar, vinegar and spices\nUsing very low temperatures which are unsuitable for enzyme activity and microbial growth\nPreserves food by removing moisture",
-    questionText: "Match the type of food preservation with the correct definition.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "Match the method of food preservation with the correct definition.\n\nHeat treatment    Dehydration    Freezing\n\nBoiling fruit, vegetables or a mixture of both with sugar, vinegar and spices\nUsing very low temperatures which are unsuitable for enzyme activity and microbial growth\nPreserves food by removing moisture",
+    tariffModel: {"kind":"fixed","notation":"3 definitions × 2 (2:0)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Boiling fruit, vegetables or a mixture of both with sugar, vinegar and spices — Heat treatment", marks: 2, contextNote: "Graded 2:0 — the right method scores the full 2, anything else nothing." },
     { id: "r-2", kind: "point", verbatim: "Using very low temperatures which are unsuitable for enzyme activity and microbial growth — Freezing", marks: 2, contextNote: "Graded 2:0." },
@@ -169,12 +168,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "private-health-insurance",
-    section: "A", questionRef: "2021 OL Section A Q10",
-    questionText: "Give two advantages of private health insurance. Suggest one method of payment that could be used to purchase private health insurance.",
-    tariffModel: {"kind":"fixed","notation":"2 advantages @ 2 marks (graded 2:1:0); 1 method @ 2 marks (graded 2:1:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    section: "A", questionRef: "2021 OL Section A Q10 — advantages",
+    questionText: "Give two advantages of private health insurance.",
+    tariffModel: {"kind":"fixed","notation":"2 advantages × 2 (2:1:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Give two advantages of private health insurance.", marks: 4, contextNote: "Any two of these. The scheme splits its expected answers across (i) and (ii) for layout only — either slot takes any valid advantage. Graded 2:1:0 per advantage: a developed advantage is the full 2, a bare or vague one is where the 1 goes.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Provides security in the event of illness/injury/accident; peace of mind","covers medical expenses e.g. payment of consultant fees","compensate for income loss","tax relief available","Quicker access to medical treatments","in-patient treatment in private/semi-private hospital","covers medical treatment abroad","dental care"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Suggest one method of payment that could be used to purchase private health insurance.", marks: 2, contextNote: "One method only. Graded 2:1:0 — a named method of payment is the full 2.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Credit card","debit card","cheque","direct debit","deducted from salary","cash"]} },
+    { id: "advantages", kind: "criterion", verbatim: "advantages", marks: 4, contextNote: "Two different advantages, each graded 2:1:0. Historical examination examples; actual cover depends on the policy. Complete guidance: (i) Provides security in the event of illness/injury/accident; peace of mind; covers medical expenses e.g. payment of consultant fees; compensate for income loss; tax relief available; (ii) Quicker access to medical treatments; in-patient treatment in private/ semi-private hospital; covers medical treatment abroad; dental care; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -183,12 +181,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q11", topicId: "home-economics-1-3", conceptId: "choosing-and-disposing-of-electrical-appliances",
-    section: "A", questionRef: "2021 OL Section A Q11",
-    questionText: "Outline two factors that should be considered when choosing electrical appliances. How can electrical appliances be disposed of to avoid damage to the environment?",
-    tariffModel: {"kind":"fixed","notation":"2 factors @ 2 marks (graded 2:0); 1 point @ 2 marks (graded 2:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    section: "A", questionRef: "2021 OL Section A Q11 — choice factors",
+    questionText: "Outline two factors that should be considered when choosing electrical appliances.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 2 (2:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline two factors that should be considered when choosing electrical appliances.", marks: 4, contextNote: "Any two. Graded 2:0 per factor — a genuine purchasing consideration scores the full 2, anything else nothing. Where an option pairs two of the scheme's expected answers, either half on its own earns the point.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Cost e.g. initial/running/servicing/installation","quality; energy efficiency rating","space available; family size/needs","brand","Design and construction","easy to operate; easy to clean","safety features","guarantee; after sales service"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How can electrical appliances be disposed of to avoid damage to the environment?", marks: 2, contextNote: "One point only. Graded 2:0.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Bring to local recycling centre/civic amenity site","collected by shop on delivery of new appliance"]} },
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 4, contextNote: "Two factors, each graded 2:0. Complete guidance: (i) Cost e.g. initial/running/servicing/installation; quality; energy efficiency rating; space available; family size/needs; brand; (ii) Design and construction; easy to operate; easy to clean; safety features; guarantee; after sales service; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
     ],
   } as SecCard,
   {
@@ -199,9 +196,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "uses-of-textiles-in-the-home",
     section: "A", questionRef: "2021 OL Section A Q12",
     questionText: "Outline three different uses of textiles in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 uses @ 2 marks (graded 2:1:0)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline three different uses of textiles in the home.", marks: 6, contextNote: "Any three, and they must be different uses. Graded 2:1:0 — the scheme prints each answer as a use plus an example (\"Insulation e.g. carpets\"), which is the full 2; a bare or vague use is where the 1 goes.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Insulation e.g. carpets","comfort e.g. cushions","protection e.g. oven gloves","absorb sound e.g. rugs","absorbency e.g. towels","privacy e.g. blinds","warmth e.g. blankets","decoration e.g. curtains"]} },
+    { id: "points", kind: "criterion", verbatim: "uses of textiles", marks: 6, contextNote: "Three different points, each graded 2:1:0. Complete guidance: (i) Insulation e.g. carpets, comfort e.g. cushions; protection e.g. oven gloves; (ii) absorb sound e.g. rugs; absorbency e.g. towels soft furnishings; privacy e.g. blinds (iii) warmth e.g. blankets; decoration e.g. curtains; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -212,11 +209,11 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sa-q13", topicId: "home-economics-1-1", conceptId: "household-expenditure",
     section: "A", questionRef: "2021 OL Section A Q13",
     stem: "Essential expenditure\nDiscretionary expenditure",
-    questionText: "In relation to household expenditure explain each of the following:",
-    tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:1:0)","answer":6,"perPart":null,"ofParts":null}, totalMarks: 6,
+    questionText: "In relation to household expenditure, explain each of the following:\n\nEssential expenditure\nDiscretionary expenditure",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 3 (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Essential expenditure: spending on basic necessities e.g. food/clothes/warmth; housing e.g. rent/mortgage is both fixed and irregular; insurance; loans; medical bills; household goods; utility bills; car; etc.", marks: 3, accepts: ["spending on basic necessities","food/clothes/warmth","housing e.g. rent/mortgage","insurance","loans","medical bills","household goods","utility bills","car"], contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — a clear explanation of what essential expenditure is (spending on basic necessities), supported by an example, scores the full 3; a thin or partly-correct answer slides to 2 or 1; nothing relevant scores 0. You do not have to give the whole list — the examples after the definition are the scheme's suggestions, not separate marks.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "Discretionary expenditure: spending on non-essentials/luxuries; entertainment; alcohol; cosmetics; holidays; garden items; savings; leisure, gym membership; streaming subscriptions; internet; etc.", marks: 3, contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — defining it as spending on non-essentials/luxuries and backing it with an example earns the full 3; a vague answer slides to 2 or 1. The examples listed are alternatives the examiner expects to see, not extra marks, and the list ends in 'etc.' so other genuine luxuries are accepted.", openList: true },
+    { id: "term-1", kind: "criterion", verbatim: "Essential expenditure", marks: 3, contextNote: "Explain this required term, graded 3:2:1:0. Categories depend on household needs; source examples are historical, not a universal classification. Complete wording: spending on basic necessities e.g. food/clothes/warmth; housing e.g. rent/mortgage is both fixed and irregular; insurance; loans; medical bills; household goods; utility bills; car; etc.", permittedMarks: [0,1,2,3] },
+    { id: "term-2", kind: "criterion", verbatim: "Discretionary expenditure", marks: 3, contextNote: "Explain this required term, graded 3:2:1:0. Categories depend on household needs; source examples are historical, not a universal classification. Complete wording: spending on non-essentials/luxuries; entertainment; alcohol; cosmetics; holidays; garden items; savings; leisure, gym membership; streaming subscriptions; internet; etc.", permittedMarks: [0,1,2,3] },
     ],
   } as SecCard,
   {
@@ -3453,9 +3450,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sb-q1b", topicId: "home-economics-0-1", conceptId: "causes-of-obesity",
     section: "B", questionRef: "2021 OL Section B Q1(b)",
     questionText: "State three causes of obesity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 causes @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":8,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "State three causes of obesity", marks: 12, contextNote: "Three causes at 4 marks, graded 4:2:0 — even though the question says \"state\", naming a cause is only 2 and the other 2 comes from saying how it leads to weight gain. The scheme's first cause is the underlying one all the others sit inside: an imbalance between energy taken in and energy used. Sedentary lifestyle and lack of exercise are the same cause twice.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Imbalance in energy intake and energy expenditure","sedentary lifestyle","lack of exercise","psychological factors e.g. depression, boredom","hormonal imbalance (thyroid gland)","unhealthy eating patterns e.g. snacking/late night eating","poor food choices e.g. fried/sugary foods","excessive use of processed foods"]} },
+    { id: "points", kind: "criterion", verbatim: "causes", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Imbalance in energy intake and energy expenditure; sedentary lifestyle; lack of exercise; psychological factors e.g. depression, boredom; hormonal imbalance (thyroid gland); unhealthy eating patterns e.g. snacking/late night eating; poor food choices e.g. fried/sugary foods; excessive use of processed foods; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -3476,11 +3473,11 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sb-q1c", topicId: "home-economics-0-7", conceptId: "lipids-account-ol",
     section: "B", questionRef: "2021 OL Section B Q1(c)",
     questionText: "Give an account of lipids (fats) under each of the following headings: classification; functions in the body; dietary sources.",
-    tariffModel: {"kind":"fixed","notation":"classification 2 classes @ 4 marks (graded 4:0); functions 2 @ 4 marks (graded 4:2:0); sources 4 @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 28,
+    tariffModel: {"kind":"fixed","notation":"Classification 2 × 4 (4:0); functions 2 × 4 (4:2:0); sources 4 × 3 (3:2:0)"}, totalMarks: 28,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Classification", marks: 8, contextNote: "Two classes at 4 marks, all-or-nothing — 8 marks for two words, the best return on the paper. The scheme accepts two different systems: by origin (animal, plant, marine) or by saturation (saturated, unsaturated). Pick one system and give two from it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Animal","plant","marine","saturated","unsaturated","monounsaturated","polyunsaturated"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Functions in the body", marks: 8, contextNote: "Two functions at 4 marks, graded 4:2:0 — so unlike classification, a half-made point scores here. Heat and energy is one function, not two; pair it with insulation, protecting organs, or carrying the fat-soluble vitamins A, D, E and K.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Heat","energy","excess lipids are stored as adipose tissue, insulating the body and acting as an energy reserve","lipids protect delicate organs","supply fat soluble vitamins A, D, E & K","source of essential fatty acids","delays the feeling of hunger","needed to build cell walls","omega fatty acids improve concentration and brain activity","some unsaturated lipids help lower cholesterol","speeds up the transmission of nerve impulses"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Four sources at 3 marks — the largest strand at 12 marks. Naming the food is 2 and saying which kind of fat it provides is the third mark, so pairing oily fish or olives with unsaturated fat earns more than a bare list.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Meat","eggs","oily fish","dairy products","soya beans","avocados","olives","nuts and nut oils","vegetable oils","fish liver oils","margarine","seeds"]} },
+    { id: "classification", kind: "criterion", verbatim: "classes", marks: 8, contextNote: "Two classes, each graded 4:0. Animal; plant; marine; saturated; unsaturated; monounsaturated; polyunsaturated; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions", marks: 8, contextNote: "Two functions, each graded 4:2:0. Source correction: lipids form cell membranes; human cells do not have cell walls. Complete historical wording: Heat; energy; excess lipids are stored as adipose tissue, insulating the body and acting as an energy reserve; lipids protect delicate organs; supply fat soluble vitamins A, D, E & K; source of essential fatty acids; delays the feeling of hunger; needed to build cell walls; omega fatty acids improve concentration and brain activity; some unsaturated lipids help lower cholesterol; speeds up the transmission of nerve impulses; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "Four sources, each graded 3:2:0. Meat; eggs; oily fish; dairy products; soya beans; avocados; olives; nuts and nut oils; vegetable oils; fish liver oils; margarine; seeds; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -3501,9 +3498,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sb-q1d", topicId: "home-economics-0-7", conceptId: "reducing-fat-intake",
     section: "B", questionRef: "2021 OL Section B Q1(d)",
     questionText: "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":11,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet", marks: 20, contextNote: "Four factors at 5 marks, graded 5:3:0 — named is 3, discussed is 5. The traffic-light label system is the most specific point in the scheme and the easiest to develop: colour coding shows at a glance whether a food is high, medium or low in fat. Several other entries are versions of \"read the label\", and a marker will pay for that once.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Choose food naturally low in fat e.g. fruit and vegetables","avoid high fat convenience foods","ask for visible fat to be cut off meat","choose leaner cuts of meat","avoid hydrogenated fats","compare labels and choose foods that are lower in saturated fats","follow traffic light system e.g. labels that include colour coding indicate if the food is high, medium or low in fat","read labels","choose fat free products","plan meals and snacks to include low fat foods","use low fat alternatives"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Choose food naturally low in fat e.g. fruit and vegetables; avoid high fat convenience foods; ask for visible fat to be cut off meat; choose leaner cuts of meat; avoid hydrogenated fats; compare labels and choose foods that are lower in saturated fats; follow traffic light system e.g. labels that include colour coding indicate if the food is high, medium or low in fat; read labels; choose fat free products; plan meals and snacks to include low fat foods; use low fat alternatives; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -3525,9 +3522,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q2(a)",
     stem: "Healthy eating during pregnancy is critical to the baby's growth and development.",
     questionText: "Discuss four dietary requirements of pregnant women.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 requirements @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four dietary requirements of pregnant women", marks: 20, contextNote: "Four requirements at 5 marks, graded 5:3:0. Every entry in the scheme pairs a nutrient with a reason, and that pairing is the difference between 3 and 5 — folic acid is a 3, folic acid before and during pregnancy to reduce the risk of neural tube defects is a 5. The list also includes what to avoid (raw eggs, unpasteurised cheese, pâté, alcohol), and those count as requirements too.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Protein for growth and development of new cells and tissues","lipids/fatty acids for healthy nervous system","fibre to prevent constipation","folic acid/folate prior and during pregnancy to reduce possibility of neural tube defects","iron for blood","calcium and vitamin D for bone development","vitamin C to help absorb iron, fight infection","water to prevent constipation and dehydration","energy intake should be increased slightly","omega 3 fatty acids for development of nervous system","salt intake should be reduced","reduce intake of raw eggs, unpasteurised cheese","pâté","avoid alcohol"]} },
+    { id: "points", kind: "criterion", verbatim: "requirements", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Food-safety correction: avoid raw/undercooked eggs, unpasteurised dairy and pâté during pregnancy; do not merely reduce them. Historical examination guidance follows: Protein for growth and development of new cells and tissues; lipids/fatty acids for healthy nervous system; fibre to prevent constipation; folic acid/folate prior and during pregnancy to reduce possibility of neural tube defects; iron for blood; calcium and vitamin D for bone development; vitamin C to help absorb iron, fight infection; water to prevent constipation and dehydration; energy intake should be increased slightly; omega 3 fatty acids for development of nervous system; salt intake should be reduced; reduce intake of raw eggs, unpasteurised cheese; pâté; avoid alcohol; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3538,10 +3535,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sb-q2c", topicId: "home-economics-1-2", conceptId: "food-labelling-buying",
     section: "B", questionRef: "2021 OL Section B Q2(c)",
     stem: "Healthy eating during pregnancy is critical to the baby's growth and development.",
-    questionText: "Explain how food labelling assists consumers when buying food.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    questionText: "Explain how food labelling assist consumers when buying food.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain how food labelling assists consumers when buying food", marks: 12, contextNote: "Three points at 4 marks. \"Explain how it assists\" is the whole question — listing what a label contains is 2, and saying what the shopper can then do is the other 2. Allergens and use-by dates are the two that change a decision most obviously.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Informs consumer on properties of prepacked food","can make an informed choice","information on genetically modified ingredients","nutritional information given","allergens listed/highlighted","ingredients listed in descending order of weight","net quantity","country of origin","use by date, best before date","instructions on cooking, storing","name and address of manufacturer","quality assurance e.g. Bord Bia mark","organic produce","fair trade"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Informs consumer on properties of prepacked food; can make an informed choice; information on genetically modified ingredients; nutritional information given; allergens listed/highlighted; ingredients listed in descending order of weight; net quantity; country of origin; use by date, best before date; instructions on cooking, storing; name and address of manufacturer; quality assurance e.g. Bord Bia mark; organic produce; fair trade; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -3550,13 +3547,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q3b", topicId: "home-economics-0-9", conceptId: "vegetables-cooking-storage",
-    section: "B", questionRef: "2021 OL Section B Q3(b)",
+    section: "B", questionRef: "2021 OL Section B Q3(b)(i)",
     stem: "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
-    questionText: "Outline: (i) the effects of cooking on vegetables; (ii) the guidelines for storing vegetables.",
-    tariffModel: {"kind":"fixed","notation":"effects 3 @ 3 marks each (graded 3:2:0); storage guidelines 3 @ 3 marks each (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    questionText: "Outline the effects of cooking on vegetables.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The effects of cooking on vegetables", marks: 9, contextNote: "Three effects at 3 marks. These are changes to the vegetable itself — starch grains bursting, cellulose softening, enzymes denatured, vitamin C destroyed — not opinions about taste. Naming the effect is 2; saying what it does for digestibility or nutrient content is the third mark.", openList: true, group: {"claimMax":3,"perOption":3,"options":["increases digestibility","starch grains burst and absorb water","cellulose softens","micro-organism are destroyed","enzymes are denatured","change in colour, flavour and texture","loss of water-soluble vitamins","destroys vitamin C"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The guidelines for storing vegetables", marks: 9, contextNote: "Three guidelines at 3 marks, worth exactly as much as the cooking half — so do not let the first half eat the time. The specifics carry the marks: potatoes in a dark, dry, well-ventilated place, salad in the fridge drawer, packaging removed.", openList: true, group: {"claimMax":3,"perOption":3,"options":["remove from plastic packaging","remove any damaged vegetables","store on a vegetable rack","store potatoes in a dark, dry, well-ventilated place","salad ingredients in a fridge vegetable drawer","avoid storing for prolonged periods","use up quickly after purchase"]} },
+    { id: "points", kind: "criterion", verbatim: "effects of cooking", marks: 9, contextNote: "3 distinct points, each graded 3:2:0. Complete historical guidance: increases digestibility; starch grains burst and absorb water; cellulose softens; micro-organism are destroyed; enzymes are denatured; change in colour, flavour and texture; loss of water-soluble vitamins; destroys vitamin C; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3568,9 +3564,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q3(c)",
     stem: "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
     questionText: "Suggest two interesting ways of including vegetables in the diet of children.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 ways @ 6 marks each (graded 6:3:0)","answer":2,"ofParts":11,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"2 points × 6 (6:3:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Suggest two interesting ways of including vegetables in the diet of children", marks: 12, contextNote: "Only two ways, but 6 marks each and graded 6:3:0 — half or full, nothing between, so a bare suggestion loses three marks outright. The child angle is what earns the top half: cutters to make animal shapes, grating vegetables into dishes to disguise them, growing them at home. \"Add to stews\" is true of any diet and reads as a 3.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Stir fry vegetables","use cherry tomatoes in lunch boxes","use cutters to make animal shapes","grated into dishes to disguise them","add vegetables to blended sauces","smoothies","vegetable pops/ice- lollies","add to stews","growing vegetables at home","vegetable crisps/wedges","use in soups"]} },
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 12, contextNote: "2 distinct points, each graded 6:3:0. Complete historical guidance: Stir fry vegetables; use cherry tomatoes in lunch boxes; use cutters to make animal shapes; grated into dishes to disguise them; add vegetables to blended sauces; smoothies; vegetable pops/ice- lollies; add to stews; growing vegetables at home; vegetable crisps/wedges; use in soups; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,3,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,3,6]}] },
     ],
   } as SecCard,
   {
@@ -3582,9 +3578,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q4(a)",
     stem: "Good money management is an important life skill.",
     questionText: "Discuss four advantages of planning a household budget for a family.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 advantages @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":12,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four advantages of planning a household budget for a family", marks: 20, contextNote: "Four advantages at 5 marks, graded 5:3:0. A large part of this list is the same idea in different clothes — financial security, provides for emergencies, covers unplanned events, avoids debt — and a marker pays once. Spread the four across spotting overspending, security, saving, and the skill itself.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Areas of overspending identified","provides financial security","alleviates worry and stress as bills will be paid","know where all monies are going","provides for emergencies e.g. visit to doctor or dentist","allows for savings","encourages people to wait until they have the money to buy something","ensures money available to cover unplanned eventualities e.g. job loss","develops money management skills","avoids debt","avoid impulse buying","budgeting reduces reliance on credit"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Areas of overspending identified; provides financial security; alleviates worry and stress as bills will be paid; know where all monies are going; provides for emergencies e.g. visit to doctor or dentist; allows for savings; encourages people to wait until they have the money to buy something; ensures money available to cover unplanned eventualities e.g. job loss; develops money management skills; avoids debt; avoid impulse buying; budgeting reduces reliance on credit; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3595,10 +3591,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "weekly-budget-plan-ol",
     section: "B", questionRef: "2021 OL Section B Q4(b)",
     stem: "Good money management is an important life skill.",
-    questionText: "Set out a weekly budget plan for a family (two adults and two children) with a net income of EUR 800 a week.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks each (graded 4:2:0)","answer":5,"ofParts":10,"perPart":4}, totalMarks: 20,
+    questionText: "Set out a weekly budget plan for a family (two adults and two children) with a net income of €800 a week.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Set out a weekly budget plan for a family with a net income of EUR 800 a week", marks: 20, contextNote: "Five points at 4 marks, graded 4:2:0. This is a plan, not prose: the scheme's percentages are the answer and a heading with its percentage earns the 4 where a heading alone earns 2. They total 100%, so the euro amounts have to add to EUR 800 — an arithmetic slip costs marks the headings had already earned. Reviewing the budget regularly is a point in its own right.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Rent 25%","food 25%","household bills 15% e.g. lighting, heating, bin collection, phone/internet","education 10%","clothes 5%","leisure/entertainment 5%","savings 5%","health 5%","discretionary spending 5%","evaluate/review budget on a regular basis"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "5 distinct points, each graded 4:2:0. Complete historical guidance: Rent 25%; food 25%; household bills 15% e.g. lighting, heating, bin collection, phone/internet; education 10%; clothes 5%; leisure/entertainment 5%; savings 5%; health 5%; discretionary spending 5%; evaluate/review budget on a regular basis; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -3610,10 +3606,10 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q4(c)",
     stem: "Good money management is an important life skill.",
     questionText: "State one advantage and one disadvantage of buying goods on credit.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 5 marks each (graded 5:3:0); 1 advantage, 1 disadvantage","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"1 advantage + 1 disadvantage, each 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One advantage of buying goods on credit", marks: 5, contextNote: "One advantage, 5 marks. The question fixes one of each, so two advantages cannot score 10 however good they are. Graded 5:3:0 — stating it is 3, and explaining what it lets the buyer do is the 5.", openList: true, group: {"claimMax":1,"perOption":5,"options":["buy now pay later","have use of the goods without having to pay for them","purchase expensive items","no need to carry large sums of cash","useful in emergencies","can take advantage when sales are on","encourages spending and benefits the economy"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One disadvantage of buying goods on credit", marks: 5, contextNote: "One disadvantage, 5 marks. The strongest are the ones with a consequence attached: goods can be repossessed if repayments are missed, and a poor credit rating makes future borrowing harder.", openList: true, group: {"claimMax":1,"perOption":5,"options":["expensive","high rates of interest","encourages impulse buying","do not own goods until final instalment is paid","leads to overspending","leads to debt","may be unable to keep up repayments","goods may be repossessed if consumer fails to meet repayments","consumer may get a poor credit rating/difficult to get a loan in the future."]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 5, contextNote: "Required advantage, graded 5:3:0. Complete historical examples: buy now pay later; have use of the goods without having to pay for them; purchase expensive items; no need to carry large sums of cash; useful in emergencies; can take advantage when sales are on; encourages spending and benefits the economy; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 5, contextNote: "Required disadvantage, graded 5:3:0. Complete historical examples: expensive; high rates of interest; encourages impulse buying; do not own goods until final instalment is paid; leads to overspending; leads to debt; may be unable to keep up repayments; goods may be repossessed if consumer fails to meet repayments; consumer may get a poor credit rating/difficult to get a loan in the future. etc.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -3625,11 +3621,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q5(a)",
     stem: "We live in an increasingly diverse world, even within our own family structures.",
     questionText: "Describe each of the following family structures: one parent family; nuclear family; blended family.",
-    tariffModel: {"kind":"fixed","notation":"one parent 2 points @ 3 marks (graded 3:2:0); nuclear 2 points @ 3 marks (graded 3:2:0); blended 2 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"3 required family structures × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One parent family", marks: 6, contextNote: "Two points at 3 marks. All three structures are compulsory and identically priced, so this is three short descriptions rather than a choice — skipping one costs a flat 6. Here the two points come easily as what it is and what follows from it: one parent with their children, and the financial or emotional pressures that can result.", openList: true, group: {"claimMax":2,"perOption":3,"options":["consists of one parent and his/her child(ren), can be because of choice, divorce, separation, desertion or death of a spouse","can result in difficulties e.g. poverty, financial, emotional","isolation","stress due to increased workload and childcare problems","more likely to be dependent on state benefits"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Nuclear family", marks: 6, contextNote: "Two points at 3 marks. The scheme's description is longer than the others but the tariff is the same — parents and children in a self-contained unit, with shared tasks and small family size. Do not overspend on the structure you know best.", openList: true, group: {"claimMax":2,"perOption":3,"options":["parent/parents and their children","living in a self-contained unit","tasks are usually shared","have integrated roles","democratic, with older children involved in decision making","both parents work","mobile","number of children is usually small"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Blended family", marks: 6, contextNote: "Two points at 3 marks. The definition is the first point — partners with children from previous relationships, often with children of their own — and the second is best taken from the consequences the scheme lists: extra financial pressure, or discipline between step-parents and children.", openList: true, group: {"claimMax":2,"perOption":3,"options":["partners with children from previous relationships and often their own children","arises usually because of remarriage","more common due to divorce and separation","have a large extended family","extra financial pressure","difficulties with discipline between step-parents and children"]} },
+    { id: "one-parent", kind: "criterion", verbatim: "One parent family", marks: 6, contextNote: "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: consists of one parent and his/her child(ren), can be because of choice, divorce, separation, desertion or death of a spouse; can result in difficulties e.g. poverty, financial, emotional; isolation; stress due to increased workload and childcare problems; more likely to be dependent on state benefits; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "nuclear", kind: "criterion", verbatim: "Nuclear family", marks: 6, contextNote: "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: parent/parents and their children; living in a self-contained unit; tasks are usually shared; have integrated roles; democratic, with older children involved in decision making; both parents work; mobile; number of children is usually small; independent; economically self- sufficient; relatives widely dispersed; isolated in times of crisis; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "blended", kind: "criterion", verbatim: "Blended family", marks: 6, contextNote: "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: partners with children from previous relationships and often their own children; arises usually because of remarriage; more common due to divorce and separation; have a large extended family; extra financial pressure; difficulties with discipline between step-parents and children; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3641,9 +3637,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q5(b)",
     stem: "We live in an increasingly diverse world, even within our own family structures.",
     questionText: "Discuss the roles and responsibilities of adolescents/teenagers within a family.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":9,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the roles and responsibilities of adolescents/teenagers within a family", marks: 20, contextNote: "Four points at 5 marks, graded 5:3:0. The scheme's strongest point is the tension it names outright: role expectations are difficult because an adolescent is no longer a child but does not yet carry the responsibility of an adult. Building an answer around that, rather than listing chores, is what reaches 5 a point.", openList: true, group: {"claimMax":4,"perOption":5,"options":["son/daughter/brother/sister/grandchild","role model for younger siblings","role expectations are difficult as adolescents are no longer children but still do not have the full responsibility of adulthood","showing respect, learning to behave in a socially acceptable manner","acquiring knowledge informally and formally","to do a fair/appropriate share of household duties","to work hard and achieve in school","acquiring gradual independence","helping with minding younger siblings/elderly family members"]} },
+    { id: "points", kind: "criterion", verbatim: "roles and responsibilities", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: son/daughter/brother/sister/grandchild; role model for younger siblings; role expectations are difficult as adolescents are no longer children but still do not have the full responsibility of adulthood; showing respect, learning to behave in a socially acceptable manner; acquiring knowledge informally and formally; to do a fair/appropriate share of household duties; to work hard and achieve in school; acquiring gradual independence; helping with minding younger siblings/elderly family members; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3655,9 +3651,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q5(c)",
     stem: "We live in an increasingly diverse world, even within our own family structures.",
     questionText: "Outline why good communication is important between family members.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":9,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline why good communication is important between family members", marks: 12, contextNote: "Three points at 4 marks. Every entry has a consequence built into it — trust, resolved conflict, self-esteem, knowing what is expected — and naming the consequence is the second 2. \"It is important to talk\" is not a point; saying that clear expectations prevent conflict is.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Helps clarify rules and expectations","family members know what is expected of them","builds trust among members","able to express their opinions and views","develops listening skills","helps members express opinions in a safe environment","conflict may be resolved","communication is needed to compromise","develops positive self-esteem"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Helps clarify rules and expectations; family members know what is expected of them; builds trust among members; able to express their opinions and views; develops listening skills; helps members express opinions in a safe environment; conflict may be resolved; communication is needed to compromise; develops positive self-esteem; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -3667,12 +3663,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1ai", topicId: "home-economics-3-6", conceptId: "advantages-of-home-insulation",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(i)",
-    stem: "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+    stem: "The diagram below shows the average heat loss for a family home.",
     questionText: "State four advantages of having a house well insulated.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 advantages @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":10,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Advantages of a well insulated house", marks: 20, contextNote: "Four advantages at 5 marks, graded 5:3:0 - 20 marks, the biggest part here. The scheme runs three ways: money (lower bills), comfort (steady temperature, less noise), and environment (less energy used, lower CO2, better BER). Take from all three rather than saying \"saves money\" four ways.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Reduces heating bills","reduces heat loss","saves energy","acts as a noise/sound barrier","maintains a constant comfortable temperature","reduces the use of energy resources","results in less CO₂ emissions","creates a more comfortable home","can contribute to sustainable and responsible living","higher BER rating/improvement in energy efficiency"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Reduces heating bills; reduces heat loss; saves energy; acts as a noise/sound barrier; maintains a constant comfortable temperature; reduces the use of energy resources; results in less CO₂ emissions; creates a more comfortable home; can contribute to sustainable and responsible living; higher BER rating/improvement in energy efficiency; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q1a-heat-loss.png",
+          "srcHash": "ab3de37dd6f573f2a3bfea6c48f43d63",
+          "alt": "Original heat-loss diagram for a family home: roof 25%, walls 35%, windows 15%, doors 10%, floor 15%. Original ORS caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "home-economics-2021-ol-paper-p05-art",
           "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
@@ -3689,14 +3694,27 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1aii", topicId: "home-economics-3-6", conceptId: "methods-of-insulation-attic-walls-windows",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(ii)",
-    stem: "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+    stem: "The diagram below shows the average heat loss for a family home.",
     questionText: "Name and describe the method of insulation you would recommend for each of the following: attic; walls; windows.",
-    tariffModel: {"kind":"fixed","notation":"Name 2 marks (graded 2:0) and description 3 marks (graded 3:0), x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 locations × (name 2 (2:0) + description 3 (3:0))"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Attic", marks: 5, contextNote: "Name and describe one, 5 marks. Blanket insulation is the one to know - rolls of fibreglass or mineral wool laid between the joists. Loose fill, foam and blown fibre are the alternatives.", openList: true, group: {"claimMax":1,"perOption":5,"options":["blanket insulation e.g. rolls of fibreglass, wool or mineral","laid between joists or fixed between roof rafters","loose fill e.g. pellets of polystyrene or vermiculite poured in between joists","foam insulation e.g. foam sprayed between roof and rafters","blown- fibre insulation e.g. glass, mineral or cellulose fibres are blown into the attic and sealed"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Walls", marks: 5, contextNote: "Name and describe one, 5 marks. Cavity wall is the classic: two layers of block 5-10cm apart with the air gap acting as the insulator, or foam and beads pumped into that cavity. Dry lining and external render are the alternatives for solid walls.", openList: true, group: {"claimMax":1,"perOption":5,"options":["cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator","polystyrene sheets can be inserted at the building stage","polystyrene foam or beads are pumped into the cavity","internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls","external walls: sheets of insulating material to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render to provide strength"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Windows", marks: 5, contextNote: "Name and describe one, 5 marks. Double or triple glazing - two or three sheets of glass with an air or argon gap. Low-emissivity glass reflects heat back into the room, and heavy lined curtains count too.", openList: true, group: {"claimMax":1,"perOption":5,"options":["double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon","low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted"]} },
+    { id: "name-1", kind: "criterion", verbatim: "Attic — method", marks: 2, contextNote: "Name a method for this required location, graded 2:0. Complete location-specific guidance: blanket insulation e.g. rolls of fibreglass, wool or mineral; laid between joists or fixed between roof rafters; etc. loose fill e.g. pellets of polystyrene or vermiculite poured in between joists; etc. foam insulation e.g. foam sprayed between roof and rafters; etc. blown- fibre insulation e.g. glass, mineral or cellulose fibres are blown into the attic and sealed; etc.", permittedMarks: [0,2] },
+    { id: "description-1", kind: "criterion", verbatim: "Attic — description", marks: 3, contextNote: "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above.", permittedMarks: [0,3] },
+    { id: "name-2", kind: "criterion", verbatim: "Walls — method", marks: 2, contextNote: "Name a method for this required location, graded 2:0. Complete location-specific guidance: cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator; polystyrene sheets can be inserted at the building stage; polystyrene foam or beads are pumped into the cavity; etc. internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls; etc. external walls: sheets of insulating material to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render to provide strength; etc.", permittedMarks: [0,2] },
+    { id: "description-2", kind: "criterion", verbatim: "Walls — description", marks: 3, contextNote: "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above.", permittedMarks: [0,3] },
+    { id: "name-3", kind: "criterion", verbatim: "Windows — method", marks: 2, contextNote: "Name a method for this required location, graded 2:0. Complete location-specific guidance: double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon; low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted; etc.", permittedMarks: [0,2] },
+    { id: "description-3", kind: "criterion", verbatim: "Windows — description", marks: 3, contextNote: "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above.", permittedMarks: [0,3] },
     ],
+    taskGroups: [{"sourceCardId":"he-2021-ol-sc-q1aii-location-1","label":"Attic","marks":5,"rowIds":["name-1","description-1"]},{"sourceCardId":"he-2021-ol-sc-q1aii-location-2","label":"Walls","marks":5,"rowIds":["name-2","description-2"]},{"sourceCardId":"he-2021-ol-sc-q1aii-location-3","label":"Windows","marks":5,"rowIds":["name-3","description-3"]}],
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q1a-heat-loss.png",
+          "srcHash": "ab3de37dd6f573f2a3bfea6c48f43d63",
+          "alt": "Original heat-loss diagram for a family home: roof 25%, walls 35%, windows 15%, doors 10%, floor 15%. Original ORS caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "home-economics-2021-ol-paper-p05-art",
           "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
@@ -3713,12 +3731,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "advantages-and-disadvantages-of-solar-energy",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(iii)",
-    stem: "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+    stem: "The diagram below shows the average heat loss for a family home.",
     questionText: "State the advantages and/or the disadvantages of solar energy.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":11,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Advantages and/or disadvantages of solar energy", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. \"And/or\" means all three may come from one side, so you are not forced to balance them - but two advantages and one disadvantage reads as a fuller answer. The SEAI grant and the BER increase are the two most students forget.", openList: true, group: {"claimMax":3,"perOption":5,"options":["provides a plentiful supply of hot water","no smoke/carbon monoxide emissions","supplies home with own electricity","can reduce heating requirement by 80%","renewable environmentally friendly energy source","SEAI grant available for cost of installing","increases the property value by raising the Building Energy Rating (BER)","expensive to purchase/install","undependable supply of sunshine, other form of energy required","house must be orientated towards the sun","unsightly on the roof"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Solar output and savings depend on the installation and conditions; the historical 80% example is not a guaranteed reduction. Advantages: provides a plentiful supply of hot water; no smoke/carbon monoxide emissions; supplies home with own electricity; can reduce heating requirement by 80%; renewable environmentally friendly energy source; SEAI grant available for cost of installing; increases the property value by raising the Building Energy Rating (BER); etc. Disadvantages: expensive to purchase/install; undependable supply of sunshine, other form of energy required; house must be orientated towards the sun; unsightly on the roof; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q1a-heat-loss.png",
+          "srcHash": "ab3de37dd6f573f2a3bfea6c48f43d63",
+          "alt": "Original heat-loss diagram for a family home: roof 25%, walls 35%, windows 15%, doors 10%, floor 15%. Original ORS caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "home-economics-2021-ol-paper-p05-art",
           "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
@@ -3737,11 +3764,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E1 Q1(b)(i)",
     stem: "Buying a first home is an exciting adventure.",
     questionText: "State the advantages and the disadvantages of buying a home of your own.",
-    tariffModel: {"kind":"fixed","notation":"3 points @ 4 marks each (graded 4:2:0) - 1 advantage + 1 disadvantage + 1 other point","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"1 advantage + 1 disadvantage + 1 other, each 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One advantage of buying a home", marks: 4, contextNote: "One advantage at 4 marks, and the scheme requires it. The strongest is that it is an investment with security of tenure - it is yours, and the value can rise.", openList: true, group: {"claimMax":1,"perOption":4,"options":["an investment","tax relief and grants available","less expensive, mortgage cheaper than renting","value of the house can increase","security of tenure","can choose your own design and type of house","whether to share house or not"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One disadvantage of buying a home", marks: 4, contextNote: "One disadvantage at 4 marks, also required. The costs beyond the price are the real answer: deposit, legal fees, stamp duty, survey, property tax, and maintenance forever after.", openList: true, group: {"claimMax":1,"perOption":4,"options":["long-term commitment","deposit required initially","additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee","property tax","continuous maintenance costs","property value can fall"]} },
-    { id: "r-3", kind: "anyN", verbatim: "One further point, from either", marks: 4, contextNote: "One further point at 4 marks, from either side - \"1 advantage + 1 disadvantage + 1 other point\". Whichever list you found easier is where to take it from.", openList: true, group: {"claimMax":1,"perOption":4,"options":["an investment","tax relief and grants available","less expensive, mortgage cheaper than renting","value of the house can increase","security of tenure","can choose your own design and type of house","whether to share house or not","long-term commitment","deposit required initially","additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee","property tax","continuous maintenance costs","property value can fall"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 4, contextNote: "One advantage, graded 4:2:0. Historical examples, not guarantees about prices, grants or investment returns. an investment; tax relief and grants available; less expensive, mortgage cheaper than renting; value of the house can increase; security of tenure; can choose your own design and type of house; whether to share house or not; etc.", permittedMarks: [0,2,4] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 4, contextNote: "One disadvantage, graded 4:2:0. long-term commitment; deposit required initially; additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee; property tax; continuous maintenance costs; property value can fall; etc.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "other", marks: 4, contextNote: "One further distinct advantage or disadvantage, graded 4:2:0. Use the complete guidance above.", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -3753,9 +3780,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E1 Q1(b)(ii)",
     stem: "Buying a first home is an exciting adventure.",
     questionText: "Discuss how the housing requirements of a family with children may differ from that of a person living on their own.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 6 marks each (graded 6:3:0)","answer":3,"ofParts":14,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"3 points × 6 (6:3:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How housing requirements differ", marks: 18, contextNote: "Three points at 6 marks, graded 6:3:0 - the highest per-point rate on the paper, so develop each one. The word is \"differ\", so write in contrasts: a family needs space, storage and a garden and wants to be near schools; someone on their own needs less space and can choose a location and lifestyle to suit only themselves.", openList: true, group: {"claimMax":3,"perOption":6,"options":["depends on size and composition of family","proximity to schools/crèches","older children like their own personal space","storage space e.g. lockers, wardrobes, hot press for clothes","living room with books/internet/broadband","playroom for toys","garage or shed for bicycles","well equipped, ventilated, adequately lit and spacious kitchen","living room for relaxing/T.V. viewing","enclosed garden, patio, decking for play","students require study facilities","proximity to work, shops, amenities","requires less space than a family","allows for individuals preference e.g. choosing between urban/rural lifestyle"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 18, contextNote: "3 distinct points, each graded 6:3:0. Complete historical guidance: Family with children: depends on size and composition of family; proximity to schools/crèches; older children like their own personal space; storage space e.g. lockers, wardrobes, hot press for clothes; living room with books/internet/broadband; playroom for toys; garage or shed for bicycles; well equipped, ventilated, adequately lit and spacious kitchen; living room for relaxing/T.V. viewing; enclosed garden, patio, decking for play; students require study facilities; proximity to work, shops, amenities; etc. Person living on their own: requires less space than a family; allows for individuals preference e.g. choosing between urban/rural lifestyle; some like to commute, depending on access to public transport; entertainment facilities; apartment/bedsit/town house; renting on own or sharing a house can be an alternative to buying a property; proximity to work or college; internet/broadband; etc.", permittedMarks: [0,3,6,9,12,15,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,3,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,3,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,3,6]}] },
     ],
   } as SecCard,
   {
@@ -3767,9 +3794,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E1 Q1(c)(i)",
     stem: "Interior designers help people create their dream home.",
     questionText: "Discuss three factors to be considered when planning the interior design of a house.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors when planning interior design", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. The scheme names them only, so the mark is in the sentence you add. Function of the room is the strongest - what happens in the room decides the flooring, the lighting and the furniture.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Space available","function of room","comfort","money available","cost e.g. initial/maintenance","family size","energy efficiency","aspect of house/room","existing fixtures/fittings","personal choice","colour scheme","materials used","environmental awareness","ergonomics, well laid out for ease of movement"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Space available; function of room; comfort; money available; cost e.g. initial/maintenance; family size; energy efficiency; aspect of house/room; existing fixtures/fittings; personal choice; colour scheme; materials used; environmental awareness; ergonomics, well laid out for ease of movement; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3781,9 +3808,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E1 Q1(c)(ii)",
     stem: "Interior designers help people create their dream home.",
     questionText: "Explain how soft furnishings can enhance the overall appearance of a room.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How soft furnishings enhance a room", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. Name the furnishing as well as the effect - cushions and a throw add colour and texture, curtains make a room warm and cosy, a rug can act as the focal point. The economical-makeover point is the one worth ending on.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Add colour/pattern/texture to a room","make a room warm and cosy","act as a focal point in a room","add interest to an area of the room","can give a room a complete makeover in an economical way","can update style of a room"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Add colour/pattern/texture to a room; make a room warm and cosy; act as a focal point in a room; add interest to an area of the room; can give a room a complete makeover in an economical way; can update style of a room; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3794,12 +3821,21 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "accessorising-occasion-wear",
     section: "C", questionRef: "2021 OL Section C E2 Q2(a)(ii)",
     stem: "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)",
-    questionText: "Suggest one accessory you could add to enhance an occasion wear outfit, and give one reason for your choice.",
-    tariffModel: {"kind":"fixed","notation":"1 accessory @ 3 marks (graded 3:0); 1 reason @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    questionText: "Suggest one accessory you could add to enhance either of the above outfits.\nGive one reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Accessory 3 (3:0); reason 4 (4:2:0)"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The accessory", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 - all or nothing, but any accessory in the list counts: a shawl, jewellery, a fascinator, cufflinks, a tie pin, a watch.", openList: true, group: {"claimMax":1,"perOption":3,"options":["pashmina shawl in a contrasting pastel colour to add another layer to outfit","jewellery e.g. earrings, bracelet, necklace, rings, watch","evening wear bag","hat/fascinator","hairband","cufflinks to compliment his suit","tie in the same colour as the handkerchief","lapel pin to compliment suit","tie pin","wear a watch, rings"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Reason for the choice", marks: 4, contextNote: "One reason at 4 marks - more than the accessory itself, so this is where the marks are. The scheme’s reasons are about how the piece works with the outfit: it adds a layer, it complements the suit, it picks up the colour of the handkerchief.", openList: true, group: {"claimMax":1,"perOption":4,"options":["pashmina shawl in a contrasting pastel colour to add another layer to outfit","jewellery e.g. earrings, bracelet, necklace, rings, watch","evening wear bag","hat/fascinator","hairband","cufflinks to compliment his suit","tie in the same colour as the handkerchief","lapel pin to compliment suit","tie pin","wear a watch, rings"]} },
+    { id: "accessory", kind: "criterion", verbatim: "Accessory", marks: 3, contextNote: "Name one accessory for either pictured outfit, graded 3:0. Complete published examples for both outfits: Woman: pashmina shawl in a contrasting pastel colour to add another layer to outfit; jewellery e.g. earrings, bracelet, necklace, rings, watch; evening wear bag; hat/fascinator; hairband; etc. Man: cufflinks to compliment his suit; tie in the same colour as the handkerchief; lapel pin to compliment suit; tie pin; wear a watch, rings; etc.", permittedMarks: [0,3] },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 4, contextNote: "Give one reason for the same accessory and outfit, graded 4:2:0. Use the complete guidance above.", permittedMarks: [0,2,4] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sc-q2a-occasion-wear",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q2a-occasion-wear.png",
+          "srcHash": "edf97b716532640cda8262558c00a66a",
+          "alt": "The two original occasion-wear outfits: a red lace dress with fitted bodice and flared skirt, and a grey suit with shirt, tie and pocket square. Original Pinterest and The Black Tux captions retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3810,10 +3846,287 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E2 Q2(b)(i)",
     stem: "Today’s consumers are willing to pay more for clothing produced with natural fabrics.",
     questionText: "Write a profile of a natural fabric under each of the following headings: how the fabric is constructed; properties.",
-    tariffModel: {"kind":"fixed","notation":"construction 1 point @ 3 marks (graded 3:2:0); properties 2 points @ 3 marks each (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Construction 3 + 2 properties × 3, each 3:2:0"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How the fabric is constructed", marks: 3, contextNote: "One point at 3 marks. Weaving is the one the scheme explains properly - the warp runs down the loom, the weft passes over and under it, and the selvedge forms at the edges. Knitting and bonding are the shorter alternatives.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made","Knitting: can be done by hand or machine","Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Properties", marks: 6, contextNote: "Two properties at 3 marks each - two thirds of the marks. Pick the fabric first, then take two from its own line. Include a weakness as well as a strength: linen is strong and cool but creases badly, wool is warm but shrinks and can itch.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Linen - absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily","Cotton - absorbent; cool; strong; easy to wash and dry; dyes well; creases easily; shrinks","Wool - warm; soft; absorbent; resilient; can irritate sensitive skin; pills; shrinks","Silk - absorbent; crease resistant; drapes well; flammable; damaged by careless handling"]} },
+    { id: "construction", kind: "criterion", verbatim: "Construction", marks: 3, contextNote: "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc.", permittedMarks: [0,2,3] },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 6, contextNote: "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "linen",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "Construction",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "cotton",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "Construction",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; cool; strong; easy to wash and dry; dyes well; creases easily; shrinks; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "wool",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "Construction",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: warm; soft; absorbent; resilient; can irritate sensitive skin; pills; shrinks; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "silk",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "Construction",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; crease resistant; drapes well; flammable; damaged by careless handling; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another natural fabric",
+                "rows": [
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "Construction",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: The paper permits another natural fabric. Give accurate properties of your named fabric; the scheme does not print another model.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -3825,9 +4138,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E2 Q2(b)(ii)",
     stem: "Today’s consumers are willing to pay more for clothing produced with natural fabrics.",
     questionText: "Give two advantages of using natural fibres/fabric in everyday wear.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 advantages @ 3 marks each (graded 3:2:0)","answer":2,"ofParts":8,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Advantages of natural fibres in everyday wear", marks: 6, contextNote: "Two advantages at 3 marks, graded 3:2:0. The scheme ties several to a specific fabric and use - wool is warm for winter, cotton absorbs sweat so it suits sportswear, linen is lightweight for summer. Naming the fabric with the advantage is what makes it a 3.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Lightweight for summer wear","dyes easily so many colours available","wool is warm for winter clothing","cotton absorbs water so ideal for sportswear","washable","durable","cheaper","will take fabric finishes"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete historical guidance: Lightweight for summer wear; dyes easily so many colours available; wool is warm for winter clothing; cotton absorbs water so ideal for sportswear; washable; durable; cheaper; will take fabric finishes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3839,11 +4152,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E2 Q2(c)(i)",
     stem: "Irish fashion is thriving on the international stage.",
     questionText: "Explain how each of the following factors may influence a person’s choice of clothing: function; money available; cultural influences.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 points × 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Function", marks: 3, contextNote: "One point, 3 marks. Function is what the clothing has to do - the scheme’s example is a waterproof coat in winter. Name an occasion or condition and the garment that suits it.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Particular garments are suitable for specific occasion e.g. waterproof coat in winter","comfortable and easy to wear"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Money available", marks: 3, contextNote: "One point, 3 marks. Budget decides where you shop as much as what you buy - designer, chain store or charity shop - and value for money over time is the point worth making.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Value for money in the long term","designer brands more expensive","choice of retail outlet","chain store","charity shop","items chosen must fit into a low budget"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Cultural influences", marks: 3, contextNote: "One point, 3 marks. Modesty is the scheme’s main idea - different cultures cover differently - along with features borrowed between cultures, like pashminas, embroidery and beading.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Different cultures have different levels of modesty reflected in their clothing","features from different countries e.g. pashminas shawls, embroidery on t-shirts","beading on jumpers"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Function", marks: 3, contextNote: "1 points under this required heading, each graded 3:2:0. Complete guidance: Particular garments are suitable for specific occasion e.g. waterproof coat in winter; comfortable and easy to wear; etc.", permittedMarks: [0,2,3] },
+    { id: "heading-2", kind: "criterion", verbatim: "Money available", marks: 3, contextNote: "1 points under this required heading, each graded 3:2:0. Complete guidance: Value for money in the long term; designer brands more expensive; choice of retail outlet; chain store; charity shop; items chosen must fit into a low budget; etc.", permittedMarks: [0,2,3] },
+    { id: "heading-3", kind: "criterion", verbatim: "Cultural influences", marks: 3, contextNote: "1 points under this required heading, each graded 3:2:0. Complete guidance: Different cultures have different levels of modesty reflected in their clothing; features from different countries e.g. pashminas shawls, embroidery on t-shirts; beading on jumpers; etc.", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -3855,9 +4168,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E2 Q2(c)(ii)",
     stem: "Irish fashion is thriving on the international stage.",
     questionText: "Discuss the contribution of trendsetters/bloggers to current fashion trends.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 contributions @ 3 marks each (graded 3:2:0)","answer":2,"ofParts":6,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Contribution of trendsetters and bloggers", marks: 6, contextNote: "Two contributions at 3 marks, graded 3:2:0. Say the mechanism - young people copy what trendsetters wear, brands sponsor celebrities and hand them clothes for media events, and social media spreads it in hours rather than seasons.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Young people want to wear what trendsetters are wearing","they set up their own clothing ranges","trendsetters are photographed wearing clothes by specific designers at media events","sponsorship deals that celebrities have with clothing companies","television programmes show confidence about clothing","social media e.g. Snapchat, Instagram"]} },
+    { id: "points", kind: "criterion", verbatim: "contributions", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete historical guidance: Young people want to wear what trendsetters are wearing; they set up their own clothing ranges; trendsetters are photographed wearing clothes by specific designers at media events; sponsorship deals that celebrities have with clothing companies; television programmes show confidence about clothing; social media e.g. Snapchat, Instagram; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3869,11 +4182,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(i)",
     stem: "Education for a child begins at home and is a lifelong process.",
     questionText: "Outline how education contributes to the development of the individual. Refer to each of the following: physical development; emotional development; intellectual development.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Physical development", marks: 6, contextNote: "Two points at 3 marks. School builds the body two ways - fine motor skills through practical subjects and handling equipment, and gross motor skills, bone and muscle through PE and sport.", openList: true, group: {"claimMax":2,"perOption":3,"options":["playing with toys helps with manual dexterity e.g. jigsaws","practical subjects can improve fine and gross motor skills","development of hand/eye co-ordination","sport and physical education helps to build healthy bones and muscles and improve balance/fitness"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Emotional development", marks: 6, contextNote: "Two points at 3 marks. Starting school is the first real independence from parents, and it is where children learn to notice and respond to how other people feel.", openList: true, group: {"claimMax":2,"perOption":3,"options":["young children gain emotional independence from parents, encourages maturity","feelings for themselves and others","learn to be sensitive to needs of others","supportive of others","expressing emotions","co-educational allows for development of healthy, friendly relationships between sexes"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Intellectual development", marks: 6, contextNote: "Two points at 3 marks, and the longest list. The range of subjects and the resources are the obvious ones; competition from classmates and the challenge of examinations are the ones that read as thought-out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["promoted through the wide range of subjects","extracurricular activities","classmates encourage competition","examinations provide challenges","resources e.g. books, computers assist development","size of family","home provides stimulation and nurtures a learning environment","comfortable physical surroundings with good lighting/heating and ventilation assist in attaining ones potential","overcrowding can hinder study","after school study available"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Physical development", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: playing with toys helps with manual dexterity e.g. jigsaws; practical subjects can improve fine and gross motor skills; development of hand/eye co-ordination; sport and physical education helps to build healthy bones and muscles and improve balance/fitness; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Emotional development", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: young children gain emotional independence from parents, encourages maturity; feelings for themselves and others; learn to be sensitive to needs of others; supportive of others; expressing emotions; co-educational allows for development of healthy, friendly relationships between sexes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Intellectual development", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: promoted through the wide range of subjects; extracurricular activities; classmates encourage competition; examinations provide challenges; resources e.g. books, computers assist development; size of family; home provides stimulation and nurtures a learning environment; comfortable physical surroundings with good lighting/heating and ventilation assist in attaining ones potential; overcrowding can hinder study; after school study available; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3885,9 +4198,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(ii)",
     stem: "Education for a child begins at home and is a lifelong process.",
     questionText: "Give an account of four factors that influence the educational achievement of school children.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":9,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors influencing educational achievement", marks: 20, contextNote: "Four factors at 5 marks, graded 5:3:0 - 20 marks, the biggest part here. Say how the factor works, not just its name: a large family means financial strain and less one-to-one attention; the school environment covers resources, class size, SNAs and resource teachers.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Intellectual ability","family size, large family’s greater financial strain","home environment e.g. homework facilities","peers, can be positive or negative","local environment","school environment e.g. resources in school, access to computers/assistive technology, SNA available to assist, resource teachers available","small class size","educational programmes in school e.g. JCSP, LCA, LCVP, TY, HEAR, DARE, RACE, level two learning programme, work experience","parental attitude to education"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Intellectual ability; family size, large family’s greater financial strain; home environment e.g. homework facilities; peers, can be positive or negative; local environment; school environment e.g. resources in school, access to computers/assistive technology, SNA available to assist, resource teachers available; small class size; educational programmes in school e.g. JCSP, LCA, LCVP, TY, HEAR, DARE, RACE, level two learning programme, work experience; parental attitude to education; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3899,9 +4212,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(iii)",
     stem: "Education for a child begins at home and is a lifelong process.",
     questionText: "Explain three benefits to students of participating in work experience while in second level school.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 benefits @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":10,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Benefits of work experience to students", marks: 12, contextNote: "Three benefits at 4 marks, graded 4:2:0. The scheme splits into finding direction (deciding on a career, seeing what a job actually involves) and building skills (communication, teamwork, timekeeping, confidence). One from each is the fullest answer, and \"it goes on your CV\" is a legitimate third.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Helps students decide what career they may like to choose","gain knowledge of what actual working is like","get insight on what different jobs entail","get to know how people work together","see how work differs from school","realise what work activities are enjoyable","develop skills in communication, team working, planning, organising, timekeeping, problem solving","help to build confidence","get the opportunity to take responsibility","can put it on C.V."]} },
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Helps students decide what career they may like to choose; gain knowledge of what actual working is like; get insight on what different jobs entail; get to know how people work together; see how work differs from school; realise what work activities are enjoyable; develop skills in communication, team working, planning, organising, timekeeping, problem solving; help to build confidence; get the opportunity to take responsibility; can put it on C.V. etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -3913,9 +4226,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(b)(i)",
     stem: "‘Physical activity plays an important role in the lives of children and young people.’ (www.education.ie)",
     questionText: "Discuss three reasons why leisure is important in today’s society.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 reasons @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":11,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reasons leisure is important", marks: 15, contextNote: "Three reasons at 5 marks, graded 5:3:0. The scheme covers mind (relaxing, mental wellbeing, self-esteem), body (physical health) and people (social interaction, family bonding, community). One from each is the widest answer.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Helps people relax and unwind from stresses of daily life","assists mental well-being","improves physical health","furthers social interaction","encourages family bonding","fosters relationships in communities","develops new skills","improves self-esteem","sets good example for children on how to use their free time positively","relieves boredom","improves communication and teamwork"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Helps people relax and unwind from stresses of daily life; assists mental well-being; improves physical health; furthers social interaction; encourages family bonding; fosters relationships in communities; develops new skills; improves self-esteem; sets good example for children on how to use their free time positively; relieves boredom; improves communication and teamwork; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -3927,11 +4240,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(b)(ii)",
     stem: "‘Physical activity plays an important role in the lives of children and young people.’ (www.education.ie)",
     questionText: "Describe how a person’s choice of leisure activities are influenced by each of the following: cost; occupation; age.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Cost", marks: 5, contextNote: "One point, 5 marks. It is not only the fee - equipment and special clothing cost too, and someone with less disposable income turns to activities that are free, like walking.", openList: true, group: {"claimMax":1,"perOption":5,"options":["membership/annual/joining fee","pay as you go","method of payment","need special clothes and equipment","people with less disposable income may choose inexpensive/free activities e.g. walking"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Occupation", marks: 5, contextNote: "One point, 5 marks. The idea worth writing is contrast: someone sitting at a desk all day tends to choose something active, and someone doing physical work chooses something restful. Work also decides both the money and the hours available.", openList: true, group: {"claimMax":1,"perOption":5,"options":["amount of disposable income available","number of working hours","type of work","leisure can contrast with a person’s occupation","can be an extension of work","work is a means of providing income for leisure","part-time workers, job sharing and career breaks all allow for more time for leisure activities","sedentary worker could opt for an energy consuming type of activity and vice-versa"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Age", marks: 5, contextNote: "One point, 5 marks. Time and money move in opposite directions across a life - young people have time but little money, parents of small children have neither, and retired people have time again.", openList: true, group: {"claimMax":1,"perOption":5,"options":["young people have fewer commitments and more time for leisure","couples with young children have the least amount of time and disposable income","retired people have more time and more disposable money to spend on leisure","older people have less money, may have physical constraints and do more sedentary pursuits","leisure activities change with age","some leisure activities are considered too dangerous for children"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Cost", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: membership/annual/joining fee; pay as you go; method of payment; need special clothes and equipment; people with less disposable income may choose inexpensive/free activities e.g. walking; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Occupation", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: amount of disposable income available; number of working hours; type of work; leisure can contrast with a person’s occupation; can be an extension of work; work is a means of providing income for leisure; part-time workers, job sharing and career breaks all allow for more time for leisure activities; sedentary worker could opt for an energy consuming type of activity and vice-versa; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Age", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: young people have fewer commitments and more time for leisure; couples with young children have the least amount of time and disposable income; retired people have more time and more disposable money to spend on leisure; older people have less money, may have physical constraints and do more sedentary pursuits; leisure activities change with age; some leisure activities are considered too dangerous for children; etc.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -3943,11 +4256,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(c)(i)",
     stem: "The impact of unemployment can be long lasting.",
     questionText: "Discuss the effects of unemployment on: young individuals; the family; society.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Young individuals", marks: 6, contextNote: "Two points at 3 marks. The scheme goes further into the mind than the wallet - worthlessness, loss of identity and status, isolation, boredom, depression. Take one money point and one of those.", openList: true, group: {"claimMax":2,"perOption":3,"options":["loss of income","drop in living standards","stress","feeling worthless","worry","guilt","loss of identity","status and self-esteem","loss of social contact","depression","ill health","boredom","loneliness","isolation"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The family", marks: 6, contextNote: "Two points at 3 marks. Keep it at household level: trouble paying rent and bills, strain on relationships, children suffering at school, and at worst losing the home.", openList: true, group: {"claimMax":2,"perOption":3,"options":["lack of money","decline in living standards","unstable home","provision of basic needs may be difficult","poverty","problems paying rent, bills","strain on family relationships","marital breakdown","may become homeless or in need of emergency accommodation","children can suffer academically in school","may be tendency to turn to drink or drugs","loss of home"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Society", marks: 6, contextNote: "Two points at 3 marks - the row most students leave thin. It is about cost and consequence to the country: benefits to pay, higher taxes, emigration, crime, and the cycle of poverty continuing.", openList: true, group: {"claimMax":2,"perOption":3,"options":["burden on state to pay benefits","cycle of poverty continues","increased poverty and crime","increased emigration","creates inequalities within communities","increase in taxes","social problems","a growth in the black economy","increase in family breakdown"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Young individuals", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: loss of income; drop in living standards; stress; feeling worthless; worry; guilt; loss of identity; status and self-esteem; loss of social contact; depression; ill health; boredom; loneliness; isolation; addiction e.g. drugs/alcohol abuse; lack of money can prevent participation in leisure activities; loss of purpose and sense of direction; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "The family", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: lack of money; decline in living standards; unstable home; provision of basic needs may be difficult; poverty; problems paying rent, bills; strain on family relationships; marital breakdown; may become homeless or in need of emergency accommodation; children can suffer academically in school; may be tendency to turn to drink or drugs; loss of home; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Society", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: burden on state to pay benefits; cycle of poverty continues; increased poverty and crime; increased emigration; creates inequalities within communities; increase in taxes; social problems; a growth in the black economy; increase in family breakdown; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -3959,10 +4272,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C E3 Q3(c)(ii)",
     stem: "The impact of unemployment can be long lasting.",
     questionText: "Name and give details of one voluntary organisation that provides support to the unemployed.",
-    tariffModel: {"kind":"fixed","notation":"Name 4 marks (graded 4:0); 2 details @ 4 marks each (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:0); 2 details × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the voluntary organisation", marks: 4, contextNote: "Name one, 4 marks, graded 4:0 - all or nothing, so give the organisation’s actual name. Seven are accepted, including Men’s Sheds, which students often overlook.", openList: true, group: {"claimMax":1,"perOption":4,"options":["St. Vincent de Paul","Rotary","Lions clubs","Simon community","Focus Ireland","Co-operatives","Men’s Sheds"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Details of the organisation", marks: 8, contextNote: "Two details at 4 marks - two thirds of the marks. The scheme prints one shared list rather than describing each body, so these apply to whichever you named: acting as a pressure group, informing government, funding classes that teach coping skills, and giving people a place to talk about their situation.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Can act as pressure groups","can offer government bodies detailed information and possible solutions","funding of classes to teach people the skills to help them cope with their situation","provide opportunity for people to discuss their situation"]} },
+    { id: "name", kind: "criterion", verbatim: "Voluntary organisation", marks: 4, contextNote: "Name one organisation, graded 4:0. Complete source examples and general support activities: St. Vincent de Paul; Rotary; Lions clubs; Simon community; Focus Ireland; Co-operatives; Men’s Sheds; etc. Can act as pressure groups, can offer government bodies detailed information and possible solutions, funding of classes to teach people the skills to help them cope with their situation, provide opportunity for people to discuss their situation. etc.", permittedMarks: [0,4] },
+    { id: "details", kind: "criterion", verbatim: "details", marks: 8, contextNote: "Two accurate details about the same named organisation, each graded 4:2:0. The general activity list does not imply every organisation provides every listed service.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -3974,11 +4287,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(a)(i) - Core",
     stem: "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
     questionText: "Give an account of the nutritive value and the dietetic value of eggs.",
-    tariffModel: {"kind":"fixed","notation":"5 points @ 4 marks each (graded 4:2:0) - 2 references to nutritive value, 2 references to dietetic value, plus 1 other","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0): 2 nutritive, 2 dietetic, 1 other"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two references to nutritive value", marks: 8, contextNote: "Two points at 4 marks, and the scheme requires them. Nutritive value is what is in the egg - HBV protein at 100% biological value, lecithin as a natural emulsifier, fat-soluble vitamins A, D, E and K. Worth knowing that the white is fat free and the yolk carries the cholesterol.", openList: true, group: {"claimMax":2,"perOption":4,"options":["HBV protein","100% biological value","albumin, ovalbumin and globulin in white","vitellin and livetin in yolk","saturated fat","lecithin is natural emulsifier","yolk contains cholesterol","white is fat free","no carbohydrate","75% water","fat soluble vitamins A, D, E and K","water soluble vitamin B","calcium","phosphorus"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Two references to dietetic value", marks: 8, contextNote: "Two points at 4 marks, also required. Dietetic value is who it suits and why - easy to digest, quick to cook, ideal for growing children, and important in a vegetarian diet. Its weaknesses count too: no vitamin C, and the cholesterol.", openList: true, group: {"claimMax":2,"perOption":4,"options":["versatile","used in sweet and savoury dishes","HBV protein for growth and repair","ideal for children and adolescents","easy to digest","quick and easy to cook","can be eaten on their own","a meal in themselves when served with toast for carbohydrate","contains cholesterol and saturated fat","have no vitamin C","important in the diet of a vegetarian","inexpensive"]} },
-    { id: "r-3", kind: "anyN", verbatim: "One further point, from either value", marks: 4, contextNote: "One further point at 4 marks, from either list - \"2 references to nutritive value, 2 references to dietetic value, plus 1 other\".", openList: true, group: {"claimMax":1,"perOption":4,"options":["HBV protein","100% biological value","albumin, ovalbumin and globulin in white","vitellin and livetin in yolk","saturated fat","lecithin is natural emulsifier","yolk contains cholesterol","white is fat free","no carbohydrate","75% water","fat soluble vitamins A, D, E and K","water soluble vitamin B","calcium","phosphorus"]} },
+    { id: "nutritive", kind: "criterion", verbatim: "Nutritive value", marks: 8, contextNote: "Two nutritive points, each graded 4:2:0. The source’s biological-value figure does not mean eggs are 100% protein. Complete guidance: HBV protein; 100% biological value; albumin, ovalbumin and globulin in white; vitellin and livetin in yolk; saturated fat; lecithin is natural emulsifier; yolk contains cholesterol; white is fat free; no carbohydrate; 75% water; fat soluble vitamins A, D, E and K; water soluble vitamin B; calcium; phosphorus; iron and zinc; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "dietetic", kind: "criterion", verbatim: "Dietetic Value", marks: 8, contextNote: "Two dietetic points, each graded 4:2:0. Complete guidance: versatile; used in sweet and savoury dishes; HBV protein for growth and repair; ideal for children and adolescents; easy to digest; quick and easy to cook; can be eaten on their own; a meal in themselves when served with toast for carbohydrate; contains cholesterol and saturated fat; have no vitamin C; important in the diet of a vegetarian; inexpensive; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "other", kind: "criterion", verbatim: "other", marks: 4, contextNote: "One further distinct point under either heading, graded 4:2:0. Use the complete guidance above.", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -3989,11 +4302,11 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sc-q4aii", topicId: "home-economics-0-9", conceptId: "using-eggs-in-the-diet-and-effects-of-heat",
     section: "C", questionRef: "2021 OL Section C Q4(a)(ii) - Core",
     stem: "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
-    questionText: "Outline different ways of including eggs in the diet, and the effects of heat on eggs.",
-    tariffModel: {"kind":"fixed","notation":"ways 3 @ 3 marks each; effects 3 @ 3 marks each (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    questionText: "Outline:\n• different ways of including eggs in the diet\n• the effects of heat on eggs.",
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 3 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Ways of including eggs in the diet", marks: 9, contextNote: "Three ways at 3 marks. The scheme gives an example with every point, so use them - the mark comes from the dish, not the category. Work through the day: scrambled at breakfast, quiche at lunch, scotch eggs at dinner, meringue for dessert.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Eating on their own e.g. scrambled, fried, boiled, poached","sauces e.g. mayonnaise, hollandaise","breakfast e.g. French toast, pancakes","lunch e.g. Quiche Lorraine, salads, frittata, omelettes, egg sandwich","dinner e.g. fish cakes, scotch eggs, Caesar salad","baked products e.g. scones, sponge cake","desserts e.g. custards, meringue, rice pudding","garnishing salads"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Effects of heat on eggs", marks: 9, contextNote: "Three effects at 3 marks. Protein coagulating so the egg sets is the central one. The two that show real knowledge are curdling, and the green-grey iron/sulphur ring around the yolk of an overboiled egg.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Protein coagulates causing eggs to solidify","bacteria are destroyed","loss of vitamin B","colour change","curdling","overcooking makes them tough and difficult to digest","overcooking boiled eggs causes iron/sulphur ring around the yolk"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Ways of including eggs", marks: 9, contextNote: "3 points under this required heading, each graded 3:2:0. Complete guidance: Eating on their own e.g. scrambled, fried, boiled, poached; sauces e.g. mayonnaise, hollandaise; breakfast e.g. French toast, pancakes; lunch e.g. Quiche Lorraine, salads, frittata, omelettes, egg sandwich; dinner e.g. fish cakes, scotch eggs, Caesar salad; baked products e.g. scones, sponge cake; desserts e.g. custards, meringue, rice pudding; garnishing salads; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Effects of heat", marks: 9, contextNote: "3 points under this required heading, each graded 3:2:0. Complete guidance: Protein coagulates causing eggs to solidify; bacteria are destroyed; loss of vitamin B; colour change; curdling; overcooking makes them tough and difficult to digest; overcooking boiled eggs causes iron/sulphur ring around the yolk; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -4005,9 +4318,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(a)(iii) - Core",
     stem: "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
     questionText: "Give three reasons for the growing popularity of goods supplied by small Irish food producers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 reasons @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reasons for the popularity of small Irish food producers", marks: 12, contextNote: "Three reasons at 4 marks, graded 4:2:0. The scheme is short - quality and taste, organic production, local employment, and people willing to pay more for better. Say why each one draws the shopper in.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Foods healthier, more nutritious, and tastier","organic foods","provide local employment","people willing to pay more for better quality","foods produced locally"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Local origin or small scale does not guarantee better nutrition; these are perceived qualities/examples in the historical scheme. Foods healthier, more nutritious, and tastier; organic foods; provide local employment; people willing to pay more for better quality; foods produced locally; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -4019,11 +4332,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(b)(i) - Core",
     stem: "‘Consumers want to hear about discounts and sales, not just products.’ (www.retail-week.com)",
     questionText: "Discuss how the following might affect consumers’ decision making when shopping: household income; discount offers; shopper loyalty schemes.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Household income", marks: 5, contextNote: "One point, 5 marks. When money is tight the order changes - needs before luxuries, and value for money becomes the deciding factor rather than preference.", openList: true, group: {"claimMax":1,"perOption":5,"options":["amount of money available for spending","when disposable income is limited consumers must ensure needs are met before luxuries are purchased","try to get good value for money"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Discount offers", marks: 5, contextNote: "One point, 5 marks. The scheme is blunt about it: offers create the impression of a bargain and push impulse buying, so people end up spending more, not less.", openList: true, group: {"claimMax":1,"perOption":5,"options":["persuade the consumer to impulse buy","special offers give the impression of extra bargains","encourages spending more money"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Shopper loyalty schemes", marks: 5, contextNote: "One point, 5 marks, and the longest list. Points and perks build an emotional tie to one shop, which is exactly the point - a loyal shopper stops comparing prices elsewhere.", openList: true, group: {"claimMax":1,"perOption":5,"options":["offer consumers perks and rewards for their continued shopping","discounts on future purchases","encourage consumer loyalty to the one supermarket","build an emotional connection to a particular shop","build on loyalty to a particular brand","loyalty cards offer discounts, invitation to sale preview","less chance of shopping around for best value for money"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Household income", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete guidance: amount of money available for spending; when disposable income is limited consumers must ensure needs are met before luxuries are purchased; try to get good value for money; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Discount offers", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete guidance: persuade the consumer to impulse buy; special offers give the impression of extra bargains; encourages spending more money; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Shopper loyalty schemes", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete guidance: offer consumers perks and rewards for their continued shopping; discounts on future purchases; encourage consumer loyalty to the one supermarket; build an emotional connection to a particular shop; build on loyalty to a particular brand; loyalty cards offer discounts, invitation to sale preview; less chance of shopping around for best value for money; etc.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -4035,11 +4348,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(b)(ii) - Core",
     stem: "‘Consumers want to hear about discounts and sales, not just products.’ (www.retail-week.com)",
     questionText: "State the advantages and the disadvantages of online shopping.",
-    tariffModel: {"kind":"fixed","notation":"3 points @ 5 marks each (graded 5:3:0) - 1 advantage, 1 disadvantage, plus 1 other","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"1 advantage + 1 disadvantage + 1 other, each 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One advantage of online shopping", marks: 5, contextNote: "One advantage at 5 marks, and the scheme requires it. Convenience is the heart of it - no need to leave home, no opening hours, and you can compare across sites and read reviews before buying.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Do not have to leave home","goods delivered by post, courier","variety of websites","easy to search different websites","more convenient","next day delivery","may be cheaper","can shop around various websites","not restricted by opening hours, goods may be purchased anytime","order may be tracked","can read reviews of products"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One disadvantage of online shopping", marks: 5, contextNote: "One disadvantage at 5 marks, also required. Not being able to touch or try the goods is the main one, along with the risks - fraud, sites that are not legitimate, and the cost and hassle of returning things.", openList: true, group: {"claimMax":1,"perOption":5,"options":["delay in delivery","lack of touch and feel of merchandise","lack of interactivity with shop assistant","fraud","unable to bargain down the price","not always knowing if the site is legitimate","problems with refunds","cost of returning products"]} },
-    { id: "r-3", kind: "anyN", verbatim: "One further point, from either", marks: 5, contextNote: "One further point at 5 marks, from either side - \"1 advantage, 1 disadvantage, plus 1 other\".", openList: true, group: {"claimMax":1,"perOption":5,"options":["Do not have to leave home","goods delivered by post, courier","variety of websites","easy to search different websites","more convenient","next day delivery","may be cheaper","can shop around various websites","not restricted by opening hours, goods may be purchased anytime","order may be tracked","can read reviews of products","delay in delivery","lack of touch and feel of merchandise","lack of interactivity with shop assistant"]} },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 5, contextNote: "One advantage, graded 5:3:0. Do not have to leave home; goods delivered by post, courier; variety of websites; easy to search different websites; more convenient; next day delivery; may be cheaper; can shop around various websites; not restricted by opening hours, goods may be purchased anytime; order may be tracked; can read reviews of products; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 5, contextNote: "One disadvantage, graded 5:3:0. delay in delivery; lack of touch and feel of merchandise; lack of interactivity with shop assistant; fraud; unable to bargain down the price; not always knowing if the site is legitimate; problems with refunds; cost of returning products; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other", marks: 5, contextNote: "One further distinct advantage or disadvantage, graded 5:3:0. Use all guidance above.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -4051,9 +4364,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(c)(i) - Core",
     stem: "The goal of conflict resolution is not to decide who is right or wrong.",
     questionText: "Identify three factors which may influence an adolescent’s/teenager’s behaviour.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors influencing an adolescent’s behaviour", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. Peer and exam pressure are the two students name first; the ones that develop best are about the home - parents as role models, and whether the relationship is open enough for a teenager to say what they feel.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Peer pressure","exam pressure","family support","parents and older children are role models","school environment","area they live in","open teenager-parent relationship provides safe environment for teenager to express feelings","teenagers need for privacy and space respected by parents"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Peer pressure; exam pressure; family support; parents and older children are role models; school environment; area they live in; open teenager-parent relationship provides safe environment for teenager to express feelings; teenagers need for privacy and space respected by parents; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -4065,9 +4378,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(c)(ii) - Core",
     stem: "The goal of conflict resolution is not to decide who is right or wrong.",
     questionText: "Discuss three aspects of adolescent/teenager’s behaviour that may lead to conflict in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 aspects @ 5 marks each (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Aspects of adolescent behaviour leading to conflict", marks: 15, contextNote: "Three aspects at 5 marks, graded 5:3:0. Say where the friction comes from, not just the behaviour - questioning rules is a teenager pushing for independence, and rows about study or an untidy room are usually about who gets to decide.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Adolescent question rules and authority","lack of freedom","peer relationships","part time jobs","lack of study or doing homework for school","decisions on future careers","untidy rooms","lack of understanding of older family members"]} },
+    { id: "points", kind: "criterion", verbatim: "aspects", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Adolescent question rules and authority; lack of freedom; peer relationships; part time jobs; lack of study or doing homework for school; decisions on future careers; untidy rooms; lack of understanding of older family members; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -6699,11 +7012,22 @@ export const CARDS: SecCard[] = [
     id: "he-2021-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "evaluating-occasion-wear",
     section: "C", questionRef: "2021 OL Section C E2 Q2(a)(i)",
     stem: "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)",
-    questionText: "Comment on the suitability of the occasion wear shown above. Refer to: shape; comfort; design features.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks each (graded 3:2:0) x 3","answer":6,"ofParts":14,"perPart":3}, totalMarks: 18,
+    questionText: "Comment on the suitability of the occasion wear shown above.\nRefer to:\n(a) shape    (b) comfort    (c) design features.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Suitability of the occasion wear shown", marks: 18, contextNote: "Held - see heldReason.", openList: true, group: {"claimMax":6,"perOption":3,"options":["shape: strong ballerina line","low neckline is feminine","fitted bodice gives a slimming effect","folded skirt adds width","short underskirt adds height to the outfit","comfort: flowing fabric is comfortable to wear","skirt allows ease of movement","design features: wide hem line","embroidery adds interest","contrasting colours","shape: slim leg trousers","short length in the jacket gives height to the man","short sleeves in jacket give length to arms","comfort: breathable cotton shirt"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Shape", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: strong ballerina line; low neckline is feminine; fitted bodice gives a slimming effect; folded skirt adds width; short underskirt adds height to the outfit; etc. Suit: slim leg trousers; short length in the jacket gives height to the man; short sleeves in jacket give length to arms; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Comfort", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: flowing fabric is comfortable to wear; skirt allows ease of movement; etc. Suit: breathable cotton shirt; fitted jacket and trousers allow for ease of movement in bending, stretching while maintaining shape; flat shoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Design features", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: wide hem line; embroidery adds interest; contrasting colours; etc. Suit: single button detail on jacket; contrasting handkerchief in jacket pocket; tie contrasts in colour to handkerchief; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sc-q2a-occasion-wear",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q2a-occasion-wear.png",
+          "srcHash": "edf97b716532640cda8262558c00a66a",
+          "alt": "The two original occasion-wear outfits: a red lace dress with fitted bodice and flared skirt, and a grey suit with shirt, tie and pocket square. Original Pinterest and The Black Tux captions retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "home-economics-2021-ol-paper-p06-i0",
           "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p06-i0.png",
@@ -8273,5 +8597,410 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original examination page to review this task in context."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sa-q3-methods", topicId: "home-economics-0-9", conceptId: "he-meat-toughness-and-tenderising-methods",
+    section: "A", questionRef: "2021 OL Section A Q3 — methods",
+    questionText: "Name two methods of tenderising meat.",
+    tariffModel: {"kind":"fixed","notation":"2 methods × 2 (2:0)"}, totalMarks: 4,
+    rows: [
+    { id: "methods", kind: "criterion", verbatim: "methods of tenderising meat", marks: 4, contextNote: "Two different methods, each graded 2:0. Complete published examples: (i) Meat tenderisers, proteolytic enzymes e.g. papain; mechanical breakdown e.g. meat hammer, pierce with knives/needles; slow moist method of cooking e.g. stewing; (ii) Mincing; marinating e.g. in oil, wine, lemon juice, vinegar, buttermilk, yoghurt before cooking; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sa-q10-payment", topicId: "home-economics-1-1", conceptId: "private-health-insurance-payment",
+    section: "A", questionRef: "2021 OL Section A Q10 — payment",
+    questionText: "Suggest one method of payment that could be used to purchase private health insurance.",
+    tariffModel: {"kind":"fixed","notation":"1 method × 2 (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "payment", kind: "criterion", verbatim: "Method of payment", marks: 2, contextNote: "One method, graded 2:1:0. Complete published examples: Credit card; debit card; cheque; direct debit; deducted from salary; cash; etc.", permittedMarks: [0,1,2] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sa-q11-disposal", topicId: "home-economics-1-3", conceptId: "choosing-and-disposing-of-electrical-appliances-disposal",
+    section: "A", questionRef: "2021 OL Section A Q11 — disposal",
+    questionText: "How can electrical appliances be disposed of to avoid damage to the environment?",
+    tariffModel: {"kind":"fixed","notation":"1 point × 2 (2:0)"}, totalMarks: 2,
+    rows: [
+    { id: "disposal", kind: "criterion", verbatim: "point", marks: 2, contextNote: "One point, graded 2:0. Complete guidance: Bring to local recycling centre/civic amenity site; collected by shop on delivery of new appliance; etc.", permittedMarks: [0,2] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sa-q14", topicId: "home-economics-1-4", conceptId: "fabric-care-symbols",
+    section: "A", questionRef: "2021 OL Section A Q14",
+    questionText: "What information does each of the following fabric care symbols convey to the consumer?",
+    tariffModel: {"kind":"fixed","notation":"2 symbols × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "top", kind: "criterion", verbatim: "Hand wash", marks: 3, contextNote: "Top symbol, graded 3:2:1:0. Complete guidance: Hand wash only; wash by hand; used for wool/delicate fabrics; etc.", permittedMarks: [0,1,2,3] },
+    { id: "bottom", kind: "criterion", verbatim: "Medium iron", marks: 3, contextNote: "Bottom symbol, graded 3:2:1:0. Complete guidance: Medium iron; warm iron; temperature for ironing wool/polyester mixtures; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sa-q14-symbols",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sa-q14-symbols.png",
+          "srcHash": "ec162deae90aadb563c55c478794b9cb",
+          "alt": "Two original care symbols, top to bottom: a hand in a wash tub; an iron with two dots. Original Woolmark and Omo source captions retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sb-q1a", topicId: "home-economics-0-1", conceptId: "yoghurt-comparison",
+    section: "B", questionRef: "2021 OL Section B Q1(a)",
+    stem: "‘More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.’ (www.irish examiner.com) The table below shows nutritional information per 100 g, for full fat, low fat and fat free natural yoghurt.",
+    questionText: "Using the information presented in the table, state which of the yoghurts you would recommend for an obese person. Give four reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:0); 4 reasons × 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options.", permittedMarks: [0,4] },
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 16, contextNote: "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: highest kcal content; highest saturated fat content; fat for heat and energy; fat is easy to digest; lowest CHO content; low sugar content; lowest fibre content; highest HBV protein for growth and repair; low salt content; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "full-fat",
+                "label": "Full fat natural yoghurt",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 16,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12,
+                                  14,
+                                  16
+                            ],
+                            "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: highest kcal content; highest saturated fat content; fat for heat and energy; fat is easy to digest; lowest CHO content; low sugar content; lowest fibre content; highest HBV protein for growth and repair; low salt content; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "low-fat",
+                "label": "Low fat natural yoghurt",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 16,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12,
+                                  14,
+                                  16
+                            ],
+                            "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: good kcal content; low saturated fat content; fat is easy to digest; average CHO content; average sugar content; little fibre content; HBV protein for growth and repair; low salt content; suitable for a low-calorie diet; useful substitute for cream; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "fat-free",
+                "label": "Fat free natural yoghurt",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 16,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12,
+                                  14,
+                                  16
+                            ],
+                            "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: lowest kcal content; lowest saturated fat content; fat is easy to digest; highest CHO content; highest sugar content; little fibre content; HBV protein for growth and repair; lowest salt content; suitable for a low-calorie diet; useful substitute for cream; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2021-ol-sb-q1a-yoghurt",
+          "src": "/exam-figures/home-economics/home-economics-2021-ol-sb-q1a-yoghurt.png",
+          "srcHash": "d83578a3bb3e4fd3039153d76fee7f1a",
+          "alt": "Original nutrition table per 100 g: full fat / low fat / fat free natural yoghurt. Energy: 133 / 65 / 54 kcal; fat: 9.4 / 1.8 / 0.4 g; saturates: 5.5 / 1.1 / 0.2 g; carbohydrate: 5.9 / 6.9 / 7.6 g; sugars: 3.2 / 6.8 / 7.3 g; fibre: 0.3 / 0.5 / 0.5 g; protein: 6.0 / 4.8 / 4.8 g; salt: 0.20 / 0.20 / 0.19 g.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "pregnancy-day-menu",
+    section: "B", questionRef: "2021 OL Section B Q2(b)",
+    stem: "Healthy eating during pregnancy is critical to the baby’s growth and development.",
+    questionText: "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a pregnant woman.",
+    tariffModel: {"kind":"fixed","notation":"3 meals × (2 courses × 2 + beverage 2), all 2:1:0"}, totalMarks: 18,
+    rows: [
+    { id: "meal-1", kind: "criterion", verbatim: "Breakfast", marks: 6, contextNote: "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Breakfast Orange juice; Porridge; Pancakes with blueberry sauce; Tea/coffee/water", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"First course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Second course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Beverage","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "meal-2", kind: "criterion", verbatim: "Lunch", marks: 6, contextNote: "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Lunch Vegetable soup with wholemeal bread; Strawberry yoghurt; Apple; Glass of milk", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"First course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Second course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Beverage","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "meal-3", kind: "criterion", verbatim: "Dinner", marks: 6, contextNote: "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Dinner Carrot and lentil soup with brown bread; Chicken and broccoli bake with mashed potato; Fresh fruit salad; Glass of milk/water", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"First course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Second course","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Beverage","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sb-q3a", topicId: "home-economics-0-9", conceptId: "vegetable-nutritive-dietetic-value",
+    section: "B", questionRef: "2021 OL Section B Q3(a)",
+    stem: "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+    questionText: "Give an account of (i) the nutritive value and (ii) the dietetic value of vegetables.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0): 2 nutritive, 2 dietetic, 1 other"}, totalMarks: 20,
+    rows: [
+    { id: "nutritive", kind: "criterion", verbatim: "Nutritive", marks: 8, contextNote: "Two nutritive points, each graded 4:2:0. Complete guidance: LBV protein, soya beans provide HBV protein; low in fat – polyunsaturated fat in olives and avocados; starch in pulse, root and tuber vegetables; fibre in pulse, root and tuber vegetables; sugar in onions and carrots; vitamin C, B group, vitamin A and pro vitamin A are found in vegetables; iron, calcium in dark green vegetables; high water content; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "dietetic", kind: "criterion", verbatim: "Dietetic", marks: 8, contextNote: "Two dietetic points, each graded 4:2:0. Food properties vary; the printed stem’s local-origin claim is not a guarantee of greater nutrition. Complete guidance: useful in vegetarian diets; pulse vegetables for vegans; good source of dietary fibre which may help in the prevention of bowel disorders; gives a feeling of fullness; useful in low- cholesterol/low-calorie diets; provide antioxidants to lower risk of CHD, stroke and some cancers; assists the immune system; readily available all year around; versatile; economical when in-season; lack vitamin D and B12; are on bottom shelf of food pyramid; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "other", kind: "criterion", verbatim: "other", marks: 4, contextNote: "One further distinct point under either heading, graded 4:2:0. Use the full guidance above without counting a point twice.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "he-2021-ol-sb-q3b-storage", topicId: "home-economics-0-9", conceptId: "vegetable-storage",
+    section: "B", questionRef: "2021 OL Section B Q3(b)(ii)",
+    stem: "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+    questionText: "Outline the guidelines for storing vegetables.",
+    tariffModel: {"kind":"fixed","notation":"3 guidelines × 3 (3:2:0)"}, totalMarks: 9,
+    rows: [
+    { id: "storage", kind: "criterion", verbatim: "guidelines", marks: 9, contextNote: "Three guidelines, each graded 3:2:0. Complete guidance: remove from plastic packaging; remove any damaged vegetables; store on a vegetable rack; store potatoes in a dark, dry, well-ventilated place; salad ingredients in a fridge vegetable drawer; avoid storing for prolonged periods; use up quickly after purchase; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
   } as SecCard,
 ];

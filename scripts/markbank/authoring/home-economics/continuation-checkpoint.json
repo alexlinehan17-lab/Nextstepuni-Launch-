@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 696,
+    "cards": 704,
     "leaves": 1342,
-    "covered": 673,
+    "covered": 677,
     "excluded": 0,
-    "open": 669,
-    "coveragePct": 50.1,
+    "open": 665,
+    "coveragePct": 50.4,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -795,14 +795,9 @@
         "level": "ol",
         "paper": null,
         "leaves": 58,
-        "covered": 54,
+        "covered": 58,
         "excluded": 0,
-        "open": [
-          "Section A Q14",
-          "Section B Q1(a)",
-          "Section B Q2(b)",
-          "Section B Q3(a)"
-        ]
+        "open": []
       },
       {
         "year": 2022,
@@ -1050,10 +1045,10 @@
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
-    "2021 Higher main source review complete: all 62 tasks, 749 offered practice marks, 92 source pages and 23 final paper/scheme anchor pairs reviewed. Continue 2021 Ordinary (all 84 source pages now swept), remaining 2024–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
+    "2021 Higher and Ordinary main source reviews complete: 62/61 tasks, each 749 offered practice marks; every source page and 23 final paper/scheme anchor pairs per sitting reviewed. Continue 2024 Higher (source sweep started), then remaining 2024–2025 main gaps, 2026 and 2010–2020; Irish editions deferred.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
   ],
-  "coveragePolicy": "The raw census is diagnostic only; its 669 open candidates and 37 flags are not an independent complete count of outstanding exam tasks. The reviewed 2021 Higher main sitting has 58/58 raw asks covered; independent source review establishes 62 tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
+  "coveragePolicy": "The raw census is diagnostic only; its 665 open candidates and 37 flags are not an independent complete count of outstanding tasks. Both reviewed 2021 English sittings have 58/58 raw asks covered; independent source review establishes 62 Higher / 61 Ordinary tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1144,24 +1139,29 @@
       "workCommit": "2d6c0c30b",
       "launchCommit": "30268f46d",
       "scope": "2022 Higher main: all 62 tasks; four independent additions, preserved flooring-profile progress alias, three original figures, all 23 Atlas groups."
+    },
+    {
+      "workCommit": "a9953e3fd",
+      "launchCommit": "7ce8b7129",
+      "scope": "2021 Higher main: all 62 tasks, six additions, all 92 source pages, both original figures and all 23 Atlas groups."
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2021 Higher main: all 62 tasks; six additions, full published guidance/partial credit, two original figures, all canonical Atlas mappings",
-    "runtimeCards": 696,
+    "scope": "2021 Ordinary main: all 61 tasks; eight additions, all published headings and partial credit, four original figures and all canonical Atlas mappings",
+    "runtimeCards": 704,
     "higher": 416,
-    "ordinary": 280,
-    "sourceReview": "2021-hl-main-review.json",
+    "ordinary": 288,
+    "sourceReview": "2021-ol-main-review.json",
     "validation": {
-      "requiredVitest": "310 tests across 9 suites passed; after the final UHT clarification, all 239 tests in the three required suites and the 2021 Higher suite passed again.",
-      "atlas": "2 Home Economics registry tests passed; all 62 cards checked against canonical Atlas topics.",
-      "python": "25 source/census tests passed",
+      "requiredVitest": "317 tests across 10 suites passed",
+      "atlas": "2 Home Economics registry tests passed; all 61 cards checked against canonical Atlas topics.",
+      "python": "29 Home Economics census/reference tests passed",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
-      "productionBuild": "passed on retry; initial attempt exhausted disk space while copying static assets.",
-      "regeneration": "31 modified/new task files regenerated identically except the generic reference-builder generatedAt; all other JSON fields identical.",
+      "productionBuild": "passed",
+      "regeneration": "32 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
       "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "All 23 final paper/scheme question groups and both original figures visually checked."
+      "sourceCropReview": "All 23 final paper/scheme question groups and four original figures visually checked."
     }
   }
 }

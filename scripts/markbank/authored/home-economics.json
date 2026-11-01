@@ -53542,5 +53542,888 @@
    }
   ],
   "notes": "Independent second printed prompt with a separate 8-mark tariff; water/home context restored to the standalone wording."
+ },
+ {
+  "id": "he-2021-ol-sa-q3-methods",
+  "topicId": "home-economics-0-9",
+  "conceptId": "he-meat-toughness-and-tenderising-methods",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q3 — methods",
+  "questionText": "Name two methods of tenderising meat.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 methods × 2 (2:0)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "methods",
+    "kind": "criterion",
+    "verbatim": "methods of tenderising meat",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two different methods, each graded 2:0. Complete published examples: (i) Meat tenderisers, proteolytic enzymes e.g. papain; mechanical breakdown e.g. meat hammer, pierce with knives/needles; slow moist method of cooking e.g. stewing; (ii) Mincing; marinating e.g. in oil, wine, lemon juice, vinegar, buttermilk, yoghurt before cooking; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent printed prompt with its own published tariff. See he_review_2021_ol_main.py."
+ },
+ {
+  "id": "he-2021-ol-sa-q10-payment",
+  "topicId": "home-economics-1-1",
+  "conceptId": "private-health-insurance-payment",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q10 — payment",
+  "questionText": "Suggest one method of payment that could be used to purchase private health insurance.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 method × 2 (2:1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "payment",
+    "kind": "criterion",
+    "verbatim": "Method of payment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "One method, graded 2:1:0. Complete published examples: Credit card; debit card; cheque; direct debit; deducted from salary; cash; etc."
+   }
+  ],
+  "notes": "Independent printed prompt with its own published tariff. See he_review_2021_ol_main.py."
+ },
+ {
+  "id": "he-2021-ol-sa-q11-disposal",
+  "topicId": "home-economics-1-3",
+  "conceptId": "choosing-and-disposing-of-electrical-appliances-disposal",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q11 — disposal",
+  "questionText": "How can electrical appliances be disposed of to avoid damage to the environment?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "disposal",
+    "kind": "criterion",
+    "verbatim": "point",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One point, graded 2:0. Complete guidance: Bring to local recycling centre/civic amenity site; collected by shop on delivery of new appliance; etc."
+   }
+  ],
+  "notes": "Independent printed prompt with its own published tariff. See he_review_2021_ol_main.py."
+ },
+ {
+  "id": "he-2021-ol-sa-q14",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "fabric-care-symbols",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "A",
+  "questionRef": "2021 OL Section A Q14",
+  "questionText": "What information does each of the following fabric care symbols convey to the consumer?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 symbols × 3 (3:2:1:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "top",
+    "kind": "criterion",
+    "verbatim": "Hand wash",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Top symbol, graded 3:2:1:0. Complete guidance: Hand wash only; wash by hand; used for wool/delicate fabrics; etc."
+   },
+   {
+    "id": "bottom",
+    "kind": "criterion",
+    "verbatim": "Medium iron",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Bottom symbol, graded 3:2:1:0. Complete guidance: Medium iron; warm iron; temperature for ironing wool/polyester mixtures; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Source-pinned 2021 Ordinary paper and full scheme review; see he_review_2021_ol_main.py.",
+  "questionFigureKey": "home-economics-2021-ol-sa-q14-symbols",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2021-ol-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "yoghurt-comparison",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "questionRef": "2021 OL Section B Q1(a)",
+  "questionText": "Using the information presented in the table, state which of the yoghurts you would recommend for an obese person. Give four reasons for your choice.",
+  "stem": "‘More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.’ (www.irish examiner.com) The table below shows nutritional information per 100 g, for full fat, low fat and fat free natural yoghurt.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 (4:0); 4 reasons × 4 (4:2:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+   },
+   {
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: highest kcal content; highest saturated fat content; fat for heat and energy; fat is easy to digest; lowest CHO content; low sugar content; lowest fibre content; highest HBV protein for growth and repair; low salt content; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Source-pinned 2021 Ordinary paper and full scheme review; see he_review_2021_ol_main.py.",
+  "answerVariants": [
+   {
+    "id": "full-fat",
+    "label": "Full fat natural yoghurt",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 16,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: highest kcal content; highest saturated fat content; fat for heat and energy; fat is easy to digest; lowest CHO content; low sugar content; lowest fibre content; highest HBV protein for growth and repair; low salt content; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "low-fat",
+    "label": "Low fat natural yoghurt",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 16,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: good kcal content; low saturated fat content; fat is easy to digest; average CHO content; average sugar content; little fibre content; HBV protein for growth and repair; low salt content; suitable for a low-calorie diet; useful substitute for cream; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fat-free",
+    "label": "Fat free natural yoghurt",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Name the chosen yoghurt, graded 4:0. The scheme provides guidance for each of the three printed options."
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 16,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "contextNote": "Four reasons tied to the same choice and the table, each graded 4:2:0. Interpret these historical food-comparison points in the printed brief; a listed nutrient is not automatically a reason to recommend the option. Complete scheme guidance: lowest kcal content; lowest saturated fat content; fat is easy to digest; highest CHO content; highest sugar content; little fibre content; HBV protein for growth and repair; lowest salt content; suitable for a low-calorie diet; useful substitute for cream; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2021-ol-sb-q1a-yoghurt",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2021-ol-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "pregnancy-day-menu",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "questionRef": "2021 OL Section B Q2(b)",
+  "questionText": "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a pregnant woman.",
+  "stem": "Healthy eating during pregnancy is critical to the baby’s growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 meals × (2 courses × 2 + beverage 2), all 2:1:0"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "meal-1",
+    "kind": "criterion",
+    "verbatim": "Breakfast",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Breakfast Orange juice; Porridge; Pancakes with blueberry sauce; Tea/coffee/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meal-2",
+    "kind": "criterion",
+    "verbatim": "Lunch",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Lunch Vegetable soup with wholemeal bread; Strawberry yoghurt; Apple; Glass of milk",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meal-3",
+    "kind": "criterion",
+    "verbatim": "Dinner",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Supply two food courses and one beverage for this meal, each graded 2:1:0, appropriate to the pregnancy brief. The sample is guidance; no extra course or beverage earns a fourth slot. Current clarification: caffeine is limited to 200 mg per day. Complete published sample: Dinner Carrot and lentil soup with brown bread; Chicken and broccoli bake with mashed potato; Fresh fruit salad; Glass of milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "First course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Second course",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Beverage",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Source-pinned 2021 Ordinary paper and full scheme review; see he_review_2021_ol_main.py."
+ },
+ {
+  "id": "he-2021-ol-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "vegetable-nutritive-dietetic-value",
+  "level": "ordinary",
+  "year": 2021,
+  "section": "B",
+  "questionRef": "2021 OL Section B Q3(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) the dietetic value of vegetables.",
+  "stem": "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points × 4 (4:2:0): 2 nutritive, 2 dietetic, 1 other"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "nutritive",
+    "kind": "criterion",
+    "verbatim": "Nutritive",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Two nutritive points, each graded 4:2:0. Complete guidance: LBV protein, soya beans provide HBV protein; low in fat – polyunsaturated fat in olives and avocados; starch in pulse, root and tuber vegetables; fibre in pulse, root and tuber vegetables; sugar in onions and carrots; vitamin C, B group, vitamin A and pro vitamin A are found in vegetables; iron, calcium in dark green vegetables; high water content; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dietetic",
+    "kind": "criterion",
+    "verbatim": "Dietetic",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Two dietetic points, each graded 4:2:0. Food properties vary; the printed stem’s local-origin claim is not a guarantee of greater nutrition. Complete guidance: useful in vegetarian diets; pulse vegetables for vegans; good source of dietary fibre which may help in the prevention of bowel disorders; gives a feeling of fullness; useful in low- cholesterol/low-calorie diets; provide antioxidants to lower risk of CHD, stroke and some cancers; assists the immune system; readily available all year around; versatile; economical when in-season; lack vitamin D and B12; are on bottom shelf of food pyramid; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "One further distinct point under either heading, graded 4:2:0. Use the full guidance above without counting a point twice."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "notes": "Source-pinned 2021 Ordinary paper and full scheme review; see he_review_2021_ol_main.py."
+ },
+ {
+  "id": "he-2021-ol-sb-q3b-storage",
+  "topicId": "home-economics-0-9",
+  "conceptId": "vegetable-storage",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q3(b)(ii)",
+  "questionText": "Outline the guidelines for storing vegetables.",
+  "stem": "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 guidelines × 3 (3:2:0)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "storage",
+    "kind": "criterion",
+    "verbatim": "guidelines",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Three guidelines, each graded 3:2:0. Complete guidance: remove from plastic packaging; remove any damaged vegetables; store on a vegetable rack; store potatoes in a dark, dry, well-ventilated place; salad ingredients in a fridge vegetable drawer; avoid storing for prolonged periods; use up quickly after purchase; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent storage prompt and nine-mark tariff; cooking remains on the original Q3b ID."
  }
 ]

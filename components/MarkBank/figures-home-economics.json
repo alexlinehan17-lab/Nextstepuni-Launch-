@@ -133,5 +133,33 @@
     "alt": "Original four athleisure outfits: dark jacket and light trousers; green sweatshirt and shorts; black outfit and white trainers; white top, scarf and black leggings. The complete three-photo montage and Pinterest source caption are visible.",
     "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [169, 157, 414, 313], rendered at 2×; visually checked. SHA256 d2bcadde4d98f244fb25af1744c0bd3384817e1ee9694f0dce286dfae43c91c7."
+  },
+  "home-economics-2021-ol-sa-q14-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sa-q14-symbols.png",
+    "md5": "ec162deae90aadb563c55c478794b9cb",
+    "alt": "Two original care symbols, top to bottom: a hand in a wash tub; an iron with two dots. Original Woolmark and Omo source captions retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [72, 110, 185, 380], rendered at 2×; visually checked. SHA256 7b76ffc580bb5a2c7c7e8c82c619cb8090a49e1d00206dac9b93513d18d1929d."
+  },
+  "home-economics-2021-ol-sb-q1a-yoghurt": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sb-q1a-yoghurt.png",
+    "md5": "d83578a3bb3e4fd3039153d76fee7f1a",
+    "alt": "Original nutrition table per 100 g: full fat / low fat / fat free natural yoghurt. Energy: 133 / 65 / 54 kcal; fat: 9.4 / 1.8 / 0.4 g; saturates: 5.5 / 1.1 / 0.2 g; carbohydrate: 5.9 / 6.9 / 7.6 g; sugars: 3.2 / 6.8 / 7.3 g; fibre: 0.3 / 0.5 / 0.5 g; protein: 6.0 / 4.8 / 4.8 g; salt: 0.20 / 0.20 / 0.19 g.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [82, 247, 535, 448], rendered at 2×; visually checked. SHA256 ff4896f57205f1504b1a8b95db16d374de2260435e5f3a9a6e323c2715354a10."
+  },
+  "home-economics-2021-ol-sc-q1a-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q1a-heat-loss.png",
+    "md5": "ab3de37dd6f573f2a3bfea6c48f43d63",
+    "alt": "Original heat-loss diagram for a family home: roof 25%, walls 35%, windows 15%, doors 10%, floor 15%. Original ORS caption retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [128, 214, 428, 360], rendered at 2×; visually checked. SHA256 8fc9b53fecb8121c0305f10120c69356798051eb2248aed3f32433ca78800ea8."
+  },
+  "home-economics-2021-ol-sc-q2a-occasion-wear": {
+    "src": "/exam-figures/home-economics/home-economics-2021-ol-sc-q2a-occasion-wear.png",
+    "md5": "edf97b716532640cda8262558c00a66a",
+    "alt": "The two original occasion-wear outfits: a red lace dress with fitted bodice and flared skirt, and a grey suit with shirt, tie and pocket square. Original Pinterest and The Black Tux captions retained.",
+    "attribution": "SEC Home Economics 2021 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [160, 130, 395, 332], rendered at 2×; visually checked. SHA256 bf829a5626fa7b6c2725c6fb583b0b6dd46f2306f81b7a5dda1c536a76c41ab2."
   }
 }

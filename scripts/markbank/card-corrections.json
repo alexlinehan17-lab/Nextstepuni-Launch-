@@ -30869,6 +30869,3772 @@
     ],
     "notes": "Full source review: he_review_2021_hl_main_c.py. Historical context is retained; required profile headings stay together."
    }
+  },
+  "he-2021-ol-sa-q1": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "Meat contains high biological value protein — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "Proteins are large molecules made up of smaller units called amino acids — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "Sugar is a source of protein — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nMeat contains high biological value protein\nProteins are large molecules made up of smaller units called amino acids\nSugar is a source of protein"
+   }
+  },
+  "he-2021-ol-sa-q4": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "Peas, beans and lentils are pulse vegetables — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "Fruit and vegetables do not contain fibre — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "Vegetables have a high water content — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nPeas, beans and lentils are pulse vegetables\nFruit and vegetables do not contain fibre\nVegetables have a high water content"
+   }
+  },
+  "he-2021-ol-sa-q6": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "Food is processed to extend its shelf life — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "An example of cross contamination is the transfer of bacteria from raw to cooked food — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "Cooking food at 50°C kills all bacteria — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nFood is processed to extend its shelf life\nAn example of cross contamination is the transfer of bacteria from raw to cooked food\nCooking food at 50°C kills all bacteria"
+   }
+  },
+  "he-2021-ol-sa-q8": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "statement-1",
+      "kind": "criterion",
+      "verbatim": "Periodontal/gum disease affects the tissues surrounding the teeth — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-2",
+      "kind": "criterion",
+      "verbatim": "A lacto-vegetarian does not eat dairy produce — False",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     },
+     {
+      "id": "statement-3",
+      "kind": "criterion",
+      "verbatim": "A high fibre diet reduces the risk of bowel disease — True",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Published answer, graded 2:0; no partial credit."
+     }
+    ],
+    "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nPeriodontal/gum disease affects the tissues surrounding the teeth\nA lacto-vegetarian does not eat dairy produce\nA high fibre diet reduces the risk of bowel disease"
+   }
+  },
+  "he-2021-ol-sa-q2": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 statements × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "A deficiency of calcium in the diet can cause osteoporosis.",
+      "marks": 2,
+      "contextNote": "Graded 2:0 — the correct word from the list or nothing; no partial credit for a near miss.",
+      "openList": false
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "Vitamin C assists in iron absorption.",
+      "marks": 2,
+      "contextNote": "Graded 2:0 — the correct word from the list or nothing.",
+      "openList": false
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "Cheese is a good dietary source of calcium.",
+      "marks": 2,
+      "contextNote": "Graded 2:0 — the correct word from the list or nothing.",
+      "openList": false
+     }
+    ],
+    "questionText": "Using the words listed below, complete the following statements in relation to minerals.\n\ncalcium    osteoporosis    iron\n\nA deficiency of calcium in the diet can cause ___________________________.\nVitamin C assists in _______________________ absorption.\nCheese is a good dietary source of ___________________________."
+   }
+  },
+  "he-2021-ol-sa-q3": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 2,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 cause × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "cause",
+      "kind": "criterion",
+      "verbatim": "Cause of toughness",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One cause, graded 2:1:0. Complete historical guidance: Age/older animal is tougher; meat from the active parts of the animal have longer fibres and more connective tissue; animals not rested before slaughter, more glycogen in muscles; after slaughter not hung for required length of time; incorrect method of cooking; cooked too quickly; etc."
+     }
+    ],
+    "questionText": "Outline one cause of toughness in meat.",
+    "questionRef": "2021 OL Section A Q3 — cause"
+   }
+  },
+  "he-2021-ol-sa-q5": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "healthy eating guidelines",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three different points, each graded 2:1:0. Complete guidance: (i) Follow the food pyramid; have well balanced/regular meals; easy to manage portion size; portion size should relate to child’s age/level of activity; (ii) Provide nutritious snacks; increase fibre; reduce sugar intake; reduce salt intake; (iii) Protein needed for growth; carbohydrate/fat for heat and energy; calcium for bones and teeth; drink water/fluids; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sa-q12": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "uses of textiles",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Three different points, each graded 2:1:0. Complete guidance: (i) Insulation e.g. carpets, comfort e.g. cushions; protection e.g. oven gloves; (ii) absorb sound e.g. rugs; absorbency e.g. towels soft furnishings; privacy e.g. blinds (iii) warmth e.g. blankets; decoration e.g. curtains; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sa-q7": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required flours × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "flour-1",
+      "kind": "criterion",
+      "verbatim": "Self-raising flour",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Cakes; biscuits; scones."
+     },
+     {
+      "id": "flour-2",
+      "kind": "criterion",
+      "verbatim": "Wholemeal flour",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Brown bread; brown scones; wholemeal pastry; wholemeal muffins."
+     },
+     {
+      "id": "flour-3",
+      "kind": "criterion",
+      "verbatim": "Plain white flour (cream)",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "One different culinary use for this required flour, graded 2:1:0. Complete cell guidance: Pizza; apple tart; sauces; cupcakes; etc."
+     }
+    ],
+    "questionText": "Listed below are three types of flour. Give one different culinary use of each.\n\nSelf-raising flour\nWholemeal flour\nPlain white flour (cream)"
+   }
+  },
+  "he-2021-ol-sa-q9": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 definitions × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Boiling fruit, vegetables or a mixture of both with sugar, vinegar and spices — Heat treatment",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0 — the right method scores the full 2, anything else nothing."
+     },
+     {
+      "id": "r-2",
+      "kind": "point",
+      "verbatim": "Using very low temperatures which are unsuitable for enzyme activity and microbial growth — Freezing",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0."
+     },
+     {
+      "id": "r-3",
+      "kind": "point",
+      "verbatim": "Preserves food by removing moisture — Dehydration",
+      "marks": 2,
+      "openList": false,
+      "contextNote": "Graded 2:0."
+     }
+    ],
+    "questionText": "Match the method of food preservation with the correct definition.\n\nHeat treatment    Dehydration    Freezing\n\nBoiling fruit, vegetables or a mixture of both with sugar, vinegar and spices\nUsing very low temperatures which are unsuitable for enzyme activity and microbial growth\nPreserves food by removing moisture"
+   }
+  },
+  "he-2021-ol-sa-q10": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 4,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 advantages × 2 (2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Two different advantages, each graded 2:1:0. Historical examination examples; actual cover depends on the policy. Complete guidance: (i) Provides security in the event of illness/injury/accident; peace of mind; covers medical expenses e.g. payment of consultant fees; compensate for income loss; tax relief available; (ii) Quicker access to medical treatments; in-patient treatment in private/ semi-private hospital; covers medical treatment abroad; dental care; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Give two advantages of private health insurance.",
+    "questionRef": "2021 OL Section A Q10 — advantages"
+   }
+  },
+  "he-2021-ol-sa-q11": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 4,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 factors × 2 (2:0)"
+    },
+    "rows": [
+     {
+      "id": "factors",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two factors, each graded 2:0. Complete guidance: (i) Cost e.g. initial/running/servicing/installation; quality; energy efficiency rating; space available; family size/needs; brand; (ii) Design and construction; easy to operate; easy to clean; safety features; guarantee; after sales service; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Outline two factors that should be considered when choosing electrical appliances.",
+    "questionRef": "2021 OL Section A Q11 — choice factors"
+   }
+  },
+  "he-2021-ol-sa-q13": {
+   "reason": "Full 2021 Ordinary A source review: complete prompt, independent task boundaries and exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required terms × 3 (3:2:1:0)"
+    },
+    "rows": [
+     {
+      "id": "term-1",
+      "kind": "criterion",
+      "verbatim": "Essential expenditure",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain this required term, graded 3:2:1:0. Categories depend on household needs; source examples are historical, not a universal classification. Complete wording: spending on basic necessities e.g. food/clothes/warmth; housing e.g. rent/mortgage is both fixed and irregular; insurance; loans; medical bills; household goods; utility bills; car; etc."
+     },
+     {
+      "id": "term-2",
+      "kind": "criterion",
+      "verbatim": "Discretionary expenditure",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Explain this required term, graded 3:2:1:0. Categories depend on household needs; source examples are historical, not a universal classification. Complete wording: spending on non-essentials/luxuries; entertainment; alcohol; cosmetics; holidays; garden items; savings; leisure, gym membership; streaming subscriptions; internet; etc."
+     }
+    ],
+    "questionText": "In relation to household expenditure, explain each of the following:\n\nEssential expenditure\nDiscretionary expenditure"
+   }
+  },
+  "he-2021-ol-sb-q1b": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "causes",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Imbalance in energy intake and energy expenditure; sedentary lifestyle; lack of exercise; psychological factors e.g. depression, boredom; hormonal imbalance (thyroid gland); unhealthy eating patterns e.g. snacking/late night eating; poor food choices e.g. fried/sugary foods; excessive use of processed foods; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q1c": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 28,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Classification 2 × 4 (4:0); functions 2 × 4 (4:2:0); sources 4 × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "classification",
+      "kind": "criterion",
+      "verbatim": "classes",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two classes, each graded 4:0. Animal; plant; marine; saturated; unsaturated; monounsaturated; polyunsaturated; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "functions",
+      "kind": "criterion",
+      "verbatim": "functions",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two functions, each graded 4:2:0. Source correction: lipids form cell membranes; human cells do not have cell walls. Complete historical wording: Heat; energy; excess lipids are stored as adipose tissue, insulating the body and acting as an energy reserve; lipids protect delicate organs; supply fat soluble vitamins A, D, E & K; source of essential fatty acids; delays the feeling of hunger; needed to build cell walls; omega fatty acids improve concentration and brain activity; some unsaturated lipids help lower cholesterol; speeds up the transmission of nerve impulses; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sources",
+      "kind": "criterion",
+      "verbatim": "dietary sources",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Four sources, each graded 3:2:0. Meat; eggs; oily fish; dairy products; soya beans; avocados; olives; nuts and nut oils; vegetable oils; fish liver oils; margarine; seeds; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q1d": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: Choose food naturally low in fat e.g. fruit and vegetables; avoid high fat convenience foods; ask for visible fat to be cut off meat; choose leaner cuts of meat; avoid hydrogenated fats; compare labels and choose foods that are lower in saturated fats; follow traffic light system e.g. labels that include colour coding indicate if the food is high, medium or low in fat; read labels; choose fat free products; plan meals and snacks to include low fat foods; use low fat alternatives; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q2a": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "requirements",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: Food-safety correction: avoid raw/undercooked eggs, unpasteurised dairy and pâté during pregnancy; do not merely reduce them. Historical examination guidance follows: Protein for growth and development of new cells and tissues; lipids/fatty acids for healthy nervous system; fibre to prevent constipation; folic acid/folate prior and during pregnancy to reduce possibility of neural tube defects; iron for blood; calcium and vitamin D for bone development; vitamin C to help absorb iron, fight infection; water to prevent constipation and dehydration; energy intake should be increased slightly; omega 3 fatty acids for development of nervous system; salt intake should be reduced; reduce intake of raw eggs, unpasteurised cheese; pâté; avoid alcohol; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q2c": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Informs consumer on properties of prepacked food; can make an informed choice; information on genetically modified ingredients; nutritional information given; allergens listed/highlighted; ingredients listed in descending order of weight; net quantity; country of origin; use by date, best before date; instructions on cooking, storing; name and address of manufacturer; quality assurance e.g. Bord Bia mark; organic produce; fair trade; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Explain how food labelling assist consumers when buying food."
+   }
+  },
+  "he-2021-ol-sb-q3b": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 9,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "effects of cooking",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "3 distinct points, each graded 3:2:0. Complete historical guidance: increases digestibility; starch grains burst and absorb water; cellulose softens; micro-organism are destroyed; enzymes are denatured; change in colour, flavour and texture; loss of water-soluble vitamins; destroys vitamin C; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Outline the effects of cooking on vegetables.",
+    "questionRef": "2021 OL Section B Q3(b)(i)"
+   }
+  },
+  "he-2021-ol-sb-q3c": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 6 (6:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "ways",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9,
+       12
+      ],
+      "contextNote": "2 distinct points, each graded 6:3:0. Complete historical guidance: Stir fry vegetables; use cherry tomatoes in lunch boxes; use cutters to make animal shapes; grated into dishes to disguise them; add vegetables to blended sauces; smoothies; vegetable pops/ice- lollies; add to stews; growing vegetables at home; vegetable crisps/wedges; use in soups; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         3,
+         6
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         3,
+         6
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q4a": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: Areas of overspending identified; provides financial security; alleviates worry and stress as bills will be paid; know where all monies are going; provides for emergencies e.g. visit to doctor or dentist; allows for savings; encourages people to wait until they have the money to buy something; ensures money available to cover unplanned eventualities e.g. job loss; develops money management skills; avoids debt; avoid impulse buying; budgeting reduces reliance on credit; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q4b": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "5 distinct points, each graded 4:2:0. Complete historical guidance: Rent 25%; food 25%; household bills 15% e.g. lighting, heating, bin collection, phone/internet; education 10%; clothes 5%; leisure/entertainment 5%; savings 5%; health 5%; discretionary spending 5%; evaluate/review budget on a regular basis; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Set out a weekly budget plan for a family (two adults and two children) with a net income of €800 a week."
+   }
+  },
+  "he-2021-ol-sb-q4c": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 10,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 advantage + 1 disadvantage, each 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "advantage",
+      "kind": "criterion",
+      "verbatim": "Advantage",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Required advantage, graded 5:3:0. Complete historical examples: buy now pay later; have use of the goods without having to pay for them; purchase expensive items; no need to carry large sums of cash; useful in emergencies; can take advantage when sales are on; encourages spending and benefits the economy; etc."
+     },
+     {
+      "id": "disadvantage",
+      "kind": "criterion",
+      "verbatim": "Disadvantage",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Required disadvantage, graded 5:3:0. Complete historical examples: expensive; high rates of interest; encourages impulse buying; do not own goods until final instalment is paid; leads to overspending; leads to debt; may be unable to keep up repayments; goods may be repossessed if consumer fails to meet repayments; consumer may get a poor credit rating/difficult to get a loan in the future. etc."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q5a": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required family structures × 2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "one-parent",
+      "kind": "criterion",
+      "verbatim": "One parent family",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: consists of one parent and his/her child(ren), can be because of choice, divorce, separation, desertion or death of a spouse; can result in difficulties e.g. poverty, financial, emotional; isolation; stress due to increased workload and childcare problems; more likely to be dependent on state benefits; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "nuclear",
+      "kind": "criterion",
+      "verbatim": "Nuclear family",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: parent/parents and their children; living in a self-contained unit; tasks are usually shared; have integrated roles; democratic, with older children involved in decision making; both parents work; mobile; number of children is usually small; independent; economically self- sufficient; relatives widely dispersed; isolated in times of crisis; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "blended",
+      "kind": "criterion",
+      "verbatim": "Blended family",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points about this required family structure, each graded 3:2:0. These historical social/economic examples are possible circumstances, not defining traits or assumptions about a particular family. Complete published guidance: partners with children from previous relationships and often their own children; arises usually because of remarriage; more common due to divorce and separation; have a large extended family; extra financial pressure; difficulties with discipline between step-parents and children; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q5b": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "roles and responsibilities",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: son/daughter/brother/sister/grandchild; role model for younger siblings; role expectations are difficult as adolescents are no longer children but still do not have the full responsibility of adulthood; showing respect, learning to behave in a socially acceptable manner; acquiring knowledge informally and formally; to do a fair/appropriate share of household duties; to work hard and achieve in school; acquiring gradual independence; helping with minding younger siblings/elderly family members; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sb-q5c": {
+   "reason": "Full 2021 Ordinary B review: exact published tariffs, required headings, whole dependent choices and complete guidance.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Helps clarify rules and expectations; family members know what is expected of them; builds trust among members; able to express their opinions and views; develops listening skills; helps members express opinions in a safe environment; conflict may be resolved; communication is needed to compromise; develops positive self-esteem; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q1ai": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: Reduces heating bills; reduces heat loss; saves energy; acts as a noise/sound barrier; maintains a constant comfortable temperature; reduces the use of energy resources; results in less CO₂ emissions; creates a more comfortable home; can contribute to sustainable and responsible living; higher BER rating/improvement in energy efficiency; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "questionFigureKey": "home-economics-2021-ol-sc-q1a-heat-loss",
+    "questionFigureIncludesPrompt": false,
+    "stem": "The diagram below shows the average heat loss for a family home."
+   }
+  },
+  "he-2021-ol-sc-q1aii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 locations × (name 2 (2:0) + description 3 (3:0))"
+    },
+    "rows": [
+     {
+      "id": "name-1",
+      "kind": "criterion",
+      "verbatim": "Attic — method",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name a method for this required location, graded 2:0. Complete location-specific guidance: blanket insulation e.g. rolls of fibreglass, wool or mineral; laid between joists or fixed between roof rafters; etc. loose fill e.g. pellets of polystyrene or vermiculite poured in between joists; etc. foam insulation e.g. foam sprayed between roof and rafters; etc. blown- fibre insulation e.g. glass, mineral or cellulose fibres are blown into the attic and sealed; etc."
+     },
+     {
+      "id": "description-1",
+      "kind": "criterion",
+      "verbatim": "Attic — description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above."
+     },
+     {
+      "id": "name-2",
+      "kind": "criterion",
+      "verbatim": "Walls — method",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name a method for this required location, graded 2:0. Complete location-specific guidance: cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator; polystyrene sheets can be inserted at the building stage; polystyrene foam or beads are pumped into the cavity; etc. internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls; etc. external walls: sheets of insulating material to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render to provide strength; etc."
+     },
+     {
+      "id": "description-2",
+      "kind": "criterion",
+      "verbatim": "Walls — description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above."
+     },
+     {
+      "id": "name-3",
+      "kind": "criterion",
+      "verbatim": "Windows — method",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name a method for this required location, graded 2:0. Complete location-specific guidance: double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon; low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted; etc."
+     },
+     {
+      "id": "description-3",
+      "kind": "criterion",
+      "verbatim": "Windows — description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe the same method for this location, graded 3:0; no intermediate marks. Use the full guidance above."
+     }
+    ],
+    "taskGroups": [
+     {
+      "sourceCardId": "he-2021-ol-sc-q1aii-location-1",
+      "label": "Attic",
+      "marks": 5,
+      "rowIds": [
+       "name-1",
+       "description-1"
+      ]
+     },
+     {
+      "sourceCardId": "he-2021-ol-sc-q1aii-location-2",
+      "label": "Walls",
+      "marks": 5,
+      "rowIds": [
+       "name-2",
+       "description-2"
+      ]
+     },
+     {
+      "sourceCardId": "he-2021-ol-sc-q1aii-location-3",
+      "label": "Windows",
+      "marks": 5,
+      "rowIds": [
+       "name-3",
+       "description-3"
+      ]
+     }
+    ],
+    "questionFigureKey": "home-economics-2021-ol-sc-q1a-heat-loss",
+    "questionFigureIncludesPrompt": false,
+    "stem": "The diagram below shows the average heat loss for a family home."
+   }
+  },
+  "he-2021-ol-sc-q1aiii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Solar output and savings depend on the installation and conditions; the historical 80% example is not a guaranteed reduction. Advantages: provides a plentiful supply of hot water; no smoke/carbon monoxide emissions; supplies home with own electricity; can reduce heating requirement by 80%; renewable environmentally friendly energy source; SEAI grant available for cost of installing; increases the property value by raising the Building Energy Rating (BER); etc. Disadvantages: expensive to purchase/install; undependable supply of sunshine, other form of energy required; house must be orientated towards the sun; unsightly on the roof; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "questionFigureKey": "home-economics-2021-ol-sc-q1a-heat-loss",
+    "questionFigureIncludesPrompt": false,
+    "stem": "The diagram below shows the average heat loss for a family home."
+   }
+  },
+  "he-2021-ol-sc-q1bi": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 advantage + 1 disadvantage + 1 other, each 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "advantage",
+      "kind": "criterion",
+      "verbatim": "Advantage",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One advantage, graded 4:2:0. Historical examples, not guarantees about prices, grants or investment returns. an investment; tax relief and grants available; less expensive, mortgage cheaper than renting; value of the house can increase; security of tenure; can choose your own design and type of house; whether to share house or not; etc."
+     },
+     {
+      "id": "disadvantage",
+      "kind": "criterion",
+      "verbatim": "Disadvantage",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One disadvantage, graded 4:2:0. long-term commitment; deposit required initially; additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee; property tax; continuous maintenance costs; property value can fall; etc."
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "other",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One further distinct advantage or disadvantage, graded 4:2:0. Use the complete guidance above."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q1bii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 6 (6:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 18,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9,
+       12,
+       15,
+       18
+      ],
+      "contextNote": "3 distinct points, each graded 6:3:0. Complete historical guidance: Family with children: depends on size and composition of family; proximity to schools/crèches; older children like their own personal space; storage space e.g. lockers, wardrobes, hot press for clothes; living room with books/internet/broadband; playroom for toys; garage or shed for bicycles; well equipped, ventilated, adequately lit and spacious kitchen; living room for relaxing/T.V. viewing; enclosed garden, patio, decking for play; students require study facilities; proximity to work, shops, amenities; etc. Person living on their own: requires less space than a family; allows for individuals preference e.g. choosing between urban/rural lifestyle; some like to commute, depending on access to public transport; entertainment facilities; apartment/bedsit/town house; renting on own or sharing a house can be an alternative to buying a property; proximity to work or college; internet/broadband; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         3,
+         6
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         3,
+         6
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         3,
+         6
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q1ci": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Space available; function of room; comfort; money available; cost e.g. initial/maintenance; family size; energy efficiency; aspect of house/room; existing fixtures/fittings; personal choice; colour scheme; materials used; environmental awareness; ergonomics, well laid out for ease of movement; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q1cii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Add colour/pattern/texture to a room; make a room warm and cosy; act as a focal point in a room; add interest to an area of the room; can give a room a complete makeover in an economical way; can update style of a room; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q2ai": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Shape",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: strong ballerina line; low neckline is feminine; fitted bodice gives a slimming effect; folded skirt adds width; short underskirt adds height to the outfit; etc. Suit: slim leg trousers; short length in the jacket gives height to the man; short sleeves in jacket give length to arms; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Comfort",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: flowing fabric is comfortable to wear; skirt allows ease of movement; etc. Suit: breathable cotton shirt; fitted jacket and trousers allow for ease of movement in bending, stretching while maintaining shape; flat shoes; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Design features",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: Dress: wide hem line; embroidery adds interest; contrasting colours; etc. Suit: single button detail on jacket; contrasting handkerchief in jacket pocket; tie contrasts in colour to handkerchief; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Comment on the suitability of the occasion wear shown above.\nRefer to:\n(a) shape    (b) comfort    (c) design features.",
+    "questionFigureKey": "home-economics-2021-ol-sc-q2a-occasion-wear",
+    "questionFigureIncludesPrompt": false,
+    "stem": "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)"
+   }
+  },
+  "he-2021-ol-sc-q2aii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 7,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Accessory 3 (3:0); reason 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "accessory",
+      "kind": "criterion",
+      "verbatim": "Accessory",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Name one accessory for either pictured outfit, graded 3:0. Complete published examples for both outfits: Woman: pashmina shawl in a contrasting pastel colour to add another layer to outfit; jewellery e.g. earrings, bracelet, necklace, rings, watch; evening wear bag; hat/fascinator; hairband; etc. Man: cufflinks to compliment his suit; tie in the same colour as the handkerchief; lapel pin to compliment suit; tie pin; wear a watch, rings; etc."
+     },
+     {
+      "id": "reason",
+      "kind": "criterion",
+      "verbatim": "Reason",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Give one reason for the same accessory and outfit, graded 4:2:0. Use the complete guidance above."
+     }
+    ],
+    "questionText": "Suggest one accessory you could add to enhance either of the above outfits.\nGive one reason for your choice.",
+    "questionFigureKey": "home-economics-2021-ol-sc-q2a-occasion-wear",
+    "questionFigureIncludesPrompt": false,
+    "stem": "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)"
+   }
+  },
+  "he-2021-ol-sc-q2bi": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 9,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Construction 3 + 2 properties × 3, each 3:2:0"
+    },
+    "rows": [
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "Construction",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "answerVariants": [
+     {
+      "id": "linen",
+      "label": "Linen",
+      "rows": [
+       {
+        "id": "construction",
+        "kind": "criterion",
+        "verbatim": "Construction",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cotton",
+      "label": "Cotton",
+      "rows": [
+       {
+        "id": "construction",
+        "kind": "criterion",
+        "verbatim": "Construction",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; cool; strong; easy to wash and dry; dyes well; creases easily; shrinks; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "wool",
+      "label": "Wool",
+      "rows": [
+       {
+        "id": "construction",
+        "kind": "criterion",
+        "verbatim": "Construction",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: warm; soft; absorbent; resilient; can irritate sensitive skin; pills; shrinks; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "silk",
+      "label": "Silk",
+      "rows": [
+       {
+        "id": "construction",
+        "kind": "criterion",
+        "verbatim": "Construction",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: absorbent; crease resistant; drapes well; flammable; damaged by careless handling; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another",
+      "label": "Another natural fabric",
+      "rows": [
+       {
+        "id": "construction",
+        "kind": "criterion",
+        "verbatim": "Construction",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "One construction point, graded 3:2:0. Describe a technique that applies to the natural fabric you chose; naming it earns no separate marks. All printed construction guidance: Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made; etc. Knitting: can be done by hand or machine; etc. Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining; etc. Macramé; Crochet; Lacemaking: etc."
+       },
+       {
+        "id": "properties",
+        "kind": "criterion",
+        "verbatim": "properties",
+        "marks": 6,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4,
+         5,
+         6
+        ],
+        "contextNote": "Two properties of the same chosen fabric, each graded 3:2:0. Complete guidance: The paper permits another natural fabric. Give accurate properties of your named fabric; the scheme does not print another model.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 3,
+          "permittedMarks": [
+           0,
+           2,
+           3
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q2bii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Complete historical guidance: Lightweight for summer wear; dyes easily so many colours available; wool is warm for winter clothing; cotton absorbs water so ideal for sportswear; washable; durable; cheaper; will take fabric finishes; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q2ci": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 9,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Function",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "1 points under this required heading, each graded 3:2:0. Complete guidance: Particular garments are suitable for specific occasion e.g. waterproof coat in winter; comfortable and easy to wear; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Money available",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "1 points under this required heading, each graded 3:2:0. Complete guidance: Value for money in the long term; designer brands more expensive; choice of retail outlet; chain store; charity shop; items chosen must fit into a low budget; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Cultural influences",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "1 points under this required heading, each graded 3:2:0. Complete guidance: Different cultures have different levels of modesty reflected in their clothing; features from different countries e.g. pashminas shawls, embroidery on t-shirts; beading on jumpers; etc."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q2cii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 6,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "contributions",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Complete historical guidance: Young people want to wear what trendsetters are wearing; they set up their own clothing ranges; trendsetters are photographed wearing clothes by specific designers at media events; sponsorship deals that celebrities have with clothing companies; television programmes show confidence about clothing; social media e.g. Snapchat, Instagram; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3ai": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Physical development",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: playing with toys helps with manual dexterity e.g. jigsaws; practical subjects can improve fine and gross motor skills; development of hand/eye co-ordination; sport and physical education helps to build healthy bones and muscles and improve balance/fitness; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Emotional development",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: young children gain emotional independence from parents, encourages maturity; feelings for themselves and others; learn to be sensitive to needs of others; supportive of others; expressing emotions; co-educational allows for development of healthy, friendly relationships between sexes; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Intellectual development",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Complete guidance: promoted through the wide range of subjects; extracurricular activities; classmates encourage competition; examinations provide challenges; resources e.g. books, computers assist development; size of family; home provides stimulation and nurtures a learning environment; comfortable physical surroundings with good lighting/heating and ventilation assist in attaining ones potential; overcrowding can hinder study; after school study available; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3aii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Complete historical guidance: Intellectual ability; family size, large family’s greater financial strain; home environment e.g. homework facilities; peers, can be positive or negative; local environment; school environment e.g. resources in school, access to computers/assistive technology, SNA available to assist, resource teachers available; small class size; educational programmes in school e.g. JCSP, LCA, LCVP, TY, HEAR, DARE, RACE, level two learning programme, work experience; parental attitude to education; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3aiii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "benefits",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Helps students decide what career they may like to choose; gain knowledge of what actual working is like; get insight on what different jobs entail; get to know how people work together; see how work differs from school; realise what work activities are enjoyable; develop skills in communication, team working, planning, organising, timekeeping, problem solving; help to build confidence; get the opportunity to take responsibility; can put it on C.V. etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3bi": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Helps people relax and unwind from stresses of daily life; assists mental well-being; improves physical health; furthers social interaction; encourages family bonding; fosters relationships in communities; develops new skills; improves self-esteem; sets good example for children on how to use their free time positively; relieves boredom; improves communication and teamwork; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3bii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Cost",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: membership/annual/joining fee; pay as you go; method of payment; need special clothes and equipment; people with less disposable income may choose inexpensive/free activities e.g. walking; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Occupation",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: amount of disposable income available; number of working hours; type of work; leisure can contrast with a person’s occupation; can be an extension of work; work is a means of providing income for leisure; part-time workers, job sharing and career breaks all allow for more time for leisure activities; sedentary worker could opt for an energy consuming type of activity and vice-versa; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Age",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. These are possible influences, not assumptions about everyone in a group. Complete guidance: young people have fewer commitments and more time for leisure; couples with young children have the least amount of time and disposable income; retired people have more time and more disposable money to spend on leisure; older people have less money, may have physical constraints and do more sedentary pursuits; leisure activities change with age; some leisure activities are considered too dangerous for children; etc."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3ci": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Young individuals",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: loss of income; drop in living standards; stress; feeling worthless; worry; guilt; loss of identity; status and self-esteem; loss of social contact; depression; ill health; boredom; loneliness; isolation; addiction e.g. drugs/alcohol abuse; lack of money can prevent participation in leisure activities; loss of purpose and sense of direction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "The family",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: lack of money; decline in living standards; unstable home; provision of basic needs may be difficult; poverty; problems paying rent, bills; strain on family relationships; marital breakdown; may become homeless or in need of emergency accommodation; children can suffer academically in school; may be tendency to turn to drink or drugs; loss of home; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Society",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 points under this required heading, each graded 3:2:0. Treat these historical examples as possible effects, not inevitable outcomes or judgements about unemployed people. Complete guidance: burden on state to pay benefits; cycle of poverty continues; increased poverty and crime; increased emigration; creates inequalities within communities; increase in taxes; social problems; a growth in the black economy; increase in family breakdown; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q3cii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 4 (4:0); 2 details × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Voluntary organisation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Name one organisation, graded 4:0. Complete source examples and general support activities: St. Vincent de Paul; Rotary; Lions clubs; Simon community; Focus Ireland; Co-operatives; Men’s Sheds; etc. Can act as pressure groups, can offer government bodies detailed information and possible solutions, funding of classes to teach people the skills to help them cope with their situation, provide opportunity for people to discuss their situation. etc."
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "details",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two accurate details about the same named organisation, each graded 4:2:0. The general activity list does not imply every organisation provides every listed service.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4ai": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 20,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "5 points × 4 (4:2:0): 2 nutritive, 2 dietetic, 1 other"
+    },
+    "rows": [
+     {
+      "id": "nutritive",
+      "kind": "criterion",
+      "verbatim": "Nutritive value",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two nutritive points, each graded 4:2:0. The source’s biological-value figure does not mean eggs are 100% protein. Complete guidance: HBV protein; 100% biological value; albumin, ovalbumin and globulin in white; vitellin and livetin in yolk; saturated fat; lecithin is natural emulsifier; yolk contains cholesterol; white is fat free; no carbohydrate; 75% water; fat soluble vitamins A, D, E and K; water soluble vitamin B; calcium; phosphorus; iron and zinc; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "dietetic",
+      "kind": "criterion",
+      "verbatim": "Dietetic Value",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two dietetic points, each graded 4:2:0. Complete guidance: versatile; used in sweet and savoury dishes; HBV protein for growth and repair; ideal for children and adolescents; easy to digest; quick and easy to cook; can be eaten on their own; a meal in themselves when served with toast for carbohydrate; contains cholesterol and saturated fat; have no vitamin C; important in the diet of a vegetarian; inexpensive; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "other",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "One further distinct point under either heading, graded 4:2:0. Use the complete guidance above."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4aii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 18,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 required headings × 3 points × 3 (3:2:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Ways of including eggs",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "3 points under this required heading, each graded 3:2:0. Complete guidance: Eating on their own e.g. scrambled, fried, boiled, poached; sauces e.g. mayonnaise, hollandaise; breakfast e.g. French toast, pancakes; lunch e.g. Quiche Lorraine, salads, frittata, omelettes, egg sandwich; dinner e.g. fish cakes, scotch eggs, Caesar salad; baked products e.g. scones, sponge cake; desserts e.g. custards, meringue, rice pudding; garnishing salads; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Effects of heat",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "3 points under this required heading, each graded 3:2:0. Complete guidance: Protein coagulates causing eggs to solidify; bacteria are destroyed; loss of vitamin B; colour change; curdling; overcooking makes them tough and difficult to digest; overcooking boiled eggs causes iron/sulphur ring around the yolk; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "questionText": "Outline:\n• different ways of including eggs in the diet\n• the effects of heat on eggs."
+   }
+  },
+  "he-2021-ol-sc-q4aiii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 12,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "reasons",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Complete historical guidance: Local origin or small scale does not guarantee better nutrition; these are perceived qualities/examples in the historical scheme. Foods healthier, more nutritious, and tastier; organic foods; provide local employment; people willing to pay more for better quality; foods produced locally; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4bi": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 1 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "Household income",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: amount of money available for spending; when disposable income is limited consumers must ensure needs are met before luxuries are purchased; try to get good value for money; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "Discount offers",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: persuade the consumer to impulse buy; special offers give the impression of extra bargains; encourages spending more money; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "Shopper loyalty schemes",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "1 points under this required heading, each graded 5:3:0. Complete guidance: offer consumers perks and rewards for their continued shopping; discounts on future purchases; encourage consumer loyalty to the one supermarket; build an emotional connection to a particular shop; build on loyalty to a particular brand; loyalty cards offer discounts, invitation to sale preview; less chance of shopping around for best value for money; etc."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4bii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 advantage + 1 disadvantage + 1 other, each 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "advantage",
+      "kind": "criterion",
+      "verbatim": "Advantage",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One advantage, graded 5:3:0. Do not have to leave home; goods delivered by post, courier; variety of websites; easy to search different websites; more convenient; next day delivery; may be cheaper; can shop around various websites; not restricted by opening hours, goods may be purchased anytime; order may be tracked; can read reviews of products; etc."
+     },
+     {
+      "id": "disadvantage",
+      "kind": "criterion",
+      "verbatim": "Disadvantage",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One disadvantage, graded 5:3:0. delay in delivery; lack of touch and feel of merchandise; lack of interactivity with shop assistant; fraud; unable to bargain down the price; not always knowing if the site is legitimate; problems with refunds; cost of returning products; etc."
+     },
+     {
+      "id": "other",
+      "kind": "criterion",
+      "verbatim": "other",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One further distinct advantage or disadvantage, graded 5:3:0. Use all guidance above."
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4ci": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Peer pressure; exam pressure; family support; parents and older children are role models; school environment; area they live in; open teenager-parent relationship provides safe environment for teenager to express feelings; teenagers need for privacy and space respected by parents; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2021-ol-sc-q4cii": {
+   "reason": "Full 2021 Ordinary C review: all required headings, complete original images and continued scheme guidance, exact published partial credit.",
+   "set": {
+    "totalMarks": 15,
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "aspects",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Complete historical guidance: Adolescent question rules and authority; lack of freedom; peer relationships; part time jobs; lack of study or doing homework for school; decisions on future careers; untidy rooms; lack of understanding of older family members; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
   }
  },
  "english": {
