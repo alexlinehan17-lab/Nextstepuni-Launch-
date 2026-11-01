@@ -6,6 +6,7 @@ import { resolveIndexedPaperFileid } from '../scripts/markbank/paperIndex.mjs';
 import review from '../scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json';
 import review2022 from '../scripts/markbank/authoring/home-economics/2022-hl-deferred-review.json';
 import anchors2022 from '../scripts/paper-trail/answers/2022/LC098ALP014EV-deferred.pdf.json';
+import bcAnchors2022 from '../scripts/paper-trail/answers/2022/LC098ALP039EV-deferred.pdf.json';
 import anchors from '../scripts/paper-trail/answers/2023/LC098ALP014EV-deferred.pdf.json';
 import bcAnchors from '../scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
@@ -31,7 +32,7 @@ describe('Home Economics 2022 deferred Section A', () => {
   it('keeps five independently marked second prompts and all required table entries', () => {
     expect(cards2022).toHaveLength(19);
     expect(cards2022.reduce((n, c) => n + c.totalMarks, 0)).toBe(84);
-    expect(cards2022.map(c => c.id).sort()).toEqual(review2022.tasks.map(t => t.id).sort());
+    expect(cards2022.map(c => c.id).sort()).toEqual(review2022.tasks.filter(t => t.section === 'A').map(t => t.id).sort());
     for (const [q, suffix, marks] of [[1, 'mycoprotein', [4, 2]], [3, 'factors', [4, 2]], [6, 'meal-factors', [4, 2]], [8, 'effects', [2, 4]], [10, 'components', [3, 3]]] as const) {
       expect([card(`q${q}`).totalMarks, card(`q${q}-${suffix}`).totalMarks]).toEqual(marks);
       expect(card(`q${q}`).questionRef).not.toBe(card(`q${q}-${suffix}`).questionRef);
@@ -74,7 +75,65 @@ describe('Home Economics 2022 deferred Section A', () => {
     }
     const wrongYear = structuredClone(review2022); wrongYear.year = 2023;
     expect(() => homeEconomicsSourceMap(wrongYear)).toThrow(/archive identity/);
-    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sb-q1a')).toThrow(/lacks reviewed sources/);
+    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sc-q1ai')).toThrow(/lacks reviewed sources/);
+  });
+});
+
+describe('Home Economics 2022 deferred Section B', () => {
+  const b = CARDS.filter(c => c.id.startsWith('he-2022-hl-deferred-sb-'));
+  const card = (part: string) => {
+    const c = b.find(c => c.id === `he-2022-hl-deferred-sb-q${part}`);
+    if (!c || c.kind !== 'question') throw new Error(part);
+    return c;
+  };
+  it('retains all sixteen tasks, the original six-category chart and all source profiles', () => {
+    expect(b).toHaveLength(16);
+    expect(b.reduce((n, c) => n + c.totalMarks, 0)).toBe(280);
+    expect(card('1a').questionFigure?.alt).toContain('nutrient information 37%');
+    expect(card('1a').questionFigure?.alt).toContain('origin 3%');
+    expect(card('1a').rows.map(r => r.permittedMarks)).toEqual(Array(4).fill([0, 1, 2, 3, 4, 5]));
+    expect(card('1a').rows[0].contextNote).toContain('Irish made products');
+    expect(card('1a').rows[0].contextNote?.split('\n\n')).toHaveLength(6);
+    expect(card('1b').rows.map(r => r.marks)).toEqual([12, 16]);
+    expect(card('1b').rows[0].contextNote).toContain('hydroxyl (–OH) groups');
+    expect(card('1c').rows[1].contextNote).toContain('not universal');
+    expect(card('2a').stem).toContain('€2.25 billion');
+    expect(card('2b').answerVariants).toHaveLength(7);
+    for (const v of card('2b').answerVariants ?? []) {
+      expect(v.rows.map(r => r.marks)).toEqual([2, 12, 8]);
+      expect(tariffReconciles({ ...card('2b'), rows: v.rows })).toBe(true);
+    }
+    expect(card('2b').answerVariants?.[5].rows[2].contextNote).toContain('moisture removed');
+    expect(card('2c').rows[0].contextNote).toContain('Authority of Ireland, not “Association”');
+    expect(card('2c').rows[1].contextNote).toContain('no model role descriptions');
+  });
+  it('keeps paired egg uses, exact partial credit and the reserved family headings', () => {
+    expect(card('3b').rows.map(r => r.parts?.map(p => p.permittedMarks))).toEqual(Array(3).fill(Array(3).fill([0, 2])));
+    expect(card('3b').rows[0].contextNote).toContain('later heating sets the foam');
+    expect(card('3b').rows[0].contextNote).toContain('hollandaise sauce');
+    expect(card('4b').questionText).toContain('Discuss four');
+    expect(card('4b').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(4).fill([0, 3, 4, 5]));
+    expect(card('4c').rows.map(r => r.marks)).toEqual([4, 6]);
+    expect(card('5a').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 2, 4, 6]));
+    expect(card('5b').rows.map(r => r.marks)).toEqual([4, 4, 4, 8]);
+    expect(card('5c').rows[0].contextNote).toContain('sharing the same house');
+  });
+  it('links every card to its 2022 deferred question and all canonical Atlas topics', () => {
+    const file = 'LC098ALP039EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2022 && p.fileid === file)!;
+    expect(bcAnchors2022.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
+    expect(bcAnchors2022.q.map(q => q.region.map(r => r.p))).toEqual([[9, 10], [11, 12], [13], [14], [15]]);
+    expect(preferredAnswersUrl('home-economics-s-and-s', 2022, file, 'stale')).toBe(`/paper-answers/2022/${file}.json`);
+    for (const c of b) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      expect(c.paperFileid).toBe('LC098ALP039EV-deferred');
+      const n = c.questionRef.match(/Q(\d+)/)![1];
+      const mapping = runtime.questionMappings.find(r => r[0] === 'h' && r[1] === 'e' && r[2] === 2022 && r[4] === file && r[5] === n)!;
+      expect(mapping?.[7]).toBe('deferred');
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(c.topicId)).map(([k]) => k);
+      expect(browseTopicIdsForQuestion(tags, tags.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(expected));
+    }
   });
 });
 

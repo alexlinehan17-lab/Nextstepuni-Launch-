@@ -12723,4 +12723,1117 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q1a", topicId: "home-economics-0-11", conceptId: "food-label-reasons",
+    section: "B", questionRef: "2022 HL Section B Q1(a) — Deferred sitting",
+    stem: "The chart below presents information on the reasons why consumers consult food labels. (adapted from a Research Study into Consumers’ Attitudes to Food Labelling - FSAI)",
+    questionText: "Using the information provided in the table above, comment and elaborate on four reasons why consumers read food labels.",
+    tariffModel: {"kind":"fixed","notation":"4 chosen reasons × 5 (5:4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "Reason 1 of four: choose a different category from the chart, comment and elaborate; graded 5:4:3:2:1:0. All six published guidance categories: Nutrient information: provides consumer with information relating to calories and nutrients; allows the consumer to make healthier food choices; fat content; sugar content; salt content; etc.\n\ncalorie content: important for overweight people/people not wanting to put on weight; etc.\n\nspecific ingredients: consumers may dislike certain foods ie. garlic; etc.\n\nallergen information: very important for people with allergic reactions to ingredients/additives; etc.\n\nfood additives: colourings; flavourings; nutritional additives; etc.\n\norigin: people may want to buy Irish made products; etc.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "Reason 2 of four: choose a different category from the chart, comment and elaborate; graded 5:4:3:2:1:0. Use the full six-category guidance above. Do not repeat a category already scored.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-3", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "Reason 3 of four: choose a different category from the chart, comment and elaborate; graded 5:4:3:2:1:0. Use the full six-category guidance above. Do not repeat a category already scored.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "reason-4", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "Reason 4 of four: choose a different category from the chart, comment and elaborate; graded 5:4:3:2:1:0. Use the full six-category guidance above. Do not repeat a category already scored.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2022-hl-deferred-sb-q1a-labels",
+          "src": "/exam-figures/home-economics/home-economics-2022-hl-deferred-sb-q1a-labels.png",
+          "srcHash": "49bc3888077ec4857788b2357ba38bdd",
+          "alt": "Why consumers consult food labels: nutrient information 37%; calorie content 35%; specific ingredients 34%; allergen information 13%; food additives 3%; origin 3%. Horizontal axis: 0–40%.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper, page 2; adapted from FSAI research — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q1b", topicId: "home-economics-0-7", conceptId: "lipids-structure-functions",
+    section: "B", questionRef: "2022 HL Section B Q1(b) — Deferred sitting",
+    questionText: "Give an account of lipids (fats) and refer to: • structure • biological functions.",
+    tariffModel: {"kind":"fixed","notation":"Structure 3 × 4; biological functions 4 × 4 (4:2:0)"}, totalMarks: 28,
+    rows: [
+    { id: "structure", kind: "criterion", verbatim: "structure", marks: 12, contextNote: "Three points, each graded 4:2:0. Source clarification: glycerol contains three hydroxyl (–OH) groups, not three separate OH molecules. Complete scheme guidance, including the accepted labelled-diagram route: Composed of three fatty acids; combined with one glycerol molecule; triglyceride; glycerol contains three OH molecules; trihydric alcohol; each Oh group combines with a fatty acid; loss of a water molecule; condensation reaction; etc. Accept a clearly labelled diagram: Accept: structure saturated fat; unsaturated fat; polyunsaturated fat; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "biological function", marks: 16, contextNote: "Four points, each graded 4:2:0. Published guidance: Provides heat and energy; adipose tissue provides insulation; protection of delicate organs; source of fat soluble vitamins; provide essential fatty acids; omega 3 and omega 6 fatty acids assist brain function; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q1c", topicId: "home-economics-0-7", conceptId: "rancidity-smoke-point",
+    section: "B", questionRef: "2022 HL Section B Q1(c) — Deferred sitting",
+    questionText: "Explain each of the following terms associated with fats and oils: • rancidity • smoke point.",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 6 (6:4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "rancidity", kind: "criterion", verbatim: "Rancidity", marks: 6, contextNote: "Required term, graded 6:4:2:0. Published guidance: spoilage or decomposition of lipids; results in an unpleasant odour or taste; two types - oxidative and hydrolytic rancidity; oxidative rancidity occurs when oxygen is forced through the double bond of an unsaturated fatty acid; hydrolytic rancidity occurs when enzymes & bacteria react with the lipid; etc.", permittedMarks: [0,2,4,6] },
+    { id: "smoke", kind: "criterion", verbatim: "Smoke point", marks: 6, contextNote: "Required term, graded 6:4:2:0. Source clarification: the temperature at which visible smoke appears varies with the oil/fat composition; the printed 200°C/250°C values are not universal. Historical scheme wording: lipids heated to 200°C (fats) or 250°C(oils); they begin to decompose; causing the glycerol to separate from the fatty acids; glycerol broken down into acrolein and produces a blue smoke or haze and an acrid smell; etc.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q1d", topicId: "home-economics-0-1", conceptId: "health-food-purchasing",
+    section: "B", questionRef: "2022 HL Section B Q1(d) — Deferred sitting",
+    questionText: "Identify and discuss how a person’s health status might influence decision making when purchasing food products.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "health", kind: "criterion", verbatim: "health status", marks: 20, contextNote: "Five points, each graded 4:2:0. Published 2022 guidance: Special dietary needs eg. coeliac or diabetes; healthy diet looking at nutritional information; obesity epidemic looking at healthier options; older people looking for calcium rich foods and foods with vitamin D; functional foods and fortified foods; athletes/sports person looking at high protein/low fat options; pregnancy; maintaining a healthy weight; allergies; convalescence; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q2a", topicId: "home-economics-0-11", conceptId: "irish-food-industry-success",
+    section: "B", questionRef: "2022 HL Section B Q2(a) — Deferred sitting",
+    stem: "Irish agri‐food and drink exports amounted to approximately €13 billion in 2019, with the beef sector accounting for €2.25 billion. (www.bordbia.ie)",
+    questionText: "Discuss four factors that contribute to the continued success of the food and drinks industry in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 factors × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Four discussed factors, each graded 4:2:0. The scheme lists factor names without model discussions: Climate and landscape; history and tradition; government agencies; coastline; recession; artisan foods; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q2b", topicId: "home-economics-0-4", conceptId: "meat-preservation-profile",
+    section: "B", questionRef: "2022 HL Section B Q2(b) — Deferred sitting",
+    stem: "Irish agri‐food and drink exports amounted to approximately €13 billion in 2019, with the beef sector accounting for €2.25 billion. (www.bordbia.ie)",
+    questionText: "Set out details of one process used to extend the shelf life of meat and refer to: • name of process • how the process is carried out • the underlying principle involved.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 (2:0); method 3 × 4; principle 2 × 4 (4:2:0)"}, totalMarks: 22,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "name of process", marks: 2, contextNote: "Name one process, graded 2:0. Published example: Freezing", permittedMarks: [0,2] },
+    { id: "method", kind: "criterion", verbatim: "how the process is carried out", marks: 12, contextNote: "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: boned, trimmed; blast frozen –30°C; quick freezing at -25oC; slow freezing at -18oC; removal of air, sealed in moisture proof package, labelled. etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 8, contextNote: "Two matching points, each graded 4:2:0. Complete published 2022 guidance: The shared paragraph includes refrigeration and freezing; ice formation applies to freezing. reducing temperature – low temperatures 5°C or lower for refrigeration, - 25°C to - 18°C for freezing inhibit enzyme activity and microbial growth; microbes are inactivated; moisture is converted to ice, making it unavailable for microbial growth; fast freezing forms small ice crystals which helps maintain colour, flavour, texture and nutrients; wrapping prevents the re-entry of microbes; liquid no longer available; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "freezing",
+                "label": "Freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Freezing"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: boned, trimmed; blast frozen –30°C; quick freezing at -25oC; slow freezing at -18oC; removal of air, sealed in moisture proof package, labelled. etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: The shared paragraph includes refrigeration and freezing; ice formation applies to freezing. reducing temperature – low temperatures 5°C or lower for refrigeration, - 25°C to - 18°C for freezing inhibit enzyme activity and microbial growth; microbes are inactivated; moisture is converted to ice, making it unavailable for microbial growth; fast freezing forms small ice crystals which helps maintain colour, flavour, texture and nutrients; wrapping prevents the re-entry of microbes; liquid no longer available; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "refrigeration",
+                "label": "Refrigeration",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Refrigeration"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: meat generally covered; cool temperature of fridge 2°to 5°C retards growth of micro- organisms; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: The shared paragraph includes refrigeration and freezing; do not apply its ice-crystal points to refrigeration. reducing temperature – low temperatures 5°C or lower for refrigeration, - 25°C to - 18°C for freezing inhibit enzyme activity and microbial growth; microbes are inactivated; moisture is converted to ice, making it unavailable for microbial growth; fast freezing forms small ice crystals which helps maintain colour, flavour, texture and nutrients; wrapping prevents the re-entry of microbes; liquid no longer available; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "packing",
+                "label": "Vacuum packing / modified atmosphere packaging",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Vacuum packing / modified atmosphere packaging"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: meat boned, wrapped in strong polythene; all air removed; needs refrigeration; has a use by date; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: remove air – aerobic microbes need air to survive; sealing prevents the re-entry of microbes; gases i.e. carbon dioxide, oxygen and N2 (inert gas) may be used; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "curing",
+                "label": "Curing / salting",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Curing / salting"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: cooled to 4°C, injected with brine, soaked in brine for 4 days; hung in cold room 4/5 days; smoked or green; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: addition of chemicals, the addition of salt dehydrates microbial cells through osmosis and affects enzyme activity; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "canning",
+                "label": "Canning",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Canning"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: food cooked; syrup, brine, sauce added; air removed, cans sealed and sterilised; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: high temperatures are used, 140°C destroy microbes and inactivates enzymes; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "drying",
+                "label": "Dehydration",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one process, graded 2:0. Published example: Dehydration"
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three points for your chosen process, each graded 4:2:0. Published examination examples, not a validated preservation recipe: packet meals, soup, etc. contain freeze dried meat; meat is prepared and freeze-dried; sealed; once rehydrated use quickly; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two matching points, each graded 4:2:0. Complete published 2022 guidance: moisture removed – microbes require moisture for metabolism and growth; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-process",
+                "label": "Another valid process",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name one suitable process, graded 2:0. The source examples are not an exhaustive option list."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10,
+                                  12
+                            ],
+                            "contextNote": "Three accurate details of the same process, each graded 4:2:0. No model for another process is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8
+                            ],
+                            "contextNote": "Two accurate principles for the same process, each graded 4:2:0. No model for another process is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q2c", topicId: "home-economics-0-11", conceptId: "national-food-safety-agency",
+    section: "B", questionRef: "2022 HL Section B Q2(c) — Deferred sitting",
+    stem: "Irish agri‐food and drink exports amounted to approximately €13 billion in 2019, with the beef sector accounting for €2.25 billion. (www.bordbia.ie)",
+    questionText: "Outline the role of one national agency in relation to food safety.",
+    tariffModel: {"kind":"fixed","notation":"Name 4; details 2 × 4 (all 4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one agency, graded 4:2:0. Source correction: FSAI is the Food Safety Authority of Ireland, not “Association”. Published 2022 examples: Food Safety Association of Ireland (FSAI); The National Hygiene Partnership (NHP); Dept. of Agriculture, Food and the Marine; Department of Health; HSE; Bord Bia; etc.", permittedMarks: [0,2,4] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two accurate details of the role of the same agency, each graded 4:2:0. This deferred scheme gives names only; it prints no model role descriptions.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q3a", topicId: "home-economics-0-9", conceptId: "eggs-nutritional-value",
+    section: "B", questionRef: "2022 HL Section B Q3(a) — Deferred sitting",
+    stem: "When it comes to healthy food, eggs are the real superheroes.",
+    questionText: "Discuss the nutritive value and the contribution of eggs to the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritive value", marks: 20, contextNote: "Five points, each graded 4:3:2:1:0. Discuss nutritive value and contribution to the diet; no fixed quota per nutrient is printed. “HBV 100%” is a biological-value description, not a claim that eggs are 100% protein. Published guidance: Nutritive value: Protein, HBV 100%, ovalbumin & globulin in egg white, vitellin & livetin in yolk, growth & repair, suitable for diets of children; meat alternative; saturated fat in egg yolk, easy to digest, heat & energy; no carbohydrate – serve with carbohydrate foods; vitamin A, manufactures rhodopsin; vitamin D, calcium absorption; vitamin E, antioxidant; vitamin K, healthy blood clotting; calcium, bones & teeth; iron, produces haemoglobin; phosphorus, healthy nerve activity; lack vitamin C – serve with foods rich in vitamin C; versatile; inexpensive; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q3b", topicId: "home-economics-0-9", conceptId: "egg-properties-culinary-uses",
+    section: "B", questionRef: "2022 HL Section B Q3(b) — Deferred sitting",
+    stem: "When it comes to healthy food, eggs are the real superheroes.",
+    questionText: "Name and explain the properties of eggs and their related culinary uses.",
+    tariffModel: {"kind":"fixed","notation":"3 properties × (name 2 + explanation 2 + culinary use 2), all 2:0"}, totalMarks: 18,
+    rows: [
+    { id: "property-1", kind: "criterion", verbatim: "properties of eggs", marks: 6, contextNote: "Property 1: name (2:0), explanation (2:0) and matching culinary use (2:0). Use three different properties. Source clarification: whisking introduces air and unfolds proteins; later heating sets the foam. The scheme’s frictional-heat account is misleading. Complete source guidance: Aeration - whisking egg white traps air; friction created by whisking produces heat; sets foam; coagulates albumen; etc. culinary use: meringue; sponge cake; soufflé; etc.\n\nCoagulation – when eggs are heated, protein chains unfold, straighten and bond together around small pockets of water; egg white sets 60°C; yolk sets 65°C; protein denatured; overcooking causes curdling; etc. culinary use: fried; boiled; poached; binding eg. burgers; thickening eg. custard; glazing eg. scones; etc.\n\nEmulsification - egg contains natural emulsifier lecithin; enables two immiscible liquids to join together; etc. culinary use: mayonnaise; vinaigrettes; cakes; hollandaise sauce; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Name","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Culinary use","marks":2,"permittedMarks":[0,2]}] },
+    { id: "property-2", kind: "criterion", verbatim: "properties of eggs", marks: 6, contextNote: "Property 2: name (2:0), explanation (2:0) and matching culinary use (2:0). Use three different properties. Use the complete source guidance and clarification above.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Name","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Culinary use","marks":2,"permittedMarks":[0,2]}] },
+    { id: "property-3", kind: "criterion", verbatim: "properties of eggs", marks: 6, contextNote: "Property 3: name (2:0), explanation (2:0) and matching culinary use (2:0). Use three different properties. Use the complete source guidance and clarification above.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Name","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Culinary use","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q3c", topicId: "home-economics-0-11", conceptId: "egg-quality-assurance",
+    section: "B", questionRef: "2022 HL Section B Q3(c) — Deferred sitting",
+    stem: "When it comes to healthy food, eggs are the real superheroes.",
+    questionText: "Explain how quality is assured in egg production in order to minimise food safety risks.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "quality", kind: "criterion", verbatim: "quality", marks: 12, contextNote: "Three points, each graded 4:2:0. Published 2022 guidance: Bord Bia Quality Assurance ensures eggs are produced and packed to the highest standards of food safety and traceability; incoming stocks for egg laying must be certified free of salmonella; Bord Bia SEAS can be used to verify the Bord Bia certification status of egg producers; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q4a", topicId: "home-economics-1-2", conceptId: "shopping-pattern-changes",
+    section: "B", questionRef: "2022 HL Section B Q4(a) — Deferred sitting",
+    stem: "Consumers require good quality information when choosing and buying goods and services.",
+    questionText: "Identify the changes in consumer shopping patterns in recent years and discuss the reasons for the changes you have identified.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "changes", kind: "criterion", verbatim: "changes", marks: 20, contextNote: "Five points, each graded 4:2:0. Identify changes and discuss their reasons, following the original paper wording. No fixed change/reason split is printed. Complete 2022 guidance: large shopping centres –’one stop shopping’; late night shopping – 24 hour shops; TV and online shopping; increased environmental awareness; cash replaced by laser/credit cards, apple/android pay; store loyalty cards; premium brands; a stronger preference for service and convenience both in retail and product choice; home delivery; etc. Reasons: income, cost of living increasing; less time for shopping; limited resources; health conscious; convenience; family size/composition; increased consumer awareness; price consciousness to value for money; competition for consumer loyalty; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q4b", topicId: "home-economics-1-2", conceptId: "supermarket-spending-techniques",
+    section: "B", questionRef: "2022 HL Section B Q4(b) — Deferred sitting",
+    stem: "Consumers require good quality information when choosing and buying goods and services.",
+    questionText: "Discuss four in‐store techniques that supermarkets use to encourage consumer spending.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:4:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "techniques", kind: "criterion", verbatim: "in-store techniques", marks: 20, contextNote: "Four discussed techniques, each using the exact 5:4:3:0 ladder (no 1 or 2). The paper says “Discuss”; the scheme paraphrases it as “Describe”. Source examples are names rather than model discussions: Background music; in-store smells; product placement; food samples; shop layout; shelf- position; pricing; loyalty schemes; etc.", permittedMarks: [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q4c", topicId: "home-economics-1-2", conceptId: "voluntary-consumer-agency",
+    section: "B", questionRef: "2022 HL Section B Q4(c) — Deferred sitting",
+    stem: "Consumers require good quality information when choosing and buying goods and services.",
+    questionText: "Name and outline the role of one voluntary agency concerned with consumer protection.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0); role 2 × 3 (3:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one voluntary consumer-protection agency, graded 4:2:0. The scheme’s examples are open, not a compulsory two-option choice.", permittedMarks: [0,2,4] },
+    { id: "role", kind: "criterion", verbatim: "Role", marks: 6, contextNote: "Two role details about the same agency, each graded 3:2:0. Full published 2022 examples and names: Consumer Association of Ireland: produces monthly magazine; petitions the government; represents consumers on private & public bodies; etc. Advertising Standards Authority of Ireland: ensures all marketing communications should be legal, decent, honest, truthful; investigates complaints regarding advertising by the public; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q5a", topicId: "home-economics-2-0", conceptId: "family-structure-changes",
+    section: "B", questionRef: "2022 HL Section B Q5(a) — Deferred sitting",
+    stem: "Family structures are diverse in modern Irish society.",
+    questionText: "Analyse the changes in family structures in today’s society.",
+    tariffModel: {"kind":"fixed","notation":"3 changes × 6 (6:4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "changes", kind: "criterion", verbatim: "changes", marks: 18, contextNote: "Three changes, each graded 6:4:2:0. “Today” refers to the 2022 examination. Published guidance: Marital breakdown; divorce; separation; changing role of women; same-sex marriage; adoption; increase in births outside marriage; decline in nuclear families; increase in blended and lone- parent families; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,2,4,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q5b", topicId: "home-economics-2-0", conceptId: "social-economic-technological-family-change",
+    section: "B", questionRef: "2022 HL Section B Q5(b) — Deferred sitting",
+    stem: "Family structures are diverse in modern Irish society.",
+    questionText: "Discuss the social, economic and technological changes that affect families in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0): social 1; economic 1; technological 1; others 2"}, totalMarks: 20,
+    rows: [
+    { id: "social", kind: "criterion", verbatim: "Social", marks: 4, contextNote: "One point required on this heading, graded 4:2:0. Published 2022 guidance: Increase in the number of separations and divorces; more one – parent and blended families; families tend to be smaller; women are establishing careers first; children may now legally have two parents of the same sex; multidenominational – acceptance of different spiritual beliefs; etc.", permittedMarks: [0,2,4] },
+    { id: "economic", kind: "criterion", verbatim: "Economic", marks: 4, contextNote: "One point required on this heading, graded 4:2:0. Published 2022 guidance: number of dual-income families has increased as both parents need to work to earn sufficient income to meet needs; childcare costs create financial burdens on families; increase in the cost of living has led to smaller families; state benefits; etc.", permittedMarks: [0,2,4] },
+    { id: "technological", kind: "criterion", verbatim: "Technological", marks: 4, contextNote: "One point required on this heading, graded 4:2:0. Published 2022 guidance: availability of automated household appliances; communication technology; computer technology aids parents working from home; home entertainment; leads to improved productivity; etc.", permittedMarks: [0,2,4] },
+    { id: "others", kind: "criterion", verbatim: "others", marks: 8, contextNote: "Two further distinct points across the three headings, each graded 4:2:0. Do not score a point already used above again.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP039EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sb-q5c", topicId: "home-economics-2-1", conceptId: "family-maintenance-act",
+    section: "B", questionRef: "2022 HL Section B Q5(c) — Deferred sitting",
+    stem: "Family structures are diverse in modern Irish society.",
+    questionText: "Outline the protection provided to families by The Family Law (Maintenance of Spouses and Children) Act 1976.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "protection", kind: "criterion", verbatim: "protection", marks: 12, contextNote: "Three points, each graded 4:2:0. This question concerns the named historical Act. Published 2022 examination guidance, not current legal advice: maintenance must be paid to a dependent spouse/civil partner; maintenance must be paid to a parent with custody of the dependent children i.e. under 18 years of age or under 23 years of age in full time education or have a disability; maintenance must be paid to the parent with custody of the children, even if both parties are sharing the same house; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

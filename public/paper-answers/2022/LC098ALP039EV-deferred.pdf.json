@@ -1,0 +1,156 @@
+{
+  "v": 1,
+  "paperFileid": "LC098ALP039EV-deferred.pdf",
+  "schemeFileid": "LC098ALP000EV-deferred.pdf",
+  "component": "039",
+  "band": [
+    1,
+    28
+  ],
+  "copyright": "© State Examinations Commission",
+  "q": [
+    {
+      "n": "1",
+      "label": "Section B · Q1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [
+        0.179857,
+        0.85342
+      ],
+      "endP": 2,
+      "endY": 0.85342,
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.179857,
+            1,
+            0.76228
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.041568,
+            1,
+            0.692446
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    },
+    {
+      "n": "2",
+      "label": "Section B · Q2",
+      "printOrder": 2,
+      "pP": 3,
+      "pY": [
+        0.066627,
+        0.36829
+      ],
+      "endP": 3,
+      "endY": 0.36829,
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.066627,
+            1,
+            0.928669
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.041568,
+            1,
+            0.198337
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    },
+    {
+      "n": "3",
+      "label": "Section B · Q3",
+      "printOrder": 3,
+      "pP": 3,
+      "pY": [
+        0.410522,
+        0.611853
+      ],
+      "endP": 3,
+      "endY": 0.611853,
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.066627,
+            1,
+            0.685463
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    },
+    {
+      "n": "4",
+      "label": "Section B · Q4",
+      "printOrder": 4,
+      "pP": 4,
+      "pY": [
+        0.066627,
+        0.302731
+      ],
+      "endP": 4,
+      "endY": 0.302731,
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.066627,
+            1,
+            0.668076
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    },
+    {
+      "n": "5",
+      "label": "Section B · Q5",
+      "printOrder": 5,
+      "pP": 4,
+      "pY": [
+        0.344964,
+        0.563682
+      ],
+      "endP": 4,
+      "endY": 0.563682,
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0.066627,
+            1,
+            0.702851
+          ]
+        }
+      ],
+      "conf": 1.0,
+      "mode": "crop"
+    }
+  ]
+}

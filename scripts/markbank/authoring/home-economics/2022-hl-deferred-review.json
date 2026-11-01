@@ -32,7 +32,7 @@
   },
   "sectionStatus": {
     "A": "All 19 tasks carded; 84 offered marks.",
-    "B": "16 tasks open; 280 offered marks.",
+    "B": "All 16 tasks carded; 280 offered marks.",
     "C": "26 tasks open; 385 offered marks."
   },
   "offeredPracticeMarks": 749,
@@ -484,6 +484,194 @@
       "questionRef": "2022 HL Section A Q14 — Deferred sitting",
       "marks": 6,
       "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q1a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q1(a) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q1b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q1(b) — Deferred sitting",
+      "marks": 28,
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q1c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q1(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q1d",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q1(d) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q2a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q2(a) — Deferred sitting",
+      "marks": 16,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q2b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q2(b) — Deferred sitting",
+      "marks": 22,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q2c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q2(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q3a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q3(a) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q3b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q3(b) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q3c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q3(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q4a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q4(a) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q4b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q4(b) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q4c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q4(c) — Deferred sitting",
+      "marks": 10,
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q5a",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q5(a) — Deferred sitting",
+      "marks": 18,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q5b",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q5(b) — Deferred sitting",
+      "marks": 20,
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2022-hl-deferred-sb-q5c",
+      "status": "carded",
+      "section": "B",
+      "questionRef": "2022 HL Section B Q5(c) — Deferred sitting",
+      "marks": 12,
+      "topicId": "home-economics-2-1"
     }
-  ]
+  ],
+  "sectionBReview": {
+    "paperPages": [
+      2,
+      3,
+      4
+    ],
+    "schemePages": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "tasks": 16,
+    "offeredMarks": 280,
+    "decisions": [
+      "B1(a): one choose-four card with four 5-mark slots and the original six-category chart.",
+      "B1(b/c), B3(b) and B5(b) retain their required/dependent headings.",
+      "B2(b) is one open meat-preservation profile; all source processes and their complete guidance are available as routes.",
+      "B2(a/c) and B4(b) distinguish source lists from unprinted model explanations.",
+      "B4(a/b) retain the original paper’s verbs despite scheme paraphrases.",
+      "B4(b) uses the exact 5:4:3:0 ladder.",
+      "B5(b) reserves social/economic/technological points and two others."
+    ],
+    "sourceClarifications": {
+      "glycerol": {
+        "source": "https://pubchem.ncbi.nlm.nih.gov/compound/Glicerol",
+        "note": "Glycerol has three hydroxyl groups, not three OH molecules."
+      },
+      "smoke-point": {
+        "source": "https://lod.nal.usda.gov/nalt/en/page/287706",
+        "note": "Smoke point depends on the fat/oil composition; 200°C and 250°C in the scheme are not universal values."
+      },
+      "aeration": {
+        "source": "https://www.ifst.org/lovefoodlovescience/resources/protein-foam-formation",
+        "note": "Whisking incorporates air and unfolds protein at the air/water interface; later heating sets the foam. Frictional heat is not the explanation for foam formation."
+      },
+      "fsai": {
+        "source": "https://www.fsai.ie/our-role",
+        "note": "FSAI is the Food Safety Authority of Ireland; the scheme calls it an Association."
+      }
+    },
+    "figure": {
+      "key": "home-economics-2022-hl-deferred-sb-q1a-labels",
+      "bounds": [
+        82,
+        187,
+        534,
+        419
+      ],
+      "scale": 2,
+      "sha256": "6a6c879bfebfbf2ff2f26fbfe9c96b0b28322f13a3b474f1d869d49ff2d0a986"
+    },
+    "sourceDifferences": [
+      "The paper’s B2 stem gives beef exports as €2.25 billion; the scheme says €2.5 billion. The card preserves the original paper stem."
+    ],
+    "clarificationsChecked": "2026-11-01"
+  }
 }

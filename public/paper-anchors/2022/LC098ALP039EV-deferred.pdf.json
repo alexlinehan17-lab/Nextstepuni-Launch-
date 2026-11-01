@@ -1,0 +1,109 @@
+{
+  "v": 1,
+  "paperOnly": 1,
+  "paperFileid": "LC098ALP039EV-deferred.pdf",
+  "schemeFileid": "",
+  "component": "039",
+  "band": [
+    1,
+    1
+  ],
+  "copyright": "© State Examinations Commission",
+  "q": [
+    {
+      "n": "1",
+      "label": "Section B · Q1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [
+        0.179857,
+        0.85342
+      ],
+      "endP": 2,
+      "endY": 0.85342,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "2",
+      "label": "Section B · Q2",
+      "printOrder": 2,
+      "pP": 3,
+      "pY": [
+        0.066627,
+        0.36829
+      ],
+      "endP": 3,
+      "endY": 0.36829,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "3",
+      "label": "Section B · Q3",
+      "printOrder": 3,
+      "pP": 3,
+      "pY": [
+        0.410522,
+        0.611853
+      ],
+      "endP": 3,
+      "endY": 0.611853,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "4",
+      "label": "Section B · Q4",
+      "printOrder": 4,
+      "pP": 4,
+      "pY": [
+        0.066627,
+        0.302731
+      ],
+      "endP": 4,
+      "endY": 0.302731,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    },
+    {
+      "n": "5",
+      "label": "Section B · Q5",
+      "printOrder": 5,
+      "pP": 4,
+      "pY": [
+        0.344964,
+        0.563682
+      ],
+      "endP": 4,
+      "endY": 0.563682,
+      "region": [
+        {
+          "p": 1
+        }
+      ],
+      "mode": "pagejump",
+      "conf": 0.5
+    }
+  ]
+}
