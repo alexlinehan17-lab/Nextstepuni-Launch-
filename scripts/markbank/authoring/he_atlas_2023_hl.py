@@ -211,3 +211,5 @@ if __name__ == '__main__':
     apply_ordinary_2022()
     from he_atlas_2022_hl_main import apply as apply_higher_main_2022
     apply_higher_main_2022()
+    from he_atlas_2021_hl_main import apply as apply_higher_main_2021
+    apply_higher_main_2021()

@@ -119,5 +119,19 @@
     "alt": "Original smart-casual outfits: one person wears a navy blazer, dark top, beige trousers and trainers; the other wears a light shirt, grey trousers and trainers. Both complete outfits and the source caption are visible.",
     "attribution": "SEC Home Economics 2022 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [173, 144, 398, 304], rendered at 2×; visually checked. SHA256 9350cdadd30b7be3472830c09d95ae0ae3d8ea3eca8c8b1fb9e3e6a4a51daf49."
+  },
+  "home-economics-2021-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2021-hl-sb-q1a-chart.png",
+    "md5": "d5b820cd04d713c7fba84125b1663f1a",
+    "alt": "Original two-ring infographic: Health and Wellbeing 42%; Responsible Living 27%. Influences on evening meal consumption. Source: What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House.",
+    "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [135, 216, 477, 357], rendered at 2×; visually checked. SHA256 e60964c51bcabe973965b499b0bc118abfa33e0af6066aeabce054f2209d5f65."
+  },
+  "home-economics-2021-hl-sc-q2ai-athleisure": {
+    "src": "/exam-figures/home-economics/home-economics-2021-hl-sc-q2ai-athleisure.png",
+    "md5": "f5829310cefc4d3dc67643a185d515b2",
+    "alt": "Original four athleisure outfits: dark jacket and light trousers; green sweatshirt and shorts; black outfit and white trainers; white top, scarf and black leggings. The complete three-photo montage and Pinterest source caption are visible.",
+    "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [169, 157, 414, 313], rendered at 2×; visually checked. SHA256 d2bcadde4d98f244fb25af1744c0bd3384817e1ee9694f0dce286dfae43c91c7."
   }
 }

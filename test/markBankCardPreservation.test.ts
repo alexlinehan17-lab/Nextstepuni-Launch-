@@ -1291,6 +1291,8 @@ const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
 // The older 22 he- aliases are already accounted for in the historical 158 aliases.
 const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties'];
 const homeEconomicsAdditionIds = new Set([
+  'he-2021-hl-sa-q4-factors', 'he-2021-hl-sa-q8-advantages',
+  'he-2021-hl-sb-q2a', 'he-2021-hl-sb-q3b', 'he-2021-hl-sb-q5a-universality', 'he-2021-hl-sc-q1cii-strategies',
   'he-2022-hl-sa-q1-absorption', 'he-2022-hl-sa-q3-example', 'he-2022-hl-sa-q6-advantage', 'he-2022-hl-sb-q5c-procedure',
   'he-2022-ol-sa-q14', 'he-2022-ol-sa-q2-source', 'he-2022-ol-sa-q11-car',
   'he-2022-ol-sb-q1a', 'he-2022-ol-sb-q2a', 'he-2022-ol-sb-q2b', 'he-2022-ol-sb-q3a',
@@ -1426,7 +1428,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(410);
+    expect(HOME_EC_HIGHER).toHaveLength(416);
     expect(HOME_EC_ORDINARY).toHaveLength(280);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {

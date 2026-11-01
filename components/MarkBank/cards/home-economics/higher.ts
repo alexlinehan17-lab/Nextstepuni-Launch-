@@ -36,9 +36,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q1", topicId: "home-economics-0-5", conceptId: "protein-denaturation",
     section: "A", questionRef: "2021 HL Section A Q1",
     questionText: "State two causes of protein denaturation and give one example in each case.",
-    tariffModel: {"kind":"bestNofParts","notation":"Causes 2 @ 2 marks (graded 2:0), examples 2 @ 1 mark (graded 1:0)","answer":2,"ofParts":5,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 cause/example pairs × (2 (2:0) + 1 (1:0))"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "State two causes of protein denaturation and give one example in each case.", marks: 6, contextNote: "Any TWO of the five causes the scheme lists, each with an example. One option is worth 3 marks: 2 for the cause (graded 2:0) and 1 for the example (graded 1:0) — both all-or-nothing, so a correct cause with no example or a wrong example still scores 2 of the 3. In the scheme's table the mechanical-action cause cell also carries \"e.g whisking, beating\", and acids, enzymes and salt all sit under the heading \"Chemicals: such as\", so the chemical must be named rather than left as \"chemicals\".", openList: true, group: {"claimMax":2,"perOption":3,"options":["Heat Hard boiled eggs; omelette; quiche; egg custard; dry heat causes meat to shrink; collagen changes to gelatine in meat; browning of meat; etc.","Mechanical action Sponge cake; soufflés; meringues; etc","Acids Cheese-making; vinegar in marinade tenderises meat; sour milk lactose changes to lactic acid etc.","Enzymes Rennin coagulates casein in the stomach; cheese-making; tenderising meat etc.","Salt Cheese-making"]} },
+    { id: "name-1", kind: "criterion", verbatim: "Cause", marks: 2, contextNote: "Pair 1: name a different cause. Complete published table: Heat: hard boiled eggs; omelette; quiche; egg custard; dry heat causes meat to shrink; collagen changes to gelatine in meat; browning of meat; etc. Mechanical action (e.g. whisking, beating): sponge cake; soufflés; meringues; etc. Chemicals: acids — cheese-making; vinegar in marinade tenderises meat; sour milk lactose changes to lactic acid; etc. Enzymes — rennin coagulates casein in the stomach; cheese-making; tenderising meat; etc. Salt — cheese-making.", permittedMarks: [0,2] },
+    { id: "example-1", kind: "criterion", verbatim: "Example", marks: 1, contextNote: "Pair 1: give a matching example for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
+    { id: "name-2", kind: "criterion", verbatim: "Cause", marks: 2, contextNote: "Pair 2: name a different cause. Use the complete guidance in the first pair.", permittedMarks: [0,2] },
+    { id: "example-2", kind: "criterion", verbatim: "Example", marks: 1, contextNote: "Pair 2: give a matching example for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
     ],
   } as SecCard,
   {
@@ -49,10 +52,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "rancidity-in-lipids",
     section: "A", questionRef: "2021 HL Section A Q2",
     questionText: "In relation to lipids, explain each of the following: (i) Oxidative rancidity (ii) Hydrolytic rancidity",
-    tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 required explanations × 3 (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This occurs as a result of a reaction which takes place between unsaturated fatty acids and oxygen in the air; oxygen combines with the carbon atoms at the double bond; causes unpleasant rancid smell due to the production of compounds i.e. aldehydes and ketones; etc.", marks: 3, contextNote: "Part (i) Oxidative rancidity. This is ONE graded point worth 3 marks (graded 3:2:1:0) — the semicolons separate elements of the same explanation, not separate marks. A full explanation naming the reaction between unsaturated fatty acids and oxygen scores 3; a thinner or partly correct explanation is graded down to 2 or 1.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "This occurs when enzymes (lipases) hydrolyse fats; breaking them down into fatty acids and glycerol; micro-organisms (bacteria) present in fat foods may also produce enzymes which hydrolyse fats; can give an unpleasant taste and smell; occurs in freezers when enzymes are not destroyed; etc.", marks: 3, contextNote: "Part (ii) Hydrolytic rancidity. Again ONE graded point worth 3 marks (graded 3:2:1:0): naming enzyme (lipase) hydrolysis of fats into fatty acids and glycerol earns the full 3, a partial explanation is graded down.", openList: true },
+    { id: "oxidative", kind: "criterion", verbatim: "Oxidative rancidity", marks: 3, contextNote: "Required explanation, graded 3:2:1:0. Complete guidance: This occurs as a result of a reaction which takes place between unsaturated fatty acids and oxygen in the air; oxygen combines with the carbon atoms at the double bond; causes unpleasant rancid smell due to the production of compounds i.e. aldehydes and ketones; etc.", permittedMarks: [0,1,2,3] },
+    { id: "hydrolytic", kind: "criterion", verbatim: "Hydrolytic rancidity", marks: 3, contextNote: "Required explanation, graded 3:2:1:0. Complete guidance: This occurs when enzymes (lipases) hydrolyse fats; breaking them down into fatty acids and glycerol; micro-organisms (bacteria) present in fat foods may also produce enzymes which hydrolyse fats; can give an unpleasant taste and smell; occurs in freezers when enzymes are not destroyed; etc.", permittedMarks: [0,1,2,3] },
     ],
   } as SecCard,
   {
@@ -63,11 +66,11 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "nutrient-deficiency-diseases",
     section: "A", questionRef: "2021 HL Section A Q3",
     questionText: "Name one condition (disease) associated with a deficiency of the following nutrients: Vitamin D; Vitamin B3 (Niacin); Iodine.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 required nutrients × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dental decay; rickets; osteomalacia; osteoporosis; etc.", marks: 2, accepts: ["Dental decay","rickets","osteomalacia","osteoporosis"], contextNote: "Vitamin D — name any ONE of these conditions. Graded 2:0, so it is all-or-nothing: 2 marks for a correct condition, 0 for anything else. Naming more than one does not add marks.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "Pellagra; 4D’s; weight loss; tiredness; irritability; etc.", marks: 2, accepts: ["Pellagra","4D’s","weight loss","tiredness","irritability"], contextNote: "Vitamin B3 (Niacin) — name any ONE of these conditions. Graded 2:0, all-or-nothing.", openList: true },
-    { id: "r-3", kind: "point", verbatim: "Goitre; lethargy; stunted or delayed mental and physical development in children; etc", marks: 2, accepts: ["Goitre","lethargy","stunted or delayed mental and physical development in children"], contextNote: "Iodine — name any ONE of these conditions. Graded 2:0, all-or-nothing.", openList: true },
+    { id: "nutrient-1", kind: "criterion", verbatim: "Vitamin D", marks: 2, contextNote: "One associated deficiency condition, graded 2:0. Rickets/osteomalacia are clear vitamin-D-deficiency examples. Tooth decay involves acids produced by oral bacteria; do not treat it as simply a vitamin D deficiency. Complete historical guidance: Dental decay; rickets; osteomalacia; osteoporosis; etc.", permittedMarks: [0,2] },
+    { id: "nutrient-2", kind: "criterion", verbatim: "Vitamin B3 (Niacin)", marks: 2, contextNote: "One associated deficiency condition, graded 2:0. Complete historical guidance: Pellagra; 4D’s; weight loss; tiredness; irritability; etc.", permittedMarks: [0,2] },
+    { id: "nutrient-3", kind: "criterion", verbatim: "Iodine", marks: 2, contextNote: "One associated deficiency condition, graded 2:0. Complete historical guidance: Goitre; lethargy; stunted or delayed mental and physical development in children; etc", permittedMarks: [0,2] },
     ],
   } as SecCard,
   {
@@ -76,12 +79,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sa-q4", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate",
-    section: "A", questionRef: "2021 HL Section A Q4",
-    questionText: "What is Basal Metabolic Rate (BMR)? Give two factors that determine a person’s basal metabolic rate.",
-    tariffModel: {"kind":"fixed","notation":"4 marks (graded 4:3:2:1:0); 2 @ 1 mark (graded 1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    section: "A", questionRef: "2021 HL Section A Q4 — definition",
+    questionText: "What is Basal Metabolic Rate (BMR)?",
+    tariffModel: {"kind":"fixed","notation":"Definition 4 (4:3:2:1:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The minimum amount of energy needed; to sustain the body at complete rest; maintain body temperature; keep the internal organs functioning; etc.", marks: 4, contextNote: "The definition is ONE graded point worth 4 marks (graded 4:3:2:1:0) — the semicolons are elements of a single explanation, not four separate marks. \"The minimum amount of energy needed to sustain the body at complete rest\" is the core; adding what that energy is used for (body temperature, internal organs) is what carries a thin answer up to the full 4.", openList: true },
-    { id: "r-2", kind: "anyN", verbatim: "Give two factors that determine a person’s basal metabolic rate.", marks: 2, contextNote: "Any TWO factors, 1 mark each (graded 1:0, all-or-nothing per factor). The scheme's split of these into (i) and (ii) is only its line layout — the two lines are one pool, so any two of the factors below score.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Age","gender","body weight","size","health status","hormones","pregnancy/lactation","occupation","activity level","climate"]} },
+    { id: "definition", kind: "criterion", verbatim: "Basal Metabolic Rate", marks: 4, contextNote: "Define BMR, graded 4:3:2:1:0. Complete guidance: The minimum amount of energy needed; to sustain the body at complete rest; maintain body temperature; keep the internal organs functioning; etc.", permittedMarks: [0,1,2,3,4] },
     ],
   } as SecCard,
   {
@@ -92,10 +94,16 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q5", topicId: "home-economics-0-6", conceptId: "properties-of-sugar",
     section: "A", questionRef: "2021 HL Section A Q5",
     questionText: "Name three properties of sugar and state one culinary use of each.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 properties @ 1 mark (graded 1:0), 3 uses @ 1 mark (graded 1:0)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 paired responses × (1 + 1), each entry graded 1:0"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name three properties of sugar and state one culinary use of each", marks: 6, contextNote: "Any THREE of the ten property/use pairs the scheme lists. Each option is worth 2 marks: 1 for the property and 1 for a culinary use that actually belongs to it (both graded 1:0, all-or-nothing). A correct property paired with a use from a different property scores 1, not 2.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sweetness Cakes, desserts, beverages, jam","Preservative Jams, jellies","Caramelisation Desserts","Fermentation Bread making","Gel formation Jam","Maillard reaction Browning of food e.g. toast","Inversion Jam","Crystallisation Confectionery","Solubility Syrups","Assists aeration Sponge cakes etc."]} },
+    { id: "name-1", kind: "criterion", verbatim: "Property", marks: 1, contextNote: "Pair 1: name a different property. Complete published table: Sweetness Cakes, desserts, beverages, jam Preservative Jams, jellies Caramelisation Desserts Fermentation Bread making Gel formation Jam Maillard reaction Browning of food e.g. toast Inversion Jam Crystallisation Confectionery Solubility Syrups Assists aeration Sponge cakes etc.", permittedMarks: [0,1] },
+    { id: "example-1", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "Pair 1: give a matching culinary use for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
+    { id: "name-2", kind: "criterion", verbatim: "Property", marks: 1, contextNote: "Pair 2: name a different property. Use the complete guidance in the first pair.", permittedMarks: [0,1] },
+    { id: "example-2", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "Pair 2: give a matching culinary use for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
+    { id: "name-3", kind: "criterion", verbatim: "Property", marks: 1, contextNote: "Pair 3: name a different property. Use the complete guidance in the first pair.", permittedMarks: [0,1] },
+    { id: "example-3", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "Pair 3: give a matching culinary use for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
     ],
+    taskGroups: [{"sourceCardId":"he-2021-hl-sa-q5-pair-1","label":"Property 1","marks":2,"rowIds":["name-1","example-1"]},{"sourceCardId":"he-2021-hl-sa-q5-pair-2","label":"Property 2","marks":2,"rowIds":["name-2","example-2"]},{"sourceCardId":"he-2021-hl-sa-q5-pair-3","label":"Property 3","marks":2,"rowIds":["name-3","example-3"]}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -105,9 +113,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q6", topicId: "home-economics-0-10", conceptId: "frozen-foods-in-meal-planning",
     section: "A", questionRef: "2021 HL Section A Q6",
     questionText: "Outline two benefits of incorporating frozen foods in meal planning.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 3 marks (graded 3:2:0)","answer":2,"ofParts":10,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 benefits × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline two benefits of incorporating frozen foods in meal planning.", marks: 6, contextNote: "Any TWO of the benefits the scheme lists, 3 marks each. Note the band is 3:2:0 — there is no 1-mark step: a benefit that is outlined (named and developed) takes the full 3, a benefit that is only named without development is graded to 2, and anything else is 0. The verb is \"outline\", so the develop-it half is where the third mark lives.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Frozen food retains nutritional value","retains sensory characteristic of food","time saving","saves money","adds variety","reduces waste","food is pre- prepared – useful for less skilled people or people with limited manual dexterity","foods available out of season","useful in emergencies","easy to control portion sizes"]} },
+    { id: "benefits", kind: "criterion", verbatim: "benefits", marks: 6, contextNote: "Two benefits, each graded 3:2:0. Complete guidance: Frozen food retains nutritional value; retains sensory characteristic of food; time saving; saves money; adds variety; reduces waste; food is pre- prepared – useful for less skilled people or people with limited manual dexterity; foods available out of season; useful in emergencies; easy to control portion sizes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -118,10 +126,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q7", topicId: "home-economics-0-9", conceptId: "effects-of-processing-fruit-vegetables",
     section: "A", questionRef: "2021 HL Section A Q7",
     questionText: "Explain the effect of each of the following in relation to the processing of vegetables and fruit: Canning; Dehydration.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:0)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 required processes × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Canning — any one of the following effects", marks: null, contextNote: "Canning is worth one graded point of 3 (3:2:0), so there is no half-way 1 mark here: an effect named and explained scores 3, a bare or partly correct effect scores 2, and anything else 0.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Loss of water soluble vitamins","change in colour","change in texture","change in flavour","micro-organisms and enzymes destroyed","sugar content may be increased if canned in syrup","increased salt content if canned in brine","fat content can be increased if canned in oil"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Dehydration — any one of the following effects", marks: null, contextNote: "Dehydration is the second graded point of 3 (3:2:0), marked the same way as canning: effect named and explained 3, bare or partial 2, otherwise 0.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Loss of vitamin B group, A and E","change in colour","change in texture","change in flavour","prevents growth of micro-organisms and enzymes","dried fruit can be high in sugar"]} },
+    { id: "canning", kind: "criterion", verbatim: "Canning", marks: 3, contextNote: "Explain the effects of this process, graded 3:2:0. Effects depend on food and process conditions. Complete historical guidance: Loss of water soluble vitamins; change in colour; change in texture; change in flavour; micro- organisms and enzymes destroyed; sugar content may be increased if canned in syrup; increased salt content if canned in brine; fat content can be increased if canned in oil; etc.", permittedMarks: [0,2,3] },
+    { id: "dehydration", kind: "criterion", verbatim: "Dehydration", marks: 3, contextNote: "Explain the effects of this process, graded 3:2:0. Effects depend on food and process conditions. Complete historical guidance: Loss of vitamin B group, A and E; change in colour; change in texture; change in flavour; prevents growth of micro-organisms and enzymes; dried fruit can be high in sugar; etc.", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -130,12 +138,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sa-q8", topicId: "home-economics-0-5", conceptId: "protein-alternatives-vegan-diet",
-    section: "A", questionRef: "2021 HL Section A Q8",
-    questionText: "Name two protein alternatives that can be used in a vegan diet. State two advantages of including protein alternatives in the diet.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 1 mark (graded 1:0) + 2 @ 2 marks (graded 2:1:0)"}, totalMarks: 6,
+    section: "A", questionRef: "2021 HL Section A Q8 — alternatives",
+    questionText: "Name two protein alternatives that can be used in a vegan diet.",
+    tariffModel: {"kind":"fixed","notation":"2 alternatives × 1 (1:0)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two protein alternatives that can be used in a vegan diet", marks: null, contextNote: "Naming is all-or-nothing per name (1:0) — a named alternative scores 1, anything else 0. The scheme also accepts vegan quorn, miso, soya milk, soya cheese, vegan cheese, beans, nutritional yeast, quinoa, nuts and spelt.", openList: true, group: {"claimMax":2,"perOption":1,"options":["TVP","tofu","tempeh","edamame","mycoprotein","wheat protein (seitan)","lentils","chickpeas"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Two advantages of including protein alternatives in the diet", marks: null, contextNote: "Each advantage is one graded point of 2 (2:1:0): stated clearly 2, vague or incomplete 1, otherwise 0. The scheme also accepts little preparation needed, sustainability, little cooking needed, add flavour and add variety.", openList: true, group: {"claimMax":2,"perOption":2,"options":["HBV protein","polyunsaturated fat","high in fibre","B group vitamins","calcium","iron","not very expensive","versatile"]} },
+    { id: "alternatives", kind: "criterion", verbatim: "protein alternatives", marks: 2, contextNote: "Name two vegan alternatives, each graded 1:0. Check the actual product is vegan; not all mycoprotein products are. Complete examples: (i) TVP; tofu; tempeh; edamame; mycoprotein; vegan quorn; wheat protein (seitan); miso; (ii) soya milk; soya cheese; vegan cheese; lentils; beans; chickpeas; nutritional yeast; quinoa; nuts; spelt; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
     ],
   } as SecCard,
   {
@@ -146,10 +153,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q9", topicId: "home-economics-0-2", conceptId: "enzymic-and-non-enzymic-browning",
     section: "A", questionRef: "2021 HL Section A Q9",
     questionText: "Explain each of the following chemical changes that occur during food preparation/cooking: Enzymic browning; Non-enzymic browning.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:1:0)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 required changes × 3 (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enzymic browning — When fruit/vegetables are cut or damaged the cells release an enzyme, oxidase; which reacts with the oxygen in the air causing oxidation; as a result the food changes colour, e.g. apples turn brown", marks: 3, contextNote: "One graded point of 3 (3:2:1:0), not three separate ticks: the fuller the explanation — enzyme released, reaction with oxygen, resulting colour change — the higher the band, and a bare 'the food goes brown' sits at the bottom of it.", openList: true },
-    { id: "r-2", kind: "anyN", verbatim: "Non-enzymic browning — any one of the following explained", marks: null, contextNote: "The second graded point of 3 (3:2:1:0). One of these three explained fully earns the 3; naming the reaction without explaining it sits lower in the band.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Maillard reaction - browning which occurs when amino acids and carbohydrates react when heated","Caramelisation – sugar melts and changes to a brown syrup / caramel","Dextrinisation – dextrins, short chains of polysaccharides form on carbohydrate foods in dry heat causing browning e.g. toast"]} },
+    { id: "enzymic", kind: "criterion", verbatim: "Enzymic browning", marks: 3, contextNote: "Explain this change, graded 3:2:1:0. Complete historical guidance: When fruit/vegetables are cut or damaged the cells release an enzyme, oxidase; which reacts with the oxygen in the air causing oxidation; as a result the food changes colour, e.g. apples turn brown; etc.", permittedMarks: [0,1,2,3] },
+    { id: "non-enzymic", kind: "criterion", verbatim: "Non-enzymic browning", marks: 3, contextNote: "Explain this change, graded 3:2:1:0. Complete historical guidance: Maillard reaction - browning which occurs when amino acids and carbohydrates react when heated; Caramelisation – sugar melts and changes to a brown syrup / caramel; Dextrinisation – dextrins, short chains of polysaccharides form on carbohydrate foods in dry heat causing browning e.g. toast; etc.", permittedMarks: [0,1,2,3] },
     ],
   } as SecCard,
   {
@@ -160,10 +167,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q10", topicId: "home-economics-1-3", conceptId: "refrigerator-parts-and-functions",
     section: "A", questionRef: "2021 HL Section A Q10",
     questionText: "State the function of the following parts of the refrigerator: Thermostat; Refrigerant.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:1:0)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 required functions × 3 (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Thermostat — maintains the temperature between 0⁰C and 5⁰C", marks: 3, contextNote: "One graded point of 3 (3:2:1:0): the function with the temperature range it holds earns the top of the band, 'controls the temperature' with no range sits lower." },
-    { id: "r-2", kind: "point", verbatim: "Refrigerant — cooling the cabinet by drawing the heat from inside", marks: 3, contextNote: "The second graded point of 3 (3:2:1:0): cooling the cabinet AND how it does it — by drawing heat out from inside — is what the full 3 pays for." },
+    { id: "thermostat", kind: "criterion", verbatim: "Thermostat", marks: 3, contextNote: "State this component’s function, graded 3:2:1:0. Complete guidance: maintains the temperature between 0°C and 5°C", permittedMarks: [0,1,2,3] },
+    { id: "refrigerant", kind: "criterion", verbatim: "Refrigerant", marks: 3, contextNote: "State this component’s function, graded 3:2:1:0. Complete guidance: cooling the cabinet by drawing the heat from inside.", permittedMarks: [0,1,2,3] },
     ],
   } as SecCard,
   {
@@ -174,10 +181,16 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q11", topicId: "home-economics-1-2", conceptId: "classification-of-retail-outlets",
     section: "A", questionRef: "2021 HL Section A Q11",
     questionText: "Classify three types of retail outlet and give one example in each class.",
-    tariffModel: {"kind":"bestNofParts","notation":"Classification 3 @ 1 mark (graded 1:0), examples 3 @ 1 mark (graded 1:0)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 paired responses × (1 + 1), each entry graded 1:0"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three classifications of retail outlet, each with an example from that class", marks: null, contextNote: "Each pick is priced as two separate 1:0 ticks — 1 for the classification and 1 for an example that belongs to it — so a class named with no example, or an example under the wrong class, is a half claim. The scheme also accepts Hypermarkets; Farmers markets /street markets; Party selling; Vending machines; Auctions; TV shopping; Online shopping; Street vending; Mobile shops; Pop up shops.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Supermarkets — Tesco; Centra; SuperValu","Mail order — Asos, iClothing, Oxendales","Independent shops — Shoe shops; butchers; jewellers; boutiques","Department stores — Brown Thomas; Arnotts","Multiple chain stores — Penneys; Dunnes stores; Elverys sports; Aldi; Currys PC World","Discount stores — Argos; Maplins; Dealz; Tiger","Charity shops — e.g. Simon"]} },
+    { id: "name-1", kind: "criterion", verbatim: "Classification", marks: 1, contextNote: "Pair 1: name a different classification. Complete published table: Supermarkets Tesco; Centra; SuperValu; etc. Mail order Asos, iClothing, Oxendales; etc. Independent shops Shoe shops; butchers; jewellers; boutiques; etc. Department stores Brown Thomas; Arnotts; etc Multiple chain stores Penneys; Dunnes stores; Elverys sports; Aldi; Currys PC World; etc. Discount stores Argos; Maplins; Dealz; Tiger; etc. Others: - Hypermarkets; Farmers markets /street markets; Party selling; Vending machines; Auctions; TV shopping; Online shopping; Street vending; Mobile shops; Pop up shops; Charity shops e.g. Simon", permittedMarks: [0,1] },
+    { id: "example-1", kind: "criterion", verbatim: "Example", marks: 1, contextNote: "Pair 1: give a matching example for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
+    { id: "name-2", kind: "criterion", verbatim: "Classification", marks: 1, contextNote: "Pair 2: name a different classification. Use the complete guidance in the first pair.", permittedMarks: [0,1] },
+    { id: "example-2", kind: "criterion", verbatim: "Example", marks: 1, contextNote: "Pair 2: give a matching example for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
+    { id: "name-3", kind: "criterion", verbatim: "Classification", marks: 1, contextNote: "Pair 3: name a different classification. Use the complete guidance in the first pair.", permittedMarks: [0,1] },
+    { id: "example-3", kind: "criterion", verbatim: "Example", marks: 1, contextNote: "Pair 3: give a matching example for the same named item. The two entries are marked separately.", permittedMarks: [0,1] },
     ],
+    taskGroups: [{"sourceCardId":"he-2021-hl-sa-q11-pair-1","label":"Classification 1","marks":2,"rowIds":["name-1","example-1"]},{"sourceCardId":"he-2021-hl-sa-q11-pair-2","label":"Classification 2","marks":2,"rowIds":["name-2","example-2"]},{"sourceCardId":"he-2021-hl-sa-q11-pair-3","label":"Classification 3","marks":2,"rowIds":["name-3","example-3"]}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -187,9 +200,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q12", topicId: "home-economics-1-2", conceptId: "consumer-responsibilities",
     section: "A", questionRef: "2021 HL Section A Q12",
     questionText: "Outline three consumer responsibilities.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three consumer responsibilities outlined", marks: null, contextNote: "Each responsibility is one graded point of 2 (2:1:0) — outlined 2, merely named or vague 1, otherwise 0 — so the question is answered with three short outlines, not three bare phrases. The scheme also accepts to keep themselves safe; understand consumer protection laws; keep receipts.", openList: true, group: {"claimMax":3,"perOption":2,"options":["To be informed","to follow instructions","to complain","to be aware of consumer rights","To use resources responsibily","to contribute to sustainable living","To be aware of quality","to be aware of value for money"]} },
+    { id: "points", kind: "criterion", verbatim: "consumer responsibilities", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete wording: (i) To be informed; to follow instructions; to complain; to be aware of consumer rights; (ii) To use resources responsibily; to contribute to sustainable living; (iii) To be aware of quality; to be aware of value for money; to keep themselves safe; understand consumer protection laws; keep receipts; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -200,9 +213,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q13", topicId: "home-economics-1-0", conceptId: "housing-choice-socio-economic-factors",
     section: "A", questionRef: "2021 HL Section A Q13",
     questionText: "Identify three socio-economic factors that influence housing choices.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three socio-economic factors that influence housing choices", marks: null, contextNote: "Three factors, each worth 2. The 2:1:0 band is the sliding value of ONE factor, not three separate ticks: 2 for a factor identified clearly, 1 for a vague or partly-stated one, 0 for nothing creditable. The scheme groups its list as (i), (ii), (iii) only to show a spread; each semicolon inside those groups is a separate acceptable factor, so three from anywhere in the list score.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Income","financial assistance available","energy efficiency","family size/ requirements","special needs","personal preferences","location","availability","amenities"]} },
+    { id: "points", kind: "criterion", verbatim: "socio-economic factors", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete wording: (i) Income; financial assistance available; energy efficiency; (ii) family size/ requirements; special needs; personal preferences; (iii) location; availability; amenities etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -213,9 +226,9 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sa-q14", topicId: "home-economics-1-2", conceptId: "small-claims-procedure-benefits",
     section: "A", questionRef: "2021 HL Section A Q14",
     questionText: "State two benefits of the small claims procedure.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 3 marks (graded 3:2:1:0)","answer":2,"ofParts":6,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any two of the following benefits", marks: null, contextNote: "Two benefits, each worth 3. The 3:2:1:0 band is the sliding value of ONE benefit: 3 for a benefit stated fully, 2 or 1 as it thins out, 0 for nothing creditable — so a bare 'it is cheap' is not automatically the full 3. The scheme's (i) and (ii) are its own grouping of the expected answers; each semicolon inside them is a separate acceptable benefit, so any two from the list score.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Inexpensive (current fee €25)","fast, respondent has 15 days to reply and 28 days to comply","easy way to resolve disputes about a product or service","solicitor is not required","processes consumer claims up to the value of €2,000","court appearance not required"]} },
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 6, contextNote: "2 distinct points, each graded 3:2:1:0. Historical 2021 examination guidance; fees, limits and procedure are not presented as current advice. Complete wording: (i) Inexpensive (current fee €25); fast, respondent has 15 days to reply and 28 days to comply; easy way to resolve disputes about a product or service; solicitor is not required; (ii) processes consumer claims up to the value of €2,000; court appearance not required; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7090,13 +7103,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q1a", topicId: "home-economics-0-10", conceptId: "health-responsible-living-food-choice",
     section: "B", questionRef: "2021 HL Section B Q1(a)",
-    stem: "The infographic shows two influencing factors on evening meal consumption: Health and Wellbeing (42%) and Responsible Living (27%). (What Ireland Ate Last Night Report 2020, Bord Bia Thinking House)",
+    stem: "The following infographic shows two influencing factors on evening meal consumption. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House) Health and Wellbeing Responsible Living",
     questionText: "In relation to the infographic above, suggest how (i) health and wellbeing and (ii) responsible living might influence food choices.",
-    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks (graded 5:3:1:0); 2 references to health and wellbeing, 2 references to responsible living","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 2 points × 5 (5:3:1:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How health and wellbeing might influence food choices", marks: 10, contextNote: "Two points at 5 marks. The split is fixed at two and two — this half cannot be padded to make up for the other. Health and wellbeing is about the eater: what they are trying to increase or reduce, what they cannot eat, what they are trying to weigh.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Increased knowledge of healthy eating guidelines","reduce fat intake","reduce salt intake","reduce sugar intake","increase fibre","increase calcium","increase vitamin D","increase water","functional food","allergies e.g. nut allergy, lactose intolerance","personal preference","sensory aspects","aiming to reduce weight","social influencers"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How responsible living might influence food choices", marks: 10, contextNote: "Two points at 5 marks. Responsible living is about everything except the eater — food miles, packaging, water footprint, buying local, avoiding waste. Students who know the health half well often lose all 10 here by treating it as more healthy eating.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Packaging","food miles","plant based diets","efficient methods of cooking","reduction in red meat consumption","water footprint of food","greenhouse gas emissions","sustainable shopping","buying local","organic produce","free range poultry and eggs","awareness of food origins","food traceability","budgeting"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Health and wellbeing", marks: 10, contextNote: "Two points under this required heading, each graded 5:3:1:0. Complete guidance: Increased knowledge of healthy eating guidelines; reduce fat intake; reduce salt intake; reduce sugar intake; increase fibre; increase calcium; increase vitamin D; increase water; functional food; allergies e.g. nut allergy, lactose intolerance; personal preference; sensory aspects; aiming to reduce weight; social influencers; specific dietary needs e.g. gluten free, dairy free; food fads e.g. good mood food; choosing more fresh food and less convenience and processed food; portion control; follow food pyramid: etc.", permittedMarks: [0,1,2,3,4,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,1,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,1,3,5]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Responsible living", marks: 10, contextNote: "Two points under this required heading, each graded 5:3:1:0. Complete guidance: Packaging; food miles; plant based diets; efficient methods of cooking; reduction in red meat consumption; water footprint of food; greenhouse gas emissions; sustainable shopping; buying local; organic produce; free range poultry and eggs; awareness of food origins; food traceability; budgeting; good parent role model for children; best before dates; food labelling; avoiding waste; consumer rights; etc.", permittedMarks: [0,1,2,3,4,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,1,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,1,3,5]}] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-hl-sb-q1a-chart",
+          "src": "/exam-figures/home-economics/home-economics-2021-hl-sb-q1a-chart.png",
+          "srcHash": "d5b820cd04d713c7fba84125b1663f1a",
+          "alt": "Original two-ring infographic: Health and Wellbeing 42%; Responsible Living 27%. Influences on evening meal consumption. Source: What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7105,11 +7127,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q1b", topicId: "home-economics-0-1", conceptId: "contemporary-irish-eating-trends",
     section: "B", questionRef: "2021 HL Section B Q1(b)",
-    stem: "The infographic shows two influencing factors on evening meal consumption: Health and Wellbeing (42%) and Responsible Living (27%). (What Ireland Ate Last Night Report 2020, Bord Bia Thinking House)",
+    stem: "The following infographic shows two influencing factors on evening meal consumption. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House) Health and Wellbeing Responsible Living",
     questionText: "Identify and describe contemporary trends in Irish eating patterns.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 trends @ 4 marks (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 trends × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identify and describe contemporary trends in Irish eating patterns", marks: 12, contextNote: "Three trends at 4 marks, graded 4:2:0 — identify is 2, describe is 4. \"Contemporary\" is doing work: the scheme includes dashboard dining, food bloggers, intermittent fasting and more home cooking during the pandemic. A trend that has been true for fifty years is not contemporary.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Nutritiously conscious","take away foods/ foods on the go/dash board dining","meals being eaten while watching TV/devices","new foods /ingredients","pre-prepared foods","irregular mealtimes","intermittent fasting","influence of foreign cultures","influence of food bloggers","organic","free trade","value for money","deli dining","different diets in the same family"]} },
+    { id: "trends", kind: "criterion", verbatim: "trends", marks: 12, contextNote: "Three trends, each graded 4:2:0. Historical 2021 question. Complete guidance: Nutritiously conscious; take away foods/ foods on the go/dash board dining; meals being eaten while watching TV/devices; new foods /ingredients; pre-prepared foods; irregular mealtimes; intermittent fasting; influence of foreign cultures; influence of food bloggers; organic; free trade; value for money; deli dining; different diets in the same family; preference for quality foods e.g. Q-mark; raw food; foraged food; more home cooked meals during the pandemic; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7119,13 +7141,15 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q1c", topicId: "home-economics-0-8", conceptId: "iron-account-hl",
     section: "B", questionRef: "2021 HL Section B Q1(c)",
-    stem: "The infographic shows two influencing factors on evening meal consumption: Health and Wellbeing (42%) and Responsible Living (27%). (What Ireland Ate Last Night Report 2020, Bord Bia Thinking House)",
-    questionText: "Give an account of Iron with reference to: sources in the diet; biological functions; effects of deficiency.",
-    tariffModel: {"kind":"fixed","notation":"sources 3 @ 2 marks (graded 2:0), 1 reference to haem iron, 1 reference to non-haem iron + 1 other; functions 3 @ 2 marks (graded 2:0); deficiencies 3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    stem: "The following infographic shows two influencing factors on evening meal consumption. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House) Health and Wellbeing Responsible Living",
+    questionText: "Micronutrients are essential for good health and wellbeing. Give an account of iron with reference to:\n• sources in the diet\n• biological functions\n• effects of deficiency.",
+    tariffModel: {"kind":"fixed","notation":"Sources 3 × 2; functions 3 × 2; deficiency 3 × 2 (all 2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Sources in the diet", marks: 6, contextNote: "Three sources at 2 marks, all-or-nothing, and the scheme reserves one for haem and one for non-haem — three red meats cannot score 6. Saying which type a food provides is what makes the reference count.", openList: true, group: {"claimMax":3,"perOption":2,"options":["red meats","chicken","liver","kidneys","sardines","cereals","eggs","leafy green vegetables e.g. broccoli, kale and spinach","pulses","legumes","nuts","seeds"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Biological functions", marks: 6, contextNote: "Three functions at 2 marks, all-or-nothing. Haemoglobin and carrying oxygen is the core, but they are one function in two halves — pair it with myoglobin or the enzyme systems for genuinely separate points.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Essential component of haemoglobin in red blood cells","carries oxygen to the cells","forms part of myoglobin","essential component of enzyme system which is important in the use of oxygen to release energy from food","boosts the immune system","aids brain/cognitive development","prevents anaemia","aids the transfer of electrons","growth in young children"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Effects of deficiency", marks: 6, contextNote: "Three effects at 2 marks, all-or-nothing. Anaemia is the named condition; the rest are its symptoms, and the scheme accepts them as separate points, so this is the easiest 6 marks in the question.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Anaemia","tiredness/ fatigue","irritability","lethargy","lack of concentration","headache","palpitations","breathlessness","dizziness","pale skin","feeling weak","muscle tiredness","dryness in mouth and throat","sore mouth"]} },
+    { id: "haem", kind: "criterion", verbatim: "haem iron", marks: 2, contextNote: "One haem source. Full source guidance: Haem iron found in red meats; chicken; liver; kidneys; sardines; etc. Non-haem iron in cereals; eggs; leafy green vegetables e.g. broccoli, kale and spinach; pulses; legumes; nuts; seeds; tofu; dried fruits; fish; cocoa; plain chocolate; curry powder; fortified cereals; etc.", permittedMarks: [0,2] },
+    { id: "non-haem", kind: "criterion", verbatim: "non-haem iron", marks: 2, contextNote: "One non-haem source, graded 2:0. Use the full source list above.", permittedMarks: [0,2] },
+    { id: "other-source", kind: "criterion", verbatim: "1 other", marks: 2, contextNote: "A third different source from either class, graded 2:0.", permittedMarks: [0,2] },
+    { id: "functions", kind: "criterion", verbatim: "biological functions", marks: 6, contextNote: "Three functions, each graded 2:0. Complete guidance: Essential component of haemoglobin in red blood cells; carries oxygen to the cells; forms part of myoglobin; essential component of enzyme system which is important in the use of oxygen to release energy from food; boosts the immune system; aids brain/cognitive development; prevents anaemia; aids the transfer of electrons; growth in young children; etc", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effects of deficiency", marks: 6, contextNote: "Three effects, each graded 2:0. Complete guidance: Anaemia; tiredness/ fatigue; irritability; lethargy; lack of concentration; headache; palpitations; breathlessness; dizziness; pale skin; feeling weak; muscle tiredness; dryness in mouth and throat; sore mouth; brittle hair/nails; stunted growth in children; weakened immunity; impaired cognitive development; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
     ],
   } as SecCard,
   {
@@ -7135,11 +7159,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q1d", topicId: "home-economics-0-8", conceptId: "iron-absorption-hl",
     section: "B", questionRef: "2021 HL Section B Q1(d)",
-    stem: "The infographic shows two influencing factors on evening meal consumption: Health and Wellbeing (42%) and Responsible Living (27%). (What Ireland Ate Last Night Report 2020, Bord Bia Thinking House)",
+    stem: "The following infographic shows two influencing factors on evening meal consumption. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House) Health and Wellbeing Responsible Living",
     questionText: "Identify and explain two factors which affect the absorption of iron in the body.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 factors @ 5 marks (graded 5:4:3:2:1:0)","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 factors × 5 (5:4:3:2:1:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identify and explain two factors which affect the absorption of iron in the body", marks: 10, contextNote: "Only two factors, but on a full 5-to-0 ladder — every mark is earned separately, so this is the part of Q1 where chemistry pays. The scheme's explanations are at a level most answers never reach: Vitamin C chemically changes non-haem iron to the more absorbable form, sulphur-containing amino acids convert ferric (Fe3+) to ferrous (Fe2+), tannins bind to iron. Naming a factor is 1 or 2; the mechanism is the rest.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Vitamin C – consuming food high in vitamin C chemically changes non- haem iron to the more easily absorbed haem iron; consuming - non- haem iron and haem iron foods together increases non-haem iron absorption; acidity – e.g. hydrochloric acid and citric acids, as the low pH helps to liberate iron from organic combinations making absorption easier; protein – sulphur-containing amino acids change iron from ferric form (Fe3+) to ferrous form (Fe2+); sugar – fructose aids the absorption of non-haem iron; etc.","oxalic acid; phytic acid; fibre intake of 35g or more per day; caffeine, tannins - bind to iron inhibiting absorption; lack of vitamin C – iron remains in non-haem form which is more difficult to absorb; excess alcohol - heavy alcohol consumption effects iron metabolism; smoking – cigarette smoke particles alter iron homeostasis; etc."]} },
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 10, contextNote: "Two explained factors, each graded 5:4:3:2:1:0. Source correction: vitamin C improves absorption of non-haem iron; it does not turn it into haem iron. The historical wording confuses these forms. Complete published assistance/inhibition guidance: Vitamin C – consuming food high in vitamin C chemically changes non- haem iron to the more easily absorbed haem iron; consuming - non- haem iron and haem iron foods together increases non-haem iron absorption; acidity – e.g. hydrochloric acid and citric acids, as the low pH helps to liberate iron from organic combinations making absorption easier; protein – sulphur-containing amino acids change iron from ferric form (Fe3+) to ferrous form (Fe2+); sugar – fructose aids the absorption of non-haem iron; etc. Factors that inhibit iron absorption  oxalic acid; phytic acid; fibre intake of 35g or more per day; caffeine, tannins - bind to iron inhibiting absorption; lack of vitamin C – iron remains in non-haem form which is more difficult to absorb; excess alcohol - heavy alcohol consumption effects iron metabolism; smoking – cigarette smoke particles alter iron homeostasis; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
     ],
   } as SecCard,
   {
@@ -7149,11 +7173,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q1e", topicId: "home-economics-0-10", conceptId: "irregular-routine-meal-strategies",
     section: "B", questionRef: "2021 HL Section B Q1(e)",
-    stem: "The infographic shows two influencing factors on evening meal consumption: Health and Wellbeing (42%) and Responsible Living (27%). (What Ireland Ate Last Night Report 2020, Bord Bia Thinking House)",
+    stem: "The following infographic shows two influencing factors on evening meal consumption. (What Ireland Ate Last Night, Report 2020, Bord Bia Thinking House) Health and Wellbeing Responsible Living",
     questionText: "Devise a set of strategies when purchasing foods and planning meals for families with irregular daily routines.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 strategies @ 4 marks (graded 4:2:0); 2 references to purchasing, 2 references to planning + 1 other","answer":5,"ofParts":14,"perPart":4}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"Purchasing 2 + planning 2 + other 1, each × 4 (4:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Devise strategies for purchasing foods and planning meals for families with irregular daily routines", marks: 20, contextNote: "Five strategies at 4 marks, with two reserved for purchasing and two for planning, leaving one free. \"Irregular daily routines\" is the whole point: dishes that reheat well for staggered mealtimes, cooking in bulk and freezing, frozen vegetables for emergencies. A generic meal-planning answer misses what the question is actually about.", openList: true, group: {"claimMax":5,"perOption":4,"options":["make a shopping list","buy foods in season","avail of special offers","bulk buy","buy some pre-prepared ingredients if meal preparation time is limited","buy some frozen food e.g. vegetables, useful in emergencies","stock up on basics e.g. rice, pasta","well balanced","portion size","plan meals that are easy to prepare and require a short cooking time","choose dishes suitable for reheating to facilitate staggered meal times","cook large quantities and freeze","consider family members’ schedule","follow current dietary guidelines"]} },
+    { id: "purchasing", kind: "criterion", verbatim: "Purchasing", marks: 8, contextNote: "Two purchase strategies, each graded 4:2:0. Complete guidance: make a shopping list; buy foods in season; avail of special offers; bulk buy; buy some pre-prepared ingredients if meal preparation time is limited; buy some frozen food e.g. vegetables, useful in emergencies; stock up on basics e.g. rice, pasta etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "planning", kind: "criterion", verbatim: "Planning", marks: 8, contextNote: "Two planning strategies, each graded 4:2:0. Complete guidance: well balanced; portion size; plan meals that are easy to prepare and require a short cooking time; choose dishes suitable for reheating to facilitate staggered meal times; cook large quantities and freeze; consider family members’ schedule; follow current dietary guidelines; requirements of various family members e.g. age, nutritional requirements; consider special diets; plan meals to reduce waste; introduce variety; availability of foods; amount of time available to prepare meals; knowledge and skills; availability of labour saving equipment; make the best use of available appliances e.g. oven timers; packed lunches; etc", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 4, contextNote: "One additional distinct strategy under either heading, graded 4:2:0. Do not count a point twice.", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -7165,10 +7191,10 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q2(b)",
     stem: "Eggs are a good choice as part of a healthy, balanced diet.",
     questionText: "Describe how eggs work as an emulsifier in food production. Refer to one culinary application.",
-    tariffModel: {"kind":"fixed","notation":"5 points @ 3 marks (graded 3:2:0); culinary application 1 @ 3 marks (graded 3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"Explanation 5 × 3 (3:2:0) + application 3 (3:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe how eggs work as an emulsifier in food production", marks: 15, contextNote: "Five points at 3 marks. This is one mechanism told in order, and each step is a separate mark: lecithin in the yolk, a hydrophilic head attracted to water, a hydrophobic tail attracted to oil, the two held together, a permanent emulsion formed. Naming lecithin without the two ends of it gets a fraction of what is on offer.", openList: true, group: {"claimMax":5,"perOption":3,"options":["An emulsifier lecithin in egg yolk","enables two immiscible liquids to join together e.g. vinegar and olive oil","lecithin consists of a hydrophilic head","the hydrophilic head is attracted to water","it also contains a hydrophobic tail","the hydrophobic tail is attracted to oil","this holds the two immiscible liquids together","creating a permanent emulsion"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Culinary application", marks: 3, contextNote: "One culinary application, 3 marks, all-or-nothing — a sixth of the question for one word. Mayonnaise is the standard answer and the scheme also accepts creaming fat and sugar in cakes.", openList: true, group: {"claimMax":1,"perOption":3,"options":["mayonnaise","hollandaise sauce","blending fat and sugar in cakes"]} },
+    { id: "emulsifier", kind: "criterion", verbatim: "emulsifier", marks: 15, contextNote: "Five explanation points, each graded 3:2:0. Complete guidance: An emulsifier lecithin in egg yolk; enables two immiscible liquids to join together e.g. vinegar and olive oil; lecithin consists of a hydrophilic head; the hydrophilic head is attracted to water; it also contains a hydrophobic tail; the hydrophobic tail is attracted to oil; this holds the two immiscible liquids together; creating a permanent emulsion; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]},{"id":"point-5","verbatim":"Point 5","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "application", kind: "criterion", verbatim: "Culinary application", marks: 3, contextNote: "One matching application, graded 3:0. The example illustrates the explanation; retain this as one task. Complete examples: mayonnaise; hollandaise sauce; blending fat and sugar in cakes; etc.", permittedMarks: [0,3] },
     ],
   } as SecCard,
   {
@@ -7180,9 +7206,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q2(c)",
     stem: "Eggs are a good choice as part of a healthy, balanced diet.",
     questionText: "Evaluate the role of food labelling as a source of consumer information when buying eggs.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 4 marks (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Evaluate the role of food labelling as a source of consumer information when buying eggs", marks: 12, contextNote: "Three points at 4 marks. Egg labelling has specifics no other food has, and they are the marks worth taking: every individual egg stamped with a traceability code, the week number, the farming method, and the Bord Bia quality assurance symbol for salmonella-free flocks. \"Evaluate\" wants what the information lets a buyer decide.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Egg packs must have the following information: country of origin","details of producer/packer","class/quality","farming method - organic","quantity","week number","use by date","storage instructions","individual eggs must be stamped with a code to ensure traceability","egg quality assurance scheme symbol – Bord Bia quality assurance symbol – salmonella free","omega 3","all labels must be clear, legible, indelible","must not mislead the consumer i.e. no claims that suggest a food product is capable of preventing or curing disease","language understood by the consumer"]} },
+    { id: "labelling", kind: "criterion", verbatim: "food labelling", marks: 12, contextNote: "Three points, each graded 4:2:0. Historical scheme examples are not a statement of current labelling law. A quality mark is not an absolute guarantee of pathogen absence. Complete wording: Egg packs must have the following information: country of origin; details of producer/packer; class/quality; farming method - organic; quantity; week number; use by date; storage instructions; individual eggs must be stamped with a code to ensure traceability; egg quality assurance scheme symbol – Bord Bia quality assurance symbol – salmonella free; omega 3; all labels must be clear, legible, indelible; must not mislead the consumer i.e. no claims that suggest a food product is capable of preventing or curing disease; language understood by the consumer; should not be obscured in any way; essential information must be present on the package; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7194,9 +7220,10 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q3(a)",
     stem: "Temperature control is critical to ensuring food safety for all consumers.",
     questionText: "Discuss the importance of temperature control during the storage and cooking/reheating of food.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 4 marks (graded 4:2:0); 2 references to storage, 2 references to cooking/reheating","answer":4,"ofParts":12,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"Storage 2 + cooking/reheating 2, each × 4 (4:2:0)"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the importance of temperature control during the storage and cooking/reheating of food", marks: 16, contextNote: "Four points at 4 marks, split two and two between storage and cooking — neither half can carry the other. Every point here is a number and the numbers ARE the marks: 0-5C for perishables, -25C to freeze and -18C to store, 100C to reheat, above 65C to hold, and the danger zone of 6-63C. A point without its temperature is half a point.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Refrigerate perishable foods at 0°C to 5°C to slow down bacterial growth","allow food to cool before refrigerating to avoid raising the temperature","cool and fast freeze prepared foods immediately, freeze at -25°C","store at -18°C","never refreeze thawed food","Defrost frozen foods completely in the fridge before cooking","cook large joints of meat & poultry thoroughly","use correct time and temperatures","heat high risk foods i.e. stews & gravies to 100°C","serve cooked foods immediately or keep food hot at temps above 65°C to avoid the danger zone 6°C - 63°C","consume hot food within 90 minutes","reheating should be done quickly at temps above 100°C"]} },
+    { id: "storage", kind: "criterion", verbatim: "Storage", marks: 8, contextNote: "Two storage points, each graded 4:2:0. Source correction: FSAI recommends cooking to a 75°C core or a validated time/temperature equivalent and reheating to at least 70°C, not a general requirement to exceed 100°C. Keep chilled food at 0–5°C and hot-held food above 63°C. Historical examples below are not a complete food-safety procedure. Complete historical guidance: Refrigerate perishable foods at 0°C to 5°C to slow down bacterial growth; allow food to cool before refrigerating to avoid raising the temperature; cool and fast freeze prepared foods immediately, freeze at -25°C; store at -18°C; never refreeze thawed food; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "cooking", kind: "criterion", verbatim: "Cooking/Reheating", marks: 8, contextNote: "Two cooking/reheating points, each graded 4:2:0. Source correction: FSAI recommends cooking to a 75°C core or a validated time/temperature equivalent and reheating to at least 70°C, not a general requirement to exceed 100°C. Keep chilled food at 0–5°C and hot-held food above 63°C. Historical examples below are not a complete food-safety procedure. Complete historical guidance: Defrost frozen foods completely in the fridge before cooking; cook large joints of meat & poultry thoroughly; use correct time and temperatures; heat high risk foods i.e. stews & gravies to 100°C; serve cooked foods immediately or keep food hot at temps above 65°C to avoid the danger zone 6°C - 63°C; consume hot food within 90 minutes; reheating should be done quickly at temps above 100°C; when reheating in a microwave link reheating time to wattage/quantity; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7208,9 +7235,10 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q3(c)",
     stem: "Temperature control is critical to ensuring food safety for all consumers.",
     questionText: "Differentiate between infectious food poisoning and toxic food poisoning.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:2:0)","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 required distinctions × 5 (5:3:2:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Differentiate between infectious food poisoning and toxic food poisoning", marks: 10, contextNote: "Two points at 5 marks, and \"differentiate\" means the contrast has to be explicit. Three clean contrasts run through the scheme: endotoxins produced inside the cell against exotoxins produced outside it; easy to destroy against needing 30 minutes' boiling; symptoms after about 12 hours against within 2. Each option carries its own named bacteria, and mixing them up loses the point.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Infectious food poisoning - caused by consumption of food containing large numbers of pathogenic bacteria; these bacteria produce endotoxins as they grow, which are released when they die; endotoxins are easy to destroy; proper cooking and reheating will destroy both toxins and bacteria; if not destroyed symptoms will appear after approximately 12 hours; etc. Examples: salmonella, E coli, campylobacter; listeria; etc.","Toxic food poisoning - ingesting food that is contaminated by a toxin produced by a bacterial cell; some bacteria produce exotoxins as they grow in food both before and after it is eaten; exotoxins are hard to destroy; boiling for 30 mins is required; symptoms develop quickly, often within 2 hours; etc. Examples: staphylococcus aureus; clostridium botulinum; clostridium perfringens/welchii; etc."]} },
+    { id: "infection", kind: "criterion", verbatim: "Infectious food poisoning", marks: 5, contextNote: "Explain this side of the distinction, graded 5:3:2:0. Infection involves ingesting pathogens; intoxication involves toxins in food. Organisms, toxins and incubation times differ; reheating cannot reliably make mishandled food safe. The scheme’s general claims about destroying toxins and fixed onset times are inaccurate. Complete historical wording: caused by consumption of food containing large numbers of pathogenic bacteria; these bacteria produce endotoxins as they grow, which are released when they die; endotoxins are easy to destroy; proper cooking and reheating will destroy both toxins and bacteria; if not destroyed symptoms will appear after approximately 12 hours; etc. Examples: salmonella, E coli, campylobacter; listeria; etc.", permittedMarks: [0,2,3,5] },
+    { id: "intoxication", kind: "criterion", verbatim: "Toxic food poisoning", marks: 5, contextNote: "Explain this side of the distinction, graded 5:3:2:0. Infection involves ingesting pathogens; intoxication involves toxins in food. Organisms, toxins and incubation times differ; reheating cannot reliably make mishandled food safe. The scheme’s general claims about destroying toxins and fixed onset times are inaccurate. Complete historical wording: ingesting food that is contaminated by a toxin produced by a bacterial cell; some bacteria produce exotoxins as they grow in food both before and after it is eaten; exotoxins are hard to destroy; boiling for 30 mins is required; symptoms develop quickly, often within 2 hours; etc. Examples: staphylococcus aureus; clostridium botulinum; clostridium perfringens/welchii; etc.", permittedMarks: [0,2,3,5] },
     ],
   } as SecCard,
   {
@@ -7222,9 +7250,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q4(a)",
     stem: "Efficient home management guides the smooth running of the home.",
     questionText: "Explain how good management systems contribute to a well-run home.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 4 marks (graded 4:2:0)","answer":4,"ofParts":12,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:2:0)"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain how good management systems contribute to a well-run home", marks: 16, contextNote: "Four points at 4 marks, graded 4:2:0. The list divides into what management achieves (needs met, resources used, quality of life) and what it avoids (conflict, stress, fatigue) — taking from both sides makes four clearly different points. \"Explain how\" means naming the mechanism, not the benefit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Needs of the family are met","provision of basic needs are provided for","all available resources are used","roles clearly identified and housework load shared","all managerial skills are utilised including: organising, scheduling, budgeting, analysing, negotiating","decision making easier with good communication skills","prevents conflict","prevents stress, fatigue","improves the quality of life","allows for the unexpected","can be evaluated and altered","personal responsibility encouraged"]} },
+    { id: "management", kind: "criterion", verbatim: "management systems", marks: 16, contextNote: "Four points, each graded 4:2:0. Complete guidance: Needs of the family are met; provision of basic needs are provided for; all available resources are used; roles clearly identified and housework load shared; all managerial skills are utilised including: organising, scheduling, budgeting, analysing, negotiating; decision making easier with good communication skills; prevents conflict; prevents stress, fatigue; improves the quality of life; allows for the unexpected; can be evaluated and altered; personal responsibility encouraged; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7235,10 +7263,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sb-q4b", topicId: "home-economics-1-0", conceptId: "management-framework-holiday",
     section: "B", questionRef: "2021 HL Section B Q4(b)",
     stem: "Efficient home management guides the smooth running of the home.",
-    questionText: "Using the management framework (inputs, throughputs and outputs) outline the strategies to be followed when planning a family holiday to ensure effective management of resources.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 points @ 3 marks (graded 3:2:1:0); 2 references to inputs, 2 to throughputs, 2 to outputs","answer":6,"ofParts":14,"perPart":3}, totalMarks: 18,
+    questionText: "Using the management framework (inputs, throughputs and outputs), outline the strategies to be followed when planning a family holiday to ensure effective management of resources.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:1:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline the strategies to be followed when planning a family holiday, using inputs, throughputs and outputs", marks: 18, contextNote: "Six points at 3 marks, two reserved for each of inputs, throughputs and outputs — a strict two-two-two, so an answer strong on planning and silent on evaluation caps at 12. The framework is the answer: inputs are demands and resources, throughputs are planning, organising and implementing, outputs are the evaluation. Tie each to the holiday — booking accommodation is implementing; asking whether everyone enjoyed it is an output.", openList: true, group: {"claimMax":6,"perOption":3,"options":["Inputs – Demands – needs e.g. physical and social","wants of family members","goals – long, medium and short term","family values","Resources – human resources","Throughputs – planning","organising","implementing","Planning – gathering information","considering alternatives","Outputs – assess / evaluate","demands met or goals achieved","resources used","process followed"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Inputs", marks: 6, contextNote: "Two points for this heading applied to the family holiday, each graded 3:2:1:0. Complete guidance: Demands – needs e.g. physical and social; wants of family members; goals – long, medium and short term; family values; etc. Resources – human resources; material resources; environmental resources; time; etc", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Throughputs", marks: 6, contextNote: "Two points for this heading applied to the family holiday, each graded 3:2:1:0. Complete guidance: planning; organising; implementing; etc. Planning – gathering information; considering alternatives; deciding on course of action; etc. Organising – allocating different tasks to family members; communication with each other; etc. Implementing – putting the plan into action e.g. booking accommodation/travel; making necessary changes as needs arise; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Outputs", marks: 6, contextNote: "Two points for this heading applied to the family holiday, each graded 3:2:1:0. Complete guidance: assess / evaluate; demands met or goals achieved; resources used; process followed; satisfaction; changes in values; feedback; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7250,9 +7280,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q4(c)",
     stem: "Efficient home management guides the smooth running of the home.",
     questionText: "Evaluate the use of credit as a method of payment for a family holiday.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 4 marks (graded 4:2:0)","answer":4,"ofParts":12,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 evaluation points × 4 (4:2:0)"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Evaluate the use of credit as a method of payment for a family holiday", marks: 16, contextNote: "Four points at 4 marks. \"Evaluate\" means both sides — an answer that is only advantages is not an evaluation, however well written. The holiday framing matters: use of travel and accommodation before paying for it, safer than carrying cash abroad, against high interest, surcharges and blowing the holiday budget.", openList: true, group: {"claimMax":4,"perOption":4,"options":["consumer has the use of travel, accommodation, car rental and other facilities in advance of payment","can take advantage of holiday sales","helps economy","useful in emergencies","safer than carrying cash","credit cards are widely accepted","Disadvantages – expensive, high rates of interest","surcharge when paying by credit","encourages impulse buying","may lead to overspending and not keeping to holiday budget","repayments may lead to financial stress","risk of fraud, identity theft with credit cards"]} },
+    { id: "credit", kind: "criterion", verbatim: "credit", marks: 16, contextNote: "Four evaluation points, each graded 4:2:0. No compulsory advantages/disadvantages quota is printed. Historical examples; fees and charges are not presented as current rules. Complete guidance: Advantages - consumer has the use of travel, accommodation, car rental and other facilities in advance of payment; can take advantage of holiday sales; helps economy; useful in emergencies; safer than carrying cash; credit cards are widely accepted; etc. Disadvantages – expensive, high rates of interest; surcharge when paying by credit; encourages impulse buying; may lead to overspending and not keeping to holiday budget; repayments may lead to financial stress; risk of fraud, identity theft with credit cards; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7261,13 +7291,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "family-definition-universality",
-    section: "B", questionRef: "2021 HL Section B Q5(a)",
+    section: "B", questionRef: "2021 HL Section B Q5(a) — definition",
     stem: "The modern Irish family is smaller and more diverse than ever before.",
-    questionText: "Define the term family and explain the concept of the universality of the family.",
-    tariffModel: {"kind":"fixed","notation":"definition @ 5 marks (graded 5:3:0); universality @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Define the term ‘family’.",
+    tariffModel: {"kind":"fixed","notation":"Definition 5 (5:3:0)"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Define the term family", marks: 5, contextNote: "The definition alone is 5 marks, graded 5:3:0. The scheme gives three usable forms — blood, marriage or adoption; the United Nations wording; and the Irish Constitution's \"natural, primary and fundamental unit group of society\". Quoting one of the named sources is the safest route to 5.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Group of people related to each other by blood, marriage or adoption. ‘The basic unit of society, which acts as a support for its members and which transmits values from one generation to the next.’ (United Nations) ‘The natural, primary and fundamental unit group of society.’ (Irish Constitution)"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Explain the concept of the universality of the family", marks: 5, contextNote: "Universality is 5 marks for two clauses: the family exists in all known societies, AND the form it takes differs between them. Giving only the first is the classic 3 — the variation is half the concept.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Family is present in all known societies; etc. The form the family takes may differ from one society to another, but the concept of the family is universal; etc."]} },
+    { id: "definition", kind: "criterion", verbatim: "Definition", marks: 5, contextNote: "Define family, graded 5:3:0. The source definitions are historical examples and do not exhaust the forms families can take. Complete guidance: Group of people related to each other by blood, marriage or adoption. ‘The basic unit of society, which acts as a support for its members and which transmits values from one generation to the next.’ (United Nations) ‘The natural, primary and fundamental unit group of society.’ (Irish Constitution)", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -7279,9 +7308,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q5(b)",
     stem: "The modern Irish family is smaller and more diverse than ever before.",
     questionText: "Explain how the family can meet the physical, emotional, economic and social needs of its members.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 6 marks (graded 6:4:2:0)","answer":4,"ofParts":4,"perPart":6}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"4 required needs × 6 (6:4:2:0)"}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain how the family can meet the physical, emotional, economic and social needs of its members", marks: 24, contextNote: "Four points at 6 marks — the biggest part of this question at 24 marks, and all four needs are named, so there is no choosing. Graded 6:4:2:0, which means naming the need is 2 and everything above comes from explaining HOW the family meets it. Economic is the thinnest list in the scheme and the one most often left underwritten.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Physical - family protects; care for young, elderly, people with special needs; provides for the basic physical needs; etc.","Emotional - family cares for emotional and psychological development of children; provides reassurance, encouragement, love and security; helping children to develop well balanced personalities; providing a safe, secure loving environment for its members; etc.","Economic - adults in the family work to earn money to provide for dependents; etc.","Social - family is the primary centre of socialisation, introduces children to beliefs culture, language, norms, traditions and values of the society in which they live; family acts as agent of social control by creating an awareness of acceptable and unacceptable behaviour in children; etc."]} },
+    { id: "need-1", kind: "criterion", verbatim: "Physical", marks: 6, contextNote: "Explain this required need, graded 6:4:2:0. Complete guidance: family protects; care for young, elderly, people with special needs; provides for the basic physical needs; etc.", permittedMarks: [0,2,4,6] },
+    { id: "need-2", kind: "criterion", verbatim: "Emotional", marks: 6, contextNote: "Explain this required need, graded 6:4:2:0. Complete guidance: family cares for emotional and psychological development of children; provides reassurance, encouragement, love and security; helping children to develop well balanced personalities; providing a safe, secure loving environment for its members; etc.", permittedMarks: [0,2,4,6] },
+    { id: "need-3", kind: "criterion", verbatim: "Economic", marks: 6, contextNote: "Explain this required need, graded 6:4:2:0. Complete guidance: adults in the family work to earn money to provide for dependents; etc.", permittedMarks: [0,2,4,6] },
+    { id: "need-4", kind: "criterion", verbatim: "Social", marks: 6, contextNote: "Explain this required need, graded 6:4:2:0. Complete guidance: family is the primary centre of socialisation, introduces children to beliefs culture, language, norms, traditions and values of the society in which they live; family acts as agent of social control by creating an awareness of acceptable and unacceptable behaviour in children; etc.", permittedMarks: [0,2,4,6] },
     ],
   } as SecCard,
   {
@@ -7293,9 +7325,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 HL Section B Q5(c)",
     stem: "The modern Irish family is smaller and more diverse than ever before.",
     questionText: "Discuss the challenges that may be experienced by the family of a child with special needs.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 4 marks (graded 4:2:0)","answer":4,"ofParts":11,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 challenges × 4 (4:2:0)"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss the challenges that may be experienced by the family of a child with special needs", marks: 16, contextNote: "Four challenges at 4 marks, graded 4:2:0. The scheme spreads them across the whole family, not just the child — a parent giving up work, siblings taking on responsibility, less attention for other members, worry about the future. Four challenges all about the child himself covers only part of what the question asks.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Coping with challenging behaviour in the home","providing emotional support for the special needs child and for each other","modification of the family home to assist those with physical difficulties","encouraging independence in the special needs child","financial difficulties may arise if one parent has to give up work to be a full time carer","children may have more responsibilities helping with the special needs sibling or in the home","advocating for access to supports available","tiredness due to lack of sleep","less attention given to other members of the family","high stress levels and worry for the future","providing financial assistance for the child with special needs"]} },
+    { id: "challenges", kind: "criterion", verbatim: "challenges", marks: 16, contextNote: "Four possible challenges, each graded 4:2:0. Individual families’ circumstances vary; these are examples, not assumptions about every disabled child or family. Complete guidance: Coping with challenging behaviour in the home; providing emotional support for the special needs child and for each other; modification of the family home to assist those with physical difficulties; encouraging independence in the special needs child; financial difficulties may arise if one parent has to give up work to be a full time carer; children may have more responsibilities helping with the special needs sibling or in the home; advocating for access to supports available; tiredness due to lack of sleep; less attention given to other members of the family; high stress levels and worry for the future; providing financial assistance for the child with special needs; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7307,11 +7339,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E1 Q1(a)(i)",
     stem: "A well designed home should have a positive impact on people’s lives.",
     questionText: "Explain the importance of location and house style when building a new home.",
-    tariffModel: {"kind":"fixed","notation":"4 points @ 4 marks (graded 4:2:0) - 1 reference to location, 1 reference to house style + 2 other points","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"Location 1 + style 1 + other 2, each × 4 (4:2:0)"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One reference to location", marks: 4, contextNote: "One point at 4 marks, and the scheme requires at least one. Location is everything outside the house - what it is near, which way the site faces, whether services and drainage are there, and what the local authority will allow.", openList: true, group: {"claimMax":1,"perOption":4,"options":["urban or rural setting","proximity to work, school, amenities, and transport links","available services e.g. water, sewage, electricity,","site orientation – south facing","good drainage","future development plans for the area - local building regulations","environmental regulations in the area as planning permission can affect the style of the house and materials used","local authorities determine what is allowed e.g. visual impact","income – cost of site, building materials"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One reference to house style", marks: 4, contextNote: "One point at 4 marks, also required. Style is the house itself - storeys and type, enough space for the family now and later, and whether it fits the surrounding area and local materials.", openList: true, group: {"claimMax":1,"perOption":4,"options":["personal preference - two story, single storey, detached, semi-detached, terraced","low-maintenance house","sufficient space for all family members to live comfortably","stage of family members","family members with special needs","withstand local weather conditions","aspect to ensure the best use of natural light","if on a gradient site houses may need to be split-level","open plan","office – working from home","sustainable heating methods","houses must fit into surrounding area","may have to use local materials e.g. stone","conform to planning regulations"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Two further points, from either", marks: 8, contextNote: "Two further points at 4 marks each, from either strand - \"1 reference to location, 1 reference to house style + 2 other points\". Develop whichever you know better rather than reaching for a weak fourth idea.", openList: true, group: {"claimMax":2,"perOption":4,"options":["urban or rural setting","proximity to work, school, amenities, and transport links","available services e.g. water, sewage, electricity,","site orientation – south facing","good drainage","future development plans for the area - local building regulations","environmental regulations in the area as planning permission can affect the style of the house and materials used","local authorities determine what is allowed e.g. visual impact","income – cost of site, building materials","personal preference - two story, single storey, detached, semi-detached, terraced","low-maintenance house","sufficient space for all family members to live comfortably","stage of family members","family members with special needs"]} },
+    { id: "location", kind: "criterion", verbatim: "Location", marks: 4, contextNote: "One required location point, graded 4:2:0. Complete guidance: urban or rural setting; proximity to work, school, amenities, and transport links; available services e.g. water, sewage, electricity, etc.; site orientation – south facing; good drainage; future development plans for the area - local building regulations; environmental regulations in the area as planning permission can affect the style of the house and materials used; local authorities determine what is allowed e.g. visual impact; income – cost of site, building materials; etc.", permittedMarks: [0,2,4] },
+    { id: "style", kind: "criterion", verbatim: "House style", marks: 4, contextNote: "One required house-style point, graded 4:2:0. Complete guidance: personal preference - two story, single storey, detached, semi-detached, terraced; low-maintenance house; sufficient space for all family members to live comfortably; stage of family members; family members with special needs; withstand local weather conditions; aspect to ensure the best use of natural light; if on a gradient site houses may need to be split-level; open plan; office – working from home; sustainable heating methods; houses must fit into surrounding area; may have to use local materials e.g. stone; conform to planning regulations; etc.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "2 other points", marks: 8, contextNote: "Two further distinct points across either heading, each graded 4:2:0; do not count points twice.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7322,12 +7354,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q1aii", topicId: "home-economics-3-3", conceptId: "factors-influencing-house-design",
     section: "C", questionRef: "2021 HL Section C E1 Q1(a)(ii)",
     stem: "A well designed home should have a positive impact on people’s lives.",
-    questionText: "Discuss the following factors that influence house design/construction: initial and/or maintenance costs; technological developments; energy efficiency.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 4 marks (graded 4:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    questionText: "Discuss the following factors that influence house design/construction:\n• initial and/or maintenance costs\n• technological developments\n• energy efficiency.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 4 (4:2:0)"}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Initial and/or maintenance costs", marks: 8, contextNote: "Two points at 4 marks. The idea worth writing is that the two costs pull against each other - spending more at the start on solar panels or underfloor heating reduces what the house costs to run for the next thirty years.", openList: true, group: {"claimMax":2,"perOption":4,"options":["budget","cost of site","cost of building materials","professional fees","design","finishes on exterior –e.g. natural stone/plaster","initial spend can reduce long term costs e.g. solar panels, underfloor heating","passive heating"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Technological developments", marks: 8, contextNote: "Two points at 4 marks. The scheme runs from how the house is designed (CAD, virtual reality tours) to what is built into it (sensor lighting, zoned heating, monitored security, smart appliances). One of each shows range.", openList: true, group: {"claimMax":2,"perOption":4,"options":["CAD – computer aided design","electric gates","virtual reality tours of house designs","sensor windows","sensor lights","recessed lighting – LED’s","monitored security systems","sensor-operated cameras","intelligent appliances","thermostatic controls","zoned heating systems","integrated sound & lighting systems","streamlined fixtures for kitchen/bathrooms","smart technology"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Energy efficiency", marks: 8, contextNote: "Two points at 4 marks. Keeping heat in (insulation, low-emissivity glazing) and controlling how it is used (zoned heating, thermostats, timers) are the two halves - renewable sources are the third.", openList: true, group: {"claimMax":2,"perOption":4,"options":["double or triple glazed windows, with low emissivity glass","insulation in walls, roof and doors","zoned heating system","use of renewable energy sources e.g. solar, wind, hydro","use of thermostats, timers and energy efficient appliances","smart energy","apps"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "initial and/or maintenance costs", marks: 8, contextNote: "Two points for this required heading, each graded 4:2:0. Initial and/or maintenance costs are flexible wording within the same heading, not separate choice cards. Complete guidance: budget; cost of site; cost of building materials; professional fees; design; finishes on exterior –e.g. natural stone/plaster; initial spend can reduce long term costs e.g. solar panels, underfloor heating; passive heating; etc;", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "technological developments", marks: 8, contextNote: "Two points for this required heading, each graded 4:2:0. Initial and/or maintenance costs are flexible wording within the same heading, not separate choice cards. Complete guidance: CAD – computer aided design; electric gates; virtual reality tours of house designs; sensor windows; sensor lights; recessed lighting – LED’s; monitored security systems; sensor-operated cameras; intelligent appliances; thermostatic controls; zoned heating systems; integrated sound & lighting systems; streamlined fixtures for kitchen/bathrooms; smart technology; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "energy efficiency", marks: 8, contextNote: "Two points for this required heading, each graded 4:2:0. Initial and/or maintenance costs are flexible wording within the same heading, not separate choice cards. Complete guidance: double or triple glazed windows, with low emissivity glass; insulation in walls, roof and doors; zoned heating system; use of renewable energy sources e.g. solar, wind, hydro; use of thermostats, timers and energy efficient appliances; smart energy; apps; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7339,9 +7371,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E1 Q1(a)(iii)",
     stem: "A well designed home should have a positive impact on people’s lives.",
     questionText: "Outline the procedure involved in obtaining full planning permission to build a house.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 2 marks (graded 2:1:0)","answer":5,"ofParts":8,"perPart":2}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"5 steps × 2 (2:1:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Procedure for obtaining full planning permission", marks: 10, contextNote: "Five points at 2 marks - a procedure, so write it in order: pre-planning meeting, notice in the local paper, application and fee to the planning authority, site notice erected, public and site inspection, then permission granted or refused with reasons.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Pre-planning meeting","notice of intention/planning permission published in a local newspaper","pay fee and lodge detailed application to local planning authority","site notice erected","public inspection – any member of the public is free to inspect the plans","site inspection by planning officials","permission granted or refused with reasons given for refusal","and"]} },
+    { id: "procedure", kind: "criterion", verbatim: "procedure", marks: 10, contextNote: "Five procedure points, each graded 2:1:0. Historical 2021 examination guidance, not a statement of current planning law: Pre-planning meeting; notice of intention/planning permission published in a local newspaper; pay fee and lodge detailed application to local planning authority; site notice erected; public inspection – any member of the public is free to inspect the plans; site inspection by planning officials; permission granted or refused with reasons given for refusal; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -7352,10 +7384,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q1bi", topicId: "home-economics-3-5", conceptId: "properties-of-light-in-the-home",
     section: "C", questionRef: "2021 HL Section C E1 Q1(b)(i)",
     stem: "‘Lighting isn’t just a practical necessity. It’s a style accessory, too.’ (www.ikea.com)",
-    questionText: "Discuss three properties of light and in each case give an example of the application of each in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 properties @ 6 marks (graded 6:4:2:0)","answer":3,"ofParts":5,"perPart":6}, totalMarks: 18,
+    questionText: "Discuss three properties of light and give an example of the application of each in the home.",
+    tariffModel: {"kind":"fixed","notation":"3 property/application responses × 6 (6:4:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Properties of light and their application in the home", marks: 18, contextNote: "Three properties at 6 marks, graded 6:4:2:0 - the long ladder rewards a partial answer, so attempt all three. Each needs the physics AND the home example: light bounces off a mirror or white ceiling, bends through glass bricks, scatters through an opaque shade, is swallowed by dark matt walls, or splits into colours in a crystal chandelier.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Reflected - rays of light bounce off a shiny surface e.g. glazed ceramic tiles, mirrors, white ceiling","Refracted - rays of light bend when they pass through thick glass e.g. glass bricks, frosted glass","Diffused - rays are scattered when they pass through translucent substances or hit non- reflecting surface e.g. opaque lamp shades","Absorbed - dark and matt surfaces absorb light rays e.g. dark colours on walls make rooms appear smaller","Dispersed - rays of light that pass through a prism or crystal break down into their component colours e.g. crystal chandelier"]} },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 18, contextNote: "Three explained properties with matching home examples, each graded 6:4:2:0. Keep each application with its property. The examples do not limit the choice. Complete guidance: Reflected – rays of light bounce off a shiny surface e.g. glazed ceramic tiles, mirrors, white ceiling; etc. Refracted – rays of light bend when they pass through thick glass e.g. glass bricks, frosted glass; etc. Diffused – rays are scattered when they pass through translucent substances or hit non- reflecting surface e.g. opaque lamp shades; etc. Absorbed – dark and matt surfaces absorb light rays e.g. dark colours on walls make rooms appear smaller; etc. Dispersed – rays of light that pass through a prism or crystal break down into their component colours e.g. crystal chandelier; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,2,4,6]}] },
     ],
   } as SecCard,
   {
@@ -7367,10 +7399,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E1 Q1(b)(ii)",
     stem: "‘Lighting isn’t just a practical necessity. It’s a style accessory, too.’ (www.ikea.com)",
     questionText: "Identify and evaluate two contemporary developments in lighting technology.",
-    tariffModel: {"kind":"fixed","notation":"Name 2 marks (graded 2:0) x 2; evaluate 1 point @ 4 marks (graded 4:2:0) x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"2 development profiles × (name 2 (2:0) + evaluation 4 (4:2:0))"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the lighting development", marks: 4, contextNote: "Two developments at 2 marks each, graded 2:0. The scheme accepts a long list, but pick two you can then evaluate - sensor lighting and smart remote-controlled lighting are the easiest to say something real about.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sensor and motion activated lights","use of smart technology to remotely control lighting","human centric lighting","recess ceiling lights","rise and fall lights","ceramic and plaster-based wall lights","under counter and cabinet lights","picture display lights","LED lighting","surface mounted/suspended tubular LED lighting","architectural lighting","CFL lighting","track lighting","spot lights"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Evaluation of the developments named", marks: 8, contextNote: "One evaluation per development at 4 marks - two thirds of the marks. The scheme names the technologies only, so the judgement is entirely yours: what it does for convenience, safety or the electricity bill, and what it costs to install.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Sensor and motion activated lights","use of smart technology to remotely control lighting","human centric lighting","recess ceiling lights","rise and fall lights","ceramic and plaster-based wall lights","under counter and cabinet lights","picture display lights","LED lighting","surface mounted/suspended tubular LED lighting","architectural lighting","CFL lighting","track lighting","spot lights"]} },
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name lighting development 1, graded 2:0. Complete published examples: Sensor and motion activated lights; use of smart technology to remotely control lighting; human centric lighting; recess ceiling lights; rise and fall lights; ceramic and plaster-based wall lights; under counter and cabinet lights; picture display lights; LED lighting; surface mounted/suspended tubular LED lighting; architectural lighting; CFL lighting; track lighting; spot lights; chandeliers; colour changing lighting; kinetic lighting; LED rope lighting; outdoor lighting with photovoltaic cells; outdoor lights; built in lighting in staircase/steps; motion sensor lighting; remote control lighting; etc.", permittedMarks: [0,2] },
+    { id: "evaluation-1", kind: "criterion", verbatim: "evaluate", marks: 4, contextNote: "Evaluate that same development 1, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name lighting development 2, graded 2:0. Use a different development from the first.", permittedMarks: [0,2] },
+    { id: "evaluation-2", kind: "criterion", verbatim: "evaluate", marks: 4, contextNote: "Evaluate that same development 2, graded 4:2:0.", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -7380,13 +7414,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q1ci", topicId: "home-economics-3-5", conceptId: "water-supply-and-storage-in-the-home",
     section: "C", questionRef: "2021 HL Section C E1 Q1(c)(i)",
-    stem: "Water covers 71% of the planet but only 1% is available to us as drinking water. (Irish Water)",
-    questionText: "Explain how water is supplied to and stored in the home. Refer to: urban or rural supply; stop cock; storage tank/cistern.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    stem: "‘Water covers 71% of the planet but only 1% is available to us as drinking water.’ (Irish Water)",
+    questionText: "Explain how water is supplied to and stored in the home. Refer to:\n• urban or rural supply\n• stopcock\n• storage tank/cistern.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Urban or rural supply", marks: 6, contextNote: "Two points at 3 marks, and either supply is accepted. Urban is a chain from the reservoir: mains, service pipe, external stopcock, then the kitchen sink for drinking water and a branch to the attic tank. Rural is a well or spring, lined against contamination, tested and pumped in.", openList: true, group: {"claimMax":2,"perOption":3,"options":["public supply (Irish Water): water travels from the reservoir to urban areas by mains (pipes)","service pipe leads to each building","a valve (stopcock, located externally) allows water to be turned off during repairs","service pipe enters the house under the kitchen sink (another stopcock) which supplies the sink with fresh drinking water while another branch fills the storage tank (cistern) in the attic","this storage tank supplies all other cold taps, toilets, hot press tank and back boiler","public supply","private wells/springs: natural springs – cleaner quality water, less impurities","water is tested and treated for harmful impurities","wells are lined with steel or concrete to prevent contamination from the soil","water is pumped into the house by an electric pump","water purifiers are fitted to remove suspended impurities"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Stop cock", marks: 6, contextNote: "Two points at 3 marks. Two things to say: where it is (on the service pipe outside, or under the kitchen sink) and what it does (shuts the supply off if there is a problem).", openList: true, group: {"claimMax":2,"perOption":3,"options":["a valve found on a service pipe outside the house/under the kitchen sink","allows the water supply to be shut off if there is a problem"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Storage tank/cistern", marks: 6, contextNote: "Two points at 3 marks. The height is the point - it sits in the attic so gravity gives the pressure, a ball valve keeps the level right, and it feeds the cold taps, toilets and hot press.", openList: true, group: {"claimMax":2,"perOption":3,"options":["located in the attic as high level improves pressure to supply the system","a ball valve controls the level of water in the tank","stores the cold water which supplies the cold water taps, toilets and hot press tank in the home"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "urban or rural supply", marks: 6, contextNote: "Two points, each graded 3:2:0. Describe one suitable urban or rural system; the alternatives share this grid and topic. Natural sources still require appropriate testing/treatment; do not infer safety from appearance or origin. Complete historical guidance: Urban areas: public supply (Irish Water): water travels from the reservoir to urban areas by mains (pipes); service pipe leads to each building; a valve (stopcock, located externally) allows water to be turned off during repairs; service pipe enters the house under the kitchen sink (another stopcock) which supplies the sink with fresh drinking water while another branch fills the storage tank (cistern) in the attic; this storage tank supplies all other cold taps, toilets, hot press tank and back boiler; etc. Rural areas: public supply; private wells/springs: natural springs – cleaner quality water, less impurities; water is tested and treated for harmful impurities; wells are lined with steel or concrete to prevent contamination from the soil; water is pumped into the house by an electric pump; water purifiers are fitted to remove suspended impurities; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "stop cock", marks: 6, contextNote: "Two points, each graded 3:2:0. Complete historical guidance: a valve found on a service pipe outside the house/under the kitchen sink; allows the water supply to be shut off if there is a problem; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "storage tank/cistern", marks: 6, contextNote: "Two points, each graded 3:2:0. Complete historical guidance: located in the attic as high level improves pressure to supply the system; a ball valve controls the level of water in the tank; stores the cold water which supplies the cold water taps, toilets and hot press tank in the home; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7395,13 +7429,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q1cii", topicId: "home-economics-3-6", conceptId: "conserving-water-in-the-home",
-    section: "C", questionRef: "2021 HL Section C E1 Q1(c)(ii)",
-    stem: "Water covers 71% of the planet but only 1% is available to us as drinking water. (Irish Water)",
-    questionText: "Identify inefficient uses of water in the home and suggest strategies for conserving and managing this resource.",
-    tariffModel: {"kind":"fixed","notation":"inefficient uses 2 @ 2 marks (graded 2:0); strategies 2 @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    section: "C", questionRef: "2021 HL Section C E1 Q1(c)(ii) — inefficient uses",
+    stem: "‘Water covers 71% of the planet but only 1% is available to us as drinking water.’ (Irish Water)",
+    questionText: "Identify inefficient uses of water in the home.",
+    tariffModel: {"kind":"fixed","notation":"2 uses × 2 (2:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Inefficient uses of water in the home", marks: 4, contextNote: "Two at 2 marks, graded 2:0. The scheme prints only three bare words - toilets, appliances, taps - so identify them and move on. The marks are in the next row.", openList: true, group: {"claimMax":2,"perOption":2,"options":["toilet systems","appliances","taps"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Strategies for conserving and managing water", marks: 8, contextNote: "Two strategies at 4 marks - two thirds of the marks. Match the strategy to the waste you identified, and use the scheme’s own figure if you can: a leaking tap wastes up to a litre an hour. Dual flush, full loads, and a shower instead of a bath are the strongest.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Toilet: install a dual flush toilet","a rainwater harvesting system linked to the water system etc. Taps: repair leaking taps as they waste up to one litre of water per hour","do not wash items under a running tap","do not leave taps running while brushing teeth","use a basin in the sink rather than washing under a running tap","Appliances: choose A rated appliances e.g. dishwashers as they are more efficient in use of water","fill kettle as required","use washing machines and dishwashers at full capacity","use economy or quick wash cycle","Water: take shower instead of baths"]} },
+    { id: "uses", kind: "criterion", verbatim: "Inefficient uses", marks: 4, contextNote: "Two inefficient uses, each graded 2:0. Complete guidance: toilet systems; appliances; taps; etc;", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
     ],
   } as SecCard,
   {
@@ -7411,12 +7444,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "athleisure-wear-as-a-wardrobe-staple",
     section: "C", questionRef: "2021 HL Section C E2 Q2(a)(i)",
-    stem: "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear.",
-    questionText: "Evaluate the suitability of athleisure wear as a wardrobe staple.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    stem: "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear. (www.pinterest.com)",
+    questionText: "Evaluate the suitability of Athleisure wear as a wardrobe staple.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Suitability of athleisure wear as a wardrobe staple", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. The scheme names bare qualities, so the mark is in what you add - a wardrobe staple is worn often and in many settings, so versatility, durability and comfort matter more than the trend. Say why each one makes it wearable day to day.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Comfort","versatility","durability","ease of movement","affordable","adaptability to function","casual style","trendy","absorbent","fresh feeling","aids posture","allows skin breathability","reduces pain/discomfort","improves confidence"]} },
+    { id: "suitability", kind: "criterion", verbatim: "suitability", marks: 15, contextNote: "Three developed evaluation points, each graded 5:3:0. The source’s comfort and health claims are possible judgements, not guaranteed effects of wearing these clothes. Complete guidance: Comfort; versatility; durability; ease of movement; affordable; adaptability to function; casual style; trendy; absorbent; fresh feeling; aids posture; allows skin breathability; reduces pain/discomfort; improves confidence; healthier lifestyle; encourages exercise; promotes positivity; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    questionFigure: {
+          "candId": "home-economics-2021-hl-sc-q2ai-athleisure",
+          "src": "/exam-figures/home-economics/home-economics-2021-hl-sc-q2ai-athleisure.png",
+          "srcHash": "f5829310cefc4d3dc67643a185d515b2",
+          "alt": "Original four athleisure outfits: dark jacket and light trousers; green sweatshirt and shorts; black outfit and white trainers; white top, scarf and black leggings. The complete three-photo montage and Pinterest source caption are visible.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2021 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7425,11 +7467,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "steps-of-the-design-process",
     section: "C", questionRef: "2021 HL Section C E2 Q2(a)(ii)",
-    stem: "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear.",
+    stem: "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear. (www.pinterest.com)",
     questionText: "Outline the steps of the design process when constructing a garment.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 steps @ 2 marks (graded 2:0)","answer":5,"ofParts":8,"perPart":2}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"5 steps × 2 (2:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Steps of the design process", marks: 10, contextNote: "Five steps at 2 marks, graded 2:0 - each is all or nothing, and they are in order. Define the task, analyse the brief, research, generate ideas, present them, refine, make, evaluate. Learn the sequence and this is ten marks in a minute.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Define the task","analysis of brief","investigation/research","possible ideas/solutions","presenting ideas to others","refining the design","implementation","evaluation"]} },
+    { id: "design", kind: "criterion", verbatim: "steps", marks: 10, contextNote: "Five design-process steps, each graded 2:0. Complete guidance: Define the task; analysis of brief; investigation/research; possible ideas/solutions; presenting ideas to others; refining the design; implementation; evaluation; etc.", permittedMarks: [0,2,4,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,2]}] },
     ],
   } as SecCard,
   {
@@ -7440,13 +7482,730 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q2b", topicId: "home-economics-3-7", conceptId: "profile-of-a-natural-fibre-fabric",
     section: "C", questionRef: "2021 HL Section C E2 Q2(b)",
     stem: "The sustainability of natural fibres has led to an upsurge in their use.",
-    questionText: "Write a profile of one fabric manufactured from natural fibres. Refer to: fibre production; fabric properties; uses.",
-    tariffModel: {"kind":"fixed","notation":"name 3 marks (graded 3:0); fibre production 3 points @ 2 marks; properties 3 @ 1 mark; uses 3 @ 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Write a profile of one fabric manufactured from natural fibres. Refer to:\n• fibre production\n• fabric properties\n• uses. ",
+    tariffModel: {"kind":"fixed","notation":"Name 3; production 3 × 2; properties 3 × 1; uses 3 × 1"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the fabric", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 - all or nothing for a single word. Cotton and wool have the fullest production accounts in the scheme and are the easiest to describe end to end.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Cotton","Linen","Wool","Silk"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fibre production", marks: 6, contextNote: "Three points at 2 marks - the biggest row. Production is a sequence from plant or animal to yarn, so tell it in order: where the fibre comes from, how it is harvested, how it is cleaned and separated, how it is spun. Read the option for the fabric you named.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Cotton Fibre production: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn","Linen Fibre production: made from the stem of the flax plant; flax stems are pulled and stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric","Wool Fibre production: comes from the soft hair / fleece of sheep, goats, llamas etc; fleece is removed/shorn from the animal; it is then collected and graded to the length of the fibres and also the colour and fineness of the wool; it is then cleaned and combed (carding); it is then spun into yarn and can then be used to produce textiles","Silk Fibre production: silkworm feeds on mulberry leaves; it spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; these are then woven into fabric"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Fabric properties", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 - single words, no development needed. Listed in the same order as the fabrics above: cotton, linen, wool, silk. Include a weakness as well as a strength; the scheme lists both.", openList: true, group: {"claimMax":3,"perOption":1,"options":["strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun","strong; absorbent; cool; strong; washes well; creases easily; shrinks easily; difficult to dye; damaged by mildew","warm; absorbent; does not burn easily; hardwearing; resilient; shrinks if washed at too high a temperature or if tumble dried; can irritate the skin","absorbent; crease resistant; strong; smooth; light; drapes well; damaged by careless washing, moths, sunshine, chemicals"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Uses", marks: 3, contextNote: "Three uses at 1 mark each, graded 1:0. Again in fabric order. Easy marks - name garments or household items, and make sure they match the fabric you profiled.", openList: true, group: {"claimMax":3,"perOption":1,"options":["shirts; blouses; skirts; towels; sheets; curtains","dresses; suits; soft furnishings; towels; napkins; tablecloths; handkerchiefs","jumpers; coats; blankets; carpets; soft furnishings","blouses; shirts; dresses; suits; ties; paintings; cushion covers; curtains; sheets"]} },
+    { id: "name", kind: "criterion", verbatim: "Name of fabric", marks: 3, contextNote: "Name one fabric made from natural fibres, graded 3:0. This model: Cotton", permittedMarks: [0,3] },
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Three production points, each graded 2:0. Complete guidance, including any continuation: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "fabric properties", marks: 3, contextNote: "Three properties, each graded 1:0. Complete guidance: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 3, contextNote: "Three uses, each graded 1:0. Complete guidance: shirts; blouses; skirts; towels; sheets; curtains; etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "fabric-1",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name one fabric made from natural fibres, graded 3:0. This model: Cotton"
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points, each graded 2:0. Complete guidance, including any continuation: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties, each graded 1:0. Complete guidance: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses, each graded 1:0. Complete guidance: shirts; blouses; skirts; towels; sheets; curtains; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "fabric-2",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name one fabric made from natural fibres, graded 3:0. This model: Linen"
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points, each graded 2:0. Complete guidance, including any continuation: made from the stem of the flax plant; flax stems are pulled and stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties, each graded 1:0. Complete guidance: strong; absorbent; cool; strong; washes well; creases easily; shrinks easily; difficult to dye; damaged by mildew; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses, each graded 1:0. Complete guidance: dresses; suits; soft furnishings; towels; napkins; tablecloths; handkerchiefs; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "fabric-3",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name one fabric made from natural fibres, graded 3:0. This model: Wool"
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points, each graded 2:0. Complete guidance, including any continuation: comes from the soft hair / fleece of sheep, goats, llamas etc; fleece is removed/shorn from the animal; it is then collected and graded to the length of the fibres and also the colour and fineness of the wool; it is then cleaned and combed (carding); it is then spun into yarn and can then be used to produce textiles; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties, each graded 1:0. Complete guidance: warm; absorbent; does not burn easily; hardwearing; resilient; shrinks if washed at too high a temperature or if tumble dried; can irritate the skin; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses, each graded 1:0. Complete guidance: jumpers; coats; blankets; carpets; soft furnishings; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "fabric-4",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name one fabric made from natural fibres, graded 3:0. This model: Silk"
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points, each graded 2:0. Complete guidance, including any continuation: silkworm feeds on mulberry leaves; it spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; these are then woven into fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties, each graded 1:0. Complete guidance: absorbent; crease resistant; strong; smooth; light; drapes well; damaged by careless washing, moths, sunshine, chemicals; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses, each graded 1:0. Complete guidance: blouses; shirts; dresses; suits; ties; paintings; cushion covers; curtains; sheets; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another natural-fibre fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name a valid fabric made from natural fibres, graded 3:0. The paper leaves the choice open."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three accurate production points, each graded 2:0; no model for this alternative is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three accurate properties of your chosen fabric, each graded 1:0.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of that same fabric, each graded 1:0.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -7458,9 +8217,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E2 Q2(c)(i)",
     stem: "The design of fashion can be influenced by cultural, historical and social factors.",
     questionText: "Explain how the choice of clothing is determined by its function.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 point @ 6 marks (graded 6:3:0)","answer":1,"ofParts":8,"perPart":6}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"1 point × 6 (6:3:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How function determines the choice of clothing", marks: 6, contextNote: "One point at 6 marks, graded 6:3:0 - so 6 or 3, and a bare word is the 3. Take one function and develop it properly: protection from weather means warmth, waterproofing and covering, and it changes what you reach for in January versus July.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Modesty","protection from weather","self-expression","identification","status","season","occasion","personal preference"]} },
+    { id: "function", kind: "criterion", verbatim: "function", marks: 6, contextNote: "One developed point, graded 6:3:0. Complete guidance: Modesty; protection from weather; self-expression; identification; status; season; occasion; personal preference; etc.", permittedMarks: [0,3,6] },
     ],
   } as SecCard,
   {
@@ -7472,9 +8231,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E2 Q2(c)(ii)",
     stem: "The design of fashion can be influenced by cultural, historical and social factors.",
     questionText: "Analyse the impact of social influences on the design of clothing.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 3 marks (graded 3:2:0)","answer":3,"ofParts":9,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Social influences on the design of clothing", marks: 9, contextNote: "Three influences at 3 marks, graded 3:2:0. Analyse means say how the influence reaches the clothes - an influencer wears a piece and demand follows, environmental concern pushes designers toward recycled fabric, travel and music carry styles between cultures.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Public figures","celebrities","influencers","fashion houses and designers","environmental issues","dance influences","music influences","increase in travel","cultural influences"]} },
+    { id: "influences", kind: "criterion", verbatim: "social influences", marks: 9, contextNote: "Three points, each graded 3:2:0. Complete guidance: Public figures; celebrities; influencers; fashion houses and designers; environmental issues; dance influences; music influences; increase in travel; cultural influences; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7485,10 +8244,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "defining-poverty-hl",
     section: "C", questionRef: "2021 HL Section C E3 Q3(a)(i)",
     stem: "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
-    questionText: "Define what is meant by poverty.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 4 marks (graded 4:2:0)","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    questionText: "Define poverty.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4 (4:2:0)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Definition of poverty", marks: 8, contextNote: "Two points at 4 marks, graded 4:2:0. The scheme prints two ideas and both are worth having: not being able to afford basic needs, and being excluded from what Irish society treats as a normal standard of living. The second is what lifts it above \"having no money\".", openList: true, group: {"claimMax":2,"perOption":4,"options":["being without adequate food, clothing or shelter","income and resources are inadequate and do not allow them an adequate standard of living that is acceptable by Irish society","having little or no wealth","inadequate income and resources may exclude and marginalise people from participating in activities that are considered the norm for people in society"]} },
+    { id: "poverty", kind: "criterion", verbatim: "poverty", marks: 8, contextNote: "Two definition points, each graded 4:2:0. Complete guidance: Poverty: being without adequate food, clothing or shelter; income and resources are inadequate and do not allow them an adequate standard of living that is acceptable by Irish society; having little or no wealth; inadequate income and resources may exclude and marginalise people from participating in activities that are considered the norm for people in society; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7499,12 +8258,12 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "relative-poverty-poverty-line-poverty-trap",
     section: "C", questionRef: "2021 HL Section C E3 Q3(a)(ii)",
     stem: "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
-    questionText: "In relation to poverty explain each of the following: relative poverty; the poverty line; the poverty trap.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    questionText: "In relation to poverty explain each of the following:\n• relative poverty\n• the poverty line\n• the poverty trap.",
+    tariffModel: {"kind":"fixed","notation":"3 required terms × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Relative poverty", marks: 6, contextNote: "Two points at 3 marks. Relative is measured against everyone else - below what society treats as a basic standard, and shut out of activities other people take for granted.", openList: true, group: {"claimMax":2,"perOption":3,"options":["people living below what society recognises as a basic standard of living","prevents people from partaking in activities which are looked upon as normal in society"]} },
-    { id: "r-2", kind: "anyN", verbatim: "The poverty line", marks: 6, contextNote: "Two points at 3 marks. A figure, not a condition: the minimum income reckoned necessary to maintain a basic standard of living, enough for food, clothing and shelter.", openList: true, group: {"claimMax":2,"perOption":3,"options":["may be described as the estimated minimum income considered necessary to maintain a basic standard of living","minimum amount of money a person would need to provide for basic needs such as food, clothing and shelter"]} },
-    { id: "r-3", kind: "anyN", verbatim: "The poverty trap", marks: 6, contextNote: "Two points at 3 marks. The trap is the disincentive - benefits are lost on returning to work, and a low-paid job can leave a household worse off than the payments it replaced.", openList: true, group: {"claimMax":2,"perOption":3,"options":["people who receive social welfare assistance/benefits lose them if they return to work","social welfare assistance/benefits may be more financially rewarding than wages in a low paid job","some people may choose to remain financially dependent on the state"]} },
+    { id: "term-1", kind: "criterion", verbatim: "relative poverty", marks: 6, contextNote: "Two explanation points, each graded 3:2:0. Complete historical guidance: people living below what society recognises as a basic standard of living; prevents people from partaking in activities which are looked upon as normal in society; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "term-2", kind: "criterion", verbatim: "poverty line", marks: 6, contextNote: "Two explanation points, each graded 3:2:0. Complete historical guidance: may be described as the estimated minimum income considered necessary to maintain a basic standard of living; minimum amount of money a person would need to provide for basic needs such as food, clothing and shelter; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "term-3", kind: "criterion", verbatim: "poverty trap", marks: 6, contextNote: "Two explanation points, each graded 3:2:0. The poverty trap concerns financial disincentives, not a general claim about people receiving welfare; benefit effects depend on the scheme and circumstances. Complete historical guidance: people who receive social welfare assistance/benefits lose them if they return to work; social welfare assistance/benefits may be more financially rewarding than wages in a low paid job; some people may choose to remain financially dependent on the state; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7516,11 +8275,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E3 Q3(a)(iii)",
     stem: "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
     questionText: "Discuss the extent and distribution of poverty in Ireland today.",
-    tariffModel: {"kind":"fixed","notation":"3 points @ 4 marks (graded 4:2:0) - 1 reference to extent, 1 reference to distribution + 1 other point","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"Extent 1 + distribution 1 + other 1, each × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One reference to extent", marks: 4, contextNote: "One point at 4 marks, and the scheme requires at least one. Extent is how many - over 20% of households below the poverty line, one in four children, and one of the highest rates in Europe. A figure is worth more than a general statement.", openList: true, group: {"claimMax":1,"perOption":4,"options":["the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession","the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line","towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living","over 20% of Irish households live below the poverty line","one in four children live below the poverty line","Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty","increase in poverty as a result of COVID - 19 pandemic"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One reference to distribution", marks: 4, contextNote: "One point at 4 marks, also required. Distribution is who - the scheme lists the at-risk groups: women over 65, lone parents, the unemployed, low-paid workers, people with disabilities, Travellers and ethnic minorities.", openList: true, group: {"claimMax":1,"perOption":4,"options":["groups at risk – women over 65","households where the head of the household is working in the home","elderly","disabled","unemployed","low paid workers","lone parents","members of the travelling community","ethnic minorities","cycle of deprivation in families"]} },
-    { id: "r-3", kind: "anyN", verbatim: "One further point, from either", marks: 4, contextNote: "One further point at 4 marks, from either strand. The historical sweep in the extent list - recession in the 1980s, the Celtic Tiger, the housing costs of the 2000s, then COVID - is the easiest place to find a third.", openList: true, group: {"claimMax":1,"perOption":4,"options":["the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession","the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line","towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living","over 20% of Irish households live below the poverty line","one in four children live below the poverty line","Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty","increase in poverty as a result of COVID - 19 pandemic","groups at risk – women over 65","households where the head of the household is working in the home","elderly","disabled","unemployed","low paid workers","lone parents"]} },
+    { id: "extent", kind: "criterion", verbatim: "Extent", marks: 4, contextNote: "One extent point, graded 4:2:0. “Today” means the 2021 paper’s context; these figures are not presented as current statistics. Complete historical guidance:  the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession; the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line; towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living; over 20% of Irish households live below the poverty line; one in four children live below the poverty line; Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty; increase in poverty as a result of COVID - 19 pandemic; etc.", permittedMarks: [0,2,4] },
+    { id: "distribution", kind: "criterion", verbatim: "Distribution", marks: 4, contextNote: "One distribution point, graded 4:2:0. Complete historical guidance:  groups at risk – women over 65; households where the head of the household is working in the home; elderly; disabled; unemployed; low paid workers; lone parents; members of the travelling community; ethnic minorities; cycle of deprivation in families; etc. ", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 4, contextNote: "One further distinct point under either heading, graded 4:2:0.", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -7532,10 +8291,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E3 Q3(a)(iv)",
     stem: "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
     questionText: "Name and give details of one social welfare assistance/benefit available to people who are experiencing poverty.",
-    tariffModel: {"kind":"fixed","notation":"Name 4 marks (graded 4:2:0); details 2 points @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"Name 4 + 2 details × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the social welfare assistance/benefit", marks: 4, contextNote: "Name one, 4 marks. Eight are accepted. Name the payment exactly - \"jobseeker’s allowance\", not \"the dole\" - and pick one you can then describe for the other 8 marks.", openList: true, group: {"claimMax":1,"perOption":4,"options":["State pension (non-contributory)","widow’s/widower’s or surviving civil partner’s pension (non-contributory)","jobseeker’s allowance/benefit","working family payment","COVID - 19 pandemic unemployment payment (PUP)","supplementary welfare allowance","one-parent family payment","child benefit","and"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Details of the payment", marks: 8, contextNote: "Two details at 4 marks - two thirds of the marks, and the scheme prints no detail for any of them, so this is entirely yours. Say who qualifies, what it is for, and whether it is means tested. Working family payment and child benefit are the easiest to describe.", openList: true, group: {"claimMax":2,"perOption":4,"options":["State pension (non-contributory)","widow’s/widower’s or surviving civil partner’s pension (non-contributory)","jobseeker’s allowance/benefit","working family payment","COVID - 19 pandemic unemployment payment (PUP)","supplementary welfare allowance","one-parent family payment","child benefit","and"]} },
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Name one assistance/benefit, graded 4:2:0. Complete historical examples: State pension (non-contributory); widow’s/widower’s or surviving civil partner’s pension (non-contributory); jobseeker’s allowance/benefit; working family payment; COVID - 19 pandemic unemployment payment (PUP); supplementary welfare allowance; one-parent family payment; child benefit; etc.", permittedMarks: [0,2,4] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two accurate details about that same named payment, each graded 4:2:0. The scheme lists names but no model details. Use the 2021 context; no current eligibility or rate is implied.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7547,9 +8306,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C E3 Q3(b)(i)",
     stem: "People in work, paid or unpaid, tend to enjoy happier and healthier lives.",
     questionText: "Identify and elaborate on the factors that affect an individual’s attitude to work.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 factors × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors affecting an individual’s attitude to work", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. Identify AND elaborate - the name is the 3, the elaboration is the 5. The pair worth knowing is extrinsic against intrinsic satisfaction: one is working for what the wage buys, the other is the work itself giving pride and status.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Social group - children from higher socio-economic groups tend to have higher educational aspirations and long-term goals; they are encouraged and therefore more likely to attain work in desired area; children from lower socio-economic group tend to have fewer educational opportunities and are often less qualified; they may attain employment in low- status positions, with little chance of advancement and little job satisfaction","Education - higher socio-economic groups have better qualifications and higher career expectations, they have a more positive experience of work and remain in employment for longer; early school leavers find it difficult to find well paid long term employment","Extrinsic satisfaction - based on bonuses associated with work rather than the job itself; repetitive uninteresting work e.g. assembly line – may fail to stimulate so the wage alone may become the focus for satisfaction; satisfaction is derived from spending the money on luxury goods and/or socialising","Intrinsic satisfaction - work gives sense of fulfilment, pleasure; scope for creativity; pride in work; develops self-esteem, confidence, independence; confers status and respect; satisfies psychological and social needs","Work ethic - attitude to work including absenteeism, punctuality, commitment to work and respect for authority","Personal identity - some professions confer status in the community and as a result may link to a positive attitude to work,","Working conditions - availability of part time work, job sharing, flexitime and working from home make work life balance easier; atmosphere at work; physical working environment","Social contact - influenced by background, experience, peer pressure"]} },
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "Three factors, each graded 5:3:0. Discuss influences without treating class-based generalisations as inevitable characteristics of individuals. Complete historical guidance: Social group: children from higher socio-economic groups tend to have higher educational aspirations and long-term goals; they are encouraged and therefore more likely to attain work in desired area; children from lower socio-economic group tend to have fewer educational opportunities and are often less qualified; they may attain employment in low- status positions, with little chance of advancement and little job satisfaction; etc. Education: higher socio-economic groups have better qualifications and higher career expectations, they have a more positive experience of work and remain in employment for longer; early school leavers find it difficult to find well paid long term employment; etc. Extrinsic satisfaction: based on bonuses associated with work rather than the job itself; repetitive uninteresting work e.g. assembly line – may fail to stimulate so the wage alone may become the focus for satisfaction; satisfaction is derived from spending the money on luxury goods and/or socialising; etc. Intrinsic satisfaction: work gives sense of fulfilment, pleasure; scope for creativity; pride in work; develops self-esteem, confidence, independence; confers status and respect; satisfies psychological and social needs; etc. Work ethic: attitude to work including absenteeism, punctuality, commitment to work and respect for authority; etc. Personal identity: some professions confer status in the community and as a result may link to a positive attitude to work, etc. Working conditions: availability of part time work, job sharing, flexitime and working from home make work life balance easier; atmosphere at work; physical working environment etc. Social contact: influenced by background, experience, peer pressure; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -7560,10 +8319,10 @@ export const CARDS: SecCard[] = [
     id: "he-2021-hl-sc-q3bii", topicId: "home-economics-3-11", conceptId: "community-benefits-of-volunteering",
     section: "C", questionRef: "2021 HL Section C E3 Q3(b)(ii)",
     stem: "People in work, paid or unpaid, tend to enjoy happier and healthier lives.",
-    questionText: "Discuss, giving examples, how a community can benefit from the work of volunteers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":9,"perPart":5}, totalMarks: 15,
+    questionText: "Discuss giving examples, how a community can benefit from the work of volunteers.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How a community benefits from volunteers", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0 - and the question says \"giving examples\", so name one: St Vincent de Paul for a personal local service, tidy towns for community spirit. The scheme supplies both. Keep the benefit at community level, not the volunteer’s.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Provides range of services quickly to those in need in a community i.e. older people, people with disabilities or homeless people, reducing disadvantage for community members","complement the work carried out by statutory bodies","offer a more personal local service e.g. St. Vincent de Paul","when state funding is lacking or inadequate they organise and run services which should have been provided by the state","improves community by restoring and cleaning the local landscape or by alleviating poverty and social problems","creates a sense of community spirit, as volunteers come together to achieve a common goal e.g. tidy towns","friendships formed which can create a sense of closeness within community","issues can be dealt with quickly before they become major social problems","attracting media attention, can initiate change and social reform"]} },
+    { id: "volunteers", kind: "criterion", verbatim: "community", marks: 15, contextNote: "Three explained benefits with examples, each graded 5:3:0. Complete guidance: Provides range of services quickly to those in need in a community i.e. older people, people with disabilities or homeless people, reducing disadvantage for community members; complement the work carried out by statutory bodies; offer a more personal local service e.g. St. Vincent de Paul; when state funding is lacking or inadequate they organise and run services which should have been provided by the state; improves community by restoring and cleaning the local landscape or by alleviating poverty and social problems; creates a sense of community spirit, as volunteers come together to achieve a common goal e.g. tidy towns; friendships formed which can create a sense of closeness within community; issues can be dealt with quickly before they become major social problems; attracting media attention, can initiate change and social reform; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -7573,11 +8332,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q3ci", topicId: "home-economics-2-0", conceptId: "distribution-of-work-and-childcare-in-families",
     section: "C", questionRef: "2021 HL Section C E3 Q3(c)(i)",
-    stem: "42% of people who are working from home said that “managing the boundary between work and home life was very difficult”. (Irish Independent, 2020)",
+    stem: "42% of people who are working from home said that ‘managing the boundary between work and home life was very difficult.’ (Irish Independent, 2020)",
     questionText: "Explain the importance of the distribution of work tasks and childcare responsibilities in families.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0) - 1 reference to work tasks, 1 reference to childcare + 1 other point","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Work tasks 1 + childcare 1 + other 1, each × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Importance of distributing work tasks and childcare", marks: 15, contextNote: "Three points at 5 marks, and the scheme wants at least one on work tasks and one on childcare. Sharing childcare builds closer parent-child relationships and cuts role overload; sharing chores teaches children responsibility and shows gender equity by example.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Both parents now generally involved in childcare leading to closer relationships between parents and children","reduces role overload and role conflict","introduce children to gender equity from an early age as parents are seen as role models sharing household tasks","reduces stress","work tasks are generally shared among family members e.g. cooking, vacuuming laundry","children become more responsible and learn to take pride in their environment e.g. tidying own bedrooms"]} },
+    { id: "tasks", kind: "criterion", verbatim: "work tasks", marks: 5, contextNote: "One work-task point, graded 5:3:0. Complete guidance across both headings: Both parents now generally involved in childcare leading to closer relationships between parents and children; reduces role overload and role conflict; introduce children to gender equity from an early age as parents are seen as role models sharing household tasks; reduces stress; work tasks are generally shared among family members e.g. cooking, vacuuming laundry; children become more responsible and learn to take pride in their environment e.g. tidying own bedrooms; etc.", permittedMarks: [0,3,5] },
+    { id: "childcare", kind: "criterion", verbatim: "childcare", marks: 5, contextNote: "One childcare point, graded 5:3:0. Use the full guidance above.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 5, contextNote: "One further distinct point under either heading, graded 5:3:0.", permittedMarks: [0,3,5] },
     ],
   } as SecCard,
   {
@@ -7587,11 +8348,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q3cii", topicId: "home-economics-3-10", conceptId: "improvements-in-education-and-family-life",
     section: "C", questionRef: "2021 HL Section C E3 Q3(c)(ii)",
-    stem: "42% of people who are working from home said that “managing the boundary between work and home life was very difficult”. (Irish Independent, 2020)",
-    questionText: "Discuss how improvements in the provision of education has impacted on family life.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":11,"perPart":5}, totalMarks: 15,
+    stem: "42% of people who are working from home said that ‘managing the boundary between work and home life was very difficult.’ (Irish Independent, 2020)",
+    questionText: "Discuss how improvements in the provision of education have impacted on family life.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How improvements in education have impacted family life", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. The scheme runs across the whole life course - pre-schools and homework clubs freeing parents to work, SNAs and autism units supporting children with additional needs, and free fees, grants, PLCs and distance learning opening third level to adults. Take one from each stage.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Pre-schools /Naíonraí – qualified staff available for part of / whole working day","after school/ homework clubs","schools for pupils with special educational needs","SNAs are available at both primary and secondary level to assist pupils with special educational needs","multisensory rooms","autism units","abolishment of fees, availability of grants and access programmes, have made third level education more accessible","adult and second-chance education improves self-esteem","various PLC courses and SOLAS training programmes facilitate upskilling, improving employment opportunities and promotional prospects","VTOS for long term unemployed","distance learning – e.g. Open University – functions across Europe and has no defined entry requirements"]} },
+    { id: "education", kind: "criterion", verbatim: "provision of education", marks: 15, contextNote: "Three points connecting provision to family life, each graded 5:3:0. Complete historical guidance: Pre-schools /Naíonraí – qualified staff available for part of / whole working day; after school/ homework clubs; schools for pupils with special educational needs; SNAs are available at both primary and secondary level to assist pupils with special educational needs; multisensory rooms; autism units; abolishment of fees, availability of grants and access programmes, have made third level education more accessible; adult and second-chance education improves self-esteem; various PLC courses and SOLAS training programmes facilitate upskilling, improving employment opportunities and promotional prospects; VTOS for long term unemployed; distance learning – e.g. Open University – functions across Europe and has no defined entry requirements; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -7600,12 +8361,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritional-significance-of-milk",
-    section: "C", questionRef: "2021 HL Section C Q4(a)(i) - Core",
-    stem: "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
+    section: "C", questionRef: "2021 HL Section C Q4(a)(i)",
+    stem: "‘Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that.’ (Dairy Sector Profile, Bord Bia)",
     questionText: "Discuss the nutritional significance of milk in the diet of young children.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks (graded 4:3:2:1:0)","answer":5,"ofParts":6,"perPart":4}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nutritional significance of milk for young children", marks: 20, contextNote: "Five points at 4 marks, graded 4:3:2:1:0 - the long ladder means a partial answer still scores, so write something on all five. Keep tying it back to young children: HBV protein for growth, full fat for energy and vitamins A and D, calcium and phosphorus for bones and teeth. Milk’s weakness - almost no iron - is worth naming too.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Protein - 3.5%, HBV, lactalbumin, lactoglobulin, caseinogen, essential for growth and repair, important in the diet of children","Fat - 0.2% in skimmed, 4% in whole milk, saturated fat, easily digested – convalescent; full fat milk for children; can be fortified with omega 3","Carbohydrate - 4-5% lactose for energy; should be combined with foods rich in starch, fibre","Vitamins - 0.3% A, B group and D in whole milk, B group in skimmed; Retinol - vitamin A produces rhodopsin, maintains healthy lining membranes; keeps skin and hair healthy and helps to regulate growth; Riboflavin - B2 releases energy from protein, fats and carbohydrates, promotes healthy mucous membranes in eyes, nose and mouth; promotes healthy skin, hair and nails; Cobalamin - B12 is required for the production of red blood cells; is involved in fatty acid and folate metabolism; promotes growth; maintains a healthy nervous system; milk can be fortified with vitamins; should be combined with foods rich in vitamin C","Minerals - 0.7% - calcium and phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; can be fortified with minerals; should be combined with foods rich in iron in order to balance the diet","Water - 87%, necessary for hydration"]} },
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 20, contextNote: "Five developed points, each graded 4:3:2:1:0. The nutrient headings are illustrative. Amounts vary by milk type and fortification; the scheme’s vitamin percentage is not a reliable general composition figure. Complete historical guidance: Nutritional significance - Protein: 3.5%, HBV, lactalbumin, lactoglobulin, caseinogen, essential for growth and repair, important in the diet of children; etc. Fat: 0.2% in skimmed, 4% in whole milk, saturated fat, easily digested – convalescent; full fat milk for children; can be fortified with omega 3; etc. Carbohydrate: 4-5% lactose for energy; should be combined with foods rich in starch, fibre; etc. Vitamins: 0.3% A, B group and D in whole milk, B group in skimmed; Retinol - vitamin A produces rhodopsin, maintains healthy lining membranes; keeps skin and hair healthy and helps to regulate growth; Riboflavin - B2 releases energy from protein, fats and carbohydrates, promotes healthy mucous membranes in eyes, nose and mouth; promotes healthy skin, hair and nails; Cobalamin - B12 is required for the production of red blood cells; is involved in fatty acid and folate metabolism; promotes growth; maintains a healthy nervous system; milk can be fortified with vitamins; should be combined with foods rich in vitamin C; etc. Minerals: 0.7% - calcium and phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; can be fortified with minerals; should be combined with foods rich in iron in order to balance the diet; etc. Water: 87%, necessary for hydration; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
   } as SecCard,
   {
@@ -7614,15 +8375,1284 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4aii", topicId: "home-economics-0-9", conceptId: "processing-milk-to-extend-shelf-life",
-    section: "C", questionRef: "2021 HL Section C Q4(a)(ii) - Core",
-    stem: "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
-    questionText: "Describe one process used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; packaging and labelling.",
-    tariffModel: {"kind":"fixed","notation":"name 2 marks (graded 2:0); process 4 points @ 2 marks; packaging and labelling 8 points @ 1 mark (4 packaging, 4 labelling)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    section: "C", questionRef: "2021 HL Section C Q4(a)(ii)",
+    stem: "‘Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that.’ (Dairy Sector Profile, Bord Bia)",
+    questionText: "Describe one process used by manufacturers to extend the shelf life of milk. Refer to:\n• name of the process\n• how the process is carried out\n• packaging and labelling.",
+    tariffModel: {"kind":"fixed","notation":"Name 2; process 4 × 2 (2:1:0); packaging 4 × 1; labelling 4 × 1"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the process", marks: 2, contextNote: "Name one, 2 marks, graded 2:0. Six are offered. Pasteurisation is the one most students can give temperatures for, and the temperatures are where the next row’s marks are.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Pasteurisation","Sterilisation","UHT","Evaporated","Dried","Condensed"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How the process is carried out", marks: 8, contextNote: "Four points at 2 marks - the biggest row, and it wants numbers. Each process is a sequence of temperature, time and what happens after: pasteurisation is 72-75°C for 15-25 seconds then cooled rapidly to 10°C. Learn one process precisely rather than six vaguely.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Pasteurisation - Milk is homogenised; heated to 72⁰C - 75⁰C; for 15 - 25 seconds; cooled rapidly to 10 0C.","Sterilisation - Milk is homogenised; sealed into glass bottles; and heated to 1040C -1130C; for 30 minutes; then cooled.","UHT - Milk is heated to 1320C; for 1 to 3 seconds; cooled quickly; packed in sterile containers.","Evaporated - Milk is homogenised; heated to 1150C; for 20 minutes; evaporated to half its volume; It is then sealed in sterile cans.","Dried - Milk is homogenised; pasteurised; then evaporated to 60% of its original volume; It is then spray or roller dried to form a powdered milk.","Condensed - Milk is homogenised; It is then heated to 720C to 80 0C; for 15 minutes; to evaporate it to one-third of its volume; 15% sugar is added; It is then sealed in sterile cans."]} },
-    { id: "r-3", kind: "anyN", verbatim: "Packaging", marks: 4, contextNote: "Four references at 1 mark each, graded 1:0 - single words. Glass bottles, metal cans, plastic cartons, waxed cardboard. Match the packaging to the process you named.", openList: true, group: {"claimMax":4,"perOption":1,"options":["glass bottles","metal cans","plastic cartons","waxed cardboard","carbon neutral packaging","quantity"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Four references at 1 mark each, graded 1:0. Type of milk, brand, quantity, nutritional information, date stamp, storage instructions. Eight marks across this row and the last for naming things off a carton.", openList: true, group: {"claimMax":4,"perOption":1,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
+    { id: "name", kind: "criterion", verbatim: "name of process", marks: 2, contextNote: "Name the process, graded 2:0. Model: Pasteurisation", permittedMarks: [0,2] },
+    { id: "process", kind: "criterion", verbatim: "how the process is carried out", marks: 8, contextNote: "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; heated to 72°C - 75°C;for 15 - 25 seconds; cooled rapidly to 10°C.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "packaging", kind: "criterion", verbatim: "Packaging", marks: 4, contextNote: "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]},{"id":"point-4","verbatim":"Point 4","marks":1,"permittedMarks":[0,1]}] },
+    { id: "labelling", kind: "criterion", verbatim: "labelling", marks: 4, contextNote: "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]},{"id":"point-4","verbatim":"Point 4","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "process-1",
+                "label": "Pasteurisation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: Pasteurisation"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; heated to 72°C - 75°C;for 15 - 25 seconds; cooled rapidly to 10°C.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "process-2",
+                "label": "Sterilisation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: Sterilisation"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; sealed into glass bottles; and heated to 104°C -113°C; for 30 minutes; then cooled.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "process-3",
+                "label": "UHT",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: UHT"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. Source correction: UHT requires at least 135°C with a suitable holding time; the scheme’s 132°C figure is too low. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is heated to 132°C; for 1 to 3 seconds; cooled quickly; packed in sterile containers.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "process-4",
+                "label": "Evaporated",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: Evaporated"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; heated to 115°C; for 20 minutes; evaporated to half its volume; It is then sealed in sterile cans.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "process-5",
+                "label": "Dried",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: Dried"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; pasteurised; then evaporated to 60% of its original volume; It is then spray or roller dried to form a powdered milk.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "process-6",
+                "label": "Condensed",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name the process, graded 2:0. Model: Condensed"
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four process points, each graded 2:1:0. These are historical industrial-process examples, not complete or validated home-preservation instructions. Complete model: Milk is homogenised; It is then heated to 72°C to 80°C; for 15 minutes; to evaporate it to one-third of its volume; 15% sugar is added; It is then sealed in sterile cans.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid process",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of process",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name another valid milk preservation process, graded 2:0; the choice is open."
+                      },
+                      {
+                            "id": "process",
+                            "kind": "criterion",
+                            "verbatim": "how the process is carried out",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8
+                            ],
+                            "contextNote": "Four accurate points about that same process, each graded 2:1:0. No model for this alternative is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "packaging",
+                            "kind": "criterion",
+                            "verbatim": "Packaging",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four packaging references appropriate to your process, each graded 1:0. Complete guidance: type: glass bottles; metal cans; plastic cartons; waxed cardboard; carbon neutral packaging; quantity etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "labelling",
+                            "kind": "criterion",
+                            "verbatim": "labelling",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Four labelling references, each graded 1:0. Complete guidance: type of milk; brand; quantity of milk; nutritional information; date-stamp; storage instructions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -7631,12 +9661,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "dairy-industry-and-consumer-trends",
-    section: "C", questionRef: "2021 HL Section C Q4(a)(iii) - Core",
-    stem: "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
+    section: "C", questionRef: "2021 HL Section C Q4(a)(iii)",
+    stem: "‘Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that.’ (Dairy Sector Profile, Bord Bia)",
     questionText: "Outline the measures (initiatives) taken by the dairy industry to meet current consumer trends.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 initiatives @ 4 marks (graded 4:2:0)","answer":3,"ofParts":6,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 initiatives × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Initiatives taken by the dairy industry", marks: 12, contextNote: "Three initiatives at 4 marks, graded 4:2:0. Name the product and the trend it answers - low fat and fortified milk for health, grated and snack-pack cheese for convenience, probiotic and functional yoghurt for wellbeing, sustainable packaging for the environment.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Milk- variety – low fat, skimmed, semi-skimmed; fortified – vitamin D, calcium, iron, protein; variety of sizes; infant formula","Cheese – low fat; convenience e.g. grated, pizza mix cheese, cheese bars, snack packs; cubed cheese, sliced; flavoured cheese using herbs, fruit etc; family sized packs; resealable packaging","Yoghurt – flavoured; functional – lowering cholesterol; bio yoghurt – probiotics; various textures e.g. set, drinking, stirred; snack packs with fruit puree and biscuit crumb; frozen yoghurt; Greek yoghurt; unsweetened","Butter – sustainable packaging; low-fat variety; unsalted; flavoured; spreadable; Love Irish Food advertising campaign","Cream – single cream; double cream; sour cream; flavoured cream; whipped cream; various sizes","Others – crème fraiche; fromage frais"]} },
+    { id: "initiatives", kind: "criterion", verbatim: "initiatives", marks: 12, contextNote: "Three initiatives, each graded 4:2:0. Complete historical guidance: Milk- variety – low fat, skimmed, semi-skimmed; fortified – vitamin D, calcium, iron, protein; variety of sizes; infant formula; etc. Cheese – low fat; convenience e.g. grated, pizza mix cheese, cheese bars, snack packs; cubed cheese, sliced; flavoured cheese using herbs, fruit etc; family sized packs; resealable packaging; etc. Yoghurt – flavoured; functional – lowering cholesterol; bio yoghurt – probiotics; various textures e.g. set, drinking, stirred; snack packs with fruit puree and biscuit crumb; frozen yoghurt; Greek yoghurt; unsweetened; etc. Butter – sustainable packaging; low-fat variety; unsalted; flavoured; spreadable; Love Irish Food advertising campaign; etc. Cream – single cream; double cream; sour cream; flavoured cream; whipped cream; various sizes; etc. Others – crème fraiche; fromage frais; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
   {
@@ -7645,13 +9675,13 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4bi", topicId: "home-economics-0-1", conceptId: "types-of-diabetes-and-dietary-requirements",
-    section: "C", questionRef: "2021 HL Section C Q4(b)(i) - Core",
-    stem: "“It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030” (Changing Lives 2016 – 2020, Diabetes Ireland)",
-    questionText: "In relation to diabetes give an account of types, and dietary requirements that should be followed for individuals with diabetes.",
-    tariffModel: {"kind":"fixed","notation":"types 2 points @ 4 marks (graded 4:2:0) x 2 (reference to 2 types); dietary requirements 4 points @ 3 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    section: "C", questionRef: "2021 HL Section C Q4(b)(i)",
+    stem: "‘It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030.’ (Changing Lives 2016 – 2020, Diabetes Ireland)",
+    questionText: "In relation to diabetes, give an account of:\n• types of diabetes\n• dietary requirements that should be followed for individuals with diabetes.",
+    tariffModel: {"kind":"fixed","notation":"2 types × 4 (4:2:0) + dietary requirements 4 × 3 (3:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Types of diabetes", marks: 8, contextNote: "Two types at 4 marks each, and the scheme expects reference to two. Type 1 is deficient insulin production needing daily insulin; type 2 is the body using insulin ineffectively, 90% of cases, linked to weight and inactivity. Gestational is the third if you want it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Type 1 - (insulin dependent, juvenile or childhood onset), deficient insulin production; requires daily administration of insulin","Type 2 - (non-insulin dependent or adult onset) results from the body’s ineffective use of insulin; Type 2 comprises 90% of people with diabetes and is largely the result of excess body weight and physical inactivity; previously associated with adults only but now also occurring in children","Gestational - is hyperglycaemia; with onset or first recognition during pregnancy"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Dietary requirements", marks: 12, contextNote: "Four requirements at 3 marks - 12 of the 20 marks. The theme is steady blood sugar: three regular meals, low GI, more fibre and starchy carbohydrate, less sugar and saturated fat. Say what each one does to blood sugar rather than just listing it.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Eat 3 regular meals a day to stabilise blood sugar levels","reduce sugar intake, use artificial sweetener","eat a healthy diet of between 3 and 5 servings of fruit and vegetables a day","follow a low glycaemic index (GI) diet","reduce saturated fat intake","increase fibre foods and starch based carbohydrate foods"]} },
+    { id: "types", kind: "criterion", verbatim: "types", marks: 8, contextNote: "Two different types, each graded 4:2:0: eight marks in total. This matches the 20-mark question with twelve dietary marks; do not double-count the source’s repeated “x2”. Type 1 can be diagnosed at any age. Historical type labels are not exclusive age or treatment categories. Complete wording: Type 1 - (insulin dependent, juvenile or childhood onset), deficient insulin production; requires daily administration of insulin; etc. Type 2 - (non-insulin dependent or adult onset) results from the body’s ineffective use of insulin; Type 2 comprises 90% of people with diabetes and is largely the result of excess body weight and physical inactivity; previously associated with adults only but now also occurring in children; etc. Gestational - is hyperglycaemia; with onset or first recognition during pregnancy; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "diet", kind: "criterion", verbatim: "dietary requirements", marks: 12, contextNote: "Four requirements, each graded 3:2:0. Dietary advice is individualised; this 2021 exam list is not a personal treatment plan. Complete historical guidance: Eat 3 regular meals a day to stabilise blood sugar levels; reduce sugar intake, use artificial sweetener; eat a healthy diet of between 3 and 5 servings of fruit and vegetables a day; follow a low glycaemic index (GI) diet; reduce saturated fat intake; increase fibre foods and starch based carbohydrate foods; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -7660,12 +9690,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4bii", topicId: "home-economics-0-11", conceptId: "uses-of-sweeteners-in-food-production",
-    section: "C", questionRef: "2021 HL Section C Q4(b)(ii) - Core",
-    stem: "“It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030” (Changing Lives 2016 – 2020, Diabetes Ireland)",
+    section: "C", questionRef: "2021 HL Section C Q4(b)(ii)",
+    stem: "‘It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030.’ (Changing Lives 2016 – 2020, Diabetes Ireland)",
     questionText: "Outline the uses of sweeteners in food production.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 uses @ 5 marks (graded 5:3:0)","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 uses × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Uses of sweeteners in food production", marks: 10, contextNote: "Two uses at 5 marks, graded 5:3:0. \"To sweeten\" is the obvious one and the weakest - the marks are in the functional uses: preserving jam, acting as a humectant so cakes do not dry out, bulking, and replacing sugar in diabetic and low-calorie foods.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Used to sweeten food","to improve flavour and palatability","as a method of preservation in jam making","used in the manufacture of sweets","used in diabetic foods as an alternative to sugar","as a humectant to prevent foods such as cakes drying out","used as a bulking agent","used in soft drinks","used in slimming and low-calorie recipes"]} },
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 10, contextNote: "Two uses, each graded 5:3:0. The list covers different sweeteners; not every sweetener has every listed function. Complete guidance: Used to sweeten food; to improve flavour and palatability; as a method of preservation in jam making; used in the manufacture of sweets; used in diabetic foods as an alternative to sugar; as a humectant to prevent foods such as cakes drying out; used as a bulking agent; used in soft drinks; used in slimming and low-calorie recipes; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
   } as SecCard,
   {
@@ -7674,13 +9704,15 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4ci", topicId: "home-economics-1-2", conceptId: "methods-of-consumer-research",
-    section: "C", questionRef: "2021 HL Section C Q4(c)(i) - Core",
+    section: "C", questionRef: "2021 HL Section C Q4(c)(i)",
     stem: "Market research involves the use of a variety of consumer research methods.",
     questionText: "Name and describe two methods of consumer research.",
-    tariffModel: {"kind":"fixed","notation":"Name 2 marks (graded 2:0) x 2; describe 2 points @ 2 marks (graded 2:1:0) x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"2 methods × (name 2 (2:0) + description 2 × 2 (2:1:0))"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the research method", marks: 4, contextNote: "Two methods at 2 marks each, graded 2:0. The scheme offers desk research and field research - name both and you have 4 marks before describing anything.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Desk research","Field research"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Description of the methods named", marks: 8, contextNote: "Two points on each method at 2 marks - two thirds of the marks. The contrast is what to write: desk research gathers existing data from agencies and the internet, so it is fast, cheap and general; field research goes out and observes, interviews and surveys, so it is detailed and about actual behaviour.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Desk research/ Primary research: involves the collection of data from state agencies, internet etc; large quantities of information can be collected quickly; relatively inexpensive; information tends to be general and not very detailed (quantitative) e.g. phone/written surveys","Field research/ Secondary research: information collected using techniques such as observing, interviews, surveys etc.; primary source; information is detailed e.g. study consumer behaviour and attitudes (qualitative) e.g. vox pops, interviews, consumer panels; focus groups"]} },
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name research method 1, graded 2:0. Source correction: desk research uses secondary/existing data; field research collects primary/original data. The scheme reverses these labels. Either can involve qualitative or quantitative data. Full historical wording: Desk research/ Primary research: involves the collection of data from state agencies, internet etc; large quantities of information can be collected quickly; relatively inexpensive; information tends to be general and not very detailed (quantitative) e.g. phone/written surveys; etc. Field research/ Secondary research: information collected using techniques such as observing, interviews, surveys etc.; primary source; information is detailed e.g. study consumer behaviour and attitudes (qualitative) e.g. vox pops, interviews, consumer panels; focus groups; etc", permittedMarks: [0,2] },
+    { id: "description-1", kind: "criterion", verbatim: "describe", marks: 4, contextNote: "Two description points for the same method 1, each graded 2:1:0. Apply the corrected primary/secondary meanings.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name research method 2, graded 2:0. Use a different method from the first.", permittedMarks: [0,2] },
+    { id: "description-2", kind: "criterion", verbatim: "describe", marks: 4, contextNote: "Two description points for the same method 2, each graded 2:1:0. Apply the corrected primary/secondary meanings.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
   } as SecCard,
   {
@@ -7689,14 +9721,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
     id: "he-2021-hl-sc-q4cii", topicId: "home-economics-1-2", conceptId: "benefits-of-consumer-research",
-    section: "C", questionRef: "2021 HL Section C Q4(c)(ii) - Core",
+    section: "C", questionRef: "2021 HL Section C Q4(c)(ii)",
     stem: "Market research involves the use of a variety of consumer research methods.",
     questionText: "Outline the benefits of consumer research for both the consumer and the retailer.",
-    tariffModel: {"kind":"fixed","notation":"6 points @ 3 marks (graded 3:2:0) - 2 references to consumer, 2 references to retailer + 2 other points","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"Consumer 2 + retailer 2 + other 2, each × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two references to the consumer", marks: 6, contextNote: "Two points at 3 marks, and the scheme requires them. The consumer gains because research finds out what they actually want - so products improve, and competition can bring prices down.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Requirements of consumer can be identified","helps to improve on the quality of a product","allows for competition in the market which may lead to more competitively priced goods"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Two references to the retailer", marks: 6, contextNote: "Two points at 3 marks, also required. The retailer gains targeting: who will buy it, how big that market is, where it is, and whether the product actually meets the need.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Identifies the type of person who will use the product","identifies extent to which product meets requirements","size of the target market","location of the target market"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Two further points, from either", marks: 6, contextNote: "Two further points at 3 marks, from either side - \"2 references to consumer, 2 references to retailer + 2 other points\". The retailer list is longer, so it is the easier place to find them.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Requirements of consumer can be identified","helps to improve on the quality of a product","allows for competition in the market which may lead to more competitively priced goods","Identifies the type of person who will use the product","identifies extent to which product meets requirements","size of the target market","location of the target market"]} },
+    { id: "consumer", kind: "criterion", verbatim: "Consumer", marks: 6, contextNote: "Two consumer benefits, each graded 3:2:0. Complete guidance: Requirements of consumer can be identified; helps to improve on the quality of a product; allows for competition in the market which may lead to more competitively priced goods; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "retailer", kind: "criterion", verbatim: "Retailer", marks: 6, contextNote: "Two retailer benefits, each graded 3:2:0. Complete guidance: Identifies the type of person who will use the product; identifies extent to which product meets requirements; size of the target market; location of the target market; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "other", kind: "criterion", verbatim: "2 other points", marks: 6, contextNote: "Two further distinct benefits under either heading, each graded 3:2:0; do not count a point twice.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
   {
@@ -19430,6 +21462,100 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"5 steps × 2 (2:1:0)"}, totalMarks: 10,
     rows: [
     { id: "procedure", kind: "criterion", verbatim: "Procedure", marks: 10, contextNote: "Five steps, each graded 2:1:0. Historical examination guidance: may employ a solicitor; draw up list of assets; list details of beneficiaries – names, addresses, dates of birth; appoint executor; allocate assets/estate; include provision for funeral and burial arrangements; will is formally drawn up; signed in the presence of two witnesses; lodge in safe place; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sa-q4-factors", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate-factors",
+    section: "A", questionRef: "2021 HL Section A Q4 — factors",
+    questionText: "Give two factors that determine a person’s basal metabolic rate.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 1 (1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 2, contextNote: "Two factors, each graded 1:0. Distinguish basal energy use from additional energy expended in activity. Complete historical guidance: (i) Age; gender; body weight; size; health status; hormones; pregnancy/lactation (ii) occupation; activity level; climate; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sa-q8-advantages", topicId: "home-economics-0-5", conceptId: "protein-alternatives-vegan-diet-advantages",
+    section: "A", questionRef: "2021 HL Section A Q8 — advantages",
+    questionText: "State two advantages of including protein alternatives in the diet.",
+    tariffModel: {"kind":"fixed","notation":"2 advantages × 2 (2:1:0)"}, totalMarks: 4,
+    rows: [
+    { id: "advantages", kind: "criterion", verbatim: "advantages", marks: 4, contextNote: "Two advantages, each graded 2:1:0. These depend on the particular food; the list is not a claim that every alternative has every property. Complete guidance: (i) HBV protein; polyunsaturated fat; high in fibre; B group vitamins; calcium; iron; (ii) not very expensive; versatile; little preparation needed; sustainability; little cooking needed; add flavour; add variety; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "eggs-nutritional-significance",
+    section: "B", questionRef: "2021 HL Section B Q2(a)",
+    stem: "Eggs are a good choice as part of a healthy, balanced diet.",
+    questionText: "Discuss the nutritional significance of eggs in the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 20, contextNote: "Five developed points, each graded 4:3:2:1:0. The six nutrient headings are guidance, not six compulsory responses. Eggs suit ovo-/ovo-lacto-vegetarian diets; the scheme’s “lacto-vegetarians” wording is inaccurate. Complete historical guidance: Nutritional significance - Protein: 13%, HBV, albumin & globulin in white, livetin & vitellin in yolk; (growth and repair); source of HBV protein for lacto-vegetarians; protein alternative to meat/fish; etc. Fat: 12%, saturated in yolk, in fine emulsion because of lecithin, easy to digest; cholesterol is also present; (heat and energy); easily digested therefore good for invalids, children, elderly; etc. Carbohydrate: 0%, serve with complex carbohydrates, no fibre present; etc. Vitamins: A (produces rhodopsin, maintains healthy lining membranes, keeps skin and hair healthy and helps to regulate growth); D ( healthy bones & teeth); E (antioxidant); K (blood clotting); B1, B2, Niacin (release of energy); B12 (is required for the production of red blood cells, is involved in fatty acid and folate metabolism, promotes growth and maintains a healthy nervous system), lacks vitamin C; Minerals: 1%, calcium, phosphorus, (strong bones and teeth); iron in yolk (formation of haemoglobin); Water: 75%, necessary for hydration; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sb-q3b", topicId: "home-economics-0-4", conceptId: "haccp-hot-main-course",
+    section: "B", questionRef: "2021 HL Section B Q3(b)",
+    stem: "Temperature control is critical to ensuring food safety for all consumers.",
+    questionText: "Describe the stages in a Hazard Analysis and Critical Control Point (HACCP) system for making a hot main course dish. Refer to potential hazards and the corresponding control measures that should be implemented.",
+    tariffModel: {"kind":"fixed","notation":"4 stages × (name 1 + hazard 2 + control 3)"}, totalMarks: 24,
+    rows: [
+    { id: "stage-1", kind: "criterion", verbatim: "Stages", marks: 1, contextNote: "Name stage 1 of your HACCP plan, graded 1:0. All seven published stage examples follow; choose four relevant stages. Source correction: FSAI recommends cooking to a 75°C core or a validated time/temperature equivalent and reheating to at least 70°C, not a general requirement to exceed 100°C. Keep chilled food at 0–5°C and hot-held food above 63°C. Historical examples below are not a complete food-safety procedure. Complete two-page table: Purchase — hazards: Damaged goods; Contamination – bacterial, chemical Pests; Control measures: • Buy food from a reputable shop • Check that raw and cooked foods are stored separately • Check packaging • Check best before and use by dates • Check fridge/freezer/food temperature • Check for signs of pest damage • Use cool bags for transport of perishables etc.\n\nTransportation — hazards: Multiplication of bacteria caused by a rise in temperature; Cross contamination; Damaged packaging; Control measures: • Ensure perishable foods are packed in a cool bag • Pack perishable and non-perishable foods separately • Allow the shortest time possible between purchase & storage • Ensure packaging remains intact etc.\n\nStorage — hazards: Damaged goods Contamination – bacterial, chemical Pests; Multiplication of bacteria; Cross contamination; Control measures: • Cover chilled food and store at 5°C or below • Store frozen food at – 18°C • Check vegetables for mould etc.\n\nPreparation — hazards: Contamination – bacterial, chemical; Multiplication of bacteria; Cross contamination; Control measures: • Foods within date and with quality assurance marks • Hands washed with antibacterial soap before and after handling food; handle food as little as possible; • Colour coded boards to prevent cross contamination; keep all food covered; avoid cross-contamination by ensuring that raw food does not come into contact with cooked food • make sure frozen foods are fully defrosted, defrost in the fridge if possible • Use separate utensils for handling raw and cooked meat; keep perishable foods like salads, coleslaw and quiche in the fridge until needed; keep raw meat separate from cooked meat and ready-to-eat foods like salads • Maintain the fridge temperature below 5°C, this temperature will delay the growth of micro-organisms • Ensure that containers used for storage are absolutely clean • Avoid having foods for too long in danger zone 6 - 63°C etc.\n\nCooking — hazards: Multiplication of bacteria; Cross contamination; Survival of bacteria; Food poisoning; Control measures: • When cooking poultry always ensure that sufficiently high temperatures 72°C or higher are reached to prevent the risk of food poisoning • Make sure food has been cooked thoroughly, this is particularly important when cooking poultry, pork, minced meat etc.\n\nServing — hazards: Cross contamination; Growth of surviving bacteria; Control measures: • Clean utensils must be used • Serve cooked food immediately after cooking • Cooked food must be 63°C or higher etc.\n\nReheating / hot holding — hazards: Multiplication of bacteria; Control measures: • Food must be covered and stored properly before reheating • If reheating food, make sure it reaches temperatures above 100° C • Reheat once only • Cooked foods must be kept at 63°C or higher • Hold cooked food for a maximum of 90 minutes etc.", permittedMarks: [0,1] },
+    { id: "hazard-1", kind: "criterion", verbatim: "Hazards", marks: 2, contextNote: "Potential hazard for your stage 1, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "control-1", kind: "criterion", verbatim: "Control Measures", marks: 3, contextNote: "Corresponding control for the same hazard and stage 1, graded 3:2:1:0.", permittedMarks: [0,1,2,3] },
+    { id: "stage-2", kind: "criterion", verbatim: "Stages", marks: 1, contextNote: "Name stage 2 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1.", permittedMarks: [0,1] },
+    { id: "hazard-2", kind: "criterion", verbatim: "Hazards", marks: 2, contextNote: "Potential hazard for your stage 2, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "control-2", kind: "criterion", verbatim: "Control Measures", marks: 3, contextNote: "Corresponding control for the same hazard and stage 2, graded 3:2:1:0.", permittedMarks: [0,1,2,3] },
+    { id: "stage-3", kind: "criterion", verbatim: "Stages", marks: 1, contextNote: "Name stage 3 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1.", permittedMarks: [0,1] },
+    { id: "hazard-3", kind: "criterion", verbatim: "Hazards", marks: 2, contextNote: "Potential hazard for your stage 3, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "control-3", kind: "criterion", verbatim: "Control Measures", marks: 3, contextNote: "Corresponding control for the same hazard and stage 3, graded 3:2:1:0.", permittedMarks: [0,1,2,3] },
+    { id: "stage-4", kind: "criterion", verbatim: "Stages", marks: 1, contextNote: "Name stage 4 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1.", permittedMarks: [0,1] },
+    { id: "hazard-4", kind: "criterion", verbatim: "Hazards", marks: 2, contextNote: "Potential hazard for your stage 4, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "control-4", kind: "criterion", verbatim: "Control Measures", marks: 3, contextNote: "Corresponding control for the same hazard and stage 4, graded 3:2:1:0.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2021-hl-sb-q3b-stage-1","label":"HACCP stage 1","marks":6,"rowIds":["stage-1","hazard-1","control-1"]},{"sourceCardId":"he-2021-hl-sb-q3b-stage-2","label":"HACCP stage 2","marks":6,"rowIds":["stage-2","hazard-2","control-2"]},{"sourceCardId":"he-2021-hl-sb-q3b-stage-3","label":"HACCP stage 3","marks":6,"rowIds":["stage-3","hazard-3","control-3"]},{"sourceCardId":"he-2021-hl-sb-q3b-stage-4","label":"HACCP stage 4","marks":6,"rowIds":["stage-4","hazard-4","control-4"]}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sb-q5a-universality", topicId: "home-economics-2-0", conceptId: "family-universality",
+    section: "B", questionRef: "2021 HL Section B Q5(a) — universality",
+    stem: "The modern Irish family is smaller and more diverse than ever before.",
+    questionText: "Explain the concept of the universality of the family.",
+    tariffModel: {"kind":"fixed","notation":"Explanation 5 (5:3:0)"}, totalMarks: 5,
+    rows: [
+    { id: "universality", kind: "criterion", verbatim: "Universality", marks: 5, contextNote: "Explain universality, graded 5:3:0. Complete guidance: Family is present in all known societies; etc. The form the family takes may differ from one society to another, but the concept of the family is universal; etc.", permittedMarks: [0,3,5] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "he-2021-hl-sc-q1cii-strategies", topicId: "home-economics-3-6", conceptId: "water-conservation-strategies",
+    section: "C", questionRef: "2021 HL Section C E1 Q1(c)(ii) — strategies",
+    stem: "‘Water covers 71% of the planet but only 1% is available to us as drinking water.’ (Irish Water)",
+    questionText: "Suggest strategies for conserving and managing water in the home.",
+    tariffModel: {"kind":"fixed","notation":"2 strategies × 4 (4:2:0)"}, totalMarks: 8,
+    rows: [
+    { id: "strategies", kind: "criterion", verbatim: "strategies", marks: 8, contextNote: "Two strategies, each graded 4:2:0. Historical numerical examples depend on the appliance and use pattern. Complete guidance: Toilet: install a dual flush toilet; a rainwater harvesting system linked to the water system etc. Taps: repair leaking taps as they waste up to one litre of water per hour; do not wash items under a running tap; do not leave taps running while brushing teeth; use a basin in the sink rather than washing under a running tap; etc. Appliances: choose A rated appliances e.g. dishwashers as they are more efficient in use of water; fill kettle as required; use washing machines and dishwashers at full capacity; use economy or quick wash cycle; etc. Water: take shower instead of baths; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
   } as SecCard,
 ];

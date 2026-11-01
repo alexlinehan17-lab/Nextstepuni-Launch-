@@ -53016,5 +53016,531 @@
    }
   ],
   "notes": "Independently practicable procedure prompt; reasons retain the original Q5(c) ID."
+ },
+ {
+  "id": "he-2021-hl-sa-q4-factors",
+  "topicId": "home-economics-0-1",
+  "conceptId": "basal-metabolic-rate-factors",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q4 — factors",
+  "questionText": "Give two factors that determine a person’s basal metabolic rate.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 factors × 1 (1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Two factors, each graded 1:0. Distinguish basal energy use from additional energy expended in activity. Complete historical guidance: (i) Age; gender; body weight; size; health status; hormones; pregnancy/lactation (ii) occupation; activity level; climate; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Separately printed prompt with an independent published tariff. See he_review_2021_hl_main.py."
+ },
+ {
+  "id": "he-2021-hl-sa-q8-advantages",
+  "topicId": "home-economics-0-5",
+  "conceptId": "protein-alternatives-vegan-diet-advantages",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q8 — advantages",
+  "questionText": "State two advantages of including protein alternatives in the diet.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 advantages × 2 (2:1:0)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "advantages",
+    "kind": "criterion",
+    "verbatim": "advantages",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Two advantages, each graded 2:1:0. These depend on the particular food; the list is not a claim that every alternative has every property. Complete guidance: (i) HBV protein; polyunsaturated fat; high in fibre; B group vitamins; calcium; iron; (ii) not very expensive; versatile; little preparation needed; sustainability; little cooking needed; add flavour; add variety; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Separately printed prompt with an independent published tariff. See he_review_2021_hl_main.py."
+ },
+ {
+  "id": "he-2021-hl-sb-q2a",
+  "topicId": "home-economics-0-9",
+  "conceptId": "eggs-nutritional-significance",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 HL Section B Q2(a)",
+  "questionText": "Discuss the nutritional significance of eggs in the diet.",
+  "stem": "Eggs are a good choice as part of a healthy, balanced diet.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points × 4 (4:3:2:1:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "nutrition",
+    "kind": "criterion",
+    "verbatim": "nutritional significance",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "contextNote": "Five developed points, each graded 4:3:2:1:0. The six nutrient headings are guidance, not six compulsory responses. Eggs suit ovo-/ovo-lacto-vegetarian diets; the scheme’s “lacto-vegetarians” wording is inaccurate. Complete historical guidance: Nutritional significance - Protein: 13%, HBV, albumin & globulin in white, livetin & vitellin in yolk; (growth and repair); source of HBV protein for lacto-vegetarians; protein alternative to meat/fish; etc. Fat: 12%, saturated in yolk, in fine emulsion because of lecithin, easy to digest; cholesterol is also present; (heat and energy); easily digested therefore good for invalids, children, elderly; etc. Carbohydrate: 0%, serve with complex carbohydrates, no fibre present; etc. Vitamins: A (produces rhodopsin, maintains healthy lining membranes, keeps skin and hair healthy and helps to regulate growth); D ( healthy bones & teeth); E (antioxidant); K (blood clotting); B1, B2, Niacin (release of energy); B12 (is required for the production of red blood cells, is involved in fatty acid and folate metabolism, promotes growth and maintains a healthy nervous system), lacks vitamin C; Minerals: 1%, calcium, phosphorus, (strong bones and teeth); iron in yolk (formation of haemoglobin); Water: 75%, necessary for hydration; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full source review: he_review_2021_hl_main_b.py. Required headings and open choices remain whole responses."
+ },
+ {
+  "id": "he-2021-hl-sb-q3b",
+  "topicId": "home-economics-0-4",
+  "conceptId": "haccp-hot-main-course",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 HL Section B Q3(b)",
+  "questionText": "Describe the stages in a Hazard Analysis and Critical Control Point (HACCP) system for making a hot main course dish. Refer to potential hazards and the corresponding control measures that should be implemented.",
+  "stem": "Temperature control is critical to ensuring food safety for all consumers.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 stages × (name 1 + hazard 2 + control 3)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "stage-1",
+    "kind": "criterion",
+    "verbatim": "Stages",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name stage 1 of your HACCP plan, graded 1:0. All seven published stage examples follow; choose four relevant stages. Source correction: FSAI recommends cooking to a 75°C core or a validated time/temperature equivalent and reheating to at least 70°C, not a general requirement to exceed 100°C. Keep chilled food at 0–5°C and hot-held food above 63°C. Historical examples below are not a complete food-safety procedure. Complete two-page table: Purchase — hazards: Damaged goods; Contamination – bacterial, chemical Pests; Control measures: • Buy food from a reputable shop • Check that raw and cooked foods are stored separately • Check packaging • Check best before and use by dates • Check fridge/freezer/food temperature • Check for signs of pest damage • Use cool bags for transport of perishables etc.\n\nTransportation — hazards: Multiplication of bacteria caused by a rise in temperature; Cross contamination; Damaged packaging; Control measures: • Ensure perishable foods are packed in a cool bag • Pack perishable and non-perishable foods separately • Allow the shortest time possible between purchase & storage • Ensure packaging remains intact etc.\n\nStorage — hazards: Damaged goods Contamination – bacterial, chemical Pests; Multiplication of bacteria; Cross contamination; Control measures: • Cover chilled food and store at 5°C or below • Store frozen food at – 18°C • Check vegetables for mould etc.\n\nPreparation — hazards: Contamination – bacterial, chemical; Multiplication of bacteria; Cross contamination; Control measures: • Foods within date and with quality assurance marks • Hands washed with antibacterial soap before and after handling food; handle food as little as possible; • Colour coded boards to prevent cross contamination; keep all food covered; avoid cross-contamination by ensuring that raw food does not come into contact with cooked food • make sure frozen foods are fully defrosted, defrost in the fridge if possible • Use separate utensils for handling raw and cooked meat; keep perishable foods like salads, coleslaw and quiche in the fridge until needed; keep raw meat separate from cooked meat and ready-to-eat foods like salads • Maintain the fridge temperature below 5°C, this temperature will delay the growth of micro-organisms • Ensure that containers used for storage are absolutely clean • Avoid having foods for too long in danger zone 6 - 63°C etc.\n\nCooking — hazards: Multiplication of bacteria; Cross contamination; Survival of bacteria; Food poisoning; Control measures: • When cooking poultry always ensure that sufficiently high temperatures 72°C or higher are reached to prevent the risk of food poisoning • Make sure food has been cooked thoroughly, this is particularly important when cooking poultry, pork, minced meat etc.\n\nServing — hazards: Cross contamination; Growth of surviving bacteria; Control measures: • Clean utensils must be used • Serve cooked food immediately after cooking • Cooked food must be 63°C or higher etc.\n\nReheating / hot holding — hazards: Multiplication of bacteria; Control measures: • Food must be covered and stored properly before reheating • If reheating food, make sure it reaches temperatures above 100° C • Reheat once only • Cooked foods must be kept at 63°C or higher • Hold cooked food for a maximum of 90 minutes etc."
+   },
+   {
+    "id": "hazard-1",
+    "kind": "criterion",
+    "verbatim": "Hazards",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Potential hazard for your stage 1, graded 2:1:0."
+   },
+   {
+    "id": "control-1",
+    "kind": "criterion",
+    "verbatim": "Control Measures",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Corresponding control for the same hazard and stage 1, graded 3:2:1:0."
+   },
+   {
+    "id": "stage-2",
+    "kind": "criterion",
+    "verbatim": "Stages",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name stage 2 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1."
+   },
+   {
+    "id": "hazard-2",
+    "kind": "criterion",
+    "verbatim": "Hazards",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Potential hazard for your stage 2, graded 2:1:0."
+   },
+   {
+    "id": "control-2",
+    "kind": "criterion",
+    "verbatim": "Control Measures",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Corresponding control for the same hazard and stage 2, graded 3:2:1:0."
+   },
+   {
+    "id": "stage-3",
+    "kind": "criterion",
+    "verbatim": "Stages",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name stage 3 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1."
+   },
+   {
+    "id": "hazard-3",
+    "kind": "criterion",
+    "verbatim": "Hazards",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Potential hazard for your stage 3, graded 2:1:0."
+   },
+   {
+    "id": "control-3",
+    "kind": "criterion",
+    "verbatim": "Control Measures",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Corresponding control for the same hazard and stage 3, graded 3:2:1:0."
+   },
+   {
+    "id": "stage-4",
+    "kind": "criterion",
+    "verbatim": "Stages",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name stage 4 of your HACCP plan, graded 1:0. Use the complete source table in Stage 1."
+   },
+   {
+    "id": "hazard-4",
+    "kind": "criterion",
+    "verbatim": "Hazards",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Potential hazard for your stage 4, graded 2:1:0."
+   },
+   {
+    "id": "control-4",
+    "kind": "criterion",
+    "verbatim": "Control Measures",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Corresponding control for the same hazard and stage 4, graded 3:2:1:0."
+   }
+  ],
+  "notes": "Full source review: he_review_2021_hl_main_b.py. Required headings and open choices remain whole responses.",
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2021-hl-sb-q3b-stage-1",
+    "label": "HACCP stage 1",
+    "marks": 6,
+    "rowIds": [
+     "stage-1",
+     "hazard-1",
+     "control-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2021-hl-sb-q3b-stage-2",
+    "label": "HACCP stage 2",
+    "marks": 6,
+    "rowIds": [
+     "stage-2",
+     "hazard-2",
+     "control-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2021-hl-sb-q3b-stage-3",
+    "label": "HACCP stage 3",
+    "marks": 6,
+    "rowIds": [
+     "stage-3",
+     "hazard-3",
+     "control-3"
+    ]
+   },
+   {
+    "sourceCardId": "he-2021-hl-sb-q3b-stage-4",
+    "label": "HACCP stage 4",
+    "marks": 6,
+    "rowIds": [
+     "stage-4",
+     "hazard-4",
+     "control-4"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2021-hl-sb-q5a-universality",
+  "topicId": "home-economics-2-0",
+  "conceptId": "family-universality",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 HL Section B Q5(a) — universality",
+  "questionText": "Explain the concept of the universality of the family.",
+  "stem": "The modern Irish family is smaller and more diverse than ever before.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Explanation 5 (5:3:0)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "universality",
+    "kind": "criterion",
+    "verbatim": "Universality",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Explain universality, graded 5:3:0. Complete guidance: Family is present in all known societies; etc. The form the family takes may differ from one society to another, but the concept of the family is universal; etc."
+   }
+  ],
+  "notes": "Independent explanation with a separate published tariff; original Q5(a) identity retains the definition."
+ },
+ {
+  "id": "he-2021-hl-sc-q1cii-strategies",
+  "topicId": "home-economics-3-6",
+  "conceptId": "water-conservation-strategies",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(c)(ii) — strategies",
+  "questionText": "Suggest strategies for conserving and managing water in the home.",
+  "stem": "‘Water covers 71% of the planet but only 1% is available to us as drinking water.’ (Irish Water)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 strategies × 4 (4:2:0)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "strategies",
+    "kind": "criterion",
+    "verbatim": "strategies",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Two strategies, each graded 4:2:0. Historical numerical examples depend on the appliance and use pattern. Complete guidance: Toilet: install a dual flush toilet; a rainwater harvesting system linked to the water system etc. Taps: repair leaking taps as they waste up to one litre of water per hour; do not wash items under a running tap; do not leave taps running while brushing teeth; use a basin in the sink rather than washing under a running tap; etc. Appliances: choose A rated appliances e.g. dishwashers as they are more efficient in use of water; fill kettle as required; use washing machines and dishwashers at full capacity; use economy or quick wash cycle; etc. Water: take shower instead of baths; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent second printed prompt with a separate 8-mark tariff; water/home context restored to the standalone wording."
  }
 ]

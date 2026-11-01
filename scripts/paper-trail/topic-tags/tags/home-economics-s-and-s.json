@@ -1722,18 +1722,15 @@
    },
    {
     "n": "5",
-    "primary": "home-economics-0-2",
-    "secondary": "home-economics-0-6"
+    "primary": "home-economics-0-6"
    },
    {
     "n": "6",
-    "primary": "home-economics-0-10",
-    "secondary": "home-economics-0-4"
+    "primary": "home-economics-0-10"
    },
    {
     "n": "7",
-    "primary": "home-economics-0-4",
-    "secondary": "home-economics-0-9"
+    "primary": "home-economics-0-9"
    },
    {
     "n": "8",
@@ -1776,12 +1773,12 @@
    {
     "n": "1",
     "primary": "home-economics-0-1",
-    "secondary": "home-economics-0-8"
+    "secondary": "home-economics-0-10"
    },
    {
     "n": "2",
-    "primary": "home-economics-0-9",
-    "secondary": "home-economics-0-2"
+    "primary": "home-economics-0-2",
+    "secondary": "home-economics-0-9"
    },
    {
     "n": "3",
@@ -1795,6 +1792,26 @@
    {
     "n": "5",
     "primary": "home-economics-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-3-3",
+    "secondary": "home-economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-3-7",
+    "secondary": "home-economics-3-8"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-11"
    }
   ]
  },
