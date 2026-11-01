@@ -30,6 +30,13 @@ class HomeEconomicsNestedDevicesTest(unittest.TestCase):
 
 
 class HomeEconomicsRecoveredSourcesTest(unittest.TestCase):
+    def test_ordinary_section_c_regenerates_every_reviewed_response(self):
+        from he_review_2023_ol_section_c import build
+        fixes = build()
+        saved = json.loads((ROOT / 'scripts/markbank/card-corrections.json').read_text())['home-economics']
+        self.assertEqual(len(fixes), 27)
+        for key, correction in fixes.items(): self.assertEqual(saved[key], correction)
+
     def test_ordinary_section_b_regenerates_and_preserves_the_split_context(self):
         from he_review_2023_ol_section_b import build
         fixes, added = build()

@@ -4284,19 +4284,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1aii", topicId: "home-economics-3-5", conceptId: "choosing-a-home-heating-system",
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(ii)",
-    stem: "A contemporary bathroom design is shown below.",
-    questionText: "Discuss three factors which should be considered when choosing a heating system for the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    questionText: "Discuss three factors that should be considered when choosing a heating system for the home.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors to consider when choosing a heating system", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0 - no 4, so a factor named without a reason drops to 3. The scheme prints eight factors, so take three genuinely different ones: cost, how it is controlled, and what it does to the environment.", openList: true, group: {"claimMax":3,"perOption":5,"options":["installation; running and maintenance","is the source renewable","automatic timer that is easy to use; thermostat to control heating; smart technology","constant temperature","priority for family with young children","immersion with a timer to save electricity; instantaneous heaters","underfloor heating; types of radiators","gas and smokeless fuel produce less pollution"]} },
+    { id: "points", kind: "criterion", verbatim: "heating system", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: cost: installation; running and maintenance; etc. energy efficiency: is the source renewable; etc. convenience: automatic timer that is easy to use; thermostat to control heating; smart technology; etc. comfort: constant temperature; etc. safety: priority for family with young children; etc. water heating: immersion with a timer to save electricity; instantaneous heaters; etc. aesthetic appeal: underfloor heating; types of radiators; etc. impact on the environment: gas and smokeless fuel produce less pollution; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
-    figure: {
-          "candId": "home-economics-2023-ol-paper-p05-i0",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2023-ol-paper-p05-i0.png",
-          "srcHash": "8fb2e75645df754e743e6b6514138d5f",
-          "alt": "A colour photograph of a contemporary bathroom, wide format. On the left a dark wood ladder-frame shelving unit holds folded white towels and toiletries. Behind it a large window with a roman blind looks onto greenery, with a tiled mosaic splashback and toiletry bottles on the sill. Centre-left stands a freestanding oval bath in grey and white with a floor-mounted mixer tap and a wooden bath caddy. A navy dressing gown hangs on a wall hook beside a small wooden stool stacked with folded yellow towels. Centre-right is a large walk-in shower enclosure with clear glass doors, a chrome frame, a fixed rainfall head, a handheld shower and a wall control panel, set against pale grey tiling. On the right wall are a rectangular mirror, four small framed botanical prints, a wall-mounted white basin with a chrome tap, and a wall-hung white toilet. The floor is a continuous pale surface with a mustard yellow textured rug in front of the bath, and a round woven basket sits beside the shower.",
-          "attribution": "SEC Leaving Certificate Home Economics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
   {
@@ -4307,10 +4308,20 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sc-q1aiii", topicId: "home-economics-1-3", conceptId: "safe-use-of-electricity-in-the-home",
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(iii)",
     questionText: "Describe three guidelines to follow for the safe use of electricity in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 guidelines @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Guidelines for the safe use of electricity in the home", marks: 15, contextNote: "Three guidelines at 5 marks, graded 5:3:0. Describe, so say what each one prevents - water conducts electricity, a flex across a hob can melt, an overloaded adaptor can catch fire. The danger is where the extra marks are.", openList: true, group: {"claimMax":3,"perOption":5,"options":["never mix electricity and water","do not use electrical appliances in the bathroom except shaver sockets","use pull cords for light switches","purchase only electrical appliances that carry recognised safety symbols","avoid overuse of adaptors and extension cables","check electric blankets for sign of wear","do not pull flexes across cooker hob or sink","repair damaged flexes","avoid trailing flexes","unplug appliances before cleaning them","replace broken plugs or sockets","always read and follow manufacturer’s instructions","keep electric heaters away from curtains","unplug chargers after use"]} },
+    { id: "points", kind: "criterion", verbatim: "safe use of electricity", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: never mix electricity and water; do not use electrical appliances in the bathroom except shaver sockets; use pull cords for light switches; purchase only electrical appliances that carry recognised safety symbols; avoid overuse of adaptors and extension cables; check electric blankets for sign of wear; do not pull flexes across cooker hob or sink; repair damaged flexes; avoid trailing flexes; unplug appliances before cleaning them; replace broken plugs or sockets; always read and follow manufacturer’s instructions; keep electric heaters away from curtains; unplug chargers after use; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4321,10 +4332,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E1 Q1(b)(i)",
     stem: "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
     questionText: "Describe three strategies that could be used to improve energy efficiency in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 strategies @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Strategies to improve energy efficiency in the home", marks: 15, contextNote: "Three strategies at 5 marks, graded 5:3:0. Spread them - one on keeping heat in, one on heating water, one on appliances - so they cannot be read as the same strategy three times. Say how each saves the energy.", openList: true, group: {"claimMax":3,"perOption":5,"options":["have house well insulated","service boiler regularly","set thermostats to correct temperature","use zone heating","use correct wattage bulbs","use LED bulbs","turn off lights when not in use","lag pipes and water cylinder","take showers instead of baths","have timer and thermostat on immersion","avoid washing under running tap","do not leave appliances on stand-by","use eco settings","use appliances at full capacity"]} },
+    { id: "points", kind: "criterion", verbatim: "energy efficiency", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: have house well insulated; service boiler regularly; set thermostats to correct temperature; use zone heating; use correct wattage bulbs; use LED bulbs; turn off lights when not in use; lag pipes and water cylinder; take showers instead of baths; have timer and thermostat on immersion; avoid washing under running tap; do not leave appliances on stand-by; use eco settings; use appliances at full capacity; buy A rated appliances; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4335,11 +4356,408 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E1 Q1(b)(ii)",
     stem: "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
     questionText: "Name one renewable energy source and outline the advantages of the energy source named.",
-    tariffModel: {"kind":"fixed","notation":"Name 5 marks (graded 5:3:0); 2 advantages @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Name 5; 2 advantages × 5 (all 5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Renewable energy sources", marks: 5, contextNote: "Name one, 5 marks, graded 5:3:0. Six are accepted, but solar has by far the most detailed list of advantages in the scheme - name that one unless you know another well, because the other 10 marks depend on it.", openList: true, group: {"claimMax":1,"perOption":5,"options":["solar","wood","wind","hydropower","bio energy","geothermal"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Advantages of the energy source named", marks: 10, contextNote: "Two advantages at 5 marks, graded 5:3:0 - ten of the fifteen marks. The strongest answers pair a money advantage with an environmental one: solar saves up to 68% on heating bills and raises the BER, and it produces no carbon dioxide. Grants are a marking point in their own right.", openList: true, group: {"claimMax":2,"perOption":5,"options":["saves up to 68% on heating bills","plentiful supply of hot water for space and water heating","converts light from sun directly into electricity","no carbon dioxide emissions","grants available","increasing the property value by raising the BER","contributes to biomass","produces reasonable heat","unlimited","clean and non-polluting","low running costs","no emissions","very viable to operate in Ireland","running costs once the plant is set up are low"]} },
+    { id: "name", kind: "criterion", verbatim: "solar", marks: 5, contextNote: "Name the renewable source, graded 5:3:0.", permittedMarks: [0,3,5] },
+    { id: "advantages", kind: "criterion", verbatim: "advantages", marks: 10, contextNote: "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: saves up to 68% on heating bills; plentiful supply of hot water for space and water heating; converts light from sun directly into electricity; no carbon dioxide emissions; grants available; increasing the property value by raising the BER; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    answerVariants: [
+          {
+                "id": "solar",
+                "label": "Solar",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "solar",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: saves up to 68% on heating bills; plentiful supply of hot water for space and water heating; converts light from sun directly into electricity; no carbon dioxide emissions; grants available; increasing the property value by raising the BER; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "wood",
+                "label": "Wood",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "wood",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: contributes to biomass; produces reasonable heat; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "wind",
+                "label": "Wind",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "wind",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: unlimited; clean and non-polluting; low running costs; no emissions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "hydropower",
+                "label": "Hydropower",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "hydropower",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: very viable to operate in Ireland; running costs once the plant is set up are low; no emissions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "bio-energy",
+                "label": "Bio energy",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "bio energy",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: suitable for heating homes and water; liquid biofuel can be used as a fuel for vehicles;",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "geothermal",
+                "label": "Geothermal",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "geothermal",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the renewable source, graded 5:3:0."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: cost effective; grants available for installation; lower greenhouse gas emissions; reliable; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-source",
+                "label": "Another renewable source",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "renewable energy source",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name one renewable energy source, graded 5:3:0. The paper leaves this choice open."
+                      },
+                      {
+                            "id": "advantages",
+                            "kind": "criterion",
+                            "verbatim": "advantages",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Outline two accurate advantages of your source, each graded 5:3:0. The other routes reproduce the six printed examples; the scheme prints no model for another source.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4348,13 +4766,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1ci", topicId: "home-economics-3-5", conceptId: "cold-water-supply-parts-ol",
     section: "C", questionRef: "2023 OL Section C E1 Q1(c)(i)",
-    questionText: "Describe the function of the following parts of a cold-water supply to a house: stop cock; storage tank; overflow pipe.",
-    tariffModel: {"kind":"fixed","notation":"1 function @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Describe the function of the following parts of a cold‐water supply to a house: • stop cock • storage tank • overflow pipe",
+    tariffModel: {"kind":"fixed","notation":"3 required functions × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "stop cock", marks: 5, contextNote: "One function, 5 marks, graded 5:3:0. Say where it is as well as what it does - on the service pipe outside or under the kitchen sink - and that it shuts the supply off if there is a problem.", openList: true, group: {"claimMax":1,"perOption":5,"options":["special valve found on a service pipe outside the house/under the kitchen sink","allows the water supply to be shut off if there is a problem"]} },
-    { id: "r-2", kind: "anyN", verbatim: "storage tank", marks: 5, contextNote: "One function, 5 marks, graded 5:3:0. The height is the point: it sits in the attic so gravity gives the pressure to feed the toilet, shower and hot press below.", openList: true, group: {"claimMax":1,"perOption":5,"options":["located in the attic at elevated level","improves pressure to supply the system","a ball valve controls the level of water in the tank","stores the cold water which supplies the cold-water to toilet, shower and hot press tank"]} },
-    { id: "r-3", kind: "anyN", verbatim: "overflow pipe", marks: 5, contextNote: "One function, 5 marks, graded 5:3:0. It carries excess water outside, and the scheme wants the reason it is needed - if the ball valve fails, it stops the house flooding.", openList: true, group: {"claimMax":1,"perOption":5,"options":["attic storage tanks are fitted with an overflow pipe leading to the outside of the house and carries excess water out of the house","if the ball valve fails to work it prevents flooding"]} },
+    { id: "part-1", kind: "criterion", verbatim: "stopcock", marks: 5, contextNote: "Explain this required function, graded 5:3:0. Published guidance: special valve found on a service pipe outside the house/under the kitchen sink; allows the water supply to be shut off if there is a problem; etc.", permittedMarks: [0,3,5] },
+    { id: "part-2", kind: "criterion", verbatim: "storage tank", marks: 5, contextNote: "Explain this required function, graded 5:3:0. Published guidance: located in the attic at elevated level; improves pressure to supply the system; a ball valve controls the level of water in the tank; stores the cold water which supplies the cold-water to toilet, shower and hot press tank; etc.", permittedMarks: [0,3,5] },
+    { id: "part-3", kind: "criterion", verbatim: "overflow pipe", marks: 5, contextNote: "Explain this required function, graded 5:3:0. Published guidance: attic storage tanks are fitted with an overflow pipe leading to the outside of the house and carries excess water out of the house; if the ball valve fails to work it prevents flooding; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4364,10 +4792,20 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sc-q1cii", topicId: "home-economics-3-6", conceptId: "reducing-water-usage-in-the-home",
     section: "C", questionRef: "2023 OL Section C E1 Q1(c)(ii)",
     questionText: "Outline three guidelines to follow to reduce water usage in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 guidelines @ 5 marks (graded 5:3:0)","answer":3,"ofParts":4,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Guidelines to reduce water usage in the home", marks: 15, contextNote: "Three guidelines at 5 marks, graded 5:3:0. The scheme groups its tips by where the water is used - toilet, taps, appliances, washing - so taking one from different groups gives three that are genuinely different. Say how much each saves or why it works.", openList: true, group: {"claimMax":3,"perOption":5,"options":["install a dual flush toilet; a rainwater harvesting system linked to the water system can be used to flush toilets","repair leaking taps; do not wash items under a running tap; do not leave taps running while washing teeth; use a basin in the sink rather than washing under a running tap","fill kettle with the amount of water needed; wait until the washing machine or dishwasher is full before turning on; use economy or eco wash cycle","use a shower instead of a bath"]} },
+    { id: "points", kind: "criterion", verbatim: "reduce water usage", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: toilet: install a dual flush toilet; a rainwater harvesting system linked to the water system can be used to flush toilets; etc. taps: repair leaking taps; do not wash items under a running tap; do not leave taps running while washing teeth; use a basin in the sink rather than washing under a running tap; etc. appliances: fill kettle with the amount of water needed; wait until the washing machine or dishwasher is full before turning on; use economy or eco wash cycle; etc. water: use a shower instead of a bath; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4376,13 +4814,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "methods-of-applying-a-design-to-a-garment",
     section: "C", questionRef: "2023 OL Section C E2 Q2(a)(ii)",
-    stem: "‘Music festivals bring new trends and a boost to the fashion industry.’ (www.guardian.com)",
+    stem: "‘Music festivals bringing new trends and a boost to the fashion industry.’ (www.guardian.com)",
     questionText: "Describe one method of applying a design to a garment.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 4 marks (graded 4:2:0); 1 point @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"1 point × 4 (4:2:0); 1 point × 3 (3:2:0)"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Methods of applying a design to a garment", marks: 4, contextNote: "First point, 4 marks, graded 4:2:0. Naming the method is 2 - the other 2 come from saying how it puts the design onto the cloth.", openList: true, group: {"claimMax":1,"perOption":4,"options":["screen printing","roller printing","stencilling","transfer printing","embossing","embroidery","appliqué"]} },
-    { id: "r-2", kind: "anyN", verbatim: "A second point on the method described", marks: 3, contextNote: "Second point, 3 marks, graded 3:2:0. The scheme prints a single list of seven methods and prices two points off it, the first at 4 and the second at 3, so the second point continues the description of the same method rather than naming a new one.", openList: true, group: {"claimMax":1,"perOption":3,"options":["screen printing","roller printing","stencilling","transfer printing","embossing","embroidery","appliqué"]} },
+    { id: "method", kind: "criterion", verbatim: "method of applying a design", marks: 7, contextNote: "Describe one method. The scheme allocates one point at 4:2:0 and one at 3:2:0; it does not assign these to name versus description. It lists method names but prints no worked description. Published examples: screen printing; roller printing; stencilling; transfer printing; embossing; embroidery; appliqué; etc.", permittedMarks: [0,2,3,4,5,6,7], parts: [{"id":"first","verbatim":"First point","marks":4,"permittedMarks":[0,2,4]},{"id":"second","verbatim":"Second point","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4393,10 +4840,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E2 Q2(b)(i)",
     stem: "Textiles can be treated with a variety of fabric finishes.",
     questionText: "Explain why fabric finishes are used on fabric.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 reasons @ 3 marks (graded 3:2:0)","answer":2,"ofParts":7,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why fabric finishes are used on fabric", marks: 6, contextNote: "Only two reasons at 3 marks - a six-mark part, so keep it short. Each reason is a problem the finish removes: creasing, shrinking, staining, catching fire.", openList: true, group: {"claimMax":2,"perOption":3,"options":["to prevent creasing","prevent shrinkage","to give fabric desirable characteristics, e.g. waterproofing, stain resistant","to make the fabric hard wearing","improve safety","to improve wearing qualities","to prevent loss of colour"]} },
+    { id: "points", kind: "criterion", verbatim: "fabric finishes", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: to prevent creasing; prevent shrinkage; to give fabric desirable characteristics, e.g. waterproofing, stain resistant; to make the fabric hard wearing; improve safety; to improve wearing qualities; to prevent loss of colour; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4407,12 +4864,311 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E2 Q2(b)(ii)",
     stem: "Textiles can be treated with a variety of fabric finishes.",
     questionText: "Name and describe one fabric finish. Give an example of its use in clothing.",
-    tariffModel: {"kind":"fixed","notation":"Name 4 marks (graded 4:2:0); description 1 point @ 3 marks (graded 3:2:0); example 1 point @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0); description 3 (3:2:0); example 2 (2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fabric finishes", marks: 4, contextNote: "Name one, 4 marks, graded 4:2:0 - the biggest single row here, and six finishes are accepted. Pick the one whose effect and use you can state, because the other 5 marks follow from it.", openList: true, group: {"claimMax":1,"perOption":4,"options":["waterproofing","anti-static","stain resistant","crease resistant","mercerising","flame retardant"]} },
-    { id: "r-2", kind: "anyN", verbatim: "What the finish does", marks: 3, contextNote: "One description, 3 marks, graded 3:2:0, matching the finish you named. Each of the scheme's descriptions is a single clause about what the fabric can now do - that is the whole answer.", openList: true, group: {"claimMax":1,"perOption":3,"options":["makes fabric water repellent","prevents fabric from clinging to the skin","makes fabrics easier to clean and keep clean","prevents fabrics from creasing, reducing the need for ironing","makes the fabric stronger and more absorbent","proban reduces the flammability of a fabric"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Example of its use in clothing", marks: 2, contextNote: "One example, 2 marks, graded 2:0 - all-or-nothing. It must be a garment, not a fabric: raincoats for waterproofing, children's night wear for flame retardant, jeans for mercerising.", openList: true, group: {"claimMax":1,"perOption":2,"options":["e.g. raincoats","e.g. dresses","e.g. jackets","e.g. jackets","e.g. jeans","e.g. children’s night wear"]} },
+    { id: "name", kind: "criterion", verbatim: "waterproofing", marks: 4, contextNote: "Name this finish, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 3, contextNote: "Describe the finish, graded 3:2:0. Published guidance: makes fabric water repellent", permittedMarks: [0,2,3] },
+    { id: "example", kind: "criterion", verbatim: "Example", marks: 2, contextNote: "Give one clothing use, graded 2:0. Published example: raincoats; etc.", permittedMarks: [0,2] },
     ],
+    answerVariants: [
+          {
+                "id": "waterproofing",
+                "label": "Waterproofing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "waterproofing",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes fabric water repellent"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: raincoats; etc."
+                      }
+                ]
+          },
+          {
+                "id": "anti-static",
+                "label": "Anti-static",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "anti-static",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: prevents fabric from clinging to the skin"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: dresses; etc."
+                      }
+                ]
+          },
+          {
+                "id": "stain-resistant",
+                "label": "Stain resistant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "stain resistant",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes fabrics easier to clean and keep clean"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: jackets; etc."
+                      }
+                ]
+          },
+          {
+                "id": "crease-resistant",
+                "label": "Crease resistant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "crease resistant",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: prevents fabrics from creasing, reducing the need for ironing"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: jackets; etc."
+                      }
+                ]
+          },
+          {
+                "id": "mercerising",
+                "label": "Mercerising",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "mercerising",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes the fabric stronger and more absorbent"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: jeans; etc."
+                      }
+                ]
+          },
+          {
+                "id": "flame-retardant",
+                "label": "Flame retardant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "flame retardant",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this finish, graded 4:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the finish, graded 3:2:0. Published guidance: proban reduces the flammability of a fabric"
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give one clothing use, graded 2:0. Published example: children’s night wear; etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-finish",
+                "label": "Another fabric finish",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "fabric finish",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name one finish, graded 4:2:0. This is an open choice."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give an accurate description of your finish, graded 3:2:0. The other routes show all six source examples."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Give a suitable use of that finish in clothing, graded 2:0."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4423,10 +5179,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E2 Q2(c)(i)",
     stem: "The future of fashion is in the hands of the designers.",
     questionText: "Describe the contribution of Irish fashion designers to the clothing and textile industry.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 3 marks (graded 3:2:0)","answer":3,"ofParts":3,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Contribution of Irish fashion designers", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0 - and the scheme prints only three options, so all three are needed. Employment across manufacture, distribution and sales; the range of goods exported; and promoting Irish designers abroad.", openList: true, group: {"claimMax":3,"perOption":3,"options":["creates employment in manufacture, distribution and sales of textile and clothing industry","exports menswear, womenswear, children’s wear, knitted goods, sportswear, accessories, lingerie and footwear","promotes Irish designers"]} },
+    { id: "points", kind: "criterion", verbatim: "contribution of Irish fashion designers", marks: 9, contextNote: "3 distinct points, each graded 3:2:0. Published 2023 scheme guidance: creates employment in manufacture, distribution and sales of textile and clothing industry; exports menswear, womenswear, children’s wear, knitted goods, sportswear, accessories, lingerie and footwear; promotes Irish designers; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4437,10 +5203,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E2 Q2(c)(ii)",
     stem: "The future of fashion is in the hands of the designers.",
     questionText: "Describe two fashion accessories currently popular with trendsetters.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":12,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fashion accessories currently popular", marks: 6, contextNote: "Only two points at 3 marks - a six-mark part. Describe, so name the accessory and add the detail that makes it current: the colour, the size, or how it is worn.", openList: true, group: {"claimMax":2,"perOption":3,"options":["bright coloured handbags","crossbody bags","large, framed glasses","sporty sunglasses","chunky platform shoes","beanie hats","baseball caps","gloves","scarves","belts","watches","chunky jewellery"]} },
+    { id: "points", kind: "criterion", verbatim: "fashion accessories", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: bright coloured handbags; crossbody bags; large, framed glasses; sporty sunglasses; chunky platform shoes; beanie hats; baseball caps; gloves; scarves; belts; watches; chunky jewellery; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4449,12 +5225,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "defining-unemployment",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(i)",
-    stem: "‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)",
+    stem: "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
     questionText: "Define unemployment.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":2,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Definition of unemployment", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0 - and the scheme prints only four, so a bare \"no job\" is one point, not two. The second mark is the availability half: actively seeking work and available for it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["not currently employed, jobless","unemployment is actively seeking work, available for work"]} },
+    { id: "points", kind: "criterion", verbatim: "unemployment", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: not currently employed, jobless; unemployment is actively seeking work, available for work; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4463,14 +5249,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "effects-of-unemployment",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(ii)",
-    stem: "‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)",
-    questionText: "Discuss the effects of unemployment on: the individual; the family; society.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 4 marks (graded 4:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    stem: "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    questionText: "Discuss the effects of unemployment on: • the individual • the family • society.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 4 (4:2:0)"}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "the individual", marks: 8, contextNote: "Two points at 4 marks, graded 4:2:0. The scheme runs money first then mind - income and living standards, then isolation, depression and loss of status. Taking one from each half is the safest pair.", openList: true, group: {"claimMax":2,"perOption":4,"options":["financial insecurity","drop in income leading to drop in living standards","poverty","mortgage arrears, homelessness, reposition of homes","social isolation","depression","addiction - drug/alcohol abuse","loss of identity/status","poor self-esteem","lack of money can prevent participation in leisure and social activities","loss of purpose and sense of direction"]} },
-    { id: "r-2", kind: "anyN", verbatim: "the family", marks: 8, contextNote: "Two points at 4 marks, graded 4:2:0. Keep these about the household rather than the person: reliance on welfare, difficulty meeting basic needs, relationship strain, a child unable to go on to college.", openList: true, group: {"claimMax":2,"perOption":4,"options":["decline in living standards due to reliance on welfare payments","unstable home","provision of basic needs may be difficult","families may become homeless or in need of emergency accommodation","relationship problems","marital breakdown","children may be unable to attend college due to lack of money"]} },
-    { id: "r-3", kind: "anyN", verbatim: "society", marks: 8, contextNote: "Two points at 4 marks, graded 4:2:0. This row is the one students lose - it wants the cost to the State and what follows from it: benefits, higher taxation, emigration, unemployment blackspots.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cost to the state to pay benefits","result in increased taxation","cycle of poverty continues","disenfranchised young people may become involved in anti-social behaviour","emigration","unstable communities","increase in family breakdown","increase in the black economy to supplement welfare allowance","unemployment blackspots"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "the individual", marks: 8, contextNote: "Two points on this required heading, each graded 4:2:0. Published guidance: financial insecurity; drop in income leading to drop in living standards; poverty; mortgage arrears, homelessness, reposition of homes; social isolation; depression; addiction - drug/alcohol abuse; loss of identity/status; poor self-esteem; lack of money can prevent participation in leisure and social activities; loss of purpose and sense of direction; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "the family", marks: 8, contextNote: "Two points on this required heading, each graded 4:2:0. Published guidance: decline in living standards due to reliance on welfare payments; unstable home; provision of basic needs may be difficult; families may become homeless or in need of emergency accommodation; relationship problems; marital breakdown; children may be unable to attend college due to lack of money; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "society", marks: 8, contextNote: "Two points on this required heading, each graded 4:2:0. Published guidance: cost to the state to pay benefits; result in increased taxation; cycle of poverty continues; disenfranchised young people may become involved in anti-social behaviour; emigration; unstable communities; increase in family breakdown; increase in the black economy to supplement welfare allowance; unemployment blackspots; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4479,12 +5275,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "education-preparing-young-people-for-work",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(iii)",
-    stem: "‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)",
+    stem: "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
     questionText: "Describe the role of education in preparing young people for the world of work.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 4 marks (graded 4:2:0)","answer":3,"ofParts":10,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Role of education in preparing young people for work", marks: 12, contextNote: "Three points at 4 marks, graded 4:2:0. The scheme splits into skills (literacy, numeracy, computer) and qualities (punctuality, responsibility, self-discipline), and ends on work experience. One from each cluster covers the range.", openList: true, group: {"claimMax":3,"perOption":4,"options":["literacy skills","numeracy skills","computer skills","develop qualities e.g. respect for authority","punctuality","trustworthiness","responsibility","self-discipline","socialisation skills","work experience"]} },
+    { id: "points", kind: "criterion", verbatim: "role of education", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Published 2023 scheme guidance: literacy skills; numeracy skills; computer skills; develop qualities e.g. respect for authority; punctuality; trustworthiness; responsibility; self-discipline; socialisation skills; work experience; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4520,10 +5326,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E3 Q3(b)(i)",
     stem: "‘Primary school education supports children’s learning from junior infants to sixth class.’ (NCCA)",
     questionText: "Describe three different ways primary school education contributes to the development of the individual.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 5 marks (graded 5:3:0)","answer":3,"ofParts":4,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Ways primary school education contributes to development", marks: 15, contextNote: "Three ways at 5 marks, graded 5:3:0. The scheme groups everything under four kinds of development, so take three different ones - naming three physical examples is still one way. Social development is the thin one: the scheme prints only \"can be formal/informal\".", openList: true, group: {"claimMax":3,"perOption":5,"options":["playing with toys helps with manual dexterity e.g. jigsaws; practical subjects can improve fine and gross motor skills; development of hand/eye co-ordination; sport and physical education helps to build healthy bones/muscles and improve balance/fitness","young children gain emotional independence from parents, encourages maturity; feelings for themselves and others; learn to be sensitive to needs of others; supportive of others; expressing emotions","promoted through the wide range of subjects; extracurricular activities; classmates encourage competition; examinations provide challenges; resources e.g. books, computers assist development; provides stimulation and nurtures a learning environment; support for children with ALN’s","can be formal/informal"]} },
+    { id: "points", kind: "criterion", verbatim: "primary school education", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: physical development: playing with toys helps with manual dexterity e.g. jigsaws; practical subjects can improve fine and gross motor skills; development of hand/eye co-ordination; sport and physical education helps to build healthy bones/muscles and improve balance/fitness; etc. emotional development: young children gain emotional independence from parents, encourages maturity; feelings for themselves and others; learn to be sensitive to needs of others; supportive of others; expressing emotions; etc. intellectual development: promoted through the wide range of subjects; extracurricular activities; classmates encourage competition; examinations provide challenges; resources e.g. books, computers assist development; provides stimulation and nurtures a learning environment; support for children with ALN’s; etc. social development: can be formal/informal; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4534,10 +5350,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E3 Q3(b)(ii)",
     stem: "‘Primary school education supports children’s learning from junior infants to sixth class.’ (NCCA)",
     questionText: "Discuss three factors that influence the educational achievement of school children.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors influencing educational achievement", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. Discuss, so each factor needs the mechanism - not \"family size\" but why a large family can mean less individual attention and nowhere quiet to work. The scheme prints far more than three, so pick ones you can explain.", openList: true, group: {"claimMax":3,"perOption":5,"options":["intellectual ability","family size, home environment e.g. homework facilities","peers, can be positive or negative","local environment","school environment e.g. resources in school","RACE, accommodations in certificate examinations","access to computers/assistive technology, reader pens","SNA","resource teachers","small class size","educational programmes e.g. JCSP, LCA, LCVP, TY","LPL2","work experience","parental attitude to education"]} },
+    { id: "points", kind: "criterion", verbatim: "educational achievement", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: intellectual ability; family size, home environment e.g. homework facilities; peers, can be positive or negative; local environment; school environment e.g. resources in school; RACE, accommodations in certificate examinations; access to computers/assistive technology, reader pens; SNA; resource teachers; small class size; educational programmes e.g. JCSP, LCA, LCVP, TY; LPL2; work experience; parental attitude to education; access to third level, HEAR, DARE; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4547,13 +5373,23 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sc-q3ci", topicId: "home-economics-3-11", conceptId: "social-and-economic-change-and-family-life",
     section: "C", questionRef: "2023 OL Section C E3 Q3(c)(i)",
     stem: "Ireland has undergone many social and economic changes in the past 20 years.",
-    questionText: "Discuss the impact of social and economic changes on family life. Refer to: reduction in working hours; increased participation of women in the workforce; equal pay and employment opportunities.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    questionText: "Discuss the impact of social and economic changes on family life. Refer to: • reduction in working hours • increased participation of women in the workforce • equal pay and employment opportunities.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "reduction in working hours", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme allows both directions - more time with family and more leisure, but also less disposable income. Either earns the mark if you say what it does to family life.", openList: true, group: {"claimMax":1,"perOption":5,"options":["change of lifestyle","better work and family life balance","shorter working hours","more time to spend with families","parents can collect children from school","increase in physical activities resulting from more leisure time","less disposable income for family"]} },
-    { id: "r-2", kind: "anyN", verbatim: "increased participation of women in the workforce", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Again the scheme prints both sides: dual income and a positive role model, against childcare costs, role conflict and role overload.", openList: true, group: {"claimMax":1,"perOption":5,"options":["family size tends to be smaller","dual income contributes to a higher standard of living","children spend more time in childcare","cost of childcare","may lead to stress, role conflict","women may experience role overload","teenagers become more responsible and share household chores","working mothers can be a positive role model for children"]} },
-    { id: "r-3", kind: "anyN", verbatim: "equal pay and employment opportunities", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Most of this row is the leave entitlements - parental, paternity, adoptive, carer’s - plus flexitime and job sharing. Name the entitlement and say what it lets a family do.", openList: true, group: {"claimMax":1,"perOption":5,"options":["shorter working week/day","better hourly pay rates","more disposable income and a higher standard of living","defined holidays","sick leave","parental leave","paternity leave","adoptive leave","sick leave and sick pay","carer’s leave","job sharing","flexitime","safe working environment","increased annual leave"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "reduction in working hours", marks: 5, contextNote: "Discuss this required heading, graded 5:3:0. Published guidance: change of lifestyle; better work and family life balance; shorter working hours; more time to spend with families; parents can collect children from school; increase in physical activities resulting from more leisure time; less disposable income for family; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "increased participation of women in the workforce", marks: 5, contextNote: "Discuss this required heading, graded 5:3:0. Published guidance: family size tends to be smaller; dual income contributes to a higher standard of living; children spend more time in childcare; cost of childcare; may lead to stress, role conflict; women may experience role overload; teenagers become more responsible and share household chores; working mothers can be a positive role model for children; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "equal pay and employment opportunities", marks: 5, contextNote: "Discuss this required heading, graded 5:3:0. Published guidance: shorter working week/day; better hourly pay rates; more disposable income and a higher standard of living; defined holidays; sick leave; parental leave; paternity leave; adoptive leave; sick leave and sick pay; carer’s leave; job sharing; flexitime; safe working environment; increased annual leave; jobs are becoming less gender specific e.g. nurses; greater opportunities for promotion; new positions in the employment market e.g. web designer, people work from home; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4564,10 +5400,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E3 Q3(c)(ii)",
     stem: "Ireland has undergone many social and economic changes in the past 20 years.",
     questionText: "Outline three benefits of voluntary work to the community.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 benefits @ 5 marks (graded 5:3:0)","answer":3,"ofParts":9,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Benefits of voluntary work to the community", marks: 15, contextNote: "Three benefits at 5 marks, graded 5:3:0. Keep them about the community, not the volunteer - the question says \"to the community\". Reduced reliance on State resources, a faster local service, and community spirit are the three the scheme leads with.", openList: true, group: {"claimMax":3,"perOption":5,"options":["reduces reliance on state resources","can provide a quick service e.g. care of the elderly","friendships and bonds can be formed","creates a sense of community spirit","provides new skills in an area","complements work carried out by statutory bodies","provides an unfunded service","offers a more personal local service","attention focused on local/social issues"]} },
+    { id: "points", kind: "criterion", verbatim: "benefits of voluntary work", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: reduces reliance on state resources; can provide a quick service e.g. care of the elderly; friendships and bonds can be formed; creates a sense of community spirit; provides new skills in an area; complements work carried out by statutory bodies; provides an unfunded service; offers a more personal local service; attention focused on local/social issues; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4577,13 +5423,23 @@ export const CARDS: SecCard[] = [
     id: "he-2023-ol-sc-q4ai", topicId: "home-economics-0-8", conceptId: "causes-and-effects-of-osteoporosis",
     section: "C", questionRef: "2023 OL Section C Q4(a)(i) - Core",
     stem: "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
-    questionText: "Give an account of the causes of osteoporosis and the effects of osteoporosis on the body.",
-    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks (graded 5:3:0) (1 cause, 1 effect, plus 2 others)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    questionText: "Give an account of (i) the causes of osteoporosis and (ii) the effects of osteoporosis on the body.",
+    tariffModel: {"kind":"fixed","notation":"4 × 5 (5:3:0): cause 1, effect 1, other 2"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "One cause of osteoporosis", marks: 5, contextNote: "One cause, 5 marks, graded 5:3:0. The scheme is explicit that at least one cause is required. Calcium and vitamin D lead the list, but low oestrogen after menopause is the one that explains why the condition is far more common in women.", openList: true, group: {"claimMax":1,"perOption":5,"options":["lack of calcium rich foods in the diet from an early age","lack of vitamin D","low levels of oestrogen in postmenopausal women","eating disorders","low testosterone in men","lack of weight bearing exercise","smoking","medications e.g. for rheumatoid arthritis and psoriasis","medical conditions e.g. some cancers","too much alcohol","thyroid conditions","hereditary","risk increases with age"]} },
-    { id: "r-2", kind: "anyN", verbatim: "One effect of osteoporosis on the body", marks: 5, contextNote: "One effect, 5 marks, graded 5:3:0. At least one effect is required. \"Brittle bones\" is the definition rather than an effect - fractures, loss of height, a curved spine and back pain are what the examiner is after.", openList: true, group: {"claimMax":1,"perOption":5,"options":["fragile/brittle bones","bone fractures","back/neck pain","loss of height","curved spine","rounded shoulders","loss of bone density/bone mass","tooth decay"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Two further points, from either causes or effects", marks: 10, contextNote: "Two further points at 5 marks each, and the scheme lets these come from either list - \"1 cause, 1 effect, plus 2 others\". So two more causes, two more effects, or one of each all score.", openList: true, group: {"claimMax":2,"perOption":5,"options":["lack of calcium rich foods in the diet from an early age","lack of vitamin D","low levels of oestrogen in postmenopausal women","eating disorders","low testosterone in men","lack of weight bearing exercise","smoking","medications e.g. for rheumatoid arthritis and psoriasis","medical conditions e.g. some cancers","too much alcohol","thyroid conditions","hereditary","risk increases with age","fragile/brittle bones"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "causes", marks: 5, contextNote: "One required point, graded 5:3:0. Published 2023 scheme guidance: lack of calcium rich foods in the diet from an early age; lack of vitamin D; low levels of oestrogen in postmenopausal women; eating disorders; low testosterone in men; lack of weight bearing exercise; smoking; medications e.g. for rheumatoid arthritis and psoriasis; medical conditions e.g. some cancers; too much alcohol; thyroid conditions; hereditary; risk increases with age; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "effects", marks: 5, contextNote: "One required point, graded 5:3:0. Published 2023 scheme guidance: fragile/brittle bones; bone fractures; back/neck pain; loss of height; curved spine; rounded shoulders; loss of bone density/bone mass; tooth decay; etc.", permittedMarks: [0,3,5] },
+    { id: "others", kind: "criterion", verbatim: "plus 2 others", marks: 10, contextNote: "Two further distinct points on either heading, each graded 5:3:0. Do not reuse a point scored above.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4594,10 +5450,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(a)(ii) - Core",
     stem: "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
     questionText: "Evaluate three lifestyle and/or dietary guidelines to follow in order to prevent osteoporosis.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 guidelines @ 5 marks (graded 5:3:0)","answer":3,"ofParts":13,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Lifestyle and/or dietary guidelines to prevent osteoporosis", marks: 15, contextNote: "Three guidelines at 5 marks, graded 5:3:0. \"And/or\" means all three may come from one list, so you are not forced to balance them. Evaluate, so say why it works - weight-bearing exercise loads the bone and builds density; sunshine is where the vitamin D comes from.", openList: true, group: {"claimMax":3,"perOption":5,"options":["exercise regularly, especially weightbearing exercise","do not smoke","limit alcohol intake","have regular bone density scans","consider HRT for post-menopausal women","get enough sunshine","increase intake of vitamin D","increase phosphorus rich foods","increase intake of calcium","increase intake of vitamin C","take calcium and vitamin D supplements","balance protein intake, too much or too little can have an effect on bone density","avoid calcium absorption inhibitors, e.g. excessive fibre, tannins"]} },
+    { id: "points", kind: "criterion", verbatim: "lifestyle and/or dietary guidelines", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: lifestyle: exercise regularly, especially weightbearing exercise; do not smoke; limit alcohol intake; have regular bone density scans; consider HRT for post-menopausal women; get enough sunshine; etc. dietary: increase intake of vitamin D; increase phosphorus rich foods; increase intake of calcium; increase intake of vitamin C; take calcium and vitamin D supplements; balance protein intake, too much or too little can have an effect on bone density; avoid calcium absorption inhibitors, e.g. excessive fibre, tannins; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4608,10 +5474,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(a)(iii) - Core",
     stem: "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
     questionText: "Discuss the role of food labelling as a source of consumer information for people following a special diet.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 roles @ 5 marks (graded 5:3:0)","answer":3,"ofParts":10,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Role of food labelling for people following a special diet", marks: 15, contextNote: "Three roles at 5 marks, graded 5:3:0. Tie each one back to the special diet - the allergen list is the strongest, because for a coeliac or a nut allergy it is the difference between safe and dangerous. Nutrient panels serve the diabetic and the low-salt diet.", openList: true, group: {"claimMax":3,"perOption":5,"options":["helps consumer make an informed decision about purchasing foods","informs consumer on information on nutrients, people opt for more nutritious alternatives","allergens listed reduces the risk of suffering an allergic reaction","additives","genetic modifications","ingredients listed in descending order of weight","help to choose the more nutritional options","name and address of manufacturer","quality assurance e.g. Bord Bia mark","organic produce"]} },
+    { id: "points", kind: "criterion", verbatim: "food labelling", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: helps consumer make an informed decision about purchasing foods; informs consumer on information on nutrients, people opt for more nutritious alternatives; allergens listed reduces the risk of suffering an allergic reaction; additives; genetic modifications; etc. ingredients listed in descending order of weight; help to choose the more nutritional options; name and address of manufacturer; quality assurance e.g. Bord Bia mark; organic produce; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4622,10 +5498,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(b)(i) - Core",
     stem: "Money management is an important life skill.",
     questionText: "Identify and explain three factors that affect household income.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 5 marks (graded 5:3:0)","answer":3,"ofParts":5,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors that affect household income", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. Identify AND explain - the name alone is the 3, the explanation is the 5. Age and social class carry the most detail in the scheme; gender and cultural factors are one line each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["income tends to increase as people get older, reduced income on retirement, teenagers can get part time jobs to ease the financial burden","equal pay for all, some managerial positions still male dominated","some students from lower socio-economic backgrounds leave school early without qualifications, may lead to unemployment; middle class backgrounds generally better educational opportunities, more likely to gain qualifications leading to better paid jobs","many receive social welfare payments","different cultures value income differently; some cultures determine whether women can work outside the home"]} },
+    { id: "points", kind: "criterion", verbatim: "factors that affect household income", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: age: income tends to increase as people get older, reduced income on retirement, teenagers can get part time jobs to ease the financial burden; etc. gender: equal pay for all, some managerial positions still male dominated; etc. social class: some students from lower socio-economic backgrounds leave school early without qualifications, may lead to unemployment; middle class backgrounds generally better educational opportunities, more likely to gain qualifications leading to better paid jobs; etc. lower socio-economic group: many receive social welfare payments; etc. cultural factors: different cultures value income differently; some cultures determine whether women can work outside the home; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4636,10 +5522,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(b)(ii) - Core",
     stem: "Money management is an important life skill.",
     questionText: "Describe three benefits of setting up a family budget plan.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 benefits @ 5 marks (graded 5:3:0)","answer":3,"ofParts":11,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Benefits of setting up a family budget plan", marks: 15, contextNote: "Three benefits at 5 marks, graded 5:3:0. The scheme prints eleven, so there is plenty of choice - but several are near-duplicates (\"avoids debt\", \"reduces reliance on credit\"). Pick three that are genuinely different: spotting overspending, providing for emergencies, and building savings.", openList: true, group: {"claimMax":3,"perOption":5,"options":["areas of overspending identified","provides financial security","alleviates worry and stress as bills will be paid","know where all monies are going","provides for emergencies","allows for savings","encourages people to wait until they have the money to buy something","develops money management skills","avoids debt","avoid impulse buying","budgeting reduces reliance on credit"]} },
+    { id: "points", kind: "criterion", verbatim: "family budget plan", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: areas of overspending identified; provides financial security; alleviates worry and stress as bills will be paid; know where all monies are going; provides for emergencies; allows for savings; encourages people to wait until they have the money to buy something; develops money management skills; avoids debt; avoid impulse buying; budgeting reduces reliance on credit; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4650,10 +5546,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(c)(i) - Core",
     stem: "‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)",
     questionText: "Discuss how the role of the adolescent has changed in the modern family.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":7,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How the role of the adolescent has changed", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. The word is \"changed\", so each point works best as a contrast with the past - adolescents now share in decisions, mind siblings, cook meals and hold part-time jobs where once they did not.", openList: true, group: {"claimMax":3,"perOption":5,"options":["take on extra responsibilities","helping with minding siblings","cooking family meals","more input into family decision making","role model to siblings","have part time jobs","assisting with care of elderly"]} },
+    { id: "points", kind: "criterion", verbatim: "role of the adolescent", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: take on extra responsibilities; helping with minding siblings; cooking family meals; more input into family decision making; role model to siblings; have part time jobs; assisting with care of elderly; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4664,10 +5570,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q4(c)(ii) - Core",
     stem: "‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)",
     questionText: "Explain how the family supports the physical and emotional development of children.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0); address physical and emotional development"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How the family supports physical and emotional development", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0, pooled across both kinds of development. The scheme is thin here - two physical points and four emotional - so the emotional side is where the safer marks are: self-esteem, a safe place to talk, parents as role models.", openList: true, group: {"claimMax":3,"perOption":5,"options":["provides basic needs e.g. food, clothes, shelter","protects vulnerable members by providing a safe environment","provides a safe and secure place to discuss feelings","help children to develop good self- esteem","assists children in forming healthy relationships","parents are role models"]} },
+    { id: "support", kind: "criterion", verbatim: "physical and emotional development", marks: 15, contextNote: "Explain physical and emotional support, in three points graded 5:3:0. Both headings are required; the scheme does not reserve an exact number for each. Published guidance: physical: provides basic needs e.g. food, clothes, shelter; protects vulnerable members by providing a safe environment; etc. emotional: provides a safe and secure place to discuss feelings; help children to develop good self- esteem; assists children in forming healthy relationships; parents are role models; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4700,17 +5616,28 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(i)",
     stem: "A contemporary bathroom design is shown below.",
     questionText: "Evaluate the suitability of the bathroom space shown above for a couple with children.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Suitability of the bathroom space", marks: 20, contextNote: "Four points at 5 marks, graded 5:3:0.", openList: true, group: {"claimMax":4,"perOption":5,"options":["large space to meet family needs","easy to keep clean","large walk-in shower","choice of bath or shower","modern in design","good ergonomics","laundry basket for dirty clothes","stacks of towels","hook to hang clothes on","large window","wall hung basin and toilet for ease of cleaning","large mirror","roman blind for privacy","shelves may be a hazard for small child"]} },
+    { id: "points", kind: "criterion", verbatim: "suitability of the bathroom space", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Published 2023 scheme guidance: large space to meet family needs; easy to keep clean; large walk-in shower; choice of bath or shower; modern in design; good ergonomics; laundry basket for dirty clothes; stacks of towels; hook to hang clothes on; large window; wall hung basin and toilet for ease of cleaning; large mirror; roman blind for privacy; shelves may be a hazard for small child; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
-    figure: {
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
           "candId": "home-economics-2023-ol-paper-p05-i0",
           "src": "/exam-figures/home-economics/markbank/home-economics-2023-ol-paper-p05-i0.png",
           "srcHash": "8fb2e75645df754e743e6b6514138d5f",
           "alt": "A colour photograph of a contemporary bathroom, wide format. On the left a dark wood ladder-frame shelving unit holds folded white towels and toiletries. Behind it a large window with a roman blind looks onto greenery, with a tiled mosaic splashback and toiletry bottles on the sill. Centre-left stands a freestanding oval bath in grey and white with a floor-mounted mixer tap and a wooden bath caddy. A navy dressing gown hangs on a wall hook beside a small wooden stool stacked with folded yellow towels. Centre-right is a large walk-in shower enclosure with clear glass doors, a chrome frame, a fixed rainfall head, a handheld shower and a wall control panel, set against pale grey tiling. On the right wall are a rectangular mirror, four small framed botanical prints, a wall-mounted white basin with a chrome tap, and a wall-hung white toilet. The floor is a continuous pale surface with a mustard yellow textured rug in front of the bath, and a round woven basket sits beside the shower.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Home Economics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4720,21 +5647,32 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "suitability-of-festival-fashion",
     section: "C", questionRef: "2023 OL Section C E2 Q2(a)(i)",
-    stem: "‘Music festivals bring new trends and a boost to the fashion industry.’ (www.guardian.com)",
-    questionText: "Comment on the suitability of the festival fashion shown above. Refer to: comfort; function; aesthetic appeal.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    stem: "‘Music festivals bringing new trends and a boost to the fashion industry.’ (www.guardian.com)",
+    questionText: "Comment on the suitability of the festival fashion shown above. Refer to: • comfort • function • aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "comfort", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["fabric allows for ease of movement","stretching while maintaining shape","easy to remove shirt, jackets, sweatshirt","well-fitting shoes/ boots","variety of colours","layered clothing"]} },
-    { id: "r-2", kind: "anyN", verbatim: "function", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["waterproof boots","long boots","knee length socks","sunglasses","long sleeve jacket"]} },
-    { id: "r-3", kind: "anyN", verbatim: "aesthetic appeal", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["relaxed look","layered look","may suit all shapes and sizes","appeal to younger people"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "comfort", marks: 6, contextNote: "Two points on this required heading, each graded 3:2:0. Published guidance: fabric allows for ease of movement; stretching while maintaining shape; easy to remove shirt, jackets, sweatshirt; well-fitting shoes/ boots; etc. variety of colours; layered clothing; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "function", marks: 6, contextNote: "Two points on this required heading, each graded 3:2:0. Published guidance: waterproof boots; long boots; knee length socks; sunglasses; long sleeve jacket; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "aesthetic appeal", marks: 6, contextNote: "Two points on this required heading, each graded 3:2:0. Published guidance: relaxed look; layered look; may suit all shapes and sizes; appeal to younger people; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
-    figure: {
-          "candId": "home-economics-2023-ol-paper-p06-i0",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2023-ol-paper-p06-i0.png",
-          "srcHash": "1e205f5cc1d20544a492a26a0d86a27d",
-          "alt": "Three colour photographs of festival outfits. LEFT: two young women walking on rough ground; one wears a black oversized sweatshirt printed REMEMBER over a short black floral skirt, black socks and tall patterned rubber wellington boots, with a black beanie hat and sunglasses; the other wears an open pale blue denim shirt over a white cropped top, high-waisted cut-off denim shorts, a small backpack, sunglasses and matching tall wellington boots. CENTRE: a man in a sleeveless black graphic vest with a blue denim shirt tied around his waist, dark shorts, black socks and black and white high-top canvas trainers, with a cap and sunglasses. RIGHT: a man in a brown corduroy blazer worn open over a loose cream long-sleeved top, dark trousers, brown boots, a long pendant necklace and sunglasses, standing in a field with a fairground wheel behind him.",
-          "attribution": "SEC Leaving Certificate Home Economics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2023-ol-sc-q2ai-fashion",
+          "src": "/exam-figures/home-economics/home-economics-2023-ol-sc-q2ai-fashion.png",
+          "srcHash": "5a6b86b577b18a24de0df86396767f6a",
+          "alt": "Three festival-fashion photographs. Left: two people wearing layered tops, shorts or a skirt, sunglasses and tall boots. Centre: a person in a sleeveless top, shorts, trainers and sunglasses, with a shirt tied around the waist. Right: a person in a blazer, long-sleeved top, trousers, boots and sunglasses.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
     },
   } as SecCard,
   {

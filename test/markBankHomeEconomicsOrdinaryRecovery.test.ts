@@ -17,6 +17,86 @@ const get = (id: string) => {
 };
 
 describe('2023 Ordinary Home Economics recovered tasks', () => {
+  it('keeps the original bathroom and fashion images with their evaluation tasks', () => {
+    const bathroom = get('he-2023-ol-sc-q1ai');
+    expect(bathroom.questionFigure?.src).toContain('2023-ol-paper-p05-i0.png');
+    expect(bathroom.questionFigure?.includesPrompt).toBe(false);
+    expect(bathroom.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(4).fill([0, 3, 5]));
+    const heating = get('he-2023-ol-sc-q1aii');
+    expect(heating.questionText).toContain('factors that should be considered');
+    expect(heating.figure).toBeUndefined();
+    expect(heating.stem).toBeUndefined();
+    expect(heating.sourceMaterial?.pages).toEqual([5]);
+    expect(heating.rows[0].contextNote).toContain('impact on the environment:');
+    const fashion = get('he-2023-ol-sc-q2ai');
+    expect(fashion.stem).toContain('Music festivals bringing new trends');
+    expect(fashion.questionFigure?.src).toContain('2023-ol-sc-q2ai-fashion.png');
+    expect(fashion.questionFigure?.includesPrompt).toBe(false);
+    expect(fashion.rows.map(r => r.marks)).toEqual([6, 6, 6]);
+    expect(fashion.rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 2, 3], [0, 2, 3]]);
+    expect(fashion.rows[0].contextNote).toContain('variety of colours; layered clothing; etc.');
+  });
+
+  it('keeps renewable-source and fabric-finish choices in one card each', () => {
+    const energy = get('he-2023-ol-sc-q1bii');
+    expect(energy.answerVariants?.map(v => v.id)).toEqual(['solar', 'wood', 'wind', 'hydropower', 'bio-energy', 'geothermal', 'another-source']);
+    for (const v of energy.answerVariants ?? []) {
+      expect(v.rows.map(r => r.marks)).toEqual([5, 10]);
+      expect(v.rows[0].permittedMarks).toEqual([0, 3, 5]);
+      expect(v.rows[1].parts?.map(p => p.permittedMarks)).toEqual([[0, 3, 5], [0, 3, 5]]);
+      expect(tariffReconciles({ ...energy, rows: v.rows })).toBe(true);
+    }
+    expect(energy.answerVariants?.find(v => v.id === 'bio-energy')?.rows[1].contextNote).toContain('liquid biofuel can be used as a fuel for vehicles;');
+    const finish = get('he-2023-ol-sc-q2bii');
+    expect(finish.answerVariants).toHaveLength(7);
+    for (const v of finish.answerVariants ?? []) {
+      expect(v.rows.map(r => r.permittedMarks)).toEqual([[0, 2, 4], [0, 2, 3], [0, 2]]);
+      expect(tariffReconciles({ ...finish, rows: v.rows })).toBe(true);
+    }
+    expect(finish.answerVariants?.find(v => v.id === 'flame-retardant')?.rows[2].contextNote).toContain('children’s night wear; etc.');
+    const design = get('he-2023-ol-sc-q2aii');
+    expect(design.rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 2, 4], [0, 2, 3]]);
+    expect(design.rows[0].contextNote).toContain('does not assign these to name versus description');
+    expect(design.rows[0].contextNote).toContain('prints no worked description');
+    expect(design.rows[0].contextNote).toContain('embroidery; appliqué; etc.');
+  });
+
+  it('reserves required social and core headings without inventing per-heading quotas', () => {
+    const unemployment = get('he-2023-ol-sc-q3aii');
+    expect(unemployment.rows.map(r => r.verbatim)).toEqual(['the individual', 'the family', 'society']);
+    expect(unemployment.rows.map(r => r.marks)).toEqual([8, 8, 8]);
+    expect(get('he-2023-ol-sc-q3bii').rows[0].contextNote).toContain('HEAR, DARE; etc.');
+    const social = get('he-2023-ol-sc-q3ci');
+    expect(social.rows.map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 3, 5]));
+    expect(social.rows[2].contextNote).toContain('people work from home; etc.');
+    const bones = get('he-2023-ol-sc-q4ai');
+    expect(bones.rows.map(r => r.marks)).toEqual([5, 5, 10]);
+    expect(bones.rows.map(r => r.verbatim)).toEqual(['causes', 'effects', 'plus 2 others']);
+    const prevention = get('he-2023-ol-sc-q4aii');
+    expect(prevention.questionText).toContain('lifestyle and/or dietary');
+    expect(prevention.answerVariants).toBeUndefined();
+    expect(prevention.rows[0].contextNote).toContain('lifestyle:');
+    expect(prevention.rows[0].contextNote).toContain('dietary:');
+    const support = get('he-2023-ol-sc-q4cii');
+    expect(support.rows[0].contextNote).toContain('Both headings are required');
+    expect(support.rows[0].contextNote).toContain('does not reserve an exact number for each');
+    expect(support.rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 3, 5]));
+  });
+
+  it('reconciles every reviewed Ordinary main-sitting task and every alternative tariff', () => {
+    const cards = CARDS.filter(c => c.year === 2023);
+    expect(cards).toHaveLength(60);
+    expect(cards.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(749);
+    const sectionC = cards.filter(c => c.questionRef.includes('Section C '));
+    expect(sectionC).toHaveLength(28);
+    expect(sectionC.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(385);
+    for (const c of cards) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      for (const v of c.answerVariants ?? []) expect(tariffReconciles({ ...c, rows: v.rows }), `${c.id}/${v.id}`).toBe(true);
+    }
+  });
+
   it('retains the full Section B protein, hygiene and appliance allocations', () => {
     const protein = get('he-2023-ol-sb-q1b');
     expect(protein.rows.map(r => r.marks)).toEqual([6, 12, 8]);

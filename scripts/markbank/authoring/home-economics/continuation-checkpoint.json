@@ -1038,11 +1038,11 @@
     "unreadPapers": []
   },
   "nextActions": [
-    "2023 Higher main sitting source review complete: 59 tasks, every published boundary and all scheme guidance checked. Browser QA pending.",
-    "2023 Ordinary Sections A and B reviewed; continue the 28 Section C tasks, then published English deferred.",
-    "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 using full paper/scheme sweeps.",
-    "Reconcile subject-wide Mark Bank and Topic Atlas, including Section B/C identities and available deferred English papers.",
-    "Integrate only verified batches; keep moving to the next actionable sitting."
+    "2023 Higher and Ordinary English main sittings source-reviewed: 59/60 tasks respectively. Browser QA pending.",
+    "Inventory and review available English deferred papers (2022 and 2023 Higher corpus present); add sitting-aware Mark Bank/Atlas support without conflating main papers.",
+    "Review remaining 2021–2025 gaps, then complete 2026 and 2010–2020 with full paper/scheme sweeps.",
+    "Reconcile subject-wide Mark Bank and Topic Atlas; keep Irish editions deferred.",
+    "Integrate only verified batches and move to the next actionable sitting."
   ],
   "coveragePolicy": "The census is diagnostic only; 676 open candidates and 37 flags are not a complete independent count of outstanding exam tasks. Coverage baseline intentionally unchanged while the subject is incomplete.",
   "integratedBatches": [
@@ -1080,6 +1080,11 @@
       "workCommit": "0185151b5",
       "launchCommit": "fc3768b40",
       "scope": "2023 Ordinary Section A: 11 corrections and the separately priced iron-source task."
+    },
+    {
+      "workCommit": "009d538e7",
+      "launchCommit": "6fe0e1419",
+      "scope": "2023 Ordinary Section B: 13 corrections and separate conflict-resolution task; factual clarifications distinguish source errors."
     }
   ]
 }

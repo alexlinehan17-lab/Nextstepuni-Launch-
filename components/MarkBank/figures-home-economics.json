@@ -35,5 +35,12 @@
     "alt": "Nutrition per 100 g. Columns: Peanut & chocolate; Peanut & caramel; Crunchy peanut butter. Energy: 492, 373, 518 kcal. Protein: 25.6, 36.3, 25 g. Carbohydrates: 24, 16, 26 g; of which sugars: 15, 3, 16 g. Fibre: 13.6, 16.1, 14 g. Fat: 30, 15.9, 12 g; of which saturates: 9, 8, 5 g. Salt: 0.95, 0.73, 0.59 g.",
     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
     "sourceNote": "Original source crop, visually inspected with all content and borders. Bounds [54, 199, 542, 439], 2×. No marking-scheme answer content."
+  },
+  "home-economics-2023-ol-sc-q2ai-fashion": {
+    "src": "/exam-figures/home-economics/home-economics-2023-ol-sc-q2ai-fashion.png",
+    "md5": "5a6b86b577b18a24de0df86396767f6a",
+    "alt": "Three festival-fashion photographs. Left: two people wearing layered tops, shorts or a skirt, sunglasses and tall boots. Centre: a person in a sleeveless top, shorts, trainers and sunglasses, with a shirt tied around the waist. Right: a person in a blazer, long-sleeved top, trousers, boots and sunglasses.",
+    "attribution": "SEC Home Economics 2023 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "All original fashion photographs and source credit, visually inspected at 2×; source bounds [132, 123, 515, 332]. No neighbouring question fragments or answers."
   }
 }

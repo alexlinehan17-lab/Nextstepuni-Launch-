@@ -9360,6 +9360,2776 @@
     },
     "notes": "Paper and complete scheme independently reviewed, including required headings and partial marks. See he_review_2023_ol_section_b.py."
    }
+  },
+  "he-2023-ol-sc-q1ai": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Evaluate the suitability of the bathroom space shown above for a couple with children.",
+    "stem": "A contemporary bathroom design is shown below.",
+    "totalMarks": 20,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "suitability of the bathroom space",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       18,
+       20
+      ],
+      "contextNote": "4 distinct points, each graded 5:3:0. Published 2023 scheme guidance: large space to meet family needs; easy to keep clean; large walk-in shower; choice of bath or shower; modern in design; good ergonomics; laundry basket for dirty clothes; stacks of towels; hook to hang clothes on; large window; wall hung basin and toilet for ease of cleaning; large mirror; roman blind for privacy; shelves may be a hazard for small child; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py.",
+    "figureKey": "",
+    "questionFigureKey": "home-economics-2023-ol-paper-p05-i0",
+    "questionFigureIncludesPrompt": false
+   }
+  },
+  "he-2023-ol-sc-q1aii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss three factors that should be considered when choosing a heating system for the home.",
+    "stem": "",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "heating system",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: cost: installation; running and maintenance; etc. energy efficiency: is the source renewable; etc. convenience: automatic timer that is easy to use; thermostat to control heating; smart technology; etc. comfort: constant temperature; etc. safety: priority for family with young children; etc. water heating: immersion with a timer to save electricity; instantaneous heaters; etc. aesthetic appeal: underfloor heating; types of radiators; etc. impact on the environment: gas and smokeless fuel produce less pollution; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py.",
+    "figureKey": ""
+   }
+  },
+  "he-2023-ol-sc-q1aiii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe three guidelines to follow for the safe use of electricity in the home.",
+    "stem": "",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "safe use of electricity",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: never mix electricity and water; do not use electrical appliances in the bathroom except shaver sockets; use pull cords for light switches; purchase only electrical appliances that carry recognised safety symbols; avoid overuse of adaptors and extension cables; check electric blankets for sign of wear; do not pull flexes across cooker hob or sink; repair damaged flexes; avoid trailing flexes; unplug appliances before cleaning them; replace broken plugs or sockets; always read and follow manufacturer’s instructions; keep electric heaters away from curtains; unplug chargers after use; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q1bi": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe three strategies that could be used to improve energy efficiency in the home.",
+    "stem": "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "energy efficiency",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: have house well insulated; service boiler regularly; set thermostats to correct temperature; use zone heating; use correct wattage bulbs; use LED bulbs; turn off lights when not in use; lag pipes and water cylinder; take showers instead of baths; have timer and thermostat on immersion; avoid washing under running tap; do not leave appliances on stand-by; use eco settings; use appliances at full capacity; buy A rated appliances; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q1bii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Name one renewable energy source and outline the advantages of the energy source named.",
+    "stem": "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "solar",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Name the renewable source, graded 5:3:0."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: saves up to 68% on heating bills; plentiful supply of hot water for space and water heating; converts light from sun directly into electricity; no carbon dioxide emissions; grants available; increasing the property value by raising the BER; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 5; 2 advantages × 5 (all 5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py.",
+    "answerVariants": [
+     {
+      "id": "solar",
+      "label": "Solar",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "solar",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: saves up to 68% on heating bills; plentiful supply of hot water for space and water heating; converts light from sun directly into electricity; no carbon dioxide emissions; grants available; increasing the property value by raising the BER; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "wood",
+      "label": "Wood",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "wood",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: contributes to biomass; produces reasonable heat; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "wind",
+      "label": "Wind",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "wind",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: unlimited; clean and non-polluting; low running costs; no emissions; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "hydropower",
+      "label": "Hydropower",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "hydropower",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: very viable to operate in Ireland; running costs once the plant is set up are low; no emissions; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "bio-energy",
+      "label": "Bio energy",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "bio energy",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: suitable for heating homes and water; liquid biofuel can be used as a fuel for vehicles;",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "geothermal",
+      "label": "Geothermal",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "geothermal",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name the renewable source, graded 5:3:0."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Two advantages of this source, each graded 5:3:0. Published 2023 example guidance: cost effective; grants available for installation; lower greenhouse gas emissions; reliable; etc.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "another-source",
+      "label": "Another renewable source",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "renewable energy source",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ],
+        "contextNote": "Name one renewable energy source, graded 5:3:0. The paper leaves this choice open."
+       },
+       {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "advantages",
+        "marks": 10,
+        "permittedMarks": [
+         0,
+         3,
+         5,
+         6,
+         8,
+         10
+        ],
+        "contextNote": "Outline two accurate advantages of your source, each graded 5:3:0. The other routes reproduce the six printed examples; the scheme prints no model for another source.",
+        "parts": [
+         {
+          "id": "point-1",
+          "verbatim": "Point 1",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         },
+         {
+          "id": "point-2",
+          "verbatim": "Point 2",
+          "marks": 5,
+          "permittedMarks": [
+           0,
+           3,
+           5
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2023-ol-sc-q1ci": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe the function of the following parts of a cold‐water supply to a house:  stop cock  storage tank  overflow pipe",
+    "stem": "",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "part-1",
+      "kind": "criterion",
+      "verbatim": "stopcock",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required function, graded 5:3:0. Published guidance: special valve found on a service pipe outside the house/under the kitchen sink; allows the water supply to be shut off if there is a problem; etc."
+     },
+     {
+      "id": "part-2",
+      "kind": "criterion",
+      "verbatim": "storage tank",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required function, graded 5:3:0. Published guidance: located in the attic at elevated level; improves pressure to supply the system; a ball valve controls the level of water in the tank; stores the cold water which supplies the cold-water to toilet, shower and hot press tank; etc."
+     },
+     {
+      "id": "part-3",
+      "kind": "criterion",
+      "verbatim": "overflow pipe",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Explain this required function, graded 5:3:0. Published guidance: attic storage tanks are fitted with an overflow pipe leading to the outside of the house and carries excess water out of the house; if the ball valve fails to work it prevents flooding; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required functions × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q1cii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Outline three guidelines to follow to reduce water usage in the home.",
+    "stem": "",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "reduce water usage",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: toilet: install a dual flush toilet; a rainwater harvesting system linked to the water system can be used to flush toilets; etc. taps: repair leaking taps; do not wash items under a running tap; do not leave taps running while washing teeth; use a basin in the sink rather than washing under a running tap; etc. appliances: fill kettle with the amount of water needed; wait until the washing machine or dishwasher is full before turning on; use economy or eco wash cycle; etc. water: use a shower instead of a bath; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      5
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q2ai": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Comment on the suitability of the festival fashion shown above. Refer to:  comfort  function  aesthetic appeal.",
+    "stem": "‘Music festivals bringing new trends and a boost to the fashion industry.’ (www.guardian.com)",
+    "totalMarks": 18,
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "comfort",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points on this required heading, each graded 3:2:0. Published guidance: fabric allows for ease of movement; stretching while maintaining shape; easy to remove shirt, jackets, sweatshirt; well-fitting shoes/ boots; etc. variety of colours; layered clothing; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "function",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points on this required heading, each graded 3:2:0. Published guidance: waterproof boots; long boots; knee length socks; sunglasses; long sleeve jacket; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "aesthetic appeal",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Two points on this required heading, each graded 3:2:0. Published guidance: relaxed look; layered look; may suit all shapes and sizes; appeal to younger people; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py.",
+    "figureKey": "",
+    "questionFigureKey": "home-economics-2023-ol-sc-q2ai-fashion",
+    "questionFigureIncludesPrompt": false
+   }
+  },
+  "he-2023-ol-sc-q2aii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe one method of applying a design to a garment.",
+    "stem": "‘Music festivals bringing new trends and a boost to the fashion industry.’ (www.guardian.com)",
+    "totalMarks": 7,
+    "rows": [
+     {
+      "id": "method",
+      "kind": "criterion",
+      "verbatim": "method of applying a design",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "parts": [
+       {
+        "id": "first",
+        "verbatim": "First point",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "second",
+        "verbatim": "Second point",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ],
+      "contextNote": "Describe one method. The scheme allocates one point at 4:2:0 and one at 3:2:0; it does not assign these to name versus description. It lists method names but prints no worked description. Published examples: screen printing; roller printing; stencilling; transfer printing; embossing; embroidery; appliqué; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "1 point × 4 (4:2:0); 1 point × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q2bi": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Explain why fabric finishes are used on fabric.",
+    "stem": "Textiles can be treated with a variety of fabric finishes.",
+    "totalMarks": 6,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "fabric finishes",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: to prevent creasing; prevent shrinkage; to give fabric desirable characteristics, e.g. waterproofing, stain resistant; to make the fabric hard wearing; improve safety; to improve wearing qualities; to prevent loss of colour; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q2bii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Name and describe one fabric finish. Give an example of its use in clothing.",
+    "stem": "Textiles can be treated with a variety of fabric finishes.",
+    "totalMarks": 9,
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "waterproofing",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Name this finish, graded 4:2:0."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes fabric water repellent"
+     },
+     {
+      "id": "example",
+      "kind": "criterion",
+      "verbatim": "Example",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Give one clothing use, graded 2:0. Published example: raincoats; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "Name 4 (4:2:0); description 3 (3:2:0); example 2 (2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py.",
+    "answerVariants": [
+     {
+      "id": "waterproofing",
+      "label": "Waterproofing",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "waterproofing",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes fabric water repellent"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: raincoats; etc."
+       }
+      ]
+     },
+     {
+      "id": "anti-static",
+      "label": "Anti-static",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "anti-static",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: prevents fabric from clinging to the skin"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: dresses; etc."
+       }
+      ]
+     },
+     {
+      "id": "stain-resistant",
+      "label": "Stain resistant",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "stain resistant",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes fabrics easier to clean and keep clean"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: jackets; etc."
+       }
+      ]
+     },
+     {
+      "id": "crease-resistant",
+      "label": "Crease resistant",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "crease resistant",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: prevents fabrics from creasing, reducing the need for ironing"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: jackets; etc."
+       }
+      ]
+     },
+     {
+      "id": "mercerising",
+      "label": "Mercerising",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "mercerising",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: makes the fabric stronger and more absorbent"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: jeans; etc."
+       }
+      ]
+     },
+     {
+      "id": "flame-retardant",
+      "label": "Flame retardant",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "flame retardant",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name this finish, graded 4:2:0."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Describe the finish, graded 3:2:0. Published guidance: proban reduces the flammability of a fabric"
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give one clothing use, graded 2:0. Published example: children’s night wear; etc."
+       }
+      ]
+     },
+     {
+      "id": "another-finish",
+      "label": "Another fabric finish",
+      "rows": [
+       {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "fabric finish",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ],
+        "contextNote": "Name one finish, graded 4:2:0. This is an open choice."
+       },
+       {
+        "id": "description",
+        "kind": "criterion",
+        "verbatim": "Description",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ],
+        "contextNote": "Give an accurate description of your finish, graded 3:2:0. The other routes show all six source examples."
+       },
+       {
+        "id": "example",
+        "kind": "criterion",
+        "verbatim": "Example",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ],
+        "contextNote": "Give a suitable use of that finish in clothing, graded 2:0."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "he-2023-ol-sc-q2ci": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe the contribution of Irish fashion designers to the clothing and textile industry.",
+    "stem": "The future of fashion is in the hands of the designers.",
+    "totalMarks": 9,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "contribution of Irish fashion designers",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "contextNote": "3 distinct points, each graded 3:2:0. Published 2023 scheme guidance: creates employment in manufacture, distribution and sales of textile and clothing industry; exports menswear, womenswear, children’s wear, knitted goods, sportswear, accessories, lingerie and footwear; promotes Irish designers; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q2cii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe two fashion accessories currently popular with trendsetters.",
+    "stem": "The future of fashion is in the hands of the designers.",
+    "totalMarks": 6,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "fashion accessories",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: bright coloured handbags; crossbody bags; large, framed glasses; sporty sunglasses; chunky platform shoes; beanie hats; baseball caps; gloves; scarves; belts; watches; chunky jewellery; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      6
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3ai": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Define unemployment.",
+    "stem": "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    "totalMarks": 6,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "unemployment",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "2 distinct points, each graded 3:2:0. Published 2023 scheme guidance: not currently employed, jobless; unemployment is actively seeking work, available for work; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "2 points × 3 (3:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3aii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss the effects of unemployment on:  the individual  the family  society.",
+    "stem": "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    "totalMarks": 24,
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "the individual",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two points on this required heading, each graded 4:2:0. Published guidance: financial insecurity; drop in income leading to drop in living standards; poverty; mortgage arrears, homelessness, reposition of homes; social isolation; depression; addiction - drug/alcohol abuse; loss of identity/status; poor self-esteem; lack of money can prevent participation in leisure and social activities; loss of purpose and sense of direction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "the family",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two points on this required heading, each graded 4:2:0. Published guidance: decline in living standards due to reliance on welfare payments; unstable home; provision of basic needs may be difficult; families may become homeless or in need of emergency accommodation; relationship problems; marital breakdown; children may be unable to attend college due to lack of money; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "society",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      "contextNote": "Two points on this required heading, each graded 4:2:0. Published guidance: cost to the state to pay benefits; result in increased taxation; cycle of poverty continues; disenfranchised young people may become involved in anti-social behaviour; emigration; unstable communities; increase in family breakdown; increase in the black economy to supplement welfare allowance; unemployment blackspots; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 2 points × 4 (4:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3aiii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe the role of education in preparing young people for the world of work.",
+    "stem": "‘The unemployment rate for persons aged 15‐24 is 12.4 %.’ (Oct 2022, www.cso.ie)",
+    "totalMarks": 12,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "role of education",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "3 distinct points, each graded 4:2:0. Published 2023 scheme guidance: literacy skills; numeracy skills; computer skills; develop qualities e.g. respect for authority; punctuality; trustworthiness; responsibility; self-discipline; socialisation skills; work experience; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 4 (4:2:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3bi": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe three different ways primary school education contributes to the development of the individual.",
+    "stem": "‘Primary school education supports children’s learning from junior infants to sixth class.’ (NCCA)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "primary school education",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: physical development: playing with toys helps with manual dexterity e.g. jigsaws; practical subjects can improve fine and gross motor skills; development of hand/eye co-ordination; sport and physical education helps to build healthy bones/muscles and improve balance/fitness; etc. emotional development: young children gain emotional independence from parents, encourages maturity; feelings for themselves and others; learn to be sensitive to needs of others; supportive of others; expressing emotions; etc. intellectual development: promoted through the wide range of subjects; extracurricular activities; classmates encourage competition; examinations provide challenges; resources e.g. books, computers assist development; provides stimulation and nurtures a learning environment; support for children with ALN’s; etc. social development: can be formal/informal; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3bii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss three factors that influence the educational achievement of school children.",
+    "stem": "‘Primary school education supports children’s learning from junior infants to sixth class.’ (NCCA)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "educational achievement",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: intellectual ability; family size, home environment e.g. homework facilities; peers, can be positive or negative; local environment; school environment e.g. resources in school; RACE, accommodations in certificate examinations; access to computers/assistive technology, reader pens; SNA; resource teachers; small class size; educational programmes e.g. JCSP, LCA, LCVP, TY; LPL2; work experience; parental attitude to education; access to third level, HEAR, DARE; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3ci": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss the impact of social and economic changes on family life. Refer to:  reduction in working hours  increased participation of women in the workforce  equal pay and employment opportunities.",
+    "stem": "Ireland has undergone many social and economic changes in the past 20 years.",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "reduction in working hours",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Discuss this required heading, graded 5:3:0. Published guidance: change of lifestyle; better work and family life balance; shorter working hours; more time to spend with families; parents can collect children from school; increase in physical activities resulting from more leisure time; less disposable income for family; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "increased participation of women in the workforce",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Discuss this required heading, graded 5:3:0. Published guidance: family size tends to be smaller; dual income contributes to a higher standard of living; children spend more time in childcare; cost of childcare; may lead to stress, role conflict; women may experience role overload; teenagers become more responsible and share household chores; working mothers can be a positive role model for children; etc."
+     },
+     {
+      "id": "heading-3",
+      "kind": "criterion",
+      "verbatim": "equal pay and employment opportunities",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "Discuss this required heading, graded 5:3:0. Published guidance: shorter working week/day; better hourly pay rates; more disposable income and a higher standard of living; defined holidays; sick leave; parental leave; paternity leave; adoptive leave; sick leave and sick pay; carer’s leave; job sharing; flexitime; safe working environment; increased annual leave; jobs are becoming less gender specific e.g. nurses; greater opportunities for promotion; new positions in the employment market e.g. web designer, people work from home; etc."
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 required headings × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q3cii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Outline three benefits of voluntary work to the community.",
+    "stem": "Ireland has undergone many social and economic changes in the past 20 years.",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "benefits of voluntary work",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: reduces reliance on state resources; can provide a quick service e.g. care of the elderly; friendships and bonds can be formed; creates a sense of community spirit; provides new skills in an area; complements work carried out by statutory bodies; provides an unfunded service; offers a more personal local service; attention focused on local/social issues; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      7
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4ai": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Give an account of (i) the causes of osteoporosis and (ii) the effects of osteoporosis on the body.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+    "totalMarks": 20,
+    "rows": [
+     {
+      "id": "heading-1",
+      "kind": "criterion",
+      "verbatim": "causes",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One required point, graded 5:3:0. Published 2023 scheme guidance: lack of calcium rich foods in the diet from an early age; lack of vitamin D; low levels of oestrogen in postmenopausal women; eating disorders; low testosterone in men; lack of weight bearing exercise; smoking; medications e.g. for rheumatoid arthritis and psoriasis; medical conditions e.g. some cancers; too much alcohol; thyroid conditions; hereditary; risk increases with age; etc."
+     },
+     {
+      "id": "heading-2",
+      "kind": "criterion",
+      "verbatim": "effects",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ],
+      "contextNote": "One required point, graded 5:3:0. Published 2023 scheme guidance: fragile/brittle bones; bone fractures; back/neck pain; loss of height; curved spine; rounded shoulders; loss of bone density/bone mass; tooth decay; etc."
+     },
+     {
+      "id": "others",
+      "kind": "criterion",
+      "verbatim": "plus 2 others",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       10
+      ],
+      "contextNote": "Two further distinct points on either heading, each graded 5:3:0. Do not reuse a point scored above.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "4 × 5 (5:3:0): cause 1, effect 1, other 2"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4aii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Evaluate three lifestyle and/or dietary guidelines to follow in order to prevent osteoporosis.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "lifestyle and/or dietary guidelines",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: lifestyle: exercise regularly, especially weightbearing exercise; do not smoke; limit alcohol intake; have regular bone density scans; consider HRT for post-menopausal women; get enough sunshine; etc. dietary: increase intake of vitamin D; increase phosphorus rich foods; increase intake of calcium; increase intake of vitamin C; take calcium and vitamin D supplements; balance protein intake, too much or too little can have an effect on bone density; avoid calcium absorption inhibitors, e.g. excessive fibre, tannins; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4aiii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss the role of food labelling as a source of consumer information for people following a special diet.",
+    "stem": "‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "food labelling",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: helps consumer make an informed decision about purchasing foods; informs consumer on information on nutrients, people opt for more nutritious alternatives; allergens listed reduces the risk of suffering an allergic reaction; additives; genetic modifications; etc. ingredients listed in descending order of weight; help to choose the more nutritional options; name and address of manufacturer; quality assurance e.g. Bord Bia mark; organic produce; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4bi": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Identify and explain three factors that affect household income.",
+    "stem": "Money management is an important life skill.",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "factors that affect household income",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: age: income tends to increase as people get older, reduced income on retirement, teenagers can get part time jobs to ease the financial burden; etc. gender: equal pay for all, some managerial positions still male dominated; etc. social class: some students from lower socio-economic backgrounds leave school early without qualifications, may lead to unemployment; middle class backgrounds generally better educational opportunities, more likely to gain qualifications leading to better paid jobs; etc. lower socio-economic group: many receive social welfare payments; etc. cultural factors: different cultures value income differently; some cultures determine whether women can work outside the home; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4bii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Describe three benefits of setting up a family budget plan.",
+    "stem": "Money management is an important life skill.",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "family budget plan",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: areas of overspending identified; provides financial security; alleviates worry and stress as bills will be paid; know where all monies are going; provides for emergencies; allows for savings; encourages people to wait until they have the money to buy something; develops money management skills; avoids debt; avoid impulse buying; budgeting reduces reliance on credit; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4ci": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Discuss how the role of the adolescent has changed in the modern family.",
+    "stem": "‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "points",
+      "kind": "criterion",
+      "verbatim": "role of the adolescent",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "3 distinct points, each graded 5:3:0. Published 2023 scheme guidance: take on extra responsibilities; helping with minding siblings; cooking family meals; more input into family decision making; role model to siblings; have part time jobs; assisting with care of elderly; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0)"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
+  },
+  "he-2023-ol-sc-q4cii": {
+   "reason": "2023 Ordinary Section C: preserve full source context, guidance, paired choices and exact grading steps on the existing identity.",
+   "set": {
+    "questionText": "Explain how the family supports the physical and emotional development of children.",
+    "stem": "‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)",
+    "totalMarks": 15,
+    "rows": [
+     {
+      "id": "support",
+      "kind": "criterion",
+      "verbatim": "physical and emotional development",
+      "marks": 15,
+      "permittedMarks": [
+       0,
+       3,
+       5,
+       6,
+       8,
+       9,
+       10,
+       11,
+       13,
+       15
+      ],
+      "contextNote": "Explain physical and emotional support, in three points graded 5:3:0. Both headings are required; the scheme does not reserve an exact number for each. Published guidance: physical: provides basic needs e.g. food, clothes, shelter; protects vulnerable members by providing a safe environment; etc. emotional: provides a safe and secure place to discuss feelings; help children to develop good self- esteem; assists children in forming healthy relationships; parents are role models; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ],
+    "tariffModel": {
+     "kind": "fixed",
+     "notation": "3 points × 5 (5:3:0); address physical and emotional development"
+    },
+    "sourceMaterial": {
+     "kind": "source-question",
+     "label": "OFFICIAL QUESTION",
+     "title": "Source and question",
+     "pages": [
+      8
+     ],
+     "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+     "presentationNote": "Open the original examination page to review this task in context."
+    },
+    "notes": "Full paper and scheme source review, including every required heading and published partial grade. See he_review_2023_ol_section_c.py."
+   }
   }
  },
  "english": {

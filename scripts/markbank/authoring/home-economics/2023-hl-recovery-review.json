@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "subjectId": "home-economics",
   "sitting": "2023-higher-English-main",
-  "status": "missing-task-recovery-reviewed; full-existing-card-boundary-audit-pending",
+  "status": "main-sitting-source-review-complete; browser-QA-pending",
   "sources": [
     {
       "path": "examiner-reports/home-economics/papers/2023-hl-014-paper.pdf",
@@ -89,10 +89,9 @@
     "irishEditions": "Deferred. No Irish source text or source anchors changed."
   },
   "remainingReview": [
-    "Audit all existing 2023 cards for separately practicable boundaries and exact graded scoring; zero census gaps is not independent completion.",
-    "Existing iron-chart source is attached as a whole question page; assess cropped chart presentation during the card-quality pass.",
-    "No claim is made about separate Food Studies coursework coverage.",
-    "Browser QA remains pending because the native browser connection is unavailable."
+    "Browser QA pending due unavailable native connection.",
+    "Published English deferred sittings and other main years remain in the subject loop.",
+    "Separate Food Studies coursework is outside this written-examination batch."
   ],
   "validation": {
     "coreVitest": "263 passed across recovery, preservation, curriculum, deck and vault-anchor suites",
@@ -118,5 +117,11 @@
     "coverageBaseline": "Unchanged; the subject is still incomplete.",
     "separateExistingFailure": "The broader finalStudyclixExamTopics Mathematics test expects 1632 mappings; the pre-existing reviewed/deferred Maths runtime exposes 2091. Home Economics-specific checks pass; Maths data was not changed.",
     "productionBuild": "passed"
-  }
+  },
+  "subsequentReviewRecords": [
+    "section-a-2023-hl-review.json",
+    "section-b-q1-2023-hl-review.json",
+    "section-b-rest-2023-hl-review.json",
+    "section-c-2023-hl-review.json"
+  ]
 }

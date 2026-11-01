@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "subjectId": "home-economics",
   "sitting": "2023-ordinary-English-main",
-  "status": "missing-task-recovery-reviewed; full-existing-card-boundary-and-grading-audit-in-progress",
+  "status": "main-sitting-source-review-complete; browser-QA-pending",
   "sources": [
     {
       "path": "examiner-reports/home-economics/papers/2023-ol-014-paper.pdf",
@@ -129,9 +129,13 @@
     "productionBuild": "passed"
   },
   "remainingReview": [
-    "Review all existing Ordinary cards against every published grading step and response boundary.",
-    "Already identified separately priced iron-source and family-conflict-resolution tasks need their own cards.",
-    "Review published English deferred sittings, then remaining main sittings.",
-    "Separate Food Studies coursework has not been carded by this written-examination batch."
+    "Browser QA pending due unavailable native connection.",
+    "Published English deferred sittings and other main years remain in the subject loop.",
+    "Separate Food Studies coursework is outside this written-examination batch."
+  ],
+  "subsequentReviewRecords": [
+    "section-a-2023-ol-review.json",
+    "section-b-2023-ol-review.json",
+    "section-c-2023-ol-review.json"
   ]
 }
