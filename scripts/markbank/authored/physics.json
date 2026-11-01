@@ -113961,5 +113961,3037 @@
   "level": "higher",
   "figureKey": "physics-2011-hl-q12-atoms-solution",
   "questionFigureKey": "physics-2011-hl-q12-atoms-question"
+ },
+ {
+  "id": "phys-2011-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1i",
+  "section": "A",
+  "questionRef": "2011 OL Q1(i)",
+  "stem": "The following is an extract from a student’s report of an experiment to verify the principle of conservation of momentum. “I arranged the apparatus. I then measured the mass of each trolley. During the experiment I took further measurements to determine the velocities of the trolleys. I used my measurements to verify the principle of conservation of momentum.”",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "2 trolleys / 2 riders / runway / air-track / timer: photo- gates (and timer)// tickertape (and timer) /other valid variation / detail e.g. means of measuring mass/ distance",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "2 trolleys / 2 riders",
+      "runway / air-track",
+      "timer: photo- gates (and timer)// tickertape (and timer) /other valid variation",
+      "detail e.g. means of measuring mass/ distance"
+     ]
+    },
+    "contextNote": "Three correctly drawn and labelled components, 3 each. A motion sensor/data logger can earn 6 for measuring velocity; use the matching apparatus route. Deduct 2 if there are no labels."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q1-apparatus-solution"
+ },
+ {
+  "id": "phys-2011-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1ii",
+  "section": "A",
+  "questionRef": "2011 OL Q1(ii)",
+  "stem": "The following is an extract from a student’s report of an experiment to verify the principle of conservation of momentum. “I arranged the apparatus. I then measured the mass of each trolley. During the experiment I took further measurements to determine the velocities of the trolleys. I used my measurements to verify the principle of conservation of momentum.”",
+  "questionText": "How did the student measure the mass of a trolley?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "used (electronic) balance / (weighing) scales / weighed them",
+    "marks": 6,
+    "contextNote": "Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q1-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "1iii",
+  "section": "A",
+  "questionRef": "2011 OL Q1(iii)",
+  "stem": "The following is an extract from a student’s report of an experiment to verify the principle of conservation of momentum. “I arranged the apparatus. I then measured the mass of each trolley. During the experiment I took further measurements to determine the velocities of the trolleys. I used my measurements to verify the principle of conservation of momentum.”",
+  "questionText": "How did the student determine the velocity of a moving trolley?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(velocity=) distance/(time) / s/t",
+    "marks": 12,
+    "contextNote": "Measure a distance and its corresponding elapsed time, then divide distance by time. The source gives 12 for the complete method, 6 for two method elements and 3 for a partial answer; a motion sensor/data logger reference earns at least 6."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q1-velocity-solution"
+ },
+ {
+  "id": "phys-2011-ol-q1-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1iv",
+  "section": "A",
+  "questionRef": "2011 OL Q1(iv)",
+  "stem": "The following is an extract from a student’s report of an experiment to verify the principle of conservation of momentum. “I arranged the apparatus. I then measured the mass of each trolley. During the experiment I took further measurements to determine the velocities of the trolleys. I used my measurements to verify the principle of conservation of momentum.”",
+  "questionText": "How was the momentum of a trolley determined?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mv",
+    "marks": 6,
+    "contextNote": "Momentum = mass × velocity. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q1-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "1v",
+  "section": "A",
+  "questionRef": "2011 OL Q1(v)",
+  "stem": "The following is an extract from a student’s report of an experiment to verify the principle of conservation of momentum. “I arranged the apparatus. I then measured the mass of each trolley. During the experiment I took further measurements to determine the velocities of the trolleys. I used my measurements to verify the principle of conservation of momentum.”",
+  "questionText": "How did the student verify the principle of conservation of momentum?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(upon repeating the experiment a number of times) the value for momentum before and after was always the same (within the limits of the experimental error) // m₁ u₁ + m₂u₂ = m₁ v₁ + m₂v₂ / m₁ u = (m₁ + m₂)v",
+    "marks": 7,
+    "contextNote": "Compare total momentum before and after the collision; repeat to check agreement within experimental uncertainty. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2i",
+  "section": "A",
+  "questionRef": "2011 OL Q2(i)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "calorimeter (containing water) / thermometer (in water) / temperature sensor / steam source / detail e.g. insulation, steam delivery tube, stirrer, etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "calorimeter (containing water)",
+      "thermometer (in water) / temperature sensor",
+      "steam source",
+      "detail e.g. insulation, steam delivery tube, stirrer, etc."
+     ]
+    },
+    "contextNote": "Any three apparatus components, 3 each. Deduct 2 for no labels."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-data"
+ },
+ {
+  "id": "phys-2011-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2ii",
+  "section": "A",
+  "questionRef": "2011 OL Q2(ii)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "What was the rise in temperature of the water in the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(19 −10 = ) 9 (°C)",
+    "marks": 6,
+    "contextNote": "Final minus initial temperature: 19 − 10 = 9 °C. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-data"
+ },
+ {
+  "id": "phys-2011-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iii",
+  "section": "A",
+  "questionRef": "2011 OL Q2(iii)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "Describe how the mass of the cold water was found.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(mass of calorimeter and cold water) − (mass of calorimeter)",
+    "marks": 7,
+    "contextNote": "Weigh the filled and empty calorimeter and subtract. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-data"
+ },
+ {
+  "id": "phys-2011-ol-q2-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2iv",
+  "section": "A",
+  "questionRef": "2011 OL Q2(iv)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "How was the steam dried?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "steam trap / delivery tube sloping up",
+    "marks": 6,
+    "contextNote": "Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-data"
+ },
+ {
+  "id": "phys-2011-ol-q2-v-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2va",
+  "section": "A",
+  "questionRef": "2011 OL Q2(v)(a)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. Calculate: (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "the heat gained by the water and the calorimeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "2797 (J)",
+    "marks": 6,
+    "contextNote": "Water: 0.0675 × 4180 × 9 = 2539.4 J; calorimeter: 0.0734 × 390 × 9 = 257.6 J; sum ≈2797 J. Each correct contribution earns 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-calculation-solution",
+  "questionFigureKey": "physics-2011-ol-q2-a-question"
+ },
+ {
+  "id": "phys-2011-ol-q2-v-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2vb",
+  "section": "A",
+  "questionRef": "2011 OL Q2(v)(b)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. Calculate: (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "the heat lost by the condensed steam",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( mcs cw Δθcs = (0.00103)(4180)(81) =) 348.7 (J)",
+    "marks": 3,
+    "contextNote": "Condensed water cools from 100 to 19 °C, a fall of 81 °C; 1.03 g = 0.00103 kg."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-calculation-solution",
+  "questionFigureKey": "physics-2011-ol-q2-b-question"
+ },
+ {
+  "id": "phys-2011-ol-q2-v-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "2vc",
+  "section": "A",
+  "questionRef": "2011 OL Q2(v)(c)",
+  "stem": "During an experiment to measure the specific latent heat of vaporisation of water, cold water was placed in an insulated copper calorimeter. Dry steam was passed into the water causing a rise in temperature of the water and the calorimeter. The following data were recorded. Calculate: (specific heat capacity of copper = 390 J Kg⁻¹ K⁻¹ ; specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "the latent heat of vaporisation of water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "lv = 2.37 ×10⁶ (J kg⁻¹)",
+    "marks": 3,
+    "contextNote": "Subtract the condensed-water cooling contribution: 2797 − 348.7 ≈2448 J. Divide by 0.00103 kg to get the specific latent heat ≈2.37 ×10⁶ J/kg. The source also accepts the intermediate latent heat 2448 J for this 3-mark part."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q2-calculation-solution",
+  "questionFigureKey": "physics-2011-ol-q2-c-question"
+ },
+ {
+  "id": "phys-2011-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3i",
+  "section": "A",
+  "questionRef": "2011 OL Q3(i)",
+  "stem": "You carried out an experiment to measure the speed of sound in air by measuring the frequency and wavelength of a sound wave.",
+  "questionText": "Draw a labelled diagram of the apparatus that you used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "frequency source e.g. tuning fork / signal generator",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tube, resonance, interference",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "detail e.g. means of altering length",
+    "marks": 3,
+    "contextNote": "Deduct 2 for no labels. Valid alternative apparatus accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3ii",
+  "section": "A",
+  "questionRef": "2011 OL Q3(ii)",
+  "stem": "You carried out an experiment to measure the speed of sound in air by measuring the frequency and wavelength of a sound wave.",
+  "questionText": "How did you find the frequency of the sound wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(read it) from the tuning fork / signal generator // used tuning forks of known frequency",
+    "marks": 6,
+    "contextNote": "Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3iii",
+  "section": "A",
+  "questionRef": "2011 OL Q3(iii)",
+  "stem": "You carried out an experiment to measure the speed of sound in air by measuring the frequency and wavelength of a sound wave.",
+  "questionText": "How was the wavelength of the sound wave measured?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "equation λ = 4(l + (0.3d)) // λ = 2(l₂ − l₁)",
+    "marks": 9,
+    "contextNote": "Either measure resonant air-column length l and tube diameter d, then use the end correction; or measure two successive resonance lengths l₁ and l₂, then λ = 2(l₂ − l₁). Complete method: 9; two measurements/resonance: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q3-iii-solution"
+ },
+ {
+  "id": "phys-2011-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3iv",
+  "section": "A",
+  "questionRef": "2011 OL Q3(iv)",
+  "stem": "You carried out an experiment to measure the speed of sound in air by measuring the frequency and wavelength of a sound wave.",
+  "questionText": "How did you use the measurements to calculate the speed of the sound wave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c=f λ // c = 4f (l+(0.3d)) // c = 2f (l₂ − l₁)",
+    "marks": 12,
+    "contextNote": "Use the measured frequency and wavelength in c = fλ. Full calculation: 12; substituting both measured values: 9; partial answer: 3. These are alternative complete methods, not additive answers."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q3-iv-solution"
+ },
+ {
+  "id": "phys-2011-ol-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "3v",
+  "section": "A",
+  "questionRef": "2011 OL Q3(v)",
+  "stem": "You carried out an experiment to measure the speed of sound in air by measuring the frequency and wavelength of a sound wave.",
+  "questionText": "Why should you repeat the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "greater accuracy",
+    "marks": 4,
+    "contextNote": "Averaging/reducing random variation supports the improvement. Partial answer: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4i",
+  "section": "A",
+  "questionRef": "2011 OL Q4(i)",
+  "stem": "The diagram shows a circuit used to investigate the variation of current with potential difference for a filament lamp.",
+  "questionText": "Name the instrument X. What does it measure?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "voltmeter/multimeter measures voltage",
+    "marks": 4,
+    "contextNote": "Instrument and measured quantity together: 4; one correct component: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q4-apparatus",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "voltmeter/multimeter measures voltage",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "rheostat / (variable) resistor / potential divider / potentiometer",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4ii",
+  "section": "A",
+  "questionRef": "2011 OL Q4(ii)",
+  "stem": "The diagram shows a circuit used to investigate the variation of current with potential difference for a filament lamp.",
+  "questionText": "Name the component Y. What does it do?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rheostat / (variable) resistor / potential divider / potentiometer",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "change in one of: resistance, voltage, potential, current, power, / answer consistent with named apparatus",
+    "marks": 3,
+    "contextNote": "Name and function must match; a resistor limiting current is also accepted for 6."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q4-apparatus",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "voltmeter/multimeter measures voltage",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Y",
+    "meaning": "rheostat / (variable) resistor / potential divider / potentiometer",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2011-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iii",
+  "section": "A",
+  "questionRef": "2011 OL Q4(iii)",
+  "stem": "The diagram shows a circuit used to investigate the variation of current with potential difference for a filament lamp.",
+  "questionText": "Draw a graph, on graph paper, of the current against the potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label one axis correctly- name/symbol/unit acceptable",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot four points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "plot another three points correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "plot (smooth) curve",
+    "marks": 3,
+    "contextNote": "Use all seven given pairs. The original sample graph omits the 6 V point and its red guides are not the requested 5.5 V reading. No graph paper: maximum 9."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q4-graph-solution",
+  "questionFigureKey": "physics-2011-ol-q4-iii-question"
+ },
+ {
+  "id": "phys-2011-ol-q4-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4iv",
+  "section": "A",
+  "questionRef": "2011 OL Q4(iv)",
+  "stem": "The diagram shows a circuit used to investigate the variation of current with potential difference for a filament lamp.",
+  "questionText": "What does your graph tell you about the variation of current with potential difference for a filament lamp?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current rises with voltage (rise) // non linear / not proportional // non ohmic",
+    "marks": 9,
+    "contextNote": "The current rises nonlinearly; it is not proportional to potential difference. Incomplete explanation consistent with the graph: 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q4-graph-solution",
+  "questionFigureKey": "physics-2011-ol-q4-iv-question"
+ },
+ {
+  "id": "phys-2011-ol-q4-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "4v",
+  "section": "A",
+  "questionRef": "2011 OL Q4(v)",
+  "stem": "The diagram shows a circuit used to investigate the variation of current with potential difference for a filament lamp.",
+  "questionText": "Using your graph, calculate the resistance of the lamp when the potential difference across the lamp is 5.5 V.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( R = 5.5 ÷ 2.9 = ) 1.9 ± 0.2 (Ω)",
+    "marks": 9,
+    "contextNote": "Read I ≈2.9 A at V = 5.5 V; R = V/I ≈1.9 Ω (accepted ±0.2 Ω). Correct formula or current: 6; evidence of graph use/partial formula: 3. Do not use the sample graph’s misplaced red guides."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q4-graph-solution",
+  "questionFigureKey": "physics-2011-ol-q4-v-question"
+ },
+ {
+  "id": "phys-2011-ol-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2011 OL Q5(a)",
+  "questionText": "What is friction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force that resists motion // force between two bodies in contact // example",
+    "marks": 7,
+    "contextNote": "Friction opposes relative motion or its tendency between surfaces. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2011 OL Q5(b)",
+  "questionText": "What is the relationship between G, the gravitational constant and g, the acceleration due to gravity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "g= GM/R²",
+    "marks": 7,
+    "contextNote": "M is the attracting body’s mass; R is distance from its centre. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q5-gravity-solution"
+ },
+ {
+  "id": "phys-2011-ol-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2011 OL Q5(c)",
+  "questionText": "A crowbar is an example of a lever. Give another example of a lever.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "any other lever e.g. door handle, scissors, wheelbarrow, tongs etc",
+    "marks": 7,
+    "contextNote": "One correct example other than the crowbar. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q5-crowbar"
+ },
+ {
+  "id": "phys-2011-ol-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2011 OL Q5(d)",
+  "questionText": "Which one of the following terms is associated with a wave motion? half-life interference induction doping",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "interference",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2011 OL Q5(e)",
+  "questionText": "Name the three ways by which heat can travel from one place to another.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conduction, convection, radiation",
+    "marks": 7,
+    "contextNote": "All three methods earn 7; the historical scheme gives 4 for one correct method/partial answer. This is one collective tariff, not three independent awards."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2011 OL Q5(f)",
+  "questionText": "Give two uses of a concave mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "headlights / makeup / shaving mirrors",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "headlights",
+      "makeup",
+      "shaving mirrors"
+     ],
+     "perOptionSteps": [
+      6,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "First correct use: 6; second: 1. The historical scheme gives 4 for a partial answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2011 OL Q5(g)",
+  "questionText": "What is the colour of the earth cable in a standard 3-pin plug?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "yellow & green",
+    "marks": 7,
+    "contextNote": "Both colours are needed for full marks. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2011 OL Q5(h)",
+  "questionText": "How does a miniature circuit breaker (MCB) improve safety in a domestic circuit?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "prevent too high current flowing // turns off current",
+    "marks": 7,
+    "contextNote": "It interrupts the circuit when current is excessive. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2011 OL Q5(i)",
+  "questionText": "Give a use for an electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "test for charge, identify charge, measure potential, etc",
+    "marks": 7,
+    "contextNote": "One correct use. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q5-electroscope"
+ },
+ {
+  "id": "phys-2011-ol-q5-j",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "5j",
+  "section": "B",
+  "questionRef": "2011 OL Q5(j)",
+  "questionText": "Give a disadvantage of a named renewable source of energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "biomass/ tide /sun / wind is not always there",
+    "marks": 7,
+    "contextNote": "Name a source and a disadvantage that applies to it; for example, wind output varies with wind conditions. The list gives examples, not a requirement to answer every source. Other valid source/disadvantage pairs accepted; naming a source alone: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q6-newton",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newton",
+  "section": "B",
+  "questionRef": "2011 OL Q6 — Newton’s first law",
+  "questionText": "State Newton’s first law of motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A body will remain at rest or moving at a constant velocity unless acted on by an (external) force",
+    "marks": 6,
+    "contextNote": "More precisely, a nonzero resultant external force changes the velocity. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6i",
+  "section": "B",
+  "questionRef": "2011 OL Q6(i)",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s.",
+  "questionText": "Draw a diagram of the forces acting on the car before it hit the tree.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "gravity /weight / friction / (normal) reaction / engine (force) / air resistance / brakes",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "gravity /weight",
+      "friction",
+      "(normal) reaction",
+      "engine (force)",
+      "air resistance",
+      "brakes"
+     ]
+    },
+    "contextNote": "Any three correctly named forces with directions, 3 each: 2 for the force and 1 for its direction. Weight acts down, normal reaction up; driving force forward and resistive forces backward."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-i-solution",
+  "questionFigureKey": "physics-2011-ol-q6-i-question"
+ },
+ {
+  "id": "phys-2011-ol-q6-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "6ii",
+  "section": "B",
+  "questionRef": "2011 OL Q6(ii)",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s.",
+  "questionText": "Calculate the acceleration of the car during the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a= (v−u)/t = (0−15)/0.4 =−)37.5(ms⁻²)",
+    "marks": 9,
+    "contextNote": "a = (0 − 15)/0.4 = −37.5 m s⁻² when forward is positive. The deceleration magnitude is 37.5 m s⁻². Correct formula: 6; partial method: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-ii-solution",
+  "questionFigureKey": "physics-2011-ol-q6-ii-question"
+ },
+ {
+  "id": "phys-2011-ol-q6-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "6iii",
+  "section": "B",
+  "questionRef": "2011 OL Q6(iii)",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s.",
+  "questionText": "Calculate the net force acting on the car during the collision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(F=1400 × 37.5 = ) 52500 (N) // answer consistent with (ii)",
+    "marks": 6,
+    "contextNote": "Magnitude 52500 N, opposite the original motion. Signed force is −52500 N for forward-positive coordinates. Correct formula or partial answer: 3; allow consistent follow-through."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-car"
+ },
+ {
+  "id": "phys-2011-ol-q6-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "6iv",
+  "section": "B",
+  "questionRef": "2011 OL Q6(iv)",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s.",
+  "questionText": "Calculate the kinetic energy of the moving car before it struck the tree.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(E = 0.5 × 1 400 × 15² =) 157500 (J))",
+    "marks": 6,
+    "contextNote": "E = ½mv² = 157500 J. Correct formula: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-car"
+ },
+ {
+  "id": "phys-2011-ol-q6-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "6v",
+  "section": "B",
+  "questionRef": "2011 OL Q6(v)",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s.",
+  "questionText": "What happened to the kinetic energy of the moving car?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "converted to heat / converted to sound / converted to potential energy / used to deform car / tree",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "converted to heat",
+      "converted to sound",
+      "converted to potential energy",
+      "used to deform car / tree"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Two valid energy destinations, first 6 then 3. Partial answer: 3. Avoid counting deformation and its stored energy twice as the same destination."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-car"
+ },
+ {
+  "id": "phys-2011-ol-q6-vi-injury",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "injury",
+  "section": "B",
+  "questionRef": "2011 OL Q6(vi) — Passenger motion",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s. A back seat passenger could injure other occupants during a collision.",
+  "questionText": "Explain, with reference to Newton’s laws of motion, how this could occur.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "states or implies use of Newton’s law(s) in explanation",
+    "marks": 4,
+    "contextNote": "When the car stops, an unrestrained passenger continues moving forward through inertia and can strike another occupant. Explain using Newton’s first law; partial explanation: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-car"
+ },
+ {
+  "id": "phys-2011-ol-q6-vi-belt",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "belt",
+  "section": "B",
+  "questionRef": "2011 OL Q6(vi) — Reducing passenger injury",
+  "stem": "A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹ when it struck a tree and came to a complete stop in 0.4 s. A back seat passenger could injure other occupants during a collision.",
+  "questionText": "How is this risk of injury minimised?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "by wearing a seat belt.",
+    "marks": 7,
+    "contextNote": "A seat belt restrains the passenger during the stop."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q6-car"
+ },
+ {
+  "id": "phys-2011-ol-q7-i-reflection",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "reflection",
+  "section": "B",
+  "questionRef": "2011 OL Q7(i) — Reflection",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "reflection is the bouncing of a wave off an obstacle / mirror // correct diagram",
+    "marks": 6,
+    "contextNote": "Explain the named term. A correct diagram is accepted; partial answer: 3. The scheme separately prices each definition at 6."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2011-ol-q7-terms-question"
+ },
+ {
+  "id": "phys-2011-ol-q7-i-refraction",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refraction",
+  "section": "B",
+  "questionRef": "2011 OL Q7(i) — Refraction",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "refraction is the bending of a wave when it enters a different substance // correct diagram",
+    "marks": 6,
+    "contextNote": "Explain the named term. A correct diagram is accepted; partial answer: 3. The scheme separately prices each definition at 6."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2011-ol-q7-terms-question"
+ },
+ {
+  "id": "phys-2011-ol-q7-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7ii",
+  "section": "B",
+  "questionRef": "2011 OL Q7(ii)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "Give a practical application of the reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mirrors / optic fibres / binoculars, etc",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q7-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7iii",
+  "section": "B",
+  "questionRef": "2011 OL Q7(iii)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "State the laws of reflection of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "angle of incidence is equal to the angle of reflection / incident ray, the normal, and the reflected ray are coplanar",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "angle of incidence is equal to the angle of reflection",
+      "incident ray, the normal, and the reflected ray are coplanar"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both laws: 9; one: 6; partial answer: 3. This is a two-of-two checklist, not a choice to omit a required law."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q7-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7iv",
+  "section": "B",
+  "questionRef": "2011 OL Q7(iv)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "Explain, with the aid of a diagram, how total internal reflection can occur.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct diagram and explanation",
+    "marks": 9,
+    "contextNote": "Light travels from higher to lower refractive index with incidence above the critical angle; it is reflected back into the first medium. Complete explanation and diagram: 9; correct explanation without a diagram or the relevant single source diagram: 6; partial: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q7-tir-solution"
+ },
+ {
+  "id": "phys-2011-ol-q7-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7v",
+  "section": "B",
+  "questionRef": "2011 OL Q7(v)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air.",
+  "questionText": "What is meant by the ‘critical angle’ in total internal reflection?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the angle of incidence above which total internal reflection occurs / the angle of incidence where the angle of refraction is 90°",
+    "marks": 6,
+    "contextNote": "Measured in the higher-refractive-index medium. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q7-tir-solution"
+ },
+ {
+  "id": "phys-2011-ol-q7-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7vi",
+  "section": "B",
+  "questionRef": "2011 OL Q7(vi)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air. The photo shows an optical fibre which is used for the transmission of data using light waves.",
+  "questionText": "Draw a diagram to show how light waves travel along an optical fibre.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct diagram to include fibre, indication of two media, multiple reflections",
+    "marks": 9,
+    "contextNote": "Show repeated total internal reflections at the core boundary. One omission: 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q7-fibre-solution",
+  "questionFigureKey": "physics-2011-ol-q7-fibre-question"
+ },
+ {
+  "id": "phys-2011-ol-q7-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7vii",
+  "section": "B",
+  "questionRef": "2011 OL Q7(vii)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air. The photo shows an optical fibre which is used for the transmission of data using light waves.",
+  "questionText": "Give two advantages of using optical fibres instead of copper wires when transmitting data.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cheaper / can carry more signals / faster / less power consumption",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "cheaper",
+      "can carry more signals",
+      "faster",
+      "less power consumption"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "openList": true,
+    "contextNote": "Two distinct advantages, first 3 then 2. “Faster” here concerns data transmission capacity, not a claim that light travels faster in glass than in vacuum."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q7-fibre"
+ },
+ {
+  "id": "phys-2011-ol-q7-viii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "7viii",
+  "section": "B",
+  "questionRef": "2011 OL Q7(viii)",
+  "stem": "Light rays can undergo reflection and refraction. Both of these can occur when light is travelling from a denser medium, such as glass, to a less dense medium, such as air. The photo shows an optical fibre which is used for the transmission of data using light waves.",
+  "questionText": "Optical fibres are also used in medicine. Give an example of their use in medicine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "endoscope / to look inside body /( keyhole) surgery , etc",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q7-fibre"
+ },
+ {
+  "id": "phys-2011-ol-q8-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8ai",
+  "section": "B",
+  "questionRef": "2011 OL Q8(a)(i)",
+  "questionText": "What is meant by a thermometric property?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a property that changes with temperature /heat (change)",
+    "marks": 6,
+    "contextNote": "A measurable property that varies with temperature. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q8-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8aii",
+  "section": "B",
+  "questionRef": "2011 OL Q8(a)(ii)",
+  "questionText": "Name two different thermometric properties.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "length of mercury column / colour / E / V / R",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "length of mercury column",
+      "colour",
+      "E",
+      "V",
+      "R"
+     ],
+     "perOptionSteps": [
+      5,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two properties: first 5, second 1. Examples include liquid-column length, colour, thermocouple e.m.f. E, volume V and resistance R. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q8-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8aiii",
+  "section": "B",
+  "questionRef": "2011 OL Q8(a)(iii)",
+  "questionText": "Name two different thermometers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "mercury / alcohol / thermocouple/thermopile / pyrometer / resistance / constant volume gas / digital thermometer",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "mercury",
+      "alcohol",
+      "thermocouple/thermopile",
+      "pyrometer",
+      "resistance",
+      "constant volume gas",
+      "digital thermometer"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Two different thermometer types, 2 each."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q8-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8aiv",
+  "section": "B",
+  "questionRef": "2011 OL Q8(a)(iv)",
+  "questionText": "Describe how to calibrate a thermometer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: container of water, heat source, un-calibrated thermometer calibrated thermometer, marker",
+    "marks": 6,
+    "contextNote": "Any three suitable apparatus pieces earn 6; one earns 3. The source does not assign 2 marks to each item."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: place the thermometers in water, heat to different temperatures",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "and mark / plot calibration curve",
+    "marks": 3,
+    "contextNote": "Compare the uncalibrated thermometer with the calibrated thermometer at several temperatures. Diagrams and valid alternative methods accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q8-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8av",
+  "section": "B",
+  "questionRef": "2011 OL Q8(a)(v)",
+  "questionText": "Why is there a need for a standard thermometer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "because different thermometric properties give different results // thermometers respond differently // to ensure a consistent measure // for calibration, etc.",
+    "marks": 6,
+    "contextNote": "A standard gives a consistent temperature reference because thermometric properties respond differently. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q8-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8bi",
+  "section": "B",
+  "questionRef": "2011 OL Q8(b)(i)",
+  "stem": "An electric kettle is filled with 500 g of water and is initially at a temperature of 15 °C. The kettle has a power rating of 2 kW. (specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "Calculate the energy required to raise the temperature of the water to 100 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1.78 × 10⁵(J)",
+    "marks": 9,
+    "contextNote": "Q = mcΔT = 0.500 × 4180 × (100 − 15) = 177650 J ≈1.78 ×10⁵ J. At least two quantities substituted correctly: 6; one: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q8-kettle",
+  "questionFigureKey": "physics-2011-ol-q8-energy-question"
+ },
+ {
+  "id": "phys-2011-ol-q8-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8bii",
+  "section": "B",
+  "questionRef": "2011 OL Q8(b)(ii)",
+  "stem": "An electric kettle is filled with 500 g of water and is initially at a temperature of 15 °C. The kettle has a power rating of 2 kW. (specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "How much energy is supplied by the kettle every second?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "2000 (J)",
+    "marks": 3,
+    "contextNote": "2 kW = 2000 J each second."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q8-kettle"
+ },
+ {
+  "id": "phys-2011-ol-q8-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8biii",
+  "section": "B",
+  "questionRef": "2011 OL Q8(b)(iii)",
+  "stem": "An electric kettle is filled with 500 g of water and is initially at a temperature of 15 °C. The kettle has a power rating of 2 kW. (specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "How long will it take the kettle to heat the water to 100 °C?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "89 (s) // answer consistent with (i) and (ii)",
+    "marks": 6,
+    "contextNote": "t = Q/P = 177650/2000 ≈88.8 s, assuming all the supplied heat warms the water. Formula/partial method: 3; allow consistent follow-through."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q8-kettle"
+ },
+ {
+  "id": "phys-2011-ol-q8-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "8biv",
+  "section": "B",
+  "questionRef": "2011 OL Q8(b)(iv)",
+  "stem": "An electric kettle is filled with 500 g of water and is initially at a temperature of 15 °C. The kettle has a power rating of 2 kW. (specific heat capacity of water = 4180 J Kg⁻¹ K⁻¹)",
+  "questionText": "Name a suitable material for the handle of the kettle. Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "plastic / wood",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "good insulators / will not burn hand",
+    "marks": 2,
+    "contextNote": "The reason must match the chosen material’s low thermal conductivity."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q8-kettle"
+ },
+ {
+  "id": "phys-2011-ol-q9-a-faraday",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "faraday",
+  "section": "B",
+  "questionRef": "2011 OL Q9(a) — Faraday’s law",
+  "questionText": "State Faraday’s law of electromagnetic induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "induced emf",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "is directly proportional to",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "rate of change of magnetic flux",
+    "marks": 3,
+    "contextNote": "Induced e.m.f. is proportional to the rate of change of magnetic flux linkage. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q9-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9ai",
+  "section": "B",
+  "questionRef": "2011 OL Q9(a)(i)",
+  "stem": "A coil of wire is connected to a sensitive meter, as shown in the diagram.",
+  "questionText": "What is observed on the meter when the magnet is moved towards the coil?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "needle deflected / moves",
+    "marks": 6,
+    "contextNote": "Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-coil"
+ },
+ {
+  "id": "phys-2011-ol-q9-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9aii",
+  "section": "B",
+  "questionRef": "2011 OL Q9(a)(ii)",
+  "stem": "A coil of wire is connected to a sensitive meter, as shown in the diagram.",
+  "questionText": "What is observed on the meter when the magnet is stationary in the coil?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no movement of needle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-coil"
+ },
+ {
+  "id": "phys-2011-ol-q9-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9aiii",
+  "section": "B",
+  "questionRef": "2011 OL Q9(a)(iii)",
+  "stem": "A coil of wire is connected to a sensitive meter, as shown in the diagram. What is observed on the meter when the magnet is moved towards the coil? What is observed on the meter when the magnet is stationary in the coil?",
+  "questionText": "Explain these observations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emf",
+    "marks": 3,
+    "route": "emf"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "induced",
+    "marks": 3,
+    "route": "emf"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "when change in magnetic field",
+    "marks": 3,
+    "route": "emf"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "when current",
+    "marks": 3,
+    "route": "current"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "flows / induced",
+    "marks": 3,
+    "route": "current"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "needle moves",
+    "marks": 3,
+    "contextNote": "Choose one complete explanation route, 9 marks. A moving magnet changes magnetic flux through the coil and induces e.m.f./current; a stationary magnet does not.",
+    "route": "current"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-coil"
+ },
+ {
+  "id": "phys-2011-ol-q9-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9aiv",
+  "section": "B",
+  "questionRef": "2011 OL Q9(a)(iv)",
+  "stem": "A coil of wire is connected to a sensitive meter, as shown in the diagram.",
+  "questionText": "How would changing the speed of the magnet affect the observations?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "more deflection if faster / less deflection if slower",
+    "marks": 5,
+    "contextNote": "Faster motion changes flux more rapidly. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-coil"
+ },
+ {
+  "id": "phys-2011-ol-q9-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9bi",
+  "section": "B",
+  "questionRef": "2011 OL Q9(b)(i)",
+  "stem": "Transformers are used to step up or step down a.c. voltages.",
+  "questionText": "What is meant by a.c.?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "alternating",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "current",
+    "marks": 3,
+    "contextNote": "An electric current that changes direction at regular intervals is also accepted for 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q9-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9bii",
+  "section": "B",
+  "questionRef": "2011 OL Q9(b)(ii)",
+  "stem": "Transformers are used to step up or step down a.c. voltages.",
+  "questionText": "Draw a labelled diagram showing the structure of a transformer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(primary) coil",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(secondary) coil",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(soft iron) core",
+    "marks": 3,
+    "contextNote": "Three correctly positioned, labelled components. Deduct 2 for no labels."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-transformer-solution"
+ },
+ {
+  "id": "phys-2011-ol-q9-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "9biii",
+  "section": "B",
+  "questionRef": "2011 OL Q9(b)(iii)",
+  "stem": "Transformers are used to step up or step down a.c. voltages.",
+  "questionText": "The input coil of a transformer has 200 turns of wire and is connected to a 230 V a.c. supply. What is the voltage across the output coil, when it has 600 turns?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "690 (V)",
+    "marks": 9,
+    "contextNote": "Vs/Vp = Ns/Np, so Vs = 230 × 600/200 = 690 V. At least two correctly substituted quantities: 6; correct formula/partial method: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q9-voltage-solution"
+ },
+ {
+  "id": "phys-2011-ol-q10-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10i",
+  "section": "B",
+  "questionRef": "2011 OL Q10(i)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "What is radioactivity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "( the spontaneous) breakup of the nucleus /atom",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(with the) emission of radiation/ α / β / γ / energy",
+    "marks": 3,
+    "contextNote": "Spontaneous nuclear decay with emission of radiation. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10ii",
+  "section": "B",
+  "questionRef": "2011 OL Q10(ii)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "Name the other two types of radiation emitted by radioactive sources.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "beta / β / gamma / γ",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "beta / β",
+      "gamma / γ"
+     ],
+     "perOptionSteps": [
+      5,
+      1
+     ]
+    },
+    "contextNote": "Both beta and gamma are required: first 5, second 1. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10iii",
+  "section": "B",
+  "questionRef": "2011 OL Q10(iii)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "Describe an experiment to distinguish between the three types of radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "radioactive source (in lead container) / magnetic / electric field / photographic (plate)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "radioactive source (in lead container)",
+      "magnetic / electric field",
+      "photographic (plate)"
+     ]
+    },
+    "contextNote": "Two suitable apparatus components, 3 each."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure: place the radioactive source in the electric/magnetic field",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation: note three different marks on the photographic plate",
+    "marks": 3,
+    "contextNote": "Alpha and beta deflect in opposite directions; gamma is undeflected. Valid alternative methods, including absorption experiments, are accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10iv",
+  "section": "B",
+  "questionRef": "2011 OL Q10(iv)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "List three properties of one of these radiations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "nature / charge / ionising / range / mass",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "nature",
+      "charge",
+      "ionising",
+      "range",
+      "mass"
+     ]
+    },
+    "contextNote": "Choose one radiation and give any three matching properties, 3 each. Alpha: helium nucleus, +2e, strong ionisation, few cm in air, about 4 u. Beta-minus: electron, −e, moderate ionisation, few mm in aluminium, about 1/2000 u. Gamma: electromagnetic radiation, uncharged, weak ionisation, high penetration, zero rest mass. All three source rows are shown; do not mix properties of different radiations."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-properties-solution"
+ },
+ {
+  "id": "phys-2011-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10v",
+  "section": "B",
+  "questionRef": "2011 OL Q10(v)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer. The most stable isotope of radon has a half-life of 4 days.",
+  "questionText": "What are isotopes?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "atoms of the same elements / same number of protons",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with different mass numbers / different number of neutrons",
+    "marks": 3,
+    "contextNote": "Same proton number, different neutron number. Each printed pair gives alternative phrasings for one criterion."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10vi",
+  "section": "B",
+  "questionRef": "2011 OL Q10(vi)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "Why is it important to prevent radon gas entering your home?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "because it causes (lung) cancer / causes disease",
+    "marks": 5,
+    "contextNote": "The answer sought is the health risk stated in the passage. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10vii",
+  "section": "B",
+  "questionRef": "2011 OL Q10(vii)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer. The most stable isotope of radon has a half-life of 4 days.",
+  "questionText": "If no more radon gas entered your home, how long would it be until one eight of the radon gas was left?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "12 (days)",
+    "marks": 6,
+    "contextNote": "One eighth is (½)³: three half-lives ×4 days =12 days. Use the rounded half-life in this question. Partial method: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q10-viii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "10viii",
+  "section": "B",
+  "questionRef": "2011 OL Q10(viii)",
+  "stem": "Radon is a radioactive gas which emits alpha particles. Radon gas comes into houses through gaps in the floors. Exposure to radon gas can cause lung cancer.",
+  "questionText": "Give two uses of radioisotopes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "medical / industrial / agriculture / smoke detectors / energy source",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "medical",
+      "industrial",
+      "agriculture",
+      "smoke detectors",
+      "energy source"
+     ],
+     "perOptionSteps": [
+      5,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "Two distinct uses, first 5 then 1. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q10-radon"
+ },
+ {
+  "id": "phys-2011-ol-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2011 OL Q11(a)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "Who discovered the photoelectric effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hertz",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2011 OL Q11(b)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "Who explained the photoelectric effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Einstein",
+    "marks": 7,
+    "contextNote": "Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2011 OL Q11(c)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "What happens when light shines on certain metals?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "it transfers its energy to metal/ electrons // electrons are emitted",
+    "marks": 7,
+    "contextNote": "Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2011 OL Q11(d)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "Why is a metal a good conductor of electricity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrons are only loosely bound",
+    "marks": 7,
+    "contextNote": "Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2011 OL Q11(e)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "Why does your skin feel warm when light shines on it?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy transferred from the light/radiation",
+    "marks": 7,
+    "contextNote": "Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2011 OL Q11(f)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "In the photoelectric effect, what happens when the intensity of the light is increased?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "number of electrons released increases.",
+    "marks": 7,
+    "contextNote": "At a fixed frequency above the threshold, higher intensity releases more electrons; it does not increase their maximum kinetic energy. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2011 OL Q11(g)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "How can the speed of electrons emitted in the photoelectric effect be controlled?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change the frequency of the radiation",
+    "marks": 7,
+    "contextNote": "Change frequency: a higher frequency gives greater maximum kinetic energy above threshold. Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2011 OL Q11(h)",
+  "stem": "Einstein explained the photoelectric effect by using Planck’s quantum theory (E=hf). The German physicist Heinrich Hertz in 1887 was the first to discover that when light shines on certain metals, they emit electrons. Metals have the property that some of their electrons are only loosely bound within atoms, which is why they are such good conductors of electricity. When light strikes a metallic surface it transfers its energy to the metal, in the same way as when light shines on your skin, causing you to feel warmer. This transfer of energy from the light can agitate electrons in the metal, and some of the loosely bound electrons can be knocked off the surface of the metal. But the strange features of the photoelectric effect become apparent when one studies the more detailed properties of the released electrons. As the intensity of the light – its brightness – is increased the number of released electrons will also increase, but their speed stays the same. On the other hand, the speed of the released electrons will increase if the frequency of the light shining on the metal is increased.",
+  "questionText": "Give one application of the photoelectric effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "photocell, alarms, photocopiers, light meters, photodiodes, etc",
+    "marks": 7,
+    "contextNote": "Partial answer: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q11-passage"
+ },
+ {
+  "id": "phys-2011-ol-q12-a-boyle",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "boyle",
+  "section": "B",
+  "questionRef": "2011 OL Q12(a) — Boyle’s law",
+  "questionText": "State Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(for a fixed mass of gas kept at a constant temperature) the pressure is inversely proportional to the volume // PV = k (when T and m are fixed)",
+    "marks": 6,
+    "contextNote": "Include fixed mass and constant temperature. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-a-atmosphere",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "atmosphere",
+  "section": "B",
+  "questionRef": "2011 OL Q12(a) — Atmospheric pressure demonstration",
+  "questionText": "Describe an experiment to demonstrate that the atmosphere exerts a pressure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "apparatus: can (containing water) / procedure: boil water in can / seal / invert in cold water / observation/conclusion: can crushes / collapses",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "apparatus: can (containing water)",
+      "procedure: boil water in can",
+      "seal / invert in cold water",
+      "observation/conclusion: can crushes / collapses"
+     ]
+    },
+    "contextNote": "One complete four-step method, 3 marks per step. Use matching apparatus, procedure and observation; diagrams and other valid methods accepted.",
+    "route": "steam"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "can (of air) / pump / air out / observation/conclusion: can crushes / collapses",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "can (of air)",
+      "pump",
+      "air out",
+      "observation/conclusion: can crushes / collapses"
+     ]
+    },
+    "contextNote": "One complete four-step method, 3 marks per step. Use matching apparatus, procedure and observation; diagrams and other valid methods accepted.",
+    "route": "pump"
+   },
+   {
+    "id": "r3",
+    "kind": "anyN",
+    "verbatim": "glass of water / cardboard / lid / invert / lid supported",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "glass of water",
+      "cardboard / lid",
+      "invert",
+      "lid supported"
+     ]
+    },
+    "contextNote": "One complete four-step method, 3 marks per step. Use matching apparatus, procedure and observation; diagrams and other valid methods accepted.",
+    "route": "glass"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-pressure-solution"
+ },
+ {
+  "id": "phys-2011-ol-q12-a-volume",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "volume",
+  "section": "B",
+  "questionRef": "2011 OL Q12(a) — Released gas volume",
+  "stem": "Atmospheric pressure at the top of Mount Everest is very low at 3.0 × 10⁴ Pa, which is why climbers need oxygen tanks. A climber uses a 5.0 litre tank with an internal gas pressure of 4.2 × 10⁶ Pa to supply oxygen.",
+  "questionText": "What volume of gas will be available at the top of Mount Everest, when the gas is released from the tank?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(V=) 700 (litres)",
+    "marks": 10,
+    "contextNote": "At constant temperature, P₁V₁ = P₂V₂: V₂ = (4.2 ×10⁶ ×5.0)/(3.0 ×10⁴) =700 litres. At least two correctly substituted quantities: 7; correct law/partial method: 4."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-volume-solution",
+  "questionFigureKey": "physics-2011-ol-q12-volume-question"
+ },
+ {
+  "id": "phys-2011-ol-q12-b-characteristics",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "characteristics",
+  "section": "B",
+  "questionRef": "2011 OL Q12(b) — Musical-note characteristics",
+  "questionText": "Loudness, pitch and quality are characteristics of a musical note. Name the physical property of a sound wave on which each characteristic depends.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "loudness depends on amplitude / frequency / pitch depends on frequency / quality depends on overtones / harmonics",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "loudness depends on amplitude / frequency",
+      "pitch depends on frequency",
+      "quality depends on overtones / harmonics"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "All three named characteristics are required. First correct association: 6; each additional: 3. Loudness is principally associated here with amplitude; the historical scheme also accepts frequency because perceived loudness varies with frequency."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "12bi",
+  "section": "B",
+  "questionRef": "2011 OL Q12(b)(i)",
+  "stem": "A bat detector allows us to hear the sounds emitted by bats. The detector is needed as humans cannot hear the sounds emitted by bats as they are outside our frequency limits of audibility.",
+  "questionText": "What is meant by the frequency limits of audibility?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "are the lowest and highest frequencies which humans can hear // range of frequencies which we can hear // 20 − 20 000 Hz",
+    "marks": 6,
+    "contextNote": "The conventional range given here is about 20 Hz to 20 kHz; individual hearing ranges vary. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "12bii",
+  "section": "B",
+  "questionRef": "2011 OL Q12(b)(ii)",
+  "stem": "A bat detector allows us to hear the sounds emitted by bats. The detector is needed as humans cannot hear the sounds emitted by bats as they are outside our frequency limits of audibility.",
+  "questionText": "What name is given to a sound whose frequency is greater than our upper frequency limit of audibility?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ultrasonic",
+    "marks": 4,
+    "contextNote": "“Supersonic” concerns speed and is not the correct term; the source gives 2 for a partial answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "12biii",
+  "section": "B",
+  "questionRef": "2011 OL Q12(b)(iii)",
+  "stem": "A bat detector allows us to hear the sounds emitted by bats. The detector is needed as humans cannot hear the sounds emitted by bats as they are outside our frequency limits of audibility. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "A bat emitted a sound wave and detected its reflection from a wall 0.02 s later. Calculate the distance of the bat from the wall.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "3.4 (m)",
+    "marks": 6,
+    "contextNote": "The 0.02 s is a round trip: distance = vt/2 =340 ×0.02/2 =3.4 m. Correct method/partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-bat"
+ },
+ {
+  "id": "phys-2011-ol-q12-c-current",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "current",
+  "section": "B",
+  "questionRef": "2011 OL Q12(c) — Electric current and unit",
+  "questionText": "What is an electric current, and give its unit of measurement?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flow / movement",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "of charge / electrons",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "amp /A",
+    "marks": 3,
+    "contextNote": "Electric current is the rate of flow of charge; its SI unit is the ampere, A."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-c-effects",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "effects",
+  "section": "B",
+  "questionRef": "2011 OL Q12(c) — Effects of electric current",
+  "questionText": "State the three effects of an electric current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "magnetic, heating/lighting, chemical",
+    "marks": 4,
+    "contextNote": "The paper asks for all three effects. The historical scheme awards the full 4 for two correct effects and 2 for one; do not invent three separate tariffs."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-c-demonstration",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "demonstration",
+  "section": "B",
+  "questionRef": "2011 OL Q12(c) — Demonstrating an effect of current",
+  "stem": "State the three effects of an electric current.",
+  "questionText": "How would you demonstrate one of the effects?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus; e.g. filament bulb, battery, leads",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "procedure; e.g. connect up circuit and pass current through the bulb",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "observation / conclusion; e.g. the bulb lights / gets hot",
+    "marks": 3,
+    "contextNote": "This is the heating-effect example. A valid demonstration of the magnetic or chemical effect is also accepted using the same apparatus/procedure/observation structure. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2011-ol-q12-c-battery",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "battery",
+  "section": "B",
+  "questionRef": "2011 OL Q12(c) — Screwdriver current",
+  "stem": "An electric screwdriver has a power rating of 120 W when connected to its 24 V battery.",
+  "questionText": "Calculate the current supplied by the battery when the screwdriver is turned on.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(120= I(24)) = 5 (A)",
+    "marks": 6,
+    "contextNote": "P = IV, so I =120/24 =5 A. Correct formula/partial method: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-screwdriver"
+ },
+ {
+  "id": "phys-2011-ol-q12-d-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "12di",
+  "section": "B",
+  "questionRef": "2011 OL Q12(d)(i)",
+  "stem": "The diagram shows an arrangement used to investigate the structure of the atom. During the investigation, alpha-particles were fired at a thin sheet of gold foil in a vacuum.",
+  "questionText": "What are alpha-particles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "consist of two protons and two neutrons // helium (nucleus)",
+    "marks": 6,
+    "contextNote": "An alpha particle is a helium-4 nucleus, not a neutral helium atom. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-gold"
+ },
+ {
+  "id": "phys-2011-ol-q12-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "12dii",
+  "section": "B",
+  "questionRef": "2011 OL Q12(d)(ii)",
+  "stem": "The diagram shows an arrangement used to investigate the structure of the atom. During the investigation, alpha-particles were fired at a thin sheet of gold foil in a vacuum.",
+  "questionText": "What happened to the alpha-particles in the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "some deflected / some un-deviated / some reflected",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "some deflected",
+      "some un-deviated",
+      "some reflected"
+     ]
+    },
+    "contextNote": "Any two observations, 3 each. Most pass straight through; some deflect and a very small fraction scatter back."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-gold"
+ },
+ {
+  "id": "phys-2011-ol-q12-d-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "12diii",
+  "section": "B",
+  "questionRef": "2011 OL Q12(d)(iii)",
+  "stem": "The diagram shows an arrangement used to investigate the structure of the atom. During the investigation, alpha-particles were fired at a thin sheet of gold foil in a vacuum.",
+  "questionText": "What did the experiment reveal about the structure of the atom?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mainly empty space // (positive) nucleus at centre",
+    "marks": 6,
+    "contextNote": "The atom is mostly empty space with a small, positively charged nucleus. Either printed conclusion is accepted for 6; partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-gold"
+ },
+ {
+  "id": "phys-2011-ol-q12-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "12div",
+  "section": "B",
+  "questionRef": "2011 OL Q12(d)(iv)",
+  "stem": "The diagram shows an arrangement used to investigate the structure of the atom. During the investigation, alpha-particles were fired at a thin sheet of gold foil in a vacuum.",
+  "questionText": "Name the scientist who designed the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Rutherford",
+    "marks": 6,
+    "contextNote": "The historical scheme names Rutherford. Partial answer: 3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-gold"
+ },
+ {
+  "id": "phys-2011-ol-q12-d-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "12dv",
+  "section": "B",
+  "questionRef": "2011 OL Q12(d)(v)",
+  "stem": "The diagram shows an arrangement used to investigate the structure of the atom. During the investigation, alpha-particles were fired at a thin sheet of gold foil in a vacuum.",
+  "questionText": "Name a suitable detector of alpha-particles.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "GM tube, solid state detector, cloud chamber, ionisation tube, ZnS screen, gold leaf electroscope, photographic film, etc.",
+    "marks": 4,
+    "contextNote": "A detector must be suitable for alpha particles; a thin entrance window is required where applicable. Partial answer: 2."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2011_ol.py.",
+  "year": 2011,
+  "level": "ordinary",
+  "figureKey": "physics-2011-ol-q12-gold"
  }
 ]

@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2011-ol': [98, 98, 86, '4c550d82994eb92fa024c95a135f227ce760f66c4e1be964876efd1b256abaa6',
+    '189ada90ad67a87f023b0b62b109746b270eed4ef5e732d8a45f11d041a3d62f'],
   '2011-hl': [102, 102, 47, '512d1f598e4399dee6c2f95d8babee9dcca6beed4a7135e5397e89b6cd3f977f',
     '65abc80bf07669bec37f28d7aa111edaaf17d8cfeded8d0cbd872497daa7ddeb'],
   '2012-ol': [96, 96, 82, 'e7f46ff6afa24789dfaae192cd22f7aa966761a58a6b5cbb290ec9eda3f2a87e',
@@ -107,6 +109,39 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+  it('retains 2011 Ordinary data, signed calculations, open choices and full alternative methods', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2011-ol-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2011-ol-${suffix}`)!;
+    expect(cards).toHaveLength(98);
+    expect(cards.every(c => !/\(\d{1,2}\)$/.test(c.questionText))).toBe(true);
+    expect(['a', 'b', 'c'].map(x => card(`q2-v-${x}`).totalMarks)).toEqual([6, 3, 3]);
+    expect(card('q2-v-c').rows[0].contextNote).toContain('0.00103 kg');
+    expect(card('q4-iii').rows[3].contextNote).toContain('all seven given pairs');
+    expect(card('q4-v').rows[0].contextNote).toContain('5.5 V');
+    expect(cards.filter(c => c.id.startsWith('phys-2011-ol-q5-'))).toHaveLength(10);
+    for (const option of ['half-life', 'interference', 'induction', 'doping']) expect(card('q5-d').questionText).toContain(option);
+    expect(card('q5-f').rows[0]).toMatchObject({group: {claimMax: 2, perOptionSteps: [6, 1]}});
+    expect(card('q6-ii').stem).toContain('15 m s⁻¹');
+    expect(card('q6-ii').rows[0].verbatim).toContain('(0−15)/0.4');
+    expect(card('q6-vi-injury').totalMarks).toBe(4);
+    expect(card('q6-vi-belt').totalMarks).toBe(7);
+    expect(card('q10-iv').rows[0]).toMatchObject({group: {claimMax: 3, options: ['nature', 'charge', 'ionising', 'range', 'mass']}});
+    expect(card('q10-iv').rows[0].contextNote).toContain('do not mix properties');
+    expect(card('q12-a-atmosphere').rows.map(r => r.route)).toEqual(['steam', 'pump', 'glass']);
+    for (const row of card('q12-a-atmosphere').rows) expect(row).toMatchObject({group: {claimMax: 4, perOption: 3}});
+    const passage = cards.filter(c => c.id.startsWith('phys-2011-ol-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.stem).toContain('Planck’s quantum theory (E=hf)');
+      expect(c.stem).toContain('shining on the metal is increased');
+      expect(c.figure?.candId).toBe('physics-2011-ol-q11-passage');
+    }
+    expect(card('q12-b-iii').rows[0].contextNote).toContain('round trip');
+    expect(card('q12-c-effects').rows[0].contextNote).toContain('full 4 for two correct');
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2011-ol-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
+
   it('retains every 2011 Higher branch, practical method and separately marked force task', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2011-hl-'));
     const card = (suffix: string) => cards.find(c => c.id === `phys-2011-hl-${suffix}`)!;

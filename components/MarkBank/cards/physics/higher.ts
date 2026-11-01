@@ -33926,7 +33926,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2011-hl-q12-resistance-solution",
           "src": "/exam-figures/physics/markbank/physics-2011-hl-q12-resistance-solution.png",
-          "srcHash": "f45c9aac2e9917cc7ba328833a439a5a",
+          "srcHash": "6b305b7b3e6a2f66b2fea438d0466a4e",
           "alt": "Original Joule-power relation,substitution and resistance of one metre.",
           "attribution": "SEC Leaving Certificate Physics 2011 Higher Level marking scheme — © State Examinations Commission",
           "solution": true,

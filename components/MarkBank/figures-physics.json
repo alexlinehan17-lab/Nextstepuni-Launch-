@@ -1678,6 +1678,1057 @@
    748
   ]
  },
+ "physics-2011-ol-q1-apparatus-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q1-apparatus-solution.png",
+  "md5": "ebebea9275f548b4d06d25442461c5b5",
+  "alt": "Complete apparatus criteria, alternate data-logger allocation and labelling guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q1(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   290,
+   519,
+   444
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q1-velocity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q1-velocity-solution.png",
+  "md5": "addb255f317a689ff06cc10ae2ab4f22",
+  "alt": "Original distance/time and displacement/time fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q1(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   90,
+   525,
+   218,
+   556
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q10-properties-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q10-properties-solution.png",
+  "md5": "68ebc13bac62189cd748e3cbf065ccc6",
+  "alt": "All five properties for alpha, beta and gamma in the original table.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q10(iv)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   76,
+   419,
+   454,
+   481
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q10-radon": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q10-radon.png",
+  "md5": "e86c7ab963a5c8a8c04de09160db3a63",
+  "alt": "Complete radon entry/airway illustrations and all labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q10(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   155,
+   151,
+   475,
+   285
+  ]
+ },
+ "physics-2011-ol-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q11-passage.png",
+  "md5": "7866dc61d8c8608bee5273ad61ea502a",
+  "alt": "Full photoelectric passage, Hertz photograph/caption and source attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q11(a)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   83,
+   101,
+   535,
+   416
+  ]
+ },
+ "physics-2011-ol-q12-bat": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-bat.png",
+  "md5": "a69efb4e3ea9ff02f5459cc84081bdde",
+  "alt": "Original bat and reflected sound illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(b)(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   447,
+   619,
+   520,
+   681
+  ]
+ },
+ "physics-2011-ol-q12-gold": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-gold.png",
+  "md5": "93cf4f8a9c27a96518a78e360b57e8aa",
+  "alt": "Complete gold-foil arrangement, alpha source, scattered paths and detector labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(d)(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   166,
+   504,
+   449,
+   594
+  ]
+ },
+ "physics-2011-ol-q12-pressure-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-pressure-solution.png",
+  "md5": "72b5ebe3c3a1af81c78bdd8b7b88263f",
+  "alt": "All three complete atmosphere-pressure demonstration methods.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(a) — Atmospheric pressure demonstration",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   83,
+   169,
+   448,
+   222
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q12-screwdriver": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-screwdriver.png",
+  "md5": "ea86c7dbe590dec35f2752f10f28e5f6",
+  "alt": "Original electric-screwdriver photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(c) — Screwdriver current",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   227,
+   119,
+   363,
+   263
+  ]
+ },
+ "physics-2011-ol-q12-volume-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-volume-question.png",
+  "md5": "70ce922f14c342602757802ae5e94b81",
+  "alt": "Climber photograph, tank volume, both pressures and full gas-volume question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(a) — Released gas volume",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   111,
+   143,
+   559,
+   398
+  ],
+  "maskedFurniture": [
+   [
+    530,
+    377,
+    559,
+    398
+   ]
+  ]
+ },
+ "physics-2011-ol-q12-volume-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q12-volume-solution.png",
+  "md5": "53e473db7072255f9c172894b17dc8d2",
+  "alt": "Original Boyle-law substitution and 700 litre result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(a) — Released gas volume",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   83,
+   333,
+   229,
+   362
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q2-a-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q2-a-question.png",
+  "md5": "ffbca0b8635a41ed2d3713a0df4be52c",
+  "alt": "Full calorimetry context, six data values, both specific heat capacities and selected calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q2(v)(a)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   431,
+   545,
+   753
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    585,
+    545,
+    674
+   ],
+   [
+    517,
+    676,
+    545,
+    734
+   ],
+   [
+    125,
+    704,
+    401,
+    718
+   ],
+   [
+    125,
+    718,
+    401,
+    734
+   ]
+  ]
+ },
+ "physics-2011-ol-q2-b-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q2-b-question.png",
+  "md5": "21b3de6a264e966626e89306eeb91d6c",
+  "alt": "Full calorimetry context, six data values, both specific heat capacities and selected calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q2(v)(b)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   431,
+   545,
+   753
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    585,
+    545,
+    674
+   ],
+   [
+    517,
+    676,
+    545,
+    734
+   ],
+   [
+    125,
+    690,
+    401,
+    704
+   ],
+   [
+    125,
+    718,
+    401,
+    734
+   ]
+  ]
+ },
+ "physics-2011-ol-q2-c-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q2-c-question.png",
+  "md5": "f864fb199facca2b341af91f7523bbdb",
+  "alt": "Full calorimetry context, six data values, both specific heat capacities and selected calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q2(v)(c)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   83,
+   431,
+   545,
+   753
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    585,
+    545,
+    674
+   ],
+   [
+    517,
+    676,
+    545,
+    734
+   ],
+   [
+    125,
+    690,
+    401,
+    704
+   ],
+   [
+    125,
+    704,
+    401,
+    718
+   ]
+  ]
+ },
+ "physics-2011-ol-q2-calculation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q2-calculation-solution.png",
+  "md5": "ae031b261990e9ea7762f65fa7f1c82e",
+  "alt": "Original water/calorimeter heat contributions, condensed-steam cooling and specific latent heat.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q2(v)(a)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   86,
+   507,
+   440,
+   650
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q2-data.png",
+  "md5": "764e880b181683afaae7646f176aee6e",
+  "alt": "All six recorded mass and temperature values.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q2(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   159,
+   486,
+   445,
+   578
+  ]
+ },
+ "physics-2011-ol-q3-iii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q3-iii-solution.png",
+  "md5": "03b892dcca47d3e509dbcdaca5005c92",
+  "alt": "Both complete wavelength methods, end correction and resonance-length difference.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q3(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   89,
+   312,
+   443,
+   353
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q3-iv-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q3-iv-solution.png",
+  "md5": "988b5328ca7921916e2077159379462a",
+  "alt": "Original speed-of-sound formula and both equivalent methods.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q3(iv)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   89,
+   484,
+   353,
+   518
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q4-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q4-apparatus.png",
+  "md5": "ac6195c9899a37f234e97769de6aab92",
+  "alt": "Complete lamp circuit, rheostat, ammeter, voltmeter and supply polarity.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q4(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   177,
+   293,
+   418,
+   389
+  ]
+ },
+ "physics-2011-ol-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q4-graph-solution.png",
+  "md5": "92b4a4d866b3f393c238f3d9b7ae6d13",
+  "alt": "Original sample I–V graph with axes. Guidance identifies its omitted 6 V point and misplaced reading guides.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q4(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   44,
+   363,
+   457,
+   615
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q4-iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q4-iii-question.png",
+  "md5": "c250a6140ceb6eea7957a2735f3dca6e",
+  "alt": "Complete lamp apparatus, seven I/V pairs and selected graph-related request.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q4(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   251,
+   545,
+   629
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    400,
+    545,
+    441
+   ],
+   [
+    517,
+    541,
+    545,
+    558
+   ],
+   [
+    83,
+    560,
+    545,
+    593
+   ],
+   [
+    83,
+    594,
+    545,
+    627
+   ]
+  ]
+ },
+ "physics-2011-ol-q4-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q4-iv-question.png",
+  "md5": "59a18c355c3e2ff258042e450d926329",
+  "alt": "Complete lamp apparatus, seven I/V pairs and selected graph-related request.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q4(iv)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   251,
+   545,
+   629
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    400,
+    545,
+    441
+   ],
+   [
+    517,
+    561,
+    545,
+    592
+   ],
+   [
+    83,
+    540,
+    545,
+    559
+   ],
+   [
+    83,
+    594,
+    545,
+    627
+   ]
+  ]
+ },
+ "physics-2011-ol-q4-v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q4-v-question.png",
+  "md5": "6ab2c3284601b3c3836a02be773a6fee",
+  "alt": "Complete lamp apparatus, seven I/V pairs and selected graph-related request.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q4(v)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   83,
+   251,
+   545,
+   629
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    400,
+    545,
+    441
+   ],
+   [
+    517,
+    594,
+    545,
+    626
+   ],
+   [
+    83,
+    540,
+    545,
+    559
+   ],
+   [
+    83,
+    560,
+    545,
+    593
+   ]
+  ]
+ },
+ "physics-2011-ol-q5-crowbar": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q5-crowbar.png",
+  "md5": "68c92eff86823f79df1a828453e8a259",
+  "alt": "Original crowbar illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q5(c)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   425,
+   295,
+   514,
+   366
+  ],
+  "maskedFurniture": [
+   [
+    425,
+    313,
+    449,
+    332
+   ],
+   [
+    425,
+    355,
+    444,
+    366
+   ]
+  ]
+ },
+ "physics-2011-ol-q5-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q5-electroscope.png",
+  "md5": "bdce5f4733e2fc46674e39d64610fa73",
+  "alt": "Original electroscope photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q5(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   348,
+   578,
+   404,
+   645
+  ]
+ },
+ "physics-2011-ol-q5-gravity-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q5-gravity-solution.png",
+  "md5": "87ebfa4ccdeb0c023393cddfde71b836",
+  "alt": "Original gravitational-field-strength fraction and squared radius.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q5(b)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   84,
+   240,
+   134,
+   275
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q6-car": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q6-car.png",
+  "md5": "2b620b0440d188987637b44a48ad270e",
+  "alt": "Original car and tree illustration.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   214,
+   110,
+   365,
+   230
+  ]
+ },
+ "physics-2011-ol-q6-i-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q6-i-question.png",
+  "md5": "e20f4702f5de861b05c71d46276877b0",
+  "alt": "Complete car mass, initial speed, collision time, illustration and selected task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   73,
+   545,
+   256
+  ],
+  "maskedFurniture": [
+   [
+    517,
+    237,
+    545,
+    254
+   ]
+  ]
+ },
+ "physics-2011-ol-q6-i-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q6-i-solution.png",
+  "md5": "ed084e9b7332ee08da69e309e4dad7db",
+  "alt": "Original force arrows and labels around the car.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   228,
+   215,
+   425,
+   284
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q6-ii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q6-ii-question.png",
+  "md5": "074f9f1e8e37130466236f5c727523bf",
+  "alt": "Complete car mass, initial speed, collision time, illustration and selected task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(ii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   73,
+   545,
+   275
+  ],
+  "maskedFurniture": [
+   [
+    517,
+    257,
+    545,
+    273
+   ],
+   [
+    83,
+    236,
+    545,
+    254
+   ]
+  ]
+ },
+ "physics-2011-ol-q6-ii-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q6-ii-solution.png",
+  "md5": "f040adfd0a1b81b6d8ce9fb2a7122f9f",
+  "alt": "Original signed acceleration calculation with numerator and denominator intact.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(ii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   77,
+   357,
+   277,
+   390
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q7-fibre": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q7-fibre.png",
+  "md5": "4503164a2014284393a2f216f5ae5ff2",
+  "alt": "Original optical-fibre photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q7(vii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   423,
+   614,
+   576,
+   730
+  ]
+ },
+ "physics-2011-ol-q7-fibre-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q7-fibre-question.png",
+  "md5": "d952c7c720b2ff1ffaacbba31f0d6f12",
+  "alt": "Full fibre context, photograph and ray-diagram task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q7(vi)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   606,
+   576,
+   738
+  ],
+  "maskedFurniture": [
+   [
+    83,
+    674,
+    418,
+    738
+   ],
+   [
+    397,
+    651,
+    417,
+    673
+   ]
+  ]
+ },
+ "physics-2011-ol-q7-fibre-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q7-fibre-solution.png",
+  "md5": "745eb4a7f00eda7b4d33f62dc32bad4b",
+  "alt": "Original fibre diagram with both media, entering/exiting rays and repeated reflections.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q7(vi)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   77,
+   570,
+   444,
+   629
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q7-terms-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q7-terms-question.png",
+  "md5": "d08b37d9358f80768b6e0f001dc5af34",
+  "alt": "Both underlined optical terms, their context and definition request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q7(i) — Reflection",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   83,
+   442,
+   550,
+   505
+  ],
+  "maskedFurniture": [
+   [
+    517,
+    484,
+    550,
+    505
+   ]
+  ]
+ },
+ "physics-2011-ol-q7-tir-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q7-tir-solution.png",
+  "md5": "6dd44df7649f154ce7cd46177a5782ea",
+  "alt": "Original below-critical, critical and above-critical ray diagrams, angle labels and both media.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q7(iv)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   89,
+   355,
+   443,
+   433
+  ],
+  "maskedFurniture": [
+   [
+    89,
+    355,
+    135,
+    361
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q8-energy-question": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q8-energy-question.png",
+  "md5": "da5bd5c9707dc56f419008cc6a9bf02c",
+  "alt": "Full 500 g, 15 °C, 2 kW context, photograph, specific heat capacity and energy request.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q8(b)(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   111,
+   167,
+   560,
+   423
+  ],
+  "maskedFurniture": [
+   [
+    111,
+    340,
+    560,
+    404
+   ],
+   [
+    533,
+    322,
+    560,
+    338
+   ]
+  ]
+ },
+ "physics-2011-ol-q8-kettle": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q8-kettle.png",
+  "md5": "0aa3fbffa248978fea2a8c6f072a5adf",
+  "alt": "Original electric-kettle photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q8(b)(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   256,
+   202,
+   379,
+   320
+  ]
+ },
+ "physics-2011-ol-q9-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q9-coil.png",
+  "md5": "d23ccffe08a1d1fbb46115b846037d0f",
+  "alt": "Complete magnet, both poles, coil and connected sensitive meter.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q9(a)(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   354,
+   501,
+   517,
+   579
+  ]
+ },
+ "physics-2011-ol-q9-transformer-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q9-transformer-solution.png",
+  "md5": "756309624d526b8c1c0d30b6f5ca2c5a",
+  "alt": "Original labelled primary, secondary and core diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q9(b)(ii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   83,
+   543,
+   322,
+   658
+  ],
+  "solution": true
+ },
+ "physics-2011-ol-q9-voltage-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2011-ol-q9-voltage-solution.png",
+  "md5": "280215e44a529ced8e641d02710b2a84",
+  "alt": "Original output voltage and turns-ratio fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q9(b)(iii)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2011 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   104,
+   716,
+   371,
+   779
+  ],
+  "solution": true
+ },
  "physics-2012-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2012-hl-q1-data.png",
   "md5": "ff697331822e2e341bc3a6f1e8038439",

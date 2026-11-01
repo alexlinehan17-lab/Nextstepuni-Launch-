@@ -764,10 +764,11 @@ def _unweld(block, anchors):
 # level) -> {file name: pages}; strip_set_lines() reads those pages instead.
 STRIP_SET_PAGES = {
     ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+    ('physics', 2011, 'ol'): {'2011-ol-paper.pdf': (1, 4, 5, 10)},
 }
 
 
-def strip_set_lines(page):
+def strip_set_lines(page, indices=False, clip=None):
     """A strip-set page's printed lines as (baseline, text), top to bottom.
 
     Every glyph is pooled from every strip, grouped into lines by baseline and
@@ -775,12 +776,26 @@ def strip_set_lines(page):
     character within 1pt, is a strip edge and kept once: on 2011 OL pp11-13
     those repeats sit 0.00-0.06pt apart, a printed double letter ("ll", "ee")
     3.3pt or more. A gap wider than 1.5pt between glyphs is a word space."""
+    blocks = page.get_text('rawdict')['blocks']
+    spans = [s for b in blocks for ln in b.get('lines', []) for s in ln['spans']]
+    main_size = max((s['size'] for s in spans if len(s['chars']) > 8), default=12)
+    baselines = {round(round(s['origin'][1], 1)) for s in spans if .9 * main_size <= s['size'] <= 1.1 * main_size}
+    superscript = str.maketrans('0123456789-−+', '⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁻⁺')
     rows = collections.defaultdict(list)
-    for b in page.get_text('rawdict')['blocks']:
+    for b in blocks:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
+                y = round(round(sp['origin'][1], 1))
+                raised = indices and sp['size'] < .9 * main_size and sp['flags'] & 1
+                nearby = [b for b in baselines if 0 < b - y < .8 * main_size] if raised else []
+                target = min(nearby) if nearby else y
                 for ch in sp['chars']:
-                    rows[round(round(ch['origin'][1], 1))].append((ch['bbox'][0], ch['bbox'][2], ch['c']))
+                    if clip is not None:
+                        x0, y0, x1, y1 = ch['bbox']
+                        if not (clip[0] <= (x0 + x1) / 2 <= clip[2] and clip[1] <= (y0 + y1) / 2 <= clip[3]):
+                            continue
+                    c = ch['c'].translate(superscript) if nearby else ch['c']
+                    rows[target].append((ch['bbox'][0], ch['bbox'][2], c))
     out = []
     for y in sorted(rows):
         kept = []
@@ -828,7 +843,7 @@ def _blocks(path, subject=None, strip_pages=(), any_space=False, maths=False):
     with pymupdf.open(path) as doc:
         pages = [[(0, 0, 0, 0, line) for line in _deduplicated_lines(doc[n])]
                  if maths and os.path.basename(path) == '2011-hl-130-paper.pdf' and n == 7 else
-                 [(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
+                 [(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n], indices=subject == 'physics'))]
                  if n + 1 in strip_pages else
                  sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]

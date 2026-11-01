@@ -469,8 +469,14 @@ class Src:
             if i + 1 in strips:
                 # Text layer set in overlapping strips (paper.STRIP_SET_PAGES):
                 # read the rebuilt lines.
-                self.lines[i + 1] = [n for n in (_norm(t) for _, t in strip_set_lines(page)) if n]
+                self.lines[i + 1] = [n for n in (_norm(t) for _, t in strip_set_lines(page, indices=True)) if n]
                 self.cells[i + 1] = {}
+                for j, line in enumerate(self.lines[i + 1]):
+                    cell = re.search(r'\(\d{1,2}(?:\s*×\s*\d{1,2})?\)$', line)
+                    if cell:
+                        self.cells[i + 1][j] = cell.group()
+                        if cell.start():
+                            self.lines[i + 1][j] = line[:cell.start()].rstrip()
                 self.boxes[i + 1] = []
                 self.totals[i + 1] = {}
                 self.doubled[i + 1] = set()
@@ -493,6 +499,13 @@ class Src:
         """Bounding boxes of `text` on the page (inside `clip` when given)."""
         pg = self.doc[page - 1]
         hits = [fitz.Rect(h) for h in pg.search_for(text)]
+        if not hits and page in _STRIP_SET.get(os.path.basename(self.path), ()):
+            # Search overlapping-strip text inside the actual crop, rather than
+            # relying on PDF search across disconnected fragment objects.
+            region = fitz.Rect(clip) if clip is not None else pg.rect
+            rebuilt = ' '.join(t for _, t in strip_set_lines(pg, indices=True, clip=region))
+            if _norm(text) in _norm(rebuilt):
+                return [region]
         return [h for h in hits if clip is None or self._inside(h, clip)]
 
     def find_exact(self, page, text, clip=None):

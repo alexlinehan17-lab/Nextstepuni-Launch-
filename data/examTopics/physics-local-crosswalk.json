@@ -55902,10 +55902,14 @@
         "physics-ordinary-old-course-heat-heat-transfer",
         "physics-ordinary-old-course-reflection-mirrors",
         "physics-ordinary-old-course-electric-circuits",
-        "physics-ordinary-old-course-static-electricity"
+        "physics-ordinary-old-course-static-electricity",
+        "physics-ordinary-new-course-26-principle-of-superposition-of-waves",
+        "physics-ordinary-new-course-31-charge-interactions",
+        "physics-ordinary-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+        "physics-ordinary-old-course-work-energy-power"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
@@ -55922,10 +55926,11 @@
         "physics-ordinary-new-course-33-electric-circuits",
         "physics-ordinary-old-course-temperature",
         "physics-ordinary-old-course-heat-heat-transfer",
-        "physics-ordinary-old-course-electric-circuits"
+        "physics-ordinary-old-course-electric-circuits",
+        "physics-ordinary-old-course-work-energy-power"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
@@ -55942,10 +55947,14 @@
         "physics-ordinary-new-course-42-photoelectric-emission-and-x-ray-production",
         "physics-ordinary-old-course-light",
         "physics-ordinary-old-course-semiconductors",
-        "physics-ordinary-old-course-the-electron"
+        "physics-ordinary-old-course-the-electron",
+        "physics-ordinary-new-course-33-electric-circuits",
+        "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change",
+        "physics-ordinary-old-course-electric-circuits",
+        "physics-ordinary-old-course-heat-heat-transfer"
       ],
       "resolution": "retained-local-reviewed",
-      "reason": "Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper."
+      "reason": "Official SEC 2011 task retained from direct paper review (phys_review_2011); the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "higher",

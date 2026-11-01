@@ -121,5 +121,30 @@ class PhysicsSourceMathTest(unittest.TestCase):
             self.assertAlmostEqual(4250/decay_constant,5.57e12,delta=0.01e12)
             self.assertGreater(abs(decay_constant-7.77e-10),0.1e-10)
 
+    def test_overlapping_paper_strips_recover_whole_questions_and_velocity_units(self):
+        from phys_review_lib import Src
+        from phys_review_2011_ol import GLYPHS, SOURCES
+        src = Src(str(ROOT / SOURCES['paper']['path']), 'paper', glyphs=GLYPHS['paper'])
+        self.assertIn('A car of mass 1400 kg was travelling with a constant speed of 15 m s⁻¹', src.lines[5])
+        self.assertIn('(j) Give a disadvantage of a named renewable source of energy.', src.lines[4])
+        self.assertIn('How is this risk of injury minimised?', src.lines[5])
+        self.assertIn('(11)', src.cells[5].values())
+        question = 'Draw a diagram of the forces acting on the car before'
+        self.assertTrue(src.find_box(5, question, (83,73,545,256)))
+        self.assertFalse(src.find_box(5, question, (83,73,545,230)))
+        self.assertIn('(iv) Name the scientist who designed the experiment.', src.lines[10])
+
+    def test_ordinary_2011_fractions_keep_separate_denominators_and_signed_acceleration(self):
+        from phys_review_2011_ol import GLYPHS, SOURCES
+        with fitz.open(ROOT / SOURCES['scheme']['path']) as scheme:
+            options=dict(baseline=True, dedupe=True, glyph_order=True, segments=True)
+            self.assertEqual(fraction_text(scheme[2], (89,525,220,556), GLYPHS['scheme'], **options),
+                             '(velocity=) distance/(time) / s/t')
+            self.assertEqual(fraction_text(scheme[7], (77,357,277,390), GLYPHS['scheme'], **options),
+                             '(a= (v−u)/t = (0−15)/0.4 =−)37.5(ms⁻²)')
+        self.assertEqual((0-15)/.4, -37.5)
+        self.assertAlmostEqual((.0675*4180+.0734*390)*9, 2796.984)
+        self.assertAlmostEqual(.00103*4180*(100-19), 348.7374)
+
 if __name__ == '__main__':
     unittest.main()
