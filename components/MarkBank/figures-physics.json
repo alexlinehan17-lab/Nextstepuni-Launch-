@@ -1,4 +1,1245 @@
 {
+ "physics-2013-hl-q1-data": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q1-data.png",
+  "md5": "567523adfeafff9ba809453367379a4d",
+  "alt": "All five applied force positions, magnitudes and directions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1 — Verifying both equilibrium laws",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   79,
+   351,
+   519,
+   446
+  ]
+ },
+ "physics-2013-hl-q1-moments-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q1-moments-question.png",
+  "md5": "a77de46a6df6fc11de3e0288831e3608",
+  "alt": "Complete metre-stick weight, centre of gravity, five force readings and both moment requests.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1 — Clockwise and anticlockwise moments",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   54,
+   153,
+   551,
+   521
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    201,
+    368.5,
+    214.5
+   ],
+   [
+    338,
+    214.7,
+    383,
+    229
+   ],
+   [
+    54,
+    288,
+    546,
+    304
+   ],
+   [
+    151.5,
+    268,
+    550,
+    283
+   ]
+  ]
+ },
+ "physics-2013-hl-q1-moments-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q1-moments-solution.png",
+  "md5": "b4d284a0e43d69fcd37c5bc8c7f74eb3",
+  "alt": "All five moment criteria, both complete moment sums and deductions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1 — Clockwise and anticlockwise moments",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   54,
+   539,
+   545,
+   651
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q10-accelerator": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q10-accelerator.png",
+  "md5": "66a204e1f7f287621c52679709d85512",
+  "alt": "Complete circular-accelerator diagram and all equipment/beam labels.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q10(a) — Advantage of a circular accelerator",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   370,
+   222,
+   540,
+   376
+  ]
+ },
+ "physics-2013-hl-q10-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q10-coil.png",
+  "md5": "92479517eb90b44a6606f11d70a1edbd",
+  "alt": "Complete induction-coil diagram with coil A, spark gap B, source and interrupter.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q10(b) — Induction-coil parts A and B",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   375,
+   596,
+   539,
+   739
+  ]
+ },
+ "physics-2013-hl-q10-reaction-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q10-reaction-solution.png",
+  "md5": "73892ce655b2013e2bcf617006528e47",
+  "alt": "Original Cockcroft–Walton reaction with atomic/mass numbers and deduction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q10(a) — Cockcroft–Walton nuclear equation",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   76,
+   234,
+   545,
+   274
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q10-shunt-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q10-shunt-solution.png",
+  "md5": "0ebe17e7b095871a50217b64503cf3a9",
+  "alt": "Official matching-voltage equations, shunt current and resistance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q10(b) — Calculating the shunt resistance",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   90,
+   271,
+   545,
+   343
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q11-acceleration-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q11-acceleration-question.png",
+  "md5": "b978112f212e0c7e75652a72956d2efb",
+  "alt": "Complete passage, source diagram, acceleration-equation task and gravity constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(f)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   55,
+   80,
+   546,
+   678
+  ],
+  "maskedFurniture": [
+   [
+    55,
+    365,
+    546,
+    517
+   ],
+   [
+    55,
+    581,
+    546,
+    658
+   ],
+   [
+    500,
+    662,
+    546,
+    678
+   ]
+  ]
+ },
+ "physics-2013-hl-q11-acceleration-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q11-acceleration-solution.png",
+  "md5": "b7f2a8eadb05925aa3e9342c59c09195",
+  "alt": "Original SHM acceleration fraction; signed-direction clarification is shown in guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(f)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   90,
+   370,
+   150,
+   396
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q11-maximum-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q11-maximum-question.png",
+  "md5": "762538c14bdfbfd31eb93f9f67bf8c07",
+  "alt": "Complete passage and diagram, period/amplitude calculation and gravity constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(g)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   55,
+   80,
+   546,
+   678
+  ],
+  "maskedFurniture": [
+   [
+    55,
+    365,
+    546,
+    578
+   ],
+   [
+    55,
+    615,
+    546,
+    658
+   ],
+   [
+    500,
+    662,
+    546,
+    678
+   ]
+  ]
+ },
+ "physics-2013-hl-q11-maximum-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q11-maximum-solution.png",
+  "md5": "936f5448e5d559d70e4b4bb4c977acc7",
+  "alt": "Original maximum-acceleration substitution and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(g)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   90,
+   422.5,
+   200,
+   462
+  ],
+  "maskedFurniture": [
+   [
+    90,
+    422.5,
+    200,
+    423.5
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q11-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q11-passage.png",
+  "md5": "838db45d32070935961cbde1479e75a0",
+  "alt": "Entire seismometer passage, labelled instrument diagram and IRIS attribution.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(a)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   55,
+   80,
+   546,
+   351
+  ]
+ },
+ "physics-2013-hl-q12-charges": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-charges.png",
+  "md5": "ee2a0ad495e4e65ea1dcce9d754852f0",
+  "alt": "Both +3 microcoulomb spheres and the 8 cm separation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(c) — Electric field and zero-field point",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   160,
+   650,
+   421,
+   703
+  ]
+ },
+ "physics-2013-hl-q12-grating-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-grating-solution.png",
+  "md5": "2656fbe3a55ce4b9a6831d3e3460ae63",
+  "alt": "Grating equation, maximum sine condition, calculated 5.65 limit and integer order 5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(b) — Highest diffraction order",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   90,
+   666,
+   245,
+   717
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q12-pendulum": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-pendulum.png",
+  "md5": "943a2b4c3ae9cb42505ad0961f0ea14e",
+  "alt": "Eight-metre pendulum positions A/B and the 30-degree displacement.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(a) — Maximum pendulum speed",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   439,
+   83,
+   537,
+   251
+  ]
+ },
+ "physics-2013-hl-q12-repulsion-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-repulsion-question.png",
+  "md5": "fc53aaa2add143ca35455a4bb4abe119",
+  "alt": "Full two-charge force task and original charge/separation diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(c) — Force between two charges",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   90,
+   598,
+   544,
+   705
+  ],
+  "maskedFurniture": [
+   [
+    519,
+    613,
+    544,
+    628
+   ]
+  ]
+ },
+ "physics-2013-hl-q12-repulsion-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-repulsion-solution.png",
+  "md5": "2c859daee2f3af8d67f5da40b6318a98",
+  "alt": "Coulomb-law fraction, substitution criterion and 12.64 N result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(c) — Force between two charges",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   90,
+   133.5,
+   190,
+   186
+  ],
+  "maskedFurniture": [
+   [
+    152,
+    133.5,
+    190,
+    137
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q12-thermistor": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-thermistor.png",
+  "md5": "7e03745093613d25a5b1aa654a970d7b",
+  "alt": "Complete thermistor graph with original curve, marked points, temperature axis and kilo-ohm scale.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(d) — Temperature from the thermistor graph",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   28,
+   145,
+   521,
+   472
+  ]
+ },
+ "physics-2013-hl-q12-thermocouple-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q12-thermocouple-solution.png",
+  "md5": "5d5ebbea80a42641bad13dbc610d4935",
+  "alt": "Both complete thermocouple methods: calibration fraction and direct proportion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q12(d) — Temperature from a thermocouple",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 19,
+  "sourceRect": [
+   90,
+   488,
+   545,
+   556
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q2-data": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q2-data.png",
+  "md5": "d2298e3cd46906deef3583805d2531ea",
+  "alt": "All six paired Boyle-law readings with X and Y headings.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2 — Boyle’s law apparatus",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   68,
+   82,
+   514,
+   128
+  ]
+ },
+ "physics-2013-hl-q2-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q2-graph-question.png",
+  "md5": "f01174f38a89b2123862ee719699a67e",
+  "alt": "Boyle experiment context, six reading pairs and complete graph request.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2 — Boyle’s law graph",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   54,
+   55,
+   544,
+   245
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    138,
+    544,
+    216
+   ]
+  ]
+ },
+ "physics-2013-hl-q2-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q2-graph-solution.png",
+  "md5": "ea8a018e6028c82ed0a054a235d8c860",
+  "alt": "Both accepted reciprocal-axis Boyle-law graphs with all six points.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2 — Boyle’s law graph",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   60,
+   63,
+   545,
+   675
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q3-data": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q3-data.png",
+  "md5": "173cc58c91049f735b34a390d560a7a4",
+  "alt": "All four object and image distance pairs, in centimetres.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3 — Concave-mirror apparatus",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   87,
+   496,
+   394,
+   541
+  ]
+ },
+ "physics-2013-hl-q3-focal-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q3-focal-question.png",
+  "md5": "292deb9939cd1b039d8a3469f5a9c15e",
+  "alt": "Complete concave-mirror report, all four data pairs and focal-length task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3 — Focal length from all measurements",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   54,
+   377,
+   545,
+   666
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    551,
+    545,
+    638
+   ],
+   [
+    512,
+    649,
+    544,
+    664
+   ]
+  ]
+ },
+ "physics-2013-hl-q3-focal-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q3-focal-solution.png",
+  "md5": "960cf4d8d0470c7e9fcfdd651667b907",
+  "alt": "Official reciprocal-distance graph with both intercepts for the alternative focal-length method.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3 — Focal length from all measurements",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   60,
+   73,
+   545,
+   334
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q4-data": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q4-data.png",
+  "md5": "f39f6e494d4f640d53861f4a1c3d0ddb",
+  "alt": "All six potential-difference and current pairs with units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4 — Current–voltage circuit",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   84,
+   121,
+   515,
+   179
+  ]
+ },
+ "physics-2013-hl-q4-graph-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q4-graph-question.png",
+  "md5": "33efc9884918af98783df8703526c65b",
+  "alt": "Complete experiment context and six data pairs with the graph task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4 — Current–voltage graph",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   54,
+   55,
+   545,
+   287
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    190,
+    545,
+    246
+   ],
+   [
+    155.9,
+    272,
+    545,
+    288
+   ]
+  ]
+ },
+ "physics-2013-hl-q4-graph-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q4-graph-solution.png",
+  "md5": "01b8b1e033ebf8b3d742ff97734ca53e",
+  "alt": "Official current–voltage curve with six measured points, scales and units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4 — Current–voltage graph",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   62,
+   427,
+   545,
+   726
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q5-diamond-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q5-diamond-solution.png",
+  "md5": "f45242b1817449f8fc57f8703a32f619",
+  "alt": "Refractive-index fraction, substitution and light-speed result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(e)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   82,
+   356,
+   230,
+   416
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q5-pair-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q5-pair-solution.png",
+  "md5": "d6b1854abf0c08e0fcafff152d57dde0",
+  "alt": "Minimum photon frequency, with 2m_e c squared over Planck’s constant.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(j) — pair-production",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   82,
+   686.5,
+   150,
+   714
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q5-sphere": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q5-sphere.png",
+  "md5": "452d663f604bf8757043424e22c4f582",
+  "alt": "Neutral conducting sphere on an insulating stand with the positively charged rod.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(g)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   204,
+   420,
+   390,
+   543
+  ]
+ },
+ "physics-2013-hl-q6-angular-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-angular-question.png",
+  "md5": "e3a52ee1c1a0182d97051a621d68b56d",
+  "alt": "ISS photograph, full orbital data and constants with angular-velocity task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(iii) — ISS angular velocity",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   54,
+   107,
+   543,
+   417
+  ],
+  "maskedFurniture": [
+   [
+    252.8,
+    241,
+    543,
+    257
+   ],
+   [
+    54,
+    262,
+    543,
+    398
+   ]
+  ]
+ },
+ "physics-2013-hl-q6-angular-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-angular-solution.png",
+  "md5": "e6e984838fbda7dd2896f82a269d311c",
+  "alt": "Official orbital angular-velocity formula and calculation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(iii) — ISS angular velocity",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   90,
+   266,
+   225,
+   312
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q6-derive-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-derive-solution.png",
+  "md5": "8f168d274763ea2ad47988318ea7861d",
+  "alt": "Angular-to-linear-velocity derivation with stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(ii) — Angular and linear velocity",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   90,
+   160,
+   152,
+   205
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q6-earth-mass-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-earth-mass-question.png",
+  "md5": "380970e4d9c0b4c8ad60f63d157edb35",
+  "alt": "ISS orbit and constants, preceding force request, Earth-mass task and stated orbital g.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(v) — Mass of the Earth",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   54,
+   107,
+   543,
+   417
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    240,
+    543,
+    293
+   ],
+   [
+    429.5,
+    330,
+    543,
+    346
+   ],
+   [
+    54,
+    346,
+    543,
+    398
+   ],
+   [
+    515,
+    311,
+    543,
+    326
+   ]
+  ]
+ },
+ "physics-2013-hl-q6-earth-mass-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-earth-mass-solution.png",
+  "md5": "9e674d7a59fb2d4eaa608b9103529046",
+  "alt": "All three complete mass-of-Earth methods and result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(v) — Mass of the Earth",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   90,
+   496,
+   382,
+   571
+  ],
+  "maskedFurniture": [
+   [
+    309,
+    550,
+    382,
+    571
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q6-force-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-force-question.png",
+  "md5": "4a9f0ff51a5cd244516068521c2f2f55",
+  "alt": "ISS photograph, full orbital data and constants with attractive-force task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(v) — Attractive force on the ISS",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   54,
+   107,
+   543,
+   417
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    240,
+    543,
+    293
+   ],
+   [
+    382,
+    297,
+    543,
+    312
+   ],
+   [
+    54,
+    311,
+    543,
+    398
+   ]
+  ]
+ },
+ "physics-2013-hl-q6-force-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-force-solution.png",
+  "md5": "00cb5b7c5f6e0781572cfb4c87949dbf",
+  "alt": "Both centripetal-force expressions and the calculated attractive force.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(v) — Attractive force on the ISS",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   90,
+   440,
+   212,
+   481
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q6-gravitation-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-gravitation-solution.png",
+  "md5": "7bee9c36ddde42400cfe5e26c87e758b",
+  "alt": "Both verbal and mathematical gravitation-law routes with notation criterion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   90,
+   69,
+   545,
+   107
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q6-iss": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q6-iss.png",
+  "md5": "28f2bf6874629af388355d113f055fbc",
+  "alt": "International Space Station photograph supplied with the orbit problem.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(iii) — ISS linear velocity",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   349,
+   107,
+   539,
+   235
+  ]
+ },
+ "physics-2013-hl-q7-chimes": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q7-chimes.png",
+  "md5": "ea1d2394d11ec21d395e1d178cc838cc",
+  "alt": "Wind chimes and labelled clapper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q7 — Naming the frequencies",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   448,
+   563,
+   528,
+   705
+  ]
+ },
+ "physics-2013-hl-q7-tension-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q7-tension-solution.png",
+  "md5": "3d9ed9d66157ad8f5c9481be31d511ec",
+  "alt": "Linear density, square-root string equation, rearrangement and tension result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q7 — Guitar-string tension",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   54,
+   520,
+   270,
+   598
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q8-capacitor": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q8-capacitor.png",
+  "md5": "d46f0afde7e01fd824fa04c655afaa80",
+  "alt": "Capacitor photograph showing 2200 microfarads and the 16 V rating.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(a) — Maximum capacitor energy",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   74,
+   199,
+   270,
+   268
+  ]
+ },
+ "physics-2013-hl-q8-charger": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q8-charger.png",
+  "md5": "f976b21cac9ae5efbba8458d1a24e2b3",
+  "alt": "Complete charger circuit, F/G/H, a.c. input and output terminals X/Y.",
+  "lettersVisible": [
+   "F",
+   "G",
+   "H"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(a) — Charger components",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   315,
+   75,
+   541,
+   189
+  ]
+ },
+ "physics-2013-hl-q8-energy-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q8-energy-question.png",
+  "md5": "54c12c97373078f79938de93edc5cf17",
+  "alt": "Charger circuit and capacitor photo with maximum-energy task and source ratings.",
+  "lettersVisible": [
+   "F",
+   "G",
+   "H"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(a) — Maximum capacitor energy",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   74,
+   55,
+   543,
+   268
+  ],
+  "maskedFurniture": [
+   [
+    74,
+    82,
+    310,
+    196
+   ],
+   [
+    520,
+    252,
+    543,
+    268
+   ]
+  ]
+ },
+ "physics-2013-hl-q8-wire-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q8-wire-question.png",
+  "md5": "ca2cd2f53bb2ae65746e8cbd6cac581b",
+  "alt": "Full wire dimensions, current, resistance request and aluminium resistivity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(b)(i) — Resistance of the aluminium wire",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   90,
+   320,
+   545,
+   421
+  ],
+  "maskedFurniture": [
+   [
+    90,
+    370,
+    545,
+    401
+   ]
+  ]
+ },
+ "physics-2013-hl-q8-wire-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q8-wire-solution.png",
+  "md5": "8913130f3234f0304d0b28eaa7a3ec0e",
+  "alt": "Resistivity equation, cross-sectional area and wire resistance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(b)(i) — Resistance of the aluminium wire",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   146,
+   462,
+   210,
+   521
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q9-caesium-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q9-caesium-solution.png",
+  "md5": "ecbb1970bbd4b42ca3546ac901668844",
+  "alt": "Decay-constant half-life fraction and numerical result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q9 — Caesium-137 decay constant",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   54,
+   455,
+   200,
+   492
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q9-decay-question": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q9-decay-question.png",
+  "md5": "201101d419baa4069459286b62fb23d5",
+  "alt": "Chernobyl context and photograph, iodine half-life and full beta-decay-equation task.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q9 — Iodine-131 beta decay",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   54,
+   455,
+   545,
+   666
+  ],
+  "maskedFurniture": [
+   [
+    54,
+    455,
+    400,
+    541
+   ],
+   [
+    54,
+    618,
+    545,
+    633
+   ]
+  ]
+ },
+ "physics-2013-hl-q9-decay-solution": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q9-decay-solution.png",
+  "md5": "452ea5cc350c609d1e55b4e51b7a9db2",
+  "alt": "Original iodine-131 beta-decay equation and nine-symbol marking guidance.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q9 — Iodine-131 beta decay",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   54,
+   320.3,
+   545,
+   355
+  ],
+  "solution": true
+ },
+ "physics-2013-hl-q9-reactor": {
+  "src": "/exam-figures/physics/markbank/physics-2013-hl-q9-reactor.png",
+  "md5": "3343659cfde4b5da55f2348cc90793f2",
+  "alt": "The Chernobyl nuclear-reactor photograph supplied with the question.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q9 — Nuclear fission",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   404,
+   457,
+   539,
+   613
+  ]
+ },
  "physics-2014-hl-q1-data": {
   "src": "/exam-figures/physics/markbank/physics-2014-hl-q1-data.png",
   "md5": "e384c70f00c1b5d297f392589688eb7e",

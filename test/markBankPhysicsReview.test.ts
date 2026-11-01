@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2013-hl': [108, 108, 41, 'da9315f733b23a4d90618b5e5d17a5fa8bb36161fd8773ac2e2f11cc9bd3c13b',
+    'acb15db33829681ec15c0a6766b007b0659b1697c05df29803943e8ca1612702'],
   '2014-ol': [105, 105, 90, '3407ac46166bebbff21c67d30d618a082d8330207462532b707d05f4a446f5f3',
     'b3a9b22cb91b0f825adb50b22f07f6c243e1c58349a5e672c0385f2e8eb007c1'],
   '2014-hl': [100, 100, 40, 'aef0a7bf87759279dd08588d84df37e4b197940884b7c92d7528ec2b79f9cfed',
@@ -97,6 +99,52 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2013 Higher context, alternatives and separately priced tasks', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2013-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2013-hl-${suffix}`)!;
+    expect(cards).toHaveLength(108);
+    expect(card('q1-moments').totalMarks).toBe(15);
+    expect(card('q1-moments').questionFigure?.candId).toBe('physics-2013-hl-q1-moments-question');
+    expect(card('q1-moments').rows.map(r => r.verbatim).join(' ')).toContain('2.3268');
+    expect(card('q2-graph').rows[1].verbatim).toBe('plot six points correctly');
+    expect(card('q3-focal-length').questionText).toContain('all of the data');
+    expect(card('q3-focal-length').totalMarks).toBe(15);
+    expect(card('q3-focal-length').rows).toHaveLength(6);
+    expect(card('q3-precautions').rows[0]).toMatchObject({ group: { claimMax: 2 } });
+    expect(card('q3-approximate').figure?.candId).toBe('physics-2013-hl-q3-data');
+    expect(card('q4-resistance').rows).toHaveLength(4);
+    expect(card('q4-resistance').totalMarks).toBe(6);
+    for (const suffix of ['q5-j-pair-production', 'q5-j-led']) expect(card(suffix).totalMarks).toBe(7);
+    expect(card('q6-ii-definition').totalMarks).toBe(3);
+    expect(card('q6-ii-derive').totalMarks).toBe(6);
+    expect(card('q6-iii-linear').stem).toContain('92 minutes 50 seconds');
+    expect(card('q6-iii-linear').rows[1].contextNote).toContain('unrounded angular velocity');
+    expect(card('q6-v-earth-mass').stem).toContain('8.63 m s⁻²');
+    expect(card('q7-demonstration').totalMarks).toBe(9);
+    expect(card('q7-demonstration').rows).toHaveLength(5);
+    expect(card('q7-speed').questionText).toContain('any of the above frequencies');
+    expect(card('q7-speed').stem).toContain('550 Hz, 1100 Hz and 1651 Hz');
+    expect(card('q8-a-energy').questionFigure?.candId).toBe('physics-2013-hl-q8-energy-question');
+    expect(card('q9-iodine-decay').rows[0].contextNote).toContain('antineutrino');
+    expect(card('q10-a-neutrons').rows[1].contextNote).toContain('magnetic moment');
+    expect(card('q10-b-coil-use').rows[0].verbatim).toContain('electric fence');
+    for (const part of 'ab') expect(cards.filter(c => c.id.startsWith(`phys-2013-hl-q10-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(56);
+    const passage = cards.filter(c => c.id.startsWith('phys-2013-hl-q11-'));
+    expect(passage).toHaveLength(8);
+    for (const c of passage) {
+      expect(c.totalMarks).toBe(7);
+      expect(c.stem).toContain('Modern seismometers do not use a pen and drum.');
+      expect(c.stem).toContain('9.8 m s⁻²');
+    }
+    expect(card('q11-f').rows[0].contextNote).toContain('−4π²s/T²');
+    expect(card('q12-a-force').rows[1].contextNote).toContain('12600 N');
+    expect(card('q12-d-thermocouple').rows).toHaveLength(6);
+    expect(card('q12-d-thermocouple').totalMarks).toBe(9);
+    for (const part of 'abcd') expect(cards.filter(c => c.id.startsWith(`phys-2013-hl-q12-${part}-`))
+      .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+  });
 
   it('retains the 2014 Ordinary data, full options, independent prompts and source corrections', () => {
     const cards = deck.filter(c => c.id.startsWith('phys-2014-ol-'));

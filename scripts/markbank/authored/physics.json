@@ -97279,5 +97279,3638 @@
   "year": 2014,
   "level": "ordinary",
   "figureKey": "physics-2014-ol-q12-circuit"
+ },
+ {
+  "id": "phys-2013-hl-q1-centre",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "centre",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Finding the centre of gravity",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium.",
+  "questionText": "How did the student find the centre of gravity of the metre stick?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "balanced (horizontally) at a point (fulcrum) / suspended (horizontally) from a string",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q1-non-uniform",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "non-uniform",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Why the centre is off-centre",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium.",
+  "questionText": "The centre of gravity was at the 50.3 cm mark rather than the mid-point of the metre stick. Explain.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "metre stick not uniform / stick chipped / extra material on one end",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q1-equilibrium",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "equilibrium",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Checking equilibrium",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium.",
+  "questionText": "How did the student ensure that the system was at equilibrium?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "system not moving",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q1-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Equilibrium apparatus",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium.",
+  "questionText": "Draw a diagram of the experimental arrangement that the student used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "metre stick horizontal",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "metre stick suspended from two spring balances with only three weights suspended from stick",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q1-moments",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moments",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Clockwise and anticlockwise moments",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium. The centre of gravity was at the 50.3 cm mark rather than the mid-point of the metre stick. The student recorded the positions of the forces acting on the metre stick and the direction in which each force was acting.",
+  "questionText": "Taking the moments of the forces about the mid-point of the metre stick (50 cm mark), use the student’s data to calculate (i) the total of the clockwise moments (ii) the total of the anti-clockwise moments.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "torque / (turning) moment / M / T = force ×distance (= F × d)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct calculation of the moment of any force about any fulcrum",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "moment due to weight of metre stick (= 1.3 × 0.003 = 0.0039 N m)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "moments (i): (2.0 × 0.386) + (3.0 × 0.282) + (4.6 × 0.154) = 0.772 + 0.846 + 0.7084 = 2.3264 N m",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "moments (ii): (5.7 × 0.197) + (1.3 × 0.003) + (4.0 × 0.3) = 1.1229 + 0.0039 + 1.2 = 2.3268 N m",
+    "marks": 3,
+    "contextNote": "Deduct 3 for moments about a point other than 50 cm; deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Both requested moment totals share three method criteria, so retain one complete 15-mark calculation task. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q1-moments-solution",
+  "questionFigureKey": "physics-2013-hl-q1-moments-question"
+ },
+ {
+  "id": "phys-2013-hl-q1-verify",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2013 HL Q1 — Verifying both equilibrium laws",
+  "stem": "The laws of equilibrium for a set of co-planar forces acting on a metre stick were investigated by a student. She first found the centre of gravity of the metre stick and then determined its weight as 1.3 N. The metre stick was suspended from two spring balances graduated in newtons. The student made use of a set of three weights, which she hung from the metre stick. She adjusted them until the metre stick was at equilibrium. The centre of gravity was at the 50.3 cm mark rather than the mid-point of the metre stick. The student recorded the positions of the forces acting on the metre stick and the direction in which each force was acting. Taking the moments of the forces about the mid-point of the metre stick (50 cm mark), use the student’s data to calculate (i) the total of the clockwise moments (ii) the total of the anti-clockwise moments.",
+  "questionText": "Explain how these results verify the laws of equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "forces up = forces down (= 10.3 N)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "total clockwise moments ≈ total anticlockwise moments",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q1-data"
+ },
+ {
+  "id": "phys-2013-hl-q2-quantities",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "quantities",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — Identifying the measured quantities",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below.",
+  "questionText": "What physical quantities do X and Y represent?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pressure",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "volume/height/length",
+    "marks": 3,
+    "contextNote": "Either order is accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-data"
+ },
+ {
+  "id": "phys-2013-hl-q2-units",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "units",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — Units of both quantities",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below. What physical quantities do X and Y represent?",
+  "questionText": "Name the units used when measuring these quantities.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. N m⁻² , kPa, Pa, mbar, atmosphere, cm Hg, torr etc.",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "cm³ (m³, mm³, cm, litre, etc.)",
+    "marks": 2,
+    "contextNote": "Units must match the quantity order given in your preceding answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-data"
+ },
+ {
+  "id": "phys-2013-hl-q2-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — Boyle’s law apparatus",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below.",
+  "questionText": "Draw a labelled diagram of the apparatus that the student used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "gas labelled in container with graduations",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "labelled pressure gauge",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "labelled means of adjusting pressure or volume",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-data"
+ },
+ {
+  "id": "phys-2013-hl-q2-procedure",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "procedure",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — Obtaining the readings",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below.",
+  "questionText": "Describe the procedure he used to obtain these readings.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "method of changing pressure (e.g. valve) / volume (e.g. piston)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "read (new) pressure and volume",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-data"
+ },
+ {
+  "id": "phys-2013-hl-q2-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — Boyle’s law graph",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below.",
+  "questionText": "Use the data in the table to draw an appropriate graph on graph paper.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot six points correctly",
+    "marks": 6,
+    "contextNote": "Deduct 1 for each incorrect point."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "straight line with good distribution",
+    "marks": 3,
+    "contextNote": "Deduct 1 for an inappropriate scale."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-graph-solution",
+  "questionFigureKey": "physics-2013-hl-q2-graph-question"
+ },
+ {
+  "id": "phys-2013-hl-q2-verify",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2013 HL Q2 — How the graph verifies Boyle’s law",
+  "stem": "In an experiment to verify Boyle’s law, a student took the set of readings given in the table below. Use the data in the table to draw an appropriate graph on graph paper.",
+  "questionText": "Explain how your graph verifies Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "straight line through the origin implies p inversely proportional to V",
+    "marks": 3,
+    "contextNote": "Equivalent accepted forms are p ∝ 1/V and pV constant."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q2-data"
+ },
+ {
+  "id": "phys-2013-hl-q3-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2013 HL Q3 — Concave-mirror apparatus",
+  "stem": "The following is part of a student’s report on an experiment to measure the focal length of a concave mirror. “I started with the object 6 cm from the mirror but couldn’t get an image to form on the screen. I moved the object back a few centimetres and tried again, but I couldn’t get an image to form on the screen until the object was 24 cm from the mirror. From then on I moved the object back 8 cm each time and measured the corresponding image distances. I wrote my results in the table.”",
+  "questionText": "Draw a labelled diagram of the apparatus used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: e.g. bulb, mirror, screen",
+    "marks": 3,
+    "contextNote": "Components must be consistent and each labelled."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct shape of mirror",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q3-data"
+ },
+ {
+  "id": "phys-2013-hl-q3-precautions",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "precautions",
+  "section": "A",
+  "questionRef": "2013 HL Q3 — Measuring image distance",
+  "stem": "The following is part of a student’s report on an experiment to measure the focal length of a concave mirror. “I started with the object 6 cm from the mirror but couldn’t get an image to form on the screen. I moved the object back a few centimetres and tried again, but I couldn’t get an image to form on the screen until the object was 24 cm from the mirror. From then on I moved the object back 8 cm each time and measured the corresponding image distances. I wrote my results in the table.”",
+  "questionText": "Give two precautions that should be taken when measuring the image distance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "measure from the back of the mirror / measure from the centre (pole) of the mirror / avoid parallax error / ensure image is sharp / have both screen and mirror vertical",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "measure from the back of the mirror",
+      "measure from the centre (pole) of the mirror",
+      "avoid parallax error",
+      "ensure image is sharp",
+      "have both screen and mirror vertical"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q3-data"
+ },
+ {
+  "id": "phys-2013-hl-q3-virtual",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "virtual",
+  "section": "A",
+  "questionRef": "2013 HL Q3 — Why no image forms on the screen",
+  "stem": "The following is part of a student’s report on an experiment to measure the focal length of a concave mirror. “I started with the object 6 cm from the mirror but couldn’t get an image to form on the screen. I moved the object back a few centimetres and tried again, but I couldn’t get an image to form on the screen until the object was 24 cm from the mirror. From then on I moved the object back 8 cm each time and measured the corresponding image distances. I wrote my results in the table.”",
+  "questionText": "Explain why the student was unable to form an image on the screen when the object was close to the mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "object inside the focal length / virtual image formed",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q3-data"
+ },
+ {
+  "id": "phys-2013-hl-q3-focal-length",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "focal-length",
+  "section": "A",
+  "questionRef": "2013 HL Q3 — Focal length from all measurements",
+  "stem": "The following is part of a student’s report on an experiment to measure the focal length of a concave mirror. “I started with the object 6 cm from the mirror but couldn’t get an image to form on the screen. I moved the object back a few centimetres and tried again, but I couldn’t get an image to form on the screen until the object was 24 cm from the mirror. From then on I moved the object back 8 cm each time and measured the corresponding image distances. I wrote my results in the table.”",
+  "questionText": "Use all of the data in the table to calculate a value for the focal length of the mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 3,
+    "route": "calculation"
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "calculation of f",
+    "marks": 9,
+    "contextNote": "3 marks for each correct f, to a maximum of three values; use all four pairs to find the average.",
+    "route": "calculation"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "average of f values",
+    "marks": 3,
+    "contextNote": "f ≈ 17.9 cm.",
+    "route": "calculation"
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "label axes correctly / plot four points correctly / straight line with good distribution",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "label axes correctly",
+      "plot four points correctly",
+      "straight line with good distribution"
+     ]
+    },
+    "contextNote": "All three graph criteria: 3 marks each. Deduct 1 per incorrect point and 1 for an inappropriate scale.",
+    "route": "graph"
+   },
+   {
+    "id": "r5",
+    "kind": "criterion",
+    "verbatim": "read intercept points",
+    "marks": 3,
+    "contextNote": "Deduct 1 if only one intercept is used.",
+    "route": "graph"
+   },
+   {
+    "id": "r6",
+    "kind": "criterion",
+    "verbatim": "calculation of f value",
+    "marks": 3,
+    "contextNote": "f ≈ 17.9 cm.",
+    "route": "graph"
+   }
+  ],
+  "notes": "Calculation and graph are complete alternative 15-mark methods, never added together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q3-focal-solution",
+  "questionFigureKey": "physics-2013-hl-q3-focal-question"
+ },
+ {
+  "id": "phys-2013-hl-q3-approximate",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "approximate",
+  "section": "A",
+  "questionRef": "2013 HL Q3 — Finding an approximate focal length",
+  "stem": "The following is part of a student’s report on an experiment to measure the focal length of a concave mirror. “I started with the object 6 cm from the mirror but couldn’t get an image to form on the screen. I moved the object back a few centimetres and tried again, but I couldn’t get an image to form on the screen until the object was 24 cm from the mirror. From then on I moved the object back 8 cm each time and measured the corresponding image distances. I wrote my results in the table.”",
+  "questionText": "Describe how the student could have found an approximate value for the focal length of the mirror before starting the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure image distance for distant object",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q3-data"
+ },
+ {
+  "id": "phys-2013-hl-q4-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Current–voltage circuit",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table.",
+  "questionText": "Draw and label the circuit diagram used by the student.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus: p.s.u. / battery, ammeter, voltmeter",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ammeter in series with conductor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "voltmeter in parallel with conductor",
+    "marks": 3,
+    "contextNote": "Deduct 1 if there is no label."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-data"
+ },
+ {
+  "id": "phys-2013-hl-q4-device",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "device",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Varying the potential difference",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table.",
+  "questionText": "Name the device in the circuit that is used to vary the potential difference across the conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "variable p.s.u. / variable resistor (rheostat) / potential divider",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-data"
+ },
+ {
+  "id": "phys-2013-hl-q4-use-device",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "use-device",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Using the variable supply",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table. Name the device in the circuit that is used to vary the potential difference across the conductor.",
+  "questionText": "Explain how the student used this device to vary the potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. rotated the dial / moved sliding contact",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-data"
+ },
+ {
+  "id": "phys-2013-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Current–voltage graph",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table.",
+  "questionText": "Use the data in the table to draw a graph on graph paper to show the variation of current with potential difference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "label axes correctly",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "plot six points correctly",
+    "marks": 3,
+    "contextNote": "Deduct 1 for each incorrect point."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "good distribution (for curved or linear graph)",
+    "marks": 3,
+    "contextNote": "Deduct 1 for inappropriate scale."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-graph-solution",
+  "questionFigureKey": "physics-2013-hl-q4-graph-question"
+ },
+ {
+  "id": "phys-2013-hl-q4-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Resistance at 0.7 A",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table. Use the data in the table to draw a graph on graph paper to show the variation of current with potential difference.",
+  "questionText": "Use your graph to find the value of the resistance of the conductor when the current is 0.7 A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "V ≈ 4.5 V (when I = 0.7 A on graph)",
+    "marks": 3,
+    "route": "voltage-current"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "R ≈ 6.4 Ω",
+    "marks": 3,
+    "contextNote": "Use R = V/I. Deduct 1 for missing or incorrect units.",
+    "route": "voltage-current"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "slope method",
+    "marks": 3,
+    "route": "slope"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "answer compatible with graph drawn",
+    "marks": 3,
+    "contextNote": "Use the same method throughout. Deduct 1 for missing or incorrect units.",
+    "route": "slope"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-data"
+ },
+ {
+  "id": "phys-2013-hl-q4-shape",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "shape",
+  "section": "A",
+  "questionRef": "2013 HL Q4 — Explaining the curve",
+  "stem": "A student was asked to investigate the variation of current with potential difference for a thin metallic conductor. The student set up a circuit using appropriate equipment. The student recorded the values of the current I passing through the conductor for the corresponding values of potential difference V. The recorded data are shown in the table. Use the data in the table to draw a graph on graph paper to show the variation of current with potential difference.",
+  "questionText": "Explain the shape of your graph.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "resistance (of conductor) increases",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with increasing temperature",
+    "marks": 3,
+    "contextNote": "An appropriate reference to Ohm’s law and resistance is also accepted for 4+3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q4-data"
+ },
+ {
+  "id": "phys-2013-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2013 HL Q5(a)",
+  "questionText": "What is the shortest stopping time for a car which is travelling at 16 m s⁻¹ and has a maximum deceleration of 2.5 m s⁻² ?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = u + at / s = ut + ½at² / v² = u² + 2as",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "t = 6.4 s",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2013 HL Q5(b)",
+  "questionText": "State the law of conservation of momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "momentum before = momentum after",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in a closed system / provided no external forces act",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2013 HL Q5(c)",
+  "questionText": "Explain why heat does not travel through solids by means of convection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the particles cannot move (freely)",
+    "marks": 7
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2013 HL Q5(d)",
+  "questionText": "Storage heaters are frequently used to heat buildings. State the principle that underlies the operation of an electrical storage heater.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "large heat capacity",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "heated when electricity is inexpensive (off peak) / store a large quantity of energy / release energy slowly (during the day)",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "heated when electricity is inexpensive (off peak)",
+      "store a large quantity of energy",
+      "release energy slowly (during the day)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2013 HL Q5(e)",
+  "questionText": "If a diamond has a refractive index of 2.42, what is the speed of light in the diamond?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n= c₁/c₂",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "=1.24 ×10⁸ m s⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q5-diamond-solution"
+ },
+ {
+  "id": "phys-2013-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2013 HL Q5(f)",
+  "questionText": "Define the volt.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "potential difference (between two points)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "if 1 J (of work) is needed to move 1 C (from one point to the other)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2013 HL Q5(g)",
+  "questionText": "A positively-charged rod is brought near to a neutral, conducting sphere that is on top of an insulating stand, as shown in the diagram. How would a student charge the sphere negatively by induction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "earth the sphere",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "remove earth (connection) and then remove rod",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q5-sphere"
+ },
+ {
+  "id": "phys-2013-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2013 HL Q5(h)",
+  "questionText": "Explain what is meant by the statement: “Zinc has a threshold frequency of 1.04 × 10¹⁵ Hz”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "below this frequency",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "e.m.r. /photons will not cause emission of electrons (from zinc surface)",
+    "marks": 3,
+    "contextNote": "A correct converse statement also earns 4+3."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2013 HL Q5(i)",
+  "questionText": "Give one benefit of switching from fossil fuels to nuclear power for the generation of electricity. Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "more energy per kg / less carbon dioxide produced / production of useful radioisotopes",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "more energy per kg",
+      "less carbon dioxide produced",
+      "production of useful radioisotopes"
+     ]
+    },
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "explanation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q5-j-pair-production",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j-pair",
+  "section": "B",
+  "questionRef": "2013 HL Q5(j) — pair-production",
+  "questionText": "Give an expression for the minimum frequency of a photon that can form an electron and a positron by pair production.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(f =) 2mₑc²/h",
+    "marks": 7,
+    "contextNote": "4 marks for hf or mc² alone."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q5-pair-solution"
+ },
+ {
+  "id": "phys-2013-hl-q5-j-led",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5j-led",
+  "section": "B",
+  "questionRef": "2013 HL Q5(j) — led",
+  "questionText": "What event inside an LED causes the release of a photon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electron combines",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with (positive) hole",
+    "marks": 3,
+    "contextNote": "The scheme also accepts an electron dropping to a lower energy level/band for all 7 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6i",
+  "section": "B",
+  "questionRef": "2013 HL Q6(i)",
+  "questionText": "State Newton’s law of universal gravitation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force proportional to product of masses",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "inversely proportional to square of distance",
+    "marks": 3,
+    "contextNote": "Equivalent mathematical forms F ∝ m₁m₂/d² or F = Gm₁m₂/d² with correct notation are also accepted."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-gravitation-solution"
+ },
+ {
+  "id": "phys-2013-hl-q6-ii-definition",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "definition",
+  "section": "B",
+  "questionRef": "2013 HL Q6(ii) — Angular velocity",
+  "questionText": "Explain what is meant by angular velocity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rate of change of angle",
+    "marks": 3,
+    "contextNote": "θ/t with correct notation is also accepted."
+   }
+  ],
+  "notes": "Definition is separately priced at 3; the following derivation is 6. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q6-ii-derive",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "derive",
+  "section": "B",
+  "questionRef": "2013 HL Q6(ii) — Angular and linear velocity",
+  "questionText": "Derive an equation for the angular velocity of an object in terms of its linear velocity when the object moves in a circle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ω= θ/t",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ω= vt/(rt) / v/r",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-derive-solution"
+ },
+ {
+  "id": "phys-2013-hl-q6-iii-angular",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "angular",
+  "section": "B",
+  "questionRef": "2013 HL Q6(iii) — ISS angular velocity",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds. (mass of ISS = 4.5 × 10⁵ kg; radius of the earth = 6.37 × 10⁶ m)",
+  "questionText": "Calculate (a) the angular velocity",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ω = 2π/T",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ω = 2π/5570 /1.1 ×10⁻³ s⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units; use the unrounded value in subsequent calculations."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-angular-solution",
+  "questionFigureKey": "physics-2013-hl-q6-angular-question"
+ },
+ {
+  "id": "phys-2013-hl-q6-iii-linear",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "linear",
+  "section": "B",
+  "questionRef": "2013 HL Q6(iii) — ISS linear velocity",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds. (mass of ISS = 4.5 × 10⁵ kg; radius of the earth = 6.37 × 10⁶ m)",
+  "questionText": "Calculate the linear velocity, of the ISS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = rω",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v = (6.783 × 10⁶) × (1.1 × 10⁻³) = 7651.5 m s⁻¹",
+    "marks": 3,
+    "contextNote": "The printed result uses the unrounded angular velocity 2π/5570. The displayed rounded 1.1 × 10⁻³ would give 7461.3 m s⁻¹. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-iss"
+ },
+ {
+  "id": "phys-2013-hl-q6-iv-acceleration",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "acceleration",
+  "section": "B",
+  "questionRef": "2013 HL Q6(iv) — ISS acceleration",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds.",
+  "questionText": "Name the type of acceleration that the ISS experiences as it travels in a circular orbit around the earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "centripetal / gravitational",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-iss"
+ },
+ {
+  "id": "phys-2013-hl-q6-iv-force-name",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "force-name",
+  "section": "B",
+  "questionRef": "2013 HL Q6(iv) — Force keeping the ISS in orbit",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds. Name the type of acceleration that the ISS experiences as it travels in a circular orbit around the earth.",
+  "questionText": "What force provides this acceleration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "gravitational",
+    "marks": 3,
+    "contextNote": "The scheme requires gravitational force and does not accept “gravity” alone."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-iss"
+ },
+ {
+  "id": "phys-2013-hl-q6-v-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2013 HL Q6(v) — Attractive force on the ISS",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds. (mass of ISS = 4.5 × 10⁵ kg; radius of the earth = 6.37 × 10⁶ m)",
+  "questionText": "Calculate the attractive force between the earth and the ISS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = mv²/r // F = mrω²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 3.884 × 10⁶ N",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-force-solution",
+  "questionFigureKey": "physics-2013-hl-q6-force-question"
+ },
+ {
+  "id": "phys-2013-hl-q6-v-earth-mass",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "earth-mass",
+  "section": "B",
+  "questionRef": "2013 HL Q6(v) — Mass of the Earth",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds. (mass of ISS = 4.5 × 10⁵ kg; radius of the earth = 6.37 × 10⁶ m) Calculate the attractive force between the earth and the ISS. If the value of the acceleration due to gravity on the ISS is 8.63 m s⁻²",
+  "questionText": "Hence or otherwise, calculate the mass of the earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F= GmM/r² // T² = 4π²r³/(GM) // g= GM/r²",
+    "marks": 3,
+    "contextNote": "Choose one complete method: gravitational force, orbital period, or g = 8.63 m s⁻². Use the same method in the next row."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "M = Fr²/(Gm) // M= 4π²r³/(GT²) // M= (8.63)r²/G",
+    "marks": 3,
+    "contextNote": "Use the rearrangement matching your chosen formula."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "M = 5.95 × 10²⁴ kg",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-earth-mass-solution",
+  "questionFigureKey": "physics-2013-hl-q6-earth-mass-question"
+ },
+ {
+  "id": "phys-2013-hl-q6-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6vi",
+  "section": "B",
+  "questionRef": "2013 HL Q6(vi)",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds.",
+  "questionText": "If the value of the acceleration due to gravity on the ISS is 8.63 m s⁻², why do occupants of the ISS experience apparent weightlessness?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "they are in freefall // ISS accelerating at the same rate as occupants",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-iss"
+ },
+ {
+  "id": "phys-2013-hl-q6-vii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "6vii",
+  "section": "B",
+  "questionRef": "2013 HL Q6(vii)",
+  "stem": "The International Space Station (ISS), shown in the photograph, functions as a research laboratory and a location for testing of equipment required for trips to the moon and to Mars. The ISS orbits the earth at an altitude of 4.13 × 10⁵ m every 92 minutes 50 seconds.",
+  "questionText": "A geostationary communications satellite orbits the earth at a much higher altitude than the ISS. What is the period of a geostationary communications satellite?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1 day",
+    "marks": 5
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q6-iss"
+ },
+ {
+  "id": "phys-2013-hl-q7-resonance",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "resonance",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Resonance",
+  "questionText": "What is meant by the term resonance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transfer of energy between two systems",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "of similar natural frequencies",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q7-demonstration",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "demonstration",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Demonstrating resonance",
+  "questionText": "How would resonance be demonstrated in the laboratory?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "Describe the observed increase in amplitude at resonance for your chosen apparatus."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "apparatus (e.g. Barton’s pendulums",
+    "marks": 3,
+    "route": "pendulums"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "procedure (e.g. set one pendulum oscillating",
+    "marks": 3,
+    "route": "pendulums"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "column of air and tuning fork)",
+    "marks": 3,
+    "route": "air-column"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "hold vibrating fork over column of air etc.)",
+    "marks": 3,
+    "route": "air-column"
+   }
+  ],
+  "notes": "Two complete methods each use matching apparatus, procedure and the common observation criterion; 9 marks per method. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q7-harmonics",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "harmonics",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Naming the frequencies",
+  "stem": "A set of wind chimes, as shown in the diagram, is made from different lengths of hollow metal tubing that are open at both ends. When the wind blows, the wind chimes are struck by a clapper and emit sounds. The sound from one of the tubes was analysed. The following frequencies were identified in the sound: 550 Hz, 1100 Hz and 1651 Hz.",
+  "questionText": "What name is given to this set of frequencies?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "overtones / harmonics",
+    "marks": 5,
+    "contextNote": "550 Hz is the fundamental. The set is the first three harmonics; “overtones” is retained because it is an accepted historical scheme answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q7-chimes"
+ },
+ {
+  "id": "phys-2013-hl-q7-diagrams",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "diagrams",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Three open-tube harmonics",
+  "stem": "A set of wind chimes, as shown in the diagram, is made from different lengths of hollow metal tubing that are open at both ends. When the wind blows, the wind chimes are struck by a clapper and emit sounds. The sound from one of the tubes was analysed. The following frequencies were identified in the sound: 550 Hz, 1100 Hz and 1651 Hz.",
+  "questionText": "Draw labelled diagrams to show how the tube produces each of these frequencies.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "antinodes (A) at both ends",
+    "marks": 3,
+    "contextNote": "550 Hz fundamental."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "linked correctly to one node (N) (in the centre)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "1100 Hz (2f): antinodes at both ends",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "linked correctly to two nodes",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "1651 Hz (3f): antinodes at both ends linked correctly to three nodes",
+    "marks": 3,
+    "contextNote": "Deduct 1 if no correct label."
+   }
+  ],
+  "notes": "All three diagrams are required, with one shared labelling deduction; preserve the full 15-mark response. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q7-chimes"
+ },
+ {
+  "id": "phys-2013-hl-q7-speed",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "speed",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Speed of sound from a harmonic",
+  "stem": "A set of wind chimes, as shown in the diagram, is made from different lengths of hollow metal tubing that are open at both ends. When the wind blows, the wind chimes are struck by a clapper and emit sounds. The sound from one of the tubes was analysed. The following frequencies were identified in the sound: 550 Hz, 1100 Hz and 1651 Hz.",
+  "questionText": "The length of the metal tube is 30 cm. Use any of the above frequencies to calculate a value for the speed of sound in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = fλ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "λ = 0.60 m",
+    "marks": 3,
+    "contextNote": "This is the fundamental method; for 1100 Hz use 0.30 m, or for 1651 Hz use 0.20 m."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "c ≈ 550 × 0.60 = 330 m s⁻¹",
+    "marks": 3,
+    "contextNote": "Any of the three given frequencies is permitted. The third gives about 330.2 m s⁻¹. Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Any one frequency is one calculation task; keep all three permitted frequencies, never three duplicate cards. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q7-chimes"
+ },
+ {
+  "id": "phys-2013-hl-q7-tension",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "tension",
+  "section": "B",
+  "questionRef": "2013 HL Q7 — Guitar-string tension",
+  "questionText": "A sample of wire, of length 12 m and mass 48 g, was being tested for use as a guitar string. A 64 cm length of the wire was fixed at both ends and plucked. The fundamental frequency of the sound produced was found to be 173 Hz. Calculate the tension in the wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "µ = 0.048 ÷ 12 = 0.004 kg m⁻¹",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "f= 1/(2l) √(T/(µ))",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "T = 4(lf)²µ",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "T [= 4 × (0.64 × 173)² × 0.004] = 196 N",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q7-tension-solution"
+ },
+ {
+  "id": "phys-2013-hl-q8-a-parts",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "parts",
+  "section": "B",
+  "questionRef": "2013 HL Q8(a) — Charger components",
+  "stem": "The diagram shows a circuit used in a charger for a mobile phone.",
+  "questionText": "Name the parts labelled F, G and H.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "transformer / iron core (F)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "diode (G)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "capacitor (H)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q8-charger",
+  "labelKey": [
+   {
+    "letter": "F",
+    "meaning": "transformer / iron core (F)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "G",
+    "meaning": "diode (G)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "H",
+    "meaning": "capacitor (H)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2013-hl-q8-a-rectifier",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "rectifier",
+  "section": "B",
+  "questionRef": "2013 HL Q8(a) — Function of the diode",
+  "stem": "The diagram shows a circuit used in a charger for a mobile phone.",
+  "questionText": "Describe the function of G in this circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rectifier / converts a.c. to d.c.",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q8-charger"
+ },
+ {
+  "id": "phys-2013-hl-q8-a-graphs",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graphs",
+  "section": "B",
+  "questionRef": "2013 HL Q8(a) — Input and output voltage graphs",
+  "stem": "The diagram shows a circuit used in a charger for a mobile phone.",
+  "questionText": "Sketch graphs to show how voltage varies with time for (i) the input voltage (ii) the output voltage, VXY.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "axes correctly labelled on at least one graph",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct shape of input voltage (sine wave)",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct shape of output voltage",
+    "marks": 6,
+    "contextNote": "Deduct 1 if the output graph does not show the capacitor’s smoothing effect."
+   }
+  ],
+  "notes": "Both graphs share the axis criterion; one complete 12-mark response. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q8-charger"
+ },
+ {
+  "id": "phys-2013-hl-q8-a-energy",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "energy",
+  "section": "B",
+  "questionRef": "2013 HL Q8(a) — Maximum capacitor energy",
+  "stem": "The diagram shows a circuit used in a charger for a mobile phone.",
+  "questionText": "The photograph shows the device H used in the circuit. Use the data printed on the device to calculate the maximum energy that it can store.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = ½CV²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = ½ × (2200 × 10⁻⁶) × (16)²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 0.2816 J",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q8-capacitor",
+  "questionFigureKey": "physics-2013-hl-q8-energy-question"
+ },
+ {
+  "id": "phys-2013-hl-q8-b-transmission",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "transmission",
+  "section": "B",
+  "questionRef": "2013 HL Q8(b) — Why transmit at high voltage?",
+  "questionText": "Electricity generating companies transmit electricity over large distances at high voltage. Explain why high voltage is used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(for a given power transmission) high voltage uses low current",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "minimising power (heat) loss",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q8-b-i-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance",
+  "section": "B",
+  "questionRef": "2013 HL Q8(b)(i) — Resistance of the aluminium wire",
+  "stem": "A 3 km length of aluminium wire is used to carry a current of 250 A. The wire has a circular cross-section of diameter 18 mm. (resistivity of aluminium = 2.8 × 10 ⁻⁸ Ω m)",
+  "questionText": "Calculate the resistance of the aluminium wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R = ρl/A",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "A = πr²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "R = 0.33 Ω",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q8-wire-solution",
+  "questionFigureKey": "physics-2013-hl-q8-wire-question"
+ },
+ {
+  "id": "phys-2013-hl-q8-b-ii-heat",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "heat",
+  "section": "B",
+  "questionRef": "2013 HL Q8(b)(ii) — Heat loss in the wire",
+  "stem": "A 3 km length of aluminium wire is used to carry a current of 250 A. The wire has a circular cross-section of diameter 18 mm. (resistivity of aluminium = 2.8 × 10 ⁻⁸ Ω m)",
+  "questionText": "Calculate how much electrical energy is converted to heat energy in the wire in ten minutes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = I²Rt",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = (250)² × 0.33 × 600 = 1.238 × 10⁷ J",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q9-becquerel",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "becquerel",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — The becquerel",
+  "questionText": "Define the becquerel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one disintegration per second",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q9-detector",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "detector",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Detecting ionising radiation",
+  "questionText": "Name one device used to detect ionising radiations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "GM tube / solid state detector etc.",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q9-compare",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "compare",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Comparing three radiations",
+  "questionText": "Compare alpha, beta, and gamma emissions using the following headings: (a) penetrating ability, (b) deflection in a magnetic field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a): gamma (most penetrating) > beta > alpha (least penetrating)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(b): alpha, beta deflected, gamma not deflected",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "alpha and beta deflected in opposite directions",
+    "marks": 3
+   }
+  ],
+  "notes": "Both headings and all three emissions form one comparison, not a choice pool. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q9-fission",
+  "subjectId": "physics",
+  "topicId": "phys-4-6",
+  "conceptId": "fission",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Nuclear fission",
+  "stem": "The photograph shows one of the nuclear reactors at Chernobyl, where there was a fire in April 1986 that released large quantities of radioactive contaminants. Among the contaminants were iodine–131 and caesium–137, which are two of the unstable isotopes formed by the fission of uranium–235.",
+  "questionText": "Explain what happens during nuclear fission.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "large nucleus splits",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "into two smaller nuclei",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "with the emission of energy / neutrons",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q9-reactor"
+ },
+ {
+  "id": "phys-2013-hl-q9-iodine-decay",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "iodine-decay",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Iodine-131 beta decay",
+  "stem": "The photograph shows one of the nuclear reactors at Chernobyl, where there was a fire in April 1986 that released large quantities of radioactive contaminants. Among the contaminants were iodine–131 and caesium–137, which are two of the unstable isotopes formed by the fission of uranium–235. Iodine–131 decays with the emission of a beta-particle and has a half-life of 8 days.",
+  "questionText": "Write an equation for the beta-decay of iodine–131.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "¹³¹₅₃I → ¹³¹₅₄Xe + ⁰₋₁e",
+    "marks": 9,
+    "contextNote": "1 mark for each of the nine correct numbers and symbols; β is accepted for e. The historical scheme omits the electron antineutrino, which is also emitted in beta-minus decay."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q9-decay-solution",
+  "questionFigureKey": "physics-2013-hl-q9-decay-question"
+ },
+ {
+  "id": "phys-2013-hl-q9-iodine-fraction",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "iodine-fraction",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Fraction remaining after 40 days",
+  "stem": "Iodine–131 decays with the emission of a beta-particle and has a half-life of 8 days.",
+  "questionText": "Estimate the fraction of the iodine–131 that remained after 40 days.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "40 days = 5 half-lives",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(½)⁵ / ¹∕32",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q9-decay-constant",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "decay-constant",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Caesium-137 decay constant",
+  "stem": "Caesium–137 has a half-life of 30 years and it remains a significant contaminant in the region around Chernobyl. It is easily absorbed into the tissues of plants as they grow. Scientists collected a sample of berries growing near the abandoned power station. The activity of the sample was measured at 5000 Bq.",
+  "questionText": "Calculate the decay constant of caesium–137.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "λ = ln2/(T½)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "λ = 7.32 × 10⁻¹⁰ s⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q9-caesium-solution"
+ },
+ {
+  "id": "phys-2013-hl-q9-atoms",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "atoms",
+  "section": "B",
+  "questionRef": "2013 HL Q9 — Number of radioactive atoms",
+  "stem": "Caesium–137 has a half-life of 30 years and it remains a significant contaminant in the region around Chernobyl. It is easily absorbed into the tissues of plants as they grow. Scientists collected a sample of berries growing near the abandoned power station. The activity of the sample was measured at 5000 Bq.",
+  "questionText": "Hence calculate the number of caesium–137 atoms present in the sample. (You may assume that all of the activity was caused by caesium–137.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = λN",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "N = 6.83 × 10¹² atoms",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-accelerate",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "accelerate",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Accelerating protons",
+  "stem": "In 1932 J.D. Cockroft and E.T.S. Walton accelerated protons to energies of up to 700 keV and used them to bombard a lithium target. They observed the production of alpha-particles from the collisions between the accelerated protons and the lithium nuclei.",
+  "questionText": "How did Cockroft and Walton accelerate the protons?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high voltage / large electric field",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-detect",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "detect",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Detecting alpha particles",
+  "stem": "In 1932 J.D. Cockroft and E.T.S. Walton accelerated protons to energies of up to 700 keV and used them to bombard a lithium target. They observed the production of alpha-particles from the collisions between the accelerated protons and the lithium nuclei.",
+  "questionText": "How did they detect the alpha-particles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "scintillations / flashes of light / fluorescence",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "when particles hit (zinc sulfide) screen",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-reaction",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "reaction",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Cockcroft–Walton nuclear equation",
+  "stem": "In 1932 J.D. Cockroft and E.T.S. Walton accelerated protons to energies of up to 700 keV and used them to bombard a lithium target. They observed the production of alpha-particles from the collisions between the accelerated protons and the lithium nuclei.",
+  "questionText": "Write the nuclear equation for the reaction that occurred",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "⁷₃Li + ¹₁H → ⁴₂He + ⁴₂He",
+    "marks": 9,
+    "contextNote": "Deduct 1 for every incorrect or omitted symbol or number."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-reaction-solution"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-significance",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "significance",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Historical significance of the reaction",
+  "stem": "In 1932 J.D. Cockroft and E.T.S. Walton accelerated protons to energies of up to 700 keV and used them to bombard a lithium target. They observed the production of alpha-particles from the collisions between the accelerated protons and the lithium nuclei.",
+  "questionText": "indicate the historical significance of their observation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1st experimental verification of E = mc² / first artificial splitting of the nucleus (atom) / first transmutation using artificially accelerated particles / awarded Nobel Prize",
+    "marks": 3
+   }
+  ],
+  "notes": "Separate 3-mark significance answer follows the independently priced 9-mark equation. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-speed",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "speed",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Proton speed at 700 keV",
+  "stem": "In 1932 J.D. Cockroft and E.T.S. Walton accelerated protons to energies of up to 700 keV and used them to bombard a lithium target. They observed the production of alpha-particles from the collisions between the accelerated protons and the lithium nuclei.",
+  "questionText": "Calculate the speed of a proton that has a kinetic energy of 700 keV.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "700 keV = 1.12 × 10⁻¹³ J",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = ½mv²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "v = 1.16 × 10⁷ m s⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-vacuum",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "vacuum",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Why evacuate the accelerator?",
+  "stem": "Many modern particle accelerators, such as the Large Hadron Collider (LHC) in CERN, have a circular design. The diagram shows a simplified design of a circular accelerator.",
+  "questionText": "Why is the tube evacuated?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "so that particles do not collide with gas particles // to increase mean free path",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-accelerator"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-high-speed",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "high-speed",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Why accelerate particles?",
+  "stem": "Many modern particle accelerators, such as the Large Hadron Collider (LHC) in CERN, have a circular design. The diagram shows a simplified design of a circular accelerator.",
+  "questionText": "What is the purpose of accelerating the particles to high velocities?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to overcome repulsive forces // to create new matter",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-accelerator"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-magnets",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "magnets",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Purpose of accelerator magnets",
+  "stem": "Many modern particle accelerators, such as the Large Hadron Collider (LHC) in CERN, have a circular design. The diagram shows a simplified design of a circular accelerator.",
+  "questionText": "What is the purpose of the magnets?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to contain the particles (in a circular path)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-accelerator"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-circular",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "circular",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Advantage of a circular accelerator",
+  "stem": "Many modern particle accelerators, such as the Large Hadron Collider (LHC) in CERN, have a circular design. The diagram shows a simplified design of a circular accelerator.",
+  "questionText": "Give an advantage of a circular accelerator over a linear accelerator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "takes up less space // particles can achieve greater energy / speed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-accelerator"
+ },
+ {
+  "id": "phys-2013-hl-q10-a-neutrons",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "neutrons",
+  "section": "B",
+  "questionRef": "2013 HL Q10(a) — Can it accelerate neutrons?",
+  "stem": "Many modern particle accelerators, such as the Large Hadron Collider (LHC) in CERN, have a circular design. The diagram shows a simplified design of a circular accelerator.",
+  "questionText": "Can an accelerator of this design be used to accelerate neutrons? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "neutrons have no charge and are therefore not affected by electric / magnetic fields",
+    "marks": 3,
+    "contextNote": "For acceleration in this design, the relevant point is that a neutron has no net charge, so the accelerating electric field cannot accelerate it as it does a proton. The source’s broader wording about magnetic fields is simplified: neutrons have a magnetic moment."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-accelerator"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-principle",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "principle",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Moving-coil galvanometer principle",
+  "questionText": "State the principle on which a moving-coil galvanometer is based.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a current carrying conductor experiences a force",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "in a magnetic field",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-ammeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "ammeter",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Galvanometer as ammeter",
+  "questionText": "Draw labelled diagrams to show how a galvanometer may be converted to function as an ammeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(small) resistance",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "connected in parallel",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-voltmeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltmeter",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Galvanometer as voltmeter",
+  "questionText": "Draw labelled diagrams to show how a galvanometer may be converted to function as a voltmeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(large) resistance",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "connected in series",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-shunt",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "shunt",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Calculating the shunt resistance",
+  "questionText": "A galvanometer with a resistance of 100 Ω shows a full-scale deflection when a current of 2 mA passes through it. How can the galvanometer be converted to function as an ammeter reading up to 5 A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vshunt = Vgalvanometer",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Ishunt × Rshunt = Igalvanometer × Rgalvanometer",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Ishunt = 4.998 A",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Rshunt = 0.0400 Ω ( = 40.016 mΩ)",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-shunt-solution"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-other-device",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "other-device",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Another device using the motor effect",
+  "questionText": "Name another device based on the same principle as the moving-coil galvanometer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(d.c.) motor / moving-coil loudspeaker",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q10-b-coil-parts",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "coil-parts",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Induction-coil parts A and B",
+  "stem": "The induction coil was invented by Dr Nicholas Callan, an Irishman. The diagram shows an induction coil that is used to produce a very high voltage from a low voltage source.",
+  "questionText": "Explain the functions of the parts labelled A and B in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A — to generate a large emf",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "B — to produce sparks",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-coil",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "A: to generate a large emf",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "B: to produce sparks",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2013-hl-q10-b-coil-use",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "coil-use",
+  "section": "B",
+  "questionRef": "2013 HL Q10(b) — Use of the induction coil",
+  "stem": "The induction coil was invented by Dr Nicholas Callan, an Irishman. The diagram shows an induction coil that is used to produce a very high voltage from a low voltage source.",
+  "questionText": "Give an application of the induction coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "create a spark in engine of a car (spark plugs) / electric fence etc.",
+    "marks": 5,
+    "contextNote": "Any correct application is accepted; these are the scheme’s examples."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q10-coil"
+ },
+ {
+  "id": "phys-2013-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2013 HL Q11(a)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Seismic waves can be longitudinal or transverse. What is the main difference between them?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "direction of vibration parallel to direction of propagation of wave .. (longitudinal)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "direction of vibration perpendicular to direction of propagation of wave .. (transverse)",
+    "marks": 3,
+    "contextNote": "“Only transverse waves can be polarised” is also accepted for all 7 marks."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2013 HL Q11(b)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "An earthquake generates a seismic wave that takes 27 seconds to reach a recording station. If the wave travels at 5 km s⁻¹ along the earth’s surface, how far is the station from the centre of the earthquake?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "s = vt",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "s = 5000 × 27 = 135000 m = 135 km",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2013 HL Q11(c)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Draw a diagram to show the forces acting on the suspended mass when the seismometer is at rest.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weight acting downwards",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "tension acting upwards",
+    "marks": 3,
+    "contextNote": "Deduct 1 for unequal vectors; deduct 3 for incorrect additional forces."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2013 HL Q11(d)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "At rest, the tension in the spring is 49 N. What is the value, in kilograms, of the suspended mass?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W = mg",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "m = 5 kg",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2013 HL Q11(e)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "What type of motion does the frame have when it moves relative to the mass?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "simple harmonic motion",
+    "marks": 7,
+    "contextNote": "4 marks for wave motion, periodic motion or up-down motion."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2013 HL Q11(f)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "During an earthquake the ground was observed at the recording station to move up and down as the seismic wave generated by the earthquake passed. Give an equation for the acceleration of the ground in terms of the periodic time of the wave motion and the displacement of the ground.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a= 4π²s/T²",
+    "marks": 7,
+    "contextNote": "The historical scheme prints the magnitude. Signed simple harmonic acceleration is a = −4π²s/T², directed towards equilibrium."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-acceleration-solution",
+  "questionFigureKey": "physics-2013-hl-q11-acceleration-question"
+ },
+ {
+  "id": "phys-2013-hl-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2013 HL Q11(g)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "If the period of the ground motion was recorded as 17 seconds and its amplitude was recorded as 0.8 cm, calculate the maximum ground acceleration at the recording station.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "aₘₐₓ= 4π²(0.008)/(17²)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "aₘₐₓ= 0.0011 m s⁻²",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-maximum-solution",
+  "questionFigureKey": "physics-2013-hl-q11-maximum-question"
+ },
+ {
+  "id": "phys-2013-hl-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2013 HL Q11(h)",
+  "stem": "A seismometer consists of a sensor that detects ground motion, attached to a recording system. A seismometer that is sensitive to up-down motions of the ground, as caused by an earthquake, can be understood by visualising a mass hanging on a spring as shown in the diagram. The frame and the drum move up and down as the seismic wave passes by, but the mass remains stationary. If a recording system is installed, such as a rotating drum attached to the frame and a pen attached to the mass, this relative motion between the suspended mass and the ground can be recorded to produce a seismogram, as shown in the diagram. Modern seismometers do not use a pen and drum. The relative motion between a magnet that is attached to the mass, and the frame, generates a potential difference that is recorded by a computer. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "In some modern seismometers a magnet is attached to the mass and a coil of wire is attached to the frame. During an earthquake, there is relative motion between the magnet and the coil. Explain why an emf is generated in the coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "magnetic field passing through the coil",
+    "marks": 4,
+    "route": "changing-flux"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "is changing",
+    "marks": 3,
+    "route": "changing-flux"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "coil cuts",
+    "marks": 4,
+    "route": "cutting-flux"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "(magnetic) flux",
+    "marks": 3,
+    "contextNote": "“Due to Faraday’s law” alone earns 4 marks; “due to Faraday’s law of electromagnetic induction” earns 4+3.",
+    "route": "cutting-flux"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q11-passage"
+ },
+ {
+  "id": "phys-2013-hl-q12-a-conservation",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "12a-energy",
+  "section": "B",
+  "questionRef": "2013 HL Q12(a) — Conservation of energy",
+  "questionText": "State the law of conservation of energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "energy is neither created nor destroyed",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-a-height-energy",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "height-energy",
+  "section": "B",
+  "questionRef": "2013 HL Q12(a) — Pendulum height and potential energy",
+  "stem": "The pendulum in the diagram is 8 m long with a small bob of mass 6 kg at its end. It is displaced through an angle of 30° from the vertical (position A) and is then held in position B, as shown. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "Calculate the height through which the bob has been raised and the potential energy that it has gained.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "h = l(1 – cos θ) / h = 8 – 8 cos 30 / h = 1.07 m",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = mgh",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 6 × 9.8 × 1.07 = 63 J",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-pendulum"
+ },
+ {
+  "id": "phys-2013-hl-q12-a-velocity",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "velocity",
+  "section": "B",
+  "questionRef": "2013 HL Q12(a) — Maximum pendulum speed",
+  "stem": "The pendulum in the diagram is 8 m long with a small bob of mass 6 kg at its end. It is displaced through an angle of 30° from the vertical (position A) and is then held in position B, as shown. (acceleration due to gravity, g = 9.8 m s⁻²)",
+  "questionText": "The bob is then released and allowed to swing freely. What is the maximum velocity it attains?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "kinetic energy = 63 J",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "½mv² = 63 J",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v = 4.58 m s⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-pendulum"
+ },
+ {
+  "id": "phys-2013-hl-q12-a-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "force",
+  "section": "B",
+  "questionRef": "2013 HL Q12(a) — Stopping the pendulum bob",
+  "stem": "The pendulum in the diagram is 8 m long with a small bob of mass 6 kg at its end. It is displaced through an angle of 30° from the vertical (position A) and is then held in position B, as shown. (acceleration due to gravity, g = 9.8 m s⁻²) The bob is then released and allowed to swing freely. What is the maximum velocity it attains?",
+  "questionText": "When the moving bob is at position A, a force is applied which brings the bob to a stop in a distance of 5 mm. Calculate the force applied.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W = Fd",
+    "marks": 3,
+    "route": "work-energy"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 63 ÷ 0.005 = 12604.3 N",
+    "marks": 3,
+    "contextNote": "Use the matching method. The printed force uses the unrounded energy 6 × 9.8 × 8(1−cos 30°) ≈ 63.0216 J; using the displayed 63 J gives 12600 N. Deduct 1 for missing or incorrect units.",
+    "route": "work-energy"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F = ma",
+    "marks": 3,
+    "route": "force-acceleration"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "F = 6 × 2100.7 = 12604.3 N",
+    "marks": 3,
+    "contextNote": "Use the matching method. The printed force uses the unrounded energy 6 × 9.8 × 8(1−cos 30°) ≈ 63.0216 J; using the displayed 63 J gives 12600 N. Deduct 1 for missing or incorrect units.",
+    "route": "force-acceleration"
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-pendulum"
+ },
+ {
+  "id": "phys-2013-hl-q12-b-dispersion",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "dispersion",
+  "section": "B",
+  "questionRef": "2013 HL Q12(b) — Dispersion",
+  "stem": "A narrow beam of light undergoes dispersion when it passes through either a prism or a diffraction grating.",
+  "questionText": "What is meant by dispersion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "separation of light",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "into its different colours /frequencies / wavelengths",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-b-differences",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "differences",
+  "section": "B",
+  "questionRef": "2013 HL Q12(b) — Prism and grating spectra",
+  "stem": "A narrow beam of light undergoes dispersion when it passes through either a prism or a diffraction grating.",
+  "questionText": "Give two differences between what is observed when a narrow beam of light undergoes dispersion as it passes through a prism, and what is observed when a narrow beam of light undergoes dispersion as it passes through a diffraction grating.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "red light deviated least in a prism and deviated the most in a grating (or equivalent)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "many spectra observable with a grating, only one with a prism",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-b-example",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "example",
+  "section": "B",
+  "questionRef": "2013 HL Q12(b) — Another example of dispersion",
+  "stem": "A narrow beam of light undergoes dispersion when it passes through either a prism or a diffraction grating.",
+  "questionText": "Give another example of light undergoing dispersion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rainbow, etc.",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-b-sodium",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "sodium",
+  "section": "B",
+  "questionRef": "2013 HL Q12(b) — Sodium light emission",
+  "stem": "A narrow beam of light undergoes dispersion when it passes through either a prism or a diffraction grating. Yellow light of wavelength 589 nm is produced in a low-pressure sodium vapour lamp.",
+  "questionText": "What causes the sodium atoms to emit this light?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrons changing energy levels",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-b-order",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "order",
+  "section": "B",
+  "questionRef": "2013 HL Q12(b) — Highest diffraction order",
+  "stem": "A narrow beam of light undergoes dispersion when it passes through either a prism or a diffraction grating. Yellow light of wavelength 589 nm is produced in a low-pressure sodium vapour lamp.",
+  "questionText": "Calculate the highest order image that could be produced when a beam of light of this wavelength is incident perpendicularly on a diffraction grating that has 300 lines per mm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "nλ=dsin θ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "n ≤ d/λ ( = 5.65) / sin θ = 1",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "n= 5",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-grating-solution"
+ },
+ {
+  "id": "phys-2013-hl-q12-c-coulomb",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "coulomb",
+  "section": "B",
+  "questionRef": "2013 HL Q12(c) — The coulomb",
+  "questionText": "Define the unit of charge, the coulomb.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1 C = charge that passes when 1 A flows for 1 s",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-c-law",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "law",
+  "section": "B",
+  "questionRef": "2013 HL Q12(c) — Coulomb’s law",
+  "questionText": "State Coulomb’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct statement of Coulomb’s law",
+    "marks": 3,
+    "contextNote": "The source gives a criterion. State that the force between point charges is proportional to the product of their charges and inversely proportional to the square of their separation, along the line joining them."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-c-repulsion",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "repulsion",
+  "section": "B",
+  "questionRef": "2013 HL Q12(c) — Force between two charges",
+  "questionText": "Calculate the force of repulsion between two small spheres when they are held 8 cm apart in a vacuum. Each sphere has a positive charge of +3 µC.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F= q₁q₂/(4πε₀d²)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "F = 12.64 N",
+    "marks": 3,
+    "contextNote": "Deduct 1 for missing or incorrect units."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-repulsion-solution",
+  "questionFigureKey": "physics-2013-hl-q12-repulsion-question"
+ },
+ {
+  "id": "phys-2013-hl-q12-c-field",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field",
+  "section": "B",
+  "questionRef": "2013 HL Q12(c) — Electric field and zero-field point",
+  "stem": "Calculate the force of repulsion between two small spheres when they are held 8 cm apart in a vacuum. Each sphere has a positive charge of +3 µC.",
+  "questionText": "Copy the diagram above and show on it the electric field generated by the charges. Mark on your diagram a place where the electric field strength is zero.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct curved deviation of the field lines on interaction",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct direction of field",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(neutral/null) point marked halfway between charges",
+    "marks": 4
+   }
+  ],
+  "notes": "The null point is marked on the requested field diagram: one complete 10-mark diagram response. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-charges"
+ },
+ {
+  "id": "phys-2013-hl-q12-d-property",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "12d-property",
+  "section": "B",
+  "questionRef": "2013 HL Q12(d) — Thermometric property",
+  "questionText": "What is meant by the term thermometric property?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(physical) property that changes (measurably)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2013-hl-q12-d-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "graph",
+  "section": "B",
+  "questionRef": "2013 HL Q12(d) — Temperature from the thermistor graph",
+  "stem": "This graph was obtained during an experiment where the resistance R of a thermistor was measured as its temperature θ was raised from 0 °C to 100 °C (as measured by a mercury-in-glass thermometer). The thermistor is used in a circuit to keep the water in a tank at a constant temperature.",
+  "questionText": "What is the temperature of the water when the resistance of the thermistor is 420 kΩ?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "37 ± 1 °C",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-thermistor"
+ },
+ {
+  "id": "phys-2013-hl-q12-d-thermocouple",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermocouple",
+  "section": "B",
+  "questionRef": "2013 HL Q12(d) — Temperature from a thermocouple",
+  "stem": "The thermistor is used in a circuit to keep the water in a tank at a constant temperature.",
+  "questionText": "A thermocouple thermometer has emf values of 0 µV at 0 °C and 815 µV at 100 °C. When the thermocouple thermometer was placed in the tank of water, its emf was found to be 319 µV. What is the temperature of the water in the tank as measured by the thermocouple thermometer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "θ= (100(Eθ−E₀ ))/(E100 −E0)",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "θ= (100(319−0))/(815−0)",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "θ= 39.14 (°C)",
+    "marks": 3,
+    "route": "formula"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "815 μV → 100 °C divisions",
+    "marks": 3,
+    "contextNote": "Assuming linearity.",
+    "route": "proportion"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "1 μV → 0.1227 °C divisions",
+    "marks": 3,
+    "route": "proportion"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "319 μV → 39.14 (°C)",
+    "marks": 3,
+    "route": "proportion"
+   }
+  ],
+  "notes": "Two complete 9-mark methods: calibration formula or direct proportion; never add both methods. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-thermocouple-solution"
+ },
+ {
+  "id": "phys-2013-hl-q12-d-difference",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "difference",
+  "section": "B",
+  "questionRef": "2013 HL Q12(d) — Why the thermometers disagree",
+  "stem": "This graph was obtained during an experiment where the resistance R of a thermistor was measured as its temperature θ was raised from 0 °C to 100 °C (as measured by a mercury-in-glass thermometer). The thermistor is used in a circuit to keep the water in a tank at a constant temperature. A thermocouple thermometer has emf values of 0 µV at 0 °C and 815 µV at 100 °C. When the thermocouple thermometer was placed in the tank of water, its emf was found to be 319 µV. What is the temperature of the water in the tank as measured by the thermocouple thermometer?",
+  "questionText": "Why do the thermistor and the thermocouple thermometer give different temperature readings for the water in the tank?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "each of the devices has a different thermometric property",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "that changes differently with temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2013_hl.py.",
+  "year": 2013,
+  "level": "higher",
+  "figureKey": "physics-2013-hl-q12-thermistor"
  }
 ]
