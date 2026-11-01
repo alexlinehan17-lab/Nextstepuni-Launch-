@@ -34,6 +34,8 @@ const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sit
 
 /** sitting -> [cards, tasks, census leaves, paper sha256, scheme sha256] */
 const PINS: Record<string, [number, number, number, string, string]> = {
+  '2015-hl': [101, 101, 32, 'fb8e384a4a1f07432a5c07b0d624aabd0027c55502f6d1d8f2bd36139e6dd452',
+    '2e176646ae231a86afdd48c641f30e53f042813633a1b7cfb7c823dd5a1bf022'],
   '2016-ol': [97, 97, 70, 'c3de271bb5e816edfaca05b0ce05fb139b4c8a7b115ea22fb8b7736872e0eb78',
     '12d4feae32ab7ea1926e6c9a67bd07f771a88e850ccda5dac5fc58d01388abf4'],
   '2016-hl': [104, 104, 39, 'f258a6d132ad06476344d78410bdae04ea08050698c2978dc949f5ac35075c97',
@@ -89,6 +91,47 @@ const figureKeys = new Set([...Object.keys(physicsFigures), ...Object.keys(share
 const UNPRINTED = 'The scheme prints no answer for this part.';
 
 describe('Physics — reviewed sittings', () => {
+
+  it('retains the 2015 Higher choices, full calculation context and independent routes', () => {
+    const cards = deck.filter(c => c.id.startsWith('phys-2015-hl-'));
+    const card = (suffix: string) => cards.find(c => c.id === `phys-2015-hl-${suffix}`)!;
+    expect(cards).toHaveLength(101);
+    expect(card('q2-latent-heat').questionFigure?.candId).toBe('physics-2015-hl-q2-latent-question');
+    expect(card('q2-accuracy').totalMarks).toBe(9);
+    expect(card('q2-accuracy').rows[0]).toMatchObject({ kind: 'anyN', group: {
+      claimMax: 2, perOptionSteps: [6, 3],
+    } });
+    expect(card('q3-apparatus').totalMarks).toBe(9);
+    expect(card('q3-apparatus').rows).toHaveLength(6);
+    expect(card('q3-wavelength').rows[0].contextNote).toContain('θ = φ/2');
+    expect(card('q4-graph').rows[1]).toMatchObject({ marks: 5, verbatim: '7 points correctly plotted' });
+    expect(card('q4-curve-explanation').questionFigure?.candId).toBe('physics-2015-hl-q4-context');
+    expect(cards.filter(c => c.id.startsWith('phys-2015-hl-q5-j-'))).toHaveLength(2);
+    expect(card('q5-i').rows[0].verbatim).toBe('N¹⁴₇ + He⁴₂ → O¹⁷₈ + H¹₁');
+    expect(card('q7-wavelength').rows.map(r => r.verbatim).join(' ')).toContain('hc/λ');
+    expect(card('q7-einstein').rows[0]).toMatchObject({ kind: 'anyN', group: { claimMax: 3 } });
+    expect(card('q10-a-leptons').rows[0]).toMatchObject({ kind: 'anyN', group: {
+      claimMax: 2, options: ['Muon', 'tau', 'positron', 'anti-muon', 'anti-tau'],
+    } });
+    expect(card('q10-a-beta-equation').rows[0].verbatim).toBe('n¹₀ → H¹₁ + e⁰₋₁ + ν');
+    for (const part of ['a', 'b']) {
+      expect(cards.filter(c => c.id.startsWith(`phys-2015-hl-q10-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(56);
+    }
+    for (const part of ['a', 'b', 'c', 'd']) {
+      expect(cards.filter(c => c.id.startsWith(`phys-2015-hl-q12-${part}-`))
+        .reduce((sum, c) => sum + c.totalMarks, 0)).toBe(28);
+    }
+    expect(card('q12-d-detector').totalMarks).toBe(13);
+    expect(card('q12-d-detector').rows[1].verbatim).toContain('wire anode');
+    expect(card('q12-d-detector').rows[1].verbatim).not.toContain('semiconductor');
+    expect(card('q12-d-detector').rows[4].verbatim).toContain('semiconductor material');
+    expect(card('q12-d-detector').rows[4].verbatim).not.toContain('wire anode');
+    expect(card('q12-a-snow-force').stem).toContain('Ignoring friction');
+    expect(cards.filter(c => c.id.startsWith('phys-2015-hl-q11-'))).toHaveLength(8);
+    expect(card('q11-a').stem).toContain('W Bernard Carlson');
+  });
+
   it('retains 2016 Ordinary data, choices and exact marking boundaries', () => {
     const card = (id: string) => deck.find(c => c.id === `phys-2016-ol-${id}`)!;
     expect(deck.filter(c => c.id.startsWith('phys-2016-ol-'))).toHaveLength(97);

@@ -84146,5 +84146,3494 @@
   "year": 2016,
   "level": "ordinary",
   "figureKey": "physics-2016-ol-q12-sun"
+ },
+ {
+  "id": "phys-2015-hl-q1-method",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "method",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Boyle’s law apparatus and measurements",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement.",
+  "questionText": "Describe, with the aid of a labelled diagram, how the student obtained the data.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Diagram — • volume scale • pressure gauge • method of changing volume/pressure",
+    "marks": 3,
+    "contextNote": "The three apparatus features share 3 marks; deduct one for each missing or incorrect part."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Labelled column of air/gas",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Read pressure (from gauge) and volume (from scale)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Change pressure/volume (and repeat measurements)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q1-data"
+ },
+ {
+  "id": "phys-2015-hl-q1-graph",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Boyle’s law graph",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement.",
+  "questionText": "Draw a suitable graph to show the relationship between the pressure of the gas and its volume.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Reciprocal values for p or V",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Label axes",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "5 points correctly plotted",
+    "marks": 3,
+    "contextNote": "The scheme deducts one mark for each missing or incorrect point; the paper supplies six pairs, all retained."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "Straight line with good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q1-data"
+ },
+ {
+  "id": "phys-2015-hl-q1-verify",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "verify",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Verifying Boyle’s law",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement. Draw a suitable graph to show the relationship between the pressure of the gas and its volume.",
+  "questionText": "Explain how the graph verifies Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Statement — Straight line through origin // p ∝ 1/V",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q1-data"
+ },
+ {
+  "id": "phys-2015-hl-q1-pressure",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "pressure",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Pressure at 250 cubic centimetres",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement. Draw a suitable graph to show the relationship between the pressure of the gas and its volume.",
+  "questionText": "Use your graph to estimate the pressure of the gas at a volume of 250 cm³.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct use of graph",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "p ≈ 108 kPa",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q1-data"
+ },
+ {
+  "id": "phys-2015-hl-q1-temperature-change",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-change",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Temperature change",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement.",
+  "questionText": "Why might the temperature of the gas have changed significantly during the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct reference to change in volume/pressure",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q1-temperature-control",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-control",
+  "section": "A",
+  "questionRef": "2015 HL Q1 — Keeping temperature constant",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the volume V of a fixed mass of gas at different values of the pressure p. The temperature of the gas was the same for each measurement.",
+  "questionText": "How did the student ensure that the temperature of the gas was the same for each measurement?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Wait (to make readings after changing volume/pressure)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q2-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2015 HL Q2 — Steam experiment apparatus",
+  "stem": "In an experiment to measure the specific latent heat of vaporisation of water, cool water was placed in a polystyrene cup. Dry steam was then added to the water.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Polystyrene cup with water",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Steam generator",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Point of detail (thermometer, steam trap, lagging, lid, mass balance, delivery tube)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q2-data"
+ },
+ {
+  "id": "phys-2015-hl-q2-assumptions",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "assumptions",
+  "section": "A",
+  "questionRef": "2015 HL Q2 — Assumptions about the cup",
+  "stem": "In an experiment to measure the specific latent heat of vaporisation of water, cool water was placed in a polystyrene cup. Dry steam was then added to the water. A student used these data to calculate the specific latent heat of vaporisation of water.",
+  "questionText": "State two assumptions that the student made about the polystyrene cup when carrying out this calculation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "That it is a good/perfect insulator",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "That it has a low/negligible heat capacity / specific heat capacity / that it does not gain heat",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q2-data"
+ },
+ {
+  "id": "phys-2015-hl-q2-latent-heat",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat",
+  "section": "A",
+  "questionRef": "2015 HL Q2 — Specific latent heat of vaporisation",
+  "stem": "In an experiment to measure the specific latent heat of vaporisation of water, cool water was placed in a polystyrene cup. Dry steam was then added to the water. Mass of polystyrene cup = 1.2 g Initial mass of polystyrene cup and water = 84.6 g Initial temperature of water = 11 °C Temperature of steam = 100 °C Final temperature of water = 30 °C Final mass of polystyrene cup and water = 87.2 g (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹)",
+  "questionText": "Use the data given above to calculate the specific latent heat of vaporisation of water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Δθₛ = 70 K / Δθw = 19 K / mₛ = 0.0026 kg / mw = 0.0834 kg",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Δθₛ = 70 K",
+      "Δθw = 19 K",
+      "mₛ = 0.0026 kg",
+      "mw = 0.0834 kg"
+     ]
+    },
+    "contextNote": "All four data conversions are required, 2 marks each."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ml + mcΔθ = mcΔθ",
+    "marks": 6,
+    "contextNote": "The three heat terms each carry 2 marks."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(0.0026 × l) + (0.0026 × 4180 × 70) = 0.0834 × 4180 × 19",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "l = 2.25 × 10⁶ J kg⁻¹",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q2-calculation",
+  "questionFigureKey": "physics-2015-hl-q2-latent-question"
+ },
+ {
+  "id": "phys-2015-hl-q2-accuracy",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "accuracy",
+  "section": "A",
+  "questionRef": "2015 HL Q2 — Dry steam and cooled water",
+  "stem": "In an experiment to measure the specific latent heat of vaporisation of water, cool water was placed in a polystyrene cup. Dry steam was then added to the water.",
+  "questionText": "The student ensured that (i) the steam had been dried and (ii) the water that was initially in the cup had been cooled. How did each of these steps improve the accuracy of the experiment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Calculations assume that) only steam is added / no water was added // Otherwise the steam would have lost its latent heat (of vaporisation) / Energy/heat gained = energy/heat lost",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(Calculations assume that) only steam is added / no water was added // Otherwise the steam would have lost its latent heat (of vaporisation)",
+      "Energy/heat gained = energy/heat lost"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "Both specified steps must be explained. The first correct explanation earns 6 marks and the second 3, in either order."
+   }
+  ],
+  "notes": "Both required headings stay together because the scheme assigns a stepped 6+3 tariff in either order. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q2-data"
+ },
+ {
+  "id": "phys-2015-hl-q3-apparatus",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "apparatus",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Diffraction apparatus",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Diagram — • diffraction grating",
+    "marks": 3,
+    "contextNote": "Each complete alternative method retains the stated marks; do not add the methods together.",
+    "route": "laser"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "• laser labelled",
+    "marks": 3,
+    "route": "laser"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "• screen (+ metre stick)",
+    "marks": 3,
+    "route": "laser"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Diagram — • diffraction grating",
+    "marks": 3,
+    "route": "spectrometer"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "• (vapour) lamp labelled",
+    "marks": 3,
+    "route": "spectrometer"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "• spectrometer (with scale/protractor)",
+    "marks": 3,
+    "route": "spectrometer"
+   }
+  ],
+  "notes": "Each complete alternative method retains the stated marks; do not add the methods together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q3-data"
+ },
+ {
+  "id": "phys-2015-hl-q3-first-order",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "first-order",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Identifying first-order images",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "How were the first order images identified?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "They were (immediately) to either side of the image observed when no grating was present / zero order image / straight through image / central image / brightest image",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q3-data"
+ },
+ {
+  "id": "phys-2015-hl-q3-beam",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "beam",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Producing a beam",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "How was a beam of light produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Laser // Collimator",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q3-accuracy",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "accuracy",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Most accurate diffraction angle",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "Which of the four φ angles is the most accurate? Suggest a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n = 4",
+    "marks": 3,
+    "contextNote": "The chosen order and its reason must be linked. Each complete answer is worth 6 marks.",
+    "route": "largest-angle"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Largest angle / smallest (%) error",
+    "marks": 3,
+    "route": "largest-angle"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "n = 1",
+    "marks": 3,
+    "route": "sharpest-image"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Sharpest image",
+    "marks": 3,
+    "route": "sharpest-image"
+   }
+  ],
+  "notes": "The chosen order and its reason must be linked. Each complete answer is worth 6 marks. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q3-data"
+ },
+ {
+  "id": "phys-2015-hl-q3-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wavelength",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Wavelength from diffraction angles",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "Calculate the wavelength of the monochromatic light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "d = 1/80000 = 1.25 × 10⁻⁵ m",
+    "marks": 3,
+    "contextNote": "The measured φ is the angle between matching images on both sides; use θ = φ/2 in the diffraction formula."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "nλ = dSinθ",
+    "marks": 6
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "λ ≈ 5.0 × 10⁻⁷ m",
+    "marks": 3
+   }
+  ],
+  "notes": "The measured φ is the angle between matching images on both sides; use θ = φ/2 in the diffraction formula. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q3-data"
+ },
+ {
+  "id": "phys-2015-hl-q3-denser-grating",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "denser-grating",
+  "section": "A",
+  "questionRef": "2015 HL Q3 — Replacing the grating",
+  "stem": "In an experiment to measure the wavelength of monochromatic light, a beam of light was incident normally on a diffraction grating. The diffraction grating had 80 lines per mm. The angle φ between the first order image to the left and the first order image to the right was measured. This was repeated for higher order images.",
+  "questionText": "What would be the effect on the pattern produced if this diffraction grating was replaced with a diffraction grating of 500 lines per mm?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Fewer images seen / images more spread out / larger angles",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q4-graph",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph",
+  "section": "A",
+  "questionRef": "2015 HL Q4 — Resistance–temperature graph",
+  "stem": "In an experiment to measure the variation of the resistance R of a metallic conductor with its temperature θ, a student recorded the following data.",
+  "questionText": "Using the recorded data, plot a graph to show the variation of the resistance of the metallic conductor with its temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correctly labelled axes",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "7 points correctly plotted",
+    "marks": 5,
+    "contextNote": "Deduct one mark for each missing or incorrect point. All eight pairs printed in the paper are retained."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Straight line with good fit",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q4-data"
+ },
+ {
+  "id": "phys-2015-hl-q4-slope",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "slope",
+  "section": "A",
+  "questionRef": "2015 HL Q4 — Rate of resistance change",
+  "stem": "In an experiment to measure the variation of the resistance R of a metallic conductor with its temperature θ, a student recorded the following data. Using the recorded data, plot a graph to show the variation of the resistance of the metallic conductor with its temperature.",
+  "questionText": "Use your graph to estimate the rate of change of resistance with respect to temperature for the metallic conductor",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Correct rate/slope from graph ≈ 0.033 Ω K⁻¹",
+    "marks": 3,
+    "contextNote": "The scheme also accepts Ω °C⁻¹."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q4-data"
+ },
+ {
+  "id": "phys-2015-hl-q4-ice-resistance",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "ice-resistance",
+  "section": "A",
+  "questionRef": "2015 HL Q4 — Resistance in melting ice",
+  "stem": "In an experiment to measure the variation of the resistance R of a metallic conductor with its temperature θ, a student recorded the following data. Using the recorded data, plot a graph to show the variation of the resistance of the metallic conductor with its temperature.",
+  "questionText": "Use your graph to estimate the resistance of the metallic conductor when it is immersed in melting ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Correct intercept // Correct use of rate/slope",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "R ≈ 5.5 Ω",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q4-data"
+ },
+ {
+  "id": "phys-2015-hl-q4-bulb-experiment",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "bulb-experiment",
+  "section": "A",
+  "questionRef": "2015 HL Q4 — Filament-bulb experiment",
+  "stem": "In an experiment to measure the variation of the resistance R of a metallic conductor with its temperature θ, a student recorded the following data. The student then completed an experiment to establish the relationship between current and voltage for the thin metallic filament of a bulb. Data were recorded and the following graph plotted.",
+  "questionText": "Describe, with the aid of a circuit diagram, how the student carried out this second experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "• circuit • power supply / battery • variable (p.s.u) / variable resistor • ammeter • voltmeter • filament bulb",
+    "marks": 6,
+    "contextNote": "Six required circuit features; deduct one mark for each missing or incorrect part."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Correct arrangement – voltmeter across filament bulb, ammeter in series",
+    "marks": 4
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Measure voltage and current",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Vary voltage (and repeat measurements)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q4-curve"
+ },
+ {
+  "id": "phys-2015-hl-q4-curve-explanation",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "curve-explanation",
+  "section": "A",
+  "questionRef": "2015 HL Q4 — Explaining the bulb curve",
+  "stem": "In an experiment to measure the variation of the resistance R of a metallic conductor with its temperature θ, a student recorded the following data. Using the recorded data, plot a graph to show the variation of the resistance of the metallic conductor with its temperature. The student then completed an experiment to establish the relationship between current and voltage for the thin metallic filament of a bulb. Data were recorded and the following graph plotted.",
+  "questionText": "Use the findings of the first experiment to explain the shape of the graph in the second experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Temperature increases as current increases",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Resistance increases as temperature increases",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "questionFigureKey": "physics-2015-hl-q4-context"
+ },
+ {
+  "id": "phys-2015-hl-q5-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "5a",
+  "section": "B",
+  "questionRef": "2015 HL Q5(a)",
+  "questionText": "A hurler strikes a sliotar with an initial velocity of 41 m s⁻¹ at an angle of 30° to the horizontal. How far does the ball travel horizontally in three seconds?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "vH = 41Cos30 = 35.51 m s⁻¹",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "s (= vt) = 35.51 × 3 = 106.52 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q5-hurler"
+ },
+ {
+  "id": "phys-2015-hl-q5-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "5b",
+  "section": "B",
+  "questionRef": "2015 HL Q5(b)",
+  "questionText": "Describe the movement of a particle that is undergoing simple harmonic motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Acceleration is proportional to // Formula",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Displacement (from a point on the path) // Notation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-c",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "5c",
+  "section": "B",
+  "questionRef": "2015 HL Q5(c)",
+  "questionText": "The refractive index of haematite is 3.2. What is its critical angle?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n = 1/SinC",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "C = 18.21°",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-d",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "5d",
+  "section": "B",
+  "questionRef": "2015 HL Q5(d)",
+  "stem": "(speed of sound in air = 340 m s⁻¹; solar constant = 1.36 kW m⁻²)",
+  "questionText": "What frequency would be detected by an observer when a source emitting a sound of frequency 512 Hz approaches at a velocity of 28 m s⁻¹?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f’ = fc/(c – u)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "f’ = 557.95 Hz",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-e",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "5e",
+  "section": "B",
+  "questionRef": "2015 HL Q5(e)",
+  "stem": "(speed of sound in air = 340 m s⁻¹; solar constant = 1.36 kW m⁻²)",
+  "questionText": "Calculate the energy from the Sun falling on a football pitch of dimensions 106 m × 68 m in 90 minutes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "90 × 60 = 5400 s // 106 × 68 = 7208 m²",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = 5.3 × 10¹⁰ J",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q5-pitch"
+ },
+ {
+  "id": "phys-2015-hl-q5-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "5f",
+  "section": "B",
+  "questionRef": "2015 HL Q5(f)",
+  "questionText": "Write an expression for the charge stored on one plate of a parallel plate capacitor in terms of the potential difference between the plates, their common area, the distance between them and the permittivity of the dielectric.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "C = Q/V or C = εA/d",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Q = εAV/d",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "5g",
+  "section": "B",
+  "questionRef": "2015 HL Q5(g)",
+  "questionText": "Define the ampere, the SI unit of current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Current which in two (parallel) conductors",
+    "marks": 2,
+    "contextNote": "This is the SI definition examined in the 2015 paper."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Placed one metre apart (in a vacuum)",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Causes a force of 2 × 10⁻⁷ N m⁻¹",
+    "marks": 3,
+    "contextNote": "Deduct one mark for missing or incorrect units."
+   }
+  ],
+  "notes": "This is the SI definition examined in the 2015 paper. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-h",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5h",
+  "section": "B",
+  "questionRef": "2015 HL Q5(h)",
+  "questionText": "Name the wire that contains the fuse in a three-pin plug. What colour is this wire?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Live",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Brown (accept red)",
+    "marks": 3,
+    "contextNote": "The scheme accepts red."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q5-plug"
+ },
+ {
+  "id": "phys-2015-hl-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5i",
+  "section": "B",
+  "questionRef": "2015 HL Q5(i)",
+  "questionText": "The first artificial transmutation of an atom was achieved by Rutherford in 1919. An alpha-particle collided with a nitrogen–14 nucleus to create an isotope of oxygen and a proton. Write a nuclear equation for this transmutation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "N¹⁴₇ + He⁴₂ → O¹⁷₈ + H¹₁",
+    "marks": 7,
+    "contextNote": "Deduct one mark for each missing or incorrect part."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q5-nuclear-solution"
+ },
+ {
+  "id": "phys-2015-hl-q5-j-quarks",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "5j-quarks",
+  "section": "B",
+  "questionRef": "2015 HL Q5(j) — quarks",
+  "questionText": "Give the quark composition of (i) the proton and (ii) the anti-neutron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "up, up, down",
+    "marks": 4,
+    "contextNote": "Symbols are accepted."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "anti-up, anti-down, anti-down",
+    "marks": 3
+   }
+  ],
+  "notes": "Symbols are accepted. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q5-j-not-gate",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "5j-not",
+  "section": "B",
+  "questionRef": "2015 HL Q5(j) — not-gate",
+  "questionText": "Draw the symbol and truth table for a NOT gate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Symbol",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "0 → 1 and 1 → 0",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q5-not-solution"
+ },
+ {
+  "id": "phys-2015-hl-q6-centripetal",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "centripetal",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Centripetal force",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation.",
+  "questionText": "Explain what is meant by centripetal force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Force (towards centre) required to maintain circular motion",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q6-gravitation",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "gravitation",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Newton’s law of gravitation",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation.",
+  "questionText": "State Newton’s law of universal gravitation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = Gm₁m₂/d² // Force ∝ product of two masses",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Notation // Force ∝ 1/(distance between masses)²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q6-period-derivation",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "period-derivation",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Satellite period derivation",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation.",
+  "questionText": "Derive the relationship between the period of a satellite, the radius of its orbit and the mass of the Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Centripetal force = gravitational force",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mv²/r = Gm₁m₂/r²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v² = Gm/r",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "T = 2πr/v",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "T² = 4π²r³/Gm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q6-derivation"
+ },
+ {
+  "id": "phys-2015-hl-q6-height",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "height",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — GPS satellite height",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation. A Global Positioning Systems (GPS) receiver can calculate its position on Earth to within a few metres. It picks up radio-wave signals from several of the 32 GPS satellites orbiting the Earth. GPS satellites orbit the Earth in Medium Earth Orbit (MEO) with a period of 12 hours. (mass of Earth = 5.97 × 10²⁴ kg; radius of Earth = 6371 km)",
+  "questionText": "Calculate the height of a GPS satellite above the Earth’s surface",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T² = 4π²r³/Gm",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Correct substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "r = 2.66 × 10⁷ m",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "h = 2.023 × 10⁷ m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q6-globe"
+ },
+ {
+  "id": "phys-2015-hl-q6-speed",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "speed",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — GPS satellite speed",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation. A Global Positioning Systems (GPS) receiver can calculate its position on Earth to within a few metres. It picks up radio-wave signals from several of the 32 GPS satellites orbiting the Earth. GPS satellites orbit the Earth in Medium Earth Orbit (MEO) with a period of 12 hours. (mass of Earth = 5.97 × 10²⁴ kg; radius of Earth = 6371 km)",
+  "questionText": "Calculate the speed of a GPS satellite",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v² = Gm/r",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v = 3.869 × 10³ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q6-globe"
+ },
+ {
+  "id": "phys-2015-hl-q6-signal-time",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "signal-time",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Minimum GPS signal travel time",
+  "stem": "In the circular orbit of a satellite around the Earth, the required centripetal force is the gravitational force between the satellite and the Earth. The force can be determined using Newton’s law of universal gravitation. A Global Positioning Systems (GPS) receiver can calculate its position on Earth to within a few metres. It picks up radio-wave signals from several of the 32 GPS satellites orbiting the Earth. GPS satellites orbit the Earth in Medium Earth Orbit (MEO) with a period of 12 hours. (mass of Earth = 5.97 × 10²⁴ kg; radius of Earth = 6371 km)",
+  "questionText": "Calculate the minimum time it takes a GPS signal to travel from the satellite to a receiver on the surface of the Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = s/t",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "t = 0.067 s",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q6-globe"
+ },
+ {
+  "id": "phys-2015-hl-q6-geostationary",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "geostationary",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Why GPS satellites are not geostationary",
+  "stem": "A Global Positioning Systems (GPS) receiver can calculate its position on Earth to within a few metres. It picks up radio-wave signals from several of the 32 GPS satellites orbiting the Earth. GPS satellites orbit the Earth in Medium Earth Orbit (MEO) with a period of 12 hours.",
+  "questionText": "Explain why GPS satellites are not classed as geostationary satellites.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Periodic time is not 24 hours // Not in the same place above the Earth",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q6-globe"
+ },
+ {
+  "id": "phys-2015-hl-q6-spectrum",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "spectrum",
+  "section": "B",
+  "questionRef": "2015 HL Q6 — Next electromagnetic band",
+  "questionText": "Radio-waves, such as those used by GPS satellites, have the lowest frequency of all electromagnetic radiation types. What type of electromagnetic radiation has the next lowest frequency?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Microwaves",
+    "marks": 4,
+    "contextNote": "The scheme also accepts infrared."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q7-xray-production",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "xray-production",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Producing X-rays",
+  "stem": "X-rays have two important uses in medicine: imaging and radiation therapy.",
+  "questionText": "Describe, with the aid of a labelled diagram of an X-ray tube, how X-rays are produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — cathode, anode, tube, vacuum",
+    "marks": 4,
+    "contextNote": "Deduct one mark for each missing or incorrect part."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Electrons produced by thermionic emission at cathode / heating of cathode",
+    "marks": 4
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "High voltage applied to electrons",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Electrons strike target and produce X-rays",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q7-hand"
+ },
+ {
+  "id": "phys-2015-hl-q7-electron-speed",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "electron-speed",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Maximum electron speed",
+  "stem": "X-rays have two important uses in medicine: imaging and radiation therapy. A potential difference of 50 kV is applied across an X-ray tube.",
+  "questionText": "Calculate the maximum velocity of an electron in the tube",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "½mv² or eV",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "½mv² = eV",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "v = 1.3 × 10⁸ m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q7-hand"
+ },
+ {
+  "id": "phys-2015-hl-q7-wavelength",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "wavelength",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Minimum X-ray wavelength",
+  "stem": "X-rays have two important uses in medicine: imaging and radiation therapy. A potential difference of 50 kV is applied across an X-ray tube.",
+  "questionText": "Calculate the minimum wavelength of the X-rays produced by the tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "½mv² or eV = hc/λ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "½(9.1 × 10⁻³¹)(1.3 × 10⁸ )² or 1.6 × 10⁻¹⁹ × 50000 = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/λ",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "λ = 2.5 × 10⁻¹¹ m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q7-wavelength-solution"
+ },
+ {
+  "id": "phys-2015-hl-q7-photoelectric",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photoelectric",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Photoelectric effect",
+  "stem": "X-rays have two important uses in medicine: imaging and radiation therapy. The large atoms found in bones (e.g. calcium and phosphorus) absorb X-ray photons. The small atoms found in soft tissue (e.g. carbon and hydrogen) do not absorb X-ray photons. This is why bones cast shadows on an X-ray film. The X-ray photons absorbed by large atoms can cause the photoelectric effect to occur.",
+  "questionText": "What is the photoelectric effect?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Emission of electrons",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Using electromagnetic radiation / photons / light (of suitable frequency)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q7-hand"
+ },
+ {
+  "id": "phys-2015-hl-q7-photoelectric-demo",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photoelectric-demo",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Demonstrating the photoelectric effect",
+  "stem": "The large atoms found in bones (e.g. calcium and phosphorus) absorb X-ray photons. The small atoms found in soft tissue (e.g. carbon and hydrogen) do not absorb X-ray photons. This is why bones cast shadows on an X-ray film. The X-ray photons absorbed by large atoms can cause the photoelectric effect to occur.",
+  "questionText": "Describe a laboratory experiment to demonstrate the photoelectric effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Apparatus — Gold leaf electroscope",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Shine (uv) light",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "The leaves collapse",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q7-einstein",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "einstein",
+  "section": "B",
+  "questionRef": "2015 HL Q7 — Einstein’s explanation",
+  "stem": "The large atoms found in bones (e.g. calcium and phosphorus) absorb X-ray photons. The small atoms found in soft tissue (e.g. carbon and hydrogen) do not absorb X-ray photons. This is why bones cast shadows on an X-ray film. The X-ray photons absorbed by large atoms can cause the photoelectric effect to occur. Albert Einstein received a Nobel Prize in 1921 for his explanation of the photoelectric effect.",
+  "questionText": "Outline Einstein’s explanation of the photoelectric effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "• Correct reference to photon(s) / • Each photon gives all its energy to one electron / • Correct reference to work function / threshold frequency / Correct equation",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "• Correct reference to photon(s)",
+      "• Each photon gives all its energy to one electron",
+      "• Correct reference to work function / threshold frequency",
+      "Correct equation"
+     ]
+    }
+   }
+  ],
+  "notes": "One response with any three of all four scheme points; no combinations. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-field-definition",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-definition",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Electric field strength",
+  "questionText": "Define electric field strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = F/q // Force per",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Notation // Unit charge",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-electroscope",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "electroscope",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Gold-leaf electroscope",
+  "stem": "Both Van de Graaff generators and gold leaf electroscopes are used to investigate static electricity in the laboratory.",
+  "questionText": "Draw a labelled diagram of a gold leaf electroscope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Metal cap attached to gold leaves",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Metal case (and glass window)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Insulation between case and leaves + cap",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-induction",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "induction",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Charging by induction",
+  "stem": "Both Van de Graaff generators and gold leaf electroscopes are used to investigate static electricity in the laboratory. Draw a labelled diagram of a gold leaf electroscope.",
+  "questionText": "Describe how it can be given a negative charge by induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Positively charged rod",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Bring rod close to cap",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Earth cap",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Remove earth (and then remove rod)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-point-discharge",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "point-discharge",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Explaining point discharge",
+  "stem": "A Van de Graaff generator can be used to demonstrate point discharge.",
+  "questionText": "Explain, with the aid of a labelled diagram, how point discharge occurs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram with concentration of charge at point",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Air/gas near the point is ionised (by large electric field)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Opposite charges neutralise the charge at the point",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-discharge-demo",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "discharge-demo",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Demonstrating point discharge",
+  "stem": "A Van de Graaff generator can be used to demonstrate point discharge.",
+  "questionText": "Describe an experiment to demonstrate point discharge.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Charge pointed conductor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Observe point discharge / ionic wind using e.g. candle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q8-dome-field",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "dome-field",
+  "section": "B",
+  "questionRef": "2015 HL Q8 — Field outside a charged dome",
+  "stem": "The polished spherical dome of a Van de Graaff generator has a diameter of 40 cm and a charge of +3.8 µC.",
+  "questionText": "What is the electric field strength at a point 4 cm from the surface of the dome?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "d = 24 cm",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = Q/4πεd²",
+    "marks": 6,
+    "contextNote": "The denominator is 4πεd². The scheme also allows F = q₁q₂/(4πεd²) and E = F/q, worth 3 marks each."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 5.9 × 10⁵ N C⁻¹ away (from the centre of the dome)",
+    "marks": 3,
+    "contextNote": "Deduct one mark if the direction is missing or incorrect."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q8-dome"
+ },
+ {
+  "id": "phys-2015-hl-q9-standing",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "standing",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Stationary waves",
+  "stem": "Musical instruments produce stationary (standing) waves. Resonance also occurs in many instruments.",
+  "questionText": "What are stationary waves?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "The amplitude of the wave at any point is constant // There is no net transfer of energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q9-production",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "production",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Producing stationary waves",
+  "stem": "Musical instruments produce stationary (standing) waves. Resonance also occurs in many instruments. What are stationary waves?",
+  "questionText": "How are they produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Waves with same frequency and amplitude",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Travelling in opposite directions meet",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q9-resonance",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "resonance",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Resonance",
+  "stem": "Musical instruments produce stationary (standing) waves. Resonance also occurs in many instruments.",
+  "questionText": "What is resonance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Transfer of energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Between two bodies with the same/similar (natural) frequency",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q9-resonance-demo",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "resonance-demo",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Demonstrating resonance",
+  "stem": "Musical instruments produce stationary (standing) waves. Resonance also occurs in many instruments.",
+  "questionText": "Describe a laboratory experiment to demonstrate resonance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Method",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Observation",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q9-string-factors",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "string-factors",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Other string-frequency factors",
+  "stem": "A guitar is a string instrument. The frequency of a stretched string depends on the tension of the string and on two other factors.",
+  "questionText": "What are the two other factors?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Length",
+    "marks": 3,
+    "contextNote": "The scheme accepts symbols for both factors."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Mass per unit length / linear density",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme accepts symbols for both factors. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q9-guitar"
+ },
+ {
+  "id": "phys-2015-hl-q9-tension",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "tension",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Effect of increasing string tension",
+  "stem": "A guitar is a string instrument. The frequency of a stretched string depends on the tension of the string and on two other factors.",
+  "questionText": "What effect does increasing the tension of the string from 36 N to 81 N have on the frequency of the string?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Increase by",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Factor of 1.5",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q9-guitar"
+ },
+ {
+  "id": "phys-2015-hl-q9-harmonics",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "harmonics",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Open and closed pipe harmonics",
+  "stem": "Musical instruments produce stationary (standing) waves. Resonance also occurs in many instruments.",
+  "questionText": "Explain, with the aid of labelled diagrams, why a pipe open at only one end produces half the number of harmonics as a pipe open at both ends.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram of first harmonic for open pipe",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Diagram of other harmonic for same open pipe",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Diagram of first harmonic for closed pipe",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "Diagram of other harmonic for same closed pipe",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "All harmonics for open pipe, only odd harmonics for closed pipe",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q9-whistle-length",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "whistle-length",
+  "section": "B",
+  "questionRef": "2015 HL Q9 — Tin whistle length",
+  "stem": "A tin whistle consists of a pipe which is open at both ends. A particular tin whistle has a fundamental frequency of 587 Hz when all of the holes on it are covered. (speed of sound in air = 340 m s⁻¹)",
+  "questionText": "How long is the pipe?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = fλ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "l = λ/2 = 0.29 m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q9-whistle"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-weak-force",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "weak-force",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Force experienced by neutrinos",
+  "stem": "There are about a trillion neutrinos from the Sun passing through your hand every second. Neutrinos are fundamental particles and are members of the lepton family. Leptons are not subject to the strong nuclear force.",
+  "questionText": "What is the principal force that neutrinos experience?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Weak (nuclear force)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-hand"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-leptons",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "leptons",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Two other leptons",
+  "stem": "There are about a trillion neutrinos from the Sun passing through your hand every second. Neutrinos are fundamental particles and are members of the lepton family. Leptons are not subject to the strong nuclear force.",
+  "questionText": "Electrons are also members of the lepton family. Name two other leptons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Muon / tau / positron / anti-muon / anti-tau",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Muon",
+      "tau",
+      "positron",
+      "anti-muon",
+      "anti-tau"
+     ]
+    }
+   }
+  ],
+  "notes": "One two-of-five choice response with every accepted lepton retained. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-hand"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-strong-force",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "strong-force",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Particle subject to the strong force",
+  "stem": "There are about a trillion neutrinos from the Sun passing through your hand every second. Neutrinos are fundamental particles and are members of the lepton family. Leptons are not subject to the strong nuclear force.",
+  "questionText": "Name one fundamental particle that is subject to the strong nuclear force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Quark",
+    "marks": 3,
+    "contextNote": "The scheme awards 2 marks for a non-fundamental hadron, for example a proton."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-pauli",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "pauli",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Pauli’s neutrino proposal",
+  "stem": "Pauli proposed that a neutrino is emitted during beta-decay.",
+  "questionText": "Why did he make this proposal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Momentum/energy",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Not conserved",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-beta-equation",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "beta-equation",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Beta-decay equation",
+  "stem": "During beta-decay, a neutron decays with the emission of a proton, an electron and a neutrino.",
+  "questionText": "Write a nuclear equation to represent beta-decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n¹₀ → H¹₁ + e⁰₋₁ + ν",
+    "marks": 10,
+    "contextNote": "The 2015 paper and scheme call the emitted particle a neutrino and show ν. In modern notation beta-minus decay emits an electron antineutrino; the original SEC equation is retained in the source image."
+   }
+  ],
+  "notes": "The 2015 paper and scheme call the emitted particle a neutrino and show ν. In modern notation beta-minus decay emits an electron antineutrino; the original SEC equation is retained in the source image. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-beta-solution"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-beta-energy",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "beta-energy",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Energy released in beta decay",
+  "stem": "During beta-decay, a neutron decays with the emission of a proton, an electron and a neutrino.",
+  "questionText": "Calculate the energy released, in MeV, during beta-decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Loss in mass = 1.395 × 10⁻³⁰ kg",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "E = mc²",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "E = 1.25 × 10⁻¹³ J",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "E = 0.78 (MeV)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-detection",
+  "subjectId": "physics",
+  "topicId": "phys-4-5",
+  "conceptId": "detection",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Detecting neutrinos",
+  "stem": "There are about a trillion neutrinos from the Sun passing through your hand every second. Neutrinos are fundamental particles and are members of the lepton family. Leptons are not subject to the strong nuclear force.",
+  "questionText": "An electron can be detected in a cloud chamber. However it is much more difficult to detect a neutrino. Explain why.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "No charge / very small mass / does not ionise matter / interacts weakly with matter",
+    "marks": 6,
+    "contextNote": "The historical scheme also accepts “no mass”; neutrinos have nonzero mass."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-radius",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "radius",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Electron path radius",
+  "questionText": "In a cloud chamber an electron travels perpendicular to the direction of a magnetic field of flux density 90 mT and it follows a circular path. Calculate the radius of the circle when the electron has a speed of 1.45 × 10⁸ m s⁻¹.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Bqv or mv²/r",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Bqv = mv²/r",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "r = 9.16 × 10⁻³ m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-radius-solution"
+ },
+ {
+  "id": "phys-2015-hl-q10-a-neutrino-path",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "neutrino-path",
+  "section": "B",
+  "questionRef": "2015 HL Q10(a) — Neutrino path in the field",
+  "stem": "In a cloud chamber an electron travels perpendicular to the direction of a magnetic field of flux density 90 mT and it follows a circular path. Calculate the radius of the circle when the electron has a speed of 1.45 × 10⁸ m s⁻¹.",
+  "questionText": "Describe the path of a neutrino in the same magnetic field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "No deviation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-motor-demo",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "motor-demo",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Force on a current-carrying conductor",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "Describe a laboratory experiment to demonstrate this principle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Metal foil across d.c. source in a magnetic field",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Close switch / introduce magnetic field",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Foil moves",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-loudspeaker",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "loudspeaker",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Moving-coil loudspeaker",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "Describe, with the aid of a labelled diagram, the principle of operation of the moving-coil loudspeaker.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Coil, magnet, cone",
+    "marks": 3,
+    "contextNote": "Deduct one mark for each missing or incorrect part."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "A.c. signal",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Force on coil which changes direction",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Coil and cone vibrate",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-speaker"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-motor-energy",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "motor-energy",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Motor energy conversion",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "What is the principal energy conversion that takes place in a d.c. motor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Electrical energy to kinetic energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-commutator",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "commutator",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Function of the commutator",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "State the function of the commutator",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To change the direction of the // To keep the torque from",
+    "marks": 3,
+    "contextNote": "The commutator reverses the coil current so the torque continues in the same rotational direction."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Current // Changing direction",
+    "marks": 3
+   }
+  ],
+  "notes": "The commutator reverses the coil current so the torque continues in the same rotational direction. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-brushes",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "brushes",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Function of carbon brushes",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "State the function of the carbon brushes in a d.c. motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Electrical contact between power supply and commutator/coil",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-torque",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "torque",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Maximum motor torque",
+  "stem": "Loudspeakers, d.c. motors and galvanometers are all based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "The magnetic flux density of the field in a d.c. motor is 5.5 T and a current of 1.2 A flows in the coil. The coil is a square of side 8 cm and it has 500 turns. Calculate the maximum torque exerted by the motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = length × I × B // BIA",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 264 N // × 500",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Torque = F × 0.08 = 21.12 N m",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q10-torque-solution"
+ },
+ {
+  "id": "phys-2015-hl-q10-b-voltmeter",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltmeter",
+  "section": "B",
+  "questionRef": "2015 HL Q10(b) — Converting a galvanometer to a voltmeter",
+  "questionText": "A galvanometer has an internal resistance of 90 Ω and a full-scale deflection of 10 mA. Explain how the galvanometer could be converted into a voltmeter of full-scale deflection 5 V.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Place a resistor",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "In series with the galvanometer",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "V = IR + Ir",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "5 = (0.01 × R) + (0.01 × 90)",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "R = 410 Ω",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q11-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "11a",
+  "section": "B",
+  "questionRef": "2015 HL Q11(a)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Define the tesla.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Force of 1 N when",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1 A flows through a wire of length 1 m // 1 C moves with a velocity of 1 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11b",
+  "section": "B",
+  "questionRef": "2015 HL Q11(b)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Sketch voltage-time graphs for (i) an a.c. supply and (ii) a d.c. supply.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Labelled axes and correct sine wave",
+    "marks": 4,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Labelled axes and correct shape",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-c",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "11c",
+  "section": "B",
+  "questionRef": "2015 HL Q11(c)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Explain the term electromagnetic induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Emf induced by",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Changing magnetic flux / magnetic field",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-d",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "11d",
+  "section": "B",
+  "questionRef": "2015 HL Q11(d)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Why does a transformer not work with direct current?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Current not changing",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Magnetic flux / magnetic field not changing",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-e",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11e",
+  "section": "B",
+  "questionRef": "2015 HL Q11(e)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Why is it inefficient to use low voltage when transmitting electricity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Large current",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "More heat lost",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11f",
+  "section": "B",
+  "questionRef": "2015 HL Q11(f)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "The peak voltage of an a.c. supply is 321 V. Calculate the rms voltage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Use of √2",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "227 V",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "11g",
+  "section": "B",
+  "questionRef": "2015 HL Q11(g)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Explain why it is necessary to use rms values when comparing a.c. and d.c. electricity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "So as to make the power output // Mean/average",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Equivalent between a.c. and d.c. // Correct explanation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q11-h",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "11h",
+  "section": "B",
+  "questionRef": "2015 HL Q11(h)",
+  "stem": "In the years since his death, Nikola Tesla (1856–1943) has enjoyed a curious legacy. On the one hand he is acknowledged for his contributions to alternating current and in 1960 “tesla” was adopted as the name of the unit of measure for magnetic flux density. On the other hand, thanks to the many colourful predictions he made about his inventions, Tesla has become a figure in popular culture. Tesla was the champion of distributing electric power using alternating current rather than direct current. The problem with using direct current for electric lighting is that there is no easy way to transfer power from one d.c. circuit to another. Because the generator and the light bulbs must then be part of the same circuit, safety requires that the entire circuit uses low voltage and large current. Alternating current makes it easy to transfer power from one circuit to another, by electromagnetic induction in a device called a transformer. The wires that carry the current a long distance are part of a high voltage, low current circuit and therefore waste little power. As well as his work with alternating current, Tesla did pioneering work on the transmission of radio-waves and X-rays. In 1898 he demonstrated a radio-controlled boat. The car manufacturing company, Tesla Motors, is also named in honour of Tesla. The Tesla Roadster uses an a.c. motor descended directly from Tesla’s original 1882 design. It is the first production car to use lithium-ion cells and has a range of greater than 300 km. (Adapted from Tesla: Inventor of the Electrical Age, W Bernard Carlson, Princeton University Press, 2013)",
+  "questionText": "Give one advantage and one disadvantage of electric cars.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. fewer carbon emissions",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Disadvantage — e.g. short range / expensive batteries",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q11-passage"
+ },
+ {
+  "id": "phys-2015-hl-q12-a-newton",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newton",
+  "section": "B",
+  "questionRef": "2015 HL Q12(a) — Newton’s second law",
+  "questionText": "State Newton’s second law of motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Force is proportional to // F = ma",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Rate of change of momentum // Notation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-a-conversion",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "conversion",
+  "section": "B",
+  "questionRef": "2015 HL Q12(a) — Skier’s energy conversion",
+  "stem": "A downhill skier of mass 71 kg started from rest and travelled a distance of 400 m on a downhill ski course. Her loss of elevation was 90 m.",
+  "questionText": "What is the principal energy conversion that is taking place as the skier travels along the course?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Gravitational) potential (energy) to",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Kinetic (energy)",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-skier"
+ },
+ {
+  "id": "phys-2015-hl-q12-a-speed",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "speed",
+  "section": "B",
+  "questionRef": "2015 HL Q12(a) — Skier’s maximum speed",
+  "stem": "A downhill skier of mass 71 kg started from rest and travelled a distance of 400 m on a downhill ski course. Her loss of elevation was 90 m. (acceleration due to gravity = 9.8 m s⁻²)",
+  "questionText": "Ignoring friction, calculate her maximum velocity when she has travelled 400 m.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mgh = ½mv² // v² = u² + 2as",
+    "marks": 6,
+    "contextNote": "If no other marks are awarded, the scheme allows 3 marks for a correct energy formula."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v = 42 m s⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-skier"
+ },
+ {
+  "id": "phys-2015-hl-q12-a-snow-force",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "snow-force",
+  "section": "B",
+  "questionRef": "2015 HL Q12(a) — Force on the snow drift",
+  "stem": "A downhill skier of mass 71 kg started from rest and travelled a distance of 400 m on a downhill ski course. Her loss of elevation was 90 m. (acceleration due to gravity = 9.8 m s⁻²) Ignoring friction, calculate her maximum velocity when she has travelled 400 m. She then ploughed into a snow drift and came to a stop in a time of 0.8 seconds.",
+  "questionText": "What is the force that she exerts on the snow drift?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = Δmv/Δt",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 3727.5 N",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-skier"
+ },
+ {
+  "id": "phys-2015-hl-q12-a-reaction",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "reaction",
+  "section": "B",
+  "questionRef": "2015 HL Q12(a) — Force on the skier",
+  "stem": "A downhill skier of mass 71 kg started from rest and travelled a distance of 400 m on a downhill ski course. Her loss of elevation was 90 m. (acceleration due to gravity = 9.8 m s⁻²) Ignoring friction, calculate her maximum velocity when she has travelled 400 m. She then ploughed into a snow drift and came to a stop in a time of 0.8 seconds. What is the force that she exerts on the snow drift?",
+  "questionText": "What force does the snow drift exert on her?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = 3727.5 (N) in opposite direction",
+    "marks": 3,
+    "contextNote": "Deduct one mark if direction is missing or incorrect."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-skier"
+ },
+ {
+  "id": "phys-2015-hl-q12-b-refraction",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refraction",
+  "section": "B",
+  "questionRef": "2015 HL Q12(b) — Ray through a lens section",
+  "stem": "When light passes through a lens, it is refracted at both faces of the lens.",
+  "questionText": "Copy the diagram on the right into your answer book and complete the path of the light ray through the section of the lens. Include the normal at both faces.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "First correct refraction",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Second correct refraction",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-lens"
+ },
+ {
+  "id": "phys-2015-hl-q12-b-virtual",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "virtual",
+  "section": "B",
+  "questionRef": "2015 HL Q12(b) — Virtual image in a converging lens",
+  "questionText": "Draw a ray diagram to show the formation of a virtual image in a converging lens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Object inside focal point",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Two correct rays through converging lens",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Correct position of image at apparent point of intersection of emerging rays",
+    "marks": 3,
+    "contextNote": "The scheme prints this marking criterion rather than a worked answer."
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-b-power",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "power",
+  "section": "B",
+  "questionRef": "2015 HL Q12(b) — Power of combined lenses",
+  "questionText": "A converging lens of focal length 20 cm and a diverging lens of focal length 8 cm are placed in contact. Calculate the power of the combination.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "P₁ = 1/0.2 or P₂ = 1/–0.08",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "P = P₁ + P₂",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "P = –7.5 m⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-b-eye",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "eye",
+  "section": "B",
+  "questionRef": "2015 HL Q12(b) — Eye defect corrected by converging lenses",
+  "questionText": "What eye defect can be corrected using converging lenses?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Long-sightedness / hyperopia",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-c-terms",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "terms",
+  "section": "B",
+  "questionRef": "2015 HL Q12(c) — Thermometric property and emf",
+  "stem": "A thermometer uses a thermometric property to measure temperature. The thermometric property of a thermocouple thermometer is emf.",
+  "questionText": "Explain the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Thermometric property — one that changes (measurably)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "with temperature",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Emf — voltage / work done in moving unit charge / electromotive force",
+    "marks": 3
+   }
+  ],
+  "notes": "One comparison of the two underlined terms; all 6+3 marks retained with the original underlining. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-thermocouple",
+  "questionFigureKey": "physics-2015-hl-q12-thermometric-question"
+ },
+ {
+  "id": "phys-2015-hl-q12-c-unit",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "unit",
+  "section": "B",
+  "questionRef": "2015 HL Q12(c) — SI temperature unit",
+  "stem": "A thermometer uses a thermometric property to measure temperature. The thermometric property of a thermocouple thermometer is emf.",
+  "questionText": "What is the SI unit of temperature?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Kelvin / K",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-c-unit-advantage",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "unit-advantage",
+  "section": "B",
+  "questionRef": "2015 HL Q12(c) — Advantage of the SI temperature unit",
+  "stem": "A thermometer uses a thermometric property to measure temperature. The thermometric property of a thermocouple thermometer is emf. What is the SI unit of temperature?",
+  "questionText": "Give an advantage of using this unit in scientific measurements.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Always positive / reference to gas laws",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2015-hl-q12-c-thermocouple",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermocouple",
+  "section": "B",
+  "questionRef": "2015 HL Q12(c) — Thermocouple experiment",
+  "stem": "A thermometer uses a thermometric property to measure temperature. The thermometric property of a thermocouple thermometer is emf.",
+  "questionText": "Describe a laboratory experiment to demonstrate the principle of operation of a thermocouple.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Two different metals",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Two junctions held at different temperatures",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Voltage/emf measured",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-thermocouple"
+ },
+ {
+  "id": "phys-2015-hl-q12-c-advantage",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "advantage",
+  "section": "B",
+  "questionRef": "2015 HL Q12(c) — Thermocouple advantage",
+  "stem": "A thermometer uses a thermometric property to measure temperature. The thermometric property of a thermocouple thermometer is emf.",
+  "questionText": "Give an advantage of using a thermocouple thermometer instead of a mercury-in-glass thermometer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Less fragile / wider temperature range / mercury is toxic etc",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Less fragile",
+      "wider temperature range",
+      "mercury is toxic etc"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-thermocouple"
+ },
+ {
+  "id": "phys-2015-hl-q12-d-radioactive",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "radioactive",
+  "section": "B",
+  "questionRef": "2015 HL Q12(d) — Radioactivity",
+  "stem": "Radon is a radioactive gas which is present in some rocks. It can sometimes build up in houses and cause health concerns.",
+  "questionText": "What is meant by the term radioactive?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Spontaneous) disintegration of a nucleus (–1 for atom instead of nucleus)",
+    "marks": 3,
+    "contextNote": "Deduct one mark for “atom” instead of “nucleus”."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "With the emission of radiation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-radon"
+ },
+ {
+  "id": "phys-2015-hl-q12-d-detector",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "detector",
+  "section": "B",
+  "questionRef": "2015 HL Q12(d) — Radiation detector",
+  "stem": "Radon is a radioactive gas which is present in some rocks. It can sometimes build up in houses and cause health concerns.",
+  "questionText": "Name a detector of radiation and describe, with the aid of a labelled diagram, its principle of operation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Geiger-Müller tube/counter",
+    "marks": 6,
+    "contextNote": "Each complete alternative method retains the stated marks; do not add the methods together.",
+    "route": "geiger-muller"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Diagram: • cathode / • wire anode / • (low pressure inert) gas / • case",
+    "marks": 4,
+    "contextNote": "All four features belong to this detector. Deduct one mark for each missing item.",
+    "route": "geiger-muller"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Ionisation of gas",
+    "marks": 3,
+    "route": "geiger-muller"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Solid-state detector",
+    "marks": 6,
+    "route": "solid-state"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Diagram: • cathode / • anode / • semiconductor material / • housing",
+    "marks": 4,
+    "contextNote": "All four features belong to this detector. Deduct one mark for each missing item.",
+    "route": "solid-state"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "Free electrons + holes produced",
+    "marks": 3,
+    "route": "solid-state"
+   }
+  ],
+  "notes": "Each complete alternative method retains the stated marks; do not add the methods together. Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-detector-solution"
+ },
+ {
+  "id": "phys-2015-hl-q12-d-remaining",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "remaining",
+  "section": "B",
+  "questionRef": "2015 HL Q12(d) — Radon atoms after one day",
+  "stem": "Radon is a radioactive gas which is present in some rocks. It can sometimes build up in houses and cause health concerns. Radon–210 decays by alpha-emission with a half-life of 144 minutes. A sample of the gas contains 4.5 × 10¹⁵ atoms of this isotope.",
+  "questionText": "How many radon–210 atoms will remain after one day?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "10 half lives",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "½¹⁰ / use factor of 2 correctly",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "4.4 × 10¹²",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-11-01 against the paper and scheme; ledger phys_review_2015_hl.py.",
+  "year": 2015,
+  "level": "higher",
+  "figureKey": "physics-2015-hl-q12-radon"
  }
 ]

@@ -75,9 +75,9 @@ SUBJECTS = {
     # 2026 once carded, and 'also' admits each earlier sitting as its
     # phys_review_<year>_<level>.py ledger is written. Both 2020 sittings were
     # visually reviewed and carded on 2026-10-31. The next independently
-    # reviewed sittings include 2016–2026 both levels.
-    # 2010–2015 and deferred sittings remain outstanding.
-    'physics': {'mode': 'merged', 'from': 2016},
+    # reviewed sittings include 2015 Higher and 2016–2026 both levels.
+    # 2015 Ordinary, 2010–2014 and deferred sittings remain outstanding.
+    'physics': {'mode': 'merged', 'from': 2016, 'also': [(2015, 'hl')]},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
