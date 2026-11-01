@@ -12,6 +12,25 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HomeEconomicsNestedDevicesTest(unittest.TestCase):
+    def test_2022_deferred_a_regenerates_and_preserves_the_longer_last_answer_row(self):
+        from he_review_2022_hl_deferred import build, documents
+        cards, _, _ = build(); self.assertEqual(len(cards), 19)
+        authored = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/home-economics.json').read_text())}
+        for c in cards: self.assertEqual(authored[c['id']], c)
+        docs = documents()
+        questions = json.loads((ROOT / 'scripts/paper-trail/answers/2022/LC098ALP014EV-deferred.pdf.json').read_text())['q']
+        self.assertEqual(len(questions), 14)
+        q3 = next(q for q in questions if q['n'] == '3')
+        page = docs['a'][q3['pP'] - 1]
+        self.assertGreater(q3['endY'] * page.rect.height, 741.5)
+        text = page.get_text(clip=fitz.Rect(0, q3['pY'][0] * page.rect.height, page.rect.width, q3['endY'] * page.rect.height))
+        self.assertIn('(ii)', text)
+        self.assertNotIn('Leaving Certificate Examination', text)
+        for q in questions:
+            r, = q['region']; page = docs['scheme'][r['p'] - 1]
+            bounds = r['r']; text = page.get_text(clip=fitz.Rect(bounds[0]*page.rect.width,bounds[1]*page.rect.height,bounds[2]*page.rect.width,bounds[3]*page.rect.height))
+            self.assertIn(q['n']+'.', text)
+
     def test_deferred_c_regenerates_with_final_prompts_and_complete_scheme_continuations(self):
         from he_review_2023_hl_deferred_c1 import build as build_c1
         from he_review_2023_hl_deferred_c_rest import build as build_rest, FIGURE, CROP_SHA256

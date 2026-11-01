@@ -1288,6 +1288,13 @@ const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
 // Source-reviewed missing tasks. Keep the original 283/266 identity hashes
 // frozen; these additions must never disguise a removed older card.
 const homeEconomicsAdditionIds = new Set([
+  'he-2022-hl-deferred-sa-q1', 'he-2022-hl-deferred-sa-q1-mycoprotein', 'he-2022-hl-deferred-sa-q2',
+  'he-2022-hl-deferred-sa-q3', 'he-2022-hl-deferred-sa-q3-factors', 'he-2022-hl-deferred-sa-q4',
+  'he-2022-hl-deferred-sa-q5', 'he-2022-hl-deferred-sa-q6', 'he-2022-hl-deferred-sa-q6-meal-factors',
+  'he-2022-hl-deferred-sa-q7', 'he-2022-hl-deferred-sa-q8', 'he-2022-hl-deferred-sa-q8-effects',
+  'he-2022-hl-deferred-sa-q9', 'he-2022-hl-deferred-sa-q10', 'he-2022-hl-deferred-sa-q10-components',
+  'he-2022-hl-deferred-sa-q11', 'he-2022-hl-deferred-sa-q12', 'he-2022-hl-deferred-sa-q13',
+  'he-2022-hl-deferred-sa-q14',
   'he-2023-hl-sb-q2b', 'he-2023-hl-sb-q3b', 'he-2023-hl-sc-q2cii',
   'he-2023-hl-sa-q4-factors', 'he-2023-hl-sa-q8-uses',
   'he-2023-ol-sa-q14', 'he-2023-ol-sb-q1a', 'he-2023-ol-sb-q2a', 'he-2023-ol-sb-q2b',
@@ -1397,7 +1404,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(346);
+    expect(HOME_EC_HIGHER).toHaveLength(365);
     expect(HOME_EC_ORDINARY).toHaveLength(272);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {

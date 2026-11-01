@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "year": 2022,
+  "level": "higher",
+  "sitting": "deferred",
+  "language": "ev",
+  "status": "partial-carding; all-source-pages-visually-reviewed; browser-QA-pending",
+  "sources": {
+    "a": {
+      "fileid": "LC098ALP014EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2022/LC098ALP014EV.pdf",
+      "sha256": "5861dc717c7f278c4cc3f6b748349221c26a42789f72054442bfe4094ab14cb6",
+      "pages": 40
+    },
+    "bc": {
+      "fileid": "LC098ALP039EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2022/LC098ALP039EV.pdf",
+      "sha256": "8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03",
+      "pages": 12
+    },
+    "scheme": {
+      "fileid": "LC098ALP000EV.pdf",
+      "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC098ALP000EV.pdf",
+      "sha256": "8e9ff528232a53b0c03cd41d2a4f4a44fbcd294c0c2c3932182ae9a93e818e8f",
+      "pages": 27
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 27 pages: cover 1, deferred notice 2, candidate rubric 3, A 4–8, B 9–15, C 16–25, blank 26, back cover 27."
+  },
+  "sectionStatus": {
+    "A": "All 19 tasks carded; 84 offered marks.",
+    "B": "16 tasks open; 280 offered marks.",
+    "C": "26 tasks open; 385 offered marks."
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    200,
+    240
+  ],
+  "boundaryDecisions": [
+    "A1: protein properties 4 and mycoprotein definition 2 are independent.",
+    "A3: BMR 4 and energy factors 2 are independent.",
+    "A6: diabetes definition 4 and meal factors 2 are independent.",
+    "A8: definition 2 and irradiation effects 4 are independent.",
+    "A10: management purpose 3 and components 3 are independent.",
+    "A12 is one dependent finish-name/effects response; table headings remain one response for A2/A4/A5/A7/A9/A11.",
+    "A13 eligibility is historical examination content.",
+    "A3 paper anchor must retain the second response row down to y=741.5; 2023’s shorter page cutoff is unsuitable."
+  ],
+  "pendingDecisions": [
+    "B1(a): one choose-four response with the original six-category chart; no combinations.",
+    "C1(a)(i): original 2020 fuel table needed; paper night rate 9.60 differs from scheme 15.21. Use the paper data.",
+    "C1(a)(ii): one open heating-system profile, source guidance continues on p17; passive/active solar wording needs clarification.",
+    "C1(c)(ii): check carbon monoxide/global-warming and acid-rain wording before carding.",
+    "C2(a)(ii) carries the earlier sketch prompt; C2(b) is an open blended-fabric profile.",
+    "C3(b)(i): one family impact, one society impact and one further impact, plus two risk groups.",
+    "C4(c)(ii): four factors, scored as two at 5:3:0 plus two at 4:2:0; do not invent four equal shares.",
+    "B2(c) calls FSAI an Association; the correct body name is Food Safety Authority of Ireland. C4(b)(i) bacterial-growth simplifications need source clarifications."
+  ],
+  "sourceErrors": [
+    "Scheme p4 heading says Section A 60; paper and rubric give 30 (five of fourteen 6-mark questions).",
+    "Scheme p9 heading says Section B 180; paper and rubric give 130 (80 plus one 50)."
+  ],
+  "sourceClarifications": {
+    "iron": {
+      "checked": "2026-11-01",
+      "source": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+      "note": "Haem/non-haem describes whether iron is part of haem. Ferrous/ferric describes its oxidation state. The scheme incorrectly treats these as synonymous pairs."
+    },
+    "diabetes": {
+      "checked": "2026-11-01",
+      "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+      "note": "Diabetes involves raised blood glucose due to inadequate insulin production, impaired insulin action, or both; the scheme omits impaired insulin action."
+    }
+  },
+  "paperRegionsA": {
+    "1": {
+      "page": 3,
+      "rect": [
+        0,
+        147.65972900390625,
+        595.219970703125,
+        331.8800048828125
+      ]
+    },
+    "2": {
+      "page": 3,
+      "rect": [
+        0,
+        354.6596984863281,
+        595.219970703125,
+        537.5
+      ]
+    },
+    "3": {
+      "page": 3,
+      "rect": [
+        0,
+        555.2396850585938,
+        595.219970703125,
+        749.47998046875
+      ]
+    },
+    "4": {
+      "page": 4,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        182.9000244140625
+      ]
+    },
+    "5": {
+      "page": 4,
+      "rect": [
+        0,
+        209.63970947265625,
+        595.219970703125,
+        392.48004150390625
+      ]
+    },
+    "6": {
+      "page": 4,
+      "rect": [
+        0,
+        432.0596923828125,
+        595.219970703125,
+        652.8800048828125
+      ]
+    },
+    "7": {
+      "page": 5,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        195.3800048828125
+      ]
+    },
+    "8": {
+      "page": 5,
+      "rect": [
+        0,
+        225.1197509765625,
+        595.219970703125,
+        429.1399841308594
+      ]
+    },
+    "9": {
+      "page": 5,
+      "rect": [
+        0,
+        456.2998046875,
+        595.219970703125,
+        639.1400146484375
+      ]
+    },
+    "10": {
+      "page": 6,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        281.6600341796875
+      ]
+    },
+    "11": {
+      "page": 6,
+      "rect": [
+        0,
+        315.3597412109375,
+        595.219970703125,
+        498.1400146484375
+      ]
+    },
+    "12": {
+      "page": 6,
+      "rect": [
+        0,
+        525.77978515625,
+        595.219970703125,
+        669.3800048828125
+      ]
+    },
+    "13": {
+      "page": 7,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        253.58001708984375
+      ]
+    },
+    "14": {
+      "page": 7,
+      "rect": [
+        0,
+        290.2197265625,
+        595.219970703125,
+        473.0
+      ]
+    }
+  },
+  "schemeRegionsA": {
+    "1": {
+      "page": 4,
+      "rect": [
+        0,
+        155.99969482421875,
+        595.219970703125,
+        344.0
+      ]
+    },
+    "2": {
+      "page": 4,
+      "rect": [
+        0,
+        354.1795959472656,
+        595.219970703125,
+        551.1199951171875
+      ]
+    },
+    "3": {
+      "page": 4,
+      "rect": [
+        0,
+        557.1597290039062,
+        595.219970703125,
+        766.0999755859375
+      ]
+    },
+    "4": {
+      "page": 5,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        196.58001708984375
+      ]
+    },
+    "5": {
+      "page": 5,
+      "rect": [
+        0,
+        231.959716796875,
+        595.219970703125,
+        439.2200012207031
+      ]
+    },
+    "6": {
+      "page": 5,
+      "rect": [
+        0,
+        491.2196960449219,
+        595.219970703125,
+        765.97998046875
+      ]
+    },
+    "7": {
+      "page": 6,
+      "rect": [
+        0,
+        70.73968505859375,
+        595.219970703125,
+        244.8800048828125
+      ]
+    },
+    "8": {
+      "page": 6,
+      "rect": [
+        0,
+        280.259765625,
+        595.219970703125,
+        526.5799560546875
+      ]
+    },
+    "9": {
+      "page": 6,
+      "rect": [
+        0,
+        553.2596435546875,
+        595.219970703125,
+        733.4000244140625
+      ]
+    },
+    "10": {
+      "page": 7,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        296.84002685546875
+      ]
+    },
+    "11": {
+      "page": 7,
+      "rect": [
+        0,
+        349.79974365234375,
+        595.219970703125,
+        557.1199951171875
+      ]
+    },
+    "12": {
+      "page": 7,
+      "rect": [
+        0,
+        577.7997436523438,
+        595.219970703125,
+        775
+      ]
+    },
+    "13": {
+      "page": 8,
+      "rect": [
+        0,
+        56.09967041015625,
+        595.219970703125,
+        278.05999755859375
+      ]
+    },
+    "14": {
+      "page": 8,
+      "rect": [
+        0,
+        313.3797607421875,
+        595.219970703125,
+        493.5199890136719
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2022-hl-deferred-sa-q1",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q1 — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q1-mycoprotein",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q1 — mycoprotein — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q2",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q2 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q3",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q3 — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q3-factors",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q3 — energy factors — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q4",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q4 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q5",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q5 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q6",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q6 — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q6-meal-factors",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q6 — meal-planning factors — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q7",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q7 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q8",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q8 — Deferred sitting",
+      "marks": 2,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q8-effects",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q8 — irradiation effects — Deferred sitting",
+      "marks": 4,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q9",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q9 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q10",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q10 — Deferred sitting",
+      "marks": 3,
+      "topicId": "home-economics-1-0"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q10-components",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q10 — management components — Deferred sitting",
+      "marks": 3,
+      "topicId": "home-economics-1-0"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q11",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q11 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q12",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q12 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q13",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q13 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2022-hl-deferred-sa-q14",
+      "status": "carded",
+      "section": "A",
+      "questionRef": "2022 HL Section A Q14 — Deferred sitting",
+      "marks": 6,
+      "topicId": "home-economics-1-1"
+    }
+  ]
+}

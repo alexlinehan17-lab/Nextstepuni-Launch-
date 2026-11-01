@@ -39,8 +39,14 @@ export function homeEconomicsSourceMap(review, readSource = path => readFileSync
 export function reviewedHomeEconomicsSource(cardId) {
   if (!/^he-\d{4}-(?:hl|ol)-deferred-/.test(cardId)) return undefined;
   if (!sources) {
-    const review = JSON.parse(readFileSync(resolve(root, 'scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json')));
-    sources = homeEconomicsSourceMap(review);
+    sources = new Map();
+    for (const year of [2022, 2023]) {
+      const review = JSON.parse(readFileSync(resolve(root, `scripts/markbank/authoring/home-economics/${year}-hl-deferred-review.json`)));
+      for (const [id, source] of homeEconomicsSourceMap(review)) {
+        if (sources.has(id)) throw new Error(`Duplicate reviewed Home Economics task: ${id}`);
+        sources.set(id, source);
+      }
+    }
   }
   const source = sources.get(cardId);
   if (!source) throw new Error(`Deferred Home Economics card lacks reviewed sources: ${cardId}`);

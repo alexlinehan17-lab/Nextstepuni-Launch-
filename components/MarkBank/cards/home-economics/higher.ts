@@ -12277,4 +12277,450 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q1", topicId: "home-economics-0-5", conceptId: "protein-properties",
+    section: "A", questionRef: "2022 HL Section A Q1 — Deferred sitting",
+    questionText: "State two properties of protein.",
+    tariffModel: {"kind":"fixed","notation":"2 properties × 2 (2:0)"}, totalMarks: 4,
+    rows: [
+    { id: "properties", kind: "criterion", verbatim: "properties of protein", marks: 4, contextNote: "Two properties, each graded 2:0. Complete guidance: coagulation; maillard reaction; plasticity; foam formation; elasticity; solubility; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q1-mycoprotein", topicId: "home-economics-0-5", conceptId: "mycoprotein-definition",
+    section: "A", questionRef: "2022 HL Section A Q1 — mycoprotein — Deferred sitting",
+    questionText: "What is mycoprotein?",
+    tariffModel: {"kind":"fixed","notation":"2 marks (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "mycoprotein", kind: "criterion", verbatim: "mycoprotein", marks: 2, contextNote: "Definition graded 2:1:0. Published guidance: High-protein food produced from microorganisms; made from the fungal biomass of a soil fungus called Fusarium venenatum; example Quorn; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q2", topicId: "home-economics-0-6", conceptId: "carbohydrate-reactions",
+    section: "A", questionRef: "2022 HL Section A Q2 — Deferred sitting",
+    questionText: "In relation to carbohydrates, explain each of the following terms:\n• Maillard reaction\n• Carmelisation",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "maillard-reaction", kind: "criterion", verbatim: "Maillard reaction", marks: 3, contextNote: "Required term, graded 3:2:1:0. Published guidance: non-enzymic browning; occurs when sugars are heated in the presence of amino acids; etc.", permittedMarks: [0,1,2,3] },
+    { id: "carmelisation", kind: "criterion", verbatim: "Carmelisation", marks: 3, contextNote: "Required term, graded 3:2:1:0. Published guidance: non-enzymic browning; when sugar is heated, it melts; further heating results in caramelising; ten gradual stages between 104°C and 177°C; results in a darker colour, pleasant smell and a slightly bitter taste; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q3", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate",
+    section: "A", questionRef: "2022 HL Section A Q3 — Deferred sitting",
+    questionText: "Explain Basal Metabolic Rate (BMR).",
+    tariffModel: {"kind":"fixed","notation":"4 marks (4:3:2:1:0)"}, totalMarks: 4,
+    rows: [
+    { id: "bmr", kind: "criterion", verbatim: "Basal Metabolic Rate", marks: 4, contextNote: "Definition graded 4:3:2:1:0. Published guidance: The minimum amount of energy required to maintain body functions when at rest; to keep internal organs working; to maintain body temperature; etc", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q3-factors", topicId: "home-economics-0-1", conceptId: "energy-requirement-factors",
+    section: "A", questionRef: "2022 HL Section A Q3 — energy factors — Deferred sitting",
+    questionText: "List two factors that affect energy requirements.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 1 (1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "energy requirements", marks: 2, contextNote: "Two factors, each graded 1:0. Complete guidance: age; gender; body size; muscle mass; climate; activity; hormonal factors; occupation; health status; pregnancy/lactation etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q4", topicId: "home-economics-0-8", conceptId: "vitamin-deficiency-conditions",
+    section: "A", questionRef: "2022 HL Section A Q4 — Deferred sitting",
+    questionText: "The conditions listed below are caused by a deficiency in the diet of specific vitamins. Identify the vitamin in each case.\n• Anaemia\n• Rickets\n• Beriberi",
+    tariffModel: {"kind":"fixed","notation":"3 required conditions × 2 (2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "anaemia", kind: "criterion", verbatim: "Anaemia", marks: 2, contextNote: "Identify one vitamin for this required condition; graded 2:0. Published accepted answer(s): Vitamin C; Vitamin B12", permittedMarks: [0,2] },
+    { id: "rickets", kind: "criterion", verbatim: "Rickets", marks: 2, contextNote: "Identify one vitamin for this required condition; graded 2:0. Published accepted answer(s): Vitamin D", permittedMarks: [0,2] },
+    { id: "beriberi", kind: "criterion", verbatim: "Beriberi", marks: 2, contextNote: "Identify one vitamin for this required condition; graded 2:0. Published accepted answer(s): Vitamin B1 (thiamine)", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q5", topicId: "home-economics-0-8", conceptId: "haem-nonhaem-iron",
+    section: "A", questionRef: "2022 HL Section A Q5 — Deferred sitting",
+    questionText: "Explain each of the following:\n• Haem iron\n• Non‐haem iron",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "haem-iron", kind: "criterion", verbatim: "Haem iron", marks: 3, contextNote: "Required term, graded 3:2:1:0. Source clarification (NIH): haem iron is bound within haem; non-haem iron is outside haem. Haem/non-haem is not another name for ferrous/ferric, which describes oxidation state. Haem iron is generally more readily absorbed. Historical scheme wording: also known as ferrous iron; easily absorbed by the body; etc.", permittedMarks: [0,1,2,3] },
+    { id: "non-haem-iron", kind: "criterion", verbatim: "Non-haem iron", marks: 3, contextNote: "Required term, graded 3:2:1:0. Source clarification (NIH): haem iron is bound within haem; non-haem iron is outside haem. Haem/non-haem is not another name for ferrous/ferric, which describes oxidation state. Haem iron is generally more readily absorbed. Historical scheme wording: also known as ferric iron; not easily absorbed by the body; must be changed into ferrous iron to be easily absorbed; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q6", topicId: "home-economics-0-1", conceptId: "diabetes-definition",
+    section: "A", questionRef: "2022 HL Section A Q6 — Deferred sitting",
+    questionText: "Define diabetes.",
+    tariffModel: {"kind":"fixed","notation":"4 marks (4:2:0)"}, totalMarks: 4,
+    rows: [
+    { id: "diabetes", kind: "criterion", verbatim: "diabetes", marks: 4, contextNote: "Definition graded 4:2:0. Source clarification (NIDDK): diabetes involves raised blood glucose due to inadequate insulin production, impaired insulin action, or both. The scheme omits impaired insulin action. Historical scheme wording: endocrine disorder; an insufficient or non-production of insulin by the pancreas; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q6-meal-factors", topicId: "home-economics-0-1", conceptId: "diabetes-meal-planning",
+    section: "A", questionRef: "2022 HL Section A Q6 — meal-planning factors — Deferred sitting",
+    questionText: "State two factors which should be considered when planning meals for a person who is a diabetic.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 1 (1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "planning meals", marks: 2, contextNote: "Two factors, each graded 1:0. Published 2022 examination guidance: reduce the intake of foods high in saturated fat; increase intake of high-fibre foods; eat starch based carbohydrate foods; eat regular meals; watch serving size; eat foods with low sugar content; use artificial sweeteners; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q7", topicId: "home-economics-0-3", conceptId: "soup-classification-examples",
+    section: "A", questionRef: "2022 HL Section A Q7 — Deferred sitting",
+    questionText: "Complete the following table in relation to soup:\nClassification → Example:\n• Thick soups\n• Thin/Clear soups\n• Cold soups",
+    tariffModel: {"kind":"fixed","notation":"3 examples × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Thick soups", marks: 2, contextNote: "Give one example for this required classification; graded 2:1:0. Published guidance: purèe – mushroom; vegetable; tomato; etc. thickened – chowder; vegetable; etc.", permittedMarks: [0,1,2] },
+    { id: "2", kind: "criterion", verbatim: "Thin/Clear soups", marks: 2, contextNote: "Give one example for this required classification; graded 2:1:0. Published guidance: Consommé; broth; etc.", permittedMarks: [0,1,2] },
+    { id: "3", kind: "criterion", verbatim: "Cold soups", marks: 2, contextNote: "Give one example for this required classification; graded 2:1:0. Published guidance: gazpacho; pea; chilled cucumber; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q8", topicId: "home-economics-0-4", conceptId: "irradiated-food-definition",
+    section: "A", questionRef: "2022 HL Section A Q8 — Deferred sitting",
+    questionText: "What is irradiated food?",
+    tariffModel: {"kind":"fixed","notation":"2 marks (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "irradiation", kind: "criterion", verbatim: "irradiated food", marks: 2, contextNote: "Definition graded 2:1:0. Published guidance: Food and food packaging that has been exposed to ionized radiation, such as gamma rays to destroy or inactivate enzymes; to destroy micro-organisms in food and prevent spoilage; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q8-effects", topicId: "home-economics-0-4", conceptId: "food-irradiation-effects",
+    section: "A", questionRef: "2022 HL Section A Q8 — irradiation effects — Deferred sitting",
+    questionText: "State two effects of irradiation on food.",
+    tariffModel: {"kind":"fixed","notation":"2 effects × 2 (2:1:0)"}, totalMarks: 4,
+    rows: [
+    { id: "effects", kind: "criterion", verbatim: "effects of irradiation", marks: 4, contextNote: "Two effects, each graded 2:1:0. Complete guidance: extends the shelf life of food; reduces or eliminates microorganisms; reduces or eliminates insects in food; delays the ripening of fruit; prevents sprouting in vegetables; controls growth of mould in soft fruits; reduction in vitamin content; changes taste; causes rancidity in foods with high fat content; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q9", topicId: "home-economics-0-4", conceptId: "food-contamination-terms",
+    section: "A", questionRef: "2022 HL Section A Q9 — Deferred sitting",
+    questionText: "In relation to food safety, explain each of the following:\n• Food contaminants\n• Cross contamination",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Food contaminants", marks: 3, contextNote: "Required term, graded 3:2:1:0. Published guidance: substances that can enter the food chain either unintentionally or illegally; classified as biological, chemical or physical; etc.", permittedMarks: [0,1,2,3] },
+    { id: "2", kind: "criterion", verbatim: "Cross contamination", marks: 3, contextNote: "Required term, graded 3:2:1:0. Published guidance: is the transfer of bacteria from raw food to cooked food; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q10", topicId: "home-economics-1-0", conceptId: "family-resource-management-purpose",
+    section: "A", questionRef: "2022 HL Section A Q10 — Deferred sitting",
+    questionText: "State the purpose of family resource management systems.",
+    tariffModel: {"kind":"fixed","notation":"3 marks (3:2:0)"}, totalMarks: 3,
+    rows: [
+    { id: "purpose", kind: "criterion", verbatim: "family resource management systems", marks: 3, contextNote: "Purpose graded 3:2:0. Published guidance: To use available resources efficiently in order to achieve goals; to improve the quality of family life; to enable family members to achieve their full potential; etc", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q10-components", topicId: "home-economics-1-0", conceptId: "family-resource-management-components",
+    section: "A", questionRef: "2022 HL Section A Q10 — management components — Deferred sitting",
+    questionText: "List three components of family resource management systems.",
+    tariffModel: {"kind":"fixed","notation":"3 components × 1 (1:0)"}, totalMarks: 3,
+    rows: [
+    { id: "components", kind: "criterion", verbatim: "components", marks: 3, contextNote: "Three components, each graded 1:0. Published answers: Inputs; Throughputs; Outputs.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q11", topicId: "home-economics-1-3", conceptId: "refrigerator-components",
+    section: "A", questionRef: "2022 HL Section A Q11 — Deferred sitting",
+    questionText: "State the function of the following parts of the refrigerator:\n• Condenser\n• Thermostat",
+    tariffModel: {"kind":"fixed","notation":"2 required components × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "condenser", kind: "criterion", verbatim: "Condenser", marks: 3, contextNote: "Required component, graded 3:2:1:0. Published guidance: refrigerant flow through condenser; condenses from vapour to liquid; cools the refrigerant; etc.", permittedMarks: [0,1,2,3] },
+    { id: "thermostat", kind: "criterion", verbatim: "Thermostat", marks: 3, contextNote: "Required component, graded 3:2:1:0. Published guidance: controls the internal temperature of refrigerator/cooling system; allows temperature to be adjusted; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q12", topicId: "home-economics-1-4", conceptId: "flame-retardant-finish",
+    section: "A", questionRef: "2022 HL Section A Q12 — Deferred sitting",
+    questionText: "Name a fire/flame retardant finish used on household furnishings. Outline two effects of this finish.",
+    tariffModel: {"kind":"fixed","notation":"Name 2; effects 2 × 2 (all 2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name one finish, graded 2:0. Published examples: Proban; Pyrovatex; etc.", permittedMarks: [0,2] },
+    { id: "effects", kind: "criterion", verbatim: "effects", marks: 4, contextNote: "Two effects of the finish you named, each graded 2:0. Keep the name and effects together. Complete guidance: reduces risk of fabric ignition; self-extinguishing; may cause allergic reaction; may require special care during cleaning; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q13", topicId: "home-economics-1-1", conceptId: "working-family-payment-eligibility",
+    section: "A", questionRef: "2022 HL Section A Q13 — Deferred sitting",
+    questionText: "Identify two conditions necessary to qualify for the Working Family Payment (Family Income Supplement).",
+    tariffModel: {"kind":"fixed","notation":"2 conditions × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "conditions", kind: "criterion", verbatim: "Working Family Payment", marks: 6, contextNote: "Two conditions, each graded 3:2:0. The eligibility wording below belongs to the 2022 examination, not current benefits advice. Published guidance: Individuals must be working at least 19 hours per week; 38 hours every fortnight; have an average weekly income below amounts outlined; have at least one dependent child who lives with or is supported by you; under 18 years, or aged 18 – 22 if in full time education; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC098ALP014EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "he-2022-hl-deferred-sa-q14", topicId: "home-economics-1-1", conceptId: "mabs-functions",
+    section: "A", questionRef: "2022 HL Section A Q14 — Deferred sitting",
+    questionText: "Outline two functions of the Money Advice and Budgeting Service (MABS).",
+    tariffModel: {"kind":"fixed","notation":"2 functions × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "functions", kind: "criterion", verbatim: "Money Advice and Budgeting Service", marks: 6, contextNote: "Two functions, each graded 3:2:0. Complete published guidance: advises on money management skills – budgeting, debt repayment advises on consumer finance products; advises on interest rates; mortgage debt resolution; negotiation with lenders; personal insolvency advice; income maximisation; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

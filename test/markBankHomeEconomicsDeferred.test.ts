@@ -4,6 +4,8 @@ import { tariffReconciles } from '../types/markBank';
 import { reviewedHomeEconomicsSource, homeEconomicsSourceMap } from '../scripts/markbank/homeEconomicsSources.mjs';
 import { resolveIndexedPaperFileid } from '../scripts/markbank/paperIndex.mjs';
 import review from '../scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json';
+import review2022 from '../scripts/markbank/authoring/home-economics/2022-hl-deferred-review.json';
+import anchors2022 from '../scripts/paper-trail/answers/2022/LC098ALP014EV-deferred.pdf.json';
 import anchors from '../scripts/paper-trail/answers/2023/LC098ALP014EV-deferred.pdf.json';
 import bcAnchors from '../scripts/paper-trail/answers/2023/LC098ALP039EV-deferred.pdf.json';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
@@ -18,6 +20,63 @@ const get = (suffix: string) => {
   if (!c || c.kind !== 'question') throw new Error(suffix);
   return c;
 };
+
+describe('Home Economics 2022 deferred Section A', () => {
+  const cards2022 = CARDS.filter(c => c.id.startsWith('he-2022-hl-deferred-sa-'));
+  const card = (suffix: string) => {
+    const c = cards2022.find(c => c.id === `he-2022-hl-deferred-sa-${suffix}`);
+    if (!c || c.kind !== 'question') throw new Error(suffix);
+    return c;
+  };
+  it('keeps five independently marked second prompts and all required table entries', () => {
+    expect(cards2022).toHaveLength(19);
+    expect(cards2022.reduce((n, c) => n + c.totalMarks, 0)).toBe(84);
+    expect(cards2022.map(c => c.id).sort()).toEqual(review2022.tasks.map(t => t.id).sort());
+    for (const [q, suffix, marks] of [[1, 'mycoprotein', [4, 2]], [3, 'factors', [4, 2]], [6, 'meal-factors', [4, 2]], [8, 'effects', [2, 4]], [10, 'components', [3, 3]]] as const) {
+      expect([card(`q${q}`).totalMarks, card(`q${q}-${suffix}`).totalMarks]).toEqual(marks);
+      expect(card(`q${q}`).questionRef).not.toBe(card(`q${q}-${suffix}`).questionRef);
+    }
+    expect(card('q4').rows.map(r => r.verbatim)).toEqual(['Anaemia', 'Rickets', 'Beriberi']);
+    expect(card('q7').questionText).toContain('Classification → Example:');
+    expect(card('q7').rows.map(r => r.verbatim)).toEqual(['Thick soups', 'Thin/Clear soups', 'Cold soups']);
+    expect(card('q12').rows.map(r => r.marks)).toEqual([2, 4]);
+    expect(card('q12').rows[1].parts?.map(p => p.permittedMarks)).toEqual([[0, 2], [0, 2]]);
+  });
+  it('retains source ladders and complete guidance with explicit factual clarifications', () => {
+    expect(card('q1').rows[0].parts?.map(p => p.permittedMarks)).toEqual([[0, 2], [0, 2]]);
+    expect(card('q1-mycoprotein').rows[0].permittedMarks).toEqual([0, 1, 2]);
+    expect(card('q3').rows[0].permittedMarks).toEqual([0, 1, 2, 3, 4]);
+    expect(card('q3-factors').rows[0].contextNote).toContain('pregnancy/lactation');
+    expect(card('q5').rows[0].contextNote).toContain('not another name for ferrous/ferric');
+    expect(card('q6').rows[0].contextNote).toContain('impaired insulin action');
+    expect(card('q6-meal-factors').questionText).toContain('planning meals for a person');
+    expect(card('q8-effects').rows[0].contextNote).toContain('rancidity');
+    expect(card('q10-components').rows[0].parts?.map(p => p.permittedMarks)).toEqual(Array(3).fill([0, 1]));
+    expect(card('q13').rows[0].contextNote).toContain('2022 examination, not current benefits advice');
+    expect(card('q14').rows[0].contextNote).toContain('income maximisation');
+  });
+  it('uses the 2022 deferred archive and maps all nineteen tasks to fourteen Atlas questions', () => {
+    const file = 'LC098ALP014EV-deferred.pdf';
+    const tags = PAPER_TOPIC_TAGS.find(p => p.subjectId === 'home-economics-s-and-s' && p.year === 2022 && p.fileid === file)!;
+    expect(anchors2022.q).toHaveLength(14);
+    expect(preferredAnswersUrl('home-economics-s-and-s', 2022, file, 'stale')).toBe(`/paper-answers/2022/${file}.json`);
+    for (const c of cards2022) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      expect(c.paperFileid).toBe('LC098ALP014EV-deferred');
+      const source = reviewedHomeEconomicsSource(c.id);
+      expect(resolveIndexedPaperFileid('home-economics', 2022, 'higher', source)).toBe('LC098ALP014EV-deferred');
+      const n = c.questionRef.match(/Q(\d+)/)![1];
+      const mapping = runtime.questionMappings.find(r => r[0] === 'h' && r[1] === 'e' && r[2] === 2022 && r[4] === file && r[5] === n)!;
+      expect(mapping?.[7]).toBe('deferred');
+      const expected = Object.entries(crosswalk).filter(([k, nodes]) => k.includes('-higher-') && nodes.includes(c.topicId)).map(([k]) => k);
+      expect(browseTopicIdsForQuestion(tags, tags.q.find(q => q.n === n)!)).toEqual(expect.arrayContaining(expected));
+    }
+    const wrongYear = structuredClone(review2022); wrongYear.year = 2023;
+    expect(() => homeEconomicsSourceMap(wrongYear)).toThrow(/archive identity/);
+    expect(() => reviewedHomeEconomicsSource('he-2022-hl-deferred-sb-q1a')).toThrow(/lacks reviewed sources/);
+  });
+});
 
 describe('Home Economics deferred source boundaries', () => {
   it('keeps all 58 reviewed tasks with exact section totals and every canonical Atlas topic', () => {
