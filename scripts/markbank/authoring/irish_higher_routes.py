@@ -227,7 +227,7 @@ def apply_review(cards):
             assert not WITHDRAWN_3BA_ROUTES & {c['id'] for c in cards}, 'withdrawn 3B(a) route card came back'
         reviews.append(dict(year=year,level='higher',paperFileid='LC001ALP200IV.pdf',
                             paperSha256=paper_hash,schemeSha256=scheme_hash,reviewDate='2026-10-07',
-                            scope=('Q2 and Q3B only; full paper review remains pending' if year==2022 else
+                            scope=('Q2 and Q3B only; the full 2022 paper review is irish_higher_2022_p2.py (2026-11-04).' if year==2022 else
                                    'Q2 and Q3B only; full-paper status is recorded separately in irish-paper-reviews.json.'),
                             reviewedPaperPages=paper_pages,
                             reviewedSchemePages=list(range(27,33))+list(range(37 if year==2022 else 38,41)),

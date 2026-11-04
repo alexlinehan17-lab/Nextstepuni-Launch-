@@ -7,6 +7,7 @@ import papers from '../scripts/markbank/authored/irish-paper-reviews.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { tariffReconciles, type IrishRubric } from '../types/markBank';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 const card = (key: string) => CARDS.find(c => c.id==='irish-2024-hl-p2-'+key)!;
 const rubric = (key: string): IrishRubric => {
@@ -100,6 +101,6 @@ describe('2024 Higher prescribed poetry and additional literature source review'
     const row=inventory.papers.find(p=>p.key==='2024|higher|LC001ALP200IV.pdf')!;
     expect(row.fullVisualReview).toBe('complete');
     expect(row.bankAtlasTaskParity).toBe('complete');
-    expect(inventory.summary.papersPendingFullReview).toBe(57);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
   });
 });

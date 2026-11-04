@@ -43,6 +43,14 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
+import ordinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
+import ordinary2020P1 from '../components/MarkBank/cards/irish/ordinary-2020-p1-authored.json';
+import ordinary2020P2 from '../components/MarkBank/cards/irish/ordinary-2020-p2-authored.json';
+import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
+import higher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
+import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
+import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -168,6 +176,12 @@ const addedIrishRoutes = new Set([
     .concat([`reading-${p}-q6-a`, `reading-${p}-q6-b`]))
     .concat(['reading-a-q6-b','reading-a-q3-bi','reading-a-q4-bi','reading-b-q2-bii','reading-b-q3-bi','reading-b-q3-bii'].flatMap(key => [`${key}-1`, `${key}-2`]))
     .map(key => `irish-2023-hl-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...higher2022P2.cards.map(card => card.id),
+  ...higher2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...higher2020P1.cards.map(card => card.id),
+  ...higher2020P2.cards.map(card => card.id),
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen
@@ -215,6 +229,12 @@ const addedIrishOrdinaryRoutes = new Set([
     .concat(['prose-2a-c-an-lasair-choille'])
     .concat(['a','b','c'].flatMap(poem => ['i','ii','iii'].map(part => `poetry-3a-${poem}-${part}`)))
     .map(key => `irish-2023-ol-p2-${key}`),
+  // 2022 onwards (archive review batch 2, 2026-11-04): each reviewed paper's practice cards, listed in its own file.
+  ...ordinary2022P2.cards.map(card => card.id),
+  ...ordinary2021P2.cards.map(card => card.id),
+  // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
+  ...ordinary2020P1.cards.map(card => card.id),
+  ...ordinary2020P2.cards.map(card => card.id),
 ]);
 
 const decks = [

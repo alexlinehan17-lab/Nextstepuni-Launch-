@@ -7,6 +7,7 @@ import { CARDS as ALL_CARDS } from '../components/MarkBank/cards/irish/foundatio
 import { combinedListeningAssessment, irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 const cards=ALL_CARDS.filter(c=>c.year===2017);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
@@ -180,7 +181,7 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2017|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.papersPendingFullReview).toBe(57);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

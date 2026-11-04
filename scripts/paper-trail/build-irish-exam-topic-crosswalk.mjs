@@ -30,7 +30,7 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
@@ -1195,7 +1195,7 @@ function rootReviewedTasks(paper, artifact, input) {
     const n = task.n;
     let m;
     if ((m = n.match(/^L-([ABC])-/))) return byLabel(new RegExp(`Cuid ${m[1]}$`));
-    if (paper.level !== 'foundation' && n.startsWith('W-')) return byLabel(/Cheapadóireacht$/);
+    if (paper.level !== 'foundation' && n.startsWith('W-')) return byLabel(/Cheapadóireacht(?: · all choices)?$/);
     if ((m = n.match(/^R-([AB])-(\d+)/)) || (m = n.match(/^R-([AB])$/))) {
       return (m[2] && byLabel(new RegExp(`^Léamhthuiscint ${m[1]} · Ceist ${m[2]}$`))) || byLabel(/^Ceist 1 · Léamhthuiscint\b/);
     }
@@ -1309,6 +1309,15 @@ for (const paper of papers) {
       : paper.reviewedHigherSchemeFileid ?? 'LC001ALP000IV.pdf';
     answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
+    if (paper.hasReviewedHigherTasks && !paper.sidecar) {
+      // A reviewed paper the Paper Trail never mapped (2022 Ordinary Paper 1, filed as LC001GLP000IV) has no
+      // frozen section entries to keep: each printed section takes the scheme pages of the reviewed tasks it holds.
+      const sectionOf = n => (/^L-A-/.test(n) ? '1' : /^L-B-/.test(n) ? '2' : /^L-C-/.test(n) ? '3' : /^W-/.test(n) ? '4' : null);
+      for (const question of paper.q.filter(q => /^\d+$/.test(q.n) && !q.reviewedSchemePages)) {
+        const pages = [...new Set(paper.q.filter(q => sectionOf(q.n) === question.n).flatMap(q => q.reviewedSchemePages ?? []))].sort((a, b) => a - b);
+        if (pages.length) question.reviewedSchemePages = pages;
+      }
+    }
     answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {
       const question = paper.q.find(question => question.n === q.n);
       const region = question.reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] }));

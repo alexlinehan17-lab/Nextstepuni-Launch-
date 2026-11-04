@@ -10,6 +10,7 @@ import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
 import { irishFullScores } from './fixtures/irishScores';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 type Authored = (typeof authored.cards)[number] & {
   atlasQuestionId?: string; schemePages?: number[]; reviewedPaperPages?: number[];
@@ -133,7 +134,7 @@ print('source guard passed')
     const row = inventory.papers.find(p => p.key === '2023|higher|LC001ALP100IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual([...review.cardIds].sort());
     expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
-    expect(inventory.summary.papersPendingFullReview).toBe(57);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

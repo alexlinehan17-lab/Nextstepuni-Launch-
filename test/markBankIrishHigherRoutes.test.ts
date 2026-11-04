@@ -109,27 +109,28 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(answerMapUrls(resolved)[0]).toBe(`/paper-answers/${year}/LC001ALP200IV.pdf.json`);
       const map = JSON.parse(readFileSync(`public/paper-answers/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       // The twelve shipped reading anchors stay byte-identical; the literature questions the paper
-      // prints (Ceist 2 Prós, Ceist 3 Filíocht) are added after them as the reviewed tasks' parents.
+      // prints (Ceist 2 Prós, Ceist 3 Filíocht, Ceist 4 Litríocht Bhreise) are added after them as the reviewed
+      // tasks' parents (2022's Ceist 4 since its paper review, 2026-11-04).
       const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) <= 12)
         .map(({paperRegion: _paperRegion,schemeRegion: _schemeRegion,printOrder: _printOrder,...original}: Record<string, unknown>) => original);
       expect(legacy).toHaveLength(12);
       expect(map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) > 12)
-        .map((q: { n: string; label: string }) => [q.n, q.label])).toEqual(year === 2022
-        ? [['13', 'Ceist 2 · Prós'], ['14', 'Ceist 3 · Filíocht']]
-        : [['13', 'Ceist 2 · Prós'], ['14', 'Ceist 3 · Filíocht'], ['15', 'Ceist 4 · Litríocht Bhreise']]);
+        .map((q: { n: string; label: string }) => [q.n, q.label]))
+        .toEqual([['13', 'Ceist 2 · Prós'], ['14', 'Ceist 3 · Filíocht'], ['15', 'Ceist 4 · Litríocht Bhreise']]);
       for (const task of map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))) {
         expect(task.parentN, task.n).toBe(task.n.startsWith('P-') ? '13' : '14');
       }
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
         : '59c189047fa108b5f2e66888a2557ae388efc65e48fda35fd7cd44070ccf589e');
-      // 2022: ten until decision 4 withdrew the three 3B(a) device tasks (2026-11-04).
-      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 7 : 9);
+      // 2022: ten until decision 4 withdrew the three 3B(a) device tasks, then nine once its paper review
+      // joined 3A(a) and 3A(b) (2026-11-04).
+      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(9);
       expect(map.q.some((q: { n: string }) => q.n === 'R-A')).toBe(false);
       const anchors = JSON.parse(readFileSync(`public/paper-anchors/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       expect(anchors.paperOnly).toBe(1);
       expect(anchors.q.length).toBeGreaterThan(map.q.length);
-      expect(reviews.find(r => r.year === year)?.scope).toContain(year === 2022 ? 'full paper review remains pending' : 'full-paper status is recorded separately');
+      expect(reviews.find(r => r.year === year)?.scope).toContain(year === 2022 ? 'irish_higher_2022_p2.py' : 'full-paper status is recorded separately');
     }
   });
 });

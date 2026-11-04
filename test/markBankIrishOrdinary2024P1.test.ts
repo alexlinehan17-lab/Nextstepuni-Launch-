@@ -10,6 +10,7 @@ import { listeningQuestionGroups } from '../components/MarkBank/SessionScreen';
 import { sessionExerciseCount } from '../components/MarkBank/sessionPlanning';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 type Card = { id: string; atlasQuestionId?: string; totalMarks: number; topicId: string; schemePages?: number[]; questionText: string;
   reviewedPaperPages?: number[]; markingGuideNote: string; criteria: { id: string; label: string; maxMarks: number; permittedMarks: number[]; guidance: string[] }[] };
@@ -119,7 +120,7 @@ print('source guard passed')
     const row = inventory.papers.find(p => p.key === '2024|ordinary|LC001GLP100IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c => c.id).sort());
     expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
-    expect(inventory.summary.papersPendingFullReview).toBe(57);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

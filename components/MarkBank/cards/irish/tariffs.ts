@@ -52,6 +52,18 @@ const POINT_BAND_HEADER = /\bCatagóir(?:\s+Pointe eolais \d+\s*\(\d+\s*m?h?arc\
 const GAEILGE_TABLE = /(?:Gaeilge\s*)?\(\d+\s*m?h?arc\)\s*Sárchumas[\s\S]*?Cumas lag\/an-lag[^.•(]*(?:\([^)]*\))?/g;
 const WORDS: Record<string, number> = { aon: 1, amháin: 1, dá: 2, dhá: 2, trí: 3, ceithre: 4, cúig: 5, sé: 6 };
 
+/** What `text` adds to an already placed row's `label` ("Ainm an fhile" → "Ainm an fhile = Caitlín Maude": "Caitlín
+ *  Maude"), or undefined when it is not that row. Read past a séimhiú the scheme drops ("Ainm an file = …"). */
+const unlenite = (value: string) => value.replace(/(?<=^|\s)([bcdfgmpstBCDFGMPST])h/g, '$1');
+const answerOf = (label: string, text: string): string | undefined => {
+  for (const [head, full] of [[label, text], [unlenite(label), unlenite(text)]]) {
+    if (full.startsWith(head) && /^[ =:]/.test(full.slice(head.length)) && full.length > head.length + 2) {
+      const at = text.length - (full.length - head.length);
+      return text.slice(at).replace(/^\s*[=:]\s*/, '').trim();
+    }
+  }
+  return undefined;
+};
 const tidy = (value: string) => value.replace(/¶/g, ' ').replace(/\s+/g, ' ').replace(/^[\s,;:.•–-]+|[\s,;:–-]+$/g, '').trim();
 const cumulative = (values: number[]): number[] => {
   const out = [0];
@@ -151,6 +163,18 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     directions.push(...promptPieces.slice(1).filter(piece => piece !== promptText));
     // "5 phointe eolais ag teastáil (…)" after a row prices that row in steps.
     const ladderText = LADDER.exec(body);
+    // "5 phointe eolais ag teastáil (5 mharc … + 4 mharc …)" with no "Na heachtraí … = 22 marc" printed before it
+    // (2020 Ordinary 2B(b)): the ladder's own words are the criterion's row, at the total its points add to, in its steps.
+    const ladderWords = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\s*\)/i.exec(body);
+    if (ladderWords && !tokens.some(token => token.kind === 'row')) {
+      const firstCount = WORDS[ladderWords[3].toLowerCase()] ?? Number(ladderWords[3]);
+      const values = [...Array(firstCount).fill(Number(ladderWords[2])), ...Array(Math.max(0, Number(ladderWords[1]) - firstCount)).fill(ladderWords[4] ? Number(ladderWords[4]) : Number(ladderWords[2]))];
+      if (values.reduce((acc, value) => acc + value, 0) === source.totalMarks) {
+        tokens.push({ kind: 'row', text: tidy(ladderWords[0].slice(0, ladderWords[0].indexOf('('))), marks: source.totalMarks, steps: cumulative(values),
+          at: ladderWords.index, end: ladderWords.index + ladderWords[0].length });
+        tokens.sort((x, y) => x.at - y.at);
+      }
+    }
     if (tokens.length === 0) {
       if (!open && !loose.length) loosePrompt = loosePrompt ?? promptText;
       else directions.push(promptText);
@@ -202,6 +226,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
           for (let k = open.rows.length - 1; k >= 0; k -= 1) { tail += open.rows[k].marks; if (tail === token.tariff) { subtotal = true; break; } if (tail > token.tariff) break; }
           if (subtotal) continue;
         }
+        // "Eolas = 5 mharc Tuairim = 1 mharc Eolas = 4 mharc" (2020 Higher 3A(ii), 3B(ii)): an "Eolas =" that completes the
+        // open part's rows is that part's last row, the scheme's word for the point, not a new part.
+        if (open && open.rows.length && !open.ladder && !opensSubQuestion && /^Eolas\s*=/.test(body.slice(token.at, token.end))
+          && open.rows.reduce((acc, row) => acc + row.marks, 0) + token.tariff === open.tariff) {
+          open.rows.push({ id: '', text: tidy(body.slice(token.at, token.end).replace(/\s*=[\s\S]*$/, '')), marks: token.tariff });
+          continue;
+        }
         const after = tokens.slice(index + 1).find(next => next.kind === 'row' || next.kind === 'open');
         open = { prompt: index === 0 ? segmentPrompt : undefined, tariff: token.tariff, ladder: token.ladder, rows: [], samples: [],
           unpriced: token.ladder ? tidy(body.slice(token.end, after ? after.at : body.length)) : undefined };
@@ -219,8 +250,10 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       // "Ainm an fhile = Caitlín Maude = 1 mharc" after "Ainm an fhile = 1 mharc": the answer printed for a row already
       // placed, kept on that row. An exact repeat is dropped only where it would overfill the part.
       const placedRows = open?.rows ?? loose;
-      const answered = placedRows.find(placed => placed.marks === token.marks && /^[ =:]/.test(token.text.slice(placed.text.length)) && token.text.startsWith(placed.text) && token.text.length > placed.text.length + 2);
-      if (answered) { answered.text = `${answered.text}: ${token.text.slice(answered.text.length).replace(/^\s*[=:]\s*/, '').trim()}`; continue; }
+      // The 2020 Higher scheme prints that answer as "Ainm an file = Nuala Ní Dhomhnaill = 1 mharc" (no lenition after
+      // "Ainm an fhile = 1 mharc"): the same row, read past the séimhiú. The row keeps the spelling it was placed with.
+      const answered = placedRows.find(placed => placed.marks === token.marks && answerOf(placed.text, token.text) !== undefined);
+      if (answered) { answered.text = `${answered.text}: ${answerOf(answered.text, token.text)}`; continue; }
       if (open && placedRows.some(placed => placed.text === token.text && placed.marks === token.marks) && placedRows.reduce((acc, placed) => acc + placed.marks, 0) + token.marks > open.tariff) continue;
       if (open) {
         if (open.rows.length === 0 && token.marks === open.tariff && rest.length > 1) { debug?.push(`  SKIP subtotal-of-part ${token.marks}`); continue; }

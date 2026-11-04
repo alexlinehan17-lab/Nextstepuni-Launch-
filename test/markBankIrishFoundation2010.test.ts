@@ -8,6 +8,7 @@ import {CARDS} from '../components/MarkBank/cards/irish/foundation';
 import {irishMarks} from '../components/MarkBank/SessionScreen';
 import {tariffReconciles} from '../types/markBank';
 import {examTopicIdsForQuestion,curriculumNodeIdsForExamTopic} from '../data/examTopics/registry';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 const get=(n:string)=>written.cards.find(c=>c.atlasQuestionId===n)!;
 const guide=(n:string,id:string)=>get(n).criteria.find(c=>c.id===id)!.guidance.join(' ');
 // Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
@@ -161,6 +162,6 @@ print('source guard passed')
     expect(sourceReview.audio.unverifiedCandidate.decision).toContain('never substituted');
     expect(written.review.reviewedPaperPages).toHaveLength(16);expect(written.review.reviewedSchemePages).toHaveLength(17);
     expect(sourceReview.reviewedPaperPages['LC001BLPA00IV.pdf']).toHaveLength(8);
-    expect(inventory.summary.papersPendingFullReview).toBe(57);expect(inventory.summary.orphanCardIds).toEqual([]);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

@@ -7,6 +7,7 @@ import { CARDS as ALL_CARDS } from '../components/MarkBank/cards/irish/foundatio
 import { combinedListeningAssessment, irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 // CI has neither PyMuPDF nor the scheme corpus: the source guard runs where both are present.
 const hasPyMuPDF = (() => {
@@ -196,7 +197,7 @@ print('source guards passed')
     const row=inventory.papers.find(p=>p.key==='2018|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.papersPendingFullReview).toBe(57);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

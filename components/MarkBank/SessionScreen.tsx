@@ -1994,7 +1994,9 @@ const listeningNumberedPrompts = (body: string): ListeningPromptGroup => {
   );
   const instruction = withInstruction?.[1].trim();
   const questionBlock = (withInstruction?.[2] ?? body).trim();
-  const questions = questionBlock.match(/[^?]+\?/g)?.map(question => question.trim()) ?? [];
+  // Each printed field ends at its "?", or at a "." where the paper prints a statement (2020 OL "Scríobh síos lá
+  // amháin … gach seachtain."), before the next field's capital.
+  const questions = questionBlock.split(/(?<=[?.])\s+(?=[A-ZÁÉÍÓÚ])/).map(question => question.trim()).filter(Boolean);
   return {
     instruction,
     prompts: (questions.length > 0 ? questions : [questionBlock]).map((text, index) => ({
