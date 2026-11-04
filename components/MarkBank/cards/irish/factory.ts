@@ -11,6 +11,7 @@ import type {
   CardAudioMaterial,
   CardSourceMaterial,
   IrishAllocation,
+  IrishAnswerPart,
   IrishCriterion,
   SecRubricCard,
 } from '../../../../types/markBank';
@@ -78,12 +79,8 @@ const PRICED = /\d+\s*m?h?arc\b/;
  *  same for every route; its "(30 marc)", "Eolas (25 marc)" and "Gaeilge (5 mharc)" headings are never a part of
  *  this criterion. The rows are read from what follows it, the route's own scheme text. */
 const SECTION_PAGE = /^Nóta: I gcás na gceisteanna 2 \(Prós\)[\s\S]*?Lag\/ ?An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\d+\s*-\s*\d+)*(?:\s+Cumas lag\/an-lag maidir leis na príomhghnéithe de cheart na teanga \([^)]*\))?\s*/;
-/** The 2024 Higher reading builder (irish_reading.py) opens each Léargas criterion with its own summary of the
- *  scheme's tariff, not the scheme's words; the scheme's own "Léargas 1 (L1) = 2 mharc + míniú … = 4 mharc" follows
- *  it. Rows are never read from the summary, so no row a student claims is worded by us. */
-const BUILDER_SUMMARY = /^An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc\. Gan léargas luaite\/intuigthe, ní féidir glacadh leis an sampla\.\s*/;
 const ownGuidance = (criterion: AuthoredIrishCard['criteria'][number]) =>
-  criterion.guidance.map((line, index) => (index === 0 ? line.replace(SECTION_PAGE, '').replace(BUILDER_SUMMARY, '') : line)).filter(line => line.trim());
+  criterion.guidance.map((line, index) => (index === 0 ? line.replace(SECTION_PAGE, '') : line)).filter(line => line.trim());
 
 const allocationFor = (card: AuthoredIrishCard, criterion: AuthoredIrishCard['criteria'][number]) => {
   const source = { id: card.id, totalMarks: criterion.maxMarks, cardTotal: card.totalMarks, questionRef: card.questionRef, questionText: card.questionText, guidance: ownGuidance(criterion) };
@@ -150,9 +147,66 @@ const siblingAllocation = (card: AuthoredIrishCard, criterion: Criterion): Irish
   return undefined;
 };
 
+/** A practice card derived from a printed question (its id extends the question card's: "…-q1-bi-1" for one
+ *  of the two answers (b)(i) asks for, "…-q6-b-1" for one trait, "…-3a-a-i" for part (i)). */
+const CARD_IDS = new Set(DATA.map(card => card.id));
+const derivedFrom = (id: string): boolean => {
+  for (let cut = id.lastIndexOf('-'); cut > 0; cut = id.lastIndexOf('-', cut - 1)) if (CARD_IDS.has(id.slice(0, cut))) return true;
+  return false;
+};
+const primaryAllocation = (card: AuthoredIrishCard, criterion: Criterion) => allocationFor(card, criterion) ?? siblingAllocation(card, criterion);
+const sameCriterion = (a: Criterion, b: Criterion) => a.id === b.id && a.maxMarks === b.maxMarks
+  && a.guidance.length === b.guidance.length && a.guidance.every((line, index) => line === b.guidance[index]);
+const FREAGRAI = /^(.*?)\((\d+)\s*m?h?arc(?:\s*\+\s*(\d+)\s*m?h?arc)?\)\s*Freagraí:\s*(.+)$/;
+
+/** Rows for a derived practice card whose own criterion the readers cannot cut (it is a slot of a part, or the
+ *  part alone), always from the same printed scheme and never added to:
+ *  - the identical criterion on the question's own card (one trait of two: "Tréith 1 a lua = 2 mharc + …");
+ *  - one answer of a part priced "{2 mharc: 1 mharc + 1 mharc}": the part's printed answers, one of them claimed;
+ *  - a part whose answers the scheme lists after "Freagraí:", one sub-question at a time, each answer at its price. */
+const derivedAllocation = (card: AuthoredIrishCard, criterion: Criterion): IrishAllocation | undefined => {
+  if (!derivedFrom(card.id) || !pricedAward(criterion)) return undefined;
+  for (const other of DATA) {
+    if (other === card || !card.id.startsWith(other.id + '-')) continue;
+    const twin = other.criteria.find(candidate => sameCriterion(candidate, criterion));
+    const shared = twin && primaryAllocation(other, twin);
+    if (shared) return shared;
+  }
+  const source = { id: card.id, totalMarks: criterion.maxMarks, cardTotal: card.totalMarks, questionRef: card.questionRef,
+    questionText: card.questionText, guidance: ownGuidance(criterion) };
+  for (const times of [2, 3]) {
+    const whole = irishAnswersFor({ ...source, totalMarks: criterion.maxMarks * times });
+    const part = whole?.parts.length === 1 ? whole.parts[0] : undefined;
+    if (part?.ladder && part.ladder.length === times && part.ladder.every((step, index) => step === criterion.maxMarks * (index + 1))) {
+      // A ladder prices how many printed answers are right, so on the one-answer card any one of them earns the
+      // card's mark: the rows keep their printed text and take their marks from the ladder, as answers.ts's do.
+      return { parts: [{ ...part, tariff: criterion.maxMarks, ladder: [criterion.maxMarks], rows: part.rows.map(row => ({ ...row, marks: 0 })) }],
+        directions: whole!.directions };
+    }
+  }
+  const parts: IrishAnswerPart[] = [];
+  const directions: string[] = [];
+  for (const line of ownGuidance(criterion)) {
+    if (/^Nóta:/.test(line)) { directions.push(line); continue; }
+    for (const segment of line.split(/\s(?=\([a-f]\)\s)/)) {
+      const text = segment.replace(/^\((?:i|ii|iii)\)\s*/, '').trim();
+      if (!text) continue; // the part's own label, "(i)", before its sub-questions
+      const match = FREAGRAI.exec(text);
+      if (!match) return undefined;
+      const each = Number(match[2]);
+      const tariff = each + (match[3] ? Number(match[3]) : 0);
+      const answers = match[4].split('…').map(answer => answer.trim()).filter(Boolean);
+      if (!answers.length) return undefined;
+      parts.push({ id: `p${parts.length + 1}`, prompt: match[1].trim(), tariff,
+        rows: answers.map((text, index) => ({ id: `r${index + 1}`, text, marks: each })) });
+    }
+  }
+  return parts.length && parts.reduce((sum, part) => sum + part.tariff, 0) === criterion.maxMarks ? { parts, directions } : undefined;
+};
+
 const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
-    const allocation = allocationFor(card, criterion) ?? siblingAllocation(card, criterion);
+    const allocation = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion);
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

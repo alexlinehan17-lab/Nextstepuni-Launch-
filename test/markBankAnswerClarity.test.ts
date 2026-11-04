@@ -289,33 +289,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
     expect(exact).toHaveLength(507);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(456);
+    expect(structured).toHaveLength(502);
 
-    // What is still prose, pinned by id. On main's cards: four reading excerpts whose answers the scheme
+    // What is still prose, pinned by id: four reading excerpts on main's cards whose answers the scheme
     // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder, a section total
-    // inside the excerpt) and one listening extract whose tariff lines the text layer broke. On the
-    // reviewed cards: the one-answer slots of a two-answer sub-question ("(b)(i) … dhá chúis", one card
-    // per answer) and the single-trait practice cards of Ceist 6(b), whose scheme prices both answers
-    // together. Fix one and take it off this list.
+    // inside the excerpt) and one listening extract whose tariff lines the text layer broke. They had no
+    // rows on main either. Every reviewed practice card now carries the rows of its printed scheme.
+    // Fix one and take it off this list.
     const fallback = exact.filter(({ criteria }) => unstructured(criteria));
     expect(fallback.map(({ card }) => card.id).sort()).toEqual([
       'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p1-listening-a-f1', 'irish-2022-hl-p2-reading-b-q1',
-      'irish-2022-hl-p2-reading-b-q5', 'irish-2023-hl-p2-reading-a-q3-bi-1', 'irish-2023-hl-p2-reading-a-q3-bi-2',
-      'irish-2023-hl-p2-reading-a-q4-bi-1', 'irish-2023-hl-p2-reading-a-q4-bi-2', 'irish-2023-hl-p2-reading-a-q6-b-1',
-      'irish-2023-hl-p2-reading-a-q6-b-2', 'irish-2023-hl-p2-reading-b-q2-bii-1', 'irish-2023-hl-p2-reading-b-q2-bii-2',
-      'irish-2023-hl-p2-reading-b-q3-bi-1', 'irish-2023-hl-p2-reading-b-q3-bi-2', 'irish-2023-hl-p2-reading-b-q3-bii-1',
-      'irish-2023-hl-p2-reading-b-q3-bii-2', 'irish-2024-hl-p2-reading-b-q1-bi-1', 'irish-2024-hl-p2-reading-b-q1-bi-2',
-      'irish-2024-hl-p2-reading-b-q4-bi-1', 'irish-2024-hl-p2-reading-b-q4-bi-2', 'irish-2024-hl-p2-reading-b-q4-bii-1',
-      'irish-2024-hl-p2-reading-b-q4-bii-2', 'irish-2024-hl-p2-reading-b-q5-bii-1', 'irish-2024-hl-p2-reading-b-q5-bii-2',
-      'irish-2024-hl-p2-reading-b-q6-b-1', 'irish-2024-hl-p2-reading-b-q6-b-2', 'irish-2025-hl-p2-reading-a-q5-bi-1',
-      'irish-2025-hl-p2-reading-a-q5-bi-2', 'irish-2025-hl-p2-reading-a-q6-b-1', 'irish-2025-hl-p2-reading-a-q6-b-2',
-      'irish-2025-hl-p2-reading-b-q2-bi-1', 'irish-2025-hl-p2-reading-b-q2-bi-2', 'irish-2025-hl-p2-reading-b-q4-bi-1',
-      'irish-2025-hl-p2-reading-b-q4-bi-2', 'irish-2025-hl-p2-reading-b-q5-bi-1', 'irish-2025-hl-p2-reading-b-q5-bi-2',
-      'irish-2025-hl-p2-reading-b-q5-bii-1', 'irish-2025-hl-p2-reading-b-q5-bii-2', 'irish-2025-hl-p2-reading-b-q6-b-1',
-      'irish-2025-hl-p2-reading-b-q6-b-2', 'irish-2026-hl-p2-reading-a-q6-b-1', 'irish-2026-hl-p2-reading-a-q6-b-2',
-      'irish-2026-hl-p2-reading-b-q1-bii-1', 'irish-2026-hl-p2-reading-b-q1-bii-2', 'irish-2026-hl-p2-reading-b-q2-bi-1',
-      'irish-2026-hl-p2-reading-b-q2-bi-2', 'irish-2026-hl-p2-reading-b-q2-bii-1', 'irish-2026-hl-p2-reading-b-q2-bii-2',
-      'irish-2026-hl-p2-reading-b-q4-bii-1', 'irish-2026-hl-p2-reading-b-q4-bii-2',
+      'irish-2022-hl-p2-reading-b-q5',
     ]);
 
     // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",
@@ -325,7 +309,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(literature).toHaveLength(239);
     // An option whose tariff summary the parser does not read yet, pinned by id.
     expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([
-      'irish-2022-hl-p2-poetry-3b-a', 'irish-2025-ol-p2-poetry-3a-a', 'irish-2025-ol-p2-poetry-3a-a-i', 'irish-2025-ol-p2-poetry-3a-a-i-c',
+      'irish-2022-hl-p2-poetry-3b-a', 'irish-2025-ol-p2-poetry-3a-a',
     ]);
     // Every other exact criterion (the Ordinary composition "Tasc" 0/2 tariffs) is already a button;
     // the welded ones are the exact criteria above that are still prose.
@@ -798,7 +782,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
  *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
   frenchReading: 1,
-  irishExactCriteria: 52,
+  irishExactCriteria: 23,
   physicalEducationLines: 0,
 };
 
