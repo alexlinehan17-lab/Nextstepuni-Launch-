@@ -63,6 +63,13 @@ ROMAN = re.compile(r'^\((i{1,3}|iv|vi{0,3}|ix|x)\)(?=\s|$|[A-Za-z_‘“(])')
 CROSSREF_AFTER = re.compile(r'^\s*(?:,|above\b|\)|and\b|or\b)')
 CROSSREF_BEFORE = re.compile(r'\b(?:part|parts|Question|question)\s*$')
 UNDERSCORES = re.compile(r'_{3,}')
+INLINE_NEXT = re.compile(r'\band\s+\(([b-h])\)\s+(?=[A-Z])')
+# A letter whose ask chooses among the romans printed beneath it: "Outline the
+# key contributions ... by any three of the following economists: (i) Adam
+# Smith (ii) Milton Friedman ..." (2017 HL Section B Q7(c)). The romans are the
+# choices, not asks; the letter is the one ask.
+CHOICE_STEM = re.compile(r'\bany\s+(one|two|three|four)\b[^.?]*\bof the following\b', re.I)
+CHOICE_N = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 FURNITURE = re.compile(
     r'^(?:Leaving Certificate Examination,? \d{4}|Page \d+ of \d+|\d{1,2}'
     r'|Economics\s*[–—-]\s*(?:Higher|Ordinary) Level'
@@ -189,6 +196,18 @@ def census_legacy(year, level, path=None):
                 continue
             break
         rest = UNDERSCORES.sub(' ', rest).strip()
+        # The next letter printed INSIDE the line it shares with the open one:
+        # 2017 HL Section A Q6 sets "(a) Label the lines/curves in the diagram
+        # and (b) Use the diagram to explain ...". Only the letter due next,
+        # only after "and", and only where it opens a sentence.
+        im = INLINE_NEXT.search(rest) if rest and letter else None
+        if im and im.group(1) == chr(ord(letter) + 1) and roman is None:
+            before = rest[:im.start()].strip()
+            if before:
+                parts.setdefault(key(), []).append(before)
+            letter, roman = im.group(1), None
+            parts.setdefault(key(), [])
+            rest = rest[im.end():].strip()
         if rest and not FURNITURE.match(rest):
             parts.setdefault(key(), []).append(rest)
             # The marks the page prints, read where they are printed.
@@ -204,6 +223,17 @@ def census_legacy(year, level, path=None):
                     part_marks.setdefault((section, q), []).append(int(pm.group(1) or pm.group(2) or pm.group(3)))
             prev_text = rest
 
+    # A letter that chooses among the romans printed beneath it keeps them as
+    # its own text: one ask, the romans its choices. "Any two of the following"
+    # over three romans (2017 HL Section B Q1(a), three pairs to distinguish)
+    # or "any three" over five (Q7(c), five economists) is one printed choice.
+    for k in [k for k in parts if k[2] is not None and k[3] is None]:
+        stem = ' '.join(' '.join(parts[k]).split())     # the text layer sets \xa0 between words
+        kids = [o for o in parts if o[:3] == k[:3] and o[3] is not None]
+        cm = CHOICE_STEM.search(stem)
+        if kids and cm and CHOICE_N[cm.group(1).lower()] < len(kids):
+            for o in sorted(kids, key=lambda o: ROMANS.index(o[3])):
+                parts[k].extend([f'({o[3]})'] + parts.pop(o))
     # Text printed before a question's first part is its stem; a question
     # with parts is not itself an ask, and one without is asked whole.
     leaves = {}

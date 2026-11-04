@@ -275,11 +275,11 @@
   "economics": {
     "cards": 1208,
     "contentHash": "743d7fde856d5e5b",
-    "coveragePct": 51.9,
+    "coveragePct": 52.1,
     "covered": 1144,
     "excluded": 0,
-    "leaves": 2206,
-    "open": 1062,
+    "leaves": 2197,
+    "open": 1053,
     "orphans": 0,
     "papers": {
       "count": 33,

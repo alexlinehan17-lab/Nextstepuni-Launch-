@@ -1692,3 +1692,29 @@ Checks:
 - refcheck: 0 wrong.
 - cardlint: clean.
 - The seven Economics suites pass (583 tests).
+
+## Old-syllabus census: printed choices and an inline part (lane, 2026-11-04)
+
+While reading 2017 HL, two kinds of printed matter were found mis-keyed by the
+legacy walker. They were fixed in `econ_legacy_census.py`, which only the
+Economics census and refcheck import:
+- A choice of romans is one ask. A letter whose ask reads "any N of the
+  following" over more than N romans keeps the romans as its own text:
+  - 2017 HL Section B Q1(a): any two of three pairs to distinguish.
+  - 2017 HL Section B Q7(c): any three of five economists.
+  - 2016 HL Section B Q5(c): any two of three items.
+  - 2016 HL Section B Q7(a): any two of three pairs.
+  Each had been counted as one ask per roman.
+- The next letter printed inside the line it shares with the open one, after
+  "and" and opening a sentence. In 2017 HL Section A Q6, "(a) Label the
+  lines/curves in the diagram and (b) Use the diagram to explain ..." had lost
+  (b).
+
+A before/after census of every 2010-2020 sitting changes exactly these keys
+and nothing else:
+- 2016 HL goes 67 -> 63.
+- 2017 HL goes 66 -> 61. A hand count from the rendered pages gives 61 (12 in
+  Section A and 49 in Section B).
+- Economics drops 2,206 -> 2,197.
+The coverage ratchet refuses a shrinking denominator, so the baseline was
+re-measured with `--accept-regression` for this deliberate correction.
