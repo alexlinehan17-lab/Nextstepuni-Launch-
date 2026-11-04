@@ -13,11 +13,11 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2022 Foundation independently reviewed boundaries',()=>{
   it('keeps the adjusted one-response writing rule and carries each printed choice on its options',()=>{
-    expect(cards).toHaveLength(59);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(59);
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writing:45,total:315});
-    expect(authored.review.atomicPracticeCardIds).toHaveLength(59);
+    expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
     // Choice is not a route: no reading pairs and no writing combinations.
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
@@ -66,11 +66,13 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
     }
   });
 
-  it('expands both letter recipients while keeping the whole shared rubric and 2022 language bands',()=>{
-    const letters=authored.cards.filter(c=>c.atlasQuestionId.startsWith('W-4B-'));
-    expect(letters.map(c=>c.atlasQuestionId)).toEqual(['W-4B-aintin','W-4B-uncail']);
-    for(const [i,c] of letters.entries()) {
-      expect(c.questionText).toContain('An rogha don chárta seo: litir chuig '+['d’aintín','d’uncail'][i]+'.');
+  it('keeps the letter, with both printed recipients, as one card with the whole shared rubric and 2022 language bands',()=>{
+    // One printed letter, one card (decision 5): "d’aintín / d’uncail" stays in the printed text.
+    const letters=authored.cards.filter(c=>c.atlasQuestionId.startsWith('W-4B'));
+    expect(letters.map(c=>[c.id,c.atlasQuestionId])).toEqual([['irish-2022-fl-w-4b','W-4B']]);
+    for(const c of letters) {
+      expect(c.questionText).not.toContain('An rogha don chárta seo');
+      expect(c.questionText).toContain('Scríobh litir chuig d’aintín / d’uncail i Meiriceá');
       expect(c.questionText).toContain('i Meiriceá');
       expect(c.questionText.match(/dhá phointe eolais/g)).toHaveLength(4);
       expect(c.sourceMaterial.pages).toEqual([15]);
@@ -78,7 +80,6 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
       expect(c.criteria.map(r=>r.maxMarks)).toEqual([2,1,1,2,7,7,7,7,11]);
       expect(c.criteria.every(r=>r.kind==='award')).toBe(true);
     }
-    expect(letters[0].criteria).toEqual(letters[1].criteria);
     for(const c of authored.cards.filter(c=>c.section==='3')) {
       expect(c.totalMarks).toBe(45);
       expect(c.criteria.find(r=>r.id==='gaeilge')!.guidance[0]).toBe('Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Lag 2–4; An-lag 1; Easnamhach 0.');
@@ -109,7 +110,8 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
     for(const [n,pages] of [['1',[2,3,4]],['2',[5,6,7,8,9,10,11]],['3',[13,14,15,16,17]]] as const) {
       expect(map.q.find((q:{n:string})=>q.n===n).paperRegion.map((r:{p:number})=>r.p)).toEqual(pages);
     }
-    expect(topics('W-4B-aintin')).toEqual(['irish-foundation-write-a-letter']);
+    expect(topics('W-4B')).toEqual(['irish-foundation-write-a-letter']);
+    expect(map.q.some((q:{n:string})=>/^W-4B-/.test(q.n))).toBe(false);
     expect(topics('R-2C')).toEqual(['irish-foundation-reading-newspaper-article']);
     expect(topics('3')).not.toContain('irish-foundation-fill-in-a-form');
   });

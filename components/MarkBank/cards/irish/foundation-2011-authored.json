@@ -385,9 +385,7 @@
       "irish-2011-fl-w-4a",
       "irish-2011-fl-w-4b",
       "irish-2011-fl-w-5a",
-      "irish-2011-fl-w-5b-15-lunasa",
-      "irish-2011-fl-w-5b-17-lunasa",
-      "irish-2011-fl-w-5b-19-lunasa",
+      "irish-2011-fl-w-5b",
       "irish-2011-fl-w-6a",
       "irish-2011-fl-w-6b"
     ],
@@ -423,7 +421,24 @@
       "Stories6AChristmasclubpartyPDF14/scheme16;6BcyclingriverrescuePDF15/scheme17. Communication37adjustproportionallyforlength,language13separate. Fivereferencesrequired,6Boneperpicture+fifth. No fixed5markmissingreferencepenaltyorworked2012examplesprinted. Generalstandardlanguage8;reasonableaccommodation18,no4pointconversiontable;19blank,20cover. No audio transcript inthisscheme."
     ],
     "boundaries": "48 individually marked task/option cards; 22 per-combination cards withdrawn (choice is not a route).",
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2011-fl-w-5b",
+        "atlasQuestionId": "W-5B",
+        "withdrawnOptionCardIds": [
+          "irish-2011-fl-w-5b-15-lunasa",
+          "irish-2011-fl-w-5b-17-lunasa",
+          "irish-2011-fl-w-5b-19-lunasa"
+        ],
+        "printedOptions": [
+          "15 Lúnasa",
+          "17 Lúnasa",
+          "19 Lúnasa"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3043,20 +3058,20 @@
       ]
     },
     {
-      "id": "irish-2011-fl-w-5b-15-lunasa",
+      "id": "irish-2011-fl-w-5b",
       "year": 2011,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-5B-15-lunasa",
-      "questionRef": "2011 FL Scríobh · Ceist 5(b) · 15 Lúnasa",
-      "questionText": "Ba mhaith leat post a fháil in Ollstór ‘Tesco’. Fuair tú an Fhoirm Iarratais seo le líonadh.\nLíon isteach an Fhoirm Iarratais anseo thíos.\nNóta: Is tusa Phil de Róiste.\n\nOllstór Tesco\nFoirm Iarratais\nAinm: Phil de Róiste\nSeoladh:\nUimhir Theileafóin (Baile):\nFón Póca:\nDáta Breithe:\nAirde:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAr oibrigh tú riamh in Ollstór?\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\nAinmnigh trí chaitheamh aimsire atá agat:\nAn gcaitheann tú tobac?\nCuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú / 17ú / 19ú\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair in Ollstór Tesco.\n\nSíniú: Phil de Róiste\nDáta:\n\nAn rogha don chárta seo: 15 Lúnasa.",
+      "atlasQuestionId": "W-5B",
+      "questionRef": "2011 FL Scríobh · Ceist 5(b)",
+      "questionText": "Ba mhaith leat post a fháil in Ollstór ‘Tesco’. Fuair tú an Fhoirm Iarratais seo le líonadh.\nLíon isteach an Fhoirm Iarratais anseo thíos.\nNóta: Is tusa Phil de Róiste.\n\nOllstór Tesco\nFoirm Iarratais\nAinm: Phil de Róiste\nSeoladh:\nUimhir Theileafóin (Baile):\nFón Póca:\nDáta Breithe:\nAirde:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAr oibrigh tú riamh in Ollstór?\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\nAinmnigh trí chaitheamh aimsire atá agat:\nAn gcaitheann tú tobac?\nCuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú / 17ú / 19ú\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair in Ollstór Tesco.\n\nSíniú: Phil de Róiste\nDáta:",
       "totalMarks": 40,
       "topicId": "irish-9-0",
       "examTopicKeys": [
         "form"
       ],
-      "conceptId": "irish-foundation-w-5b-15-lunasa",
+      "conceptId": "irish-foundation-w-5b",
       "paperFileid": "LC001BLP100IV",
       "schemeFileid": "LC001BLP000EV",
       "schemePage": 15,
@@ -3067,7 +3082,6 @@
       "taskRequirements": [
         "FREAGAIR GACH CEIST (4, 5 agus 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
         "Líon gach réimse; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 15 Lúnasa don agallamh.",
         "Scríobh timpeall 40 focal faoi obair in Ollstór Tesco."
       ],
       "criteria": [
@@ -3157,267 +3171,11 @@
           ]
         }
       ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using doubled 30÷2 rounded once, paragraph 15 after its own length adjustment, shared language 10. Three interview dates expand mechanically. Hobbies and subjects remain open content. Printed undoubled hobby 2 conflicts with doubled 6 and total 15; compare both columns.",
+      "markingGuideNote": "Whole 40-mark form: fields 15 using doubled 30÷2 rounded once, paragraph 15 after its own length adjustment, shared language 10. Hobbies and subjects remain open content. Printed undoubled hobby 2 conflicts with doubled 6 and total 15; compare both columns. The printed options (15 Lúnasa, 17 Lúnasa, 19 Lúnasa) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 15 Lúnasa",
-        "title": "Gaeilge Bonnleibhéal 2011 · Scríobh · Ceist 5(b) · 15 Lúnasa",
-        "pages": [
-          13
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá 2 mharc sa chéad cholún do chaitheamh aimsire agus 6 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún."
-    },
-    {
-      "id": "irish-2011-fl-w-5b-17-lunasa",
-      "year": 2011,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-5B-17-lunasa",
-      "questionRef": "2011 FL Scríobh · Ceist 5(b) · 17 Lúnasa",
-      "questionText": "Ba mhaith leat post a fháil in Ollstór ‘Tesco’. Fuair tú an Fhoirm Iarratais seo le líonadh.\nLíon isteach an Fhoirm Iarratais anseo thíos.\nNóta: Is tusa Phil de Róiste.\n\nOllstór Tesco\nFoirm Iarratais\nAinm: Phil de Róiste\nSeoladh:\nUimhir Theileafóin (Baile):\nFón Póca:\nDáta Breithe:\nAirde:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAr oibrigh tú riamh in Ollstór?\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\nAinmnigh trí chaitheamh aimsire atá agat:\nAn gcaitheann tú tobac?\nCuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú / 17ú / 19ú\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair in Ollstór Tesco.\n\nSíniú: Phil de Róiste\nDáta:\n\nAn rogha don chárta seo: 17 Lúnasa.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-5b-17-lunasa",
-      "paperFileid": "LC001BLP100IV",
-      "schemeFileid": "LC001BLP000EV",
-      "schemePage": 15,
-      "schemePages": [
-        15,
-        16
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4, 5 agus 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
-        "Líon gach réimse; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 17 Lúnasa don agallamh.",
-        "Scríobh timpeall 40 focal faoi obair in Ollstór Tesco."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Fields 15: use the printed doubled column. Address 2; home phone 1; mobile 1; birth date 2; height 1; exam 2; five subjects 10; prior store work 1; weekend work 1; three hobbies 6; smoking 1; interview date 1; bottom date 1. Add 30, divide once by 2 and round up once: 21÷2=10½→11.",
-            " Tasc → Foirm Iarratais a líonadh a bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh inti. Cumas Cumarsáide = 30 marc Seoladh 1 marc 2 marc Uimhir theileafóin (Baile) ½ marc 1 marc Uimhir theileafóin (Fón Póca) ½ marc 1 marc Dáta Breithe 1marc 2 marc Airde ½marc 1 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Ar oibrigh tú riamh in Ollstór? ½ marc 1 marc An mbeidh tú sásta obair ag an d/s ½ marc 1 marc Ainmnigh Trí chaitheamh aimsire 2 marc 6 marc An gcaitheann tú tobac? ½ marc 1 marc Ciorcal timpeall leis an dáta ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc ",
-            "Published table conflict: the undoubled hobbies row prints 2, while the doubled row prints 6. The undoubled values therefore sum 14, although both the total 15 and 30÷2 are printed. This rubric follows the explicit doubled 30÷2 method and disclosed 15-mark total, preserving both original columns; no silent correction is made."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Thart ar 40 focal ag teastáil. Marcáil as (15) má tá an t-alt “ad rem”, agus as (5) muna bhfuil sé “ad rem”. Sa chás nach mbíonn an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta (e.g. mura bhfuil ann ach 20 focal, déanfar an t-alt a marcáil as (15) marc agus bainfear 50% den marc a bhronntar). = 15 marc ",
-            "An t-Alt beag: 15 marc. Caithfidh an t-alt a bheith Ad Rem, dírithe ar an téama, a bheith ag obair in Ollstór Tesco. Glac le tagairt don saghas oibre, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/leí bheith ag obair in ollstór, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cursaí airgid, suim i siopaí, 7rl. Tá 40 focal ag teastáil. Ná glac le focail Béarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g.mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta. ",
-            "Assess the relevant paragraph /15, off-topic /5; reduce only its awarded mark proportionally if short. 20 of 40 words→50% reduction (PDF 15); 32 of 40 words→one-fifth reduction (PDF 16). No fixed reference count or later 8-mark ceiling is printed."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 18; no four-point language-conversion table is printed in 2011."
-          ]
-        }
-      ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using doubled 30÷2 rounded once, paragraph 15 after its own length adjustment, shared language 10. Three interview dates expand mechanically. Hobbies and subjects remain open content. Printed undoubled hobby 2 conflicts with doubled 6 and total 15; compare both columns.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 17 Lúnasa",
-        "title": "Gaeilge Bonnleibhéal 2011 · Scríobh · Ceist 5(b) · 17 Lúnasa",
-        "pages": [
-          13
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá 2 mharc sa chéad cholún do chaitheamh aimsire agus 6 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún."
-    },
-    {
-      "id": "irish-2011-fl-w-5b-19-lunasa",
-      "year": 2011,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-5B-19-lunasa",
-      "questionRef": "2011 FL Scríobh · Ceist 5(b) · 19 Lúnasa",
-      "questionText": "Ba mhaith leat post a fháil in Ollstór ‘Tesco’. Fuair tú an Fhoirm Iarratais seo le líonadh.\nLíon isteach an Fhoirm Iarratais anseo thíos.\nNóta: Is tusa Phil de Róiste.\n\nOllstór Tesco\nFoirm Iarratais\nAinm: Phil de Róiste\nSeoladh:\nUimhir Theileafóin (Baile):\nFón Póca:\nDáta Breithe:\nAirde:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAr oibrigh tú riamh in Ollstór?\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\nAinmnigh trí chaitheamh aimsire atá agat:\nAn gcaitheann tú tobac?\nCuir ciorcal timpeall ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú / 17ú / 19ú\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair in Ollstór Tesco.\n\nSíniú: Phil de Róiste\nDáta:\n\nAn rogha don chárta seo: 19 Lúnasa.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-5b-19-lunasa",
-      "paperFileid": "LC001BLP100IV",
-      "schemeFileid": "LC001BLP000EV",
-      "schemePage": 15,
-      "schemePages": [
-        15,
-        16
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4, 5 agus 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
-        "Líon gach réimse; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 19 Lúnasa don agallamh.",
-        "Scríobh timpeall 40 focal faoi obair in Ollstór Tesco."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Fields 15: use the printed doubled column. Address 2; home phone 1; mobile 1; birth date 2; height 1; exam 2; five subjects 10; prior store work 1; weekend work 1; three hobbies 6; smoking 1; interview date 1; bottom date 1. Add 30, divide once by 2 and round up once: 21÷2=10½→11.",
-            " Tasc → Foirm Iarratais a líonadh a bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh inti. Cumas Cumarsáide = 30 marc Seoladh 1 marc 2 marc Uimhir theileafóin (Baile) ½ marc 1 marc Uimhir theileafóin (Fón Póca) ½ marc 1 marc Dáta Breithe 1marc 2 marc Airde ½marc 1 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Ar oibrigh tú riamh in Ollstór? ½ marc 1 marc An mbeidh tú sásta obair ag an d/s ½ marc 1 marc Ainmnigh Trí chaitheamh aimsire 2 marc 6 marc An gcaitheann tú tobac? ½ marc 1 marc Ciorcal timpeall leis an dáta ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc ",
-            "Published table conflict: the undoubled hobbies row prints 2, while the doubled row prints 6. The undoubled values therefore sum 14, although both the total 15 and 30÷2 are printed. This rubric follows the explicit doubled 30÷2 method and disclosed 15-mark total, preserving both original columns; no silent correction is made."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Thart ar 40 focal ag teastáil. Marcáil as (15) má tá an t-alt “ad rem”, agus as (5) muna bhfuil sé “ad rem”. Sa chás nach mbíonn an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta (e.g. mura bhfuil ann ach 20 focal, déanfar an t-alt a marcáil as (15) marc agus bainfear 50% den marc a bhronntar). = 15 marc ",
-            "An t-Alt beag: 15 marc. Caithfidh an t-alt a bheith Ad Rem, dírithe ar an téama, a bheith ag obair in Ollstór Tesco. Glac le tagairt don saghas oibre, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/leí bheith ag obair in ollstór, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cursaí airgid, suim i siopaí, 7rl. Tá 40 focal ag teastáil. Ná glac le focail Béarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g.mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta. ",
-            "Assess the relevant paragraph /15, off-topic /5; reduce only its awarded mark proportionally if short. 20 of 40 words→50% reduction (PDF 15); 32 of 40 words→one-fifth reduction (PDF 16). No fixed reference count or later 8-mark ceiling is printed."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 18; no four-point language-conversion table is printed in 2011."
-          ]
-        }
-      ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using doubled 30÷2 rounded once, paragraph 15 after its own length adjustment, shared language 10. Three interview dates expand mechanically. Hobbies and subjects remain open content. Printed undoubled hobby 2 conflicts with doubled 6 and total 15; compare both columns.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 19 Lúnasa",
-        "title": "Gaeilge Bonnleibhéal 2011 · Scríobh · Ceist 5(b) · 19 Lúnasa",
+        "label": "Scríobh · Ceist 5(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Scríobh · Ceist 5(b)",
         "pages": [
           13
         ],

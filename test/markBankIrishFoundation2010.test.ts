@@ -16,17 +16,17 @@ const q=(n:string)=>map.q.find((q:{n:string})=>q.n===n);
 
 describe('2010 Foundation written paper, with the listening paper held as a source gap',()=>{
   it('retains every published boundary and carries the printed choices on their options',()=>{
-    expect(cards).toHaveLength(48);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(48);
+    expect(cards).toHaveLength(46);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(46);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     for(const c of cards){expect(c.schemeRegion?.schemeFileid).toBe('LC001BLP000IV.pdf');expect(c.audioMaterial).toBeUndefined();}
-    expect(written.review.atomicPracticeCardIds).toHaveLength(48);
+    expect(written.review.atomicPracticeCardIds).toHaveLength(46);
     expect(written.review).not.toHaveProperty('pairedRouteCardIds');
     expect(written.review.examStructure).toEqual({matching:40,readingQ2:50,readingQ3:60,writingQ4:30,writingQ5:40,writingQ6:50,writing:120,total:270});
     // Choice is not a route: no reading pairs and no 4 + 5 + 6 writing products.
     expect(written.cards.filter(c=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(c.atlasQuestionId))).toEqual([]);
     const writing=written.cards.filter(c=>/^W-[456]/.test(c.atlasQuestionId));
-    expect(writing.map(c=>c.atlasQuestionId)).toEqual(['W-4A','W-4B','W-5A','W-5B-21-iuil','W-5B-28-iuil','W-5B-4-lunasa','W-6A','W-6B']);
+    expect(writing.map(c=>c.atlasQuestionId)).toEqual(['W-4A','W-4B','W-5A','W-5B','W-6A','W-6B']);
     for(const c of writing) expect(c.taskRequirements[0],c.id).toBe('FREAGAIR GACH CEIST (4, 5 AGUS 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).');
     for(const n of [2,3]) for(const c of written.cards.filter(c=>new RegExp(`^R-${n}[ABC]-\\d$`).test(c.atlasQuestionId))) {
       expect(c.taskRequirements[0],c.id).toBe(`Ceist ${n} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
@@ -78,11 +78,13 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
     expect(guide('W-5A','pictiur4')).toContain('Má luaitear rud nach bhfuil sa phictiúr -1 marc');
     expect(get('W-5A').sourceDiscrepancyNotice).toContain('san óstán');
   });
-  it('expands three interview dates and confines the paragraph length rule to its15-mark award',()=>{
-    const forms=written.cards.filter(c=>/^W-5B-/.test(c.atlasQuestionId)&&!('memberCardIds' in c && c.memberCardIds));
-    expect(forms.map(c=>c.atlasQuestionId)).toEqual(['W-5B-21-iuil','W-5B-28-iuil','W-5B-4-lunasa']);
-    for(const [i,c] of forms.entries()){
-      expect(c.questionText).toContain(`An rogha don chárta seo: ${['21 Iúil','28 Iúil','4 Lúnasa'][i]}.`);
+  it('keeps the form with its three printed interview dates as one card and confines the paragraph length rule to its15-mark award',()=>{
+    // One printed form, one card (decision 5): the tick-box dates stay in the printed text.
+    const forms=written.cards.filter(c=>/^W-5B/.test(c.atlasQuestionId));
+    expect(forms.map(c=>[c.id,c.atlasQuestionId])).toEqual([['irish-2010-fl-w-5b','W-5B']]);
+    for(const c of forms){
+      expect(c.questionText).not.toContain('An rogha don chárta seo');
+      for(const date of ['21 Iúil','28 Iúil','4 Lúnasa'])expect(c.questionText).toContain(date);
       expect(c.questionText).toContain('Áine Bhreathnach');expect(c.questionText).toContain('Cuir tic (✓)');
       expect(c.criteria.map(r=>r.maxMarks)).toEqual([15,15,10]);
       expect(c.schemePages).toEqual([14,15]);expect(c.sourceMaterial.pages).toEqual([13]);
@@ -117,7 +119,8 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
     }
     expect(q('3').region.map((r:{p:number})=>r.p)).toEqual([6,7,8,9,10,11,12,13,14,15,16]);
     expect(q('W-4B').label).toContain('Freagra');expect(q('W-5B').label).toContain('Foirm');
-    for(const n of ['W-5A','W-5B','W-5B-21-iuil','3'])expect(q(n).practiceInstruction).toContain('Nóta foinse');
+    for(const n of ['W-5A','W-5B','3'])expect(q(n).practiceInstruction).toContain('Nóta foinse');
+    expect(map.q.some((q:{n:string})=>/^W-5B-/.test(q.n))).toBe(false);
     expect(map.q.some((q:{n:string})=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(q.n))).toBe(false);
     expect(q('3').practiceInstruction.match(/Nóta foinse/g)).toHaveLength(2);
     expect(existsSync('public/paper-answers/2010/LC001BLPA00IV.pdf.json')).toBe(false);

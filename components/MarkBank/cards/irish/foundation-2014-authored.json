@@ -229,9 +229,7 @@
       "irish-2014-fl-r-3c-4",
       "irish-2014-fl-r-3c-5",
       "irish-2014-fl-w-4a",
-      "irish-2014-fl-w-4b-cocaire",
-      "irish-2014-fl-w-4b-doirseoir",
-      "irish-2014-fl-w-4b-freastalai",
+      "irish-2014-fl-w-4b",
       "irish-2014-fl-w-5a",
       "irish-2014-fl-w-5b"
     ],
@@ -273,7 +271,24 @@
       "GeneralstandardwritingPDF8includes spellingwithout excessiveemphasis. ModifiedschemePDF17 scalesfour-marklanguagescoreto10/13;notstandard. Transcripts18–21;22–23blank;24cover. Font-specific Cambriafooter/Calibri-space/Symbolarrowbulletdivision/Wingdingsbullet mappings visuallyreviewed;unknowncharactersfail,originalPDFuntouched.",
       "Runtime visual comparison detected missing CCITT/JBIG2 illustrations in PDF.js. Versioned decoder assets now ship for every reader; source PDFs unchanged. Original artwork visually verified after repair."
     ],
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2014-fl-w-4b",
+        "atlasQuestionId": "W-4B",
+        "withdrawnOptionCardIds": [
+          "irish-2014-fl-w-4b-cocaire",
+          "irish-2014-fl-w-4b-doirseoir",
+          "irish-2014-fl-w-4b-freastalai"
+        ],
+        "printedOptions": [
+          "Cócaire",
+          "Doirseoir",
+          "Freastalaí"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3331,20 +3346,20 @@
       }
     },
     {
-      "id": "irish-2014-fl-w-4b-cocaire",
+      "id": "irish-2014-fl-w-4b",
       "year": 2014,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-4B-cocaire",
-      "questionRef": "2014 FL Scríobh · Ceist 4(b) · Cócaire",
-      "questionText": "Ba mhaith leat a bheith ag obair don samhradh in Óstán na Trá, Loch Garman.\n\nLíon isteach An Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Séamas Ó Néill.]\n\nÓstán na Trá, Loch Garman\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Séamas Ó Néill\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí chaitheamh aimsire atá agat:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair go luath gach maidin?\nCén modh taistil atá agat?\nCén post ba mhaith leat? Cuir tic le ceann amháin (✓): Cócaire / Doirseoir / Freastalaí\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh san óstán seo.\n\nSíniú: Séamas Ó Néill\nDáta:\n\nAn rogha don chárta seo: Cócaire.",
+      "atlasQuestionId": "W-4B",
+      "questionRef": "2014 FL Scríobh · Ceist 4(b)",
+      "questionText": "Ba mhaith leat a bheith ag obair don samhradh in Óstán na Trá, Loch Garman.\n\nLíon isteach An Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Séamas Ó Néill.]\n\nÓstán na Trá, Loch Garman\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Séamas Ó Néill\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí chaitheamh aimsire atá agat:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair go luath gach maidin?\nCén modh taistil atá agat?\nCén post ba mhaith leat? Cuir tic le ceann amháin (✓): Cócaire / Doirseoir / Freastalaí\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh san óstán seo.\n\nSíniú: Séamas Ó Néill\nDáta:",
       "totalMarks": 40,
       "topicId": "irish-9-0",
       "examTopicKeys": [
         "form"
       ],
-      "conceptId": "irish-foundation-w-4b-cocaire",
+      "conceptId": "irish-foundation-w-4b",
       "paperFileid": "LC001BLP000IV",
       "schemePage": 13,
       "schemePages": [
@@ -3354,7 +3369,6 @@
       "taskRequirements": [
         "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh Cócaire mar phost.",
         "Scríobh timpeall 40 focal faoin bpost san óstán."
       ],
       "criteria": [
@@ -3444,263 +3458,11 @@
           ]
         }
       ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. Three printed job choices are expanded; school subjects, hobbies and personal answers remain open content choices.",
+      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. The printed options (Cócaire, Doirseoir, Freastalaí) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · Cócaire",
-        "title": "Gaeilge Bonnleibhéal 2014 · Scríobh · Ceist 4(b) · Cócaire",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2014-fl-w-4b-doirseoir",
-      "year": 2014,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-doirseoir",
-      "questionRef": "2014 FL Scríobh · Ceist 4(b) · Doirseoir",
-      "questionText": "Ba mhaith leat a bheith ag obair don samhradh in Óstán na Trá, Loch Garman.\n\nLíon isteach An Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Séamas Ó Néill.]\n\nÓstán na Trá, Loch Garman\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Séamas Ó Néill\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí chaitheamh aimsire atá agat:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair go luath gach maidin?\nCén modh taistil atá agat?\nCén post ba mhaith leat? Cuir tic le ceann amháin (✓): Cócaire / Doirseoir / Freastalaí\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh san óstán seo.\n\nSíniú: Séamas Ó Néill\nDáta:\n\nAn rogha don chárta seo: Doirseoir.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-doirseoir",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 13,
-      "schemePages": [
-        13,
-        14
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
-        "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh Doirseoir mar phost.",
-        "Scríobh timpeall 40 focal faoin bpost san óstán."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Na Ceisteanna = 15 mharc. Úsáid an colún dúbailte: uimhir theileafóin2; seoladh4; aois2; dáta breithe2; scrúdú2; cúig ábhar10; trí chaitheamh aimsire3; réiteach le daoine1; obair go luath gach maidin1; modh taistil1; post1; dáta ag bun1. Iomlán30 ÷ 2 = 15.",
-            "Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately.",
-            " Uimhir theileafóin 1 mharc 2 mharc Seoladh 2 mharc 4 mharc Aois 1 mharc 2 mharc Dáta Breithe 1 mharc 2 mharc Cén Scrúdú Teistiméireachta? 1 mharc 2 mharc Cúig Ábhar scoile sa scrúdú 5 mharc 10 marc Trí chaitheamh aimsire 1½ mharc 3 mharc An réitíonn tú go maith le daoine? ½ mharc 1 mharc Obair go luath gach maidin ½ mharc 1 mharc Cén modh taistil atá agat? ½ mharc 1 mharc Cén post ba mhaith leat? (tic) ½ mharc 1 mharc Dáta (ag bun na foirme) ½ mharc 1 mharc 15 mharc 30 ÷ 2 = 15 N.B. Ná bíodh ½ mharc le feiceáil in aon áit (m.sh. 21 ÷ 2 = 10½ = 11 mharc) • Uimhir theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567 • Seoladh: Beidh dhá chuid ag teastáil, as Gaeilge más féidir. (2+2) • Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. • Dáta Breithe: Dhá chuid ag teastáil, i bhfocail nó i bhfigiúirí: 23/4/1998, Márta 1998, 23 Márta … • Cén Scrúdú Teistiméireachta? : Glac leis na scrúduithe seo a leanas: Ardteist, Teastas Sóisearach nó fiú Meánteist. • Cúig Ábhar scoile sa scrúdú: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. Cuir tic le gach ábhar. • Trí chaitheamh aimsire: Glac le drochlitriú más léir gur leagan Gaeilge atá ann. (Sacar, Galf ...) Glac le ceann amháin díobh seo: Facebook, Twitter, Bebo… ach gan an dara ceann a chur san áireamh.",
-            "• An réitíonn tú go maith le daoine? : Freagra cumarsáideach ag teastáil. • An mbeidh tú sásta a bheith ag obair go luath gach maidin?: Freagra cumarsáideach. • Cén modh taistil atá agat? Glac le Rothar, Gluaisrothar, Carr, Tacsaí, Bus, Traein, Siúl nó Rith. • Dáta (ag bun na foirme): Glac le figiúirí. (ii) "
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Gearr (timpeall 40 focal) 15 mharc ▪ Cumarsáid a mharcáil as (15) má tá an t-alt “ad rem”. ▪ Cumarsáid a mharcáil as (5) mura bhfuil sé “ad rem”. ▪ Timpeall 40 focal ag teastáil. ▪ Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta. Mar shampla mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta. ",
-            "Mark the relevant paragraph out of15. Off-topic ceiling5. Then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
-          ]
-        }
-      ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. Three printed job choices are expanded; school subjects, hobbies and personal answers remain open content choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · Doirseoir",
-        "title": "Gaeilge Bonnleibhéal 2014 · Scríobh · Ceist 4(b) · Doirseoir",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2014-fl-w-4b-freastalai",
-      "year": 2014,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-freastalai",
-      "questionRef": "2014 FL Scríobh · Ceist 4(b) · Freastalaí",
-      "questionText": "Ba mhaith leat a bheith ag obair don samhradh in Óstán na Trá, Loch Garman.\n\nLíon isteach An Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Séamas Ó Néill.]\n\nÓstán na Trá, Loch Garman\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Séamas Ó Néill\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí chaitheamh aimsire atá agat:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair go luath gach maidin?\nCén modh taistil atá agat?\nCén post ba mhaith leat? Cuir tic le ceann amháin (✓): Cócaire / Doirseoir / Freastalaí\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh san óstán seo.\n\nSíniú: Séamas Ó Néill\nDáta:\n\nAn rogha don chárta seo: Freastalaí.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-freastalai",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 13,
-      "schemePages": [
-        13,
-        14
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
-        "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh Freastalaí mar phost.",
-        "Scríobh timpeall 40 focal faoin bpost san óstán."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Na Ceisteanna = 15 mharc. Úsáid an colún dúbailte: uimhir theileafóin2; seoladh4; aois2; dáta breithe2; scrúdú2; cúig ábhar10; trí chaitheamh aimsire3; réiteach le daoine1; obair go luath gach maidin1; modh taistil1; post1; dáta ag bun1. Iomlán30 ÷ 2 = 15.",
-            "Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately.",
-            " Uimhir theileafóin 1 mharc 2 mharc Seoladh 2 mharc 4 mharc Aois 1 mharc 2 mharc Dáta Breithe 1 mharc 2 mharc Cén Scrúdú Teistiméireachta? 1 mharc 2 mharc Cúig Ábhar scoile sa scrúdú 5 mharc 10 marc Trí chaitheamh aimsire 1½ mharc 3 mharc An réitíonn tú go maith le daoine? ½ mharc 1 mharc Obair go luath gach maidin ½ mharc 1 mharc Cén modh taistil atá agat? ½ mharc 1 mharc Cén post ba mhaith leat? (tic) ½ mharc 1 mharc Dáta (ag bun na foirme) ½ mharc 1 mharc 15 mharc 30 ÷ 2 = 15 N.B. Ná bíodh ½ mharc le feiceáil in aon áit (m.sh. 21 ÷ 2 = 10½ = 11 mharc) • Uimhir theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567 • Seoladh: Beidh dhá chuid ag teastáil, as Gaeilge más féidir. (2+2) • Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. • Dáta Breithe: Dhá chuid ag teastáil, i bhfocail nó i bhfigiúirí: 23/4/1998, Márta 1998, 23 Márta … • Cén Scrúdú Teistiméireachta? : Glac leis na scrúduithe seo a leanas: Ardteist, Teastas Sóisearach nó fiú Meánteist. • Cúig Ábhar scoile sa scrúdú: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. Cuir tic le gach ábhar. • Trí chaitheamh aimsire: Glac le drochlitriú más léir gur leagan Gaeilge atá ann. (Sacar, Galf ...) Glac le ceann amháin díobh seo: Facebook, Twitter, Bebo… ach gan an dara ceann a chur san áireamh.",
-            "• An réitíonn tú go maith le daoine? : Freagra cumarsáideach ag teastáil. • An mbeidh tú sásta a bheith ag obair go luath gach maidin?: Freagra cumarsáideach. • Cén modh taistil atá agat? Glac le Rothar, Gluaisrothar, Carr, Tacsaí, Bus, Traein, Siúl nó Rith. • Dáta (ag bun na foirme): Glac le figiúirí. (ii) "
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Gearr (timpeall 40 focal) 15 mharc ▪ Cumarsáid a mharcáil as (15) má tá an t-alt “ad rem”. ▪ Cumarsáid a mharcáil as (5) mura bhfuil sé “ad rem”. ▪ Timpeall 40 focal ag teastáil. ▪ Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta. Mar shampla mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta. ",
-            "Mark the relevant paragraph out of15. Off-topic ceiling5. Then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
-          ]
-        }
-      ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. Three printed job choices are expanded; school subjects, hobbies and personal answers remain open content choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · Freastalaí",
-        "title": "Gaeilge Bonnleibhéal 2014 · Scríobh · Ceist 4(b) · Freastalaí",
+        "label": "Scríobh · Ceist 4(b)",
+        "title": "Gaeilge Bonnleibhéal 2014 · Scríobh · Ceist 4(b)",
         "pages": [
           15
         ],

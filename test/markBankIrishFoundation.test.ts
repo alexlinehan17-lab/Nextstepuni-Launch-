@@ -13,7 +13,7 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2025);
 
 describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(1003);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(984);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     // The level picker offers the levels with a built deck (deck.ts levelsFor).
     expect(levelsFor('irish')).toEqual(['higher', 'ordinary', 'foundation']);
@@ -23,8 +23,8 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
   });
 
   it('keeps every reviewed task at its published boundary and on the canonical curriculum', () => {
-    expect(CARDS).toHaveLength(60);
-    expect(new Set(CARDS.map(c => c.id)).size).toBe(60);
+    expect(CARDS).toHaveLength(58);
+    expect(new Set(CARDS.map(c => c.id)).size).toBe(58);
     for (const card of CARDS) {
       expect(tariffReconciles(card), card.id).toBe(true);
       expect(card.specVersion).toBe(resolveCurriculumSpecification('irish', 2025)!.id);
@@ -48,10 +48,11 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
         expect(part.rubric.taskRequirements[0], part.id).toBe(`Ceist ${question} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
       }
     }
-    const forms = CARDS.filter(c => /-w-4b-(16|5|10)-/.test(c.id));
-    expect(forms).toHaveLength(3);
-    expect(forms.map(c => c.questionText.split('An rogha don chárta seo: ')[1]))
-      .toEqual(['16 Aibreán.', '5 Bealtaine.', '10 Meitheamh.']);
+    // One printed form, one card (decision 5): its three tick-box dates stay in the printed text.
+    const forms = CARDS.filter(c => /-w-4b(-|$)/.test(c.id));
+    expect(forms.map(c => c.id)).toEqual(['irish-2025-fl-w-4b']);
+    expect(forms[0].questionText).not.toContain('An rogha don chárta seo');
+    for (const date of ['16 Aibreán', '5 Bealtaine', '10 Meitheamh']) expect(forms[0].questionText).toContain(date);
     for (const form of forms) {
       expect(form.totalMarks).toBe(45);
       expect(form.questionText).toContain('Nuala Seoighe');
@@ -59,7 +60,7 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
       expect(form.sourceMaterial?.pages).toEqual([15]);
     }
     const writing = CARDS.filter(c => /-w-[45][ab](-|$)/.test(c.id));
-    expect(writing).toHaveLength(6);
+    expect(writing).toHaveLength(4);
     for (const option of writing) {
       if (option.rubric.system !== 'irish') throw new Error('Wrong rubric');
       expect(option.rubric.taskRequirements[0], option.id).toBe('Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).');

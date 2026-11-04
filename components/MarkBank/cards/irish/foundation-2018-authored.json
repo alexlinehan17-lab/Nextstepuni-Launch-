@@ -224,9 +224,7 @@
       "irish-2018-fl-r-3c-4",
       "irish-2018-fl-r-3c-5",
       "irish-2018-fl-w-4a",
-      "irish-2018-fl-w-4b-11-bealtaine",
-      "irish-2018-fl-w-4b-14-bealtaine",
-      "irish-2018-fl-w-4b-16-bealtaine",
+      "irish-2018-fl-w-4b",
       "irish-2018-fl-w-5a",
       "irish-2018-fl-w-5b"
     ],
@@ -271,7 +269,24 @@
       "Scheme PDF16 language bands belong to SMM only; standard language based on structure/grammar, vocabulary/spelling. Transcripts PDF17–20; 21–23 blank, 24 cover.",
       "Original scheme PDF has missing ToUnicode font maps. Source-specific glyph map recovers unmapped characters only; preserves valid Unicode and line layout. Times glyphs checked against system Times font; symbols and blank-page Cambria heading checked against visuals. Source hash pins mapping; any unknown glyph fails."
     ],
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2018-fl-w-4b",
+        "atlasQuestionId": "W-4B",
+        "withdrawnOptionCardIds": [
+          "irish-2018-fl-w-4b-11-bealtaine",
+          "irish-2018-fl-w-4b-14-bealtaine",
+          "irish-2018-fl-w-4b-16-bealtaine"
+        ],
+        "printedOptions": [
+          "11 Bealtaine",
+          "14 Bealtaine",
+          "16 Bealtaine"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3326,20 +3341,20 @@
       }
     },
     {
-      "id": "irish-2018-fl-w-4b-11-bealtaine",
+      "id": "irish-2018-fl-w-4b",
       "year": 2018,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-4B-11-bealtaine",
-      "questionRef": "2018 FL Scríobh · Ceist 4(b) · 11 Bealtaine",
-      "questionText": "Ba mhaith leat a bheith ag obair an samhradh seo mar chúntóir sa siopa ríomhaireachta áitiúil.\n\nLíon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Síofra Ní Cheallaigh.]\n\nAn Siopa Ríomhaireachta, Dún Garbhán, Co. Phort Láirge\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Síofra Ní Cheallaigh\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair ar an Satharn?\nAn bhfuil tú ábalta ríomhphost a sheoladh?\nLuaigh trí chaitheamh aimsire atá agat:\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 11 Bealtaine / 14 Bealtaine / 16 Bealtaine\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo.\n\nSíniú: Síofra Ní Cheallaigh\nDáta:\n\nAn rogha don chárta seo: 11 Bealtaine.",
+      "atlasQuestionId": "W-4B",
+      "questionRef": "2018 FL Scríobh · Ceist 4(b)",
+      "questionText": "Ba mhaith leat a bheith ag obair an samhradh seo mar chúntóir sa siopa ríomhaireachta áitiúil.\n\nLíon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Síofra Ní Cheallaigh.]\n\nAn Siopa Ríomhaireachta, Dún Garbhán, Co. Phort Láirge\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Síofra Ní Cheallaigh\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair ar an Satharn?\nAn bhfuil tú ábalta ríomhphost a sheoladh?\nLuaigh trí chaitheamh aimsire atá agat:\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 11 Bealtaine / 14 Bealtaine / 16 Bealtaine\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo.\n\nSíniú: Síofra Ní Cheallaigh\nDáta:",
       "totalMarks": 40,
       "topicId": "irish-9-0",
       "examTopicKeys": [
         "form"
       ],
-      "conceptId": "irish-foundation-w-4b-11-bealtaine",
+      "conceptId": "irish-foundation-w-4b",
       "paperFileid": "LC001BLP000IV",
       "schemePage": 11,
       "schemePages": [
@@ -3349,7 +3364,6 @@
       "taskRequirements": [
         "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
         "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 11 Bealtaine don agallamh.",
         "Scríobh timpeall 40 focal faoin bpost sa siopa ríomhaireachta."
       ],
       "criteria": [
@@ -3439,263 +3453,11 @@
           ]
         }
       ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment, shared language10 across questions and paragraph. Three printed interview dates are expanded; school subjects and hobbies remain open content choices.",
+      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment, shared language10 across questions and paragraph. The printed options (11 Bealtaine, 14 Bealtaine, 16 Bealtaine) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 11 Bealtaine",
-        "title": "Gaeilge Bonnleibhéal 2018 · Scríobh · Ceist 4(b) · 11 Bealtaine",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2018-fl-w-4b-14-bealtaine",
-      "year": 2018,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-14-bealtaine",
-      "questionRef": "2018 FL Scríobh · Ceist 4(b) · 14 Bealtaine",
-      "questionText": "Ba mhaith leat a bheith ag obair an samhradh seo mar chúntóir sa siopa ríomhaireachta áitiúil.\n\nLíon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Síofra Ní Cheallaigh.]\n\nAn Siopa Ríomhaireachta, Dún Garbhán, Co. Phort Láirge\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Síofra Ní Cheallaigh\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair ar an Satharn?\nAn bhfuil tú ábalta ríomhphost a sheoladh?\nLuaigh trí chaitheamh aimsire atá agat:\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 11 Bealtaine / 14 Bealtaine / 16 Bealtaine\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo.\n\nSíniú: Síofra Ní Cheallaigh\nDáta:\n\nAn rogha don chárta seo: 14 Bealtaine.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-14-bealtaine",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
-        "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 14 Bealtaine don agallamh.",
-        "Scríobh timpeall 40 focal faoin bpost sa siopa ríomhaireachta."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Na Ceisteanna = 15 mharc. Úsáid an colún dúbailte: uimhir theileafóin2; seoladh4; aois2; dáta breithe2; scrúdú2; cúig ábhar10; réiteach le daoine1; obair ar an Satharn1; ríomhphost1; trí chaitheamh aimsire3; dáta agallaimh1; dáta ag bun1. Iomlán30 ÷ 2 = 15.",
-            "Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately.",
-            " (15 mharc) Cuir tic le gach freagra ar na mioncheisteanna. Uimhir theileafóin 1 mharc 2 mharc Seoladh 2 mharc 4 mharc Aois 1 mharc 2 mharc Dáta Breithe 1 mharc 2 mharc Cén Scrúdú Teistiméireachta atá déanta agat? 1 mharc 2 mharc Cúig ábhar scoile a rinne tú sa scrúdú sin: 5 mharc 10 marc An réitíonn tú go maith le daoine? ½ mharc 1 mharc An mbeidh tú sásta a bheith ag obair ar an Satharn? ½ mharc 1 mharc An bhfuil tú ábalta ríomhphost a sheoladh? ½ mharc 1 mharc Luaigh trí chaitheamh aimsire atá agat. 1½ mharc 3 mharc Cuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: ½ mharc 1 mharc Dáta (ag bun na foirme) ½ mharc 1 mharc 15 mharc 30 ÷ 2 = 15 mharc Nóta: Ná bíodh ½ mharc le feiceáil in aon áit (m.sh 21 ÷ 2 = 10 ½ = 11 mharc) Uimhir theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567 Seoladh: Dhá chuid ag teastáil as Gaeilge. Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. Dáta Breithe: Dhá chuid ag teastáil, i bhfocail, Márta 1998, 23 Márta nó i bhfigiúirí: 12/4/1998 Cén Scrúdú Teistiméireachta atá déanta agat?: Glac leis na scrúduithe seo a leanas: An Ardteistiméireacht, An Teastas Sóisearach nó an tSraith Shóisearach… Cúig ábhar scoile a rinne tú sa scrúdú sin: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. An réitíonn tú go maith le daoine?: Freagra cumarsáideach ag teastáil. An mbeidh tú sásta a bheith ag obair ar an Satharn?: Freagra cumarsáideach ag teastáil.",
-            "10 An bhfuil tú ábalta ríomhphost a sheoladh?: Tá/Níl, Sea/Ní hea, Is féidir/Ní féidir… Trí chaitheamh aimsire: Glac le drochlitriú más léir gur leagan Gaeilge atá ann (sacar, galf…) Glac le ceann amháin díobh seo: Facebook, Twitter, Snapchat… ach gan an dara ceann a chur san áireamh. Cuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: (tic amháin) Dáta (ag bun na foirme): Glac le figiúirí loma ach trí chuid a bheith ann. "
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " (15 mharc) Tasc → Alt (timpeall 40 focal) a scríobh ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo. • Cumarsáid a mharcáil as 15 mharc má tá an t-alt “ad rem”. Ní mór don iarrthóir tagairtí a dhéanamh do bheith ag lorg oibre/ag obair i siopa ríomhaireachta. • Cumarsáid a mharcáil as 5 mharc mura bhfuil an t-alt “ad rem”. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta (mar shampla: mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. ",
-            "Mark the relevant paragraph out of15 (off-topic ceiling5), then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        }
-      ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment, shared language10 across questions and paragraph. Three printed interview dates are expanded; school subjects and hobbies remain open content choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 14 Bealtaine",
-        "title": "Gaeilge Bonnleibhéal 2018 · Scríobh · Ceist 4(b) · 14 Bealtaine",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2018-fl-w-4b-16-bealtaine",
-      "year": 2018,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-16-bealtaine",
-      "questionRef": "2018 FL Scríobh · Ceist 4(b) · 16 Bealtaine",
-      "questionText": "Ba mhaith leat a bheith ag obair an samhradh seo mar chúntóir sa siopa ríomhaireachta áitiúil.\n\nLíon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Síofra Ní Cheallaigh.]\n\nAn Siopa Ríomhaireachta, Dún Garbhán, Co. Phort Láirge\nFoirm Iarratais do Phost Samhraidh\n\nAinm: Síofra Ní Cheallaigh\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nAn réitíonn tú go maith le daoine?\nAn mbeidh tú sásta a bheith ag obair ar an Satharn?\nAn bhfuil tú ábalta ríomhphost a sheoladh?\nLuaigh trí chaitheamh aimsire atá agat:\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 11 Bealtaine / 14 Bealtaine / 16 Bealtaine\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo.\n\nSíniú: Síofra Ní Cheallaigh\nDáta:\n\nAn rogha don chárta seo: 16 Bealtaine.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-16-bealtaine",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4 AGUS 5). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b).",
-        "Líon gach réimse riachtanach; cúig ábhar scoile agus trí chaitheamh aimsire.",
-        "Roghnaigh 16 Bealtaine don agallamh.",
-        "Scríobh timpeall 40 focal faoin bpost sa siopa ríomhaireachta."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Na Ceisteanna = 15 mharc. Úsáid an colún dúbailte: uimhir theileafóin2; seoladh4; aois2; dáta breithe2; scrúdú2; cúig ábhar10; réiteach le daoine1; obair ar an Satharn1; ríomhphost1; trí chaitheamh aimsire3; dáta agallaimh1; dáta ag bun1. Iomlán30 ÷ 2 = 15.",
-            "Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately.",
-            " (15 mharc) Cuir tic le gach freagra ar na mioncheisteanna. Uimhir theileafóin 1 mharc 2 mharc Seoladh 2 mharc 4 mharc Aois 1 mharc 2 mharc Dáta Breithe 1 mharc 2 mharc Cén Scrúdú Teistiméireachta atá déanta agat? 1 mharc 2 mharc Cúig ábhar scoile a rinne tú sa scrúdú sin: 5 mharc 10 marc An réitíonn tú go maith le daoine? ½ mharc 1 mharc An mbeidh tú sásta a bheith ag obair ar an Satharn? ½ mharc 1 mharc An bhfuil tú ábalta ríomhphost a sheoladh? ½ mharc 1 mharc Luaigh trí chaitheamh aimsire atá agat. 1½ mharc 3 mharc Cuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: ½ mharc 1 mharc Dáta (ag bun na foirme) ½ mharc 1 mharc 15 mharc 30 ÷ 2 = 15 mharc Nóta: Ná bíodh ½ mharc le feiceáil in aon áit (m.sh 21 ÷ 2 = 10 ½ = 11 mharc) Uimhir theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567 Seoladh: Dhá chuid ag teastáil as Gaeilge. Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. Dáta Breithe: Dhá chuid ag teastáil, i bhfocail, Márta 1998, 23 Márta nó i bhfigiúirí: 12/4/1998 Cén Scrúdú Teistiméireachta atá déanta agat?: Glac leis na scrúduithe seo a leanas: An Ardteistiméireacht, An Teastas Sóisearach nó an tSraith Shóisearach… Cúig ábhar scoile a rinne tú sa scrúdú sin: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. An réitíonn tú go maith le daoine?: Freagra cumarsáideach ag teastáil. An mbeidh tú sásta a bheith ag obair ar an Satharn?: Freagra cumarsáideach ag teastáil.",
-            "10 An bhfuil tú ábalta ríomhphost a sheoladh?: Tá/Níl, Sea/Ní hea, Is féidir/Ní féidir… Trí chaitheamh aimsire: Glac le drochlitriú más léir gur leagan Gaeilge atá ann (sacar, galf…) Glac le ceann amháin díobh seo: Facebook, Twitter, Snapchat… ach gan an dara ceann a chur san áireamh. Cuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: (tic amháin) Dáta (ag bun na foirme): Glac le figiúirí loma ach trí chuid a bheith ann. "
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " (15 mharc) Tasc → Alt (timpeall 40 focal) a scríobh ag insint cén fáth ar mhaith leat post samhraidh mar chúntóir sa siopa ríomhaireachta seo. • Cumarsáid a mharcáil as 15 mharc má tá an t-alt “ad rem”. Ní mór don iarrthóir tagairtí a dhéanamh do bheith ag lorg oibre/ag obair i siopa ríomhaireachta. • Cumarsáid a mharcáil as 5 mharc mura bhfuil an t-alt “ad rem”. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta (mar shampla: mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. ",
-            "Mark the relevant paragraph out of15 (off-topic ceiling5), then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
-          ]
-        }
-      ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment, shared language10 across questions and paragraph. Three printed interview dates are expanded; school subjects and hobbies remain open content choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 16 Bealtaine",
-        "title": "Gaeilge Bonnleibhéal 2018 · Scríobh · Ceist 4(b) · 16 Bealtaine",
+        "label": "Scríobh · Ceist 4(b)",
+        "title": "Gaeilge Bonnleibhéal 2018 · Scríobh · Ceist 4(b)",
         "pages": [
           15
         ],

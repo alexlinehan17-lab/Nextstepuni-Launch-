@@ -76,7 +76,24 @@
       "Foundation 2025 only. Other years remain pending.",
       "Form length scheme names maximum −3 but its explicit table only prints 0 and −1; no extra word thresholds have been invented."
     ],
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2025-fl-w-4b",
+        "atlasQuestionId": "W-4B",
+        "withdrawnOptionCardIds": [
+          "irish-2025-fl-w-4b-16-aibrean",
+          "irish-2025-fl-w-4b-5-bealtaine",
+          "irish-2025-fl-w-4b-10-meitheamh"
+        ],
+        "printedOptions": [
+          "16 Aibreán",
+          "5 Bealtaine",
+          "10 Meitheamh"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3129,20 +3146,20 @@
       }
     },
     {
-      "id": "irish-2025-fl-w-4b-16-aibrean",
+      "id": "irish-2025-fl-w-4b",
       "year": 2025,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-4B-16-aibrean",
-      "questionRef": "2025 FL Scríobh · Ceist 4(b) · 16 Aibreán",
-      "questionText": "Foirm Iarratais\n\nBa mhaith leat a bheith ag obair an samhradh seo mar chúntóir i siopa áitiúil. Líon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Nuala Seoighe]\n\nAn Siopa Áitiúil, Cathair na Mart, Co. Mhaigh Eo.\nFoirm Iarratais do Phost mar Chúntóir Siopa\n\nAinm: Nuala Seoighe\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\n\nCén scrúdú Teistiméireachta atá déanta agat?\n\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\n\nAn bhfuil post agat faoi láthair?\n\nLuaigh trí chaitheamh aimsire atá agat:\n\nAn raibh post agat i siopa riamh cheana?\n\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\n\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh:\n16 Aibreán\n5 Bealtaine\n10 Meitheamh\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post páirtaimseartha mar chúntóir sa siopa áitiúil seo.\n\nSíniú: Nuala Seoighe\nDáta:\n\nAn rogha don chárta seo: 16 Aibreán.",
+      "atlasQuestionId": "W-4B",
+      "questionRef": "2025 FL Scríobh · Ceist 4(b)",
+      "questionText": "Foirm Iarratais\n\nBa mhaith leat a bheith ag obair an samhradh seo mar chúntóir i siopa áitiúil. Líon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Nuala Seoighe]\n\nAn Siopa Áitiúil, Cathair na Mart, Co. Mhaigh Eo.\nFoirm Iarratais do Phost mar Chúntóir Siopa\n\nAinm: Nuala Seoighe\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\n\nCén scrúdú Teistiméireachta atá déanta agat?\n\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\n\nAn bhfuil post agat faoi láthair?\n\nLuaigh trí chaitheamh aimsire atá agat:\n\nAn raibh post agat i siopa riamh cheana?\n\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\n\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh:\n16 Aibreán\n5 Bealtaine\n10 Meitheamh\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post páirtaimseartha mar chúntóir sa siopa áitiúil seo.\n\nSíniú: Nuala Seoighe\nDáta:",
       "totalMarks": 45,
       "topicId": "irish-9-0",
       "examTopicKeys": [
         "form"
       ],
-      "conceptId": "irish-foundation-w-4b-16-aibrean",
+      "conceptId": "irish-foundation-w-4b",
       "paperFileid": "LC001BLP000IV",
       "schemePage": 11,
       "schemePages": [
@@ -3151,8 +3168,7 @@
       ],
       "taskRequirements": [
         "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).",
-        "Is tusa Nuala Seoighe. Líon gach réimse agus scríobh alt timpeall 40 focal.",
-        "Dáta agallaimh don rogha seo: 16 Aibreán."
+        "Is tusa Nuala Seoighe. Líon gach réimse agus scríobh alt timpeall 40 focal."
       ],
       "criteria": [
         {
@@ -3259,297 +3275,11 @@
           ]
         }
       ],
-      "markingGuideNote": "The 19 field marks, 15 paragraph marks and single 11-mark language award belong to one form. The three printed interview dates are separate valid routes. School subjects and hobbies are open choices.",
+      "markingGuideNote": "The 19 field marks, 15 paragraph marks and single 11-mark language award belong to one form. School subjects and hobbies are open choices. The printed options (16 Aibreán, 5 Bealtaine, 10 Meitheamh) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 16 Aibreán",
-        "title": "Gaeilge Bonnleibhéal 2025 · Scríobh · Ceist 4(b) · 16 Aibreán",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2025-fl-w-4b-5-bealtaine",
-      "year": 2025,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-5-bealtaine",
-      "questionRef": "2025 FL Scríobh · Ceist 4(b) · 5 Bealtaine",
-      "questionText": "Foirm Iarratais\n\nBa mhaith leat a bheith ag obair an samhradh seo mar chúntóir i siopa áitiúil. Líon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Nuala Seoighe]\n\nAn Siopa Áitiúil, Cathair na Mart, Co. Mhaigh Eo.\nFoirm Iarratais do Phost mar Chúntóir Siopa\n\nAinm: Nuala Seoighe\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\n\nCén scrúdú Teistiméireachta atá déanta agat?\n\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\n\nAn bhfuil post agat faoi láthair?\n\nLuaigh trí chaitheamh aimsire atá agat:\n\nAn raibh post agat i siopa riamh cheana?\n\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\n\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh:\n16 Aibreán\n5 Bealtaine\n10 Meitheamh\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post páirtaimseartha mar chúntóir sa siopa áitiúil seo.\n\nSíniú: Nuala Seoighe\nDáta:\n\nAn rogha don chárta seo: 5 Bealtaine.",
-      "totalMarks": 45,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-5-bealtaine",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).",
-        "Is tusa Nuala Seoighe. Líon gach réimse agus scríobh alt timpeall 40 focal.",
-        "Dáta agallaimh don rogha seo: 5 Bealtaine."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna",
-          "kind": "award",
-          "maxMarks": 19,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "10 4(b) Foirm Iarratais (45 marc) Cumas Cumarsáide = 34 marc Cruinneas Gaeilge = 11 mharc (i) Na Ceisteanna: 19 marc Uimhir Theileafóin 1 mharc /1 Seoladh 2 mharc /2 Aois 1 mharc /1 Dáta Breithe 1 mharc /1 Cén scrúdú teistiméireachta atá déanta agat? 1 mharc /1 Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin 5 x 1 mharc /5 An bhfuil post agat faoi láthair? 1 mharc /1 Luaigh trí chaitheamh aimsire atá agat 3 x 1 mharc /3 An raibh post agat i siopa riamh cheana? 1 mharc /1 An mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine? 1 mharc /1 Cuir tic leis an dáta is fearr leat le haghaidh agallaimh 1 mharc /1 Dáta (ag bun na foirme) 1 mharc /1 19 marc Cuir an marc sa bhosca • Uimhir Theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567. • Seoladh: Beidh dhá chuid ag teastáil, as Gaeilge más féidir. • Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. • Dáta Breithe: Dhá chuid ag teastáil, i bhfocail nó i bhfigiúirí: 12/4/1998, Márta 1998, 23 Márta • Cén Scrúdú Teistiméireachta atá déanta agat?: Glac leis na scrúduithe seo a leanas: Ardteist, Teastas Sóisearach nó fiú Meánteist. • Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. • An bhfuil post agat faoi láthair?: Freagra cumarsáideach ag teastáil • Luaigh trí chaitheamh aimsire atá agat: Glac le drochlitriú más léir gur leagan Gaeilge atá ann (sacar, galf …) Ná glac le Béarla. Glac le ceann amháin díobh seo: Facebook, X, Snapchat … ach gan an dara ceann a chur san áireamh. • An raibh post agat i siopa riamh cheana?: Freagra cumarsáideach ag teastáil • An mbeidh tú sásta bheith ag obair ag an deireadh seachtaine?: Freagra cumarsáideach ag teastáil • Dáta (ag bun na foirme): Glac le figiúirí."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An tAlt Gearr · Cumarsáid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumarsáid a mharcáil as 15 má tá an t-alt “ad rem”; as 5 mura bhfuil sé “ad rem”."
-          ]
-        },
-        {
-          "id": "length",
-          "label": "An tAlt Gearr · Fad",
-          "kind": "deduction",
-          "maxMarks": 3,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Timpeall 40 focal. Tábla foilsithe: 20–40 focal: 0; 1–19 focal: −1. Foilsítear uasteorainn −3 ach ní thugtar tairseacha breise: ná cum rialacha eile."
-          ],
-          "deductFrom": "paragraph"
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
-          ]
-        }
-      ],
-      "markingGuideNote": "The 19 field marks, 15 paragraph marks and single 11-mark language award belong to one form. The three printed interview dates are separate valid routes. School subjects and hobbies are open choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 5 Bealtaine",
-        "title": "Gaeilge Bonnleibhéal 2025 · Scríobh · Ceist 4(b) · 5 Bealtaine",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      }
-    },
-    {
-      "id": "irish-2025-fl-w-4b-10-meitheamh",
-      "year": 2025,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-10-meitheamh",
-      "questionRef": "2025 FL Scríobh · Ceist 4(b) · 10 Meitheamh",
-      "questionText": "Foirm Iarratais\n\nBa mhaith leat a bheith ag obair an samhradh seo mar chúntóir i siopa áitiúil. Líon isteach an Fhoirm Iarratais atá anseo thíos. [Nóta: Is tusa Nuala Seoighe]\n\nAn Siopa Áitiúil, Cathair na Mart, Co. Mhaigh Eo.\nFoirm Iarratais do Phost mar Chúntóir Siopa\n\nAinm: Nuala Seoighe\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\n\nCén scrúdú Teistiméireachta atá déanta agat?\n\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\n\nAn bhfuil post agat faoi láthair?\n\nLuaigh trí chaitheamh aimsire atá agat:\n\nAn raibh post agat i siopa riamh cheana?\n\nAn mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine?\n\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh:\n16 Aibreán\n5 Bealtaine\n10 Meitheamh\n\nScríobh alt gearr (timpeall 40 focal) ag insint cén fáth ar mhaith leat post páirtaimseartha mar chúntóir sa siopa áitiúil seo.\n\nSíniú: Nuala Seoighe\nDáta:\n\nAn rogha don chárta seo: 10 Meitheamh.",
-      "totalMarks": 45,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-4b-10-meitheamh",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).",
-        "Is tusa Nuala Seoighe. Líon gach réimse agus scríobh alt timpeall 40 focal.",
-        "Dáta agallaimh don rogha seo: 10 Meitheamh."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna",
-          "kind": "award",
-          "maxMarks": 19,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "10 4(b) Foirm Iarratais (45 marc) Cumas Cumarsáide = 34 marc Cruinneas Gaeilge = 11 mharc (i) Na Ceisteanna: 19 marc Uimhir Theileafóin 1 mharc /1 Seoladh 2 mharc /2 Aois 1 mharc /1 Dáta Breithe 1 mharc /1 Cén scrúdú teistiméireachta atá déanta agat? 1 mharc /1 Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin 5 x 1 mharc /5 An bhfuil post agat faoi láthair? 1 mharc /1 Luaigh trí chaitheamh aimsire atá agat 3 x 1 mharc /3 An raibh post agat i siopa riamh cheana? 1 mharc /1 An mbeidh tú sásta a bheith ag obair ag an deireadh seachtaine? 1 mharc /1 Cuir tic leis an dáta is fearr leat le haghaidh agallaimh 1 mharc /1 Dáta (ag bun na foirme) 1 mharc /1 19 marc Cuir an marc sa bhosca • Uimhir Theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567. • Seoladh: Beidh dhá chuid ag teastáil, as Gaeilge más féidir. • Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. • Dáta Breithe: Dhá chuid ag teastáil, i bhfocail nó i bhfigiúirí: 12/4/1998, Márta 1998, 23 Márta • Cén Scrúdú Teistiméireachta atá déanta agat?: Glac leis na scrúduithe seo a leanas: Ardteist, Teastas Sóisearach nó fiú Meánteist. • Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. • An bhfuil post agat faoi láthair?: Freagra cumarsáideach ag teastáil • Luaigh trí chaitheamh aimsire atá agat: Glac le drochlitriú más léir gur leagan Gaeilge atá ann (sacar, galf …) Ná glac le Béarla. Glac le ceann amháin díobh seo: Facebook, X, Snapchat … ach gan an dara ceann a chur san áireamh. • An raibh post agat i siopa riamh cheana?: Freagra cumarsáideach ag teastáil • An mbeidh tú sásta bheith ag obair ag an deireadh seachtaine?: Freagra cumarsáideach ag teastáil • Dáta (ag bun na foirme): Glac le figiúirí."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An tAlt Gearr · Cumarsáid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Cumarsáid a mharcáil as 15 má tá an t-alt “ad rem”; as 5 mura bhfuil sé “ad rem”."
-          ]
-        },
-        {
-          "id": "length",
-          "label": "An tAlt Gearr · Fad",
-          "kind": "deduction",
-          "maxMarks": 3,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Timpeall 40 focal. Tábla foilsithe: 20–40 focal: 0; 1–19 focal: −1. Foilsítear uasteorainn −3 ach ní thugtar tairseacha breise: ná cum rialacha eile."
-          ],
-          "deductFrom": "paragraph"
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
-          ]
-        }
-      ],
-      "markingGuideNote": "The 19 field marks, 15 paragraph marks and single 11-mark language award belong to one form. The three printed interview dates are separate valid routes. School subjects and hobbies are open choices.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b) · 10 Meitheamh",
-        "title": "Gaeilge Bonnleibhéal 2025 · Scríobh · Ceist 4(b) · 10 Meitheamh",
+        "label": "Scríobh · Ceist 4(b)",
+        "title": "Gaeilge Bonnleibhéal 2025 · Scríobh · Ceist 4(b)",
         "pages": [
           15
         ],

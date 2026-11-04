@@ -15,7 +15,7 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2024);
 
 describe('reviewed 2024 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(1003);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(984);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     // The level picker offers the levels with a built deck (deck.ts levelsFor).
     expect(levelsFor('irish')).toEqual(['higher', 'ordinary', 'foundation']);
@@ -25,8 +25,8 @@ describe('reviewed 2024 Irish Foundation tasks', () => {
   });
 
   it('keeps every reviewed task at its published boundary and on the canonical curriculum', () => {
-    expect(CARDS).toHaveLength(60);
-    expect(new Set(CARDS.map(c => c.id)).size).toBe(60);
+    expect(CARDS).toHaveLength(58);
+    expect(new Set(CARDS.map(c => c.id)).size).toBe(58);
     for (const card of CARDS) {
       expect(tariffReconciles(card), card.id).toBe(true);
       expect(card.specVersion).toBe(resolveCurriculumSpecification('irish', 2024)!.id);
@@ -50,10 +50,11 @@ describe('reviewed 2024 Irish Foundation tasks', () => {
         expect(part.rubric.taskRequirements[0], part.id).toBe(`Ceist ${question} Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.`);
       }
     }
-    const forms = CARDS.filter(c => /-w-4b-(25|27|3)-/.test(c.id));
-    expect(forms).toHaveLength(3);
-    expect(forms.map(c => c.questionText.split('An rogha don chárta seo: ')[1]))
-      .toEqual(['25 Meitheamh.', '27 Meitheamh.', '3 Iúil.']);
+    // One printed form, one card (decision 5): its three tick-box dates stay in the printed text.
+    const forms = CARDS.filter(c => /-w-4b(-|$)/.test(c.id));
+    expect(forms.map(c => c.id)).toEqual(['irish-2024-fl-w-4b']);
+    expect(forms[0].questionText).not.toContain('An rogha don chárta seo');
+    expect(forms[0].questionText).toContain('25 Meitheamh\n27 Meitheamh\n3 Iúil');
     for (const form of forms) {
       expect(form.totalMarks).toBe(45);
       expect(form.questionText).toContain('Síle Ní Cheallaigh');
@@ -61,7 +62,7 @@ describe('reviewed 2024 Irish Foundation tasks', () => {
       expect(form.sourceMaterial?.pages).toEqual([15]);
     }
     const writing = CARDS.filter(c => /-w-[45][ab](-|$)/.test(c.id));
-    expect(writing).toHaveLength(6);
+    expect(writing).toHaveLength(4);
     for (const option of writing) {
       if (option.rubric.system !== 'irish') throw new Error('Wrong rubric');
       expect(option.rubric.taskRequirements[0], option.id).toBe('Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4 (a), 4 (b), 5 (a) nó 5 (b).');
@@ -148,7 +149,7 @@ describe('2024 Foundation independent source reconciliation', () => {
     expect(notice.criteria.map(c=>c.maxMarks)).toEqual([1,10,13,5,5,11]);
     expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Patrick Kielty');
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Giomnáisiam');
-    const form=get('W-4B-25-meitheamh');
+    const form=get('W-4B');
     expect(form.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['fields',19],['paragraph',15],['length',3],['gaeilge',11]]);
     expect(form.criteria.find(c=>c.id==='length')!.guidance.join(' ')).toContain('35–40 focal: 0; 25–34 focal: −1; 10–24 focal: −2; <10 focal: −3');
     expect(form.criteria.find(c=>c.id==='length')).toMatchObject({kind:'deduction',deductFrom:'paragraph'});
@@ -202,7 +203,10 @@ print('source guard passed')
     expect(authored.review.reviewedPaperPages).toEqual(Array.from({length:20},(_,i)=>i+1));
     expect(authored.review.reviewedSchemePages).toEqual(Array.from({length:24},(_,i)=>i+1));
     expect(authored.review.selectionDecisions).toHaveLength(24);
-    expect(authored.review.atomicPracticeCardIds).toHaveLength(60);
+    expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
+    expect(authored.review.variantMerges).toEqual([{cardId:'irish-2024-fl-w-4b',atlasQuestionId:'W-4B',
+      withdrawnOptionCardIds:['irish-2024-fl-w-4b-25-meitheamh','irish-2024-fl-w-4b-27-meitheamh','irish-2024-fl-w-4b-3-iuil'],
+      printedOptions:['25 Meitheamh','27 Meitheamh','3 Iúil']}]);
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     expect(authored.review.choicePolicy).toContain('Choice is not a route');
     expect(authored.review.examStructure.total).toBe(360);
@@ -210,7 +214,7 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2024|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(CARDS.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.indexedCards).toBe(1860);
+    expect(inventory.summary.indexedCards).toBe(1841);
     expect(inventory.summary.papersPendingFullReview).toBe(57);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });

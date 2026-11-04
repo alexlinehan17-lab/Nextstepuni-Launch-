@@ -242,9 +242,7 @@
       "irish-2010-fl-w-4a",
       "irish-2010-fl-w-4b",
       "irish-2010-fl-w-5a",
-      "irish-2010-fl-w-5b-21-iuil",
-      "irish-2010-fl-w-5b-28-iuil",
-      "irish-2010-fl-w-5b-4-lunasa",
+      "irish-2010-fl-w-5b",
       "irish-2010-fl-w-6a",
       "irish-2010-fl-w-6b"
     ],
@@ -286,7 +284,24 @@
       "status": "source-gap: official Foundation recording unavailable; no cards, transcript or substitute audio",
       "decision": "The listening component stays pending with no Bank cards, no transcript and no substitute audio until the official Foundation recording is recovered."
     },
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2010-fl-w-5b",
+        "atlasQuestionId": "W-5B",
+        "withdrawnOptionCardIds": [
+          "irish-2010-fl-w-5b-21-iuil",
+          "irish-2010-fl-w-5b-28-iuil",
+          "irish-2010-fl-w-5b-4-lunasa"
+        ],
+        "printedOptions": [
+          "21 Iúil",
+          "28 Iúil",
+          "4 Lúnasa"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -2892,20 +2907,20 @@
       ]
     },
     {
-      "id": "irish-2010-fl-w-5b-21-iuil",
+      "id": "irish-2010-fl-w-5b",
       "year": 2010,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-5B-21-iuil",
-      "questionRef": "2010 FL Scríobh · Ceist 5(b) · 21 Iúil",
-      "questionText": "Ba mhaith leat a bheith ag obair mar gharraíodóir i gclub gailf. Fuair tú an Fhoirm Iarratais seo le líonadh. Líon isteach an Fhoirm Iarratais atá anseo thíos.\n[ Nóta: Is tusa Áine Bhreathnach ]\n\nK-Club Chill Dara\nFoirm Iarratais do phost mar Gharraíodóir\nAinm: Áine Bhreathnach\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén post atá agat faoi láthair?\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí spórt a d’imir tú ar scoil:\nAn bhfuil gairdín agat sa bhaile?\nAn féidir leat tarracóir a thiomáint?\nAn mbeidh tú sásta tosú ag obair gach maidin ar a seacht a chlog?\nAr imir tú Galf riamh?\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 21 Iúil / 28 Iúil / 4 Lúnasa.\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair ar Chúrsa Gailf.\n\nSíniú: Áine Bhreathnach\nDáta:\n\nAn rogha don chárta seo: 21 Iúil.",
+      "atlasQuestionId": "W-5B",
+      "questionRef": "2010 FL Scríobh · Ceist 5(b)",
+      "questionText": "Ba mhaith leat a bheith ag obair mar gharraíodóir i gclub gailf. Fuair tú an Fhoirm Iarratais seo le líonadh. Líon isteach an Fhoirm Iarratais atá anseo thíos.\n[ Nóta: Is tusa Áine Bhreathnach ]\n\nK-Club Chill Dara\nFoirm Iarratais do phost mar Gharraíodóir\nAinm: Áine Bhreathnach\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén post atá agat faoi láthair?\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí spórt a d’imir tú ar scoil:\nAn bhfuil gairdín agat sa bhaile?\nAn féidir leat tarracóir a thiomáint?\nAn mbeidh tú sásta tosú ag obair gach maidin ar a seacht a chlog?\nAr imir tú Galf riamh?\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 21 Iúil / 28 Iúil / 4 Lúnasa.\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair ar Chúrsa Gailf.\n\nSíniú: Áine Bhreathnach\nDáta:",
       "totalMarks": 40,
       "topicId": "irish-9-0",
       "examTopicKeys": [
         "form"
       ],
-      "conceptId": "irish-foundation-w-5b-21-iuil",
+      "conceptId": "irish-foundation-w-5b",
       "paperFileid": "LC001BLP100IV",
       "schemeFileid": "LC001BLP000IV",
       "schemePage": 14,
@@ -2916,7 +2931,6 @@
       "taskRequirements": [
         "FREAGAIR GACH CEIST (4, 5 AGUS 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
         "Líon gach réimse; cúig ábhar scoile agus trí spórt.",
-        "Roghnaigh 21 Iúil don agallamh.",
         "Scríobh timpeall 40 focal faoi obair ar Chúrsa Gailf."
       ],
       "criteria": [
@@ -3006,267 +3020,11 @@
           ]
         }
       ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The three printed interview dates are expanded; school subjects and sports are open content. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns.",
+      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns. The printed options (21 Iúil, 28 Iúil, 4 Lúnasa) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 21 Iúil",
-        "title": "Gaeilge Bonnleibhéal 2010 · Scríobh · Ceist 5(b) · 21 Iúil",
-        "pages": [
-          13
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá ½ marc do dháta breithe sa chéad cholún agus 2 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún."
-    },
-    {
-      "id": "irish-2010-fl-w-5b-28-iuil",
-      "year": 2010,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-5B-28-iuil",
-      "questionRef": "2010 FL Scríobh · Ceist 5(b) · 28 Iúil",
-      "questionText": "Ba mhaith leat a bheith ag obair mar gharraíodóir i gclub gailf. Fuair tú an Fhoirm Iarratais seo le líonadh. Líon isteach an Fhoirm Iarratais atá anseo thíos.\n[ Nóta: Is tusa Áine Bhreathnach ]\n\nK-Club Chill Dara\nFoirm Iarratais do phost mar Gharraíodóir\nAinm: Áine Bhreathnach\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén post atá agat faoi láthair?\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí spórt a d’imir tú ar scoil:\nAn bhfuil gairdín agat sa bhaile?\nAn féidir leat tarracóir a thiomáint?\nAn mbeidh tú sásta tosú ag obair gach maidin ar a seacht a chlog?\nAr imir tú Galf riamh?\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 21 Iúil / 28 Iúil / 4 Lúnasa.\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair ar Chúrsa Gailf.\n\nSíniú: Áine Bhreathnach\nDáta:\n\nAn rogha don chárta seo: 28 Iúil.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-5b-28-iuil",
-      "paperFileid": "LC001BLP100IV",
-      "schemeFileid": "LC001BLP000IV",
-      "schemePage": 14,
-      "schemePages": [
-        14,
-        15
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4, 5 AGUS 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
-        "Líon gach réimse; cúig ábhar scoile agus trí spórt.",
-        "Roghnaigh 28 Iúil don agallamh.",
-        "Scríobh timpeall 40 focal faoi obair ar Chúrsa Gailf."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Use the printed doubled column: phone 1; address 3; age 1; birth date 2; current job 2; certificate exam 2; five subjects 10; three sports 3; garden 1; tractor 1; early start 1; previous golf 1; interview date 1; bottom date 1. Total 30, divide once by 2 and round up once: 21÷2=10½→11.",
-            "Tasc → Foirm Iarratais a líonadh ina bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh. Cumas Cumarsáide = 30 marc Uimhir theileafóin ½ marc 1 marc Seoladh 1½ marc 3 marc Aois ½ marc 1 marc Dáta Breithe ½ marc 2 marc Cén post atá agat faoi láthair 1 marc 2 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Luaigh trí sport a d’imir tú… 1½ marc 3 marc An bhfuil gairdín agat sa bhaile ½ marc 1 marc Ábalta tarracóir a thiomáint ½ marc 1 marc Obair ar a seacht a chlog…. ½ marc 1 marc Ar imir tú Galf riamh? ½ marc 1 marc Tic leis an dáta an agallaimh ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc",
-            "Published table conflict: the undoubled birth-date row prints ½, while the doubled row prints 2. The undoubled values sum 14½ despite the printed total 15. This rubric follows the explicit doubled 30÷2 method and its 15-mark total; both original columns remain visible."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Thart ar 40 focal ag teastáil. Marcáil as (15) má tá an t-alt “ad rem”, agus as (5) mura bhfuil sé “ad rem”. Sa chás nach mbíonn an t-alt fada go leor, bainfear céatadán cuí den mharc a bhronntar (e.g. mura bhfuil ann ach 20 focal, déanfar an t-alt a marcáil as (15) marc agus bainfear 50% den mharc a bhronntar.) = 15 marc",
-            "An tAlt beag: 15 marc Caithfidh an t-alt a bheith ad rem, dírithe ar an téama, a bheith ag obair sa K Club i gCill Dara. Glac le tagairt don saghas oibre/spóirt, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/léi bheith ag obair i ngalfchlub nó ar mhachaire gailf, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cúrsaí airgid, suim i sport nó a bheith faoin aer, etc. Tá 40 focal ag teastáil. Ná glac le focail Bhéarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g. mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta.",
-            "Assess the relevant paragraph /15, off-topic /5. Reduce only its awarded mark proportionally if short: 20 of 40 words → 50% reduction (PDF 14); about 32 of 40 words → one-fifth reduction (PDF 15). No fixed reference count or later-year 8-mark ceiling is printed."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
-          ]
-        }
-      ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The three printed interview dates are expanded; school subjects and sports are open content. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 28 Iúil",
-        "title": "Gaeilge Bonnleibhéal 2010 · Scríobh · Ceist 5(b) · 28 Iúil",
-        "pages": [
-          13
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá ½ marc do dháta breithe sa chéad cholún agus 2 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún."
-    },
-    {
-      "id": "irish-2010-fl-w-5b-4-lunasa",
-      "year": 2010,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-5B-4-lunasa",
-      "questionRef": "2010 FL Scríobh · Ceist 5(b) · 4 Lúnasa",
-      "questionText": "Ba mhaith leat a bheith ag obair mar gharraíodóir i gclub gailf. Fuair tú an Fhoirm Iarratais seo le líonadh. Líon isteach an Fhoirm Iarratais atá anseo thíos.\n[ Nóta: Is tusa Áine Bhreathnach ]\n\nK-Club Chill Dara\nFoirm Iarratais do phost mar Gharraíodóir\nAinm: Áine Bhreathnach\nUimhir theileafóin:\nSeoladh:\nAois:\nDáta Breithe:\nCén post atá agat faoi láthair?\nCén Scrúdú Teistiméireachta atá déanta agat?\nAinmnigh cúig ábhar scoile a rinne tú sa scrúdú sin:\nLuaigh trí spórt a d’imir tú ar scoil:\nAn bhfuil gairdín agat sa bhaile?\nAn féidir leat tarracóir a thiomáint?\nAn mbeidh tú sásta tosú ag obair gach maidin ar a seacht a chlog?\nAr imir tú Galf riamh?\nCuir tic (✓) leis an dáta is fearr leat le haghaidh agallaimh: 21 Iúil / 28 Iúil / 4 Lúnasa.\n\nScríobh alt beag (timpeall 40 focal) ag insint dúinn cén fáth ar mhaith leat a bheith ag obair ar Chúrsa Gailf.\n\nSíniú: Áine Bhreathnach\nDáta:\n\nAn rogha don chárta seo: 4 Lúnasa.",
-      "totalMarks": 40,
-      "topicId": "irish-9-0",
-      "examTopicKeys": [
-        "form"
-      ],
-      "conceptId": "irish-foundation-w-5b-4-lunasa",
-      "paperFileid": "LC001BLP100IV",
-      "schemeFileid": "LC001BLP000IV",
-      "schemePage": 14,
-      "schemePages": [
-        14,
-        15
-      ],
-      "taskRequirements": [
-        "FREAGAIR GACH CEIST (4, 5 AGUS 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).",
-        "Líon gach réimse; cúig ábhar scoile agus trí spórt.",
-        "Roghnaigh 4 Lúnasa don agallamh.",
-        "Scríobh timpeall 40 focal faoi obair ar Chúrsa Gailf."
-      ],
-      "criteria": [
-        {
-          "id": "fields",
-          "label": "Na Ceisteanna · iomlán slán",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Use the printed doubled column: phone 1; address 3; age 1; birth date 2; current job 2; certificate exam 2; five subjects 10; three sports 3; garden 1; tractor 1; early start 1; previous golf 1; interview date 1; bottom date 1. Total 30, divide once by 2 and round up once: 21÷2=10½→11.",
-            "Tasc → Foirm Iarratais a líonadh ina bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh. Cumas Cumarsáide = 30 marc Uimhir theileafóin ½ marc 1 marc Seoladh 1½ marc 3 marc Aois ½ marc 1 marc Dáta Breithe ½ marc 2 marc Cén post atá agat faoi láthair 1 marc 2 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Luaigh trí sport a d’imir tú… 1½ marc 3 marc An bhfuil gairdín agat sa bhaile ½ marc 1 marc Ábalta tarracóir a thiomáint ½ marc 1 marc Obair ar a seacht a chlog…. ½ marc 1 marc Ar imir tú Galf riamh? ½ marc 1 marc Tic leis an dáta an agallaimh ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc",
-            "Published table conflict: the undoubled birth-date row prints ½, while the doubled row prints 2. The undoubled values sum 14½ despite the printed total 15. This rubric follows the explicit doubled 30÷2 method and its 15-mark total; both original columns remain visible."
-          ]
-        },
-        {
-          "id": "paragraph",
-          "label": "An t-Alt · marc tar éis coigeartú faid",
-          "kind": "award",
-          "maxMarks": 15,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Thart ar 40 focal ag teastáil. Marcáil as (15) má tá an t-alt “ad rem”, agus as (5) mura bhfuil sé “ad rem”. Sa chás nach mbíonn an t-alt fada go leor, bainfear céatadán cuí den mharc a bhronntar (e.g. mura bhfuil ann ach 20 focal, déanfar an t-alt a marcáil as (15) marc agus bainfear 50% den mharc a bhronntar.) = 15 marc",
-            "An tAlt beag: 15 marc Caithfidh an t-alt a bheith ad rem, dírithe ar an téama, a bheith ag obair sa K Club i gCill Dara. Glac le tagairt don saghas oibre/spóirt, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/léi bheith ag obair i ngalfchlub nó ar mhachaire gailf, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cúrsaí airgid, suim i sport nó a bheith faoin aer, etc. Tá 40 focal ag teastáil. Ná glac le focail Bhéarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g. mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta.",
-            "Assess the relevant paragraph /15, off-topic /5. Reduce only its awarded mark proportionally if short: 20 of 40 words → 50% reduction (PDF 14); about 32 of 40 words → one-fifth reduction (PDF 15). No fixed reference count or later-year 8-mark ceiling is printed."
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 10,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
-          ]
-        }
-      ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The three printed interview dates are expanded; school subjects and sports are open content. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 5(b) · 4 Lúnasa",
-        "title": "Gaeilge Bonnleibhéal 2010 · Scríobh · Ceist 5(b) · 4 Lúnasa",
+        "label": "Scríobh · Ceist 5(b)",
+        "title": "Gaeilge Bonnleibhéal 2010 · Scríobh · Ceist 5(b)",
         "pages": [
           13
         ],

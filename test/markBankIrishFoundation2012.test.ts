@@ -13,11 +13,11 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2012 Foundation independently reviewed boundaries',()=>{
   it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
-    expect(cards).toHaveLength(60);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(60);
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
-    expect(authored.review.atomicPracticeCardIds).toHaveLength(60);
+    expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
     // Choice is not a route: no reading pairs and no writing combinations.
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
@@ -90,12 +90,14 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
     expect(guide('pictiur3')).toContain('Jedward');
     expect(guide('pictiur4')).toContain('Barnardos');
     expect(guide('pictiur2')).not.toContain('Published allocation discrepancy');
-    const forms=authored.cards.filter(c=>/^W-4B-\d+-iuil$/.test(c.atlasQuestionId));
-    expect(forms.map(c=>c.atlasQuestionId)).toEqual(['19','21','24'].map(d=>`W-4B-${d}-iuil`));
-    for(const [i,form] of forms.entries()) {
+    // One printed form, one card (decision 5): the printed options stay in the form's own text.
+    const forms=authored.cards.filter(c=>/^W-4B/.test(c.atlasQuestionId));
+    expect(forms.map(c=>[c.id,c.atlasQuestionId])).toEqual([['irish-2012-fl-w-4b','W-4B']]);
+    for(const form of forms) {
       expect(form.questionText).toContain('Síle Ní Ruairc');
       expect(form.questionText).toContain('Ionad Spóirt Loch Garman');
-      expect(form.questionText).toContain(`An rogha don chárta seo: ${[19,21,24][i]} Iúil.`);
+      expect(form.questionText).not.toContain('An rogha don chárta seo');
+      expect(form.questionText).toContain('19 Iúil / 21 Iúil / 24 Iúil');
       expect(form.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['fields',15],['paragraph',15],['gaeilge',10]]);
       expect(form.sourceMaterial.pages).toEqual([15]);
       expect(form.schemePages).toEqual([11,12]);

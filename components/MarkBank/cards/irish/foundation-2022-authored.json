@@ -254,8 +254,7 @@
       "irish-2022-fl-r-3c-4",
       "irish-2022-fl-r-3c-5",
       "irish-2022-fl-w-4a",
-      "irish-2022-fl-w-4b-aintin",
-      "irish-2022-fl-w-4b-uncail",
+      "irish-2022-fl-w-4b",
       "irish-2022-fl-w-5a",
       "irish-2022-fl-w-5b"
     ],
@@ -297,7 +296,22 @@
       "The 5B scheme conflicts internally: its main bullet deducts 4 per missing reference and lists caps 34,30,26,22,18, but a later line says Pionós -5. Both 5A/5B also show Tagairt /-12. Preserve the published text and explain the conflict; no invented automatic reference deduction.",
       "Scheme examples are open content possibilities, not printed selection menus. Audio transcripts on PDF pages 17–19 remain answer material."
     ],
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2022-fl-w-4b",
+        "atlasQuestionId": "W-4B",
+        "withdrawnOptionCardIds": [
+          "irish-2022-fl-w-4b-aintin",
+          "irish-2022-fl-w-4b-uncail"
+        ],
+        "printedOptions": [
+          "d’aintín",
+          "d’uncail"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3351,20 +3365,20 @@
       }
     },
     {
-      "id": "irish-2022-fl-w-4b-aintin",
+      "id": "irish-2022-fl-w-4b",
       "year": 2022,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-4B-aintin",
-      "questionRef": "2022 FL Scríobh · Ceist 4(b) · d’aintín",
-      "questionText": "Féach ar na pictiúir thíos.\n\nBhí tú ag ceolchoirm mhór i bPáirc Mharlaí.\nScríobh litir chuig d’aintín / d’uncail i Meiriceá ag insint dó / di:\n\n- Faoin bpóstaer a chonaic tú (dhá phointe eolais) — Pictiúr 1\n- Faoin turas go dtí an cheolchoirm (dhá phointe eolais) — Pictiúr 2\n- Faoin gceolchoirm (dhá phointe eolais) — Pictiúr 3\n- Faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.\n\nAn rogha don chárta seo: litir chuig d’aintín.",
+      "atlasQuestionId": "W-4B",
+      "questionRef": "2022 FL Scríobh · Ceist 4(b)",
+      "questionText": "Féach ar na pictiúir thíos.\n\nBhí tú ag ceolchoirm mhór i bPáirc Mharlaí.\nScríobh litir chuig d’aintín / d’uncail i Meiriceá ag insint dó / di:\n\n- Faoin bpóstaer a chonaic tú (dhá phointe eolais) — Pictiúr 1\n- Faoin turas go dtí an cheolchoirm (dhá phointe eolais) — Pictiúr 2\n- Faoin gceolchoirm (dhá phointe eolais) — Pictiúr 3\n- Faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.",
       "totalMarks": 45,
       "topicId": "irish-9-3",
       "examTopicKeys": [
         "letterWriting"
       ],
-      "conceptId": "irish-foundation-w-4b-aintin",
+      "conceptId": "irish-foundation-w-4b",
       "paperFileid": "LC001BLP000IV",
       "schemePage": 11,
       "schemePages": [
@@ -3541,213 +3555,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b)",
-        "title": "Gaeilge Bonnleibhéal 2022 · Scríobh · Ceist 4(b)",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-2-8"
-      ]
-    },
-    {
-      "id": "irish-2022-fl-w-4b-uncail",
-      "year": 2022,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-uncail",
-      "questionRef": "2022 FL Scríobh · Ceist 4(b) · d’uncail",
-      "questionText": "Féach ar na pictiúir thíos.\n\nBhí tú ag ceolchoirm mhór i bPáirc Mharlaí.\nScríobh litir chuig d’aintín / d’uncail i Meiriceá ag insint dó / di:\n\n- Faoin bpóstaer a chonaic tú (dhá phointe eolais) — Pictiúr 1\n- Faoin turas go dtí an cheolchoirm (dhá phointe eolais) — Pictiúr 2\n- Faoin gceolchoirm (dhá phointe eolais) — Pictiúr 3\n- Faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.\n\nAn rogha don chárta seo: litir chuig d’uncail.",
-      "totalMarks": 45,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "letterWriting"
-      ],
-      "conceptId": "irish-foundation-w-4b-uncail",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "Scríobh litir chuig d’aintín nó d’uncail i Meiriceá faoin gceolchoirm.",
-        "Dhá phointe eolais faoi gach ceann de na ceithre phictiúr; leagan amach cuí."
-      ],
-      "criteria": [
-        {
-          "id": "seoladh",
-          "label": "Seoladh",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dhá chuid (1 + 1), as Gaeilge. Glac lena leithéid de “Bóthar Crumlin” nó “Sráid Patrick”. Ná glac le hainm an bhaile i mBéarla."
-          ]
-        },
-        {
-          "id": "data",
-          "label": "Dáta",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Glac le figiúirí."
-          ]
-        },
-        {
-          "id": "beannu",
-          "label": "Beannú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Ainm ar bith, fiú a chara."
-          ]
-        },
-        {
-          "id": "crioch",
-          "label": "Críoch / Slán",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dhá chuid ag teastáil: Slán … agus ainm."
-          ]
-        },
-        {
-          "id": "pictiur1",
-          "label": "Pictiúr 1 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Ag insint faoin bpóstaer don cheolchoirm (dhá phointe eolais) 4 + 3 = 7 marc Samplaí: an áit a raibh an postaer, an áit a mbeidh an cheolchoirm, pointe ar bith atá ar an bpostaer agus ionramháil déanta. "
-          ]
-        },
-        {
-          "id": "pictiur2",
-          "label": "Pictiúr 2 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Ag insint faoin turas go dtí an cheolchoirm (dhá phointe eolais) 4 + 3 = 7 marc Samplaí: traein, Luas, bus, scuaine, plódaithe, a lán daoine, turas, na daoine abhí leat, ... "
-          ]
-        },
-        {
-          "id": "pictiur3",
-          "label": "Pictiúr 3 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Ag insint faoin gceolchoirm (dhá phointe eolais) 4 + 3 = 7 marc Samplaí: an grúpa, atmaisféar, damhsa, ceol, ag canadh, soilse, stáitse, fón póca, lámha in airde ... "
-          ]
-        },
-        {
-          "id": "pictiur4",
-          "label": "Pictiúr 4 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Ag insint faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais) 4 + 3 = 7 marc Samplaí: ag ithe, ag ól, píotsa, cóc, deoch bia, bialann, tacsaí, cairde, déanach san oíche, tuirseach ... "
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Lag 2–4; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
-          ]
-        }
-      ],
-      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme.",
+      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme. The printed options (d’aintín, d’uncail) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b)",

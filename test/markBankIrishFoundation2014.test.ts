@@ -13,11 +13,11 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2014 Foundation independently reviewed boundaries',()=>{
   it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
-    expect(cards).toHaveLength(60);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(60);
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
-    expect(authored.review.atomicPracticeCardIds).toHaveLength(60);
+    expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
     // Choice is not a route: no reading pairs and no writing combinations.
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
@@ -74,13 +74,15 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
     expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Sharon Shannon');
     expect(notice.criteria.find(c=>c.id==='pictiur2')!.guidance.join(' ')).toContain('Cead isteach');
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Halla Spóirt Nua');
-    const forms=authored.cards.filter(c=>/^W-4B-(cocaire|doirseoir|freastalai)$/.test(c.atlasQuestionId));
-    expect(forms).toHaveLength(3);
-    for(const [i,form] of forms.entries()) {
+    // One printed form, one card (decision 5): the printed options stay in the form's own text.
+    const forms=authored.cards.filter(c=>/^W-4B/.test(c.atlasQuestionId));
+    expect(forms.map(c=>[c.id,c.atlasQuestionId])).toEqual([['irish-2014-fl-w-4b','W-4B']]);
+    for(const form of forms) {
       expect(form.totalMarks).toBe(40);
       expect(form.questionText).toContain('Séamas Ó Néill');
       expect(form.questionText).toContain('post samhraidh san óstán seo');
-      expect(form.questionText).toContain('An rogha don chárta seo: '+['Cócaire','Doirseoir','Freastalaí'][i]+'.');
+      expect(form.questionText).not.toContain('An rogha don chárta seo');
+      expect(form.questionText).toContain('Cócaire / Doirseoir / Freastalaí');
       expect(form.questionText).toContain('Ainmnigh cúig ábhar scoile');
       expect(form.questionText).toContain('Luaigh trí chaitheamh aimsire');
       expect(form.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['fields',15],['paragraph',15],['gaeilge',10]]);
@@ -100,7 +102,6 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
       expect(paragraph).toContain('paragraph award only');
       expect(paragraph).not.toContain('35–40 focal: 0');
     }
-    expect(forms[0].criteria).toEqual(forms[2].criteria);
   });
 
   it('confines paragraph and story length adjustments to their own awards on separate cards',()=>{
@@ -119,7 +120,7 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
     expect(get('W-5B').schemePages).toEqual([16]);
     expect(get('W-5A').questionText).toContain('Féile Cheoil');
     expect(get('W-5B').questionText).toContain('amuigh ag siúl le do chara');
-    const form=cards.find(c=>c.id==='irish-2014-fl-w-4b-cocaire')!;
+    const form=cards.find(c=>c.id==='irish-2014-fl-w-4b')!;
     const story=cards.find(c=>c.id==='irish-2014-fl-w-5b')!;
     if(form.rubric.system!=='irish'||story.rubric.system!=='irish') throw new Error('wrong rubric');
     // Choice is not a route: form and story are marked on their own cards.
@@ -142,8 +143,9 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
     for(const [n,pages] of [['1',[2,3,4]],['2',[5,6,7,8,9,10,11]],['3',[13,14,15,16,17]]] as const) {
       expect(map.q.find((q:{n:string})=>q.n===n).paperRegion.map((r:{p:number})=>r.p)).toEqual(pages);
     }
-    for(const n of ['W-4B','W-4B-cocaire','W-4B-doirseoir','W-4B-freastalai']) expect(topics(n)).toEqual(['irish-foundation-fill-in-a-form']);
-    expect(map.q.find((q:{n:string})=>q.n==='W-4B-freastalai').practiceInstruction).toContain('Freastalaí');
+    expect(topics('W-4B')).toEqual(['irish-foundation-fill-in-a-form']);
+    expect(map.q.some((q:{n:string})=>/^W-4B-/.test(q.n))).toBe(false);
+    expect(map.q.find((q:{n:string})=>q.n==='W-4B').practiceInstruction).not.toMatch(/Cócaire|Doirseoir|Freastalaí/);
     expect(topics('R-2C')).toEqual(['irish-foundation-reading-newspaper-article']);
     expect(topics('3')).not.toContain('irish-foundation-write-a-letter');
     expect((map.q.find((q:{n:string})=>q.n==='3').schemeRegion??map.q.find((q:{n:string})=>q.n==='3').region).map((r:{p:number})=>r.p)).toEqual([8,9,10,11,12,13,14,15,16]);

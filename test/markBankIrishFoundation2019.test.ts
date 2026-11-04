@@ -13,11 +13,11 @@ const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
 
 describe('2019 Foundation independently reviewed boundaries',()=>{
   it('requires one Q4 and one Q5 and carries each printed choice on its options',()=>{
-    expect(cards).toHaveLength(59);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(59);
+    expect(cards).toHaveLength(58);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(58);
     cards.forEach(c=>expect(tariffReconciles(c),c.id).toBe(true));
     expect(authored.review.examStructure).toEqual({listening:120,matching:40,readingQ2:50,readingQ3:60,writingQ4:40,writingQ5:50,writing:90,total:360});
-    expect(authored.review.atomicPracticeCardIds).toHaveLength(59);
+    expect(authored.review.atomicPracticeCardIds).toHaveLength(58);
     // Choice is not a route: no reading pairs and no writing combinations.
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     expect(authored.cards.filter(c=>'memberCardIds' in c)).toEqual([]);
@@ -73,26 +73,27 @@ describe('2019 Foundation independently reviewed boundaries',()=>{
     expect(get('R-3C-5').criteria[0].permittedMarks).toEqual([0,3,4,6]);
   });
 
-  it('keeps the notice whole and expands both letter recipients with all four required picture headings',()=>{
+  it('keeps the notice whole and the letter, with both printed recipients, as one card with all four required picture headings',()=>{
     const notice=get('W-4A');
     expect(notice.criteria.map(c=>c.maxMarks)).toEqual([1,8,13,4,4,10]);
     expect(notice.questionText).toContain('Cead isteach?');
     expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Sinéad Aherne');
     expect(notice.criteria.find(c=>c.id==='pictiur2')!.guidance.join(' ')).toContain('Pionós -2');
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Airgead go dtí an seomra ríomhairí');
-    const letters=authored.cards.filter(c=>/^W-4B-(dearthair|deirfiur)$/.test(c.atlasQuestionId));
-    expect(letters).toHaveLength(2);
-    for(const [i,letter] of letters.entries()) {
+    // One printed letter, one card (decision 5): "do dheartháir / do dheirfiúr" stays in the printed text.
+    const letters=authored.cards.filter(c=>/^W-4B/.test(c.atlasQuestionId));
+    expect(letters.map(c=>[c.id,c.atlasQuestionId])).toEqual([['irish-2019-fl-w-4b','W-4B']]);
+    for(const letter of letters) {
       expect(letter.totalMarks).toBe(40);
       expect(letter.questionText).toContain('i Londain');
-      expect(letter.questionText).toContain('An rogha don chárta seo: litir chuig '+['do dheartháir','do dheirfiúr'][i]+'.');
+      expect(letter.questionText).not.toContain('An rogha don chárta seo');
+      expect(letter.questionText).toContain('Scríobh litir chuig do dheartháir / do dheirfiúr i Londain');
       expect(letter.questionText.match(/dhá phointe eolais/g)).toHaveLength(4);
       expect(letter.criteria.map(c=>c.maxMarks)).toEqual([2,1,1,2,6,6,6,6,10]);
       expect(letter.sourceMaterial.pages).toEqual([15]);
       expect(letter.schemePages).toEqual([11,12]);
       expect(letter.criteria.every(c=>c.kind==='award')).toBe(true);
     }
-    expect(letters[0].criteria).toEqual(letters[1].criteria);
     expect(notice.totalMarks).toBe(40);
     // Choice is not a route: no recipient-by-story combination cards.
     expect(authored.cards.some(c=>/^W-4B-(dearthair|deirfiur)-5[AB]$/.test(c.atlasQuestionId))).toBe(false);
@@ -123,7 +124,7 @@ describe('2019 Foundation independently reviewed boundaries',()=>{
     expect(irishMarks(story,{'irish:freagra':25})).toBe(25);
   });
 
-  it('joins every reviewed task to Atlas with full paper/scheme context and both letter recipients',()=>{
+  it('joins every reviewed task to Atlas with full paper/scheme context and the whole letter',()=>{
     const map=JSON.parse(readFileSync('public/paper-answers/2019/LC001BLP000IV.pdf.json','utf8'));
     const topics=(n:string)=>examTopicIdsForQuestion('irish','foundation',2019,'main',n,'single','iv','LC001BLP000IV.pdf');
     for(const c of authored.cards) {
@@ -136,8 +137,8 @@ describe('2019 Foundation independently reviewed boundaries',()=>{
     for(const [n,pages] of [['1',[2,3,4]],['2',[5,6,7,8,9,10,11]],['3',[13,14,15,16,17]]] as const) {
       expect(map.q.find((q:{n:string})=>q.n===n).paperRegion.map((r:{p:number})=>r.p)).toEqual(pages);
     }
-    expect(topics('W-4B-dearthair')).toEqual(['irish-foundation-write-a-letter']);
-    expect(map.q.find((q:{n:string})=>q.n==='W-4B-deirfiur').practiceInstruction).toContain('do dheirfiúr');
+    expect(topics('W-4B')).toEqual(['irish-foundation-write-a-letter']);
+    expect(map.q.some((q:{n:string})=>/^W-4B-/.test(q.n))).toBe(false);
     expect(topics('R-2C')).toEqual(['irish-foundation-reading-newspaper-article']);
     expect(topics('3')).not.toContain('irish-foundation-fill-in-a-form');
     expect(map.q.find((q:{n:string})=>q.n==='3').schemeRegion.map((r:{p:number})=>r.p)).toEqual([7,8,9,10,11,12,13,14,15]);

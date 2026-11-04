@@ -249,8 +249,7 @@
       "irish-2021-fl-r-3c-4",
       "irish-2021-fl-r-3c-5",
       "irish-2021-fl-w-4a",
-      "irish-2021-fl-w-4b-dearthair",
-      "irish-2021-fl-w-4b-deirfiur",
+      "irish-2021-fl-w-4b",
       "irish-2021-fl-w-5a",
       "irish-2021-fl-w-5b"
     ],
@@ -292,7 +291,22 @@
       "5A is Béárbaiciú sa Bhaile, scheme PDF13–14. 5B is the shopping-centre/pet-shop incident, scheme PDF14–16. Both have communication34 and language11, minus4 per missing reference within communication; approximately90words and length table80–90:0,60–79:-2,30–59:-3,<30:-4. 5B needs a reference to each of four pictures plus a fifth. There is no conflicting -5 reference line in this year.",
       "The poem Cuairt ar an Áiléar is three stanzas. Retain it in full with every passage, map, sign grid and writing picture sequence. Scheme transcripts PDF18–20 are answer material."
     ],
-    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn."
+    "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
+    "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",
+    "variantMerges": [
+      {
+        "cardId": "irish-2021-fl-w-4b",
+        "atlasQuestionId": "W-4B",
+        "withdrawnOptionCardIds": [
+          "irish-2021-fl-w-4b-dearthair",
+          "irish-2021-fl-w-4b-deirfiur"
+        ],
+        "printedOptions": [
+          "do dheartháir",
+          "do dheirfiúr"
+        ]
+      }
+    ]
   },
   "cards": [
     {
@@ -3354,20 +3368,20 @@
       }
     },
     {
-      "id": "irish-2021-fl-w-4b-dearthair",
+      "id": "irish-2021-fl-w-4b",
       "year": 2021,
       "level": "foundation",
       "paper": 1,
       "section": "3",
-      "atlasQuestionId": "W-4B-dearthair",
-      "questionRef": "2021 FL Scríobh · Ceist 4(b) · do dheartháir",
-      "questionText": "Féach ar na pictiúir thíos.\n\nChaith tú féin agus do chairde seachtain i dteach saoire cois farraige.\nScríobh litir chuig do dheartháir / do dheirfiúr i gCeanada ag insint dó / di:\n\n- Faoin bpóstaer don teach saoire a chonaic sibh (dhá phointe eolais) — Pictiúr 1\n- Faoin teach saoire agus faoi na háiseanna sa teach (dhá phointe eolais) — Pictiúr 2\n- Faoi na rudaí a rinne sibh gach lá (dhá rud) — Pictiúr 3\n- Faoi na rudaí a rinne sibh gach oíche (dhá rud) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.\n\nAn rogha don chárta seo: litir chuig do dheartháir.",
+      "atlasQuestionId": "W-4B",
+      "questionRef": "2021 FL Scríobh · Ceist 4(b)",
+      "questionText": "Féach ar na pictiúir thíos.\n\nChaith tú féin agus do chairde seachtain i dteach saoire cois farraige.\nScríobh litir chuig do dheartháir / do dheirfiúr i gCeanada ag insint dó / di:\n\n- Faoin bpóstaer don teach saoire a chonaic sibh (dhá phointe eolais) — Pictiúr 1\n- Faoin teach saoire agus faoi na háiseanna sa teach (dhá phointe eolais) — Pictiúr 2\n- Faoi na rudaí a rinne sibh gach lá (dhá rud) — Pictiúr 3\n- Faoi na rudaí a rinne sibh gach oíche (dhá rud) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.",
       "totalMarks": 45,
       "topicId": "irish-9-3",
       "examTopicKeys": [
         "letterWriting"
       ],
-      "conceptId": "irish-foundation-w-4b-dearthair",
+      "conceptId": "irish-foundation-w-4b",
       "paperFileid": "LC001BLP000IV",
       "schemePage": 11,
       "schemePages": [
@@ -3544,213 +3558,7 @@
           ]
         }
       ],
-      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme.",
-      "sourceMaterial": {
-        "kind": "source-text",
-        "label": "Scríobh · Ceist 4(b)",
-        "title": "Gaeilge Bonnleibhéal 2021 · Scríobh · Ceist 4(b)",
-        "pages": [
-          15
-        ],
-        "attribution": "© State Examinations Commission.",
-        "presentationNote": "Original examination pages, including every required picture or passage."
-      },
-      "additionalTopicIds": [
-        "irish-2-8"
-      ]
-    },
-    {
-      "id": "irish-2021-fl-w-4b-deirfiur",
-      "year": 2021,
-      "level": "foundation",
-      "paper": 1,
-      "section": "3",
-      "atlasQuestionId": "W-4B-deirfiur",
-      "questionRef": "2021 FL Scríobh · Ceist 4(b) · do dheirfiúr",
-      "questionText": "Féach ar na pictiúir thíos.\n\nChaith tú féin agus do chairde seachtain i dteach saoire cois farraige.\nScríobh litir chuig do dheartháir / do dheirfiúr i gCeanada ag insint dó / di:\n\n- Faoin bpóstaer don teach saoire a chonaic sibh (dhá phointe eolais) — Pictiúr 1\n- Faoin teach saoire agus faoi na háiseanna sa teach (dhá phointe eolais) — Pictiúr 2\n- Faoi na rudaí a rinne sibh gach lá (dhá rud) — Pictiúr 3\n- Faoi na rudaí a rinne sibh gach oíche (dhá rud) — Pictiúr 4\n\nN.B. Bíodh an leagan amach cuí ar do litir: seoladh, dáta, tús agus críoch oiriúnach.\n\nAn rogha don chárta seo: litir chuig do dheirfiúr.",
-      "totalMarks": 45,
-      "topicId": "irish-9-3",
-      "examTopicKeys": [
-        "letterWriting"
-      ],
-      "conceptId": "irish-foundation-w-4b-deirfiur",
-      "paperFileid": "LC001BLP000IV",
-      "schemePage": 11,
-      "schemePages": [
-        11,
-        12
-      ],
-      "taskRequirements": [
-        "Scríobh litir chuig do dheartháir nó do dheirfiúr i gCeanada faoin saoire.",
-        "Dhá phointe eolais faoi gach ceann de na ceithre phictiúr; leagan amach cuí."
-      ],
-      "criteria": [
-        {
-          "id": "seoladh",
-          "label": "Seoladh",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dhá chuid (1 + 1), as Gaeilge. Glac lena leithéid de “Bóthar Crumlin” nó “Sráid Patrick”. Ná glac le hainm an bhaile i mBéarla."
-          ]
-        },
-        {
-          "id": "data",
-          "label": "Dáta",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Glac le figiúirí."
-          ]
-        },
-        {
-          "id": "beannu",
-          "label": "Beannú",
-          "kind": "award",
-          "maxMarks": 1,
-          "permittedMarks": [
-            0,
-            1
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Ainm ar bith, fiú a chara."
-          ]
-        },
-        {
-          "id": "crioch",
-          "label": "Críoch / Slán",
-          "kind": "award",
-          "maxMarks": 2,
-          "permittedMarks": [
-            0,
-            1,
-            2
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Dhá chuid ag teastáil: Slán … agus ainm."
-          ]
-        },
-        {
-          "id": "pictiur1",
-          "label": "Pictiúr 1 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Faoin bpóstaer don teach saoire a chonaic sibh (dhá phointe eolais) Samplaí: an áit a raibh an póstaer le feiceáil…cathain a chonaic sibh an póstaer?...na sonraí ar an bpóstaer…áthas oraibh…chuir…glaoch teileafóin ar an uimhir sin…an t-úinéir… an costas/an praghas…ag caint leis na cairde…mar a mhothaigh gach duine faoi… "
-          ]
-        },
-        {
-          "id": "pictiur2",
-          "label": "Pictiúr 2 · dhá phointe eolais",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Faoin teach saoire agus faoi na háiseanna sa teach (dhá phointe eolais) Samplaí: an teach féin…an áit a raibh sé…na seomraí…na radhairc…an chistin…an gairdín… in aice na trá…an teach beag/mór, compordach...meaisín níocháin…leathanbhanda… "
-          ]
-        },
-        {
-          "id": "pictiur3",
-          "label": "Pictiúr 3 · dhá rud",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Faoi na rudaí a rinne sibh gach lá (dhá rud) Samplaí: ag snámh…ag sú na gréine…ag imirt cluichí ar an trá…ag bádóireacht…ag léamh… ag siúl...ag rothaíocht…ag iascaireacht…ag tumadh…ag surfáil... "
-          ]
-        },
-        {
-          "id": "pictiur4",
-          "label": "Pictiúr 4 · dhá rud",
-          "kind": "award",
-          "maxMarks": 7,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            " Faoi na rudaí a rinne sibh gach oíche (dhá rud) Samplaí: ag ithe i mbialann…ag caint is ag comhrá ag an mbord…ag dul chuig dioscó…ag imirt cluichí boird… "
-          ]
-        },
-        {
-          "id": "gaeilge",
-          "label": "Cruinneas Gaeilge",
-          "kind": "award",
-          "maxMarks": 11,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 3–4; Lag 2; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
-          ]
-        }
-      ],
-      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme.",
+      "markingGuideNote": "The letter stays whole: six layout marks, four seven-mark picture awards (4 + 3 for two points), and one shared eleven-mark language award. Two open information points per picture are not a closed printed menu. There is no word-count penalty in the published letter scheme. The printed options (do dheartháir, do dheirfiúr) are a choice inside this one task, so one card carries the whole task.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b)",
