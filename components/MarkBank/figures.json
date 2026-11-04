@@ -51622,5 +51622,107 @@
   "year": 2023,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q1f-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q1f-crop.png",
+  "md5": "6b181cf6df82388abba5518ab7a761df",
+  "alt": "The table or diagram printed with 2023 OL Q1(f), as the State Examinations Commission set it. It reads: tool A.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q1(f)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q2c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q2c-crop.png",
+  "md5": "ea202c83f57ca13c417b378a654be2d8",
+  "alt": "The table or diagram printed with 2023 OL Q2(c), as the State Examinations Commission set it. It reads: steering grips back support chassis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q2(c)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q3dii-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q3dii-crop.png",
+  "md5": "6e76ced4b3bbf62da37f0b4bdd96f3af",
+  "alt": "The table or diagram printed with 2023 OL Q3(d)(ii), as the State Examinations Commission set it. It reads: exoskeleton suit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3(d)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q7b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q7b-crop.png",
+  "md5": "01b0128a15b3793f795788c45466bd22",
+  "alt": "The table or diagram printed with 2023 OL Q7(b), as the State Examinations Commission set it. It reads: Shaft: Ø16.0 ± 0.05 mm Hole: Ø16.0 ± 0.03 mm copper fitting steel shaft.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q7c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q7c-crop.png",
+  "md5": "6696222bb25b431b0c799e8bd9733a9e",
+  "alt": "The table or diagram printed with 2023 OL Q7(c), as the State Examinations Commission set it. It reads: (i) (ii) (iii) (iv).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(c)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q7ci-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q7ci-crop.png",
+  "md5": "2e40abe5ddfe1949617f1d5a412fb3f6",
+  "alt": "The table or diagram printed with 2023 OL Q7(c)(i), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q7cii-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q7cii-crop.png",
+  "md5": "bc83c1bf8bab2de8965398004c6f011c",
+  "alt": "The table or diagram printed with 2023 OL Q7(c)(ii), as the State Examinations Commission set it. It reads: long leg short leg.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(c)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-paper-q7ciii-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q7ciii-crop.png",
+  "md5": "df3c8748dc6d686e1e6827c1e53a15db",
+  "alt": "The table or diagram printed with 2023 OL Q7(c)(iii), as the State Examinations Commission set it. It reads: colour bands.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q7(c)(iii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-OL-scheme-q5aii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-OL-scheme-q5aii-sol.png",
+  "md5": "104428d91dbf3fa75408465c41a5dd11",
+  "alt": "The marking scheme's printed answer for 2023 OL Q5(a)(ii), as the State Examinations Commission set it. It reads: Blow Molulding Vacuum forming Heat Plastic sheet Final shape Vacuum Mould Injection moulding.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q5(a)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
  }
 }

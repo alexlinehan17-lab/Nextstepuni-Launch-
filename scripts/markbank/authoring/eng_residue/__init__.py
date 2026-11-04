@@ -37,7 +37,7 @@ from lib import Refused                                    # noqa: E402
 PASS = ('use', 'marks', 'tariff', 'total', 'row_kind', 'notation', 'ladder',
         'lifted', 'special', 'figure', 'question_figure', 'labels', 'notes',
         'checked', 'context', 'omit', 'spread', 'suffix', 'from_run',
-        'from_runs', 'question_lift', 'group')
+        'from_runs', 'question_lift', 'group', 'routes')
 
 
 def module(year, level):

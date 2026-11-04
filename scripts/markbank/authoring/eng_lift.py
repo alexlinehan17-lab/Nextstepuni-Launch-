@@ -109,6 +109,23 @@ def lift(year, level, doc, page, rect, *, bullet=True, more=()):
                 if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
 
 
+def join(*parts):
+    """One printed paragraph that runs over a page break, as its pieces.
+
+    Each piece is a Lift of its own page; the paragraph is their words in
+    turn. `record` writes it as one line naming every piece's page and
+    rectangle, and `check` lifts each piece again and joins them.
+    """
+    if len(parts) < 2 or not all(hasattr(p, 'source') and not hasattr(p, 'parts')
+                                 for p in parts):
+        raise ValueError('join takes two or more single-page lifts')
+    if len({p.source[:3] for p in parts}) != 1:
+        raise ValueError('join reads one document')
+    obj = Lift(' '.join(parts), ('join',) + tuple(p.source for p in parts))
+    obj.parts = parts
+    return obj
+
+
 START = '<!-- markbank:eng-lifts -->'
 END = '<!-- /markbank:eng-lifts -->'
 
@@ -146,13 +163,16 @@ def record(year, level):
     lifts = _lifts_in(getattr(mod, 'CARDS', []), []) if mod else []
     lines, seen = [], set()
     for lf in lifts:
-        y, l, doc, page, rect = lf.source[:5]
+        pieces = getattr(lf, 'parts', None) or [lf]
+        y, l, doc = pieces[0].source[:3]
         if doc != 'scheme' or (y, l) != (year, level) or str(lf) in seen:
             continue
-        if len(lf.source) > 5:
-            raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle')
+        if any(len(pc.source) > 5 for pc in pieces):
+            raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle a page')
         seen.add(str(lf))
-        lines.append(f'p{page} [{", ".join(f"{v:g}" for v in rect)}] {lf}')
+        where = ' + '.join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
+                           for pc in pieces)
+        lines.append(f'{where} {lf}')
     md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')
     text = open(md, encoding='utf-8').read()
     if START in text:
@@ -174,12 +194,13 @@ def check(year, level):
     for line in (m.group(1).splitlines() if m else []):
         if not line.strip():
             continue
-        g = _re.match(r'^p(\d+) \[([^\]]+)\] (.*)$', line)
-        rect = [float(v) for v in g.group(2).split(',')]
-        again = lift(year, level, 'scheme', int(g.group(1)), rect)
-        if str(again) != g.group(3):
+        g = _re.match(r'^((?:p\d+ \[[^\]]+\](?: \+ )?)+) (.*)$', line)
+        pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')])
+                  for pg, r in _re.findall(r'p(\d+) \[([^\]]+)\]', g.group(1))]
+        again = pieces[0] if len(pieces) == 1 else join(*pieces)
+        if str(again) != g.group(2):
             bad += 1
-            print(f'MISMATCH p{g.group(1)} {rect}: {g.group(3)[:60]!r} != {again[:60]!r}')
+            print(f'MISMATCH {g.group(1)}: {g.group(2)[:60]!r} != {again[:60]!r}')
     print(f'engineering {year} {level}: {len((m.group(1).splitlines()) if m else [])} '
           f'recorded lifts, {bad} mismatched')
     return bad

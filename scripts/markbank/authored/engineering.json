@@ -12762,39 +12762,6 @@
   "notes": "The scheme prints '@ 12 marks (12)'."
  },
  {
-  "id": "eng-2023-ol-q2-c-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "reason-selection-each-material",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q2(c)(ii)",
-  "questionText": "State one reason for the selection of each material.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Reason: Increases the grip for the driver when holding the steering wheel.",
-    "marks": 6,
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Reason: Increases the grip for the driver when holding the steering wheel.",
-      "Reason: Can be easily moulded into the shape needed.",
-      "Reason: Light but strong"
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Three reasons @ 2 marks (15)'."
- },
- {
   "id": "eng-2023-ol-q2-d-i",
   "topicId": "eng-1-2",
   "conceptId": "term-alloy",
@@ -12954,71 +12921,6 @@
    }
   ],
   "notes": "The scheme prints 'any two @ 5 marks (10)'."
- },
- {
-  "id": "eng-2023-ol-q3-d-i",
-  "topicId": "eng-3-8",
-  "conceptId": "toughness-or-areas-where-robotic-technology",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q3(d)(i)",
-  "questionText": "Explain any two of the following metal properties: Toughness, OR Describe two areas where robotic technology is used in health care.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
-    "marks": 6,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
-      "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.",
-      "Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'two areas @ 3 marks'."
- },
- {
-  "id": "eng-2023-ol-q3-d-ii",
-  "topicId": "eng-3-8",
-  "conceptId": "ductility-or-ways-exoskeleton-suits-can",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q3(d)(ii)",
-  "questionText": "Explain any two of the following metal properties: Ductility, OR State two ways in which exoskeleton suits can help the recovery process.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
-    "marks": 6,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
-      "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Two ways @ 3 marks (12)'."
  },
  {
   "id": "eng-2023-ol-q4-a-i",
@@ -13312,36 +13214,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2023-ol-q5-a-ii",
-  "topicId": "eng-2-13",
-  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q5(a)(ii)",
-  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes named by you at 5(a)(i) above.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 11,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
-    "marks": 11,
-    "accepts": [
-     "This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed.",
-     "Injection moulding Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components."
-    ]
-   }
-  ],
-  "notes": "The scheme prints '@ 11 marks (20)'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2023-ol-q5-b",
   "topicId": "eng-1-9",
   "conceptId": "relation-plastic-technology-any-following-elastic",
@@ -13504,40 +13376,8 @@
   "notes": "The scheme prints 'any three @ 5 marks (15)'."
  },
  {
-  "id": "eng-2023-ol-q6-c-i",
-  "topicId": "eng-2-10",
-  "conceptId": "lathe-processes-used-manufacture-thumbscrew-or",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q6(c)(i)",
-  "questionText": "Name two lathe processes used in the manufacture of the thumbscrew. OR What does CNC stand for?",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Knurling / Parting off.",
-    "marks": 6,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Knurling / Parting off.",
-      "CNC - Computer Numerical Control."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'two processes @ 3 marks'."
- },
- {
   "id": "eng-2023-ol-q6-c-ii",
-  "topicId": "eng-2-13",
+  "topicId": "eng-2-11",
   "conceptId": "processes-named-you-6-c-i",
   "level": "ordinary",
   "year": 2023,
@@ -13631,15 +13471,291 @@
   "notes": "The scheme prints 'any two @ 6 marks (12)'."
  },
  {
+  "id": "eng-2023-ol-q1-f",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-tool-shown-application",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(f)",
+  "questionText": "Identify tool A shown and give one application for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tool A is a socket ratchet.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The socket ratchet is used with a socket head to open or close fittings like nuts.",
+    "marks": 3
+   }
+  ],
+  "figureKey": "engineering-2023-OL-paper-q1f-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "socket ratchet.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-ol-q2-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "suitable-material-each-parts-labelled-electric",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q2(c)(i)",
+  "questionText": "Name a suitable material for each of the parts labelled on the electric go-kart below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Steering grips: (i) Material: Rubber",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Back support: (i) Material: Plastic",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Chassis: (i) Material: Steel tube",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2023-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q2-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "reason-selection-each-material",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q2(c)(ii)",
+  "questionText": "State one reason for the selection of each material.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Steering grips: (i) Material: Rubber (ii) Reason: Increases the grip for the driver when holding the steering wheel.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Back support: (i) Material: Plastic (ii) Reason: Can be easily moulded into the shape needed.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Chassis: (i) Material: Steel tube (ii) Reason: Light but strong",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2023-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-metal-properties",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(d)",
+  "questionText": "Explain any two of the following metal properties: (i) Toughness, (ii) Ductility, (iii) Malleability.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+      "(ii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+      "(iii) Malleability: The ability to be hammered or rolled into a thin sheet without fracturing."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 6 Marks'. The paper sets this (d) and the robotics (d) beneath it either side of an OR."
+ },
+ {
+  "id": "eng-2023-ol-q3-d-i",
+  "topicId": "eng-3-14",
+  "conceptId": "toughness-or-areas-where-robotic-technology",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(d)(i)",
+  "questionText": "Describe two areas where robotic technology is used in health care.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world.",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"."
+ },
+ {
+  "id": "eng-2023-ol-q3-d-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "ductility-or-ways-exoskeleton-suits-can",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(d)(ii)",
+  "questionText": "State two ways in which exoskeleton suits can help the recovery process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves.",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2023-OL-paper-q3dii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q5-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(a)(ii)",
+  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes named by you at 5(a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
+    "marks": 11,
+    "accepts": [
+     "Vacuum forming A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the poyous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed.",
+     "Injection moulding Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(Award 1 @ 11 Marks)'.",
+  "figureKey": "engineering-2023-OL-scheme-q5aii-sol",
+  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "lathe-processes-used-manufacture-thumbscrew-or",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q6(c)(i)",
+  "questionText": "Name two lathe processes used in the manufacture of the thumbscrew. OR What does CNC stand for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Knurling",
+    "marks": 3,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Parting off.",
+    "marks": 3,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CNC - Computer Numerical Control.",
+    "marks": 6,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR. The scheme prints 'Award 2 @ 3 Marks' for the two lathe processes and 'Award 1 @ 6 Marks' for what CNC stands for."
+ },
+ {
   "id": "eng-2023-ol-q7-b-i",
-  "topicId": "eng-1-5",
+  "topicId": "eng-3-12",
   "conceptId": "largest-diameter-hole-copper-fitting",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q7(b)(i)",
-  "questionText": "Largest diameter of the hole in the copper fitting.",
+  "questionText": "A copper fitting and a steel shaft are machined to the dimensions shown below. State the: (i) Largest diameter of the hole in the copper fitting.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -13647,23 +13763,74 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
+    "kind": "point",
     "verbatim": "Largest diameter of the hole in the copper fitting: 16.03 mm",
     "marks": 5
    }
   ],
-  "notes": "The scheme prints 'One part @ 5 marks'."
+  "questionFigureKey": "engineering-2023-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-b-ii",
+  "topicId": "eng-3-12",
+  "conceptId": "nominal-diameter-shaft",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(b)(ii)",
+  "questionText": "A copper fitting and a steel shaft are machined to the dimensions shown below. State the: (ii) Nominal diameter of the shaft.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the shaft: 16.00 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2023-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-b-iii",
+  "topicId": "eng-3-12",
+  "conceptId": "smallest-diameter-shaft",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(b)(iii)",
+  "questionText": "A copper fitting and a steel shaft are machined to the dimensions shown below. State the: (iii) Smallest diameter of the shaft.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the shaft: 15.95 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2023-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q7-b-iv",
-  "topicId": "eng-1-5",
+  "topicId": "eng-3-12",
   "conceptId": "tolerance-hole-copper-fitting",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q7(b)(iv)",
-  "questionText": "Tolerance of the hole in the copper fitting.",
+  "questionText": "A copper fitting and a steel shaft are machined to the dimensions shown below. State the: (iv) Tolerance of the hole in the copper fitting.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -13671,12 +13838,149 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
+    "kind": "point",
     "verbatim": "Tolerance of the hole in the copper fitting: 0.06 mm",
     "marks": 5
    }
   ],
-  "notes": "The scheme prints 'One part @ 5 marks (20)'."
+  "questionFigureKey": "engineering-2023-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application of each instrument named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Digital vernier calliper",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Digital vernier calliper",
+      "(ii) Spring divider",
+      "(iii) Vernier height gauge",
+      "(iv) Engineers square:"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "(i) Digital vernier calliper - Used for accurately measuring the diameter of round bars or the internal diameter of holes. The measurement can be read directly from a digital display.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Digital vernier calliper - Used for accurately measuring the diameter of round bars or the internal diameter of holes. The measurement can be read directly from a digital display.",
+      "(ii) Spring divider - Spring dividers are used for marking out work. Sharp points can be used to scribe the workpiece, creating arcs and circles. They can also be used to gauge the distance between two points.",
+      "(iii) Vernier height gauge - A height gauge is a measuring device used for determining the height of objects or for transferring measurements to a workpiece when marking out.",
+      "(iv) Engineers square: - An engineer square is used to check the squareness of two edges and to help mark lines at 90° to an edge."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name (Award 3 @ 3 Marks), Application (Award 3 @ 3 Marks)'.",
+  "questionFigureKey": "engineering-2023-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "use-solenoid",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(c)(i)",
+  "questionText": "State one use of a solenoid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A solenoid is an electromagnet, used to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….",
+    "marks": 6
+   }
+  ],
+  "notes": "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\".",
+  "questionFigureKey": "engineering-2023-OL-paper-q7ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "why-does-light-emitting-diode-shown",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(c)(ii)",
+  "questionText": "Why does the light emitting diode shown have one long leg and one short leg?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The LED shown has one long leg and one short leg to ensure it is connected into a circuit the correct way i.e. The long leg is connected to the positive and the short leg to the negative connection.",
+    "marks": 6
+   }
+  ],
+  "notes": "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\".",
+  "questionFigureKey": "engineering-2023-OL-paper-q7cii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-ol-q7-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "function-colour-bands-fixed-resistor-shown",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(c)(iii)",
+  "questionText": "State the function of the colour bands on the fixed resistor shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The colour bands on a fixed resistor are used to calculate the resistance in ohms, of a fixed resistor.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Brown, Black, Orange (1 0) X 1000 = 10000 Ohms or 10 KΩ",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Award 1 @ 6 Marks'. The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\".",
+  "questionFigureKey": "engineering-2023-OL-paper-q7ciii-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q1-a",

@@ -415,7 +415,7 @@ class Author:
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
              tick=None, first_sentence=False, ladder=None, lifted=None,
-             special=None, question_lift=None, group=None):
+             special=None, question_lift=None, group=None, routes=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         clean = self.subject in QUESTION_CLEANING
@@ -796,6 +796,20 @@ class Author:
             computed = total
         elif ladder is not None:
             computed = ladder
+        elif clean and routes:
+            # Each branch of a printed OR makes the tariff on its own; rows
+            # outside every route count toward both.
+            if len(routes) != len(marks):
+                raise Refused(f'{ref}: {len(routes)} routes for {len(marks)} rows')
+            common = sum(m for m, r in zip(marks, routes) if not r)
+            by_route = {}
+            for m, r in zip(marks, routes):
+                if r:
+                    by_route[r] = by_route.get(r, 0) + m
+            sums = sorted({common + n for n in by_route.values()})
+            if len(sums) != 1 or (total is not None and sums[0] != total):
+                raise Refused(f'{ref}: the routes sum to {sums}, not the {total} given')
+            computed = sums[0]
         else:
             computed = sum(marks)
             if total is not None and total != computed:
@@ -854,6 +868,11 @@ class Author:
                 row['accepts'] = accepts
             if i == 1 and context:
                 row['contextNote'] = context
+            # The two answers either side of a printed OR, on one card: a row
+            # belongs to the branch it answers, and the session counts one
+            # branch, never a mix (the deck checks each sums to the tariff).
+            if clean and routes and routes[i - 1]:
+                row['route'] = routes[i - 1]
             rows.append(row)
 
         card = {
