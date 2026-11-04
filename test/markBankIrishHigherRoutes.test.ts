@@ -81,7 +81,9 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       if (!('atlasQuestionId' in raw) || !('reviewedPaperPages' in raw) || !('schemePages' in raw)) throw new Error('Missing reviewed identity');
       const card = byId.get(raw.id)!;
       if (/-prose-2b-|-poetry-3b-/.test(card.id)) {
-        expect(card.questionText).toContain('Níl cead aon ábhar a bhaineann le');
+        // Printed under the section heading, before (a): the card's lead-in, never a sentence of its last part.
+        expect(card.stem).toMatch(/^Níl cead aon ábhar a bhaineann le (?:Prós|Filíocht) Ainmnithe a úsáid i bhfreagra ar an (?:bPrós|bhFilíocht) Roghnach\.$/);
+        expect(card.questionText).not.toContain('Níl cead');
       }
       if (card.id.includes('-poetry-3b-')) {
         expect(card.questionText).not.toMatch(/thíos\. Níl cead|\(a\) nó \(b\)/);

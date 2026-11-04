@@ -9525,7 +9525,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Prós 2B(a) · Scannán nó dráma roghnach",
-      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa scannán sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa dráma sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa scannán sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh an príomhcharachtar (an phríomhphearsa) sa dráma sin. Déan plé ar an léargas a thugtar dúinn ar iompar an duine sin agus ar an gcaoi a dtéann iompar an duine sin i bhfeidhm ar imeachtaí an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-a-irish-4-7",
@@ -9606,7 +9606,8 @@
       "reviewedPaperPages": [
         9
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach."
     },
     {
       "id": "irish-2022-hl-p2-prose-2b-b",
@@ -9615,7 +9616,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Prós 2B(b) · Úrscéal roghnach",
-      "questionText": "Maidir leis an ngiota as an úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an ghiota sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an ghiota. Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionText": "Maidir leis an ngiota as an úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an ghiota sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an ghiota. Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (30 marc)",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-b-irish-4-7",
@@ -9709,7 +9710,8 @@
       "reviewedPaperPages": [
         9
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach."
     },
     {
       "id": "irish-2022-hl-p2-poetry-3a-a",
@@ -9909,7 +9911,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
-      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc)",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-a-irish-5-6",
@@ -10016,7 +10018,8 @@
       "reviewedPaperPages": [
         12
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach."
     },
     {
       "id": "irish-2022-hl-p2-poetry-3b-b",
@@ -10025,7 +10028,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
-      "questionText": "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an gcaoi a ndéantar forbairt ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair pointe amháin eolais as an dán faoin teicníc sin. (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "questionText": "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an gcaoi a ndéantar forbairt ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair pointe amháin eolais as an dán faoin teicníc sin. (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc)",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-b-irish-5-6",
@@ -10132,7 +10135,8 @@
       "reviewedPaperPages": [
         12
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach."
     },
     {
       "id": "irish-2022-hl-p2-literature-4-a",
@@ -26632,7 +26636,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2024 HL Paper 2 Prós 2B(a) · Scannán nó dráma roghnach",
-      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an scannáin sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dráma sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionText": "(a) Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach. Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an scannáin sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an scannáin. Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc) nó Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dráma sin. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma. Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-a-irish-4-7",
@@ -26726,7 +26730,8 @@
       "reviewedPaperPages": [
         8
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach."
     },
     {
       "id": "irish-2024-hl-p2-prose-2b-b",
@@ -26735,7 +26740,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2024 HL Paper 2 Prós 2B(b) · Gearrscéal roghnach",
-      "questionText": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, roghnaigh duine de na carachtair (na pearsana) sa ghearrscéal sin. Déan plé ar an léargas a thugtar dúinn ar mheon agus ar iompar an duine sin ó thús deireadh an ghearrscéil. Ní mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (30 marc) Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "questionText": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, roghnaigh duine de na carachtair (na pearsana) sa ghearrscéal sin. Déan plé ar an léargas a thugtar dúinn ar mheon agus ar iompar an duine sin ó thús deireadh an ghearrscéil. Ní mór teideal an ghearrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn. (30 marc)",
       "totalMarks": 30,
       "topicId": "irish-4-7",
       "conceptId": "irish-prose-2b-b-irish-4-7",
@@ -26816,7 +26821,8 @@
       "reviewedPaperPages": [
         8
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach."
     },
     {
       "id": "irish-2024-hl-p2-poetry-3a-a",
@@ -27079,7 +27085,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2024 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
-      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Cén ghné den dán is fearr leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Cén ghné den dán is fearr leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc)",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-a-irish-5-6",
@@ -27186,7 +27192,8 @@
       "reviewedPaperPages": [
         11
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach."
     },
     {
       "id": "irish-2024-hl-p2-poetry-3b-b",
@@ -27195,7 +27202,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2024 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
-      "questionText": "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Cén mothúchán is láidre atá sa dán, dar leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair dhá phointe eolais as an dán faoin teicníc sin. (9 marc) Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn. Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
+      "questionText": "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (15 mharc) (ii) Cén mothúchán is láidre atá sa dán, dar leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair dhá phointe eolais as an dán faoin teicníc sin. (9 marc) Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn.",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-b-irish-5-6",
@@ -27302,7 +27309,8 @@
       "reviewedPaperPages": [
         11
       ],
-      "reviewedAt": "2026-10-07"
+      "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach."
     },
     {
       "id": "irish-2024-hl-p2-literature-4-a",
@@ -41535,7 +41543,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · íomhánna",
-      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach. An rogha don chárta seo: íomhánna.",
+      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) An rogha don chárta seo: íomhánna.",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-a-iomhanna-irish-5-6",
@@ -41644,6 +41652,7 @@
         12
       ],
       "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
       "selectedRoute": "íomhánna"
     },
     {
@@ -41653,7 +41662,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · codarsnacht",
-      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach. An rogha don chárta seo: codarsnacht.",
+      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) An rogha don chárta seo: codarsnacht.",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-a-codarsnacht-irish-5-6",
@@ -41762,6 +41771,7 @@
         12
       ],
       "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
       "selectedRoute": "codarsnacht"
     },
     {
@@ -41771,7 +41781,7 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · mothúcháin",
-      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach. An rogha don chárta seo: mothúcháin.",
+      "questionText": "(a) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. (15 mharc) (ii) Conas a chuaigh an dán seo i bhfeidhm ort? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) (6 mharc) (iii) Cé a chum an dán seo? Scríobh nóta gairid ar shaol agus ar shaothar an fhile sin. (9 marc) An rogha don chárta seo: mothúcháin.",
       "totalMarks": 30,
       "topicId": "irish-5-6",
       "conceptId": "irish-poetry-3b-a-mothuchain-irish-5-6",
@@ -41880,6 +41890,7 @@
         12
       ],
       "reviewedAt": "2026-10-07",
+      "stem": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.",
       "selectedRoute": "mothúcháin"
     },
     {

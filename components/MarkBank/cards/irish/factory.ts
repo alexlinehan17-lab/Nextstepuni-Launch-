@@ -37,6 +37,8 @@ interface AuthoredIrishCard {
   paper: 1 | 2;
   section: '1' | '2';
   questionRef: string;
+  /** The lead-in the paper prints before the question proper, e.g. 2B's "Níl cead aon ábhar …" restriction. */
+  stem?: string;
   questionText: string;
   totalMarks: number;
   topicId: string;
@@ -172,6 +174,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   paperFileid: card.paperFileid,
   section: card.section,
   questionRef: card.questionRef,
+  ...(card.stem ? { stem: card.stem } : {}),
   questionText: card.questionText,
   sourceMaterial: card.sourceMaterial,
   audioMaterial: card.audioMaterial,

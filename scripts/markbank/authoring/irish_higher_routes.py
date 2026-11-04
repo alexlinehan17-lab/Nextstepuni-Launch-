@@ -130,12 +130,16 @@ def apply_review(cards):
         def put(key, atlas, text, topic, pages, scheme_pages, criteria, title, requirements=None, template=None, route=None):
             identifier = f'irish-{year}-hl-p2-{key}'
             card = copy.deepcopy(by_id[template or identifier])
+            stem = None
             if key.startswith(('prose-2b-', 'poetry-3b-')):
                 restriction = ('Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.'
                                if key.startswith('prose') else
                                'Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.')
-                if restriction not in text:
-                    text += ' '+restriction
+                # The paper prints the restriction under the section heading, before (a) (2022 PDF 9 and 12,
+                # 2024 PDF 8 and 11): the card's lead-in line, as printed, never a sentence of its last part.
+                assert restriction in p[pages[0]], (key, 'restriction not printed on the route page')
+                text = compact(text).replace(restriction, '').strip()
+                stem = restriction
             card.update(id=identifier, questionRef=f'{year} HL Paper 2 {title}',
                         questionText=compact(text), topicId=topic,
                         conceptId=f'irish-{key}-{topic}', totalMarks=30,
@@ -146,6 +150,7 @@ def apply_review(cards):
                         taskRequirements=requirements or ['Freagair gach fochuid atá priontáilte sa rogha seo.', 'Úsáid tagairtí cruinne agus ábhartha don téacs.'],
                         markingGuideNote='One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting examples are indicative; other valid points are credited on their merits. Do not add alternative route tariffs together.')
             if route: card['selectedRoute'] = route
+            if stem: card['stem'] = stem
             if identifier not in by_id: cards.append(card)
             else: cards[cards.index(by_id[identifier])] = card
             by_id[identifier] = card
