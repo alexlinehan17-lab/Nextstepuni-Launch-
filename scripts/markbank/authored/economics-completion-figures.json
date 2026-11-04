@@ -5719,5 +5719,247 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p05-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section A Q1(b)(i)",
+    "description": "The marking scheme’s completed diagram: Price against Quantity, line 1 rising steeply, U-shaped line 2 and horizontal line 3. Between line 3 and a lower horizontal line from the point where line 1 crosses line 2, a hatched rectangle is labelled SNPs, with an arrow pointing to it.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        313,
+        118,
+        565,
+        305
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p08-q6i-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section A Q6(i)",
+    "description": "The marking scheme’s working: +100 over +€6,000, times €57,000 + €63,000 over 100 + 200, that is €120,000 over 300, equals +6.67. Each figure, the times sign and the answer’s + sign carry a raised 1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        125,
+        205,
+        470,
+        246
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p11-q1aii-diagrams.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s two diagrams. Movement along a supply curve: one supply curve S labelled, a price rise from P1 to P2 moving the quantity supplied from Q1 to Q2 along it. Shift in a supply curve: the curve S0 with S Increase to its right and S decease to its left, arrows showing each shift.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        30,
+        432,
+        570,
+        599
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p13-q1c-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q1(c)",
+    "description": "The marking scheme’s diagram: P against Q, a vertical supply curve S at 30,000 and a falling demand curve D. They cross at P1. At the lower ticket price P2 the quantity demanded is more than 30,000, and the gap is labelled Excess Demand.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        135,
+        105,
+        470,
+        300
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p15-q2aiii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q2(a)(iii)",
+    "description": "The marking scheme’s kinked demand curve: P against Q, a shallow segment from A to B and a steep segment from B to C, kinked at B, with P1 and Q1 marked at the kink.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 15,
+      "rectPoints": [
+        160,
+        105,
+        480,
+        355
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p22-q4bii-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q4(b)(ii)",
+    "description": "The marking scheme’s table: Output 1 to 5, Price 20, Total Revenue 20 to 100, Total Cost 42, 60, 77, 97, 130; MR 40 - 20 = 20, 60 - 40 = 20, 80 - 60 = 20, 100 - 80 = 20; MC 60 - 42 = 18, 77 - 60 = 17, 97 - 77 = 20, 130 - 97 = 33. The row for output 4 is boxed.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        65,
+        140,
+        505,
+        256
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p22-q4biii-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q4(b)(iii)",
+    "description": "The marking scheme’s graph, MC and MR: Price / Costs 0 to 45 against Quantity 1 to 5. MR is horizontal at 20; MC falls slightly from output 2 to 3 and then rises, crossing MR at output 4, where an arrow points down to the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        68,
+        338,
+        505,
+        600
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p26-q5biii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q5(b)(iii)",
+    "description": "The marking scheme’s two methods. Method 1: 1 over 0.2 + 0.2, then 1 over 0.4, then 2.5. Method 2: 1 over 1 - (0.8 - 0.2), then 1 over 1 - 0.6, then 2.5. A star marks each item worth 1 mark; the correct answer is 4 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        65,
+        438,
+        550,
+        612
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-scheme-p26-q5biv-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 HL Section B Q5(b)(iv)",
+    "description": "The marking scheme’s working: Shortfall in national income: €620m - €500m = €120m; So the government must increase spending by: €120m over 2.5 = €48m. Each of the five figures carries a raised 2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        70,
+        680,
+        470,
+        750
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-paper-p02-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 HL Section A Q1",
+    "description": "A diagram with Price on the vertical axis and Quantity on the horizontal: line 1 rises steeply, line 2 is U-shaped and line 3 is horizontal, line 1 crossing line 2 below line 3.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034ALP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        318,
+        118,
+        578,
+        296
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-HL-paper-p06-q4b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 HL Section B Q4(b)",
+    "description": "A table: Output 1 to 5; Price (€) 20 at every output; Total Revenue (€) 20, 40, 60, 80, 100; Total Cost (€) 42, 60, 77, 97, 130.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        100,
+        415,
+        500,
+        510
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

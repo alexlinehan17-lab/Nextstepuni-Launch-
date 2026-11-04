@@ -16,6 +16,7 @@ import higher2018Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2018Review from '../scripts/markbank/authoring/reviews/economics-2018-ol-ev.json';
 import higher2017Review from '../scripts/markbank/authoring/reviews/economics-2017-hl-ev.json';
 import ordinary2017Review from '../scripts/markbank/authoring/reviews/economics-2017-ol-ev.json';
+import higher2016Review from '../scripts/markbank/authoring/reviews/economics-2016-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -325,10 +326,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus: 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (reviewed variants 19-25).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(41);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(47);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(25);
+    // Old syllabus: 2016 Higher, 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (reviewed variants 19-26).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(40);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(46);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(26);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1197,6 +1198,66 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     // The scheme's text layer sets no-break spaces; none reaches a card.
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', ' ', ' in Q Ireland']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 62 independently counted 2016 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2016);
+    const tasks = higher2016Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(62);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2016Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2016, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2016 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75 (B8(a) is four area cards of 5, each counted).
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2016 Higher ladders at their printed steps and each working by its marked items', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2016-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // One ladder over two parts or four terms is one card citing every part it prices.
+    expect(card('sa-q8').questionRef).toBe('2016 HL Section A Q8(a)–(b)');
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([7, 5, 5]);
+    expect(card('sb-q3-a').questionRef).toBe('2016 HL Section B Q3(a)(i)–(iv)');
+    expect(card('sb-q3-a').rows[0].group!.perOptionSteps).toEqual([8, 4, 4, 4]);
+    expect(card('sa-q9').rows[0].group!.perOptionSteps).toEqual([7, 5, 5]);
+    expect(card('sb-q7-c').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    expect(card('sb-q3-b-ii').rows.map(r => r.group!.perOptionSteps ?? null)).toEqual([[4, 3], null]);
+    // Each marked item of a working is its own claim.
+    expect(card('sa-q6-i').rows[0].group!.options).toEqual(['+ 100', 'x', '€57,000', '€63,000', '+ €6,000', '100', '200', '+', '6.67']);
+    expect(card('sa-q7-a').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('sb-q5-b-iv').rows.map(r => r.marks)).toEqual([2, 2, 2, 2, 2]);
+    expect(card('sb-q4-b-iii').rows[0].group!.options).toEqual(['Price', 'Quantity', 'MR', 'MC', 'Identify profit max. output']);
+    // Each printed area of B8(a) is its own card, the scheme's 5 not split across its rows.
+    for (const area of ['growth', 'prices', 'unemployment', 'interest']) {
+      expect(card(`sb-q8-a-${area}`).tariffModel.kind, area).toBe('questionTotal');
+    }
+    for (const c of CARDS.filter(item => item.year === 2016 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2016)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // The scheme's text layer sets its bullets as U+0002; none reaches a card.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '\u0002']) {
       expect(text, junk).not.toContain(junk);
     }
   });

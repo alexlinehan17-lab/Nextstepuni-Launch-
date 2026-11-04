@@ -145,6 +145,10 @@ HAND_CHECKED = {
     'econ-2017-ol-sb-q5-a-i',         # 2017 OL p8: "(i) Explain the term multiplier." (four words)
     'econ-2017-ol-sb-q5-c-i',         # 2017 OL p8: "(i) Explain the term economic growth." (five words)
     'econ-2017-ol-sb-q7-b-i',         # 2017 OL p9: "(i) Explain the underlined term." (four words)
+    'econ-2016-hl-sa-q1-b-ii',        # 2016 HL p2: "(ii) Explain the term supernormal profit" (five words)
+    'econ-2016-hl-sa-q7-a',           # 2016 HL p4: "(a) Define the term monetary policy." (five words)
+    'econ-2016-hl-sb-q5-a-i',         # 2016 HL p7: "(i) Define the term full employment." (five words)
+    'econ-2016-hl-sb-q6-a-i',         # 2016 HL p7: "(i) Explain the term exchange rate." (five words)
 }
 
 

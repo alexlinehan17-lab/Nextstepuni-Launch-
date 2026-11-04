@@ -1836,3 +1836,67 @@ Checks:
 - reconcile: 1,270/2,197, with 2017 OL at 65/65.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2016 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp9-12 are blank;
+- scheme pp1-4 are the covers, the note on published schemes, the title page
+  and the notes and index, and p40 the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 62 routes for the 63 printed asks (15 in Section A, 48 in Section B):
+- A Q8(a)-(b) is one card. The scheme prices two effects of the levy and one
+  alternative method on one ladder, 7 (4+3) for the 1st correct response and
+  5 (3+2) for each other, so neither part has a price of its own.
+- B3(a)(i)-(iv) is one card: one ladder, the 1st correct response 8 and the
+  2nd, 3rd and 4th 4 each.
+- B8(a) is four cards, one for each printed area, each 5. The scheme prices an
+  area "2 marks (approximate figure) + 3 marks (trend 1m + comment on trend
+  2m)" without tying the marks to its lines, so each card is questionTotal, as
+  2018 HL B7(a) is.
+
+11 crops: 9 hidden scheme solutions and 2 paper data crops. Two crops blank a
+sliver of neighbouring print that a rectangle could not leave out without
+cutting the diagram's own axis label: the paper Q1 diagram sits beside the "3?"
+that ends its ask, and the scheme's beside its answer table's border. Nothing of
+either diagram is touched.
+
+Decisions:
+- The scheme's text layer reports its round bullet as U+0002 on 116 lines.
+  `Old` now reads it as the bullet "•". No other old-syllabus scheme holds one,
+  and a diff of economics.json against HEAD shows 1,369 cards unchanged and 62
+  added.
+- Marked items of a working are claimed one by one:
+  - A Q6(i): nine items, each with a raised 1. They are a menu claimed nine
+    times at 1: +100, x, €57,000, €63,000, +€6,000, 100, 200, + and 6.67.
+  - A Q7(a): the definition is cut where its three printed 3s fall (the money
+    supply, interest rates, the availability of credit).
+  - B5(b)(iii): the starred working (4, * 1 mark each), Method 1 with Method 2
+    accepted, then the answer 4.
+  - B5(b)(iv): the five figures, each with a raised 2.
+- B4(b)(ii): the MR and MC columns, 4 each. Each cell is sliced and the cells
+  are joined with commas. The column-run rendering holds each column whole.
+- B4(b)(iii): the graph's five marked elements are a menu at 1 each. The
+  profit-maximising output is 3 and its explanation 4.
+- Ladders at their printed steps: A Q9 7 + 5 + 5, B3(b)(ii) challenges 4 + 3
+  with policies 4 + 4, and B7(c) 7 + 6 + 6 + 6.
+- Totals not split: B2(a)(i) 7 (oligopoly with its reason) and the B8(a)
+  areas.
+- B1(b)(i)-(iv): TRUE/FALSE 2 and the explanation 4, a card for each
+  statement.
+- B5(c) and B7(a) "any two of three" are one card each, claimed twice at 10.
+
+Refcheck: four short asks were read by hand.
+
+Topic review: 5 reference anomalies, each recorded with the review's reason.
+
+Checks:
+- econ_review: 26/66.
+- build: 1,395 cards, 0 dropped.
+- Build rule: 315 claims on this paper, 0 untraceable (67 trace by halves).
+- reconcile: 1,333/2,197, with 2016 HL at 63/63.
+- refcheck: 0 wrong.
+- cardlint: clean.

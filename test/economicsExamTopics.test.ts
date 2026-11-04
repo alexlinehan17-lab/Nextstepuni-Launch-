@@ -169,12 +169,16 @@ describe('Economics exam-topic registry', () => {
       // and emigration, the circular flow and Brexit are filed under their own
       // topics); Section A Q3 under growth and development; and Section A Q4
       // and Section B Q6(a)-(b) under globalisation (visible trade is
-      // international trade, the current budget fiscal policy).
-      matchedAssociations: 763,
-      referenceAnomalyAssociations: 140,
+      // international trade, the current budget fiscal policy). The 2016
+      // Higher review added five: Section A Q5(a) and (b) under government
+      // intervention (youth unemployment is employment), Q5(b) under national
+      // income, Q4 under market structures (economies of scale are costs) and
+      // Q9 under fiscal policy (the minimum wage is the labour market).
+      matchedAssociations: 758,
+      referenceAnomalyAssociations: 145,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 686,
+      matchedQuestionTopicLinks: 682,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
