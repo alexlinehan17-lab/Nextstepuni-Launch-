@@ -64,6 +64,7 @@ PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm]
 ANY_OF_NOTE = re.compile(r'^(?:\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)'
                          r'|((?:Any )?(?:ONE|TWO|THREE)) @ (\d+)M(?: each)?)$', re.I)
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
+NUMBER_WORDS = {n: w for w, n in WORDS.items()}
 
 
 def tidy(text):
@@ -146,9 +147,27 @@ def split_priced(card):
         # "Civilisation, wealth and manufactures (2M x 3)" (2013 Ordinary, (6)):
         # each of the named items at its price, when the count is the items'.
         items = [tidy(x) for x in re.split(r',\s*|\s+and\s+', text[:mult.start()]) if tidy(x)]
-        if len(items) == int(mult.group(2)) and not text[mult.end():].strip():
+        after = text[mult.end():].strip()
+        if len(items) == int(mult.group(2)) and not after:
             rows[:] = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': item, 'marks': int(mult.group(1))}
                        for i, item in enumerate(items, start=1)]
+            if row.get('contextNote'):
+                rows[0]['contextNote'] = row['contextNote']
+            return card
+        if (len(items) == int(mult.group(2)) and after.startswith('/') and tidy(after[1:])
+                and not INLINE_LOOSE.search(after)):
+            # The priced items, OR the answer after the solidus: "The spirit,
+            # content and enterprise (2M x 3)/ A free Constitution" (2013
+            # Ordinary, (6)). Two routes, as Chemistry's double solidus is: the
+            # three items at their price, or the alternative for the part's
+            # whole tariff; claiming one side locks the other.
+            rows[:] = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': item, 'marks': int(mult.group(1)),
+                        'route': 'priced-items'}
+                       for i, item in enumerate(items, start=1)]
+            rows.append({'id': f'r-{len(items) + 1}', 'kind': 'point', 'verbatim': tidy(after[1:]),
+                         'marks': total, 'route': 'alternative',
+                         'contextNote': f'The scheme accepts this instead of the {NUMBER_WORDS[len(items)]} answers above, '
+                                        f'for all {total} marks. The examiner marks one or the other.'})
             if row.get('contextNote'):
                 rows[0]['contextNote'] = row['contextNote']
             return card

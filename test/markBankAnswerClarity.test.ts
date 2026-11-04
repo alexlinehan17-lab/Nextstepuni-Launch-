@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(14);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(138);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(143);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -566,6 +566,19 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(bareTotal.rows.map(row => [row.verbatim, row.marks])).toEqual([
       ['Huge burning urns; flood-lighting by hundreds of powerful searchlights', 3],
       ['The mystical quality of the ritual was exaggerated; lights played eerily against the sky', 2],
+    ]);
+    // Priced items OR the answer after the solidus: "The spirit, content and enterprise (2M x 3)/
+    // A free Constitution" (2013 OL Q6 A4, (6)) is two routes; claiming one side locks the other.
+    const routed = cards.find(card => card.id === 'hist-2013-ol-em-s2t6a-q4')!;
+    expect(routed.rows.map(row => [row.verbatim, row.marks, row.route])).toEqual([
+      ['The spirit', 2, 'priced-items'], ['content', 2, 'priced-items'], ['enterprise', 2, 'priced-items'],
+      ['A free Constitution', 6, 'alternative'],
+    ]);
+    expect(rows.filter(({ row }) => row.route).map(({ card }) => card.id)).toEqual(Array(4).fill('hist-2013-ol-em-s2t6a-q4'));
+    // Bare-figure prices with the phrase running on: "In a slap-dash (3) meaningless (3) way" (2013 OL
+    // Topic 6 A1): the rows are the priced spans, never a joined row the scheme does not print whole.
+    expect(cards.find(card => card.id === 'hist-2013-ol-lm-s2t6a-q1')!.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['In a slap-dash', 3], ['meaningless', 3],
     ]);
   });
 
