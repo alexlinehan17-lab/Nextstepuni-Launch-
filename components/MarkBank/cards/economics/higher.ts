@@ -1091,8 +1091,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain, using a numerical example, how banks create credit in an economy. Answer for: Alternative B, the balance sheet.",
     tariffModel: {"kind":"fixed","notation":"4 + 6 + 5 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "r-sheet-1", kind: "point", verbatim: "Cash lodged by X 100 X's deposit 100 Total Assets 100 Total Liabilities 100", marks: 4, contextNote: "The first balance sheet, 4 marks, as the figure shows.", openList: true },
-    { id: "r-sheet-2", kind: "point", verbatim: "Cash lodged by X 100 Deposits 100 Loan 900 New Deposits 900 Total Assets 1,000 Total Liabilities 1,000", marks: 6, contextNote: "The second balance sheet, 6 marks.", openList: true },
+    { id: "r-sheet-1", kind: "point", verbatim: "Balance Sheet of a Bank", marks: 4, contextNote: "The first balance sheet, 4 marks: cash lodged by X of 100 against X’s deposit of 100, as the figure shows.", openList: true },
+    { id: "r-sheet-2", kind: "point", verbatim: "Balance Sheet of a Bank", marks: 6, contextNote: "The second balance sheet, 6 marks: cash of 100 and a loan of 900 against deposits of 100 and new deposits of 900, totals of 1,000, as the figure shows.", openList: true },
     { id: "r-explanation", kind: "anyN", verbatim: "Each step of the explanation", marks: 10, contextNote: "Explanation 10 marks: 5 at 2 marks each.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Mr. X lodges €100 into the bank","It knows that only 10% is demanded in cash.","It has enough cash to support total deposits of €1,000.","The bank can create another €900 in deposits. It does this by giving out loans of €900.","So €100 cash is sufficient for this purpose. This is shown in the new balance sheet."]} },
     ],
     sourceMaterial: {

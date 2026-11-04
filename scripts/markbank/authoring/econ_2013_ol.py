@@ -364,6 +364,8 @@ budget = (('property', 'Introduction of the household property tax (i.e. 0.18% o
            ['Revenue for colleges', 'Less strain on the government’s finances', 'Opportunity cost The government', 'Extension of college activities'],
            ['Discourage people attending third level', 'Inequitable These higher', 'Workforce less educated', 'Less FDI',
             'Students less disposable incomes']))
+NAMES = {'property': 'the household property tax', 'child-benefit': 'the reduction in child benefit',
+         'registration': 'the higher registration charge'}
 rows4 = []
 for key, label, pro, con in budget:
     for side_, opts in (('for', pro), ('against', con)):
@@ -371,8 +373,10 @@ for key, label, pro, con in budget:
         for k, h in enumerate(opts):
             prefix = f'{k + 1}. {h}' if not (key == 'property' and side_ == 'for' and k == 4) else '5. Economic The cost'
             found.append(unnum(cc(prefix)))
+        # The note names the measure: the app shows a group by its tariff, not its label.
         rows4.append(heading(f'r-{key}-{side_}', f"{H.traced(label.split(' (')[0])} — an argument {'in favour' if side_ == 'for' else 'against'}",
-                             found, 5, f"One argument {'in favour' if side_ == 'for' else 'against'}, " + H.traced('1 at 5 marks (2+3)') + '.'))
+                             found, 5, f"One argument {'in favour of' if side_ == 'for' else 'against'} {NAMES[key]}, "
+                             + H.traced('1 at 5 marks (2+3)') + '.'))
 add('sb-q4-c', '3-1', 'arguing-the-budget-2013-measures', ref('B', 4, '(c)'),
     H.q(6, 'Outline one economic argument in favour of and one economic argument against each', ' (30 marks)'), '6 x 5 (2 + 3)', 30,
     rows4, kind='fixed', **B)

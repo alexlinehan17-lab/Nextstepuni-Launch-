@@ -2356,3 +2356,25 @@ Checks:
 - reconcile: 1,808/2,197, with 2013 OL at 76/76.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## Batch 3 browser check: 2013-2015 (lane, 2026-11-04)
+
+There were 121 cases: every figure card (56) and one text card in five (65) of
+the 380 cards from 2015, 2014 and 2013, at both levels. Each ran on phone
+(390 x 844) and desktop (1440 x 1000), light and dark, for 484 runs. The
+official page reader was opened once per card. Eight runs were flagged, all
+for one cause: the check's answer needle also appears in the question. They
+are 2014 HL B2(b)(i), where "Equilibrium" appears in "long run equilibrium",
+and 2014 OL A Q3, where "INCREASING" appears in "(increasing / decreasing)".
+Neither card shows its answer before the reveal, and the screenshots confirm
+it.
+
+Reading the screenshots found two faults, and both are fixed:
+- 2013 OL B4(c): the app shows a group by its tariff, not by its label, so the
+  six argument groups did not say which measure each belonged to. Each note
+  now names its measure.
+- 2013 HL B6(a)(i) balance-sheet route: the two sheet rows flattened each
+  table into one line. Each sheet is now claimed by the scheme's own title,
+  Balance Sheet of a Bank, with a note saying which sheet it is. The sheets
+  themselves remain the hidden crop.
+Those two cards were run again on all four views after the fix.

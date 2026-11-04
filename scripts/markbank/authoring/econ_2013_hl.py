@@ -407,10 +407,13 @@ add('sb-q6-a-i-reserve-ratio', '3-4', 'how-banks-create-credit', ref('B', 6, '(a
     kind='fixed', figure=SOL + 'p26-q6ai-example', **B)
 add('sb-q6-a-i-balance-sheet', '3-4', 'how-banks-create-credit', ref('B', 6, '(a)(i)', 'the balance sheet'),
     f'{q6ai} Answer for: {H.traced("Alternative B")}, the balance sheet.', '4 + 6 + 5 x 2', 20,
-    [point('r-sheet-1', H.traced("Cash lodged by X 100 X's deposit 100 Total Assets 100 Total Liabilities 100"), 4,
-           'The first balance sheet, 4 marks, as the figure shows.'),
-     point('r-sheet-2', H.traced('Cash lodged by X 100 Deposits 100 Loan 900 New Deposits 900 Total Assets 1,000 Total Liabilities 1,000'), 6,
-           'The second balance sheet, 6 marks.'),
+    # Each sheet is claimed by the scheme's own title for it; the sheets themselves are the hidden crop,
+    # so no table is flattened into a row.
+    [point('r-sheet-1', H.traced('Balance Sheet of a Bank'), 4,
+           'The first balance sheet, 4 marks: cash lodged by X of 100 against X’s deposit of 100, as the figure shows.'),
+     point('r-sheet-2', H.traced('Balance Sheet of a Bank'), 6,
+           'The second balance sheet, 6 marks: cash of 100 and a loan of 900 against deposits of 100 and new deposits of '
+           '900, totals of 1,000, as the figure shows.'),
      anyN('r-explanation', 'Each step of the explanation', 10, 5, 2,
           H.split('1. Mr. X lodges €100 into the bank', 'Explanation 10 marks',
                   ['Mr. X lodges €100 into the bank', 'It knows that only 10% is demanded in cash.', 'It has enough cash to support',

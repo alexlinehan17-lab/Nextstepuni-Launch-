@@ -2112,18 +2112,18 @@
    {
     "id": "r-sheet-1",
     "kind": "point",
-    "verbatim": "Cash lodged by X 100 X's deposit 100 Total Assets 100 Total Liabilities 100",
+    "verbatim": "Balance Sheet of a Bank",
     "marks": 4,
     "openList": true,
-    "contextNote": "The first balance sheet, 4 marks, as the figure shows."
+    "contextNote": "The first balance sheet, 4 marks: cash lodged by X of 100 against X’s deposit of 100, as the figure shows."
    },
    {
     "id": "r-sheet-2",
     "kind": "point",
-    "verbatim": "Cash lodged by X 100 Deposits 100 Loan 900 New Deposits 900 Total Assets 1,000 Total Liabilities 1,000",
+    "verbatim": "Balance Sheet of a Bank",
     "marks": 6,
     "openList": true,
-    "contextNote": "The second balance sheet, 6 marks."
+    "contextNote": "The second balance sheet, 6 marks: cash of 100 and a loan of 900 against deposits of 100 and new deposits of 900, totals of 1,000, as the figure shows."
    },
    {
     "id": "r-explanation",
@@ -4713,7 +4713,7 @@
     "verbatim": "Introduction of the household property tax — an argument in favour",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument in favour, 1 at 5 marks (2+3).",
+    "contextNote": "One argument in favour of the household property tax, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
@@ -4732,7 +4732,7 @@
     "verbatim": "Introduction of the household property tax — an argument against",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument against, 1 at 5 marks (2+3).",
+    "contextNote": "One argument against the household property tax, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
@@ -4750,7 +4750,7 @@
     "verbatim": "Reduction in the rate of child benefit — an argument in favour",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument in favour, 1 at 5 marks (2+3).",
+    "contextNote": "One argument in favour of the reduction in child benefit, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
@@ -4768,7 +4768,7 @@
     "verbatim": "Reduction in the rate of child benefit — an argument against",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument against, 1 at 5 marks (2+3).",
+    "contextNote": "One argument against the reduction in child benefit, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
@@ -4785,7 +4785,7 @@
     "verbatim": "Increase in third level education registration charge — an argument in favour",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument in favour, 1 at 5 marks (2+3).",
+    "contextNote": "One argument in favour of the higher registration charge, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
@@ -4803,7 +4803,7 @@
     "verbatim": "Increase in third level education registration charge — an argument against",
     "marks": 5,
     "openList": true,
-    "contextNote": "One argument against, 1 at 5 marks (2+3).",
+    "contextNote": "One argument against the higher registration charge, 1 at 5 marks (2+3).",
     "group": {
      "claimMax": 1,
      "perOption": 5,
