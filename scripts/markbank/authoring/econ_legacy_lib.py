@@ -25,6 +25,12 @@ TAIL = re.compile(r'(?:\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|grad
 # The marks column's "graded" printed at the END of a line follows the slice
 # rather than splitting it; cut there, the slice is still contiguous.
 TRAILING_GRADED = re.compile(r'\s+(?:graded|&)\s*$')
+# The 2019 HL scheme's text layer reports the "<" and ">" it prints (scheme p18,
+# "PED <1", "PED > 1", drawn at full size by Calibri) as the modifier arrowheads
+# U+02C2 and U+02C3, which the app's font sets as small raised marks a student
+# can misread ("PED ˂1"). The page prints the signs, so the card shows them. The
+# provenance gate's normalise() ignores both forms, so the slice still traces.
+PRINTED_SIGNS = str.maketrans({'\u02c2': '<', '\u02c3': '>'})
 
 
 class Old(Sheet):
@@ -58,7 +64,7 @@ class Old(Sheet):
             raise ValueError(f'{self.year} {self.lvl}: slice carries the marks word "graded": {text[:90]!r}')
         if ' '.join(text.split()) not in self._comparable:
             raise ValueError(f'{self.year} {self.lvl}: not contiguous in the scheme file: {text[:90]!r}')
-        return text
+        return text.translate(PRINTED_SIGNS)
 
     # ── the paper ──────────────────────────────────────────────────────────
     def q(self, page, start, end=None, include_end=False):

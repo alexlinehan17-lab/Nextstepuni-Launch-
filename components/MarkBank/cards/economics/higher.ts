@@ -891,8 +891,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-diagram-inelastic", kind: "point", verbatim: "Diagram 1: Inelastic Demand", marks: 6, contextNote: "The inelastic demand diagram, 6 marks (2 + 2 + 2). Both completed diagrams are in the figure.", openList: true },
     { id: "r-diagram-elastic", kind: "point", verbatim: "Diagram 2: Elastic Demand", marks: 6, contextNote: "The elastic demand diagram, 6 marks (2 + 2 + 2).", openList: true },
-    { id: "r-explain-inelastic", kind: "point", verbatim: "Shows a relatively price inelastic demand curve where PED ˂1. This means that the percentage change in quantity demanded will be less than the percentage change in the price of the good/service.", marks: 2, contextNote: "Explaining the inelastic diagram, 2 marks.", openList: true },
-    { id: "r-explain-elastic", kind: "point", verbatim: "Shows a relatively price elastic demand curve where PED ˃ 1 This means that the percentage change in quantity demanded will be greater than the percentage change in the price of the good/service.", marks: 2, contextNote: "Explaining the elastic diagram, 2 marks.", openList: true },
+    { id: "r-explain-inelastic", kind: "point", verbatim: "Shows a relatively price inelastic demand curve where PED <1. This means that the percentage change in quantity demanded will be less than the percentage change in the price of the good/service.", marks: 2, contextNote: "Explaining the inelastic diagram, 2 marks.", openList: true },
+    { id: "r-explain-elastic", kind: "point", verbatim: "Shows a relatively price elastic demand curve where PED > 1 This means that the percentage change in quantity demanded will be greater than the percentage change in the price of the good/service.", marks: 2, contextNote: "Explaining the elastic diagram, 2 marks.", openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -965,7 +965,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "economics-2019-HL-scheme-p19-q3ci-working",
           "src": "/exam-figures/economics/markbank/economics-2019-HL-scheme-p19-q3ci-working.png",
-          "srcHash": "0dead87fef4e738216de18e6b5b749cc",
+          "srcHash": "233b42325098789aaea0eb5dd257a33b",
           "alt": "The marking scheme’s working set as fractions: the change in quantity of X over the change in the tablet’s price, times the sum of the tablet prices over the sum of the quantities of X; then -15,000 over -150, times 500 + 350 (850) over 10,000 + 25,000 (35,000), equals + 2.42857 = + 2.43.",
           "attribution": "SEC Leaving Certificate Economics 2019 Higher Level — © State Examinations Commission",
           "solution": true,

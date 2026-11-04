@@ -1457,3 +1457,26 @@ Checks:
 - refcheck: 0 wrong, 3 unplaced (the 2026 OL three).
 - cardlint: clean.
 - The seven Economics suites pass.
+
+## 2019 browser check and two fixes (lane, 2026-11-04)
+
+Every 2019 figure card (34) and one text card in five (21), plus Section B
+Q6(c) (OL) and Q8(a)(ii) YES (HL), were checked in installed Chrome at 390x844
+and 1440x1000, in light and dark. That is 228 runs. The checks were:
+- no solution or answer before reveal;
+- every crop loads;
+- no horizontal overflow;
+- no console errors;
+- the official page reader renders.
+Screenshots of every screenful are in the lane's economics/shots/. Two defects
+were found and fixed:
+- HL Section B Q3(b)(ii). The scheme's text layer reports the "<" and ">" it
+  prints as the modifier arrowheads U+02C2 and U+02C3. The app font sets those
+  as small raised marks ("PED ˂1"). `econ_legacy_lib.traced` now sets them back
+  as the signs the page prints. normalise() ignores both forms, so the slice
+  still traces.
+- HL Section B Q3(c)(i). The working crop carried 30% blank width, which set
+  the fraction text at about 10 px on a phone. It is re-cut to the working
+  (rect 65, 276, 380, 376), and its manifest hash is updated in place.
+Both changes touch these two cards only: the deck diff is those two rows and
+one srcHash.

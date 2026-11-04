@@ -1485,7 +1485,7 @@
    {
     "id": "r-explain-inelastic",
     "kind": "point",
-    "verbatim": "Shows a relatively price inelastic demand curve where PED ˂1. This means that the percentage change in quantity demanded will be less than the percentage change in the price of the good/service.",
+    "verbatim": "Shows a relatively price inelastic demand curve where PED <1. This means that the percentage change in quantity demanded will be less than the percentage change in the price of the good/service.",
     "marks": 2,
     "openList": true,
     "contextNote": "Explaining the inelastic diagram, 2 marks."
@@ -1493,7 +1493,7 @@
    {
     "id": "r-explain-elastic",
     "kind": "point",
-    "verbatim": "Shows a relatively price elastic demand curve where PED ˃ 1 This means that the percentage change in quantity demanded will be greater than the percentage change in the price of the good/service.",
+    "verbatim": "Shows a relatively price elastic demand curve where PED > 1 This means that the percentage change in quantity demanded will be greater than the percentage change in the price of the good/service.",
     "marks": 2,
     "openList": true,
     "contextNote": "Explaining the elastic diagram, 2 marks."

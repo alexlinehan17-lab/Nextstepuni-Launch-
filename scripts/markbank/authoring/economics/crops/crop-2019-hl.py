@@ -51,7 +51,7 @@ F = [
   'The marking scheme’s two diagrams. Diagram 1: Inelastic Demand, a steep demand line D on which a fall in price '
   'from P1 to P2 raises quantity only a little, from Q1 to Q2. Diagram 2: Elastic Demand, a flat demand line D on '
   'which a small fall in price from P1 to P2 raises quantity a lot, from Q1 to Q2.'),
- ('scheme', 19, [65, 269, 500, 382], 'p19-q3ci-working', '2019 HL Section B Q3(c)(i)', True,
+ ('scheme', 19, [65, 276, 380, 376], 'p19-q3ci-working', '2019 HL Section B Q3(c)(i)', True,
   'The marking scheme’s working set as fractions: the change in quantity of X over the change in the tablet’s '
   'price, times the sum of the tablet prices over the sum of the quantities of X; then -15,000 over -150, times '
   '500 + 350 (850) over 10,000 + 25,000 (35,000), equals + 2.42857 = + 2.43.'),

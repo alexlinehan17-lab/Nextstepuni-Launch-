@@ -986,7 +986,10 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     // The lifted text only: stems, asks, rows and options (guidance notes may say "Graded.").
     const text = CARDS.filter(c => c.year === 2019)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
-    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'inflation2']) {
+    // The text layer's modifier arrowheads for the printed "<" and ">" (B3(b)(ii)) are set back as the signs.
+    expect(card('sb-q3-b-ii').rows[2].verbatim).toContain('PED <1.');
+    expect(card('sb-q3-b-ii').rows[3].verbatim).toContain('PED > 1');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'inflation2', '˂', '˃']) {
       expect(text, junk).not.toContain(junk);
     }
   });
