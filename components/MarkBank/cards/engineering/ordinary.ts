@@ -3729,7 +3729,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q6-c-ii", topicId: "eng-2-11", conceptId: "identify-use-centre-lathe-part-or",
     section: "A", questionRef: "2024 OL Q6(c)(ii)",
-    questionText: "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture.",
+    questionText: "A part for a centre lathe is shown opposite. Identify one use for this centre lathe part.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Drilling / Supporting long work / Reaming / Threading", marks: 6 },
@@ -3774,7 +3774,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "safety-precautions-be-observed-when-using",
     section: "A", questionRef: "2024 OL Q6(c)(iii)",
-    questionText: "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
+    questionText: "A part for a centre lathe is shown opposite. State two safety precautions to be observed when using a centre lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Wear safety goggles.", marks: 4 },

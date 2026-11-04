@@ -121,6 +121,18 @@ CARDS = [
          special={'kind': 'ask'}, total=4, stem=False, topic='eng-1-3',
          question_figure='engineering-2022-HL-paper-q5b-crop',
          figure='engineering-2022-HL-scheme-q5bii-sol'),
+    dict(key=(5, 'b', 'iii'),
+         replaces='the shipped card carried the table as a line of numbers, "% of '
+                  'metal B in the alloy 0 10 20 ... Start of solidification (C) 1120 '
+                  '1225 ...", which the melting points are read from',
+         why='The melting points are the table\'s 0% and 100% columns (and the '
+             'diagram\'s ends); the table is shown as printed. Scheme p18, "2 + 2". '
+             'The melting points of the two metals are read off the equilibrium '
+             'diagram, so the card files under it ("alloy" outvoted it).',
+         topic='eng-1-3',
+         lifted=[S(18, 105, 140, 170, 156), S(18, 105, 157, 170, 173)],
+         marks=[2, 2], total=4, stem=False,
+         question_figure='engineering-2022-HL-paper-q5b-crop'),
     dict(key=(8, 'b', 'iv'),
          why='"a step cone drill bit as shown" is photographed beside (b); '
              'priced by "Any three @ 6 + 6 + 6".',
@@ -147,8 +159,6 @@ CARDS = [
 ]
 
 TOPICS = {
-    'eng-2022-hl-q5-b-iii': ('eng-1-3', 'the melting points of the two metals are '
-                             'read off the equilibrium diagram; "alloy" outvoted it'),
     'eng-2022-hl-q5-c-ii': ('eng-3-7', 'the corrosive effects of the environment on '
                             'metal objects is corrosion; "environment" outvoted it'),
 }

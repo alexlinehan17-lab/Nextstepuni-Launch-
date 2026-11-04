@@ -1235,12 +1235,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-b-i", topicId: "eng-3-8", conceptId: "using-graph-paper-supplied-plot-stress",
     section: "A", questionRef: "2021 HL Q3(b)(i)",
-    stem: "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
     questionText: "Using the graph paper supplied, plot the stress - strain diagram for the alloy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Using the graph paper supplied, plot the stress - strain diagram for the alloy.", marks: 10, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q3b-crop.png",
+          "srcHash": "924fb8670e554c7ff2a516a5711479cc",
+          "alt": "The table or diagram printed with 2021 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown were obtained from a tensile test on an aluminium alloy specimen. Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "engineering-2021-HL-scheme-q3bi-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q3bi-sol.png",
@@ -1258,12 +1266,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-b-ii", topicId: "eng-3-8", conceptId: "determine-0-1-proof-stress-alloy",
     section: "A", questionRef: "2021 HL Q3(b)(ii)",
-    stem: "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
     questionText: "Determine the 0.1% proof stress for the alloy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.1% proof stress from graph - 325 N/mm²", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q3b-crop.png",
+          "srcHash": "924fb8670e554c7ff2a516a5711479cc",
+          "alt": "The table or diagram printed with 2021 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown were obtained from a tensile test on an aluminium alloy specimen. Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1272,12 +1288,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "calculate-young-s-modulus-elasticity-alloy",
     section: "A", questionRef: "2021 HL Q3(b)(iii)",
-    stem: "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
     questionText: "Calculate Young’s Modulus of Elasticity for the alloy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Calculate Young’s Modulus of Elasticity for the alloy.", marks: 4, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q3b-crop.png",
+          "srcHash": "924fb8670e554c7ff2a516a5711479cc",
+          "alt": "The table or diagram printed with 2021 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown were obtained from a tensile test on an aluminium alloy specimen. Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "engineering-2021-HL-scheme-q3biii-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q3biii-sol.png",
@@ -2032,21 +2056,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "This is where foreign atoms replace the parent atoms.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Vacancy Defect This is where there is an atom missing from the lattice.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Interstitial Defect This is where foreign atoms fit in between the parent atoms.", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
-    id: "eng-2022-hl-q5-b-iii", topicId: "eng-1-3", conceptId: "melting-point-metal-melting-point-metal",
-    section: "A", questionRef: "2022 HL Q5(b)(iii)",
-    stem: "% of metal B in the alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 1120 1225 1295 1345 1390 1420 1445 1468 1485 1495 1500 End of solidification (°C) 1120 1128 1150 1170 1195 1225 1260 1295 1350 1420 1500",
-    questionText: "State the melting point of metal A and the melting point of metal B in this alloy.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A - 1120°C", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "B - 1500°C", marks: 2 },
     ],
   } as SecCard,
   {
@@ -2834,6 +2843,29 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
+    id: "eng-2022-hl-q5-b-iii", topicId: "eng-1-3", conceptId: "melting-point-metal-melting-point-metal",
+    section: "A", questionRef: "2022 HL Q5(b)(iii)",
+    questionText: "State the melting point of metal A and the melting point of metal B in this alloy.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A - 1120°C", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B - 1500°C", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2022-HL-paper-q5b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q5b-crop.png",
+          "srcHash": "cc475839535bbe4d9c983d71dee027d5",
+          "alt": "The table or diagram printed with 2022 HL Q5(b), as the State Examinations Commission set it. It reads: (b) The table shows the solidification temperatures for various alloys of metal A and metal B. % of metal B in the alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 1120 1225 1295 1345 1390 1420 1445 1468 1485 1495 1500 End of solidification (°C) 1120 1128 1150 1170 1195 1225 1260 1295 1350 1420 1500.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4147,12 +4179,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-b-i", topicId: "eng-3-8", conceptId: "using-graph-paper-supplied-plot-load",
     section: "A", questionRef: "2023 HL Q3(b)(i)",
-    stem: "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
     questionText: "Using the graph paper supplied, plot the load-extension diagram.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Using the graph paper supplied, plot the load-extension diagram.", marks: 10, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q3b-crop.png",
+          "srcHash": "41c811ddcf3a893d2ca1e00c285c4e6f",
+          "alt": "The table or diagram printed with 2023 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown below were obtained from a tensile test carried out on a test specimen of 16 mm diameter with a gauge length of 80 mm. Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "engineering-2023-HL-scheme-q3bi-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-scheme-q3bi-sol.png",
@@ -4170,12 +4210,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-b-ii", topicId: "eng-3-8", conceptId: "determine-ultimate-tensile-strength-uts-specimen",
     section: "A", questionRef: "2023 HL Q3(b)(ii)",
-    stem: "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
     questionText: "Determine the ultimate tensile strength (UTS) for the specimen.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Determine the ultimate tensile strength (UTS) for the specimen.", marks: 4, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q3b-crop.png",
+          "srcHash": "41c811ddcf3a893d2ca1e00c285c4e6f",
+          "alt": "The table or diagram printed with 2023 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown below were obtained from a tensile test carried out on a test specimen of 16 mm diameter with a gauge length of 80 mm. Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "engineering-2023-HL-scheme-q3bii-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-scheme-q3bii-sol.png",
@@ -4193,12 +4241,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "calculate-0-1-proof-stress",
     section: "A", questionRef: "2023 HL Q3(b)(iii)",
-    stem: "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
     questionText: "Calculate the 0.1% proof stress.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Calculate the 0.1% proof stress.", marks: 4, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q3b-crop",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q3b-crop.png",
+          "srcHash": "41c811ddcf3a893d2ca1e00c285c4e6f",
+          "alt": "The table or diagram printed with 2023 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown below were obtained from a tensile test carried out on a test specimen of 16 mm diameter with a gauge length of 80 mm. Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "engineering-2023-HL-scheme-q3biii-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-scheme-q3biii-sol.png",
@@ -4760,21 +4816,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
           "includesPrompt": false
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
-    id: "eng-2024-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "aid-diagram-s-following-terms-related",
-    section: "A", questionRef: "2024 HL Q3(b)(iii)",
-    stem: "Stress (N/mm2) 45 90 135 200 275 308 335 345 340 Strain (×1000) 0.50 1.00 1.50 2.25 3.25 4.00 5.00 6.50 7.50",
-    questionText: "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.", marks: 2 },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5763,6 +5804,29 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q3bii-sol.png",
           "srcHash": "bb67d9560e4b03cf04a300551939b0b5",
           "alt": "The marking scheme's printed answer for 2024 HL Q3(b)(ii), as the State Examinations Commission set it. It reads: stress 135 (ii) Young’s Modulus of Elasticity = = = 90 kN/mm² strain 1.50.",
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "aid-diagram-s-following-terms-related",
+    section: "A", questionRef: "2024 HL Q3(b)(iii)",
+    questionText: "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.", marks: 2 },
+    ],
+    figure: {
+          "candId": "engineering-2024-HL-scheme-q3biii-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q3biii-sol.png",
+          "srcHash": "ec22c5638e5bcab7c9b9bc1356228c44",
+          "alt": "The marking scheme's printed answer for 2024 HL Q3(b)(iii), as the State Examinations Commission set it. It reads: before necking during necking load Cup and cone fracture.",
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []

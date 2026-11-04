@@ -52315,5 +52315,39 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q3b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q3b-crop.png",
+  "md5": "924fb8670e554c7ff2a516a5711479cc",
+  "alt": "The table or diagram printed with 2021 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown were obtained from a tensile test on an aluminium alloy specimen. Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(b)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2023-HL-paper-q3b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q3b-crop.png",
+  "md5": "41c811ddcf3a893d2ca1e00c285c4e6f",
+  "alt": "The table or diagram printed with 2023 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown below were obtained from a tensile test carried out on a test specimen of 16 mm diameter with a gauge length of 80 mm. Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q3(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q3biii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q3biii-sol.png",
+  "md5": "ec22c5638e5bcab7c9b9bc1356228c44",
+  "alt": "The marking scheme's printed answer for 2024 HL Q3(b)(iii), as the State Examinations Commission set it. It reads: before necking during necking load Cup and cone fracture.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(b)(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
  }
 }

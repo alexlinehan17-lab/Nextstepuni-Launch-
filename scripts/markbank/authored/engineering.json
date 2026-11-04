@@ -2627,9 +2627,10 @@
     "ask": true
    }
   ],
-  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
   "notes": "The scheme heads this answer \"(b) (ii)\"; its marks grid prices the plot as (b)(i), 10 marks.",
-  "figureKey": "engineering-2021-HL-scheme-q3bi-sol"
+  "figureKey": "engineering-2021-HL-scheme-q3bi-sol",
+  "questionFigureKey": "engineering-2021-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q3-b-ii",
@@ -2653,7 +2654,8 @@
     "marks": 4
    }
   ],
-  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50"
+  "questionFigureKey": "engineering-2021-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q3-b-iii",
@@ -2679,8 +2681,9 @@
     "ask": true
    }
   ],
-  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
-  "figureKey": "engineering-2021-HL-scheme-q3biii-sol"
+  "figureKey": "engineering-2021-HL-scheme-q3biii-sol",
+  "questionFigureKey": "engineering-2021-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-c-i",
@@ -5971,36 +5974,6 @@
   ]
  },
  {
-  "id": "eng-2022-hl-q5-b-iii",
-  "topicId": "eng-1-3",
-  "conceptId": "melting-point-metal-melting-point-metal",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q5(b)(iii)",
-  "questionText": "State the melting point of metal A and the melting point of metal B in this alloy.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A - 1120°C",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B - 1500°C",
-    "marks": 2
-   }
-  ],
-  "stem": "% of metal B in the alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 1120 1225 1295 1345 1390 1420 1445 1468 1485 1495 1500 End of solidification (°C) 1120 1128 1150 1170 1195 1225 1260 1295 1350 1420 1500"
- },
- {
   "id": "eng-2022-hl-q5-c-i",
   "topicId": "eng-1-3",
   "conceptId": "impact-dislocation-crystal-structures",
@@ -7658,6 +7631,37 @@
    }
   ],
   "figureKey": "engineering-2022-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2022-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q5-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "melting-point-metal-melting-point-metal",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q5(b)(iii)",
+  "questionText": "State the melting point of metal A and the melting point of metal B in this alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - 1120°C",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - 1500°C",
+    "marks": 2
+   }
+  ],
   "questionFigureKey": "engineering-2022-HL-paper-q5b-crop",
   "questionFigureIncludesPrompt": false
  },
@@ -12062,9 +12066,10 @@
     "ask": true
    }
   ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
   "notes": "The scheme prints 'Draw load-extension graph', 10 marks.",
-  "figureKey": "engineering-2023-HL-scheme-q3bi-sol"
+  "figureKey": "engineering-2023-HL-scheme-q3bi-sol",
+  "questionFigureKey": "engineering-2023-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q3-b-ii",
@@ -12090,8 +12095,9 @@
     "ask": true
    }
   ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
-  "figureKey": "engineering-2023-HL-scheme-q3bii-sol"
+  "figureKey": "engineering-2023-HL-scheme-q3bii-sol",
+  "questionFigureKey": "engineering-2023-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q3-b-iii",
@@ -12117,8 +12123,9 @@
     "ask": true
    }
   ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
-  "figureKey": "engineering-2023-HL-scheme-q3biii-sol"
+  "figureKey": "engineering-2023-HL-scheme-q3biii-sol",
+  "questionFigureKey": "engineering-2023-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-a-i",
@@ -14836,36 +14843,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2024-hl-q3-b-iii",
-  "topicId": "eng-3-8",
-  "conceptId": "aid-diagram-s-following-terms-related",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q3(b)(iii)",
-  "questionText": "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.",
-    "marks": 2
-   }
-  ],
-  "stem": "Stress (N/mm2) 45 90 135 200 275 308 335 345 340 Strain (×1000) 0.50 1.00 1.50 2.25 3.25 4.00 5.00 6.50 7.50"
- },
- {
   "id": "eng-2024-hl-q3-c-i",
   "topicId": "eng-3-8",
   "conceptId": "reasons-why-non-destructive-tests-used",
@@ -16811,6 +16788,36 @@
   "figureKey": "engineering-2024-HL-scheme-q3bii-sol",
   "questionFigureKey": "engineering-2024-HL-paper-q3b-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-following-terms-related",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(iii)",
+  "questionText": "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.",
+    "marks": 2
+   }
+  ],
+  "figureKey": "engineering-2024-HL-scheme-q3biii-sol"
  },
  {
   "id": "eng-2024-hl-q5-b-i",

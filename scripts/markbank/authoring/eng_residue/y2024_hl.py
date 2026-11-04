@@ -42,6 +42,11 @@ CROPS = {
     'engineering-2024-HL-scheme-q3bii-sol': dict(
         doc='scheme', page=14, rect=(90, 388, 520, 424), solution=True,
         ref='2024 HL Q3(b)(ii)'),
+    # Scheme pp14-15: the necking diagram and the cup and cone fracture.
+    'engineering-2024-HL-scheme-q3biii-sol': dict(
+        doc='scheme', page=14, parts=[(14, (150, 540, 470, 650)),
+                                      (15, (250, 120, 475, 216))],
+        solution=True, ref='2024 HL Q3(b)(iii)'),
     # Scheme p18: the equilibrium diagram, liquidus and solidus labelled.
     'engineering-2024-HL-scheme-q5bi-sol': dict(
         doc='scheme', page=18, rect=(80, 196, 545, 478), solution=True,
@@ -103,6 +108,15 @@ CARDS = [
          special={'kind': 'ask'}, total=4, stem=False,
          question_figure='engineering-2024-HL-paper-q3b-crop',
          figure='engineering-2024-HL-scheme-q3bii-sol'),
+    dict(key=(3, 'b', 'iii'),
+         replaces='the shipped card set the (b) table, as a line of numbers, over a '
+                  'part that does not use it, and did not show the scheme\'s '
+                  'diagrams the question asks for',
+         why='Scheme pp14-15 describe necking and cup and cone fracture, each '
+             'beside a diagram, "2 + 2"; the diagrams are shown with the answer.',
+         lifted=[S(14, 125, 462, 520, 528), S(15, 125, 60, 560, 108)],
+         marks=[2, 2], total=4, stem=False,
+         figure='engineering-2024-HL-scheme-q3biii-sol'),
     dict(key=(5, 'b', 'i'),
          why='Scheme p18 answers with the equilibrium diagram, liquidus and '
              'solidus labelled, and prints no words; the table is shown as '

@@ -12,6 +12,10 @@ def S(page, *rect):
 
 
 CROPS = {
+    # Paper p5: (b)'s sentence and its table of tensile results, as printed
+    # (the cards had carried it as a line of numbers).
+    'engineering-2023-HL-paper-q3b-crop': dict(
+        doc='paper', page=5, rect=(66, 372, 545, 478), ref='2023 HL Q3(b)'),
     'engineering-2023-HL-paper-q1d-crop': dict(
         doc='paper', page=3, rect=(440, 200, 568, 310), ref='2023 HL Q1(d)'),
     'engineering-2023-HL-paper-q1g-crop': dict(
@@ -84,7 +88,8 @@ CARDS = [
          replaces='the shipped card\'s only row was the graph\'s axis numbers '
                   '"120 100 80 60 40 20 0.08 1.0 2.0 ..." for ten marks',
          why='Scheme p13 answers "Draw load-extension graph" with the graph.',
-         special={'kind': 'ask'}, total=10, stem=True,
+         special={'kind': 'ask'}, total=10, stem=False,
+         question_figure='engineering-2023-HL-paper-q3b-crop',
          figure='engineering-2023-HL-scheme-q3bi-sol',
          notes="The scheme prints 'Draw load-extension graph', 10 marks."),
     dict(key=(3, 'b', 'ii'),
@@ -92,14 +97,16 @@ CARDS = [
                   'denominator of the scheme\'s fraction',
          why='Scheme p13 sets U.T.S. = Max. Load / C.S.A. = 135 / π(8²) = 0.67 '
              'kN/mm² as stacked fractions.',
-         special={'kind': 'ask'}, total=4, stem=True,
+         special={'kind': 'ask'}, total=4, stem=False,
+         question_figure='engineering-2023-HL-paper-q3b-crop',
          figure='engineering-2023-HL-scheme-q3bii-sol'),
     dict(key=(3, 'b', 'iii'),
          replaces='the shipped row flattened the stacked fraction to "0.1% proof '
                   'stress = 84 = 0.42 kN/mm2 C.S.A" and lost "From the graph: 84 kN"',
          why='Scheme p13 reads 84 kN off the graph and divides by the C.S.A., as '
              'stacked fractions.',
-         special={'kind': 'ask'}, total=4, stem=True,
+         special={'kind': 'ask'}, total=4, stem=False,
+         question_figure='engineering-2023-HL-paper-q3b-crop',
          figure='engineering-2023-HL-scheme-q3biii-sol'),
     dict(key=(4, 'a', 'i'),
          why='Scheme p14 gives a "Suggested answer other solutions accepted": '

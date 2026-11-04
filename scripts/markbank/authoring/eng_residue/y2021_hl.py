@@ -17,6 +17,10 @@ def P(page, *rect, more=()):
 
 
 CROPS = {
+    # Paper p5: (b)'s sentence and its table of tensile results, as printed
+    # (the cards had carried it as a line of numbers).
+    'engineering-2021-HL-paper-q3b-crop': dict(
+        doc='paper', page=5, rect=(66, 282, 525, 380), ref='2021 HL Q3(b)'),
     # Scheme p11: the stress-strain graph the scheme answers Q3(b)(i) with,
     # axes, plotted points and the 0.1% offset line; the "10" beside it is
     # left out.
@@ -102,20 +106,23 @@ CARDS = [
              'grid (p3) prices (b)(i) 10, (ii) 4, (iii) 4 and the paper sets the '
              'plot as (b)(i). The reader files the plot under (ii) and loses '
              '(i), so both refused as unpriced.',
-         special={'kind': 'ask'}, total=10, stem=True,
+         special={'kind': 'ask'}, total=10, stem=False,
+         question_figure='engineering-2021-HL-paper-q3b-crop',
          figure='engineering-2021-HL-scheme-q3bi-sol',
          notes='The scheme heads this answer "(b) (ii)"; its marks grid prices '
                'the plot as (b)(i), 10 marks.'),
     dict(key=(3, 'b', 'ii'),
          why='The same misnumbered heading: the proof stress line is the '
              'second "(ii)" on p11 and the reader keeps only the first.',
-         lifted=[S(11, 100, 510, 400, 528)], marks=[4], total=4, stem=True),
+         lifted=[S(11, 100, 510, 400, 528)], marks=[4], total=4, stem=False,
+         question_figure='engineering-2021-HL-paper-q3b-crop'),
     dict(key=(3, 'b', 'iii'),
          replaces='the shipped row flattened the two stacked fractions to '
                   '"Young\'s modulus = stress = 260 = 87 N/mm² strain 3.0"',
          why='Scheme p11 sets Young\'s modulus = stress/strain = 260/3.0 = 87 '
              'N/mm² as stacked fractions; the text layer reads them row by row.',
-         special={'kind': 'ask'}, total=4, stem=True,
+         special={'kind': 'ask'}, total=4, stem=False,
+         question_figure='engineering-2021-HL-paper-q3b-crop',
          figure='engineering-2021-HL-scheme-q3biii-sol'),
     dict(key=(4, 'c', 'i'),
          why='Scheme p14 answers with two paragraphs, the optical pyrometer and '
