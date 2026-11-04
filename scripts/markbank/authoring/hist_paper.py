@@ -96,7 +96,7 @@ FURNITURE = re.compile(
     r'|Recommended maximum time'
     r'|Section \d \(\d+ marks\)|Sections? \d(?: (?:&|and) \d)? \(\d+ marks\)'
     r'|(?:Ireland|Europe and the wider world)\s*:\s*Topics\b'
-    r'|OR \d\.|Do not hand up|It will not be returned'
+    r'|OR \d\.|Do not hand up|It will not be returned|Blank Page$'
     r'|Copyright notice|Acknowledgements?\b'
     r'|This examination paper|Any subsequent use|The Commission does not'
     r'|examination paper has been prepared|owner, and which may'
