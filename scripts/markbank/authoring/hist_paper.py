@@ -84,7 +84,10 @@ FURNITURE = re.compile(
     r'|Coimisi[uú]n na Scr[uú]duithe St[aá]it'
     r'|State Examinations Commission'
     r'|LEAVING CERTIFICATE EXAMINATION'
-    r'|HISTORY\b|FIELD OF STUDY'
+    # The paper's running head in capitals only: "history, this person has made
+    # France his prey" (2015 Ordinary, Victor Hugo on Napoleon III) is a line of
+    # the extract, and the case-blind match dropped it from the stem.
+    r'|(?-i:HISTORY)\b|FIELD OF STUDY'
     r'|Written examination|Pre-submitted Research Study Report'
     r'|Instructions to candidates|Use ONE of the following sets'
     r'|\d?\.?\s*(?:Usual instructions|Alternative instructions)'
