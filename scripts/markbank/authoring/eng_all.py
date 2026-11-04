@@ -1074,7 +1074,8 @@ def main():
         residue[(year, level)] = eng_residue.build(
             A, year, level, {c['id'] for c in A.cards}, set(figs_all),
             topic_for_part, keeps_stem, concept_for,
-            checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key))
+            checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key),
+            withdrawn=set(WITHDRAWN))
         cards.extend(A.cards)
 
     if args.verdicts:

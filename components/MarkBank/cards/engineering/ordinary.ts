@@ -996,7 +996,8 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application of each instrument named:",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Engineering protractor - Used for checking or accurately marking out angles on material.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["Engineering protractor - Used for checking or accurately marking out angles on material.","Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.","Vee block & clamp - Used of holding round bars when drilling or marking out.","Feeler gauges - Used to check the gap between two parts."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Engineering protractor", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Engineering protractor","(ii) Digital Vernier calipers","(iii) Vee block & clamp","(iv) Feeler gauges"]} },
+    { id: "r-2", kind: "anyN", verbatim: "(i) Engineering protractor - Used for checking or accurately marking out angles on material.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Engineering protractor - Used for checking or accurately marking out angles on material.","(ii) Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.","(iii) Vee block & clamp - Used of holding round bars when drilling or marking out.","(iv) Feeler gauges - Used to check the gap between two parts."]} },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q7c-crop",

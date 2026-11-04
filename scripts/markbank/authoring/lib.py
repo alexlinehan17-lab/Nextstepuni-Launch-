@@ -835,9 +835,16 @@ class Author:
             # marks. A cleaning subject's choice rule becomes the anyN group
             # every other deck uses (claimMax, perOption, the options), where
             # it names two or more; "any one" stays the alt row it already is.
-            if clean and group and group[0] > 1 and row_kind == 'anyN' \
-                    and len(rows) == 0 and len(opts) >= group[0]:
-                n_claim, per = group
+            # A tuple is the card's one choice, on its first row; a list
+            # prices each row (None where a row is no choice), as "Name Award
+            # 3 @ 3, Application Award 3 @ 3" sets two choices on one part.
+            if isinstance(group, list):
+                grp_i = group[i - 1] if i - 1 < len(group) else None
+            else:
+                grp_i = group if len(rows) == 0 else None
+            if clean and grp_i and grp_i[0] > 1 and row_kind == 'anyN' \
+                    and len(opts) >= grp_i[0]:
+                n_claim, per = grp_i
                 row = {'id': f'r-{i}', 'kind': 'anyN', 'verbatim': opts[0],
                        'marks': n_claim * per,
                        'group': {'claimMax': n_claim, 'perOption': per,

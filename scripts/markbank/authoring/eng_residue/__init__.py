@@ -56,7 +56,7 @@ def part_id(year, level, q, letter, roman):
 
 
 def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
-          concept_for, checked=lambda key: None):
+          concept_for, checked=lambda key: None, withdrawn=()):
     """Add this sitting's residue cards to A.cards. -> [card ids]"""
     mod = module(year, level)
     if mod is None:
@@ -80,6 +80,9 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         where = f'eng_residue {year} {level} {cid}'
         if not entry.get('why'):
             raise SystemExit(f'{where}: say what the page shows (why=)')
+        if cid in withdrawn:
+            raise SystemExit(f'{where}: a withdrawn id is never re-emitted; give the '
+                             f'card an id of its own (id=)')
         if entry.get('replaces'):
             # A card the automatic author builds and a person has opened and
             # found WRONG -- a tariff for an answer, half a sentence, an axis

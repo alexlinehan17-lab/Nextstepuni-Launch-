@@ -242,11 +242,17 @@ CARDS = [
          question_lift=P(8, 85, 407, 580, 426),
          why='The instruments branch of (c): four photographs captioned '
              '(i)-(iv); the reader joins the OR branch\'s romans onto its cue, so '
-             'the question is lifted from its own printed line. Scheme p21 names each and gives an application; "Three '
-             'parts @ 6 marks", Name 3 and Application 3.',
-         lifted=[[S(21, 100, 505, 455, 535), S(21, 100, 547, 455, 606),
-                  S(21, 100, 619, 455, 649), S(21, 100, 660, 455, 677)]],
-         row_kind='anyN', group=(3, 6), marks=[18], tariff='fixed', total=18,
+             'the question is lifted from its own printed line. Scheme p21 names '
+             'each and gives an application, and prices the two apart: "Name '
+             'Award 3 @ 3 Marks, Application Award 3 @ 3 Marks", so a name is '
+             'claimed without its application; each application is shown with '
+             'the instrument it is for.',
+         lifted=[[S(21, 70, 505, 210, 521), S(21, 70, 547, 210, 563),
+                  S(21, 70, 619, 210, 635), S(21, 70, 662, 210, 678)],
+                 [S(21, 70, 505, 455, 536), S(21, 70, 547, 455, 607),
+                  S(21, 70, 619, 455, 650), S(21, 70, 660, 455, 678)]],
+         row_kind='anyN', group=[(3, 3), (3, 3)], marks=[9, 9], tariff='fixed',
+         total=18,
          question_figure='engineering-2021-OL-paper-q7c-crop',
          notes="The scheme prints 'Name Award 3 @ 3 Marks, Application Award 3 @ "
                "3 Marks'."),
