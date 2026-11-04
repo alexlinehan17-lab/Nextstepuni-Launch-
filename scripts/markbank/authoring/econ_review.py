@@ -17,7 +17,7 @@ import re
 
 import fitz
 
-from econ_inventory import ROOT, indexed_papers
+from econ_inventory import ROOT, corpus_path, indexed_papers
 
 DIRECTIVE = re.compile(
     r"\b(?:choose|choices?|select|either|or|agree|disagree|yes|no)\b|"
@@ -59,7 +59,7 @@ def validate_review(review, indexed):
         ('paper', 'exampapers', indexed['fileid']),
         ('scheme', 'markingschemes', indexed['schemeFileid']),
     ]:
-        path = ROOT / 'paper-trail-corpus' / folder / str(indexed['year']) / fileid
+        path = corpus_path(folder, indexed['year'], fileid)
         if hashlib.sha256(path.read_bytes()).hexdigest() != review[kind + 'Sha256']:
             raise ValueError(f"Changed {kind} source: {paper_key(indexed)}")
         source_paths[kind] = path

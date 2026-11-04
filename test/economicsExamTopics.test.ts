@@ -180,23 +180,117 @@ describe('Economics exam-topic registry', () => {
       // production), Q2 under globalisation (protection is international
       // trade), Q8 under government intervention (the black economy is
       // national income) and Section B Q3 under growth and development (the
-      // minimum wage and conferences are filed under their own topics).
-      matchedAssociations: 749,
-      referenceAnomalyAssociations: 154,
-      sourceBlockedAssociations: 217,
-      matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 673,
+      // minimum wage and conferences are filed under their own topics). The
+      // 2015 Higher review added one: Section A Q9 under government
+      // intervention (an ageing population's pension and retirement policy is
+      // fiscal policy and the labour market). The 2015 Ordinary review added
+      // eleven: Section A Q6, Section B Q4(b) and Section B Q6 under acronyms
+      // and Section B Q8 under formulas (study-aid headings); Section A Q1
+      // under the labour market (land is a factor of production); Section A
+      // Q4 and Section B Q5 under globalisation (visible trade and the
+      // exchange rate are international trade); Section A Q3 under government
+      // intervention (corporation tax is fiscal policy); Section A Q8 under
+      // government intervention and under growth and development (emigration
+      // is employment and unemployment); and Section B Q6 under national
+      // income (the current budget is fiscal policy). The 2014 Higher review
+      // added none. The 2014 Ordinary review added fifteen: Section A Q5 and
+      // Q9 under formulas and Section B Q6, Q7 and Q8(b)-(c) under acronyms
+      // (study-aid headings); Section A Q1 under the market economy (the
+      // definition of economics is scarcity and choice); Section A Q4 and Q7
+      // under government intervention (public sector pay and a tax relief are
+      // fiscal policy); Section B Q3 under government intervention (economic
+      // systems are the market economy, as earlier reviews file them);
+      // Section B Q7 under government intervention (tariffs and quotas are
+      // international trade, the EU globalisation); Section B Q8(b)-(c) under
+      // government intervention and globalisation (unemployment is employment,
+      // the government's aims fiscal policy); Section B Q5 under the labour
+      // market (costs, the entrepreneur and location are filed under their own
+      // topics); Section B Q8(a) under growth and development (emigration is
+      // employment and unemployment); and Section A Q2 under globalisation
+      // (visible and invisible trade are international trade). The 2013
+      // Higher review added six: Section A Q9 and Section B Q8(b) and Q8(c)
+      // under topical questions and statistics (a study-aid heading);
+      // Section A Q8 under costs of production (the APC is national income);
+      // and Section B Q8(a) and Q8(b) under government intervention (youth
+      // unemployment is employment and unemployment, the national debt
+      // fiscal policy). The 2013 Ordinary review added eleven: Section A Q6
+      // under formulas and Section B Q4, Q7 and Q8 under acronyms (study-aid
+      // headings); Section A Q1 and Q6 under the labour market (the factors
+      // of production are scarcity and choice, the sofas' costs costs of
+      // production); Section A Q9 and Section B Q5(a)-(b) under growth and
+      // development (infrastructure is fiscal policy, the circular flow and
+      // consumer spending national income); Section B Q3 and Q5(a)-(b) under
+      // government intervention (labour and the public sector are filed under
+      // their own topics); and Section B Q5(c) under globalisation (the black
+      // economy is national income). The 2012 Higher review added six:
+      // Section A Q3 under employment (the black economy is national
+      // income); Section A Q7 under national income (savings are the
+      // financial sector); Section A Q9 under government intervention (the
+      // household charge is fiscal policy); Section B Q3(b) under economic
+      // growth and development (entrepreneurship is scarcity and choice) and
+      // Q3(c) under costs of production (the survival of small firms is
+      // market structures); and Section B Q8(b) under national income (the
+      // Live Register is employment and unemployment). The 2012 Ordinary
+      // review added nine: Section A Q5 and Section B Q4 and Q8 under
+      // acronyms and Section B Q5 under formulas (study-aid headings);
+      // Section A Q4, Section B Q5 and Q7(c) under government intervention
+      // (austerity is fiscal policy, national income and the multiplier are
+      // national income, multinationals are globalisation); Section B Q5
+      // under employment (its national income terms are filed under their
+      // own topic); and Section A Q8 under economic growth and development
+      // (emigration is employment and unemployment). The 2011 Higher review
+      // added two: Section A Q2 under government intervention (a mixed
+      // economy is the market economy, as earlier reviews file economic
+      // systems) and Section A Q7 under international trade (multinationals
+      // re-locating are globalisation). The 2011 Ordinary review added
+      // eleven: Section A Q1 and Section B Q5 and Q8 under acronyms and
+      // Section A Q9 and Section B Q6 under formulas (study-aid headings);
+      // Section A Q6 under the market economy (an economic good is scarcity
+      // and choice); Section A Q8 and Section B Q5 and Q8 under government
+      // intervention (the government's aims, the budget and the retirement
+      // age are fiscal policy); and Section A Q5 and Section B Q4 under
+      // globalisation (barriers to trade and tourism are international
+      // trade). The 2010 Higher review added one: Section B Q4(c) under
+      // national income (the national debt is fiscal policy). The 2010
+      // Ordinary review added ten: Section A Q1 and Section B Q7 under
+      // acronyms and Section B Q4(b) under formulas (study-aid headings);
+      // Section A Q4 under the market economy (opportunity cost is scarcity
+      // and choice); Section A Q5 and Q6 under government intervention (the
+      // budget deficit is fiscal policy, more third-level students economic
+      // growth); Section A Q8 under the labour market (entrepreneurship is
+      // scarcity and choice); Section B Q7 and Q4(c) under economic growth
+      // and development (deflation and savings are monetary policy and the
+      // financial sector, emigration employment); and Section B Q8 under
+      // globalisation (trade and the exchange rate are international trade).
+      // The 2022 Higher deferred sitting (2026-11-04) is its own paper
+      // (LC034ALP000EV-deferred.pdf): its 38 "Deferred Exam Paper" headings,
+      // source-blocked until now, resolve to it. 33 match and five are
+      // reference anomalies: Q8 under the market economy (sustainability and
+      // market failure), Q11 Part C under the market economy and government
+      // intervention (the circular flow is national income), Q14 under topical
+      // questions and statistics (a study-aid heading) and Q15 under economic
+      // concepts (the market for electric vehicles and subsidies are the
+      // market economy and government intervention).
+      matchedAssociations: 699,
+      referenceAnomalyAssociations: 242,
+      sourceBlockedAssociations: 179,
+      matchedLogicalCards: 533,
+      matchedQuestionTopicLinks: 621,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
 
     const blocked = evidence.associations.filter(association => association.resolution === 'source-blocked');
     expect(new Set(blocked.map(association => association.year))).toEqual(
-      new Set([2006, 2007, 2008, 2009, 2020, 2022]),
+      new Set([2006, 2007, 2008, 2009, 2020]),
     );
     expect(new Set(blocked.map(association => association.sitting))).toEqual(
-      new Set(['main', 'sample', 'deferred']),
+      new Set(['main', 'sample']),
     );
+    const deferred = evidence.associations.filter(association => association.sitting === 'deferred');
+    expect(deferred).toHaveLength(38);
+    expect(deferred.every(association => 'target' in association
+      && association.target?.fileid === 'LC034ALP000EV-deferred.pdf')).toBe(true);
     expect(blocked.every(association => (
       'reason' in association && association.reason.includes('no StudyClix-hosted')
     ))).toBe(true);
@@ -238,16 +332,17 @@ describe('Economics exam-topic registry', () => {
 
   it('exposes all old Section-B tasks and every new-format question', () => {
     expect(evidence.summary).toMatchObject({
-      localPaperVariants: 66,
-      localPhysicalMappings: 1098,
-      distinctStudentFacingQuestions: 549,
-      hostedAnchorMaps: 54,
+      localPaperVariants: 67,
+      localPhysicalMappings: 1114,
+      distinctStudentFacingQuestions: 565,
+      hostedAnchorMaps: 55,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 304,
     });
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'economics');
-    expect(papers).toHaveLength(66);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1098);
+    // 66 June variants and the 2022 Higher deferred sitting, numbered 1-16.
+    expect(papers).toHaveLength(67);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1114);
     for (const paper of papers) {
       const expected = paper.year <= 2020
         ? [...Array.from({ length: 9 }, (_, i) => String(i + 1)), ...Array.from({ length: 8 }, (_, i) => `B${i + 1}`)]
@@ -297,11 +392,27 @@ describe('Economics exam-topic registry', () => {
     ]);
   });
 
+  it('joins the deferred sitting on its own booklet, never on June\'s question of the same number', () => {
+    const june = examTopicIdsForQuestion('economics', 'higher', 2022, 'main', '1', 'single', 'ev', 'LC034ALP000EV.pdf');
+    const deferred = examTopicIdsForQuestion(
+      'economics', 'higher', 2022, 'main', '1', 'single', 'ev', 'LC034ALP000EV-deferred.pdf');
+    // Deferred Q1 is foreign direct investment; June's Q1 is price elasticity.
+    expect(deferred).toEqual([
+      'economics-higher-52-globalisation',
+      'economics-higher-51-economic-growth-and-development',
+      'economics-higher-53-international-trade-and-competitiveness',
+    ]);
+    expect(june).toEqual(['economics-higher-22-elasticity', 'economics-higher-21-the-market-economy']);
+    const paper = topicsForPaper('economics', 2022, 'higher', 'ev', 'LC034ALP000EV-deferred.pdf');
+    expect(paper?.q.map(question => question.n)).toEqual(Array.from({ length: 16 }, (_, i) => String(i + 1)));
+  });
+
   it('ships complete hosted anchors wherever the classic map cannot address a card', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => (
-      paper.subjectId === 'economics' && (paper.year <= 2020 || (paper.year === 2025 && paper.level === 'higher'))
+      paper.subjectId === 'economics' && (paper.year <= 2020 || (paper.year === 2025 && paper.level === 'higher')
+        || paper.fileid.endsWith('-deferred.pdf'))
     ));
-    expect(papers).toHaveLength(44);
+    expect(papers).toHaveLength(45);
     for (const paper of papers) {
       const anchorPath = path.join(
         ROOT,
@@ -327,9 +438,11 @@ describe('Economics exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 549 entitled tasks through the 40-topic menu', () => {
+  it('surfaces all 565 entitled tasks through the 40-topic menu', () => {
+    // 549 June questions and the 16 of the 2022 Higher deferred sitting, a
+    // paper of its own (its questions are never collapsed into June's).
     expect(subjectAtlasStats('economics')).toMatchObject({
-      questions: 549,
+      questions: 565,
       topics: 40,
       yearMin: 2010,
       yearMax: 2026,

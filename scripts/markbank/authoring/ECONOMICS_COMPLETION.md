@@ -1985,3 +1985,917 @@ interleaves the two columns row by row, which would set each tax or idea
 beside an answer it is not. The table crop stays beside the typed text. Only
 these four cards' questionText changed. Every other card is byte-identical,
 and refcheck places all four.
+
+## 2015 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the covers, the note on published schemes, the title page
+  and the notes and index, and pp37-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 58 routes for the 57 printed asks (14 in Section A, 43 in Section B).
+The one extra route is the Section B Q8(a) agree/disagree stance, each side
+credited with its own list; both carry the scheme's 6 (3 + 3) for reference to
+the Irish economy. 11 crops: 9 hidden scheme solutions and 2 paper data crops.
+
+Decisions:
+- From this paper on, a stem stops before any printed table, and the table is
+  the crop beside the typed ask (the coordinator's ruling: tables are never
+  typed into a question). The A Q7 true/false statements are typed after the
+  ask, as they must be read to answer.
+- A Q1: the scheme prints one answer and prices "3 points of information: 8 +
+  4 + 4". The three points are the phrases it sets in bold (scarce resources
+  with alternative uses; unlimited wants; choices with an opportunity cost),
+  claimed at the printed steps.
+- B2(a)(ii): the diagram's 11 printed points are a menu at 1 each. The 14-mark
+  explanation is one row per numbered head the scheme prints (equilibrium 1 + 2,
+  price and output 2 + 1, cost 2, SNP 1 + 2, inefficiency 1 + 2). The build's
+  6-row cap rules out a row per mark.
+- B1(b)(i)-(iii): diagram elements at 1 each, then shift, price and quantity at
+  1 and the reason for the shift 2. The reason is the scheme's second bullet;
+  its other bullets describe how the market moves to the new equilibrium. The
+  new equilibrium's raised 2 is set back as PE² and QE² (the build folds ²).
+- B4(c)(i)-(ii): "3 at 5 marks (1 + 2 + 2)" is read by the scheme's Statement /
+  Explanation / One main influence columns. (i) is three motives at 3 (1 + 2)
+  and (ii) is three influences at 2.
+- B6(a)(i): "No: 2 marks + 3 reasons at 5". The scheme credits No only.
+- B3(b)(iii): the short run with its reason, printed as one 3: questionTotal.
+
+Refcheck: two short asks were read by hand.
+
+Topic review: 1 reference anomaly. A Q9 sits under the commercial government
+intervention heading, but the review files it as population ageing (Economic
+Growth), with its policies under fiscal policy and the labour market.
+
+Checks:
+- econ_review: 28/66.
+- build: 1,534 cards, 0 dropped.
+- Build rule: 320 claims on this paper, 0 untraceable (59 trace by halves).
+- reconcile: 1,472/2,197, with 2015 HL at 57/57.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2015 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp11-12 are blank;
+- scheme pp1-2 are the cover and the note on published schemes, pp3-4 the
+  title page and the support notes with the index, and pp34-36 blank;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 71 routes for the 80 printed asks (18 in Section A, 62 in Section
+B). There are fewer routes than asks because a ladder the scheme prices
+across parts is one card: A Q1 and A Q2 (four spaces each), A Q5(a)-(b),
+B1(b)(ii)-(iii), B2(a)(i)-(iii) and B5(c)(i)-(iii). Section B Q4(c)(ii) has one
+route for each economist the scheme names (Marx, Smith, Malthus, Ricardo), and
+the question's 75 counts one of them. 12 crops: 5 hidden scheme solutions and
+7 paper data crops.
+
+Decisions:
+- Stems stop before printed tables, and each table is the crop beside the
+  typed ask. Printed items that must be read to answer are typed from the
+  text layer: the A Q2 sentences (the table's header row dropped), the A Q4
+  word list and statements (ruled blanks set as an ellipsis), the A Q6
+  letters, the B3(a)(iii) costs, and the B5(c) rates, which are two boxed
+  lines and not a table. B6(a)'s two budget figures are one printed line of
+  labelled values, so they stay in the stem.
+- Ladders are claimed at their printed steps: A Q1 and A Q2 8 + 4 + 2 + 2, A
+  Q4 6 + 6 + 2 + 2, A Q5 6 + 6 + 4 (its (a) and (b) share one ladder, so one
+  card), A Q6 6 + 6 + 5, A Q7(ii) 4 + 3, B1(a)(ii) 3 + 2, B3(c)(ii) 6 + 3 and
+  B5(c) 12 + 6 + 6 (one card for (i)-(iii)).
+- B3(b)(i): the scheme prints "7 marks" beside the national minimum wage but
+  sets it as 4 + 2, and only 6 fits the paper's (24) for (b) with labour at 6
+  and (ii) at 2 @ 6. It is priced 6, and the card's note says so: "The scheme
+  prints 7 for this part but sets it out as 4 + 2; 6 fits the paper's 24
+  marks." (coordinator, 2026-11-04: a price we chose always carries its
+  reason).
+- B2(b): each development's row carries the scheme's alternative answer (the
+  design fault may shift demand left; the Apps may shift supply right) as an
+  accepted alternative for (i) and (iii); its direction matches (ii) anyway.
+- B6(b)(iii): the scheme prices its Statement and Explanation columns apart
+  (12 marks: 2 at 3 marks, 2 at 3 marks), and its cells never print a
+  statement beside its own explanation, so the card is two rows: a statement
+  2 @ 3 and an explanation 2 @ 3, each response named by its category.
+- B6(a)(i) and B5(a)(iii): the raised marks beside the working are each a
+  claim (B6(a)(i) 1 + 2 + 2 with the minus sign joined to the expenditure
+  figure), and the working is the hidden solution crop.
+- B8(c)(ii): "each * figure at 2 marks": the four starred figures are a 4 @ 2
+  menu, with the working as the hidden crop.
+- B1(b)(ii)-(iii) is one card: the scheme prices each characteristic with its
+  note, 2 at 8 (4 + 4).
+
+Refcheck: three short asks were read by hand (B1(c)(i), B3(a)(i), B5(b)(i)).
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere. A Q6, B4(b) and B6 sit under acronyms and B8 under formulas
+(study-aid headings). A Q1 sits under the labour market, but land is a factor
+of production. A Q4 and B5 sit under globalisation, but visible trade and the
+exchange rate are international trade. A Q3 sits under government
+intervention, but corporation tax is fiscal policy. A Q8 sits under government
+intervention and under growth and development, but emigration is employment
+and unemployment. B6 sits under national income, but the current budget is
+fiscal policy.
+
+Checks:
+- econ_review: 29/66.
+- build: 1,605 cards, 0 dropped.
+- Build rule: 283 claims on this paper, 0 untraceable (44 trace by halves).
+- reconcile: 1,552/2,197, with 2015 OL at 80/80.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2014 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp9-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp38-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 54 routes for the 54 printed asks (10 in Section A, 44 in Section B),
+one card per ask. No printed choice is credited with a list for each side. 12
+crops: 10 hidden scheme solutions and 2 paper data crops.
+
+Decisions:
+- The scheme draws its bullets in SymbolMT, and the text layer reports each one
+  as the letter "x" at the start of a line. No slice crosses one. A bullet list
+  is cut at its bullets. A response whose bullets belong together (the B1(c)(i)
+  and B2(b)(i) explanations, two A Q8 implications) is read where the scheme
+  file prints it without them (its column rendering), so it still traces. The
+  B5(c)(ii) response does not appear whole in any rendering. Its row is the
+  scheme's concluding bullet (GNP is probably the better measure), and the
+  whole six-bullet response is the hidden crop.
+- Ladders are claimed at their printed steps: A Q5 6 + 5 + 5, A Q6 and A Q7
+  10 + 7, A Q8 11 + 6, A Q9 5 + 4 + 4 + 4 (two costs and two benefits on one
+  ladder), B2(a)(i) 5 + 4 + 4, B2(c) 5 + 5 + 5 + 4 after the 1 for oligopoly,
+  B6(c) 7 + 6 + 6 + 6, B8(b)(ii) 6 + 5.
+- A diagram the scheme prices without words (B1(b)(i) 4, B1(c)(i) 8,
+  B2(b)(i) 10) is claimed by the card's own ask, with the scheme's diagram as
+  the hidden figure.
+- B4(a): each term's explanation is a row at 3, and the examples are a 4 @ 2
+  menu. The scheme prints an example for derived demand only and "Appropriate
+  example." for the others.
+- B3(b) is one unnumbered part with three asks (calculate, elastic or
+  inelastic, the implication): one card, 10 + 2 + 8, with the working as the
+  hidden crop.
+- B5(a)(i)-(iv) each have their working crop as the hidden figure, and the
+  data table is the crop beside each ask.
+- B2(b)(i): one crop blanks the heading below the diagram, "Explanation of
+  long run equilibrium:", which sits level with the Q2 and Quantity labels.
+  Nothing of the diagram is touched.
+
+Refcheck: one short ask was read by hand (B7(a)(ii)).
+
+Topic review: no reference anomalies. All 16 of the commercial reference's
+2014 Higher associations match the review.
+
+Checks:
+- econ_review: 30/66.
+- build: 1,659 cards, 0 dropped.
+- Build rule: 223 claims on this paper, 0 untraceable (13 trace by halves).
+- reconcile: 1,606/2,197, with 2014 HL at 54/54.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2014 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp35-36 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 70 routes for the 69 printed asks (9 in Section A, 60 in Section B).
+B1(b)(ii)-(iii) is one card, because the scheme prices a barrier with its note
+(2 x 7). B4(c) asks for ANY TWO of three budget measures, and the scheme lists
+each measure's own arguments for and against. So each measure is a route at
+12 (the 1st correct response 8, the 2nd 4), and the question's 75 counts two
+of them. 6 crops: 2 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- As in the 2014 Higher scheme, bullets are SymbolMT and the text layer
+  reports them as "x". No slice crosses one.
+- Items that must be read to answer are typed from the text layer: the A Q1
+  and A Q3 statements (ruled blanks set as an ellipsis), the A Q2 and A Q6
+  statements, and the A Q8 lists, column by column. The A Q9 formula and its
+  table are the crop beside the ask. That crop blanks the stem's line and the
+  ask's line printed beside the formula (a whiteout that touches nothing in
+  the formula or the table).
+- The paper asks "Explain ... the underlined term(s)." five times. Each of
+  those cards carries its own stem in the question, so the card names its term
+  and no two cards ask the same words.
+- Ladders are claimed at their printed steps: A Q1 8 + 4 + 4, A Q2
+  10 + 2 + 2 + 2, A Q3 12 + 4, A Q4 10 + 6, A Q6 7 + 7 + 3, A Q7 11 + 6, A Q8
+  and A Q9 8 + 3 + 3 + 3, B1(a)(ii) 6 + 4, B4(b)(i) 5 + 4, B5(a)(ii) 8 + 4,
+  B5(b)(ii)-(iii), B5(c)(ii), B6(c)(i)-(ii) and B8(a)(ii) 6 + 4, B8(b)(ii)
+  7 + 4 + 4, B8(c)(i) 8 + 4.
+- B8(b)(ii) prices the three areas by order, not by area. It is one ladder
+  over the scheme's statement-with-explanation pairs, and the note names each
+  area's statements. The B3(c)(ii) areas are priced 7 each, so that card has
+  three heading rows.
+- A Q5: "5 correct components: 3 marks each / Correct answer: 1 marks": the
+  working is one 15-mark row and the answer a 1-mark row, with the scheme's
+  answer table as the hidden crop.
+- B5(a)(i): the scheme prices an example of each cost at 2 but prints none. The
+  two example rows carry its own words, "One correct example:".
+- A Q9: the scheme's ΔQ is mangled in the text layer, so the options are the
+  four definitions. The note names the blank symbols in the table's order.
+
+Refcheck: five short asks were read by hand (B1(b)(i), B2(b)(i),
+B6(a)(i)-(iii)).
+
+Topic review: 15 reference anomalies, each a commercial heading the review
+files elsewhere. A Q5 and A Q9 sit under formulas, and B6, B7 and B8(b)-(c)
+under acronyms (study-aid headings). A Q1 sits under the market economy, but
+the definition of economics is scarcity and choice. A Q4 and A Q7 sit under
+government intervention, but public sector pay and a tax relief are fiscal
+policy. B3 sits under government intervention, but economic systems are the
+market economy, as earlier reviews file them. B7 sits under government
+intervention, but tariffs and quotas are international trade. B8(b)-(c) sits
+under government intervention and globalisation. B5 sits under the labour
+market, B8(a) under growth and development, and A Q2 under globalisation.
+
+Checks:
+- econ_review: 31/66.
+- build: 1,729 cards, 0 dropped.
+- Build rule: 278 claims on this paper, 0 untraceable (54 trace by halves).
+- reconcile: 1,675/2,197, with 2014 OL at 69/69.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2013 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp38-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 57 routes for the 57 printed asks (11 in Section A, 46 in Section B).
+A Q9(a)-(b) is one card, because the scheme prices its four answers on one
+ladder (5 + 4 + 4 + 4). B6(a)(i) has one route for each of the scheme's two
+alternatives, and the question's 75 counts one of them: A, the reserve ratio
+(four steps at 4 and the numerical example's four starred figures at 1), and
+B, the balance sheets (4 + 6 and an explanation of five steps at 2). 10 crops:
+9 hidden scheme solutions and 1 paper data crop.
+
+Decisions:
+- A Q1: "Any 2 points at 8 marks each" over one printed answer. Its three
+  sentences are the menu.
+- A Q6: the scheme prices its one answer "7 marks + 6 marks + 4 marks" and does
+  not divide the answer into points, so the card is questionTotal with unpriced
+  rows.
+- A Q8: the definition 9, then the working's three starred figures at 2 and
+  its two bolded figures at 1, with the working as the hidden crop and the
+  paper's table beside the ask.
+- B1(b)(i)-(iii): the diagram's five elements at 1, then the shift 1, the reason
+  2, the new price 1 and the new quantity 1. The scheme's "at 1m" / "at 2m"
+  tails are cut from each slice.
+- B2(b): the diagram's ten numbered points at 1, then one row per numbered head
+  of the 15-mark explanation (any 2 of 3 at 2; output and price at 2; cost 2;
+  SNPs 2 + 1; waste 1 + 1).
+- B3(b): each market's diagram 5 is claimed by the card's own ask (its words on
+  the paper), beside the hidden crop of both diagrams. The explanations are
+  7 (4 + 3) and 8 (4 + 4).
+- B1(c)(ii): each effect 3 and the net effect 4. The scheme accepts either
+  direction, by which effect is greater.
+- Ladders are claimed at their printed steps: A Q5 6 + 5 + 5, A Q7 5 + 4 + 4 + 4,
+  B1(a)(i) 7 + 4, B3(a) 7 + 7 + 7 + 4, B4(c) 10 + 5, B5(c)(ii) 8 + 4.
+
+Refcheck: one short ask was read by hand (B2(c)(i)).
+
+Topic review: 6 reference anomalies, each a commercial heading the review files
+elsewhere. A Q9, B8(b) and B8(c) sit under topical questions and statistics (a
+study-aid heading). A Q8 sits under costs of production, but the APC is
+national income. B8(a) and B8(b) sit under government intervention, but youth
+unemployment is employment and unemployment, and the national debt fiscal
+policy. Topical questions and statistics now has no question in the Ask the
+papers topic index, so it leaves that index (928 -> 927 topic identities).
+
+Checks:
+- econ_review: 32/66.
+- build: 1,786 cards, 0 dropped.
+- Build rule: 335 claims on this paper, 0 untraceable (19 trace by halves).
+- reconcile: 1,732/2,197, with 2013 HL at 57/57.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2013 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp39-40 blank or the back cover.
+  The cover is in Irish ("An Ardteistiméireacht 2013 … Gnáthleibhéal"), but
+  the scheme is the English one (its title page reads LEAVING CERTIFICATE 2013
+  MARKING SCHEME ECONOMICS ORDINARY LEVEL);
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+The appenders behind the scheme file look for "Ordinary Level" on the cover
+and refuse this one. The scheme file was built with the appenders pointed at
+the file itself (gen_md_cover.sh, kept in the lane folder's economics/tools),
+and no shared code changed. The tables, block order, column runs and fractions are all appended.
+
+There are 70 routes for the 76 printed asks (15 in Section A, 61 in Section B).
+Three cards cover more than one printed ask, because the scheme prices them
+together: A Q2(i)-(iv) (2 at 6 + 2 at 2), B1(b)(ii)-(iii) (2 at 7, a
+characteristic with its note) and B2(a)(i)-(iii) (one graph). No printed
+choice is credited with a list for each side. 8 crops: 3 hidden scheme
+solutions and 5 paper data crops.
+
+Decisions:
+- Many answers sit in two-column Statement / Explanation tables. The
+  table-cell rendering prints each statement cell with its explanation on the
+  next line, so each option is "<statement> — <explanation>". Where an earlier
+  table prints the same statement cell ("Increased VAT rates", "Unemployment"
+  in B5(c)(ii), "Employment" in B7(c)(iii)), the cell rendering does not repeat
+  it, so those rows are read whole and checked against the page.
+- A Q4: "10 marks+3 marks + 3 marks" for the three motives is claimed in the
+  order the answers are correct, the first 10. The rendered scheme page sets
+  the tariff centred beneath the table, against no motive, so the card's note
+  says the scheme does not say which motive earns the 10 (coordinator,
+  2026-11-04).
+- A Q3, A Q5, A Q7 and A Q9 price their two parts "x marks + y marks" in the
+  ask's order: the reason (or explanation) first, then the effect (or benefit).
+  A Q9's 7 + 10 shows the order is positional, not a ladder.
+- Items that must be read to answer are typed from the text layer: the A Q2
+  sentences and the A Q4 motives. The A Q1 items and table are the crop beside
+  the ask, as are the diagrams and the B2 schedule.
+- B4(c) asks for each of the three Budget 2013 measures. It is one card of six
+  heading rows, an argument for and one against each measure at 5.
+- B3(c)(ii): "ANY 2 actions at 6", one for each of two of the three groups. The
+  options keep the scheme's order (IT companies, then colleges, then the
+  government), and the note names that order.
+- Ladders are claimed at their printed steps (A Q1 and A Q2 6 + 6 + 2 + 2, A Q6(a)
+  3 + 2 + 2 + 2, B6(a)(ii) 6 + 2, and 8 + 4 on B6(a)(iii), B6(b)(i), B6(c)(ii)-(iii),
+  B7(a)(ii)-(iii), B7(b)(i)-(ii) and B7(c)(iii)).
+
+Refcheck: two short asks were read by hand (B4(b)(i), B7(c)(ii)).
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere. A Q6 sits under formulas, and B4, B7 and B8 under acronyms
+(study-aid headings). A Q1 and A Q6 sit under the labour market, but the
+factors of production are scarcity and choice, and the sofas' costs are costs
+of production. A Q9 and B5(a)-(b) sit under growth and development, but
+infrastructure is fiscal policy, and the circular flow and consumer spending
+are national income. B3 and B5(a)-(b) sit under government intervention. B5(c)
+sits under globalisation, but the black economy is national income.
+
+Checks:
+- econ_review: 33/66.
+- build: 1,856 cards, 0 dropped.
+- Build rule: 366 claims on this paper, 0 untraceable (31 trace by halves).
+- reconcile: 1,808/2,197, with 2013 OL at 76/76.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## Batch 3 browser check: 2013-2015 (lane, 2026-11-04)
+
+There were 121 cases: every figure card (56) and one text card in five (65) of
+the 380 cards from 2015, 2014 and 2013, at both levels. Each ran on phone
+(390 x 844) and desktop (1440 x 1000), light and dark, for 484 runs. The
+official page reader was opened once per card. Eight runs were flagged, all
+for one cause: the check's answer needle also appears in the question. They
+are 2014 HL B2(b)(i), where "Equilibrium" appears in "long run equilibrium",
+and 2014 OL A Q3, where "INCREASING" appears in "(increasing / decreasing)".
+Neither card shows its answer before the reveal, and the screenshots confirm
+it.
+
+Reading the screenshots found two faults, and both are fixed:
+- 2013 OL B4(c): the app shows a group by its tariff, not by its label, so the
+  six argument groups did not say which measure each belonged to. Each note
+  now names its measure.
+- 2013 HL B6(a)(i) balance-sheet route: the two sheet rows flattened each
+  table into one line. Each sheet is now claimed by the scheme's own title,
+  Balance Sheet of a Bank, with a note saying which sheet it is. The sheets
+  themselves remain the hidden crop.
+Those two cards were run again on all four views after the fix.
+
+## Old-syllabus census: three more reader faults (lane, 2026-11-04)
+
+A hand count of 2010-2012 from the rendered pages found three places where
+`econ_legacy_census.py` keyed the paper wrongly. The fixes are in that file,
+which only the Economics census (`paper_census.census_subject`, behind
+`subject == 'economics'`) and `econ_refcheck.py` import:
+- A letter that continues a sentence in lower case is a label, not a part.
+  2012 HL Section A Q4 asks "whether it is an internal or external", the line
+  breaking before "(a) economy of scale or (b) diseconomy of scale", and its
+  table repeats both letters as column heads. It had been keyed Q4(a) and
+  Q4(b). It is one ask, Q4.
+- The next roman printed inside the open roman's line, after its question
+  mark, is a part. 2012 HL Section B Q4(c) prints "(i) in the short run?
+  (ii) in the long run?" on one line, and the scheme prices them 15 and 10.
+  (c)(ii) had been lost.
+- A roman printed again under the open letter, opening an ask, takes the next
+  roman not yet keyed. 2010 OL Section B Q6(b) prints "(i) Name ... (i) Discuss
+  ... (ii) Outline ...", three asks that the scheme numbers (i)-(iii). One had
+  been lost, and "Outline" had been keyed (ii).
+
+A before/after census of all 21 old-syllabus sittings changes exactly these
+keys and nothing else:
+- 2012 HL: Q4(a) and Q4(b) become Q4, and B Q4(c)(ii) is added. The paper
+  stays at 55 (A 13 -> 12, B 42 -> 43).
+- 2010 OL: B Q6(b)(iii) is added (73 -> 74).
+- Every other key and its text is unchanged. Economics goes 2,197 -> 2,198.
+
+The other four 2010-2012 sittings agree with the hand count key for key.
+
+## 2012 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp39-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 60 routes for the 55 printed asks (12 in Section A, 43 in Section B).
+Five extra routes come from choices where the scheme credits each side or
+option with its own answer, and each question's total counts one of them:
+- A Q8: Yes / No.
+- B5(c)(ii): Yes / No.
+- B8(a)(i): two push OR two pull factors.
+- B7(a)(ii): the scheme's three options. Option 1 is three bullets at 3 + 3 + 2.
+  Options 2 and 3 are 8 each, undivided.
+15 crops: 11 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- A Q4: one card with the four statements' ticks at 4. Each row reads the
+  statement, the scheme's column group and its column ("— (b) Diseconomy of
+  Scale — Internal"). The ticked table is the hidden crop, and the paper's
+  table sits beside the ask.
+- Prices the scheme does not divide are questionTotal, with unpriced rows and
+  a note that says so: A Q5(b) (the example and its reason, 6), A Q9(b) (the
+  answer and its explanation, 9), B6(b)(i) (the explanations and examples, 8)
+  and B7(a)(ii) options 2 and 3 (8 each).
+- A Q8: the scheme prints "(1+8+8) marks" beneath one answer for each side.
+  The answer is 1, then the explanation is two points at 8. Yes is read as its
+  two sentences. No is read as its point and its "e.g." example. The note says
+  this.
+- Where a breakdown is printed beneath points without saying which point earns
+  which, the ladder is claimed in the order the answers are correct, and the
+  note says so: B5(c)(i) "10 (4+4+2)" over its population, food supply and
+  outcome points, and B8(c)(i) "13 (9+4)" over its two bullets.
+- B4(a)(i) "13 (6+3+4)" is read in the order printed: the diagram 6, SRAC 3,
+  LRAC 4. The note says so. Each diagram row is claimed by the ask's own
+  words ("With the aid of two clearly labelled diagrams"), beside the hidden
+  diagram. B4(a)(ii) "12 (6+6)" is the diagram 6 and the scheme's three MC/AC
+  lines 6.
+- B1(b): each product's column is one row at 10. The row holds the price
+  change, the type of good, the reason and the effect on total revenue. The
+  demand curves are in the hidden crop. The scheme does not divide the 10.
+- B2(b): the scheme lists 7 diagram elements under "7 marks", and 4 market
+  and 4 firm elements under "4 marks" each, so each element is claimed at 1.
+  The notes say so. Each explanation is 5 at 2.
+- B7(a)(iii): "4 at 3 marks" sits beneath six lines of working: four
+  equivalences and the two possible terms of trade. The card offers all six
+  and claims four, and the note says the scheme does not say which four. The
+  FOOD line keeps the scheme's own "0.3".
+- B8(b)(i): the rate 14.8% (May 2012: 432,907) is 5 marks, and the scheme's
+  forecast rate (14.1%) is an accepted alternative.
+- Ladders are claimed at their printed steps: A Q1 and A Q2 6 + 5 + 5, A Q7
+  6 + 6 + 5, B6(b)(iii) 4 + 3.
+
+Refcheck: three short asks were read by hand: A Q5(a), A Q6(ii) and B8(c)(i).
+
+Topic review: 6 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q3 under employment: the black economy is national income.
+- A Q7 under national income: savings are the financial sector.
+- A Q9 under government intervention: the household charge is fiscal policy.
+- B3(b) under economic growth and development: entrepreneurship is scarcity
+  and choice.
+- B3(c) under costs of production: the survival of small firms is market
+  structures, as 2016 HL files it.
+- B8(b) under national income: the Live Register is employment and
+  unemployment.
+
+Checks:
+- econ_review: 34/66.
+- build: 1,916 cards, 0 dropped.
+- Build rule: 298 claims on this paper, 0 untraceable (23 trace by halves).
+- reconcile: 1,863/2,198, with 2012 HL at 55/55.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2012 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, a blank page, the title page and the support
+  notes with the index, and pp36-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 70 routes for the 71 printed asks (10 in Section A, 61 in Section B).
+B1(b)(ii)-(iii) is one card, because the scheme prices each characteristic
+stated (4) and explained (3) together. No printed choice is credited with a
+list for each side. 11 crops: 4 hidden scheme solutions and 7 paper data
+crops.
+
+Decisions:
+- A Q1(b): both printed lists are typed after the ask, each column read down
+  as printed (as 2016 OL A Q5), and the canons table is the crop beside it.
+  The four matches are claimed 4 + 4 + 3 + 3.
+- A Q5: "5 at 2 marks each" beneath the five words of European Union and
+  International Monetary Fund is read as 2 a word: EU 4, IMF 6. The note says
+  so.
+- Ladders across groups claim one answer for each group, and the note names
+  the groups (the app does not show a group's label): A Q7 12 + 5, A Q8
+  11 + 6, A Q9 9 + 4 + 4, B1(c)(ii) 8 + 4 + 4, B4(c)(iii) 7 + 4 + 4.
+- B2(b)(i): the scheme prices the factor "2 at 4 marks each" and how it shifts
+  the curve "2 at 3 marks each". Each option is a factor with its how, claimed
+  at 7 (4 + 3). The note says so.
+- B3(a)(ii): the scheme prints "3 marks" beside "costs which do not change"
+  and "1 marks" beside "as output changes", and "One correct example: 2
+  marks" without an example. Each cost is three rows: 3, 1 and the example 2,
+  each with its reading in the note. The fixed-cost definition after "or" is
+  accepted on the 3 and 1 rows.
+- B7(a)(iii): the scheme's starred figures, 3 + 3 + 2 (8 workings at 1).
+- The paper prints "Explain the underlined term." for ten parts. A question
+  the deck has already seen is refused, so each of those cards carries its
+  stem in its question (as 2013 OL does).
+
+Refcheck: one short ask was read by hand (B7(c)(i)).
+
+Topic review: 9 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q5, B4 and B8 under acronyms and B5 under formulas (study-aid headings).
+- A Q4 under government intervention: austerity is fiscal policy.
+- B5 under government intervention and under employment: its terms are
+  national income.
+- B7(c) under government intervention: multinationals are globalisation.
+- A Q8 under economic growth and development: emigration is employment and
+  unemployment.
+A Q9 is filed under employment and unemployment as well, as its third group is
+Irish employment levels.
+
+Checks:
+- econ_review: 35/66.
+- build: 1,986 cards, 0 dropped.
+- Build rule: 330 claims on this paper, 0 untraceable (48 trace by halves).
+- reconcile: 1,934/2,198, with 2012 OL at 71/71.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2011 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, a blank page, the title page and the support
+  notes with the index, and pp36-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+This scheme prints its short tariffs as a total with its parts in brackets
+("17 marks (10+5+2)"). Over a list of responses that is a ladder, claimed in the
+order the answers are correct. Over printed parts of different kinds it is read
+in the order the parts are printed, and the card's note says so.
+
+There are 51 routes for the 55 printed asks (12 in Section A, 43 in Section B).
+Three cards each cover asks that the scheme prices together:
+- A Q3(i)-(iv): four statements at 4.
+- B2(b)(i)-(ii): one diagram 9 (its nine elements at 1), the shape 8 and the
+  equilibrium 8.
+- B2(c)(i)-(ii): two reasons and two benefits on one ladder, 7 + 6 + 6 + 6.
+B5(b)(ii) (four arguments in favour OR four against) has one route each, and
+the question's 75 counts one of them. 9 crops: 8 hidden scheme solutions and 1
+paper data crop.
+
+Decisions:
+- A Q2 and A Q5 "16 marks (12+4)": the definition 12, then the two examples
+  (or factors) 4 between them, 2 each. 2014 HL prints "Explanation: 12 marks /
+  Example: 4 marks" the same way. The notes say so.
+- A Q8 "17 marks (8+5+2+2)": the formula and working 8 (claimed by the ask's
+  own words, beside the hidden working), the answer -2.25 5, "Complement" 2
+  and its reason 2, in printed order.
+- B1(c)(ii) "13 marks (9+4)": the working 9 and the answer 4, in printed
+  order.
+- B7(a)(ii): "16 marks" is printed beneath three reasons for an ask of two,
+  read here as 8 each. The note says so.
+- B1(a)(i) (two definitions, 6), B4(a)(i) (three calculations, 12) and
+  B7(b)(iii) (three points, 9) price their answers without dividing them, so
+  they are questionTotal with unpriced rows.
+- B1(a)(ii): each consumer's diagram 3 (its axes and D/C at 1), the market
+  diagram 5 (its axes at 1 and the cumulative D/C 3) and the explanation 3.
+- B1(b)(i): a movement along and a shift, 8 each with its diagram, which the
+  scheme does not divide.
+- B4(a)(ii): the diagram 12 (claimed by the ask's own words) and the
+  explanation 6.
+- B3(c): the scheme's "May argue the opposite of this point" sits beside the
+  advantage of increased employment, and the note says so.
+- B8(b): the compulsory point 4, then three other points at 7.
+- Ladders across groups claim two of each where the paper asks for two of
+  each: A Q9 5 + 4 + 4 + 4 and B4(c) 4 + 4 + 4 + 3.
+
+Refcheck: four short asks were read by hand (B5(a)(i), B5(b)(i), B6(a)(i),
+B6(a)(ii)).
+
+Topic review: 2 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q2 under government intervention: a mixed economy is the market economy,
+  as earlier reviews file economic systems.
+- A Q7 under international trade: multinationals re-locating are
+  globalisation.
+
+Checks:
+- econ_review: 36/66.
+- build: 2,037 cards, 0 dropped.
+- Build rule: 278 claims on this paper, 0 untraceable (61 trace by halves).
+- reconcile: 1,989/2,198, with 2011 HL at 55/55.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2011 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp9-12 are blank;
+- scheme pp1-3 are the cover, a blank page and the support notes with the
+  index, and pp33-36 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("ORDINARY LEVEL"), and the
+  appenders' cover check looks for "Ordinary Level". So the scheme file was
+  built with that check pointed at the file (economics/tools/gen_md_cover.sh),
+  visually verified as the English Ordinary scheme. No shared code changed.
+
+There are 71 routes for the 81 printed asks (17 in Section A, 64 in Section B).
+Six cards each cover asks that the scheme prices together:
+- A Q1(i)-(iii), A Q2(i)-(iii) and A Q7(i)-(iv): the paper numbers the items
+  of one question.
+- B1(b)(i)-(ii): each barrier is stated and explained, 11 + 5 + 5.
+- B2(a)(i)-(iii): one diagram.
+- B2(b)(i)-(iii): the three answers for each of the two statements.
+B2(c)(i) (one advantage OR one disadvantage) and B7(c)(ii) (agree or
+disagree) have one route each, and each question's 75 counts one of them. 9
+crops: 5 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- A Q1: each missing word is claimed at its printed price (2 + 2, 3 + 3,
+  3 + 3).
+- A Q5: both printed lists are typed after the ask, each column read down (as
+  2016 OL A Q5). The four open matches are 6 + 6 + 2 + 2, and D is matched for
+  illustration.
+- A Q6: the scheme's one sentence is read as its four capitalised points (any
+  two at 4), then the two circled goods 5 + 4.
+- A Q9: the three figures at 3, the two signs at 2 and the answer 4, with the
+  working as the hidden crop.
+- B3(a)(ii): each definition is 5, with the scheme's "4 marks" and "1 marks"
+  printed beside it. The fixed-cost definition after "or" is accepted.
+- B3(b)(i): the public sector 3 + an example 2, and the private sector 2 + an
+  example 2, as printed.
+- B6(c)(i): "Infrastructure: 6 marks" and "(Examples: ...: 3 marks)" are read
+  as the explanation 3 and an example 3. The note says so.
+- B8(c)(i): the scheme's one sentence is read as its two parts on the printed
+  ladder, 4 + 2. The note says so.
+- One answer for each group the paper names: B1(c)(iii) (any two of three
+  groups at 6), B7(b)(ii) (three groups at 6), B8(a)(iii) (three at 4) and
+  B8(b)(ii) (two at 6).
+- The paper prints "Explain the underlined term." for several parts. Those
+  cards carry their stem in their question, as 2012 OL does.
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere:
+- A Q1, B5 and B8 under acronyms, and A Q9 and B6 under formulas (study-aid
+  headings).
+- A Q6 under the market economy: an economic good is scarcity and choice.
+- A Q8, B5 and B8 under government intervention: the government's aims, the
+  budget and the retirement age are fiscal policy.
+- A Q5 and B4 under globalisation: barriers to trade and tourism are
+  international trade.
+B3 is filed under government intervention as well, for the national minimum
+wage.
+
+Checks:
+- econ_review: 37/66.
+- build: 2,108 cards, 0 dropped.
+- Build rule: 350 claims on this paper, 0 untraceable (33 trace by halves).
+- reconcile: 2,070/2,198, with 2011 OL at 81/81.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2010 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 35 scheme pages were viewed:
+- paper p8 is blank;
+- scheme p1 is the cover and p2 the support notes with the index;
+- scheme page numbers are the PDF's and equal the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("HIGHER LEVEL"). So the scheme file
+  was built with the appenders' cover check pointed at the file
+  (economics/tools/gen_md_cover.sh), visually verified as the English Higher
+  scheme. No shared code changed.
+
+There are 54 routes for the 54 printed asks (9 in Section A, 45 in Section B).
+B8(a)(i)-(iv) is one card: the reader keys the four areas of one instruction
+as romans, and the scheme prices them together on one ladder. Extra routes,
+each counted once in its question's 75:
+- B5(b)(i) and (b)(ii): one route for each of the scheme's two tables. The
+  second table is headed "The Long run" and gives the opposite effect. Each
+  table is priced 4 + 6.
+- B7(c): the IMF OR the World Bank is a printed choice, and the scheme gives
+  each its own list.
+7 crops: 6 hidden scheme solutions and 1 paper data crop.
+
+Decisions:
+- B8(a) "7 marks + 6 marks + 6 marks + 6 marks": the scheme does not say which
+  area earns the 7, so the first correct area is claimed at 7 and the other
+  three at 6. The note says so.
+- A Q3 "6 * at 2 marks each": the six starred figures of the working are
+  claimed at 2, and the explanation 4 is not divided between its two
+  sentences.
+- A Q6 "5 marks: 1 mark for each item": the five printed items of the working
+  (the 1, the three propensities and the answer) at 1, then the meaning 12.
+- B5(a)(i) and (a)(ii): each figure of the working at the mark printed under it
+  (2 + 2 + 2 + 4 and 3 + 3 + 4).
+- B1(a)(i) and (a)(iii): each plotted point of the scheme's schedule at 1, each
+  label at 1, and the equilibrium point, price and quantity at 1, beside the
+  hidden diagram.
+- B2(c): the diagram's ten items circled 1 and three circled 2, then price 3,
+  output 3, and profits and efficiency 4 each (1 for each part the scheme marks
+  (1)).
+- B4(a)(ii), B5(c)(i), B7(a)(i) and B7(b)(i) print no number on the paper. The
+  scheme's count is used, and each note says so.
+- B8(b): the paper prints "By 2036", and its stem keeps that. The scheme's
+  reprint says 2046, and the card's note says so: "The marking scheme
+  reprints this as 2046." (coordinator, 2026-11-04).
+
+Refcheck: three short asks were read by hand (B4(a)(i), B6(a)(i), B6(c)).
+
+Topic review: 1 reference anomaly. B4(c) sits under national income, but the
+national debt is fiscal policy.
+
+Checks:
+- econ_review: 38/66.
+- build: 2,162 cards, 0 dropped.
+- Build rule: 354 claims on this paper, 0 untraceable (24 trace by halves).
+- reconcile: 2,124/2,198, with 2010 HL at 54/54.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2010 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 33 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-3 are the cover, a blank page and the title page with the index
+  and support notes, and p33 the back cover;
+- scheme page numbers are the PDF's, one ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("ORDINARY LEVEL"). So the scheme file
+  was built with the appenders' cover check pointed at the file
+  (economics/tools/gen_md_cover.sh), visually verified as the English
+  Ordinary scheme. No shared code changed.
+
+There are 65 routes for the 74 printed asks (12 in Section A, 62 in Section B).
+Five cards each cover asks that the scheme prices together: A Q1(i)-(ii), A
+Q3(i)-(iii), B5(a)(i)-(iii), B6(a)(i)-(iii) and B8(c)(i)-(iii). B6(b) is
+printed "(i) Name ... (i) Discuss ... (ii) Outline ...", an SEC misprint. The
+scheme numbers the three parts (i)-(iii), and so do the reader (the census fix
+above) and the cards. The (ii) and (iii) cards say in a note that the paper
+prints them "(i)" and "(ii)". No printed choice is credited with a list for
+each side. 11 crops: 5 hidden scheme solutions and 6 paper data crops.
+
+Decisions:
+- A Q1: "4 + 2 + 2" beside each name does not say which word earns the 4, so
+  the first correct word is claimed at 4 and the other two at 2.
+- A Q4 (the explanation and the example, 16) and A Q9 (two effects, a bare 17)
+  print one total over the answer without dividing it, so they are
+  questionTotal cards. A Q9's menu row carries no per-option price, as the
+  live Chemistry 2026 OL Q11(d)B(vi) card does.
+- B2(a)(i) "7 marks" with 5 and 2 beneath the two halves of its sentence, and
+  B8(b)(i) the same way: read in that order, and the notes say so.
+- B5(a) and B6(a) "(7 marks +7 marks +6 marks)" beneath a table of three
+  terms: the first two correct answers 7 each and the 3rd 6. The notes say
+  the scheme does not say which term earns which.
+- B1(b): three barriers, each explained with an example, 12 + 6 + 6. The
+  scheme's examples are in its table, which is the hidden crop.
+- B4(b)(i): the working at 10 (the scheme underlines five components at 2)
+  and the answer 2.
+- Ladders across groups claim one answer a group, and the notes name the
+  groups: B3(c)(ii) 8 + 5 and B8(c) 11 + 7 + 7.
+- Statement / Explanation tables whose rows do not line up (B4(c)(iii),
+  B6(c)(ii), B7(a)(iii), B8(c)) pair each statement with the explanation that
+  restates it, and the notes say so.
+
+Refcheck: one short ask was read by hand (B4(c)(i)).
+
+Topic review: 10 reference anomalies, each a commercial heading the review
+files elsewhere:
+- A Q1 and B7 under acronyms, and B4(b) under formulas (study-aid headings).
+- A Q4 under the market economy: opportunity cost is scarcity and choice.
+- A Q5 under government intervention: the budget deficit is fiscal policy.
+- A Q6 under government intervention: more third-level students is economic
+  growth.
+- A Q8 under the labour market: entrepreneurship is scarcity and choice.
+- B7 and B4(c) under economic growth and development: deflation and savings
+  are monetary policy and the financial sector, and emigration is employment.
+- B8 under globalisation: trade and the exchange rate are international
+  trade.
+
+Checks:
+- econ_review: 39/66.
+- build: 2,227 cards, 0 dropped.
+- Build rule: 298 claims on this paper, 0 untraceable (26 trace by halves).
+- reconcile: 2,198/2,198 (100%), with 2010 OL at 74/74, 0 excluded, 0 open.
+- refcheck: 0 wrong.
+- cardlint: clean.
+
+## 2022 Higher English, deferred sitting (lane, 2026-11-04)
+
+The SEC's deferred examination is a paper of its own. The archive files it
+under deferredexams/ and deferredmarkingschemes/ with the June file id, and
+Paper Trail indexes it as "LC034ALP000EV-deferred". Every card says so twice,
+in its id ("econ-2022-hl-deferred-...") and its citation ("... — Deferred
+sitting"), and reconcile reads the two together. It is the only deferred
+Economics sitting in the archive: 2022 Higher, no Ordinary, nothing later.
+
+All 40 paper pages and all 40 scheme pages were viewed. The scheme PDF page
+is the printed page, and pages 37-40 are blank and the back cover. The hand
+count of the printed asks is 70 (Section A 23, Section B 47), the same as the
+reader's. There are 70 cards, one per printed ask. Section A answers "(b) or
+(c)" in Q5, Q7 and Q9, and both alternatives are carded. Q6(b) "ANY TWO of A,
+B, OR C" is one card claimed twice at 3.
+
+Stems and asks are sliced from the deferred paper, and every marking point
+from 2022-hl-deferred.md (its text extracted with
+economics/tools/gen_md_deferred.sh). The deferred scheme draws every glyph it
+prints, so June's glyph repairs are not applied to it.
+
+Prices the scheme leaves open. Each card carries its reason in a visible note:
+- A Q1: "1 x 6 (3+3)" and "3 x 3 (1+2)" are printed together beside (a), and
+  nothing is printed beside (b). (a) asks for two consequences, so it takes
+  the 6 (3 + 3), and (b) takes the 3 × 3 (1 + 2). Together they make the
+  question's 15.
+- A Q3(b): 1 × 3 and 1 × 2 are printed beside two headings, "+ sign" and
+  "Number". Read in that order, the sign earns 3 and the number 2.
+- A Q6(a): "Any 3 x 3" is printed beside one definition with three parts in
+  bold. Each part earns 3.
+- A Q9(b) and (c) each ask for one response, but the scheme prints "2 x 4
+  (2+2)", 8 marks. The one response is assessed against the part's 8.
+- A Q10(b) and Q12(c)(i) print "7 (4+3)" and ask for no number. This is one
+  response, as the same price is beside the asks for one benefit in
+  Q12(c)(ii) and (iii).
+- Q11(b)(i): 4 (2 × 2) beside each country. That is 2 for the outcome and 2
+  for the figures.
+- Q12(b)(ii) prints "1 x 6 (3+3)" and "1 x 4 (2+2)", and Q16(a)(ii) prints
+  "1 x 8 (4+4)" and "1 x 4 (2+2)". Each is one card with two groups, read in
+  the order the paper asks and the scheme answers: the advantage or positive
+  effect earns the larger price.
+- Q16(b)(i): "6 (2 x 3)" is printed beside three effects. Any two earn 3 each.
+- Diagrams the scheme prices by label: Q2(a) has seven labels at 1, Q12(b)(i)
+  nine at 1 with eight marked explanation points, and Q15(a)(i) four at 2.
+  These are claimed label by label, lifted from the scheme. Diagrams it prices
+  without naming the elements are ask rows, each with the scheme's diagram as
+  the hidden solution: A Q4(b), Q11(c)(i) 13 × 1, Q14(b)(i) and (ii), Q14(c)(i)
+  4 × 3, Q15(b)(i) and (ii) 3 × 2, Q16(b)(i) and Q16(c)(iii).
+
+The scheme answers some printed choices on one side only, so each is one card
+on that side: A Q4(b) No, A Q8(a) Yes, A Q8(b) True, Q11(a)(iii) Expansionary,
+Q12(b)(iii) Agree, Q13(c)(i) No and Q14(a)(iii) regressive.
+
+The scheme's misprints are named in the notes, never corrected in its words.
+Q12(a)(i) heads 2021 "2001", Q11(b)(i) writes 00% for exports to Great Britain
+(the chart shows 10%), and A Q2(a) writes "form" for "from". Q14(a)(ii): the
+paper asks for a "fair" tax system and the scheme answers for a "modern" one.
+
+Topic review: 16 SEC topic reviews keyed to "LC034ALP000EV-deferred.pdf". The
+reference's 38 "Deferred Exam Paper" headings were source-blocked until now.
+They now resolve to this paper: 33 match, and 5 are reference anomalies.
+- Q8 under the market economy. It covers sustainability and market failure.
+- Q11 Part C under the market economy and under government intervention. The
+  circular flow is national income.
+- Q14 under topical questions and statistics, a study-aid heading.
+- Q15 under economic concepts. It covers the market for electric vehicles and
+  subsidies.
+
+The deferred booklet is numbered 1-16 like June's. So its reviews join on the
+booklet (registry FILE_QUESTION_TOPICS), and the Atlas's question identity
+keeps its questions apart from June's.
+
+Checks:
+- econ_review: 40/67.
+- build: 2,297 cards, 0 dropped. Every June card is byte-identical.
+- Build rule: 291 claims on this paper, 0 untraceable.
+- reconcile: 2,268/2,268 (June 2,198 + deferred 70), 0 excluded, 0 open, 0
+  orphans.
+- refcheck: 0 wrong. Two five-word asks were read by hand.
+- cardlint: clean.

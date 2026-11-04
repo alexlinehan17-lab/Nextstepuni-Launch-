@@ -761,7 +761,7 @@ def _leading(text):
 class Paper:
     """One paper, indexed by question number and part path."""
 
-    def __init__(self, subject, year, level, component=None):
+    def __init__(self, subject, year, level, component=None, *, files=None):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
         self.subject, self.year, self.level = subject, year, level
         self.component = component
@@ -775,7 +775,7 @@ class Paper:
         # every question number in the year.
         want = rf'{year}-{level}-{component}-paper\.pdf' if component else \
             rf'{year}-{level}(-\d+)?-paper\.pdf'
-        self.files = sorted(
+        self.files = list(files) if files is not None else sorted(
             os.path.join(root, f) for f in os.listdir(root)
             if re.fullmatch(want, f))
         if not self.files:
