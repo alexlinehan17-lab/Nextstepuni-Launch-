@@ -147,8 +147,9 @@ class Pair:
         self.label, self.value = label, value
 
 
-def pt(text, marks, note=None, route=None):
-    return {'kind': 'point', 'text': text, 'marks': marks, 'note': note, 'route': route}
+def pt(text, marks, note=None, route=None, head=None):
+    return {'kind': 'point', 'text': text, 'marks': marks, 'note': note, 'route': route,
+            'head': head}
 
 
 def allof(text, marks, note=None):

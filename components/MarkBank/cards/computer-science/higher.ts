@@ -5673,4 +5673,92 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q4", topicId: "cs-1-1", conceptId: "1-shows-row-black-white-discs",
+    section: "A", questionRef: "2024 HL Q4",
+    questionText: "Figure 1 shows a row of black and white discs with their position numbers shown under each square. There are only two ways to move a disc: 1. Move into an empty square one position to the left or right, for example 1 → 2 means move the disc from square 1 to square 2. 2. Jump in either direction over a single adjacent disc into an empty space immediately beyond, for example 3 → 1 means move the disc from square 3 to square 1, jumping over a disc in square 2. Write a sequence of steps, or an algorithm, that swaps all the white discs with the black discs so that the row looks like that shown in Figure 2. You can only move a single disc in each step.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Full correct solution", marks: 6, contextNote: "Full correct solution 6 marks Four or more correct steps in the correct order 4 marks Response with some merit 2 marks", permittedMarks: [0,2,4,6] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q4-figs",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q4-figs.png",
+          "srcHash": "b069254414d93863460480affbd0374c",
+          "alt": "Figure 1 (start state): five squares numbered 0 to 4 holding a white disc in squares 0 and 1, square 2 empty, and a black disc in squares 3 and 4. Figure 2 (end state): black discs in squares 0 and 1, square 2 empty, and white discs in squares 3 and 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q4",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q4.png",
+          "srcHash": "8ab0286e7e5b9c19b7338fe292597922",
+          "alt": "The marking scheme's solution to Question 4: eight moves from the start state, 1 to 2, 3 to 1, 4 to 3, 2 to 4, 0 to 2, 1 to 0, 3 to 1 and 2 to 3, each drawn as the row of discs it leaves, ending with the black discs in squares 0 and 1 and the white discs in squares 3 and 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q12-b", topicId: "cs-1-2", conceptId: "provide-implication-quote-could-have-use",
+    section: "A", questionRef: "2024 HL Q12(b)",
+    questionText: "Provide one implication that the quote could have for your use of online applications.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Provide one implication that the quote could have for your use of online applications.", marks: null, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", group: {"claimMax":1,"perOption":3,"options":["Privacy - users often share personal information that becomes valuable for targeted advertising.","Manipulation of attention – excessive use of online platforms can lead to addictive usage patterns, foster a comparison culture which in turn can have a negative impact on mental health.","Responsible use - on a positive note, the quote can serve as an educational tool, promoting digital literacy and empowering users to make informed decisions about their online activities such as reading terms and conditions."]} },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q12-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q12-fig0.png",
+          "srcHash": "fc23af70fcd91510becdf651e9fd0068",
+          "alt": "The table or diagram printed with 2024 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-b-i", topicId: "cs-3-1", conceptId: "use-information-provided-fill-six-empty",
+    section: "B", questionRef: "2024 HL Q15(b)(i)",
+    stem: "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
+    questionText: "Use the information provided below to fill in the six empty cells with the correct values. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "MEMBERS — 2 Bill", marks: 1, contextNote: "Each correct response 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "LOANS — 1 4 01/05/24", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "LOANS — 2 1 18/05/2024", marks: 1 },
+    { id: "r-4", kind: "criterion", verbatim: "LOANS — 3 3 15/05/2024", marks: 3, permittedMarks: [0,1,2,3] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15b-fig7",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15b-fig7.png",
+          "srcHash": "83c20bbef2f3d576745b0878cf70a60c",
+          "alt": "Figure 7: the MEMBERS table (member_id 1 Amy, 2 with its name blank, 3 Chloe) and the LOANS table (member_id, book_id, date_borrowed): 3, 2, 20/05/2024; a blank member_id, 4, 01/05/24; 2, 1 and a blank date; and a fourth row left blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q15b-i",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q15b-i.png",
+          "srcHash": "6d1c13e5ef46bc35af4306dc50c10991",
+          "alt": "The marking scheme's completed tables for Question 15(b)(i), its answers in bold: MEMBERS row 2 named Bill; in LOANS the second row's member_id 1, the third row's date 18/05/2024, and a fourth row 3, 3, 15/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

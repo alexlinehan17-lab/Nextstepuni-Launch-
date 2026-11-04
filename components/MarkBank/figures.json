@@ -55938,5 +55938,51 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-paper-q4-figs": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q4-figs.png",
+  "md5": "b069254414d93863460480affbd0374c",
+  "alt": "Figure 1 (start state): five squares numbered 0 to 4 holding a white disc in squares 0 and 1, square 2 empty, and a black disc in squares 3 and 4. Figure 2 (end state): black discs in squares 0 and 1, square 2 empty, and white discs in squares 3 and 4.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-paper-q15b-fig7": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15b-fig7.png",
+  "md5": "83c20bbef2f3d576745b0878cf70a60c",
+  "alt": "Figure 7: the MEMBERS table (member_id 1 Amy, 2 with its name blank, 3 Chloe) and the LOANS table (member_id, book_id, date_borrowed): 3, 2, 20/05/2024; a blank member_id, 4, 01/05/24; 2, 1 and a blank date; and a fourth row left blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q15(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-scheme-q4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q4.png",
+  "md5": "8ab0286e7e5b9c19b7338fe292597922",
+  "alt": "The marking scheme's solution to Question 4: eight moves from the start state, 1 to 2, 3 to 1, 4 to 3, 2 to 4, 0 to 2, 1 to 0, 3 to 1 and 2 to 3, each drawn as the row of discs it leaves, ending with the black discs in squares 0 and 1 and the white discs in squares 3 and 4.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-scheme-q15b-i": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q15b-i.png",
+  "md5": "6d1c13e5ef46bc35af4306dc50c10991",
+  "alt": "The marking scheme's completed tables for Question 15(b)(i), its answers in bold: MEMBERS row 2 named Bill; in LOANS the second row's member_id 1, the third row's date 18/05/2024, and a fourth row 3, 3, 15/05/2024.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q15(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
  }
 }
