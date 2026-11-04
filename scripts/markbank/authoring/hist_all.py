@@ -92,6 +92,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
 ESSAY_PAPERS = {
+    (2016, 'hl', 'em'),
     (2016, 'hl', 'lm'),
     (2017, 'hl', 'em'),
     (2017, 'hl', 'lm'),
