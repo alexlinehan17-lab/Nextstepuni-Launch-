@@ -150,6 +150,14 @@ LETTER = re.compile(r'^\(([a-f])\)\s*(.*)$')
 TARIFF = re.compile(r'\((\d{2,3})\)\s*$')
 # The SEC's attribution under a printed extract — never part of the ask.
 SOURCE_LINE = re.compile(r'^(?:Source|Adapted from)\s*:', re.I)
+# The same attribution printed without its "Source:" (2012 and 2014 Ordinary
+# Early Modern): "Henry A. Jefferies, The Irish Church and The Tudor
+# Reformations, Dublin: Four Courts Press, 2010." and "Georgio Vasari, Lives of
+# three Renaissance Artists, (London: Penguin Classics, 2006)." A line naming a
+# place and a publisher, then the year, and nothing after it.
+CITATION_LINE = re.compile(
+    r'^[A-Z][^,]{0,60},.*\b[A-Z][a-z]+: [^,]*\b(?:Press|Classics|Books|Publishing|Publications)\b'
+    r'[^,]*, \d{4}\)?\.?$')
 # The dash the SEC sets around a document label is not always the ASCII one:
 # 2022 uses U+2010 HYPHEN throughout, and the narrower class missed every
 # document head on that paper.
@@ -511,6 +519,10 @@ class HistPaper:
                     and CHOICE_INSTRUCTION.match(line)):
                 self.instructions.setdefault(cur[0], line)
             if FURNITURE.match(line):
+                continue
+            if (CITATION_LINE.match(line) and (part == 'A' or extra)
+                    and cur is None and not stem_closed):
+                stem_closed = True
                 continue
             if SOURCE_LINE.match(line):
                 # The SEC's attribution under a printed extract, and it CLOSES
