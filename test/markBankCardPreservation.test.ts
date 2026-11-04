@@ -739,9 +739,9 @@ const decks = [
    * 2026-11-05, the every-printed-ask lane (compsci_lane.py, one module per
    * sitting): the 336 shipped cards are unchanged and keep their ids; each
    * sitting's open asks are added on top. 2026 Higher, 48 asks, 48 cards:
-   * 209 -> 257. */
+   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168. */
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 257, '1bc6503bab7f668c2e01e9920e2459389b6a34afdac01c8e42c46f5ef36465ee'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 168, '3c88b330f1e7bf11ff50e63a574e03ef46089b20f0583906ece4a34ce40da8f2'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -1436,7 +1436,8 @@ describe('Mark Bank card preservation', () => {
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
     // Computer Science (2026-11-05, the every-printed-ask lane): its 336 cards
     // are unchanged and each sitting's open asks are carded on top, none
-    // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391.
+    // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391. 2026 Ordinary, 41
+    // asks, 41 cards: 23,432.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1453,9 +1454,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_391 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_432 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_391 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_432 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

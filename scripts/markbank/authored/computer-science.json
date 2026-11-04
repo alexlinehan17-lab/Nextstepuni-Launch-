@@ -12757,5 +12757,1750 @@
   "figureKey": "computer-science-2026-HL-scheme-q16b",
   "questionFigureKey": "computer-science-2026-HL-paper-q16b-output",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q1",
+  "topicId": "cs-2-2",
+  "conceptId": "python-code-includes-number-variable-declarations",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q1",
+  "questionText": "The Python code below includes a number of variable declarations and arithmetic operations. For each variable in Column A, write its final value in Column B after the program runs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Column A Column B Variable Output",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "a 8",
+      "b 3",
+      "c 8",
+      "d 2 or 2.0",
+      "e 1"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "contextNote": "First correct response 2 marks Each subsequent correct response 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2026-OL-paper-q1-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "convert-4-bit-binary-number-decimal",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q2",
+  "questionText": "Convert the 4-bit binary number below to a decimal number. 1110",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "14",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Correct answer 6 marks Response about half right 4 marks Response with some merit 2 marks"
+   }
+  ]
+ },
+ {
+  "id": "cs-2026-ol-q3-a",
+  "topicId": "cs-1-3",
+  "conceptId": "requirements-game-suitable-end-users-who",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q3(a)",
+  "questionText": "One of the requirements is that the game is suitable for the end users. Who are the end users in this scenario?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Who are the end users in this scenario?",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Primary school children",
+      "Teachers"
+     ]
+    }
+   }
+  ],
+  "stem": "A group of secondary school students has been asked to create a Python program for a primary school maths multiplication game."
+ },
+ {
+  "id": "cs-2026-ol-q3-b",
+  "topicId": "cs-1-3",
+  "conceptId": "group-software-development-process-list-tasks",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q3(b)",
+  "questionText": "The group are following a software development process. List two tasks that the group should undertake during the evaluation stage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "List two tasks that the group should undertake during the evaluation stage.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Test the software for errors (debugging/user acceptance testing etc)",
+      "Check the program meets the original requirements",
+      "Any similar acceptable task"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "A group of secondary school students has been asked to create a Python program for a primary school maths multiplication game."
+ },
+ {
+  "id": "cs-2026-ol-q4",
+  "topicId": "cs-1-2",
+  "conceptId": "machine-learning-ml-development-computer-systems",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q4",
+  "questionText": "Machine learning (ML) is the development of computer systems that are able to learn and adapt without following explicit instructions. For each of the following scenarios, tick (✓) Yes if it is an example of machine learning, or tick (✓) No if it is not an example of machine learning. A spam filter gets better at spotting junk emails the more users mark messages as spam. A programmer writes code to sort numbers into order. A calculator uses a formula to find the square root of a number. A voice assistant (like Siri or Alexa) improves at understanding your accent over time. A photo app groups pictures of the same person by recognising faces. Traffic lights are programmed to change every 60 seconds, no matter how many cars are waiting.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A spam filter gets better at spotting junk emails the more users mark messages as spam. — Yes (ML)",
+    "marks": 1,
+    "contextNote": "Each correct answer 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A programmer writes code to sort numbers into order. — No (Not ML)",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A calculator uses a formula to find the square root of a number. — No (Not ML)",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A voice assistant (like Siri or Alexa) improves at understanding your accent over time. — Yes (ML)",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A photo app groups pictures of the same person by recognising faces. — Yes (ML)",
+    "marks": 1
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Traffic lights are programmed to change every 60 seconds, no matter how many cars are waiting. — No (Not ML)",
+    "marks": 1
+   }
+  ],
+  "figureKey": "computer-science-2026-OL-scheme-q4"
+ },
+ {
+  "id": "cs-2026-ol-q5-a",
+  "topicId": "cs-2-1",
+  "conceptId": "diagram-considered-abstract-model",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q5(a)",
+  "questionText": "Explain why this diagram is considered an abstract model.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain why this diagram is considered an abstract model.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "It shows only the main parts of the system.",
+      "It leaves out unnecessary details.",
+      "It uses a diagram instead of showing the real system.",
+      "It focuses on how parts link together, not how they are built.",
+      "Any other valid response"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good explanation – clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+   }
+  ],
+  "stem": "Figure 1 below is an abstract model of an information system.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q5-fig1",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q5-b",
+  "topicId": "cs-2-1",
+  "conceptId": "advantage-using-abstract-model-when-designing",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q5(b)",
+  "questionText": "Outline one advantage of using an abstract model when designing or analysing an information system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline one advantage of using an abstract model when designing or analysing an information system.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "It makes the system easier to understand.",
+      "It helps designers focus on important parts only.",
+      "It reduces complexity by leaving out details.",
+      "It makes planning the system easier.",
+      "It helps explain the system to others.",
+      "Any other valid advantage"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good response – clear understanding demonstrated 3 marks Fair response – limited understanding 2 marks"
+   }
+  ],
+  "stem": "Figure 1 below is an abstract model of an information system.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q5-fig1",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q6",
+  "topicId": "cs-3-3",
+  "conceptId": "computer-modelling-often-areas-such-weather",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q6",
+  "questionText": "Computer modelling is often used in areas such as weather forecasting, car safety and designing aircraft. Outline two reasons why computer modelling is used instead of real-life testing in these situations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline two reasons why computer modelling is used instead of real-life testing in these situations.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Computer modelling is safer because it avoids dangerous real-life tests, such as car crashes or severe weather conditions.",
+      "It is cheaper as simulations can be run many times without using real materials or building full prototypes.",
+      "It is faster as the process and be sped up and repeated instantly.",
+      "Any other valid reason"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid reason: Good – clear understanding demonstrated 3 marks Fair – limited understanding 2 marks"
+   }
+  ]
+ },
+ {
+  "id": "cs-2026-ol-q7",
+  "topicId": "cs-2-2",
+  "conceptId": "insertion-sort-algorithm-applied-list-numbers",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q7",
+  "questionText": "The insertion sort algorithm is applied to the following list of numbers. The first and last pass have been completed. Show the remaining passes by filling in the correct number in each box.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pass 2 12 22 43 15 17 8",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pass 3 12 15 22 43 17 8",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Pass 4 12 15 17 22 43 8",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "computer-science-2026-OL-paper-q7-passes",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q8",
+  "topicId": "cs-1-2",
+  "conceptId": "considering-quote-above-argument-argument-against",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q8",
+  "questionText": "Considering the quote above, suggest one argument for and one argument against the idea that phones are ruining society and relationships.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Arguments for:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Reduce face-to-face communication",
+      "Cause people to ignore those physically present",
+      "Increase distraction and lack of attention",
+      "Lower quality of conversations",
+      "Encourage addiction and constant checking",
+      "Any valid argument for"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid argument: Good – clear understanding demonstrated 3 marks Fair – limited understanding 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Arguments against:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Allow people to stay in touch easily",
+      "Help maintain long-distance relationships",
+      "Enable instant communication in emergencies",
+      "Support social connections through messaging and video calls",
+      "Help people feel less lonely",
+      "Allow families and friends to share experiences",
+      "Any valid argument against"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid argument: Good – clear understanding demonstrated 3 marks Fair – limited understanding 2 marks"
+   }
+  ],
+  "stem": "“We sit together in the same room while our minds are scattered across dozens of apps, notifications and feeds. We're physically present but mentally absent.” Kate Middleton, Princess of Wales"
+ },
+ {
+  "id": "cs-2026-ol-q9",
+  "topicId": "cs-2-3",
+  "conceptId": "2-above-shows-von-neumann-architecture",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q9",
+  "questionText": "Figure 2 above shows the Von Neumann Architecture Model. State two input devices and two output devices commonly found in this model.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Input devices:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Keyboard",
+      "Mouse",
+      "Microphone",
+      "Scanner",
+      "Webcam",
+      "Touchscreen",
+      "Any other valid input device"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "For input/output: First correct 2 marks Second correct 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Output devices:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Monitor",
+      "Printer",
+      "Speakers",
+      "Headphones",
+      "Projector",
+      "Any other valid output device"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "openList": true,
+    "contextNote": "For input/output: First correct 2 marks Second correct 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2026-OL-paper-q9-fig2",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q10-a",
+  "topicId": "cs-2-4",
+  "conceptId": "example-discrete-data-example-continuous-data",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q10(a)",
+  "questionText": "State one example of discrete data and one example of continuous data that a fitness watch might record.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discrete Data Example:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Number of steps taken",
+      "number of floors climbed",
+      "number of workouts",
+      "number of calories burned",
+      "number of notifications"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each correct example 2 marks (max. 4 marks)"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Continuous Data Example:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Heart rate",
+      "body temperature",
+      "running speed",
+      "distance travelled",
+      "time duration",
+      "GPS position"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "A fitness watch collects different types of data such as steps taken, heart rate, calories burned, distance travelled and outside temperature. Some of this data is discrete, while other data is continuous."
+ },
+ {
+  "id": "cs-2026-ol-q10-b",
+  "topicId": "cs-2-4",
+  "conceptId": "example-data-might-stored-list-watch",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q10(b)",
+  "questionText": "State one example of data that might be stored in a list on the watch.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "State one example of data that might be stored in a list on the watch.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "A list of daily step counts.",
+      "A list of heart rate readings over time.",
+      "A list of distances travelled for each workout.",
+      "A list of calories burned each day.",
+      "A list of recorded temperatures during an activity.",
+      "Any other valid example of a list"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "A fitness watch collects different types of data such as steps taken, heart rate, calories burned, distance travelled and outside temperature. Some of this data is discrete, while other data is continuous."
+ },
+ {
+  "id": "cs-2026-ol-q11",
+  "topicId": "cs-2-5",
+  "conceptId": "python-code-was-written-accept-numbers",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q11",
+  "questionText": "The Python code below was written to accept two numbers from a user and output the sum of the numbers. However, there are two syntax errors and one logic (semantic) error in the code. Use the table below to identify the line number, the error and how to fix the error of any two such errors.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Syntax errors:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Line 2 Missing bracket close bracket",
+      "Line 6 No concatenation missing use of , / missing use of +",
+      "Line 4 This concatenates 2 strings instead of adding 2 integers (e.g. 2 + 3 = 23, instead of 2 + 3 = 5). Lines 1, 2 Variables need to be cast (either on lines 1 and 2 as part of input or on line 4 as part of addition expression)."
+     ]
+    },
+    "contextNote": "Each correct line identified 1 mark Each error explained 1 mark Each correct solution to fix 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2026-OL-paper-q11-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q12",
+  "topicId": "cs-2-4",
+  "conceptId": "ascii-stands-american-standard-code-information",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2026 OL Q12",
+  "questionText": "ASCII stands for American Standard Code for Information Interchange. Original ASCII is a 7-bit character encoding standard that translates text into codes that computers can process. Review the characters listed below. Place a tick (✓) in the box next to each character to state whether it can or cannot be encoded using 7-bit ASCII.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "e — Can be encoded",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "R — Can be encoded",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "🙂 — Cannot be encoded",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "? — Can be encoded",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "4 — Can be encoded",
+    "marks": 1
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "✓ — Cannot be encoded",
+    "marks": 1
+   }
+  ],
+  "figureKey": "computer-science-2026-OL-scheme-q12",
+  "questionFigureKey": "computer-science-2026-OL-paper-q12-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q13-a-i",
+  "topicId": "cs-2-4",
+  "conceptId": "table-record-datatype-column-b-variables",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(a)(i)",
+  "questionText": "In the table below record the datatype in Column B for each of the variables listed in Column A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Column A Column B Variable Datatype",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "fruits list",
+      "target string",
+      "position Integer / int",
+      "found Boolean / Bool"
+     ],
+     "perOptionSteps": [
+      5,
+      4,
+      2,
+      2
+     ]
+    },
+    "contextNote": "First correct response 5 marks Second correct response 4 marks Third correct response 2 marks Fourth correct response 2 marks"
+   }
+  ],
+  "stem": "Two common search algorithms are linear search and binary search. The Python program below shows a linear search algorithm.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q13a-i",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q13-a-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "output-program-if-user-enters-orange",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(a)(ii)",
+  "questionText": "State the output of the program if the user enters “Orange” when asked for a fruit to search for.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "orange found after 4 steps.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     3,
+     4
+    ],
+    "contextNote": "Correct answer 4 marks Response of some merit 3 marks"
+   }
+  ],
+  "stem": "Two common search algorithms are linear search and binary search. The Python program below shows a linear search algorithm.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q13-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "programmer-has-lower-function-program",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(a)(iii)",
+  "questionText": "Explain why the programmer has used the lower()function in this program.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "lower() is used to convert the user input into lowercase and is also used to convert the items in the list to lowercase. This means that the user can enter lowercase or uppercase or a mixture and the program will work no matter what case is entered. The programme is always comparing lowercase to lowercase.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding 1 mark"
+   }
+  ],
+  "stem": "Two common search algorithms are linear search and binary search. The Python program below shows a linear search algorithm.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q13-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "space-steps-binary-search-would-use",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(b)(i)",
+  "questionText": "In the space below, explain the steps that a binary search would use to find the word “Galway”. You can explain using diagrams or in writing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "REPEAT SELECT the middle element COMPARE the middle element with “Galway” If middle element == “Galway” STOP If middle element > “Galway” DISCARD all items above middle element If middle element < “Galway” DISCARD all items below middle element",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Correct answer 3 marks Response about half right 2 marks Response with some merit 1 marks"
+   }
+  ],
+  "stem": "Several Irish counties have been stored into a list. This list is displayed below.",
+  "figureKey": "computer-science-2026-OL-scheme-q13b-i",
+  "questionFigureKey": "computer-science-2026-OL-paper-q13b-list",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q13-b-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "differences-between-linear-search-binary-search",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(b)(ii)",
+  "questionText": "Outline two differences between the linear search and binary search algorithms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline two differences between the linear search and binary search algorithms.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Linear search works on unsorted data. • Binary search requires the data to be sorted.",
+      "Linear search checks each item one by one. • Binary search halves the list each time.",
+      "Linear search is slower for large lists. • Binary search is faster for large lists.",
+      "Linear search may check every item. • Binary search checks far fewer items."
+     ]
+    },
+    "contextNote": "For each difference: Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 marks"
+   }
+  ],
+  "stem": "Several Irish counties have been stored into a list. This list is displayed below."
+ },
+ {
+  "id": "cs-2026-ol-q13-c",
+  "topicId": "cs-1-2",
+  "conceptId": "we-surrounded-sorting-searching-algorithms-our",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q13(c)",
+  "questionText": "We are surrounded by sorting and searching algorithms in our daily interaction with technology. Explain one example of how companies such as Spotify, Amazon and Netflix use sorting algorithms and one example of how they use searching algorithms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Sorting Algorithms:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Amazon sorts items by delivery speed (“Prime First”).",
+      "Netflix sorts content into categories (“Top 10”, “Trending Now”).",
+      "eBay sorts auctions by ending soonest or lowest price.",
+      "Booking.com sorts hotels by rating or cheapest first.",
+      "Accept other relevant answers."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each algorithm: Good explanation - clear understanding demonstrated 6 marks Limited explanation – lacks clarity 5 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Searching Algorithms:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Netflix uses searching so users can quickly find shows by title, actor, or genre.",
+      "Spotify uses searching to find songs, artists or playlists instantly.",
+      "Google Maps uses searching to find locations or businesses.",
+      "Accept other relevant answers."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each algorithm: Good explanation - clear understanding demonstrated 6 marks Limited explanation – lacks clarity 5 mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2026-ol-q14-a-i",
+  "topicId": "cs-1-1",
+  "conceptId": "relation-electronic-voting-machines-potential-benefit",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(i)",
+  "questionText": "In relation to electronic voting machines, explain one potential benefit and one potential cost of introducing this automated process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Possible benefits:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Faster vote counting – results can be calculated much more quickly than counting paper ballots.",
+      "Reduced human error – fewer mistakes compared to manual counting.",
+      "More efficient elections – less staff needed to count votes.",
+      "Accessibility – can be designed to help voters with disabilities.",
+      "Less paper used – more environmentally friendly.",
+      "Immediate results – quicker announcement of election outcomes.",
+      "Any other valid benefit."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid answer: Good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Possible costs:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "High financial cost – expensive to buy, store, maintain, and update machines.",
+      "Security risks – possibility of hacking, tampering, or software faults.",
+      "Technical failures – machines could break down on election day.",
+      "Lack of public trust – voters may not trust electronic systems as much as paper ballots.",
+      "Training required – staff must be trained to use and manage the machines.",
+      "Any other valid cost."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid answer: Good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 marks"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. Over the past few decades technology has been used to automate many manual processes."
+ },
+ {
+  "id": "cs-2026-ol-q14-a-ii",
+  "topicId": "cs-1-3",
+  "conceptId": "stakeholder-engagement-vitally-important-large-projects",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(ii)",
+  "questionText": "Stakeholder engagement is vitally important in large projects such as this. Identify two stakeholders that could have been consulted about the electronic voting machines. For each stakeholder state one requirement from the system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identify two stakeholders that could have been consulted about the electronic voting machines.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Voters – machines are easy to use/ accessible/ trustworthy/ confidential",
+      "Government – machines are secure/ reliable/ affordable",
+      "Polling Staff – machines are easy to set up/ clear training given/ count accurately",
+      "Political Parties – machines are fair & transparent/ verified results/ accurate/ can’t be hacked or tampered"
+     ]
+    },
+    "contextNote": "Each stakeholder identified 1 mark Each valid requirement explained 1 mark"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. Over the past few decades technology has been used to automate many manual processes."
+ },
+ {
+  "id": "cs-2026-ol-q14-b-i",
+  "topicId": "cs-1-2",
+  "conceptId": "principles-would-apply-electronic-voting-machines",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(i)",
+  "questionText": "Name two of the principles, and for each, describe how it would apply to the electronic voting machines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name two of the principles, and for each, describe how it would apply to the electronic voting machines.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Equitable Use - The design is useful and marketable to people with diverse abilities. The voting machine could be adjustable in height for wheelchair users.",
+      "Flexibility in Use - The design accommodates a wide range of individual preferences and abilities. The voting machine could have option of buttons, touch screen, voice control, etc.",
+      "Simple and Intuitive Use - The design is easy to understand, regardless of the user’s experience or knowledge. The voting machine should have clear instructions, easy-to-read screens, and intuitive navigation buttons make it easy for everyone to vote without confusion.",
+      "Perceptible Information - The design communicates necessary information effectively, using different methods (text, sound, visuals). The voting machine communicates effectively to the user, e.g., using text, audio, or visual cues.",
+      "Tolerance for Error - The design minimises hazards and mistakes and allows users to correct errors. The voting machines might allow voters to review and change choices before final submission.",
+      "Low Physical Effort - The design can be used comfortably with minimal fatigue. The voting machine might have touch sensitive screen rather than buttons",
+      "Size and Space for Approach and Use - The design provides appropriate space for reach, manipulation, and use regardless of body size or mobility. The machine is positioned so wheelchair users or people using mobility aids can comfortably reach the screen and controls. There is enough space around the machine to allow users to approach, move, and operate it without obstruction."
+     ]
+    },
+    "contextNote": "For each response: Correct principle named 1 mark Good description - understanding demonstrated 1 mark"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. The Principles of Universal Design are important as they promote inclusion, equality, and independence for everyone."
+ },
+ {
+  "id": "cs-2026-ol-q14-b-ii",
+  "topicId": "cs-1-2",
+  "conceptId": "well-voting-machines-might-possible-design",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(ii)",
+  "questionText": "As well as voting machines it might be possible to design an app so that people who are immobile can vote from home. Describe two accessibility features that could be built into the app.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Describe two accessibility features that could be built into the app.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Screen reader / text-to-speech support - Reads out instructions and candidate names for visually impaired users.",
+      "Adjustable text size - Allows users to increase or decrease font size for easier reading.",
+      "High-contrast mode - Improves visibility for users with poor eyesight or colour blindness.",
+      "Voice control - Allows users to navigate and vote using voice commands instead of touch.",
+      "Simple, uncluttered interface - Large buttons and clear screens reduce confusion and mistakes.",
+      "Audio instructions - Step-by-step spoken guidance helps users who struggle with reading.",
+      "Confirmation and review screen - Allows users to check and change their vote before submitting.",
+      "Multiple language options - Supports users whose first language is not English.",
+      "Any other valid answer."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each accessibility feature: Good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. The Principles of Universal Design are important as they promote inclusion, equality, and independence for everyone."
+ },
+ {
+  "id": "cs-2026-ol-q14-b-iii",
+  "topicId": "cs-1-2",
+  "conceptId": "ethical-concern-regards-developing-app-voting",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(iii)",
+  "questionText": "Outline one ethical concern with regards to developing an app for voting.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline one ethical concern with regards to developing an app for voting.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Security and privacy of voter data – ensuring that users’ personal information and votes are protected from hacking or misuse. Breaches could compromise voter anonymity or allow manipulation of results.",
+      "Accessibility and fairness – the app must be accessible to all eligible voters, including those with disabilities or limited access to smartphones/internet. Otherwise, it could unfairly exclude certain groups.",
+      "Integrity of the election – technical errors, bugs, or manipulation could affect the accuracy of vote counting, undermining trust in the democratic process.",
+      "Proof of identity – someone could pretend to be someone else and cast their vote."
+     ]
+    },
+    "contextNote": "Good explanation – clear understanding demonstrated 4 marks Fair explanation – limited understanding 3 marks"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. The Principles of Universal Design are important as they promote inclusion, equality, and independence for everyone."
+ },
+ {
+  "id": "cs-2026-ol-q14-c-i",
+  "topicId": "cs-1-2",
+  "conceptId": "way-social-media-algorithms-might-influence",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(i)",
+  "questionText": "Describe one way social media algorithms might influence what political content a voter sees.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Describe one way social media algorithms might influence what political content a voter sees.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Algorithms prioritise content the user has interacted with before.",
+      "Algorithms push content that is popular or highly shared.",
+      "Algorithms create a “filter bubble”.",
+      "Algorithms use personal data to target political ads.",
+      "Any other valid answer."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 3 marks"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. Social media played an important role in the 2025 Irish presidential elections."
+ },
+ {
+  "id": "cs-2026-ol-q14-c-ii",
+  "topicId": "cs-1-2",
+  "conceptId": "social-media-has-recently-been-banned",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(ii)",
+  "questionText": "Social media has recently been banned in Australia for people under the age of 16. Many other countries are considering a similar policy. Put forward one argument to support this policy and one argument against this policy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Arguments For:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Protects mental health - Reduces anxiety, depression, and pressure caused by likes, followers, and comparisons.",
+      "Reduces cyberbullying - young people are less exposed to online harassment and abuse.",
+      "Protects children from harmful content - limits access to inappropriate material, misinformation, or online predators.",
+      "Improves focus and education - less distraction from schoolwork and better concentration.",
+      "Encourages healthier lifestyles - promotes more face-to-face interaction and physical activity.",
+      "Increased social skills - young people become more inclined to speak with people in person.",
+      "Any other valid argument for."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid argument: Good - clear understanding demonstrated 6 marks Fair - limited understanding 5 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Arguments Against:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Limits freedom of expression - young people may feel their right to communicate and express themselves is restricted.",
+      "Difficult to enforce - children may lie about their age or use someone else’s account.",
+      "Social exclusion - teens may feel left out if their friends use social media and they cannot.",
+      "Loss of positive uses - social media can be useful for learning, creativity, and staying in touch with friends and family.",
+      "Better regulation instead of bans - education and parental controls may be more effective than a full ban.",
+      "Any other valid argument against."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid argument: Good - clear understanding demonstrated 6 marks Fair - limited understanding 5 marks"
+   }
+  ],
+  "stem": "The Irish Presidential Election was held in October 2025, using a traditional paper voting system. In the early 2000s the Irish government planned to introduce electronic voting machines but the plan was scrapped at a large cost to the state. Social media played an important role in the 2025 Irish presidential elections."
+ },
+ {
+  "id": "cs-2026-ol-q15-a-i",
+  "topicId": "cs-3-4",
+  "conceptId": "advantages-embedded-systems-over-general-purpose",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(a)(i)",
+  "questionText": "State three advantages of embedded systems over general-purpose computers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "State three advantages of embedded systems over general-purpose computers.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Embedded systems do one specific task, while general-purpose computers can do many tasks.",
+      "Embedded systems run one fixed program, but general-purpose computers let users install lots of software.",
+      "Embedded systems use limited hardware (small memory, low power), while general- purpose computers have powerful processors and lots of RAM.",
+      "Embedded systems often have little or no user interface, while general-purpose computers have full interfaces like keyboards, touchscreens, and operating systems.",
+      "Embedded systems are built into another device (e.g., microwave, car), but general- purpose computers work as standalone machines.",
+      "Embedded systems must respond in real time, while general-purpose computers do not always need strict timing.",
+      "Embedded systems are usually cheaper and smaller, while general-purpose computers are larger and more expensive.",
+      "Any other valid advantage."
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      2
+     ]
+    },
+    "openList": true,
+    "contextNote": "First correct response 4 marks Second correct response 4 marks Third correct response 2 marks"
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. Embedded systems are different to the general-purpose laptops and mobile devices that we use on a daily basis."
+ },
+ {
+  "id": "cs-2026-ol-q15-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "embedded-systems-can-take-both-digital",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(a)(ii)",
+  "questionText": "Embedded systems can take in both digital and analogue inputs. For each of the hardware items in Column A state, in Column B, whether each one is a digital input or an analogue input.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Column B Digital or Analogue",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Power button on a dishwasher — Digital",
+      "A microphone receiving sound — Analogue",
+      "A temperature sensor — Analogue",
+      "A security switch to detect if a door is open or closed — Digital",
+      "An outdoor motion detection light — Digital",
+      "A street light that turns on based on darkness levels — Analogue"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    "contextNote": "First three correct answers 2 marks each Each subsequent correct answer 1 mark each (max. 3)"
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. Embedded systems are different to the general-purpose laptops and mobile devices that we use on a daily basis.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q15a-ii",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q15-b-i",
+  "topicId": "cs-3-4",
+  "conceptId": "table-use-column-b-status-off",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(b)(i)",
+  "questionText": "In the table below, use Column B to state the status (on/off) of the dehumidifier, cooler and alarm under the particular conditions in Column A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Temperature = 12°C, Humidity = 55% — Dehumidifier: OFF Cooler: OFF Alarm: OFF",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Each correct ON / OFF state 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Temperature = 3°C, Humidity = 80% — Dehumidifier: ON Cooler: OFF Alarm: ON",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Temperature = 18°C, Humidity = 30% — Dehumidifier: OFF Cooler: ON Alarm: ON",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. An embedded system is being set up for a laboratory to make sure conditions are correct for samples being stored. The pseudocode for the system is shown below.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q15b-i",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q15-b-ii",
+  "topicId": "cs-3-4",
+  "conceptId": "input-devices-output-devices-embedded-system",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(b)(ii)",
+  "questionText": "Identify two input devices and two output devices used by this embedded system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Inputs:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Temperature sensor / thermometer",
+      "Humidity sensor"
+     ]
+    },
+    "contextNote": "Each correct device identified 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Outputs:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Dehumidifier",
+      "Cooler",
+      "Alarm"
+     ]
+    }
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. An embedded system is being set up for a laboratory to make sure conditions are correct for samples being stored. The pseudocode for the system is shown below.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q15-c-i",
+  "topicId": "cs-3-2",
+  "conceptId": "temperature-reading-at-11-00-missing",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(c)(i)",
+  "questionText": "The temperature reading at 11:00 is missing, and the humidity value at 12:00 is recorded as “Error”. Describe two problems that issues like these could cause for the laboratory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Describe two problems that issues like these could cause for the laboratory.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Incorrect system decisions - if the temperature reading is missing, the system may not turn the fan on or off at the correct time.",
+      "System acting unnecessarily - the system may assume unsafe conditions and turn devices on or off when it is not needed.",
+      "Increased energy - fans or dehumidifier systems could run longer than required, wasting electricity.",
+      "Reduced reliability of the system - frequent errors reduce trust in the monitoring system.",
+      "Delayed fault detection - real environmental problems might go unnoticed if sensor data is missing or incorrect.",
+      "Any other valid problem."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each valid answer: Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. The data from the embedded system is collected in a table and presented below.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q15c-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q15-c-ii",
+  "topicId": "cs-3-2",
+  "conceptId": "method-system-could-use-handle-these",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2026 OL Q15(c)(ii)",
+  "questionText": "Suggest one method the system could use to handle these data issues in order to keep the stored dataset reliable.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suggest one method the system could use to handle these data issues in order to keep the stored dataset reliable.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Data validation check - the system can check if values are within a normal range and reject or flag invalid data like “Error”.",
+      "Automatic re-reading of sensors - if a reading is missing or invalid, the system can take another reading immediately.",
+      "Use the last valid reading or average reading - if data is missing, the system can temporarily use the previous correct value or an average of all values",
+      "Alert the user - end a warning when sensor errors occur so the problem can be fixed quickly.",
+      "Any other valid suggestions."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
+   }
+  ],
+  "stem": "An embedded system is a computer system built into another device to perform specific functions. Examples include washing machines, robot vacuums, self-service checkouts, and fitness trackers. The data from the embedded system is collected in a table and presented below.",
+  "questionFigureKey": "computer-science-2026-OL-paper-q15c-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "modify-program-so-prints-out-gaa",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(i)",
+  "questionText": "Modify the program so that it prints out \"GAA Scoreboard Calculator\" instead of \"Score\". When the program is run the output should now look as follows: GAA Scoreboard Calculator",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     8,
+     15
+    ],
+    "contextNote": "(i) 15 marks (A-15 scale) 15 marks Correct response Correct implementation using solution above or similar. 8 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "calculate-team-s-total-score-store",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(ii)",
+  "questionText": "Calculate the team’s total score and store it in the variable team_a_total, remembering that one goal is equal to three points. Print the team’s total score to the screen. When the program is run the output should now look as follows: GAA Scoreboard Calculator Team A total score: 14",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     7,
+     10
+    ],
+    "contextNote": "(ii) 10 marks (B-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "currently-vales-team-goals-team-points",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(iii)",
+  "questionText": "Currently, the vales for team_a_goals and team_a_points are “hard-coded” into the program. Modify the program so that the user is asked to input the number of goals and points for Team A. The inputs should be used to calculate and output the total points for the team. When the program is run the output may now look as follows: GAA Scoreboard Calculator Enter Team A goals: 2 Enter Team A points: 7 Team A total score: 13",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     8,
+     10
+    ],
+    "contextNote": "(iii) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "modify-code-adding-new-variables-so",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(iv)",
+  "questionText": "Modify the code, by adding new variables, so that inputs can be accepted for a second team called Team B. The value for Team B’s score should also be reported back to the user. When the program is run the output may now look as follows: GAA Scoreboard Calculator Enter Team A goals: 2 Enter Team A points: 7 Team A total score: 13 Enter Team B goals: 1 Enter Team B points: 9 Team B Total Score: 12",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     8,
+     10
+    ],
+    "contextNote": "(iv) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-v",
+  "topicId": "cs-2-2",
+  "conceptId": "modify-code-so-program-compares-total",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(v)",
+  "questionText": "Modify the code so the program compares the total scores of the two teams and tells the user which team won. In the case of a draw the output should report it was a draw. When the program is run the output may now look as follows: Example 1: GAA Scoreboard Calculator Enter Team A goals: 2 Enter Team A points: 7 Team A total score: 13 Enter Team B goals: 1 Enter Team B points: 9 Team B Total Score: 12 Result: Team A wins Example 2: GAA Scoreboard Calculator Enter Team A goals: 1 Enter Team A points: 7 Team A total score: 10 Enter Team B goals: 3 Enter Team B points: 5 Team B Total Score: 14 Result: Team B wins Example 3: GAA Scoreboard Calculator Enter Team A goals: 2 Enter Team A points: 7 Team A total score: 13 Enter Team B goals: 1 Enter Team B points: 10 Team B Total Score: 13 Result: Draw",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     8,
+     10
+    ],
+    "contextNote": "(v) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-a-vi",
+  "topicId": "cs-2-2",
+  "conceptId": "modify-code-so-if-match-not",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(a)(vi)",
+  "questionText": "Modify the code so that if the match is not a draw, the program tells the user how many points the winning team won by. When the program is run the output may now look as follows: GAA Scoreboard Calculator Enter Team A goals: 1 Enter Team A points: 7 Team A total score: 10 Enter Team B goals: 3 Enter Team B points: 5 Team B Total Score: 14 Result: Team B wins Winning margin: 4",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(vi) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "In GAA sports, players can score goals and points. Each goal is worth three points. So, if a team score two goals and four points (2-4) then their total score is ten points, as the two goals are worth six points, and added to the four points makes ten. The program below is the start of a program that, when complete, will compare the scores of two teams and work out which team is the winner.",
+  "figureKey": "computer-science-2026-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2026-ol-q16-b",
+  "topicId": "cs-2-2",
+  "conceptId": "implement-program-will-allow-team-managers",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2026 OL Q16(b)",
+  "questionText": "Implement a program that will allow team managers to collect and display data about their team’s games. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: • A message should be printed to the screen stating the following: “Team Data App.” • The user should be prompted to enter the team name. • The user should be prompted to enter the result of their last five games. The options that can be entered are W for a win, L for a loss or D for a draw. • The program should output the name of the team and the number of wins, losses and draws to the screen, as shown in the sample output below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Program Inputs — • Team name read in correctly • Five results read in correctly • Variable initialisation (i.e. wins, losses, draws etc.) and use of assignment statements",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement at least two of each of the following Low level of achievement Poor attempt to complete any of the following"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Processing & Logic — • Correct logic to count wins • Correct logic to count losses • Correct logic to count draws",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Program Output — • Program displays “Team Data App” • Outputs team name with asterisk on either side • Outputs correct numbers of wins, losses and draws",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "Programming Standards — • Program executes correctly with no syntax or runtime errors • Program meets all requirements • Program design is well explained with comments",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
+   }
+  ],
+  "figureKey": "computer-science-2026-OL-scheme-q16b",
+  "questionFigureKey": "computer-science-2026-OL-paper-q16b-output",
+  "questionFigureIncludesPrompt": false
  }
 ]

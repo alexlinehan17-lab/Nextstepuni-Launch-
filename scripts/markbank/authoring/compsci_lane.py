@@ -602,12 +602,19 @@ def build(targets):
         if mod is None:
             raise LaneError(f'no module compsci_sittings/y{year}_{level}.py')
         sitting = Sitting(year, level)
+        errors = []
         for entry in mod.CARDS:
-            card = build_card(sitting, mod, entry, figures)
+            try:
+                card = build_card(sitting, mod, entry, figures)
+            except LaneError as exc:
+                errors.append(str(exc))
+                continue
             if card['id'] in lane_ids:
                 raise LaneError(f'{card["id"]}: two module entries make this card')
             lane_ids.add(card['id'])
             made.append((entry, card))
+        if errors:
+            raise LaneError('\n'.join(errors))
     owned = _owned()
     by_id = {c['id']: i for i, c in enumerate(deck)}
     for entry, card in made:
