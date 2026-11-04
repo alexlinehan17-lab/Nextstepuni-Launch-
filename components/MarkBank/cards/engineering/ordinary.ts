@@ -75,7 +75,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d63017549887487699795128577aab08",
           "alt": "The table or diagram printed with 2021 OL Q1(c), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -339,7 +340,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
           "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -360,7 +362,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
           "alt": "The table or diagram printed with 2021 OL Q4(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -514,7 +517,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "127d3999d6f1876ebd286bde3f4e7cf5",
           "alt": "The table or diagram printed with 2021 OL Q5(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -564,7 +568,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "71495fb866fffb3c1e185371348869c7",
           "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -585,7 +590,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "71495fb866fffb3c1e185371348869c7",
           "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -607,7 +613,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "71495fb866fffb3c1e185371348869c7",
           "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1035,7 +1042,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "cd663eb2dc5c87e2245b727d154192a0",
           "alt": "The table or diagram printed with 2022 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1056,7 +1064,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "cd663eb2dc5c87e2245b727d154192a0",
           "alt": "The table or diagram printed with 2022 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1090,7 +1099,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "77b49764cf34e0849f4f12e197d68741",
           "alt": "The table or diagram printed with 2022 OL Question 5(c), as the State Examinations Commission set it. It reads: headlights, dashboard, door handles, seat belts.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1577,7 +1587,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
           "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1625,7 +1636,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
           "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1659,7 +1671,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
           "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1680,7 +1693,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
           "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1714,7 +1728,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ba173f85d44adffac95e6d4fdf8ca21a",
           "alt": "The table or diagram printed with 2023 OL Q5(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1748,7 +1763,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "368582219f288ccab00956b4b5a10c71",
           "alt": "The table or diagram printed with 2023 OL Q6(a), as the State Examinations Commission set it. It reads: A, B, C, D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2065,7 +2081,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c2cf01e808bbe72d44db15f4d4eeee19",
           "alt": "The table or diagram printed with 2024 OL Q2(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2086,7 +2103,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "230f56b15957641678ada07d55875859",
           "alt": "The table or diagram printed with 2024 OL Q2(d)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2107,7 +2125,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "230f56b15957641678ada07d55875859",
           "alt": "The table or diagram printed with 2024 OL Q2(d)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2193,7 +2212,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "0dd4f1d8ed0949d80739662640f07f18",
           "alt": "The table or diagram printed with 2024 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2318,7 +2338,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "1085c2678f43c79de24dbd4e93746d99",
           "alt": "The table or diagram printed with 2024 OL Q6(a), as the State Examinations Commission set it. A rendered metal component, knurled at one end, with two turned grooves and a tapered nose drilled on its axis, captioned \"engineering component\".",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2407,7 +2428,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ae07d7225d84130951ebfd02a2088864",
           "alt": "The table or diagram printed with 2024 OL Q7(b), as the State Examinations Commission set it. Two rendered components side by side: a green tube captioned \"hole: Ø24.00 ± 0.05 mm\" and a blue plug captioned \"shaft: Ø25.00 ± 0.03 mm\", each label on a leader line to the surface it dimensions.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2428,7 +2450,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ae07d7225d84130951ebfd02a2088864",
           "alt": "The table or diagram printed with 2024 OL Q7(b), as the State Examinations Commission set it. Two rendered components side by side: a green tube captioned \"hole: Ø24.00 ± 0.05 mm\" and a blue plug captioned \"shaft: Ø25.00 ± 0.03 mm\", each label on a leader line to the surface it dimensions.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2645,7 +2668,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "eca76676c9eba7ed94cabb28fa290dfe",
           "alt": "The table or diagram printed with 2025 OL Q2(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2707,7 +2731,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
           "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2756,7 +2781,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
           "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2777,7 +2803,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d1178a3ca8c6d1e1bccf2ad276d8fc01",
           "alt": "The table or diagram printed with 2025 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2811,7 +2838,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "320f2983f5039204ebfde502bd03ef1a",
           "alt": "The table or diagram printed with 2025 OL Q5(d)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {

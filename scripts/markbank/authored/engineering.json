@@ -340,7 +340,8 @@
    }
   ],
   "stem": "Give brief answers to any ten of the following:",
-  "questionFigureKey": "engineering-2021-HL-paper-q1j-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q1j-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q1-k",
@@ -695,7 +696,8 @@
    }
   ],
   "stem": "Answer all of the following:",
-  "questionFigureKey": "engineering-2021-HL-paper-q2di-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q2di-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q2-d-ii",
@@ -745,7 +747,8 @@
   ],
   "stem": "Answer all of the following:",
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q2di-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q2di-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q2-e",
@@ -1116,7 +1119,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-a-ii",
@@ -1165,7 +1169,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-b-i",
@@ -1207,7 +1212,8 @@
     "marks": 2
    }
   ],
-  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-b-ii",
@@ -1244,7 +1250,8 @@
    }
   ],
   "notes": "The scheme prints '4'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-b-iii",
@@ -1268,7 +1275,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q4-c-iii",
@@ -1375,7 +1383,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2021-HL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q5-b-i",
@@ -1705,7 +1714,8 @@
    }
   ],
   "notes": "The scheme prints '10'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q6bi-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q6bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q6-b-ii",
@@ -1976,7 +1986,8 @@
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q7bii-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q7bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q7-b-iii",
@@ -2198,7 +2209,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q8-a-ii",
@@ -2223,7 +2235,8 @@
    }
   ],
   "notes": "The scheme prints '5 + 5'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art"
+  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q8-b-i",
@@ -2787,7 +2800,8 @@
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "questionFigureKey": "engineering-2021-OL-paper-q1c-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q1c-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q1-d",
@@ -3347,7 +3361,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q4-b-ii",
@@ -3371,7 +3386,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q4bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q4-b-iii",
@@ -3660,7 +3676,8 @@
    }
   ],
   "notes": "The scheme prints 'Two parts @ 5 marks (10)'.",
-  "questionFigureKey": "engineering-2021-OL-paper-q5ci-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q5ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q5-d",
@@ -3753,7 +3770,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q6-c-ii",
@@ -3777,7 +3795,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q6-c-iii",
@@ -3808,7 +3827,8 @@
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q7-a-i",
@@ -4534,7 +4554,8 @@
     "marks": 10
    }
   ],
-  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q3-b-ii",
@@ -4558,7 +4579,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q3-b-iii",
@@ -4588,7 +4610,8 @@
     "marks": 2
    }
   ],
-  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q3-c-i",
@@ -4773,7 +4796,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q4-b-ii",
@@ -4816,7 +4840,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q4-b-iii",
@@ -4853,7 +4878,8 @@
    }
   ],
   "notes": "The scheme prints '6'.",
-  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2022-HL-paper-q4bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-hl-q4-c-i",
@@ -7251,7 +7277,8 @@
    }
   ],
   "notes": "The scheme prints 'Any two @ 5 marks'.",
-  "questionFigureKey": "engineering-2022-OL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2022-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-ol-q5-a-ii",
@@ -7280,7 +7307,8 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 10 marks (20)'.",
-  "questionFigureKey": "engineering-2022-OL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2022-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-ol-q5-b",
@@ -7340,7 +7368,8 @@
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'.",
-  "questionFigureKey": "engineering-2022-OL-paper-q5c-art"
+  "questionFigureKey": "engineering-2022-OL-paper-q5c-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-ol-q5-d",
@@ -8368,7 +8397,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-a-iii",
@@ -8392,7 +8422,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-b-i",
@@ -8428,7 +8459,8 @@
     "marks": 2
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-b-ii",
@@ -8458,7 +8490,8 @@
     "marks": 3
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-b-iii",
@@ -8489,7 +8522,8 @@
    }
   ],
   "notes": "The scheme prints '6'.",
-  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q4-c-iii",
@@ -8555,7 +8589,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q5-a-ii",
@@ -8579,7 +8614,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q5-a-iii",
@@ -8603,7 +8639,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q5-b-iii",
@@ -9126,7 +9163,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q7bi-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q7-b-ii",
@@ -9169,7 +9207,8 @@
    }
   ],
   "notes": "The scheme prints '10'.",
-  "questionFigureKey": "engineering-2023-HL-paper-q7bii-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q7bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q7-b-iii",
@@ -9229,7 +9268,8 @@
    }
   ],
   "notes": "The scheme prints '8 marks'.",
-  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q7-c-ii",
@@ -9278,7 +9318,8 @@
    }
   ],
   "notes": "The scheme prints '8 marks'.",
-  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-hl-q7-c-iii",
@@ -10762,7 +10803,8 @@
     "marks": 5
    }
   ],
-  "questionFigureKey": "engineering-2023-OL-paper-q4ci-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q4ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q4-c-ii",
@@ -10839,7 +10881,8 @@
    }
   ],
   "notes": "The scheme prints '5 marks'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q4-d",
@@ -10891,7 +10934,8 @@
    }
   ],
   "notes": "The scheme prints 'any three @ 3 marks'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q5-a-ii",
@@ -10920,7 +10964,8 @@
    }
   ],
   "notes": "The scheme prints '@ 11 marks (20)'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q5-b",
@@ -10979,7 +11024,8 @@
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q5ci-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q5ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q5-d",
@@ -11031,7 +11077,8 @@
    }
   ],
   "notes": "The scheme prints 'any three @ 5 marks (15)'.",
-  "questionFigureKey": "engineering-2023-OL-paper-q6a-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q6a-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q6-b",
@@ -11950,7 +11997,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q3-a-ii",
@@ -11974,7 +12022,8 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q3-a-iii",
@@ -12065,7 +12114,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q3-b-iii",
@@ -12198,7 +12248,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q4-a-ii",
@@ -12235,7 +12286,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q4-b-i",
@@ -12334,7 +12386,8 @@
     "marks": 7
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q4-b-iii",
@@ -12359,7 +12412,8 @@
    }
   ],
   "notes": "The scheme prints '3 + 3'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q4-c-i",
@@ -12728,7 +12782,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q6ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q6ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q6-b-i",
@@ -12961,7 +13016,8 @@
     "marks": 3
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q7-a-ii",
@@ -12992,7 +13048,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q7-a-iii",
@@ -13022,7 +13079,8 @@
     "marks": 3
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q7-b-i",
@@ -13296,7 +13354,8 @@
    }
   ],
   "notes": "The scheme prints '3 + 3 + 3'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q8-a-ii",
@@ -13321,7 +13380,8 @@
    }
   ],
   "notes": "The scheme prints '4 + 3'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q8-b-i",
@@ -13550,7 +13610,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q8cii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q8cii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q8-c-ii",
@@ -13593,7 +13654,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q8cii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q8cii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q9-a-i",
@@ -13677,7 +13739,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q9-b-ii",
@@ -13714,7 +13777,8 @@
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-hl-q9-b-iii",
@@ -14397,7 +14461,8 @@
    }
   ],
   "notes": "The scheme prints 'Three parts @ 2 marks (15)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q2-d-i",
@@ -14422,7 +14487,8 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 4 marks'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q2di-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q2di-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q2-d-ii",
@@ -14447,7 +14513,8 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 4 marks (8)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q2dii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q3-a",
@@ -14614,7 +14681,8 @@
     "marks": 5
    }
   ],
-  "questionFigureKey": "engineering-2024-OL-paper-q4ci-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q4ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q4-c-ii",
@@ -14847,7 +14915,8 @@
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q6a-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q6a-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q6-b",
@@ -15027,7 +15096,8 @@
    }
   ],
   "notes": "The scheme prints '20 marks'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q7-b-iv",
@@ -15052,7 +15122,8 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 5 marks (20)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q7-c-iii",
@@ -15230,7 +15301,8 @@
    }
   ],
   "stem": "Give brief answers to any ten of the following:",
-  "questionFigureKey": "engineering-2025-HL-paper-q1d-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q1d-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q1-e",
@@ -15425,7 +15497,8 @@
    }
   ],
   "notes": "The scheme prints '3 + 2'.",
-  "questionFigureKey": "engineering-2025-HL-paper-q1j-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q1j-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q1-k",
@@ -16078,7 +16151,8 @@
     "marks": 2
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q4-b-ii",
@@ -16102,7 +16176,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q4-b-iii",
@@ -16126,7 +16201,8 @@
     "marks": 8
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q4-c-i",
@@ -16553,7 +16629,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q6bv-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q6bv-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q6-c-i",
@@ -16686,7 +16763,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q7-a-ii",
@@ -16710,7 +16788,8 @@
     "marks": 8
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q7-a-iii",
@@ -16753,7 +16832,8 @@
     "marks": null
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q7-b-ii",
@@ -17287,7 +17367,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q8-c-ii",
@@ -17330,7 +17411,8 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q9-a-i",
@@ -17503,7 +17585,8 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2025-HL-paper-q9biii-art"
+  "questionFigureKey": "engineering-2025-HL-paper-q9biii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q9-b-iv",
@@ -17984,7 +18067,8 @@
    }
   ],
   "notes": "The scheme prints 'Three parts @ 2 marks (6)'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art"
+  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q3-a",
@@ -18101,7 +18185,8 @@
    }
   ],
   "notes": "The scheme prints '5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q4-c-ii",
@@ -18185,7 +18270,8 @@
    }
   ],
   "notes": "The scheme prints '5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q5-a-i",
@@ -18215,7 +18301,8 @@
    }
   ],
   "notes": "The scheme prints 'Three parts @ 3 marks (9)'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q5ai-art"
+  "questionFigureKey": "engineering-2025-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q5-b",
@@ -18274,7 +18361,8 @@
    }
   ],
   "notes": "The scheme prints 'Two parts @ 5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q5di-art"
+  "questionFigureKey": "engineering-2025-OL-paper-q5di-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q6-b",

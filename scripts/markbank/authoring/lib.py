@@ -854,6 +854,13 @@ class Author:
         # has already answered.
         if question_figure:
             card['questionFigureKey'] = question_figure
+            # A cleaning subject's question crop is the PICTURE printed beside
+            # the prose, never the printed question itself, so the session
+            # must keep the written stem and ask on screen. Without this the
+            # session reads the crop as the whole printed question and hides
+            # both: 2021 Higher Q1(j) showed a selfie stick and no question.
+            if clean:
+                card['questionFigureIncludesPrompt'] = False
         if labels == 'auto':
             labels = {}
             for point in chosen:
@@ -918,6 +925,7 @@ class Author:
             card['figureKey'] = figure
         if question_figure:
             card['questionFigureKey'] = question_figure
+            card['questionFigureIncludesPrompt'] = False
         self.cards.append(card)
         return card
 

@@ -187,7 +187,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "0d036d173cb92ca2d9db2b34d08342f6",
           "alt": "The table or diagram printed with 2021 HL Q1(j), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -351,7 +352,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "74517d0a4bc9829b9decaefa291c172d",
           "alt": "The table or diagram printed with 2021 HL Q2(d)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -377,7 +379,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "74517d0a4bc9829b9decaefa291c172d",
           "alt": "The table or diagram printed with 2021 HL Q2(d)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -520,7 +523,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "af1479dc5299bbef1cd41905875482e5",
           "alt": "The table or diagram printed with 2021 HL Q4(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -545,7 +549,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "af1479dc5299bbef1cd41905875482e5",
           "alt": "The table or diagram printed with 2021 HL Q4(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -569,7 +574,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "38631ba46c41017d2b0f7776fd6fd86b",
           "alt": "The table or diagram printed with 2021 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -592,7 +598,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "38631ba46c41017d2b0f7776fd6fd86b",
           "alt": "The table or diagram printed with 2021 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -613,7 +620,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "38631ba46c41017d2b0f7776fd6fd86b",
           "alt": "The table or diagram printed with 2021 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -676,7 +684,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9050069cbdb03af8b7b6b4a298e6b480",
           "alt": "The table or diagram printed with 2021 HL Q5(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -828,7 +837,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "38e3446d12f0548fd99ef96b3bac03e4",
           "alt": "The table or diagram printed with 2021 HL Q6(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -944,7 +954,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "360b58f9c648a69d07c6feee7727a3f2",
           "alt": "The table or diagram printed with 2021 HL Q7(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1043,7 +1054,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ff2b4463288634e81f38834c60499a98",
           "alt": "The table or diagram printed with 2021 HL Q8(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1064,7 +1076,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ff2b4463288634e81f38834c60499a98",
           "alt": "The table or diagram printed with 2021 HL Q8(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1557,7 +1570,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9f8874c016cf6286a5bcf7d1c0a1ab49",
           "alt": "The table or diagram printed with 2022 HL Q3(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1578,7 +1592,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9f8874c016cf6286a5bcf7d1c0a1ab49",
           "alt": "The table or diagram printed with 2022 HL Q3(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1600,7 +1615,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9f8874c016cf6286a5bcf7d1c0a1ab49",
           "alt": "The table or diagram printed with 2022 HL Q3(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1693,7 +1709,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
           "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1717,7 +1734,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
           "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1740,7 +1758,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
           "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2767,7 +2786,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d135bc9f133eca7a72c8afb9274a9b5a",
           "alt": "The table or diagram printed with 2023 HL Q4(a)(i), as the State Examinations Commission set it. It reads: arbour.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2788,7 +2808,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d135bc9f133eca7a72c8afb9274a9b5a",
           "alt": "The table or diagram printed with 2023 HL Q4(a)(i), as the State Examinations Commission set it. It reads: arbour.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2811,7 +2832,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
           "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2833,7 +2855,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
           "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2855,7 +2878,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
           "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2892,7 +2916,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
           "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2913,7 +2938,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
           "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2934,7 +2960,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
           "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3174,7 +3201,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bd55b86b2a330396878d031fe087d6fb",
           "alt": "The table or diagram printed with 2023 HL Q7(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3198,7 +3226,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bd55b86b2a330396878d031fe087d6fb",
           "alt": "The table or diagram printed with 2023 HL Q7(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3234,7 +3263,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bdb96034637cf7e252e6ae923080ecce",
           "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3259,7 +3289,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bdb96034637cf7e252e6ae923080ecce",
           "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3854,7 +3885,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "205366d91ae4da49623036f0b8a67dbb",
           "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3875,7 +3907,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "205366d91ae4da49623036f0b8a67dbb",
           "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3907,7 +3940,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "205366d91ae4da49623036f0b8a67dbb",
           "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3974,7 +4008,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "04705a0135e9969db48c1306929e082e",
           "alt": "The table or diagram printed with 2024 HL Q4(a), as the State Examinations Commission set it. A photograph of a motorcycle front wheel, with a leader line labelled \"Brake disc\" pointing to the perforated disc on the hub.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3997,7 +4032,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "04705a0135e9969db48c1306929e082e",
           "alt": "The table or diagram printed with 2024 HL Q4(a), as the State Examinations Commission set it. A photograph of a motorcycle front wheel, with a leader line labelled \"Brake disc\" pointing to the perforated disc on the hub.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4050,7 +4086,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5991eede1aae25e8552ac9df5de14c8c",
           "alt": "The table or diagram printed with 2024 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4071,7 +4108,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5991eede1aae25e8552ac9df5de14c8c",
           "alt": "The table or diagram printed with 2024 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4235,7 +4273,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fac016e68edf3d68e8edababae86a8b1",
           "alt": "The table or diagram printed with 2024 HL Q6(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4345,7 +4384,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
           "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4367,7 +4407,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
           "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4389,7 +4430,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
           "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4515,7 +4557,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c8b2624427f3b72471f5289d03543052",
           "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4536,7 +4579,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c8b2624427f3b72471f5289d03543052",
           "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4636,7 +4680,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7432315fb6028d9ba99229bea8f274f8",
           "alt": "The table or diagram printed with 2024 HL Q8(c)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4660,7 +4705,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7432315fb6028d9ba99229bea8f274f8",
           "alt": "The table or diagram printed with 2024 HL Q8(c)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4709,7 +4755,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "eda3928788c576ad0829fc193917260c",
           "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4732,7 +4779,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "eda3928788c576ad0829fc193917260c",
           "alt": "The table or diagram printed with 2024 HL Q9(b)(ii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4887,7 +4935,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "b0dc1ff85cc6d2c464496cefe8fc9d51",
           "alt": "The table or diagram printed with 2025 HL Question 1(d), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4984,7 +5033,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6b4d1dc61b8d84fe7fd3cb9b3505e50a",
           "alt": "The table or diagram printed with 2025 HL Q1(j), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5274,7 +5324,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
           "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5295,7 +5346,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
           "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5316,7 +5368,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
           "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5522,7 +5575,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "f2ed35041036c773008d76f907281a36",
           "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5579,7 +5633,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "8a1d7a972c334b52d20d775d15c6ad08",
           "alt": "The table or diagram printed with 2025 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5600,7 +5655,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "8a1d7a972c334b52d20d775d15c6ad08",
           "alt": "The table or diagram printed with 2025 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5624,7 +5680,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "8a1d7a972c334b52d20d775d15c6ad08",
           "alt": "The table or diagram printed with 2025 HL Q7(a)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5847,7 +5904,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a29e859b459de0b6ad135d2105419ebc",
           "alt": "The table or diagram printed with 2025 HL Q8(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5871,7 +5929,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a29e859b459de0b6ad135d2105419ebc",
           "alt": "The table or diagram printed with 2025 HL Q8(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5953,7 +6012,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "69edd2b5098351d4c4482b3de50ac745",
           "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
