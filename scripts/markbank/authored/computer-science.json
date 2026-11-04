@@ -16038,5 +16038,480 @@
   "stem": "The Python code below shows an implementation of a binary search function.",
   "questionFigureKey": "computer-science-2023-HL-paper-q15b-code",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q3",
+  "topicId": "cs-2-2",
+  "conceptId": "using-either-flowchart-pseudocode-create-algorithm",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q3",
+  "questionText": "Using either a flowchart or pseudocode, create an algorithm which must do the following: • Ask the user to input three separate numbers • Work out the average of the three numbers • Print the average of the 3 numbers",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "3 separate numbers input",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Attempt to input number(s) 1 mark OR 3 separate numbers input 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "average calculated correctly",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Attempt at calculating average 1 mark OR average calculated correctly 2 marks"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Print / output of average",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "All steps in correct logical order",
+    "marks": 1
+   }
+  ],
+  "figureKey": "computer-science-2023-OL-scheme-q3"
+ },
+ {
+  "id": "cs-2023-ol-q6",
+  "topicId": "cs-2-4",
+  "conceptId": "flying-fit-fitness-club-uses-computer",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q6",
+  "questionText": "Flying Fit is a fitness club that uses a computer system to store information about its members. Choose the most suitable data type from the list below and place it in Column B to match the corresponding variable description in Column A. Each data type should be used only once. Float Integer Boolean String List",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Column A Column B Variable Description Data Type",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Member Name String",
+      "Member Age Integer",
+      "Amount Paid Float",
+      "Most Popular Days to Visit List",
+      "Member Completed Induction – Yes/No Boolean"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "contextNote": "First correct item 2 marks Additional correct items 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2023-OL-paper-q6-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q9",
+  "topicId": "cs-2-4",
+  "conceptId": "numeric-data-can-categorised-either-discrete",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q9",
+  "questionText": "Numeric data can be categorised as either discrete data or continuous data. For each example listed in Column A in the table below, enter whether it is “discrete” or “continuous” in Column B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The number of players in a football squad Discrete",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The number of students in a class Discrete",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The speed of a school bus Continuous",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The temperature of a classroom Continuous",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The number of days it rained in March Discrete",
+    "marks": 1
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The weight of a box Continuous",
+    "marks": 1
+   }
+  ],
+  "questionFigureKey": "computer-science-2023-OL-paper-q9-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q10",
+  "topicId": "cs-2-3",
+  "conceptId": "complete-truth-table-logic-gate-3",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q10",
+  "questionText": "Complete the truth table for the OR logic gate, shown below in Figure 3.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A B out (A OR B)",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "0 0 0",
+      "0 1 1",
+      "1 0 1",
+      "1 1 1"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      2
+     ]
+    },
+    "contextNote": "Accept False (for 0) and True (for 1); Do not accept either A or B as a valid response 1 correct answer 2 mark 2 correct answers 3 marks 3 correct answers 4 marks All correct answers 6 marks"
+   }
+  ],
+  "questionFigureKey": "computer-science-2023-OL-paper-q10-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q15-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "school-intend-implement-client-server-model",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "questionText": "The school intend to implement a client-server model on their network. With the aid of a diagram, explain how the client-server model works.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Client-server model works by servers constantly ‘listening for requests from clients. As requests are received they are processed by the server which responds by sending the result back to the client in the form of a response.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Clear diagram and explanation 4 marks Clear diagram of client-server model without explanation 3 marks Clear explanation of client-server model without diagram 3 marks Some relevant information, not complete 2 marks"
+   }
+  ],
+  "stem": "A local school stores student details on their computer network. The school's principal is concerned about the security of the student information held on the network.",
+  "figureKey": "computer-science-2023-OL-scheme-q15a-ii"
+ },
+ {
+  "id": "cs-2023-ol-q15-b",
+  "topicId": "cs-1-2",
+  "conceptId": "estonia-has-developed-software-system-e",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)",
+  "questionText": "Estonia has developed a software system for e-Government. The majority of tax returns are completed online instead of using paper-based returns. Citizens can vote online in elections instead of having to go to a polling station to cast a vote. Every citizen’s health records are kept in an online system so that they can be accessed by any doctor or hospital. Identify two possible advantages and two possible disadvantages of using this system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Advantages 6 (3, 3) marks",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "A centralised system can be more efficient",
+      "Faster/ Less time spent on accessing information",
+      "Less money spent on printing and postage",
+      "Easier for citizens to access / update their information",
+      "Services are more accessible in regard to mobility and/or location",
+      "Accept any other relevant point"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each (2) valid advantage 3 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Disadvantages 6 (3, 3) marks",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "System could be hacked, and data stolen",
+      "If the internet goes down the system isn’t usable",
+      "Digital divide - people with no access or skills to use technology are disadvantaged",
+      "Governments have too much information / control / invasion of privacy",
+      "Potential job loses with more reliance on technology"
+     ]
+    },
+    "contextNote": "Each (2) valid disadvantage 3 marks"
+   }
+  ]
+ },
+ {
+  "id": "cs-2023-ol-q15-c",
+  "topicId": "cs-1-2",
+  "conceptId": "article-written-doctor-shelly-batra-ceo",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(c)",
+  "questionText": "In an article written by Doctor Shelly Batra, CEO of Every Infant Matters she states the following: Choose one technology you have studied and explain how it benefits society and choose one technology you have studied and explain how it could be a danger to society.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "For each benefit:",
+    "marks": 6,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "Name:",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Explanation:",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "contextNote": "For each benefit: Name: 1 mark Explanation: Very good explanation - clear understanding demonstrated 5 marks Fair explanation - limited understanding 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "For each danger:",
+    "marks": 6,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "Name:",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Explanation:",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "contextNote": "For each danger: Name: 1 mark Explanation: Very good explanation - clear understanding demonstrated 5 marks Fair explanation - limited understanding 2 mark"
+   }
+  ],
+  "stem": "Technology is a two-edged sword. It is up to humans to decide what they will do with it. We can use it for the betterment of mankind, or we can use it to wipe out millions. It is up to us. It is our decision, and ours alone."
+ },
+ {
+  "id": "cs-2023-ol-q16-a-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "update-program-so-row-asterisks-appears",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2023 OL Q16(a)(ii)",
+  "questionText": "Update the program so that a row of asterisks appears above and below the line which outputs “Times Table program”. When the program is run the output may now look as follows: ******************** Times Table program ******************** Multiplications of 7 0 7 14 21 28 35 42 49 56 63",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct insertion of row of asterisks in both locations",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     8,
+     10
+    ],
+    "contextNote": "(ii) 10 marks (B-10 scale) 10 marks Correct response Correct insertion of row of asterisks in both locations 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error 5 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total.",
+  "figureKey": "computer-science-2023-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2023-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q16-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "amend-program-ask-accept-user-s",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2023 OL Q16(a)(iii)",
+  "questionText": "Amend the program to ask for and accept the user's choice of number to be used as the multiplier. Store the entered number in the variable called number. When the program is run and the user enters 8 as the number, the output may now look as follows: ******************** Times Table program ******************** Enter number: 8 Multiplications of 8 0 8 16 24 32 40 48 56 64 72",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     7,
+     10
+    ],
+    "contextNote": "(iii) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. Note variable does not have to be cast to int in the input statement for full marks 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total.",
+  "figureKey": "computer-science-2023-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2023-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q16-a-v",
+  "topicId": "cs-2-2",
+  "conceptId": "times-tables-normally-shows-result-multiplying",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2023 OL Q16(a)(v)",
+  "questionText": "Times tables normally shows the result of multiplying a specific number by zero to twelve inclusive. Amend the program so it displays the results of multiplying the entered number by zero to twelve inclusive. When the program is run and the user enters the number 8, the output may now look as follows: ******************** Times Table program ******************** Enter number: 8 Multiplications of 8 0 8 16 24 32 40 48 56 64 72 80 88 96",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "(v) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 2 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total.",
+  "figureKey": "computer-science-2023-OL-scheme-q16a",
+  "questionFigureKey": "computer-science-2023-OL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  }
 ]

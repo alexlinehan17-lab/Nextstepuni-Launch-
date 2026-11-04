@@ -72,7 +72,10 @@ class LaneError(SystemExit):
 #           and looked at.
 #   U+F0B7  Symbol 0xB7, a bullet: the papers' clue and rule lists (2025 HL
 #           Q3, Q9); glyphmap.json already reads it as U+2022.
-LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022'}
+#   U+F0FC  Wingdings 0xFC, a tick, and U+F04A, Wingdings 0x4A, a smiling
+#           face: 2022 OL paper p12 (Q13(b)(i)), rendered at 150 dpi and looked
+#           at; folded to U+2713 and U+263A.
+LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022', '\uf0fc': '\u2713', '\uf04a': '\u263a'}
 
 
 def fold(text):
@@ -157,11 +160,11 @@ def allof(text, marks, note=None):
     return {'kind': 'allOf', 'text': text, 'marks': marks, 'note': note}
 
 
-def crit(text, marks, steps, note=None, head=None, route=None):
+def crit(text, marks, steps, note=None, head=None, route=None, parts=None):
     """A judgement the scheme prices on printed steps ("Very good ... 3 marks /
     Fair ... 2 marks"). `steps` are the printed marks below the top one."""
     return {'kind': 'criterion', 'text': text, 'marks': marks, 'steps': steps,
-            'note': note, 'head': head, 'route': route}
+            'note': note, 'head': head, 'route': route, 'parts': parts}
 
 
 def anyn(options, claim, each, head, note=None, open_list=False, steps=None, route=None):
@@ -395,7 +398,20 @@ def build_row(sitting, spec, i, question_text, where):
     if not traces(sitting, claim):
         raise LaneError(f'{where}: row not in the scheme .md: {text[:70]!r}')
     row = {'id': rid, 'kind': kind, 'verbatim': text, 'marks': spec['marks']}
-    if kind == 'criterion':
+    if kind == 'criterion' and spec.get('parts'):
+        # Named components the scheme prices separately ("Name: 1 mark /
+        # Explanation: 5 or 2"), each placed on its own printed steps.
+        parts, sums = [], {0}
+        for j, (lift, m, st) in enumerate(spec['parts']):
+            ladder = [0] + list(st) + [m]
+            parts.append({'id': f'p-{j + 1}', 'verbatim': sitting.lift(lift), 'marks': m,
+                          'permittedMarks': ladder})
+            sums = {a + b for a in sums for b in ladder}
+        if sum(p['marks'] for p in parts) != spec['marks']:
+            raise LaneError(f'{where}: parts do not add up to the row')
+        row['parts'] = parts
+        row['permittedMarks'] = sorted(sums)
+    elif kind == 'criterion':
         steps = [0] + list(spec['steps']) + [spec['marks']]
         if steps != sorted(set(steps)):
             raise LaneError(f'{where}: criterion steps {steps} are not ascending')

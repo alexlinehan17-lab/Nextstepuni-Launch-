@@ -56084,5 +56084,85 @@
   "year": 2023,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q6-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q6-table.png",
+  "md5": "1cf2cea8ce277d7b8d700b74c4854b0e",
+  "alt": "The table printed with Question 6: Column A lists Member Name, Member Age, Amount Paid, Most Popular Days to Visit and Member Completed Induction – Yes/No; Column B (Data Type) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q6",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q9-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q9-table.png",
+  "md5": "d7ebe0f1bfca7aaedfc82144c7b36efe",
+  "alt": "The table printed with Question 9: Column A lists the number of players in a football squad, the number of students in a class, the speed of a school bus, the temperature of a classroom, the number of days it rained in March and the weight of a box; Column B (Discrete or Continuous) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q9",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q10-fig3": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q10-fig3.png",
+  "md5": "3f7e51c62a02a4a279e4de81f3eea410",
+  "alt": "Figure 3: an OR gate with inputs A and B. Below it, the truth table with columns A, B and out (A OR B); the A and B columns read 0 0, 0 1, 1 0 and 1 1, and the out column is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q10",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q16a-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16a-code.png",
+  "md5": "ddc9dddfd81a5d4226329d3b1f29b442",
+  "alt": "The eleven-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"Multiplication program\"), number = 7, print(\"Multiplications of \", number), then for i in range(10): print(number*i).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q3": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q3.png",
+  "md5": "0fc01ff069226f9671ef708cbb199612",
+  "alt": "The marking scheme's examples for Question 3. Pseudocode: input num1, input num2, input num3, average = (num1 + num2 + num3) /3, print average. A flowchart that does the same: Start, three inputs, the average calculated, the average output, Stop.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q15a-ii": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q15a-ii.png",
+  "md5": "10add4a59380b9473a1afd3c1820bfdf",
+  "alt": "The marking scheme's example diagram of the client-server model: a laptop, a phone and a desktop computer labelled Clients, joined through a cloud labelled Internet to a machine labelled Server.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q16a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q16a.png",
+  "md5": "20c1596977183ba0e6fa35631122bcb9",
+  "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 14: rows of asterisks printed above and below \"Times Table program\" (marked (ii) and (i)); number read with int(input()) (iii); a negative number refused with an error message (iv); and a for loop over range(13) (v) printing i, \"x\", number, \"=\", number*i (vi).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
  }
 }
