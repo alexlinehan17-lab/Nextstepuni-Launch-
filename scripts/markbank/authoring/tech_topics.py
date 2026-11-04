@@ -78,7 +78,7 @@ CORE = [
         r'\bai\b', r'augmented reality', r'virtual reality', r'\bqr code',
         r'\bgps\b', r'\bram\b', r'\brom\b', r'processor', r'\bcpu\b', r'\busb\b',
         r'pixel', r'resolution', r'\buhd\b', r'\b4k\b', r'\bbyte',
-        r'file (?:type|extension|size|format)', r'smart ', r'home automation',
+        r'file (?:type|extension|size|format)', r'smart (?!material)', r'home automation',
         r'\biot\b', r'internet of', r'online', r'contactless', r'payment',
         r'\bscan(?:ner|ning)?\b', r'\bcode\b', r'programm', r'\bdrone',
         r'\bapp(?:lication)? software', r'video ?conferenc', r'biometric',
