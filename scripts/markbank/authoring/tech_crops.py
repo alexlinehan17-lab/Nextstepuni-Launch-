@@ -1305,6 +1305,321 @@ LABEL_KEYS.update({
     (2026, 'ol', 'C', 4, 'b'): [{'letter': '1', 'meaning': 'Introduction'}, {'letter': '2', 'meaning': 'Growth'}, {'letter': '3', 'meaning': 'Maturity'}, {'letter': '4', 'meaning': 'Decline'}],
 })
 
+# ---------------------------------------------------------------------------
+# 2010-2019, carded sitting by sitting from 4 November 2026 (Technology lane).
+# Every rectangle below was rendered at 150 dpi and looked at before it was
+# written down, the same as the blocks above.
+# ---------------------------------------------------------------------------
+
+# 2019 Higher. PAPER pictures the cropper cut wrongly or not at all.
+BY_EYE.update({
+    # The worm-and-wheel cutaway with both of its labels; the cropper lost
+    # "Gear B has 50 teeth", which (ii) calculates from.
+    'technology-2019-HL-paper-secA-q4-art': ('014', 2, (378, 58, 562, 275)),
+    # The lifecycle graph with its stage letters and axis titles, which the
+    # cropper's ink tests left behind.
+    'technology-2019-HL-paper-secA-q7-art': ('014', 3, (378, 92, 548, 206)),
+    # The exercise machine with its "Pedal" label.
+    'technology-2019-HL-paper-secA-q8-art': ('014', 3, (350, 355, 553, 520)),
+    # The pulley system (i) is worked from: 90 KG, 500 mm, the force at F.
+    'technology-2019-HL-paper-secA-q11-art': ('014', 4, (362, 470, 552, 670)),
+    # The resistor network, without the "Calculation:" box beside it.
+    'technology-2019-HL-paper-secA-q14-art': ('014', 6, (72, 128, 314, 280)),
+    # The USB flash drive outline the techniques are applied to.
+    'technology-2019-HL-paper-secA-q15-art': ('014', 6, (160, 520, 480, 770)),
+    # 2(b)'s dual-axis tracker icon ("similar to that shown"), and the output
+    # graph only (iii) analyses.
+    'technology-2019-HL-paper-secB-q2b-art': ('039', 1, (430, 262, 554, 356)),
+    'technology-2019-HL-paper-secB-q2b-iii-art': ('039', 1, (348, 350, 570, 487)),
+    # The small-business LAN with its letters A-D and captions.
+    'technology-2019-HL-paper-secC-q3b-art': ('039', 5, (338, 258, 580, 440)),
+    # The URL box (i) asks about; the cropper took the event's logo.
+    'technology-2019-HL-paper-secC-q3d-i-art': ('039', 5, (82, 680, 381, 713)),
+})
+WHITEOUT.update({
+    # The last word of 3(b)'s stem, "graphic.", runs into the LAN's corner.
+    'technology-2019-HL-paper-secC-q3b-art': [(338, 262, 357, 278)],
+    # The question box's rounded corner, at the cutaway's top right.
+    'technology-2019-HL-paper-secA-q4-art': [(552, 56, 566, 70)],
+    # The full stop of 2(b)(iii)'s ask, beside the graph's foot.
+    'technology-2019-HL-paper-secB-q2b-iii-art': [(346, 464, 355, 482)],
+    # 2(b)(i)'s reprinted ask, set beside the scheme's sketch.
+    'technology-2019-HL-scheme-secB-q2b-i': [(88, 188, 326, 234)],
+    # The "Answer 1(c) or 1(d)" rubric between the two pneumatic circuits.
+    'technology-2019-HL-scheme-secC-q1c': [(245, 470, 354, 488), (440, 460, 560, 470)],
+})
+PAPER_ZONES.setdefault((2019, 'hl', '039'), []).extend([
+    # The LAN's lettering (A-D, internet, server, laptops, networked
+    # computers), which the walker read in as 3(b)'s stem.
+    (5, (338, 258, 580, 440)),
+    # Option 5(d)'s two picture captions, read onto the end of its stem.
+    (8, (460, 596, 545, 626)),
+    (8, (405, 757, 530, 775)),
+])
+PAPER_ZONES.setdefault((2019, 'hl', '014'), []).extend([
+    # Q12's answer-box labels "Selected product:" and "Testing procedure:".
+    (5, (78, 130, 180, 192)),
+])
+# The scheme's own drawn answers, cut from the 2019 Higher marking scheme.
+SOLUTIONS.update({
+    'technology-2019-HL-scheme-secA-q4-ii': (4, (104, 180, 346, 284),
+        "The marking scheme's own answer to 2019 HL Section A Q4(ii), as the "
+        "State Examinations Commission printed it: the calculation 300 over 50 "
+        "equals 6 RPM, and then 1 revolution takes 10 seconds."),
+    'technology-2019-HL-scheme-secA-q5': (4, (50, 366, 340, 540),
+        "The marking scheme's own answer to 2019 HL Section A Q5, as the State "
+        "Examinations Commission printed it: a work breakdown structure in which "
+        "Base, Linkages, Axles and Wheels lead into Assembly, which leads to "
+        "Buggy. The scheme prints beneath it: Any valid alternative WBS accepted."),
+    'technology-2019-HL-scheme-secA-q13': (7, (300, 505, 556, 700),
+        "The marking scheme's own answer to 2019 HL Section A Q13, as the State "
+        "Examinations Commission printed it, headed Suggested solution: a "
+        "close-up photograph of the pulley wheel with a grub screw beside it and "
+        "an arrow to its threaded hole, annotated: Grub screw is threaded into "
+        "the pulley wheel and located onto the motor shaft and tightened."),
+    'technology-2019-HL-scheme-secA-q14-i': (8, (314, 112, 555, 264),
+        "The marking scheme's own answer to 2019 HL Section A Q14(i), as the "
+        "State Examinations Commission printed it: R5 = R2 + R3 = 8 + 4 = 12 "
+        "ohms; 1/R6 = 1/R5 + 1/R4 = 1/12 + 1/12, so R6 = 6 ohms; Rtotal = R1 + "
+        "R6 = 6 + 6 = 12 ohms."),
+    'technology-2019-HL-scheme-secB-q2b-i': (11, (88, 176, 572, 294),
+        "The marking scheme's own answer to 2019 HL Section B 2(b)(i), as the "
+        "State Examinations Commission printed it: a worm on a shaft meshing "
+        "with a gear wheel, annotated Driving motor attached to worm wheel and "
+        "Panel drive shaft attached to gear wheel, with the note: Alternative "
+        "solutions: Servo, stepper motors, etc."),
+    'technology-2019-HL-scheme-secB-q2b-ii': (11, (360, 296, 570, 436),
+        "The marking scheme's own answer to 2019 HL Section B 2(b)(ii), as the "
+        "State Examinations Commission printed it: an LDR and a variable "
+        "resistor form a potential divider feeding a transistor through a base "
+        "resistor; the transistor switches a relay whose contacts complete the "
+        "mains circuit of the motor M."),
+    'technology-2019-HL-scheme-secC-q1b-i': (13, (322, 200, 566, 442),
+        "The marking scheme's own answer to 2019 HL Section C 1(b), as the State "
+        "Examinations Commission printed it: a flowchart from Start through the "
+        "decisions Key? and Foot? (each looping back on No) to Open boot, Wait 5, "
+        "Close boot and End; a dashed branch adds the decision Obstruction?, "
+        "whose Yes calls an Interrupt routine of Close boot and Return."),
+    'technology-2019-HL-scheme-secC-q1c': (13, (50, 466, 560, 630),
+        "The marking scheme's own answer to 2019 HL Section C 1(c), as the State "
+        "Examinations Commission printed it: two pneumatic circuits for the "
+        "double-acting cylinder, one with flow control valves captioned To "
+        "activate with a controlled speed, the other with a shuttle valve "
+        "captioned To operate in conjunction with a shuttle valve."),
+    'technology-2019-HL-scheme-secC-q2a-i': (14, (90, 80, 535, 204),
+        "The marking scheme's own answer to 2019 HL Section C 2(a)(i), as the "
+        "State Examinations Commission printed it: Sound (A) and Movement (B) "
+        "feed an OR gate whose output C joins Dark = 1 (D) at an AND gate, whose "
+        "output E sounds the Alarm; beside it the truth table for A, B, C, D and "
+        "E over all eight input combinations."),
+    'technology-2019-HL-scheme-secC-q2b-i': (14, (372, 252, 560, 404),
+        "The marking scheme's own answer to 2019 HL Section C 2(b)(i), as the "
+        "State Examinations Commission printed it: the 555 astable circuit "
+        "with R1, R2 and C, the pins numbered 7, 4, 8, 6, 2, 1, 5 and 3, and an "
+        "LED with a series resistor connected to the output at pin 3."),
+    'technology-2019-HL-scheme-secC-q2c-i': (14, (320, 450, 528, 530),
+        "The marking scheme's own answer to 2019 HL Section C 2(c)(i), as the "
+        "State Examinations Commission printed it: a transformer (A), a bridge "
+        "rectifier of four diodes (B), a smoothing capacitor and a regulator "
+        "between the output rails."),
+    'technology-2019-HL-scheme-secC-q4b-i': (16, (60, 334, 482, 552),
+        "The marking scheme's own break-even graph for 2019 HL Section C "
+        "4(b)(i), as the State Examinations Commission printed it: Cost against "
+        "Quantity, with the Import line rising more steeply than the "
+        "Manufacture line and crossing it just above zero quantity."),
+    'technology-2019-HL-scheme-secC-q5b-i': (18, (88, 176, 580, 268),
+        "The marking scheme's own answer to 2019 HL Section C 5(b)(i), as the "
+        "State Examinations Commission printed it, headed Blow moulding: five "
+        "stages from Plastic tube (parison) inserted from extruder, through Heat "
+        "to soften and Air blown in, to the Finished product."),
+})
+SOLUTION_SHARED.update({
+    # 1(b)(ii)'s obstruction branch is drawn on the 1(b)(i) flowchart.
+    'technology-2019-HL-scheme-secC-q1b-ii': 'technology-2019-HL-scheme-secC-q1b-i',
+})
+ASK_ONLY.update({
+    # A typeset fraction and a worked network: the crop is the answer.
+    'technology-2019-HL-scheme-secA-q4-ii',
+    'technology-2019-HL-scheme-secA-q14-i',
+    # The scheme's only words beside these drawings reprint the ask.
+    'technology-2019-HL-scheme-secC-q2b-i',
+    'technology-2019-HL-scheme-secC-q2c-i',
+    'technology-2019-HL-scheme-secC-q2a-i',
+})
+LABEL_ZONES.setdefault((2019, 'hl'), []).extend([
+    # Q4's cutaway, reprinted with its labels beside (i)'s ask.
+    (4, (380, 56, 570, 246)),
+    # Q7's lifecycle graph, reprinted beside the B/C/D answers.
+    (5, (378, 92, 548, 206)),
+    # Q8's exercise machine, reprinted with its "Pedal" label.
+    (5, (358, 320, 556, 486)),
+    # Q11's pulley system, lettered A, B, C, F, 90 kg and 500 mm.
+    (6, (385, 420, 556, 660)),
+    # Q13's reprinted motor photograph and its caption.
+    (7, (66, 505, 300, 702)),
+    # Q14's resistor network, reprinted beside the calculation.
+    (8, (70, 125, 312, 280)),
+])
+LABEL_KEYS.update({
+    (2019, 'hl', 'A', 7, None): [
+        {'letter': 'A', 'meaning': 'the launch and introduction phase (named in the ask)'},
+        {'letter': 'B', 'meaning': 'Growth'},
+        {'letter': 'C', 'meaning': 'Maturity'},
+        {'letter': 'D', 'meaning': 'Decline'}],
+    (2019, 'hl', 'C', 3, 'b'): [
+        {'letter': 'A', 'meaning': 'Firewall'},
+        {'letter': 'B', 'meaning': 'Router'},
+        {'letter': 'C', 'meaning': 'Network switch'},
+        {'letter': 'D', 'meaning': 'Wireless Access Point'}],
+})
+
+# 2019 Ordinary. PAPER pictures the cropper cut wrongly or not at all.
+BY_EYE.update({
+    # The ratchet and pawl with letters A and B; the cropper took both asks.
+    'technology-2019-OL-paper-secA-q6-art': ('014', 2, (407, 572, 532, 716)),
+    # The walkway photograph alone; the cropper took the ask and its lines.
+    'technology-2019-OL-paper-secA-q8-art': ('014', 3, (384, 363, 524, 522)),
+    'technology-2019-OL-paper-secC-q1d-art': ('039', 3, (406, 689, 542, 770)),
+    'technology-2019-OL-paper-secC-q2a-art': ('039', 4, (422, 96, 552, 190)),
+    # 2(c)'s small DC motor, and the motor model (ii) refers to as "the image
+    # opposite".
+    'technology-2019-OL-paper-secC-q2c-art': ('039', 4, (469, 431, 550, 483)),
+    'technology-2019-OL-paper-secC-q2c-ii-art': ('039', 4, (326, 493, 533, 649)),
+    'technology-2019-OL-paper-secC-q4a-art': ('039', 6, (55, 97, 192, 196)),
+    # Pictures whose asks name a letter or "the graphic given" without the
+    # cropper's ask-pointing words: the VR viewer and its part A, the crane
+    # and its cable X, the two pneumatic symbols, the motor reversal circuit
+    # with switches A and B, the logic circuit, and the wheelchair with its
+    # enlarged link A.
+    'technology-2019-OL-paper-secB-q3b-art': ('039', 2, (380, 266, 580, 398)),
+    'technology-2019-OL-paper-secB-q3c-art': ('039', 2, (55, 462, 212, 608)),
+    'technology-2019-OL-paper-secC-q1c-art': ('039', 3, (449, 520, 572, 640)),
+    'technology-2019-OL-paper-secC-q2b-art': ('039', 4, (392, 240, 556, 390)),
+    'technology-2019-OL-paper-secC-q2d-art': ('039', 4, (62, 688, 222, 742)),
+    'technology-2019-OL-paper-secC-q5b-art': ('039', 7, (343, 226, 564, 444)),
+})
+WHITEOUT.update({
+    # The ends of 3(b)(i) and (ii)'s asks beside the VR viewer.
+    'technology-2019-OL-paper-secB-q3b-art': [(380, 268, 406, 330)],
+    # The ends of 5(b)'s stem and its (i)/(ii) asks above the enlarged link.
+    'technology-2019-OL-paper-secC-q5b-art': [(343, 226, 402, 314)],
+})
+SOLUTIONS.update({
+    'technology-2019-OL-scheme-secA-q7': (5, (300, 124, 514, 236),
+        "The marking scheme's own answer to 2019 OL Section A Q7, as the State "
+        "Examinations Commission printed it: an outline 2D side view of the "
+        "push-car, two wheels joined by a frame under a flat seat board, with "
+        "an upright handle post at the front."),
+    'technology-2019-OL-scheme-secA-q11-ii': (6, (205, 458, 410, 534),
+        "The marking scheme's own answer to 2019 OL Section A Q11(ii), as the "
+        "State Examinations Commission printed it: (6V - 2V) over 0.02 equals "
+        "4V over 0.02, which equals 200 ohms."),
+    'technology-2019-OL-scheme-secC-q1b-i': (11, (60, 296, 160, 740),
+        "The marking scheme's own answer to 2019 OL Section C 1(b)(i), as the "
+        "State Examinations Commission printed it: a flowchart from Start "
+        "through the decisions Power? and Cattle? (each looping back on N) to "
+        "Motor Forward, Wait 10, Motor Stop, Motor Reverse, Wait 10, Motor Stop "
+        "and Stop."),
+    'technology-2019-OL-scheme-secC-q1b-ii': (11, (465, 296, 572, 756),
+        "The marking scheme's own answer to 2019 OL Section C 1(b)(ii), as the "
+        "State Examinations Commission printed it: the same flowchart with "
+        "Alarm On added after Motor Forward and Alarm Off after Motor Stop."),
+    'technology-2019-OL-scheme-secC-q2b-ii': (13, (380, 196, 575, 374),
+        "The marking scheme's own answer to 2019 OL Section C 2(b)(ii), as the "
+        "State Examinations Commission printed it: the motor reversal circuit "
+        "with switch A and switch B, a buzzer across one path and an LED with "
+        "a series resistor connected beside the motor M."),
+    'technology-2019-OL-scheme-secC-q2c-ii': (13, (425, 434, 585, 546),
+        "The marking scheme's own labelling of the 2019 OL Section C 2(c) motor "
+        "model, as the State Examinations Commission printed it: the "
+        "Split-ring, the Stator (the red permanent magnet) and the Armature "
+        "(the wire loop between its poles)."),
+    'technology-2019-OL-scheme-secC-q2d-ii': (13, (336, 724, 540, 784),
+        "The marking scheme's own answer to 2019 OL Section C 2(d)(ii), as the "
+        "State Examinations Commission printed it: a table of A, B, C, D and E "
+        "with two rows, 1 0 1 1 1 and 0 1 1 1 1."),
+})
+ASK_ONLY.update({
+    'technology-2019-OL-scheme-secA-q11-ii',
+    # "Modified circuit shown." is the scheme pointing at its drawing.
+    'technology-2019-OL-scheme-secC-q2b-ii',
+    'technology-2019-OL-scheme-secC-q2d-ii',
+})
+LABEL_ZONES.setdefault((2019, 'ol'), []).extend([
+    # Q6's ratchet and pawl, reprinted with letters A and B.
+    (4, (405, 575, 532, 716)),
+    # Q7's push-car photograph and its arrow A.
+    (5, (84, 128, 258, 258)),
+    # Q11's LED circuit with its + and - signs.
+    (6, (370, 305, 530, 408)),
+    # 2(b)'s temperature sensor circuit, lettered A.
+    (9, (410, 200, 570, 305)),
+    # 3(b)'s VR viewer, lettered A, and 3(c)'s crane, lettered X and Load.
+    (10, (415, 266, 580, 368)),
+    (10, (60, 462, 218, 608)),
+    # 1(c)'s cylinder and throttle valve symbols with their captions.
+    (12, (430, 112, 545, 228)),
+    # 2(d)'s logic circuit, lettered a-e, X and Y.
+    (13, (60, 690, 225, 742)),
+])
+LABEL_KEYS.update({
+    (2019, 'ol', 'A', 6, None): [
+        {'letter': 'A', 'meaning': 'Ratchet'},
+        {'letter': 'B', 'meaning': 'Pawl'}],
+    (2019, 'ol', 'A', 7, None): [
+        {'letter': 'A', 'meaning': 'the arrow giving the viewing direction for the 2D sketch'}],
+    (2019, 'ol', 'B', 2, 'b'): [
+        {'letter': 'A', 'meaning': 'Thermistor'}],
+    (2019, 'ol', 'C', 2, 'b'): [
+        {'letter': 'A', 'meaning': 'Double Pole Double Throw (DPDT)'},
+        {'letter': 'B', 'meaning': 'Push-to-break (PTB)'}],
+    (2019, 'ol', 'C', 2, 'd'): [
+        {'letter': 'X', 'meaning': 'OR gate'},
+        {'letter': 'Y', 'meaning': 'AND gate'}],
+    (2019, 'ol', 'B', 3, 'b'): [
+        {'letter': 'A', 'meaning': "the part of the VR viewer the arrow A points to (the scheme's answer: any relevant material justified, e.g., PVC rigid foamboard)"}],
+    (2019, 'ol', 'B', 3, 'c'): [
+        {'letter': 'X', 'meaning': 'the cable lifting the load (the scheme: Tension)'}],
+    (2019, 'ol', 'C', 5, 'b'): [
+        {'letter': 'A', 'meaning': 'the curved metal linkage (named in the ask)'}],
+})
+
+# Printed words on a PAPER page that come off one part's ask and stem the way
+# a crop's own lettering does, for a part with no picture of its own to carry
+# them: an answer box's fill-in labels, a caption printed beside the prose.
+# (year, level, section, q, letter, roman) -> (booklet, page, [rect, ...]).
+ASK_ZONES = {
+    # 2019 Higher Q12's answer-box labels.
+    (2019, 'hl', 'A', 12, None, None): ('014', 5, [(78, 130, 180, 192)]),
+    # 2019 Higher Q13's caption inside the sketch circle.
+    (2019, 'hl', 'A', 13, None, None): ('014', 5, [(305, 745, 542, 765)]),
+    # 2019 Higher Q7's answer-line letters B, C and D, and the graph's own
+    # lettering (its "time" axis is set as the ligature "Ɵme", which the
+    # crop's word list keeps as printed).
+    (2019, 'hl', 'A', 7, None, None): ('014', 3, [(70, 95, 92, 202), (378, 92, 548, 206)]),
+    # 2019 Higher Option 5(d)'s two picture captions.
+    (2019, 'hl', 'C', 5, 'd', 'i'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
+    (2019, 'hl', 'C', 5, 'd', 'ii'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
+}
+
+
+# A printed note the text layer reads out of order, cut off an ask's end.
+# 2019 Ordinary Q11(ii) prints "Note: R = (V-Vf) / If" as a stacked fraction
+# beside the calculation box; read as "V-Vf If Note: R=" it is no formula a
+# student could use, and the scheme's own working (the solution crop) shows it.
+ASK_TAILS = {
+    (2019, 'ol', 'A', 11, None, 'ii'): 'V-Vf If Note: R=',
+}
+
+
+def ask_zone_words(year, level, section, q, letter, roman):
+    hit = ASK_ZONES.get((year, level, section, q, letter, roman))
+    if not hit:
+        return set()
+    booklet, page, rects = hit
+    return zone_words(paper_path(year, level, booklet), page, rects, fold=True)
+
+
 _WORDS = {}
 
 
@@ -1381,7 +1696,7 @@ def _bare(token):
     return re.sub(r'^[\(\[“"\'•]+|[\)\]”"\'.,;:!?]+$', '', token)
 
 
-def zone_words(path, page, rects):
+def zone_words(path, page, rects, fold=False):
     """The words printed inside these rectangles, bare of punctuation.
 
     By text LINE, not by word: a line of prose whose last word happens to
@@ -1398,7 +1713,12 @@ def zone_words(path, page, rects):
         if all(any(r[0] <= (x0 + x1) / 2 <= r[2] and r[1] <= (y0 + y1) / 2 <= r[3]
                    for r in rects)
                for x0, y0, x1, y1, _t in words):
-            out.update(_bare(t) for _x0, _y0, _x1, _y1, t in words)
+            # With fold, ligatures folded the way the census folds the ask: a
+            # graph's "Ɵme" axis is "time" by the time it reaches a card. Only
+            # ASK_ZONES fold: folding every crop's words moved shipped cards.
+            import paper as _PP
+            out.update(_bare(_PP.unligature(t) if fold else t)
+                       for _x0, _y0, _x1, _y1, t in words)
     out.discard('')
     return out
 
@@ -1484,7 +1804,11 @@ def strip_scheme_line(text, year, level, pages, keep_numbers=False):
 
 
 def _norm(text):
-    return re.sub(r'[^a-z0-9]+', '', text.lower())
+    # The page's words keep the SEC's ligature glyphs -- "modiﬁcaƟon" in the
+    # 2010-2019 schemes' Calibri -- where the extracted .md has "modification";
+    # folded first, or no row of those pages is ever found again.
+    import paper as _PP
+    return re.sub(r'[^a-z0-9]+', '', _PP.unligature(text).lower())
 
 
 _ROWS = {}
@@ -1549,7 +1873,10 @@ def strip_row_labels(text, path, page, rects):
         kept = [line for line in row if not _inside(line, rects)]
         if len(kept) == len(row):
             return text
-        return ' '.join(w[4] for line in kept for w in line)
+        # Rebuilt from the page's words, so with the .md's ligature fold:
+        # "conﬁguraƟon" on the page is "configuration" in the scheme text.
+        import paper as _PP
+        return _PP.unligature(' '.join(w[4] for line in kept for w in line))
     return None
 
 

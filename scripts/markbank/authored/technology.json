@@ -1,5 +1,2957 @@
 [
  {
+  "id": "tech-2019-hl-a1-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q1(i)",
+  "questionText": "Research",
+  "stem": "Technological development has revolutionised the ways in which products are developed. Give one example for each heading below illustrating the impact of technology on the development of a mass-market drone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Internet research of existing solutions, skype, video conferencing, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a1-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q1(ii)",
+  "questionText": "Prototyping",
+  "stem": "Technological development has revolutionised the ways in which products are developed. Give one example for each heading below illustrating the impact of technology on the development of a mass-market drone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CAD modelling, 3D printing/Laser cutting of design models, use of polymorph, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a1-iii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q1(iii)",
+  "questionText": "Manufacture",
+  "stem": "Technological development has revolutionised the ways in which products are developed. Give one example for each heading below illustrating the impact of technology on the development of a mass-market drone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "use of CAM for mass production, robotic assembly, wide range of manufacturing techniques,etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a2",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q2",
+  "questionText": "The USB-C (or USB Type C) connector is increasingly seen on a range of devices, such as the laptop shown. Outline two advantages of USB-C over other USB connectors.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reversible connection, faster speed of data transfer, larger power output, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a3-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q3(i)",
+  "questionText": "What is phishing?",
+  "stem": "In the context of information security, social engineering refers to the manipulation of people to divulge personal and confidential information using techniques such as phishing or vishing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A fraudulent attempt to obtain sensitive information such as usernames, passwords, personal information or banking details by electronic communication, often posing as a legitimate communication.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a3-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q3(ii)",
+  "questionText": "Outline one method of guarding against social engineering.",
+  "stem": "In the context of information security, social engineering refers to the manipulation of people to divulge personal and confidential information using techniques such as phishing or vishing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Beware of unsolicited emails, check company details independently, be suspicious of download offers, never divulge personal information, anti-virus software, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a4-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q4(i)",
+  "questionText": "Name the mechanism shown in the graphic.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Worm and wheel",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a4-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q4(ii)",
+  "questionText": "If the motor rotates at 300 RPM, determine the time taken for Gear B to complete one full revolution.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secA-q4-ii",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If the motor rotates at 300 RPM, determine the time taken for Gear B to complete one full revolution.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a5",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q5",
+  "questionText": "Compile a simple Work Breakdown Structure (WBS) for the manufacture, in a school workshop, of the buggy shown.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secA-q5",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any valid alternative WBS accepted.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a6-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q6(i)",
+  "questionText": "Describe the operation of the electronic component shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An magnetic field is produced to magnetise the iron core when current flows through the coil. The armature will then force the contacts to touch and activate the secondary circuit.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a6-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q6(ii)",
+  "questionText": "Explain the abbreviations associated with this device.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NC Normally Closed",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "NO Normally Open",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "COM Common",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a7",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q7",
+  "questionText": "New products exhibit recognised phases following the launch and introduction phase (A). Name each of the phases B, C and D of the lifecycle graph shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B Growth",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C Maturity",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "D Decline",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a8",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q8",
+  "questionText": "The design and finish of the exercise machine shown is of high quality. The manufacturer also requires that the machine operates quietly. Describe, using annotated sketches, how the pedals and their connecting shaft can be designed to operate with a minimum of noise.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pedals are connected to shaft.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Shaft runs on roller bearings to allow smooth running and reduce noise.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a9-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q9(i)",
+  "questionText": "Outline briefly the process of upcycling.",
+  "stem": "Mamukko is a Kinsale based company that creates bags from selected reclaimed sails, liferafts, leather and other textiles. Each Mamukko bag is handcrafted in their workshop.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Creatively reuse old/waste materials/products to manufacture a new product, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a9-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q9(ii)",
+  "questionText": "State the impact upcycling has on cost of materials and on processing a handcrafted bag.",
+  "stem": "Mamukko is a Kinsale based company that creates bags from selected reclaimed sails, liferafts, leather and other textiles. Each Mamukko bag is handcrafted in their workshop.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Materials are likely to be cheaper then processed materials.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Processing by hand is more labour intensive but will produce unique products. Some manufacturing processes may have been carried out prior to the upcycling, e.g., dyeing, waterproofing, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a10-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q10(i)",
+  "questionText": "State one energy conversion that takes place in an audio speaker.",
+  "stem": "Sonarc, an Irish company, has created the world’s first audio speaker which has no moving parts.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical energy to sound (vibration),",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A traditional speaker converts electrical to mechanical energy to sound energy.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a10-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q10(ii)",
+  "questionText": "Outline two advantages of designing an audio speaker with no moving parts.",
+  "stem": "Sonarc, an Irish company, has created the world’s first audio speaker which has no moving parts.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Should increase the life of the device, wear will be reduced, sound quality should not deteriorate, reduced size, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a11-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q11(i)",
+  "questionText": "Calculate the work done to raise the 90 kg weight through 500 mm by applying a force at F.",
+  "stem": "The pulley system shown is used to assist in raising heavy loads. Assume g = 9.81 m/s2",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "F = mg = 30 × 9.81 = 294.3 N (due to pulley configuration)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Work done = Force × distance = 294.3N × 0.5m = 147.15 J",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a11-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q11(ii)",
+  "questionText": "Explain the term mechanical advantage.",
+  "stem": "The pulley system shown is used to assist in raising heavy loads. Assume g = 9.81 m/s2",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mechanical advantage is a ratio of output force (load) to the input force (effort).",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This allows a large load to be moved with a smaller effort.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a12",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q12",
+  "questionText": "Using an appropriate example, describe briefly how a product might be tested against a design specification.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any valid product and testing procedure explained.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Selected product: Food Mixer",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A simple test would be to verify that the various operational speeds of the food mixer perform as intended. Once products are fully assembled in a factory, samples of food mixers could be identified for testing purposes. Turn on the food mixer using the different speed settings. Any product that passes this test is fit for purpose. Any faults identified would need to be referred to relevant department to be resolved, e.g., design, manufacture or assembly.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a13",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q13",
+  "questionText": "The pulley-wheel shown is driven by the motor. Make a sketch showing how the pulley-wheel could be located on the motor shaft to prevent slippage.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secA-q13",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The pulley-wheel shown is driven by the motor. Make a sketch showing how the pulley-wheel could be located on the motor shaft to prevent slippage.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-a14-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q14(i)",
+  "questionText": "Calculate the total resistance of the circuit shown.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secA-q14-i",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q14-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the total resistance of the circuit shown.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a14-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q14(ii)",
+  "questionText": "Calculate the current (IT) drawn from the 12 V supply.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q14-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "IT = V / Rtotal = 12 / 12 = 1 A",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2019 HL Section A Q15",
+  "questionText": "Use two graphic techniques to enhance the representation of the device shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Two distinct graphic techniques required",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-b2a-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(a)(i)",
+  "questionText": "Suggest a means of storing the energy generated during the daytime, for use at night or later.",
+  "stem": "Output from solar photovoltaic panels varies depending on latitude, panel angle and orientation. In Ireland, a typical 3 kW home photovoltaic installation would generate 2,600 kWh of electricity annually.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Charging up battery packs from solar energy, use of capacitors to store charge, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2a-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(a)(ii)",
+  "questionText": "If a home uses 6500 kWh of electricity annually, calculate the percentage of this requirement that the typical 3 kW solar panel system described above may provide.",
+  "stem": "Output from solar photovoltaic panels varies depending on latitude, panel angle and orientation. In Ireland, a typical 3 kW home photovoltaic installation would generate 2,600 kWh of electricity annually.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2600/6500 x100 = 40%",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2b-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(b)(i)",
+  "questionText": "Outline, using annotated sketches, a method of providing smooth and precise movement, in two axes, for a solar panel similar to that shown.",
+  "stem": "A dual-axis tracking system is used to position solar photovoltaic panels to maximise their output by tracking the path of the sun.",
+  "figureKey": "technology-2019-HL-scheme-secB-q2b-i",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Outline, using annotated sketches, a method of providing smooth and precise movement, in two axes, for a solar panel similar to that shown.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2b-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(b)(ii)",
+  "questionText": "Draw a suitable circuit to detect reducing light levels and activate a mains-powered motor.",
+  "stem": "A dual-axis tracking system is used to position solar photovoltaic panels to maximise their output by tracking the path of the sun.",
+  "figureKey": "technology-2019-HL-scheme-secB-q2b-ii",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a suitable circuit to detect reducing light levels and activate a mains-powered motor.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2b-iii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(b)(iii)",
+  "questionText": "The graphs shown compare the output from a dual-axis tracked system with the output from a fixed-panel system. Analyse the information provided and discuss the advantages and disadvantages of the tracked system.",
+  "stem": "A dual-axis tracking system is used to position solar photovoltaic panels to maximise their output by tracking the path of the sun.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q2b-iii-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advantages: provides maximum output for longer, reaches full output earlier, remains at full output for longer, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Disadvantages: circuits more complex, require power to operate, maintenance of moving parts, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2c-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(c)(i)",
+  "questionText": "Outline one design feature of the Bird’s Nest Stadium that maximises the use of natural light.",
+  "stem": "The work of many progressive architects and engineers has been inspired by nature. An example is Beijing’s national stadium which is often referred to as the ‘Bird’s Nest’.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Open frame structure, bowl shape design, use of materials, reflection of light, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2c-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(c)(ii)",
+  "questionText": "Structures must be able to withstand forces such as tension, torsion and shear. Define each of these forces.",
+  "stem": "The work of many progressive architects and engineers has been inspired by nature. An example is Beijing’s national stadium which is often referred to as the ‘Bird’s Nest’.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tension—opposing forces try to stretch object.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Torsion—twisting force.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Shear—offset forces will cut object.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b2d",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(d)",
+  "questionText": "Explain each of the following techniques, employed to enhance structural strength: • Triangulated frames • Alloying • Corrugated structures.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2+2+2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Triangulated frames: Frame members attached to distribute load (strong rigid structure)",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Alloying: Mixture of two or more metallic elements to enhance material properties, e.g., strength and corrosion resistance, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Corrugated structures: Thin materials bent/shaped (parallel ridges and furrows) to improve structure rigidity, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+2+2)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-b3a",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(a)",
+  "questionText": "The anti-gravity treadmill has been inspired by NASA space technology. The treadmill was originally designed to allow astronauts become accustomed to partial weightlessness in space. Outline one reason for using anti-gravity treadmill technology for: • Rehabilitation from injury • Professional athletics and sports.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Allow strengthening to start earlier (weight taken off injured limb), measurable outcomes, etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Professional athletics and sports: Recovery is faster, specific strengthening can be targeted, can train for longer periods without risk of injury, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-b3b-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(b)(i)",
+  "questionText": "List three desirable properties of the material chosen to make the belt of this treadmill.",
+  "stem": "NASA named its space station exercise treadmill after US comedian and host, Stephen Colbert. It is designed to work without an external power source and astronauts use shoulder straps to stay on the treadmill.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Durable, lightweight, non-slip, shock absorbent, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3b-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(b)(ii)",
+  "questionText": "A concern was expressed that vibration from the treadmill might affect the instruments on the space station. Suggest, using annotated sketches, a method of minimising vibration while the treadmill is in use.",
+  "stem": "NASA named its space station exercise treadmill after US comedian and host, Stephen Colbert. It is designed to work without an external power source and astronauts use shoulder straps to stay on the treadmill.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cushioned rubber feet, feet mounted on springs, roller bearing systems used on roller shafts, rubber mat placed underneath treadmill, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3b-iii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(b)(iii)",
+  "questionText": "Describe, using annotated sketches, how the individual sections of the treadmill belt might be connected to form one continuous belt as shown.",
+  "stem": "NASA named its space station exercise treadmill after US comedian and host, Stephen Colbert. It is designed to work without an external power source and astronauts use shoulder straps to stay on the treadmill.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thin composite backing material, use of chain links to join individual sections, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3c-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(c)(i)",
+  "questionText": "Give two electrical safety features of a typical mains-powered domestic treadmill.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Emergency stop/panic button, electrical brake, tether with a clip attached to power cut-off in case of an accident, speed limiter, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3c-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(c)(ii)",
+  "questionText": "Outline the purpose of any sensing system commonly used on a modern treadmill.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To monitor personal conditioning and alert with over-exertion,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To regulate speed, prevent overheating of treadmill, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3d-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(d)(i)",
+  "questionText": "Outline one electrical method and one mechanical method of varying the output speed produced by an electric motor.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical - control of current to motor, programmable control, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mechanical - variable speed gearbox, cone or stepped pulleys, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-b3d-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(d)(ii)",
+  "questionText": "Describe one method of adjusting the incline of a treadmill.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use of a screw mechanism, hydraulic systems, pneumatic systems, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1a-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(a)(i)",
+  "questionText": "State three specific applications of NFC technology.",
+  "stem": "Near-Field Communications (NFC) devices are used in contactless payment systems. These systems facilitate mobile electronic payment processing and electronic ticketing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Payment systems, loyalty cards, ‘clocking-in’ attendance systems, parking access, data exchange between devices, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1a-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(a)(ii)",
+  "questionText": "Describe two possible limitations of NFC technology.",
+  "stem": "Near-Field Communications (NFC) devices are used in contactless payment systems. These systems facilitate mobile electronic payment processing and electronic ticketing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Security of devices, cost, limited operational distance, small amount of data transfer etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the boot door system.",
+  "stem": "A ‘kick to open’ car boot system allows a driver to open and close the boot door by moving a foot beneath the rear bumper. This is a useful feature when approaching a car with both hands occupied with groceries or other goods. The following sequence of operations is used: If the car is locked and the owner has the key in their possession, the boot door will open when the owner moves their foot under the bumper. This activates a motor in the linear actuator which opens the boot door. It remains open for 5 minutes or until the owner covers a sensor on the boot door to signal it to close.",
+  "figureKey": "technology-2019-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the boot door system.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(b)(ii)",
+  "questionText": "Add a flowchart modification that will detect an obstruction on closing the boot door and return it to the open position.",
+  "stem": "A ‘kick to open’ car boot system allows a driver to open and close the boot door by moving a foot beneath the rear bumper. This is a useful feature when approaching a car with both hands occupied with groceries or other goods. The following sequence of operations is used: If the car is locked and the owner has the key in their possession, the boot door will open when the owner moves their foot under the bumper. This activates a motor in the linear actuator which opens the boot door. It remains open for 5 minutes or until the owner covers a sensor on the boot door to signal it to close.",
+  "figureKey": "technology-2019-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An additional compare block (obstruction) could be added as shown.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(b)(iii)",
+  "questionText": "Describe one sensor that could be used to detect the movement of a foot under the bumper and one sensor to detect the presence of a key on the operator.",
+  "stem": "A ‘kick to open’ car boot system allows a driver to open and close the boot door by moving a foot beneath the rear bumper. This is a useful feature when approaching a car with both hands occupied with groceries or other goods. The following sequence of operations is used: If the car is locked and the owner has the key in their possession, the boot door will open when the owner moves their foot under the bumper. This activates a motor in the linear actuator which opens the boot door. It remains open for 5 minutes or until the owner covers a sensor on the boot door to signal it to close.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motion or vibration sensor,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "LDR/light-operated sensor, etc",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The presence of a key: IR, Bluetooth, etc",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1c",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(c)",
+  "questionText": "Draw a separate pneumatic circuit to control the double acting cylinder shown, in each of the following situations: 1. to operate at a controlled speed. 2. to operate in conjunction with a shuttle valve.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secC-q1c",
+  "questionFigureKey": "technology-2019-HL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a separate pneumatic circuit to control the double acting cylinder shown, in each of the following situations: 1. to operate at a controlled speed. 2. to operate in conjunction with a shuttle valve.",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this question."
+ },
+ {
+  "id": "tech-2019-hl-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(d)(i)",
+  "questionText": "Describe, using annotated sketches, a method of programming a robot to spray-paint components on a production line.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lead/walk through programming, offline programming, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c1d-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q1(d)(ii)",
+  "questionText": "Explain the importance of accurate and consistent positioning of components on an automated production line.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To eliminate errors or faulty components, reduce unnecessary costs, time efficiency, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(a)(i)",
+  "questionText": "Draw a logic circuit and truth table for a device which can activate a security alarm if either sound or movement is detected after dark.",
+  "stem": "House alarm systems make use of many elements of electronics and control.",
+  "figureKey": "technology-2019-HL-scheme-secC-q2a-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a logic circuit and truth table for a device which can activate a security alarm if either sound or movement is detected after dark.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(a)(ii)",
+  "questionText": "Suggest input and output electronic components for this circuit.",
+  "stem": "House alarm systems make use of many elements of electronics and control.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Input: Microphone, Motion senor, LDR, etc. Output: Siren, Buzzer, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(b)(i)",
+  "questionText": "Draw the given circuit in your answerbook. Identify the pins on the IC and complete the circuit to include an LED output.",
+  "stem": "The glowing or flashing LED effect used by some speaker systems can be controlled by IC circuits.",
+  "figureKey": "technology-2019-HL-scheme-secC-q2b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the given circuit in your answerbook. Identify the pins on the IC and complete the circuit to include an LED output.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(b)(ii)",
+  "questionText": "Describe how the flash rate of the LED could be adjusted.",
+  "stem": "The glowing or flashing LED effect used by some speaker systems can be controlled by IC circuits.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Adjust the size of the resistors and/or the capacitor.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2b-iii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(b)(iii)",
+  "questionText": "Calculate the frequency ( f ) in Hertz, of the astable output if the value of C is 10 µF, R1 is 2 kΩ and R2 is 39 kΩ. Note: f = 1.44 / (R1 + 2R2) × C",
+  "stem": "The glowing or flashing LED effect used by some speaker systems can be controlled by IC circuits.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "f = 1.44 / (R1 + 2R2) × C = 1.44 / (2000 + (2 × 39000)) × 0.00001 = 1.8 Hz",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(c)(i)",
+  "questionText": "Draw a circuit diagram of a regulated power supply.",
+  "stem": "The transformer, rectifier and regulator are key elements of an effective mains-operated power supply.",
+  "figureKey": "technology-2019-HL-scheme-secC-q2c-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a circuit diagram of a regulated power supply.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(c)(ii)",
+  "questionText": "Outline the function of each of the key elements of a mains-operated power supply which are listed above.",
+  "stem": "The transformer, rectifier and regulator are key elements of an effective mains-operated power supply.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Transformer (A) - changes 220V mains voltage to a suitable level (e.g., 12V) for a power supply",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Rectifier (B) - changes AC to DC",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Regulator (C) - maintains the output DC voltage at a desired level, e.g., 7805 output is 5 volts.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(d)(i)",
+  "questionText": "Explain what is meant by back EMF.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electro-Motive Force. When the armature of a DC motor rotates under the influence of a driving torque, the armature conductors move through the magnetic field and hence an EMF is induced, as in a generator. Back EMF flows in the opposite direction to the applied voltage.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q2(d)(ii)",
+  "questionText": "DC motors can typically have an efficiency of 70% to 85%. Outline two reasons why a DC motor does not reach 100% efficiency.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Heat loss, friction in the motor bearings, energy loss in copper windings, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3a-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(a)(i)",
+  "questionText": "Explain the terms Virtual Reality and Augmented Reality.",
+  "stem": "Products such as the Manus VR glove have the potential to transform the way we work, learn, play games, shop and interact with others.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Virtual reality (VR) implies a complete immersion experience that shuts out the physical world.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Augmented reality (AR) adds digital elements to a live view often by using the camera on a smartphone. Examples of augmented reality experiences include Snapchat lenses.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3a-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(a)(ii)",
+  "questionText": "Outline your understanding of OSS (open-source software).",
+  "stem": "Products such as the Manus VR glove have the potential to transform the way we work, learn, play games, shop and interact with others.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Open-source software is computer software in which source code is released under a license in which the copyright holder grants users the rights to study, change and distribute the software.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3b-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(b)(i)",
+  "questionText": "Distinguish between a WLAN and WWAN.",
+  "stem": "A typical LAN for a small business is shown in the graphic. It consists of wired computers and wireless laptops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secC-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "WLAN - wireless local area network that uses high frequency radio signals to transmit and receive data over a small area such as home, office or building.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "WWAN - wireless wide area network covers a much larger area giving public access through telecommunication networks.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3b-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(b)(ii)",
+  "questionText": "Name and describe the function of components A, B, C and D.",
+  "stem": "A typical LAN for a small business is shown in the graphic. It consists of wired computers and wireless laptops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secC-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - Firewall - a network security system that monitors and controls outgoing and incoming network traffic based on predetermined settings.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - Router - a network device that directs data between computer networks.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C - Network switch - connects devices together on a single computer network",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D - Wireless Access Point - wireless devices that allow Wi-Fi or Bluetooth devices to connect to a computer network.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3b-iii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(b)(iii)",
+  "questionText": "Suggest two other features that could be added to increase the functionality of the LAN shown.",
+  "stem": "A typical LAN for a small business is shown in the graphic. It consists of wired computers and wireless laptops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secC-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Additional devices or services could be added e.g., printing capability, wireless repeaters to strengthen signals, smart board, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(c)(i)",
+  "questionText": "State one advantage and one disadvantage of using a WPAN.",
+  "stem": "Wireless personal area networks (WPAN) are used for wireless connections over short distances. IR and Bluetooth are the most common WPAN technologies.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advantage: easy free access, connect multiple devices at once, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Disadvantages: security, theft of data, short range, slow data transfer, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3c-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(c)(ii)",
+  "questionText": "Explain the impact of both absorption and reflection on the performance of wireless technologies.",
+  "stem": "Wireless personal area networks (WPAN) are used for wireless connections over short distances. IR and Bluetooth are the most common WPAN technologies.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Absorption: Signals are weakened as they pass through different materials, e.g., wood and concrete have high absorption rates.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reflection: As signals makes contact with materials, they are reflected which can cause interference of the signal if a large amount of reflection takes place, e.g., metals are highly reflective.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3d-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(d)(i)",
+  "questionText": "Explain three elements of the URL shown below.",
+  "stem": "The Rugby World Cup will take place in Japan during the autumn of 2019. It will be the first time this event is staged in Asia.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2019-HL-paper-secC-q3d-i-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "https:// - Hypertext Transfer Protocol Secure, www. - worldwide web, rugbyworldcup.com - domain/host name, /supporters - filename",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c3d-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q3(d)(ii)",
+  "questionText": "Blogs, wikis and podcasts are often used for communicating opinion and information around major sporting events. Explain what is meant by each of these three terms.",
+  "stem": "The Rugby World Cup will take place in Japan during the autumn of 2019. It will be the first time this event is staged in Asia.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Blog: a website that contains online personal reflections, comments, links, videos and photographs provided by the writer.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wiki: a website that allows anyone to add, delete or revise content using a web browser",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Podcast: a digital media file, or series of files, distributed over the internet",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4a-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(a)(i)",
+  "questionText": "Explain, using specific examples, any two of these priorities.",
+  "stem": "Manufacturing companies compete in the marketplace by virtue of one or more of the following competitive priorities: • Cost • Quality • Flexibility • Speed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cost: competing with lowest price e.g., low cost supermarkets",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Quality: building superior product e.g., high specification car brands",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Flexibility: allows user customising in design of product e.g., computer companies building devices to customer requirements",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Speed: fast and efficient delivery of product, e.g. fast food restaurants",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(a)(ii)",
+  "questionText": "Distinguish between an order qualifier and an order winner.",
+  "stem": "Manufacturing companies compete in the marketplace by virtue of one or more of the following competitive priorities: • Cost • Quality • Flexibility • Speed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An order qualifier is a characteristic of a product or service that is required in order for the product/service to even be considered by a customer.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An order winner is a characteristic that will win the bid or customer's purchase.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(b)(i)",
+  "questionText": "Using a break-even graph, or otherwise, calculate the BEQ.",
+  "stem": "",
+  "figureKey": "technology-2019-HL-scheme-secC-q4b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "BEQ = Fixed Costs/ (Import cost– variable costs) = 30,000 / 40 - 20 = 1500",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4b-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(b)(ii)",
+  "questionText": "Determine whether it is more cost-effective for the electronic toy to be imported or manufactured in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is more cost effective for the electronic toy to be manufactured in Ireland.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4b-iii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(b)(iii)",
+  "questionText": "Calculate the profit earned on 20,000 units by importing and re-packaging the toy and the profit earned on 20,000 units by manufacturing the toy in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Selling Price = 20,000 x €50= €1,000,000",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Import cost= 20,000 × €40 = €800,000",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Manufacture cost = 20,000 × €20 = €400,000 + €30,000 (machinery/tooling) = €430,000",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Import profit = €1,000,000 - €800,000 = €200,000",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Manufactured profit = €1,000,000 - €430,000 = €570,000",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4c-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(c)(i)",
+  "questionText": "A commitment to continuous improvement is the basis of the Deming Cycle. The recognisable stages of this concept are Plan - Do - Study/Check - Act. Describe each of the four stages of the Deming Cycle.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plan - the current situation is analysed, data gathered and solutions suggested.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Do - the suggested solution is tested or piloted",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Study/Check - the trial solution is examined critically highlighting problems and opportunities",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Act - the solution is implemented and adopted as standard procedure, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4c-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(c)(ii)",
+  "questionText": "As production and manufacturing strategies developed, a focus on the concept of quality was central. Describe any two of the following strategies: • Just-in-Time Manufacturing (JIT) • Lean production • Total Quality Management (TQM).",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Just-in-Time Manufacturing (JIT): suppliers are coordinated with the manufacturing company, products are delivered in line with market demand. This reduces the amount of stock stored with less materials, parts, tools and space used. Advantages include quick response to demand, less investment in storage, quick turnaround of products, increased workforce flexibility, waste reduction, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Lean production: an approach to management that focuses on cutting out waste, whilst ensuring quality. This approach can be applied to all aspects of a business – from design, through production to distribution.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Total Quality Management (TQM): The continual process of detecting and reducing or eliminating errors in manufacturing, streamlining supply chain management, improving the customer experience and ensuring that employees are up to speed with training.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Total quality management aims to hold all parties involved in the production process accountable for the overall quality of the final product or service.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4d-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(d)(i)",
+  "questionText": "Capacity can be managed using the following strategies: • Capacity lead strategy • Capacity lag strategy • Average capacity strategy. Distinguish clearly, with specific examples, between these capacity strategies.",
+  "stem": "‘Capacity planning’ is a way to analyse demand for a product and find an economical means of meeting that demand.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Capacity lead strategy always sufficient capacity to meet demand and any growth, improving in- frastructure (shops) in anticipation of potential new customers from competitors, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Capacity lag strategy adding capacity after demand growth, e.g., order placed for new cars.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Average capacity strategy trying to maintain capacity and meet short-term surges in demand, toys for sale in shops at Christmas, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q4(d)(ii)",
+  "questionText": "Outline, using the manufacture of chocolate Easter eggs as an example: • The consequences of creating excess capacity and • The consequences of not being able to meet demand.",
+  "stem": "‘Capacity planning’ is a way to analyse demand for a product and find an economical means of meeting that demand.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cost of storage or disposal of unused product, cost of manufacturing, loss in profit due to products going beyond their shelf life, reduced selling price, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Loss of market share, reduced profits, reputational damage, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5a-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(a)(i)",
+  "questionText": "Explain the abbreviaton PET.",
+  "stem": "Worldwide, a staggering one million plastic bottles are sold every minute, many of which end up in the ocean. The Cameroon non-profit organisation, Madiba & Nature, collect PET plastic bottles for reuse as plastic-bottle boats.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyethylene terephthalate, commonly known as polyester and is the most commonly used thermoplasic polymer.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(a)(ii)",
+  "questionText": "Outline three disavantages of the extensive use of PET bottles.",
+  "stem": "Worldwide, a staggering one million plastic bottles are sold every minute, many of which end up in the ocean. The Cameroon non-profit organisation, Madiba & Nature, collect PET plastic bottles for reuse as plastic-bottle boats.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use of oil and chemicals in production, non– biodegradable, damage the environment and ecosystems, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(b)(i)",
+  "questionText": "Describe, with annotated sketches, a method of producing plastic bottles.",
+  "stem": "Plastic bottles are mass-produced in a variety of shapes and designs.",
+  "figureKey": "technology-2019-HL-scheme-secC-q5b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Describe, with annotated sketches, a method of producing plastic bottles.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(b)(ii)",
+  "questionText": "The walls of plastic bottles are usually very thin, however they retain their shape and can be packed and transported safely. Outline one way in which plastic bottles are designed to maximise their strength.",
+  "stem": "Plastic bottles are mass-produced in a variety of shapes and designs.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plastic bottles are formed with thin walls which are stiffened by design through corrugated grooves, the base of plastic bottles are thicker than the walls for stability, contents exert pressure on thin walls to minimise collapse, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(b)(iii)",
+  "questionText": "Explain, with examples, each of the following plastic manufacturing techniques: • Mass production • Batch production.",
+  "stem": "Plastic bottles are mass-produced in a variety of shapes and designs.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 8+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mass production: large scale manufacturing/ continuous production, e.g. canned food, cars, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Batch production: Small quantities or specialised products, e.g., baked goods, jewellery, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8+4+4)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(c)(i)",
+  "questionText": "Identify specific safety precautions to be observed in each of the following uses of adhesives: • Epoxy resins to join metals • Cyanoacrylate (instant glue) to join plastics.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Epoxy resins: use in ventilated area, catalyst needs to be handled carefully, metals to be joined need to be held securely while curing, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cyanoacrylates: rapid bonding, avoid skin contact, wear gloves, be aware of fumes, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(c)(ii)",
+  "questionText": "Outline two safety features that are integrated into the design of a bandsaw.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cutting blade is guarded, cut-off switches prevent the machine operating until housing is closed, blades are tensioned for efficient operation, emergency stop buttons at waist or foot level, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5d-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(d)(i)",
+  "questionText": "Suggest two reasons for the use of tubular metal in the Petite Coiffeuse dressing table designed by Eileen Gray.",
+  "stem": "Irish furniture design has a rich tradition of excellence and craftsmanship, from Eileen Gray in the 1920’s to present day designers such as Joseph Walsh in Cork.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tubular steel is light yet structurally strong, it can be chrome-plated for a shiny finish, can be welded, can be fabricated into curved shapes, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2019-hl-c5d-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2019,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2019 HL Section C Q5(d)(ii)",
+  "questionText": "Irish furniture-maker, Joseph Walsh, designed the Enignium table in ash. Describe, with annotated sketches, a process to produce a smooth and durable surface finish on the ash table.",
+  "stem": "Irish furniture design has a rich tradition of excellence and craftsmanship, from Eileen Gray in the 1920’s to present day designers such as Joseph Walsh in Cork.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyurethane varnish produces a hard, durable surface finish on the table.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The table is lightly sanded and dust is removed, blemishes may be filled.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The surface is sealed with a light coat of polyurethane and sanded again.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The process is repeated after the first coat is completely dry.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The polyunethane can be applied by brush or spray.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
   "id": "tech-2020-hl-a1",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -447,7 +3399,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2020 HL Section A Q8(ii)",
-  "questionText": "Outline the importance of privacy settngs in the prevention of cyberbullying.",
+  "questionText": "Outline the importance of privacy settings in the prevention of cyberbullying.",
   "stem": "The Minister for Communications has proposed an Online Safety Act targeting cyberbullying and material that promotes self-harm or encourages nutritional deprivation. It is proposed that an Online Safety Commissioner be appointed to enforce such regulations.",
   "figureKey": "",
   "questionFigureKey": "",
@@ -2154,7 +5106,7 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2020 HL Section C Q3(b)(ii)",
-  "questionText": "Describe, with annotated sketches, the settng up of a LAN for three wired computers and a shared printer. Make reference to equipment used, security and set-up procedures.",
+  "questionText": "Describe, with annotated sketches, the setting up of a LAN for three wired computers and a shared printer. Make reference to equipment used, security and set-up procedures.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
@@ -2890,7 +5842,7 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2020 HL Section C Q5(c)(i)",
-  "questionText": "Distinguish between a scroll saw and a bandsaw, making reference to type of cuttng blade, motion of cuttng blade and operator safety.",
+  "questionText": "Distinguish between a scroll saw and a bandsaw, making reference to type of cutting blade, motion of cutting blade and operator safety.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q5c-art",
@@ -3256,7 +6208,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2021 HL Section A Q6",
-  "questionText": "The skin-frame type structure has gained popularity in 3D printing for items such as the Voronoi mushroom lamp shown. This approach uses a combination of frame and shell structures. Outline two reasons for the use of such a combined structure. 1. 2.",
+  "questionText": "The skin-frame type structure has gained popularity in 3D printing for items such as the Voronoi mushroom lamp shown. This approach uses a combination of frame and shell structures. Outline two reasons for the use of such a combined structure.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q6-art",
@@ -3388,7 +6340,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2021 HL Section A Q10(i)",
-  "questionText": "State two reasons for using helical gears rather than straight spur gears. 1.",
+  "questionText": "State two reasons for using helical gears rather than straight spur gears.",
   "stem": "The helical-cut gears shown are mounted in a cast iron gearbox.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q10-art",
@@ -4263,7 +7215,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 4 + 3 + 3)"
   },
   "totalMarks": 10,
@@ -4271,29 +7223,22 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(a) - 10 marks, (b) - 16 marks, (c) OR (d) - 14 marks",
-    "marks": null,
+    "verbatim": "Farming production – specialised automated machinery, drone technology for assessing crop condition, genetically modified foods (GMO) to improve food quality, etc.",
+    "marks": 4,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Farming production – specialised automated machinery, drone technology for assessing crop condition, genetically modified foods (GMO) to improve food quality, etc.",
-    "marks": null,
+    "verbatim": "Food preservation – freezing and refrigeration for transport and storage, sterilisation techniques, hydration of foods, etc.",
+    "marks": 3,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Food preservation – freezing and refrigeration for transport and storage, sterilisation techniques, hydration of foods, etc.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "Packaging – vacuum packing for freshness, anti-microbial packaging to suppress bacteria, etc.",
-    "marks": null,
+    "marks": 3,
     "openList": true
    }
   ],
@@ -5208,7 +8153,7 @@
   "section": "C",
   "questionRef": "2021 HL Section C Q4(b)(i)",
   "questionText": "Calculate the process capability index (Cp) for each manufacturer: where Cp =",
-  "stem": "The submersible solar-powered pump shown requires accurate fittngs. Measurements of samples of the fittngs produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fittng must have an outside diameter between 39.85 mm and 39.95 mm.",
+  "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm.",
   "figureKey": "technology-2021-HL-scheme-secC-q4b-i",
   "questionFigureKey": "technology-2021-HL-paper-secC-q4b-art",
   "questionFigureIncludesPrompt": false,
@@ -5240,8 +8185,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2021 HL Section C Q4(b)(ii)",
-  "questionText": "Select Manufacturer A or Manufacturer B to produce the fittngs. Justify your selection.",
-  "stem": "The submersible solar-powered pump shown requires accurate fittngs. Measurements of samples of the fittngs produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fittng must have an outside diameter between 39.85 mm and 39.95 mm.",
+  "questionText": "Select Manufacturer A or Manufacturer B to produce the fittings. Justify your selection.",
+  "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q4b-art",
   "questionFigureIncludesPrompt": false,
@@ -5272,7 +8217,7 @@
   "section": "C",
   "questionRef": "2021 HL Section C Q4(b)(iii)",
   "questionText": "Outline the key features, with examples, of the Pareto principle of quality management.",
-  "stem": "The submersible solar-powered pump shown requires accurate fittngs. Measurements of samples of the fittngs produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fittng must have an outside diameter between 39.85 mm and 39.95 mm.",
+  "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q4b-art",
   "questionFigureIncludesPrompt": false,
@@ -5647,7 +8592,7 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2021 HL Section C Q5(c)(i)",
-  "questionText": "Describe a method of cuttng an intricate design in thin plywood making reference to equipment used, cuttng action, and safety.",
+  "questionText": "Describe a method of cutting an intricate design in thin plywood making reference to equipment used, cutting action, and safety.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
@@ -6568,7 +9513,7 @@
   "subjectId": "technology",
   "section": "B",
   "questionRef": "2021 OL Section B Q2(b)(i)",
-  "questionText": "Outline two benefits of using light emittng diodes (LEDs) for this purpose.",
+  "questionText": "Outline two benefits of using light emitting diodes (LEDs) for this purpose.",
   "stem": "The FlapZen can also be used for holding books as shown in the image. At times it may be useful to have a light source attached to the stand.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secB-q2b-art",
@@ -6846,7 +9791,7 @@
   "section": "B",
   "questionRef": "2021 OL Section B Q3(b)(i)",
   "questionText": "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
-  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
+  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -6913,7 +9858,7 @@
   "section": "B",
   "questionRef": "2021 OL Section B Q3(b)(iii)",
   "questionText": "Name one other CAM process commonly used in schools. Briefly outline the benefits of this process for student project work.",
-  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
+  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -6942,7 +9887,7 @@
   "subjectId": "technology",
   "section": "B",
   "questionRef": "2021 OL Section B Q3(c)(i)",
-  "questionText": "State two advantages of using an electric bicycle in a urban settng.",
+  "questionText": "State two advantages of using an electric bicycle in a urban setting.",
   "stem": "The image shows an example of an electric bicycle. These bicycles are becoming increasingly popular, particularly with urban dwellers.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secB-q3c-art",
@@ -7005,7 +9950,7 @@
   "section": "B",
   "questionRef": "2021 OL Section B Q3(d)(i)",
   "questionText": "Explain any two of the terms: recycling, upcycling, composting.",
-  "stem": "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace. 1. Cuttng up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
+  "stem": "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -7048,7 +9993,7 @@
   "subjectId": "technology",
   "section": "B",
   "questionRef": "2021 OL Section B Q3(d)(ii)",
-  "questionText": "In the case of any two processes below, state whether it is recycling, upcycling or composting. 1. Cuttng up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
+  "questionText": "In the case of any two processes below, state whether it is recycling, upcycling or composting. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
   "stem": "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace.",
   "figureKey": "",
   "questionFigureKey": "",
@@ -7515,7 +10460,7 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2021 OL Section C Q2(b)(iii)",
-  "questionText": "Redraw the circuit to include an indicator light emittng diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
+  "questionText": "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
   "stem": "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
   "figureKey": "technology-2021-OL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2021-OL-paper-secC-q2b-art",
@@ -7530,7 +10475,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Redraw the circuit to include an indicator light emittng diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
+    "verbatim": "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
     "marks": 6,
     "openList": true,
     "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
@@ -27896,7 +30841,7 @@
   "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(16 marks, 2 + 8 + 6)"
   },
   "totalMarks": 6,
@@ -27904,15 +30849,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The basic principle of this circuit is to compare the voltages at the Op-Amp IC. The potential divider at R1 and R2 provides a reference voltage at B. The LDR and resistor provide a potential divider circuit with the voltage from A feeding into the",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Op-Amp. As light level changes, the resistance of the LDR changes. When the voltage into the Op-Amp rises above the reference voltage at B, the LED output of the IC is turned on.",
-    "marks": null,
+    "verbatim": "The basic principle of this circuit is to compare the voltages at the Op-Amp IC. The potential divider at R1 and R2 provides a reference voltage at B. The LDR and resistor provide a potential divider circuit with the voltage from A feeding into the Op-Amp. As light level changes, the resistance of the LDR changes. When the voltage into the Op-Amp rises above the reference voltage at B, the LED output of the IC is turned on.",
+    "marks": 6,
     "openList": true
    }
   ],

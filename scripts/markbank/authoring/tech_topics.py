@@ -139,6 +139,38 @@ CORE = [
 
 CORE = [(t, re.compile('|'.join(words), re.I)) for t, words in CORE]
 
+# Cards whose first keyword hit is the wrong shelf, read one by one (2010-2019,
+# the Technology lane of 4 November 2026). The keyword order is right for most
+# asks and stays; these name a heading their words lose to an earlier list --
+# "Work Breakdown Structure" is project planning, not structures; a question
+# whose STEM is about solar panels can ask about structural strength.
+TOPIC_OVERRIDES = {
+    # 2019 Higher.
+    'tech-2019-hl-a1-i': 'tech-core-design',       # impact of technology on research,
+    'tech-2019-hl-a1-ii': 'tech-core-design',      # prototyping and manufacture of a product
+    'tech-2019-hl-a1-iii': 'tech-core-design',
+    'tech-2019-hl-a5': 'tech-core-project',        # work breakdown structure
+    'tech-2019-hl-a7': 'tech-core-design',         # product lifecycle phases
+    'tech-2019-hl-a12': 'tech-core-design',        # testing against a design specification
+    'tech-2019-hl-b2b-i': 'tech-core-structures',  # two-axis movement mechanism
+    'tech-2019-hl-b2d': 'tech-core-structures',    # techniques to enhance structural strength
+    'tech-2019-hl-b3b-iii': 'tech-core-materials', # joining the belt's sections
+    'tech-2019-hl-b3d-ii': 'tech-core-structures', # mechanism to adjust the incline
+    'tech-2019-hl-b3c-ii': 'tech-core-energy',     # a treadmill's sensing system
+    # 2019 Ordinary.
+    'tech-2019-ol-a1-i': 'tech-core-materials',    # safety signs (health and safety)
+    'tech-2019-ol-a1-ii': 'tech-core-materials',
+    'tech-2019-ol-a4-i': 'tech-core-ict',          # driverless cars
+    'tech-2019-ol-a4-ii': 'tech-core-ict',
+    'tech-2019-ol-a8': 'tech-core-design',         # universal design
+    'tech-2019-ol-b2a-ii': 'tech-core-materials',  # manufacturing by CAM
+    'tech-2019-ol-b2c-ii': 'tech-core-project',    # consequences of faulty goods (quality)
+    'tech-2019-ol-b3a-i': 'tech-core-ict',         # virtual technology in education
+    'tech-2019-ol-b3a-ii': 'tech-core-ict',
+    'tech-2019-ol-b3b-iii': 'tech-core-materials', # manufacturing the VR viewer
+    'tech-2019-ol-b3d-i': 'tech-core-energy',      # greenhouse gas emissions
+}
+
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]
 
 

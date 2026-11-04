@@ -112,6 +112,14 @@ FURNITURE = re.compile(
     # Higher's "Section A" -- which landed in Question 1 as a row.
     r'|^\d{1,3}\s*marks?\s*$'
     r'|^Answer\s+\d\(\w\)\s+(?:and|or)\s+\d\(\w\)\s*$'
+    # A long question's own heading with its mark breakdown, "Question 3 -
+    # Answer 3(a) and 3(b) (a) - 8 marks, (b) - 10 marks, (c) OR (d) - 6
+    # marks": it falls inside the block the next tariff closes, and where that
+    # block prints no romans (2019 Higher 3(a)) it shipped as a marking point.
+    r'|^Question\s+\d\s*(?:[-\u2013]\s*Answer\b|\(a\)\s*[-\u2013]\s*\d)'
+    # ...and an option's breakdown on a line of its own, "(a) - 10 marks,
+    # (b) - 16 marks, (c) OR (d) - 14 marks" (2019 Higher Option 2).
+    r'|^\(a\)\s*[-\u2013]\s*\d{1,2}\s*marks?\s*,'
     r'|^OR\s*$', re.I)
 
 # The examiner talking to the examiner rather than stating an answer, and the
@@ -247,6 +255,8 @@ class TechScheme:
         # 2025 Ordinary Q4's "(8,6,4,2 Marks)" is drawn inside its sketch box.
         rubric_marks = None
 
+        last_closed = []
+
         def close(total, terms, notation):
             """Emit the block the tariff just ended."""
             nonlocal lines, roman, head_q, head_letter, last_q, pages
@@ -273,6 +283,7 @@ class TechScheme:
                     if block.key not in self.blocks:
                         order.append(block.key)
                     self.blocks[block.key] = block
+                    last_closed[:] = [block]
                     last_q = q
             lines, roman = [], None
             head_q, head_letter = None, None
@@ -365,6 +376,13 @@ class TechScheme:
                 head_q, head_letter = int(m.group(1)), m.group(2)
                 roman = None
                 text = text[m.end():]
+                if not text.strip() and not lines:
+                    # A part whose whole answer is a drawing: 2019 Higher
+                    # Option 1(c) prints "1(c)", two pneumatic circuits and its
+                    # tariff, and with no line of text the tariff closed
+                    # nothing and the part was never priced.
+                    lines.append((None, ''))
+                    pages.add(page)
             elif section == 'A':
                 m = A_HEAD.match(text)
                 # Forward only, and only within reach. A short question's
@@ -372,7 +390,12 @@ class TechScheme:
                 # work breakdown structure as "1. Research and design 2. Select
                 # materials" -- and reading those as heads re-opened Question 1
                 # inside Question 11.
-                if m and last_q < int(m.group(1)) <= last_q + 3:
+                # And never the number of the question already open: 2019
+                # Ordinary Q2(i) answers "1. Lower ongoing energy costs." /
+                # "2. Better for the environment", and that "2." re-opened
+                # Question 2 and threw its (i) away.
+                if m and last_q < int(m.group(1)) <= last_q + 3 \
+                        and (head_q is None or int(m.group(1)) > head_q):
                     if lines and head_q is not None and rubric_marks:
                         # The next head has arrived and this block was never
                         # priced: its tariff is the rubric's.
@@ -382,6 +405,18 @@ class TechScheme:
                     started = True
 
             if not started:
+                continue
+
+            # The tariff printed in the MIDDLE of a numbered answer list: 2019
+            # Ordinary Q3(ii) sets "1. Cross filing/draw filing", then
+            # "(4+4 marks)", then "2. Polishing, etc.", and the second item
+            # fell into Question 4. A line numbered one past the closed
+            # block's last line, before anything new has opened, is its.
+            nm = re.match(r'(\d)\.\s+\S', text)
+            if nm and not lines and head_q is None and last_closed \
+                    and last_closed[0].lines \
+                    and re.match(rf'{int(nm.group(1)) - 1}\.\s', last_closed[0].lines[-1][1]):
+                last_closed[0].lines.append((last_closed[0].lines[-1][0], text))
                 continue
 
             rh = ROMAN_HEAD.match(text)
@@ -412,6 +447,13 @@ class TechScheme:
                     # part due next, which the paper prints as (iii).
                     roman = ROMANS[ROMANS.index(roman) + 1]
                 text = text[rh.end():]
+                if not text.strip() and roman not in [r for r, _t in lines]:
+                    # A roman whose whole answer is a drawing can stand alone
+                    # on its line: 2019 Higher's "2(b) (i)" heads a sketch the
+                    # solution crop holds, and with no line under it the part
+                    # vanished and (ii) and (iii) were carded as one.
+                    lines.append((roman, ''))
+                    pages.add(page)
 
             # The tariff may end a line of prose ("...over budget, etc.
             # (4+4 marks)") as often as it has a line to itself.

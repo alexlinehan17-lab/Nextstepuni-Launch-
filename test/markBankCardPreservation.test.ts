@@ -1064,6 +1064,11 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2010: { higher: 58, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
+ * addition on top of the frozen 2020-2026 set, never a replacement -- those
+ * sittings had no card at all before. Pinned per level, count and id hash,
+ * beside the frozen set (technologyAdditions below). */
+const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
   .reduce((sum, counts) => sum + counts[level], 0);
 
@@ -1266,8 +1271,9 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     // two independently priced tasks. Keep the old progress identity in the
     // frozen set through its alias; the two child IDs are additions.
     const splitIds = new Set(['tech-2024-hl-b3d-i', 'tech-2024-hl-b3d-ii']);
-    return [...ids.filter(id => !splitIds.has(id)), 'tech-2024-hl-b3d'];
+    return [...ids.filter(id => !splitIds.has(id) && !isTechnologyAdded(id)), 'tech-2024-hl-b3d'];
   }
+  if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1327,6 +1333,10 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
+const technologyAdditions = {
+  higher: [TECHNOLOGY_HIGHER, 84, '05400a0b7973760b44338e671d6f3acecc0282173dd806de5a35dd7423fac2a7'],
+  ordinary: [TECHNOLOGY_ORDINARY, 0, 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'],
+} as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
   ordinary: [PE_ORDINARY, 294, '097f2e5140a024bf28633d1aa17898f041acbdb6ab658a5afd65eb8ba5681ac2'],
@@ -1339,6 +1349,15 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it.each(Object.entries(technologyAdditions))('pins the Technology %s 2010-2019 additions beside the frozen set', (_, [cards, count, hash]) => {
+    // Added sitting by sitting, each a card per printed ask the census reads
+    // (reconcile.py technology): 2019 Higher 84.
+    const additions = cards.map(card => card.id).filter(isTechnologyAdded);
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
   });
 
   it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1431,7 +1450,11 @@ describe('Mark Bank card preservation', () => {
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
+        // Technology's 2010-2019 additions count on top of the bank the same way.
+        : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length : 0;
+    const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
+      .filter(card => isTechnologyAdded(card.id)).length;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
     // Geography (2026-10-23) keeps its 754 frozen IDs the same way: its 3,492
@@ -1448,7 +1471,7 @@ describe('Mark Bank card preservation', () => {
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
     ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

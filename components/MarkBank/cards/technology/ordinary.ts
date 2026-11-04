@@ -710,7 +710,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(b)(i)",
-    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
     questionText: "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
@@ -739,7 +739,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-iii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2021 OL Section B Q3(b)(iii)",
-    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
     questionText: "Name one other CAM process commonly used in schools. Briefly outline the benefits of this process for student project work.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
     rows: [

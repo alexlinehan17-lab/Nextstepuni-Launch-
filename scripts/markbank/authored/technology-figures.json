@@ -1,5 +1,200 @@
 [
  {
+  "file": "technology-2019-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hand writing beside an open silver laptop, a black USB-C cable plugged into the side of the laptop and lying across the desk.",
+  "questionRef": "2019 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   355.0,
+   361.6,
+   565.3,
+   483.3
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Cutaway rendering of a gearbox: a threaded shaft, labelled Part A is attached to a motor, meshing with a toothed bronze gear on the output shaft, labelled Gear B has 50 teeth.",
+  "questionRef": "2019 HL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   378,
+   58,
+   562,
+   275
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a student-built buggy: a flat chassis frame of coloured rods and linkages carrying four chunky wheels on two axles, with a curved wire roll bar over a round platform.",
+  "questionRef": "2019 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   365.5,
+   370.2,
+   556.2,
+   500.6
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of an electronic component: a red wire coil on an iron core connected to + and − terminals through a switch, a hinged L-shaped arm above the core, and three upright contact strips beside it.",
+  "questionRef": "2019 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   401.1,
+   590.5,
+   548.6,
+   739.6
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Product lifecycle graph: sales on the vertical axis against time, a curve rising slowly, climbing steeply, levelling off and then falling, divided by dashed lines into stages lettered A, B, C and D.",
+  "questionRef": "2019 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   378,
+   92,
+   548,
+   206
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a recumbent exercise bike with a console screen, a mesh seat back and handles, its pedal labelled Pedal.",
+  "questionRef": "2019 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   350,
+   355,
+   553,
+   520
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a stepper motor with a toothed belt running round the pulley wheel on its shaft, the pulley ringed in red and linked to a large empty red circle drawn for the sketch.",
+  "questionRef": "2019 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   76.2,
+   480.6,
+   557.7,
+   745.1
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram: a 12 V supply with current IT through R1 = 6 Ω, then two parallel branches to 0 V, one of R2 = 8 Ω in series with R3 = 4 Ω and the other R4 = 12 Ω.",
+  "questionRef": "2019 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   72,
+   128,
+   314,
+   280
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of a USB flash drive in pictorial view, unshaded, with a slide button on top and the metal connector at the front.",
+  "questionRef": "2019 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   160,
+   520,
+   480,
+   770
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Small drawing of a solar panel on a post, with curved blue arrows showing it turning about a vertical axis and tilting about a horizontal one.",
+  "questionRef": "2019 HL Section B Q2(b)",
+  "booklet": "039",
+  "page": 1,
+  "rect": [
+   430,
+   262,
+   554,
+   356
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the treadmill belt mechanism opened up: a green belt of jointed slats running over end rollers on a metal frame.",
+  "questionRef": "2019 HL Section B Q3(b)",
+  "booklet": "039",
+  "page": 2,
+  "rect": [
+   363.1,
+   265.2,
+   570.4,
+   375.4
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a silver double-acting pneumatic cylinder with its piston rod extended and two air ports on the barrel.",
+  "questionRef": "2019 HL Section C Q1(c)",
+  "booklet": "039",
+  "page": 3,
+  "rect": [
+   422.7,
+   550.8,
+   570.7,
+   634.7
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Network diagram of a small business LAN: an internet cloud, components lettered A and B in line from it, a server, a component C joining rows of networked computers, and a component D with wireless links to two laptops.",
+  "questionRef": "2019 HL Section C Q3(b)",
+  "booklet": "039",
+  "page": 5,
+  "rect": [
+   338,
+   258,
+   580,
+   440
+  ]
+ },
+ {
   "file": "technology-2020-HL-paper-secA-q4-art.png",
   "kind": "figure",
   "truncated": false,
@@ -3915,6 +4110,21 @@
   ]
  },
  {
+  "file": "technology-2019-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a pulley system hanging from a beam: two fixed pulleys at the top and a moving pulley below them carrying a 90 KG weight, the rope ending in a downward pull F, with a 500 mm rise marked beside it.",
+  "questionRef": "2019 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   362,
+   470,
+   552,
+   670
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -4047,6 +4257,36 @@
    322.5,
    448.5,
    405.5
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secB-q2b-iii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graph of power output (0 to 100%) against time from 5:00 to 19:00: the orange Tracked curve reaches full output early and holds it until late afternoon, while the blue Fixed curve rises to a single peak around midday.",
+  "questionRef": "2019 HL Section B Q2(b)",
+  "booklet": "039",
+  "page": 1,
+  "rect": [
+   348,
+   350,
+   570,
+   487
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secC-q3d-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A browser address bar with a padlock symbol and the URL https://www.rugbyworldcup.com/supporters.",
+  "questionRef": "2019 HL Section C Q3(d)",
+  "booklet": "039",
+  "page": 5,
+  "rect": [
+   82,
+   680,
+   381,
+   713
   ]
  },
  {
@@ -5304,5 +5544,109 @@
   "description": "The marking scheme's own answer to 2020 HL Section C Q5(b)(ii), as the State Examinations Commission printed it: a sectioned injection moulding machine labelled Plastic hopper, mould, Motor drive and Heated chamber with screw drive.",
   "solution": true,
   "questionRef": "2020 HL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secA-q4-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section A Q4(ii), as the State Examinations Commission printed it: the calculation 300 over 50 equals 6 RPM, and then 1 revolution takes 10 seconds.",
+  "solution": true,
+  "questionRef": "2019 HL Section A Q4(ii)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secA-q5.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section A Q5, as the State Examinations Commission printed it: a work breakdown structure in which Base, Linkages, Axles and Wheels lead into Assembly, which leads to Buggy. The scheme prints beneath it: Any valid alternative WBS accepted.",
+  "solution": true,
+  "questionRef": "2019 HL Section A Q5"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secA-q13.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section A Q13, as the State Examinations Commission printed it, headed Suggested solution: a close-up photograph of the pulley wheel with a grub screw beside it and an arrow to its threaded hole, annotated: Grub screw is threaded into the pulley wheel and located onto the motor shaft and tightened.",
+  "solution": true,
+  "questionRef": "2019 HL Section A Q13"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secA-q14-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section A Q14(i), as the State Examinations Commission printed it: R5 = R2 + R3 = 8 + 4 = 12 ohms; 1/R6 = 1/R5 + 1/R4 = 1/12 + 1/12, so R6 = 6 ohms; Rtotal = R1 + R6 = 6 + 6 = 12 ohms.",
+  "solution": true,
+  "questionRef": "2019 HL Section A Q14(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secB-q2b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section B 2(b)(i), as the State Examinations Commission printed it: a worm on a shaft meshing with a gear wheel, annotated Driving motor attached to worm wheel and Panel drive shaft attached to gear wheel, with the note: Alternative solutions: Servo, stepper motors, etc.",
+  "solution": true,
+  "questionRef": "2019 HL Section B Q2(b)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secB-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section B 2(b)(ii), as the State Examinations Commission printed it: an LDR and a variable resistor form a potential divider feeding a transistor through a base resistor; the transistor switches a relay whose contacts complete the mains circuit of the motor M.",
+  "solution": true,
+  "questionRef": "2019 HL Section B Q2(b)(ii)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 1(b), as the State Examinations Commission printed it: a flowchart from Start through the decisions Key? and Foot? (each looping back on No) to Open boot, Wait 5, Close boot and End; a dashed branch adds the decision Obstruction?, whose Yes calls an Interrupt routine of Close boot and Return.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q1c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 1(c), as the State Examinations Commission printed it: two pneumatic circuits for the double-acting cylinder, one with flow control valves captioned To activate with a controlled speed, the other with a shuttle valve captioned To operate in conjunction with a shuttle valve.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q1(c)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q2a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 2(a)(i), as the State Examinations Commission printed it: Sound (A) and Movement (B) feed an OR gate whose output C joins Dark = 1 (D) at an AND gate, whose output E sounds the Alarm; beside it the truth table for A, B, C, D and E over all eight input combinations.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q2(a)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q2b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 2(b)(i), as the State Examinations Commission printed it: the 555 astable circuit with R1, R2 and C, the pins numbered 7, 4, 8, 6, 2, 1, 5 and 3, and an LED with a series resistor connected to the output at pin 3.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q2(b)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q2c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 2(c)(i), as the State Examinations Commission printed it: a transformer (A), a bridge rectifier of four diodes (B), a smoothing capacitor and a regulator between the output rails.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q2(c)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q4b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own break-even graph for 2019 HL Section C 4(b)(i), as the State Examinations Commission printed it: Cost against Quantity, with the Import line rising more steeply than the Manufacture line and crossing it just above zero quantity.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q4(b)(i)"
+ },
+ {
+  "file": "technology-2019-HL-scheme-secC-q5b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2019 HL Section C 5(b)(i), as the State Examinations Commission printed it, headed Blow moulding: five stages from Plastic tube (parison) inserted from extruder, through Heat to soften and Air blown in, to the Finished product.",
+  "solution": true,
+  "questionRef": "2019 HL Section C Q5(b)(i)"
  }
 ]

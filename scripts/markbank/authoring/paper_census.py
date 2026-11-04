@@ -1729,8 +1729,15 @@ def census_sections(subject, year, level):
             # A figure's caption ("Print head module"), its labels ("A D B
             # Motor") and a table's cells carry no sentence and stay out,
             # as does the page's own furniture.
+            # A roman whose own sentence is still open is being finished, not
+            # given data: 2019 Ordinary 3(b)(ii) wraps "...outlined at" /
+            # "3(b) above in relation to USB Type-C.", and that tail was also
+            # filed as the stem of (i) and (iii).
+            open_sentence = bool(parts[(section, q, letter, roman)]) and not re.search(
+                r'[.?!:]\s*$', parts[(section, q, letter, roman)][-1]) \
+                and bool(text[:1].islower() or re.match(r'\d{1,2}\s?\([a-d]\)', text))
             parts[(section, q, letter, roman)].append(text)
-            if not TECH_ASKS.match(text):
+            if not TECH_ASKS.match(text) and not open_sentence:
                 # Data printed under (i) -- "Option A - Use skilled labour
                 # to assemble: Cost: EUR 8.50 per unit" -- is what (ii)
                 # and (iii) calculate from as well, so it is the letter's
