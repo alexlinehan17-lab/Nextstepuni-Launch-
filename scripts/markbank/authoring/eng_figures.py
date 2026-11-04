@@ -546,6 +546,9 @@ REJECTED = {
     (2026, 'ol', 1, 'm', None): 'takes in Q1(l)\'s "(iii) Pilot hole." above it',
     **{(2026, 'ol', 7, 'b', r): 'cuts off the "Body" and "Hole" dimensions the ask reads'
        for r in ('i', 'ii', 'iii', 'iv')},
+    # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
+    **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
+       for r in ('i', 'ii')},
 }
 
 

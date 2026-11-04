@@ -86,9 +86,10 @@ SUBJECTS = {
     # the 34 papers reported a letter-gap on a question with no gap in it
     # ("letters found: ['a', ... 'l', 'm']"). The run is stated here rather
     # than widened for everyone, because widening the default would move
-    # other subjects' flag counts; (m) is the last letter any Engineering
-    # paper prints.
-    'engineering': {'mode': 'merged', 'letters': 'abcdefghijklm'},
+    # other subjects' flag counts. (m) is the last letter of Question 1's
+    # Section A; the 2010-2020 Higher papers go on to a Section B, (n) to (r),
+    # which the paper reader keys where paper.LETTER_RUNS lets it (2020 HL).
+    'engineering': {'mode': 'merged', 'letters': 'abcdefghijklmnopqr'},
     # One booklet per sitting numbered Q1..Q18 straight through its three
     # sections — Section A short questions, Section B the case study,
     # Section C the long questions — so the generic merged walker reads it.

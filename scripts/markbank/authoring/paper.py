@@ -136,6 +136,17 @@ MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Physics (ix)-(xii), and the old alternation topped out at viii so '(ix)'
 # could never split a block or key a part.
 LETTER = re.compile(r'[a-hj-m]')
+# And past (m), for one sitting: 2020 HL Engineering sets Question 1 as Section
+# A, "(a)" to "(m)", and Section B, "(n)" to "(r)" (paper pages 3-4), each
+# Section B part with romans of its own. Read with the class above, (n) to (r)
+# were no markers at all: their romans were filed under Q1(m) and the
+# census counted 18 of Question 1's 28 asks, with no flag, because a letter
+# run that stops early has no gap in it. No roman uses n to r, so the wider
+# class cannot steal a roman. Gated to the sitting: every 2010-2019 Higher
+# paper sets the same Section B, but the wider class alone reads it whole only
+# in 2018 and 2019 (2011-2013, 2016 and 2017 in part; 2010, 2014 and 2015 not
+# at all), so widening those is those sittings' audit.
+LETTER_RUNS = {('engineering', 2020, 'hl'): re.compile(r'[a-hj-r]')}
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}|ix|xi{0,3}')
 RUBRIC = re.compile(r'^Answer (either|any|all)\b')
 # A part marker orphaned at the very end of a block: pymupdf glues a marker
@@ -730,7 +741,7 @@ def _i_is_letter(blocks, index):
     return False
 
 
-def _opens_a_question(blocks, index, open_letter=None):
+def _opens_a_question(blocks, index, open_letter=None, letters=None):
     """Does a bare number here start a question, or label a graph?
 
     A question's first part is (a), or (i), or prose. So if the next part
@@ -747,7 +758,7 @@ def _opens_a_question(blocks, index, open_letter=None):
     """
     prose = False
     for text in blocks[index + 1:index + 7]:
-        letter, roman, _ = _leading(text)
+        letter, roman, _ = _leading(text, letters)
         if letter or roman:
             # A roman straight after the bare number while a letter is open is
             # that letter's own numbering (the Maths figure-label case) — but
@@ -762,15 +773,17 @@ def _opens_a_question(blocks, index, open_letter=None):
     return True
 
 
-def _leading(text):
-    """Strip leading part markers. '(a) (i) Explain x' -> ('a', 'i', 'Explain x')."""
+def _leading(text, letters=None):
+    """Strip leading part markers. '(a) (i) Explain x' -> ('a', 'i', 'Explain x').
+
+    `letters` is the sitting's letter class where LETTER_RUNS widens it."""
     letter = roman = None
     while True:
         m = MARKER.match(text)
         if not m:
             break
         tok = m.group(1)
-        if LETTER.fullmatch(tok):
+        if (letters or LETTER).fullmatch(tok):
             letter, roman = tok, None
         elif ROMAN.fullmatch(tok):
             roman = tok
@@ -821,6 +834,7 @@ class Paper:
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
+        letters = LETTER_RUNS.get((subject, year, level))
         # A contents page lists "Question 12", "Question 13" and so on as bare
         # blocks with nothing under them. The second Biology booklet prints one,
         # and reading those as heads walked the parser up to 15 before the real
@@ -859,7 +873,7 @@ class Paper:
 
         def _opens_part(i):
             m = re.match(r'^\d{1,2}\.\s+', blocks[i])
-            return m is not None and _leading(blocks[i][m.end():])[:2] != (None, None)
+            return m is not None and _leading(blocks[i][m.end():], letters)[:2] != (None, None)
 
         dotted = collections.defaultdict(list)
         for i in range(len(blocks)):
@@ -955,7 +969,7 @@ class Paper:
                                       == loose.group(1))))
                 if loose and dot_heads and (index not in axis or twin_page) \
                         and int(loose.group(1)) == q + 1 \
-                        and _opens_a_question(blocks, index, letter):
+                        and _opens_a_question(blocks, index, letter, letters):
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
@@ -1002,7 +1016,7 @@ class Paper:
                     # of Q5(a)(ii) and vanished from the census. Both readings
                     # agree on what follows: it is this question's part.
                     tail = text[m.end():].strip()
-                    if found == abs(q) and _leading(tail)[:2] != (None, None):
+                    if found == abs(q) and _leading(tail, letters)[:2] != (None, None):
                         text = tail
                 else:
                     if m.group(2):
@@ -1012,7 +1026,7 @@ class Paper:
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
-                    if rest and _leading(rest)[:2] != (None, None):
+                    if rest and _leading(rest, letters)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses
                         # the part: 2021 HL Chemistry read Question 7(a) as stem
@@ -1044,7 +1058,7 @@ class Paper:
                     self.stems.setdefault((q, letter), []).append(text)
                 continue
 
-            found_letter, found_roman, rest = _leading(text)
+            found_letter, found_roman, rest = _leading(text, letters)
             if found_roman == 'i' and not found_letter and letter == 'h' \
                     and _i_is_letter(blocks, index):
                 # Not gated on (h) being roman-free: Physics 2025 HL Q6 sets
