@@ -153,12 +153,17 @@ describe('Economics exam-topic registry', () => {
       // financial sector (migration and the single market), Q7(a) under
       // topical questions, Q8(b) under government intervention and under
       // growth and development (FDI is globalisation), and Q8(c) under
-      // government intervention (the environment is sustainability).
-      matchedAssociations: 795,
-      referenceAnomalyAssociations: 108,
+      // government intervention (the environment is sustainability). The 2018
+      // Ordinary review added sixteen, among them Section A Q1 and Q6 under
+      // acronyms and Section B Q6(a) under formulas (study-aid headings), and
+      // Section B Q4(b)-(c), Q5(a) and (c) and Q7(b) under national income
+      // (savings, the budget and visible trade are filed under their own
+      // topics); each is recorded with the review's reason.
+      matchedAssociations: 779,
+      referenceAnomalyAssociations: 124,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 714,
+      matchedQuestionTopicLinks: 702,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

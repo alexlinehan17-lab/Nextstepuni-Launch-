@@ -4751,5 +4751,181 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-scheme-p11-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s completed diagram: Price against Quantity, a horizontal line D = AR = MR, a U-shaped AC curve touching it at B and an MC curve rising through B. From B a line runs left to P1 on the price axis and an arrow runs down to Q1 on the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        60,
+        130,
+        524,
+        350
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p02-q2-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section A Q2",
+    "description": "A diagram with P on the vertical axis and Q on the horizontal: three lines numbered 1 to 3 and a line labelled MR. Line 1 rises steeply, line 2 is U-shaped and line 3 falls from left to right. From the point where line 1 crosses line 2, an arrow runs left to P1 and an arrow runs down to Q1.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        85,
+        318,
+        300,
+        475
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p04-q8-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section A Q8",
+    "description": "A circular flow diagram: Households and Firms joined by arrows labelled Supply factors of production, Supply goods and services and Spending on goods and services; an arrow from Firms to Households numbered 1; from Households to Financial Institutions an arrow numbered 2, and from there Investments to Firms; from Households Imports to Foreign Markets, and from Foreign Markets an arrow numbered 3 to Firms.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        115,
+        102,
+        530,
+        358
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p05-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section B Q1(a)",
+    "description": "A diagram with Price on the vertical axis and Quantity on the horizontal: a horizontal line labelled D = AR = MR, a U-shaped AC curve touching it at point B and an MC curve rising through B. The labels MC, AC, D, AR and MR are underlined.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        60,
+        225,
+        545,
+        430
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p06-q2a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section B Q2(a)",
+    "description": "A table: Number of units consumed 1 to 6; Total utility in units/utils 15, 35, 70, 110, 130, 140; Marginal Utility in units/utils 15, 20, 35, A, B, C.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        72,
+        185,
+        530,
+        268
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p06-q2b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section B Q2(b)",
+    "description": "A diagram with Price on the vertical axis and Quantity on the horizontal: a bold downward-sloping demand curve D1 and a parallel demand curve D2 to its right, with arrows pointing right from D1 to D2.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        160,
+        318,
+        445,
+        476
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p07-q3b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section B Q3(b)",
+    "description": "A table: Output (units) 0, 100, 200, 300, 400; Total Cost (€) 300, 500, 600, 1,050, 1,500; Total Revenue (€) 0, 1,000, A, B, C.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        85,
+        215,
+        545,
+        275
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-OL-paper-p08-q5a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 OL Section B Q5(a)",
+    "description": "A table: Government Current Income €67.4 bn; Government Current Expenditure €70.1 bn.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        80,
+        92,
+        545,
+        128
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

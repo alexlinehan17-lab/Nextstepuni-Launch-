@@ -134,6 +134,11 @@ HAND_CHECKED = {
     'econ-2018-hl-sb-q8-a-iv',        # 2018 HL p10: "(iv) the size of the Multiplier." (four words)
     'econ-2018-hl-sa-q9-a',           # 2018 HL p5: "(a) Define the term price discrimination." (five words)
     'econ-2018-hl-sb-q3-a-i',         # 2018 HL p7: "(i) Define the term marginal cost." (five words)
+    'econ-2018-ol-sa-q4-i',           # 2018 OL p3: "(i) Name economist:" (two words; the ask is its stem)
+    'econ-2018-ol-sa-q7-i',           # 2018 OL p3: "(i) Price Inflation:" (two words; the ask is its stem)
+    'econ-2018-ol-sb-q5-b-i',         # 2018 OL p8: "(i) Name each tax above." (four words)
+    'econ-2018-ol-sb-q5-c-i',         # 2018 OL p8: "(i) Explain the term opportunity cost." (five words)
+    'econ-2018-ol-sb-q7-a-i',         # 2018 OL p9: "(i) Explain the term open economy." (five words)
 }
 
 

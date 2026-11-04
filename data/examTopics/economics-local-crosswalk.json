@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 795,
+    "matchedAssociations": 779,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 108,
+    "referenceAnomalyAssociations": 124,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 714,
+    "matchedQuestionTopicLinks": 702,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -12781,7 +12781,7 @@
       "section": "A",
       "question": 9,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -12789,7 +12789,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "9"
-      }
+      },
+      "reason": "Reviewed SEC source: Economic goods, scarce resources and opportunity cost are Scarcity & Choice (0-1). 1 x 9 & 2 x 4 over the three terms placed (scarce resources, opportunity cost, price): one card claimed at 9, 4, 4."
     },
     {
       "topicId": "economics-ordinary-23-costs-of-production-revenue-profit",
@@ -12800,7 +12801,7 @@
       "section": "B",
       "question": 2,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -12808,7 +12809,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B2"
-      }
+      },
+      "reason": "Reviewed SEC source: Utility, marginal utility and demand are The Consumer (1-1); the sugar tax is Government Intervention (1-3), and as a tax introduced in the Budget also Fiscal Policy & the Budget (3-1). Eight tasks totalling 75. a(i) 5 + 5; a(ii) 3 @ 4 A 40, B 20, C 10 (the scheme’s workings); a(iii) 1 + 2. b(i) 7; b(ii) 6; b(iii) 2 @ 6 (3 + 3) from four. c(i) 2 @ 5 from five; c(ii) 3 @ 5, two advantages from three and one disadvantage from two: two heading rows."
     },
     {
       "topicId": "economics-ordinary-23-costs-of-production-revenue-profit",
@@ -13291,7 +13293,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13299,7 +13301,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The budget deficit, the national debt, taxes and spending on education are Fiscal Policy & the Budget (3-1); opportunity cost is Scarcity & Choice (0-1); the economic advantages of education spending (a better workforce, productivity, growth) are also Economic Growth (3-5). Eight tasks totalling 75. a(i) 6 (3 + 3) and a(ii) 6 (3 + 3) printed beside the answer and its explanation together: questionTotal, unpriced rows; a(iii) 2 @ 6 (3 + 3), one advantage from four and one disadvantage from five: two heading rows. b(i) and (ii) share one 6 x 3 over six cells, three names and three direct/indirect answers, a row each; b(iii) 2 @ 6 direct and indirect taxes. c(i) 7; c(ii) 2 x 7 (4 + 3) from seven."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -13310,7 +13313,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13318,7 +13321,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The budget deficit, the national debt, taxes and spending on education are Fiscal Policy & the Budget (3-1); opportunity cost is Scarcity & Choice (0-1); the economic advantages of education spending (a better workforce, productivity, growth) are also Economic Growth (3-5). Eight tasks totalling 75. a(i) 6 (3 + 3) and a(ii) 6 (3 + 3) printed beside the answer and its explanation together: questionTotal, unpriced rows; a(iii) 2 @ 6 (3 + 3), one advantage from four and one disadvantage from five: two heading rows. b(i) and (ii) share one 6 x 3 over six cells, three names and three direct/indirect answers, a row each; b(iii) 2 @ 6 direct and indirect taxes. c(i) 7; c(ii) 2 x 7 (4 + 3) from seven."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -13329,7 +13333,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13337,7 +13341,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: The national income identity is National Income (3-0); multinationals are Globalisation (4-1), economic growth Economic Growth (3-5); LDCs and aid are Growth & Development (4-0). Eight tasks totalling 75. a(i) 10 (5 x 2) the five letters; a(ii) 10 €3,700m. b(i) 2 x 5 the two terms; b(ii) 2 x 5 (3 + 2) from five; b(iii) 1 x 5 (3 + 2) from five. c(i) 2 x 5 from nine; c(ii) 2 x 5 from six; c(iii) 2 x 5 from seven."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -16214,7 +16219,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16222,7 +16227,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Money, savings and non-cash payment are Financial Sector (3-4). Five tasks totalling 75. a any three of four functions, 3 x 7 (2 + 5). b(i) 2 @ 6 (3 + 3) from five; b(ii) 2 @ 6 (3 + 3), one advantage from six and one disadvantage from three: two heading rows. c(i) 2 @ 6 two methods from six; c(ii) 3 @ 6 banks, businesses and consumers: three heading rows."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -16233,7 +16239,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16241,7 +16247,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Money, savings and non-cash payment are Financial Sector (3-4). Five tasks totalling 75. a any three of four functions, 3 x 7 (2 + 5). b(i) 2 @ 6 (3 + 3) from five; b(ii) 2 @ 6 (3 + 3), one advantage from six and one disadvantage from three: two heading rows. c(i) 2 @ 6 two methods from six; c(ii) 3 @ 6 banks, businesses and consumers: three heading rows."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -16252,7 +16259,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16260,7 +16267,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The budget deficit, the national debt, taxes and spending on education are Fiscal Policy & the Budget (3-1); opportunity cost is Scarcity & Choice (0-1); the economic advantages of education spending (a better workforce, productivity, growth) are also Economic Growth (3-5). Eight tasks totalling 75. a(i) 6 (3 + 3) and a(ii) 6 (3 + 3) printed beside the answer and its explanation together: questionTotal, unpriced rows; a(iii) 2 @ 6 (3 + 3), one advantage from four and one disadvantage from five: two heading rows. b(i) and (ii) share one 6 x 3 over six cells, three names and three direct/indirect answers, a row each; b(iii) 2 @ 6 direct and indirect taxes. c(i) 7; c(ii) 2 x 7 (4 + 3) from seven."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -16271,7 +16279,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16279,7 +16287,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The budget deficit, the national debt, taxes and spending on education are Fiscal Policy & the Budget (3-1); opportunity cost is Scarcity & Choice (0-1); the economic advantages of education spending (a better workforce, productivity, growth) are also Economic Growth (3-5). Eight tasks totalling 75. a(i) 6 (3 + 3) and a(ii) 6 (3 + 3) printed beside the answer and its explanation together: questionTotal, unpriced rows; a(iii) 2 @ 6 (3 + 3), one advantage from four and one disadvantage from five: two heading rows. b(i) and (ii) share one 6 x 3 over six cells, three names and three direct/indirect answers, a row each; b(iii) 2 @ 6 direct and indirect taxes. c(i) 7; c(ii) 2 x 7 (4 + 3) from seven."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -16309,7 +16318,7 @@
       "section": "B",
       "question": 7,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16317,7 +16326,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B7"
-      }
+      },
+      "reason": "Reviewed SEC source: An open economy, visible trade, the balance of trade and Brexit are International Trade & Competitiveness (4-2); Brexit, the UK leaving the EU, is also Globalisation (4-1), as EU membership is filed. Eight tasks totalling 75. a(i) 6; a(ii) 3 x 6 (3 + 3) from eight. b(i) 2 x 6 visible exports and imports; b(ii) 2 x 3 an example of each; b(iii) 2 x 6 from five. c(i) 8; c(ii) 2 x 3 tariffs and quotas; c(iii) 1 x 7 (4 + 3) from eight."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -17510,7 +17520,7 @@
       "section": "B",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -17518,7 +17528,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B1"
-      }
+      },
+      "reason": "Reviewed SEC source: Perfect competition and increased competition among airlines are Market Structures (2-0). Six tasks totalling 75. a(i) 5 @ 4 the five labels; a(ii) 5 + 5 P1 and Q1 (hidden solution diagram). b 3 @ 7, one card each. c 3 x 8, two advantages for consumers from three and one challenge for producers from three: two heading rows."
     },
     {
       "topicId": "economics-ordinary-43-employment",
@@ -18056,7 +18067,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18064,7 +18075,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: Measuring unemployment and rising employment are Employment & Unemployment (3-2); extending the retirement age is The Labour Market (2-1), its effect on the pension bill Fiscal Policy & the Budget (3-1); homelessness measures are Fiscal Policy & the Budget (3-1) and, as intervention in the housing market (social housing, rent regulation, subsidies), Government Intervention (1-3). Five tasks totalling 75. a(i) 3; a(ii) 3 x 9 (5 + 4) retailers, government finances and the balance of trade: three heading rows. b 4 x 6, two advantages for employees from three and two for the government from four: two heading rows. c(i) 1 x 7 from seven; c(ii) 2 x 7 (4 + 3) from nine."
     },
     {
       "topicId": "economics-ordinary-51-economic-growth-development",
@@ -18075,7 +18087,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18083,7 +18095,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: Measuring unemployment and rising employment are Employment & Unemployment (3-2); extending the retirement age is The Labour Market (2-1), its effect on the pension bill Fiscal Policy & the Budget (3-1); homelessness measures are Fiscal Policy & the Budget (3-1) and, as intervention in the housing market (social housing, rent regulation, subsidies), Government Intervention (1-3). Five tasks totalling 75. a(i) 3; a(ii) 3 x 9 (5 + 4) retailers, government finances and the balance of trade: three heading rows. b 4 x 6, two advantages for employees from three and two for the government from four: two heading rows. c(i) 1 x 7 from seven; c(ii) 2 x 7 (4 + 3) from nine."
     },
     {
       "topicId": "economics-ordinary-51-economic-growth-development",
@@ -19401,7 +19414,7 @@
       "section": "A",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19409,7 +19422,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "1"
-      }
+      },
+      "reason": "Reviewed SEC source: GNP and the CSO are National Income (3-0); the CPI is Monetary Policy & Inflation (3-3). 9 (3+3+3), (2+1+1), (1+1+1) over the three names, a word at a time: one card, a row per abbreviation (GNP 9, CPI 4, CSO 3)."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19420,7 +19434,7 @@
       "section": "A",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19428,7 +19442,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "reason": "Reviewed SEC source: DIRT and its rate in the Budget are Fiscal Policy & the Budget (3-1). i 8 Deposit Interest Retention Tax; ii 9 one benefit from five."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -20002,7 +20017,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -20010,7 +20025,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: The national income identity is National Income (3-0); multinationals are Globalisation (4-1), economic growth Economic Growth (3-5); LDCs and aid are Growth & Development (4-0). Eight tasks totalling 75. a(i) 10 (5 x 2) the five letters; a(ii) 10 €3,700m. b(i) 2 x 5 the two terms; b(ii) 2 x 5 (3 + 2) from five; b(iii) 1 x 5 (3 + 2) from five. c(i) 2 x 5 from nine; c(ii) 2 x 5 from six; c(iii) 2 x 5 from seven."
     },
     {
       "topicId": "economics-ordinary-formulas",
@@ -20788,7 +20804,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2018 and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 44 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2018 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 43 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -26814,6 +26830,277 @@
         ],
         "reason": "The national income identity, net exports, savings and the multiplier are National Income (3-0); FDI is Globalisation (4-1); protecting the environment and carbon emissions are Sustainability (0-2). Seven tasks totalling 75. a(i) 5 100,000; a(ii) 6 net exports 20,000; a(iii) 3 savings 50,000; a(iv) 6 the multiplier 1.25 (workings printed as fractions; hidden crop). b 7 + 6 + 6 + 6, two benefits and two challenges (1 @ 7 and 3 @ 6), not tied to a side: one menu claimed at 7, 6, 6, 6. c(i) 3 x 5 (2 + 3) from five; c(ii) 3 @ 5 (2 + 3), one measure each for individuals, firms and the government: three heading rows.",
         "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-3-3"
+        ],
+        "reason": "GNP and the CSO are National Income (3-0); the CPI is Monetary Policy & Inflation (3-3). 9 (3+3+3), (2+1+1), (1+1+1) over the three names, a word at a time: one card, a row per abbreviation (GNP 9, CPI 4, CSO 3).",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Long-run equilibrium in monopoly and barriers to entry are Market Structures (2-0). i 3 x 4 the three labels (the scheme’s answer box prints 4 beside each); ii 1 x 4 one barrier from six.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-1-2"
+        ],
+        "reason": "The factors that influence a firm’s supply are The Firm (Supply) (1-2). 2 x 6 & 2 x 2 over the four TRUE/FALSE answers, not tied to a sentence: one card for (i)-(iv), the four claimed at 6, 6, 2, 2.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-0-0"
+        ],
+        "reason": "Economists and their contributions are Economics as a Way of Thinking (0-0). i 10 naming an economist from the scheme’s six; ii 6 one contribution: the scheme lists each economist’s own contributions, so one route per economist, counted once.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1"
+        ],
+        "reason": "Substitute and complementary goods are The Consumer (1-1). 4 @ 4: the four placements (bus and train substitutes, windscreen wipers and diesel complements), one row each.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "DIRT and its rate in the Budget are Fiscal Policy & the Budget (3-1). i 8 Deposit Interest Retention Tax; ii 9 one benefit from five.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-3"
+        ],
+        "reason": "Price inflation is Monetary Policy & Inflation (3-3). i 8 price inflation; ii 9 one advantage from seven.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0"
+        ],
+        "reason": "The circular flow of income is National Income (3-0). i 8 imports as a leakage; ii 3 x 3 the three numbered lines.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "9",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1"
+        ],
+        "reason": "Economic goods, scarce resources and opportunity cost are Scarcity & Choice (0-1). 1 x 9 & 2 x 4 over the three terms placed (scarce resources, opportunity cost, price): one card claimed at 9, 4, 4.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Perfect competition and increased competition among airlines are Market Structures (2-0). Six tasks totalling 75. a(i) 5 @ 4 the five labels; a(ii) 5 + 5 P1 and Q1 (hidden solution diagram). b 3 @ 7, one card each. c 3 x 8, two advantages for consumers from three and one challenge for producers from three: two heading rows.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-1-3",
+          "economics-3-1"
+        ],
+        "reason": "Utility, marginal utility and demand are The Consumer (1-1); the sugar tax is Government Intervention (1-3), and as a tax introduced in the Budget also Fiscal Policy & the Budget (3-1). Eight tasks totalling 75. a(i) 5 + 5; a(ii) 3 @ 4 A 40, B 20, C 10 (the scheme’s workings); a(iii) 1 + 2. b(i) 7; b(ii) 6; b(iii) 2 @ 6 (3 + 3) from four. c(i) 2 @ 5 from five; c(ii) 3 @ 5, two advantages from three and one disadvantage from two: two heading rows.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1",
+          "economics-1-5",
+          "economics-2-1",
+          "economics-1-3",
+          "economics-3-2"
+        ],
+        "reason": "The factors of production and their returns are Scarcity & Choice (0-1); total revenue, profit and fixed and variable costs are Costs of Production, Revenue & Profit (1-5); the minimum wage is The Labour Market (2-1), a government-set wage floor (Government Intervention, 1-3) whose effects include job losses (Employment & Unemployment, 3-2). Five tasks totalling 75. a 3 x 8 (3 + 2 + 3), each factor with its explanation and return. b(i) 3 @ 4 A €2,000, B €3,000, C €4,000; b(ii) 6 €1,400; b(iii) 2 @ 6 (4 + 2) fixed and variable costs with an example. c 3 x 7 (4 + 3), one effect each for employees, businesses and consumers, each from its printed positives and negatives: three heading rows.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4"
+        ],
+        "reason": "Money, savings and non-cash payment are Financial Sector (3-4). Five tasks totalling 75. a any three of four functions, 3 x 7 (2 + 5). b(i) 2 @ 6 (3 + 3) from five; b(ii) 2 @ 6 (3 + 3), one advantage from six and one disadvantage from three: two heading rows. c(i) 2 @ 6 two methods from six; c(ii) 3 @ 6 banks, businesses and consumers: three heading rows.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-0-1",
+          "economics-3-5"
+        ],
+        "reason": "The budget deficit, the national debt, taxes and spending on education are Fiscal Policy & the Budget (3-1); opportunity cost is Scarcity & Choice (0-1); the economic advantages of education spending (a better workforce, productivity, growth) are also Economic Growth (3-5). Eight tasks totalling 75. a(i) 6 (3 + 3) and a(ii) 6 (3 + 3) printed beside the answer and its explanation together: questionTotal, unpriced rows; a(iii) 2 @ 6 (3 + 3), one advantage from four and one disadvantage from five: two heading rows. b(i) and (ii) share one 6 x 3 over six cells, three names and three direct/indirect answers, a row each; b(iii) 2 @ 6 direct and indirect taxes. c(i) 7; c(ii) 2 x 7 (4 + 3) from seven.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-4-1",
+          "economics-4-0",
+          "economics-3-5"
+        ],
+        "reason": "The national income identity is National Income (3-0); multinationals are Globalisation (4-1), economic growth Economic Growth (3-5); LDCs and aid are Growth & Development (4-0). Eight tasks totalling 75. a(i) 10 (5 x 2) the five letters; a(ii) 10 €3,700m. b(i) 2 x 5 the two terms; b(ii) 2 x 5 (3 + 2) from five; b(iii) 1 x 5 (3 + 2) from five. c(i) 2 x 5 from nine; c(ii) 2 x 5 from six; c(iii) 2 x 5 from seven.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2",
+          "economics-4-1"
+        ],
+        "reason": "An open economy, visible trade, the balance of trade and Brexit are International Trade & Competitiveness (4-2); Brexit, the UK leaving the EU, is also Globalisation (4-1), as EU membership is filed. Eight tasks totalling 75. a(i) 6; a(ii) 3 x 6 (3 + 3) from eight. b(i) 2 x 6 visible exports and imports; b(ii) 2 x 3 an example of each; b(iii) 2 x 6 from five. c(i) 8; c(ii) 2 x 3 tariffs and quotas; c(iii) 1 x 7 (4 + 3) from eight.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2",
+          "economics-2-1",
+          "economics-3-1",
+          "economics-1-3"
+        ],
+        "reason": "Measuring unemployment and rising employment are Employment & Unemployment (3-2); extending the retirement age is The Labour Market (2-1), its effect on the pension bill Fiscal Policy & the Budget (3-1); homelessness measures are Fiscal Policy & the Budget (3-1) and, as intervention in the housing market (social housing, rent regulation, subsidies), Government Intervention (1-3). Five tasks totalling 75. a(i) 3; a(ii) 3 x 9 (5 + 4) retailers, government finances and the balance of trade: three heading rows. b 4 x 6, two advantages for employees from three and two for the government from four: two heading rows. c(i) 1 x 7 from seven; c(ii) 2 x 7 (4 + 3) from nine.",
+        "paperSha256": "78775ef04338061a4895be1f738af595f7604916f5d6362f12c413a08368a754"
       }
     ]
   }

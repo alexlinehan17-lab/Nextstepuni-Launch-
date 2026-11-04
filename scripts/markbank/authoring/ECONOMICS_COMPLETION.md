@@ -1631,3 +1631,64 @@ Checks:
 - reconcile: 1,074/2,206, with 2018 HL at 70/70, 0 excluded and 0 orphans.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2018 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed. Scheme pages are the
+PDF's, two ahead of the printed numbers:
+- pp1-5 are the covers, the notes and index, and the Summary of Mark
+  Allocations, which agrees with every tariff;
+- p36 is the back cover.
+
+There are 72 routes for the 70 printed asks: 17 in Section A and 53 in
+Section B. Census, record, bind and crop scripts are `*-2018-ol.py`; the 8
+crops are 1 hidden scheme solution and 7 paper data crops, none of them a
+whole question.
+
+Decisions:
+- Section A Q4(ii) "outline one contribution" of the economist named in (i).
+  The scheme lists each of six economists with their own contributions, so
+  there is one route per economist (as YES/NO lists are), each claimed at 6
+  and counted once. Q4(i) is one card with the scheme's list of names.
+- Section A Q3 "2 x 6 & 2 x 2" over four TRUE/FALSE answers and Section A Q9
+  "1 x 9 & 2 x 4" over three terms are one menu each at the printed steps.
+  Q3 covers (i)-(iv) in one card. Its ask is the paper's words with the
+  answer table's header row dropped.
+- Section A Q1 "(3+3+3), (2+1+1), (1+1+1)": a row per name at 9, 4 and 3.
+- Section B Q5(a)(i) and (a)(ii) "6 (3+3)" beside the answer and its reasons
+  together: questionTotal, unpriced rows.
+- Section B Q5(b)(i)-(ii) share one "6 x 3" over six table cells, three names
+  and three direct/indirect answers. Each part is a card of three 3-mark rows,
+  and each tax is named by the paper's own bullet.
+- Two-column tables are read from the table-cell rendering, one cell an
+  option: positive and negative effects (B3(c)), advantages and disadvantages
+  (B2(c)(ii), B4(b)(ii), B5(a)(iii)), and MNC benefits and challenges with
+  their statements (B6(b)). B3(a)'s explanation cells are joined across their
+  line-end hyphen ("pro- duction"); the gate's comparison ignores the break.
+- Required heads are heading rows: B3(c) employees, businesses and
+  consumers; B4(c)(ii) banks, businesses and consumers; B8(a)(ii) retailers,
+  government finances and the balance of trade; B8(b) employees and
+  government, two each.
+
+Topic review: five questions carry a second Atlas node, so commercial
+headings that are right stay matches:
+- B2: the sugar tax is a Budget tax.
+- B3: the minimum wage is a government-set floor whose effects include job
+  losses.
+- B5: education spending is growth.
+- B7: Brexit is EU membership.
+- B8: housing measures are intervention.
+16 headings remain reference anomalies, among them the study-aid headings
+acronyms and formulas, and national income for savings, the budget and
+visible trade.
+
+Refcheck: five short asks were read by hand.
+
+Checks:
+- econ_review: 23/66.
+- build: 1,208 cards, 0 dropped.
+- Build rule: 297 claims, 0 untraceable.
+- reconcile: 1,144/2,206, with 2018 OL at 70/70, 0 excluded and 0 orphans.
+- refcheck: 0 wrong.
+- cardlint: clean.
+- The seven Economics suites pass (583 tests).
