@@ -62,7 +62,7 @@ describe('2025 Ordinary Paper 1 source reconciliation (15 retained cards)', () =
   it('publishes each title once and carries the choose-two instruction, with no combination cards', () => {
     expect(cards.filter(c => / \+ /.test(c.questionRef))).toEqual([]);
     for (const id of review.compositionRouteCardIds) {
-      const card = legacy.find(c => c.id === id)! as Card & { taskRequirements: string[] };
+      const card = legacy.find(c => c.id === id)! as unknown as Card & { taskRequirements: string[] };
       expect(card.taskRequirements[0]).toBe('Freagair do rogha dhá cheann de A, B, C, D anseo.');
       expect(card.totalMarks).toBe(50);
     }
