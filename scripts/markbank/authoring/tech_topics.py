@@ -178,6 +178,18 @@ TOPIC_OVERRIDES = {
     'tech-2018-hl-b3c-ii': 'tech-core-ict',
     'tech-2018-hl-b3d-i': 'tech-core-materials',   # workplace and workshop safety
     'tech-2018-hl-b3d-ii': 'tech-core-materials',
+    # 2018 Ordinary.
+    'tech-2018-ol-a1-i': 'tech-core-materials',    # PPE and its safety sign
+    'tech-2018-ol-a1-ii': 'tech-core-materials',
+    'tech-2018-ol-a2': 'tech-core-materials',      # air pollution, an air purifier
+    'tech-2018-ol-a3': 'tech-core-materials',      # 3D printing a product
+    'tech-2018-ol-b2a-i': 'tech-core-materials',   # a plastic wheelbarrow pan
+    'tech-2018-ol-b2a-ii': 'tech-core-structures', # two wheels: balance, load
+    'tech-2018-ol-b3a-i': 'tech-core-materials',   # plastic base, metal pole
+    'tech-2018-ol-b3a-ii': 'tech-core-materials',  # producing the plastic base
+    'tech-2018-ol-b3d-i': 'tech-core-design',      # prototypes
+    'tech-2018-ol-b3d-ii': 'tech-core-design',
+    'tech-2018-ol-a9': 'tech-core-materials',      # steps to manufacture a stand
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

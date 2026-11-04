@@ -1053,6 +1053,86 @@ REVIEWED.update({
         'a steep fall.',
 })
 
+# 2018 Ordinary (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2018-OL-paper-secA-q1-art':
+        'A round safety sign: a white outline of a full-body overall on a solid '
+        'blue disc.',
+    'technology-2018-OL-paper-secA-q2-art':
+        'Rendering of the CityTree: a tall upright panel covered in green moss, '
+        'set on a curved concrete base with a wooden bench.',
+    'technology-2018-OL-paper-secA-q4-art':
+        'Photograph of a black plastic case that holds four AA cells side by '
+        'side, with metal spring contacts at the ends.',
+    'technology-2018-OL-paper-secA-q7-art':
+        'Photograph of a wooden bench with crossed X-shaped legs joined by a '
+        'stretcher, and an arrow lettered A pointing at its end.',
+    'technology-2018-OL-paper-secA-q9-art':
+        'Photograph of a bingo machine: a clear blue spherical drum with a '
+        'crank handle, held between two uprights on a shaped wooden base, '
+        'labelled Drum and Wooden Stand.',
+    'technology-2018-OL-paper-secA-q10-art':
+        'Photograph of a motorway with a steel truss gantry bridge spanning it.',
+    'technology-2018-OL-paper-secA-q11-art':
+        'Drawing of a pear-shaped cam labelled Cam, with a roller follower '
+        'labelled Follower resting on top of it.',
+    'technology-2018-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a dovetail halving joint: two '
+        'lengths of timber shown apart, one with the dovetail cut on its end '
+        'and the other with the matching housing.',
+    'technology-2018-OL-paper-secB-q2a-art':
+        'Photograph of two heavy-duty wheelbarrows, one with two wheels at the '
+        'front, with an arrow to the pan labelled Pan.',
+    'technology-2018-OL-paper-secB-q3a-art':
+        'Photograph of a desk lamp: a lime-green plastic base with storage '
+        'compartments and a curved metal pole holding a green shade, with '
+        'arrows labelled Metal and Plastic.',
+    'technology-2018-OL-paper-secB-q3b-art':
+        'Photograph of a rotary variable resistor with a slotted shaft and three '
+        'legs.',
+    'technology-2018-OL-paper-secB-q3c-art':
+        'Photograph of a yellow digital multimeter with a rotary selector dial, '
+        'a display and red and black probes.',
+    'technology-2018-OL-paper-secB-q3d-art':
+        'Photograph of a prototype desk lamp: an orange glowing shade inside a '
+        'white lattice shell on a small base.',
+    'technology-2018-OL-paper-secC-q1b-art':
+        'The start of a flowchart printed for completion: Start, then the '
+        'decision Alarm? with N looping back and Y continuing down.',
+    'technology-2018-OL-paper-secC-q1d-art':
+        'Photographs of a claw gripper on a coiled cable, labelled Mechanical '
+        'Gripper, and of a red claw machine full of soft toys.',
+    'technology-2018-OL-paper-secC-q2a-art':
+        'A resistor lettered R with four colour bands, beside two tables: the '
+        'colour code (0 Black, 1 Brown, 2 Red, 3 Orange, 4 Yellow, 5 Green, 6 '
+        'Blue, 7 Violet, 8 Grey, 9 White) and the tolerance code (1% Brown, 2% '
+        'Red, 5% Gold, 10% Silver).',
+    'technology-2018-OL-paper-secC-q2b-art':
+        'Circuit of a 555 timer in monostable mode between +V and 0V: two '
+        'resistors, a capacitor and a push switch on its inputs, and its output '
+        'driving, through a resistor, a transistor lettered A that switches a '
+        'buzzer.',
+    'technology-2018-OL-paper-secC-q2c-art':
+        'Pin diagram of a 14-pin chip holding four AND gates, pins numbered 1 '
+        'to 14, with GND at pin 7 and VCC at pin 14.',
+    'technology-2018-OL-paper-secC-q3c-art':
+        'Photograph of a red graphics card, with an arrow to its fan labelled '
+        'Fan.',
+    'technology-2018-OL-paper-secC-q4a-art':
+        'Three photographs captioned An oil painting, A sports club hat and '
+        'Drinks bottles.',
+    'technology-2018-OL-paper-secC-q4b-art':
+        'A process capability graph: a red bell curve of the process between '
+        'two vertical lines marked LSL and USL under the heading Design '
+        'Specifications, with the tails outside them labelled Defects.',
+    'technology-2018-OL-paper-secC-q5a-art':
+        'Four photographs captioned Safety Helmet, Hall Table, Cooking Pot and '
+        'Sports Sock.',
+    'technology-2018-OL-paper-secC-q5b-art':
+        'Photographs of a white folding bicycle, unfolded, and of a rider '
+        'carrying it folded in half.',
+})
+
 # 2019 Ordinary (Technology lane, 4 November 2026).
 REVIEWED.update({
     # Pictures the 2019 stems point at, added after the batch browser check.

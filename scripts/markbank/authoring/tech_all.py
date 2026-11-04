@@ -324,6 +324,11 @@ def graphic_fragments(points):
     # it, and the exception let three such cards through.
     if len(bullets) >= 2 and len(bullets) >= 0.6 * len(points):
         return False
+    # ...and so is a NUMBERED one, "1. Marking out of parts." / "2. Drilling."
+    # (2018 Ordinary Q9's four steps, priced "(4x2 marks)").
+    numbered = [p for p in points if re.match(r'\d\.\s+\S', p.lstrip())]
+    if len(numbered) >= 2 and len(numbered) >= 0.6 * len(points):
+        return False
     # "People: Unskilled, in-experienced" -- a heading and its answer on one
     # line, three of them under 2026 Higher Q11's fishbone. Short, never
     # closed, and each one states something.
@@ -658,6 +663,9 @@ def stem_pieces(section, q, letter, roman, texts, stems):
 
 ASK_ROW_NOTE = ("The scheme answers this part with a drawing its text cannot "
                 "carry; its own print is shown with the answer.")
+# types/markBank.ts UNPRINTED_ANSWER: the one row a card may carry that is not
+# a slice of the scheme, for a printed ask whose scheme prints no answer.
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
 FALLBACK_TOPIC = 'tech-core-design'
 
 
@@ -748,6 +756,11 @@ def author(bind_figures=True):
                 # the ask's last sentence once their rules are gone (2019
                 # Ordinary Q3(ii), Q4(i), Q8, Q9).
                 ask = re.sub(r'(?<=[.?!])(?:\s+\d\.)+\s*$', '', ask)
+                # ...and a run of them BETWEEN two asks of one unlettered
+                # question, "...in cities. 1. 2. State two advantages..."
+                # (2018 Ordinary Q2): a run of two or more, after a closed
+                # sentence and before a capital, is the answer lines' numbers.
+                ask = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', ask)
                 # A tail the paper prints that no text layer reads in order:
                 # tech_crops.ASK_TAILS, each looked at on its page.
                 tail = TC.ASK_TAILS.get((year, level, section, q, letter, roman))
@@ -828,6 +841,9 @@ def author(bind_figures=True):
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
+                    # The answer lines' numbers, as the ask loses them above.
+                    piece = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', piece)
+                    piece = re.sub(r'(?<=[.?!])(?:\s+\d\.)+\s*$', '', piece)
                     # A neighbouring figure's lone letter ("...in electronics. A")
                     # and a table the walker flattened ("Week 1 Week 2 ... Task D").
                     piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
@@ -951,7 +967,7 @@ def author(bind_figures=True):
                     # the reveal, with the ask as its one row -- Chemistry's
                     # rule for its dot-and-cross diagrams. Otherwise the part
                     # is refused, and the refusal is the cropper's worklist.
-                    if solution:
+                    if solution or (year, level, section, q, letter, roman) in TC.NO_DRAWING:
                         ask_row = True
                     elif not points:
                         note('the scheme states no marking point for this part', ask)
@@ -1003,7 +1019,20 @@ def author(bind_figures=True):
                     note('the paper text for this part is cut short', question)
                     continue
 
-                if ask_row:
+                if ask_row and not solution:
+                    # tech_crops.NO_DRAWING: a sketch whose scheme prints no
+                    # drawing, only the band it is marked on (2018 Ordinary
+                    # Q7's empty answer box). Every printed ask gets a card;
+                    # this one says the scheme prints no answer.
+                    trimmed = 0
+                    rows = [{'id': 'r-1', 'kind': 'criterion',
+                             'verbatim': UNPRINTED_ANSWER, 'marks': total,
+                             'contextNote': ('The scheme prints no drawing for this '
+                                             'part, only how the sketch is marked: '
+                                             f'{block.notation}'),
+                             'unprinted': True}]
+                    model = {'kind': 'fixed'}
+                elif ask_row:
                     trimmed = 0
                     rows = [{'id': 'r-1', 'kind': 'point', 'verbatim': question,
                              'marks': total, 'openList': True,

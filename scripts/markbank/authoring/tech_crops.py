@@ -1775,6 +1775,146 @@ LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
     (18, (390, 696, 426, 712)),
 ])
 
+# Scheme lines inside a drawing's rectangle that are NOT its lettering and
+# must stay in the .md: (year, level, scheme page index) -> lines. 2018
+# Ordinary 1(b) prints no (ii) ask; its only (ii) is the heading "(ii)
+# Modification" set inside the top of the modified flowchart, and without it
+# the block has two romans for three printed parts.
+MD_KEEP = {
+    (2018, 'ol', 11): ('(ii) Modification',),
+}
+
+# Drawn parts whose scheme prints NO drawing, only how a sketch is marked
+# (its band is the tariff): the card is the ask at that tariff, told so.
+NO_DRAWING = {
+    (2018, 'ol', 'A', 7, None, None),
+}
+
+# 2018 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2018-OL-paper-secA-q1-art': ('014', 1, (409, 85, 513, 190)),
+    'technology-2018-OL-paper-secA-q2-art': ('014', 1, (385, 340, 516, 518)),
+    'technology-2018-OL-paper-secA-q4-art': ('014', 2, (418, 68, 531, 162)),
+    # The bench and its arrow A, without the answer box beside it.
+    'technology-2018-OL-paper-secA-q7-art': ('014', 3, (88, 108, 260, 256)),
+    'technology-2018-OL-paper-secA-q9-art': ('014', 3, (62, 616, 204, 766)),
+    'technology-2018-OL-paper-secA-q10-art': ('014', 4, (66, 106, 216, 192)),
+    'technology-2018-OL-paper-secA-q11-art': ('014', 4, (413, 312, 528, 500)),
+    'technology-2018-OL-paper-secA-q12-art': ('014', 4, (204, 604, 406, 778)),
+    'technology-2018-OL-paper-secB-q2a-art': ('015', 1, (395, 111, 575, 224)),
+    'technology-2018-OL-paper-secB-q3a-art': ('015', 2, (440, 40, 562, 204)),
+    'technology-2018-OL-paper-secB-q3b-art': ('015', 2, (53, 260, 176, 392)),
+    'technology-2018-OL-paper-secB-q3c-art': ('015', 2, (447, 442, 545, 562)),
+    'technology-2018-OL-paper-secB-q3d-art': ('015', 2, (417, 628, 556, 789)),
+    # 1(b)(i)'s printed start of the flowchart the student completes.
+    'technology-2018-OL-paper-secC-q1b-art': ('015', 3, (74, 290, 140, 368)),
+    'technology-2018-OL-paper-secC-q1d-art': ('015', 3, (390, 641, 567, 782)),
+    'technology-2018-OL-paper-secC-q2a-art': ('015', 4, (352, 58, 556, 216)),
+    'technology-2018-OL-paper-secC-q2b-art': ('015', 4, (346, 268, 556, 402)),
+    'technology-2018-OL-paper-secC-q2c-art': ('015', 4, (404, 458, 566, 598)),
+    'technology-2018-OL-paper-secC-q3c-art': ('015', 5, (54, 451, 162, 560)),
+    'technology-2018-OL-paper-secC-q4a-art': ('015', 6, (92, 95, 545, 188)),
+    'technology-2018-OL-paper-secC-q4b-art': ('015', 6, (380, 268, 566, 372)),
+    'technology-2018-OL-paper-secC-q5a-art': ('015', 7, (114, 76, 518, 168)),
+    'technology-2018-OL-paper-secC-q5b-art': ('015', 7, (440, 237, 582, 443)),
+})
+WHITEOUT.update({
+    # Ends of the prose lines the paper wraps around these pictures.
+    'technology-2018-OL-paper-secB-q3d-art': [(395, 630, 484, 648)],
+    'technology-2018-OL-paper-secC-q1d-art': [(380, 628, 442, 660)],
+    'technology-2018-OL-paper-secC-q2a-art': [(343, 60, 402, 78)],
+    'technology-2018-OL-paper-secC-q2c-art': [(370, 456, 416, 505)],
+    'technology-2018-OL-paper-secC-q4b-art': [(378, 260, 392, 276)],
+    # 3(b)(iii)'s "(W)." beside the scheme's circuit, and the end of 1(d)(ii)'s
+    # last answer line, "operates.", under the gripper.
+    'technology-2018-OL-scheme-secB-q3b-ii': [(428, 358, 456, 376)],
+    'technology-2018-OL-scheme-secC-q1d-ii': [(416, 735, 445, 751)],
+})
+SOLUTIONS.update({
+    'technology-2018-OL-scheme-secB-q3b-ii': (10, (438, 292, 550, 370),
+        "The marking scheme's own answer to 2018 OL Section B 3(b)(ii), as the "
+        "State Examinations Commission printed it: a circuit of a cell, a "
+        "switch, a variable resistor and a bulb in series."),
+    'technology-2018-OL-scheme-secC-q1a-ii': (11, (120, 196, 460, 300),
+        "The marking scheme's own answer to 2018 OL Section C 1(a)(ii), as the "
+        "State Examinations Commission printed it: a photograph of a chip and a "
+        "drawing of its outline, each with an arrow labelled Pin No. 1 to the "
+        "pin beside the notch and dot."),
+    'technology-2018-OL-scheme-secC-q1b-i': (11, (52, 384, 200, 716),
+        "The marking scheme's own answer to 2018 OL Section C 1(b)(i), as the "
+        "State Examinations Commission printed it: Start, the decision Alarm? "
+        "looping back on N, then Phone Call, Wait 3, Siren On, Lights On, and "
+        "the decision Alarm deactivated? looping on N, then Siren Off, Lights "
+        "Off, returning to the start."),
+    'technology-2018-OL-scheme-secC-q1b-ii': (11, (348, 384, 538, 718),
+        "The marking scheme's own answer to 2018 OL Section C 1(b)(ii), headed "
+        "(ii) Modification, as the State Examinations Commission printed it: "
+        "the same flowchart with a Text Message output added after Siren Off, "
+        "Lights Off, before the loop back to the start."),
+    'technology-2018-OL-scheme-secC-q1d-i': (12, (205, 441, 400, 536),
+        "The marking scheme's own drawing for 2018 OL Section C 1(d)(i), as the "
+        "State Examinations Commission printed it: a Cartesian arm moving along "
+        "three axes at right angles inside a box labelled Work Envelope."),
+    'technology-2018-OL-scheme-secC-q1d-ii': (12, (420, 645, 560, 750),
+        "The marking scheme's own picture for 2018 OL Section C 1(d)(ii), as "
+        "the State Examinations Commission printed it: a two-jaw gripper "
+        "driven by two meshing gears labelled Gear A and Gear B."),
+    'technology-2018-OL-scheme-secC-q3b-iii': (14, (35, 360, 565, 501),
+        "The marking scheme's own answer to 2018 OL Section C 3(b)(iii), as the "
+        "State Examinations Commission printed it: a star topology drawing "
+        "beside the note Star topology configuration: every node connects to a "
+        "central network device, like a hub, switch, or computer; the central "
+        "network device acts as a server and the peripheral devices act as "
+        "clients; and a ring topology drawing beside Ring topology "
+        "configuration: device connections create a circular data path; each "
+        "networked device is connected to two others, like points on a circle; "
+        "together, devices in a ring topology are referred to as a ring network."),
+    # The photograph alone: its "Quick release lever" label sits under the
+    # answer text, which is the card's row and must stay in the .md.
+    'technology-2018-OL-scheme-secC-q5b-iii': (16, (115, 625, 282, 737),
+        "The marking scheme's own picture for 2018 OL Section C 5(b)(iii), as "
+        "the State Examinations Commission printed it: the hinge of a red "
+        "folding bicycle frame, with an arrow to its quick release lever."),
+})
+ASK_ONLY.update({
+    'technology-2018-OL-scheme-secC-q1a-ii',
+    # The flowcharts are the answers; the only words beside them are the
+    # (ii) heading and "Any valid alternative solution.", under both.
+    'technology-2018-OL-scheme-secC-q1b-i',
+    'technology-2018-OL-scheme-secC-q1b-ii',
+    # Two columns of notes set side by side: the text layer welds them line
+    # by line, so the crop carries the answer.
+    'technology-2018-OL-scheme-secC-q3b-iii',
+})
+PAPER_ZONES.setdefault((2018, 'ol', '014'), []).extend([
+    # Q11's "Follower" label, read onto the end of Q10's stem.
+    (4, (480, 315, 524, 332)),
+])
+LABEL_ZONES.setdefault((2018, 'ol'), []).extend([
+    # Q9's reprinted bingo machine, "Drum" and "Wooden Stand".
+    (5, (60, 610, 210, 770)),
+    # Q7's reprinted bench and its arrow A, beside the sketch band.
+    (5, (100, 100, 300, 260)),
+    # 2(a)'s wheelbarrows and "Pan".
+    (9, (438, 108, 572, 196)),
+    # 3(a)'s lamp with "Metal" and "Plastic".
+    (10, (470, 40, 578, 192)),
+    # 1(a)'s chip and robot with "PIC", and (ii)'s two "Pin No. 1" pictures.
+    (11, (390, 60, 570, 190)),
+    (11, (120, 196, 460, 300)),
+    # 1(d)'s work envelope and gripper drawings.
+    (12, (205, 441, 400, 536)),
+    (12, (420, 645, 560, 750)),
+    # 2(a)'s resistor "R", and 2(b)'s reprinted circuit (A, R1, C1, +V, 0V).
+    (13, (30, 90, 105, 160)),
+    (13, (385, 268, 560, 374)),
+    # 5(a)(ii)'s rivet pictures and captions; 5(b)(iii)'s photograph and its
+    # label (the answer text between them is the row).
+    (16, (140, 255, 500, 365)),
+    (16, (110, 620, 292, 742)),
+    (16, (282, 724, 384, 742)),
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.

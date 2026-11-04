@@ -311,7 +311,8 @@ class TechScheme:
             # blue "(14 marks, 6 + 4 + 4)" line; stripping that row as image
             # lettering erased the block and left a real paper ask uncovered.
             # Tariffs are metadata, never diagram labels.
-            if rects and not TARIFF.search(text) and not BAND.search(text):
+            if rects and not TARIFF.search(text) and not BAND.search(text) \
+                    and text not in TC.MD_KEEP.get((self.year, self.level, page), ()):
                 got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
                                           page, rects)
                 if got is not None:
@@ -326,7 +327,8 @@ class TechScheme:
             # three parts became one. tech_crops.LABEL_ZONES names the
             # drawing; the row it shares with the prose is cut by position.
             rects = TC.scheme_zones(self.year, self.level, page)
-            if rects and not TARIFF.search(text) and not BAND.search(text):
+            if rects and not TARIFF.search(text) and not BAND.search(text) \
+                    and text not in TC.MD_KEEP.get((self.year, self.level, page), ()):
                 got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
                                           page, rects)
                 if got is not None:
@@ -512,7 +514,13 @@ def _lines(raw):
             pending = None
         # An unclosed bracket that mentions marks, and nothing else: a tariff
         # cannot span more than the line after its own.
-        if text.count('(') > text.count(')') and re.search(r'\bm?arks?\b', text, re.I):
+        if text.count('(') > text.count(')') and (
+                re.search(r'\bm?arks?\b', text, re.I)
+                # ...or a band that breaks before its first mark, "(Very good
+                # sketch -" / "8 marks" / "Fair sketch - 4 marks)" (2018
+                # Ordinary Q7), whose "8 marks" alone reads as a section total.
+                or re.match(r'\(\s*(?:very good|good|fair)\s+(?:sketch|diagram|drawing)\b[^)]*$',
+                            text, re.I)):
             pending = text
             continue
         out.append(text)

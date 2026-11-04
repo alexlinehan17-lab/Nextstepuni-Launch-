@@ -2781,6 +2781,2615 @@
   "notes": "The scheme prints '(14 marks, 6+8)' for this part."
  },
  {
+  "id": "tech-2018-ol-a1-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1(i)",
+  "questionText": "Explain what is meant by the abbreviation PPE when referring to safety.",
+  "stem": "The graphic shows a safety sign for an item of PPE commonly used in workshops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Personal Protection Equipment, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a1-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1(ii)",
+  "questionText": "Suggest two occasions when a person may be required to wear the item of PPE shown in the safety sign.",
+  "stem": "The graphic shows a safety sign for an item of PPE commonly used in workshops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Processing a material, applying a finish to a material, assembly of parts, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a2",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q2",
+  "questionText": "A German based company have created an intelligent natural air purifier, the CityTree, to deal with urban air pollution. One CityTree can have the purifying effect of 275 trees. Give two main causes of air pollution in cities. State two advantages of using the CityTree shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motor vehicles, Industrial manufacturing facilities, burning fossil fuels (coal, oil, gas) in homes, etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Helps to purify air pollution, less space required compared to trees, creates employment, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2018-ol-a3",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q3",
+  "questionText": "3D printing, which is an application of CAD/CAM, has become very popular in industrial and educational settings. Give two benefits of using a 3D printer to manufacture a product.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Additive manufacturing allows for cost savings to be made (no wastage) compared to traditional machining, speed of production, custom/bespoke parts can be manufactured, safe, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2018-ol-a4-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q4(i)",
+  "questionText": "Explain what is meant by ‘in series’ when connecting AA cells.",
+  "stem": "The image shows a case to hold four AA cells connected in series.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When AA cells are connected in series, the combined voltage is the sum of the individual voltages, e.g. 4 x 1.5V = 6V.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a4-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q4(ii)",
+  "questionText": "Many components used in Technology projects are polarised. Name two polarised components used in electronic circuits.",
+  "stem": "The image shows a case to hold four AA cells connected in series.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Light Emitting Diode (LED), Capacitor, Diode, Buzzer, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a5-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q5(i)",
+  "questionText": "What is the function of an operating system on a mobile phone?",
+  "stem": "Customers consider many factors when purchasing a mobile phone. These factors can include cost, reliability, access to apps and the operating system of the phone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This software manages the operation of the phone– memory, processes, hardware and software. It enables a user to interact with various apps through its interface, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a5-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q5(ii)",
+  "questionText": "Name two operating systems used in modern mobile phones.",
+  "stem": "Customers consider many factors when purchasing a mobile phone. These factors can include cost, reliability, access to apps and the operating system of the phone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "IOS, Android, Windows, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a6-i",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q6(i)",
+  "questionText": "Explain what is meant by the abbreviation WBS.",
+  "stem": "A WBS can be used by a Project Manager to oversee the building of a large scale project.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Work Breakdown Structure.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a6-ii",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q6(ii)",
+  "questionText": "Outline two ways in which a WBS helps ensure that a task is completed on time.",
+  "stem": "A WBS can be used by a Project Manager to oversee the building of a large scale project.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Provides a visual understanding of the sequence of tasks to be completed, outlining the start and finishing times for each task also helps to ensure a project is completed on time, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q7",
+  "questionText": "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(Very good sketch - 8 marks Fair sketch - 4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 8,
+    "contextNote": "The scheme prints no drawing for this part, only how the sketch is marked: (Very good sketch - 8 marks Fair sketch - 4 marks)",
+    "unprinted": true
+   }
+  ],
+  "notes": "The scheme prints '(Very good sketch - 8 marks Fair sketch - 4 marks)' for this question."
+ },
+ {
+  "id": "tech-2018-ol-a8-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q8(i)",
+  "questionText": "Explain what is meant by the abbreviation kWh.",
+  "stem": "Domestic electricity usage is measured in kWh.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "kiloWatt Hour",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a8-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q8(ii)",
+  "questionText": "In one month, a customer uses 550 units of electricity at a cost of 17.50 cent/kWh. Calculate the total bill for the month, including a standing charge of €19.75.",
+  "stem": "Domestic electricity usage is measured in kWh.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "550 x 0.175 = €96.25 + €19.75 = €116",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a9",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q9",
+  "questionText": "The graphic shows a bingo machine consisting of a spherical drum and a wooden stand. List four main steps required to manufacture the wooden stand.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4x2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Marking out of parts.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Drilling.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Shaping.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Assembly, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4x2 marks)' for this question."
+ },
+ {
+  "id": "tech-2018-ol-a10-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q10(i)",
+  "questionText": "Outline what is meant by the term triangulation.",
+  "stem": "The graphic shows a bridge over the new M17/M18 motorway in Co. Galway. Triangulation was used in the construction of the bridge.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Creating structures using triangles in its design.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This makes the structure very strong and rigid.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a10-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q10(ii)",
+  "questionText": "Give two reasons why modern bridges can span longer distances.",
+  "stem": "The graphic shows a bridge over the new M17/M18 motorway in Co. Galway. Triangulation was used in the construction of the bridge.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advances in modern materials, better design of bridges using CAD and simulation software, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a11-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q11(i)",
+  "questionText": "Explain what is meant by the term reciprocates.",
+  "stem": "The image shows a Cam and Follower mechanism. As the cam rotates the follower reciprocates.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Straight line motion in both alternate directions.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a11-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q11(ii)",
+  "questionText": "Give one application of this mechanism in everyday life.",
+  "stem": "The image shows a Cam and Follower mechanism. As the cam rotates the follower reciprocates.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Educational toys, engine valves, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-a12",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q12",
+  "questionText": "The graphic shows a dovetail halving joint made from softwood. Use two graphic techniques to enhance the representation of the joint.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rendering, colour, shadow, hatching, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2018-ol-b2a-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(a)(i)",
+  "questionText": "Outline two advantages of making the pan from plastic.",
+  "stem": "The graphic shows two heavy-duty wheelbarrows, both constructed to be durable. The pan, which is a very important element of any wheelbarrow, is made from heavy-gauge high density polyethylene (HDPE).",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Easy to mould, tough, durable, light, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2a-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(a)(ii)",
+  "questionText": "Suggest one benefit of having two wheels at the front of a wheelbarrow.",
+  "stem": "The graphic shows two heavy-duty wheelbarrows, both constructed to be durable. The pan, which is a very important element of any wheelbarrow, is made from heavy-gauge high density polyethylene (HDPE).",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Greater balance, better load distribution, safer to use, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2b-i",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(b)(i)",
+  "questionText": "Give two reasons why a company applies a logo to its products.",
+  "stem": "The hardwood handle of the wheelbarrow has a company name and logo applied.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To sell products, promote a brand, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2b-ii",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(b)(ii)",
+  "questionText": "Suggest two considerations a company might have when designing its logo.",
+  "stem": "The hardwood handle of the wheelbarrow has a company name and logo applied.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Size and placement of logo, style, application of logo to surfaces, patent rights, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2b-iii",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(b)(iii)",
+  "questionText": "Using notes and annotated sketches, briefly describe how a student might apply a logo to a piece of hardwood.",
+  "stem": "The hardwood handle of the wheelbarrow has a company name and logo applied.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Applied using CAD/CAM technology such as using a laser machine or vinyl cutter, logo applied using a pyrography machine and carbon paper, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2c-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(c)(i)",
+  "questionText": "Explain what is meant by semi-permanent when referring to jointing methods.",
+  "stem": "The wheelbarrow is primarily assembled using semi-permanent joints.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parts can be assembled and disassembled as required.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This type of jointing method is useful if a part needs to be repaired, replaced, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2c-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(c)(ii)",
+  "questionText": "Name two semi-permanent joints commonly used in manufacturing technology projects.",
+  "stem": "The wheelbarrow is primarily assembled using semi-permanent joints.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nuts and bolts, screws, knock down fittings, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2d-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(d)(i)",
+  "questionText": "Briefly outline why hardwoods may be a more environmentally friendly choice than using plastics to manufacture the handles.",
+  "stem": "The wheelbarrow manufacturer states that their wheelbarrow handles are made from sustainable hardwoods.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sustainable and renewable material, trees reduce air pollution, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b2d-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(d)(ii)",
+  "questionText": "Suggest two other ways students can be mindful of the environment when manufacturing a project.",
+  "stem": "The wheelbarrow manufacturer states that their wheelbarrow handles are made from sustainable hardwoods.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Greater focus on design, reduce size of projects, less wastage, energy considerations when manufacturing, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3a-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(a)(i)",
+  "questionText": "Name a suitable plastic for the base and a suitable metal for the pole.",
+  "stem": "A desk lamp, such as the one shown, is to be manufactured with a plastic base and a metal pole.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Base: PVC, ABS, HIPS, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pole: chrome plated steel, aluminium alloy, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3a-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(a)(ii)",
+  "questionText": "Describe, using annotated sketches, a suitable method for producing the plastic base.",
+  "stem": "A desk lamp, such as the one shown, is to be manufactured with a plastic base and a metal pole.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Injection Moulding, Vacuum Forming, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3b-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(b)(i)",
+  "questionText": "Explain the purpose of the variable resistor in the circuit for the desk lamp.",
+  "stem": "The image shows a variable resistor commonly used in electronic circuits. This component will be used in the lighting circuit for the desk lamp at 3(a) above.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increase/decrease resistance and in doing so the current flowing through the circuit. This is turn allows the light levels to be varied, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3b-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(b)(ii)",
+  "questionText": "Draw a labelled diagram of a suitable circuit for the desk lamp to include a switch, variable resistor, bulb and power supply.",
+  "stem": "The image shows a variable resistor commonly used in electronic circuits. This component will be used in the lighting circuit for the desk lamp at 3(a) above.",
+  "figureKey": "technology-2018-OL-scheme-secB-q3b-ii",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a labelled diagram of a suitable circuit for the desk lamp to include a switch, variable resistor, bulb and power supply.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3b-iii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(b)(iii)",
+  "questionText": "An LED light bulb in a circuit has a power rating of 3 Watts. Calculate the current that the light bulb will draw from a 12 V supply.",
+  "stem": "The image shows a variable resistor commonly used in electronic circuits. This component will be used in the lighting circuit for the desk lamp at 3(a) above.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Note: Power (W)= Current (I) x Voltage (V) 3W= I x 12V, I = 3W/12V = 0.25A",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3c-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(c)(i)",
+  "questionText": "Give two specific uses of a digital multimeter in electronics.",
+  "stem": "The diagram shows a multimeter. A digital multimeter (DMM) is a test tool used to measure electrical quantities.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Measure current, resistance, voltage, continuity tester, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3c-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(c)(ii)",
+  "questionText": "Using notes and annotated sketches, describe how the value of a resistor could be measured using a digital multimeter.",
+  "stem": "The diagram shows a multimeter. A digital multimeter (DMM) is a test tool used to measure electrical quantities.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Select the most appropriate ohm setting on the multi-meter, hold the probes against the resistor legs, take the reading from the multi-meter display, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3d-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(d)(i)",
+  "questionText": "Briefly explain what is meant by a prototype.",
+  "stem": "The graphic shows a prototype desk lamp manufactured by a lighting company.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The first or original version of a product from which other forms are developed.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-b3d-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(d)(ii)",
+  "questionText": "Outline two benefits for a manufacturer who develops a prototype prior to large-scale production.",
+  "stem": "The graphic shows a prototype desk lamp manufactured by a lighting company.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Errors identified and eliminated prior to full scale production, reduced costs, time, develop a better understanding of what the end user wants, etc.,",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1a-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(a)(i)",
+  "questionText": "Outline two advantages of using a PIC in toys.",
+  "stem": "Many toys use a PIC (Peripheral Interface Controller) in their operation.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Multiple inputs and outputs, reprogrammable, cost effective, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1a-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(a)(ii)",
+  "questionText": "Explain, using a simple sketch, how pin 1 can be identified on a PIC.",
+  "stem": "Many toys use a PIC (Peripheral Interface Controller) in their operation.",
+  "figureKey": "technology-2018-OL-scheme-secC-q1a-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Explain, using a simple sketch, how pin 1 can be identified on a PIC.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(b)(i)",
+  "questionText": "Complete a flowchart for the alarm system, using the following sequence: • when the alarm is triggered by an intruder an automated phone call is made to the local Garda station • after a further three seconds, the alarm siren sounds and at the same time, the shop lights turn on • the siren and lights remain on until the shop owner resets the alarm.",
+  "stem": "Thieves often target shops at night time, when staff have gone home. A student is designing a flowchart for an alarm system that activates if an intruder is detected.",
+  "figureKey": "technology-2018-OL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete a flowchart for the alarm system, using the following sequence: • when the alarm is triggered by an intruder an automated phone call is made to the local Garda station • after a further three seconds, the alarm siren sounds and at the same time, the shop lights turn on • the siren and lights remain on until the shop owner resets the alarm.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(b)(ii)",
+  "questionText": "Show how the flowchart could be modified so that the local Garda station receives a text message when the alarm has been reset by the shop owner.",
+  "stem": "Thieves often target shops at night time, when staff have gone home. A student is designing a flowchart for an alarm system that activates if an intruder is detected.",
+  "figureKey": "technology-2018-OL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Show how the flowchart could be modified so that the local Garda station receives a text message when the alarm has been reset by the shop owner.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(b)(iii)",
+  "questionText": "For this alarm system, suggest a suitable sensor to detect the presence of a thief.",
+  "stem": "Thieves often target shops at night time, when staff have gone home. A student is designing a flowchart for an alarm system that activates if an intruder is detected.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motion detector, LDR, infrared, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(c)(i)",
+  "questionText": "Give two reasons why pneumatics are used in industry.",
+  "stem": "Pneumatic systems are widely used in factories, in production lines and in processing plants. Pneumatics can be used to perform many tasks such as moving, holding or shaping objects.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Greater speed and control, reliability, cost, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1c-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(c)(ii)",
+  "questionText": "Outline two specific safety precautions to be observed when using pneumatic systems.",
+  "stem": "Pneumatic systems are widely used in factories, in production lines and in processing plants. Pneumatics can be used to perform many tasks such as moving, holding or shaping objects.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ensure that the compressor system is in good working order, avoid moving parts, wear PPE such as ear muffs/safety goggles, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(d)(i)",
+  "questionText": "Explain what is meant by a Cartesian system, making reference to the work envelope.",
+  "stem": "The graphics show a moving claw machine with a mechanical gripper for picking up soft toys in an amusement park game. The claw uses a Cartesian system of control.",
+  "figureKey": "technology-2018-OL-scheme-secC-q1d-i",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Three principal axes of control operate at 90O to each other, prismatic joints are used in its operation, rectangular prism work envelope, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Popular system used in CNC machines, 3D printing, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c1d-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(d)(ii)",
+  "questionText": "The claw used in this device is a mechanical gripper. Explain, using sketches, how a mechanical gripper can work.",
+  "stem": "The graphics show a moving claw machine with a mechanical gripper for picking up soft toys in an amusement park game. The claw uses a Cartesian system of control.",
+  "figureKey": "technology-2018-OL-scheme-secC-q1d-ii",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When a motor rotates gear ‘A’ in a clockwise direction, its parallel linkage closes the upper jaw. At the same time gear ‘B’ rotates in an anti-clockwise direction which closes the bottom jaw. The jaws are opened by reversing the direction of the motor, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any relevant sketch showing how a mechanical gripper operates.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(a)(i)",
+  "questionText": "The colour band sequence of R is brown, black, brown and gold. State the value of the resistor R.",
+  "stem": "A resistor (R) and the resistor colour and tolerance code tables are shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "100Ω (ohms).",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(a)(ii)",
+  "questionText": "Calculate the highest possible value for this resistor R which has a gold tolerance band.",
+  "stem": "A resistor (R) and the resistor colour and tolerance code tables are shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "100Ω = 100%, 5Ω = 5% (Gold Tolerance)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "100Ω + 5Ω = 105Ω.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(b)(i)",
+  "questionText": "Using the Formulae and Tables booklet or otherwise, name component A in the circuit.",
+  "stem": "The graphic shows a 555 timer circuit which is configured in a monostable state. When the PTM switch is pressed a buzzer will sound for a period of time.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Transistor.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(b)(ii)",
+  "questionText": "Describe how the length of time for which the buzzer sounds can be adjusted in this circuit.",
+  "stem": "The graphic shows a 555 timer circuit which is configured in a monostable state. When the PTM switch is pressed a buzzer will sound for a period of time.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The length of time the buzzer sounds depends upon the values of resistor R1 and capacitor C1.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In general, the larger the values of these components, the longer the buzzer sounds, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2b-iii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(b)(iii)",
+  "questionText": "Give two everyday applications for a timer circuit.",
+  "stem": "The graphic shows a 555 timer circuit which is configured in a monostable state. When the PTM switch is pressed a buzzer will sound for a period of time.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Toy game, egg timer, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(c)(i)",
+  "questionText": "Explain what is meant by the abbreviation IC when referring to electronic components.",
+  "stem": "The image shows an IC which incorporates four AND logic gates.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Integrated Circuit.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(c)(ii)",
+  "questionText": "State the pin numbers for the outputs of the chip shown.",
+  "stem": "The image shows an IC which incorporates four AND logic gates.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pins 3, 6, 8 and 11.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(d)(i)",
+  "questionText": "Briefly outline two advantages of producing PCBs in a classroom rather than purchasing factory-made PCBs.",
+  "stem": "A student has produced a copper-clad printed circuit board (PCB) using CAD/CAM technology.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Custom PCBs can be manufactured, only manufactured as required, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(d)(ii)",
+  "questionText": "Give two safety precautions that should be observed when soldering PCBs.",
+  "stem": "A student has produced a copper-clad printed circuit board (PCB) using CAD/CAM technology.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use appropriate ventilation, always place soldering iron in holder when not in use, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3a-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(a)(i)",
+  "questionText": "Briefly explain what is meant by 15 GB and 1 TB when referring to storage capacity.",
+  "stem": "Cloud storage services are widely used. Typically these services allow ‘apps’ to be synched across multiple devices and platforms. Some providers offer 15 GB of free storage capacity for individuals and up to 1 TB for a nominal price per user.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "15 gigabytes, 1 terabyte. 1 terabyte equals 1000 (or 1024) gigbytes. In terms of storage capacity a high definition movie needs approximately 3-5GB of storage capacity.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3a-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(a)(ii)",
+  "questionText": "Give two benefits of synching apps across multiple devices.",
+  "stem": "Cloud storage services are widely used. Typically these services allow ‘apps’ to be synched across multiple devices and platforms. Some providers offer 15 GB of free storage capacity for individuals and up to 1 TB for a nominal price per user.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An employee can work from multiple places - office/home/on the go, all devices have the latest version of files and programs, syncing can be done automatically, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3b-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(b)(i)",
+  "questionText": "Describe what is meant by the term Local Area Network.",
+  "stem": "A graphic design company is having a ten-station Local Area Network (LAN) installed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A computer network that spans a relatively small area such as a single room, building or group of buildings. Each node (individual computer) in a LAN has its own CPU to executes programs, but it also is able to access data and devices anywhere on the LAN.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Data can be transferred at a very fast rate, LAN has a limited range in distance, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3b-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(b)(ii)",
+  "questionText": "Briefly outline two items of hardware and/or software needed to build a typical LAN.",
+  "stem": "A graphic design company is having a ten-station Local Area Network (LAN) installed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Servers, computers, printers, data storage devices, network adapters, hub/switch/ router, ethernet cables, network management software, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3b-iii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(b)(iii)",
+  "questionText": "Using notes and annotated sketches, describe two suitable topologies (layouts and structures) for a LAN.",
+  "stem": "A graphic design company is having a ten-station Local Area Network (LAN) installed.",
+  "figureKey": "technology-2018-OL-scheme-secC-q3b-iii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using notes and annotated sketches, describe two suitable topologies (layouts and structures) for a LAN.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(c)(i)",
+  "questionText": "Name two software programs that would benefit from using a good quality graphics card.",
+  "stem": "The image shows a graphics card which enables computers to produce images and graphics more quickly.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CAD software such as Solidworks, gaming, photo and video editing, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3c-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(c)(ii)",
+  "questionText": "Describe the function of the fan shown on the graphics card.",
+  "stem": "The image shows a graphics card which enables computers to produce images and graphics more quickly.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To cool the graphics card and prevent it from overheating when in use, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3d-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(d)(i)",
+  "questionText": "Suggest two ways in which school management should safeguard the personal or attendance data of students.",
+  "stem": "Computer systems are frequently used to manage data in schools. Information gathered on student enrolment and attendance can be inputted to software programs to improve the efficiency of school management.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Password protection, encryption of data, authorised access only, use of digital technologies such as finger print scanner, facial recognition camera, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c3d-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(d)(ii)",
+  "questionText": "People can intentionally or unintentionally cause damage to computer systems. Suggest one intentional and one unintentional way in which a person could damage a computer system.",
+  "stem": "Computer systems are frequently used to manage data in schools. Information gathered on student enrolment and attendance can be inputted to software programs to improve the efficiency of school management.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Method explained: Erase information/files, physically damage/destroy computers, install malware, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4a-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(a)(i)",
+  "questionText": "Name a suitable production process for any two of the items above.",
+  "stem": "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made. An oil painting A sports club hat Drinks bottles",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Oil painting: Once off production, Hat: Batch production, Bottles: Mass production",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(a)(ii)",
+  "questionText": "Suggest two factors a manufacturer must consider when choosing the most appropriate production process to use for a new product.",
+  "stem": "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made. An oil painting A sports club hat Drinks bottles",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reliability/accuracy/speed of production process, cost, materials used, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(b)(i)",
+  "questionText": "Give two reasons why a manufacturer would gather statistical data in relation to a production process.",
+  "stem": "The graphic shows the results of a process capability survey. It represents data about the quality of a process used to make a product.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To better understand its performance, to identify faults, to improve efficiency, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4b-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(b)(ii)",
+  "questionText": "With reference to the graphic, briefly outline the consequences for a manufacturer when a process is outside the design specifications.",
+  "stem": "The graphic shows the results of a process capability survey. It represents data about the quality of a process used to make a product.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The process would fail an inspection test and some faulty products would be produced as a result. Customers would look for replacement products or a refund, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4b-iii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(b)(iii)",
+  "questionText": "Process capability can be greater than, equal to, or less than 1. Briefly outline what a process capability greater than 1 indicates.",
+  "stem": "The graphic shows the results of a process capability survey. It represents data about the quality of a process used to make a product.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The process is capable – very few, if any defects would be found, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4c-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(c)(i)",
+  "questionText": "Describe how retailers can improve their corporate responsibility in relation to the environment.",
+  "stem": "The quantity of waste generated from packaging used by online retailers to send goods to customers in Ireland is rising by more than 25% every year. A recent report from Repak has found that over 7,000 tonnes of waste per year are being generated by online shopping.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Develop more environmentally sustainable work practices – the design of packaging, reduce/reuse/recycle materials for packaging, production processes, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4c-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(c)(ii)",
+  "questionText": "Suggest two ways in which a manufacturer can prolong the production run of a product which is nearing the end of its life cycle.",
+  "stem": "The quantity of waste generated from packaging used by online retailers to send goods to customers in Ireland is rising by more than 25% every year. A recent report from Repak has found that over 7,000 tonnes of waste per year are being generated by online shopping.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Retrofit/upgrade parts of the product, ensure the product is maintained, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4d-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(d)(i)",
+  "questionText": "Discuss the importance of recruiting the best available people to work for a company.",
+  "stem": "The human resources (HR) department of a manufacturing company has many roles. These roles may include recruiting employees, determining benefits and compensation, suggesting employee training and development strategies, and dealing with employee relations.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An ability to work with others as part of a team, the need to have the right skill set, e.g - being creative, visionary, to be able to communicate, manage information/time/ finance, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(d)(ii)",
+  "questionText": "Give two benefits for a company which regularly upskills its employees.",
+  "stem": "The human resources (HR) department of a manufacturing company has many roles. These roles may include recruiting employees, determining benefits and compensation, suggesting employee training and development strategies, and dealing with employee relations.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Less human error, greater productivity, better reputation, better staff morale, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5a-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(a)(i)",
+  "questionText": "Name a specific material suitable for the manufacture of each item shown above.",
+  "stem": "A safety helmet, hall table, cooking pot and sports sock are shown in the images.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Safety Helmet: ABS, Hall Table: Oak, Cooking Pot: Copper, Sports Sock: Cotton, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(a)(ii)",
+  "questionText": "Briefly describe how the handle could be joined to the cooking pot.",
+  "stem": "A safety helmet, hall table, cooking pot and sports sock are shown in the images.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A rivet joint could be used to join the handle to the pot, nuts and bolts, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(b)(i)",
+  "questionText": "Explain what is meant by the term alloy when referring to metals. Suggest an alternative material for the manufacture of the frame.",
+  "stem": "The images show a modern folding bicycle. The frame of the bicycle is manufactured using aircraft grade aluminium alloy.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An alloy consists of two or more metals mixed together to produce a new material. Typically, when produced alloys have more desirable properties compared to the properties of the individual materials used to make the alloy. Steel Alloy, Carbon Fibre, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(b)(ii)",
+  "questionText": "Give two properties of an aluminium alloy which make it a suitable material for the construction of the bicycle frame.",
+  "stem": "The images show a modern folding bicycle. The frame of the bicycle is manufactured using aircraft grade aluminium alloy.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lightweight, strong, rust proof, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(b)(iii)",
+  "questionText": "Using notes and annotated sketches, suggest a suitable means of allowing the frame of the bike to fold.",
+  "stem": "The images show a modern folding bicycle. The frame of the bicycle is manufactured using aircraft grade aluminium alloy.",
+  "figureKey": "technology-2018-OL-scheme-secC-q5b-iii",
+  "questionFigureKey": "technology-2018-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A hinge joint would allow both parts of the main frame to fold. A quick release lever could be used to lock/unlock the hinge, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(c)(i)",
+  "questionText": "Explain what is meant by the abbreviation CNC.",
+  "stem": "CNC machines are used in the manufacture of the bicycle.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Computer Numerically Controlled.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A CAD file of a part to be manufactured is sent to the CNC machine for production, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(c)(ii)",
+  "questionText": "Outline two reasons why CNC machines are used in the manufacture of products.",
+  "stem": "CNC machines are used in the manufacture of the bicycle.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accuracy, speed, efficiency, safety, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5d-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(d)(i)",
+  "questionText": "Describe what is meant by the term smart material.",
+  "stem": "Electrochromic glass is a modern smart material. It changes its colour and transparency when a small electrical current is passed through it.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The properties of a smart material can be changed in a controlled fashion by external stimuli, e.g. light, temperature, electricity, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2018-ol-c5d-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5(d)(ii)",
+  "questionText": "Suggest two uses of electrochromic glass in everyday life.",
+  "stem": "Electrochromic glass is a modern smart material. It changes its colour and transparency when a small electrical current is passed through it.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Provide privacy for conferences/meetings, controlled lighting/heating in a building, improve energy efficiency of a building, security benefits, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
   "id": "tech-2019-hl-a1-i",
   "topicId": "tech-core-design",
   "conceptId": "core-design",
