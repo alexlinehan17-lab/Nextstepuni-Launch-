@@ -75,7 +75,19 @@ class LaneError(SystemExit):
 #   U+F0FC  Wingdings 0xFC, a tick, and U+F04A, Wingdings 0x4A, a smiling
 #           face: 2022 OL paper p12 (Q13(b)(i)), rendered at 150 dpi and looked
 #           at; folded to U+2713 and U+263A.
-LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022', '\uf0fc': '\u2713', '\uf04a': '\u263a'}
+#   U+0D45, U+0D46  Cambria's equation operators, which its text layer files
+#           under Malayalam code points: 2020 HL Section C p3 (the scoring
+#           rules, "+5 points") and p6 (Q16(a)(viii)'s tables, "+2 points",
+#           "-2 points", "sun -1"), rendered at 160-200 dpi and looked at; they
+#           draw a plus and a minus sign, folded to U+002B and U+2212.
+#   U+F0A7  Wingdings 0xA7, a small square bullet: 2020 HL Section C p6
+#           (Q16(a)(vi)'s three cases), rendered at 200 dpi and looked at;
+#           folded to U+2022 as glyphmap.json already reads it.
+#   U+F02D  Symbol 0x2D, a dash bullet: 2020 HL Section C p7 (part (b)'s two
+#           differences), rendered at 200 dpi and looked at; folded to a
+#           hyphen as glyphmap.json already reads it.
+LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022', '\uf0fc': '\u2713', '\uf04a': '\u263a',
+               '\u0d45': '+', '\u0d46': '\u2212', '\uf0a7': '\u2022', '\uf02d': '-'}
 
 
 def fold(text):
@@ -425,8 +437,12 @@ def build_row(sitting, spec, i, question_text, where):
 
 def check_note(where, note):
     """A note is the scheme's direction for ONE part. A slice that runs into
-    the next question's head took its start from an earlier part."""
-    if re.search(r'\bQuestion \d', note) or len(note) > 600:
+    the next question's head took its start from an earlier part. 900
+    characters holds the longest single part's own directions: 2020 HL
+    Section C prints a descriptor list for every step of a scale, up to 828
+    characters for Q16(b)(iii), each bounded by the part's head and its last
+    descriptor."""
+    if re.search(r'\bQuestion \d', note) or len(note) > 900:
         raise LaneError(f'{where}: note runs past its part: {note[:90]!r}')
     return note
 
@@ -458,7 +474,9 @@ def build_card(sitting, mod, entry, figures):
     if printed is not None:
         page = printed.page if isinstance(printed, Lift) else None
         sitting.lift(printed)              # the tariff cell must be on the page
-        if str(total) not in ws(sitting.lift(printed)):
+        # A part priced per item ("Each Correct Item 1 mark") for a printed
+        # count ("Identify three"): tariff_note says how the total follows.
+        if not entry.get('tariff_note') and str(total) not in ws(sitting.lift(printed)):
             raise LaneError(f'{where}: total {total} is not in the printed tariff '
                             f'{sitting.lift(printed)!r}')
     else:
@@ -507,6 +525,14 @@ def build_card(sitting, mod, entry, figures):
             if key not in figures:
                 raise LaneError(f'{where}: figure {key} is not published -- run crops')
             card[field] = key
+    if entry.get('labels'):
+        # A question naming a lettered symbol ("the symbol labelled A") needs
+        # the letter decoded; the meaning is the scheme's own answer, shown in
+        # the reveal's label key, never typed.
+        if not card.get('figureKey'):
+            raise LaneError(f'{where}: a labelled figure must be the card\'s figure')
+        card['labelKey'] = [{'letter': k, 'meaning': sitting.lift(v), 'askedInThisQuestion': True}
+                            for k, v in entry['labels'].items()]
     if card.get('questionFigureKey'):
         # The crop is the printed matter beside the ask, never the ask itself:
         # the lifted stem and question stay on the card around it.

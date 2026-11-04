@@ -746,9 +746,10 @@ const decks = [
    * 2024 Ordinary, the 3 asks the August cards missed: 176 -> 179.
    * 2023 Higher, the 10 asks the August cards missed: 275 -> 285.
    * 2023 Ordinary, the 10 asks the August cards missed: 179 -> 189.
-   * 2022 Higher, the 8 asks the August cards missed: 285 -> 293. */
+   * 2022 Higher, the 8 asks the August cards missed: 285 -> 293.
+   * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205. */
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 293, '33ddb00cd5f017f7fcb82c596b9d7c5a291b2f96ae6c4a89aec9a2a7568f5451'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 189, '477c18a91d707edcf0a9fd477976198ed20a86a2a13ad3005b0a7cd0f32a2c8d'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 205, '0727c56d599637edca48335872e7794f33046cc37c994638c4c8f681f85400b6'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -1452,6 +1453,7 @@ describe('Mark Bank card preservation', () => {
     // 2023 Higher residue, 10 asks, 10 cards: 23,471.
     // 2023 Ordinary residue, 10 asks, 10 cards: 23,481.
     // 2022 Higher residue, 8 asks, 8 cards: 23,489.
+    // 2022 Ordinary residue, 16 asks, 16 cards: 23,505.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1468,9 +1470,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_489 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_505 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_489 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_505 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

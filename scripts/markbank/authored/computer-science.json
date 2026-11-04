@@ -16799,5 +16799,603 @@
   "figureKey": "computer-science-2022-HL-scheme-q16a-iv",
   "questionFigureKey": "computer-science-2022-HL-paper-q16-figure",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q2",
+  "topicId": "cs-3-3",
+  "conceptId": "traffic-at-busy-road-junction-similar",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q2",
+  "questionText": "The traffic at a busy road junction, similar to that in Figure 1, is studied using a computer model. Briefly explain two reasons why using a computer model might be useful in this situation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any two of the above or similar:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Identifying traffic patterns.",
+      "Help improve traffic flow at the junction.",
+      "Change traffic light times at different times of the day.",
+      "Get information on different modes of transportation being used.",
+      "Save people time, stop delays"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "openList": true,
+    "contextNote": "First Correct: Very good explanation – clear understanding demonstrated 3 marks Fair explanation – limited understanding 1 mark Second Correct: Very good explanation – clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2022-OL-paper-q2-fig1",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q6-a",
+  "topicId": "cs-2-2",
+  "conceptId": "text-missing-symbol-labelled",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q6(a)",
+  "questionText": "What text is missing from the symbol labelled A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any one of the above or similar:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Guess < Number (Less than)",
+      "Number greater than Guess (Greater than)"
+     ]
+    },
+    "contextNote": "Very clear instruction– uses correct words or symbols and has correct logic 3 marks Fair instruction – correct idea but small mistake with symbols or logic 1 mark"
+   }
+  ],
+  "stem": "The flowchart, in Figure 5 below, is that of an algorithm for a game where the user has to guess a number between 1 and 10 that has been randomly selected by the computer.",
+  "figureKey": "computer-science-2022-OL-paper-q6-flow",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Guess < Number (Less than)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "cs-2022-ol-q6-b",
+  "topicId": "cs-2-2",
+  "conceptId": "game-will-end-after-user-makes",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q6(b)",
+  "questionText": "This game will end after the user makes one guess. Suggest an improvement to the algorithm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any one of the above or similar:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Give user a second chance to guess.",
+      "Error checking to see that guess is between 1 and 10.",
+      "Show the correct answer at the end.",
+      "Ask the user do they want to play again.",
+      "Any improvement of merit."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any one of the above or similar: Correct 2 marks"
+   }
+  ],
+  "stem": "The flowchart, in Figure 5 below, is that of an algorithm for a game where the user has to guess a number between 1 and 10 that has been randomly selected by the computer.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q6-flow",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q9-a",
+  "topicId": "cs-3-2",
+  "conceptId": "issues-dataset-would-prevent-friend-being",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q9(a)",
+  "questionText": "Identify three issues with the dataset that would prevent your friend from being able to analyse it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identify three issues with the dataset that would prevent your friend from being able to analyse it.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Four",
+      "9.5",
+      "10/10",
+      "5 or 6"
+     ]
+    },
+    "contextNote": "Each Correct Item 1 mark"
+   }
+  ],
+  "stem": "Your friend has designed the app in Figure 6 so that they can ask people to review movies by providing a score out of 10. When the app goes live the following data is collected. Your friend wants to write a Python program to analyse the data.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q9-fig6",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q9-b",
+  "topicId": "cs-3-2",
+  "conceptId": "improvement-app-so-data-cleaner-can",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q9(b)",
+  "questionText": "Suggest an improvement to the app so that the data is cleaner and can be analysed more easily.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any one of the above or similar:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Have a drop down menu so only numbers can be picked.",
+      "Have a keypad with numbers 1 – 10",
+      "Have an error message if the user enters an invalid score"
+     ]
+    },
+    "contextNote": "Good explanation – clear improvement described 2 marks Fair explanation – improvement mentioned but not described 1 mark"
+   }
+  ],
+  "stem": "Your friend has designed the app in Figure 6 so that they can ask people to review movies by providing a score out of 10. When the app goes live the following data is collected. Your friend wants to write a Python program to analyse the data.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q9-fig6",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q11",
+  "topicId": "cs-2-3",
+  "conceptId": "complete-truth-table-logic-gate-7",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q11",
+  "questionText": "Complete the truth table for the AND logic gate, shown in Figure 7.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "INPUTS OUTPUTS A B A AND B",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "0 0 0 / False",
+      "0 1 0 / False",
+      "1 0 0 / False",
+      "1 1 1 / True"
+     ],
+     "perOptionSteps": [
+      1,
+      1,
+      1,
+      2
+     ]
+    },
+    "contextNote": "Full correct response 5 marks Each Correct Item 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2022-OL-paper-q11-fig7",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q12-a",
+  "topicId": "cs-1-1",
+  "conceptId": "number-square-will-player-finish-when",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q12(a)",
+  "questionText": "What number square will the player finish on when they follow these instructions?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "7",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Correct answer 3 marks Attempt work of merit 1 mark"
+   }
+  ],
+  "stem": "In a game, shown in Figure 8, a player begins on the Start square, facing towards square 1. They must follow the instructions given to them and see what number square they end up on. There are only three instructions in the game. Instructions for the game are provided in pseudocode.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q12a-game",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q12-b",
+  "topicId": "cs-1-1",
+  "conceptId": "number-square-will-player-finish-when",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q12(b)",
+  "questionText": "What number square will the player finish on when they follow these instructions?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "1",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Correct answer 2 marks Attempt work of merit 1 mark"
+   }
+  ],
+  "stem": "In a game, shown in Figure 8, a player begins on the Start square, facing towards square 1. They must follow the instructions given to them and see what number square they end up on. There are only three instructions in the game. Instructions for the game are provided in pseudocode.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q12b-game",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q13-a-i",
+  "topicId": "cs-2-4",
+  "conceptId": "order-memory-sizes-list-smallest-largest",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q13(a)(i)",
+  "questionText": "Order the memory sizes in the list below from smallest to largest. The smallest should be placed in row 1 and the largest in row 4. Terabyte Bit Gigabyte Kilobyte",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 (smallest) Bit",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2 Kilobyte",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3 Gigabyte",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 (largest) Terabyte",
+    "marks": 1
+   }
+  ],
+  "stem": "Computer memory is measured in bits. The more bits combined together the bigger the memory."
+ },
+ {
+  "id": "cs-2022-ol-q13-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "24-hour-digital-alarm-clock-displays",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q13(a)(ii)",
+  "questionText": "A 24-hour digital alarm clock displays 4 digits at a time, as shown in Figure 9. Each digit is stored internally as a 4-digit binary code. The time shown on the clock in Figure 9 is represented as follows: What time will be shown on the clock with the following binary code?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "20:59",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Each correct digit 2 marks Work of merit for a digit 1 mark"
+   }
+  ],
+  "stem": "Computer memory is measured in bits. The more bits combined together the bigger the memory.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q13a-ii",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q13-b-i",
+  "topicId": "cs-2-4",
+  "conceptId": "whether-statements-true-false-putting-tick",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(i)",
+  "questionText": "State whether each of the following statements is true or false, by putting a tick (✓) in the appropriate box.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The letter r can be represented in ASCII. — True",
+    "marks": 1,
+    "contextNote": "Each correct answer 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The emoji symbol ☺ can be represented in ASCII. — False",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The number 9 can be represented in Unicode. — True",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The symbol @ can be represented in Unicode. — True",
+    "marks": 1
+   }
+  ],
+  "stem": "ASCII (American Standard Code for Information Interchange) and Unicode are two different character sets used to encode and decode messages in digital communication.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q13b-tf",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q13-b-ii",
+  "topicId": "cs-2-4",
+  "conceptId": "extended-ascii-uses-8-bits-per",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(ii)",
+  "questionText": "Extended ASCII uses 8 bits per character rather than 7 bits. Calculate the number of extra characters that can be represented using 8 bits rather than 7 bits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "128 extra characters",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Correct value 4 marks Work of merit 2 mark"
+   }
+  ],
+  "stem": "ASCII (American Standard Code for Information Interchange) and Unicode are two different character sets used to encode and decode messages in digital communication."
+ },
+ {
+  "id": "cs-2022-ol-q13-c-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "use-solid-drives-ssds-rather-hard",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q13(c)(ii)",
+  "questionText": "The use of Solid State Drives (SSDs) rather that Hard Disk Drives (HDDs) has increased in recent years. List two differences",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Best response marked out of 3 and second best response marked out of 2 as follows:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Solid State drives can operate faster than Hard disk drives.",
+      "Solid state drives are lighter than the Hard disk drive.",
+      "Solid State Drives is smaller in size (takes up less space)",
+      "Hard Disk Drives are cheaper than Solid State Drives",
+      "Solid State drive doesn’t produce noise whereas the Hard disk drive can create some noise."
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "contextNote": "Best response marked out of 3 and second best response marked out of 2 as follows: First Correct: Good explanation – clear understanding of difference 3 marks Fair explanation – limited understanding of difference 1 mark Second Correct: Good explanation – clear understanding of difference 2 marks Fair explanation – limited understanding of difference 1 Mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2022-ol-q14-b-i",
+  "topicId": "cs-2-4",
+  "conceptId": "complete-table-four-items-data-will",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q14(b)(i)",
+  "questionText": "Complete the table below with four items of data that will be required. You will need to include a suitable variable name, a description of the data and the data type for the variable. The first row has been completed for you.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any variable created regarding the above with appropriate variable name:",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Last Name (String)",
+      "Year group (Int)",
+      "Sibling in 6th Year (Boolean)",
+      "Permission slip signed (Boolean)",
+      "Parents Name (String)",
+      "Number of Siblings (int)",
+      "Any other valid piece of data relevant to the problem"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each fully correct row 2 marks Each partially correct row 1 mark"
+   }
+  ],
+  "stem": "A secondary school wants to write a computer program that will decide which of its students can leave the school grounds at lunch time. You will need to get data from the school office in order to create the program.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q14b-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q15-a-i",
+  "topicId": "cs-1-2",
+  "conceptId": "other-development-last-100-years-has",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q15(a)(i)",
+  "questionText": "Describe one other development from the last 100 years that has been very important for computing and technology.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any important development in computing and technology",
+    "marks": 2,
+    "contextNote": "Good description - clear understanding demonstrated 2 marks"
+   }
+  ],
+  "stem": "Computing and technology has made huge progress over the last 100 years. Computers are getting faster, smaller and more powerful. Figure 10 shows a timeline with some of the main computing developments over the last century.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q15-fig10",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-ol-q15-a-ii",
+  "topicId": "cs-1-2",
+  "conceptId": "select-development-either-10-development-described",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 OL Q15(a)(ii)",
+  "questionText": "Select a development from either Figure 10 or the development you described in part (i) and provide two reasons why you think this development was important.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Detailed reason why the development was important",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "For each reason: • Detailed reason why the development was important 2 marks • Brief reason why the development was important 1 mark"
+   }
+  ],
+  "stem": "Computing and technology has made huge progress over the last 100 years. Computers are getting faster, smaller and more powerful. Figure 10 shows a timeline with some of the main computing developments over the last century.",
+  "questionFigureKey": "computer-science-2022-OL-paper-q15-fig10",
+  "questionFigureIncludesPrompt": false
  }
 ]

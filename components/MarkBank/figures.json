@@ -56233,5 +56233,115 @@
   "year": 2022,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q2-fig1": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q2-fig1.png",
+  "md5": "68427432f417bd67e0c2c5f17297587e",
+  "alt": "Figure 1: an aerial photograph of a busy road junction with cars at traffic lights.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q6-flow": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q6-flow.png",
+  "md5": "ef010e87a23a239e2144675f00a42fec",
+  "alt": "Figure 5: a flowchart for a number-guessing game. Start; Number = random number between 1 and 10; Guess = user input; a decision Guess = Number? whose true branch prints \"Correct\" and whose false branch leads to a decision labelled A, its text missing. A's false branch prints \"Too High\" and its true branch prints \"Too Low\"; every branch ends at End.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q6",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q9-fig6": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q9-fig6.png",
+  "md5": "b2c851c44d4c1b7a0b7e03cd48b55bc2",
+  "alt": "Figure 6: a phone app called Movie Rater showing a film poster, a box labelled Score out of 10 and a Submit button, beside the scores collected: 8, 5, Four, 9.5, 10/10, 6 and 5 or 6.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q9",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q11-fig7": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q11-fig7.png",
+  "md5": "e09863f416e7b12710f0a35ee2f29e14",
+  "alt": "Figure 7: an AND gate with inputs A and B. Below it, the truth table with columns A, B and A AND B; the inputs read 0 0, 0 1, 1 0 and 1 1 and the output column is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q12a-game": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q12a-game.png",
+  "md5": "7bcd2b17c3bda8e84893e0e0ae4826c0",
+  "alt": "The game printed with Question 12: a table of the three instructions (Step Forward, step forward one square; Turn Right and Turn Left, rotate 90 degrees without moving), and Figure 8, a grid of numbered squares with a Start square. Below them, part (a)'s instructions: Step Forward, Turn Right, Repeat 2 times: {Step Forward}.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q12b-game": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q12b-game.png",
+  "md5": "bfb850017f95d066b7378d06d1c04a6f",
+  "alt": "The game printed with Question 12: a table of the three instructions (Step Forward, step forward one square; Turn Right and Turn Left, rotate 90 degrees without moving), and Figure 8, a grid of numbered squares with a Start square. Below them, part (b)'s instructions: Repeat 2 times: {Step Forward}, then Repeat 3 times: {Turn Right, Step Forward}.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q13a-ii": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q13a-ii.png",
+  "md5": "f2a64396ae93e48b5bf7c1a538782448",
+  "alt": "Figure 9: a digital clock showing 12:28, beside its four digits in binary (first digit 0001, second 0010, third 0010, fourth 1000). Below, the four codes the question asks about: first digit 0010, second 0000, third 0101, fourth 1001.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(a)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q13b-tf": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q13b-tf.png",
+  "md5": "c684e8765dc706df9d20e7ea9ba89f80",
+  "alt": "The four statements printed with Question 13(b)(i), each with an empty True box and an empty False box: the letter r can be represented in ASCII; the emoji symbol (a smiling face) can be represented in ASCII; the number 9 can be represented in Unicode; the symbol @ can be represented in Unicode.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q14b-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q14b-table.png",
+  "md5": "158088d53c44f22ff7d4be6c8dce63a7",
+  "alt": "The table printed with Question 14(b)(i), with columns Variable Name, Description and Data Type; the first row reads firstName, Student's first name, String, and four rows are blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(b)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q15-fig10": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig10.png",
+  "md5": "fd4865fd03e6d05245e7723a777b7f92",
+  "alt": "Figure 10: a timeline of computing developments: 1943 the first mainframe computer; 1946 the first general purpose computer using vacuum tubes; 1953 the first computer programming language COBOL; 1958 the first integrated circuit (computer chip); 1971 the floppy disk; 1989 Tim Berners-Lee proposes the World Wide Web.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
  }
 }
