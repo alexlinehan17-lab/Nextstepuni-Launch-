@@ -36,10 +36,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Give two examples where Personal Protective Equipment (PPE) must be worn in the Engineering room.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -87,10 +87,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q1-d", topicId: "eng-3-14", conceptId: "forms-renewable-energy",
     section: "A", questionRef: "2021 OL Q1(d)",
     questionText: "Name two forms of renewable energy.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Wind energy.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Wind energy.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -146,10 +146,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(k)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define the term brittleness in relation to the properties of materials and name one material which is brittle.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel / Cast iron is an example of a brittle material.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel / Cast iron is an example of a brittle material.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1126,10 +1126,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Give two safety precautions to be observed when using a pillar drilling machine.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ensure the piece being drilled is secured in a machine vice.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Personal Protective Equipment (PPE) must be worn to protect the eyes /face i.e., goggles / face shield.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Ensure the piece being drilled is secured in a machine vice.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Personal Protective Equipment (PPE) must be worn to protect the eyes /face i.e., goggles / face shield.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1155,10 +1155,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q1(c)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two benefits of renewable energy.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "- Cleaner than burning fossil fuels.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "- Renewable energy such as wind or solar will not run out.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "- Cleaner than burning fossil fuels.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "- Renewable energy such as wind or solar will not run out.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1198,10 +1198,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q1(g)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Explain the term non-ferrous and name one non-ferrous metal.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Non-ferrous metals or alloys do not contain any amounts of iron.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Aluminium is a non-ferrous metal as it does not contain iron.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Non-ferrous metals or alloys do not contain any amounts of iron.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Aluminium is a non-ferrous metal as it does not contain iron.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1245,10 +1245,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q1(k)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define the property malleability in metals and name one metal which is malleable.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Name: Lead", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Name: Lead", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1275,10 +1275,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q1-m", topicId: "eng-2-10", conceptId: "safety-precautions-be-followed-when-soldering",
     section: "A", questionRef: "2022 OL Q1(m)",
     questionText: "List two safety precautions to be followed when soldering electronic components.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Keep your hands a safe distance back from the tip of the solder iron.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Always replace the soldering iron back in its holder when not in use.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Keep your hands a safe distance back from the tip of the solder iron.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Always replace the soldering iron back in its holder when not in use.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2075,10 +2075,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q1(c)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two reasons why pilot holes are used when drilling.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Helps to guide a larger drill through the material providing a more accurate and better located hole.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Can help provide a better cutting action for larger drills.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Helps to guide a larger drill through the material providing a more accurate and better located hole.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Can help provide a better cutting action for larger drills.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2177,10 +2177,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q1(k)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define electrical conductor in relation to the properties of metals and name one metal which is used as an electrical conductor.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Definition: An electrical conductor is a material that allows electricity to flow through it.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Example: Copper", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Definition: An electrical conductor is a material that allows electricity to flow through it.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Example: Copper", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2209,10 +2209,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q1(m)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "List two benefits of using cutting fluids when machining.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Provides a better finish on the workpiece being cut.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Reduces the temperature of the workpiece and cutting tool being used.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Provides a better finish on the workpiece being cut.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Reduces the temperature of the workpiece and cutting tool being used.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2959,10 +2959,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Identify mechanism A and give one application for it.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mechanism A is a ratchet and pawl.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Application, used in a socket wrench / ratchet.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Mechanism A is a ratchet and pawl.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Application, used in a socket wrench / ratchet.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3015,10 +3015,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(e)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two safety precautions that should be followed when using a metal shears.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Make sure your hands are a safe distance from the cutting blades.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Always check, nobody is behind you when you pull down the arm as the arm could hit them.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Make sure your hands are a safe distance from the cutting blades.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Always check, nobody is behind you when you pull down the arm as the arm could hit them.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3029,10 +3029,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-ol-q1-f", topicId: "eng-1-2", conceptId: "term-alloy-alloy",
     section: "A", questionRef: "2024 OL Q1(f)",
     questionText: "Explain the term alloy and name one alloy.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A metal alloy is a metal made of two or more metals mixed together.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "An example of a metal alloy is bronze, a mixture of copper and tin.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A metal alloy is a metal made of two or more metals mixed together.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "An example of a metal alloy is bronze, a mixture of copper and tin.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3044,10 +3044,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(g)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two properties of aluminium.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lightweight", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Malleable", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Lightweight", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Malleable", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3058,10 +3058,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-ol-q1-i", topicId: "eng-1-4", conceptId: "term-ferrous-metal-example-ferrous-metal",
     section: "A", questionRef: "2024 OL Q1(i)",
     questionText: "Explain the term ferrous metal and give one example of a ferrous metal.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A ferrous metal is a metal that contains iron.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "An example of a ferrous metal is steel.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A ferrous metal is a metal that contains iron.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "An example of a ferrous metal is steel.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3089,10 +3089,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(l)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define the term brittleness and name one material that is brittle.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brittleness is a material’s tendency to easily break, crack or snap.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Glass is a brittle material.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Brittleness is a material’s tendency to easily break, crack or snap.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Glass is a brittle material.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3964,10 +3964,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two safety precautions to be observed when using a bandsaw.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to protect your eyes from flying debris.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Always maintain a safe distance between your hands and the blade.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to protect your eyes from flying debris.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Always maintain a safe distance between your hands and the blade.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3979,10 +3979,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(b)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Explain the term permanent joint and give one example of a permanent joint in engineering.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4022,10 +4022,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(e)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two advantages of using a 3D printer for manufacture in engineering.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive manufacturing process.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "More complex products can be designed and produced.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive manufacturing process.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "More complex products can be designed and produced.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4037,10 +4037,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(f)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Explain the term non‐ferrous and name one non‐ferrous metal.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Metals which do not contain iron, are referred to as non‐ferrous metals.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Brass is an example of a non‐ferrous metal.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Metals which do not contain iron, are referred to as non‐ferrous metals.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Brass is an example of a non‐ferrous metal.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4066,10 +4066,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(h)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define malleability in relation to the properties of materials and name one material which is malleable.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Lead is a malleable metal.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Lead is a malleable metal.", marks: 3 },
     ],
   } as SecCard,
   {

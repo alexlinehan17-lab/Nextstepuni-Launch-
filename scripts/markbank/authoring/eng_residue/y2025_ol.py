@@ -370,6 +370,17 @@ CARDS = [
                "Marks'."),
 ]
 
+# Question 1 parts the scheme prices half and half, which the automatic author
+# read from the marks grid as one six-mark total; each row now carries the
+# half printed beside it (eng_residue REPRICE). Opened on the scheme page named.
+REPRICE = {
+    'eng-2025-ol-q1-a': ([3, 3], 'Precautions Award 3 + 3 Marks'),  # scheme p7
+    'eng-2025-ol-q1-b': ([3, 3], 'Explanation Award 3 Marks, Example Award 3 Marks'),  # scheme p7
+    'eng-2025-ol-q1-e': ([3, 3], 'Advantages Award 3 + 3 Marks'),  # scheme p7
+    'eng-2025-ol-q1-f': ([3, 3], 'Explanation Award 3 Marks, Example Award 3 Marks'),  # scheme p7
+    'eng-2025-ol-q1-h': ([3, 3], 'Definition Award 3 Marks, Name Award 3 Marks'),  # scheme p8
+}
+
 TOPICS = {
     'eng-2025-ol-q4-c-ii': ('eng-2-10', 'a method of joining sheet aluminium is joining; '
                             '"aluminium" outvoted it'),

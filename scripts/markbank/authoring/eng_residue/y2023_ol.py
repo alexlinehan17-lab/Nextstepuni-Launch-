@@ -207,6 +207,15 @@ CARDS = [
          notes="The scheme prints 'Award 1 @ 6 Marks'. " + _OR_C),
 ]
 
+# Question 1 parts the scheme prices half and half, which the automatic author
+# read from the marks grid as one six-mark total; each row now carries the
+# half printed beside it (eng_residue REPRICE). Opened on the scheme page named.
+REPRICE = {
+    'eng-2023-ol-q1-c': ([3, 3], 'Two reasons: (Award 3 + 3)'),  # scheme p7
+    'eng-2023-ol-q1-k': ([3, 3], 'Definition: Award 3 Marks, One example: Award 3 Marks'),  # scheme p10
+    'eng-2023-ol-q1-m': ([3, 3], 'Two benefits: (Award 3 + 3 Marks)'),  # scheme p11
+}
+
 TOPICS = {
     'eng-2023-ol-q6-c-ii': ('eng-2-11', 'describing knurling or parting off is lathe '
                             'work, machining; "manufacture" outvoted it'),

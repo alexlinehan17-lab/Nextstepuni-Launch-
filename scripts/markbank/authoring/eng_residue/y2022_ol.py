@@ -189,6 +189,17 @@ CARDS = [
           ('iv', (138, 363, 330, 381), (345, 364)))],
 ]
 
+# Question 1 parts the scheme prices half and half, which the automatic author
+# read from the marks grid as one six-mark total; each row now carries the
+# half printed beside it (eng_residue REPRICE). Opened on the scheme page named.
+REPRICE = {
+    'eng-2022-ol-q1-a': ([3, 3], 'Safety Precautions Award 3 + 3'),  # scheme p7
+    'eng-2022-ol-q1-c': ([3, 3], 'Benefits Award 3 + 3'),  # scheme p7
+    'eng-2022-ol-q1-g': ([3, 3], 'Explain & name Award 3 + 3'),  # scheme p7
+    'eng-2022-ol-q1-k': ([3, 3], 'Definition & Name Award 3 + 3'),  # scheme p10
+    'eng-2022-ol-q1-m': ([3, 3], 'Safety Precautions Award 3 + 3 Marks'),  # scheme p11
+}
+
 TOPICS = {
     'eng-2022-ol-q5-a-ii': ('eng-1-9', 'describing a plastic manufacturing process is '
                             'plastics processing, not manufacturing systems'),
