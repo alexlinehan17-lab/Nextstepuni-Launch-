@@ -1385,3 +1385,75 @@ Also in this commit:
 Checks: econ_review 19/66; provcheck 3761 claims, 0 untraceable; build 923
 cards, 0 dropped; reconcile 862/2,206, 2019 HL 70/70, 0 excluded, 0 orphans;
 cardlint clean; seven Economics suites pass.
+
+## 2019 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper and 40 scheme pages viewed (scheme pp1-5 cover, notes, index and
+the Summary of Mark Allocations, which agrees with every tariff; scheme pp37-40
+and paper pp11-12 blank). 66 routes for the 67 printed asks: 13 Section A cards
+and 53 Section B cards. Section B Q1(b)(ii)-(iii) is one card, because the
+scheme prices a characteristic with its note as one 2 @ 6 over both parts.
+Q4(c)(ii) is two stance routes, because the scheme credits YES and NO with
+different content. Census `economics/census/census-2019-ol.py`; review and
+Atlas mappings `record/record-2019-ol.py`; bindings `record/bind-2019-ol.py`;
+13 crops `crops/crop-2019-ol.py` (6 hidden scheme solutions, 5 whole-question
+crops, 2 data crops). The scheme .md was generated the way 2019-hl.md
+was: `--marks-column`, then tables, blocks (this file only), columns,
+fractions and maths.
+
+Decisions on tariffs the scheme prints without attributing them to a response:
+- Section A Q3, Q4, Q6 and Q9 print a descending ladder over a list ("1 @ 8,
+  1 @ 4, 2 @ 2"; "1 @ 8, 2 @ 4"; "1 @ 8, 3 @ 3"; "1 @ 5, 3 @ 4"). Each is one
+  menu claimed at the printed steps. Q9's ladder runs across (a) and (b), so
+  it is one card for the question.
+- Section A Q1 "8 @ 2" over the eight words of three names: a row for each
+  name at 2 marks a word (4, 6, 6).
+- Section B Q2(a) "11 (5 @ 2) + 1", "11 (5 @ 2) + 1" and "6 (3 + 3) + 1 + 1" in
+  the summary. The graph notes price the labels together ("Labels: P, Q, D/C
+  and S/C = 4 marks"), so each card carries its points row plus that labels
+  row at its own share (1, 1, 2).
+- Section B Q2(b) "2 @ 10 (4 + 4 + 2)" is one column for each situation. Each
+  of (i)-(iii) is a card with a row for each situation, and each row pairs the
+  situation with the scheme's cell.
+- Section B Q3(c)(i), Q5(a), Q5(b), Q5(c)(ii) and Q8(b)(ii) price one response
+  for each named head (firms and the economy; students, the university and
+  banks; households, firms and government; customers, employees and the local
+  community). Each head is a heading row at its printed price.
+- Section B Q6(c) "4 @ 6 (3 + 3)": an argument for and an argument against any
+  two of three measures. It is one card with a for row and an against row,
+  each claimed twice at 6. Every option is named by the measure it is printed
+  under ("<measure> — <argument>"; the measure, as the scheme's reprinted
+  question bullet prints it, then the table cell). There are 10 for-options
+  and 12 against-options.
+- Section B Q7(c)(ii): the multiplier answer "2" is a single numeral the md
+  loader drops, so it is cut from the raw scheme file. The fraction working is
+  a hidden crop.
+
+The 24 "label — value" menu options (Section A Q6's "INJECTIONS — EXPORTS" and
+"LEAKAGES — IMPORTS", whose column heading and item are not adjacent in the
+text layer, and the 22 Section B Q6(c) options) trace by
+halves. That is the build's rule and markBankDeck's rule for a table read
+across (2017 HL Biology Q15(b)(i)). `provcheck.mjs` does not have that rule
+and reports them as untraceable. The build drops none of them.
+`scratchpad/econ-lane/buildrule.mjs` applies the build's exact rule to every
+2019 card: 549 claims, 0 untraceable.
+
+Topic review: 7 commercial headings are recorded as reference anomalies:
+- Section A Q1 under acronyms (a study-aid heading with no syllabus node).
+- Section A Q3 under the labour market (the factors of production are Scarcity
+  & Choice, as 2021-2023 OL file the same table).
+- Section A Q8 under government intervention.
+- Section B Q4 under globalisation (international trade).
+- Section B Q5(b)-(c) twice, under globalisation and under formulas.
+- Section B Q6 under government intervention (taxation and the Budget).
+
+Refcheck: Section B Q3(b)(i), Q4(c)(i) and Q8(b)(i) are asks of four or five
+words, read by hand against paper pp7 and 10 (`econ_refs.HAND_CHECKED`).
+
+Checks:
+- econ_review: 20/66.
+- build: 989 cards, 0 dropped.
+- reconcile: 929/2,206, with 2019 OL at 67/67, 0 excluded and 0 orphans.
+- refcheck: 0 wrong, 3 unplaced (the 2026 OL three).
+- cardlint: clean.
+- The seven Economics suites pass.

@@ -127,19 +127,25 @@ describe('Economics exam-topic registry', () => {
       referenceReportedAssociations: 1851,
       referenceOfficialAssociations: 1120,
       referenceMockAssociations: 731,
-      // 903 headings resolve to a local paper question; 86 of them are
+      // 903 headings resolve to a local paper question; 93 of them are
       // contradicted by the SEC-paper topic review (economics-sec-topic-
       // reviews.json, each with its reason) and are recorded as reference
       // anomalies rather than matches. Card tags are unchanged. The 2019
       // Higher review (2026-11-04) added five: Section A Q3 (development and
       // growth, not monetary policy), Q9 (not Government Intervention),
       // Section B Q4(c) twice (skills shortages are the labour market) and
-      // Q6 (inflation and competitiveness, not globalisation).
-      matchedAssociations: 817,
-      referenceAnomalyAssociations: 86,
+      // Q6 (inflation and competitiveness, not globalisation). The 2019
+      // Ordinary review added seven: Section A Q1 (acronyms, a study-aid
+      // heading with no syllabus node), Q3 (the factors of production, not the
+      // labour market), Q8 (scarcity, not Government Intervention), Section B
+      // Q4 (international trade, not globalisation), Q5(b)-(c) twice (interest
+      // rates and post-office closures, neither globalisation nor a formula)
+      // and Q6 (taxation and the Budget, not Government Intervention).
+      matchedAssociations: 810,
+      referenceAnomalyAssociations: 93,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 735,
+      matchedQuestionTopicLinks: 728,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

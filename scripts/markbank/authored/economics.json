@@ -3211,6 +3211,2957 @@
   "notes": ""
  },
  {
+  "id": "econ-2019-ol-sa-q1",
+  "topicId": "economics-4-1",
+  "conceptId": "eu-ecb-and-wto",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q1",
+  "questionText": "What do the following letters stand for? Write each answer in the appropriate space. EU ECB WTO",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-eu",
+    "kind": "point",
+    "verbatim": "EU European Union",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "EU, 4 marks: 2 for each word. The scheme prints 8 @ 2 over the eight words of the three names."
+   },
+   {
+    "id": "r-ecb",
+    "kind": "point",
+    "verbatim": "ECB European Central Bank",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "ECB, 6 marks: 2 for each word."
+   },
+   {
+    "id": "r-wto",
+    "kind": "point",
+    "verbatim": "WTO World Trade Organisation",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "WTO, 6 marks: 2 for each word."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q2-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-perfect-competition",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q2(i)",
+  "questionText": "Write in words the full label (not abbreviations) for each of the lines numbered 1 and 2. Use the answer box provided.",
+  "stem": "The diagram below represents the long run equilibrium of a firm in Perfect Competition.",
+  "figureKey": "economics-2019-OL-paper-p02-q2-question",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 Marginal cost",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Line 1, 6 marks."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2 Average cost",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Line 2, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q2-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "equilibrium-in-perfect-competition",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q2(ii)",
+  "questionText": "On the above diagram show: • The price the firm will charge for its output (use label P1) • The output the firm will produce in equilibrium (use label Q1).",
+  "stem": "The diagram below represents the long run equilibrium of a firm in Perfect Competition.",
+  "figureKey": "economics-2019-OL-scheme-p06-q2-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 marks."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1).",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 marks."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p02-q2-question"
+ },
+ {
+  "id": "econ-2019-ol-sa-q3",
+  "topicId": "economics-0-1",
+  "conceptId": "examples-of-factors-of-production",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q3",
+  "questionText": "State examples of the four factors of production under each of the following headings: Factor Example of factor of production Land Labour Capital Enterprise",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 8, 1 @ 4, 2 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An example for each factor",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "All four factors: the first correct example 8 marks, the next 4, the last two 2 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 8,
+     "options": [
+      "Land — The ground on which the factory is built / raw materials used to make product / oil field, mine, forest.",
+      "Labour — The workers who produce the products / labourers, plumber.",
+      "Capital — Machinery / factory building used in production of the products / technology.",
+      "Enterprise — The owners / shareholders who make the decisions and take the risks."
+     ],
+     "perOptionSteps": [
+      8,
+      4,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q4",
+  "topicId": "economics-0-0",
+  "conceptId": "economists-and-their-ideas",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q4",
+  "questionText": "Name the economist associated with any three of the following economic ideas/concepts listed below: Economic Idea / Concept Name of Economist A Canons of Taxation B Theory of Population and Food Supply C Worker exploitation in a capitalist system D The multiplier",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 8, 2 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economist named — any three",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Any three: the first 8 marks, the next two 4 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "Canons of Taxation — Adam Smith",
+      "Theory of Population and Food Supply — Thomas Malthus",
+      "Worker exploitation in a capitalist system — Karl Marx",
+      "The multiplier — John Maynard Keynes"
+     ],
+     "perOptionSteps": [
+      8,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q5-i",
+  "topicId": "economics-3-0",
+  "conceptId": "gnp-in-full",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q5(i)",
+  "questionText": "What do the letters GNP stand for?",
+  "stem": "In 2017 the GNP of a country was €44 billion. In 2018 the GNP was €46.2 billion.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 (3 x 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gross National Product.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "9 marks: 3 for each word."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q5-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "percentage-increase-in-gnp",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q5(ii)",
+  "questionText": "Calculate the percentage increase in GNP between 2017 and 2018. Show your workings",
+  "stem": "In 2017 the GNP of a country was €44 billion. In 2018 the GNP was €46.2 billion.",
+  "figureKey": "economics-2019-OL-scheme-p07-q5ii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: 5%",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The answer with its working, 7 marks. The scheme sets the working as a fraction; the figure shows it as printed."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q6",
+  "topicId": "economics-3-0",
+  "conceptId": "injections-and-leakages",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q6",
+  "questionText": "The items listed below are examples of injections or leakages as they relate to the Circular Flow of National Income. From the list indicate which are injections and which are leakages.",
+  "stem": "",
+  "figureKey": "economics-2019-OL-scheme-p08-q6-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 8, 3 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Each item placed",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "All four items: the first correct placement 8 marks, the other three 3 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 8,
+     "options": [
+      "INJECTIONS — INVESTMENT EXPENDITURE",
+      "INJECTIONS — EXPORTS",
+      "LEAKAGES — TAXATION",
+      "LEAKAGES — IMPORTS"
+     ],
+     "perOptionSteps": [
+      8,
+      3,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p03-q6-question"
+ },
+ {
+  "id": "econ-2019-ol-sa-q7-i",
+  "topicId": "economics-3-1",
+  "conceptId": "usc-in-full",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q7(i)",
+  "questionText": "What do the letters USC stand for?",
+  "stem": "The 4.75% rate of USC was reduced to 4.5% in Budget 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 (4 + 2 + 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Universal Social Charge",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "8 marks (4 + 2 + 2)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q7-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "benefit-of-a-usc-cut",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q7(ii)",
+  "questionText": "Outline one economic benefit for workers of this reduction in the rate of USC.",
+  "stem": "The 4.75% rate of USC was reduced to 4.5% in Budget 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit for workers — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One benefit, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Increased disposable income so workers may have a higher standard of living.",
+      "Increased productivity as some workers may feel their effort is now rewarded.",
+      "Some workers may be able to save more.",
+      "Some workers may use the extra income to reduce their level of debt."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q8-a",
+  "topicId": "economics-0-1",
+  "conceptId": "scarcity-of-resources",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q8(a)",
+  "questionText": "Explain what is meant in economics by the term scarcity of resources.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Not enough factors of production and limitless wants.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The explanation, 7 marks. The scheme also accepts its second statement.",
+    "accepts": [
+     "Quantity of goods & services people like to have exceeds the amount which the economy’s resources are capable of producing."
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q8-b",
+  "topicId": "economics-0-2",
+  "conceptId": "ways-citizens-waste-resources",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q8(b)",
+  "questionText": "Outline two examples of ways Irish citizens waste resources.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way resources are wasted — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two examples, 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Buying items they may not need or want.",
+      "Not re-cycling those items which are recyclable.",
+      "Using private transport when public transport is available.",
+      "Leaving electrical items switched on or on standby."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sa-q9",
+  "topicId": "economics-1-5",
+  "conceptId": "fixed-and-variable-costs",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2019 OL Section A Q9",
+  "questionText": "(a) Explain what is meant by fixed costs and state one example of a fixed cost for a pizza delivery firm. (b) Explain what is meant by variable costs and state one example of a variable cost for a pizza delivery firm.",
+  "stem": "A pizza delivery firm must cover both its fixed costs and its variable costs in the long run.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 5, 3 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Each definition and example",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The four elements across (a) and (b): the first correct one 5 marks, the other three 4 each. The scheme prices them on one ladder, not by part.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Fixed Costs: costs which do not change as the level of output changes.",
+      "Example: Rent of pizza firm / insurance on premises/bank loan.",
+      "Variable Costs: costs which change as the level of output changes.",
+      "Example: Flour/ingredients to make the pizza; wage costs."
+     ],
+     "perOptionSteps": [
+      5,
+      4,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q1-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labels-of-imperfect-competition",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(a)(i)",
+  "questionText": "Write out in full what each of the five labels circled above represents. Copy the diagram into your answer book.",
+  "stem": "The diagram below represents the long run equilibrium of a firm in Imperfect Competition.",
+  "figureKey": "economics-2019-OL-paper-p05-q1a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-p",
+    "kind": "point",
+    "verbatim": "P Price",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks."
+   },
+   {
+    "id": "r-q",
+    "kind": "point",
+    "verbatim": "Q Quantity",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks."
+   },
+   {
+    "id": "r-ac",
+    "kind": "point",
+    "verbatim": "AC Average Cost",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks."
+   },
+   {
+    "id": "r-ar",
+    "kind": "point",
+    "verbatim": "AR Average Revenue",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks."
+   },
+   {
+    "id": "r-mr",
+    "kind": "point",
+    "verbatim": "MR Marginal Revenue",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q1-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "equilibrium-of-an-imperfectly-competitive-firm",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(a)(ii)",
+  "questionText": "Equilibrium occurs at point X on the diagram. Show on your diagram: • The price the firm will charge for its output (use label P1). • The output the firm will produce in equilibrium (use label Q1).",
+  "stem": "The diagram below represents the long run equilibrium of a firm in Imperfect Competition.",
+  "figureKey": "economics-2019-OL-scheme-p10-q1a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1).",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "P1, 5 marks. The completed diagram is in the figure."
+   },
+   {
+    "id": "r-output",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1).",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Q1, 5 marks."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p05-q1a-question"
+ },
+ {
+  "id": "econ-2019-ol-sb-q1-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "free-entry-and-exit",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(b)(i)",
+  "questionText": "Explain the term free entry and exit.",
+  "stem": "Free entry and exit is one of the characteristics of an imperfectly competitive market.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Free entry and exit exists in the industry. There are no barriers to exit/entry into the industry. Firms can come into the industry and leave the industry as they please.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The explanation, 9 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q1-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "characteristics-of-imperfect-competition",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(b)(ii)–(iii)",
+  "questionText": "State two other characteristics of Imperfect Competition. Write brief notes on each of these characteristics.",
+  "stem": "Free entry and exit is one of the characteristics of an imperfectly competitive market.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic with its note — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two characteristics, each with its note, 6 marks each. The scheme prices (ii) and (iii) together.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Many buyers No individual buyer can influence by his/her own actions the market price of the goods.",
+      "Many sellers Each seller acts independently / an individual seller can influence the quantity sold by the price it charges for its output.",
+      "Differentiated products There are differences between the goods produced / It is possible for firms to use branding, advertising to distinguish their good from that of their competitors.",
+      "Almost Perfect knowledge In the market every firm has almost full knowledge as to profits earned by other firms in the industry.",
+      "Each firm tries to maximise profits The aim of each firm is produce that quantity where MC = MR. Each firm will also try to minimise costs."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q1-c",
+  "topicId": "economics-2-0",
+  "conceptId": "more-firms-in-waste-collection",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(c)",
+  "questionText": "Outline two possible economic advantages and one possible economic disadvantage of the increased entry of firms into the market for household waste collection services.",
+  "stem": "An increasing number of firms, such as Greenstar, Clean Ireland, AES and Mr Binman, are providing household waste collection services throughout Ireland.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 9, 1 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-advantage",
+    "kind": "anyN",
+    "verbatim": "An advantage — any two",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Two advantages, 9 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 9,
+     "options": [
+      "More competitive prices Competitors may reduce their prices in order to attract new customers.",
+      "Greater range/choice of services Competitors may introduce new services e.g. a brown bin to attract customers.",
+      "Improved quality of services / more innovative Competitors may improve the quality of the service provided e.g. offer more suitable times (more frequent collections) for the consumer such as early morning collection, offer a pay per weight system.",
+      "Increased efficiency by firms Firms may be forced to become more efficient in the provision of their service and be more sustainable to compete with the new competitors."
+     ]
+    }
+   },
+   {
+    "id": "r-disadvantage",
+    "kind": "anyN",
+    "verbatim": "A disadvantage — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One disadvantage, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Duplication of services Some customers may be serviced by many firms and there may be a waste of scarce resources.",
+      "Some customers may not be provided with a service If a customer lives in a particularly remote area it may be unprofitable to provide a service or it may be provided at a high price.",
+      "Price comparisons can be difficult Consumers may find it difficult to compare the prices being charged by the service providers as the description of the service provided may vary.",
+      "Reduced market share Existing firms may face a decline in sales, profits and this could result in a reduction in employment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-a-i",
+  "topicId": "economics-1-0",
+  "conceptId": "drawing-the-demand-curve",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(a)(i)",
+  "questionText": "Draw and label the demand curve for sandwiches.",
+  "stem": "The information below represents the quantity demanded and the quantity supplied at different prices for sandwiches in a school canteen. Using the above data and one diagram (you may use graph paper if you wish):",
+  "figureKey": "economics-2019-OL-scheme-p13-q2a-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D/C: 5 points at 2 marks each = 10 marks",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "10 marks. The completed graph is in the figure."
+   },
+   {
+    "id": "r-labels",
+    "kind": "point",
+    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The D/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-a-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "drawing-the-supply-curve",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(a)(ii)",
+  "questionText": "Draw and label the supply curve for sandwiches.",
+  "stem": "The information below represents the quantity demanded and the quantity supplied at different prices for sandwiches in a school canteen. Using the above data and one diagram (you may use graph paper if you wish):",
+  "figureKey": "economics-2019-OL-scheme-p13-q2a-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "S/C: 5 points at 2 marks each = 10 marks",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "10 marks. The completed graph is in the figure."
+   },
+   {
+    "id": "r-labels",
+    "kind": "point",
+    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The S/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-a-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "equilibrium-price-and-quantity",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(a)(iii)",
+  "questionText": "Show on your diagram: • The equilibrium price of the sandwiches (use P1) • The equilibrium quantity of the sandwiches (use Q1).",
+  "stem": "The information below represents the quantity demanded and the quantity supplied at different prices for sandwiches in a school canteen. Using the above data and one diagram (you may use graph paper if you wish):",
+  "figureKey": "economics-2019-OL-scheme-p13-q2a-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P1 and Q1 : 2 x 3 marks each = 6 marks",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "6 marks. The completed graph is in the figure."
+   },
+   {
+    "id": "r-labels",
+    "kind": "point",
+    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The P and Q axis labels, 1 mark each (the scheme’s summary prints 6 (3 + 3) + 1 + 1)."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-b-i",
+  "topicId": "economics-1-0",
+  "conceptId": "which-curve-shifts",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(b)(i)",
+  "questionText": "State whether the demand curve or supply curve will shift.",
+  "stem": "The demand curve for sandwiches or the supply curve for sandwiches may shift to the right or the left due to the following: • An increase in the cost of ingredients for the sandwiches • An additional 200 students visiting due to an athletics competition in the school. In relation to each of the above situations, answer the following three questions.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-costs",
+    "kind": "point",
+    "verbatim": "Increase in the cost of ingredients for sandwiches — Supply Curve",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The rise in ingredient costs, 4 marks."
+   },
+   {
+    "id": "r-students",
+    "kind": "point",
+    "verbatim": "An additional 200 students visiting due to an athletics competition in the school — Demand Curve",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The extra students, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-b-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "which-way-the-curve-shifts",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(b)(ii)",
+  "questionText": "State whether the curve you mention will shift to the right or the left.",
+  "stem": "The demand curve for sandwiches or the supply curve for sandwiches may shift to the right or the left due to the following: • An increase in the cost of ingredients for the sandwiches • An additional 200 students visiting due to an athletics competition in the school. In relation to each of the above situations, answer the following three questions.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-costs",
+    "kind": "point",
+    "verbatim": "Increase in the cost of ingredients for sandwiches — Left",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The rise in ingredient costs, 4 marks."
+   },
+   {
+    "id": "r-students",
+    "kind": "point",
+    "verbatim": "An additional 200 students visiting due to an athletics competition in the school — Right",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The extra students, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-b-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "why-the-curve-shifts",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(b)(iii)",
+  "questionText": "Explain why the curve has shifted in the direction you have stated.",
+  "stem": "The demand curve for sandwiches or the supply curve for sandwiches may shift to the right or the left due to the following: • An increase in the cost of ingredients for the sandwiches • An additional 200 students visiting due to an athletics competition in the school. In relation to each of the above situations, answer the following three questions.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-costs",
+    "kind": "point",
+    "verbatim": "Increase in the cost of ingredients for sandwiches — Costs of production have increased and the supplier will reduce supply.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The rise in ingredient costs, 2 marks."
+   },
+   {
+    "id": "r-students",
+    "kind": "point",
+    "verbatim": "An additional 200 students visiting due to an athletics competition in the school — The additional students will, if they have income, demand sandwiches and so the demand for sandwiches will increase on the day of competition.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The extra students, 2 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "why-extend-the-ev-grant",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(c)(i)",
+  "questionText": "Outline one economic reason why the government took the above action.",
+  "stem": "The Government extended the electric vehicle (EV) purchase grant of €5,000 in Budget 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the grant — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One reason, 6 marks (4 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "CO2 emissions/cleaner environment These vehicles will help reduce emissions and help Ireland become more environmentally friendly.",
+      "Reduced dependence on fossil fuels If demand for diesel and petrol cars decreases then so too will the demand for diesel and petrol.",
+      "EU Climate change targets Ireland is committed to meeting its EU climate change targets but at present it lags behind. The above measure, if successful, may help Ireland get closer to its EU target.",
+      "Reduced EU fines More money available for other uses (opportunity cost)."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-c-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "ev-grant-and-demand",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(c)(ii)",
+  "questionText": "State and explain one economic effect the above action may have on the demand for electric vehicles (EVs) in Ireland.",
+  "stem": "The Government extended the electric vehicle (EV) purchase grant of €5,000 in Budget 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 (5 + 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand should increase. As electric vehicles become more price competitive there will be an increased demand for new vehicles.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The effect and its explanation, 7 marks (5 + 2)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q2-c-iii",
+  "topicId": "economics-1-3",
+  "conceptId": "encouraging-ev-purchases",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(c)(iii)",
+  "questionText": "State and explain two other actions the Irish government could take to encourage the purchase of electric vehicles (EVs).",
+  "stem": "The Government extended the electric vehicle (EV) purchase grant of €5,000 in Budget 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An action to encourage EV purchases — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two actions, 6 marks each (4 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Reduce motor tax/VRT Assign a lower motor tax to electric cars. (Electric vehicles are currently in the lowest tax band €120)/Have lower VRT on the purchase of electric cars.",
+      "Plug-in points / charging points nationwide / grants for installation of home chargers Increased plug-ins will facilitate the increased use of electric cars.",
+      "Allow electric vehicles to use bus lanes The use of bus lanes may entice urban dwellers to purchase electric cars.",
+      "Free parking Provide free parking for electric cars which will reduces costs and act as a further incentive.",
+      "Remove / reduce motorway tolls Exempt electric cars for motorway tolls on all Irish roads.",
+      "Reduce benefit-in-kind taxes for firms This would encourage the use of EVs by firms and thereby help Ireland meet its EU climate change targets."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-a",
+  "topicId": "economics-2-1",
+  "conceptId": "labour-market-terms",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(a)",
+  "questionText": "Explain any three of the following terms: • National minimum wage rate • Occupational mobility of labour • Benefit‐in‐kind • Public sector employment.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 11, 2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A term explained — any three",
+    "marks": 21,
+    "openList": true,
+    "contextNote": "Any three: the first 11 marks, the next two 5 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 11,
+     "options": [
+      "National minimum wage rate The lowest wage employers must by law pay their employees per hour of work.",
+      "Occupational mobility of labour The ease with which workers can move from one job to another.",
+      "Benefit -in-kind Payment to worker in a non-cash form which is taxable / Benefit an employee receives that cannot be converted into cash but has a cash value.",
+      "Public sector employment Workers employed by the state / their wages are paid by the government."
+     ],
+     "perOptionSteps": [
+      11,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "labour-as-a-factor",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(b)(i)",
+  "questionText": "Explain the term underlined above.",
+  "stem": "Labour has a major role to play in helping an economy develop.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The human effort involved in producing a good or service.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-b-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "why-employers-demand-labour",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(b)(ii)",
+  "questionText": "Outline two reasons why employers might demand additional labour.",
+  "stem": "Labour has a major role to play in helping an economy develop.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason employers demand more labour — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two reasons, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Demand for output / product If there is an increase in the demand for the firm’s goods/services this may lead to an increase in demand for extra workers.",
+      "Government policies If the government were to make it less expensive to employ workers then the firm may employ extra workers e.g. a reduction in employer’s PRSI; reduced corporation profits tax; incentives offered for employing a long-term unemployed person etc.",
+      "Reduction in the national minimum wage If the national minimum wage rate was reduced, costs of production may fall. This may result in a firm being able to hire additional workers.",
+      "Labour may be cheaper than technology If this is the case then employers may demand extra labour."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-b-iii",
+  "topicId": "economics-2-1",
+  "conceptId": "raising-labour-force-participation",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(b)(iii)",
+  "questionText": "State and explain two factors which may encourage more people to participate in the labour force.",
+  "stem": "Labour has a major role to play in helping an economy develop.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor encouraging participation — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two factors, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Increased wage rates may make it more worthwhile for people who are unemployed to join the labour force.",
+      "Reduced state benefits By reducing state benefits more people may decide to join the labour force.",
+      "Lower income tax / USC By lowering the income tax rates take - home pay increases and this may motivate some people to join the labour force.",
+      "More flexible working hours Offering more flexible hours may encourage homemakers to join the labour force.",
+      "Cheaper child minding services / availability of crèches / increased parental leave By providing childcare services / free pre-school places - workers with children may find it more financially viable to work.",
+      "Retirees re-joining the workforce If the retirement age is extended or abolished then more people will be able to participate in the labour force. A person who has retired may find their pension is inadequate and so seek some hours of work.",
+      "Changed personal circumstances If children are now of a school going age it may allow the house parent to rejoin the labour force.",
+      "Provide incentives for up-skilling workers Provide incentives for those who wish to start their own businesses or provide access to retraining people who may have lost their jobs to help them become more employable."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-c-i",
+  "topicId": "economics-2-1",
+  "conceptId": "effects-of-skills-shortages",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(c)(i)",
+  "questionText": "Discuss one economic effect of skills shortages for each of the following: • Firms • The Irish economy.",
+  "stem": "The Irish economy is currently experiencing skills shortages in certain sectors such as the construction, IT, health and education sectors.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6 (4 + 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-firms",
+    "kind": "anyN",
+    "verbatim": "Firms — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect for firms, 6 marks (4 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "May have to reduce output / reduced productivity / reduce the provision of services due to the lack of labour / the quality of the product or service may deteriorate.",
+      "Firms may lose customers if they can’t meet demand / effect on reputation.",
+      "Firms may lose market share to competitors if those competitors do not have labour shortages.",
+      "Wage rate may be forced upwards in order to entice workers to work.",
+      "Firms may have to source labour from outside the country."
+     ]
+    }
+   },
+   {
+    "id": "r-economy",
+    "kind": "anyN",
+    "verbatim": "The Irish economy — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect for the economy, 6 marks (4 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Foreign companies may not locate here because of labour shortages and so Ireland loses out on investment.",
+      "Increased immigration as those industries which need skilled workers may attempt to bring in workers from outside Ireland.",
+      "Pressure in the provision of some services i.e. education and health due to the labour shortages / lack of essential housing (and the problems associated with this).",
+      "Increased demand for courses in ITs/Universities.",
+      "Reduction in economic growth / loss of revenue for government e.g. PAYE, CPT etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q3-c-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "firms-raising-the-supply-of-skills",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(c)(ii)",
+  "questionText": "State and explain two measures firms could take to increase the supply of skilled labour.",
+  "stem": "The Irish economy is currently experiencing skills shortages in certain sectors such as the construction, IT, health and education sectors.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure firms could take — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two measures, 6 marks each (4 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Upskill the existing workforce / provide in-house training Offer existing workers the chance to upgrade their skills/knowledge with courses etc.",
+      "Increase wage rates This may attract some workers into those sectors which are experiencing shortages.",
+      "Internships Offer work placements/internships for people who may be interested in this area and entice them to work in the sector.",
+      "Information campaign Inform people that vacancies exist and promote the advantages of a career in various sectors.",
+      "Providing/Offering subsidised accommodation If employees’ costs were subsidised it may attract workers into the firm.",
+      "Recognition of foreign qualifications by Irish firms Firms could recognise those qualifications received by workers in foreign countries."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-a",
+  "topicId": "economics-4-2",
+  "conceptId": "trade-terms",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(a)",
+  "questionText": "Explain any three of the following terms: • Open economy • Exchange rate • Economic growth • Tariffs.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 11, 2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A term explained — any three",
+    "marks": 21,
+    "openList": true,
+    "contextNote": "Any three: the first 11 marks, the next two 5 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 11,
+     "options": [
+      "Open economy One that engages in international trade i.e. it imports and exports goods and services.",
+      "Exchange Rate This is the value of one currency expressed in terms of another currency.",
+      "Economic growth • It is the rise in GNP / output (value of goods & services)/ national income per head within a country over a period of time. • Increased productive capacity of an economy.",
+      "Tariffs This is a tax on imported goods from abroad."
+     ],
+     "perOptionSteps": [
+      11,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "an-invisible-import",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(b)(i)",
+  "questionText": "Is this an example of an invisible import or an invisible export for the Irish economy? Explain your answer.",
+  "stem": "Irish rugby supporters will travel to Japan for the Rugby World Cup 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "This is an example of an invisible import",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The answer, 4 marks: the scheme prints 4 beside it and 3 beside the reason."
+   },
+   {
+    "id": "r-reason",
+    "kind": "point",
+    "verbatim": "as the money is leaving and going into the Japanese economy/outflow of funds from Ireland.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The reason, 3 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-b-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "balance-of-trade-surplus",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(b)(ii)",
+  "questionText": "Explain what a surplus in Ireland’s Balance of Trade means.",
+  "stem": "Irish rugby supporters will travel to Japan for the Rugby World Cup 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The amount of goods exported exceeds the amount of goods imported. This means that physical/tangible exports are greater than physical/tangible imports.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The explanation, 9 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-b-iii",
+  "topicId": "economics-4-2",
+  "conceptId": "advantages-of-international-trade",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(b)(iii)",
+  "questionText": "Outline two economic advantages of international trade for the Irish economy.",
+  "stem": "Irish rugby supporters will travel to Japan for the Rugby World Cup 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 7",
+   "answer": 2,
+   "ofParts": 7,
+   "perPart": 7
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of international trade — any two",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Two advantages, 7 marks each (4 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Employment creation Exports mean increased demand for goods produced in Ireland, leading to increased employment. Jobs may also be created in the distribution sector with the import of goods.",
+      "Increased GNP / Economic growth The monies received from exports (injection into the circular flow) will lead to increased incomes within the country.",
+      "Increased sales / profits Domestic firms can increase their sales/profits by exporting their excess output onto a foreign market / economies of scale. The receipt of foreign currencies can boost Ireland’s economy / provide the finance to help pay for imports.",
+      "Attract investment Large exports will increase confidence in the Irish economy and may help attract further investment into Ireland.",
+      "Government finances Increased economic activity will generate increased tax revenues for the government e.g. VAT / PAYE / CPT. If the government puts tariffs on some imports then this will also generate revenue for the state.",
+      "More choice for consumers Consumers have a much greater selection of goods and services available to them through trade.",
+      "Raw materials unavailable in Ireland Raw materials, unavailable, can be imported i.e. oil. Ireland’s climate is also unsuitable for the production of certain fruits i.e. oranges."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-c-i",
+  "topicId": "economics-0-1",
+  "conceptId": "opportunity-cost",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(c)(i)",
+  "questionText": "Explain the term opportunity cost.",
+  "stem": "The government is planning to contribute €500m into Ireland’s ‘Rainy Day Fund’ from 2019 and this involves an opportunity cost. Note: The fund was introduced to help the economy manage future economic shocks such as Brexit, trade wars, banking crises, etc.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The cost of foregone alternatives.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks. The scheme also accepts its second statement.",
+    "accepts": [
+     "The cost of passing up the next best choice when making a decision."
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-c-ii-yes",
+  "topicId": "economics-3-1",
+  "conceptId": "the-rainy-day-fund",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(c)(ii) — yes",
+  "questionText": "In your opinion is this Rainy Day Fund a good idea? Explain your answer. Justify the choice: YES.",
+  "stem": "The government is planning to contribute €500m into Ireland’s ‘Rainy Day Fund’ from 2019 and this involves an opportunity cost. Note: The fund was introduced to help the economy manage future economic shocks such as Brexit, trade wars, banking crises, etc.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for answering YES — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One developed reason, 6 marks. The scheme credits YES and NO, each with its own content.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "It will provide a fund to the government for use if the economy were to get into difficulties similar to that which occurred in 2008. It can be used in an emergency if and when needed.",
+      "If there was an economic crash the government would have money available / if taxes declined and / or funds were required to help firms adapt to a hard Brexit / could reduce the need for austerity measures in the future."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-c-ii-no",
+  "topicId": "economics-3-1",
+  "conceptId": "the-rainy-day-fund",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(c)(ii) — no",
+  "questionText": "In your opinion is this Rainy Day Fund a good idea? Explain your answer. Justify the choice: NO.",
+  "stem": "The government is planning to contribute €500m into Ireland’s ‘Rainy Day Fund’ from 2019 and this involves an opportunity cost. Note: The fund was introduced to help the economy manage future economic shocks such as Brexit, trade wars, banking crises, etc.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The funds could be used in the economy now in those areas which need finance e.g. housing, health sector, education etc.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The reason, 6 marks. The scheme credits YES and NO, each with its own content."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q4-c-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "other-uses-for-the-500m",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(c)(iii)",
+  "questionText": "Suggest two uses for the €500m, other than the Rainy Day Fund, giving one reason for your answer in each case.",
+  "stem": "The government is planning to contribute €500m into Ireland’s ‘Rainy Day Fund’ from 2019 and this involves an opportunity cost. Note: The fund was introduced to help the economy manage future economic shocks such as Brexit, trade wars, banking crises, etc.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A use for the €500m, with its reason — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two uses, 6 marks each (4 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Social Housing Many people are homeless and require accommodation.",
+      "Building schools / hospitals The population is increasing requiring more schools and hospitals. Build these now when money is available and interest rates are low.",
+      "Provision of broadband This is a priority for the state to maintain Ireland’s competitiveness.",
+      "Improvement in public transport Investment in more environmentally friendly transport and thereby help Ireland meet its EU climate change targets.",
+      "Improved public services Provide better pupil teacher ratios / increase number of health sector workers / provision of respite for those who need care.",
+      "Increase the pension reserve fund Ireland’s population is ageing and this will require the provision of pensions in the future."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q5-a",
+  "topicId": "economics-3-4",
+  "conceptId": "non-cash-payments-on-campus",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(a)",
+  "questionText": "Outline one advantage of a non cash‐based method of payment for each of the following: • Students • University • Banks.",
+  "stem": "Maynooth University issues a campus smartcard called ‘MyCard’, to all its students. This allows users to purchase on campus without using cash.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 7 (4 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Students — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage for this group, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "More convenient Students do not need to carry cash for payment",
+      "Safer There is reduced risk of theft.",
+      "Digital record There is an electronic trail of all monies received and paid from the account."
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "University — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage for this group, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Less security risks With less cash on the campus the risks of storing cash, transferring cash and possible theft are reduced.",
+      "Lower insurance premiums Insurance premiums should fall as risk of theft is reduced.",
+      "Convenience/efficiency Possible reduction in time queuing to make payments with cash within the university."
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Banks — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage for this group, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Time saving Opportunities for staff to deal with other consumer matters, allowing for speedier decision making.",
+      "Development of new / improved banking technologies Banks introduce new methods for dealing with customers i.e. greater use of technology leading to greater bank efficiencies.",
+      "Reduction in staff numbers / cost reductions Banks may require fewer staff reducing costs in the bank.",
+      "Reduced risk of robberies If all payments are on line/ cashless, there will be less cash in the bank reducing the risk of robberies."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q5-b",
+  "topicId": "economics-3-3",
+  "conceptId": "effects-of-higher-interest-rates",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(b)",
+  "questionText": "Explain how an increase in interest rates is likely to affect each of the following: • Households • Firms • The Irish Government.",
+  "stem": "Some economists are predicting an increase in interest rates within the year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 8 (4 + 4)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Households — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One effect for this group, 8 marks (4 + 4).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Borrowing discouraged / increased mortgage repayments The cost of monthly repayments (on variable mortgages) will increase resulting in decreased disposable income.",
+      "Savings encouraged / spending discouraged With a higher rate of interest households may find it more attractive to save and so they may decrease their spending."
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Firms — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One effect for this group, 8 marks (4 + 4).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Costs of production / prices Increased interest charges increase the cost of production resulting in possible higher prices.",
+      "Decreased competitiveness Increased costs will decrease the competitiveness of Irish firms' exports and may lead to a decrease in sales leading to less competitiveness internationally.",
+      "Loss of jobs If sales fall employment may fall or become less secure."
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "The Irish Government — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One effect for this group, 8 marks (4 + 4).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Cost of Servicing the National Debt With increases in domestic interest rates the cost of repaying the internal portion of the national debt increases.",
+      "Investment and impact on economic growth As borrowing become more expensive the incentive to invest decreases, leading to a decline in economic growth/employment and decreased economic activity.",
+      "Taxation revenues DIRT will increase due to increased savings. Decreased VAT/excise duties due to decreased spending. If unemployment increases there will be a decrease in income tax revenues etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q5-c-i",
+  "topicId": "economics-1-5",
+  "conceptId": "why-post-offices-close",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(c)(i)",
+  "questionText": "State and explain two possible reasons for the closure of some post offices.",
+  "stem": "One hundred and sixty one post offices are set to close in Ireland in the next year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the closures — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two reasons, each stated and explained, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Decrease costs — An Post wants to reduce its operational costs and closing some post offices will help reduce costs / boost profits / maintain services in other areas.",
+      "Decrease in the use of services — In some areas consumers are using their local post offices less frequently and so there is less demand for its services."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q5-c-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "effects-of-post-office-closures",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(c)(ii)",
+  "questionText": "Outline one economic effect which the closure of the post offices may have on each of the following: • Customers of the post offices • Employees of the post offices • The local community.",
+  "stem": "One hundred and sixty one post offices are set to close in Ireland in the next year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 6 (3 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-customers",
+    "kind": "anyN",
+    "verbatim": "Customers — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect for customers, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Loss of service/inconvenience The customer may have to make alternative arrangements for services which are only available at the PO e.g. post; social welfare payments."
+     ]
+    }
+   },
+   {
+    "id": "r-employees",
+    "kind": "anyN",
+    "verbatim": "Employees — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect for employees, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Loss of jobs Some employees may lose their jobs with the closure of the Post Office.",
+      "Re-location Some employees may have to accept jobs in new locations resulting in increased costs / inconvenience in getting to work."
+     ]
+    }
+   },
+   {
+    "id": "r-community",
+    "kind": "anyN",
+    "verbatim": "The Local community — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect for the local community, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Reduced economic activity/rural decline Less people may shop / do business in the locality and this can reduce economic activity in the town/ and its future viability.",
+      "Job losses Direct job losses and possible loss of jobs in the service sector in the area."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "tax-evasion",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(a)(i)",
+  "questionText": "Explain the term underlined above and state one example of tax evasion.",
+  "stem": "Raising revenue from taxation and reducing tax evasion are important aims of government.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Making false tax returns / no tax returns so as to minimise tax liability.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The explanation, 5 marks."
+   },
+   {
+    "id": "r-example",
+    "kind": "anyN",
+    "verbatim": "An example — any one",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "One example, 2 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "A teacher giving grinds and not declaring this income for tax purposes.",
+      "Paying for a good/service in cash to avoid paying the VAT inclusive price."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-taxation-is-essential",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(a)(ii)",
+  "questionText": "State and explain two economic reasons why taxation is essential for an economy.",
+  "stem": "Raising revenue from taxation and reducing tax evasion are important aims of government.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 7",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 7
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason taxation is essential — any two",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Two reasons, 7 marks each (3 + 4).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Provides revenue for the government / finance government activities The government requires tax revenue to fund the daily operation of the country e.g. defence, policing etc.",
+      "Provide public services The government requires tax revenue to provide services such as health care, schools etc. which are essential for citizens.",
+      "Help to re-distribute wealth The government can re-distribute the taxation collected in the form of social welfare payments to those citizens who require it e.g. old age pensions, single parent allowances etc.",
+      "Promote industry Subsidies, grants can be provided to help industry and encourage enterprise.",
+      "Achieve Social Objective Carbon taxes to decrease pollution/damage to environment. Taxes introduced discourage smoking, alcohol consumption such as VAT and excise duties etc. Progressive taxes to achieve a fairer distribution of income.",
+      "Achieve a favourable balance of payments By placing a tax on imports, imports may fall, thereby improving the country’s balance of payment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "value-added-tax",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(b)(i)",
+  "questionText": "Explain the term Value Added Tax.",
+  "stem": "In Budget 2019, the Value Added Tax (VAT) rate for the hospitality sector (hotels, restaurants etc.) increased from 9% to 13.5%.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This is a tax on goods and services.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The explanation, 8 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "vat-is-an-indirect-tax",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(b)(ii)",
+  "questionText": "Is VAT an example of a direct tax or an indirect tax? Explain your answer.",
+  "stem": "In Budget 2019, the Value Added Tax (VAT) rate for the hospitality sector (hotels, restaurants etc.) increased from 9% to 13.5%.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "It is an indirect tax.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The answer, 3 marks."
+   },
+   {
+    "id": "r-reason",
+    "kind": "point",
+    "verbatim": "It is not a tax on income or wealth / it is a tax on spending. It is placed on consumer / user and is collected through a third party.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The explanation, 3 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-b-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "effects-of-the-hospitality-vat-rise",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(b)(iii)",
+  "questionText": "Outline two possible economic effects on the Irish economy of this increase in the rate of VAT for the hospitality sector.",
+  "stem": "In Budget 2019, the Value Added Tax (VAT) rate for the hospitality sector (hotels, restaurants etc.) increased from 9% to 13.5%.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of the VAT increase — any two",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Two effects, 8 marks each (4 + 4).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Higher prices Firms may increase their prices and this may result in a decrease in demand for their services / increased demand for holidays abroad. The number of tourists visiting Ireland could fall.",
+      "Loss of jobs/unemployment increase Jobs may be lost. If demand falls then less workers may be needed.",
+      "Discourages (may alter spending) spending / economic growth If prices in restaurants / hotels etc. increase, overall spending by Irish citizens and tourists may fall leading to a decline in economic activity. People can avoid or minimise this tax based on their own personal choices.",
+      "Tax implications If spending stays the same then VAT collected will increase. If employment decreases then income tax revenue will decrease. If there is a decline in business activity Corporation Tax may decrease. If VAT revenue increases then the government has the possibility of reducing other taxes.",
+      "Achieve greater efficiencies May encourage firms to become more efficient/innovative therefore benefitting the consumer and the economy in the long run.",
+      "Rural hotels adversely affected The rise in the tax may hit rural hotels / restaurants more seriously than those in the main tourist destinations and could force them out of business."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q6-c",
+  "topicId": "economics-3-1",
+  "conceptId": "arguments-on-budget-2019-measures",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q6(c)",
+  "questionText": "Outline one economic argument in favour of and one economic argument against any two of the following government measures announced in Budget 2019: • Increase in social welfare payments of €5 per week • Increase of 50c in the price of a packet of 20 cigarettes • Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 6 (3 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-favour",
+    "kind": "anyN",
+    "verbatim": "An argument in favour — one for each of your two measures",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "One argument in favour of each measure you choose, 6 marks each (3 + 3). Each option names its measure.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Increase in social welfare payments of €5 per week — Better standard of living More income is provided to the poorer sector so a better standard of living can be achieved. It may also compensate for the increase in the cost of living.",
+      "Increase in social welfare payments of €5 per week — Fairer distribution of Income The extra payment helps reduce the gap between rich and poor leading to a fairer distribution of income. May help reward those pensioners who contributed to the growth of the economy during their working lives.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Government revenue This increase will raise tax revenues for the government.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Reduce consumption / personal health Consumption of tobacco products may fall and health of consumers will improve. It may discourage younger people from smoking.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Social benefit A healthier society may lead to less absenteeism and more productivity.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Reduced healthcare costs As less people become ill there will be less demand for health services leading to lower health care costs.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Opportunity cost The money saved on healthcare can be put to some other use by the government.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Some cost savings Reduced childcare costs / more disposable income.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Social benefit Workers may be more contented and happier at work with more time at home and this may benefit employers and society at large.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Increase in population May encourage an increase in the birth rate which will lead to a more productive age group paying tax in the future to finance pensions."
+     ]
+    }
+   },
+   {
+    "id": "r-against",
+    "kind": "anyN",
+    "verbatim": "An argument against — one for each of your two measures",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "One argument against each of the same two measures, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Increase in social welfare payments of €5 per week — Increased Government expenditure / borrowing The government will spend more and so may require more borrowing to fund expenditure.",
+      "Increase in social welfare payments of €5 per week — Opportunity cost The money could be put to some alternative use e.g. to fund youth employment initiatives, education and training initiatives.",
+      "Increase in social welfare payments of €5 per week — Possibility of increased taxation With the increase in government expenditure the government may have to increase direct / indirect taxes to fund this increase.",
+      "Increase in social welfare payments of €5 per week — Disincentive to work An increase in social welfare payments may discourage people from entering the workforce.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Standard of living Disposable incomes will fall for smokers and this will lead to a lower standard of living.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Inflation Price of tobacco related products rise and this is included in the Consumer Price Index so the rate of inflation increases.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Inequitable / regressive Could be considered unfair as it applies to smokers.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Smuggling/black (shadow) economy may increase As cigarettes become more expensive more consumers may switch to smuggled cigarettes.",
+      "Increase of 50c in the price of a packet of 20 cigarettes — Tax revenue If consumption falls and/or smuggling increases then the tax revenue collected by the government may fall.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Increased government expenditure Its provision must be paid for out of general taxation revenue and so taxes could increase.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Opportunity cost The money used on parental leave could have been put to some other use by the government.",
+      "Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age. — Labour shortages Difficulty for employer in filling the temporary vacancies that arise."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "cso-in-full",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(a)(i)",
+  "questionText": "What do the letters CSO stand for?",
+  "stem": "The CSO calculates the level of National Income in Ireland and three methods are used to calculate it: the income method, the output method and the expenditure method.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 (3 x 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Central Statistics Office",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "9 marks: 3 for each word."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "a-method-of-measuring-national-income",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(a)(ii)",
+  "questionText": "Explain any one of the three methods used to calculate national income.",
+  "stem": "The CSO calculates the level of National Income in Ireland and three methods are used to calculate it: the income method, the output method and the expenditure method.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A method explained — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One method, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Income method This method adds up all the income earned by the factors of production within an economy over a period of time.",
+      "Output method This method adds up all the output produced by the factors of production within an economy over a period of time.",
+      "Expenditure method This method adds up all the spending by the factors of production on the goods/service within an economy over a period of time."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-a-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "why-measure-national-income",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(a)(iii)",
+  "questionText": "State and explain two reasons why it is important to calculate the level of National Income in a country.",
+  "stem": "The CSO calculates the level of National Income in Ireland and three methods are used to calculate it: the income method, the output method and the expenditure method.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to measure national income — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two reasons, 5 marks each (3 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Indicates changes in the level of economic growth/standard of living The national income figure indicates the rate of economic growth/changes in standard of living within the country from one year to the next.",
+      "To help formulate government economic policy/evaluate government policies National income statistics inform and assist government in choosing appropriate economic policies for the country.",
+      "It facilitates International comparisons Ireland’s national income statistics enable comparisons to be made between the rate of economic growth/distribution of incomes between countries.",
+      "EU Budget contributions The statistics will determine contributions made by the government to EU or benefits received from the EU."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-b-i",
+  "topicId": "economics-4-1",
+  "conceptId": "mncs-and-corporation-tax",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(b)(i)",
+  "questionText": "Explain the terms multinational company and corporation tax.",
+  "stem": "One possible reason why multinational companies (MNCs) such as Google and Apple locate in Ireland is the low rate of corporation tax.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-mnc",
+    "kind": "point",
+    "verbatim": "Multinational company Has offices / branches / business activities in several countries around the world but managed from one (home) country.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "A multinational company, 6 marks."
+   },
+   {
+    "id": "r-tax",
+    "kind": "point",
+    "verbatim": "Corporation tax This is a tax on the profits made by companies. 12.5% is the Irish corporation tax rate.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Corporation tax, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-b-ii",
+  "topicId": "economics-4-1",
+  "conceptId": "why-mncs-locate-in-ireland",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(b)(ii)",
+  "questionText": "Discuss two other economic reasons why MNCs may locate in Ireland.",
+  "stem": "One possible reason why multinational companies (MNCs) such as Google and Apple locate in Ireland is the low rate of corporation tax.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason MNCs locate in Ireland — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two reasons, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Skilled workforce Even though there are some skills shortages, Ireland has a skilled, english speaking workforce. Apart from Malta, Ireland is the only English speaking country now a member of the EU.",
+      "Government incentives The government may provide grants towards location in certain areas of the country. The availability of multi-functional grants provided by the IDA.",
+      "Membership of EU As Ireland is a member of EU MNCs may locate here as it gives them open access to the EU market.",
+      "Improved infrastructure The transport and communications infrastructure (broadband) has improved and this allows firms to get their goods to the market, source raw materials etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-b-iii",
+  "topicId": "economics-4-1",
+  "conceptId": "why-mncs-may-not-locate-in-ireland",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(b)(iii)",
+  "questionText": "Discuss one economic reason why some MNCs may not locate in Ireland.",
+  "stem": "One possible reason why multinational companies (MNCs) such as Google and Apple locate in Ireland is the low rate of corporation tax.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason MNCs may not locate here — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One reason, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Lower wage costs elsewhere Wage rates outside Ireland may be lower and this is attractive to some MNCs.",
+      "Lower costs of production Firms may avail of more competitive charges abroad: energy prices; utility charges; insurance costs; professional fees etc.",
+      "Lack of reasonably priced accommodation/housing The lack of suitable housing for workers may act as a deterrent for MNCs to locate here.",
+      "Skilled Labour shortages in certain sectors There are staff shortages in certain skill areas currently so may not locate here i.e. the IT sector.",
+      "Restrictive regulatory framework Regulations in the operation of business may be less strict in other countries making it easier to operate there e.g. protection of the environment may face less regulation.",
+      "Emerging economies in a growth phase There may be greater access to growing international markets such as South east Asia, Africa.",
+      "Lack of advanced technologies/infrastructure Reliable, high-speed broadband is essential to increase the attractiveness of Ireland for investment. Traffic congestion particularly in Dublin leads to increased costs."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "mps-and-mpm",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(c)(i)",
+  "questionText": "Explain each of the terms MPS and MPM.",
+  "stem": "The Multiplier formula for an open economy is:",
+  "figureKey": "economics-2019-OL-paper-p09-q7c-formula",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-mps",
+    "kind": "point",
+    "verbatim": "MPS (The marginal propensity to save) The proportion / % of extra income which is saved by consumers.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "MPS, 5 marks."
+   },
+   {
+    "id": "r-mpm",
+    "kind": "point",
+    "verbatim": "MPM (The marginal propensity to import) The proportion / % of extra income which is spent on imports by consumers.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "MPM, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "calculating-the-open-economy-multiplier",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(c)(ii)",
+  "questionText": "Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier. Show your workings.",
+  "stem": "The Multiplier formula for an open economy is:",
+  "figureKey": "economics-2019-OL-scheme-p32-q7cii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The multiplier, 8 marks. The scheme sets the working as a fraction; the figure shows it as printed."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2019-OL-paper-p09-q7c-question"
+ },
+ {
+  "id": "econ-2019-ol-sb-q7-c-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "meaning-of-the-multiplier",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q7(c)(iii)",
+  "questionText": "Explain the meaning of your answer.",
+  "stem": "The Multiplier formula for an open economy is:",
+  "figureKey": "economics-2019-OL-paper-p09-q7c-formula",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This means that for each €1 spent in the economy, National Income will increase by €2.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The meaning, 3 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-a",
+  "topicId": "economics-3-2",
+  "conceptId": "economic-terms",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(a)",
+  "questionText": "Explain any three of the following terms: • Price inflation • Full employment • Emigration • Privatisation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 11, 2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A term explained — any three",
+    "marks": 21,
+    "openList": true,
+    "contextNote": "Any three: the first 11 marks, the next two 5 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 11,
+     "options": [
+      "Price inflation An increase in the general level of prices for goods/services over a period of time. A decrease in the value of money / people buy less with their money.",
+      "Full employment When all workers who want a job have a job at existing wage rates.",
+      "Emigration Movement of Irish citizens to reside in another country.",
+      "Privatisation This is the sale of a state / government owned business, industry or service to private owners."
+     ],
+     "perOptionSteps": [
+      11,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-b-i",
+  "topicId": "economics-3-5",
+  "conceptId": "infrastructure",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(b)(i)",
+  "questionText": "Explain the term infrastructure.",
+  "stem": "The government is committed to improving the infrastructure in the country, including the provision of broadband in rural areas.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Large-scale physical capital projects that provide a foundation for economic activity. Roads, power lines, ports, broadband etc.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks. The scheme also accepts its second statement.",
+    "accepts": [
+     "Capital equipment used to supply publicly available services."
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-b-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "rural-broadband",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(b)(ii)",
+  "questionText": "Discuss one economic advantage which the provision of broadband in rural areas may have on each of the following: • Households • Firms.",
+  "stem": "The government is committed to improving the infrastructure in the country, including the provision of broadband in rural areas.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 8 (5 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-households",
+    "kind": "anyN",
+    "verbatim": "Households — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One advantage for households, 8 marks (5 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "More flexible working arrangements Household members may be able to work from home/more flexible employment/less transport costs etc.",
+      "Access to online banking services Households can conduct their banking on line and this will save time and be more convenient.",
+      "Internet access Enables households to do online shopping; conduct research; communicate etc.",
+      "Access to state services Many state services are available online and households will now be able to access these services quickly, Income tax, Motor tax etc."
+     ]
+    }
+   },
+   {
+    "id": "r-firms",
+    "kind": "anyN",
+    "verbatim": "Firms — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One advantage for firms, 8 marks (5 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Order supplies and raw materials online will help save time and allow firms to source alternative and cheaper supplies.",
+      "Meet consumer orders Firms can respond to consumer queries quickly and efficiently. This will help improve the firm’s image and possibly help boost sales.",
+      "Methods of payment Broadband access allows for the electronic transfer of funds which can be more efficient than traditional methods of payments.",
+      "May locate in rural areas Firms may locate in rural areas where they have access to raw materials and a labour force."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-b-iii",
+  "topicId": "economics-3-5",
+  "conceptId": "where-ireland-should-invest",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(b)(iii)",
+  "questionText": "State one example of infrastructure, other than broadband, which you think Ireland should invest in, and explain one reason for your choice.",
+  "stem": "The government is committed to improving the infrastructure in the country, including the provision of broadband in rural areas.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An example with its reason — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One example and its reason, 8 marks (5 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Hospitals — As there is an overcrowding problem in hospitals with many patients on trolleys the government should build more hospitals or extend existing ones to cater for the increased numbers using them.",
+      "Schools — With the increase in population there will be greater numbers in need of primary and secondary education so the government should build more schools.",
+      "Public Transport — To reduce emissions and get private users off the roads the government should invest in better public transport.",
+      "Housing — Investment in social, affordable housing is essential in order to deal with the homeless crisis and cope with the increasing population."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-c-i",
+  "topicId": "economics-3-5",
+  "conceptId": "problems-of-rural-decline",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(c)(i)",
+  "questionText": "Outline two possible problems caused by the decline in economic activity in some small towns and rural areas of the country.",
+  "stem": "Small‐town Ireland must fight to thrive.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A problem caused by the decline — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two problems, 6 marks each (4 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Decline in population/decline in communities If there is a decline in economic activity people will leave the area resulting in a decline in population and in community activities. Younger people may emigrate from the locality.",
+      "Loss of local services If there is a decline in economic activity there will be less retailers/service providers required to provide goods/services.",
+      "Physical appearance of town/village Many disused shop fronts exist since the recession. The town does not appeal to passing trade or potential house buyers and this may further damage economic activity.",
+      "Under-utilisation of local infrastructure / decline in investment If there is a decline in economic activity local infrastructure will not be used as intensively which may lead to deterioration and/or no incentive to invest further e.g. roads; lighting etc. The local school may not be viable and children may then have to switch to alternative schools."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2019-ol-sb-q8-c-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "reversing-rural-decline",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2019 OL Section B Q8(c)(ii)",
+  "questionText": "State and explain two measures which could be introduced to help reverse this economic decline.",
+  "stem": "Small‐town Ireland must fight to thrive.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to reverse the decline — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two measures, 6 marks each (4 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Maintain the local services Keeping the local post office, garda station and primary school open will ensure that these vital services are available locally and may encourage people to live there. Planning for housing could be restricted to the town centre to utilise the existing services.",
+      "Improve the infrastructure: roads / broadband Improve local roads to facilitate access. If broadband is made available this will encourage the growth of businesses in the area.",
+      "Provide grants for community centres Community centres may provide a focal point for a community and might foster community spirit which will promote co-operation; enterprise and social activities.",
+      "Help develop local community enterprises Provide grants for tourist related ventures.",
+      "Shop local - encourage people to shop local and enhance business activity in rural areas.",
+      "Incentivise owners of underused properties to put them into use and promote economic activities."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2021-hl-seca-q1-a",
   "topicId": "economics-4-2",
   "conceptId": "calculating-the-balance-of-trade",

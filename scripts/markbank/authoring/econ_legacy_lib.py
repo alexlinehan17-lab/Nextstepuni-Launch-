@@ -21,10 +21,10 @@ from econ_lib import JUNK, as_option, defurnish, tidy
 
 BLOCKS_MARK = '<!-- pdf-block-order: appended by append-scheme-blocks.py -->'
 UNDERSCORES = re.compile(r'\s*_{2,}\s*')
-TAIL = re.compile(r'(?:\s+(?:\d{1,2}\.|OR|or|graded|\+)|\s*•)\s*$')
+TAIL = re.compile(r'(?:\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|graded|\+|&|Q\s+Possible responses\s+Max(?:\s+Mark)?)|\s*•)\s*$')
 # The marks column's "graded" printed at the END of a line follows the slice
 # rather than splitting it; cut there, the slice is still contiguous.
-TRAILING_GRADED = re.compile(r'\s+graded\s*$')
+TRAILING_GRADED = re.compile(r'\s+(?:graded|&)\s*$')
 
 
 class Old(Sheet):
@@ -93,11 +93,21 @@ class Old(Sheet):
         """One response sliced from the block-order rendering (sentences whole)."""
         return self.traced(as_option(self._bo_raw(start, end, occ, include_end)))
 
-    def cell(self, start, upto=None):
-        """A whole table cell: the first line of the scheme file opening with `start`."""
-        for line in self.full_md.splitlines():
+    def cell(self, start, upto=None, whole=False, cells_only=False):
+        """A whole table cell: the first line of the scheme file opening with `start`.
+
+        `whole`: the line must BE `start` (a one-word cell such as "Land", which
+        the primary rendering also opens a longer line with). `cells_only`: look
+        only in the table-cell rendering, never in the primary one, whose lines
+        interleave a two-column table ("Fairer distribution of Income
+        Opportunity cost").
+        """
+        text = self.full_md
+        if cells_only:
+            text = text.split('<!-- markbank:table-cells -->', 1)[1].split('<!-- /markbank:table-cells -->', 1)[0]
+        for line in text.splitlines():
             line = line.strip()
-            if line.startswith(start) and (upto is None or upto in line):
+            if (line == start if whole else line.startswith(start)) and (upto is None or upto in line):
                 if upto:
                     line = line[:line.index(upto) + len(upto)]
                 return self.traced(tidy(line.replace('✓', '').replace('', '')))
@@ -132,6 +142,19 @@ class Old(Sheet):
             # The next item's own numeral or bullet is left at the end of this one.
             out.append(TAIL.sub('', as_option(text[a:b])).strip())
         return out
+
+    def cut_cell(self, start, firsts):
+        """One table cell that holds several headed responses, cut at each heading.
+
+        The cell is the first line holding every heading, so a primary-rendering
+        line that merely opens the same way is passed over.
+        """
+        line = next((ln.strip() for ln in self.full_md.splitlines()
+                     if ln.strip().startswith(start) and all(h in ln for h in firsts)), None)
+        if line is None:
+            raise ValueError(f'no scheme line opens with {start!r} and holds every heading')
+        line = self.traced(tidy(line))
+        return [self.traced(o) for o in self._cut(line, firsts, start)]
 
     def bullets(self, start, end, occ=None):
         """The scheme's bullet-listed responses between two anchors, each traced.

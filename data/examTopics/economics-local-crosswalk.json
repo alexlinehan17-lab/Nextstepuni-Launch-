@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 817,
+    "matchedAssociations": 810,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 86,
+    "referenceAnomalyAssociations": 93,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 735,
+    "matchedQuestionTopicLinks": 728,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -13179,7 +13179,7 @@
       "section": "A",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13187,7 +13187,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "8"
-      }
+      },
+      "reason": "Reviewed SEC source: Scarcity of resources is Scarcity & Choice (0-1); wasting resources is Sustainability (0-2). a 7 scarcity of resources (two accepted statements); b 2 @ 5 from four. The (i)/(ii) under (b) are ruled answer slots."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -13198,7 +13199,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13206,7 +13207,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: Tax evasion, the role of taxation, VAT and Budget measures are Fiscal Policy & the Budget (3-1). Six tasks totalling 75. a(i) 5 + 2 the definition and one example from two; a(ii) 2 @ 7 (3 + 4) from six. b(i) 8; b(ii) 3 the answer (indirect) + 3 its explanation; b(iii) 2 @ 8 (4 + 4) from six. c 4 @ 6 (3 + 3), an argument for and one against any two of three measures, each listed under its measure: one card with a for row and an against row, each claimed twice, every option named by its measure."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -15393,7 +15395,7 @@
       "section": "A",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -15401,7 +15403,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "reason": "Reviewed SEC source: The factors of production are Scarcity & Choice (0-1), as 2021-2023 OL file the same table. One example for each of the four factors, priced 1 @ 8, 1 @ 4 and 2 @ 2 in the order they are credited: one card, the four factor rows claimed at 8, 4, 2, 2."
     },
     {
       "topicId": "economics-ordinary-32-the-labour-market",
@@ -18610,7 +18613,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18618,7 +18621,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Trade, the balance of trade and its terms are International Trade & Competitiveness (4-2); opportunity cost is Scarcity & Choice (0-1); the Rainy Day Fund and other uses of the €500m are Fiscal Policy & the Budget (3-1). Eight routes; 75 with the (c)(ii) stance counted once. a any three of four terms, 1 @ 11 and 2 @ 5. b(i) 4 beside the answer (an invisible import) and 3 beside its reason; b(ii) 9; b(iii) 2 x 7 (4 + 3) from seven. c(i) 6; c(ii) 6, the scheme credits YES and NO with different content, so two stance routes; c(iii) 2 @ 6 (4 + 2) from six."
     },
     {
       "topicId": "economics-ordinary-52-globalisation",
@@ -18629,7 +18633,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18637,7 +18641,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: Non-cash payment is Financial Sector (3-4); interest rates are Monetary Policy & Inflation (3-3); closing post offices to cut costs is Costs of Production, Revenue & Profit (1-5), and its effects on jobs and communities Employment & Unemployment (3-2). Four tasks totalling 75. a 3 @ 7 (4 + 3), one advantage for each of students, the university and banks: three heading rows. b 3 @ 8 (4 + 4), households, firms and the government: three heading rows. c(i) 2 @ 6 (3 + 3) the two printed reasons; c(ii) 3 @ 6 (3 + 3), customers, employees and the local community: three heading rows."
     },
     {
       "topicId": "economics-ordinary-52-globalisation",
@@ -19361,7 +19366,7 @@
       "section": "A",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19369,7 +19374,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "1"
-      }
+      },
+      "reason": "Reviewed SEC source: The EU and the WTO are Globalisation (4-1); the ECB is Monetary Policy & Inflation (3-3). 8 @ 2 over the eight words of the three names (EU 2, ECB 3, WTO 3): one card, a row per abbreviation at 2 a word."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19961,7 +19967,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19969,7 +19975,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: Non-cash payment is Financial Sector (3-4); interest rates are Monetary Policy & Inflation (3-3); closing post offices to cut costs is Costs of Production, Revenue & Profit (1-5), and its effects on jobs and communities Employment & Unemployment (3-2). Four tasks totalling 75. a 3 @ 7 (4 + 3), one advantage for each of students, the university and banks: three heading rows. b 3 @ 8 (4 + 4), households, firms and the government: three heading rows. c(i) 2 @ 6 (3 + 3) the two printed reasons; c(ii) 3 @ 6 (3 + 3), customers, employees and the local community: three heading rows."
     },
     {
       "topicId": "economics-ordinary-formulas",
@@ -20766,7 +20773,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 47 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 46 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -25986,6 +25993,273 @@
         ],
         "reason": "Progressive and regressive taxes, carbon tax, overspending, corporation tax and a just social policy are Fiscal Policy & the Budget (3-1). Seven routes; 75 with the (a)(ii) stance counted once. a(i) 5 + 5 (4 + 1) each tax with an example; a(ii) 3 @ 5 (2 + 3): the scheme credits YES and NO with different lists, so two stance routes. b(i) 3 @ 5 (2 + 3) from five; b(ii) 3 @ 5 (2 + 3) from four. c(i) 6 graded; c(ii) 2 @ 7 (4 + 3) from eight.",
         "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-4-1",
+          "economics-3-3"
+        ],
+        "reason": "The EU and the WTO are Globalisation (4-1); the ECB is Monetary Policy & Inflation (3-3). 8 @ 2 over the eight words of the three names (EU 2, ECB 3, WTO 3): one card, a row per abbreviation at 2 a word.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Long-run equilibrium in perfect competition is Market Structures (2-0). i 2 @ 6, the two labels (the scheme’s answer box prints 6 beside each); ii 2 @ 2, P1 and Q1 (hidden solution diagram).",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1"
+        ],
+        "reason": "The factors of production are Scarcity & Choice (0-1), as 2021-2023 OL file the same table. One example for each of the four factors, priced 1 @ 8, 1 @ 4 and 2 @ 2 in the order they are credited: one card, the four factor rows claimed at 8, 4, 2, 2.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-0-0"
+        ],
+        "reason": "Economists and their ideas are Economics as a Way of Thinking (0-0). Any three of four ideas, 1 @ 8 and 2 @ 4: one card, the four matches claimed at 8, 4, 4.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0"
+        ],
+        "reason": "GNP and its growth rate are National Income (3-0). i 9 (3 x 3) Gross National Product; ii 7 the percentage increase, 5% (the working is printed as a fraction; hidden crop).",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0"
+        ],
+        "reason": "Injections and leakages of the circular flow are National Income (3-0). Four items (Taxation, Investment Expenditure, Exports, Imports) placed as injections or leakages, 1 @ 8 and 3 @ 3: one card, the four placements claimed at 8, 3, 3, 3 (hidden completed table).",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "The USC rate in the Budget is Fiscal Policy & the Budget (3-1). i 8 (4 + 2 + 2) Universal Social Charge; ii 9 one benefit from four.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1",
+          "economics-0-2"
+        ],
+        "reason": "Scarcity of resources is Scarcity & Choice (0-1); wasting resources is Sustainability (0-2). a 7 scarcity of resources (two accepted statements); b 2 @ 5 from four. The (i)/(ii) under (b) are ruled answer slots.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "9",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5"
+        ],
+        "reason": "Fixed and variable costs are Costs of Production, Revenue & Profit (1-5). One ladder across (a) and (b), 1 @ 5 and 3 @ 4 over the four elements (each cost’s definition and example), not tied to a part: one card for the question, the four elements claimed at 5, 4, 4, 4.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Imperfect competition and entry into the waste-collection market are Market Structures (2-0). Five cards for six asks, totalling 75. a(i) 5 @ 4 the five labels; a(ii) 5 + 5 P1 and Q1 (hidden solution diagram). b(i) 1 @ 9; b(ii) and (iii) share one 2 @ 6, a characteristic with its note, so one card covers both. c 2 @ 9 advantages from four and 1 @ 6 disadvantage from four.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-0",
+          "economics-1-3",
+          "economics-1-1"
+        ],
+        "reason": "Demand, supply and equilibrium are The Market Economy (1-0); the electric-vehicle grant and other measures are Government Intervention (1-3); its effect on demand is The Consumer (Demand) (1-1). Nine tasks totalling 75. a(i) 11 (5 @ 2) + 1 the demand curve and its D/C label; a(ii) 11 (5 @ 2) + 1 the supply curve and its S/C label; a(iii) 6 (3 + 3) P1 and Q1 + 1 + 1 the P and Q axis labels (the scheme’s summary and its graph notes agree; hidden solution graph). b 2 @ 10 (4 + 4 + 2), one column per situation: (i) which curve 4 + 4; (ii) which way 4 + 4; (iii) why 2 + 2. c(i) 6 (4 + 2) from four; c(ii) 7 (5 + 2); c(iii) 2 @ 6 (4 + 2) from six.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1"
+        ],
+        "reason": "Labour, its demand and supply, participation and skills shortages are The Labour Market (2-1). Six tasks totalling 75. a any three of four terms, 1 @ 11 and 2 @ 5. b(i) 6; b(ii) 2 @ 6 (3 + 3) from four; b(iii) 2 @ 6 (3 + 3) from eight. c(i) 2 @ 6 (4 + 2), one effect for firms and one for the economy, two heading rows; c(ii) 2 @ 6 (4 + 2) from six.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2",
+          "economics-0-1",
+          "economics-3-1"
+        ],
+        "reason": "Trade, the balance of trade and its terms are International Trade & Competitiveness (4-2); opportunity cost is Scarcity & Choice (0-1); the Rainy Day Fund and other uses of the €500m are Fiscal Policy & the Budget (3-1). Eight routes; 75 with the (c)(ii) stance counted once. a any three of four terms, 1 @ 11 and 2 @ 5. b(i) 4 beside the answer (an invisible import) and 3 beside its reason; b(ii) 9; b(iii) 2 x 7 (4 + 3) from seven. c(i) 6; c(ii) 6, the scheme credits YES and NO with different content, so two stance routes; c(iii) 2 @ 6 (4 + 2) from six.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4",
+          "economics-3-3",
+          "economics-1-5",
+          "economics-3-2"
+        ],
+        "reason": "Non-cash payment is Financial Sector (3-4); interest rates are Monetary Policy & Inflation (3-3); closing post offices to cut costs is Costs of Production, Revenue & Profit (1-5), and its effects on jobs and communities Employment & Unemployment (3-2). Four tasks totalling 75. a 3 @ 7 (4 + 3), one advantage for each of students, the university and banks: three heading rows. b 3 @ 8 (4 + 4), households, firms and the government: three heading rows. c(i) 2 @ 6 (3 + 3) the two printed reasons; c(ii) 3 @ 6 (3 + 3), customers, employees and the local community: three heading rows.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "Tax evasion, the role of taxation, VAT and Budget measures are Fiscal Policy & the Budget (3-1). Six tasks totalling 75. a(i) 5 + 2 the definition and one example from two; a(ii) 2 @ 7 (3 + 4) from six. b(i) 8; b(ii) 3 the answer (indirect) + 3 its explanation; b(iii) 2 @ 8 (4 + 4) from six. c 4 @ 6 (3 + 3), an argument for and one against any two of three measures, each listed under its measure: one card with a for row and an against row, each claimed twice, every option named by its measure.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-4-1"
+        ],
+        "reason": "National income and the multiplier are National Income (3-0); multinational companies are Globalisation (4-1). Nine tasks totalling 75. a(i) 9 (3 x 3) Central Statistics Office; a(ii) 5 one method from three; a(iii) 2 @ 5 (3 + 2) from four. b(i) 2 @ 6, the two terms; b(ii) 2 @ 6 (3 + 3) from four; b(iii) 1 @ 6 (3 + 3) from seven. c(i) 2 @ 5, MPS and MPM; c(ii) 8 the multiplier, 2 (printed as a fraction; hidden crop); c(iii) 3.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2",
+          "economics-3-5",
+          "economics-3-3"
+        ],
+        "reason": "Full employment and emigration are Employment & Unemployment (3-2); infrastructure, broadband and rural decline are Economic Growth (3-5). Six tasks totalling 75. a any three of four terms, 1 @ 11 and 2 @ 5. b(i) 6 (two accepted statements); b(ii) 2 @ 8 (5 + 3), one advantage for households and one for firms: two heading rows; b(iii) 8 (5 + 3) one example and reason from four. c(i) 2 @ 6 (4 + 2) from four; c(ii) 2 @ 6 (4 + 2) from six.",
+        "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
       }
     ]
   }

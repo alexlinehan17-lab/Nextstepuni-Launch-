@@ -122,6 +122,9 @@ HAND_CHECKED = {
     'econ-2024-hl-q13-b-i',           # 2024 HL p22: "(i) Explain the term globalisation." (four words)
     'econ-2024-ol-q15-b-ii',          # 2024 OL p23: "(ii) Explain your answer." (three words)
     'econ-2023-hl-q15-b-i',           # 2023 HL p30: "(i) Explain the term monetary policy." (five words)
+    'econ-2019-ol-sb-q3-b-i',         # 2019 OL p7: "(i) Explain the term underlined above." (five words)
+    'econ-2019-ol-sb-q4-c-i',         # 2019 OL p7: "(i) Explain the term opportunity cost." (five words)
+    'econ-2019-ol-sb-q8-b-i',         # 2019 OL p10: "(i) Explain the term infrastructure." (four words)
 }
 
 

@@ -10,6 +10,7 @@ import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/
 import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
 import higher2019Review from '../scripts/markbank/authoring/reviews/economics-2019-hl-ev.json';
+import ordinary2019Review from '../scripts/markbank/authoring/reviews/economics-2019-ol-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -319,10 +320,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // 2019 Higher English (old syllabus) is the nineteenth reviewed variant.
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(47);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(53);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(19);
+    // 2019 Higher and Ordinary English (old syllabus) are the nineteenth and twentieth reviewed variants.
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(46);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(52);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(20);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -986,6 +987,71 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = CARDS.filter(c => c.year === 2019)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'inflation2']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 66 independently counted 2019 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2019);
+    const tasks = ordinary2019Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(66);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2019Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2019, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2019 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the Q4(c)(ii) stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('lifts 2019 Ordinary wording from the paper and hides its solutions until reveal', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2019-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [s, crop] of [['sa-q2-ii', 'p06-q2-diagram'], ['sa-q5-ii', 'p07-q5ii-working'], ['sa-q6', 'p08-q6-table'],
+      ['sb-q1-a-ii', 'p10-q1a-diagram'], ['sb-q2-a-i', 'p13-q2a-graph'], ['sb-q2-a-ii', 'p13-q2a-graph'],
+      ['sb-q2-a-iii', 'p13-q2a-graph'], ['sb-q7-c-ii', 'p32-q7cii-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2019-OL-scheme-${crop}.png`);
+    }
+    // A solution in the figure slot takes the whole printed question as the question crop.
+    for (const c of ORDINARY.filter(item => item.year === 2019 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+    }
+    expect(card('sa-q6').questionFigure?.src).toContain('economics-2019-OL-paper-p03-q6-question.png');
+    // Rows carry the scheme's printed answer; the fraction working is the hidden crop.
+    expect(card('sa-q5-ii').rows[0].verbatim).toBe('Answer: 5%');
+    expect(card('sb-q7-c-ii').rows[0].verbatim).toBe('2');
+    // Q6: the first correct placement 8, the other three 3 each, every option naming its column.
+    const placed = card('sa-q6').rows[0].group!;
+    expect(placed.perOptionSteps).toEqual([8, 3, 3, 3]);
+    expect(placed.options.map(o => o.split(' — ')[0])).toEqual(['INJECTIONS', 'INJECTIONS', 'LEAKAGES', 'LEAKAGES']);
+    // B6(c): every argument is listed under the measure the scheme prints it beneath.
+    const measures = ['Increase in social welfare payments of €5 per week',
+      'Increase of 50c in the price of a packet of 20 cigarettes',
+      'Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age.'];
+    for (const row of card('sb-q6-c').rows) {
+      for (const option of row.group!.options) expect(measures, option).toContain(option.split(' — ')[0]);
+    }
+    expect(card('sb-q6-c').rows.map(r => r.group!.options.length)).toEqual([10, 12]);
+    const text = ORDINARY.filter(c => c.year === 2019)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
       expect(text, junk).not.toContain(junk);
     }
   });
