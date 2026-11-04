@@ -68,7 +68,8 @@ const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+
 const PROMPT = /^(?:An (?:Chéad|Dara|Tríú) Mhír\s*)?(?:\d+\.\s|\(?[a-z]\)\s|\((?:i|ii|iii|iv)\)\s)/i;
 /** A sub-question starting inside a bullet's text: "… sa saol acadúil (b) (i) Cén toradh…?". */
 const INNER_PROMPT = /\s(?=(?:(?:\([b-d]\)\s|\((?:i|ii|iii|iv)\)\s|(?:An (?:Dara|Tríú) Mhír\s*)?\d+\.\s(?:\(a\)\s)?[A-ZÁÉÍÓÚ])[^•]*(?:\?|\(Alt \d+\)|\.)|(?:Luaigh|Scríobh síos|Tabhair|Cén|Cad|Cá|Conas|Cathain|Cé)\s[^•]*\(Alt \d+\))\s*$)/;
-const NEXT_QUESTION = /(?:^|\s)(\d+)\.\s+(?:\(a\)\s+)?[A-ZÁÉÍÓÚ]/g;
+/** A question number: one or two digits, so a year ending a sentence ("ar an 20 Iúil 1969. Tabhair …", 2019 Higher B 1(a)) is not one. */
+const NEXT_QUESTION = /(?:^|\s)(\d{1,2})\.\s+(?:\(a\)\s+)?[A-ZÁÉÍÓÚ]/g;
 /** Where the lifted excerpt runs on into the scheme's next section, and the rule it ends with. */
 const LEAK = /\s(?=(?:Eolas\s*\(\d+\)|Móriomlán|Iomlán\b|Freagair do rogha|I gcás A, B|\d+ Roinn ar an bpáipéar|An Mharcáil:|Cuid [ABC]\s*\(\d+|Léirigh na marcanna|Don Scrúdaitheoir|Na hIomláin|CEIST \d+ \(A \+ B\)|LÉAMHTHUISCINT - \d+ marc))/;
 /** The language deduction the scheme prints beside the answers: Higher as a sentence, Ordinary in square brackets. */
@@ -88,16 +89,21 @@ interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { te
 const PART_NOTE = /^Nóta:/;
 const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\d+ ar cómharc|Order-dependent award)/;
 /** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
- *  ghnóthú)" after an answer: how much of it suffices or what it must contain, a direction. */
-const SUFFICES = /\((?:Is leor|aon|Ní mór)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
-/** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)": the qualifier is the condition of the answer it
+ *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)" after an answer: how much of
+ *  it suffices or what it must contain, a direction. */
+const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
+/** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)", "… = 2 mharc (Gan ainmneacha an dá thír luaite, …)": the qualifier is the condition of the answer it
  *  follows. It stays on that row, as a second slice: "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
-const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\(gan\s[^()=]*\))/g;
+const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\([Gg]an\s[^()=]*\))/g;
 /** "… in áit faoi leith (2 mharc) in imeacht tréimhse áirithe ama (1 mharc) = 3 mharc" (2020 Higher A 1(a)): one answer
  *  printing how its own price divides. Where the bracketed prices add up to the price after them they are part of the
  *  answer's text, not tariffs: a word joiner (U+2060) holds each one together until the rows are cut, then goes. */
 const INLINE_SPLIT = /(?:[^•=()]*\(\d+\s*m?h?arc\)){2,}[^•=()]*(?==\s*(\d+)\s*m?h?arc\b)/g;
 const HELD = '\u2060';
+/** "{2 mharc} • D’ísligh sé an cíos (1 mharc) agus dháil sé bia … (1 mharc)" (2019 Higher A 2(b)(i)): the part's one answer
+ *  printing how its price divides, with no price after it. Where the bracketed prices add up to the brace they are the
+ *  answer's text, held as INLINE_SPLIT holds them, and the brace prices the answer. */
+const BRACED_SPLIT = /(\{(\d+)\s*m?h?arc\}\s*•\s*)((?:[^•=(){}]*\(\d+\s*m?h?arc\)){2,}[^•=(){}]*?)\s*$/;
 
 /** Whether a line is the card's printed question, read past the paper's hyphens and spacing. */
 const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
@@ -119,6 +125,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   text = text.replace(INLINE_SPLIT, (answer: string, total: string) => {
     const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
     return split === Number(total) ? answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`) : answer;
+  });
+  text = text.replace(BRACED_SPLIT, (whole: string, head: string, total: string, answer: string) => {
+    const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
+    return split === Number(total) ? `${head}${answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`)} = ${total} mharc` : whole;
   });
   // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
   text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
