@@ -1259,8 +1259,16 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+/* 2026-11-04: History's essays and the documents question's Q4 are carded as
+ * `history-essay` rubric cards (the scheme marks them by paragraph and prints
+ * no model answer), 2025 Higher Later Modern first. Every one is NEW: no id is
+ * replaced and the frozen History set above is unchanged, so the additions are
+ * pinned on their own below. */
+const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
+  .filter(card => card.kind === 'rubric').map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1332,6 +1340,16 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('pins the History essay additions beside the frozen set', () => {
+    // 2025 Higher Later Modern: 44 essays and the documents question's Q4.
+    const higher = HISTORY_HIGHER.map(card => card.id).filter(id => historyEssayIds.has(id));
+    expect(higher).toHaveLength(45);
+    expect(idHash(higher)).toBe('09ebf445a695108f9e329d477c32827d9de4ec0d160dfde194d9d7b577dd4b94');
+    expect(higher.every(id => id.startsWith('hist-2025-hl-lm-'))).toBe(true);
+    expect(HISTORY_ORDINARY.filter(card => historyEssayIds.has(card.id))).toHaveLength(0);
+    for (const id of higher) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
   });
 
   it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1423,7 +1441,7 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('history:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1437,7 +1455,9 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
+        + historyEssayIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

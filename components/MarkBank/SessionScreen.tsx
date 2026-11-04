@@ -92,6 +92,8 @@ import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, type FrenchScoreId } from './frenchRubric';
+import HistoryEssayPanel from './HistoryEssayPanel';
+import { historyEssayMarks, type HistoryEssayScoreId } from './historyEssayScoring';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
@@ -359,7 +361,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | HistoryEssayScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -523,6 +525,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
   if (card.rubric.system === 'politics') return politicsMarks(card, scores);
+  if (card.rubric.system === 'history-essay') return historyEssayMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -1708,6 +1711,11 @@ const RubricPanel: React.FC<{
       rubric: GeographyRubric;
     }} />;
   }
+  if (props.card.rubric.system === 'history-essay') {
+    return <HistoryEssayPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'history-essay' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
   return (
     <PclmRubricPanel
       {...props}
@@ -2413,7 +2421,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
       : assessmentCard.rubric.system === 'french' ? 'French marking grid'
-      : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'business' ? 'Business allocation'
+      : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 

@@ -1241,7 +1241,76 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
+/** One band of a History CM or OE ladder, as the scheme prints it. */
+export interface HistoryEssayBand {
+  /** "Excellent", "Very good" … */
+  label: string;
+  /** Every mark the band permits, low to high: "8-10 marks" is [8, 9, 10]. */
+  marks: number[];
+  /** The band and its range as printed: "Very good: 8-10 marks". */
+  printed: string;
+  /** The band's descriptor, verbatim; absent where the scheme prints none
+   *  (the documents question's OE grading table). */
+  descriptor?: string;
+}
+
+/**
+ * A History essay — a Section 2 or 3 essay, or the documents question's
+ * contextualisation part — marked the way the SEC marks it: by paragraph.
+ *
+ * The scheme prints no model answer for these. It prints a Cumulative Mark,
+ * built paragraph by paragraph from a band ladder up to a printed maximum,
+ * and an Overall Evaluation placed on one band. Every string here is the
+ * scheme's own; the card adds no indicative content.
+ *
+ * Scoring (historyEssayScoring.ts): the CM is the sum of the paragraphs the
+ * student places, in their order, capped at the printed maximum — or at the
+ * question's NOTE ceiling when the student judges their answer covers only one
+ * element — so a paragraph past the maximum counts zero, as the scheme's
+ * annotation for an excess paragraph says. The OE is one mark inside one band.
+ */
+export interface HistoryEssayRubric {
+  system: 'history-essay';
+  /** The scheme's own words for how the answer is marked, verbatim. */
+  schemeGuidance: string[];
+  cm: {
+    /** The printed Max. CM: 60 for an essay, 24 for the documents question's Q4. */
+    max: number;
+    /** The question's own NOTE, verbatim ("NOTE: TWO elements (during +
+     *  after) If only ONE, Max. CM = 50"), and the ceiling it prints. Only
+     *  where the scheme prints a NOTE for this question. */
+    elementRule?: { note: string; max: number };
+    definition: string;
+    /** "A paragraph or paragraph equivalent may be one of the following:" */
+    paragraphLead: string;
+    /** (i) … (vii), verbatim. */
+    paragraphKinds: string[];
+    /** The band each paragraph is placed on. */
+    bands: HistoryEssayBand[];
+    /** Examiner directions on paragraphs, verbatim: the summation cap and the
+     *  excess-paragraph annotation. */
+    directions: string[];
+  };
+  oe: {
+    max: number;
+    definition?: string;
+    /** The scheme's lead to its OE table, where it prints one. */
+    lead?: string;
+    bands: HistoryEssayBand[];
+    directionsLead?: string;
+    directions: string[];
+  };
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
+/** The one line on a History essay card that is NextStepUni's, not the SEC's:
+ *  the scheme prints no model answer for these questions. Mirrored in
+ *  build-deck.mjs, which refuses any other wording. */
+export const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | HistoryEssayRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1596,6 +1665,28 @@ export function tariffReconciles(card: SecCard): boolean {
           return marks.length === allowed.length && new Set(marks).size === marks.length
             && marks.every(mark => allowed.includes(mark));
         });
+    }
+    if (card.rubric.system === 'history-essay') {
+      const { cm, oe, schemeFileid, schemePages } = card.rubric;
+      // A ladder covers 0..top exactly once, every band a run of whole marks.
+      const ladder = (bands: HistoryEssayBand[], top: number) => {
+        const marks = bands.flatMap(band => band.marks).sort((a, b) => a - b);
+        return bands.length > 0
+          && bands.every(band => band.marks.length > 0
+            && band.marks.every((mark, index) => Number.isInteger(mark)
+              && (index === 0 || mark === band.marks[index - 1] + 1)))
+          && marks.length === top + 1
+          && marks.every((mark, index) => mark === index);
+      };
+      const paragraphTop = Math.max(...cm.bands.flatMap(band => band.marks));
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && cm.max + oe.max === card.totalMarks
+        && ladder(cm.bands, paragraphTop) && paragraphTop <= cm.max
+        && ladder(oe.bands, oe.max)
+        && (!cm.elementRule || (Number.isInteger(cm.elementRule.max)
+          && cm.elementRule.max > 0 && cm.elementRule.max < cm.max));
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
       const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;

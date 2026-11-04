@@ -82,6 +82,12 @@ TOPIC_HEAD = re.compile(
     r'^(Ireland|Europe and the wider world)\s*:\s*Topic\s+(\d)\b', re.I)
 # A Higher Level essay: the whole scheme entry for a 100-mark question.
 ESSAY = re.compile(r'^(\d)\.\s+Max\.?\s*CM\s*=?\s*(\d+)\s+Max\.?\s*OE\s*=?\s*(\d+)')
+# The note the scheme prints under an essay's ceiling: "NOTE: TWO elements
+# (during + after) If only ONE, Max. CM = 50". 2021 wraps its "If only ONE"
+# clause onto a line of its own, and 2025 opens one NOTE with a stray "(".
+NOTE_HEAD = re.compile(r'^\(?NOTE\s*:', re.I)
+NOTE_CONT = re.compile(r'^If only (?:ONE|one)\b')
+NOTE_MAX = re.compile(r'\bMax\.?\s*CM\s*=\s*(\d+)')
 # An Ordinary Level Part A answer.
 A_LINE = re.compile(r'^A(\d)\.\s*(.*)$')
 # The whole scheme entry for an Ordinary Level part B or C.
@@ -226,6 +232,52 @@ def _halve(raw, field):
     return [l.strip() for l in lines[lo:hi]]
 
 
+# Marking by paragraph (the essays and the documents question's Q4). A
+# printed line that opens one of these starts a new logical line; any other
+# line continues the one above it, because the SEC wraps a band's descriptor
+# at the measure ("Excellent: 11-12 marks Outstanding piece of analysis,
+# exposition or commentary." / "Clearly expressed, accurate and substantial
+# information.").
+PM_BAND = re.compile(
+    r'^(Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*(\d+)-(\d+)\s*(marks?)\b\s*(.*)$')
+PM_CEILING = re.compile(
+    r'^Cumulative Mark = Max\.? (\d+) marks Overall Evaluation = Max\.? (\d+) marks$')
+PM_START = re.compile(
+    r'^(?:(?:Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*\d'
+    r'|\((?:i|ii|iii|iv|v|vi|vii)\)\s|\(Summation\b|•'
+    r'|Cumulative Mark\b|Overall Evaluation\b|Maximum (?:CM|OE)\b'
+    r'|Marking the Answer|In awarding\b|Having divided\b|The examiner will\b'
+    r'|A paragraph or paragraph equivalent|These marks are awarded'
+    r'|To mark the answer|In Sections 2 and 3|In question 4\b'
+    r'|This principle\b|The proportion\b|IRELAND and EUROPE'
+    r'|Section 2 and Section 3|\d\.\s+Contextualisation|Would you\b)')
+
+
+def _halve_pages(raw, field):
+    """The scheme page of every line _halve() returns, in the same order.
+
+    The same boundaries as _halve(), read again with the "## Page N" markers
+    counted, so a card can open the scheme at the page its marking is printed
+    on rather than at a page typed beside it.
+    """
+    page, pages, lines = 0, [], []
+    for line in raw.split('\n'):
+        if APPENDED.match(line):
+            break
+        lines.append(line.rstrip())
+        m = re.match(r'^## Page (\d+)\s*$', line)
+        if m:
+            page = int(m.group(1))
+        pages.append(page)
+    starts = {}
+    for key, pat in FIELD_TITLE.items():
+        hits = [i for i, l in enumerate(lines) if pat.match(l.strip())]
+        starts[key] = hits[0]
+    lo = starts[field]
+    hi = starts['em'] if field == 'lm' else len(lines)
+    return pages[lo:hi]
+
+
 class Ask:
     """One priced ask the scheme answers, or bands."""
 
@@ -239,6 +291,9 @@ class Ask:
         self.notes = []
         self.evidence = ''
         self.cue = ''           # the scheme's own words, for the Law 4 join
+        self.note = None        # an essay's printed NOTE, verbatim
+        self.note_max = None    # the CM ceiling that NOTE prints
+        self.page = None        # the scheme page the ask is priced on
 
     def __repr__(self):
         return f'<Ask {self.key} {self.kind} {self.total} {len(self.points)}pt>'
@@ -251,7 +306,10 @@ class HistScheme:
         if not os.path.exists(self.path):
             raise FileNotFoundError(self.path)
         with open(self.path, encoding='utf-8') as fh:
-            self.lines = _halve(fh.read(), field)
+            self.raw = fh.read()
+        self.lines = _halve(self.raw, field)
+        self.pages = _halve_pages(self.raw, field)
+        assert len(self.pages) == len(self.lines)
         self.asks = []
         self.by_key = {}
         self.refused = []
@@ -278,10 +336,28 @@ class HistScheme:
                 self._finish(cur, buf)
             cur, buf = None, []
 
-        for line in self.lines:
+        essay = None            # the essay whose NOTE may follow
+        for index, line in enumerate(self.lines):
             if (not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line)
                     or SCHEME_FURNITURE.match(line)):
                 continue
+            # An essay's NOTE is printed on the line under its ceiling. It was
+            # never read before: nothing is open after an essay's ceiling, so
+            # these lines fell through every pattern and were dropped. They are
+            # consumed here and nowhere else changes.
+            if essay is not None:
+                if NOTE_HEAD.match(line) and essay.note is None:
+                    essay.note = line
+                    m = NOTE_MAX.search(line)
+                    essay.note_max = int(m.group(1)) if m else None
+                    continue
+                if (essay.note is not None and essay.note_max is None
+                        and NOTE_CONT.match(line)):
+                    essay.note = f'{essay.note} {line}'
+                    m = NOTE_MAX.search(line)
+                    essay.note_max = int(m.group(1)) if m else None
+                    continue
+                essay = None
             if END_OF_SCHEME.match(line):
                 close()
                 break
@@ -330,7 +406,10 @@ class HistScheme:
                            None, None), 'banded',
                           int(m.group(2)) + int(m.group(3)), line)
                 ask.evidence = line
+                ask.page = self.pages[index]
+                ask.cm_max, ask.oe_max = int(m.group(2)), int(m.group(3))
                 self._add(ask)
+                essay = ask
                 continue
             m = BC_LINE.match(line)
             if m:
@@ -370,6 +449,7 @@ class HistScheme:
                         cur = Ask(('1', dbq_q, None, None), 'banded',
                                   int(m.group(3)), line)
                         cur.evidence = line
+                        cur.page = self.pages[index]
                         buf = []
                     continue
                 m = LETTER_HEAD.match(line)
@@ -572,6 +652,131 @@ class HistScheme:
             else:
                 out.append(piece)
         return out or [text]
+
+    # -- marking by paragraph --------------------------------------------
+    def paragraph_marking(self, unit):
+        """The scheme's marking-by-paragraph apparatus for one essay unit.
+
+        `unit` is 'q4' (the documents question's contextualisation part) or
+        'essay' (a Section 2 or 3 essay). Every string returned is the
+        scheme's own printing, its lines joined; nothing is composed. Read
+        only for a paper being carded, so no other sitting's reading changes.
+
+        Raises AssertionError naming what is missing: a ladder that cannot
+        be read whole is not shipped in part.
+        """
+        if unit == 'q4':
+            lo = next(i for i, l in enumerate(self.lines)
+                      if re.match(r'^4\.\s+Contextualisation\b', l))
+            hi = next(i for i in range(lo, len(self.lines))
+                      if re.match(r'^Section 2 and Section 3\s*:', self.lines[i]))
+        else:
+            lo = next(i for i, l in enumerate(self.lines)
+                      if re.match(r'^Section 2 and Section 3\s*:', l))
+            hi = next(i for i in range(lo, len(self.lines))
+                      if SEC_HEAD.match(self.lines[i]))
+        logical, pages = [], set()
+        for i in range(lo, hi):
+            line = self.lines[i]
+            if (not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line)
+                    or SCHEME_FURNITURE.match(line)):
+                continue
+            pages.add(self.pages[i])
+            if not logical or PM_START.match(line):
+                logical.append(line)
+            else:
+                logical[-1] = f'{logical[-1]} {line}'
+        logical = [' '.join(l.split()) for l in logical]
+        out = {'schemeGuidance': [], 'cm': {'bands': [], 'directions': [],
+                                            'paragraphKinds': []},
+               'oe': {'bands': [], 'directions': []}, 'pages': sorted(pages)}
+        state = None
+        for text in logical:
+            m = PM_CEILING.match(text)
+            if m:
+                out['cm']['max'], out['oe']['max'] = int(m.group(1)), int(m.group(2))
+                continue
+            m = re.match(r'^Maximum (CM|OE) = (\d+) marks\.$', text)
+            if m:
+                out[m.group(1).lower()]['max'] = int(m.group(2))
+                continue
+            if re.match(r'^Cumulative Mark \(CM\)(?: \(Maximum = \d+ marks\))?$', text):
+                state = 'cm'
+                continue
+            if re.match(r'^Overall Evaluation \(OE\)(?: \(Maximum = \d+ marks\))?$', text):
+                state = 'oe'
+                continue
+            m = PM_BAND.match(text)
+            if m and state in ('cm', 'oe'):
+                band = {'label': m.group(1),
+                        'marks': list(range(int(m.group(2)), int(m.group(3)) + 1)),
+                        'printed': f'{m.group(1)}: {m.group(2)}-{m.group(3)} {m.group(4)}'}
+                if m.group(5).strip():
+                    band['descriptor'] = m.group(5).strip()
+                out[state]['bands'].append(band)
+                continue
+            if re.match(r'^\((?:i|ii|iii|iv|v|vi|vii)\)\s', text):
+                out['cm']['paragraphKinds'].append(text)
+                continue
+            if re.match(r'^\(Summation which is mere repetition', text):
+                out['cm']['directions'].append(text)
+                continue
+            if re.match(r'^(?:A paragraph or paragraph equivalent may be one of the following:'
+                        r'|The examiner will divide the answer into paragraphs or paragraph equivalents:)$',
+                        text):
+                out['cm']['paragraphLead'] = text
+                continue
+            if text.startswith('• ') and state == 'oe':
+                out['oe']['directions'].append(text[2:])
+                continue
+            if re.match(r'^In awarding the OE, the examiner will evaluate', text):
+                out['oe']['directionsLead'] = text
+                continue
+            if re.match(r'^In awarding OE, the examiner will consider', text):
+                out['oe']['lead'] = text
+                continue
+            if re.match(r'^In awarding OE marks, the examiner should not expect', text):
+                out['oe']['directions'].append(text)
+                continue
+            if re.match(r'^(?:These marks are awarded for historical content'
+                        r'|Cumulative Mark \(CM\) for historical content)', text):
+                out['cm']['definition'] = text
+                continue
+            if re.match(r'^Overall Evaluation \(OE\) for the quality of the answer', text):
+                out['oe']['definition'] = text
+                continue
+            # How the scheme says the answer is marked: it prints no model
+            # answer, and these are its own words for what it does instead.
+            # The "open mind" sentence is printed under Sections 2 and 3 and
+            # only an essay carries it; Q4 carries its own two sentences.
+            if re.match(r'^(?:To mark the answer, the examiner will approach the material'
+                        r'|In question 4, marking by paragraph begins'
+                        r'|The examiner will divide the answer into paragraphs or paragraph equivalents\.$)',
+                        text):
+                out['schemeGuidance'].append(text)
+                continue
+        # The annotation the online marking panel uses for a paragraph past
+        # the CM maximum. The flattened table on its page welds a column into
+        # the sentence; the column-run rendering appended to the .md holds it
+        # whole.
+        m = re.search(r'Where an answer has already scored the maximum CMs '
+                      r'allowable[^.]*?\(e\.g\.[^)]*\)\.', self.raw)
+        if m:
+            out['cm']['directions'].append(m.group(0))
+        missing = [name for name, ok in (
+            ('the CM maximum', 'max' in out['cm']),
+            ('the OE maximum', 'max' in out['oe']),
+            ('the CM definition', 'definition' in out['cm']),
+            ('the paragraph list', len(out['cm']['paragraphKinds']) == 7
+             and 'paragraphLead' in out['cm']),
+            ('the CM bands', len(out['cm']['bands']) == 5),
+            ('the OE bands', len(out['oe']['bands']) == 6),
+            ("the scheme's own statement of how the answer is marked",
+             bool(out['schemeGuidance']))) if not ok]
+        if missing:
+            raise AssertionError(f'{self.year} {self.level} {self.field} {unit}: '
+                                 f'could not read {", ".join(missing)}')
+        return out
 
     # -- the assertion ---------------------------------------------------
     def audit(self):

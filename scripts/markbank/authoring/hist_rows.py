@@ -21,6 +21,10 @@ price stays with the row it follows. Four printed shapes, each read once:
                                                    rows; the alternative after them is a note
   Clonmel prison (6m), Clonmel only (3m), prison only (3m)
                                                    one row at 6 with 3 as a printed step
+  Green ribbons (ribbons = 3m)                     one row at 6 with 3 as a printed step:
+                                                   the bracket is the scheme's partial, kept
+                                                   as the row's note (#294 made these three
+                                                   cards by hand; this reads them)
   Any TWO: Liverpool, Manchester, Birmingham, and/or Leeds (3M + 3M)
                                                    an any-two group at 3 each
   Identification of doc B and quote from doc B required. 5M + 5M Max =
@@ -41,6 +45,9 @@ PAIR = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\+\s*(\d+)\s*[Mm]\s*\)')
 DANGLING = re.compile(r'\s*(\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=)\s*$', re.I)
 JOINER = re.compile(r'^(?:and/or|and|with|plus|or|&)\b\s*', re.I)
 LIST_LEAD = re.compile(r'^(Any\s+(one|two|three|four))\s*:\s*', re.I)
+# A partial the scheme prints in a bracket at the END of a one-line answer:
+# "Massive German air raids (air raids alone = 3m)".
+PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm])\)\s*$')
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 
 
@@ -92,6 +99,14 @@ def split_priced(card):
         return card
 
     tokens = list(INLINE.finditer(text))
+    partial = PARTIAL.match(text)
+    if not tokens and partial and 0 < int(partial.group('n')) < total:
+        rows[:] = [{'id': row['id'], 'kind': 'criterion', 'verbatim': tidy(partial.group('head')),
+                    'marks': total, 'contextNote': ' '.join(partial.group('note').split()),
+                    'permittedMarks': [0, int(partial.group('n')), total]}]
+        if row.get('contextNote'):
+            _note(rows[0], row['contextNote'])
+        return card
     if len(tokens) < 2:
         return card
     values = [int(t.group(1)) for t in tokens]

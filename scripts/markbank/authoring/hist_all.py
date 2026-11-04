@@ -20,13 +20,23 @@ maintain segregation 5M" — and Part A gets five one-line answers at (6) apiece
 The comparison and criticism parts get the examiner's own model answer, priced
 once on the ask with no per-point split.
 
-*Excluded.* Every essay: Higher Level's Sections 2 and 3, Ordinary Level's
-parts B and C, and the documents question's contextualisation part. The whole
-scheme entry for one of those is a ceiling — "1. Max. CM = 60 Max. OE = 40" —
-and there is nothing under it to lift. Each gets an entry in
-exclusions/history.json carrying that printed line as its evidence, written by
---exclusions from the scheme itself so it cannot drift from what the SEC
-prints.
+*Excluded, until carded as essays.* Every essay: Higher Level's Sections 2
+and 3, Ordinary Level's parts B and C, and the documents question's
+contextualisation part. The whole scheme entry for one of those is a ceiling —
+"1. Max. CM = 60 Max. OE = 40" — and there is no answer under it to lift. Each
+still gets an entry in exclusions/history.json carrying that printed line as
+its evidence, written by --exclusions from the scheme itself so it cannot
+drift from what the SEC prints — except on a paper in ESSAY_PAPERS.
+
+*Essay cards.* Alex's rule (2026-10-28) is that every printed ask is a card,
+and an essay is marked by paragraph, which the scheme DOES print: a Cumulative
+Mark built from a band ladder paragraph by paragraph up to a printed maximum,
+and an Overall Evaluation on one band, each with its descriptors, plus the
+question's own NOTE ("TWO elements … If only ONE, Max. CM = 50"). On a paper
+in ESSAY_PAPERS every such ask is a `history-essay` rubric card carrying that
+apparatus verbatim (hist_scheme.paragraph_marking) and no model answer, which
+the scheme does not print. Papers join ESSAY_PAPERS one at a time, as each is
+reviewed in the browser.
 
 THE TWO TARIFF MODELS, BOTH READ
 --------------------------------
@@ -76,6 +86,18 @@ LEVELS = ('hl', 'ol')
 FIELD_KEYS = ('lm', 'em')
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
+
+# The papers whose essays and contextualisation part are carded as
+# `history-essay` rubric cards rather than excluded. 2025 Higher Later Modern
+# is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
+# been reviewed.
+ESSAY_PAPERS = {(2025, 'hl', 'lm')}
+
+# NextStepUni's own guidance under the panel, never presented as the SEC's.
+ESSAY_GUIDE = ('Place each paragraph you wrote, in the order you wrote it, on '
+               'the one band that fits it. The CM stops at its maximum, so a '
+               'paragraph past it counts 0m. Then place your whole answer on '
+               'one OE band.')
 
 # The floor a topic-title pairing has to clear. The two documents print the
 # same title, so a real pair scores near 1.0; the floor is where a pair would
@@ -150,6 +172,75 @@ def source_material(P, year, level, field, unit, pages, title, label):
                              'examination paper, then answer the question '
                              'above.'),
     }
+
+
+def _bands(bands):
+    return [{k: b[k] for k in ('label', 'marks', 'printed', 'descriptor') if k in b}
+            for b in bands]
+
+
+def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
+    """One `history-essay` rubric card, or the reason it cannot be made."""
+    unit = key[0]
+    marking = S.paragraph_marking('q4' if unit == '1' else 'essay')
+    cm, oe = marking['cm'], marking['oe']
+    # The question's own ceiling must agree with the apparatus it is marked
+    # under, and both with the marks the PAPER prints for the question.
+    if unit != '1' and (ask.cm_max, ask.oe_max) != (cm['max'], oe['max']):
+        return 'the essay ceiling disagrees with the paragraph-marking maximum'
+    if ask.total != cm['max'] + oe['max'] or P.marks.get(key) != ask.total:
+        return 'the paper, the scheme and the CM + OE maxima disagree'
+    rubric_cm = {
+        'max': cm['max'],
+        'definition': cm['definition'],
+        'paragraphLead': cm['paragraphLead'],
+        'paragraphKinds': cm['paragraphKinds'],
+        'bands': _bands(cm['bands']),
+        'directions': cm['directions'],
+    }
+    if ask.note is not None:
+        if ask.note_max is None or not 0 < ask.note_max < cm['max']:
+            return "the question's NOTE prints no CM ceiling below the maximum"
+        rubric_cm['elementRule'] = {'note': ask.note, 'max': ask.note_max}
+    rubric_oe = {'max': oe['max']}
+    for name in ('definition', 'lead'):
+        if name in oe:
+            rubric_oe[name] = oe[name]
+    rubric_oe['bands'] = _bands(oe['bands'])
+    if 'directionsLead' in oe:
+        rubric_oe['directionsLead'] = oe['directionsLead']
+    rubric_oe['directions'] = oe['directions']
+    pages = sorted(set(marking['pages']) | ({ask.page} if ask.page else set()))
+    question = P.asks[key]
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'kind': 'rubric',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_id,
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'totalMarks': ask.total,
+        'rubric': {
+            'system': 'history-essay',
+            'schemeGuidance': marking['schemeGuidance'],
+            'cm': rubric_cm,
+            'oe': rubric_oe,
+            'schemePages': pages,
+            'markingGuideNote': ESSAY_GUIDE,
+        },
+        'notes': (f'{FIELDS[field]} field of study. The scheme prints '
+                  f'{ask.evidence[:60]!r} for this ask: marking by paragraph, '
+                  'no model answer.'),
+    }
+    stem = (f'Case study: {P.case_title}' if unit == '1' and P.case_title
+            else P.topic_titles.get(unit))
+    if stem and len(stem) >= 20:
+        card['stem'] = stem
+    return card
 
 
 def build():
@@ -272,6 +363,14 @@ def build():
                         refuse('the ask sits under no syllabus topic', ref)
                         continue
 
+                    if ask.kind == 'banded' and (year, level, field) in ESSAY_PAPERS:
+                        made = essay_card(P, S, year, level, field, key, ask,
+                                          section, topic_id, ref)
+                        if isinstance(made, str):
+                            refuse(made, ref)
+                        else:
+                            cards.append(made)
+                        continue
                     if ask.kind == 'banded':
                         exclusions.append({
                             'ref': ref,
